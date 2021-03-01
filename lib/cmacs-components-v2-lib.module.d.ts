@@ -1,8 +1,46 @@
 import * as i0 from "@angular/core";
 import * as i1 from "./cmacs-components-v2-lib.component";
-import * as i2 from "./components/cmacs-checkbox-v2/cmacs-checkbox-v2.component";
+import * as i2 from "./components/cmacs-checkbox/cmacs-checkbox.component";
+import * as i3 from "./components/cmacs-checkbox/cmacs-checkbox-wrapper.component";
+import * as i4 from "./components/cmacs-checkbox/cmacs-checkbox-group.component";
+import * as i5 from "./components/cmacs-button/cmacs-button.component";
+import * as i6 from "./components/cmacs-button/cmacs-button-group.component";
+import * as i7 from "./components/cmacs-color-picker/cmacs-color-picker.component";
+import * as i8 from "./components/cmacs-slider/cmacs-slider-handle.component";
+import * as i9 from "./components/cmacs-slider/cmacs-slider-marks.component";
+import * as i10 from "./components/cmacs-slider/cmacs-slider-step.component";
+import * as i11 from "./components/cmacs-slider/cmacs-slider-track.component";
+import * as i12 from "./components/cmacs-slider/cmacs-slider.component";
+import * as i13 from "./components/cmacs-radio/cmacs-radio-group.component";
+import * as i14 from "./components/cmacs-radio/cmacs-radio.component";
+import * as i15 from "./components/cmacs-radio/radio-button.directive";
+import * as i16 from "./components/cmacs-select/cmacs-select.component";
+import * as i17 from "./components/cmacs-select/cmacs-select-top-control.component";
+import * as i18 from "./components/cmacs-select/cmacs-select-unselectable.directive";
+import * as i19 from "./components/cmacs-select/cmacs-option.component";
+import * as i20 from "./components/cmacs-select/cmacs-option-container.component";
+import * as i21 from "./components/cmacs-select/cmacs-option-group.component";
+import * as i22 from "./components/cmacs-select/cmacs-option-li.component";
+import * as i23 from "./components/cmacs-select/cmacs-option.pipe";
+import * as i24 from "./components/cmacs-divider/cmacs-divider.component";
+import * as i25 from "./components/cmacs-input/cmacs-input.directive";
+import * as i26 from "./components/cmacs-input/cmacs-input-group.component";
+import * as i27 from "./components/cmacs-input/autosize.directive";
+import * as i28 from "./components/cmacs-input/input-group-slot.component";
+import * as i29 from "./components/cmacs-input/textarea-count.component";
+import * as i30 from "@angular/common";
+import * as i31 from "@angular/forms";
+import * as i32 from "ng-zorro-antd/button";
+import * as i33 from "ng-zorro-antd/checkbox";
+import * as i34 from "ng-zorro-antd/tooltip";
+import * as i35 from "ng-zorro-antd/slider";
+import * as i36 from "ng-zorro-antd/switch";
+import * as i37 from "ng-zorro-antd/input";
+import * as i38 from "ng-zorro-antd/radio";
+import * as i39 from "ng-zorro-antd/select";
+import * as i40 from "ng-zorro-antd/divider";
 export declare class CmacsComponentsV2LibModule {
-    static ɵmod: i0.ɵɵNgModuleDefWithMeta<CmacsComponentsV2LibModule, [typeof i1.CmacsComponentsV2LibComponent, typeof i2.CmacsCheckboxV2Component], never, [typeof i1.CmacsComponentsV2LibComponent, typeof i2.CmacsCheckboxV2Component]>;
+    static ɵmod: i0.ɵɵNgModuleDefWithMeta<CmacsComponentsV2LibModule, [typeof i1.CmacsComponentsV2LibComponent, typeof i2.CmacsCheckboxComponent, typeof i3.CmacsCheckboxWrapperComponent, typeof i4.CmacsCheckboxGroupComponent, typeof i5.CmacsButtonComponent, typeof i6.CmacsButtonGroupComponent, typeof i7.CmacsColorPickerComponent, typeof i8.CmacsSliderHandleComponent, typeof i9.CmacsSliderMarksComponent, typeof i10.CmacsSliderStepComponent, typeof i11.CmacsSliderTrackComponent, typeof i12.CmacsSliderComponent, typeof i13.CmacsRadioGroupComponent, typeof i14.CmacsRadioComponent, typeof i15.CmacsRadioButtonDirective, typeof i16.CmacsSelectComponent, typeof i17.CmacsSelectTopControlComponent, typeof i18.CmacsSelectUnselectableDirective, typeof i19.CmacsOptionComponent, typeof i20.CmacsOptionContainerComponent, typeof i21.CmacsOptionGroupComponent, typeof i22.CmacsOptionLiComponent, typeof i23.NzFilterGroupOptionPipe, typeof i23.NzFilterOptionPipe, typeof i24.CmacsDividerComponent, typeof i25.CmacsInputDirective, typeof i26.CmacsInputGroupComponent, typeof i27.CmacsAutosizeDirective, typeof i28.CmacsInputGroupSlotComponent, typeof i29.CmacsTextareaCountComponent], [typeof i30.CommonModule, typeof i31.FormsModule, typeof i32.NzButtonModule, typeof i33.NzCheckboxModule, typeof i34.NzToolTipModule, typeof i35.NzSliderModule, typeof i36.NzSwitchModule, typeof i37.NzInputModule, typeof i38.NzRadioModule, typeof i39.NzSelectModule, typeof i40.NzDividerModule], [typeof i24.CmacsDividerComponent, typeof i40.NzDividerModule, typeof i1.CmacsComponentsV2LibComponent, typeof i2.CmacsCheckboxComponent, typeof i3.CmacsCheckboxWrapperComponent, typeof i4.CmacsCheckboxGroupComponent, typeof i32.NzButtonModule, typeof i5.CmacsButtonComponent, typeof i6.CmacsButtonGroupComponent, typeof i33.NzCheckboxModule, typeof i7.CmacsColorPickerComponent, typeof i8.CmacsSliderHandleComponent, typeof i9.CmacsSliderMarksComponent, typeof i10.CmacsSliderStepComponent, typeof i11.CmacsSliderTrackComponent, typeof i12.CmacsSliderComponent, typeof i34.NzToolTipModule, typeof i35.NzSliderModule, typeof i36.NzSwitchModule, typeof i37.NzInputModule, typeof i13.CmacsRadioGroupComponent, typeof i14.CmacsRadioComponent, typeof i15.CmacsRadioButtonDirective, typeof i38.NzRadioModule, typeof i16.CmacsSelectComponent, typeof i17.CmacsSelectTopControlComponent, typeof i18.CmacsSelectUnselectableDirective, typeof i19.CmacsOptionComponent, typeof i20.CmacsOptionContainerComponent, typeof i21.CmacsOptionGroupComponent, typeof i22.CmacsOptionLiComponent, typeof i23.NzFilterGroupOptionPipe, typeof i23.NzFilterOptionPipe, typeof i39.NzSelectModule, typeof i25.CmacsInputDirective, typeof i26.CmacsInputGroupComponent, typeof i27.CmacsAutosizeDirective, typeof i28.CmacsInputGroupSlotComponent, typeof i29.CmacsTextareaCountComponent]>;
     static ɵinj: i0.ɵɵInjectorDef<CmacsComponentsV2LibModule>;
 }
 //# sourceMappingURL=cmacs-components-v2-lib.module.d.ts.map

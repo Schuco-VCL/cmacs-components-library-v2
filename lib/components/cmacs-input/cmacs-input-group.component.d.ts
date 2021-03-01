@@ -1,0 +1,41 @@
+import { FocusMonitor } from '@angular/cdk/a11y';
+import { Direction, Directionality } from '@angular/cdk/bidi';
+import { AfterContentInit, ChangeDetectorRef, ElementRef, QueryList, SimpleChanges, TemplateRef } from '@angular/core';
+import { NzSizeLDSType } from 'ng-zorro-antd/core/types';
+import { CmacsInputDirective } from './cmacs-input.directive';
+import * as i0 from "@angular/core";
+export declare class CmacsInputGroupComponent implements AfterContentInit {
+    private focusMonitor;
+    private elementRef;
+    private cdr;
+    private directionality;
+    listOfNzInputDirective: QueryList<CmacsInputDirective>;
+    cmacsAddOnBeforeIcon?: string | null;
+    cmacsAddOnAfterIcon?: string | null;
+    cmacsPrefixIcon?: string | null;
+    cmacsSuffixIcon?: string | null;
+    cmacsAddOnBefore?: string | TemplateRef<void>;
+    cmacsAddOnAfter?: string | TemplateRef<void>;
+    cmacsPrefix?: string | TemplateRef<void>;
+    cmacsSuffix?: string | TemplateRef<void>;
+    cmacsSize: NzSizeLDSType;
+    search: boolean;
+    compact: boolean;
+    isLarge: boolean;
+    isSmall: boolean;
+    isAffix: boolean;
+    isAddOn: boolean;
+    focused: boolean;
+    disabled: boolean;
+    dir: Direction;
+    private destroy$;
+    constructor(focusMonitor: FocusMonitor, elementRef: ElementRef, cdr: ChangeDetectorRef, directionality: Directionality);
+    updateChildrenInputSize(): void;
+    ngOnInit(): void;
+    ngAfterContentInit(): void;
+    ngOnChanges(changes: SimpleChanges): void;
+    ngOnDestroy(): void;
+    static ɵfac: i0.ɵɵFactoryDef<CmacsInputGroupComponent, [null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsInputGroupComponent, "cmacs-input-group", ["cmacsInputGroup"], { "cmacsAddOnBeforeIcon": "cmacsAddOnBeforeIcon"; "cmacsAddOnAfterIcon": "cmacsAddOnAfterIcon"; "cmacsPrefixIcon": "cmacsPrefixIcon"; "cmacsSuffixIcon": "cmacsSuffixIcon"; "cmacsAddOnBefore": "cmacsAddOnBefore"; "cmacsAddOnAfter": "cmacsAddOnAfter"; "cmacsPrefix": "cmacsPrefix"; "cmacsSuffix": "cmacsSuffix"; "cmacsSize": "cmacsSize"; "search": "search"; "compact": "compact"; }, {}, ["listOfNzInputDirective"], ["*"]>;
+}
+//# sourceMappingURL=cmacs-input-group.component.d.ts.map

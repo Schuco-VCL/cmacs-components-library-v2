@@ -1,0 +1,42 @@
+import { FocusMonitor } from '@angular/cdk/a11y';
+import { AfterViewInit, ChangeDetectorRef, ElementRef, OnDestroy } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+import { Direction, Directionality } from '@angular/cdk/bidi';
+import { NzSafeAny, OnChangeType, OnTouchedType } from 'ng-zorro-antd/core/types';
+import { CmacsRadioButtonDirective } from './radio-button.directive';
+import { NzRadioService } from './radio.service';
+import * as i0 from "@angular/core";
+export declare class CmacsRadioComponent implements ControlValueAccessor, AfterViewInit, OnDestroy {
+    private elementRef;
+    private cdr;
+    private focusMonitor;
+    private directionality;
+    private nzRadioService;
+    private nzRadioButtonDirective;
+    private isNgModel;
+    private destroy$;
+    isChecked: boolean;
+    name: string | null;
+    isRadioButton: boolean;
+    onChange: OnChangeType;
+    onTouched: OnTouchedType;
+    inputElement?: ElementRef;
+    value: NzSafeAny | null;
+    disabled: boolean;
+    autoFocus: boolean;
+    dir: Direction;
+    onHostClick(event: MouseEvent): void;
+    focus(): void;
+    blur(): void;
+    constructor(elementRef: ElementRef, cdr: ChangeDetectorRef, focusMonitor: FocusMonitor, directionality: Directionality, nzRadioService: NzRadioService, nzRadioButtonDirective: CmacsRadioButtonDirective);
+    setDisabledState(disabled: boolean): void;
+    writeValue(value: boolean): void;
+    registerOnChange(fn: OnChangeType): void;
+    registerOnTouched(fn: OnTouchedType): void;
+    ngOnInit(): void;
+    ngAfterViewInit(): void;
+    ngOnDestroy(): void;
+    static ɵfac: i0.ɵɵFactoryDef<CmacsRadioComponent, [null, null, null, { optional: true; }, { optional: true; }, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsRadioComponent, "[cmacs-radio],[cmacs-radio-button]", ["cmacsRadio"], { "value": "value"; "disabled": "disabled"; "autoFocus": "autoFocus"; }, {}, never, ["*"]>;
+}
+//# sourceMappingURL=cmacs-radio.component.d.ts.map
