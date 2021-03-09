@@ -429,7 +429,7 @@ CmacsSliderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsSliderComponent
         i0.ɵɵproperty("ngForOf", ctx.handles);
         i0.ɵɵadvance(1);
         i0.ɵɵproperty("ngIf", ctx.marksArray);
-    } }, directives: [i4.CmacsSliderTrackComponent, i5.NgIf, i5.NgForOf, i6.CmacsSliderStepComponent, i7.CmacsSliderHandleComponent, i8.CmacsSliderMarksComponent], styles: [".ant-slider-rail{height:3px;border-radius:100px;background-color:#cfd3d9}"], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [i4.CmacsSliderTrackComponent, i3.Dir, i5.NgIf, i5.NgForOf, i6.CmacsSliderStepComponent, i7.CmacsSliderHandleComponent, i8.CmacsSliderMarksComponent], styles: [".ant-slider-rail{height:3px;border-radius:100px;background-color:#cfd3d9}"], encapsulation: 2, changeDetection: 0 });
 __decorate([
     InputBoolean()
 ], CmacsSliderComponent.prototype, "disabled", void 0);

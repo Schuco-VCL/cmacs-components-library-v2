@@ -1,0 +1,54 @@
+import { Direction, Directionality } from '@angular/cdk/bidi';
+import { ConnectedOverlayPositionChange } from '@angular/cdk/overlay';
+import { Platform } from '@angular/cdk/platform';
+import { AfterContentInit, ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, QueryList, SimpleChanges, TemplateRef } from '@angular/core';
+import { NzNoAnimationDirective } from 'ng-zorro-antd/core/no-animation';
+import { CmacsMenuItemDirective } from './menu-item.directive';
+import { MenuService } from './menu.service';
+import { CmacsMenuModeType, CmacsMenuThemeType } from './menu.types';
+import { NzSubmenuService } from './submenu.service';
+import * as i0 from "@angular/core";
+export declare class CmacsSubMenuComponent implements OnInit, OnDestroy, AfterContentInit, OnChanges {
+    nzMenuService: MenuService;
+    private cdr;
+    nzSubmenuService: NzSubmenuService;
+    private platform;
+    isMenuInsideDropDown: boolean;
+    private directionality;
+    noAnimation?: NzNoAnimationDirective;
+    menuClassName: string;
+    paddingLeft: number | null;
+    title: string | TemplateRef<void> | null;
+    icon: string | null;
+    open: boolean;
+    disabled: boolean;
+    readonly openChange: EventEmitter<boolean>;
+    cdkOverlayOrigin: ElementRef | null;
+    listOfNzSubMenuComponent: QueryList<CmacsSubMenuComponent> | null;
+    listOfNzMenuItemDirective: QueryList<CmacsMenuItemDirective> | null;
+    private level;
+    private destroy$;
+    position: string;
+    triggerWidth: number | null;
+    theme: CmacsMenuThemeType;
+    mode: CmacsMenuModeType;
+    inlinePaddingLeft: number | null;
+    overlayPositions: import("@angular/cdk/overlay").ConnectionPositionPair[];
+    isSelected: boolean;
+    isActive: boolean;
+    dir: Direction;
+    /** set the submenu host open status directly **/
+    setOpenStateWithoutDebounce(open: boolean): void;
+    toggleSubMenu(): void;
+    setMouseEnterState(value: boolean): void;
+    setTriggerWidth(): void;
+    onPositionChange(position: ConnectedOverlayPositionChange): void;
+    constructor(nzMenuService: MenuService, cdr: ChangeDetectorRef, nzSubmenuService: NzSubmenuService, platform: Platform, isMenuInsideDropDown: boolean, directionality: Directionality, noAnimation?: NzNoAnimationDirective);
+    ngOnInit(): void;
+    ngAfterContentInit(): void;
+    ngOnChanges(changes: SimpleChanges): void;
+    ngOnDestroy(): void;
+    static ɵfac: i0.ɵɵFactoryDef<CmacsSubMenuComponent, [null, null, null, null, null, { optional: true; }, { optional: true; host: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSubMenuComponent, "[cmacs-submenu]", ["cmacsSubmenu"], { "menuClassName": "menuClassName"; "paddingLeft": "paddingLeft"; "title": "title"; "icon": "icon"; "open": "open"; "disabled": "disabled"; }, { "openChange": "openChange"; }, ["listOfNzSubMenuComponent", "listOfNzMenuItemDirective"], ["[title]", "*"]>;
+}
+//# sourceMappingURL=submenu.component.d.ts.map

@@ -1,31 +1,40 @@
-import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, EventEmitter, ɵɵdirectiveInject, Renderer2, ElementRef, ɵɵprojectionDef, ɵɵprojection, ChangeDetectionStrategy, ViewEncapsulation, Output, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵlistener, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵelement, ɵɵadvance, ɵɵproperty, Optional, ViewChild, Input, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵtextInterpolate, ɵɵtemplate, ɵɵcontentQuery, ɵɵattribute, ɵɵNgOnChangesFeature, ContentChild, ContentChildren, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵstyleProp, ɵɵsanitizeHtml, ViewChildren, ɵɵdefineDirective, Directive, TemplateRef, ɵɵdefinePipe, Pipe, ɵɵtextInterpolate1, ɵɵreference, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵtemplateRefExtractor, Host, ɵɵpropertyInterpolate, ɵɵelementContainer, ɵɵpipeBind4, NgZone, Self, isDevMode, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, EventEmitter, ɵɵdirectiveInject, Renderer2, ElementRef, ɵɵprojectionDef, ɵɵprojection, ChangeDetectionStrategy, ViewEncapsulation, Output, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵlistener, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵelement, ɵɵadvance, ɵɵproperty, Optional, ViewChild, Input, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵtextInterpolate, ɵɵtemplate, ɵɵcontentQuery, ɵɵattribute, ɵɵNgOnChangesFeature, ContentChild, ContentChildren, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵstyleProp, ɵɵsanitizeHtml, ViewChildren, ɵɵdefineDirective, Directive, TemplateRef, ɵɵdefinePipe, Pipe, ɵɵtextInterpolate1, ɵɵreference, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵtemplateRefExtractor, Host, ɵɵpropertyInterpolate, ɵɵelementContainer, ɵɵpipeBind4, NgZone, Self, isDevMode, InjectionToken, ɵɵinject, SkipSelf, Inject, ɵɵsyntheticHostProperty, ViewContainerRef, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
 import { __decorate } from 'tslib';
 import { NG_VALUE_ACCESSOR, CheckboxControlValueAccessor, NgControlStatus, NgModel, DefaultValueAccessor, NgControl, FormsModule } from '@angular/forms';
-import { takeUntil, startWith, filter, tap, pluck, map, distinctUntilChanged, share, skip, flatMap, switchMap, mergeMap } from 'rxjs/operators';
-import { Subject, fromEvent, merge, ReplaySubject, BehaviorSubject, combineLatest, EMPTY } from 'rxjs';
+import { takeUntil, startWith, filter, tap, pluck, map, distinctUntilChanged, share, skip, flatMap, switchMap, mergeMap, mapTo, auditTime, take } from 'rxjs/operators';
+import { Subject, fromEvent, merge, ReplaySubject, BehaviorSubject, combineLatest, EMPTY, Subscription } from 'rxjs';
 import { InputBoolean, InputNumber, ensureNumberInRange, silentEvent, getPrecision, getPercent, getElementOffset, arraysEqual, isNotNil, isNil, toBoolean } from 'ng-zorro-antd/core/util';
 import { FocusMonitor } from '@angular/cdk/a11y';
-import { Directionality } from '@angular/cdk/bidi';
-import { NgForOf, NgIf, NgStyle, NgTemplateOutlet, SlicePipe, CommonModule } from '@angular/common';
+import { Directionality, Dir } from '@angular/cdk/bidi';
+import { NgForOf, NgIf, NgStyle, NgTemplateOutlet, SlicePipe, NgSwitch, NgSwitchCase, NgSwitchDefault, NgClass, CommonModule } from '@angular/common';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzConfigService, WithConfig } from 'ng-zorro-antd/core/config';
-import { NzIconDirective } from 'ng-zorro-antd/icon';
+import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
 import { ɵNzTransitionPatchDirective } from 'ng-zorro-antd/core/transition-patch';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzTooltipDirective, NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { NzSliderModule } from 'ng-zorro-antd/slider';
-import { RIGHT_ARROW, UP_ARROW, LEFT_ARROW, DOWN_ARROW, TAB, SPACE, BACKSPACE, ENTER } from '@angular/cdk/keycodes';
+import { RIGHT_ARROW, UP_ARROW, LEFT_ARROW, DOWN_ARROW, TAB, SPACE, BACKSPACE, ENTER, ESCAPE, hasModifierKey } from '@angular/cdk/keycodes';
 import { Platform } from '@angular/cdk/platform';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
-import { CdkOverlayOrigin, CdkConnectedOverlay } from '@angular/cdk/overlay';
-import { zoomMotion, slideMotion } from 'ng-zorro-antd/core/animation';
-import { NzNoAnimationDirective } from 'ng-zorro-antd/core/no-animation';
+import { CdkOverlayOrigin, CdkConnectedOverlay, Overlay, OverlayModule, ConnectionPositionPair } from '@angular/cdk/overlay';
+import { zoomMotion, slideMotion, collapseMotion, zoomBigMotion } from 'ng-zorro-antd/core/animation';
+import { NzNoAnimationDirective, NzNoAnimationModule } from 'ng-zorro-antd/core/no-animation';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
+import { NzEmbedEmptyComponent, NzEmptyModule } from 'ng-zorro-antd/empty';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzStringTemplateOutletDirective, NzOutletModule } from 'ng-zorro-antd/core/outlet';
 import { NzResizeService } from 'ng-zorro-antd/core/services';
+import { NavigationEnd, RouterLink, RouterLinkWithHref, Router } from '@angular/router';
+import { POSITION_MAP, getPlacementName } from 'ng-zorro-antd/core/overlay';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { CdkDrag, CdkDragHandle, DragDropModule } from '@angular/cdk/drag-drop';
+import { TemplatePortal } from '@angular/cdk/portal';
+import { warnDeprecation } from 'ng-zorro-antd/core/logger';
 
 class CmacsComponentsV2LibService {
     constructor() { }
@@ -101,7 +110,7 @@ CmacsCheckboxWrapperComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCheckboxW
         }] }); })();
 
 const _c0$1 = ["inputElement"];
-const _c1 = ["cmacs-checkbox-v2", ""];
+const _c1 = ["cmacs-checkbox", ""];
 const _c2 = ["*"];
 class CmacsCheckboxComponent {
     constructor(elementRef, renderer, cmacsCheckboxWrapperComponent, cdr, focusMonitor, directionality) {
@@ -189,7 +198,7 @@ class CmacsCheckboxComponent {
     }
 }
 CmacsCheckboxComponent.ɵfac = function CmacsCheckboxComponent_Factory(t) { return new (t || CmacsCheckboxComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(CmacsCheckboxWrapperComponent, 8), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FocusMonitor), ɵɵdirectiveInject(Directionality, 8)); };
-CmacsCheckboxComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCheckboxComponent, selectors: [["", "cmacs-checkbox-v2", ""]], viewQuery: function CmacsCheckboxComponent_Query(rf, ctx) { if (rf & 1) {
+CmacsCheckboxComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCheckboxComponent, selectors: [["", "cmacs-checkbox", ""]], viewQuery: function CmacsCheckboxComponent_Query(rf, ctx) { if (rf & 1) {
         ɵɵviewQuery(_c0$1, 3);
     } if (rf & 2) {
         let _t;
@@ -198,7 +207,7 @@ CmacsCheckboxComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCheckboxComponen
         ɵɵlistener("click", function CmacsCheckboxComponent_click_HostBindingHandler($event) { return ctx.hostClick($event); });
     } if (rf & 2) {
         ɵɵclassProp("ant-checkbox-wrapper-checked", ctx.checked)("ant-checkbox-rtl", ctx.dir === "rtl");
-    } }, inputs: { value: "value", theme: "theme", autoFocus: "autoFocus", disabled: "disabled", indeterminate: "indeterminate", checked: "checked" }, outputs: { checkedChange: "checkedChange" }, exportAs: ["cmacsCheckboxV2"], features: [ɵɵProvidersFeature([
+    } }, inputs: { value: "value", theme: "theme", autoFocus: "autoFocus", disabled: "disabled", indeterminate: "indeterminate", checked: "checked" }, outputs: { checkedChange: "checkedChange" }, exportAs: ["cmacsCheckbox"], features: [ɵɵProvidersFeature([
             {
                 provide: NG_VALUE_ACCESSOR,
                 useExisting: forwardRef(() => CmacsCheckboxComponent),
@@ -235,8 +244,8 @@ __decorate([
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsCheckboxComponent, [{
         type: Component,
         args: [{
-                selector: '[cmacs-checkbox-v2]',
-                exportAs: 'cmacsCheckboxV2',
+                selector: '[cmacs-checkbox]',
+                exportAs: 'cmacsCheckbox',
                 preserveWhitespaces: false,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
@@ -350,13 +359,13 @@ class CmacsCheckboxGroupComponent {
     }
 }
 CmacsCheckboxGroupComponent.ɵfac = function CmacsCheckboxGroupComponent_Factory(t) { return new (t || CmacsCheckboxGroupComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(FocusMonitor), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(Directionality, 8)); };
-CmacsCheckboxGroupComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCheckboxGroupComponent, selectors: [["cmacs-checkbox-group-v2"]], inputs: { disabled: "disabled" }, exportAs: ["cmacsCheckboxGroupV2"], features: [ɵɵProvidersFeature([
+CmacsCheckboxGroupComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCheckboxGroupComponent, selectors: [["cmacs-checkbox-group"]], inputs: { disabled: "disabled" }, exportAs: ["cmacsCheckboxGroup"], features: [ɵɵProvidersFeature([
             {
                 provide: NG_VALUE_ACCESSOR,
                 useExisting: forwardRef(() => CmacsCheckboxGroupComponent),
                 multi: true
             }
-        ])], decls: 1, vars: 2, consts: [["cmacs-checkbox-v2", "", 3, "disabled", "checked", "checkedChange", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["cmacs-checkbox-v2", "", 3, "disabled", "checked", "checkedChange"]], template: function CmacsCheckboxGroupComponent_Template(rf, ctx) { if (rf & 1) {
+        ])], decls: 1, vars: 2, consts: [["cmacs-checkbox", "", 3, "disabled", "checked", "checkedChange", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["cmacs-checkbox", "", 3, "disabled", "checked", "checkedChange"]], template: function CmacsCheckboxGroupComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, CmacsCheckboxGroupComponent_label_0_Template, 3, 3, "label", 0);
     } if (rf & 2) {
         ɵɵproperty("ngForOf", ctx.options)("ngForTrackBy", ctx.trackByOption);
@@ -367,8 +376,8 @@ __decorate([
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsCheckboxGroupComponent, [{
         type: Component,
         args: [{
-                selector: 'cmacs-checkbox-group-v2',
-                exportAs: 'cmacsCheckboxGroupV2',
+                selector: 'cmacs-checkbox-group',
+                exportAs: 'cmacsCheckboxGroup',
                 preserveWhitespaces: false,
                 encapsulation: ViewEncapsulation.None,
                 templateUrl: './cmacs-checkbox-group.component.html',
@@ -516,7 +525,7 @@ CmacsButtonComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsButtonComponent, s
         ɵɵprojection(1);
     } if (rf & 2) {
         ɵɵproperty("ngIf", ctx.loading);
-    } }, directives: [NgIf, ɵNzTransitionPatchDirective], styles: [".ant-btn{font-size:14px;line-height:0;font-weight:400;height:34px;box-shadow:none;border-radius:3px;padding:0 14px}.ant-btn-primary{background-color:#2a7cff;border:1px solid #2a7cff}.ant-btn-primary:focus,.ant-btn-primary:hover{background-color:#2164c9;border-color:#2164c9}.ant-btn-primary[disabled],.ant-btn-primary[disabled]:focus,.ant-btn-primary[disabled]:hover{border:none;color:#97a0ae;background-color:#f3f3f4;cursor:default}.ant-btn-default{border:1px solid #bec4cd;color:#2a7cff}.ant-btn-default i,.ant-btn-primary i{font-size:16px;position:relative;height:16px;width:16px;vertical-align:middle;margin:2px}.ant-btn-default:not(.ant-btn-icon-only) i,.ant-btn-primary:not(.ant-btn-icon-only) i{margin-right:5px}.ant-btn-icon-only{vertical-align:unset!important}.ant-btn-default:focus,.ant-btn-default:hover{background-color:#f6f7fb;color:#2164c9;border:1px solid #bec4cd}.ant-btn-default[disabled],.ant-btn-default[disabled]:focus,.ant-btn-default[disabled]:hover{color:#97a0ae;background-color:#fff;border-color:#dee0e5;cursor:default}.ant-btn-background-ghost.ant-btn-default:enabled,.ant-btn-background-ghost.ant-btn-primary:enabled{color:#2a7cff;border:none}.ant-btn-background-ghost.ant-btn-default:enabled:focus,.ant-btn-background-ghost.ant-btn-default:enabled:hover,.ant-btn-background-ghost.ant-btn-primary:enabled:focus,.ant-btn-background-ghost.ant-btn-primary:enabled:hover{background-color:#f6f7fb!important;color:#2a7cff}.ant-btn-background-ghost:disabled{background-color:transparent!important;border:none}.ant-btn-icon-only i{color:#656c79}.ant-btn-icon-only,.ant-btn-icon-only:focus,.ant-btn-icon-only:hover{border:1px solid #dee0e5}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.ant-btn-icon-only:enabled:focus i,.ant-btn-icon-only:enabled:hover i{color:#2a7cff}.ant-btn-icon-only:not(.ant-btn-background-ghost),.ant-btn-icon-only:not(.ant-btn-background-ghost):focus,.ant-btn-icon-only:not(.ant-btn-background-ghost):hover{background-color:#fff}.ant-btn-icon-only:disabled{background-color:#f3f3f4!important;cursor:default}.ant-btn-icon-only:disabled span i{color:#97a0ae}.cmacs-btn-action{height:30px}.ant-btn:not(.ant-btn-circle):not(.ant-btn-circle-outline).ant-btn-icon-only.cmacs-btn-action{padding-right:4px;padding-left:4px}.ant-btn:not(.ant-btn-circle):not(.ant-btn-circle-outline).ant-btn-icon-only{padding-right:6px;padding-left:6px}.ant-btn-danger{color:#fff;background-color:#ff4d4f;border-color:#ff4d4f}.ant-btn-danger:hover{opacity:.8}"], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [NgIf, ɵNzTransitionPatchDirective, NzIconDirective], styles: [".ant-btn{font-size:14px;line-height:0;font-weight:400;height:34px;box-shadow:none;border-radius:3px;padding:0 14px}.ant-btn-primary{background-color:#2a7cff;border:1px solid #2a7cff}.ant-btn-primary:focus,.ant-btn-primary:hover{background-color:#2164c9;border-color:#2164c9}.ant-btn-primary[disabled],.ant-btn-primary[disabled]:focus,.ant-btn-primary[disabled]:hover{border:none;color:#97a0ae;background-color:#f3f3f4;cursor:default}.ant-btn-default{border:1px solid #bec4cd;color:#2a7cff}.ant-btn-default i,.ant-btn-primary i{font-size:16px;position:relative;height:16px;width:16px;vertical-align:middle;margin:2px}.ant-btn-default:not(.ant-btn-icon-only) i,.ant-btn-primary:not(.ant-btn-icon-only) i{margin-right:5px}.ant-btn-icon-only{vertical-align:unset!important}.ant-btn-default:focus,.ant-btn-default:hover{background-color:#f6f7fb;color:#2164c9;border:1px solid #bec4cd}.ant-btn-default[disabled],.ant-btn-default[disabled]:focus,.ant-btn-default[disabled]:hover{color:#97a0ae;background-color:#fff;border-color:#dee0e5;cursor:default}.ant-btn-background-ghost.ant-btn-default:enabled,.ant-btn-background-ghost.ant-btn-primary:enabled{color:#2a7cff;border:none}.ant-btn-background-ghost.ant-btn-default:enabled:focus,.ant-btn-background-ghost.ant-btn-default:enabled:hover,.ant-btn-background-ghost.ant-btn-primary:enabled:focus,.ant-btn-background-ghost.ant-btn-primary:enabled:hover{background-color:#f6f7fb!important;color:#2a7cff}.ant-btn-background-ghost:disabled{background-color:transparent!important;border:none}.ant-btn-icon-only i{color:#656c79}.ant-btn-icon-only,.ant-btn-icon-only:focus,.ant-btn-icon-only:hover{border:1px solid #dee0e5}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.ant-btn-icon-only:enabled:focus i,.ant-btn-icon-only:enabled:hover i{color:#2a7cff}.ant-btn-icon-only:not(.ant-btn-background-ghost),.ant-btn-icon-only:not(.ant-btn-background-ghost):focus,.ant-btn-icon-only:not(.ant-btn-background-ghost):hover{background-color:#fff}.ant-btn-icon-only:disabled{background-color:#f3f3f4!important;cursor:default}.ant-btn-icon-only:disabled span i{color:#97a0ae}.cmacs-btn-action{height:30px}.ant-btn:not(.ant-btn-circle):not(.ant-btn-circle-outline).ant-btn-icon-only.cmacs-btn-action{padding-right:4px;padding-left:4px}.ant-btn:not(.ant-btn-circle):not(.ant-btn-circle-outline).ant-btn-icon-only{padding-right:6px;padding-left:6px}.ant-btn-danger{color:#fff;background-color:#ff4d4f;border-color:#ff4d4f}.ant-btn-danger:hover{opacity:.8}"], encapsulation: 2, changeDetection: 0 });
 __decorate([
     InputBoolean()
 ], CmacsButtonComponent.prototype, "block", void 0);
@@ -1724,7 +1733,7 @@ CmacsSliderComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSliderComponent, s
         ɵɵproperty("ngForOf", ctx.handles);
         ɵɵadvance(1);
         ɵɵproperty("ngIf", ctx.marksArray);
-    } }, directives: [CmacsSliderTrackComponent, NgIf, NgForOf, CmacsSliderStepComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent], styles: [".ant-slider-rail{height:3px;border-radius:100px;background-color:#cfd3d9}"], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [CmacsSliderTrackComponent, Dir, NgIf, NgForOf, CmacsSliderStepComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent], styles: [".ant-slider-rail{height:3px;border-radius:100px;background-color:#cfd3d9}"], encapsulation: 2, changeDetection: 0 });
 __decorate([
     InputBoolean()
 ], CmacsSliderComponent.prototype, "disabled", void 0);
@@ -3103,7 +3112,7 @@ CmacsSelectTopControlComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSelectTo
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputElement = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputElementCustom = _t.first);
-    } }, inputs: { searchValue: "searchValue", nzShowSearch: "nzShowSearch", showCustomSearch: "showCustomSearch", showCmacsSearch: "showCmacsSearch", nzPlaceHolder: "nzPlaceHolder", tagsOut: "tagsOut", nzOpen: "nzOpen", cmacsOpen: "cmacsOpen", cmacsEditable: "cmacsEditable", action: "action", nzMaxTagCount: "nzMaxTagCount", nzAllowClear: "nzAllowClear", nzShowArrow: "nzShowArrow", nzLoading: "nzLoading", nzSuffixIcon: "nzSuffixIcon", nzClearIcon: "nzClearIcon", nzRemoveIcon: "nzRemoveIcon", userDropdown: "userDropdown", nzMaxTagPlaceholder: "nzMaxTagPlaceholder", nzTokenSeparators: "nzTokenSeparators" }, exportAs: ["cmacsSelectTopControl"], features: [ɵɵNgOnChangesFeature], attrs: _c2$3, decls: 13, vars: 7, consts: [["inputTemplate", ""], ["customInputTemplate", ""], ["class", "ant-select-arrow cmacs-search-search-icon", "cmacs-select-unselectable", "", 4, "ngIf"], [1, "ant-select-selection__rendered"], ["cmacs-select-unselectable", "", "class", "ant-select-selection__placeholder", 3, "display", 4, "ngIf"], [4, "ngIf"], ["class", "ant-select-selection__clear", "cmacs-select-unselectable", "", 3, "ant-select-selection__clear-search", "mousedown", "click", 4, "ngIf"], ["class", "ant-select-arrow cmacs-search-arrow-right", "cmacs-select-unselectable", "", 3, "cmacs-selected-nodes", 4, "ngIf", "ngIfElse"], ["notCustomArrow", ""], ["autocomplete", "something-new", 1, "ant-select-search__field", 3, "ngStyle", "ngModel", "disabled", "compositionstart", "compositionend", "input", "ngModelChange"], ["inputElement", ""], ["inputElementCustom", ""], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-search-search-icon"], [1, "iconCreation-Search"], ["cmacs-select-unselectable", "", 1, "ant-select-selection__placeholder"], ["class", "ant-select-selection-selected-value", 3, "ngStyle", 4, "ngIf"], ["class", "ant-select-search ant-select-search--inline", 3, "display", 4, "ngIf"], [1, "ant-select-selection-selected-value", 3, "ngStyle"], [1, "ant-select-search", "ant-select-search--inline"], [1, "ant-select-search__field__wrap"], [3, "ngTemplateOutlet"], [1, "ant-select-search__field__mirror"], [4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-selection__choice", 3, "nzNoAnimation", 4, "ngIf"], [1, "ant-select-selection__choice", 3, "nzNoAnimation"], [1, "ant-select-selection__choice__content"], ["class", "ant-select-selection__choice__remove", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__choice__remove", 3, "mousedown", "click"], ["nz-icon", "", "type", "close", "class", "ant-select-remove-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "type", "close", 1, "ant-select-remove-icon"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-select-unselectable", "", 1, "ant-select-selection__clear", 3, "mousedown", "click"], ["nz-icon", "", "type", "close-circle", "theme", "fill", "class", "ant-select-close-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "type", "close-circle", "theme", "fill", 1, "ant-select-close-icon"], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-search-arrow-right"], [1, "iconArrowLarge-Arrow-Right"], ["class", "ant-select-arrow cmacs-dropdown-arrow", "cmacs-select-unselectable", "", 3, "cmacs-select-action", 4, "ngIf"], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-dropdown-arrow"], ["nz-icon", "", "type", "loading", 4, "ngIf", "ngIfElse"], ["defaultArrow", ""], ["nz-icon", "", "type", "loading"], ["nz-icon", "", "type", "down", "class", "ant-select-arrow-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "type", "down", 1, "ant-select-arrow-icon"]], template: function CmacsSelectTopControlComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { searchValue: "searchValue", nzShowSearch: "nzShowSearch", showCustomSearch: "showCustomSearch", showCmacsSearch: "showCmacsSearch", nzPlaceHolder: "nzPlaceHolder", tagsOut: "tagsOut", nzOpen: "nzOpen", cmacsOpen: "cmacsOpen", cmacsEditable: "cmacsEditable", action: "action", nzMaxTagCount: "nzMaxTagCount", nzAllowClear: "nzAllowClear", nzShowArrow: "nzShowArrow", nzLoading: "nzLoading", nzSuffixIcon: "nzSuffixIcon", nzClearIcon: "nzClearIcon", nzRemoveIcon: "nzRemoveIcon", userDropdown: "userDropdown", nzMaxTagPlaceholder: "nzMaxTagPlaceholder", nzTokenSeparators: "nzTokenSeparators" }, exportAs: ["cmacsSelectTopControl"], features: [ɵɵNgOnChangesFeature], attrs: _c2$3, decls: 13, vars: 7, consts: [["inputTemplate", ""], ["customInputTemplate", ""], ["class", "ant-select-arrow cmacs-search-search-icon", "cmacs-select-unselectable", "", 4, "ngIf"], [1, "ant-select-selection__rendered"], ["cmacs-select-unselectable", "", "class", "ant-select-selection__placeholder", 3, "display", 4, "ngIf"], [4, "ngIf"], ["class", "ant-select-selection__clear", "cmacs-select-unselectable", "", 3, "ant-select-selection__clear-search", "mousedown", "click", 4, "ngIf"], ["class", "ant-select-arrow cmacs-search-arrow-right", "cmacs-select-unselectable", "", 3, "cmacs-selected-nodes", 4, "ngIf", "ngIfElse"], ["notCustomArrow", ""], ["autocomplete", "something-new", 1, "ant-select-search__field", 3, "ngStyle", "ngModel", "disabled", "compositionstart", "compositionend", "input", "ngModelChange"], ["inputElement", ""], ["inputElementCustom", ""], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-search-search-icon"], [1, "iconCreation-Search"], ["cmacs-select-unselectable", "", 1, "ant-select-selection__placeholder"], ["class", "ant-select-selection-selected-value", 3, "ngStyle", 4, "ngIf"], ["class", "ant-select-search ant-select-search--inline", 3, "display", 4, "ngIf"], [1, "ant-select-selection-selected-value", 3, "ngStyle"], [1, "ant-select-search", "ant-select-search--inline"], [1, "ant-select-search__field__wrap"], [3, "ngTemplateOutlet"], [1, "ant-select-search__field__mirror"], [4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-selection__choice", 3, "nzNoAnimation", 4, "ngIf"], [1, "ant-select-selection__choice", 3, "nzNoAnimation"], [1, "ant-select-selection__choice__content"], ["class", "ant-select-selection__choice__remove", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__choice__remove", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close", "class", "ant-select-remove-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close", 1, "ant-select-remove-icon"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-select-unselectable", "", 1, "ant-select-selection__clear", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close-circle", "theme", "fill", "class", "ant-select-close-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close-circle", "theme", "fill", 1, "ant-select-close-icon"], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-search-arrow-right"], [1, "iconArrowLarge-Arrow-Right"], ["class", "ant-select-arrow cmacs-dropdown-arrow", "cmacs-select-unselectable", "", 3, "cmacs-select-action", 4, "ngIf"], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-dropdown-arrow"], ["nz-icon", "", "nzType", "loading", 4, "ngIf", "ngIfElse"], ["defaultArrow", ""], ["nz-icon", "", "nzType", "loading"], ["nz-icon", "", "nzType", "down", "class", "ant-select-arrow-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "down", 1, "ant-select-arrow-icon"]], template: function CmacsSelectTopControlComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, CmacsSelectTopControlComponent_ng_template_0_Template, 2, 5, "ng-template", null, 0, ɵɵtemplateRefExtractor);
         ɵɵtemplate(2, CmacsSelectTopControlComponent_ng_template_2_Template, 2, 5, "ng-template", null, 1, ɵɵtemplateRefExtractor);
         ɵɵtemplate(4, CmacsSelectTopControlComponent_span_4_Template, 2, 0, "span", 2);
@@ -3129,7 +3138,7 @@ CmacsSelectTopControlComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSelectTo
         ɵɵproperty("ngIf", ctx.nzAllowClear && ctx.nzSelectService.listOfSelectedValue.length && !ctx.userDropdown);
         ɵɵadvance(1);
         ɵɵproperty("ngIf", ctx.showCustomSearch)("ngIfElse", _r10);
-    } }, directives: [NgIf, DefaultValueAccessor, NgStyle, NgControlStatus, NgModel, CmacsSelectUnselectableDirective, NgTemplateOutlet, NgForOf, ɵNzTransitionPatchDirective], pipes: [SlicePipe], styles: [".cmacs-select-action{border-left:1px solid #dee0e5}.ant-select-selection__rendered{margin-right:35px}.ant-select-selection--multiple .ant-select-arrow.cmacs-select-action:hover{padding:8px 10px 8px 11px;right:1px;top:7px!important}.ant-select-selection__rendered:hover .cmacs-select-action,.cmacs-select-action:hover{background-color:#f6f7fb}.cmacs-search-search-icon{left:11px;font-size:16px;top:14px}.cmacs-search-arrow-right,.cmacs-search-search-icon{right:unset;z-index:unset;opacity:1!important;margin-left:unset;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.cmacs-search-arrow-right{font-size:27px;top:7px!important;left:calc(100% - 43px);border-left:1px solid #dee0e5;padding:0 5px}cmacs-select:not(.ant-select-disabled) .cmacs-dropdown-arrow{cursor:pointer}cmacs-select .cmacs-dropdown-arrow{right:0;top:6px;padding:9px 11px}.ant-select-selection .ant-select-selection__clear{right:10px;top:12px!important;line-height:1.5}.ant-select-selection--multiple .ant-select-arrow,.ant-select-selection--multiple .ant-select-selection__clear{top:6px}.ant-select-selection:hover .cmacs-selected-nodes .iconArrowLarge-Arrow-Right:before{opacity:0}.ant-select-selection__clear-search{right:15px}.ant-select-search--inline .ant-select-search__field{max-width:94%}.ant-select-selection--multiple .ant-select-search--inline .ant-select-search__field.cmacs-select-selection-not-empty{padding-left:0!important}.ant-select-selection--single{height:34px}.ant-select-selection--single .ant-select-selection__rendered{line-height:32px}.cmacs-invisible{opacity:0}"], encapsulation: 2, data: { animation: [zoomMotion] }, changeDetection: 0 });
+    } }, directives: [NgIf, DefaultValueAccessor, NgStyle, NgControlStatus, NgModel, CmacsSelectUnselectableDirective, NgTemplateOutlet, NgForOf, NzNoAnimationDirective, ɵNzTransitionPatchDirective, NzIconDirective], pipes: [SlicePipe], styles: [".cmacs-select-action{border-left:1px solid #dee0e5}.ant-select-selection__rendered{margin-right:35px}.ant-select-selection--multiple .ant-select-arrow.cmacs-select-action:hover{padding:8px 10px 8px 11px;right:1px;top:7px!important}.ant-select-selection__rendered:hover .cmacs-select-action,.cmacs-select-action:hover{background-color:#f6f7fb}.cmacs-search-search-icon{left:11px;font-size:16px;top:14px}.cmacs-search-arrow-right,.cmacs-search-search-icon{right:unset;z-index:unset;opacity:1!important;margin-left:unset;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.cmacs-search-arrow-right{font-size:27px;top:7px!important;left:calc(100% - 43px);border-left:1px solid #dee0e5;padding:0 5px}cmacs-select:not(.ant-select-disabled) .cmacs-dropdown-arrow{cursor:pointer}cmacs-select .cmacs-dropdown-arrow{right:0;top:6px;padding:9px 11px}.ant-select-selection .ant-select-selection__clear{right:10px;top:12px!important;line-height:1.5}.ant-select-selection--multiple .ant-select-arrow,.ant-select-selection--multiple .ant-select-selection__clear{top:6px}.ant-select-selection:hover .cmacs-selected-nodes .iconArrowLarge-Arrow-Right:before{opacity:0}.ant-select-selection__clear-search{right:15px}.ant-select-search--inline .ant-select-search__field{max-width:94%}.ant-select-selection--multiple .ant-select-search--inline .ant-select-search__field.cmacs-select-selection-not-empty{padding-left:0!important}.ant-select-selection--single{height:34px}.ant-select-selection--single .ant-select-selection__rendered{line-height:32px}.cmacs-invisible{opacity:0}"], encapsulation: 2, data: { animation: [zoomMotion] }, changeDetection: 0 });
 __decorate([
     InputBoolean()
 ], CmacsSelectTopControlComponent.prototype, "userDropdown", void 0);
@@ -3360,14 +3369,14 @@ CmacsOptionLiComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsOptionLiComponen
         ɵɵattribute("unselectable", "unselectable");
         ɵɵstyleProp("user-select", "none");
         ɵɵclassProp("ant-select-dropdown-menu-item-selected", ctx.selected && !ctx.nzOption.nzDisabled)("ant-select-dropdown-menu-item-disabled", ctx.nzOption.nzDisabled)("ant-select-dropdown-menu-item-active", ctx.active && !ctx.nzOption.nzDisabled)("cmacs-select-dropdown-menu-item-divider", ctx.nzOption.divider);
-    } }, inputs: { nzOption: "nzOption", nzMenuItemSelectedIcon: "nzMenuItemSelectedIcon" }, exportAs: ["cmacsOptionLi"], attrs: _c0$b, decls: 2, vars: 3, consts: [[4, "ngIf", "ngIfElse"], [4, "ngIf"], [2, "color", "#2a7cff"], [1, "cmacs-select-divider"], ["nz-icon", "", "type", "check", "class", "ant-select-selected-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "type", "check", 1, "ant-select-selected-icon"]], template: function CmacsOptionLiComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzOption: "nzOption", nzMenuItemSelectedIcon: "nzMenuItemSelectedIcon" }, exportAs: ["cmacsOptionLi"], attrs: _c0$b, decls: 2, vars: 3, consts: [[4, "ngIf", "ngIfElse"], [4, "ngIf"], [2, "color", "#2a7cff"], [1, "cmacs-select-divider"], ["nz-icon", "", "nzType", "check", "class", "ant-select-selected-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "check", 1, "ant-select-selected-icon"]], template: function CmacsOptionLiComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, CmacsOptionLiComponent_ng_container_0_Template, 4, 3, "ng-container", 0);
         ɵɵtemplate(1, CmacsOptionLiComponent_ng_container_1_Template, 2, 2, "ng-container", 1);
     } if (rf & 2) {
         ɵɵproperty("ngIf", !ctx.nzOption.nzCustomContent)("ngIfElse", ctx.nzOption.template);
         ɵɵadvance(1);
         ɵɵproperty("ngIf", ctx.nzSelectService.isMultipleOrTags);
-    } }, directives: [NgIf, ɵNzTransitionPatchDirective], styles: [".cmacs-select-divider{font-family:Roboto,Roboto-Regular;font-size:11px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.5;letter-spacing:normal;color:#fff;background-color:#2a7cff;padding:0 3px;width:-webkit-max-content;width:-moz-max-content;width:max-content;display:inline-flex;right:0;position:absolute;top:0}"], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [NgIf, ɵNzTransitionPatchDirective, NzIconDirective], styles: [".cmacs-select-divider{font-family:Roboto,Roboto-Regular;font-size:11px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.5;letter-spacing:normal;color:#fff;background-color:#2a7cff;padding:0 3px;width:-webkit-max-content;width:-moz-max-content;width:max-content;display:inline-flex;right:0;position:absolute;top:0}"], encapsulation: 2, changeDetection: 0 });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsOptionLiComponent, [{
         type: Component,
         args: [{
@@ -3464,7 +3473,7 @@ function CmacsOptionContainerComponent_li_4_nz_embed_empty_2_Template(rf, ctx) {
     ɵɵelement(0, "nz-embed-empty", 25);
 } if (rf & 2) {
     const ctx_r19 = ɵɵnextContext(2);
-    ɵɵproperty("nzComponentName", "select")("specificContent", ctx_r19.nzNotFoundContent);
+    ɵɵproperty("nzComponentName", "select")("specificContent", ctx_r19.notFoundContent);
 } }
 function CmacsOptionContainerComponent_li_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "li", 22);
@@ -3652,15 +3661,15 @@ class CmacsOptionContainerComponent {
 }
 CmacsOptionContainerComponent.ɵfac = function CmacsOptionContainerComponent_Factory(t) { return new (t || CmacsOptionContainerComponent)(ɵɵdirectiveInject(CmacsSelectService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(NzI18nService)); };
 CmacsOptionContainerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsOptionContainerComponent, selectors: [["", "cmacs-option-container", ""]], viewQuery: function CmacsOptionContainerComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵviewQuery(_c0$c, 1);
-        ɵɵviewQuery(_c1$4, 1);
+        ɵɵviewQuery(_c0$c, 3);
+        ɵɵviewQuery(_c1$4, 3);
         ɵɵviewQuery(CmacsOptionLiComponent, 1);
     } if (rf & 2) {
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.dropdownUl = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputElement = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfNzOptionLiComponent = _t);
-    } }, inputs: { nzNotFoundContent: "nzNotFoundContent", notFoundContentShow: "notFoundContentShow", userDropdown: "userDropdown", showSearch: "showSearch", showSelectAll: "showSelectAll", selectAllLabel: "selectAllLabel", searchLabel: "searchLabel", showCmacsSearch: "showCmacsSearch", nzMenuItemSelectedIcon: "nzMenuItemSelectedIcon", notFoundContentCustom: "notFoundContentCustom" }, outputs: { nzScrollToBottom: "nzScrollToBottom", onSearch: "onSearch" }, exportAs: ["cmacsOptionContainer"], attrs: _c2$4, decls: 12, vars: 25, consts: [["role", "menu", "tabindex", "0", 1, "ant-select-dropdown-menu", "ant-select-dropdown-menu-root", "cmacs-custom-scrollbar", "ant-select-dropdown-menu-vertical"], ["dropdownUl", ""], ["class", "ant-select-dropdown-menu-item cmacs-select-search", 4, "ngIf"], ["class", "ant-select-dropdown-menu-item", 3, "ant-select-dropdown-menu-item-selected", "click", 4, "ngIf"], ["cmacs-select-unselectable", "", "class", "ant-select-dropdown-menu-item ant-select-dropdown-menu-item-disabled", 3, "cmacs-not-found-custom", 4, "ngIf"], ["cmacs-option-li", "", 3, "nzMenuItemSelectedIcon", "nzOption", 4, "ngIf"], ["cmacs-option-li", "", 3, "nzMenuItemSelectedIcon", "nzOption", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-dropdown-menu-item-group", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-select-dropdown-menu-item", "cmacs-select-search"], [1, "ant-select-search__field__wrap"], [3, "ngTemplateOutlet"], [1, "ant-select-search__field__mirror"], ["inputTemplate", ""], ["nz-icon", "", "type", "search", 1, "cmacs-select-search-icon"], ["autocomplete", "something-new", 1, "cmacs-select-search-input", 3, "placeholder", "ngModel", "ngModelChange"], ["inputElement", ""], [1, "ant-select-dropdown-menu-item", 3, "click"], [2, "color", "#656c79 !important"], ["nz-icon", "", "type", "check", "class", "ant-select-selected-icon", 4, "ngIf"], ["class", "ant-select-selected-icon cmacs-indeterminate-selection", 4, "ngIf"], ["nz-icon", "", "type", "check", 1, "ant-select-selected-icon"], [1, "ant-select-selected-icon", "cmacs-indeterminate-selection"], ["cmacs-select-unselectable", "", 1, "ant-select-dropdown-menu-item", "ant-select-dropdown-menu-item-disabled"], [3, "ngTemplateOutlet", 4, "ngIf"], [3, "nzComponentName", "specificContent", 4, "ngIf"], [3, "nzComponentName", "specificContent"], ["cmacs-option-li", "", 3, "nzMenuItemSelectedIcon", "nzOption"], [1, "ant-select-dropdown-menu-item-group"], [1, "ant-select-dropdown-menu-item-group-title"], [4, "cmacsStringTemplateOutlet"], [1, "ant-select-dropdown-menu-item-group-list"]], template: function CmacsOptionContainerComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzNotFoundContent: "nzNotFoundContent", notFoundContentShow: "notFoundContentShow", userDropdown: "userDropdown", showSearch: "showSearch", showSelectAll: "showSelectAll", selectAllLabel: "selectAllLabel", searchLabel: "searchLabel", showCmacsSearch: "showCmacsSearch", nzMenuItemSelectedIcon: "nzMenuItemSelectedIcon", notFoundContentCustom: "notFoundContentCustom" }, outputs: { nzScrollToBottom: "nzScrollToBottom", onSearch: "onSearch" }, exportAs: ["cmacsOptionContainer"], attrs: _c2$4, decls: 12, vars: 25, consts: [["role", "menu", "tabindex", "0", 1, "ant-select-dropdown-menu", "ant-select-dropdown-menu-root", "cmacs-custom-scrollbar", "ant-select-dropdown-menu-vertical"], ["dropdownUl", ""], ["class", "ant-select-dropdown-menu-item cmacs-select-search", 4, "ngIf"], ["class", "ant-select-dropdown-menu-item", 3, "ant-select-dropdown-menu-item-selected", "click", 4, "ngIf"], ["cmacs-select-unselectable", "", "class", "ant-select-dropdown-menu-item ant-select-dropdown-menu-item-disabled", 3, "cmacs-not-found-custom", 4, "ngIf"], ["cmacs-option-li", "", 3, "nzMenuItemSelectedIcon", "nzOption", 4, "ngIf"], ["cmacs-option-li", "", 3, "nzMenuItemSelectedIcon", "nzOption", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-dropdown-menu-item-group", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-select-dropdown-menu-item", "cmacs-select-search"], [1, "ant-select-search__field__wrap"], [3, "ngTemplateOutlet"], [1, "ant-select-search__field__mirror"], ["inputTemplate", ""], ["nz-icon", "", "nzType", "search", 1, "cmacs-select-search-icon"], ["autocomplete", "something-new", 1, "cmacs-select-search-input", 3, "placeholder", "ngModel", "ngModelChange"], ["inputElement", ""], [1, "ant-select-dropdown-menu-item", 3, "click"], [2, "color", "#656c79 !important"], ["nz-icon", "", "nzType", "check", "class", "ant-select-selected-icon", 4, "ngIf"], ["class", "ant-select-selected-icon cmacs-indeterminate-selection", 4, "ngIf"], ["nz-icon", "", "nzType", "check", 1, "ant-select-selected-icon"], [1, "ant-select-selected-icon", "cmacs-indeterminate-selection"], ["cmacs-select-unselectable", "", 1, "ant-select-dropdown-menu-item", "ant-select-dropdown-menu-item-disabled"], [3, "ngTemplateOutlet", 4, "ngIf"], [3, "nzComponentName", "specificContent", 4, "ngIf"], [3, "nzComponentName", "specificContent"], ["cmacs-option-li", "", 3, "nzMenuItemSelectedIcon", "nzOption"], [1, "ant-select-dropdown-menu-item-group"], [1, "ant-select-dropdown-menu-item-group-title"], [4, "cmacsStringTemplateOutlet"], [1, "ant-select-dropdown-menu-item-group-list"]], template: function CmacsOptionContainerComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "ul", 0, 1);
         ɵɵtemplate(2, CmacsOptionContainerComponent_li_2_Template, 7, 2, "li", 2);
         ɵɵtemplate(3, CmacsOptionContainerComponent_li_3_Template, 5, 5, "li", 3);
@@ -3688,7 +3697,7 @@ CmacsOptionContainerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsOptionCon
         ɵɵproperty("ngForOf", ɵɵpipeBind4(9, 15, ctx.nzSelectService.listOfNzOptionGroupComponent, ctx.nzSelectService.searchValue, ctx.nzSelectService.filterOption, ctx.nzSelectService.serverSearch))("ngForTrackBy", ctx.trackLabel);
         ɵɵadvance(2);
         ɵɵproperty("ngForOf", ɵɵpipeBind4(11, 20, ctx.nzSelectService.listOfTagOption, ctx.nzSelectService.searchValue, ctx.nzSelectService.filterOption, ctx.nzSelectService.serverSearch))("ngForTrackBy", ctx.trackValue);
-    } }, directives: [NgIf, NgForOf, NgTemplateOutlet, ɵNzTransitionPatchDirective, DefaultValueAccessor, NgControlStatus, NgModel, CmacsSelectUnselectableDirective, CmacsOptionLiComponent], pipes: [NzFilterOptionPipe, NzFilterGroupOptionPipe], styles: [".cmacs-indeterminate-selection{position:relative;top:0;left:0;display:block;width:18px;height:18px;background-color:#fff;border:1px solid #d9d9d9;border-collapse:separate;transition:all .3s}.cmacs-indeterminate-selection:after{position:absolute;display:table;top:50%;left:50%;width:12px;height:12px;background-color:#2a7cff;border:0;transform:translate(-50%,-50%) scale(1);opacity:1;content:\" \";transition:all .1s cubic-bezier(.71,-.46,.88,.6),opacity .1s}.cmacs-not-found-custom,.cmacs-not-found-custom:hover{background-color:#fff;padding:0}"], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [NgIf, NgForOf, NgTemplateOutlet, ɵNzTransitionPatchDirective, NzIconDirective, DefaultValueAccessor, NgControlStatus, NgModel, CmacsSelectUnselectableDirective, NzEmbedEmptyComponent, CmacsOptionLiComponent], pipes: [NzFilterOptionPipe, NzFilterGroupOptionPipe], styles: [".cmacs-indeterminate-selection{position:relative;top:0;left:0;display:block;width:18px;height:18px;background-color:#fff;border:1px solid #d9d9d9;border-collapse:separate;transition:all .3s}.cmacs-indeterminate-selection:after{position:absolute;display:table;top:50%;left:50%;width:12px;height:12px;background-color:#2a7cff;border:0;transform:translate(-50%,-50%) scale(1);opacity:1;content:\" \";transition:all .1s cubic-bezier(.71,-.46,.88,.6),opacity .1s}.cmacs-not-found-custom,.cmacs-not-found-custom:hover{background-color:#fff;padding:0}"], encapsulation: 2, changeDetection: 0 });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsOptionContainerComponent, [{
         type: Component,
         args: [{
@@ -3705,10 +3714,10 @@ CmacsOptionContainerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsOptionCon
             args: [CmacsOptionLiComponent]
         }], dropdownUl: [{
             type: ViewChild,
-            args: ['dropdownUl']
+            args: ['dropdownUl', { static: true }]
         }], inputElement: [{
             type: ViewChild,
-            args: ['inputElement']
+            args: ['inputElement', { static: true }]
         }], nzNotFoundContent: [{
             type: Input
         }], notFoundContentShow: [{
@@ -4197,7 +4206,7 @@ CmacsSelectComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSelectComponent, s
                 useExisting: forwardRef(() => CmacsSelectComponent),
                 multi: true
             }
-        ])], ngContentSelectors: _c1$5, decls: 6, vars: 32, consts: [["cdkOverlayOrigin", "", "cmacs-select-top-control", "", "tabindex", "0", 1, "ant-select-selection", 3, "nzOpen", "searchValue", "nzMaxTagPlaceholder", "nzPlaceHolder", "nzAllowClear", "nzMaxTagCount", "nzShowArrow", "nzLoading", "cmacsOpen", "cmacsEditable", "nzSuffixIcon", "nzClearIcon", "userDropdown", "tagsOut", "action", "nzRemoveIcon", "nzShowSearch", "showCmacsSearch", "showCustomSearch", "nzTokenSeparators", "keydown"], [4, "ngIf"], ["content", ""], [4, "ngTemplateOutlet"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayMinWidth", "cdkConnectedOverlayWidth", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "backdropClick", "detach", "positionChange"], [1, "ant-select-dropdown", "cmacs-custom-scrollbar", 3, "ngStyle"], ["cmacs-option-container", "", 2, "overflow", "auto", "transform", "translateZ(0px)", "scrollbar-color", "#cfd3d9 #ffffff", "scrollbar-width", "thin", 3, "showSearch", "showSelectAll", "notFoundContentShow", "notFoundContentCustom", "userDropdown", "selectAllLabel", "showCmacsSearch", "nzMenuItemSelectedIcon", "nzNotFoundContent", "onSearch", "keydown", "nzScrollToBottom"], [3, "ngTemplateOutlet"], ["class", "ant-select-selection--multiple cmacs-tags-out", "style", "padding-top: 15px;", 4, "ngIf"], [1, "ant-select-selection--multiple", "cmacs-tags-out", 2, "padding-top", "15px"], [1, "ant-select-selection__rendered", "cmacs-select-selection__rendered"], [4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-selection__choice", 4, "ngIf"], [1, "ant-select-selection__choice"], [1, "ant-select-selection__choice__content"], ["class", "ant-select-selection__choice__remove", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__choice__remove", 3, "mousedown", "click"], ["nz-icon", "", "type", "close", "class", "ant-select-remove-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "type", "close", 1, "ant-select-remove-icon"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function CmacsSelectComponent_Template(rf, ctx) { if (rf & 1) {
+        ])], ngContentSelectors: _c1$5, decls: 6, vars: 32, consts: [["cdkOverlayOrigin", "", "cmacs-select-top-control", "", "tabindex", "0", 1, "ant-select-selection", 3, "nzOpen", "searchValue", "nzMaxTagPlaceholder", "nzPlaceHolder", "nzAllowClear", "nzMaxTagCount", "nzShowArrow", "nzLoading", "cmacsOpen", "cmacsEditable", "nzSuffixIcon", "nzClearIcon", "userDropdown", "tagsOut", "action", "nzRemoveIcon", "nzShowSearch", "showCmacsSearch", "showCustomSearch", "nzTokenSeparators", "keydown"], [4, "ngIf"], ["content", ""], [4, "ngTemplateOutlet"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayMinWidth", "cdkConnectedOverlayWidth", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "backdropClick", "detach", "positionChange"], [1, "ant-select-dropdown", "cmacs-custom-scrollbar", 3, "ngStyle"], ["cmacs-option-container", "", 2, "overflow", "auto", "transform", "translateZ(0px)", "scrollbar-color", "#cfd3d9 #ffffff", "scrollbar-width", "thin", 3, "showSearch", "showSelectAll", "notFoundContentShow", "notFoundContentCustom", "userDropdown", "selectAllLabel", "showCmacsSearch", "nzMenuItemSelectedIcon", "nzNotFoundContent", "onSearch", "keydown", "nzScrollToBottom"], [3, "ngTemplateOutlet"], ["class", "ant-select-selection--multiple cmacs-tags-out", "style", "padding-top: 15px;", 4, "ngIf"], [1, "ant-select-selection--multiple", "cmacs-tags-out", 2, "padding-top", "15px"], [1, "ant-select-selection__rendered", "cmacs-select-selection__rendered"], [4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-selection__choice", 4, "ngIf"], [1, "ant-select-selection__choice"], [1, "ant-select-selection__choice__content"], ["class", "ant-select-selection__choice__remove", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__choice__remove", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close", "class", "ant-select-remove-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close", 1, "ant-select-remove-icon"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function CmacsSelectComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵelementStart(0, "div", 0);
         ɵɵlistener("keydown", function CmacsSelectComponent_Template_div_keydown_0_listener($event) { return ctx.onKeyDown($event); });
@@ -4213,7 +4222,7 @@ CmacsSelectComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSelectComponent, s
         ɵɵproperty("ngIf", ctx.open);
         ɵɵadvance(1);
         ɵɵproperty("ngIf", !ctx.open);
-    } }, directives: [CmacsSelectTopControlComponent, NgIf, NgTemplateOutlet, NgStyle, CmacsOptionContainerComponent, NgForOf, ɵNzTransitionPatchDirective], pipes: [SlicePipe], styles: [".cmacs-tags-out{padding-top:15px;font-size:12px;font-family:Roboto-Regular}.cmacs-select-dropdown-menu-item-divider{border-top:1px solid #2a7cff!important}.ant-select{width:inherit}.ant-select-dropdown-menu-item-disabled{color:rgba(0,0,0,.25)!important}.cmacs-select-dropdown{box-shadow:none;border-bottom:1px solid #dee0e5;border-right:1px solid #dee0e5;border-left:1px solid #dee0e5;border-radius:0 0 3px 3px;z-index:unset}.cmacs-select-selection .ant-select-open .ant-select-arrow-icon svg{transform:unset!important}.cmacs-select-selection,.cmacs-select-selection:focus,.cmacs-select-selection:hover{border:1px solid #dee0e5!important;border-radius:3px 3px 0 0!important}.cmacs-select-selection .ant-select-arrow{top:15px}.ant-select-selection{border:1px solid #dee0e5;border-radius:3px}.ant-select-selection:focus-within,.ant-select-selection:hover{border:1px solid #bec4cd;text-shadow:none}.ant-select-open .ant-select-selection,.ant-select-open .ant-select-selection:focus,.ant-select-open .ant-select-selection:focus-within,.ant-select-open .ant-select-selection:hover{border-color:#dee0e5;box-shadow:0 3px 7px rgba(59,63,70,.2);border-radius:3px 3px 0 0}.cmacs-select-selection--multiple .ant-select-search--inline .ant-select-search__field{margin-left:6px!important}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon{color:transparent}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{color:#2a7cff!important;padding:2px;border:1px solid #dee0e5}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{border-color:#2a7cff}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{padding:2px;border:1px solid #dee0e5}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon:hover{color:transparent}.ant-select-dropdown-menu-item-active,.ant-select-dropdown-menu-item:hover{background-color:#f6f7fb}.ant-select-dropdown{margin-bottom:0;border:1px solid #dee0e5;margin-top:-1px;box-shadow:0 3px 7px rgba(59,63,70,.2);border-radius:0 0 3px 3px}.ant-select-dropdown-menu-item:first-child{border-top:none}.ant-select-dropdown-menu-item{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79;border-top:1px solid #dee0e5;padding:7px 14px}.ant-select-dropdown.cmacs-select-user-dropdown .ant-select-dropdown-menu-item{border-top:none}.ant-select-selection--multiple .ant-select-selection__rendered>ul>li{font-size:14px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79}.ant-select-selection:focus{box-shadow:none;border:1px solid #bec4cd}.ant-select-selection--multiple .ant-select-selection__choice__remove>*{line-height:2.2}.ant-select-selection__placeholder{margin-left:0}.ant-select-selection-selected-value{padding-left:0}.ant-select-dropdown-menu-item-selected{color:#2a7cff!important}.ant-select-dropdown-menu-item-selected,.ant-select-dropdown-menu-item-selected:hover{color:#2a7cff}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item{padding-right:12px;padding-left:42px}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{left:12px;right:unset}.cmacs-select-search-input{width:100%;border:none;outline:none;padding:0 10px 0 6px}.cmacs-select-search-input::-moz-placeholder{color:#acb3bf}.cmacs-select-search-input:-ms-input-placeholder{color:#acb3bf}.cmacs-select-search-input::placeholder{color:#acb3bf}.cmacs-select-search,.cmacs-select-search:hover{background-color:#fff;padding-left:14px!important}.cmacs-select-search-icon{color:#dee0e5}.cmacs-select-selection--multiple .ant-select-search--inline .ant-select-search__field{max-width:94%}.cmacs-select-selection--action .ant-select-search--inline .ant-select-search__field{max-width:87%}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{top:unset;transform:unset;bottom:15px;background-color:#fff!important}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .cmacs-user-dropdown-last-elem+.ant-select-selected-icon{bottom:22px}", "\n      .ant-select-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "], encapsulation: 2, data: { animation: [slideMotion, zoomMotion] }, changeDetection: 0 });
+    } }, directives: [CdkOverlayOrigin, CmacsSelectTopControlComponent, NgIf, NgTemplateOutlet, CdkConnectedOverlay, NgStyle, CmacsOptionContainerComponent, NgForOf, ɵNzTransitionPatchDirective, NzIconDirective], pipes: [SlicePipe], styles: [".ant-select{box-sizing:border-box;margin:0;padding:0;color:rgba(0,0,0,.65);font-size:14px;font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:\"tnum\";position:relative;display:inline-block;outline:0}.ant-select-dropdown button{width:calc(100% - 28px);margin:9px 14px}.ant-select ol,.ant-select ul{margin:0;padding:0;list-style:none}.ant-select>ul>li>a{padding:0;background-color:#fff}.ant-select-arrow{display:inline-block;color:inherit;font-style:normal;line-height:0;text-align:center;text-transform:none;vertical-align:-.125em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:absolute;top:50%;right:11px;margin-top:-6px;color:rgba(0,0,0,.25);font-size:12px;line-height:1;transform-origin:50% 50%}.ant-select-arrow>*{line-height:1}.ant-select-arrow svg{display:inline-block}.ant-select-arrow:before{display:none}.ant-select-arrow .ant-select-arrow-icon{display:block}.ant-select-arrow .ant-select-arrow-icon svg{transition:transform .3s}.ant-select-selection{border:1px solid #d9d9d9;border-top:1.02px solid #d9d9d9;border-radius:4px}.ant-select-selection:hover{border-color:#40a9ff;border-right-width:1px!important}.ant-select-focused .ant-select-selection,.ant-select-selection:active,.ant-select-selection:focus{border-color:#40a9ff;border-right-width:1px!important;outline:0;box-shadow:0 0 0 2px rgba(24,144,255,.2)}.ant-select-selection__clear{position:absolute;top:50%;right:11px;z-index:1;display:inline-block;width:12px;height:12px;margin-top:-6px;color:rgba(0,0,0,.25);font-size:12px;font-style:normal;line-height:12px;text-align:center;text-transform:none;background:#fff;cursor:pointer;opacity:0;transition:color .3s ease,opacity .15s ease;text-rendering:auto}.ant-select-selection__clear:before{display:block}.ant-select-selection__clear:hover{color:rgba(0,0,0,.45)}.ant-select-selection:hover .ant-select-selection__clear{opacity:1}.ant-select-selection-selected-value{float:left;max-width:100%;padding-right:20px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.ant-select-no-arrow .ant-select-selection-selected-value{padding-right:0}.ant-select-disabled{color:rgba(0,0,0,.25)}.ant-select-disabled .ant-select-selection{background:#f5f5f5;cursor:not-allowed}.ant-select-disabled .ant-select-selection:active,.ant-select-disabled .ant-select-selection:focus,.ant-select-disabled .ant-select-selection:hover{border-color:#d9d9d9;box-shadow:none}.ant-select-disabled .ant-select-selection__clear{display:none;visibility:hidden;pointer-events:none}.ant-select-disabled .ant-select-selection--multiple .ant-select-selection__choice{padding-right:10px;color:rgba(0,0,0,.33);background:#f5f5f5}.ant-select-disabled .ant-select-selection--multiple .ant-select-selection__choice__remove{display:none}.ant-select-selection--single{position:relative;height:32px;cursor:pointer}.ant-select-selection__rendered{margin-right:11px;line-height:30px}.ant-select-selection__rendered:after{display:inline-block;width:0;visibility:hidden;pointer-events:none;content:\".\"}.ant-select-lg{font-size:16px}.ant-select-lg .ant-select-selection--single{height:40px}.ant-select-lg .ant-select-selection__rendered{line-height:38px}.ant-select-lg .ant-select-selection--multiple{min-height:40px}.ant-select-lg .ant-select-selection--multiple .ant-select-selection__rendered li{height:32px;line-height:32px}.ant-select-lg .ant-select-selection--multiple .ant-select-arrow,.ant-select-lg .ant-select-selection--multiple .ant-select-selection__clear{top:20px}.ant-select-sm .ant-select-selection--single{height:24px}.ant-select-sm .ant-select-selection__rendered{margin:0 7px;line-height:22px}.ant-select-sm .ant-select-selection--multiple{min-height:24px}.ant-select-sm .ant-select-selection--multiple .ant-select-selection__rendered li{height:16px;line-height:14px}.ant-select-sm .ant-select-selection--multiple .ant-select-arrow,.ant-select-sm .ant-select-selection--multiple .ant-select-selection__clear{top:12px}.ant-select-sm .ant-select-arrow,.ant-select-sm .ant-select-selection__clear{right:8px}.ant-select-disabled .ant-select-selection__choice__remove{color:rgba(0,0,0,.25);cursor:default}.ant-select-disabled .ant-select-selection__choice__remove:hover{color:rgba(0,0,0,.25)}.ant-select-search__field__wrap{position:relative;display:inline-block}.ant-select-search__field__placeholder,.ant-select-selection__placeholder{position:absolute;top:50%;right:9px;left:0;max-width:100%;height:20px;margin-top:-10px;overflow:hidden;color:#bfbfbf;line-height:20px;white-space:nowrap;text-align:left;text-overflow:ellipsis}.ant-select-search__field__placeholder{left:12px}.ant-select-search__field__mirror{position:absolute;top:0;left:0;white-space:pre;opacity:0;pointer-events:none}.ant-select-search--inline{position:absolute;width:100%;height:100%}.ant-select-search--inline .ant-select-search__field__wrap{width:100%;height:100%}.ant-select-search--inline .ant-select-search__field{width:100%;height:100%;font-size:100%;line-height:1;background:transparent;border-width:0;border-radius:4px;outline:0}.ant-select-search--inline>i{float:right}.ant-select-selection--multiple{min-height:32px;padding-bottom:3px;cursor:text;zoom:1}.ant-select-selection--multiple:after,.ant-select-selection--multiple:before{content:\"\";display:table}.ant-select-selection--multiple:after{clear:both}.ant-select-selection--multiple .ant-select-search--inline{position:static;float:left;width:auto;max-width:100%;padding:0}.ant-select-selection--multiple .ant-select-search--inline .ant-select-search__field{width:.75em;max-width:100%}.ant-select-selection--multiple .ant-select-selection__rendered{height:auto;margin-bottom:-3px;margin-left:5px}.ant-select-selection--multiple .ant-select-selection__placeholder{margin-left:6px}.ant-select-selection--multiple .ant-select-selection__rendered>ul>li,.ant-select-selection--multiple>ul>li{height:24px;margin-top:3px;line-height:22px}.ant-select-selection--multiple .ant-select-selection__choice{position:relative;float:left;max-width:99%;margin-right:4px;padding:0 20px 0 10px;overflow:hidden;color:rgba(0,0,0,.65);background-color:#fafafa;border:1px solid #e8e8e8;border-radius:2px;cursor:default;transition:padding .3s cubic-bezier(.645,.045,.355,1)}.ant-select-selection--multiple .ant-select-selection__choice__disabled{padding:0 10px}.ant-select-selection--multiple .ant-select-selection__choice__content{display:inline-block;max-width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;transition:margin .3s cubic-bezier(.645,.045,.355,1)}.ant-select-selection--multiple .ant-select-selection__choice__remove{color:inherit;font-style:normal;line-height:0;text-align:center;text-transform:none;vertical-align:-.125em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:absolute;right:4px;color:rgba(0,0,0,.45);font-weight:700;line-height:inherit;cursor:pointer;transition:all .3s;display:inline-block;font-size:12px;font-size:10px\\9;transform:scale(.83333333) rotate(0deg)}.ant-select-selection--multiple .ant-select-selection__choice__remove>*{line-height:1}.ant-select-selection--multiple .ant-select-selection__choice__remove svg{display:inline-block}.ant-select-selection--multiple .ant-select-selection__choice__remove:before{display:none}.ant-select-selection--multiple .ant-select-selection__choice__remove .ant-select-selection--multiple .ant-select-selection__choice__remove-icon{display:block}:root .ant-select-selection--multiple .ant-select-selection__choice__remove{font-size:12px}.ant-select-selection--multiple .ant-select-selection__choice__remove:hover{color:rgba(0,0,0,.75)}.ant-select-selection--multiple .ant-select-arrow,.ant-select-selection--multiple .ant-select-selection__clear{top:16px}.ant-select-allow-clear .ant-select-selection--single .ant-select-selection-selected-value{padding-right:16px}.ant-select-allow-clear .ant-select-selection--multiple .ant-select-selection__rendered,.ant-select-show-arrow .ant-select-selection--multiple .ant-select-selection__rendered{margin-right:20px}.ant-select-open .ant-select-arrow-icon svg{transform:rotate(180deg)}.ant-select-open .ant-select-selection{border-color:#40a9ff;border-right-width:1px!important;outline:0;box-shadow:0 0 0 2px rgba(24,144,255,.2)}.ant-select-combobox .ant-select-arrow{display:none}.ant-select-combobox .ant-select-search--inline{float:none;width:100%;height:100%}.ant-select-combobox .ant-select-search__field__wrap{width:100%;height:100%}.ant-select-combobox .ant-select-search__field{position:relative;z-index:1;width:100%;height:100%;box-shadow:none;transition:all .3s cubic-bezier(.645,.045,.355,1),height 0s}.ant-select-combobox.ant-select-allow-clear .ant-select-selection:hover .ant-select-selection__rendered,.ant-select-combobox.ant-select-show-arrow .ant-select-selection:hover .ant-select-selection__rendered{margin-right:20px}.ant-select-dropdown{margin:0;padding:0;color:rgba(0,0,0,.65);font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:\"tnum\";position:absolute;top:-9999px;left:-9999px;z-index:1050;box-sizing:border-box;font-size:14px;font-variant:normal;background-color:#fff;border-radius:4px;outline:none;box-shadow:0 2px 8px rgba(0,0,0,.15)}.ant-select-dropdown.slide-up-appear.slide-up-appear-active.ant-select-dropdown-placement-bottomLeft,.ant-select-dropdown.slide-up-enter.slide-up-enter-active.ant-select-dropdown-placement-bottomLeft{-webkit-animation-name:antSlideUpIn;animation-name:antSlideUpIn}.ant-select-dropdown.slide-up-appear.slide-up-appear-active.ant-select-dropdown-placement-topLeft,.ant-select-dropdown.slide-up-enter.slide-up-enter-active.ant-select-dropdown-placement-topLeft{-webkit-animation-name:antSlideDownIn;animation-name:antSlideDownIn}.ant-select-dropdown.slide-up-leave.slide-up-leave-active.ant-select-dropdown-placement-bottomLeft{-webkit-animation-name:antSlideUpOut;animation-name:antSlideUpOut}.ant-select-dropdown.slide-up-leave.slide-up-leave-active.ant-select-dropdown-placement-topLeft{-webkit-animation-name:antSlideDownOut;animation-name:antSlideDownOut}.ant-select-dropdown-hidden{display:none}.ant-select-dropdown-menu-item-group-list{margin:0;padding:0}.ant-select-dropdown-menu-item-group-list>.ant-select-dropdown-menu-item{padding-left:20px}.ant-select-dropdown-menu-item-group-title{height:32px;padding:0 12px;color:rgba(0,0,0,.45);font-size:12px;line-height:32px}.ant-select-dropdown-menu-item-group-list .ant-select-dropdown-menu-item:first-child:not(:last-child),.ant-select-dropdown-menu-item-group:not(:last-child) .ant-select-dropdown-menu-item-group-list .ant-select-dropdown-menu-item:last-child{border-radius:0}.ant-select-dropdown-menu-item{position:relative;display:block;padding:5px 12px;overflow:hidden;color:rgba(0,0,0,.65);line-height:22px;white-space:nowrap;text-overflow:ellipsis;cursor:pointer;transition:background .3s ease}.ant-select-dropdown-menu-item:hover{background-color:#e6f7ff}.ant-select-dropdown-menu-item:first-child{border-radius:4px 4px 0 0}.ant-select-dropdown-menu-item:last-child{border-radius:0 0 4px 4px}.ant-select-dropdown-menu-item-disabled{color:rgba(0,0,0,.25);cursor:not-allowed}.ant-select-dropdown-menu-item-disabled:hover{color:rgba(0,0,0,.25);background-color:#fff;cursor:not-allowed}.ant-select-dropdown-menu-item-selected,.ant-select-dropdown-menu-item-selected:hover{color:rgba(0,0,0,.65);font-weight:600;background-color:#fafafa}.ant-select-dropdown-menu-item-active{background-color:#e6f7ff}.ant-select-dropdown-menu-item-divider{height:1px;margin:1px 0;overflow:hidden;line-height:0;background-color:#e8e8e8}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item{padding-right:32px}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{position:absolute;top:50%;right:12px;color:transparent;font-weight:700;font-size:12px;text-shadow:0 .1px 0,.1px 0 0,0 -.1px 0,-.1px 0;transform:translateY(-50%);transition:all .2s}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon{color:rgba(0,0,0,.87)}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-disabled .ant-select-selected-icon{display:none}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{display:inline-block;color:#1890ff}.ant-select-dropdown--empty.ant-select-dropdown--multiple .ant-select-dropdown-menu-item{padding-right:12px}.ant-select-dropdown-container-open .ant-select-dropdown,.ant-select-dropdown-open .ant-select-dropdown{display:block}.ant-empty{margin:0 8px;font-size:14px;line-height:22px;text-align:center}.ant-empty-image{height:100px;margin-bottom:8px}.ant-empty-image img{height:100%}.ant-empty-description{margin:0}.ant-empty-footer{margin-top:16px}.ant-empty-normal{margin:32px 0;color:rgba(0,0,0,.25)}.ant-empty-normal .ant-empty-image{height:40px}.ant-empty-small{margin:8px 0;color:rgba(0,0,0,.25)}.ant-empty-small .ant-empty-image{height:35px}.cmacs-tags-out{padding-top:15px;font-size:12px;font-family:Roboto-Regular}.cmacs-select-dropdown-menu-item-divider{border-top:1px solid #2a7cff!important}.ant-select-dropdown-menu{max-height:250px;margin-bottom:0;padding-left:0;overflow:auto;list-style:none;outline:none}.ant-select{width:inherit}.ant-select-dropdown-menu-item-disabled{color:rgba(0,0,0,.25)!important}.cmacs-select-dropdown{box-shadow:none;border-bottom:1px solid #dee0e5;border-right:1px solid #dee0e5;border-left:1px solid #dee0e5;border-radius:0 0 3px 3px;z-index:unset}.cmacs-select-selection .ant-select-open .ant-select-arrow-icon svg{transform:unset!important}.cmacs-select-selection,.cmacs-select-selection:focus,.cmacs-select-selection:hover{border:1px solid #dee0e5!important;border-radius:3px 3px 0 0!important}.cmacs-select-selection .ant-select-arrow{top:15px}.ant-select-selection{border:1px solid #dee0e5;border-radius:3px}.ant-select-selection:focus-within,.ant-select-selection:hover{border:1px solid #bec4cd;text-shadow:none}.ant-select-open .ant-select-selection,.ant-select-open .ant-select-selection:focus,.ant-select-open .ant-select-selection:focus-within,.ant-select-open .ant-select-selection:hover{border-color:#dee0e5;box-shadow:0 3px 7px rgba(59,63,70,.2);border-radius:3px 3px 0 0}.cmacs-select-selection--multiple .ant-select-search--inline .ant-select-search__field{margin-left:6px!important}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon{color:transparent}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{color:#2a7cff!important;padding:2px;border:1px solid #dee0e5}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{border-color:#2a7cff}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{padding:2px;border:1px solid #dee0e5}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon:hover{color:transparent}.ant-select-dropdown-menu-item-active,.ant-select-dropdown-menu-item:hover{background-color:#f6f7fb}.ant-select-dropdown{margin-bottom:0;border:1px solid #dee0e5;margin-top:-1px;box-shadow:0 3px 7px rgba(59,63,70,.2);border-radius:0 0 3px 3px}.ant-select-dropdown-menu-item:first-child{border-top:none}.ant-select-dropdown-menu-item{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79;border-top:1px solid #dee0e5;padding:7px 14px}.ant-select-dropdown.cmacs-select-user-dropdown .ant-select-dropdown-menu-item{border-top:none}.ant-select-selection--multiple .ant-select-selection__rendered>ul>li{font-size:14px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79}.ant-select-selection:focus{box-shadow:none;border:1px solid #bec4cd}.ant-select-selection--multiple .ant-select-selection__choice__remove>*{line-height:2.2}.ant-select-selection__placeholder{margin-left:0}.ant-select-selection-selected-value{padding-left:0}.ant-select-dropdown-menu-item-selected{color:#2a7cff!important}.ant-select-dropdown-menu-item-selected,.ant-select-dropdown-menu-item-selected:hover{color:#2a7cff}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item{padding-right:12px;padding-left:42px}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{left:12px;right:unset}.cmacs-select-search-input{width:100%;border:none;outline:none;padding:0 10px 0 6px}.cmacs-select-search-input::-moz-placeholder{color:#acb3bf}.cmacs-select-search-input:-ms-input-placeholder{color:#acb3bf}.cmacs-select-search-input::placeholder{color:#acb3bf}.cmacs-select-search,.cmacs-select-search:hover{background-color:#fff;padding-left:14px!important}.cmacs-select-search-icon{color:#dee0e5}.cmacs-select-selection--multiple .ant-select-search--inline .ant-select-search__field{max-width:94%}.cmacs-select-selection--action .ant-select-search--inline .ant-select-search__field{max-width:87%}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{top:unset;transform:unset;bottom:15px;background-color:#fff!important}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .cmacs-user-dropdown-last-elem+.ant-select-selected-icon{bottom:22px}.ant-select-selection__rendered{position:relative;display:block;margin-left:11px}.ant-select-selection{display:block;box-sizing:border-box;background-color:#fff;outline:none;transition:all .3s cubic-bezier(.645,.045,.355,1);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ant-select-arrow,.ant-select-clear{position:absolute;width:unset;height:unset}", "\n      .ant-select-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "], encapsulation: 2, data: { animation: [slideMotion, zoomMotion] }, changeDetection: 0 });
 __decorate([
     InputBoolean()
 ], CmacsSelectComponent.prototype, "notFoundContentShow", void 0);
@@ -4426,7 +4435,7 @@ CmacsDividerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsDividerComponent,
         ɵɵtemplate(0, CmacsDividerComponent_span_0_Template, 2, 1, "span", 0);
     } if (rf & 2) {
         ɵɵproperty("ngIf", ctx.text);
-    } }, directives: [NgIf], styles: [".ant-divider-vertical{height:1em!important}"], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [NgIf, NzStringTemplateOutletDirective], styles: [".ant-divider-vertical{height:1em!important}"], encapsulation: 2, changeDetection: 0 });
 __decorate([
     InputBoolean()
 ], CmacsDividerComponent.prototype, "dashed", void 0);
@@ -4589,7 +4598,7 @@ CmacsInputGroupSlotComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsInputGroup
         ɵɵproperty("ngIf", ctx.icon);
         ɵɵadvance(1);
         ɵɵproperty("nzStringTemplateOutlet", ctx.template);
-    } }, directives: [NgIf, ɵNzTransitionPatchDirective], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [NgIf, NzStringTemplateOutletDirective, ɵNzTransitionPatchDirective, NzIconDirective], encapsulation: 2, changeDetection: 0 });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsInputGroupSlotComponent, [{
         type: Component,
         args: [{
@@ -5094,10 +5103,1929 @@ CmacsTextareaCountComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsTextareaCou
             type: Input
         }] }); })();
 
+const CmacsIsMenuInsideDropDownToken = new InjectionToken('CmacsIsInDropDownMenuToken');
+const CmacsMenuServiceLocalToken = new InjectionToken('CmacsMenuServiceLocalToken');
+
+class MenuService {
+    constructor() {
+        /** all descendant menu click **/
+        this.descendantMenuItemClick$ = new Subject();
+        /** child menu item click **/
+        this.childMenuItemClick$ = new Subject();
+        this.theme$ = new BehaviorSubject('light');
+        this.mode$ = new BehaviorSubject('vertical');
+        this.inlineIndent$ = new BehaviorSubject(24);
+        this.isChildSubMenuOpen$ = new BehaviorSubject(false);
+    }
+    onDescendantMenuItemClick(menu) {
+        this.descendantMenuItemClick$.next(menu);
+    }
+    onChildMenuItemClick(menu) {
+        this.childMenuItemClick$.next(menu);
+    }
+    setMode(mode) {
+        this.mode$.next(mode);
+    }
+    setTheme(theme) {
+        this.theme$.next(theme);
+    }
+    setInlineIndent(indent) {
+        this.inlineIndent$.next(indent);
+    }
+}
+MenuService.ɵfac = function MenuService_Factory(t) { return new (t || MenuService)(); };
+MenuService.ɵprov = ɵɵdefineInjectable({ token: MenuService, factory: MenuService.ɵfac });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(MenuService, [{
+        type: Injectable
+    }], null, null); })();
+
+class NzSubmenuService {
+    constructor(nzHostSubmenuService, nzMenuService, isMenuInsideDropDown) {
+        this.nzHostSubmenuService = nzHostSubmenuService;
+        this.nzMenuService = nzMenuService;
+        this.isMenuInsideDropDown = isMenuInsideDropDown;
+        this.mode$ = this.nzMenuService.mode$.pipe(map(mode => {
+            if (mode === 'inline') {
+                return 'inline';
+                /** if inside another submenu, set the mode to vertical **/
+            }
+            else if (mode === 'vertical' || this.nzHostSubmenuService) {
+                return 'vertical';
+            }
+            else {
+                return 'horizontal';
+            }
+        }));
+        this.level = 1;
+        this.isCurrentSubMenuOpen$ = new BehaviorSubject(false);
+        this.isChildSubMenuOpen$ = new BehaviorSubject(false);
+        /** submenu title & overlay mouse enter status **/
+        this.isMouseEnterTitleOrOverlay$ = new Subject();
+        this.childMenuItemClick$ = new Subject();
+        this.destroy$ = new Subject();
+        if (this.nzHostSubmenuService) {
+            this.level = this.nzHostSubmenuService.level + 1;
+        }
+        /** close if menu item clicked **/
+        const isClosedByMenuItemClick = this.childMenuItemClick$.pipe(mergeMap(() => this.mode$), filter(mode => mode !== 'inline' || this.isMenuInsideDropDown), mapTo(false));
+        const isCurrentSubmenuOpen$ = merge(this.isMouseEnterTitleOrOverlay$, isClosedByMenuItemClick);
+        /** combine the child submenu status with current submenu status to calculate host submenu open **/
+        const isSubMenuOpenWithDebounce$ = combineLatest([this.isChildSubMenuOpen$, isCurrentSubmenuOpen$]).pipe(map(([isChildSubMenuOpen, isCurrentSubmenuOpen]) => isChildSubMenuOpen || isCurrentSubmenuOpen), auditTime(150), distinctUntilChanged(), takeUntil(this.destroy$));
+        isSubMenuOpenWithDebounce$.pipe(distinctUntilChanged()).subscribe(data => {
+            this.setOpenStateWithoutDebounce(data);
+            if (this.nzHostSubmenuService) {
+                /** set parent submenu's child submenu open status **/
+                this.nzHostSubmenuService.isChildSubMenuOpen$.next(data);
+            }
+            else {
+                this.nzMenuService.isChildSubMenuOpen$.next(data);
+            }
+        });
+    }
+    /**
+     * menu item inside submenu clicked
+     * @param menu
+     */
+    onChildMenuItemClick(menu) {
+        this.childMenuItemClick$.next(menu);
+    }
+    setOpenStateWithoutDebounce(value) {
+        this.isCurrentSubMenuOpen$.next(value);
+    }
+    setMouseEnterTitleOrOverlayState(value) {
+        this.isMouseEnterTitleOrOverlay$.next(value);
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+}
+NzSubmenuService.ɵfac = function NzSubmenuService_Factory(t) { return new (t || NzSubmenuService)(ɵɵinject(NzSubmenuService, 12), ɵɵinject(MenuService), ɵɵinject(CmacsIsMenuInsideDropDownToken)); };
+NzSubmenuService.ɵprov = ɵɵdefineInjectable({ token: NzSubmenuService, factory: NzSubmenuService.ɵfac });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(NzSubmenuService, [{
+        type: Injectable
+    }], function () { return [{ type: NzSubmenuService, decorators: [{
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }, { type: MenuService }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [CmacsIsMenuInsideDropDownToken]
+            }] }]; }, null); })();
+
+class CmacsMenuItemDirective {
+    constructor(nzMenuService, cdr, nzSubmenuService, isMenuInsideDropDown, directionality, routerLink, routerLinkWithHref, router) {
+        this.nzMenuService = nzMenuService;
+        this.cdr = cdr;
+        this.nzSubmenuService = nzSubmenuService;
+        this.isMenuInsideDropDown = isMenuInsideDropDown;
+        this.directionality = directionality;
+        this.routerLink = routerLink;
+        this.routerLinkWithHref = routerLinkWithHref;
+        this.router = router;
+        this.destroy$ = new Subject();
+        this.level = this.nzSubmenuService ? this.nzSubmenuService.level + 1 : 1;
+        this.selected$ = new Subject();
+        this.inlinePaddingLeft = null;
+        this.dir = 'ltr';
+        this.disabled = false;
+        this.selected = false;
+        this.danger = false;
+        this.matchRouterExact = false;
+        this.matchRouter = false;
+        if (router) {
+            this.router.events.pipe(takeUntil(this.destroy$), filter(e => e instanceof NavigationEnd)).subscribe(() => {
+                this.updateRouterActive();
+            });
+        }
+    }
+    /** clear all item selected status except this */
+    clickMenuItem(e) {
+        if (this.disabled) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        else {
+            this.nzMenuService.onDescendantMenuItemClick(this);
+            if (this.nzSubmenuService) {
+                /** menu item inside the submenu **/
+                this.nzSubmenuService.onChildMenuItemClick(this);
+            }
+            else {
+                /** menu item inside the root menu **/
+                this.nzMenuService.onChildMenuItemClick(this);
+            }
+        }
+    }
+    setSelectedState(value) {
+        this.selected = value;
+        this.selected$.next(value);
+    }
+    updateRouterActive() {
+        if (!this.listOfRouterLink || !this.listOfRouterLinkWithHref || !this.router || !this.router.navigated || !this.matchRouter) {
+            return;
+        }
+        Promise.resolve().then(() => {
+            const hasActiveLinks = this.hasActiveLinks();
+            if (this.selected !== hasActiveLinks) {
+                this.selected = hasActiveLinks;
+                this.setSelectedState(this.selected);
+                this.cdr.markForCheck();
+            }
+        });
+    }
+    hasActiveLinks() {
+        const isActiveCheckFn = this.isLinkActive(this.router);
+        return ((this.routerLink && isActiveCheckFn(this.routerLink)) ||
+            (this.routerLinkWithHref && isActiveCheckFn(this.routerLinkWithHref)) ||
+            this.listOfRouterLink.some(isActiveCheckFn) ||
+            this.listOfRouterLinkWithHref.some(isActiveCheckFn));
+    }
+    isLinkActive(router) {
+        return (link) => router.isActive(link.urlTree, this.matchRouterExact);
+    }
+    ngOnInit() {
+        var _a;
+        /** store origin padding in padding */
+        combineLatest([this.nzMenuService.mode$, this.nzMenuService.inlineIndent$])
+            .pipe(takeUntil(this.destroy$))
+            .subscribe(([mode, inlineIndent]) => {
+            this.inlinePaddingLeft = mode === 'inline' ? this.level * inlineIndent : null;
+        });
+        this.dir = this.directionality.value;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(takeUntil(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+        });
+    }
+    ngAfterContentInit() {
+        this.listOfRouterLink.changes.pipe(takeUntil(this.destroy$)).subscribe(() => this.updateRouterActive());
+        this.listOfRouterLinkWithHref.changes.pipe(takeUntil(this.destroy$)).subscribe(() => this.updateRouterActive());
+        this.updateRouterActive();
+    }
+    ngOnChanges(changes) {
+        if (changes.selected) {
+            this.setSelectedState(this.selected);
+        }
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+}
+CmacsMenuItemDirective.ɵfac = function CmacsMenuItemDirective_Factory(t) { return new (t || CmacsMenuItemDirective)(ɵɵdirectiveInject(MenuService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NzSubmenuService, 8), ɵɵdirectiveInject(CmacsIsMenuInsideDropDownToken), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(RouterLink, 8), ɵɵdirectiveInject(RouterLinkWithHref, 8), ɵɵdirectiveInject(Router, 8)); };
+CmacsMenuItemDirective.ɵdir = ɵɵdefineDirective({ type: CmacsMenuItemDirective, selectors: [["", "cmacs-menu-item", ""]], contentQueries: function CmacsMenuItemDirective_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵɵcontentQuery(dirIndex, RouterLink, 1);
+        ɵɵcontentQuery(dirIndex, RouterLinkWithHref, 1);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfRouterLink = _t);
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfRouterLinkWithHref = _t);
+    } }, hostVars: 20, hostBindings: function CmacsMenuItemDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵɵlistener("click", function CmacsMenuItemDirective_click_HostBindingHandler($event) { return ctx.clickMenuItem($event); });
+    } if (rf & 2) {
+        ɵɵstyleProp("padding-left", ctx.dir === "rtl" ? null : ctx.paddingLeft || ctx.inlinePaddingLeft, "px")("padding-right", ctx.dir === "rtl" ? ctx.paddingLeft || ctx.inlinePaddingLeft : null, "px");
+        ɵɵclassProp("ant-dropdown-menu-item", ctx.isMenuInsideDropDown)("ant-dropdown-menu-item-selected", ctx.isMenuInsideDropDown && ctx.selected)("ant-dropdown-menu-item-danger", ctx.isMenuInsideDropDown && ctx.danger)("ant-dropdown-menu-item-disabled", ctx.isMenuInsideDropDown && ctx.disabled)("ant-menu-item", !ctx.isMenuInsideDropDown)("ant-menu-item-selected", !ctx.isMenuInsideDropDown && ctx.selected)("ant-menu-item-danger", !ctx.isMenuInsideDropDown && ctx.danger)("ant-menu-item-disabled", !ctx.isMenuInsideDropDown && ctx.disabled);
+    } }, inputs: { paddingLeft: "paddingLeft", disabled: "disabled", selected: "selected", danger: "danger", matchRouterExact: "matchRouterExact", matchRouter: "matchRouter" }, exportAs: ["cmacsMenuItem"], features: [ɵɵNgOnChangesFeature] });
+__decorate([
+    InputBoolean()
+], CmacsMenuItemDirective.prototype, "disabled", void 0);
+__decorate([
+    InputBoolean()
+], CmacsMenuItemDirective.prototype, "selected", void 0);
+__decorate([
+    InputBoolean()
+], CmacsMenuItemDirective.prototype, "danger", void 0);
+__decorate([
+    InputBoolean()
+], CmacsMenuItemDirective.prototype, "matchRouterExact", void 0);
+__decorate([
+    InputBoolean()
+], CmacsMenuItemDirective.prototype, "matchRouter", void 0);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsMenuItemDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[cmacs-menu-item]',
+                exportAs: 'cmacsMenuItem',
+                host: {
+                    '[class.ant-dropdown-menu-item]': `isMenuInsideDropDown`,
+                    '[class.ant-dropdown-menu-item-selected]': `isMenuInsideDropDown && selected`,
+                    '[class.ant-dropdown-menu-item-danger]': `isMenuInsideDropDown && danger`,
+                    '[class.ant-dropdown-menu-item-disabled]': `isMenuInsideDropDown && disabled`,
+                    '[class.ant-menu-item]': `!isMenuInsideDropDown`,
+                    '[class.ant-menu-item-selected]': `!isMenuInsideDropDown && selected`,
+                    '[class.ant-menu-item-danger]': `!isMenuInsideDropDown && danger`,
+                    '[class.ant-menu-item-disabled]': `!isMenuInsideDropDown && disabled`,
+                    '[style.paddingLeft.px]': `dir === 'rtl' ? null : paddingLeft || inlinePaddingLeft`,
+                    '[style.paddingRight.px]': `dir === 'rtl' ? paddingLeft || inlinePaddingLeft : null`,
+                    '(click)': 'clickMenuItem($event)'
+                }
+            }]
+    }], function () { return [{ type: MenuService }, { type: ChangeDetectorRef }, { type: NzSubmenuService, decorators: [{
+                type: Optional
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [CmacsIsMenuInsideDropDownToken]
+            }] }, { type: Directionality, decorators: [{
+                type: Optional
+            }] }, { type: RouterLink, decorators: [{
+                type: Optional
+            }] }, { type: RouterLinkWithHref, decorators: [{
+                type: Optional
+            }] }, { type: Router, decorators: [{
+                type: Optional
+            }] }]; }, { paddingLeft: [{
+            type: Input
+        }], disabled: [{
+            type: Input
+        }], selected: [{
+            type: Input
+        }], danger: [{
+            type: Input
+        }], matchRouterExact: [{
+            type: Input
+        }], matchRouter: [{
+            type: Input
+        }], listOfRouterLink: [{
+            type: ContentChildren,
+            args: [RouterLink, { descendants: true }]
+        }], listOfRouterLinkWithHref: [{
+            type: ContentChildren,
+            args: [RouterLinkWithHref, { descendants: true }]
+        }] }); })();
+
+const _c0$h = ["cmacs-submenu-title", ""];
+function NzSubMenuTitleComponent_i_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 4);
+} if (rf & 2) {
+    const ctx_r0 = ɵɵnextContext();
+    ɵɵproperty("nzType", ctx_r0.icon);
+} }
+function NzSubMenuTitleComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵelementStart(1, "span");
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(ctx_r1.title);
+} }
+function NzSubMenuTitleComponent_span_3_i_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 8);
+} }
+function NzSubMenuTitleComponent_span_3_i_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 9);
+} }
+function NzSubMenuTitleComponent_span_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "span", 5);
+    ɵɵtemplate(1, NzSubMenuTitleComponent_span_3_i_1_Template, 1, 0, "i", 6);
+    ɵɵtemplate(2, NzSubMenuTitleComponent_span_3_i_2_Template, 1, 0, "i", 7);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r2 = ɵɵnextContext();
+    ɵɵproperty("ngSwitch", ctx_r2.dir);
+    ɵɵadvance(1);
+    ɵɵproperty("ngSwitchCase", "rtl");
+} }
+function NzSubMenuTitleComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 10);
+} }
+const _c1$7 = ["*"];
+class NzSubMenuTitleComponent {
+    constructor(cdr, directionality) {
+        this.cdr = cdr;
+        this.directionality = directionality;
+        this.icon = null;
+        this.title = null;
+        this.isMenuInsideDropDown = false;
+        this.disabled = false;
+        this.paddingLeft = null;
+        this.mode = 'vertical';
+        this.toggleSubMenu = new EventEmitter();
+        this.subMenuMouseState = new EventEmitter();
+        this.dir = 'ltr';
+        this.destroy$ = new Subject();
+    }
+    ngOnInit() {
+        var _a;
+        this.dir = this.directionality.value;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(takeUntil(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.cdr.detectChanges();
+        });
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+    setMouseState(state) {
+        if (!this.disabled) {
+            this.subMenuMouseState.next(state);
+        }
+    }
+    clickTitle() {
+        if (this.mode === 'inline' && !this.disabled) {
+            this.toggleSubMenu.emit();
+        }
+    }
+}
+NzSubMenuTitleComponent.ɵfac = function NzSubMenuTitleComponent_Factory(t) { return new (t || NzSubMenuTitleComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Directionality, 8)); };
+NzSubMenuTitleComponent.ɵcmp = ɵɵdefineComponent({ type: NzSubMenuTitleComponent, selectors: [["", "cmacs-submenu-title", ""]], hostVars: 8, hostBindings: function NzSubMenuTitleComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵɵlistener("click", function NzSubMenuTitleComponent_click_HostBindingHandler() { return ctx.clickTitle(); })("mouseenter", function NzSubMenuTitleComponent_mouseenter_HostBindingHandler() { return ctx.setMouseState(true); })("mouseleave", function NzSubMenuTitleComponent_mouseleave_HostBindingHandler() { return ctx.setMouseState(false); });
+    } if (rf & 2) {
+        ɵɵstyleProp("padding-left", ctx.dir === "rtl" ? null : ctx.paddingLeft, "px")("padding-right", ctx.dir === "rtl" ? ctx.paddingLeft : null, "px");
+        ɵɵclassProp("ant-dropdown-menu-submenu-title", ctx.isMenuInsideDropDown)("ant-menu-submenu-title", !ctx.isMenuInsideDropDown);
+    } }, inputs: { icon: "icon", title: "title", isMenuInsideDropDown: "isMenuInsideDropDown", disabled: "disabled", paddingLeft: "paddingLeft", mode: "mode" }, outputs: { toggleSubMenu: "toggleSubMenu", subMenuMouseState: "subMenuMouseState" }, exportAs: ["cmacsSubmenuTitle"], attrs: _c0$h, ngContentSelectors: _c1$7, decls: 6, vars: 4, consts: [["nz-icon", "", 3, "nzType", 4, "ngIf"], [4, "nzStringTemplateOutlet"], ["class", "ant-dropdown-menu-submenu-expand-icon", 3, "ngSwitch", 4, "ngIf", "ngIfElse"], ["notDropdownTpl", ""], ["nz-icon", "", 3, "nzType"], [1, "ant-dropdown-menu-submenu-expand-icon", 3, "ngSwitch"], ["nz-icon", "", "nzType", "left", "class", "ant-dropdown-menu-submenu-arrow-icon", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "right", "class", "ant-dropdown-menu-submenu-arrow-icon", 4, "ngSwitchDefault"], ["nz-icon", "", "nzType", "left", 1, "ant-dropdown-menu-submenu-arrow-icon"], ["nz-icon", "", "nzType", "right", 1, "ant-dropdown-menu-submenu-arrow-icon"], [1, "ant-menu-submenu-arrow"]], template: function NzSubMenuTitleComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵprojectionDef();
+        ɵɵtemplate(0, NzSubMenuTitleComponent_i_0_Template, 1, 1, "i", 0);
+        ɵɵtemplate(1, NzSubMenuTitleComponent_ng_container_1_Template, 3, 1, "ng-container", 1);
+        ɵɵprojection(2);
+        ɵɵtemplate(3, NzSubMenuTitleComponent_span_3_Template, 3, 2, "span", 2);
+        ɵɵtemplate(4, NzSubMenuTitleComponent_ng_template_4_Template, 1, 0, "ng-template", null, 3, ɵɵtemplateRefExtractor);
+    } if (rf & 2) {
+        const _r3 = ɵɵreference(5);
+        ɵɵproperty("ngIf", ctx.icon);
+        ɵɵadvance(1);
+        ɵɵproperty("nzStringTemplateOutlet", ctx.title);
+        ɵɵadvance(2);
+        ɵɵproperty("ngIf", ctx.isMenuInsideDropDown)("ngIfElse", _r3);
+    } }, directives: [NgIf, NzStringTemplateOutletDirective, ɵNzTransitionPatchDirective, NzIconDirective, NgSwitch, NgSwitchCase, NgSwitchDefault], encapsulation: 2, changeDetection: 0 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(NzSubMenuTitleComponent, [{
+        type: Component,
+        args: [{
+                selector: '[cmacs-submenu-title]',
+                exportAs: 'cmacsSubmenuTitle',
+                encapsulation: ViewEncapsulation.None,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                template: `
+    <i nz-icon [nzType]="icon" *ngIf="icon"></i>
+    <ng-container *nzStringTemplateOutlet="title">
+      <span>{{ title }}</span>
+    </ng-container>
+    <ng-content></ng-content>
+    <span [ngSwitch]="dir" *ngIf="isMenuInsideDropDown; else notDropdownTpl" class="ant-dropdown-menu-submenu-expand-icon">
+      <i *ngSwitchCase="'rtl'" nz-icon nzType="left" class="ant-dropdown-menu-submenu-arrow-icon"></i>
+      <i *ngSwitchDefault nz-icon nzType="right" class="ant-dropdown-menu-submenu-arrow-icon"></i>
+    </span>
+    <ng-template #notDropdownTpl>
+      <i class="ant-menu-submenu-arrow"></i>
+    </ng-template>
+  `,
+                host: {
+                    '[class.ant-dropdown-menu-submenu-title]': 'isMenuInsideDropDown',
+                    '[class.ant-menu-submenu-title]': '!isMenuInsideDropDown',
+                    '[style.paddingLeft.px]': `dir === 'rtl' ? null : paddingLeft `,
+                    '[style.paddingRight.px]': `dir === 'rtl' ? paddingLeft : null`,
+                    '(click)': 'clickTitle()',
+                    '(mouseenter)': 'setMouseState(true)',
+                    '(mouseleave)': 'setMouseState(false)'
+                }
+            }]
+    }], function () { return [{ type: ChangeDetectorRef }, { type: Directionality, decorators: [{
+                type: Optional
+            }] }]; }, { icon: [{
+            type: Input
+        }], title: [{
+            type: Input
+        }], isMenuInsideDropDown: [{
+            type: Input
+        }], disabled: [{
+            type: Input
+        }], paddingLeft: [{
+            type: Input
+        }], mode: [{
+            type: Input
+        }], toggleSubMenu: [{
+            type: Output
+        }], subMenuMouseState: [{
+            type: Output
+        }] }); })();
+
+const _c0$i = ["cmacs-submenu-inline-child", ""];
+function NzSubmenuInlineChildComponent_ng_template_0_Template(rf, ctx) { }
+class NzSubmenuInlineChildComponent {
+    constructor(elementRef, renderer, directionality) {
+        this.elementRef = elementRef;
+        this.renderer = renderer;
+        this.directionality = directionality;
+        this.templateOutlet = null;
+        this.menuClass = '';
+        this.mode = 'vertical';
+        this.open = false;
+        this.listOfCacheClassName = [];
+        this.expandState = 'collapsed';
+        this.dir = 'ltr';
+        this.destroy$ = new Subject();
+        // TODO: move to host after View Engine deprecation
+        this.elementRef.nativeElement.classList.add('ant-menu', 'ant-menu-inline', 'ant-menu-sub');
+    }
+    calcMotionState() {
+        if (this.open) {
+            this.expandState = 'expanded';
+        }
+        else {
+            this.expandState = 'collapsed';
+        }
+    }
+    ngOnInit() {
+        var _a;
+        this.calcMotionState();
+        this.dir = this.directionality.value;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(takeUntil(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+        });
+    }
+    ngOnChanges(changes) {
+        const { mode, open, menuClass } = changes;
+        if (mode || open) {
+            this.calcMotionState();
+        }
+        if (menuClass) {
+            if (this.listOfCacheClassName.length) {
+                this.listOfCacheClassName
+                    .filter(item => !!item)
+                    .forEach(className => {
+                    this.renderer.removeClass(this.elementRef.nativeElement, className);
+                });
+            }
+            if (this.menuClass) {
+                this.listOfCacheClassName = this.menuClass.split(' ');
+                this.listOfCacheClassName
+                    .filter(item => !!item)
+                    .forEach(className => {
+                    this.renderer.addClass(this.elementRef.nativeElement, className);
+                });
+            }
+        }
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+}
+NzSubmenuInlineChildComponent.ɵfac = function NzSubmenuInlineChildComponent_Factory(t) { return new (t || NzSubmenuInlineChildComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(Directionality, 8)); };
+NzSubmenuInlineChildComponent.ɵcmp = ɵɵdefineComponent({ type: NzSubmenuInlineChildComponent, selectors: [["", "cmacs-submenu-inline-child", ""]], hostVars: 3, hostBindings: function NzSubmenuInlineChildComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵɵsyntheticHostProperty("@collapseMotion", ctx.expandState);
+        ɵɵclassProp("ant-menu-rtl", ctx.dir === "rtl");
+    } }, inputs: { templateOutlet: "templateOutlet", menuClass: "menuClass", mode: "mode", open: "open" }, exportAs: ["cmacsSubmenuInlineChild"], features: [ɵɵNgOnChangesFeature], attrs: _c0$i, decls: 1, vars: 1, consts: [[3, "ngTemplateOutlet"]], template: function NzSubmenuInlineChildComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵtemplate(0, NzSubmenuInlineChildComponent_ng_template_0_Template, 0, 0, "ng-template", 0);
+    } if (rf & 2) {
+        ɵɵproperty("ngTemplateOutlet", ctx.templateOutlet);
+    } }, directives: [NgTemplateOutlet], encapsulation: 2, data: { animation: [collapseMotion] }, changeDetection: 0 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(NzSubmenuInlineChildComponent, [{
+        type: Component,
+        args: [{
+                selector: '[cmacs-submenu-inline-child]',
+                animations: [collapseMotion],
+                exportAs: 'cmacsSubmenuInlineChild',
+                encapsulation: ViewEncapsulation.None,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                template: `
+    <ng-template [ngTemplateOutlet]="templateOutlet"></ng-template>
+  `,
+                host: {
+                    '[class.ant-menu-rtl]': `dir === 'rtl'`,
+                    '[@collapseMotion]': 'expandState'
+                }
+            }]
+    }], function () { return [{ type: ElementRef }, { type: Renderer2 }, { type: Directionality, decorators: [{
+                type: Optional
+            }] }]; }, { templateOutlet: [{
+            type: Input
+        }], menuClass: [{
+            type: Input
+        }], mode: [{
+            type: Input
+        }], open: [{
+            type: Input
+        }] }); })();
+
+const _c0$j = ["cmacs-submenu-none-inline-child", ""];
+function NzSubmenuNoneInlineChildComponent_ng_template_1_Template(rf, ctx) { }
+class NzSubmenuNoneInlineChildComponent {
+    constructor(elementRef, directionality) {
+        this.elementRef = elementRef;
+        this.directionality = directionality;
+        this.menuClass = '';
+        this.theme = 'light';
+        this.templateOutlet = null;
+        this.isMenuInsideDropDown = false;
+        this.mode = 'vertical';
+        this.position = 'right';
+        this.disabled = false;
+        this.open = false;
+        this.subMenuMouseState = new EventEmitter();
+        this.expandState = 'collapsed';
+        this.dir = 'ltr';
+        this.destroy$ = new Subject();
+        // TODO: move to host after View Engine deprecation
+        this.elementRef.nativeElement.classList.add('ant-menu-submenu', 'ant-menu-submenu-popup');
+    }
+    setMouseState(state) {
+        if (!this.disabled) {
+            this.subMenuMouseState.next(state);
+        }
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+    calcMotionState() {
+        if (this.open) {
+            if (this.mode === 'horizontal') {
+                this.expandState = 'bottom';
+            }
+            else if (this.mode === 'vertical') {
+                this.expandState = 'active';
+            }
+        }
+        else {
+            this.expandState = 'collapsed';
+        }
+    }
+    ngOnInit() {
+        var _a;
+        this.calcMotionState();
+        this.dir = this.directionality.value;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(takeUntil(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+        });
+    }
+    ngOnChanges(changes) {
+        const { mode, open } = changes;
+        if (mode || open) {
+            this.calcMotionState();
+        }
+    }
+}
+NzSubmenuNoneInlineChildComponent.ɵfac = function NzSubmenuNoneInlineChildComponent_Factory(t) { return new (t || NzSubmenuNoneInlineChildComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Directionality, 8)); };
+NzSubmenuNoneInlineChildComponent.ɵcmp = ɵɵdefineComponent({ type: NzSubmenuNoneInlineChildComponent, selectors: [["", "cmacs-submenu-none-inline-child", ""]], hostVars: 14, hostBindings: function NzSubmenuNoneInlineChildComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵɵlistener("mouseenter", function NzSubmenuNoneInlineChildComponent_mouseenter_HostBindingHandler() { return ctx.setMouseState(true); })("mouseleave", function NzSubmenuNoneInlineChildComponent_mouseleave_HostBindingHandler() { return ctx.setMouseState(false); });
+    } if (rf & 2) {
+        ɵɵsyntheticHostProperty("@slideMotion", ctx.expandState)("@zoomBigMotion", ctx.expandState);
+        ɵɵclassProp("ant-menu-light", ctx.theme === "light")("ant-menu-dark", ctx.theme === "dark")("ant-menu-submenu-placement-bottom", ctx.mode === "horizontal")("ant-menu-submenu-placement-right", ctx.mode === "vertical" && ctx.position === "right")("ant-menu-submenu-placement-left", ctx.mode === "vertical" && ctx.position === "left")("ant-menu-submenu-rtl", ctx.dir === "rtl");
+    } }, inputs: { menuClass: "menuClass", theme: "theme", templateOutlet: "templateOutlet", isMenuInsideDropDown: "isMenuInsideDropDown", mode: "mode", position: "position", disabled: "disabled", open: "open" }, outputs: { subMenuMouseState: "subMenuMouseState" }, exportAs: ["cmacsSubmenuNoneInlineChild"], features: [ɵɵNgOnChangesFeature], attrs: _c0$j, decls: 2, vars: 16, consts: [[3, "ngClass"], [3, "ngTemplateOutlet"]], template: function NzSubmenuNoneInlineChildComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "div", 0);
+        ɵɵtemplate(1, NzSubmenuNoneInlineChildComponent_ng_template_1_Template, 0, 0, "ng-template", 1);
+        ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵɵclassProp("ant-dropdown-menu", ctx.isMenuInsideDropDown)("ant-menu", !ctx.isMenuInsideDropDown)("ant-dropdown-menu-vertical", ctx.isMenuInsideDropDown)("ant-menu-vertical", !ctx.isMenuInsideDropDown)("ant-dropdown-menu-sub", ctx.isMenuInsideDropDown)("ant-menu-sub", !ctx.isMenuInsideDropDown)("ant-menu-rtl", ctx.dir === "rtl");
+        ɵɵproperty("ngClass", ctx.menuClass);
+        ɵɵadvance(1);
+        ɵɵproperty("ngTemplateOutlet", ctx.templateOutlet);
+    } }, directives: [NgClass, NgTemplateOutlet], encapsulation: 2, data: { animation: [zoomBigMotion, slideMotion] }, changeDetection: 0 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(NzSubmenuNoneInlineChildComponent, [{
+        type: Component,
+        args: [{
+                selector: '[cmacs-submenu-none-inline-child]',
+                exportAs: 'cmacsSubmenuNoneInlineChild',
+                encapsulation: ViewEncapsulation.None,
+                animations: [zoomBigMotion, slideMotion],
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                template: `
+    <div
+      [class.ant-dropdown-menu]="isMenuInsideDropDown"
+      [class.ant-menu]="!isMenuInsideDropDown"
+      [class.ant-dropdown-menu-vertical]="isMenuInsideDropDown"
+      [class.ant-menu-vertical]="!isMenuInsideDropDown"
+      [class.ant-dropdown-menu-sub]="isMenuInsideDropDown"
+      [class.ant-menu-sub]="!isMenuInsideDropDown"
+      [class.ant-menu-rtl]="dir === 'rtl'"
+      [ngClass]="menuClass"
+    >
+      <ng-template [ngTemplateOutlet]="templateOutlet"></ng-template>
+    </div>
+  `,
+                host: {
+                    '[class.ant-menu-light]': "theme === 'light'",
+                    '[class.ant-menu-dark]': "theme === 'dark'",
+                    '[class.ant-menu-submenu-placement-bottom]': "mode === 'horizontal'",
+                    '[class.ant-menu-submenu-placement-right]': "mode === 'vertical' && position === 'right'",
+                    '[class.ant-menu-submenu-placement-left]': "mode === 'vertical' && position === 'left'",
+                    '[class.ant-menu-submenu-rtl]': 'dir ==="rtl"',
+                    '[@slideMotion]': 'expandState',
+                    '[@zoomBigMotion]': 'expandState',
+                    '(mouseenter)': 'setMouseState(true)',
+                    '(mouseleave)': 'setMouseState(false)'
+                }
+            }]
+    }], function () { return [{ type: ElementRef }, { type: Directionality, decorators: [{
+                type: Optional
+            }] }]; }, { menuClass: [{
+            type: Input
+        }], theme: [{
+            type: Input
+        }], templateOutlet: [{
+            type: Input
+        }], isMenuInsideDropDown: [{
+            type: Input
+        }], mode: [{
+            type: Input
+        }], position: [{
+            type: Input
+        }], disabled: [{
+            type: Input
+        }], open: [{
+            type: Input
+        }], subMenuMouseState: [{
+            type: Output
+        }] }); })();
+
+const _c0$k = ["cmacs-submenu", ""];
+function CmacsSubMenuComponent_ng_content_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵprojection(0, 0, ["*ngIf", "!title"]);
+} }
+function CmacsSubMenuComponent_div_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "div", 6);
+} if (rf & 2) {
+    const ctx_r2 = ɵɵnextContext();
+    const _r5 = ɵɵreference(7);
+    ɵɵproperty("mode", ctx_r2.mode)("open", ctx_r2.open)("@.disabled", ctx_r2.noAnimation == null ? null : ctx_r2.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r2.noAnimation == null ? null : ctx_r2.noAnimation.nzNoAnimation)("menuClass", ctx_r2.menuClassName)("templateOutlet", _r5);
+} }
+function CmacsSubMenuComponent_ng_template_4_ng_template_0_Template(rf, ctx) { if (rf & 1) {
+    const _r9 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 8);
+    ɵɵlistener("subMenuMouseState", function CmacsSubMenuComponent_ng_template_4_ng_template_0_Template_div_subMenuMouseState_0_listener($event) { ɵɵrestoreView(_r9); const ctx_r8 = ɵɵnextContext(2); return ctx_r8.setMouseEnterState($event); });
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r7 = ɵɵnextContext(2);
+    const _r5 = ɵɵreference(7);
+    ɵɵproperty("theme", ctx_r7.theme)("mode", ctx_r7.mode)("open", ctx_r7.open)("position", ctx_r7.position)("disabled", ctx_r7.disabled)("isMenuInsideDropDown", ctx_r7.isMenuInsideDropDown)("templateOutlet", _r5)("menuClass", ctx_r7.menuClassName)("@.disabled", ctx_r7.noAnimation == null ? null : ctx_r7.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r7.noAnimation == null ? null : ctx_r7.noAnimation.nzNoAnimation);
+} }
+function CmacsSubMenuComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
+    const _r11 = ɵɵgetCurrentView();
+    ɵɵtemplate(0, CmacsSubMenuComponent_ng_template_4_ng_template_0_Template, 1, 10, "ng-template", 7);
+    ɵɵlistener("positionChange", function CmacsSubMenuComponent_ng_template_4_Template_ng_template_positionChange_0_listener($event) { ɵɵrestoreView(_r11); const ctx_r10 = ɵɵnextContext(); return ctx_r10.onPositionChange($event); });
+} if (rf & 2) {
+    const ctx_r4 = ɵɵnextContext();
+    const _r0 = ɵɵreference(1);
+    ɵɵproperty("cdkConnectedOverlayPositions", ctx_r4.overlayPositions)("cdkConnectedOverlayOrigin", _r0)("cdkConnectedOverlayWidth", ctx_r4.triggerWidth)("cdkConnectedOverlayOpen", ctx_r4.open)("cdkConnectedOverlayTransformOriginOn", ".ant-menu-submenu");
+} }
+function CmacsSubMenuComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
+    ɵɵprojection(0, 1);
+} }
+const _c1$8 = [[["", "title", ""]], "*"];
+const _c2$5 = ["[title]", "*"];
+const listOfVerticalPositions = [
+    POSITION_MAP.rightTop,
+    POSITION_MAP.right,
+    POSITION_MAP.rightBottom,
+    POSITION_MAP.leftTop,
+    POSITION_MAP.left,
+    POSITION_MAP.leftBottom
+];
+const listOfHorizontalPositions = [POSITION_MAP.bottomLeft];
+class CmacsSubMenuComponent {
+    constructor(nzMenuService, cdr, nzSubmenuService, platform, isMenuInsideDropDown, directionality, noAnimation) {
+        this.nzMenuService = nzMenuService;
+        this.cdr = cdr;
+        this.nzSubmenuService = nzSubmenuService;
+        this.platform = platform;
+        this.isMenuInsideDropDown = isMenuInsideDropDown;
+        this.directionality = directionality;
+        this.noAnimation = noAnimation;
+        this.menuClassName = '';
+        this.paddingLeft = null;
+        this.title = null;
+        this.icon = null;
+        this.open = false;
+        this.disabled = false;
+        this.openChange = new EventEmitter();
+        this.cdkOverlayOrigin = null;
+        this.listOfNzSubMenuComponent = null;
+        this.listOfNzMenuItemDirective = null;
+        this.level = this.nzSubmenuService.level;
+        this.destroy$ = new Subject();
+        this.position = 'right';
+        this.triggerWidth = null;
+        this.theme = 'light';
+        this.mode = 'vertical';
+        this.inlinePaddingLeft = null;
+        this.overlayPositions = listOfVerticalPositions;
+        this.isSelected = false;
+        this.isActive = false;
+        this.dir = 'ltr';
+    }
+    /** set the submenu host open status directly **/
+    setOpenStateWithoutDebounce(open) {
+        this.nzSubmenuService.setOpenStateWithoutDebounce(open);
+    }
+    toggleSubMenu() {
+        this.setOpenStateWithoutDebounce(!this.open);
+    }
+    setMouseEnterState(value) {
+        this.isActive = value;
+        if (this.mode !== 'inline') {
+            this.nzSubmenuService.setMouseEnterTitleOrOverlayState(value);
+        }
+    }
+    setTriggerWidth() {
+        if (this.mode === 'horizontal' && this.platform.isBrowser && this.cdkOverlayOrigin) {
+            /** TODO: fast dom **/
+            this.triggerWidth = this.cdkOverlayOrigin.nativeElement.getBoundingClientRect().width;
+        }
+    }
+    onPositionChange(position) {
+        const placement = getPlacementName(position);
+        if (placement === 'rightTop' || placement === 'rightBottom' || placement === 'right') {
+            this.position = 'right';
+        }
+        else if (placement === 'leftTop' || placement === 'leftBottom' || placement === 'left') {
+            this.position = 'left';
+        }
+        this.cdr.markForCheck();
+    }
+    ngOnInit() {
+        var _a;
+        /** submenu theme update **/
+        this.nzMenuService.theme$.pipe(takeUntil(this.destroy$)).subscribe(theme => {
+            this.theme = theme;
+            this.cdr.markForCheck();
+        });
+        /** submenu mode update **/
+        this.nzSubmenuService.mode$.pipe(takeUntil(this.destroy$)).subscribe(mode => {
+            this.mode = mode;
+            if (mode === 'horizontal') {
+                this.overlayPositions = listOfHorizontalPositions;
+            }
+            else if (mode === 'vertical') {
+                this.overlayPositions = listOfVerticalPositions;
+            }
+            this.cdr.markForCheck();
+        });
+        /** inlineIndent update **/
+        combineLatest([this.nzSubmenuService.mode$, this.nzMenuService.inlineIndent$])
+            .pipe(takeUntil(this.destroy$))
+            .subscribe(([mode, inlineIndent]) => {
+            this.inlinePaddingLeft = mode === 'inline' ? this.level * inlineIndent : null;
+            this.cdr.markForCheck();
+        });
+        /** current submenu open status **/
+        this.nzSubmenuService.isCurrentSubMenuOpen$.pipe(takeUntil(this.destroy$)).subscribe(open => {
+            this.isActive = open;
+            if (open !== this.open) {
+                this.setTriggerWidth();
+                this.open = open;
+                this.openChange.emit(this.open);
+                this.cdr.markForCheck();
+            }
+        });
+        this.dir = this.directionality.value;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(takeUntil(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.cdr.markForCheck();
+        });
+    }
+    ngAfterContentInit() {
+        this.setTriggerWidth();
+        const listOfNzMenuItemDirective = this.listOfNzMenuItemDirective;
+        const changes = listOfNzMenuItemDirective.changes;
+        const mergedObservable = merge(...[changes, ...listOfNzMenuItemDirective.map(menu => menu.selected$)]);
+        changes
+            .pipe(startWith(listOfNzMenuItemDirective), switchMap(() => mergedObservable), startWith(true), map(() => listOfNzMenuItemDirective.some(e => e.selected)), takeUntil(this.destroy$))
+            .subscribe(selected => {
+            this.isSelected = selected;
+            this.cdr.markForCheck();
+        });
+    }
+    ngOnChanges(changes) {
+        const { open } = changes;
+        if (open) {
+            this.nzSubmenuService.setOpenStateWithoutDebounce(this.open);
+            this.setTriggerWidth();
+        }
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+}
+CmacsSubMenuComponent.ɵfac = function CmacsSubMenuComponent_Factory(t) { return new (t || CmacsSubMenuComponent)(ɵɵdirectiveInject(MenuService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NzSubmenuService), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(CmacsIsMenuInsideDropDownToken), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NzNoAnimationDirective, 9)); };
+CmacsSubMenuComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSubMenuComponent, selectors: [["", "cmacs-submenu", ""]], contentQueries: function CmacsSubMenuComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵɵcontentQuery(dirIndex, CmacsSubMenuComponent, 1);
+        ɵɵcontentQuery(dirIndex, CmacsMenuItemDirective, 1);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfNzSubMenuComponent = _t);
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfNzMenuItemDirective = _t);
+    } }, viewQuery: function CmacsSubMenuComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵɵviewQuery(CdkOverlayOrigin, 3, ElementRef);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.cdkOverlayOrigin = _t.first);
+    } }, hostVars: 34, hostBindings: function CmacsSubMenuComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵɵclassProp("ant-dropdown-menu-submenu", ctx.isMenuInsideDropDown)("ant-dropdown-menu-submenu-disabled", ctx.isMenuInsideDropDown && ctx.disabled)("ant-dropdown-menu-submenu-open", ctx.isMenuInsideDropDown && ctx.open)("ant-dropdown-menu-submenu-selected", ctx.isMenuInsideDropDown && ctx.isSelected)("ant-dropdown-menu-submenu-vertical", ctx.isMenuInsideDropDown && ctx.mode === "vertical")("ant-dropdown-menu-submenu-horizontal", ctx.isMenuInsideDropDown && ctx.mode === "horizontal")("ant-dropdown-menu-submenu-inline", ctx.isMenuInsideDropDown && ctx.mode === "inline")("ant-dropdown-menu-submenu-active", ctx.isMenuInsideDropDown && ctx.isActive)("ant-menu-submenu", !ctx.isMenuInsideDropDown)("ant-menu-submenu-disabled", !ctx.isMenuInsideDropDown && ctx.disabled)("ant-menu-submenu-open", !ctx.isMenuInsideDropDown && ctx.open)("ant-menu-submenu-selected", !ctx.isMenuInsideDropDown && ctx.isSelected)("ant-menu-submenu-vertical", !ctx.isMenuInsideDropDown && ctx.mode === "vertical")("ant-menu-submenu-horizontal", !ctx.isMenuInsideDropDown && ctx.mode === "horizontal")("ant-menu-submenu-inline", !ctx.isMenuInsideDropDown && ctx.mode === "inline")("ant-menu-submenu-active", !ctx.isMenuInsideDropDown && ctx.isActive)("ant-menu-submenu-rtl", ctx.dir === "rtl");
+    } }, inputs: { menuClassName: "menuClassName", paddingLeft: "paddingLeft", title: "title", icon: "icon", open: "open", disabled: "disabled" }, outputs: { openChange: "openChange" }, exportAs: ["cmacsSubmenu"], features: [ɵɵProvidersFeature([NzSubmenuService]), ɵɵNgOnChangesFeature], attrs: _c0$k, ngContentSelectors: _c2$5, decls: 8, vars: 9, consts: [["cmacs-submenu-title", "", "cdkOverlayOrigin", "", 3, "icon", "title", "mode", "disabled", "isMenuInsideDropDown", "paddingLeft", "subMenuMouseState", "toggleSubMenu"], ["origin", "cdkOverlayOrigin"], [4, "ngIf"], ["cmacs-submenu-inline-child", "", 3, "mode", "open", "nzNoAnimation", "menuClass", "templateOutlet", 4, "ngIf", "ngIfElse"], ["nonInlineTemplate", ""], ["subMenuTemplate", ""], ["cmacs-submenu-inline-child", "", 3, "mode", "open", "nzNoAnimation", "menuClass", "templateOutlet"], ["cdkConnectedOverlay", "", 3, "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayWidth", "cdkConnectedOverlayOpen", "cdkConnectedOverlayTransformOriginOn", "positionChange"], ["cmacs-submenu-none-inline-child", "", 3, "theme", "mode", "open", "position", "disabled", "isMenuInsideDropDown", "templateOutlet", "menuClass", "nzNoAnimation", "subMenuMouseState"]], template: function CmacsSubMenuComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵprojectionDef(_c1$8);
+        ɵɵelementStart(0, "div", 0, 1);
+        ɵɵlistener("subMenuMouseState", function CmacsSubMenuComponent_Template_div_subMenuMouseState_0_listener($event) { return ctx.setMouseEnterState($event); })("toggleSubMenu", function CmacsSubMenuComponent_Template_div_toggleSubMenu_0_listener() { return ctx.toggleSubMenu(); });
+        ɵɵtemplate(2, CmacsSubMenuComponent_ng_content_2_Template, 1, 0, "ng-content", 2);
+        ɵɵelementEnd();
+        ɵɵtemplate(3, CmacsSubMenuComponent_div_3_Template, 1, 6, "div", 3);
+        ɵɵtemplate(4, CmacsSubMenuComponent_ng_template_4_Template, 1, 5, "ng-template", null, 4, ɵɵtemplateRefExtractor);
+        ɵɵtemplate(6, CmacsSubMenuComponent_ng_template_6_Template, 1, 0, "ng-template", null, 5, ɵɵtemplateRefExtractor);
+    } if (rf & 2) {
+        const _r3 = ɵɵreference(5);
+        ɵɵproperty("icon", ctx.icon)("title", ctx.title)("mode", ctx.mode)("disabled", ctx.disabled)("isMenuInsideDropDown", ctx.isMenuInsideDropDown)("paddingLeft", ctx.paddingLeft || ctx.inlinePaddingLeft);
+        ɵɵadvance(2);
+        ɵɵproperty("ngIf", !ctx.title);
+        ɵɵadvance(1);
+        ɵɵproperty("ngIf", ctx.mode === "inline")("ngIfElse", _r3);
+    } }, directives: [NzSubMenuTitleComponent, CdkOverlayOrigin, NgIf, NzSubmenuInlineChildComponent, NzNoAnimationDirective, CdkConnectedOverlay, NzSubmenuNoneInlineChildComponent], encapsulation: 2, changeDetection: 0 });
+__decorate([
+    InputBoolean()
+], CmacsSubMenuComponent.prototype, "open", void 0);
+__decorate([
+    InputBoolean()
+], CmacsSubMenuComponent.prototype, "disabled", void 0);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsSubMenuComponent, [{
+        type: Component,
+        args: [{
+                selector: '[cmacs-submenu]',
+                exportAs: 'cmacsSubmenu',
+                providers: [NzSubmenuService],
+                encapsulation: ViewEncapsulation.None,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                preserveWhitespaces: false,
+                template: `
+    <div
+      cmacs-submenu-title
+      cdkOverlayOrigin
+      #origin="cdkOverlayOrigin"
+      [icon]="icon"
+      [title]="title"
+      [mode]="mode"
+      [disabled]="disabled"
+      [isMenuInsideDropDown]="isMenuInsideDropDown"
+      [paddingLeft]="paddingLeft || inlinePaddingLeft"
+      (subMenuMouseState)="setMouseEnterState($event)"
+      (toggleSubMenu)="toggleSubMenu()"
+    >
+      <ng-content select="[title]" *ngIf="!title"></ng-content>
+    </div>
+    <div
+      *ngIf="mode === 'inline'; else nonInlineTemplate"
+      cmacs-submenu-inline-child
+      [mode]="mode"
+      [open]="open"
+      [@.disabled]="noAnimation?.nzNoAnimation"
+      [nzNoAnimation]="noAnimation?.nzNoAnimation"
+      [menuClass]="menuClassName"
+      [templateOutlet]="subMenuTemplate"
+    ></div>
+    <ng-template #nonInlineTemplate>
+      <ng-template
+        cdkConnectedOverlay
+        (positionChange)="onPositionChange($event)"
+        [cdkConnectedOverlayPositions]="overlayPositions"
+        [cdkConnectedOverlayOrigin]="origin"
+        [cdkConnectedOverlayWidth]="triggerWidth!"
+        [cdkConnectedOverlayOpen]="open"
+        [cdkConnectedOverlayTransformOriginOn]="'.ant-menu-submenu'"
+      >
+        <div
+          cmacs-submenu-none-inline-child
+          [theme]="theme"
+          [mode]="mode"
+          [open]="open"
+          [position]="position"
+          [disabled]="disabled"
+          [isMenuInsideDropDown]="isMenuInsideDropDown"
+          [templateOutlet]="subMenuTemplate"
+          [menuClass]="menuClassName"
+          [@.disabled]="noAnimation?.nzNoAnimation"
+          [nzNoAnimation]="noAnimation?.nzNoAnimation"
+          (subMenuMouseState)="setMouseEnterState($event)"
+        ></div>
+      </ng-template>
+    </ng-template>
+
+    <ng-template #subMenuTemplate>
+      <ng-content></ng-content>
+    </ng-template>
+  `,
+                host: {
+                    '[class.ant-dropdown-menu-submenu]': `isMenuInsideDropDown`,
+                    '[class.ant-dropdown-menu-submenu-disabled]': `isMenuInsideDropDown && disabled`,
+                    '[class.ant-dropdown-menu-submenu-open]': `isMenuInsideDropDown && open`,
+                    '[class.ant-dropdown-menu-submenu-selected]': `isMenuInsideDropDown && isSelected`,
+                    '[class.ant-dropdown-menu-submenu-vertical]': `isMenuInsideDropDown && mode === 'vertical'`,
+                    '[class.ant-dropdown-menu-submenu-horizontal]': `isMenuInsideDropDown && mode === 'horizontal'`,
+                    '[class.ant-dropdown-menu-submenu-inline]': `isMenuInsideDropDown && mode === 'inline'`,
+                    '[class.ant-dropdown-menu-submenu-active]': `isMenuInsideDropDown && isActive`,
+                    '[class.ant-menu-submenu]': `!isMenuInsideDropDown`,
+                    '[class.ant-menu-submenu-disabled]': `!isMenuInsideDropDown && disabled`,
+                    '[class.ant-menu-submenu-open]': `!isMenuInsideDropDown && open`,
+                    '[class.ant-menu-submenu-selected]': `!isMenuInsideDropDown && isSelected`,
+                    '[class.ant-menu-submenu-vertical]': `!isMenuInsideDropDown && mode === 'vertical'`,
+                    '[class.ant-menu-submenu-horizontal]': `!isMenuInsideDropDown && mode === 'horizontal'`,
+                    '[class.ant-menu-submenu-inline]': `!isMenuInsideDropDown && mode === 'inline'`,
+                    '[class.ant-menu-submenu-active]': `!isMenuInsideDropDown && isActive`,
+                    '[class.ant-menu-submenu-rtl]': `dir === 'rtl'`
+                }
+            }]
+    }], function () { return [{ type: MenuService }, { type: ChangeDetectorRef }, { type: NzSubmenuService }, { type: Platform }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [CmacsIsMenuInsideDropDownToken]
+            }] }, { type: Directionality, decorators: [{
+                type: Optional
+            }] }, { type: NzNoAnimationDirective, decorators: [{
+                type: Host
+            }, {
+                type: Optional
+            }] }]; }, { menuClassName: [{
+            type: Input
+        }], paddingLeft: [{
+            type: Input
+        }], title: [{
+            type: Input
+        }], icon: [{
+            type: Input
+        }], open: [{
+            type: Input
+        }], disabled: [{
+            type: Input
+        }], openChange: [{
+            type: Output
+        }], cdkOverlayOrigin: [{
+            type: ViewChild,
+            args: [CdkOverlayOrigin, { static: true, read: ElementRef }]
+        }], listOfNzSubMenuComponent: [{
+            type: ContentChildren,
+            args: [CmacsSubMenuComponent, { descendants: true }]
+        }], listOfNzMenuItemDirective: [{
+            type: ContentChildren,
+            args: [CmacsMenuItemDirective, { descendants: true }]
+        }] }); })();
+
+function MenuServiceFactory(serviceInsideDropDown, serviceOutsideDropDown) {
+    return serviceInsideDropDown ? serviceInsideDropDown : serviceOutsideDropDown;
+}
+function MenuDropDownTokenFactory(isMenuInsideDropDownToken) {
+    return isMenuInsideDropDownToken ? isMenuInsideDropDownToken : false;
+}
+class CmacsMenuDirective {
+    constructor(nzMenuService, isMenuInsideDropDown, cdr, directionality) {
+        this.nzMenuService = nzMenuService;
+        this.isMenuInsideDropDown = isMenuInsideDropDown;
+        this.cdr = cdr;
+        this.directionality = directionality;
+        this.inlineIndent = 24;
+        this.theme = 'light';
+        this.mode = 'vertical';
+        this.inlineCollapsed = false;
+        this.selectable = !this.isMenuInsideDropDown;
+        this.cmacsClick = new EventEmitter();
+        this.actualMode = 'vertical';
+        this.dir = 'ltr';
+        this.inlineCollapsed$ = new BehaviorSubject(this.inlineCollapsed);
+        this.mode$ = new BehaviorSubject(this.mode);
+        this.destroy$ = new Subject();
+        this.listOfOpenedCmacsSubMenuComponent = [];
+    }
+    setInlineCollapsed(inlineCollapsed) {
+        this.inlineCollapsed = inlineCollapsed;
+        this.inlineCollapsed$.next(inlineCollapsed);
+    }
+    updateInlineCollapse() {
+        if (this.listOfNzMenuItemDirective) {
+            if (this.inlineCollapsed) {
+                this.listOfOpenedCmacsSubMenuComponent = this.listOfCmacsSubMenuComponent.filter(submenu => submenu.open);
+                this.listOfCmacsSubMenuComponent.forEach(submenu => submenu.setOpenStateWithoutDebounce(false));
+            }
+            else {
+                this.listOfOpenedCmacsSubMenuComponent.forEach(submenu => submenu.setOpenStateWithoutDebounce(true));
+                this.listOfOpenedCmacsSubMenuComponent = [];
+            }
+        }
+    }
+    ngOnInit() {
+        var _a;
+        combineLatest([this.inlineCollapsed$, this.mode$])
+            .pipe(takeUntil(this.destroy$))
+            .subscribe(([inlineCollapsed, mode]) => {
+            this.actualMode = inlineCollapsed ? 'vertical' : mode;
+            this.nzMenuService.setMode(this.actualMode);
+            this.cdr.markForCheck();
+        });
+        this.nzMenuService.descendantMenuItemClick$.pipe(takeUntil(this.destroy$)).subscribe(menu => {
+            this.cmacsClick.emit(menu);
+            if (this.selectable && !menu.nzMatchRouter) {
+                this.listOfNzMenuItemDirective.forEach(item => item.setSelectedState(item === menu));
+            }
+        });
+        this.dir = this.directionality.value;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(takeUntil(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.nzMenuService.setMode(this.actualMode);
+            this.cdr.markForCheck();
+        });
+    }
+    ngAfterContentInit() {
+        this.inlineCollapsed$.pipe(takeUntil(this.destroy$)).subscribe(() => {
+            this.updateInlineCollapse();
+            this.cdr.markForCheck();
+        });
+    }
+    ngOnChanges(changes) {
+        const { inlineCollapsed, inlineIndent, theme, mode } = changes;
+        if (inlineCollapsed) {
+            this.inlineCollapsed$.next(this.inlineCollapsed);
+        }
+        if (inlineIndent) {
+            this.nzMenuService.setInlineIndent(this.inlineIndent);
+        }
+        if (theme) {
+            this.nzMenuService.setTheme(this.theme);
+        }
+        if (mode) {
+            this.mode$.next(this.mode);
+            if (!changes.mode.isFirstChange() && this.listOfCmacsSubMenuComponent) {
+                this.listOfCmacsSubMenuComponent.forEach(submenu => submenu.setOpenStateWithoutDebounce(false));
+            }
+        }
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+}
+CmacsMenuDirective.ɵfac = function CmacsMenuDirective_Factory(t) { return new (t || CmacsMenuDirective)(ɵɵdirectiveInject(MenuService), ɵɵdirectiveInject(CmacsIsMenuInsideDropDownToken), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Directionality, 8)); };
+CmacsMenuDirective.ɵdir = ɵɵdefineDirective({ type: CmacsMenuDirective, selectors: [["", "cmacs-menu", ""]], contentQueries: function CmacsMenuDirective_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵɵcontentQuery(dirIndex, CmacsMenuItemDirective, 1);
+        ɵɵcontentQuery(dirIndex, CmacsSubMenuComponent, 1);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfNzMenuItemDirective = _t);
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfCmacsSubMenuComponent = _t);
+    } }, hostVars: 34, hostBindings: function CmacsMenuDirective_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵɵclassProp("ant-dropdown-menu", ctx.isMenuInsideDropDown)("ant-dropdown-menu-root", ctx.isMenuInsideDropDown)("ant-dropdown-menu-light", ctx.isMenuInsideDropDown && ctx.theme === "light")("ant-dropdown-menu-dark", ctx.isMenuInsideDropDown && ctx.theme === "dark")("ant-dropdown-menu-vertical", ctx.isMenuInsideDropDown && ctx.actualMode === "vertical")("ant-dropdown-menu-horizontal", ctx.isMenuInsideDropDown && ctx.actualMode === "horizontal")("ant-dropdown-menu-inline", ctx.isMenuInsideDropDown && ctx.actualMode === "inline")("ant-dropdown-menu-inline-collapsed", ctx.isMenuInsideDropDown && ctx.inlineCollapsed)("ant-menu", !ctx.isMenuInsideDropDown)("ant-menu-root", !ctx.isMenuInsideDropDown)("ant-menu-light", !ctx.isMenuInsideDropDown && ctx.theme === "light")("ant-menu-dark", !ctx.isMenuInsideDropDown && ctx.theme === "dark")("ant-menu-vertical", !ctx.isMenuInsideDropDown && ctx.actualMode === "vertical")("ant-menu-horizontal", !ctx.isMenuInsideDropDown && ctx.actualMode === "horizontal")("ant-menu-inline", !ctx.isMenuInsideDropDown && ctx.actualMode === "inline")("ant-menu-inline-collapsed", !ctx.isMenuInsideDropDown && ctx.CmacsInlineCollapsed)("ant-menu-rtl", ctx.dir === "rtl");
+    } }, inputs: { inlineIndent: "inlineIndent", theme: "theme", mode: "mode", inlineCollapsed: "inlineCollapsed", selectable: "selectable" }, outputs: { cmacsClick: "cmacsClick" }, exportAs: ["cmacsMenu"], features: [ɵɵProvidersFeature([
+            {
+                provide: CmacsMenuServiceLocalToken,
+                useClass: MenuService
+            },
+            /** use the top level service **/
+            {
+                provide: MenuService,
+                useFactory: MenuServiceFactory,
+                deps: [[new SkipSelf(), new Optional(), MenuService], CmacsMenuServiceLocalToken]
+            },
+            /** check if menu inside dropdown-menu component **/
+            {
+                provide: CmacsIsMenuInsideDropDownToken,
+                useFactory: MenuDropDownTokenFactory,
+                deps: [[new SkipSelf(), new Optional(), CmacsIsMenuInsideDropDownToken]]
+            }
+        ]), ɵɵNgOnChangesFeature] });
+__decorate([
+    InputBoolean()
+], CmacsMenuDirective.prototype, "inlineCollapsed", void 0);
+__decorate([
+    InputBoolean()
+], CmacsMenuDirective.prototype, "selectable", void 0);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsMenuDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[cmacs-menu]',
+                exportAs: 'cmacsMenu',
+                providers: [
+                    {
+                        provide: CmacsMenuServiceLocalToken,
+                        useClass: MenuService
+                    },
+                    /** use the top level service **/
+                    {
+                        provide: MenuService,
+                        useFactory: MenuServiceFactory,
+                        deps: [[new SkipSelf(), new Optional(), MenuService], CmacsMenuServiceLocalToken]
+                    },
+                    /** check if menu inside dropdown-menu component **/
+                    {
+                        provide: CmacsIsMenuInsideDropDownToken,
+                        useFactory: MenuDropDownTokenFactory,
+                        deps: [[new SkipSelf(), new Optional(), CmacsIsMenuInsideDropDownToken]]
+                    }
+                ],
+                host: {
+                    '[class.ant-dropdown-menu]': `isMenuInsideDropDown`,
+                    '[class.ant-dropdown-menu-root]': `isMenuInsideDropDown`,
+                    '[class.ant-dropdown-menu-light]': `isMenuInsideDropDown && theme === 'light'`,
+                    '[class.ant-dropdown-menu-dark]': `isMenuInsideDropDown && theme === 'dark'`,
+                    '[class.ant-dropdown-menu-vertical]': `isMenuInsideDropDown && actualMode === 'vertical'`,
+                    '[class.ant-dropdown-menu-horizontal]': `isMenuInsideDropDown && actualMode === 'horizontal'`,
+                    '[class.ant-dropdown-menu-inline]': `isMenuInsideDropDown && actualMode === 'inline'`,
+                    '[class.ant-dropdown-menu-inline-collapsed]': `isMenuInsideDropDown && inlineCollapsed`,
+                    '[class.ant-menu]': `!isMenuInsideDropDown`,
+                    '[class.ant-menu-root]': `!isMenuInsideDropDown`,
+                    '[class.ant-menu-light]': `!isMenuInsideDropDown && theme === 'light'`,
+                    '[class.ant-menu-dark]': `!isMenuInsideDropDown && theme === 'dark'`,
+                    '[class.ant-menu-vertical]': `!isMenuInsideDropDown && actualMode === 'vertical'`,
+                    '[class.ant-menu-horizontal]': `!isMenuInsideDropDown && actualMode === 'horizontal'`,
+                    '[class.ant-menu-inline]': `!isMenuInsideDropDown && actualMode === 'inline'`,
+                    '[class.ant-menu-inline-collapsed]': `!isMenuInsideDropDown && CmacsInlineCollapsed`,
+                    '[class.ant-menu-rtl]': `dir === 'rtl'`
+                }
+            }]
+    }], function () { return [{ type: MenuService }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [CmacsIsMenuInsideDropDownToken]
+            }] }, { type: ChangeDetectorRef }, { type: Directionality, decorators: [{
+                type: Optional
+            }] }]; }, { listOfNzMenuItemDirective: [{
+            type: ContentChildren,
+            args: [CmacsMenuItemDirective, { descendants: true }]
+        }], listOfCmacsSubMenuComponent: [{
+            type: ContentChildren,
+            args: [CmacsSubMenuComponent, { descendants: true }]
+        }], inlineIndent: [{
+            type: Input
+        }], theme: [{
+            type: Input
+        }], mode: [{
+            type: Input
+        }], inlineCollapsed: [{
+            type: Input
+        }], selectable: [{
+            type: Input
+        }], cmacsClick: [{
+            type: Output
+        }] }); })();
+
+const _c0$l = ["titleElement"];
+const _c1$9 = ["cmacs-menu-group", ""];
+function CmacsMenuGroupComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵtext(1);
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r1.title);
+} }
+function CmacsMenuGroupComponent_ng_content_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵprojection(0, 1, ["*ngIf", "!title"]);
+} }
+const _c2$6 = ["*", [["", "title", ""]]];
+const _c3$1 = ["*", "[title]"];
+function MenuGroupFactory(isMenuInsideDropDownToken) {
+    return isMenuInsideDropDownToken ? isMenuInsideDropDownToken : false;
+}
+class CmacsMenuGroupComponent {
+    constructor(elementRef, renderer, isMenuInsideDropDown) {
+        this.elementRef = elementRef;
+        this.renderer = renderer;
+        this.isMenuInsideDropDown = isMenuInsideDropDown;
+        const className = this.isMenuInsideDropDown ? 'ant-dropdown-menu-item-group' : 'ant-menu-item-group';
+        this.renderer.addClass(elementRef.nativeElement, className);
+    }
+    ngAfterViewInit() {
+        const ulElement = this.titleElement.nativeElement.nextElementSibling;
+        if (ulElement) {
+            /** add classname to ul **/
+            const className = this.isMenuInsideDropDown ? 'ant-dropdown-menu-item-group-list' : 'ant-menu-item-group-list';
+            this.renderer.addClass(ulElement, className);
+        }
+    }
+}
+CmacsMenuGroupComponent.ɵfac = function CmacsMenuGroupComponent_Factory(t) { return new (t || CmacsMenuGroupComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(CmacsIsMenuInsideDropDownToken)); };
+CmacsMenuGroupComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsMenuGroupComponent, selectors: [["", "cmacs-menu-group", ""]], viewQuery: function CmacsMenuGroupComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵɵviewQuery(_c0$l, 1);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.titleElement = _t.first);
+    } }, inputs: { title: "title" }, exportAs: ["cmacsMenuGroup"], features: [ɵɵProvidersFeature([
+            /** check if menu inside dropdown-menu component **/
+            {
+                provide: CmacsIsMenuInsideDropDownToken,
+                useFactory: MenuGroupFactory,
+                deps: [[new SkipSelf(), new Optional(), CmacsIsMenuInsideDropDownToken]]
+            }
+        ])], attrs: _c1$9, ngContentSelectors: _c3$1, decls: 5, vars: 6, consts: [["titleElement", ""], [4, "nzStringTemplateOutlet"], [4, "ngIf"]], template: function CmacsMenuGroupComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵprojectionDef(_c2$6);
+        ɵɵelementStart(0, "div", null, 0);
+        ɵɵtemplate(2, CmacsMenuGroupComponent_ng_container_2_Template, 2, 1, "ng-container", 1);
+        ɵɵtemplate(3, CmacsMenuGroupComponent_ng_content_3_Template, 1, 0, "ng-content", 2);
+        ɵɵelementEnd();
+        ɵɵprojection(4);
+    } if (rf & 2) {
+        ɵɵclassProp("ant-menu-item-group-title", !ctx.isMenuInsideDropDown)("ant-dropdown-menu-item-group-title", ctx.isMenuInsideDropDown);
+        ɵɵadvance(2);
+        ɵɵproperty("nzStringTemplateOutlet", ctx.title);
+        ɵɵadvance(1);
+        ɵɵproperty("ngIf", !ctx.title);
+    } }, directives: [NzStringTemplateOutletDirective, NgIf], encapsulation: 2, changeDetection: 0 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsMenuGroupComponent, [{
+        type: Component,
+        args: [{
+                selector: '[cmacs-menu-group]',
+                exportAs: 'cmacsMenuGroup',
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                providers: [
+                    /** check if menu inside dropdown-menu component **/
+                    {
+                        provide: CmacsIsMenuInsideDropDownToken,
+                        useFactory: MenuGroupFactory,
+                        deps: [[new SkipSelf(), new Optional(), CmacsIsMenuInsideDropDownToken]]
+                    }
+                ],
+                encapsulation: ViewEncapsulation.None,
+                template: `
+    <div
+      [class.ant-menu-item-group-title]="!isMenuInsideDropDown"
+      [class.ant-dropdown-menu-item-group-title]="isMenuInsideDropDown"
+      #titleElement
+    >
+      <ng-container *nzStringTemplateOutlet="title">{{ title }}</ng-container>
+      <ng-content select="[title]" *ngIf="!title"></ng-content>
+    </div>
+    <ng-content></ng-content>
+  `,
+                preserveWhitespaces: false
+            }]
+    }], function () { return [{ type: ElementRef }, { type: Renderer2 }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [CmacsIsMenuInsideDropDownToken]
+            }] }]; }, { title: [{
+            type: Input
+        }], titleElement: [{
+            type: ViewChild,
+            args: ['titleElement']
+        }] }); })();
+
+class CmacsDropdownButtonDirective {
+    constructor(renderer, nzButtonGroupComponent, elementRef) {
+        this.renderer = renderer;
+        this.nzButtonGroupComponent = nzButtonGroupComponent;
+        this.elementRef = elementRef;
+    }
+    ngAfterViewInit() {
+        const parentElement = this.renderer.parentNode(this.elementRef.nativeElement);
+        if (this.nzButtonGroupComponent && parentElement) {
+            this.renderer.addClass(parentElement, 'ant-dropdown-button');
+        }
+    }
+}
+CmacsDropdownButtonDirective.ɵfac = function CmacsDropdownButtonDirective_Factory(t) { return new (t || CmacsDropdownButtonDirective)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(CmacsButtonGroupComponent, 9), ɵɵdirectiveInject(ElementRef)); };
+CmacsDropdownButtonDirective.ɵdir = ɵɵdefineDirective({ type: CmacsDropdownButtonDirective, selectors: [["", "cmacs-button", "", "cmacs-dropdown", ""]] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsDropdownButtonDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[cmacs-button][cmacs-dropdown]'
+            }]
+    }], function () { return [{ type: Renderer2 }, { type: CmacsButtonGroupComponent, decorators: [{
+                type: Host
+            }, {
+                type: Optional
+            }] }, { type: ElementRef }]; }, null); })();
+
+const listOfPositions = [POSITION_MAP.bottomLeft, POSITION_MAP.bottomRight, POSITION_MAP.topRight, POSITION_MAP.topLeft];
+class CmacsDropDownDirective {
+    constructor(elementRef, overlay, renderer, viewContainerRef, platform) {
+        this.elementRef = elementRef;
+        this.overlay = overlay;
+        this.renderer = renderer;
+        this.viewContainerRef = viewContainerRef;
+        this.platform = platform;
+        this.overlayRef = null;
+        this.destroy$ = new Subject();
+        this.positionStrategy = this.overlay
+            .position()
+            .flexibleConnectedTo(this.elementRef.nativeElement)
+            .withLockedPosition()
+            .withTransformOriginOn('.ant-dropdown');
+        this.inputVisible$ = new BehaviorSubject(false);
+        this.cmacsTrigger$ = new BehaviorSubject('hover');
+        this.overlayClose$ = new Subject();
+        this.dropdownMenu = null;
+        this.cmacsTrigger = 'hover';
+        this.matchWidthElement = null;
+        /**
+         * @deprecated Not supported, use `hasBackdrop` instead.
+         * @breaking-change 12.0.0
+         */
+        this.backdrop = false;
+        this.hasBackdrop = false;
+        this.clickHide = true;
+        this.disabled = false;
+        this.visible = false;
+        this.overlayClassName = '';
+        this.overlayStyle = {};
+        this.placement = 'bottomLeft';
+        this.visibleChange = new EventEmitter();
+        // TODO: move to host after View Engine deprecation
+        this.elementRef.nativeElement.classList.add('ant-dropdown-trigger');
+    }
+    setDropdownMenuValue(key, value) {
+        if (this.dropdownMenu) {
+            this.dropdownMenu.setValue(key, value);
+        }
+    }
+    ngOnInit() { }
+    ngAfterViewInit() {
+        if (this.dropdownMenu) {
+            const nativeElement = this.elementRef.nativeElement;
+            /** host mouse state **/
+            const hostMouseState$ = merge(fromEvent(nativeElement, 'mouseenter').pipe(mapTo(true)), fromEvent(nativeElement, 'mouseleave').pipe(mapTo(false)));
+            /** menu mouse state **/
+            const menuMouseState$ = this.dropdownMenu.mouseState$;
+            /** merged mouse state **/
+            const mergedMouseState$ = merge(menuMouseState$, hostMouseState$);
+            /** host click state **/
+            const hostClickState$ = fromEvent(nativeElement, 'click').pipe(map(() => !this.visible));
+            /** visible state switch by cmacsTrigger **/
+            const visibleStateByTrigger$ = this.cmacsTrigger$.pipe(switchMap(trigger => {
+                if (trigger === 'hover') {
+                    return mergedMouseState$;
+                }
+                else if (trigger === 'click') {
+                    return hostClickState$;
+                }
+                else {
+                    return EMPTY;
+                }
+            }));
+            const descendantMenuItemClick$ = this.dropdownMenu.descendantMenuItemClick$.pipe(filter(() => this.clickHide), mapTo(false));
+            const domTriggerVisible$ = merge(visibleStateByTrigger$, descendantMenuItemClick$, this.overlayClose$).pipe(filter(() => !this.disabled));
+            const visible$ = merge(this.inputVisible$, domTriggerVisible$);
+            combineLatest([visible$, this.dropdownMenu.isChildSubMenuOpen$])
+                .pipe(map(([visible, sub]) => visible || sub), auditTime(150), distinctUntilChanged(), filter(() => this.platform.isBrowser), takeUntil(this.destroy$))
+                .subscribe((visible) => {
+                const element = this.matchWidthElement ? this.matchWidthElement.nativeElement : nativeElement;
+                const triggerWidth = element.getBoundingClientRect().width;
+                if (this.visible !== visible) {
+                    this.visibleChange.emit(visible);
+                }
+                this.visible = visible;
+                if (visible) {
+                    /** set up overlayRef **/
+                    if (!this.overlayRef) {
+                        /** new overlay **/
+                        this.overlayRef = this.overlay.create({
+                            positionStrategy: this.positionStrategy,
+                            minWidth: triggerWidth,
+                            disposeOnNavigation: true,
+                            hasBackdrop: (this.hasBackdrop || this.backdrop) && this.cmacsTrigger === 'click',
+                            scrollStrategy: this.overlay.scrollStrategies.reposition()
+                        });
+                        merge(this.overlayRef.backdropClick(), this.overlayRef.detachments(), this.overlayRef.outsidePointerEvents().pipe(filter((e) => !this.elementRef.nativeElement.contains(e.target))), this.overlayRef.keydownEvents().pipe(filter(e => e.keyCode === ESCAPE && !hasModifierKey(e))))
+                            .pipe(mapTo(false), takeUntil(this.destroy$))
+                            .subscribe(this.overlayClose$);
+                    }
+                    else {
+                        /** update overlay config **/
+                        const overlayConfig = this.overlayRef.getConfig();
+                        overlayConfig.minWidth = triggerWidth;
+                    }
+                    /** open dropdown with animation **/
+                    this.positionStrategy.withPositions([POSITION_MAP[this.placement], ...listOfPositions]);
+                    /** reset portal if needed **/
+                    if (!this.portal || this.portal.templateRef !== this.dropdownMenu.templateRef) {
+                        this.portal = new TemplatePortal(this.dropdownMenu.templateRef, this.viewContainerRef);
+                    }
+                    this.overlayRef.attach(this.portal);
+                }
+                else {
+                    /** detach overlayRef if needed **/
+                    if (this.overlayRef) {
+                        this.overlayRef.detach();
+                    }
+                }
+            });
+        }
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+        if (this.overlayRef) {
+            this.overlayRef.dispose();
+            this.overlayRef = null;
+        }
+    }
+    ngOnChanges(changes) {
+        const { visible, disabled, overlayClassName, overlayStyle, cmacsTrigger, backdrop } = changes;
+        if (cmacsTrigger) {
+            this.cmacsTrigger$.next(this.cmacsTrigger);
+        }
+        if (visible) {
+            this.inputVisible$.next(this.visible);
+        }
+        if (disabled) {
+            const nativeElement = this.elementRef.nativeElement;
+            if (this.disabled) {
+                this.renderer.setAttribute(nativeElement, 'disabled', '');
+                this.inputVisible$.next(false);
+            }
+            else {
+                this.renderer.removeAttribute(nativeElement, 'disabled');
+            }
+        }
+        if (overlayClassName) {
+            this.setDropdownMenuValue('overlayClassName', this.overlayClassName);
+        }
+        if (overlayStyle) {
+            this.setDropdownMenuValue('overlayStyle', this.overlayStyle);
+        }
+        if (backdrop) {
+            warnDeprecation('`backdrop` in dropdown component will be removed in 12.0.0, please use `hasBackdrop` instead.');
+        }
+    }
+}
+CmacsDropDownDirective.ɵfac = function CmacsDropDownDirective_Factory(t) { return new (t || CmacsDropDownDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Overlay), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(Platform)); };
+CmacsDropDownDirective.ɵdir = ɵɵdefineDirective({ type: CmacsDropDownDirective, selectors: [["", "cmacs-dropdown", ""]], inputs: { dropdownMenu: "dropdownMenu", cmacsTrigger: "cmacsTrigger", matchWidthElement: "matchWidthElement", backdrop: "backdrop", hasBackdrop: "hasBackdrop", clickHide: "clickHide", disabled: "disabled", visible: "visible", overlayClassName: "overlayClassName", overlayStyle: "overlayStyle", placement: "placement" }, outputs: { visibleChange: "visibleChange" }, exportAs: ["cmacsDropdown"], features: [ɵɵNgOnChangesFeature] });
+__decorate([
+    InputBoolean()
+], CmacsDropDownDirective.prototype, "backdrop", void 0);
+__decorate([
+    InputBoolean()
+], CmacsDropDownDirective.prototype, "hasBackdrop", void 0);
+__decorate([
+    InputBoolean()
+], CmacsDropDownDirective.prototype, "clickHide", void 0);
+__decorate([
+    InputBoolean()
+], CmacsDropDownDirective.prototype, "disabled", void 0);
+__decorate([
+    InputBoolean()
+], CmacsDropDownDirective.prototype, "visible", void 0);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsDropDownDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[cmacs-dropdown]',
+                exportAs: 'cmacsDropdown'
+            }]
+    }], function () { return [{ type: ElementRef }, { type: Overlay }, { type: Renderer2 }, { type: ViewContainerRef }, { type: Platform }]; }, { dropdownMenu: [{
+            type: Input
+        }], cmacsTrigger: [{
+            type: Input
+        }], matchWidthElement: [{
+            type: Input
+        }], backdrop: [{
+            type: Input
+        }], hasBackdrop: [{
+            type: Input
+        }], clickHide: [{
+            type: Input
+        }], disabled: [{
+            type: Input
+        }], visible: [{
+            type: Input
+        }], overlayClassName: [{
+            type: Input
+        }], overlayStyle: [{
+            type: Input
+        }], placement: [{
+            type: Input
+        }], visibleChange: [{
+            type: Output
+        }] }); })();
+
+function CmacsDropdownMenuComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
+    const _r2 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 0);
+    ɵɵlistener("mouseenter", function CmacsDropdownMenuComponent_ng_template_0_Template_div_mouseenter_0_listener() { ɵɵrestoreView(_r2); const ctx_r1 = ɵɵnextContext(); return ctx_r1.setMouseState(true); })("positionChange", function CmacsDropdownMenuComponent_ng_template_0_Template_div_positionChange_0_listener($event) { ɵɵrestoreView(_r2); const ctx_r3 = ɵɵnextContext(); return ctx_r3.onPositionChange($event); })("mouseleave", function CmacsDropdownMenuComponent_ng_template_0_Template_div_mouseleave_0_listener() { ɵɵrestoreView(_r2); const ctx_r4 = ɵɵnextContext(); return ctx_r4.setMouseState(false); });
+    ɵɵprojection(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r0 = ɵɵnextContext();
+    ɵɵclassProp("ant-dropdown-rtl", ctx_r0.dir === "rtl")("cmacs-dropdown-open", ctx_r0.cmacsOpen);
+    ɵɵproperty("ngClass", ctx_r0.overlayClassName)("ngStyle", ctx_r0.overlayStyle)("@slideMotion", "enter")("@.disabled", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation);
+} }
+const _c0$m = ["*"];
+class CmacsDropdownMenuComponent {
+    constructor(cdr, elementRef, renderer, viewContainerRef, nzMenuService, directionality, noAnimation) {
+        this.cdr = cdr;
+        this.elementRef = elementRef;
+        this.renderer = renderer;
+        this.viewContainerRef = viewContainerRef;
+        this.nzMenuService = nzMenuService;
+        this.directionality = directionality;
+        this.noAnimation = noAnimation;
+        this.mouseState$ = new BehaviorSubject(false);
+        this.isChildSubMenuOpen$ = this.nzMenuService.isChildSubMenuOpen$;
+        this.descendantMenuItemClick$ = this.nzMenuService.descendantMenuItemClick$;
+        this.overlayClassName = '';
+        this.overlayStyle = {};
+        this.cmacsOpen = false;
+        this.dir = 'ltr';
+        this.destroy$ = new Subject();
+    }
+    setMouseState(visible) {
+        this.mouseState$.next(visible);
+    }
+    setValue(key, value) {
+        this[key] = value;
+        this.cdr.markForCheck();
+    }
+    ngOnInit() {
+        var _a;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(takeUntil(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.cdr.detectChanges();
+        });
+        this.dir = this.directionality.value;
+    }
+    ngAfterContentInit() {
+        this.renderer.removeChild(this.renderer.parentNode(this.elementRef.nativeElement), this.elementRef.nativeElement);
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+}
+CmacsDropdownMenuComponent.ɵfac = function CmacsDropdownMenuComponent_Factory(t) { return new (t || CmacsDropdownMenuComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(MenuService), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NzNoAnimationDirective, 9)); };
+CmacsDropdownMenuComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsDropdownMenuComponent, selectors: [["cmacs-dropdown-menu"]], viewQuery: function CmacsDropdownMenuComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵɵviewQuery(TemplateRef, 3);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templateRef = _t.first);
+    } }, inputs: { cmacsOpen: "cmacsOpen" }, exportAs: ["cmacsDropdownMenu"], features: [ɵɵProvidersFeature([
+            MenuService,
+            /** menu is inside dropdown-menu component **/
+            {
+                provide: CmacsIsMenuInsideDropDownToken,
+                useValue: true
+            }
+        ])], ngContentSelectors: _c0$m, decls: 1, vars: 0, consts: [[1, "ant-dropdown", "cmacs-dropdown", 3, "ngClass", "ngStyle", "nzNoAnimation", "mouseenter", "positionChange", "mouseleave"]], template: function CmacsDropdownMenuComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵprojectionDef();
+        ɵɵtemplate(0, CmacsDropdownMenuComponent_ng_template_0_Template, 2, 9, "ng-template");
+    } }, directives: [NgClass, NgStyle, NzNoAnimationDirective], encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
+__decorate([
+    InputBoolean()
+], CmacsDropdownMenuComponent.prototype, "cmacsOpen", void 0);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsDropdownMenuComponent, [{
+        type: Component,
+        args: [{
+                selector: `cmacs-dropdown-menu`,
+                exportAs: `cmacsDropdownMenu`,
+                animations: [slideMotion],
+                providers: [
+                    MenuService,
+                    /** menu is inside dropdown-menu component **/
+                    {
+                        provide: CmacsIsMenuInsideDropDownToken,
+                        useValue: true
+                    }
+                ],
+                template: `
+    <ng-template>
+      <div
+        class="ant-dropdown cmacs-dropdown"
+        [class.ant-dropdown-rtl]="dir === 'rtl'"
+        [ngClass]="overlayClassName"
+        [ngStyle]="overlayStyle"
+        [class.cmacs-dropdown-open]="cmacsOpen"
+        [@slideMotion]="'enter'"
+        [@.disabled]="noAnimation?.nzNoAnimation"
+        [nzNoAnimation]="noAnimation?.nzNoAnimation"
+        (mouseenter)="setMouseState(true)"
+        (positionChange)="onPositionChange($event)"
+        (mouseleave)="setMouseState(false)"
+      >
+        <ng-content></ng-content>
+      </div>
+    </ng-template>
+  `,
+                preserveWhitespaces: false,
+                encapsulation: ViewEncapsulation.None,
+                changeDetection: ChangeDetectionStrategy.OnPush
+            }]
+    }], function () { return [{ type: ChangeDetectorRef }, { type: ElementRef }, { type: Renderer2 }, { type: ViewContainerRef }, { type: MenuService }, { type: Directionality, decorators: [{
+                type: Optional
+            }] }, { type: NzNoAnimationDirective, decorators: [{
+                type: Host
+            }, {
+                type: Optional
+            }] }]; }, { templateRef: [{
+            type: ViewChild,
+            args: [TemplateRef, { static: true }]
+        }], cmacsOpen: [{
+            type: Input
+        }] }); })();
+
+function CmacsFloatingMenuComponent_div_0_button_7_Template(rf, ctx) { if (rf & 1) {
+    const _r6 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "button", 10);
+    ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_button_7_Template_button_click_0_listener() { ɵɵrestoreView(_r6); const ctx_r5 = ɵɵnextContext(2); return ctx_r5.expandToolbar(); });
+    ɵɵelement(1, "i", 11);
+    ɵɵelementEnd();
+} }
+function CmacsFloatingMenuComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1) {
+    const _r9 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 12);
+    ɵɵelementStart(1, "button", 13);
+    ɵɵelement(2, "i", 14);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "cmacs-dropdown-menu", null, 15);
+    ɵɵelementStart(5, "ul", 16);
+    ɵɵelementStart(6, "li", 17);
+    ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_6_listener() { ɵɵrestoreView(_r9); const ctx_r8 = ɵɵnextContext(2); return ctx_r8.dockToLeft(); });
+    ɵɵelementStart(7, "span");
+    ɵɵtext(8);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(9, "li", 17);
+    ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_9_listener() { ɵɵrestoreView(_r9); const ctx_r10 = ɵɵnextContext(2); return ctx_r10.dockToRight(); });
+    ɵɵelementStart(10, "span");
+    ɵɵtext(11);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(12, "li", 17);
+    ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_12_listener() { ɵɵrestoreView(_r9); const ctx_r11 = ɵɵnextContext(2); return ctx_r11.dockToTop(); });
+    ɵɵelementStart(13, "span");
+    ɵɵtext(14);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(15, "li", 17);
+    ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_15_listener() { ɵɵrestoreView(_r9); const ctx_r12 = ɵɵnextContext(2); return ctx_r12.dockToBottom(); });
+    ɵɵelementStart(16, "span");
+    ɵɵtext(17);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(18, "li", 17);
+    ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_18_listener() { ɵɵrestoreView(_r9); const ctx_r13 = ɵɵnextContext(2); return ctx_r13.minimizeToolbar(); });
+    ɵɵelement(19, "i", 18);
+    ɵɵelementStart(20, "span");
+    ɵɵtext(21);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const _r7 = ɵɵreference(4);
+    const ctx_r3 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵproperty("cmacsTrigger", "click")("placement", ctx_r3.getPlacement())("dropdownMenu", _r7);
+    ɵɵadvance(4);
+    ɵɵclassProp("cmacs-floating-menu-main-ul-right", ctx_r3.position === "left")("cmacs-floating-menu-main-ul-top", ctx_r3.position === "bottom")("cmacs-floating-menu-main-ul-bottom", ctx_r3.position === "top")("cmacs-floating-menu-main-ul-left", ctx_r3.position === "right");
+    ɵɵadvance(3);
+    ɵɵtextInterpolate(ctx_r3.i18n["Dock To Left"] ? ctx_r3.i18n["Dock To Left"] : ctx_r3._i18n["Dock To Left"]);
+    ɵɵadvance(3);
+    ɵɵtextInterpolate(ctx_r3.i18n["Dock To Right"] ? ctx_r3.i18n["Dock To Right"] : ctx_r3._i18n["Dock To Right"]);
+    ɵɵadvance(3);
+    ɵɵtextInterpolate(ctx_r3.i18n["Dock To Top"] ? ctx_r3.i18n["Dock To Top"] : ctx_r3._i18n["Dock To Top"]);
+    ɵɵadvance(3);
+    ɵɵtextInterpolate(ctx_r3.i18n["Dock To Bottom"] ? ctx_r3.i18n["Dock To Bottom"] : ctx_r3._i18n["Dock To Bottom"]);
+    ɵɵadvance(4);
+    ɵɵtextInterpolate(ctx_r3.i18n["Minimize Toolbar"] ? ctx_r3.i18n["Minimize Toolbar"] : ctx_r3._i18n["Minimize Toolbar"]);
+} }
+function CmacsFloatingMenuComponent_div_0_div_9_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 19);
+    ɵɵprojection(1);
+    ɵɵelementEnd();
+} }
+function CmacsFloatingMenuComponent_div_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 1);
+    ɵɵelement(1, "div", 2);
+    ɵɵelement(2, "div", 3);
+    ɵɵelement(3, "div", 4);
+    ɵɵelement(4, "div", 5);
+    ɵɵelementStart(5, "div", null, 6);
+    ɵɵtemplate(7, CmacsFloatingMenuComponent_div_0_button_7_Template, 2, 0, "button", 7);
+    ɵɵtemplate(8, CmacsFloatingMenuComponent_div_0_div_8_Template, 22, 16, "div", 8);
+    ɵɵtemplate(9, CmacsFloatingMenuComponent_div_0_div_9_Template, 2, 0, "div", 9);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r0 = ɵɵnextContext();
+    ɵɵproperty("cdkDragBoundary", ctx_r0.dragBoundary);
+    ɵɵadvance(5);
+    ɵɵclassProp("cmacs-floating-menu-horizontal", ctx_r0.position === "top" || ctx_r0.position === "bottom")("cmacs-floating-menu-collapsed", ctx_r0._minimizeToolbar)("cmacs-floating-menu-vertical", ctx_r0.position === "left" || ctx_r0.position === "right");
+    ɵɵadvance(2);
+    ɵɵproperty("ngIf", ctx_r0._minimizeToolbar);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !ctx_r0._minimizeToolbar && ctx_r0.showExtras);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !ctx_r0._minimizeToolbar);
+} }
+const _c0$n = ["*"];
+const FLOATING_MENU_LOCALIZATION = {
+    'Dock To Left': 'Dock To Left',
+    'Dock To Right': 'Dock To Right',
+    'Dock To Top': 'Dock To Top',
+    'Dock To Bottom': 'Dock To Bottom',
+    'Minimize Toolbar': 'Minimize Toolbar'
+};
+class CmacsFloatingMenuComponent {
+    constructor() {
+        this._minimizeToolbar = false;
+        this._i18n = FLOATING_MENU_LOCALIZATION;
+        this.position = 'bottom';
+        this.visible = false;
+        this.showExtras = true;
+        this.positionChange = new EventEmitter();
+        this.carrot = '';
+        this.topBoundary = '0';
+        this.bottomBoundary = '0';
+        this.leftBoundary = '0';
+        this.rightBoundary = '0';
+        this.i18n = FLOATING_MENU_LOCALIZATION;
+    }
+    ngOnChanges() {
+        if (this.cdkDrag) {
+            this.resetDragDrop();
+        }
+    }
+    minimizeToolbar() {
+        this.resetDragDrop();
+        this._minimizeToolbar = true;
+    }
+    expandToolbar() {
+        this.resetDragDrop();
+        this._minimizeToolbar = false;
+    }
+    dockToLeft() {
+        this.resetDragDrop();
+        this.top = null;
+        this.left = this.leftBoundary;
+        this.right = null;
+        this.bottom = null;
+        this.position = 'left';
+        this.positionChange.emit(this.position);
+    }
+    dockToRight() {
+        this.resetDragDrop();
+        this.top = null;
+        this.left = null;
+        this.right = this.rightBoundary;
+        this.bottom = null;
+        this.position = 'right';
+        this.positionChange.emit(this.position);
+    }
+    dockToTop() {
+        this.resetDragDrop();
+        this.top = this.topBoundary;
+        this.left = null;
+        this.right = null;
+        this.bottom = null;
+        this.position = 'top';
+        this.positionChange.emit(this.position);
+    }
+    dockToBottom() {
+        this.resetDragDrop();
+        this.bottom = this.bottomBoundary;
+        this.left = null;
+        this.right = null;
+        this.top = null;
+        this.position = 'bottom';
+        this.positionChange.emit(this.position);
+    }
+    getPlacement() {
+        switch (this.position) {
+            case 'bottom':
+                return 'top';
+            case 'top':
+                return 'bottom';
+            case 'left':
+                return 'right';
+            case 'right':
+                return 'left';
+        }
+    }
+    resetDragDrop() {
+        this.cdkDrag._dragRef['_previewRect'] = undefined;
+        this.cdkDrag._dragRef['_boundaryRect'] = undefined;
+        this.cdkDrag.reset();
+    }
+}
+CmacsFloatingMenuComponent.ɵfac = function CmacsFloatingMenuComponent_Factory(t) { return new (t || CmacsFloatingMenuComponent)(); };
+CmacsFloatingMenuComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsFloatingMenuComponent, selectors: [["cmacs-floating-menu"]], viewQuery: function CmacsFloatingMenuComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵɵviewQuery(CdkDrag, 1);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.cdkDrag = _t.first);
+    } }, hostVars: 16, hostBindings: function CmacsFloatingMenuComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵɵstyleProp("top", ctx.top)("bottom", ctx.bottom)("left", ctx.left)("right", ctx.right);
+        ɵɵclassProp("carrot-bottom-menu", ctx.carrot === "bottom")("carrot-top-menu", ctx.carrot === "top")("cmacs-floating-menu-align-x", ctx.position === "bottom" || ctx.position === "top")("cmacs-floating-menu-align-y", ctx.position === "left" || ctx.position === "right");
+    } }, inputs: { position: "position", visible: "visible", showExtras: "showExtras", dragBoundary: "dragBoundary", carrot: "carrot", top: "top", bottom: "bottom", left: "left", right: "right", topBoundary: "topBoundary", bottomBoundary: "bottomBoundary", leftBoundary: "leftBoundary", rightBoundary: "rightBoundary", i18n: "i18n" }, outputs: { positionChange: "positionChange" }, exportAs: ["cmacsFloatingMenu"], features: [ɵɵNgOnChangesFeature], ngContentSelectors: _c0$n, decls: 1, vars: 1, consts: [["cdkDrag", "", 3, "cdkDragBoundary", 4, "ngIf"], ["cdkDrag", "", 3, "cdkDragBoundary"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-north-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-south-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-east-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-west-area"], ["fixedEl", ""], ["cmacs-button", "", "ghost", "", 3, "click", 4, "ngIf"], ["class", "cmacs-floating-menu-main", 4, "ngIf"], ["class", "cmacs-floating-menu-user-content", 4, "ngIf"], ["cmacs-button", "", "ghost", "", 3, "click"], [1, "iconUILarge-Sort"], [1, "cmacs-floating-menu-main"], ["cmacs-button", "", "ghost", "", "cmacs-dropdown", "", 1, "cmacs-floating-menu-main-button", 3, "cmacsTrigger", "placement", "dropdownMenu"], [1, "iconUILarge-More-Veritcal_Icon"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 1, "cmacs-floating-menu-main-ul"], ["cmacs-menu-item", "", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "cmacs-floating-menu-user-content"]], template: function CmacsFloatingMenuComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵprojectionDef();
+        ɵɵtemplate(0, CmacsFloatingMenuComponent_div_0_Template, 10, 10, "div", 0);
+    } if (rf & 2) {
+        ɵɵproperty("ngIf", ctx.visible);
+    } }, directives: [NgIf, CdkDrag, CdkDragHandle, CmacsButtonComponent, CmacsDropdownButtonDirective, CmacsDropDownDirective, CmacsDropdownMenuComponent, CmacsMenuDirective, CmacsMenuItemDirective], styles: ["cmacs-floating-menu{display:inline-block;position:absolute}.cmacs-floating-menu-horizontal,.cmacs-floating-menu-vertical{box-shadow:0 3px 4px rgba(59,63,70,.2);z-index:1;width:-webkit-max-content;width:-moz-max-content;width:max-content;border-radius:5px}.cmacs-floating-menu-align-x{left:50%;transform:translateX(-50%)}.cmacs-floating-menu-align-y{top:50%;transform:translateY(-50%)}cmacs-floating-menu.carrot-top-menu:before{transform:rotate(-135deg) translateY(-8px) translateX(-8px)}cmacs-floating-menu.carrot-bottom-menu:after,cmacs-floating-menu.carrot-top-menu:before{width:10px;border:8px solid #0d1e3b;display:block;content:\"\";margin:0 auto;position:relative}cmacs-floating-menu.carrot-bottom-menu:after{transform:rotate(-135deg) translateY(8px) translateX(8px)}cmacs-floating-menu .ant-btn-background-ghost.ant-btn-default.cmacs-floating-menu-main-button:enabled:focus,cmacs-floating-menu .ant-btn-background-ghost.ant-btn-default.cmacs-floating-menu-main-button:enabled:hover,cmacs-floating-menu .ant-btn-background-ghost.ant-btn-default:not(.cmacs-floating-menu-main-button):enabled:focus,cmacs-floating-menu .ant-btn-background-ghost.ant-btn-default:not(.cmacs-floating-menu-main-button):enabled:hover,cmacs-floating-menu .ant-btn-icon-only:not(.cmacs-floating-menu-main-button),cmacs-floating-menu .ant-menu-vertical{background-color:transparent!important}cmacs-floating-menu .ant-btn-background-ghost.ant-btn-default:enabled,cmacs-floating-menu .ant-menu-item>a{color:#fff!important;padding:0}cmacs-floating-menu .ant-btn-background-ghost.ant-btn-default:enabled i{font-size:16px;color:#fff!important}cmacs-floating-menu .ant-menu-vertical .ant-menu-item,cmacs-floating-menu .ant-menu-vertical .ant-menu-item:not(:last-child){margin:0 auto}cmacs-floating-menu .ant-menu-vertical,cmacs-floating-menu .ant-menu-vertical-left{border:#97a0ae}cmacs-floating-menu .ant-menu-item>a{color:#97a0ae}cmacs-floating-menu .ant-menu-item .ant-menu-item-selected,cmacs-floating-menu .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{background-color:#001333;border-radius:3px}cmacs-floating-menu cmacs-divider .ant-divider{background-color:#656c79}.cmacs-floating-menu-main{background-color:#2d3d5a;border-radius:5px 0 0 5px!important;padding:12px 10px}.cmacs-floating-menu-vertical .cmacs-floating-menu-main{border-radius:5px 5px 0 0!important}.cmacs-floating-menu-main button{padding-right:0!important;padding-left:0!important}.cmacs-floating-menu-horizontal .cmacs-floating-menu-main{display:inline-block}.cmacs-floating-menu-main-ul{width:150px;min-width:150px;border-radius:5px;background-color:#0d1e3b;border-color:#0d1e3b!important}.cmacs-floating-menu-main-ul li{padding:8px 10px 8px 12px!important;font-size:12px;font-weight:400;font-stretch:normal;font-style:normal;letter-spacing:normal;color:#97a0ae;border-top:none!important}.cmacs-floating-menu-main-ul .ant-dropdown-menu-item:hover{background-color:#001333!important}.cmacs-floating-menu-main-ul .ant-dropdown-menu-item i,.cmacs-floating-menu-main-ul .ant-dropdown-menu-submenu-title i{position:relative;top:2px}.cmacs-floating-menu-vertical button,.cmacs-floating-menu-vertical cmacs-dropdown,.cmacs-floating-menu-vertical div{display:block}.cmacs-floating-menu-horizontal button,.cmacs-floating-menu-horizontal cmacs-dropdown,.cmacs-floating-menu-horizontal div{display:inline-block}cmacs-floating-menu .cmacs-floating-menu-vertical .ant-btn-background-ghost.ant-btn-default.cmacs-floating-menu-main-button{width:100%;border-radius:5px 5px 0 0!important}cmacs-floating-menu .cmacs-floating-menu-vertical .ant-divider-horizontal{width:60%;margin:5px auto;min-width:unset;background:#e8e8e8}cmacs-floating-menu .ant-divider-vertical{background:#e8e8e8}.cmacs-floating-menu-main-ul-right{margin-left:20px}.cmacs-floating-menu-main-ul-bottom{margin-top:20px}.cmacs-floating-menu-main-ul-top{margin-bottom:20px}.cmacs-floating-menu-main-ul-left{margin-right:20px}.cmacs-floating-menu-draggable-north-area{width:100%;height:10px;position:absolute;top:0;border-radius:5px 5px 0 0}.cmacs-floating-menu-draggable-south-area{width:100%;height:10px;position:absolute;bottom:0;border-radius:0 0 5px 5px}.cmacs-floating-menu-draggable-east-area{height:100%;width:10px;position:absolute;right:0;border-radius:0 5px 5px 0}.cmacs-floating-menu-draggable-west-area{height:100%;width:10px;position:absolute;left:0;border-radius:5px 0 0 5px}.cmacs-floating-menu-draggable-east-area:hover,.cmacs-floating-menu-draggable-north-area:hover,.cmacs-floating-menu-draggable-south-area:hover,.cmacs-floating-menu-draggable-west-area:hover{cursor:move}.cmacs-floating-menu-user-content{padding:12px;background:#0d1e3b;border-radius:0 5px 5px 0}.cmacs-floating-menu-vertical .cmacs-floating-menu-user-content{border-radius:0 0 5px 5px}.cmacs-floating-menu-main button,.cmacs-floating-menu-user-content button{height:24px}.cmacs-floating-menu-vertical .cmacs-floating-menu-user-content button{padding:8px 0!important;height:34px}.cmacs-floating-menu-user-content button{padding-right:8px!important;padding-left:8px!important}.cmacs-floating-menu-collapsed{padding:12px;background:#0d1e3b}.ant-tooltip-placement-top,.ant-tooltip-placement-topLeft,.ant-tooltip-placement-topRight{margin-bottom:10px}.ant-tooltip-placement-bottom,.ant-tooltip-placement-bottomLeft,.ant-tooltip-placement-bottomRight{margin-top:10px}.ant-tooltip-placement-right{margin-left:10px}.ant-tooltip-placement-left{margin-right:10px}"], encapsulation: 2, changeDetection: 0 });
+__decorate([
+    InputBoolean()
+], CmacsFloatingMenuComponent.prototype, "visible", void 0);
+__decorate([
+    InputBoolean()
+], CmacsFloatingMenuComponent.prototype, "showExtras", void 0);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsFloatingMenuComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-floating-menu',
+                exportAs: 'cmacsFloatingMenu',
+                templateUrl: './cmacs-floating-menu.component.html',
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                styleUrls: ['./cmacs-floating-menu.component.css'],
+                encapsulation: ViewEncapsulation.None,
+                host: {
+                    '[class.carrot-bottom-menu]': `carrot === 'bottom'`,
+                    '[class.carrot-top-menu]': `carrot === 'top'`,
+                    '[class.cmacs-floating-menu-align-x]': `position === 'bottom' || position === 'top'`,
+                    '[class.cmacs-floating-menu-align-y]': `position === 'left' || position === 'right'`,
+                    '[style.top]': `top`,
+                    '[style.bottom]': `bottom`,
+                    '[style.left]': `left`,
+                    '[style.right]': `right`,
+                }
+            }]
+    }], function () { return []; }, { cdkDrag: [{
+            type: ViewChild,
+            args: [CdkDrag]
+        }], position: [{
+            type: Input
+        }], visible: [{
+            type: Input
+        }], showExtras: [{
+            type: Input
+        }], dragBoundary: [{
+            type: Input
+        }], positionChange: [{
+            type: Output
+        }], carrot: [{
+            type: Input
+        }], top: [{
+            type: Input
+        }], bottom: [{
+            type: Input
+        }], left: [{
+            type: Input
+        }], right: [{
+            type: Input
+        }], topBoundary: [{
+            type: Input
+        }], bottomBoundary: [{
+            type: Input
+        }], leftBoundary: [{
+            type: Input
+        }], rightBoundary: [{
+            type: Input
+        }], i18n: [{
+            type: Input
+        }] }); })();
+
+class CmacsDropDownADirective {
+    constructor(elementRef) {
+        this.elementRef = elementRef;
+        // TODO: move to host after View Engine deprecation
+        this.elementRef.nativeElement.classList.add('ant-dropdown-link');
+    }
+}
+CmacsDropDownADirective.ɵfac = function CmacsDropDownADirective_Factory(t) { return new (t || CmacsDropDownADirective)(ɵɵdirectiveInject(ElementRef)); };
+CmacsDropDownADirective.ɵdir = ɵɵdefineDirective({ type: CmacsDropDownADirective, selectors: [["a", "cmacs-dropdown", ""]] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsDropDownADirective, [{
+        type: Directive,
+        args: [{
+                selector: 'a[cmacs-dropdown]'
+            }]
+    }], function () { return [{ type: ElementRef }]; }, null); })();
+
 class CmacsComponentsV2LibModule {
 }
 CmacsComponentsV2LibModule.ɵmod = ɵɵdefineNgModule({ type: CmacsComponentsV2LibModule });
-CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsComponentsV2LibModule_Factory(t) { return new (t || CmacsComponentsV2LibModule)(); }, imports: [[
+CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsComponentsV2LibModule_Factory(t) { return new (t || CmacsComponentsV2LibModule)(); }, providers: [], imports: [[
             CommonModule,
             FormsModule,
             NzButtonModule,
@@ -5108,8 +7036,17 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
             NzInputModule,
             NzRadioModule,
             NzSelectModule,
-            NzDividerModule
-        ], NzDividerModule,
+            NzDividerModule,
+            NzIconModule,
+            NzMenuModule,
+            OverlayModule,
+            NzNoAnimationModule,
+            NzOutletModule,
+            NzDropDownModule,
+            NzEmptyModule,
+            DragDropModule
+        ], NzEmptyModule,
+        NzDividerModule,
         NzButtonModule,
         NzCheckboxModule,
         NzToolTipModule,
@@ -5117,7 +7054,14 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         NzSwitchModule,
         NzInputModule,
         NzRadioModule,
-        NzSelectModule] });
+        NzSelectModule,
+        NzIconModule,
+        NzMenuModule,
+        OverlayModule,
+        NzNoAnimationModule,
+        NzOutletModule,
+        NzDropDownModule,
+        DragDropModule] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsComponentsV2LibComponent,
         CmacsCheckboxComponent,
         CmacsCheckboxWrapperComponent,
@@ -5147,7 +7091,19 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         CmacsInputGroupComponent,
         CmacsAutosizeDirective,
         CmacsInputGroupSlotComponent,
-        CmacsTextareaCountComponent], imports: [CommonModule,
+        CmacsTextareaCountComponent,
+        CmacsMenuDirective,
+        CmacsMenuGroupComponent,
+        CmacsSubMenuComponent,
+        NzSubmenuInlineChildComponent,
+        NzSubMenuTitleComponent,
+        NzSubmenuNoneInlineChildComponent,
+        CmacsMenuItemDirective,
+        CmacsFloatingMenuComponent,
+        CmacsDropDownDirective,
+        CmacsDropDownADirective,
+        CmacsDropdownMenuComponent,
+        CmacsDropdownButtonDirective], imports: [CommonModule,
         FormsModule,
         NzButtonModule,
         NzCheckboxModule,
@@ -5157,7 +7113,16 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         NzInputModule,
         NzRadioModule,
         NzSelectModule,
-        NzDividerModule], exports: [CmacsDividerComponent,
+        NzDividerModule,
+        NzIconModule,
+        NzMenuModule,
+        OverlayModule,
+        NzNoAnimationModule,
+        NzOutletModule,
+        NzDropDownModule,
+        NzEmptyModule,
+        DragDropModule], exports: [NzEmptyModule,
+        CmacsDividerComponent,
         NzDividerModule,
         CmacsComponentsV2LibComponent,
         CmacsCheckboxComponent,
@@ -5195,7 +7160,26 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         CmacsInputGroupComponent,
         CmacsAutosizeDirective,
         CmacsInputGroupSlotComponent,
-        CmacsTextareaCountComponent] }); })();
+        CmacsTextareaCountComponent,
+        NzIconModule,
+        CmacsMenuDirective,
+        CmacsMenuGroupComponent,
+        CmacsSubMenuComponent,
+        NzSubmenuInlineChildComponent,
+        NzSubMenuTitleComponent,
+        NzSubmenuNoneInlineChildComponent,
+        CmacsMenuItemDirective,
+        NzMenuModule,
+        OverlayModule,
+        NzNoAnimationModule,
+        NzOutletModule,
+        NzDropDownModule,
+        CmacsFloatingMenuComponent,
+        DragDropModule,
+        CmacsDropDownDirective,
+        CmacsDropDownADirective,
+        CmacsDropdownMenuComponent,
+        CmacsDropdownButtonDirective] }); })();
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsComponentsV2LibModule, [{
         type: NgModule,
         args: [{
@@ -5229,7 +7213,19 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     CmacsInputGroupComponent,
                     CmacsAutosizeDirective,
                     CmacsInputGroupSlotComponent,
-                    CmacsTextareaCountComponent
+                    CmacsTextareaCountComponent,
+                    CmacsMenuDirective,
+                    CmacsMenuGroupComponent,
+                    CmacsSubMenuComponent,
+                    NzSubmenuInlineChildComponent,
+                    NzSubMenuTitleComponent,
+                    NzSubmenuNoneInlineChildComponent,
+                    CmacsMenuItemDirective,
+                    CmacsFloatingMenuComponent,
+                    CmacsDropDownDirective,
+                    CmacsDropDownADirective,
+                    CmacsDropdownMenuComponent,
+                    CmacsDropdownButtonDirective
                 ],
                 imports: [
                     CommonModule,
@@ -5242,9 +7238,18 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     NzInputModule,
                     NzRadioModule,
                     NzSelectModule,
-                    NzDividerModule
+                    NzDividerModule,
+                    NzIconModule,
+                    NzMenuModule,
+                    OverlayModule,
+                    NzNoAnimationModule,
+                    NzOutletModule,
+                    NzDropDownModule,
+                    NzEmptyModule,
+                    DragDropModule
                 ],
                 exports: [
+                    NzEmptyModule,
                     CmacsDividerComponent,
                     NzDividerModule,
                     CmacsComponentsV2LibComponent,
@@ -5283,10 +7288,111 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     CmacsInputGroupComponent,
                     CmacsAutosizeDirective,
                     CmacsInputGroupSlotComponent,
-                    CmacsTextareaCountComponent
-                ]
+                    CmacsTextareaCountComponent,
+                    NzIconModule,
+                    CmacsMenuDirective,
+                    CmacsMenuGroupComponent,
+                    CmacsSubMenuComponent,
+                    NzSubmenuInlineChildComponent,
+                    NzSubMenuTitleComponent,
+                    NzSubmenuNoneInlineChildComponent,
+                    CmacsMenuItemDirective,
+                    NzMenuModule,
+                    OverlayModule,
+                    NzNoAnimationModule,
+                    NzOutletModule,
+                    NzDropDownModule,
+                    CmacsFloatingMenuComponent,
+                    DragDropModule,
+                    CmacsDropDownDirective,
+                    CmacsDropDownADirective,
+                    CmacsDropdownMenuComponent,
+                    CmacsDropdownButtonDirective
+                ],
+                entryComponents: [CmacsDropdownMenuComponent],
+                providers: []
             }]
     }], null, null); })();
+
+class CmacsMenuDividerDirective {
+    constructor(elementRef, renderer) {
+        this.elementRef = elementRef;
+        this.renderer = renderer;
+        this.renderer.addClass(elementRef.nativeElement, 'ant-dropdown-menu-item-divider');
+    }
+}
+CmacsMenuDividerDirective.ɵfac = function CmacsMenuDividerDirective_Factory(t) { return new (t || CmacsMenuDividerDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
+CmacsMenuDividerDirective.ɵdir = ɵɵdefineDirective({ type: CmacsMenuDividerDirective, selectors: [["", "cmacs-menu-divider", ""]], exportAs: ["cmacsMenuDivider"] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsMenuDividerDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[cmacs-menu-divider]',
+                exportAs: 'cmacsMenuDivider'
+            }]
+    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
+
+class CmacsContextMenuServiceModule {
+}
+CmacsContextMenuServiceModule.ɵmod = ɵɵdefineNgModule({ type: CmacsContextMenuServiceModule });
+CmacsContextMenuServiceModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsContextMenuServiceModule_Factory(t) { return new (t || CmacsContextMenuServiceModule)(); } });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsContextMenuServiceModule, [{
+        type: NgModule
+    }], null, null); })();
+
+const listOfPositions$1 = [
+    new ConnectionPositionPair({ originX: 'start', originY: 'top' }, { overlayX: 'start', overlayY: 'top' }),
+    new ConnectionPositionPair({ originX: 'start', originY: 'top' }, { overlayX: 'start', overlayY: 'bottom' }),
+    new ConnectionPositionPair({ originX: 'start', originY: 'top' }, { overlayX: 'end', overlayY: 'bottom' }),
+    new ConnectionPositionPair({ originX: 'start', originY: 'top' }, { overlayX: 'end', overlayY: 'top' })
+];
+class CmacsContextMenuService {
+    constructor(overlay) {
+        this.overlay = overlay;
+        this.overlayRef = null;
+        this.closeSubscription = Subscription.EMPTY;
+    }
+    create($event, nzDropdownMenuComponent) {
+        this.close(true);
+        const { x, y } = $event;
+        if ($event instanceof MouseEvent) {
+            $event.preventDefault();
+        }
+        const positionStrategy = this.overlay
+            .position()
+            .flexibleConnectedTo({ x, y })
+            .withPositions(listOfPositions$1)
+            .withTransformOriginOn('.ant-dropdown');
+        this.overlayRef = this.overlay.create({
+            positionStrategy,
+            disposeOnNavigation: true,
+            scrollStrategy: this.overlay.scrollStrategies.close()
+        });
+        this.closeSubscription = merge(nzDropdownMenuComponent.descendantMenuItemClick$, fromEvent(document, 'click').pipe(filter(event => !!this.overlayRef && !this.overlayRef.overlayElement.contains(event.target)), 
+        /** handle firefox contextmenu event **/
+        filter(event => event.button !== 2), take(1))).subscribe(() => {
+            this.close();
+        });
+        this.overlayRef.attach(new TemplatePortal(nzDropdownMenuComponent.templateRef, nzDropdownMenuComponent.viewContainerRef));
+    }
+    close(clear = false) {
+        if (this.overlayRef) {
+            this.overlayRef.detach();
+            if (clear) {
+                this.overlayRef.dispose();
+            }
+            this.overlayRef = null;
+            this.closeSubscription.unsubscribe();
+        }
+    }
+}
+CmacsContextMenuService.ɵfac = function CmacsContextMenuService_Factory(t) { return new (t || CmacsContextMenuService)(ɵɵinject(Overlay)); };
+CmacsContextMenuService.ɵprov = ɵɵdefineInjectable({ token: CmacsContextMenuService, factory: CmacsContextMenuService.ɵfac, providedIn: CmacsContextMenuServiceModule });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsContextMenuService, [{
+        type: Injectable,
+        args: [{
+                providedIn: CmacsContextMenuServiceModule
+            }]
+    }], function () { return [{ type: Overlay }]; }, null); })();
 
 /*
  * Public API Surface of cmacs-components-v2-lib
@@ -5296,5 +7402,5 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
  * Generated bundle index. Do not edit.
  */
 
-export { CmacsAutosizeDirective, CmacsButtonComponent, CmacsButtonGroupComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsDividerComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsTextareaCountComponent, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzRadioService, NzSliderService, defaultFilterOption };
+export { CmacsAutosizeDirective, CmacsButtonComponent, CmacsButtonGroupComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsFloatingMenuComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsIsMenuInsideDropDownToken, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsSubMenuComponent, CmacsTextareaCountComponent, FLOATING_MENU_LOCALIZATION, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, defaultFilterOption };
 //# sourceMappingURL=cmacs-components-v2-lib.js.map

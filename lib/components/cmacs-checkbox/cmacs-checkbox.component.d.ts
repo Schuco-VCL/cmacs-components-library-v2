@@ -43,6 +43,6 @@ export declare class CmacsCheckboxComponent implements OnInit, ControlValueAcces
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsCheckboxComponent, [null, null, { optional: true; }, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCheckboxComponent, "[cmacs-checkbox-v2]", ["cmacsCheckboxV2"], { "value": "value"; "theme": "theme"; "autoFocus": "autoFocus"; "disabled": "disabled"; "indeterminate": "indeterminate"; "checked": "checked"; }, { "checkedChange": "checkedChange"; }, never, ["*"]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCheckboxComponent, "[cmacs-checkbox]", ["cmacsCheckbox"], { "value": "value"; "theme": "theme"; "autoFocus": "autoFocus"; "disabled": "disabled"; "indeterminate": "indeterminate"; "checked": "checked"; }, { "checkedChange": "checkedChange"; }, never, ["*"]>;
 }
 //# sourceMappingURL=cmacs-checkbox.component.d.ts.map
