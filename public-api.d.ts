@@ -1,6 +1,7 @@
 export * from './lib/cmacs-components-v2-lib.service';
 export * from './lib/cmacs-components-v2-lib.component';
 export * from './lib/cmacs-components-v2-lib.module';
+export * from './lib/components/cmacs-video-player/cmacs-video-player.component';
 export * from './lib/components/cmacs-checkbox/cmacs-checkbox-group.component';
 export * from './lib/components/cmacs-checkbox/cmacs-checkbox-wrapper.component';
 export * from './lib/components/cmacs-checkbox/cmacs-checkbox.component';
@@ -50,4 +51,5 @@ export * from './lib/components/cmacs-dropdown/dropdown-button.directive';
 export * from './lib/components/cmacs-dropdown/dropdown-menu.component';
 export * from './lib/components/cmacs-dropdown/dropdown.directive';
 export * from './lib/components/cmacs-floating-menu/cmacs-floating-menu.component';
+export * from './lib/components/cmacs-kpi/cmacs-kpi.component';
 //# sourceMappingURL=public-api.d.ts.map

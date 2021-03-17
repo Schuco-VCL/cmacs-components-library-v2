@@ -1,4 +1,4 @@
-import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, EventEmitter, ɵɵdirectiveInject, Renderer2, ElementRef, ɵɵprojectionDef, ɵɵprojection, ChangeDetectionStrategy, ViewEncapsulation, Output, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵlistener, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵelement, ɵɵadvance, ɵɵproperty, Optional, ViewChild, Input, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵtextInterpolate, ɵɵtemplate, ɵɵcontentQuery, ɵɵattribute, ɵɵNgOnChangesFeature, ContentChild, ContentChildren, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵstyleProp, ɵɵsanitizeHtml, ViewChildren, ɵɵdefineDirective, Directive, TemplateRef, ɵɵdefinePipe, Pipe, ɵɵtextInterpolate1, ɵɵreference, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵtemplateRefExtractor, Host, ɵɵpropertyInterpolate, ɵɵelementContainer, ɵɵpipeBind4, NgZone, Self, isDevMode, InjectionToken, ɵɵinject, SkipSelf, Inject, ɵɵsyntheticHostProperty, ViewContainerRef, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, EventEmitter, ɵɵdirectiveInject, Renderer2, ElementRef, ɵɵprojectionDef, ɵɵprojection, ChangeDetectionStrategy, ViewEncapsulation, Output, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵlistener, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵelement, ɵɵadvance, ɵɵproperty, Optional, ViewChild, Input, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵtextInterpolate, ɵɵtemplate, ɵɵcontentQuery, ɵɵattribute, ɵɵNgOnChangesFeature, ContentChild, ContentChildren, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵstyleProp, ɵɵsanitizeHtml, ViewChildren, ɵɵdefineDirective, Directive, TemplateRef, ɵɵdefinePipe, Pipe, ɵɵtextInterpolate1, ɵɵreference, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵtemplateRefExtractor, Host, ɵɵpropertyInterpolate, ɵɵelementContainer, ɵɵpipeBind4, NgZone, Self, isDevMode, InjectionToken, ɵɵinject, SkipSelf, Inject, ɵɵsyntheticHostProperty, ViewContainerRef, ɵɵsanitizeUrl, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
 import { __decorate } from 'tslib';
 import { NG_VALUE_ACCESSOR, CheckboxControlValueAccessor, NgControlStatus, NgModel, DefaultValueAccessor, NgControl, FormsModule } from '@angular/forms';
 import { takeUntil, startWith, filter, tap, pluck, map, distinctUntilChanged, share, skip, flatMap, switchMap, mergeMap, mapTo, auditTime, take } from 'rxjs/operators';
@@ -35,6 +35,8 @@ import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { CdkDrag, CdkDragHandle, DragDropModule } from '@angular/cdk/drag-drop';
 import { TemplatePortal } from '@angular/cdk/portal';
 import { warnDeprecation } from 'ng-zorro-antd/core/logger';
+import { DomSanitizer } from '@angular/platform-browser';
+import { ɵr, ɵt, ɵa, ɵb, ɵf, ɵd, ɵe, ɵh, ɵk, ɵi, ɵm, ɵc, ɵp, VgCoreModule, VgControlsModule, VgOverlayPlayModule, VgBufferingModule } from 'ngx-videogular';
 
 class CmacsComponentsV2LibService {
     constructor() { }
@@ -7022,6 +7024,361 @@ CmacsDropDownADirective.ɵdir = ɵɵdefineDirective({ type: CmacsDropDownADirect
             }]
     }], function () { return [{ type: ElementRef }]; }, null); })();
 
+const _c0$o = ["canvas"];
+function CmacsKpiComponent_div_0_div_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 9);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r4 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r4.getTotalCount().toFixed(ctx_r4.fixed));
+} }
+function CmacsKpiComponent_div_0_div_5_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "div", 10);
+} if (rf & 2) {
+    const kpi_r7 = ctx.$implicit;
+    const i_r8 = ctx.index;
+    const ctx_r5 = ɵɵnextContext(2);
+    ɵɵstyleProp("width", ctx_r5.getWidth(kpi_r7.count), "%")("background-color", kpi_r7.color)("opacity", ctx_r5.sanitizeStyle(kpi_r7.opacity));
+    ɵɵclassProp("border-radius-left", i_r8 === 0)("border-radius-right", i_r8 === ctx_r5.getColoredData().lenght - 1);
+} }
+function CmacsKpiComponent_div_0_ng_container_6_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainer(0);
+} }
+function CmacsKpiComponent_div_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 3);
+    ɵɵtemplate(1, CmacsKpiComponent_div_0_div_1_Template, 2, 1, "div", 4);
+    ɵɵelementStart(2, "div", 5);
+    ɵɵelementStart(3, "div", 6);
+    ɵɵtext(4);
+    ɵɵelementEnd();
+    ɵɵtemplate(5, CmacsKpiComponent_div_0_div_5_Template, 1, 10, "div", 7);
+    ɵɵtemplate(6, CmacsKpiComponent_div_0_ng_container_6_Template, 1, 0, "ng-container", 8);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r0 = ɵɵnextContext();
+    const _r2 = ɵɵreference(3);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", ctx_r0.showTotalCount);
+    ɵɵadvance(3);
+    ɵɵtextInterpolate(ctx_r0.title);
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", ctx_r0.getColoredData());
+    ɵɵadvance(1);
+    ɵɵproperty("ngTemplateOutlet", _r2);
+} }
+function CmacsKpiComponent_div_1_ng_container_10_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainer(0);
+} }
+function CmacsKpiComponent_div_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 11);
+    ɵɵelementStart(1, "div", 12);
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "div", 13);
+    ɵɵelementStart(4, "div", 14);
+    ɵɵelementStart(5, "div", 15);
+    ɵɵtext(6);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelement(7, "canvas", null, 16);
+    ɵɵelementEnd();
+    ɵɵelementStart(9, "div", 17);
+    ɵɵtemplate(10, CmacsKpiComponent_div_1_ng_container_10_Template, 1, 0, "ng-container", 8);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    const _r2 = ɵɵreference(3);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(ctx_r1.title);
+    ɵɵadvance(1);
+    ɵɵstyleProp("width", ctx_r1.width, "px");
+    ɵɵadvance(3);
+    ɵɵtextInterpolate(ctx_r1.getTotalCount().toFixed(ctx_r1.fixed));
+    ɵɵadvance(4);
+    ɵɵproperty("ngTemplateOutlet", _r2);
+} }
+function CmacsKpiComponent_ng_template_2_div_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 19);
+    ɵɵelement(1, "div", 20);
+    ɵɵelementStart(2, "div", 21);
+    ɵɵtext(3);
+    ɵɵelementEnd();
+    ɵɵelementStart(4, "div", 22);
+    ɵɵtext(5);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const kpi_r12 = ctx.$implicit;
+    const ctx_r11 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵstyleProp("background-color", kpi_r12.color)("opacity", ctx_r11.sanitizeStyle(kpi_r12.opacity));
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(kpi_r12.count.toFixed(ctx_r11.fixed));
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(kpi_r12.description);
+} }
+function CmacsKpiComponent_ng_template_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵtemplate(0, CmacsKpiComponent_ng_template_2_div_0_Template, 6, 6, "div", 18);
+} if (rf & 2) {
+    const ctx_r3 = ɵɵnextContext();
+    ɵɵproperty("ngForOf", ctx_r3.getColoredData());
+} }
+const KPI_COLORS = [
+    '#2a7cff',
+    '#00cda1',
+    '#ffa234',
+    '#a100cd',
+    '#cc2229',
+    '#009fe3',
+    '#688cda',
+    '#bec4cd'
+];
+const KPI_PRIORITY_COLORS = {
+    high: '#f6503c',
+    medium: '#ffc634',
+    low: '#00ce7d'
+};
+class CmacsKpiComponent {
+    constructor(sanitizer) {
+        this.sanitizer = sanitizer;
+        this.priority = false;
+        this.type = 'line';
+        this.width = 84;
+        this.showTotalCount = false;
+        this.fixed = 0;
+    }
+    ngAfterViewInit() {
+        if (this.canvasRef) {
+            const canvas = this.canvasRef.nativeElement;
+            canvas.width = this.width;
+            canvas.height = this.width;
+            const ctx = canvas.getContext("2d");
+            let start_angle = 0;
+            let data = this.getColoredData();
+            if (this.getTotalCount() > 0) {
+                for (let categ of data) {
+                    let val = categ.count;
+                    let slice_angle = 2 * Math.PI * (val / this.getTotalCount());
+                    if (slice_angle > 0) {
+                        this.drawPieSlice(ctx, canvas.width / 2, canvas.height / 2, Math.min(canvas.width / 2, canvas.height / 2), start_angle, start_angle + slice_angle - 0.05, categ.color);
+                        start_angle += slice_angle;
+                    }
+                }
+            }
+            else {
+                this.drawPieSlice(ctx, canvas.width / 2, canvas.height / 2, Math.min(canvas.width / 2, canvas.height / 2), start_angle, start_angle + 2 * Math.PI, '#dee0e5');
+            }
+            //drawing a white circle over the chart
+            //to create the doughnut chart
+            this.drawPieSlice(ctx, canvas.width / 2, canvas.height / 2, 0.8 * Math.min(canvas.width / 2, canvas.height / 2), 0, 2 * Math.PI, "#ffffff");
+        }
+    }
+    getColoredDataPriority() {
+        let coloredData = [];
+        this.data.forEach((item) => {
+            coloredData.push({
+                count: item.count,
+                description: item.description,
+                color: KPI_PRIORITY_COLORS[item.priority],
+                opacity: 1
+            });
+        });
+        return coloredData;
+    }
+    drawPieSlice(ctx, centerX, centerY, radius, startAngle, endAngle, color) {
+        ctx.fillStyle = color;
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.arc(centerX, centerY, radius, startAngle - Math.PI / 2, endAngle - Math.PI / 2, false);
+        ctx.closePath();
+        ctx.fill();
+    }
+    drawLine(ctx, startX, startY, endX, endY) {
+        ctx.beginPath();
+        ctx.moveTo(startX, startY);
+        ctx.lineTo(endX, endY);
+        ctx.stroke();
+    }
+    drawArc(ctx, centerX, centerY, radius, startAngle, endAngle) {
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+        ctx.stroke();
+    }
+    sanitizeStyle(style) {
+        return this.sanitizer.bypassSecurityTrustStyle(style);
+    }
+    getTotalCount() {
+        let total = 0;
+        this.data.forEach((item) => {
+            total += item.count;
+        });
+        return total;
+    }
+    getWidth(count) {
+        return count !== 0 ? Math.trunc(count * 100 / this.getTotalCount()) - 2 : 0;
+    }
+    getColoredData() {
+        if (!this.priority) {
+            let coloredData = [];
+            const remaining = this.data.length % KPI_COLORS.length;
+            let rate = this.data.length / KPI_COLORS.length;
+            if (remaining > 0) {
+                rate = Math.trunc(rate) + 1;
+            }
+            let tempRate = rate;
+            let opacity = 1;
+            let colorIndex = 0;
+            this.data.forEach((item) => {
+                if (tempRate === 0) {
+                    tempRate = rate;
+                    colorIndex += 1;
+                    opacity = 1;
+                }
+                if (colorIndex >= KPI_COLORS.length) {
+                    colorIndex = 0;
+                }
+                if (opacity === 0.4) {
+                    opacity = 1;
+                }
+                coloredData.push({
+                    count: item.count,
+                    description: item.description,
+                    color: KPI_COLORS[colorIndex],
+                    opacity: opacity
+                });
+                opacity = opacity - 0.2;
+                tempRate--;
+            });
+            return coloredData;
+        }
+        else {
+            return this.getColoredDataPriority();
+        }
+    }
+}
+CmacsKpiComponent.ɵfac = function CmacsKpiComponent_Factory(t) { return new (t || CmacsKpiComponent)(ɵɵdirectiveInject(DomSanitizer)); };
+CmacsKpiComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKpiComponent, selectors: [["cmacs-kpi"]], viewQuery: function CmacsKpiComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵɵviewQuery(_c0$o, 1, ElementRef);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.canvasRef = _t.first);
+    } }, inputs: { data: "data", title: "title", priority: "priority", type: "type", width: "width", showTotalCount: "showTotalCount", fixed: "fixed" }, exportAs: ["cmacsKpi"], decls: 4, vars: 2, consts: [["class", "cmacs-kpi-wrapper", 4, "ngIf"], ["class", "cmacs-kpi-doughnut-container", 4, "ngIf"], ["legend", ""], [1, "cmacs-kpi-wrapper"], ["class", "cmacs-kpi-total-count", 4, "ngIf"], [2, "flex", "1 0 auto"], [1, "cmacs-kpi-title"], ["class", "cmacs-kpi-line", 3, "border-radius-left", "border-radius-right", "width", "background-color", "opacity", 4, "ngFor", "ngForOf"], [4, "ngTemplateOutlet"], [1, "cmacs-kpi-total-count"], [1, "cmacs-kpi-line"], [1, "cmacs-kpi-doughnut-container"], [1, "cmacs-kpi-doughnut-title"], [1, "cmacs-kpi-doughnut-wrapper"], [1, "cmacs-kpi-total-count-wrapper"], [1, "cmacs-kpi-doughnut-total-count"], ["canvas", ""], [1, "cmacs-kpi-doughnut-legend-wrapper"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-divider"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKpiComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵtemplate(0, CmacsKpiComponent_div_0_Template, 7, 4, "div", 0);
+        ɵɵtemplate(1, CmacsKpiComponent_div_1_Template, 11, 5, "div", 1);
+        ɵɵtemplate(2, CmacsKpiComponent_ng_template_2_Template, 1, 1, "ng-template", null, 2, ɵɵtemplateRefExtractor);
+    } if (rf & 2) {
+        ɵɵproperty("ngIf", ctx.type === "line");
+        ɵɵadvance(1);
+        ɵɵproperty("ngIf", ctx.type === "doughnut");
+    } }, directives: [NgIf, NgForOf, NgTemplateOutlet], styles: [".cmacs-kpi-line[_ngcontent-%COMP%]{height:6px;margin-right:4px;display:inline-block}.cmacs-kpi-total-count[_ngcontent-%COMP%]{margin-right:10px;margin-top:-2px;flex:0 0 auto;font-weight:600;color:#3b4043}.border-radius-left[_ngcontent-%COMP%]{border-radius:100px 0 0 100px}.border-radius-right[_ngcontent-%COMP%]{border-radius:0 100px 100px 0}.cmacs-kpi-divider[_ngcontent-%COMP%]{display:inline-block;margin-top:4px;width:3px;height:10px;border-radius:10px;margin-right:8px}.cmacs-kpi-count[_ngcontent-%COMP%]{font-weight:600;color:#3b4043;margin-right:4px;min-width:20px}.cmacs-kpi-count[_ngcontent-%COMP%], .cmacs-kpi-description[_ngcontent-%COMP%]{display:inline-block;font-family:Roboto,sans-serif;font-size:12px;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal}.cmacs-kpi-description[_ngcontent-%COMP%]{font-weight:400;color:#656c79}.cmacs-kpi-legend-wrapper[_ngcontent-%COMP%]{margin-bottom:11px;display:flex}.cmacs-kpi-wrapper[_ngcontent-%COMP%]{display:flex}.cmacs-kpi-title[_ngcontent-%COMP%]{font-family:Roboto,sans-serif;font-size:14px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.29;letter-spacing:normal;color:#656c79}.cmacs-kpi-doughnut-wrapper[_ngcontent-%COMP%]{position:absolute;margin-top:24px;margin-left:30px;float:left;display:inline-block}.cmacs-kpi-doughnut-total-count[_ngcontent-%COMP%]{position:relative;left:-50%;font-size:20px;font-weight:600;color:#3b4043}.cmacs-kpi-total-count-wrapper[_ngcontent-%COMP%]{top:calc(50% - 17px);left:50%;position:absolute}.cmacs-kpi-doughnut-legend-wrapper[_ngcontent-%COMP%]{float:right;display:inline-block;margin-top:24px}", "cmacs-kpi[_ngcontent-%COMP%] {\n        display: block;\n      }"] });
+__decorate([
+    InputBoolean()
+], CmacsKpiComponent.prototype, "priority", void 0);
+__decorate([
+    InputBoolean()
+], CmacsKpiComponent.prototype, "showTotalCount", void 0);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsKpiComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-kpi',
+                exportAs: 'cmacsKpi',
+                templateUrl: './cmacs-kpi.component.html',
+                styleUrls: ['./cmacs-kpi.component.css'],
+                styles: [
+                    `
+      cmacs-kpi {
+        display: block;
+      }
+    `
+                ]
+            }]
+    }], function () { return [{ type: DomSanitizer }]; }, { data: [{
+            type: Input
+        }], title: [{
+            type: Input
+        }], priority: [{
+            type: Input
+        }], type: [{
+            type: Input
+        }], width: [{
+            type: Input
+        }], showTotalCount: [{
+            type: Input
+        }], fixed: [{
+            type: Input
+        }], canvasRef: [{
+            type: ViewChild,
+            args: ['canvas', { read: ElementRef }]
+        }] }); })();
+
+function CmacsVideoPlayerComponent_source_14_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "source", 10);
+} if (rf & 2) {
+    const source_r2 = ctx.$implicit;
+    ɵɵpropertyInterpolate("src", source_r2.src, ɵɵsanitizeUrl);
+    ɵɵpropertyInterpolate("type", source_r2.type);
+} }
+class CmacsVideoPlayerComponent {
+    constructor() {
+        this.playerReady = new EventEmitter();
+    }
+    onPlayerReady(api) {
+        this.playerReady.emit(api);
+    }
+}
+CmacsVideoPlayerComponent.ɵfac = function CmacsVideoPlayerComponent_Factory(t) { return new (t || CmacsVideoPlayerComponent)(); };
+CmacsVideoPlayerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsVideoPlayerComponent, selectors: [["cmacs-video-player"]], inputs: { sources: "sources" }, outputs: { playerReady: "playerReady" }, exportAs: ["cmacsVideoPlayer"], decls: 15, vars: 5, consts: [[3, "onPlayerReady"], [2, "background-color", "white"], [2, "height", "30px", "background-color", "#0d1e3b", "opacity", "0.5", 3, "vgAutohide", "vgAutohideTime"], [2, "height", "30px", "width", "30px"], [2, "height", "30px"], [3, "vgSlider"], ["vgProperty", "left", "vgFormat", "mm:ss", 2, "height", "30px", "width", "45px", "line-height", "30px"], ["id", "singleVideo", "preload", "auto", "crossorigin", "", 3, "vgMedia"], ["media", ""], [3, "src", "type", 4, "ngFor", "ngForOf"], [3, "src", "type"]], template: function CmacsVideoPlayerComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "vg-player", 0);
+        ɵɵlistener("onPlayerReady", function CmacsVideoPlayerComponent_Template_vg_player_onPlayerReady_0_listener($event) { return ctx.onPlayerReady($event); });
+        ɵɵelement(1, "vg-overlay-play", 1);
+        ɵɵelement(2, "vg-buffering");
+        ɵɵelementStart(3, "vg-controls", 2);
+        ɵɵelement(4, "vg-play-pause", 3);
+        ɵɵelement(5, "vg-mute", 3);
+        ɵɵelement(6, "vg-volume", 4);
+        ɵɵelementStart(7, "vg-scrub-bar", 4);
+        ɵɵelement(8, "vg-scrub-bar-current-time", 5);
+        ɵɵelement(9, "vg-scrub-bar-buffering-time");
+        ɵɵelementEnd();
+        ɵɵelement(10, "vg-time-display", 6);
+        ɵɵelement(11, "vg-fullscreen", 4);
+        ɵɵelementEnd();
+        ɵɵelementStart(12, "video", 7, 8);
+        ɵɵtemplate(14, CmacsVideoPlayerComponent_source_14_Template, 1, 2, "source", 9);
+        ɵɵelementEnd();
+        ɵɵelementEnd();
+    } if (rf & 2) {
+        const _r0 = ɵɵreference(13);
+        ɵɵadvance(3);
+        ɵɵproperty("vgAutohide", true)("vgAutohideTime", 2);
+        ɵɵadvance(5);
+        ɵɵproperty("vgSlider", true);
+        ɵɵadvance(4);
+        ɵɵproperty("vgMedia", _r0);
+        ɵɵadvance(2);
+        ɵɵproperty("ngForOf", ctx.sources);
+    } }, directives: [ɵr, ɵt, ɵa, ɵb, ɵf, ɵd, ɵe, ɵh, ɵk, ɵi, ɵm, ɵc, ɵp, NgForOf], styles: ["vg-time-display:before{content:\"-\";color:#fff;margin-right:2px}vg-overlay-play .vg-overlay-play .overlay-play-container.vg-icon-play_arrow:before{content:\"\\e01b\";font-size:28px;background-color:#2a7cff;padding:11px;border-radius:30px}[class*=\" vg-icon-\"]{font-size:19px}vg-volume .volumeValue{height:3px!important;border-radius:100px;background-color:#2d3d5a!important}vg-volume .volumeBackground{height:3px!important;border-radius:100px;background-color:#6a7693!important}vg-volume .volumeKnob{height:12px!important;width:12px!important}vg-scrub-bar-current-time{background-color:#6a7693!important}vg-scrub-bar-buffering-time,vg-scrub-bar-current-time{height:3px!important;border-radius:100px!important;top:calc(50% - 1px)!important}vg-scrub-bar-current-time .slider{height:12px!important;width:12px!important;z-index:2}"], encapsulation: 2, changeDetection: 0 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsVideoPlayerComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-video-player',
+                exportAs: 'cmacsVideoPlayer',
+                templateUrl: './cmacs-video-player.component.html',
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                preserveWhitespaces: false,
+                styleUrls: ['./cmacs-video-player.component.css'],
+            }]
+    }], function () { return []; }, { sources: [{
+            type: Input
+        }], playerReady: [{
+            type: Output
+        }] }); })();
+
 class CmacsComponentsV2LibModule {
 }
 CmacsComponentsV2LibModule.ɵmod = ɵɵdefineNgModule({ type: CmacsComponentsV2LibModule });
@@ -7044,8 +7401,16 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
             NzOutletModule,
             NzDropDownModule,
             NzEmptyModule,
-            DragDropModule
-        ], NzEmptyModule,
+            DragDropModule,
+            VgCoreModule,
+            VgControlsModule,
+            VgOverlayPlayModule,
+            VgBufferingModule
+        ], VgCoreModule,
+        VgControlsModule,
+        VgOverlayPlayModule,
+        VgBufferingModule,
+        NzEmptyModule,
         NzDividerModule,
         NzButtonModule,
         NzCheckboxModule,
@@ -7103,7 +7468,9 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         CmacsDropDownDirective,
         CmacsDropDownADirective,
         CmacsDropdownMenuComponent,
-        CmacsDropdownButtonDirective], imports: [CommonModule,
+        CmacsDropdownButtonDirective,
+        CmacsKpiComponent,
+        CmacsVideoPlayerComponent], imports: [CommonModule,
         FormsModule,
         NzButtonModule,
         NzCheckboxModule,
@@ -7121,7 +7488,16 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         NzOutletModule,
         NzDropDownModule,
         NzEmptyModule,
-        DragDropModule], exports: [NzEmptyModule,
+        DragDropModule,
+        VgCoreModule,
+        VgControlsModule,
+        VgOverlayPlayModule,
+        VgBufferingModule], exports: [VgCoreModule,
+        VgControlsModule,
+        VgOverlayPlayModule,
+        VgBufferingModule,
+        CmacsKpiComponent,
+        NzEmptyModule,
         CmacsDividerComponent,
         NzDividerModule,
         CmacsComponentsV2LibComponent,
@@ -7179,7 +7555,8 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         CmacsDropDownDirective,
         CmacsDropDownADirective,
         CmacsDropdownMenuComponent,
-        CmacsDropdownButtonDirective] }); })();
+        CmacsDropdownButtonDirective,
+        CmacsVideoPlayerComponent] }); })();
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsComponentsV2LibModule, [{
         type: NgModule,
         args: [{
@@ -7225,7 +7602,9 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     CmacsDropDownDirective,
                     CmacsDropDownADirective,
                     CmacsDropdownMenuComponent,
-                    CmacsDropdownButtonDirective
+                    CmacsDropdownButtonDirective,
+                    CmacsKpiComponent,
+                    CmacsVideoPlayerComponent
                 ],
                 imports: [
                     CommonModule,
@@ -7246,9 +7625,18 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     NzOutletModule,
                     NzDropDownModule,
                     NzEmptyModule,
-                    DragDropModule
+                    DragDropModule,
+                    VgCoreModule,
+                    VgControlsModule,
+                    VgOverlayPlayModule,
+                    VgBufferingModule
                 ],
                 exports: [
+                    VgCoreModule,
+                    VgControlsModule,
+                    VgOverlayPlayModule,
+                    VgBufferingModule,
+                    CmacsKpiComponent,
                     NzEmptyModule,
                     CmacsDividerComponent,
                     NzDividerModule,
@@ -7307,7 +7695,8 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     CmacsDropDownDirective,
                     CmacsDropDownADirective,
                     CmacsDropdownMenuComponent,
-                    CmacsDropdownButtonDirective
+                    CmacsDropdownButtonDirective,
+                    CmacsVideoPlayerComponent
                 ],
                 entryComponents: [CmacsDropdownMenuComponent],
                 providers: []
@@ -7402,5 +7791,5 @@ CmacsContextMenuService.ɵprov = ɵɵdefineInjectable({ token: CmacsContextMenuS
  * Generated bundle index. Do not edit.
  */
 
-export { CmacsAutosizeDirective, CmacsButtonComponent, CmacsButtonGroupComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsFloatingMenuComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsIsMenuInsideDropDownToken, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsSubMenuComponent, CmacsTextareaCountComponent, FLOATING_MENU_LOCALIZATION, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, defaultFilterOption };
+export { CmacsAutosizeDirective, CmacsButtonComponent, CmacsButtonGroupComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsFloatingMenuComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsIsMenuInsideDropDownToken, CmacsKpiComponent, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsSubMenuComponent, CmacsTextareaCountComponent, CmacsVideoPlayerComponent, FLOATING_MENU_LOCALIZATION, KPI_COLORS, KPI_PRIORITY_COLORS, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, defaultFilterOption };
 //# sourceMappingURL=cmacs-components-v2-lib.js.map

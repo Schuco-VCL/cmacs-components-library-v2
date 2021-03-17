@@ -1,4 +1,5 @@
 @import "../icons/global_styles.css";
+@import "~ngx-videogular/fonts/videogular.css";
 
 .cmacs-input-fix:not(.cmacs-textarea){
   height: 34px;
