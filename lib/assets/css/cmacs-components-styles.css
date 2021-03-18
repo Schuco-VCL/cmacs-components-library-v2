@@ -390,6 +390,7 @@ cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] + .ant-ti
 .cmacs-dropdown ul {
   padding: 0;
   border: 1px solid #dee0e5;
+  min-width: 190px;
 }
 
 .cmacs-dropdown.ant-dropdown-placement-bottomCenter ul {

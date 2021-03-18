@@ -6,7 +6,7 @@ import { Subject, fromEvent, merge, ReplaySubject, BehaviorSubject, combineLates
 import { InputBoolean, InputNumber, ensureNumberInRange, silentEvent, getPrecision, getPercent, getElementOffset, arraysEqual, isNotNil, isNil, toBoolean } from 'ng-zorro-antd/core/util';
 import { FocusMonitor } from '@angular/cdk/a11y';
 import { Directionality, Dir } from '@angular/cdk/bidi';
-import { NgForOf, NgIf, NgStyle, NgTemplateOutlet, SlicePipe, NgSwitch, NgSwitchCase, NgSwitchDefault, NgClass, CommonModule } from '@angular/common';
+import { NgForOf, NgIf, NgStyle, NgTemplateOutlet, SlicePipe, NgSwitch, NgSwitchCase, NgSwitchDefault, NgClass, DatePipe, CommonModule } from '@angular/common';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzConfigService, WithConfig } from 'ng-zorro-antd/core/config';
 import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
@@ -37,6 +37,8 @@ import { TemplatePortal } from '@angular/cdk/portal';
 import { warnDeprecation } from 'ng-zorro-antd/core/logger';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ɵr, ɵt, ɵa, ɵb, ɵf, ɵd, ɵe, ɵh, ɵk, ɵi, ɵm, ɵc, ɵp, VgCoreModule, VgControlsModule, VgOverlayPlayModule, VgBufferingModule } from 'ngx-videogular';
+import { EditorComponent, EditorModule } from '@tinymce/tinymce-angular';
+import { NzColDirective, NzRowDirective, NzGridModule } from 'ng-zorro-antd/grid';
 
 class CmacsComponentsV2LibService {
     constructor() { }
@@ -7379,10 +7381,271 @@ CmacsVideoPlayerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsVideoPlayerCo
             type: Output
         }] }); })();
 
+function CmacsEditorComponent_editor_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "editor", 1);
+} if (rf & 2) {
+    const ctx_r0 = ɵɵnextContext();
+    ɵɵproperty("init", ctx_r0.tinyMceSettings)("disabled", ctx_r0.disabled);
+} }
+class CmacsEditorComponent {
+    constructor(i18n, cdr) {
+        this.i18n = i18n;
+        this.cdr = cdr;
+        this.showEditor = false;
+        this.oninit = new EventEmitter();
+        this.onchange = new EventEmitter();
+        this.onblur = new EventEmitter();
+        this.onkeyup = new EventEmitter();
+        this.height = '250px';
+        this.statusbar = false;
+        this.resize = false;
+        // tslint:disable-next-line: max-line-length
+        this.toolbarmobile = ['bold', 'italic', 'underline', 'strikethrough', 'alignleft', 'aligncenter', 'alignright', 'alignjustify', 'bullist', 'numlist', 'forecolor'];
+        this.toolbar = 'bold italic underline strikethrough  | alignleft aligncenter alignright alignjustify | bullist numlist | forecolor';
+        this.destroy$ = new Subject();
+    }
+    ngOnInit() {
+        if (this.tinyMceSettings === undefined) {
+            this.tinyMceSettings = {
+                mobile: {
+                    theme: 'mobile',
+                    plugins: ['image table textcolor'],
+                    toolbar: this.toolbarmobile
+                },
+                menubar: false,
+                image_title: true,
+                resize: this.resize,
+                automatic_uploads: true,
+                height: this.height,
+                statusbar: this.statusbar,
+                file_picker_types: 'image',
+                images_upload_url: '#',
+                setup: (editor) => {
+                    editor.on('init', (obj) => {
+                        this.oninit.emit(obj);
+                    });
+                    editor.on('blur', (obj) => {
+                        this.onblur.emit(obj);
+                    });
+                    editor.on('keyup', (obj) => {
+                        this.onkeyup.emit(obj);
+                    });
+                    editor.on('Change', (obj) => {
+                        this.onchange.emit(obj);
+                    });
+                },
+                plugins: ['image table textcolor'],
+                toolbar: this.toolbar
+            };
+        }
+        this.i18n.localeChange.pipe(takeUntil(this.destroy$)).subscribe(() => {
+            this.tinyMceSettings.language = this.i18n.getLocale().locale === 'de' ? 'de' : null;
+            this.cdr.detectChanges();
+        });
+        setTimeout(() => {
+            this.showEditor = true;
+            this.cdr.detectChanges();
+        }, 100);
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+}
+CmacsEditorComponent.ɵfac = function CmacsEditorComponent_Factory(t) { return new (t || CmacsEditorComponent)(ɵɵdirectiveInject(NzI18nService), ɵɵdirectiveInject(ChangeDetectorRef)); };
+CmacsEditorComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsEditorComponent, selectors: [["cmacs-editor"]], inputs: { disabled: "disabled", height: "height", statusbar: "statusbar", resize: "resize", toolbarmobile: "toolbarmobile", toolbar: "toolbar", tinyMceSettings: "tinyMceSettings" }, outputs: { oninit: "oninit", onchange: "onchange", onblur: "onblur", onkeyup: "onkeyup" }, exportAs: ["cmacsEditor"], decls: 1, vars: 1, consts: [["class", "cmacs-editor", 3, "init", "disabled", 4, "ngIf"], [1, "cmacs-editor", 3, "init", "disabled"]], template: function CmacsEditorComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵtemplate(0, CmacsEditorComponent_editor_0_Template, 1, 2, "editor", 0);
+    } if (rf & 2) {
+        ɵɵproperty("ngIf", ctx.showEditor);
+    } }, directives: [NgIf, EditorComponent], styles: [".cmacs-editor .tox .tox-statusbar{border-top:none}.cmacs-editor .tox .tox-statusbar__text-container{display:none}"], encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsEditorComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-editor',
+                exportAs: 'cmacsEditor',
+                templateUrl: './cmacs-editor.component.html',
+                styleUrls: ['./cmacs-editor.component.css'],
+                encapsulation: ViewEncapsulation.None
+            }]
+    }], function () { return [{ type: NzI18nService }, { type: ChangeDetectorRef }]; }, { oninit: [{
+            type: Output
+        }], onchange: [{
+            type: Output
+        }], onblur: [{
+            type: Output
+        }], onkeyup: [{
+            type: Output
+        }], disabled: [{
+            type: Input
+        }], height: [{
+            type: Input
+        }], statusbar: [{
+            type: Input
+        }], resize: [{
+            type: Input
+        }], toolbarmobile: [{
+            type: Input
+        }], toolbar: [{
+            type: Input
+        }], tinyMceSettings: [{
+            type: Input
+        }] }); })();
+
+function CmacsSectionComponent_i_4_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 7);
+} if (rf & 2) {
+    const ctx_r0 = ɵɵnextContext();
+    ɵɵproperty("ngClass", ctx_r0.titleIcon);
+} }
+function CmacsSectionComponent_div_8_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵtext(1);
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const ctx_r3 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r3.extra);
+} }
+const _c0$p = function (a0) { return { data: a0 }; };
+function CmacsSectionComponent_div_8_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 8);
+    ɵɵtemplate(1, CmacsSectionComponent_div_8_ng_container_1_Template, 2, 1, "ng-container", 9);
+    ɵɵelementStart(2, "button", 10);
+    ɵɵlistener("click", function CmacsSectionComponent_div_8_Template_button_click_2_listener() { ɵɵrestoreView(_r5); const ctx_r4 = ɵɵnextContext(); return ctx_r4.collapseSection(); });
+    ɵɵelement(3, "i");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵadvance(1);
+    ɵɵproperty("ngTemplateOutlet", ctx_r1.extra)("ngTemplateOutletContext", ɵɵpureFunction1(7, _c0$p, ctx_r1.extraData));
+    ɵɵadvance(1);
+    ɵɵproperty("action", true);
+    ɵɵadvance(1);
+    ɵɵclassProp("iconArrowSmall-Chevron-Up", ctx_r1.collapsed)("iconArrowSmall-Chevron-Down", !ctx_r1.collapsed);
+} }
+function CmacsSectionComponent_div_9_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 11);
+    ɵɵprojection(1);
+    ɵɵelementEnd();
+} }
+const _c1$a = ["*"];
+class CmacsSectionComponent {
+    constructor() {
+        this.widgetSpan = '24';
+        this.title = '';
+        this.showCollapse = true;
+        this.collapsed = false;
+        this.validate = false;
+        this.onbeforecollapse = new EventEmitter();
+        this.oncollapse = new EventEmitter();
+        this.onbeforeexpand = new EventEmitter();
+        this.onexpand = new EventEmitter();
+    }
+    ngOnInit() {
+    }
+    collapseSection() {
+        if (!this.validate) {
+            this.collapsed = !this.collapsed;
+            this.triggerCollapseEvents(false);
+        }
+        else {
+            this.triggerCollapseEvents(true);
+        }
+    }
+    ngOnChanges(changes) {
+        if (changes.collapsed && changes.collapsed.previousValue !== undefined) {
+            this.triggerCollapseEvents(false);
+        }
+    }
+    triggerCollapseEvents(before) {
+        if (before) {
+            if (this.collapsed) {
+                this.onbeforeexpand.emit();
+            }
+            else {
+                this.onbeforecollapse.emit();
+            }
+        }
+        else if (this.collapsed) {
+            this.oncollapse.emit();
+        }
+        else {
+            this.onexpand.emit();
+        }
+    }
+}
+CmacsSectionComponent.ɵfac = function CmacsSectionComponent_Factory(t) { return new (t || CmacsSectionComponent)(); };
+CmacsSectionComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSectionComponent, selectors: [["cmacs-section"]], inputs: { extra: "extra", widgetSpan: "widgetSpan", title: "title", titleIcon: "titleIcon", showCollapse: "showCollapse", extraData: "extraData", collapsed: "collapsed", validate: "validate" }, outputs: { onbeforecollapse: "onbeforecollapse", oncollapse: "oncollapse", onbeforeexpand: "onbeforeexpand", onexpand: "onexpand" }, features: [ɵɵNgOnChangesFeature], ngContentSelectors: _c1$a, decls: 10, vars: 5, consts: [["nz-col", "", 1, "widget-container", 3, "nzSpan"], ["nz-row", "", "nzType", "flex", "nzJustify", "space-between", 1, "widget-container-bar"], ["nz-col", ""], ["nz-row", "", 1, "widget-container-bar-title"], [3, "ngClass", 4, "ngIf"], ["nz-row", "", "class", "widget-container-bar-btns", 4, "ngIf"], ["class", "widget-container-content", 4, "ngIf"], [3, "ngClass"], ["nz-row", "", 1, "widget-container-bar-btns"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-button", "", "ghost", "", 1, "log-action-btn", 3, "action", "click"], [1, "widget-container-content"]], template: function CmacsSectionComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵprojectionDef();
+        ɵɵelementStart(0, "div", 0);
+        ɵɵelementStart(1, "div", 1);
+        ɵɵelementStart(2, "div", 2);
+        ɵɵelementStart(3, "div", 3);
+        ɵɵtemplate(4, CmacsSectionComponent_i_4_Template, 1, 1, "i", 4);
+        ɵɵelementStart(5, "span");
+        ɵɵtext(6);
+        ɵɵelementEnd();
+        ɵɵelementEnd();
+        ɵɵelementEnd();
+        ɵɵelementStart(7, "div", 2);
+        ɵɵtemplate(8, CmacsSectionComponent_div_8_Template, 4, 9, "div", 5);
+        ɵɵelementEnd();
+        ɵɵelementEnd();
+        ɵɵtemplate(9, CmacsSectionComponent_div_9_Template, 2, 0, "div", 6);
+        ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵɵproperty("nzSpan", ctx.widgetSpan);
+        ɵɵadvance(4);
+        ɵɵproperty("ngIf", ctx.titleIcon);
+        ɵɵadvance(2);
+        ɵɵtextInterpolate(ctx.title);
+        ɵɵadvance(2);
+        ɵɵproperty("ngIf", ctx.extra);
+        ɵɵadvance(1);
+        ɵɵproperty("ngIf", !ctx.collapsed);
+    } }, directives: [NzColDirective, NzRowDirective, NgIf, NgClass, NgTemplateOutlet, CmacsButtonComponent], styles: [".widget-container[_ngcontent-%COMP%]{border-top:3px solid #00cda1;padding:20px 40px 30px;margin-bottom:40px;background-color:#f6f7fb;box-shadow:0 2px 4px rgba(0,0,0,.1)}.widget-container-bar-title[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{font-size:20px;vertical-align:sub}.widget-container-bar-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{margin-left:8px;font-family:Roboto-Medium;font-size:14px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#3b3f46}.widget-container-bar[_ngcontent-%COMP%]{margin-bottom:20px}.widget-container-content[_ngcontent-%COMP%]{overflow-x:auto;overflow-y:hidden}"], changeDetection: 0 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsSectionComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-section',
+                templateUrl: 'cmacs-section.component.html',
+                styleUrls: ['cmacs-section.component.css'],
+                preserveWhitespaces: false,
+                changeDetection: ChangeDetectionStrategy.OnPush
+            }]
+    }], function () { return []; }, { extra: [{
+            type: Input
+        }], widgetSpan: [{
+            type: Input
+        }], title: [{
+            type: Input
+        }], titleIcon: [{
+            type: Input
+        }], showCollapse: [{
+            type: Input
+        }], extraData: [{
+            type: Input
+        }], collapsed: [{
+            type: Input
+        }], validate: [{
+            type: Input
+        }], onbeforecollapse: [{
+            type: Output
+        }], oncollapse: [{
+            type: Output
+        }], onbeforeexpand: [{
+            type: Output
+        }], onexpand: [{
+            type: Output
+        }] }); })();
+
 class CmacsComponentsV2LibModule {
 }
 CmacsComponentsV2LibModule.ɵmod = ɵɵdefineNgModule({ type: CmacsComponentsV2LibModule });
-CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsComponentsV2LibModule_Factory(t) { return new (t || CmacsComponentsV2LibModule)(); }, providers: [], imports: [[
+CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsComponentsV2LibModule_Factory(t) { return new (t || CmacsComponentsV2LibModule)(); }, providers: [DatePipe], imports: [[
+            NzGridModule,
             CommonModule,
             FormsModule,
             NzButtonModule,
@@ -7405,8 +7668,10 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
             VgCoreModule,
             VgControlsModule,
             VgOverlayPlayModule,
-            VgBufferingModule
-        ], VgCoreModule,
+            VgBufferingModule,
+            EditorModule
+        ], NzGridModule,
+        VgCoreModule,
         VgControlsModule,
         VgOverlayPlayModule,
         VgBufferingModule,
@@ -7426,8 +7691,11 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         NzNoAnimationModule,
         NzOutletModule,
         NzDropDownModule,
-        DragDropModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsComponentsV2LibComponent,
+        DragDropModule,
+        EditorModule] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsSectionComponent,
+        CmacsEditorComponent,
+        CmacsComponentsV2LibComponent,
         CmacsCheckboxComponent,
         CmacsCheckboxWrapperComponent,
         CmacsCheckboxGroupComponent,
@@ -7470,7 +7738,8 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         CmacsDropdownMenuComponent,
         CmacsDropdownButtonDirective,
         CmacsKpiComponent,
-        CmacsVideoPlayerComponent], imports: [CommonModule,
+        CmacsVideoPlayerComponent], imports: [NzGridModule,
+        CommonModule,
         FormsModule,
         NzButtonModule,
         NzCheckboxModule,
@@ -7492,7 +7761,11 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         VgCoreModule,
         VgControlsModule,
         VgOverlayPlayModule,
-        VgBufferingModule], exports: [VgCoreModule,
+        VgBufferingModule,
+        EditorModule], exports: [NzGridModule,
+        CmacsSectionComponent,
+        CmacsEditorComponent,
+        VgCoreModule,
         VgControlsModule,
         VgOverlayPlayModule,
         VgBufferingModule,
@@ -7556,11 +7829,14 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         CmacsDropDownADirective,
         CmacsDropdownMenuComponent,
         CmacsDropdownButtonDirective,
-        CmacsVideoPlayerComponent] }); })();
+        CmacsVideoPlayerComponent,
+        EditorModule] }); })();
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsComponentsV2LibModule, [{
         type: NgModule,
         args: [{
                 declarations: [
+                    CmacsSectionComponent,
+                    CmacsEditorComponent,
                     CmacsComponentsV2LibComponent,
                     CmacsCheckboxComponent,
                     CmacsCheckboxWrapperComponent,
@@ -7607,6 +7883,7 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     CmacsVideoPlayerComponent
                 ],
                 imports: [
+                    NzGridModule,
                     CommonModule,
                     FormsModule,
                     NzButtonModule,
@@ -7629,9 +7906,13 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     VgCoreModule,
                     VgControlsModule,
                     VgOverlayPlayModule,
-                    VgBufferingModule
+                    VgBufferingModule,
+                    EditorModule
                 ],
                 exports: [
+                    NzGridModule,
+                    CmacsSectionComponent,
+                    CmacsEditorComponent,
                     VgCoreModule,
                     VgControlsModule,
                     VgOverlayPlayModule,
@@ -7696,10 +7977,11 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     CmacsDropDownADirective,
                     CmacsDropdownMenuComponent,
                     CmacsDropdownButtonDirective,
-                    CmacsVideoPlayerComponent
+                    CmacsVideoPlayerComponent,
+                    EditorModule
                 ],
                 entryComponents: [CmacsDropdownMenuComponent],
-                providers: []
+                providers: [DatePipe]
             }]
     }], null, null); })();
 
@@ -7791,5 +8073,5 @@ CmacsContextMenuService.ɵprov = ɵɵdefineInjectable({ token: CmacsContextMenuS
  * Generated bundle index. Do not edit.
  */
 
-export { CmacsAutosizeDirective, CmacsButtonComponent, CmacsButtonGroupComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsFloatingMenuComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsIsMenuInsideDropDownToken, CmacsKpiComponent, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsSubMenuComponent, CmacsTextareaCountComponent, CmacsVideoPlayerComponent, FLOATING_MENU_LOCALIZATION, KPI_COLORS, KPI_PRIORITY_COLORS, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, defaultFilterOption };
+export { CmacsAutosizeDirective, CmacsButtonComponent, CmacsButtonGroupComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsEditorComponent, CmacsFloatingMenuComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsIsMenuInsideDropDownToken, CmacsKpiComponent, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsSectionComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsSubMenuComponent, CmacsTextareaCountComponent, CmacsVideoPlayerComponent, FLOATING_MENU_LOCALIZATION, KPI_COLORS, KPI_PRIORITY_COLORS, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, defaultFilterOption };
 //# sourceMappingURL=cmacs-components-v2-lib.js.map

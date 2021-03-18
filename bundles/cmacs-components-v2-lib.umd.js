@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('@angular/platform-browser'), require('ngx-videogular')) :
-    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', '@angular/platform-browser', 'ngx-videogular'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.button, global.i1$1, global.i5, global.i4$1, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.input, global.radio, global.ng.cdk.overlay, global.animation, global.i2$3, global.i2$4, global.i8, global.select, global.divider, global.i2$5, global.i2$6, global.ng.router, global.overlay, global.menu, global.dropdown, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.ng.platformBrowser, global.i1$4));
-}(this, (function (exports, i0, i4, operators, rxjs, util, i1, i2, i2$1, button, i1$1, i5, i4$1, checkbox, i2$2, slider, keycodes, i3, _switch, input, radio, i1$2, animation, i2$3, i2$4, i8, select, divider, i2$5, i2$6, i4$2, overlay, menu, dropdown, i2$7, portal, logger, i1$3, i1$4) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid')) :
+    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.button, global.i1$1, global.i5, global.i4$1, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.input, global.radio, global.ng.cdk.overlay, global.animation, global.i2$3, global.i2$4, global.i8, global.select, global.divider, global.i2$5, global.i2$6, global.ng.router, global.overlay, global.menu, global.dropdown, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.ng.platformBrowser, global.i1$4, global.i3$1, global.i1$5));
+}(this, (function (exports, i0, i4, operators, rxjs, util, i1, i2, i2$1, button, i1$1, i5, i4$1, checkbox, i2$2, slider, keycodes, i3, _switch, input, radio, i1$2, animation, i2$3, i2$4, i8, select, divider, i2$5, i2$6, i4$2, overlay, menu, dropdown, i2$7, portal, logger, i1$3, i1$4, i3$1, i1$5) { 'use strict';
 
     var CmacsComponentsV2LibService = /** @class */ (function () {
         function CmacsComponentsV2LibService() {
@@ -8430,13 +8430,301 @@
                 }] });
     })();
 
+    function CmacsEditorComponent_editor_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "editor", 1);
+        }
+        if (rf & 2) {
+            var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("init", ctx_r0.tinyMceSettings)("disabled", ctx_r0.disabled);
+        }
+    }
+    var CmacsEditorComponent = /** @class */ (function () {
+        function CmacsEditorComponent(i18n, cdr) {
+            this.i18n = i18n;
+            this.cdr = cdr;
+            this.showEditor = false;
+            this.oninit = new i0.EventEmitter();
+            this.onchange = new i0.EventEmitter();
+            this.onblur = new i0.EventEmitter();
+            this.onkeyup = new i0.EventEmitter();
+            this.height = '250px';
+            this.statusbar = false;
+            this.resize = false;
+            // tslint:disable-next-line: max-line-length
+            this.toolbarmobile = ['bold', 'italic', 'underline', 'strikethrough', 'alignleft', 'aligncenter', 'alignright', 'alignjustify', 'bullist', 'numlist', 'forecolor'];
+            this.toolbar = 'bold italic underline strikethrough  | alignleft aligncenter alignright alignjustify | bullist numlist | forecolor';
+            this.destroy$ = new rxjs.Subject();
+        }
+        CmacsEditorComponent.prototype.ngOnInit = function () {
+            var _this = this;
+            if (this.tinyMceSettings === undefined) {
+                this.tinyMceSettings = {
+                    mobile: {
+                        theme: 'mobile',
+                        plugins: ['image table textcolor'],
+                        toolbar: this.toolbarmobile
+                    },
+                    menubar: false,
+                    image_title: true,
+                    resize: this.resize,
+                    automatic_uploads: true,
+                    height: this.height,
+                    statusbar: this.statusbar,
+                    file_picker_types: 'image',
+                    images_upload_url: '#',
+                    setup: function (editor) {
+                        editor.on('init', function (obj) {
+                            _this.oninit.emit(obj);
+                        });
+                        editor.on('blur', function (obj) {
+                            _this.onblur.emit(obj);
+                        });
+                        editor.on('keyup', function (obj) {
+                            _this.onkeyup.emit(obj);
+                        });
+                        editor.on('Change', function (obj) {
+                            _this.onchange.emit(obj);
+                        });
+                    },
+                    plugins: ['image table textcolor'],
+                    toolbar: this.toolbar
+                };
+            }
+            this.i18n.localeChange.pipe(operators.takeUntil(this.destroy$)).subscribe(function () {
+                _this.tinyMceSettings.language = _this.i18n.getLocale().locale === 'de' ? 'de' : null;
+                _this.cdr.detectChanges();
+            });
+            setTimeout(function () {
+                _this.showEditor = true;
+                _this.cdr.detectChanges();
+            }, 100);
+        };
+        CmacsEditorComponent.prototype.ngOnDestroy = function () {
+            this.destroy$.next();
+            this.destroy$.complete();
+        };
+        return CmacsEditorComponent;
+    }());
+    CmacsEditorComponent.ɵfac = function CmacsEditorComponent_Factory(t) { return new (t || CmacsEditorComponent)(i0.ɵɵdirectiveInject(i2$4.NzI18nService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef)); };
+    CmacsEditorComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsEditorComponent, selectors: [["cmacs-editor"]], inputs: { disabled: "disabled", height: "height", statusbar: "statusbar", resize: "resize", toolbarmobile: "toolbarmobile", toolbar: "toolbar", tinyMceSettings: "tinyMceSettings" }, outputs: { oninit: "oninit", onchange: "onchange", onblur: "onblur", onkeyup: "onkeyup" }, exportAs: ["cmacsEditor"], decls: 1, vars: 1, consts: [["class", "cmacs-editor", 3, "init", "disabled", 4, "ngIf"], [1, "cmacs-editor", 3, "init", "disabled"]], template: function CmacsEditorComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵtemplate(0, CmacsEditorComponent_editor_0_Template, 1, 2, "editor", 0);
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("ngIf", ctx.showEditor);
+            }
+        }, directives: [i2$1.NgIf, i3$1.EditorComponent], styles: [".cmacs-editor .tox .tox-statusbar{border-top:none}.cmacs-editor .tox .tox-statusbar__text-container{display:none}"], encapsulation: 2 });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsEditorComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-editor',
+                        exportAs: 'cmacsEditor',
+                        templateUrl: './cmacs-editor.component.html',
+                        styleUrls: ['./cmacs-editor.component.css'],
+                        encapsulation: i0.ViewEncapsulation.None
+                    }]
+            }], function () { return [{ type: i2$4.NzI18nService }, { type: i0.ChangeDetectorRef }]; }, { oninit: [{
+                    type: i0.Output
+                }], onchange: [{
+                    type: i0.Output
+                }], onblur: [{
+                    type: i0.Output
+                }], onkeyup: [{
+                    type: i0.Output
+                }], disabled: [{
+                    type: i0.Input
+                }], height: [{
+                    type: i0.Input
+                }], statusbar: [{
+                    type: i0.Input
+                }], resize: [{
+                    type: i0.Input
+                }], toolbarmobile: [{
+                    type: i0.Input
+                }], toolbar: [{
+                    type: i0.Input
+                }], tinyMceSettings: [{
+                    type: i0.Input
+                }] });
+    })();
+
+    function CmacsSectionComponent_i_4_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 7);
+        }
+        if (rf & 2) {
+            var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("ngClass", ctx_r0.titleIcon);
+        }
+    }
+    function CmacsSectionComponent_div_8_ng_container_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r3 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate(ctx_r3.extra);
+        }
+    }
+    var _c0$p = function (a0) { return { data: a0 }; };
+    function CmacsSectionComponent_div_8_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r5_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 8);
+            i0.ɵɵtemplate(1, CmacsSectionComponent_div_8_ng_container_1_Template, 2, 1, "ng-container", 9);
+            i0.ɵɵelementStart(2, "button", 10);
+            i0.ɵɵlistener("click", function CmacsSectionComponent_div_8_Template_button_click_2_listener() { i0.ɵɵrestoreView(_r5_1); var ctx_r4 = i0.ɵɵnextContext(); return ctx_r4.collapseSection(); });
+            i0.ɵɵelement(3, "i");
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r1.extra)("ngTemplateOutletContext", i0.ɵɵpureFunction1(7, _c0$p, ctx_r1.extraData));
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("action", true);
+            i0.ɵɵadvance(1);
+            i0.ɵɵclassProp("iconArrowSmall-Chevron-Up", ctx_r1.collapsed)("iconArrowSmall-Chevron-Down", !ctx_r1.collapsed);
+        }
+    }
+    function CmacsSectionComponent_div_9_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 11);
+            i0.ɵɵprojection(1);
+            i0.ɵɵelementEnd();
+        }
+    }
+    var _c1$a = ["*"];
+    var CmacsSectionComponent = /** @class */ (function () {
+        function CmacsSectionComponent() {
+            this.widgetSpan = '24';
+            this.title = '';
+            this.showCollapse = true;
+            this.collapsed = false;
+            this.validate = false;
+            this.onbeforecollapse = new i0.EventEmitter();
+            this.oncollapse = new i0.EventEmitter();
+            this.onbeforeexpand = new i0.EventEmitter();
+            this.onexpand = new i0.EventEmitter();
+        }
+        CmacsSectionComponent.prototype.ngOnInit = function () {
+        };
+        CmacsSectionComponent.prototype.collapseSection = function () {
+            if (!this.validate) {
+                this.collapsed = !this.collapsed;
+                this.triggerCollapseEvents(false);
+            }
+            else {
+                this.triggerCollapseEvents(true);
+            }
+        };
+        CmacsSectionComponent.prototype.ngOnChanges = function (changes) {
+            if (changes.collapsed && changes.collapsed.previousValue !== undefined) {
+                this.triggerCollapseEvents(false);
+            }
+        };
+        CmacsSectionComponent.prototype.triggerCollapseEvents = function (before) {
+            if (before) {
+                if (this.collapsed) {
+                    this.onbeforeexpand.emit();
+                }
+                else {
+                    this.onbeforecollapse.emit();
+                }
+            }
+            else if (this.collapsed) {
+                this.oncollapse.emit();
+            }
+            else {
+                this.onexpand.emit();
+            }
+        };
+        return CmacsSectionComponent;
+    }());
+    CmacsSectionComponent.ɵfac = function CmacsSectionComponent_Factory(t) { return new (t || CmacsSectionComponent)(); };
+    CmacsSectionComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsSectionComponent, selectors: [["cmacs-section"]], inputs: { extra: "extra", widgetSpan: "widgetSpan", title: "title", titleIcon: "titleIcon", showCollapse: "showCollapse", extraData: "extraData", collapsed: "collapsed", validate: "validate" }, outputs: { onbeforecollapse: "onbeforecollapse", oncollapse: "oncollapse", onbeforeexpand: "onbeforeexpand", onexpand: "onexpand" }, features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1$a, decls: 10, vars: 5, consts: [["nz-col", "", 1, "widget-container", 3, "nzSpan"], ["nz-row", "", "nzType", "flex", "nzJustify", "space-between", 1, "widget-container-bar"], ["nz-col", ""], ["nz-row", "", 1, "widget-container-bar-title"], [3, "ngClass", 4, "ngIf"], ["nz-row", "", "class", "widget-container-bar-btns", 4, "ngIf"], ["class", "widget-container-content", 4, "ngIf"], [3, "ngClass"], ["nz-row", "", 1, "widget-container-bar-btns"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-button", "", "ghost", "", 1, "log-action-btn", 3, "action", "click"], [1, "widget-container-content"]], template: function CmacsSectionComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵprojectionDef();
+                i0.ɵɵelementStart(0, "div", 0);
+                i0.ɵɵelementStart(1, "div", 1);
+                i0.ɵɵelementStart(2, "div", 2);
+                i0.ɵɵelementStart(3, "div", 3);
+                i0.ɵɵtemplate(4, CmacsSectionComponent_i_4_Template, 1, 1, "i", 4);
+                i0.ɵɵelementStart(5, "span");
+                i0.ɵɵtext(6);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(7, "div", 2);
+                i0.ɵɵtemplate(8, CmacsSectionComponent_div_8_Template, 4, 9, "div", 5);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵtemplate(9, CmacsSectionComponent_div_9_Template, 2, 0, "div", 6);
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("nzSpan", ctx.widgetSpan);
+                i0.ɵɵadvance(4);
+                i0.ɵɵproperty("ngIf", ctx.titleIcon);
+                i0.ɵɵadvance(2);
+                i0.ɵɵtextInterpolate(ctx.title);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngIf", ctx.extra);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", !ctx.collapsed);
+            }
+        }, directives: [i1$5.NzColDirective, i1$5.NzRowDirective, i2$1.NgIf, i2$1.NgClass, i2$1.NgTemplateOutlet, CmacsButtonComponent], styles: [".widget-container[_ngcontent-%COMP%]{border-top:3px solid #00cda1;padding:20px 40px 30px;margin-bottom:40px;background-color:#f6f7fb;box-shadow:0 2px 4px rgba(0,0,0,.1)}.widget-container-bar-title[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{font-size:20px;vertical-align:sub}.widget-container-bar-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{margin-left:8px;font-family:Roboto-Medium;font-size:14px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#3b3f46}.widget-container-bar[_ngcontent-%COMP%]{margin-bottom:20px}.widget-container-content[_ngcontent-%COMP%]{overflow-x:auto;overflow-y:hidden}"], changeDetection: 0 });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsSectionComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-section',
+                        templateUrl: 'cmacs-section.component.html',
+                        styleUrls: ['cmacs-section.component.css'],
+                        preserveWhitespaces: false,
+                        changeDetection: i0.ChangeDetectionStrategy.OnPush
+                    }]
+            }], function () { return []; }, { extra: [{
+                    type: i0.Input
+                }], widgetSpan: [{
+                    type: i0.Input
+                }], title: [{
+                    type: i0.Input
+                }], titleIcon: [{
+                    type: i0.Input
+                }], showCollapse: [{
+                    type: i0.Input
+                }], extraData: [{
+                    type: i0.Input
+                }], collapsed: [{
+                    type: i0.Input
+                }], validate: [{
+                    type: i0.Input
+                }], onbeforecollapse: [{
+                    type: i0.Output
+                }], oncollapse: [{
+                    type: i0.Output
+                }], onbeforeexpand: [{
+                    type: i0.Output
+                }], onexpand: [{
+                    type: i0.Output
+                }] });
+    })();
+
     var CmacsComponentsV2LibModule = /** @class */ (function () {
         function CmacsComponentsV2LibModule() {
         }
         return CmacsComponentsV2LibModule;
     }());
     CmacsComponentsV2LibModule.ɵmod = i0.ɵɵdefineNgModule({ type: CmacsComponentsV2LibModule });
-    CmacsComponentsV2LibModule.ɵinj = i0.ɵɵdefineInjector({ factory: function CmacsComponentsV2LibModule_Factory(t) { return new (t || CmacsComponentsV2LibModule)(); }, providers: [], imports: [[
+    CmacsComponentsV2LibModule.ɵinj = i0.ɵɵdefineInjector({ factory: function CmacsComponentsV2LibModule_Factory(t) { return new (t || CmacsComponentsV2LibModule)(); }, providers: [i2$1.DatePipe], imports: [[
+                i1$5.NzGridModule,
                 i2$1.CommonModule,
                 i4.FormsModule,
                 button.NzButtonModule,
@@ -8459,8 +8747,10 @@
                 i1$4.VgCoreModule,
                 i1$4.VgControlsModule,
                 i1$4.VgOverlayPlayModule,
-                i1$4.VgBufferingModule
-            ], i1$4.VgCoreModule,
+                i1$4.VgBufferingModule,
+                i3$1.EditorModule
+            ], i1$5.NzGridModule,
+            i1$4.VgCoreModule,
             i1$4.VgControlsModule,
             i1$4.VgOverlayPlayModule,
             i1$4.VgBufferingModule,
@@ -8480,9 +8770,12 @@
             i2$3.NzNoAnimationModule,
             i2$5.NzOutletModule,
             dropdown.NzDropDownModule,
-            i2$7.DragDropModule] });
+            i2$7.DragDropModule,
+            i3$1.EditorModule] });
     (function () {
-        (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsComponentsV2LibComponent,
+        (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsSectionComponent,
+                CmacsEditorComponent,
+                CmacsComponentsV2LibComponent,
                 CmacsCheckboxComponent,
                 CmacsCheckboxWrapperComponent,
                 CmacsCheckboxGroupComponent,
@@ -8525,7 +8818,8 @@
                 CmacsDropdownMenuComponent,
                 CmacsDropdownButtonDirective,
                 CmacsKpiComponent,
-                CmacsVideoPlayerComponent], imports: [i2$1.CommonModule,
+                CmacsVideoPlayerComponent], imports: [i1$5.NzGridModule,
+                i2$1.CommonModule,
                 i4.FormsModule,
                 button.NzButtonModule,
                 checkbox.NzCheckboxModule,
@@ -8547,7 +8841,11 @@
                 i1$4.VgCoreModule,
                 i1$4.VgControlsModule,
                 i1$4.VgOverlayPlayModule,
-                i1$4.VgBufferingModule], exports: [i1$4.VgCoreModule,
+                i1$4.VgBufferingModule,
+                i3$1.EditorModule], exports: [i1$5.NzGridModule,
+                CmacsSectionComponent,
+                CmacsEditorComponent,
+                i1$4.VgCoreModule,
                 i1$4.VgControlsModule,
                 i1$4.VgOverlayPlayModule,
                 i1$4.VgBufferingModule,
@@ -8611,13 +8909,16 @@
                 CmacsDropDownADirective,
                 CmacsDropdownMenuComponent,
                 CmacsDropdownButtonDirective,
-                CmacsVideoPlayerComponent] });
+                CmacsVideoPlayerComponent,
+                i3$1.EditorModule] });
     })();
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsComponentsV2LibModule, [{
                 type: i0.NgModule,
                 args: [{
                         declarations: [
+                            CmacsSectionComponent,
+                            CmacsEditorComponent,
                             CmacsComponentsV2LibComponent,
                             CmacsCheckboxComponent,
                             CmacsCheckboxWrapperComponent,
@@ -8664,6 +8965,7 @@
                             CmacsVideoPlayerComponent
                         ],
                         imports: [
+                            i1$5.NzGridModule,
                             i2$1.CommonModule,
                             i4.FormsModule,
                             button.NzButtonModule,
@@ -8686,9 +8988,13 @@
                             i1$4.VgCoreModule,
                             i1$4.VgControlsModule,
                             i1$4.VgOverlayPlayModule,
-                            i1$4.VgBufferingModule
+                            i1$4.VgBufferingModule,
+                            i3$1.EditorModule
                         ],
                         exports: [
+                            i1$5.NzGridModule,
+                            CmacsSectionComponent,
+                            CmacsEditorComponent,
                             i1$4.VgCoreModule,
                             i1$4.VgControlsModule,
                             i1$4.VgOverlayPlayModule,
@@ -8753,10 +9059,11 @@
                             CmacsDropDownADirective,
                             CmacsDropdownMenuComponent,
                             CmacsDropdownButtonDirective,
-                            CmacsVideoPlayerComponent
+                            CmacsVideoPlayerComponent,
+                            i3$1.EditorModule
                         ],
                         entryComponents: [CmacsDropdownMenuComponent],
-                        providers: []
+                        providers: [i2$1.DatePipe]
                     }]
             }], null, null);
     })();
@@ -8878,6 +9185,7 @@
     exports.CmacsDropDownDirective = CmacsDropDownDirective;
     exports.CmacsDropdownButtonDirective = CmacsDropdownButtonDirective;
     exports.CmacsDropdownMenuComponent = CmacsDropdownMenuComponent;
+    exports.CmacsEditorComponent = CmacsEditorComponent;
     exports.CmacsFloatingMenuComponent = CmacsFloatingMenuComponent;
     exports.CmacsInputDirective = CmacsInputDirective;
     exports.CmacsInputGroupComponent = CmacsInputGroupComponent;
@@ -8896,6 +9204,7 @@
     exports.CmacsRadioButtonDirective = CmacsRadioButtonDirective;
     exports.CmacsRadioComponent = CmacsRadioComponent;
     exports.CmacsRadioGroupComponent = CmacsRadioGroupComponent;
+    exports.CmacsSectionComponent = CmacsSectionComponent;
     exports.CmacsSelectComponent = CmacsSelectComponent;
     exports.CmacsSelectService = CmacsSelectService;
     exports.CmacsSelectTopControlComponent = CmacsSelectTopControlComponent;
