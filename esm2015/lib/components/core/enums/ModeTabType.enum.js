@@ -1,0 +1,7 @@
+export var ModeTabType;
+(function (ModeTabType) {
+    ModeTabType["Closeable"] = "closeable";
+    ModeTabType["Default"] = "default";
+    ModeTabType["Checkable"] = "checkable";
+})(ModeTabType || (ModeTabType = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW9kZVRhYlR5cGUuZW51bS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL2NtYWNzLWNvbXBvbmVudHMtdjItbGliL3NyYy9saWIvY29tcG9uZW50cy9jb3JlL2VudW1zL01vZGVUYWJUeXBlLmVudW0udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTSxDQUFOLElBQVksV0FJWDtBQUpELFdBQVksV0FBVztJQUNuQixzQ0FBdUIsQ0FBQTtJQUN2QixrQ0FBbUIsQ0FBQTtJQUNuQixzQ0FBdUIsQ0FBQTtBQUMzQixDQUFDLEVBSlcsV0FBVyxLQUFYLFdBQVcsUUFJdEIiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZW51bSBNb2RlVGFiVHlwZSB7XHJcbiAgICBDbG9zZWFibGUgPSAnY2xvc2VhYmxlJyxcclxuICAgIERlZmF1bHQgPSAnZGVmYXVsdCcsXHJcbiAgICBDaGVja2FibGUgPSAnY2hlY2thYmxlJ1xyXG59XHJcbiJdfQ==

@@ -1,0 +1,41 @@
+import { Direction, Directionality } from '@angular/cdk/bidi';
+import { ChangeDetectorRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChanges, TemplateRef } from '@angular/core';
+import { NzConfigKey, NzConfigService } from 'ng-zorro-antd/core/config';
+import { BooleanInput } from 'ng-zorro-antd/core/types';
+import * as i0 from "@angular/core";
+export declare class CmacsAlertComponent implements OnChanges, OnDestroy, OnInit {
+    nzConfigService: NzConfigService;
+    private cdr;
+    private directionality;
+    readonly _nzModuleName: NzConfigKey;
+    static ngAcceptInputType_closeable: BooleanInput;
+    static ngAcceptInputType_showIcon: BooleanInput;
+    static ngAcceptInputType_banner: BooleanInput;
+    static ngAcceptInputType_noAnimation: BooleanInput;
+    closeText: string | TemplateRef<void> | null;
+    iconType: string | null;
+    message: string | TemplateRef<void> | null;
+    description: string | TemplateRef<void> | null;
+    type: 'success' | 'info' | 'warning' | 'error';
+    closeable: boolean;
+    showIcon: boolean;
+    banner: boolean;
+    noAnimation: boolean;
+    readonly onClose: EventEmitter<boolean>;
+    closed: boolean;
+    iconTheme: 'outline' | 'fill';
+    inferredIconType: string;
+    dir: Direction;
+    private isTypeSet;
+    private isShowIconSet;
+    private destroy$;
+    constructor(nzConfigService: NzConfigService, cdr: ChangeDetectorRef, directionality: Directionality);
+    ngOnInit(): void;
+    closeAlert(): void;
+    onFadeAnimationDone(): void;
+    ngOnChanges(changes: SimpleChanges): void;
+    ngOnDestroy(): void;
+    static ɵfac: i0.ɵɵFactoryDef<CmacsAlertComponent, [null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsAlertComponent, "cmacs-alert", ["cmacsAlert"], { "closeText": "closeText"; "iconType": "iconType"; "message": "message"; "description": "description"; "type": "type"; "closeable": "closeable"; "showIcon": "showIcon"; "banner": "banner"; "noAnimation": "noAnimation"; }, { "onClose": "onClose"; }, never, never>;
+}
+//# sourceMappingURL=alert.component.d.ts.map

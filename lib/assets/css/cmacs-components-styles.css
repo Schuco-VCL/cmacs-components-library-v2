@@ -1,5 +1,104 @@
 @import "../icons/global_styles.css";
 @import "~ngx-videogular/fonts/videogular.css";
+@import "~angular2-draggable/css/resizable.min.css";
+
+.ant-form-item {
+  margin: 0 0 40px !important;
+  display: block;
+}
+
+cmacs-breadcrumb-item {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #acb3bf;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  Display: inline-block;
+  cursor: default;
+}
+
+cmacs-breadcrumb-item:last-child {
+  color: #656c79;
+}
+
+.ant-form-item-children-icon .anticon-close-circle-fill,
+.ant-form-item-children-icon .anticon-loading {
+  top: -50%;
+  position: relative;
+}
+
+.ant-form-item-label {
+  display: block !important;
+  text-align: left !important;
+  color: #97A0AE !important;
+  font-size: 12px !important;
+  line-height: 1.5em !important;
+  margin-bottom: 10px !important;
+}
+
+.ant-form-item-label > label {
+  color: #97a0ae !important;
+}
+
+.ant-form label {
+  font-size: 12px !important;
+  font-family: Roboto-Regular, Helvetica, Arial, sans-serif !important;
+  display: block !important;
+  height: unset !important;
+}
+
+.ant-form-item-required::before {
+  content: none !important;
+}
+
+.ant-form-item-label > label.ant-form-item-required::after {
+  display: inline-block !important;
+  color: #F6503C !important;
+  font-size: 12px !important;
+  font-family: Roboto-Regular, Helvetica, Arial, sans-serif !important;
+  line-height: 1 !important;
+  content: '*' !important;
+  position: relative !important;
+  top: -2px !important;
+  left: 1px !important;
+}
+
+.ant-form-item-label > label::after {
+  content: none !important;
+}
+
+.ant-form-item-control {
+  line-height: 1.5 !important;
+}
+
+.ant-form-explain {
+  margin-bottom: -20px !important;
+  padding-top: 5px !important;
+  color: #F6503C !important;
+  font-size: 10px !important;
+}
+
+
+form .has-feedback .ant-calendar-picker-clear,
+form .has-feedback .ant-calendar-picker-icon,
+form .has-feedback .ant-cascader-picker-clear,
+form .has-feedback .ant-input-search:not(.ant-input-search-enter-button) .ant-input-suffix,
+form .has-feedback .ant-time-picker-clear,
+form .has-feedback .ant-time-picker-icon,
+form .has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-selection__clear,
+form .has-feedback > .ant-select .ant-select-selection__clear {
+  right: 11px;
+}
+
+form .has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-arrow,
+form .has-feedback > .ant-select .ant-select-arrow {
+  right: 0;
+}
 
 .cmacs-input-fix:not(.cmacs-textarea){
   height: 34px;
