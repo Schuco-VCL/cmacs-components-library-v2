@@ -18112,8 +18112,8 @@ class NzMNContainerComponent {
         this.cdr.detectChanges();
     }
     mergeOptions(options) {
-        const { nzDuration, nzAnimate, nzPauseOnHover } = this.config;
-        return Object.assign({ nzDuration, nzAnimate, nzPauseOnHover }, options);
+        const { duration, nzAnimate, nzPauseOnHover } = this.config;
+        return Object.assign({ duration, nzAnimate, nzPauseOnHover }, options);
     }
 }
 NzMNContainerComponent.ɵfac = function NzMNContainerComponent_Factory(t) { return new (t || NzMNContainerComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NzConfigService)); };
@@ -18140,7 +18140,7 @@ class NzMNComponent {
                 this.destroyed.next({ id: this.instance.messageId, userAction: this.userAction });
             });
         }
-        this.autoClose = this.options.nzDuration > 0;
+        this.autoClose = this.options.duration > 0;
         if (this.autoClose) {
             this.initErase();
             this.startEraseTimeout();
@@ -18178,7 +18178,7 @@ class NzMNComponent {
         }
     }
     initErase() {
-        this.eraseTTL = this.options.nzDuration;
+        this.eraseTTL = this.options.duration;
         this.eraseTimingStart = Date.now();
     }
     updateTTL() {
@@ -18305,7 +18305,7 @@ function CmacsMessageContainerComponent_cmacs_message_1_Template(rf, ctx) { if (
 const NZ_CONFIG_COMPONENT_NAME = 'message';
 const NZ_MESSAGE_DEFAULT_CONFIG = {
     nzAnimate: true,
-    nzDuration: 3000,
+    duration: 3000,
     nzMaxStack: 7,
     nzPauseOnHover: true,
     nzTop: 24,

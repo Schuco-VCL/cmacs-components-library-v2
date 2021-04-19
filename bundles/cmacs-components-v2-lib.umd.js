@@ -19672,8 +19672,8 @@
             this.cdr.detectChanges();
         };
         NzMNContainerComponent.prototype.mergeOptions = function (options) {
-            var _a = this.config, nzDuration = _a.nzDuration, nzAnimate = _a.nzAnimate, nzPauseOnHover = _a.nzPauseOnHover;
-            return Object.assign({ nzDuration: nzDuration, nzAnimate: nzAnimate, nzPauseOnHover: nzPauseOnHover }, options);
+            var _a = this.config, duration = _a.duration, nzAnimate = _a.nzAnimate, nzPauseOnHover = _a.nzPauseOnHover;
+            return Object.assign({ duration: duration, nzAnimate: nzAnimate, nzPauseOnHover: nzPauseOnHover }, options);
         };
         return NzMNContainerComponent;
     }());
@@ -19704,7 +19704,7 @@
                     _this.destroyed.next({ id: _this.instance.messageId, userAction: _this.userAction });
                 });
             }
-            this.autoClose = this.options.nzDuration > 0;
+            this.autoClose = this.options.duration > 0;
             if (this.autoClose) {
                 this.initErase();
                 this.startEraseTimeout();
@@ -19744,7 +19744,7 @@
             }
         };
         NzMNComponent.prototype.initErase = function () {
-            this.eraseTTL = this.options.nzDuration;
+            this.eraseTTL = this.options.duration;
             this.eraseTimingStart = Date.now();
         };
         NzMNComponent.prototype.updateTTL = function () {
@@ -19875,7 +19875,7 @@
     var NZ_CONFIG_COMPONENT_NAME = 'message';
     var NZ_MESSAGE_DEFAULT_CONFIG = {
         nzAnimate: true,
-        nzDuration: 3000,
+        duration: 3000,
         nzMaxStack: 7,
         nzPauseOnHover: true,
         nzTop: 24,

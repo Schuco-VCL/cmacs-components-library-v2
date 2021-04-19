@@ -2,7 +2,7 @@ import { TemplateRef } from '@angular/core';
 import { Subject } from 'rxjs';
 export declare type NzMessageType = 'success' | 'info' | 'warning' | 'error' | 'loading';
 export interface NzMessageDataOptions {
-    nzDuration?: number;
+    duration?: number;
     nzAnimate?: boolean;
     nzPauseOnHover?: boolean;
     width?: number;
