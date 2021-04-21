@@ -26,7 +26,7 @@ import { NzConnectedOverlayDirective, POSITION_MAP, getPlacementName, DEFAULT_TO
 import { NzI18nService, DateHelperService, NzI18nModule, NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 import { NzEmbedEmptyComponent, NzEmptyModule } from 'ng-zorro-antd/empty';
 import { NzSelectModule } from 'ng-zorro-antd/select';
-import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzDividerComponent, NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzStringTemplateOutletDirective, NzOutletModule } from 'ng-zorro-antd/core/outlet';
 import { NzResizeService, NzSingletonService } from 'ng-zorro-antd/core/services';
 import { NavigationEnd, RouterLink, RouterLinkWithHref, Router, ActivatedRoute, PRIMARY_OUTLET } from '@angular/router';
@@ -6166,6 +6166,7 @@ class CmacsMenuDirective {
         this.inlineIndent = 24;
         this.theme = 'light';
         this.mode = 'vertical';
+        this.cmacsMode = null;
         this.inlineCollapsed = false;
         this.selectable = !this.isMenuInsideDropDown;
         this.cmacsClick = new EventEmitter();
@@ -6251,9 +6252,9 @@ CmacsMenuDirective.ɵdir = ɵɵdefineDirective({ type: CmacsMenuDirective, selec
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfNzMenuItemDirective = _t);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfCmacsSubMenuComponent = _t);
-    } }, hostVars: 34, hostBindings: function CmacsMenuDirective_HostBindings(rf, ctx) { if (rf & 2) {
-        ɵɵclassProp("ant-dropdown-menu", ctx.isMenuInsideDropDown)("ant-dropdown-menu-root", ctx.isMenuInsideDropDown)("ant-dropdown-menu-light", ctx.isMenuInsideDropDown && ctx.theme === "light")("ant-dropdown-menu-dark", ctx.isMenuInsideDropDown && ctx.theme === "dark")("ant-dropdown-menu-vertical", ctx.isMenuInsideDropDown && ctx.actualMode === "vertical")("ant-dropdown-menu-horizontal", ctx.isMenuInsideDropDown && ctx.actualMode === "horizontal")("ant-dropdown-menu-inline", ctx.isMenuInsideDropDown && ctx.actualMode === "inline")("ant-dropdown-menu-inline-collapsed", ctx.isMenuInsideDropDown && ctx.inlineCollapsed)("ant-menu", !ctx.isMenuInsideDropDown)("ant-menu-root", !ctx.isMenuInsideDropDown)("ant-menu-light", !ctx.isMenuInsideDropDown && ctx.theme === "light")("ant-menu-dark", !ctx.isMenuInsideDropDown && ctx.theme === "dark")("ant-menu-vertical", !ctx.isMenuInsideDropDown && ctx.actualMode === "vertical")("ant-menu-horizontal", !ctx.isMenuInsideDropDown && ctx.actualMode === "horizontal")("ant-menu-inline", !ctx.isMenuInsideDropDown && ctx.actualMode === "inline")("ant-menu-inline-collapsed", !ctx.isMenuInsideDropDown && ctx.CmacsInlineCollapsed)("ant-menu-rtl", ctx.dir === "rtl");
-    } }, inputs: { inlineIndent: "inlineIndent", theme: "theme", mode: "mode", inlineCollapsed: "inlineCollapsed", selectable: "selectable" }, outputs: { cmacsClick: "cmacsClick" }, exportAs: ["cmacsMenu"], features: [ɵɵProvidersFeature([
+    } }, hostVars: 36, hostBindings: function CmacsMenuDirective_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵɵclassProp("ant-dropdown-menu", ctx.isMenuInsideDropDown)("ant-dropdown-menu-root", ctx.isMenuInsideDropDown)("ant-dropdown-menu-light", ctx.isMenuInsideDropDown && ctx.theme === "light")("ant-dropdown-menu-dark", ctx.isMenuInsideDropDown && ctx.theme === "dark")("ant-dropdown-menu-vertical", ctx.isMenuInsideDropDown && ctx.actualMode === "vertical")("ant-dropdown-menu-horizontal", ctx.isMenuInsideDropDown && ctx.actualMode === "horizontal")("ant-dropdown-menu-inline", ctx.isMenuInsideDropDown && ctx.actualMode === "inline")("ant-dropdown-menu-inline-collapsed", ctx.isMenuInsideDropDown && ctx.inlineCollapsed)("ant-menu", !ctx.isMenuInsideDropDown)("ant-menu-root", !ctx.isMenuInsideDropDown)("ant-menu-light", !ctx.isMenuInsideDropDown && ctx.theme === "light")("ant-menu-dark", !ctx.isMenuInsideDropDown && ctx.theme === "dark")("ant-menu-vertical", !ctx.isMenuInsideDropDown && ctx.actualMode === "vertical")("ant-menu-horizontal", !ctx.isMenuInsideDropDown && ctx.actualMode === "horizontal")("ant-menu-inline", !ctx.isMenuInsideDropDown && ctx.actualMode === "inline")("ant-menu-inline-collapsed", !ctx.isMenuInsideDropDown && ctx.CmacsInlineCollapsed)("ant-menu-rtl", ctx.dir === "rtl")("cmacs-menu-side-bar", ctx.cmacsMode === "side-bar");
+    } }, inputs: { inlineIndent: "inlineIndent", theme: "theme", mode: "mode", cmacsMode: "cmacsMode", inlineCollapsed: "inlineCollapsed", selectable: "selectable" }, outputs: { cmacsClick: "cmacsClick" }, exportAs: ["cmacsMenu"], features: [ɵɵProvidersFeature([
             {
                 provide: CmacsMenuServiceLocalToken,
                 useClass: MenuService
@@ -6317,7 +6318,8 @@ __decorate([
                     '[class.ant-menu-horizontal]': `!isMenuInsideDropDown && actualMode === 'horizontal'`,
                     '[class.ant-menu-inline]': `!isMenuInsideDropDown && actualMode === 'inline'`,
                     '[class.ant-menu-inline-collapsed]': `!isMenuInsideDropDown && CmacsInlineCollapsed`,
-                    '[class.ant-menu-rtl]': `dir === 'rtl'`
+                    '[class.ant-menu-rtl]': `dir === 'rtl'`,
+                    '[class.cmacs-menu-side-bar]': `cmacsMode === 'side-bar'`
                 }
             }]
     }], function () { return [{ type: MenuService }, { type: undefined, decorators: [{
@@ -6336,6 +6338,8 @@ __decorate([
         }], theme: [{
             type: Input
         }], mode: [{
+            type: Input
+        }], cmacsMode: [{
             type: Input
         }], inlineCollapsed: [{
             type: Input
@@ -34271,6 +34275,632 @@ CmacsNormalizedHorizontalBarGroupedComponent.ɵcmp = ɵɵdefineComponent({ type:
             type: Input
         }] }); })();
 
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_div_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 10);
+    ɵɵelement(1, "nz-divider");
+    ɵɵtext(2);
+    ɵɵelementStart(3, "span", 11);
+    ɵɵtext(4);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const option_r6 = ɵɵnextContext(2).$implicit;
+    const ctx_r11 = ɵɵnextContext();
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1(" ", option_r6.divider, " ");
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1("(", ctx_r11.firstElemByDivider[option_r6.divider].length, ")");
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_container_4_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵelementContainer(1, 12);
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const elem_r9 = ɵɵnextContext().$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngTemplateOutlet", elem_r9.template.ref)("ngTemplateOutletContext", elem_r9.template.context);
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_span_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "span", 22);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r9 = ɵɵnextContext(3).$implicit;
+    const ctx_r23 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r23.getInitials(elem_r9.label));
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 20);
+    ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_span_1_Template, 2, 1, "span", 21);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r9 = ɵɵnextContext(2).$implicit;
+    const ctx_r17 = ɵɵnextContext(2);
+    ɵɵstyleProp("background-image", elem_r9.picture ? ctx_r17.getBackgroundImage(elem_r9.picture) : "none");
+    ɵɵclassProp("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !elem_r9.picture);
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_i_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 24);
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 20);
+    ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_i_1_Template, 1, 0, "i", 23);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r9 = ɵɵnextContext(2).$implicit;
+    const ctx_r18 = ɵɵnextContext(2);
+    ɵɵstyleProp("background-image", elem_r9.picture ? ctx_r18.getBackgroundImage(elem_r9.picture) : "none");
+    ɵɵclassProp("cmacs-guest-no-picture", !elem_r9.picture)("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !elem_r9.picture);
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_i_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 26);
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 20);
+    ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_i_1_Template, 1, 0, "i", 25);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r9 = ɵɵnextContext(2).$implicit;
+    const ctx_r19 = ɵɵnextContext(2);
+    ɵɵstyleProp("background-image", elem_r9.picture ? ctx_r19.getBackgroundImage(elem_r9.picture) : "none");
+    ɵɵclassProp("cmacs-team-no-picture", !elem_r9.picture)("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !elem_r9.picture);
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_5_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵelementStart(1, "span");
+    ɵɵtext(2);
+    ɵɵelementStart(3, "span", 27);
+    ɵɵtext(4);
+    ɵɵelementEnd();
+    ɵɵtext(5);
+    ɵɵelementEnd();
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const ctx_r20 = ɵɵnextContext(4);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1(" ", ctx_r20.highlightKeys[0], "");
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(ctx_r20.highlightKeys[1]);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1("", ctx_r20.highlightKeys[2], " ");
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_6_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵtext(1);
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const elem_r9 = ɵɵnextContext(2).$implicit;
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1(" ", elem_r9.label, " ");
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_7_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 28);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r9 = ɵɵnextContext(2).$implicit;
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(elem_r9.charge);
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 13);
+    ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_Template, 2, 5, "div", 14);
+    ɵɵtemplate(2, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_Template, 2, 7, "div", 15);
+    ɵɵtemplate(3, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_Template, 2, 7, "div", 16);
+    ɵɵelementStart(4, "div", 17);
+    ɵɵtemplate(5, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_5_Template, 6, 3, "ng-container", 18);
+    ɵɵtemplate(6, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_6_Template, 2, 1, "ng-container", 18);
+    ɵɵelementEnd();
+    ɵɵtemplate(7, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_7_Template, 2, 1, "div", 19);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r9 = ɵɵnextContext().$implicit;
+    const ctx_r14 = ɵɵnextContext(2);
+    ɵɵclassProp("cmacs-user-dropdown-hide-picture", elem_r9.hidePicture);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", elem_r9.role === "user");
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", elem_r9.role === "guest");
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", elem_r9.role === "team");
+    ɵɵadvance(1);
+    ɵɵclassProp("cmacs-user-dropdown-team-title", elem_r9.role === "team");
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", ctx_r14.highlightValue(elem_r9).length === 3);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !ctx_r14.highlightValue(elem_r9).length);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", elem_r9.role === "user" || elem_r9.role === "guest");
+} }
+function CmacsUserDropdownComponent_ng_container_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵelementStart(1, "cmacs-option", 5);
+    ɵɵelementStart(2, "div", 6);
+    ɵɵtemplate(3, CmacsUserDropdownComponent_ng_container_1_ng_container_1_div_3_Template, 5, 2, "div", 7);
+    ɵɵtemplate(4, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_container_4_Template, 2, 2, "ng-container", 8);
+    ɵɵtemplate(5, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_Template, 8, 10, "ng-template", null, 9, ɵɵtemplateRefExtractor);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const elem_r9 = ctx.$implicit;
+    const j_r10 = ctx.index;
+    const _r13 = ɵɵreference(6);
+    const option_r6 = ɵɵnextContext().$implicit;
+    const ctx_r8 = ɵɵnextContext();
+    ɵɵadvance(1);
+    ɵɵproperty("label", elem_r9.label)("value", elem_r9.value)("extendedData", elem_r9);
+    ɵɵadvance(1);
+    ɵɵclassProp("cmacs-user-dropdown-last-elem", j_r10 === option_r6.children.length - 1)("cmacs-user-dropdown-divider-first-option", ctx_r8.firstElemByDivider[option_r6.divider] && ctx_r8.firstElemByDivider[option_r6.divider].length && ctx_r8.firstElemByDivider[option_r6.divider][0].value === elem_r9.value);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", ctx_r8.firstElemByDivider[option_r6.divider] && ctx_r8.firstElemByDivider[option_r6.divider].length && ctx_r8.firstElemByDivider[option_r6.divider][0].value === elem_r9.value);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", elem_r9.template)("ngIfElse", _r13);
+} }
+function CmacsUserDropdownComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_Template, 7, 10, "ng-container", 1);
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const option_r6 = ctx.$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", option_r6.children);
+} }
+function CmacsUserDropdownComponent_cmacs_option_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "cmacs-option", 29);
+    ɵɵelementStart(1, "div", 30);
+    ɵɵelement(2, "i", 31);
+    ɵɵtext(3);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵadvance(3);
+    ɵɵtextInterpolate1(" ", ctx_r1.loadingLabel, " ");
+} }
+function CmacsUserDropdownComponent_ng_template_3_Template(rf, ctx) { if (rf & 1) {
+    const _r35 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 32);
+    ɵɵlistener("click", function CmacsUserDropdownComponent_ng_template_3_Template_div_click_0_listener() { ɵɵrestoreView(_r35); const ctx_r34 = ɵɵnextContext(); return ctx_r34.addGuestUser(); });
+    ɵɵelement(1, "i", 33);
+    ɵɵelementStart(2, "span");
+    ɵɵtext(3);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r3 = ɵɵnextContext();
+    ɵɵadvance(3);
+    ɵɵtextInterpolate(ctx_r3.inviteGuestLabel);
+} }
+function CmacsUserDropdownComponent_ng_template_5_div_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 35);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r36 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r36.emailErrorLabel);
+} }
+function CmacsUserDropdownComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    ɵɵtemplate(0, CmacsUserDropdownComponent_ng_template_5_div_0_Template, 2, 1, "div", 34);
+} if (rf & 2) {
+    const ctx_r5 = ɵɵnextContext();
+    ɵɵproperty("ngIf", ctx_r5.showEmailError);
+} }
+class CmacsUserDropdownComponent {
+    constructor(sanitizer, cdr, fb) {
+        this.sanitizer = sanitizer;
+        this.cdr = cdr;
+        this.fb = fb;
+        this.mode = 'default';
+        this.emailErrorLabel = 'Email must be a valid Email Address';
+        this.inviteGuestLabel = 'Invite a guest via email';
+        this.loadingLabel = 'Loading data...';
+        this.placeHolder = 'Add Users / Teams';
+        this.selectedValue = null;
+        this.maxTagCount = null;
+        this.serverSearch = false;
+        this.selectedValueChange = new EventEmitter();
+        this.onAddGuestUserByEmail = new EventEmitter();
+        this.cmacsOnSearch = new EventEmitter();
+        this._isLoading = false;
+        this._inviteGuest = true;
+        this._searchValue = '';
+        this._listOfOption = [];
+        this.showEmailError = false;
+        this.listOfFilteredOption = [];
+        this.listDividers = [];
+        this.operatedData = [];
+        this.firstElemByDivider = {};
+        this.highlightKeys = [];
+        this.emailForm = this.fb.group({
+            email: [this._searchValue, [Validators.email]]
+        });
+    }
+    set isLoading(value) {
+        this._isLoading = value;
+    }
+    set inviteGuest(value) {
+        this._inviteGuest = value;
+    }
+    set listOfOption(value) {
+        this._listOfOption = [...value];
+        this.listOfFilteredOption = [...value];
+        this.operateData();
+    }
+    get listOfOption() {
+        return this._listOfOption;
+    }
+    onSelectedValueChange($event) {
+        this.selectedValueChange.emit($event);
+    }
+    get searchValue() {
+        return this._searchValue;
+    }
+    operateData() {
+        this.operatedData = [];
+        this.listDividers = [...Array.from(new Set(this.listOfOption.map(e => e.divider)))];
+        for (let i = 0; i < this.listDividers.length; i++) {
+            const divider = this.listDividers[i];
+            const children = this.listOfOption.filter(e => e.divider === divider);
+            const elem = { divider, children };
+            this.operatedData.push(elem);
+        }
+        this.operatedData = [...this.operatedData];
+        this.getFirstElemByDivider();
+    }
+    onsearch($event) {
+        this.showEmailError = false;
+        this._searchValue = $event;
+        this.cmacsOnSearch.emit($event);
+    }
+    getFirstElemByDivider() {
+        const firstElemByDivider = {};
+        for (let i = 0; i < this.listOfFilteredOption.length; i++) {
+            const elem = this.listOfFilteredOption[i];
+            const elemWithDivider = this.listOfOption.find(e => (e.value === elem.nzValue || e.value === elem.value));
+            if (firstElemByDivider[elemWithDivider.divider] === null || firstElemByDivider[elemWithDivider.divider] === undefined) {
+                firstElemByDivider[elemWithDivider.divider] = [];
+                firstElemByDivider[elemWithDivider.divider].push(elemWithDivider);
+            }
+            else {
+                firstElemByDivider[elemWithDivider.divider].push(elemWithDivider);
+            }
+        }
+        this.firstElemByDivider = firstElemByDivider;
+    }
+    getInitials(name) {
+        let initials = name.match(/\b\w/g) || [];
+        initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
+        return initials;
+    }
+    getBackgroundImage(picture) {
+        return this.sanitizer.bypassSecurityTrustStyle('url(\'' + picture + '\')');
+    }
+    addGuestUser() {
+        if (this._searchValue) {
+            this.emailForm.get('email').setValue(this._searchValue);
+            if (this.emailForm.valid) {
+                this.showEmailError = false;
+                this.onAddGuestUserByEmail.emit(true);
+            }
+            else {
+                this.showEmailError = true;
+            }
+        }
+    }
+    addOption(option) {
+        const checkUser = this.listOfOption.find(e => e.value === option.value);
+        if (!checkUser) {
+            this.listOfOption = [...this.listOfOption, option];
+            this.listOfFilteredOption = [...this.listOfFilteredOption, option];
+            this.operateData();
+        }
+    }
+    removeOption(option) {
+        const selectedValues = this.selectComponent.nzSelectService.listOfSelectedValue;
+        const selectedValuesFiltered = selectedValues.filter(elem => elem.value !== option.value);
+        this.selectComponent.nzSelectService.updateListOfSelectedValue(selectedValuesFiltered, true);
+    }
+    highlightValue(elem) {
+        this.highlightKeys = [];
+        const value = this.selectComponent.nzSelectService.searchValue;
+        // tslint:disable-next-line: no-non-null-assertion
+        if (value && elem.label.toLowerCase().includes(value.toLowerCase())) {
+            // match the search value
+            const index = elem.label.toLowerCase().indexOf(value.toLowerCase());
+            this.highlightKeys = [
+                elem.label.slice(0, index),
+                elem.label.slice(index, index + value.length),
+                elem.label.slice(index + value.length, elem.label.length)
+            ];
+        }
+        return this.highlightKeys;
+    }
+}
+CmacsUserDropdownComponent.ɵfac = function CmacsUserDropdownComponent_Factory(t) { return new (t || CmacsUserDropdownComponent)(ɵɵdirectiveInject(DomSanitizer), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FormBuilder)); };
+CmacsUserDropdownComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsUserDropdownComponent, selectors: [["cmacs-user-dropdown"]], viewQuery: function CmacsUserDropdownComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵɵviewQuery(CmacsSelectComponent, 1);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.selectComponent = _t.first);
+    } }, inputs: { mode: "mode", emailErrorLabel: "emailErrorLabel", inviteGuestLabel: "inviteGuestLabel", loadingLabel: "loadingLabel", placeHolder: "placeHolder", selectedValue: "selectedValue", maxTagCount: "maxTagCount", serverSearch: "serverSearch", isLoading: "isLoading", inviteGuest: "inviteGuest", listOfOption: "listOfOption" }, outputs: { selectedValueChange: "selectedValueChange", onAddGuestUserByEmail: "onAddGuestUserByEmail", cmacsOnSearch: "cmacsOnSearch" }, exportAs: ["cmacsUserDropdown"], decls: 7, vars: 13, consts: [["allowClear", "", 3, "showCmacsSearch", "maxTagCount", "mode", "showSelectAll", "showArrow", "userDropdown", "notFoundContentCustom", "placeHolder", "serverSearch", "dropdownRender", "ngModel", "cmacsOnSearch", "ngModelChange"], [4, "ngFor", "ngForOf"], ["disabled", "", "customContent", "", 4, "ngIf"], ["render", ""], ["notFoundContent", ""], ["customContent", "", 3, "label", "value", "extendedData"], [1, "cmacs-user-dropdown-option-wrapper"], ["class", "cmacs-user-dropdown-divider", 4, "ngIf"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], [1, "cmacs-user-dropdown-divider"], [2, "color", "#97a0ae"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-user-dropdown-info-wrapper"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-guest-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-team-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], [1, "cmacs-user-dropdown-title"], [4, "ngIf"], ["class", "cmacs-user-dropdown-subtitle", 4, "ngIf"], [1, "cmacs-user-dropdown-person-picture"], ["class", "cmacs-user-dropdown-initials", 4, "ngIf"], [1, "cmacs-user-dropdown-initials"], ["class", "iconCreation-User", 4, "ngIf"], [1, "iconCreation-User"], ["class", "iconCreation-Team", 4, "ngIf"], [1, "iconCreation-Team"], [2, "color", "#2a7cff"], [1, "cmacs-user-dropdown-subtitle"], ["disabled", "", "customContent", ""], [1, "cmacs-user-dropdown-loading-wrapper"], ["nz-icon", "", "nzType", "loading", 1, "cmacs-user-dropdown-loading-icon"], [1, "cmacs-user-dropdown-invite-guest", 3, "click"], [1, "iconUISmall-Message", 2, "font-size", "17px", "position", "relative", "top", "3px", "margin-right", "6px"], ["class", "cmacs-user-dropdown-error", 4, "ngIf"], [1, "cmacs-user-dropdown-error"]], template: function CmacsUserDropdownComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "cmacs-select", 0);
+        ɵɵlistener("cmacsOnSearch", function CmacsUserDropdownComponent_Template_cmacs_select_cmacsOnSearch_0_listener($event) { return ctx.onsearch($event); })("ngModelChange", function CmacsUserDropdownComponent_Template_cmacs_select_ngModelChange_0_listener($event) { return ctx.onSelectedValueChange($event); })("ngModelChange", function CmacsUserDropdownComponent_Template_cmacs_select_ngModelChange_0_listener($event) { return ctx.selectedValue = $event; });
+        ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_Template, 2, 1, "ng-container", 1);
+        ɵɵtemplate(2, CmacsUserDropdownComponent_cmacs_option_2_Template, 4, 1, "cmacs-option", 2);
+        ɵɵelementEnd();
+        ɵɵtemplate(3, CmacsUserDropdownComponent_ng_template_3_Template, 4, 1, "ng-template", null, 3, ɵɵtemplateRefExtractor);
+        ɵɵtemplate(5, CmacsUserDropdownComponent_ng_template_5_Template, 1, 1, "ng-template", null, 4, ɵɵtemplateRefExtractor);
+    } if (rf & 2) {
+        const _r2 = ɵɵreference(4);
+        const _r4 = ɵɵreference(6);
+        ɵɵproperty("showCmacsSearch", true)("maxTagCount", ctx.maxTagCount)("mode", ctx.mode)("showSelectAll", false)("showArrow", false)("userDropdown", true)("notFoundContentCustom", _r4)("placeHolder", ctx.placeHolder)("serverSearch", ctx.serverSearch)("dropdownRender", ctx._inviteGuest ? _r2 : null)("ngModel", ctx.selectedValue);
+        ɵɵadvance(1);
+        ɵɵproperty("ngForOf", ctx.operatedData);
+        ɵɵadvance(1);
+        ɵɵproperty("ngIf", ctx._isLoading);
+    } }, directives: [CmacsSelectComponent, NgControlStatus, NgModel, NgForOf, NgIf, CmacsOptionComponent, NzDividerComponent, NgTemplateOutlet, ɵNzTransitionPatchDirective, NzIconDirective], styles: [".cmacs-user-dropdown-person-picture{text-align:center;padding-top:2px;border-radius:3px;width:34px;height:34px;background-color:#a100cd;color:#fff;background-repeat:no-repeat;background-position:50%;background-size:contain}.cmacs-user-dropdown-divider{font-family:Roboto-Medium;font-size:13px;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.23;letter-spacing:normal;color:#3b3f46;padding:7px 14px 8px}.cmacs-user-dropdown-divider,.cmacs-user-dropdown-divider:hover{background-color:#fff!important}.cmacs-user-dropdown-divider nz-divider:first-child{transform:scaleX(1.5);position:relative;top:-7px}.cmacs-user-dropdown-initials{position:relative;top:5px;font-size:14px}.cmacs-user-dropdown-title{top:0;font-weight:500;color:#656c79}.cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-title{position:absolute;left:45px;font-family:Roboto-Regular;font-size:12px;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100% - 75px)}.cmacs-user-dropdown-subtitle{top:16px;font-weight:400;color:#97a0ae}.cmacs-team-no-picture{border-radius:3px;border:1.1px solid #dee0e5;background-color:#fff;color:#656c79;font-size:16px;padding:5px 0}.cmacs-user-dropdown-team-title{top:7px}.cmacs-guest-no-picture{border-radius:3px;background-color:#00cda1;font-size:16px;padding:6px 0}.cmacs-user-dropdown-error{color:#f6503c;font-size:10px;font-weight:400;font-stretch:normal;font-style:normal;line-height:2;letter-spacing:normal;padding:5px 0;position:relative;left:12px}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .cmacs-user-dropdown-error{left:12px}.cmacs-select-user-dropdown .ant-select-dropdown-menu-item{padding:0!important}.cmacs-user-dropdown-option-wrapper{padding:7px 0}.cmacs-user-dropdown-info-wrapper{position:relative;margin:0 14px}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .cmacs-user-dropdown-info-wrapper{margin:0 14px 0 42px}.cmacs-user-dropdown-divider-first-option{padding-top:0}.cmacs-user-dropdown-divider-first-option .cmacs-user-dropdown-info-wrapper{margin-top:7px!important}.cmacs-user-dropdown-last-elem{padding-bottom:14px}.cmacs-user-dropdown-invite-guest{height:34px;box-shadow:0 -2px 5px 0 rgba(59,63,70,.1);background-color:#fff;color:#2a7cff;padding:6px 11px;font-size:12px;cursor:pointer}.cmacs-user-dropdown-invite-guest:hover{background-color:#f2f7ff}.cmacs-user-dropdown-no-picture{opacity:0}.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-title{left:0}.ant-select-dropdown-menu{scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-user-dropdown-loading-wrapper{padding:7px 12px}.cmacs-user-dropdown-loading-icon{margin-right:6px}"], encapsulation: 2, changeDetection: 0 });
+__decorate([
+    InputBoolean()
+], CmacsUserDropdownComponent.prototype, "serverSearch", void 0);
+__decorate([
+    InputBoolean()
+], CmacsUserDropdownComponent.prototype, "isLoading", null);
+__decorate([
+    InputBoolean()
+], CmacsUserDropdownComponent.prototype, "inviteGuest", null);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsUserDropdownComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-user-dropdown',
+                exportAs: 'cmacsUserDropdown',
+                templateUrl: './cmacs-user-dropdown.component.html',
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                preserveWhitespaces: false,
+                styleUrls: ['./cmacs-user-dropdown.component.css']
+            }]
+    }], function () { return [{ type: DomSanitizer }, { type: ChangeDetectorRef }, { type: FormBuilder }]; }, { mode: [{
+            type: Input
+        }], emailErrorLabel: [{
+            type: Input
+        }], inviteGuestLabel: [{
+            type: Input
+        }], loadingLabel: [{
+            type: Input
+        }], placeHolder: [{
+            type: Input
+        }], selectedValue: [{
+            type: Input
+        }], maxTagCount: [{
+            type: Input
+        }], serverSearch: [{
+            type: Input
+        }], selectedValueChange: [{
+            type: Output
+        }], onAddGuestUserByEmail: [{
+            type: Output
+        }], cmacsOnSearch: [{
+            type: Output
+        }], selectComponent: [{
+            type: ViewChild,
+            args: [CmacsSelectComponent]
+        }], isLoading: [{
+            type: Input
+        }], inviteGuest: [{
+            type: Input
+        }], listOfOption: [{
+            type: Input
+        }] }); })();
+
+function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵelementContainer(1, 6);
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const elem_r4 = ɵɵnextContext().$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngTemplateOutlet", elem_r4.template.ref)("ngTemplateOutletContext", elem_r4.template.context);
+} }
+function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_span_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "span", 15);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r4 = ɵɵnextContext(3).$implicit;
+    const ctx_r14 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r14.getInitials(elem_r4.label));
+} }
+function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 13);
+    ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_span_1_Template, 2, 1, "span", 14);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r4 = ɵɵnextContext(2).$implicit;
+    const ctx_r10 = ɵɵnextContext(2);
+    ɵɵstyleProp("background-image", elem_r4.picture ? ctx_r10.getBackgroundImage(elem_r4.picture) : "none");
+    ɵɵclassProp("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !elem_r4.picture);
+} }
+function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_i_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 17);
+} }
+function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 13);
+    ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_i_1_Template, 1, 0, "i", 16);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r4 = ɵɵnextContext(2).$implicit;
+    const ctx_r11 = ɵɵnextContext(2);
+    ɵɵstyleProp("background-image", elem_r4.picture ? ctx_r11.getBackgroundImage(elem_r4.picture) : "none");
+    ɵɵclassProp("cmacs-guest-no-picture", !elem_r4.picture)("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !elem_r4.picture);
+} }
+function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_i_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 19);
+} }
+function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 13);
+    ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_i_1_Template, 1, 0, "i", 18);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r4 = ɵɵnextContext(2).$implicit;
+    const ctx_r12 = ɵɵnextContext(2);
+    ɵɵstyleProp("background-image", elem_r4.picture ? ctx_r12.getBackgroundImage(elem_r4.picture) : "none");
+    ɵɵclassProp("cmacs-team-no-picture", !elem_r4.picture)("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !elem_r4.picture);
+} }
+function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_6_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 20);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r4 = ɵɵnextContext(2).$implicit;
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(elem_r4.charge);
+} }
+function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 7);
+    ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_Template, 2, 5, "div", 8);
+    ɵɵtemplate(2, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_Template, 2, 7, "div", 9);
+    ɵɵtemplate(3, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_Template, 2, 7, "div", 10);
+    ɵɵelementStart(4, "div", 11);
+    ɵɵtext(5);
+    ɵɵelementEnd();
+    ɵɵtemplate(6, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_6_Template, 2, 1, "div", 12);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const elem_r4 = ɵɵnextContext().$implicit;
+    ɵɵclassProp("cmacs-user-dropdown-hide-picture", elem_r4.hidePicture);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", elem_r4.role === "user");
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", elem_r4.role === "guest");
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", elem_r4.role === "team");
+    ɵɵadvance(1);
+    ɵɵclassProp("cmacs-user-dropdown-team-title", elem_r4.role === "team");
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1(" ", elem_r4.label, " ");
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", elem_r4.role === "user" || elem_r4.role === "guest");
+} }
+function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    const _r24 = ɵɵgetCurrentView();
+    ɵɵelementContainerStart(0);
+    ɵɵelementStart(1, "div", 1);
+    ɵɵlistener("click", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template_div_click_1_listener() { ɵɵrestoreView(_r24); const elem_r4 = ctx.$implicit; const ctx_r23 = ɵɵnextContext(2); return ctx_r23.selectedValue = elem_r4; });
+    ɵɵtemplate(2, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_container_2_Template, 2, 2, "ng-container", 2);
+    ɵɵtemplate(3, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_Template, 7, 9, "ng-template", null, 3, ɵɵtemplateRefExtractor);
+    ɵɵelementStart(5, "span", 4);
+    ɵɵlistener("click", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template_span_click_5_listener() { ɵɵrestoreView(_r24); const elem_r4 = ctx.$implicit; const ctx_r25 = ɵɵnextContext(2); return ctx_r25.removeOption(elem_r4); });
+    ɵɵelement(6, "i", 5);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const elem_r4 = ctx.$implicit;
+    const _r7 = ɵɵreference(4);
+    const ctx_r3 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵclassProp("cmacs-user-dropdown-external-list-item-selected", ctx_r3.selectedValue && ctx_r3.selectedValue.value === elem_r4.value);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", elem_r4.template)("ngIfElse", _r7);
+} }
+function CmacsUserDropdownExternalListComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template, 7, 4, "ng-container", 0);
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const option_r1 = ctx.$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", option_r1.children);
+} }
+class CmacsUserDropdownExternalListComponent {
+    constructor(sanitizer) {
+        this.sanitizer = sanitizer;
+        this._data = [];
+        this.listDividers = [];
+        this.origin = [];
+        this.removedOption = new EventEmitter();
+        this.selectedValue = null;
+    }
+    set data(value) {
+        if (value) {
+            this.origin = value;
+            const operatedData = this.operateData(value);
+            this._data = [...operatedData];
+        }
+    }
+    get data() {
+        return this._data;
+    }
+    operateData(values) {
+        const operatedData = [];
+        this.listDividers = [...Array.from(new Set(values.map(e => e.divider)))];
+        for (let i = 0; i < this.listDividers.length; i++) {
+            const divider = this.listDividers[i];
+            const children = values.filter(e => e.divider === divider);
+            const elem = { divider, children };
+            operatedData.push(elem);
+        }
+        return operatedData;
+    }
+    getInitials(name) {
+        let initials = name.match(/\b\w/g) || [];
+        initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
+        return initials;
+    }
+    getBackgroundImage(picture) {
+        return this.sanitizer.bypassSecurityTrustStyle('url(\'' + picture + '\')');
+    }
+    removeOption(elem) {
+        const filteredData = this.origin.filter(item => item.value !== elem.value);
+        this.data = filteredData;
+        this.removedOption.emit(elem);
+    }
+}
+CmacsUserDropdownExternalListComponent.ɵfac = function CmacsUserDropdownExternalListComponent_Factory(t) { return new (t || CmacsUserDropdownExternalListComponent)(ɵɵdirectiveInject(DomSanitizer)); };
+CmacsUserDropdownExternalListComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsUserDropdownExternalListComponent, selectors: [["cmacs-user-dropdown-external-list"]], inputs: { data: "data" }, outputs: { removedOption: "removedOption" }, exportAs: ["cmacsUserDropdownExternalList"], decls: 1, vars: 1, consts: [[4, "ngFor", "ngForOf"], [1, "cmacs-user-dropdown-option-wrapper", "cmacs-user-dropdown-external-list-wrapper", 3, "click"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], [1, "cmacs-user-dropdown-external-list-remove-icon", 3, "click"], [1, "iconUISmall-Close"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-user-dropdown-info-wrapper"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-guest-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-team-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], [1, "cmacs-user-dropdown-title"], ["class", "cmacs-user-dropdown-subtitle", 4, "ngIf"], [1, "cmacs-user-dropdown-person-picture"], ["class", "cmacs-user-dropdown-initials", 4, "ngIf"], [1, "cmacs-user-dropdown-initials"], ["class", "iconCreation-User", 4, "ngIf"], [1, "iconCreation-User"], ["class", "iconCreation-Team", 4, "ngIf"], [1, "iconCreation-Team"], [1, "cmacs-user-dropdown-subtitle"]], template: function CmacsUserDropdownExternalListComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵtemplate(0, CmacsUserDropdownExternalListComponent_ng_container_0_Template, 2, 1, "ng-container", 0);
+    } if (rf & 2) {
+        ɵɵproperty("ngForOf", ctx._data);
+    } }, directives: [NgForOf, NgIf, NgTemplateOutlet], styles: [".cmacs-user-dropdown-person-picture{text-align:center;padding-top:2px;border-radius:3px;width:34px;height:34px;background-color:#a100cd;color:#fff;background-repeat:no-repeat;background-position:50%;background-size:contain}.cmacs-user-dropdown-divider{font-family:Roboto-Medium;font-size:13px;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.23;letter-spacing:normal;color:#3b3f46;padding:7px 14px 8px;background-color:#fff!important}.cmacs-user-dropdown-initials{position:relative;top:5px;font-size:14px}.cmacs-user-dropdown-title{top:0;font-weight:500;color:#656c79}.cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-title{position:absolute;left:45px;font-family:Roboto-Regular;font-size:12px;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100% - 75px)}.cmacs-user-dropdown-subtitle{top:16px;font-weight:400;color:#97a0ae}.cmacs-team-no-picture{border-radius:3px;border:1.1px solid #dee0e5;background-color:#fff;color:#656c79;font-size:16px;padding:5px 0}.cmacs-user-dropdown-team-title{top:7px}.cmacs-guest-no-picture{border-radius:3px;background-color:#00cda1;font-size:16px;padding:6px 0}.cmacs-user-dropdown-error{color:#f6503c;font-size:10px;font-weight:400;font-stretch:normal;font-style:normal;line-height:2;letter-spacing:normal;padding:5px 0;position:relative;left:12px}.cmacs-user-dropdown-no-picture{opacity:0}.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-title{left:0}.cmacs-user-dropdown-external-list-remove-icon{float:right;position:relative;font-size:18px;top:-29px;right:10px;color:#97a0ae;cursor:pointer;opacity:0}.cmacs-user-dropdown-external-list-wrapper{border-radius:5px}.cmacs-user-dropdown-external-list-wrapper:hover{background-color:#f2f7ff}.cmacs-user-dropdown-external-list-wrapper:hover .cmacs-user-dropdown-external-list-remove-icon{opacity:1}.cmacs-user-dropdown-external-list-item-selected{background-color:#f2f7ff}.cmacs-user-dropdown-external-list-item-selected .cmacs-user-dropdown-external-list-remove-icon{opacity:1}", "cmacs-user-dropdown-external-list {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsUserDropdownExternalListComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-user-dropdown-external-list',
+                exportAs: 'cmacsUserDropdownExternalList',
+                templateUrl: './cmacs-user-dropdown-external-list.component.html',
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                preserveWhitespaces: false,
+                styleUrls: ['./cmacs-user-dropdown-external-list.component.css'],
+                styles: [
+                    `cmacs-user-dropdown-external-list {
+        display: block;
+      }
+    `
+                ]
+            }]
+    }], function () { return [{ type: DomSanitizer }]; }, { removedOption: [{
+            type: Output
+        }], data: [{
+            type: Input
+        }] }); })();
+
 registerLocaleData(en);
 class CmacsComponentsV2LibModule {
 }
@@ -34389,7 +35019,9 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         DragDropModule,
         EditorModule,
         NzTimePickerModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsStatusDistributionComponent,
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsUserDropdownComponent,
+        CmacsUserDropdownExternalListComponent,
+        CmacsStatusDistributionComponent,
         CmacsGeneralChartComponent,
         CmacsKPIOverviewComponent,
         CmacsNormalizedHorizontalBarChartComponent,
@@ -34586,7 +35218,9 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         VgOverlayPlayModule,
         VgBufferingModule,
         EditorModule,
-        ReactiveFormsModule], exports: [CmacsStatusDistributionComponent,
+        ReactiveFormsModule], exports: [CmacsUserDropdownComponent,
+        CmacsUserDropdownExternalListComponent,
+        CmacsStatusDistributionComponent,
         CmacsGeneralChartComponent,
         CmacsKPIOverviewComponent,
         CmacsNormalizedHorizontalBarChartComponent,
@@ -34778,6 +35412,8 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         type: NgModule,
         args: [{
                 declarations: [
+                    CmacsUserDropdownComponent,
+                    CmacsUserDropdownExternalListComponent,
                     CmacsStatusDistributionComponent,
                     CmacsGeneralChartComponent,
                     CmacsKPIOverviewComponent,
@@ -34981,6 +35617,8 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     ReactiveFormsModule
                 ],
                 exports: [
+                    CmacsUserDropdownComponent,
+                    CmacsUserDropdownExternalListComponent,
                     CmacsStatusDistributionComponent,
                     CmacsGeneralChartComponent,
                     CmacsKPIOverviewComponent,
@@ -35372,5 +36010,5 @@ var ModeTabType;
  * Generated bundle index. Do not edit.
  */
 
-export { ButtonStyle, CeldType, CmacsAlertComponent, CmacsAutosizeDirective, CmacsBreadCrumbComponent, CmacsBreadCrumbItemComponent, CmacsBreadCrumbSeparatorComponent, CmacsButtonComponent, CmacsButtonGroupComponent, CmacsCardComponent, CmacsCardGridDirective, CmacsCardLoadingComponent, CmacsCardMetaComponent, CmacsCardTabComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsCommentActionComponent, CmacsCommentActionHostDirective, CmacsCommentAvatarDirective, CmacsCommentComponent, CmacsCommentContentDirective, CmacsCompactTableComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsContextMenuServiceModule, CmacsDatePickerComponent, CmacsDateTimePickerComponent, CmacsDatetimePickerPanelComponent, CmacsDatetimeValueAccessorDirective, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsEditorComponent, CmacsFloatingMenuComponent, CmacsFormControlComponent, CmacsFormDirective, CmacsFormItemComponent, CmacsFormLabelComponent, CmacsFormSplitComponent, CmacsFormTextComponent, CmacsGeneralChartComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsInputNumberComponent, CmacsIsMenuInsideDropDownToken, CmacsKPIOverviewComponent, CmacsKanbanComponent, CmacsKpiComponent, CmacsKpiGroupComponent, CmacsListComponent, CmacsListEmptyComponent, CmacsListFooterComponent, CmacsListGridDirective, CmacsListHeaderComponent, CmacsListItemActionComponent, CmacsListItemActionsComponent, CmacsListItemComponent, CmacsListItemExtraComponent, CmacsListItemMetaAvatarComponent, CmacsListItemMetaComponent, CmacsListItemMetaDescriptionComponent, CmacsListItemMetaTitleComponent, CmacsListLoadMoreDirective, CmacsListPaginationComponent, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsMessageComponent, CmacsMessageContainerComponent, CmacsMessageService, CmacsModalComponent, CmacsModalService, CmacsMonthPickerComponent, CmacsMoveableListComponent, CmacsNormalizedHorizontalBarChartComponent, CmacsNormalizedHorizontalBarGroupedComponent, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsPhoneNumberComponent, CmacsPopoverComponent, CmacsPopoverDirective, CmacsProgressComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsRangePickerComponent, CmacsSearchComponent, CmacsSectionComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSidePanelComponent, CmacsSignatureComponent, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsStatusDistributionComponent, CmacsStepComponent, CmacsSubMenuComponent, CmacsSwitchComponent, CmacsTabAddButtonComponent, CmacsTabBodyComponent, CmacsTabCloseButtonComponent, CmacsTabComponent, CmacsTabDirective, CmacsTabLinkDirective, CmacsTabLinkTemplateDirective, CmacsTabNavBarComponent, CmacsTabNavItemDirective, CmacsTabNavOperationComponent, CmacsTabScrollListDirective, CmacsTabSetComponent, CmacsTableComponent, CmacsTabsInkBarDirective, CmacsTagComponent, CmacsTextareaCountComponent, CmacsTimelineComponent, CmacsTimelineItemComponent, CmacsToCssUnitPipe, CmacsToolTipComponent, CmacsTooltipBaseComponent, CmacsTooltipDirective, CmacsTreeComponent, CmacsTreeNodeComponent, CmacsTreeService, CmacsVideoPlayerComponent, CmacsWeekPickerComponent, CmacsWizardComponent, CmacsXlsxLoaderComponent, CmacsYearPickerComponent, DefaultTooltipIcon, ExportType, FLOATING_MENU_LOCALIZATION, KPI_COLORS, KPI_PRIORITY_COLORS, LibPackerModule, MODAL_ANIMATE_DURATION, MODAL_CONFIG, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, ModalBuilderForService, ModalControlService, ModeTabType, NZ_TAB_SET, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzMNComponent, NzMNContainerComponent, NzMNService, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, NzTabChangeEvent, NzTooltipBaseDirective, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzTreeServiceFactory, PREFIX_CLASS, ROBOTO, ROBOTO_BOLD, SIGNATURE_LOCALIZATION, TemplateType, TimelineService, UtilService, WidgetActionType, WidgetDataType, WidgetType, defaultFilterOption, getTimeConfig, isAllowedDate, isCheckDisabled, isInArray, isTimeValid, isTimeValidByConfig, isTooltipEmpty, transCompatFormat, AbstractPanelHeader as ɵAbstractPanelHeader, AbstractTable as ɵAbstractTable, CalendarFooterComponent as ɵCalendarFooterComponent, DateHeaderComponent as ɵDateHeaderComponent, DatePickerService as ɵDatePickerService, DateRangePopupComponent as ɵDateRangePopupComponent, DateTableComponent as ɵDateTableComponent, DecadeHeaderComponent as ɵDecadeHeaderComponent, DecadeTableComponent as ɵDecadeTableComponent, InnerPopupComponent as ɵInnerPopupComponent, MonthHeaderComponent as ɵMonthHeaderComponent, MonthTableComponent as ɵMonthTableComponent, CmacsPickerComponent as ɵNzPickerComponent, YearHeaderComponent as ɵYearHeaderComponent, YearTableComponent as ɵYearTableComponent };
+export { ButtonStyle, CeldType, CmacsAlertComponent, CmacsAutosizeDirective, CmacsBreadCrumbComponent, CmacsBreadCrumbItemComponent, CmacsBreadCrumbSeparatorComponent, CmacsButtonComponent, CmacsButtonGroupComponent, CmacsCardComponent, CmacsCardGridDirective, CmacsCardLoadingComponent, CmacsCardMetaComponent, CmacsCardTabComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsCommentActionComponent, CmacsCommentActionHostDirective, CmacsCommentAvatarDirective, CmacsCommentComponent, CmacsCommentContentDirective, CmacsCompactTableComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsContextMenuServiceModule, CmacsDatePickerComponent, CmacsDateTimePickerComponent, CmacsDatetimePickerPanelComponent, CmacsDatetimeValueAccessorDirective, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsEditorComponent, CmacsFloatingMenuComponent, CmacsFormControlComponent, CmacsFormDirective, CmacsFormItemComponent, CmacsFormLabelComponent, CmacsFormSplitComponent, CmacsFormTextComponent, CmacsGeneralChartComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsInputNumberComponent, CmacsIsMenuInsideDropDownToken, CmacsKPIOverviewComponent, CmacsKanbanComponent, CmacsKpiComponent, CmacsKpiGroupComponent, CmacsListComponent, CmacsListEmptyComponent, CmacsListFooterComponent, CmacsListGridDirective, CmacsListHeaderComponent, CmacsListItemActionComponent, CmacsListItemActionsComponent, CmacsListItemComponent, CmacsListItemExtraComponent, CmacsListItemMetaAvatarComponent, CmacsListItemMetaComponent, CmacsListItemMetaDescriptionComponent, CmacsListItemMetaTitleComponent, CmacsListLoadMoreDirective, CmacsListPaginationComponent, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsMessageComponent, CmacsMessageContainerComponent, CmacsMessageService, CmacsModalComponent, CmacsModalService, CmacsMonthPickerComponent, CmacsMoveableListComponent, CmacsNormalizedHorizontalBarChartComponent, CmacsNormalizedHorizontalBarGroupedComponent, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsPhoneNumberComponent, CmacsPopoverComponent, CmacsPopoverDirective, CmacsProgressComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsRangePickerComponent, CmacsSearchComponent, CmacsSectionComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSidePanelComponent, CmacsSignatureComponent, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsStatusDistributionComponent, CmacsStepComponent, CmacsSubMenuComponent, CmacsSwitchComponent, CmacsTabAddButtonComponent, CmacsTabBodyComponent, CmacsTabCloseButtonComponent, CmacsTabComponent, CmacsTabDirective, CmacsTabLinkDirective, CmacsTabLinkTemplateDirective, CmacsTabNavBarComponent, CmacsTabNavItemDirective, CmacsTabNavOperationComponent, CmacsTabScrollListDirective, CmacsTabSetComponent, CmacsTableComponent, CmacsTabsInkBarDirective, CmacsTagComponent, CmacsTextareaCountComponent, CmacsTimelineComponent, CmacsTimelineItemComponent, CmacsToCssUnitPipe, CmacsToolTipComponent, CmacsTooltipBaseComponent, CmacsTooltipDirective, CmacsTreeComponent, CmacsTreeNodeComponent, CmacsTreeService, CmacsUserDropdownComponent, CmacsUserDropdownExternalListComponent, CmacsVideoPlayerComponent, CmacsWeekPickerComponent, CmacsWizardComponent, CmacsXlsxLoaderComponent, CmacsYearPickerComponent, DefaultTooltipIcon, ExportType, FLOATING_MENU_LOCALIZATION, KPI_COLORS, KPI_PRIORITY_COLORS, LibPackerModule, MODAL_ANIMATE_DURATION, MODAL_CONFIG, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, ModalBuilderForService, ModalControlService, ModeTabType, NZ_TAB_SET, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzMNComponent, NzMNContainerComponent, NzMNService, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, NzTabChangeEvent, NzTooltipBaseDirective, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzTreeServiceFactory, PREFIX_CLASS, ROBOTO, ROBOTO_BOLD, SIGNATURE_LOCALIZATION, TemplateType, TimelineService, UtilService, WidgetActionType, WidgetDataType, WidgetType, defaultFilterOption, getTimeConfig, isAllowedDate, isCheckDisabled, isInArray, isTimeValid, isTimeValidByConfig, isTooltipEmpty, transCompatFormat, AbstractPanelHeader as ɵAbstractPanelHeader, AbstractTable as ɵAbstractTable, CalendarFooterComponent as ɵCalendarFooterComponent, DateHeaderComponent as ɵDateHeaderComponent, DatePickerService as ɵDatePickerService, DateRangePopupComponent as ɵDateRangePopupComponent, DateTableComponent as ɵDateTableComponent, DecadeHeaderComponent as ɵDecadeHeaderComponent, DecadeTableComponent as ɵDecadeTableComponent, InnerPopupComponent as ɵInnerPopupComponent, MonthHeaderComponent as ɵMonthHeaderComponent, MonthTableComponent as ɵMonthTableComponent, CmacsPickerComponent as ɵNzPickerComponent, YearHeaderComponent as ɵYearHeaderComponent, YearTableComponent as ɵYearTableComponent };
 //# sourceMappingURL=cmacs-components-v2-lib.js.map

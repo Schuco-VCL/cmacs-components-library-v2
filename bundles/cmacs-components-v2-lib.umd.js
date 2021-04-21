@@ -1,8 +1,8 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/form'), require('ng2-tel-input'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/core/resize-observers'), require('moment'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('xlsx'), require('ng-zorro-antd/table'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ngx-export-as'), require('ngx-cookie-service'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment/locale/en-ie'), require('@angular/cdk/collections'), require('html2canvas'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('ng-zorro-antd/skeleton'), require('@swimlane/ngx-charts')) :
     typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid', 'ng-zorro-antd/form', 'ng2-tel-input', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/core/resize-observers', 'moment', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/timeline', 'ng-zorro-antd/core/color', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'xlsx', 'ng-zorro-antd/table', 'ng-zorro-antd/upload', 'angular2-signaturepad', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'angular2-draggable', 'ng-zorro-antd/tabs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ngx-export-as', 'ngx-cookie-service', 'jspdf', 'jspdf-autotable', 'util', 'moment/locale/en-ie', '@angular/cdk/collections', 'html2canvas', 'ng-zorro-antd/rate', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', 'ng-zorro-antd/skeleton', '@swimlane/ngx-charts'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i4$4, global.i1$1, global.i5, global.i4$1, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.input, global.radio, global.ng.cdk.overlay, global.animation, global.i1$2, global.i4$2, global.i1$3, global.i8, global.select, global.divider, global.i6, global.i2$4, global.ng.router, global.menu, global.i12, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.ng.platformBrowser, global.i1$6, global.i3, global.i6$1, global.form, global.i3$1, global.alert, global.breadcrumb, global.time, global.i10, global.i3$2, global.i3$3, global.moment_, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.timeline, global.color, global.tag, global.popover, global.i4$5, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.card, global.i3$5, global.list, global.i1$7, global.i5$1, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i14, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$2, global.i2$6));
-}(this, (function (exports, i0, i4, operators, rxjs, util, i1, i2, i2$1, i4$4, i1$1, i5, i4$1, checkbox, i2$2, slider, keycodes, i2$3, _switch, input, radio, i1$4, animation, i1$2, i4$2, i1$3, i8, select, divider, i6, i2$4, i4$3, menu, i12, i2$5, portal, logger, i1$5, i1$6, i3, i6$1, form, i3$1, alert, breadcrumb, time, i10, i3$2, i3$3, moment_, datePicker, inputNumber, dateFns, polyfill, en, progress, timeline, color, tag, popover, i4$5, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, card, i3$5, list, i1$7, i5$1, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i14, steps, scrolling, tree, cloneDeep, i5$2, i2$6) { 'use strict';
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i4$4, global.i1$1, global.i5, global.i4$1, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.input, global.radio, global.ng.cdk.overlay, global.animation, global.i1$2, global.i4$2, global.i1$3, global.i8, global.select, global.i6$2, global.i6, global.i2$4, global.ng.router, global.menu, global.i12, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.ng.platformBrowser, global.i1$6, global.i3, global.i6$1, global.form, global.i3$1, global.alert, global.breadcrumb, global.time, global.i10, global.i3$2, global.i3$3, global.moment_, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.timeline, global.color, global.tag, global.popover, global.i4$5, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.card, global.i3$5, global.list, global.i1$7, global.i5$1, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i14, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$2, global.i2$6));
+}(this, (function (exports, i0, i4, operators, rxjs, util, i1, i2, i2$1, i4$4, i1$1, i5, i4$1, checkbox, i2$2, slider, keycodes, i2$3, _switch, input, radio, i1$4, animation, i1$2, i4$2, i1$3, i8, select, i6$2, i6, i2$4, i4$3, menu, i12, i2$5, portal, logger, i1$5, i1$6, i3, i6$1, form, i3$1, alert, breadcrumb, time, i10, i3$2, i3$3, moment_, datePicker, inputNumber, dateFns, polyfill, en, progress, timeline, color, tag, popover, i4$5, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, card, i3$5, list, i1$7, i5$1, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i14, steps, scrolling, tree, cloneDeep, i5$2, i2$6) { 'use strict';
 
     function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -7097,6 +7097,7 @@
             this.inlineIndent = 24;
             this.theme = 'light';
             this.mode = 'vertical';
+            this.cmacsMode = null;
             this.inlineCollapsed = false;
             this.selectable = !this.isMenuInsideDropDown;
             this.cmacsClick = new i0.EventEmitter();
@@ -7189,11 +7190,11 @@
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.listOfNzMenuItemDirective = _t);
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.listOfCmacsSubMenuComponent = _t);
             }
-        }, hostVars: 34, hostBindings: function CmacsMenuDirective_HostBindings(rf, ctx) {
+        }, hostVars: 36, hostBindings: function CmacsMenuDirective_HostBindings(rf, ctx) {
             if (rf & 2) {
-                i0.ɵɵclassProp("ant-dropdown-menu", ctx.isMenuInsideDropDown)("ant-dropdown-menu-root", ctx.isMenuInsideDropDown)("ant-dropdown-menu-light", ctx.isMenuInsideDropDown && ctx.theme === "light")("ant-dropdown-menu-dark", ctx.isMenuInsideDropDown && ctx.theme === "dark")("ant-dropdown-menu-vertical", ctx.isMenuInsideDropDown && ctx.actualMode === "vertical")("ant-dropdown-menu-horizontal", ctx.isMenuInsideDropDown && ctx.actualMode === "horizontal")("ant-dropdown-menu-inline", ctx.isMenuInsideDropDown && ctx.actualMode === "inline")("ant-dropdown-menu-inline-collapsed", ctx.isMenuInsideDropDown && ctx.inlineCollapsed)("ant-menu", !ctx.isMenuInsideDropDown)("ant-menu-root", !ctx.isMenuInsideDropDown)("ant-menu-light", !ctx.isMenuInsideDropDown && ctx.theme === "light")("ant-menu-dark", !ctx.isMenuInsideDropDown && ctx.theme === "dark")("ant-menu-vertical", !ctx.isMenuInsideDropDown && ctx.actualMode === "vertical")("ant-menu-horizontal", !ctx.isMenuInsideDropDown && ctx.actualMode === "horizontal")("ant-menu-inline", !ctx.isMenuInsideDropDown && ctx.actualMode === "inline")("ant-menu-inline-collapsed", !ctx.isMenuInsideDropDown && ctx.CmacsInlineCollapsed)("ant-menu-rtl", ctx.dir === "rtl");
+                i0.ɵɵclassProp("ant-dropdown-menu", ctx.isMenuInsideDropDown)("ant-dropdown-menu-root", ctx.isMenuInsideDropDown)("ant-dropdown-menu-light", ctx.isMenuInsideDropDown && ctx.theme === "light")("ant-dropdown-menu-dark", ctx.isMenuInsideDropDown && ctx.theme === "dark")("ant-dropdown-menu-vertical", ctx.isMenuInsideDropDown && ctx.actualMode === "vertical")("ant-dropdown-menu-horizontal", ctx.isMenuInsideDropDown && ctx.actualMode === "horizontal")("ant-dropdown-menu-inline", ctx.isMenuInsideDropDown && ctx.actualMode === "inline")("ant-dropdown-menu-inline-collapsed", ctx.isMenuInsideDropDown && ctx.inlineCollapsed)("ant-menu", !ctx.isMenuInsideDropDown)("ant-menu-root", !ctx.isMenuInsideDropDown)("ant-menu-light", !ctx.isMenuInsideDropDown && ctx.theme === "light")("ant-menu-dark", !ctx.isMenuInsideDropDown && ctx.theme === "dark")("ant-menu-vertical", !ctx.isMenuInsideDropDown && ctx.actualMode === "vertical")("ant-menu-horizontal", !ctx.isMenuInsideDropDown && ctx.actualMode === "horizontal")("ant-menu-inline", !ctx.isMenuInsideDropDown && ctx.actualMode === "inline")("ant-menu-inline-collapsed", !ctx.isMenuInsideDropDown && ctx.CmacsInlineCollapsed)("ant-menu-rtl", ctx.dir === "rtl")("cmacs-menu-side-bar", ctx.cmacsMode === "side-bar");
             }
-        }, inputs: { inlineIndent: "inlineIndent", theme: "theme", mode: "mode", inlineCollapsed: "inlineCollapsed", selectable: "selectable" }, outputs: { cmacsClick: "cmacsClick" }, exportAs: ["cmacsMenu"], features: [i0.ɵɵProvidersFeature([
+        }, inputs: { inlineIndent: "inlineIndent", theme: "theme", mode: "mode", cmacsMode: "cmacsMode", inlineCollapsed: "inlineCollapsed", selectable: "selectable" }, outputs: { cmacsClick: "cmacsClick" }, exportAs: ["cmacsMenu"], features: [i0.ɵɵProvidersFeature([
                 {
                     provide: CmacsMenuServiceLocalToken,
                     useClass: MenuService
@@ -7258,7 +7259,8 @@
                             '[class.ant-menu-horizontal]': "!isMenuInsideDropDown && actualMode === 'horizontal'",
                             '[class.ant-menu-inline]': "!isMenuInsideDropDown && actualMode === 'inline'",
                             '[class.ant-menu-inline-collapsed]': "!isMenuInsideDropDown && CmacsInlineCollapsed",
-                            '[class.ant-menu-rtl]': "dir === 'rtl'"
+                            '[class.ant-menu-rtl]': "dir === 'rtl'",
+                            '[class.cmacs-menu-side-bar]': "cmacsMode === 'side-bar'"
                         }
                     }]
             }], function () {
@@ -7279,6 +7281,8 @@
                 }], theme: [{
                     type: i0.Input
                 }], mode: [{
+                    type: i0.Input
+                }], cmacsMode: [{
                     type: i0.Input
                 }], inlineCollapsed: [{
                     type: i0.Input
@@ -37771,6 +37775,759 @@
                 }] });
     })();
 
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_div_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 10);
+            i0.ɵɵelement(1, "nz-divider");
+            i0.ɵɵtext(2);
+            i0.ɵɵelementStart(3, "span", 11);
+            i0.ɵɵtext(4);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var option_r6 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r11 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate1(" ", option_r6.divider, " ");
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate1("(", ctx_r11.firstElemByDivider[option_r6.divider].length, ")");
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_container_4_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementContainer(1, 12);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext().$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngTemplateOutlet", elem_r9.template.ref)("ngTemplateOutletContext", elem_r9.template.context);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_span_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "span", 22);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r23 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate(ctx_r23.getInitials(elem_r9.label));
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 20);
+            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_span_1_Template, 2, 1, "span", 21);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r17 = i0.ɵɵnextContext(2);
+            i0.ɵɵstyleProp("background-image", elem_r9.picture ? ctx_r17.getBackgroundImage(elem_r9.picture) : "none");
+            i0.ɵɵclassProp("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !elem_r9.picture);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_i_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 24);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 20);
+            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_i_1_Template, 1, 0, "i", 23);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r18 = i0.ɵɵnextContext(2);
+            i0.ɵɵstyleProp("background-image", elem_r9.picture ? ctx_r18.getBackgroundImage(elem_r9.picture) : "none");
+            i0.ɵɵclassProp("cmacs-guest-no-picture", !elem_r9.picture)("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !elem_r9.picture);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_i_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 26);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 20);
+            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_i_1_Template, 1, 0, "i", 25);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r19 = i0.ɵɵnextContext(2);
+            i0.ɵɵstyleProp("background-image", elem_r9.picture ? ctx_r19.getBackgroundImage(elem_r9.picture) : "none");
+            i0.ɵɵclassProp("cmacs-team-no-picture", !elem_r9.picture)("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !elem_r9.picture);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "span");
+            i0.ɵɵtext(2);
+            i0.ɵɵelementStart(3, "span", 27);
+            i0.ɵɵtext(4);
+            i0.ɵɵelementEnd();
+            i0.ɵɵtext(5);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r20 = i0.ɵɵnextContext(4);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate1(" ", ctx_r20.highlightKeys[0], "");
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r20.highlightKeys[1]);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1("", ctx_r20.highlightKeys[2], " ");
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_6_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext(2).$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1(" ", elem_r9.label, " ");
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_7_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 28);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext(2).$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate(elem_r9.charge);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 13);
+            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_Template, 2, 5, "div", 14);
+            i0.ɵɵtemplate(2, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_Template, 2, 7, "div", 15);
+            i0.ɵɵtemplate(3, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_Template, 2, 7, "div", 16);
+            i0.ɵɵelementStart(4, "div", 17);
+            i0.ɵɵtemplate(5, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_5_Template, 6, 3, "ng-container", 18);
+            i0.ɵɵtemplate(6, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_6_Template, 2, 1, "ng-container", 18);
+            i0.ɵɵelementEnd();
+            i0.ɵɵtemplate(7, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_7_Template, 2, 1, "div", 19);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext().$implicit;
+            var ctx_r14 = i0.ɵɵnextContext(2);
+            i0.ɵɵclassProp("cmacs-user-dropdown-hide-picture", elem_r9.hidePicture);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r9.role === "user");
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r9.role === "guest");
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r9.role === "team");
+            i0.ɵɵadvance(1);
+            i0.ɵɵclassProp("cmacs-user-dropdown-team-title", elem_r9.role === "team");
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r14.highlightValue(elem_r9).length === 3);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r14.highlightValue(elem_r9).length);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r9.role === "user" || elem_r9.role === "guest");
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "cmacs-option", 5);
+            i0.ɵɵelementStart(2, "div", 6);
+            i0.ɵɵtemplate(3, CmacsUserDropdownComponent_ng_container_1_ng_container_1_div_3_Template, 5, 2, "div", 7);
+            i0.ɵɵtemplate(4, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_container_4_Template, 2, 2, "ng-container", 8);
+            i0.ɵɵtemplate(5, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_Template, 8, 10, "ng-template", null, 9, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = ctx.$implicit;
+            var j_r10 = ctx.index;
+            var _r13 = i0.ɵɵreference(6);
+            var option_r6 = i0.ɵɵnextContext().$implicit;
+            var ctx_r8 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("label", elem_r9.label)("value", elem_r9.value)("extendedData", elem_r9);
+            i0.ɵɵadvance(1);
+            i0.ɵɵclassProp("cmacs-user-dropdown-last-elem", j_r10 === option_r6.children.length - 1)("cmacs-user-dropdown-divider-first-option", ctx_r8.firstElemByDivider[option_r6.divider] && ctx_r8.firstElemByDivider[option_r6.divider].length && ctx_r8.firstElemByDivider[option_r6.divider][0].value === elem_r9.value);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r8.firstElemByDivider[option_r6.divider] && ctx_r8.firstElemByDivider[option_r6.divider].length && ctx_r8.firstElemByDivider[option_r6.divider][0].value === elem_r9.value);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r9.template)("ngIfElse", _r13);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_Template, 7, 10, "ng-container", 1);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var option_r6 = ctx.$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngForOf", option_r6.children);
+        }
+    }
+    function CmacsUserDropdownComponent_cmacs_option_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "cmacs-option", 29);
+            i0.ɵɵelementStart(1, "div", 30);
+            i0.ɵɵelement(2, "i", 31);
+            i0.ɵɵtext(3);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(3);
+            i0.ɵɵtextInterpolate1(" ", ctx_r1.loadingLabel, " ");
+        }
+    }
+    function CmacsUserDropdownComponent_ng_template_3_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r35_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 32);
+            i0.ɵɵlistener("click", function CmacsUserDropdownComponent_ng_template_3_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r35_1); var ctx_r34 = i0.ɵɵnextContext(); return ctx_r34.addGuestUser(); });
+            i0.ɵɵelement(1, "i", 33);
+            i0.ɵɵelementStart(2, "span");
+            i0.ɵɵtext(3);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r3 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(3);
+            i0.ɵɵtextInterpolate(ctx_r3.inviteGuestLabel);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_template_5_div_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 35);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r36 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate(ctx_r36.emailErrorLabel);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_template_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵtemplate(0, CmacsUserDropdownComponent_ng_template_5_div_0_Template, 2, 1, "div", 34);
+        }
+        if (rf & 2) {
+            var ctx_r5 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("ngIf", ctx_r5.showEmailError);
+        }
+    }
+    var CmacsUserDropdownComponent = /** @class */ (function () {
+        function CmacsUserDropdownComponent(sanitizer, cdr, fb) {
+            this.sanitizer = sanitizer;
+            this.cdr = cdr;
+            this.fb = fb;
+            this.mode = 'default';
+            this.emailErrorLabel = 'Email must be a valid Email Address';
+            this.inviteGuestLabel = 'Invite a guest via email';
+            this.loadingLabel = 'Loading data...';
+            this.placeHolder = 'Add Users / Teams';
+            this.selectedValue = null;
+            this.maxTagCount = null;
+            this.serverSearch = false;
+            this.selectedValueChange = new i0.EventEmitter();
+            this.onAddGuestUserByEmail = new i0.EventEmitter();
+            this.cmacsOnSearch = new i0.EventEmitter();
+            this._isLoading = false;
+            this._inviteGuest = true;
+            this._searchValue = '';
+            this._listOfOption = [];
+            this.showEmailError = false;
+            this.listOfFilteredOption = [];
+            this.listDividers = [];
+            this.operatedData = [];
+            this.firstElemByDivider = {};
+            this.highlightKeys = [];
+            this.emailForm = this.fb.group({
+                email: [this._searchValue, [i4.Validators.email]]
+            });
+        }
+        Object.defineProperty(CmacsUserDropdownComponent.prototype, "isLoading", {
+            set: function (value) {
+                this._isLoading = value;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(CmacsUserDropdownComponent.prototype, "inviteGuest", {
+            set: function (value) {
+                this._inviteGuest = value;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(CmacsUserDropdownComponent.prototype, "listOfOption", {
+            get: function () {
+                return this._listOfOption;
+            },
+            set: function (value) {
+                this._listOfOption = __spread(value);
+                this.listOfFilteredOption = __spread(value);
+                this.operateData();
+            },
+            enumerable: false,
+            configurable: true
+        });
+        CmacsUserDropdownComponent.prototype.onSelectedValueChange = function ($event) {
+            this.selectedValueChange.emit($event);
+        };
+        Object.defineProperty(CmacsUserDropdownComponent.prototype, "searchValue", {
+            get: function () {
+                return this._searchValue;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        CmacsUserDropdownComponent.prototype.operateData = function () {
+            this.operatedData = [];
+            this.listDividers = __spread(Array.from(new Set(this.listOfOption.map(function (e) { return e.divider; }))));
+            var _loop_1 = function (i) {
+                var divider = this_1.listDividers[i];
+                var children = this_1.listOfOption.filter(function (e) { return e.divider === divider; });
+                var elem = { divider: divider, children: children };
+                this_1.operatedData.push(elem);
+            };
+            var this_1 = this;
+            for (var i = 0; i < this.listDividers.length; i++) {
+                _loop_1(i);
+            }
+            this.operatedData = __spread(this.operatedData);
+            this.getFirstElemByDivider();
+        };
+        CmacsUserDropdownComponent.prototype.onsearch = function ($event) {
+            this.showEmailError = false;
+            this._searchValue = $event;
+            this.cmacsOnSearch.emit($event);
+        };
+        CmacsUserDropdownComponent.prototype.getFirstElemByDivider = function () {
+            var firstElemByDivider = {};
+            var _loop_2 = function (i) {
+                var elem = this_2.listOfFilteredOption[i];
+                var elemWithDivider = this_2.listOfOption.find(function (e) { return (e.value === elem.nzValue || e.value === elem.value); });
+                if (firstElemByDivider[elemWithDivider.divider] === null || firstElemByDivider[elemWithDivider.divider] === undefined) {
+                    firstElemByDivider[elemWithDivider.divider] = [];
+                    firstElemByDivider[elemWithDivider.divider].push(elemWithDivider);
+                }
+                else {
+                    firstElemByDivider[elemWithDivider.divider].push(elemWithDivider);
+                }
+            };
+            var this_2 = this;
+            for (var i = 0; i < this.listOfFilteredOption.length; i++) {
+                _loop_2(i);
+            }
+            this.firstElemByDivider = firstElemByDivider;
+        };
+        CmacsUserDropdownComponent.prototype.getInitials = function (name) {
+            var initials = name.match(/\b\w/g) || [];
+            initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
+            return initials;
+        };
+        CmacsUserDropdownComponent.prototype.getBackgroundImage = function (picture) {
+            return this.sanitizer.bypassSecurityTrustStyle('url(\'' + picture + '\')');
+        };
+        CmacsUserDropdownComponent.prototype.addGuestUser = function () {
+            if (this._searchValue) {
+                this.emailForm.get('email').setValue(this._searchValue);
+                if (this.emailForm.valid) {
+                    this.showEmailError = false;
+                    this.onAddGuestUserByEmail.emit(true);
+                }
+                else {
+                    this.showEmailError = true;
+                }
+            }
+        };
+        CmacsUserDropdownComponent.prototype.addOption = function (option) {
+            var checkUser = this.listOfOption.find(function (e) { return e.value === option.value; });
+            if (!checkUser) {
+                this.listOfOption = __spread(this.listOfOption, [option]);
+                this.listOfFilteredOption = __spread(this.listOfFilteredOption, [option]);
+                this.operateData();
+            }
+        };
+        CmacsUserDropdownComponent.prototype.removeOption = function (option) {
+            var selectedValues = this.selectComponent.nzSelectService.listOfSelectedValue;
+            var selectedValuesFiltered = selectedValues.filter(function (elem) { return elem.value !== option.value; });
+            this.selectComponent.nzSelectService.updateListOfSelectedValue(selectedValuesFiltered, true);
+        };
+        CmacsUserDropdownComponent.prototype.highlightValue = function (elem) {
+            this.highlightKeys = [];
+            var value = this.selectComponent.nzSelectService.searchValue;
+            // tslint:disable-next-line: no-non-null-assertion
+            if (value && elem.label.toLowerCase().includes(value.toLowerCase())) {
+                // match the search value
+                var index = elem.label.toLowerCase().indexOf(value.toLowerCase());
+                this.highlightKeys = [
+                    elem.label.slice(0, index),
+                    elem.label.slice(index, index + value.length),
+                    elem.label.slice(index + value.length, elem.label.length)
+                ];
+            }
+            return this.highlightKeys;
+        };
+        return CmacsUserDropdownComponent;
+    }());
+    CmacsUserDropdownComponent.ɵfac = function CmacsUserDropdownComponent_Factory(t) { return new (t || CmacsUserDropdownComponent)(i0.ɵɵdirectiveInject(i1$5.DomSanitizer), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i4.FormBuilder)); };
+    CmacsUserDropdownComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsUserDropdownComponent, selectors: [["cmacs-user-dropdown"]], viewQuery: function CmacsUserDropdownComponent_Query(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵviewQuery(CmacsSelectComponent, 1);
+            }
+            if (rf & 2) {
+                var _t = void 0;
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.selectComponent = _t.first);
+            }
+        }, inputs: { mode: "mode", emailErrorLabel: "emailErrorLabel", inviteGuestLabel: "inviteGuestLabel", loadingLabel: "loadingLabel", placeHolder: "placeHolder", selectedValue: "selectedValue", maxTagCount: "maxTagCount", serverSearch: "serverSearch", isLoading: "isLoading", inviteGuest: "inviteGuest", listOfOption: "listOfOption" }, outputs: { selectedValueChange: "selectedValueChange", onAddGuestUserByEmail: "onAddGuestUserByEmail", cmacsOnSearch: "cmacsOnSearch" }, exportAs: ["cmacsUserDropdown"], decls: 7, vars: 13, consts: [["allowClear", "", 3, "showCmacsSearch", "maxTagCount", "mode", "showSelectAll", "showArrow", "userDropdown", "notFoundContentCustom", "placeHolder", "serverSearch", "dropdownRender", "ngModel", "cmacsOnSearch", "ngModelChange"], [4, "ngFor", "ngForOf"], ["disabled", "", "customContent", "", 4, "ngIf"], ["render", ""], ["notFoundContent", ""], ["customContent", "", 3, "label", "value", "extendedData"], [1, "cmacs-user-dropdown-option-wrapper"], ["class", "cmacs-user-dropdown-divider", 4, "ngIf"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], [1, "cmacs-user-dropdown-divider"], [2, "color", "#97a0ae"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-user-dropdown-info-wrapper"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-guest-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-team-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], [1, "cmacs-user-dropdown-title"], [4, "ngIf"], ["class", "cmacs-user-dropdown-subtitle", 4, "ngIf"], [1, "cmacs-user-dropdown-person-picture"], ["class", "cmacs-user-dropdown-initials", 4, "ngIf"], [1, "cmacs-user-dropdown-initials"], ["class", "iconCreation-User", 4, "ngIf"], [1, "iconCreation-User"], ["class", "iconCreation-Team", 4, "ngIf"], [1, "iconCreation-Team"], [2, "color", "#2a7cff"], [1, "cmacs-user-dropdown-subtitle"], ["disabled", "", "customContent", ""], [1, "cmacs-user-dropdown-loading-wrapper"], ["nz-icon", "", "nzType", "loading", 1, "cmacs-user-dropdown-loading-icon"], [1, "cmacs-user-dropdown-invite-guest", 3, "click"], [1, "iconUISmall-Message", 2, "font-size", "17px", "position", "relative", "top", "3px", "margin-right", "6px"], ["class", "cmacs-user-dropdown-error", 4, "ngIf"], [1, "cmacs-user-dropdown-error"]], template: function CmacsUserDropdownComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelementStart(0, "cmacs-select", 0);
+                i0.ɵɵlistener("cmacsOnSearch", function CmacsUserDropdownComponent_Template_cmacs_select_cmacsOnSearch_0_listener($event) { return ctx.onsearch($event); })("ngModelChange", function CmacsUserDropdownComponent_Template_cmacs_select_ngModelChange_0_listener($event) { return ctx.onSelectedValueChange($event); })("ngModelChange", function CmacsUserDropdownComponent_Template_cmacs_select_ngModelChange_0_listener($event) { return ctx.selectedValue = $event; });
+                i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_Template, 2, 1, "ng-container", 1);
+                i0.ɵɵtemplate(2, CmacsUserDropdownComponent_cmacs_option_2_Template, 4, 1, "cmacs-option", 2);
+                i0.ɵɵelementEnd();
+                i0.ɵɵtemplate(3, CmacsUserDropdownComponent_ng_template_3_Template, 4, 1, "ng-template", null, 3, i0.ɵɵtemplateRefExtractor);
+                i0.ɵɵtemplate(5, CmacsUserDropdownComponent_ng_template_5_Template, 1, 1, "ng-template", null, 4, i0.ɵɵtemplateRefExtractor);
+            }
+            if (rf & 2) {
+                var _r2 = i0.ɵɵreference(4);
+                var _r4 = i0.ɵɵreference(6);
+                i0.ɵɵproperty("showCmacsSearch", true)("maxTagCount", ctx.maxTagCount)("mode", ctx.mode)("showSelectAll", false)("showArrow", false)("userDropdown", true)("notFoundContentCustom", _r4)("placeHolder", ctx.placeHolder)("serverSearch", ctx.serverSearch)("dropdownRender", ctx._inviteGuest ? _r2 : null)("ngModel", ctx.selectedValue);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngForOf", ctx.operatedData);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx._isLoading);
+            }
+        }, directives: [CmacsSelectComponent, i4.NgControlStatus, i4.NgModel, i2$1.NgForOf, i2$1.NgIf, CmacsOptionComponent, i6$2.NzDividerComponent, i2$1.NgTemplateOutlet, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective], styles: [".cmacs-user-dropdown-person-picture{text-align:center;padding-top:2px;border-radius:3px;width:34px;height:34px;background-color:#a100cd;color:#fff;background-repeat:no-repeat;background-position:50%;background-size:contain}.cmacs-user-dropdown-divider{font-family:Roboto-Medium;font-size:13px;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.23;letter-spacing:normal;color:#3b3f46;padding:7px 14px 8px}.cmacs-user-dropdown-divider,.cmacs-user-dropdown-divider:hover{background-color:#fff!important}.cmacs-user-dropdown-divider nz-divider:first-child{transform:scaleX(1.5);position:relative;top:-7px}.cmacs-user-dropdown-initials{position:relative;top:5px;font-size:14px}.cmacs-user-dropdown-title{top:0;font-weight:500;color:#656c79}.cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-title{position:absolute;left:45px;font-family:Roboto-Regular;font-size:12px;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100% - 75px)}.cmacs-user-dropdown-subtitle{top:16px;font-weight:400;color:#97a0ae}.cmacs-team-no-picture{border-radius:3px;border:1.1px solid #dee0e5;background-color:#fff;color:#656c79;font-size:16px;padding:5px 0}.cmacs-user-dropdown-team-title{top:7px}.cmacs-guest-no-picture{border-radius:3px;background-color:#00cda1;font-size:16px;padding:6px 0}.cmacs-user-dropdown-error{color:#f6503c;font-size:10px;font-weight:400;font-stretch:normal;font-style:normal;line-height:2;letter-spacing:normal;padding:5px 0;position:relative;left:12px}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .cmacs-user-dropdown-error{left:12px}.cmacs-select-user-dropdown .ant-select-dropdown-menu-item{padding:0!important}.cmacs-user-dropdown-option-wrapper{padding:7px 0}.cmacs-user-dropdown-info-wrapper{position:relative;margin:0 14px}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .cmacs-user-dropdown-info-wrapper{margin:0 14px 0 42px}.cmacs-user-dropdown-divider-first-option{padding-top:0}.cmacs-user-dropdown-divider-first-option .cmacs-user-dropdown-info-wrapper{margin-top:7px!important}.cmacs-user-dropdown-last-elem{padding-bottom:14px}.cmacs-user-dropdown-invite-guest{height:34px;box-shadow:0 -2px 5px 0 rgba(59,63,70,.1);background-color:#fff;color:#2a7cff;padding:6px 11px;font-size:12px;cursor:pointer}.cmacs-user-dropdown-invite-guest:hover{background-color:#f2f7ff}.cmacs-user-dropdown-no-picture{opacity:0}.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-title{left:0}.ant-select-dropdown-menu{scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-user-dropdown-loading-wrapper{padding:7px 12px}.cmacs-user-dropdown-loading-icon{margin-right:6px}"], encapsulation: 2, changeDetection: 0 });
+    __decorate([
+        util.InputBoolean()
+    ], CmacsUserDropdownComponent.prototype, "serverSearch", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsUserDropdownComponent.prototype, "isLoading", null);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsUserDropdownComponent.prototype, "inviteGuest", null);
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsUserDropdownComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-user-dropdown',
+                        exportAs: 'cmacsUserDropdown',
+                        templateUrl: './cmacs-user-dropdown.component.html',
+                        changeDetection: i0.ChangeDetectionStrategy.OnPush,
+                        encapsulation: i0.ViewEncapsulation.None,
+                        preserveWhitespaces: false,
+                        styleUrls: ['./cmacs-user-dropdown.component.css']
+                    }]
+            }], function () { return [{ type: i1$5.DomSanitizer }, { type: i0.ChangeDetectorRef }, { type: i4.FormBuilder }]; }, { mode: [{
+                    type: i0.Input
+                }], emailErrorLabel: [{
+                    type: i0.Input
+                }], inviteGuestLabel: [{
+                    type: i0.Input
+                }], loadingLabel: [{
+                    type: i0.Input
+                }], placeHolder: [{
+                    type: i0.Input
+                }], selectedValue: [{
+                    type: i0.Input
+                }], maxTagCount: [{
+                    type: i0.Input
+                }], serverSearch: [{
+                    type: i0.Input
+                }], selectedValueChange: [{
+                    type: i0.Output
+                }], onAddGuestUserByEmail: [{
+                    type: i0.Output
+                }], cmacsOnSearch: [{
+                    type: i0.Output
+                }], selectComponent: [{
+                    type: i0.ViewChild,
+                    args: [CmacsSelectComponent]
+                }], isLoading: [{
+                    type: i0.Input
+                }], inviteGuest: [{
+                    type: i0.Input
+                }], listOfOption: [{
+                    type: i0.Input
+                }] });
+    })();
+
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_container_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementContainer(1, 6);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = i0.ɵɵnextContext().$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngTemplateOutlet", elem_r4.template.ref)("ngTemplateOutletContext", elem_r4.template.context);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_span_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "span", 15);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r14 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate(ctx_r14.getInitials(elem_r4.label));
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 13);
+            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_span_1_Template, 2, 1, "span", 14);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r10 = i0.ɵɵnextContext(2);
+            i0.ɵɵstyleProp("background-image", elem_r4.picture ? ctx_r10.getBackgroundImage(elem_r4.picture) : "none");
+            i0.ɵɵclassProp("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !elem_r4.picture);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_i_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 17);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 13);
+            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_i_1_Template, 1, 0, "i", 16);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r11 = i0.ɵɵnextContext(2);
+            i0.ɵɵstyleProp("background-image", elem_r4.picture ? ctx_r11.getBackgroundImage(elem_r4.picture) : "none");
+            i0.ɵɵclassProp("cmacs-guest-no-picture", !elem_r4.picture)("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !elem_r4.picture);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_i_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 19);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 13);
+            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_i_1_Template, 1, 0, "i", 18);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r12 = i0.ɵɵnextContext(2);
+            i0.ɵɵstyleProp("background-image", elem_r4.picture ? ctx_r12.getBackgroundImage(elem_r4.picture) : "none");
+            i0.ɵɵclassProp("cmacs-team-no-picture", !elem_r4.picture)("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !elem_r4.picture);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_6_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 20);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = i0.ɵɵnextContext(2).$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate(elem_r4.charge);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 7);
+            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_Template, 2, 5, "div", 8);
+            i0.ɵɵtemplate(2, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_Template, 2, 7, "div", 9);
+            i0.ɵɵtemplate(3, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_Template, 2, 7, "div", 10);
+            i0.ɵɵelementStart(4, "div", 11);
+            i0.ɵɵtext(5);
+            i0.ɵɵelementEnd();
+            i0.ɵɵtemplate(6, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_6_Template, 2, 1, "div", 12);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = i0.ɵɵnextContext().$implicit;
+            i0.ɵɵclassProp("cmacs-user-dropdown-hide-picture", elem_r4.hidePicture);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r4.role === "user");
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r4.role === "guest");
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r4.role === "team");
+            i0.ɵɵadvance(1);
+            i0.ɵɵclassProp("cmacs-user-dropdown-team-title", elem_r4.role === "team");
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1(" ", elem_r4.label, " ");
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r4.role === "user" || elem_r4.role === "guest");
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r24_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "div", 1);
+            i0.ɵɵlistener("click", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template_div_click_1_listener() { i0.ɵɵrestoreView(_r24_1); var elem_r4 = ctx.$implicit; var ctx_r23 = i0.ɵɵnextContext(2); return ctx_r23.selectedValue = elem_r4; });
+            i0.ɵɵtemplate(2, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_container_2_Template, 2, 2, "ng-container", 2);
+            i0.ɵɵtemplate(3, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_Template, 7, 9, "ng-template", null, 3, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵelementStart(5, "span", 4);
+            i0.ɵɵlistener("click", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template_span_click_5_listener() { i0.ɵɵrestoreView(_r24_1); var elem_r4 = ctx.$implicit; var ctx_r25 = i0.ɵɵnextContext(2); return ctx_r25.removeOption(elem_r4); });
+            i0.ɵɵelement(6, "i", 5);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = ctx.$implicit;
+            var _r7 = i0.ɵɵreference(4);
+            var ctx_r3 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵclassProp("cmacs-user-dropdown-external-list-item-selected", ctx_r3.selectedValue && ctx_r3.selectedValue.value === elem_r4.value);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r4.template)("ngIfElse", _r7);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template, 7, 4, "ng-container", 0);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var option_r1 = ctx.$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngForOf", option_r1.children);
+        }
+    }
+    var CmacsUserDropdownExternalListComponent = /** @class */ (function () {
+        function CmacsUserDropdownExternalListComponent(sanitizer) {
+            this.sanitizer = sanitizer;
+            this._data = [];
+            this.listDividers = [];
+            this.origin = [];
+            this.removedOption = new i0.EventEmitter();
+            this.selectedValue = null;
+        }
+        Object.defineProperty(CmacsUserDropdownExternalListComponent.prototype, "data", {
+            get: function () {
+                return this._data;
+            },
+            set: function (value) {
+                if (value) {
+                    this.origin = value;
+                    var operatedData = this.operateData(value);
+                    this._data = __spread(operatedData);
+                }
+            },
+            enumerable: false,
+            configurable: true
+        });
+        CmacsUserDropdownExternalListComponent.prototype.operateData = function (values) {
+            var operatedData = [];
+            this.listDividers = __spread(Array.from(new Set(values.map(function (e) { return e.divider; }))));
+            var _loop_1 = function (i) {
+                var divider = this_1.listDividers[i];
+                var children = values.filter(function (e) { return e.divider === divider; });
+                var elem = { divider: divider, children: children };
+                operatedData.push(elem);
+            };
+            var this_1 = this;
+            for (var i = 0; i < this.listDividers.length; i++) {
+                _loop_1(i);
+            }
+            return operatedData;
+        };
+        CmacsUserDropdownExternalListComponent.prototype.getInitials = function (name) {
+            var initials = name.match(/\b\w/g) || [];
+            initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
+            return initials;
+        };
+        CmacsUserDropdownExternalListComponent.prototype.getBackgroundImage = function (picture) {
+            return this.sanitizer.bypassSecurityTrustStyle('url(\'' + picture + '\')');
+        };
+        CmacsUserDropdownExternalListComponent.prototype.removeOption = function (elem) {
+            var filteredData = this.origin.filter(function (item) { return item.value !== elem.value; });
+            this.data = filteredData;
+            this.removedOption.emit(elem);
+        };
+        return CmacsUserDropdownExternalListComponent;
+    }());
+    CmacsUserDropdownExternalListComponent.ɵfac = function CmacsUserDropdownExternalListComponent_Factory(t) { return new (t || CmacsUserDropdownExternalListComponent)(i0.ɵɵdirectiveInject(i1$5.DomSanitizer)); };
+    CmacsUserDropdownExternalListComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsUserDropdownExternalListComponent, selectors: [["cmacs-user-dropdown-external-list"]], inputs: { data: "data" }, outputs: { removedOption: "removedOption" }, exportAs: ["cmacsUserDropdownExternalList"], decls: 1, vars: 1, consts: [[4, "ngFor", "ngForOf"], [1, "cmacs-user-dropdown-option-wrapper", "cmacs-user-dropdown-external-list-wrapper", 3, "click"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], [1, "cmacs-user-dropdown-external-list-remove-icon", 3, "click"], [1, "iconUISmall-Close"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-user-dropdown-info-wrapper"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-guest-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-team-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], [1, "cmacs-user-dropdown-title"], ["class", "cmacs-user-dropdown-subtitle", 4, "ngIf"], [1, "cmacs-user-dropdown-person-picture"], ["class", "cmacs-user-dropdown-initials", 4, "ngIf"], [1, "cmacs-user-dropdown-initials"], ["class", "iconCreation-User", 4, "ngIf"], [1, "iconCreation-User"], ["class", "iconCreation-Team", 4, "ngIf"], [1, "iconCreation-Team"], [1, "cmacs-user-dropdown-subtitle"]], template: function CmacsUserDropdownExternalListComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵtemplate(0, CmacsUserDropdownExternalListComponent_ng_container_0_Template, 2, 1, "ng-container", 0);
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("ngForOf", ctx._data);
+            }
+        }, directives: [i2$1.NgForOf, i2$1.NgIf, i2$1.NgTemplateOutlet], styles: [".cmacs-user-dropdown-person-picture{text-align:center;padding-top:2px;border-radius:3px;width:34px;height:34px;background-color:#a100cd;color:#fff;background-repeat:no-repeat;background-position:50%;background-size:contain}.cmacs-user-dropdown-divider{font-family:Roboto-Medium;font-size:13px;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.23;letter-spacing:normal;color:#3b3f46;padding:7px 14px 8px;background-color:#fff!important}.cmacs-user-dropdown-initials{position:relative;top:5px;font-size:14px}.cmacs-user-dropdown-title{top:0;font-weight:500;color:#656c79}.cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-title{position:absolute;left:45px;font-family:Roboto-Regular;font-size:12px;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100% - 75px)}.cmacs-user-dropdown-subtitle{top:16px;font-weight:400;color:#97a0ae}.cmacs-team-no-picture{border-radius:3px;border:1.1px solid #dee0e5;background-color:#fff;color:#656c79;font-size:16px;padding:5px 0}.cmacs-user-dropdown-team-title{top:7px}.cmacs-guest-no-picture{border-radius:3px;background-color:#00cda1;font-size:16px;padding:6px 0}.cmacs-user-dropdown-error{color:#f6503c;font-size:10px;font-weight:400;font-stretch:normal;font-style:normal;line-height:2;letter-spacing:normal;padding:5px 0;position:relative;left:12px}.cmacs-user-dropdown-no-picture{opacity:0}.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-title{left:0}.cmacs-user-dropdown-external-list-remove-icon{float:right;position:relative;font-size:18px;top:-29px;right:10px;color:#97a0ae;cursor:pointer;opacity:0}.cmacs-user-dropdown-external-list-wrapper{border-radius:5px}.cmacs-user-dropdown-external-list-wrapper:hover{background-color:#f2f7ff}.cmacs-user-dropdown-external-list-wrapper:hover .cmacs-user-dropdown-external-list-remove-icon{opacity:1}.cmacs-user-dropdown-external-list-item-selected{background-color:#f2f7ff}.cmacs-user-dropdown-external-list-item-selected .cmacs-user-dropdown-external-list-remove-icon{opacity:1}", "cmacs-user-dropdown-external-list {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsUserDropdownExternalListComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-user-dropdown-external-list',
+                        exportAs: 'cmacsUserDropdownExternalList',
+                        templateUrl: './cmacs-user-dropdown-external-list.component.html',
+                        changeDetection: i0.ChangeDetectionStrategy.OnPush,
+                        encapsulation: i0.ViewEncapsulation.None,
+                        preserveWhitespaces: false,
+                        styleUrls: ['./cmacs-user-dropdown-external-list.component.css'],
+                        styles: [
+                            "cmacs-user-dropdown-external-list {\n        display: block;\n      }\n    "
+                        ]
+                    }]
+            }], function () { return [{ type: i1$5.DomSanitizer }]; }, { removedOption: [{
+                    type: i0.Output
+                }], data: [{
+                    type: i0.Input
+                }] });
+    })();
+
     i2$1.registerLocaleData(en__default['default']);
     var CmacsComponentsV2LibModule = /** @class */ (function () {
         function CmacsComponentsV2LibModule() {
@@ -37824,7 +38581,7 @@
                 input.NzInputModule,
                 radio.NzRadioModule,
                 select.NzSelectModule,
-                divider.NzDividerModule,
+                i6$2.NzDividerModule,
                 i5.NzIconModule,
                 menu.NzMenuModule,
                 i1$4.OverlayModule,
@@ -37874,7 +38631,7 @@
             i1$6.VgOverlayPlayModule,
             i1$6.VgBufferingModule,
             i8.NzEmptyModule,
-            divider.NzDividerModule,
+            i6$2.NzDividerModule,
             i4$4.NzButtonModule,
             checkbox.NzCheckboxModule,
             i2$2.NzToolTipModule,
@@ -37893,7 +38650,9 @@
             i3.EditorModule,
             i10.NzTimePickerModule] });
     (function () {
-        (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsStatusDistributionComponent,
+        (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsUserDropdownComponent,
+                CmacsUserDropdownExternalListComponent,
+                CmacsStatusDistributionComponent,
                 CmacsGeneralChartComponent,
                 CmacsKPIOverviewComponent,
                 CmacsNormalizedHorizontalBarChartComponent,
@@ -38076,7 +38835,7 @@
                 input.NzInputModule,
                 radio.NzRadioModule,
                 select.NzSelectModule,
-                divider.NzDividerModule,
+                i6$2.NzDividerModule,
                 i5.NzIconModule,
                 menu.NzMenuModule,
                 i1$4.OverlayModule,
@@ -38090,7 +38849,9 @@
                 i1$6.VgOverlayPlayModule,
                 i1$6.VgBufferingModule,
                 i3.EditorModule,
-                i4.ReactiveFormsModule], exports: [CmacsStatusDistributionComponent,
+                i4.ReactiveFormsModule], exports: [CmacsUserDropdownComponent,
+                CmacsUserDropdownExternalListComponent,
+                CmacsStatusDistributionComponent,
                 CmacsGeneralChartComponent,
                 CmacsKPIOverviewComponent,
                 CmacsNormalizedHorizontalBarChartComponent,
@@ -38218,7 +38979,7 @@
                 CmacsKpiComponent,
                 i8.NzEmptyModule,
                 CmacsDividerComponent,
-                divider.NzDividerModule,
+                i6$2.NzDividerModule,
                 CmacsComponentsV2LibComponent,
                 CmacsCheckboxComponent,
                 CmacsCheckboxWrapperComponent,
@@ -38284,6 +39045,8 @@
                 type: i0.NgModule,
                 args: [{
                         declarations: [
+                            CmacsUserDropdownComponent,
+                            CmacsUserDropdownExternalListComponent,
                             CmacsStatusDistributionComponent,
                             CmacsGeneralChartComponent,
                             CmacsKPIOverviewComponent,
@@ -38470,7 +39233,7 @@
                             input.NzInputModule,
                             radio.NzRadioModule,
                             select.NzSelectModule,
-                            divider.NzDividerModule,
+                            i6$2.NzDividerModule,
                             i5.NzIconModule,
                             menu.NzMenuModule,
                             i1$4.OverlayModule,
@@ -38487,6 +39250,8 @@
                             i4.ReactiveFormsModule
                         ],
                         exports: [
+                            CmacsUserDropdownComponent,
+                            CmacsUserDropdownExternalListComponent,
                             CmacsStatusDistributionComponent,
                             CmacsGeneralChartComponent,
                             CmacsKPIOverviewComponent,
@@ -38615,7 +39380,7 @@
                             CmacsKpiComponent,
                             i8.NzEmptyModule,
                             CmacsDividerComponent,
-                            divider.NzDividerModule,
+                            i6$2.NzDividerModule,
                             CmacsComponentsV2LibComponent,
                             CmacsCheckboxComponent,
                             CmacsCheckboxWrapperComponent,
@@ -39039,6 +39804,8 @@
     exports.CmacsTreeComponent = CmacsTreeComponent;
     exports.CmacsTreeNodeComponent = CmacsTreeNodeComponent;
     exports.CmacsTreeService = CmacsTreeService;
+    exports.CmacsUserDropdownComponent = CmacsUserDropdownComponent;
+    exports.CmacsUserDropdownExternalListComponent = CmacsUserDropdownExternalListComponent;
     exports.CmacsVideoPlayerComponent = CmacsVideoPlayerComponent;
     exports.CmacsWeekPickerComponent = CmacsWeekPickerComponent;
     exports.CmacsWizardComponent = CmacsWizardComponent;

@@ -168,4 +168,6 @@ export * from './lib/components/cmacs-general-chart/cmacs-general-chart.componen
 export * from './lib/components/cmacs-normalized-horizontal-bar-chart/cmacs-normalized-horizontal-bar-chart.component';
 export * from './lib/components/cmacs-normalized-horizontal-bar-grouped/cmacs-normalized-horizontal-bar-grouped.component';
 export * from './lib/components/cmacs-status-distribution/cmacs-status-distribution.component';
+export * from './lib/components/cmacs-user-dropdown/cmacs-user-dropdown.component';
+export * from './lib/components/cmacs-user-dropdown-external-list/cmacs-user-dropdown-external-list.component';
 //# sourceMappingURL=public-api.d.ts.map

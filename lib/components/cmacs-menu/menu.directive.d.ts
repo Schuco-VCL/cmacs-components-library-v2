@@ -5,6 +5,7 @@ import { MenuService } from './menu.service';
 import { CmacsMenuModeType, CmacsMenuThemeType } from './menu.types';
 import { CmacsSubMenuComponent } from './submenu.component';
 import * as i0 from "@angular/core";
+export declare type CmacsMenuModeTypeCustom = 'side-bar';
 export declare function MenuServiceFactory(serviceInsideDropDown: MenuService, serviceOutsideDropDown: MenuService): MenuService;
 export declare function MenuDropDownTokenFactory(isMenuInsideDropDownToken: boolean): boolean;
 export declare class CmacsMenuDirective implements AfterContentInit, OnInit, OnChanges, OnDestroy {
@@ -17,6 +18,7 @@ export declare class CmacsMenuDirective implements AfterContentInit, OnInit, OnC
     inlineIndent: number;
     theme: CmacsMenuThemeType;
     mode: CmacsMenuModeType;
+    cmacsMode: CmacsMenuModeTypeCustom | null;
     inlineCollapsed: boolean;
     selectable: boolean;
     readonly cmacsClick: EventEmitter<CmacsMenuItemDirective>;
@@ -34,6 +36,6 @@ export declare class CmacsMenuDirective implements AfterContentInit, OnInit, OnC
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsMenuDirective, [null, null, null, { optional: true; }]>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsMenuDirective, "[cmacs-menu]", ["cmacsMenu"], { "inlineIndent": "inlineIndent"; "theme": "theme"; "mode": "mode"; "inlineCollapsed": "inlineCollapsed"; "selectable": "selectable"; }, { "cmacsClick": "cmacsClick"; }, ["listOfNzMenuItemDirective", "listOfCmacsSubMenuComponent"]>;
+    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsMenuDirective, "[cmacs-menu]", ["cmacsMenu"], { "inlineIndent": "inlineIndent"; "theme": "theme"; "mode": "mode"; "cmacsMode": "cmacsMode"; "inlineCollapsed": "inlineCollapsed"; "selectable": "selectable"; }, { "cmacsClick": "cmacsClick"; }, ["listOfNzMenuItemDirective", "listOfCmacsSubMenuComponent"]>;
 }
 //# sourceMappingURL=menu.directive.d.ts.map
