@@ -10,6 +10,7 @@ import 'moment/locale/en-ie';
 import { UtilService } from '../core/services/util.service';
 import { NzSizeMDSType } from 'ng-zorro-antd/core/types';
 import { CmacsContextMenuService } from '../cmacs-dropdown/context-menu.service';
+import { CmacsInputNumberComponent } from '../cmacs-input-number/cmacs-input-number.component';
 import * as i0 from "@angular/core";
 export declare class CmacsTableComponent implements OnInit, OnChanges, OnDestroy, AfterViewInit {
     private cdr;
@@ -93,14 +94,16 @@ export declare class CmacsTableComponent implements OnInit, OnChanges, OnDestroy
     lastIdxSelected: any;
     inputElement: ElementRef;
     inputNumberElement: ElementRef;
+    inputNumberComponent: CmacsInputNumberComponent;
     datePickerElement: ElementRef;
     selectElement: ElementRef;
     boolElement: ElementRef;
     contextMenu($event: MouseEvent, template: any): void;
     startEdit(id: string, property: string, event: MouseEvent): void;
+    handleMouseDown(e: Event): void;
+    focusSelect(elem: any): void;
     sort($event: any, fieldProperty: string): void;
     getHeaderMaxWidth(field: Field): "calc(100% - 15px)" | "100%";
-    handleClick(e: Event): void;
     childOf(node: any, ancestor: any): boolean;
     endEditMode($event: KeyboardEvent, index: number): void;
     endEditModeNgModel(index: number): void;
@@ -120,7 +123,7 @@ export declare class CmacsTableComponent implements OnInit, OnChanges, OnDestroy
     getLabel(data: any, field: Field): string;
     isSelect(field: Field): boolean;
     isReadOnly(field: Field): boolean;
-    isBoolean(value: any): boolean;
+    isBoolean(field: Field): boolean;
     isObject(value: any): boolean;
     isDate(field: Field): boolean;
     isString(field: Field): boolean;

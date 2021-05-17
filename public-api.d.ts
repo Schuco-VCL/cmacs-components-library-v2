@@ -170,4 +170,5 @@ export * from './lib/components/cmacs-normalized-horizontal-bar-grouped/cmacs-no
 export * from './lib/components/cmacs-status-distribution/cmacs-status-distribution.component';
 export * from './lib/components/cmacs-user-dropdown/cmacs-user-dropdown.component';
 export * from './lib/components/cmacs-user-dropdown-external-list/cmacs-user-dropdown-external-list.component';
+export * from './lib/components/cmacs-grid-configuration-modal/cmacs-grid-configuration-modal.component';
 //# sourceMappingURL=public-api.d.ts.map
