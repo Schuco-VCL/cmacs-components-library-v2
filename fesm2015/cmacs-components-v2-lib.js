@@ -17,7 +17,7 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
 import { RIGHT_ARROW, UP_ARROW, LEFT_ARROW, DOWN_ARROW, TAB, SPACE, BACKSPACE, ENTER, ESCAPE, hasModifierKey } from '@angular/cdk/keycodes';
 import { Platform, PlatformModule } from '@angular/cdk/platform';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
-import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzAutosizeDirective, NzInputModule } from 'ng-zorro-antd/input';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { CdkOverlayOrigin, CdkConnectedOverlay, Overlay, OverlayRef, ViewportRuler, ConnectionPositionPair, OverlayModule } from '@angular/cdk/overlay';
 import { NzNoAnimationDirective, NzNoAnimationModule } from 'ng-zorro-antd/core/no-animation';
@@ -35052,6 +35052,149 @@ __decorate([
             type: Output
         }] }); })();
 
+const _c0$1d = ["textarea"];
+function CmacsOpenTextareaComponent_textarea_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "textarea", 4, 5);
+    ɵɵtext(2, "    ");
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r0 = ɵɵnextContext();
+    ɵɵstyleProp("width", ctx_r0.width, "px");
+    ɵɵproperty("opened", true)("placeholder", ctx_r0.placeholder)("formControl", ctx_r0.formControlCustom);
+} }
+function CmacsOpenTextareaComponent_span_3_Template(rf, ctx) { if (rf & 1) {
+    const _r4 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "span", 6);
+    ɵɵlistener("click", function CmacsOpenTextareaComponent_span_3_Template_span_click_0_listener($event) { ɵɵrestoreView(_r4); const ctx_r3 = ɵɵnextContext(); return ctx_r3.startEdition($event); })("mouseover", function CmacsOpenTextareaComponent_span_3_Template_span_mouseover_0_listener() { ɵɵrestoreView(_r4); const ctx_r5 = ɵɵnextContext(); return ctx_r5.enableDivider = true; })("mouseout", function CmacsOpenTextareaComponent_span_3_Template_span_mouseout_0_listener() { ɵɵrestoreView(_r4); const ctx_r6 = ɵɵnextContext(); return ctx_r6.enableDivider = false; });
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵstyleProp("width", ctx_r1.width, "px");
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1(" ", ctx_r1.formControlCustom.value, " ");
+} }
+class CmacsOpenTextareaComponent {
+    constructor() {
+        this.formControlCustom = new FormControl('', []);
+        this.width = 250;
+        this.placeholder = '';
+        this.allowEdition = false;
+        this.enableDivider = true;
+    }
+    onClick(event) {
+        if (this.textarea && event.target !== this.textarea.nativeElement) {
+            this.allowEdition = false;
+            this.enableDivider = false;
+        }
+    }
+    isEnabled() {
+        if (this.allowEdition || !this.formControlCustom.value) {
+            this.allowEdition = true;
+            return true;
+        }
+        this.allowEdition = false;
+        return false;
+    }
+    isTextEnabled() {
+        return !this.allowEdition && this.formControlCustom.value;
+    }
+    startEdition($event) {
+        $event.preventDefault();
+        $event.stopImmediatePropagation();
+        this.allowEdition = true;
+    }
+    ngAfterViewInit() {
+        this.enableDivider = this.allowEdition;
+    }
+}
+CmacsOpenTextareaComponent.ɵfac = function CmacsOpenTextareaComponent_Factory(t) { return new (t || CmacsOpenTextareaComponent)(); };
+CmacsOpenTextareaComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsOpenTextareaComponent, selectors: [["cmacs-open-textarea"]], viewQuery: function CmacsOpenTextareaComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵɵviewQuery(_c0$1d, 1, ElementRef);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.textarea = _t.first);
+    } }, hostBindings: function CmacsOpenTextareaComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵɵlistener("click", function CmacsOpenTextareaComponent_click_HostBindingHandler($event) { return ctx.onClick($event); }, false, ɵɵresolveWindow);
+    } }, inputs: { formControlCustom: "formControlCustom", width: "width", placeholder: "placeholder" }, exportAs: ["cmacsOpenTextarea"], decls: 4, vars: 6, consts: [[1, "cmacs-textarea-opened-wrapper", 2, "display", "inline-flex"], [1, "cmacs-open-textarea-divider"], ["class", "cmacs-textarea", "cmacs-input", "", "nzAutosize", "", 3, "width", "opened", "placeholder", "formControl", 4, "ngIf"], ["class", "cmacs-textarea cmacs-text-area-span", 3, "width", "click", "mouseover", "mouseout", 4, "ngIf"], ["cmacs-input", "", "nzAutosize", "", 1, "cmacs-textarea", 3, "opened", "placeholder", "formControl"], ["textarea", ""], [1, "cmacs-textarea", "cmacs-text-area-span", 3, "click", "mouseover", "mouseout"]], template: function CmacsOpenTextareaComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "div", 0);
+        ɵɵelement(1, "cmacs-divider", 1);
+        ɵɵtemplate(2, CmacsOpenTextareaComponent_textarea_2_Template, 3, 5, "textarea", 2);
+        ɵɵtemplate(3, CmacsOpenTextareaComponent_span_3_Template, 2, 3, "span", 3);
+        ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵɵstyleProp("width", ctx.width, "px");
+        ɵɵadvance(1);
+        ɵɵstyleProp("opacity", ctx.enableDivider || !ctx.formControlCustom.value);
+        ɵɵadvance(1);
+        ɵɵproperty("ngIf", ctx.isEnabled());
+        ɵɵadvance(1);
+        ɵɵproperty("ngIf", ctx.isTextEnabled());
+    } }, directives: [CmacsDividerComponent, NgIf, CmacsInputDirective, NzAutosizeDirective, DefaultValueAccessor, NgControlStatus, FormControlDirective], styles: [".cmacs-textarea[_ngcontent-%COMP%]{padding:5px 0 0;overflow:hidden;font-size:12px;min-height:31px;line-height:1.83;font-family:Roboto-Regular}.cmacs-text-area-span[_ngcontent-%COMP%]:after{content:\"\"}.cmacs-text-area-span[_ngcontent-%COMP%]:hover:after{font-family:UISmall!important;content:\"\\e99f\";font-size:19px;position:absolute;margin-top:-3px;margin-left:5px;color:#2a7cff}.cmacs-open-textarea-divider[_ngcontent-%COMP%]{height:20px;margin-top:2px}.cmacs-input-opened.ant-input[_ngcontent-%COMP%]:enabled:hover, .cmacs-input-opened.ant-input[_ngcontent-%COMP%]:focus{box-shadow:none;border:none}textarea.cmacs-input-opened[_ngcontent-%COMP%]{border:none;resize:none}", "cmacs-open-textarea[_ngcontent-%COMP%] {\n        display: block;\n      }"], data: { animation: [slideAlertMotion] } });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsOpenTextareaComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-open-textarea',
+                exportAs: 'cmacsOpenTextarea',
+                animations: [slideAlertMotion],
+                templateUrl: './cmacs-open-textarea.component.html',
+                preserveWhitespaces: false,
+                styleUrls: ['./cmacs-open-textarea.component.css'],
+                styles: [
+                    `
+      cmacs-open-textarea {
+        display: block;
+      }
+    `
+                ]
+            }]
+    }], function () { return []; }, { formControlCustom: [{
+            type: Input
+        }], width: [{
+            type: Input
+        }], placeholder: [{
+            type: Input
+        }], textarea: [{
+            type: ViewChild,
+            args: ['textarea', { read: ElementRef }]
+        }], onClick: [{
+            type: HostListener,
+            args: ['window:click', ['$event']]
+        }] }); })();
+
+class CmacsOpenInputComponent {
+    constructor() {
+        this.formControlCustom = new FormControl('', []);
+        this.placeholder = '';
+    }
+}
+CmacsOpenInputComponent.ɵfac = function CmacsOpenInputComponent_Factory(t) { return new (t || CmacsOpenInputComponent)(); };
+CmacsOpenInputComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsOpenInputComponent, selectors: [["cmacs-open-input"]], inputs: { formControlCustom: "formControlCustom", width: "width", placeholder: "placeholder" }, exportAs: ["cmacsOpenInput"], decls: 3, vars: 6, consts: [["cmacs-input", "", 1, "cmacs-open-input", 3, "placeholder", "formControl"], [1, "cmacs-open-input-wrapper"]], template: function CmacsOpenInputComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "input", 0);
+        ɵɵpipe(1, "cmacsToCssUnit");
+        ɵɵelementEnd();
+        ɵɵelement(2, "span", 1);
+    } if (rf & 2) {
+        ɵɵstyleProp("width", ɵɵpipeBind1(1, 4, ctx.width));
+        ɵɵproperty("placeholder", ctx.placeholder)("formControl", ctx.formControlCustom);
+    } }, directives: [CmacsInputDirective, DefaultValueAccessor, NgControlStatus, FormControlDirective], pipes: [CmacsToCssUnitPipe], styles: [".cmacs-open-input,.cmacs-open-input:focus,.cmacs-open-input:hover{border:none!important;border-bottom:2px dotted #bec4cd!important;padding:0!important;height:25px}cmacs-form-explain.ant-form-explain{color:#f6503c;font-size:10px}.cmacs-open-input-wrapper:after{font-family:UISmall!important;content:\"\\e99f\";font-size:19px;position:absolute;margin-top:-2px;margin-left:5px;color:#bec4cd}.cmacs-open-input:focus~.cmacs-open-input-wrapper:after,.cmacs-open-input:hover~.cmacs-open-input-wrapper:after{color:#2a7cff!important}cmacs-form-label+cmacs-open-input:hover .cmacs-open-input-wrapper:after,cmacs-form-label~cmacs-open-input .cmacs-open-input:focus~.cmacs-open-input-wrapper:after,cmacs-form-label~cmacs-open-input .cmacs-open-input~.cmacs-open-input-wrapper:after{content:\"\"}.ant-form-item-label,.ant-form-item-label>label{color:#acb3bf!important;font-size:12px!important}"], encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsOpenInputComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-open-input',
+                exportAs: 'cmacsOpenInput',
+                encapsulation: ViewEncapsulation.None,
+                templateUrl: './cmacs-open-input.component.html',
+                styleUrls: ['./cmacs-open-input.component.css'],
+            }]
+    }], function () { return []; }, { formControlCustom: [{
+            type: Input
+        }], width: [{
+            type: Input
+        }], placeholder: [{
+            type: Input
+        }] }); })();
+
 registerLocaleData(en);
 class CmacsComponentsV2LibModule {
 }
@@ -35174,7 +35317,9 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         DragDropModule,
         EditorModule,
         NzTimePickerModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsGridConfigurationModalComponent,
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsOpenTextareaComponent,
+        CmacsOpenInputComponent,
+        CmacsGridConfigurationModalComponent,
         CmacsUserDropdownComponent,
         CmacsUserDropdownExternalListComponent,
         CmacsStatusDistributionComponent,
@@ -35376,7 +35521,9 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         VgOverlayPlayModule,
         VgBufferingModule,
         EditorModule,
-        ReactiveFormsModule], exports: [CmacsGridConfigurationModalComponent,
+        ReactiveFormsModule], exports: [CmacsOpenTextareaComponent,
+        CmacsOpenInputComponent,
+        CmacsGridConfigurationModalComponent,
         BidiModule,
         PlatformModule,
         CmacsUserDropdownComponent,
@@ -35573,6 +35720,8 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
         type: NgModule,
         args: [{
                 declarations: [
+                    CmacsOpenTextareaComponent,
+                    CmacsOpenInputComponent,
                     CmacsGridConfigurationModalComponent,
                     CmacsUserDropdownComponent,
                     CmacsUserDropdownExternalListComponent,
@@ -35781,6 +35930,8 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ factory: function CmacsC
                     ReactiveFormsModule
                 ],
                 exports: [
+                    CmacsOpenTextareaComponent,
+                    CmacsOpenInputComponent,
                     CmacsGridConfigurationModalComponent,
                     BidiModule,
                     PlatformModule,
@@ -36177,5 +36328,5 @@ var ModeTabType;
  * Generated bundle index. Do not edit.
  */
 
-export { ButtonStyle, CeldType, CmacsAlertComponent, CmacsAutosizeDirective, CmacsBreadCrumbComponent, CmacsBreadCrumbItemComponent, CmacsBreadCrumbSeparatorComponent, CmacsButtonComponent, CmacsButtonGroupComponent, CmacsCardComponent, CmacsCardGridDirective, CmacsCardLoadingComponent, CmacsCardMetaComponent, CmacsCardTabComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsCommentActionComponent, CmacsCommentActionHostDirective, CmacsCommentAvatarDirective, CmacsCommentComponent, CmacsCommentContentDirective, CmacsCompactTableComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsContextMenuServiceModule, CmacsDatePickerComponent, CmacsDateTimePickerComponent, CmacsDatetimePickerPanelComponent, CmacsDatetimeValueAccessorDirective, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsEditorComponent, CmacsFloatingMenuComponent, CmacsFormControlComponent, CmacsFormDirective, CmacsFormItemComponent, CmacsFormLabelComponent, CmacsFormSplitComponent, CmacsFormTextComponent, CmacsGeneralChartComponent, CmacsGridConfigurationModalComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsInputNumberComponent, CmacsIsMenuInsideDropDownToken, CmacsKPIOverviewComponent, CmacsKanbanComponent, CmacsKpiComponent, CmacsKpiGroupComponent, CmacsListComponent, CmacsListEmptyComponent, CmacsListFooterComponent, CmacsListGridDirective, CmacsListHeaderComponent, CmacsListItemActionComponent, CmacsListItemActionsComponent, CmacsListItemComponent, CmacsListItemExtraComponent, CmacsListItemMetaAvatarComponent, CmacsListItemMetaComponent, CmacsListItemMetaDescriptionComponent, CmacsListItemMetaTitleComponent, CmacsListLoadMoreDirective, CmacsListPaginationComponent, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsMessageComponent, CmacsMessageContainerComponent, CmacsMessageService, CmacsModalComponent, CmacsModalService, CmacsMonthPickerComponent, CmacsMoveableListComponent, CmacsNormalizedHorizontalBarChartComponent, CmacsNormalizedHorizontalBarGroupedComponent, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsPhoneNumberComponent, CmacsPopoverComponent, CmacsPopoverDirective, CmacsProgressComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsRangePickerComponent, CmacsSearchComponent, CmacsSectionComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSidePanelComponent, CmacsSignatureComponent, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsStatusDistributionComponent, CmacsStepComponent, CmacsSubMenuComponent, CmacsSwitchComponent, CmacsTabAddButtonComponent, CmacsTabBodyComponent, CmacsTabCloseButtonComponent, CmacsTabComponent, CmacsTabDirective, CmacsTabLinkDirective, CmacsTabLinkTemplateDirective, CmacsTabNavBarComponent, CmacsTabNavItemDirective, CmacsTabNavOperationComponent, CmacsTabScrollListDirective, CmacsTabSetComponent, CmacsTableComponent, CmacsTabsInkBarDirective, CmacsTagComponent, CmacsTextareaCountComponent, CmacsTimelineComponent, CmacsTimelineItemComponent, CmacsToCssUnitPipe, CmacsToolTipComponent, CmacsTooltipBaseComponent, CmacsTooltipDirective, CmacsTreeComponent, CmacsTreeNodeComponent, CmacsTreeService, CmacsUserDropdownComponent, CmacsUserDropdownExternalListComponent, CmacsVideoPlayerComponent, CmacsWeekPickerComponent, CmacsWizardComponent, CmacsXlsxLoaderComponent, CmacsYearPickerComponent, DefaultTooltipIcon, ExportType, FLOATING_MENU_LOCALIZATION, KPI_COLORS, KPI_PRIORITY_COLORS, LibPackerModule, MODAL_ANIMATE_DURATION, MODAL_CONFIG, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, ModalBuilderForService, ModalControlService, ModeTabType, NZ_TAB_SET, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzMNComponent, NzMNContainerComponent, NzMNService, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, NzTabChangeEvent, NzTooltipBaseDirective, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzTreeServiceFactory, PREFIX_CLASS, ROBOTO, ROBOTO_BOLD, SIGNATURE_LOCALIZATION, TemplateType, TimelineService, UtilService, WidgetActionType, WidgetDataType, WidgetType, defaultFilterOption, getTimeConfig, isAllowedDate, isCheckDisabled, isInArray, isTimeValid, isTimeValidByConfig, isTooltipEmpty, transCompatFormat, AbstractPanelHeader as ɵAbstractPanelHeader, AbstractTable as ɵAbstractTable, CalendarFooterComponent as ɵCalendarFooterComponent, DateHeaderComponent as ɵDateHeaderComponent, DatePickerService as ɵDatePickerService, DateRangePopupComponent as ɵDateRangePopupComponent, DateTableComponent as ɵDateTableComponent, DecadeHeaderComponent as ɵDecadeHeaderComponent, DecadeTableComponent as ɵDecadeTableComponent, InnerPopupComponent as ɵInnerPopupComponent, MonthHeaderComponent as ɵMonthHeaderComponent, MonthTableComponent as ɵMonthTableComponent, CmacsPickerComponent as ɵNzPickerComponent, YearHeaderComponent as ɵYearHeaderComponent, YearTableComponent as ɵYearTableComponent };
+export { ButtonStyle, CeldType, CmacsAlertComponent, CmacsAutosizeDirective, CmacsBreadCrumbComponent, CmacsBreadCrumbItemComponent, CmacsBreadCrumbSeparatorComponent, CmacsButtonComponent, CmacsButtonGroupComponent, CmacsCardComponent, CmacsCardGridDirective, CmacsCardLoadingComponent, CmacsCardMetaComponent, CmacsCardTabComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsCommentActionComponent, CmacsCommentActionHostDirective, CmacsCommentAvatarDirective, CmacsCommentComponent, CmacsCommentContentDirective, CmacsCompactTableComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsContextMenuServiceModule, CmacsDatePickerComponent, CmacsDateTimePickerComponent, CmacsDatetimePickerPanelComponent, CmacsDatetimeValueAccessorDirective, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsEditorComponent, CmacsFloatingMenuComponent, CmacsFormControlComponent, CmacsFormDirective, CmacsFormItemComponent, CmacsFormLabelComponent, CmacsFormSplitComponent, CmacsFormTextComponent, CmacsGeneralChartComponent, CmacsGridConfigurationModalComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsInputNumberComponent, CmacsIsMenuInsideDropDownToken, CmacsKPIOverviewComponent, CmacsKanbanComponent, CmacsKpiComponent, CmacsKpiGroupComponent, CmacsListComponent, CmacsListEmptyComponent, CmacsListFooterComponent, CmacsListGridDirective, CmacsListHeaderComponent, CmacsListItemActionComponent, CmacsListItemActionsComponent, CmacsListItemComponent, CmacsListItemExtraComponent, CmacsListItemMetaAvatarComponent, CmacsListItemMetaComponent, CmacsListItemMetaDescriptionComponent, CmacsListItemMetaTitleComponent, CmacsListLoadMoreDirective, CmacsListPaginationComponent, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsMessageComponent, CmacsMessageContainerComponent, CmacsMessageService, CmacsModalComponent, CmacsModalService, CmacsMonthPickerComponent, CmacsMoveableListComponent, CmacsNormalizedHorizontalBarChartComponent, CmacsNormalizedHorizontalBarGroupedComponent, CmacsOpenInputComponent, CmacsOpenTextareaComponent, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsPhoneNumberComponent, CmacsPopoverComponent, CmacsPopoverDirective, CmacsProgressComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsRangePickerComponent, CmacsSearchComponent, CmacsSectionComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSidePanelComponent, CmacsSignatureComponent, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsStatusDistributionComponent, CmacsStepComponent, CmacsSubMenuComponent, CmacsSwitchComponent, CmacsTabAddButtonComponent, CmacsTabBodyComponent, CmacsTabCloseButtonComponent, CmacsTabComponent, CmacsTabDirective, CmacsTabLinkDirective, CmacsTabLinkTemplateDirective, CmacsTabNavBarComponent, CmacsTabNavItemDirective, CmacsTabNavOperationComponent, CmacsTabScrollListDirective, CmacsTabSetComponent, CmacsTableComponent, CmacsTabsInkBarDirective, CmacsTagComponent, CmacsTextareaCountComponent, CmacsTimelineComponent, CmacsTimelineItemComponent, CmacsToCssUnitPipe, CmacsToolTipComponent, CmacsTooltipBaseComponent, CmacsTooltipDirective, CmacsTreeComponent, CmacsTreeNodeComponent, CmacsTreeService, CmacsUserDropdownComponent, CmacsUserDropdownExternalListComponent, CmacsVideoPlayerComponent, CmacsWeekPickerComponent, CmacsWizardComponent, CmacsXlsxLoaderComponent, CmacsYearPickerComponent, DefaultTooltipIcon, ExportType, FLOATING_MENU_LOCALIZATION, KPI_COLORS, KPI_PRIORITY_COLORS, LibPackerModule, MODAL_ANIMATE_DURATION, MODAL_CONFIG, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, ModalBuilderForService, ModalControlService, ModeTabType, NZ_TAB_SET, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzMNComponent, NzMNContainerComponent, NzMNService, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, NzTabChangeEvent, NzTooltipBaseDirective, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzTreeServiceFactory, PREFIX_CLASS, ROBOTO, ROBOTO_BOLD, SIGNATURE_LOCALIZATION, TemplateType, TimelineService, UtilService, WidgetActionType, WidgetDataType, WidgetType, defaultFilterOption, getTimeConfig, isAllowedDate, isCheckDisabled, isInArray, isTimeValid, isTimeValidByConfig, isTooltipEmpty, transCompatFormat, AbstractPanelHeader as ɵAbstractPanelHeader, AbstractTable as ɵAbstractTable, CalendarFooterComponent as ɵCalendarFooterComponent, DateHeaderComponent as ɵDateHeaderComponent, DatePickerService as ɵDatePickerService, DateRangePopupComponent as ɵDateRangePopupComponent, DateTableComponent as ɵDateTableComponent, DecadeHeaderComponent as ɵDecadeHeaderComponent, DecadeTableComponent as ɵDecadeTableComponent, InnerPopupComponent as ɵInnerPopupComponent, MonthHeaderComponent as ɵMonthHeaderComponent, MonthTableComponent as ɵMonthTableComponent, CmacsPickerComponent as ɵNzPickerComponent, YearHeaderComponent as ɵYearHeaderComponent, YearTableComponent as ɵYearTableComponent };
 //# sourceMappingURL=cmacs-components-v2-lib.js.map
