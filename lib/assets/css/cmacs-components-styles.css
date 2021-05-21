@@ -2,6 +2,49 @@
 @import "~ngx-videogular/fonts/videogular.css";
 @import "~angular2-draggable/css/resizable.min.css";
 
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto-Medium.ttf');
+}
+
+.ant-input-affix-wrapper {
+  padding: 0 11px !important;
+  border: 1px solid #dee0e5;
+  height: 34px;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+input:-webkit-autofill {
+  background-clip: text !important;
+}
+
+.ant-input-affix-wrapper:hover {
+  border: solid 1px #bec4cd;
+  color: #656c79;
+}
+
+.ant-input-affix-wrapper .ant-input {
+  height: 32px;
+}
+
+.ant-input-affix-wrapper .ant-input:enabled:hover,
+.ant-input-affix-wrapper .ant-input:enabled:focus {
+  border: none;
+  color: #656c79;
+  box-shadow: none;
+}
+
 .ant-form-item {
   margin: 0 0 40px !important;
   display: block;
