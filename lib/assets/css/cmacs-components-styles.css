@@ -19,10 +19,11 @@
 
 .ant-input-affix-wrapper {
   padding: 0 11px !important;
-  border: 1px solid #dee0e5;
+  border: 1px solid #dee0e5 !important;
   height: 34px;
-  border-radius: 3px;
+  border-radius: 3px !important;
   box-shadow: none;
+  overflow: hidden;
 }
 
 input:-webkit-autofill {
@@ -30,8 +31,14 @@ input:-webkit-autofill {
 }
 
 .ant-input-affix-wrapper:hover {
-  border: solid 1px #bec4cd;
+  border: solid 1px #bec4cd !important;
   color: #656c79;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+  padding: 0px 20px;
+  margin: 0;
 }
 
 .ant-input-affix-wrapper .ant-input {
