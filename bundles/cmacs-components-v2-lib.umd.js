@@ -26420,11 +26420,13 @@
         };
         CmacsCardComponent.prototype.buildLabel = function (value) {
             var result = '&nbsp;';
-            if (value.length > 20) {
-                result = value.slice(0, 20) + "...";
-            }
-            else if (value !== undefined && value !== null && value !== '' && value.length > 0) {
-                result = value;
+            if (value !== undefined && value !== null && value !== '') {
+                if (value.length > 20) {
+                    result = value.slice(0, 20) + "...";
+                }
+                else if (value.length > 0) {
+                    result = value;
+                }
             }
             return result;
         };
