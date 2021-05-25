@@ -35,7 +35,7 @@ export declare class CmacsTabSetComponent implements OnInit, AfterContentChecked
     linkExact: boolean;
     cmacsType: CmacsTabType;
     readonly selectChange: EventEmitter<NzTabChangeEvent>;
-    readonly cmacsSelectedIndexChange: EventEmitter<number>;
+    readonly selectedIndexChange: EventEmitter<number>;
     readonly tabListScroll: EventEmitter<NzTabScrollEvent>;
     readonly close: EventEmitter<{
         index: number;
@@ -84,6 +84,6 @@ export declare class CmacsTabSetComponent implements OnInit, AfterContentChecked
     getTabContentMarginLeft(): string;
     getTabContentMarginRight(): string;
     static ɵfac: i0.ɵɵFactoryDef<CmacsTabSetComponent, [null, null, { optional: true; }, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTabSetComponent, "cmacs-tabset", ["cmacsTabset"], { "cmacsSelectedIndex": "cmacsSelectedIndex"; "tabPosition": "tabPosition"; "tabBarExtraContent": "tabBarExtraContent"; "canDeactivate": "canDeactivate"; "addIcon": "addIcon"; "tabBarStyle": "tabBarStyle"; "type": "type"; "size": "size"; "animated": "animated"; "tabBarGutter": "tabBarGutter"; "hideAdd": "hideAdd"; "centered": "centered"; "hideAll": "hideAll"; "linkRouter": "linkRouter"; "linkExact": "linkExact"; "cmacsType": "cmacsType"; }, { "selectChange": "selectChange"; "cmacsSelectedIndexChange": "cmacsSelectedIndexChange"; "tabListScroll": "tabListScroll"; "close": "close"; "add": "add"; }, ["allTabs"], never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTabSetComponent, "cmacs-tabset", ["cmacsTabset"], { "cmacsSelectedIndex": "cmacsSelectedIndex"; "tabPosition": "tabPosition"; "tabBarExtraContent": "tabBarExtraContent"; "canDeactivate": "canDeactivate"; "addIcon": "addIcon"; "tabBarStyle": "tabBarStyle"; "type": "type"; "size": "size"; "animated": "animated"; "tabBarGutter": "tabBarGutter"; "hideAdd": "hideAdd"; "centered": "centered"; "hideAll": "hideAll"; "linkRouter": "linkRouter"; "linkExact": "linkExact"; "cmacsType": "cmacsType"; }, { "selectChange": "selectChange"; "selectedIndexChange": "selectedIndexChange"; "tabListScroll": "tabListScroll"; "close": "close"; "add": "add"; }, ["allTabs"], never>;
 }
 //# sourceMappingURL=tabset.component.d.ts.map

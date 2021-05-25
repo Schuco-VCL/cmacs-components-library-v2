@@ -22024,7 +22024,7 @@ class CmacsTabSetComponent {
         this.linkExact = true;
         this.cmacsType = 'text';
         this.selectChange = new EventEmitter(true);
-        this.cmacsSelectedIndexChange = new EventEmitter();
+        this.selectedIndexChange = new EventEmitter();
         this.tabListScroll = new EventEmitter();
         this.close = new EventEmitter();
         this.add = new EventEmitter();
@@ -22126,7 +22126,7 @@ class CmacsTabSetComponent {
             Promise.resolve().then(() => {
                 this.tabs.forEach((tab, index) => (tab.isActive = index === indexToSelect));
                 if (!isFirstRun) {
-                    this.cmacsSelectedIndexChange.emit(indexToSelect);
+                    this.selectedIndexChange.emit(indexToSelect);
                 }
             });
         }
@@ -22300,7 +22300,7 @@ CmacsTabSetComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsTabSetComponent, s
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabNavBarRef = _t.first);
     } }, hostAttrs: [1, "ant-tabs"], hostVars: 24, hostBindings: function CmacsTabSetComponent_HostBindings(rf, ctx) { if (rf & 2) {
         ɵɵclassProp("ant-tabs-card", ctx.type === "card" || ctx.type === "editable-card")("ant-tabs-editable", ctx.type === "editable-card")("ant-tabs-editable-card", ctx.type === "editable-card")("ant-tabs-centered", ctx.centered)("ant-tabs-rtl", ctx.dir === "rtl")("ant-tabs-top", ctx.tabPosition === "top")("ant-tabs-bottom", ctx.tabPosition === "bottom")("ant-tabs-left", ctx.tabPosition === "left")("ant-tabs-right", ctx.tabPosition === "right")("ant-tabs-default", ctx.size === "default")("ant-tabs-small", ctx.size === "small")("ant-tabs-large", ctx.size === "large");
-    } }, inputs: { cmacsSelectedIndex: "cmacsSelectedIndex", tabPosition: "tabPosition", tabBarExtraContent: "tabBarExtraContent", canDeactivate: "canDeactivate", addIcon: "addIcon", tabBarStyle: "tabBarStyle", type: "type", size: "size", animated: "animated", tabBarGutter: "tabBarGutter", hideAdd: "hideAdd", centered: "centered", hideAll: "hideAll", linkRouter: "linkRouter", linkExact: "linkExact", cmacsType: "cmacsType" }, outputs: { selectChange: "selectChange", cmacsSelectedIndexChange: "cmacsSelectedIndexChange", tabListScroll: "tabListScroll", close: "close", add: "add" }, exportAs: ["cmacsTabset"], features: [ɵɵProvidersFeature([
+    } }, inputs: { cmacsSelectedIndex: "cmacsSelectedIndex", tabPosition: "tabPosition", tabBarExtraContent: "tabBarExtraContent", canDeactivate: "canDeactivate", addIcon: "addIcon", tabBarStyle: "tabBarStyle", type: "type", size: "size", animated: "animated", tabBarGutter: "tabBarGutter", hideAdd: "hideAdd", centered: "centered", hideAll: "hideAll", linkRouter: "linkRouter", linkExact: "linkExact", cmacsType: "cmacsType" }, outputs: { selectChange: "selectChange", selectedIndexChange: "selectedIndexChange", tabListScroll: "tabListScroll", close: "close", add: "add" }, exportAs: ["cmacsTabset"], features: [ɵɵProvidersFeature([
             {
                 provide: NZ_TAB_SET,
                 useExisting: CmacsTabSetComponent
@@ -22486,7 +22486,7 @@ __decorate([
             type: Input
         }], selectChange: [{
             type: Output
-        }], cmacsSelectedIndexChange: [{
+        }], selectedIndexChange: [{
             type: Output
         }], tabListScroll: [{
             type: Output
