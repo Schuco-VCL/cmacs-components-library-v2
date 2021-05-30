@@ -173,4 +173,5 @@ export * from './lib/components/cmacs-user-dropdown-external-list/cmacs-user-dro
 export * from './lib/components/cmacs-grid-configuration-modal/cmacs-grid-configuration-modal.component';
 export * from './lib/components/cmacs-open-input/cmacs-open-input.component';
 export * from './lib/components/cmacs-open-textarea/cmacs-open-textarea.component';
+export * from './lib/components/cmacs-timeline-chart/cmacs-timeline-chart.component';
 //# sourceMappingURL=public-api.d.ts.map
