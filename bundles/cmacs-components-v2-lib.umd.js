@@ -7769,36 +7769,37 @@
             var _r9_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 12);
             i0.ɵɵelementStart(1, "button", 13);
+            i0.ɵɵlistener("visibleChange", function CmacsFloatingMenuComponent_div_0_div_8_Template_button_visibleChange_1_listener($event) { i0.ɵɵrestoreView(_r9_1); var ctx_r8 = i0.ɵɵnextContext(2); return ctx_r8.onMenuVisibleChange($event); });
             i0.ɵɵelement(2, "i", 14);
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(3, "cmacs-dropdown-menu", null, 15);
             i0.ɵɵelementStart(5, "ul", 16);
             i0.ɵɵelementStart(6, "li", 17);
-            i0.ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_6_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r8 = i0.ɵɵnextContext(2); return ctx_r8.dockToLeft(); });
+            i0.ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_6_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r10 = i0.ɵɵnextContext(2); return ctx_r10.dockToLeft(); });
             i0.ɵɵelementStart(7, "span");
             i0.ɵɵtext(8);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(9, "li", 17);
-            i0.ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_9_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r10 = i0.ɵɵnextContext(2); return ctx_r10.dockToRight(); });
+            i0.ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_9_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r11 = i0.ɵɵnextContext(2); return ctx_r11.dockToRight(); });
             i0.ɵɵelementStart(10, "span");
             i0.ɵɵtext(11);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(12, "li", 17);
-            i0.ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_12_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r11 = i0.ɵɵnextContext(2); return ctx_r11.dockToTop(); });
+            i0.ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_12_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r12 = i0.ɵɵnextContext(2); return ctx_r12.dockToTop(); });
             i0.ɵɵelementStart(13, "span");
             i0.ɵɵtext(14);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(15, "li", 17);
-            i0.ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_15_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r12 = i0.ɵɵnextContext(2); return ctx_r12.dockToBottom(); });
+            i0.ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_15_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r13 = i0.ɵɵnextContext(2); return ctx_r13.dockToBottom(); });
             i0.ɵɵelementStart(16, "span");
             i0.ɵɵtext(17);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(18, "li", 17);
-            i0.ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_18_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r13 = i0.ɵɵnextContext(2); return ctx_r13.minimizeToolbar(); });
+            i0.ɵɵlistener("click", function CmacsFloatingMenuComponent_div_0_div_8_Template_li_click_18_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r14 = i0.ɵɵnextContext(2); return ctx_r14.minimizeToolbar(); });
             i0.ɵɵelement(19, "i", 18);
             i0.ɵɵelementStart(20, "span");
             i0.ɵɵtext(21);
@@ -7883,11 +7884,15 @@
             this.leftBoundary = '0';
             this.rightBoundary = '0';
             this.i18n = FLOATING_MENU_LOCALIZATION;
+            this.menuVisibleChange = new i0.EventEmitter();
         }
         CmacsFloatingMenuComponent.prototype.ngOnChanges = function () {
             if (this.cdkDrag) {
                 this.resetDragDrop();
             }
+        };
+        CmacsFloatingMenuComponent.prototype.onMenuVisibleChange = function ($event) {
+            this.menuVisibleChange.emit($event);
         };
         CmacsFloatingMenuComponent.prototype.minimizeToolbar = function () {
             this.resetDragDrop();
@@ -7966,7 +7971,7 @@
                 i0.ɵɵstyleProp("top", ctx.top)("bottom", ctx.bottom)("left", ctx.left)("right", ctx.right);
                 i0.ɵɵclassProp("carrot-bottom-menu", ctx.carrot === "bottom")("carrot-top-menu", ctx.carrot === "top")("cmacs-floating-menu-align-x", ctx.position === "bottom" || ctx.position === "top")("cmacs-floating-menu-align-y", ctx.position === "left" || ctx.position === "right");
             }
-        }, inputs: { position: "position", visible: "visible", showExtras: "showExtras", dragBoundary: "dragBoundary", carrot: "carrot", top: "top", bottom: "bottom", left: "left", right: "right", topBoundary: "topBoundary", bottomBoundary: "bottomBoundary", leftBoundary: "leftBoundary", rightBoundary: "rightBoundary", i18n: "i18n" }, outputs: { positionChange: "positionChange" }, exportAs: ["cmacsFloatingMenu"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$n, decls: 1, vars: 1, consts: [["cdkDrag", "", 3, "cdkDragBoundary", 4, "ngIf"], ["cdkDrag", "", 3, "cdkDragBoundary"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-north-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-south-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-east-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-west-area"], ["fixedEl", ""], ["cmacs-button", "", "ghost", "", 3, "click", 4, "ngIf"], ["class", "cmacs-floating-menu-main", 4, "ngIf"], ["class", "cmacs-floating-menu-user-content", 4, "ngIf"], ["cmacs-button", "", "ghost", "", 3, "click"], [1, "iconUILarge-Sort"], [1, "cmacs-floating-menu-main"], ["cmacs-button", "", "ghost", "", "cmacs-dropdown", "", 1, "cmacs-floating-menu-main-button", 3, "cmacsTrigger", "placement", "dropdownMenu"], [1, "iconUILarge-More-Veritcal_Icon"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 1, "cmacs-floating-menu-main-ul"], ["cmacs-menu-item", "", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "cmacs-floating-menu-user-content"]], template: function CmacsFloatingMenuComponent_Template(rf, ctx) {
+        }, inputs: { position: "position", visible: "visible", showExtras: "showExtras", dragBoundary: "dragBoundary", carrot: "carrot", top: "top", bottom: "bottom", left: "left", right: "right", topBoundary: "topBoundary", bottomBoundary: "bottomBoundary", leftBoundary: "leftBoundary", rightBoundary: "rightBoundary", i18n: "i18n" }, outputs: { positionChange: "positionChange", menuVisibleChange: "menuVisibleChange" }, exportAs: ["cmacsFloatingMenu"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$n, decls: 1, vars: 1, consts: [["cdkDrag", "", 3, "cdkDragBoundary", 4, "ngIf"], ["cdkDrag", "", 3, "cdkDragBoundary"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-north-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-south-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-east-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-west-area"], ["fixedEl", ""], ["cmacs-button", "", "ghost", "", 3, "click", 4, "ngIf"], ["class", "cmacs-floating-menu-main", 4, "ngIf"], ["class", "cmacs-floating-menu-user-content", 4, "ngIf"], ["cmacs-button", "", "ghost", "", 3, "click"], [1, "iconUILarge-Sort"], [1, "cmacs-floating-menu-main"], ["cmacs-button", "", "ghost", "", "cmacs-dropdown", "", 1, "cmacs-floating-menu-main-button", 3, "cmacsTrigger", "placement", "dropdownMenu", "visibleChange"], [1, "iconUILarge-More-Veritcal_Icon"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 1, "cmacs-floating-menu-main-ul"], ["cmacs-menu-item", "", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "cmacs-floating-menu-user-content"]], template: function CmacsFloatingMenuComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵtemplate(0, CmacsFloatingMenuComponent_div_0_Template, 10, 10, "div", 0);
@@ -8035,6 +8040,8 @@
                     type: i0.Input
                 }], i18n: [{
                     type: i0.Input
+                }], menuVisibleChange: [{
+                    type: i0.Output
                 }] });
     })();
 

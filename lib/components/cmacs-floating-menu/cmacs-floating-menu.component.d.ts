@@ -34,8 +34,10 @@ export declare class CmacsFloatingMenuComponent implements OnChanges {
     leftBoundary: string;
     rightBoundary: string;
     i18n: any;
+    menuVisibleChange: EventEmitter<boolean>;
     constructor();
     ngOnChanges(): void;
+    onMenuVisibleChange($event: boolean): void;
     minimizeToolbar(): void;
     expandToolbar(): void;
     dockToLeft(): void;
@@ -45,6 +47,6 @@ export declare class CmacsFloatingMenuComponent implements OnChanges {
     getPlacement(): "left" | "right" | "bottom" | "top";
     resetDragDrop(): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsFloatingMenuComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsFloatingMenuComponent, "cmacs-floating-menu", ["cmacsFloatingMenu"], { "position": "position"; "visible": "visible"; "showExtras": "showExtras"; "dragBoundary": "dragBoundary"; "carrot": "carrot"; "top": "top"; "bottom": "bottom"; "left": "left"; "right": "right"; "topBoundary": "topBoundary"; "bottomBoundary": "bottomBoundary"; "leftBoundary": "leftBoundary"; "rightBoundary": "rightBoundary"; "i18n": "i18n"; }, { "positionChange": "positionChange"; }, never, ["*"]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsFloatingMenuComponent, "cmacs-floating-menu", ["cmacsFloatingMenu"], { "position": "position"; "visible": "visible"; "showExtras": "showExtras"; "dragBoundary": "dragBoundary"; "carrot": "carrot"; "top": "top"; "bottom": "bottom"; "left": "left"; "right": "right"; "topBoundary": "topBoundary"; "bottomBoundary": "bottomBoundary"; "leftBoundary": "leftBoundary"; "rightBoundary": "rightBoundary"; "i18n": "i18n"; }, { "positionChange": "positionChange"; "menuVisibleChange": "menuVisibleChange"; }, never, ["*"]>;
 }
 //# sourceMappingURL=cmacs-floating-menu.component.d.ts.map
