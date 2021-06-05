@@ -91,6 +91,11 @@ cmacs-breadcrumb-item:last-child {
   margin-bottom: 10px !important;
 }
 
+.ant-tree-checkbox {
+  top: -1px;
+  margin: 0px 8px 0 0;
+}
+
 .ant-form-item-label > label {
   color: #97a0ae !important;
 }
@@ -491,7 +496,7 @@ cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] + .ant-ti
 
 /* Dropdown */
 .cmacs-dropdown .ant-dropdown-menu-item {
-  padding: 8px 10px 8px 5px;
+  padding: 8px 16px 8px 16px;
   border-top: 1px solid #dee0e5;
   height: unset;
   line-height: unset;
@@ -507,6 +512,27 @@ cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] + .ant-ti
   overflow: visible;
 }
 
+.cmacs-dropdown .ant-dropdown-menu-submenu-title,
+.cmacs-dropdown-submenu-context-menu .ant-dropdown-menu-item {
+  padding: 8px 16px 8px 16px;
+  height: unset;
+  line-height: unset;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #656c79;
+  overflow: visible;
+}
+
+.cmacs-dropdown .cmacs-context-menu .ant-dropdown-menu-item {
+  border-top: none;
+}
+
 .cmacs-dropdown .ant-menu {
   position: relative;
   margin: 0;
@@ -520,10 +546,6 @@ cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] + .ant-ti
 
 .cmacs-dropdown .ant-dropdown-menu-item a:hover {
   color: rgba(0, 0, 0, 0.65);
-}
-
-.cmacs-dropdown .ant-dropdown-menu-submenu-title {
-  padding: 8px 26px 8px 5px
 }
 
 .cmacs-dropdown .ant-dropdown-menu-item:first-child {

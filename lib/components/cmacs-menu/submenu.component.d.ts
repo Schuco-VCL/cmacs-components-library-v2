@@ -21,6 +21,7 @@ export declare class CmacsSubMenuComponent implements OnInit, OnDestroy, AfterCo
     title: string | TemplateRef<void> | null;
     icon: string | null;
     open: boolean;
+    cmacsContextMenu: boolean;
     disabled: boolean;
     readonly openChange: EventEmitter<boolean>;
     cdkOverlayOrigin: ElementRef | null;
@@ -49,6 +50,6 @@ export declare class CmacsSubMenuComponent implements OnInit, OnDestroy, AfterCo
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsSubMenuComponent, [null, null, null, null, null, { optional: true; }, { optional: true; host: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSubMenuComponent, "[cmacs-submenu]", ["cmacsSubmenu"], { "menuClassName": "menuClassName"; "paddingLeft": "paddingLeft"; "title": "title"; "icon": "icon"; "open": "open"; "disabled": "disabled"; }, { "openChange": "openChange"; }, ["listOfNzSubMenuComponent", "listOfNzMenuItemDirective"], ["[title]", "*"]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSubMenuComponent, "[cmacs-submenu]", ["cmacsSubmenu"], { "menuClassName": "menuClassName"; "paddingLeft": "paddingLeft"; "title": "title"; "icon": "icon"; "open": "open"; "cmacsContextMenu": "cmacsContextMenu"; "disabled": "disabled"; }, { "openChange": "openChange"; }, ["listOfNzSubMenuComponent", "listOfNzMenuItemDirective"], ["[title]", "*"]>;
 }
 //# sourceMappingURL=submenu.component.d.ts.map
