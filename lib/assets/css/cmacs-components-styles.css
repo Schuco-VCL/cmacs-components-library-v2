@@ -200,7 +200,7 @@ form .has-feedback > .ant-select .ant-select-arrow {
 
 .cmacs-dropdown .ant-dropdown-menu-item i,
 .cmacs-dropdown .ant-menu-submenu-title i {
-  font-size: 16px;
+  font-size: 14px;
   margin-right: 10px;
 }
 
@@ -501,6 +501,7 @@ cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] + .ant-ti
   height: unset;
   line-height: unset;
   margin-bottom: 0 !important;
+  font-family: Roboto-Regular;
   margin-top: 0 !important;
   font-size: 12px;
   font-weight: normal;
@@ -516,6 +517,7 @@ cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] + .ant-ti
 .cmacs-dropdown-submenu-context-menu .ant-dropdown-menu-item {
   padding: 8px 16px 8px 16px;
   height: unset;
+  font-family: Roboto-Regular;
   line-height: unset;
   margin-bottom: 0 !important;
   margin-top: 0 !important;
