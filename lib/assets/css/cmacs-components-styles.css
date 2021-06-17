@@ -17,6 +17,12 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+.cmacs-compact-table .ant-btn-background-ghost:hover,
+.cmacs-table .ant-btn-background-ghost:hover {
+  border: none !important;
+  background-color: transparent !important;
+}
+
 .ant-input-affix-wrapper {
   padding: 0 11px !important;
   border: 1px solid #dee0e5 !important;
@@ -247,7 +253,11 @@ nz-divider {
 .cmacs-menu-side-bar {
   background-color: #f6f7fb;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important;
-  color: #656c79;
+  color: #656c79 !important;
+}
+
+.cmacs-menu-side-bar li:focus {
+  color: #656c79 !important
 }
 
 .cmacs-menu-side-bar li i + span,
