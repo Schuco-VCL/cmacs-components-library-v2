@@ -256,6 +256,10 @@ nz-divider {
   color: #656c79 !important;
 }
 
+.cmacs-menu-side-bar:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: unset;
+}
+
 .cmacs-menu-side-bar li:focus {
   color: #656c79 !important
 }
