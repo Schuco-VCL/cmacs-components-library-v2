@@ -570,7 +570,7 @@ cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] + .ant-ti
 
 .cmacs-dropdown .ant-dropdown-menu-item-disabled.ant-dropdown-menu-item > a,
 .cmacs-dropdown .ant-dropdown-menu-submenu-title-disabled.ant-dropdown-menu-submenu-title > a {
-  color: rgba(0,0,0,.25);
+  color: #BEC4CD;
   cursor: not-allowed;
 }
 
@@ -912,6 +912,6 @@ nz-dropdown-context .ant-dropdown-menu-submenu-title,
 }
 
 .ant-btn-danger:hover {
-  background-color: #f6503c !important;
-  border-color: #f6503c !important;
+  background-color: #CC2229 !important;
+  border-color: #CC2229 !important;
 }
