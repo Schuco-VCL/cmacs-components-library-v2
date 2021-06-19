@@ -205,6 +205,8 @@ form .has-feedback > .ant-select .ant-select-arrow {
 }
 
 .cmacs-dropdown .ant-dropdown-menu-item i,
+.cmacs-dropdown-submenu-context-menu .ant-dropdown-menu-item i,
+.cmacs-dropdown .ant-dropdown-menu-submenu-title i
 .cmacs-dropdown .ant-menu-submenu-title i {
   font-size: 14px;
   margin-right: 10px;
@@ -568,14 +570,24 @@ cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] + .ant-ti
   border-top: none;
 }
 
-.cmacs-dropdown .ant-dropdown-menu-item-disabled.ant-dropdown-menu-item > a,
-.cmacs-dropdown .ant-dropdown-menu-submenu-title-disabled.ant-dropdown-menu-submenu-title > a {
+.cmacs-dropdown .ant-dropdown-menu-item-disabled.ant-dropdown-menu-item,
+.cmacs-dropdown .ant-dropdown-menu-submenu-title-disabled.ant-dropdown-menu-submenu-title {
   color: #BEC4CD;
   cursor: not-allowed;
 }
 
-.cmacs-dropdown ul {
+.cmacs-dropdown .ant-dropdown-menu-item-disabled.ant-dropdown-menu-item a,
+.cmacs-dropdown .ant-dropdown-menu-submenu-title-disabled.ant-dropdown-menu-submenu-title a {
+  color: #BEC4CD;
+  cursor: not-allowed;
+}
+
+.cmacs-dropdown-submenu-context-menu ul {
   padding: 0;
+  min-width: 190px;
+}
+
+.cmacs-dropdown ul {
   border: 1px solid #dee0e5;
   min-width: 190px;
 }
