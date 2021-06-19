@@ -17,6 +17,11 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+.cmacs-dropdown .ant-dropdown-menu-submenu-title i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
 .cmacs-compact-table .ant-btn-background-ghost:hover,
 .cmacs-table .ant-btn-background-ghost:hover {
   border: none !important;

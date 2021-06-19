@@ -34635,11 +34635,17 @@ class CmacsUserDropdownComponent {
         }
     }
     removeOption(option) {
+        if (!this.selectComponent) {
+            return;
+        }
         const selectedValues = this.selectComponent.nzSelectService.listOfSelectedValue;
         const selectedValuesFiltered = selectedValues.filter(elem => elem.value !== option.value);
         this.selectComponent.nzSelectService.updateListOfSelectedValue(selectedValuesFiltered, true);
     }
     highlightValue(elem) {
+        if (!this.selectComponent) {
+            return [];
+        }
         this.highlightKeys = [];
         const value = this.selectComponent.nzSelectService.searchValue;
         // tslint:disable-next-line: no-non-null-assertion

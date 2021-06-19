@@ -38203,11 +38203,17 @@
             }
         };
         CmacsUserDropdownComponent.prototype.removeOption = function (option) {
+            if (!this.selectComponent) {
+                return;
+            }
             var selectedValues = this.selectComponent.nzSelectService.listOfSelectedValue;
             var selectedValuesFiltered = selectedValues.filter(function (elem) { return elem.value !== option.value; });
             this.selectComponent.nzSelectService.updateListOfSelectedValue(selectedValuesFiltered, true);
         };
         CmacsUserDropdownComponent.prototype.highlightValue = function (elem) {
+            if (!this.selectComponent) {
+                return [];
+            }
             this.highlightKeys = [];
             var value = this.selectComponent.nzSelectService.searchValue;
             // tslint:disable-next-line: no-non-null-assertion
