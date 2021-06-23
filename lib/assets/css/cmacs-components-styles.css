@@ -41,6 +41,14 @@ input:-webkit-autofill {
   background-clip: text !important;
 }
 
+.ant-dropdown-menu-item .ant-dropdown-menu-submenu-expand-icon .ant-dropdown-menu-submenu-arrow-icon,
+.ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon .ant-dropdown-menu-submenu-arrow-icon {
+  width: 6px;
+  height: 8px;
+  color: #656c79 !important;
+  font-size: unset !important;
+}
+
 .ant-input-affix-wrapper:hover {
   border: solid 1px #bec4cd !important;
   color: #656c79;
@@ -880,6 +888,12 @@ nz-dropdown-context .ant-dropdown-menu-submenu-title,
   border: 1px solid #DEE0E5;
   box-shadow: 0px 3px 7px rgba(59, 63, 70, 0.2);
   clip-path: inset(-10% 0% -10% -10%);
+}
+
+.ant-menu-submenu {
+  border: 1px solid #dee0e5 !important;
+  top: -5px;
+  left: 0px !important;
 }
 
 .ant-select-disabled .ant-select-selection {
