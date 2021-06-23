@@ -17,6 +17,10 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+cmacs-user-dropdown {
+   width: 100%;
+}
+
 .cmacs-dropdown .ant-dropdown-menu-submenu-title i {
   margin-right: 10px;
   font-size: 14px;
