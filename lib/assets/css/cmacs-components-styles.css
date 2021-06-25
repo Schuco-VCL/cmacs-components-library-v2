@@ -875,10 +875,9 @@ nz-dropdown-context .ant-dropdown-menu-submenu-title,
   top: -10px;
 }
 
-.ant-menu-submenu.ant-menu-submenu-popup.ant-menu-submenu-placement-rightTop .ant-menu {
-  padding: 9px 0;
+.ant-menu-submenu {
   border: 1px solid #DEE0E5;
-  box-shadow: 0px 3px 7px rgba(59, 63, 70, 0.2);
+  box-shadow: 0px 3px 7px rgba(59, 63, 70, 0.2) !important;
   clip-path: inset(-10% -10% -10% 0%);
 }
 
