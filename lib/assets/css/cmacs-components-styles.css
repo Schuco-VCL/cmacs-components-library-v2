@@ -17,6 +17,42 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+nz-disable-td.ant-table-cell {
+    overflow: hidden;
+}
+
+.nz-table-hide-scrollbar::-webkit-scrollbar {
+  background-color: transparent !important;
+  width: 0;
+}
+
+cmacs-datetime-picker {
+  border: solid 1px #dee0e5 !important;
+  box-shadow: none !important;
+}
+
+.cmacs-datetime-picker-dropdown .ant-picker-dropdown {
+  top: -3px;
+  border: 1px solid #dee0e5;
+  border-top: none;
+  width: inherit;
+  background-color: #fff;
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+  clip-path: inset(0 -5px -7px -4px);
+}
+
+.cmacs-time-picker-opened {
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%) !important;
+  clip-path: inset(-1px -5px 0 -4px);
+}
+
+.cmacs-datetime-picker-dropdown .ant-picker-dropdown .ant-picker-panel-container,
+.cmacs-datetime-picker-dropdown .ant-picker-dropdown .ant-picker-panel-container .ant-picker-panel{
+   width: inherit;
+   background-color: transparent;
+   box-shadow: none;
+}
+
 .ant-menu-inline .ant-menu-submenu-arrow-cmacs:before {
   font-size: 16px;
   font-family: 'ArrowLarge' !important;

@@ -28,6 +28,7 @@ export declare class CmacsDateTimePickerComponent implements ControlValueAccesso
     preValue: Date | null;
     origin: CdkOverlayOrigin;
     inputSize?: number;
+    calcWidth: number;
     i18nPlaceHolder$: Observable<string | undefined>;
     overlayPositions: ConnectionPositionPair[];
     dir: Direction;
@@ -59,6 +60,7 @@ export declare class CmacsDateTimePickerComponent implements ControlValueAccesso
     emitValue(value: Date | null): void;
     setValue(value: Date | null, syncPreValue?: boolean): void;
     open(): void;
+    setPanelWidth(): void;
     close(): void;
     updateAutoFocus(): void;
     onClickClearBtn(event: MouseEvent): void;

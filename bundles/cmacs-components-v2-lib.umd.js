@@ -10049,7 +10049,7 @@
                 i0.ɵɵadvance(3);
                 i0.ɵɵproperty("ngIf", ctx.nzBreadCrumbComponent.separator);
             }
-        }, directives: [i2$1.NgIf, CmacsDropDownDirective, i2$1.NgTemplateOutlet, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, i6.NzStringTemplateOutletDirective], styles: [".ant-breadcrumb-link a{color:#acb3bf;font-family:Roboto-Regular,Helvetica,Arial,sans-serif}.ant-breadcrumb-link a:hover{text-decoration:underline;color:#2a7cff}.ant-breadcrumb-link{display:inline-grid}.ant-breadcrumb-link,.ant-breadcrumb a{max-width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}cmacs-breadcrumb-item:last-child,cmacs-breadcrumb-item:last-child .ant-breadcrumb-link{max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:normal}"], encapsulation: 2, changeDetection: 0 });
+        }, directives: [i2$1.NgIf, CmacsDropDownDirective, i2$1.NgTemplateOutlet, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, i6.NzStringTemplateOutletDirective], styles: [".ant-breadcrumb-link a{color:#acb3bf;font-family:Roboto-Regular,Helvetica,Arial,sans-serif}.ant-breadcrumb-link a:hover{text-decoration:underline;color:#2a7cff}.ant-breadcrumb-link{display:inline-grid}.ant-breadcrumb-link,.ant-breadcrumb a{max-width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}cmacs-breadcrumb-item:last-child,cmacs-breadcrumb-item:last-child .ant-breadcrumb-link{max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:inherit}cmacs-breadcrumb-item:last-child .ant-breadcrumb-separator{display:none}"], encapsulation: 2, changeDetection: 0 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsBreadCrumbItemComponent, [{
                 type: i0.Component,
@@ -15739,7 +15739,7 @@
          * @param event
          */
         CmacsDatetimePickerPanelComponent.prototype.onMousedown = function (event) {
-            event.preventDefault();
+            //event.preventDefault();
         };
         /* Customized code */
         CmacsDatetimePickerPanelComponent.prototype.updateTime = function ($event, type) {
@@ -15809,7 +15809,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", !ctx.nzUse12Hours && !ctx.hideSeconds);
             }
-        }, directives: [i2$1.NgIf, CmacsInputNumberComponent, i5.NgControlStatus, i5.NgModel, CmacsSelectComponent, i2$1.NgForOf, CmacsOptionComponent], pipes: [i2$1.UpperCasePipe], styles: [".cmacs-datetime-picker-input-number[_ngcontent-%COMP%]{width:55px;height:30px!important;margin:11px}cmacs-select[_ngcontent-%COMP%]   .ant-select-selection[_ngcontent-%COMP%]{height:30px}  cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]{background:#f6f7fb;cursor:default;border:1px solid #dee0e5}  cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]+.ant-time-picker-icon{color:#bec4cd;cursor:default}.cmacs-datetime-dividers[_ngcontent-%COMP%]{display:inline-block;position:relative;top:-3px;padding:15px 0}.cmacs-datetime-picker[_ngcontent-%COMP%]   .ant-time-picker-panel-inner[_ngcontent-%COMP%]{width:224px!important}.cmacs-datetime-picker[_ngcontent-%COMP%]   .ampmdropdown[_ngcontent-%COMP%]{width:calc(100% - 156px);height:30px;margin:11px 11px 11px 0}  .cmacs-datetime-picker .ant-time-picker-panel-inner cmacs-select.ant-select{height:30px!important;margin:12px 0!important;display:inline-flex;width:auto!important}.cmacs-datetime-picker[_ngcontent-%COMP%]   .ant-time-picker-panel-inner.cmacs-datetime-picker-noseconds[_ngcontent-%COMP%]{width:148px!important}.ant-time-picker-panel-narrow[_ngcontent-%COMP%]   .cmacs-datetime-picker[_ngcontent-%COMP%]   .ant-time-picker-panel-input-wrap[_ngcontent-%COMP%]{max-width:unset}"], changeDetection: 0 });
+        }, directives: [i2$1.NgIf, CmacsInputNumberComponent, i5.NgControlStatus, i5.NgModel, CmacsSelectComponent, i2$1.NgForOf, CmacsOptionComponent], pipes: [i2$1.UpperCasePipe], styles: [".cmacs-datetime-picker-input-number[_ngcontent-%COMP%]{width:auto;height:30px!important;margin:11px}cmacs-select[_ngcontent-%COMP%]   .ant-select-selection[_ngcontent-%COMP%]{height:30px}  cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]{background:#f6f7fb;cursor:default;border:1px solid #dee0e5}  cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]+.ant-time-picker-icon{color:#bec4cd;cursor:default}.cmacs-datetime-dividers[_ngcontent-%COMP%]{display:inline-block;position:relative;top:-3px;padding:15px 0}.cmacs-datetime-picker[_ngcontent-%COMP%]   .ant-time-picker-panel-inner[_ngcontent-%COMP%]{width:224px!important}.cmacs-datetime-picker[_ngcontent-%COMP%]   .ampmdropdown[_ngcontent-%COMP%]{width:calc(100% - 156px);height:30px;margin:11px 11px 11px 0}  .cmacs-datetime-picker .ant-time-picker-panel-inner cmacs-select.ant-select{height:30px!important;margin:12px 0!important;display:inline-flex;width:auto!important}.cmacs-datetime-picker[_ngcontent-%COMP%]   .ant-time-picker-panel-inner.cmacs-datetime-picker-noseconds[_ngcontent-%COMP%]{width:148px!important}.ant-time-picker-panel-narrow[_ngcontent-%COMP%]   .cmacs-datetime-picker[_ngcontent-%COMP%]   .ant-time-picker-panel-input-wrap[_ngcontent-%COMP%]{max-width:unset}"], changeDetection: 0 });
     __decorate([
         util.InputBoolean()
     ], CmacsDatetimePickerPanelComponent.prototype, "nzUse12Hours", void 0);
@@ -15931,6 +15931,7 @@
             i0.ɵɵproperty("ngClass", ctx_r3.popupClassName)("format", ctx_r3.format)("nzHourStep", ctx_r3.hourStep)("nzMinuteStep", ctx_r3.minuteStep)("nzSecondStep", ctx_r3.secondStep)("hideSeconds", ctx_r3.hideSeconds)("nzDisabledHours", ctx_r3.disabledHours)("nzDisabledMinutes", ctx_r3.disabledMinutes)("nzDisabledSeconds", ctx_r3.disabledSeconds)("nzPlaceHolder", ctx_r3.placeHolder || i0.ɵɵpipeBind1(4, 20, ctx_r3.i18nPlaceHolder$))("nzHideDisabledOptions", ctx_r3.hideDisabledOptions)("nzUse12Hours", ctx_r3.use12Hours)("nzDefaultOpenValue", ctx_r3.defaultOpenValue)("nzAddOn", ctx_r3.addOn)("nzClearText", ctx_r3.clearText)("nzNowText", ctx_r3.nowText)("nzOkText", ctx_r3.okText)("nzAllowEmpty", ctx_r3.allowEmpty)("ngModel", ctx_r3.value);
         }
     }
+    var _c1$f = function () { return ["cmacs-datetime-picker-dropdown"]; };
     var NZ_CONFIG_MODULE_NAME$4 = 'timePicker';
     var CmacsDateTimePickerComponent = /** @class */ (function () {
         function CmacsDateTimePickerComponent(nzConfigService, i18n, element, renderer, cdr, dateHelper, platform, elementRef, directionality) {
@@ -15949,6 +15950,7 @@
             this.inputValue = '';
             this.value = null;
             this.preValue = null;
+            this.calcWidth = 0;
             this.i18nPlaceHolder$ = rxjs.of(undefined);
             this.overlayPositions = [
                 {
@@ -16005,8 +16007,12 @@
                 return;
             }
             this.focus();
+            this.setPanelWidth();
             this.cmacsOpen = true;
             this.openChange.emit(this.cmacsOpen);
+        };
+        CmacsDateTimePickerComponent.prototype.setPanelWidth = function () {
+            this.calcWidth = this.elementRef.nativeElement.offsetWidth;
         };
         CmacsDateTimePickerComponent.prototype.close = function () {
             this.cmacsOpen = false;
@@ -16150,14 +16156,14 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.inputRef = _t.first);
             }
-        }, hostVars: 10, hostBindings: function CmacsDateTimePickerComponent_HostBindings(rf, ctx) {
+        }, hostVars: 12, hostBindings: function CmacsDateTimePickerComponent_HostBindings(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵlistener("click", function CmacsDateTimePickerComponent_click_HostBindingHandler() { return ctx.open(); });
             }
             if (rf & 2) {
-                i0.ɵɵclassProp("ant-picker-large", ctx.size === "large")("ant-picker-small", ctx.size === "small")("ant-picker-disabled", ctx.disabled)("ant-picker-focused", ctx.focused)("ant-picker-rtl", ctx.dir === "rtl");
+                i0.ɵɵclassProp("ant-picker-large", ctx.size === "large")("ant-picker-small", ctx.size === "small")("ant-picker-disabled", ctx.disabled)("ant-picker-focused", ctx.focused)("cmacs-time-picker-opened", ctx.cmacsOpen)("ant-picker-rtl", ctx.dir === "rtl");
             }
-        }, inputs: { size: "size", hourStep: "hourStep", minuteStep: "minuteStep", secondStep: "secondStep", clearText: "clearText", nowText: "nowText", okText: "okText", popupClassName: "popupClassName", placeHolder: "placeHolder", addOn: "addOn", defaultOpenValue: "defaultOpenValue", disabledHours: "disabledHours", disabledMinutes: "disabledMinutes", disabledSeconds: "disabledSeconds", format: "format", cmacsOpen: "cmacsOpen", use12Hours: "use12Hours", suffixIcon: "suffixIcon", hideDisabledOptions: "hideDisabledOptions", hideSeconds: "hideSeconds", allowEmpty: "allowEmpty", disabled: "disabled", autoFocus: "autoFocus" }, outputs: { openChange: "openChange" }, exportAs: ["cmacsDateTimePicker"], features: [i0.ɵɵProvidersFeature([{ provide: i5.NG_VALUE_ACCESSOR, useExisting: CmacsDateTimePickerComponent, multi: true }]), i0.ɵɵNgOnChangesFeature], decls: 8, vars: 13, consts: [[1, "ant-picker-input"], ["type", "text", 3, "size", "placeholder", "ngModel", "disabled", "ngModelChange", "focus", "blur", "keyup.enter", "keyup.escape"], ["inputElement", ""], [1, "ant-picker-suffix"], [4, "nzStringTemplateOutlet"], ["class", "ant-picker-clear", 3, "click", 4, "ngIf"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayOffsetY", "cdkConnectedOverlayTransformOriginOn", "detach", "overlayOutsideClick"], ["nz-icon", "", 3, "nzType"], [1, "ant-picker-clear", 3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], [1, "ant-picker-dropdown"], [1, "ant-picker-panel-container"], ["tabindex", "-1", 1, "ant-picker-panel"], [3, "ngClass", "format", "nzHourStep", "nzMinuteStep", "nzSecondStep", "hideSeconds", "nzDisabledHours", "nzDisabledMinutes", "nzDisabledSeconds", "nzPlaceHolder", "nzHideDisabledOptions", "nzUse12Hours", "nzDefaultOpenValue", "nzAddOn", "nzClearText", "nzNowText", "nzOkText", "nzAllowEmpty", "ngModel", "ngModelChange", "closePanel"]], template: function CmacsDateTimePickerComponent_Template(rf, ctx) {
+        }, inputs: { size: "size", hourStep: "hourStep", minuteStep: "minuteStep", secondStep: "secondStep", clearText: "clearText", nowText: "nowText", okText: "okText", popupClassName: "popupClassName", placeHolder: "placeHolder", addOn: "addOn", defaultOpenValue: "defaultOpenValue", disabledHours: "disabledHours", disabledMinutes: "disabledMinutes", disabledSeconds: "disabledSeconds", format: "format", cmacsOpen: "cmacsOpen", use12Hours: "use12Hours", suffixIcon: "suffixIcon", hideDisabledOptions: "hideDisabledOptions", hideSeconds: "hideSeconds", allowEmpty: "allowEmpty", disabled: "disabled", autoFocus: "autoFocus" }, outputs: { openChange: "openChange" }, exportAs: ["cmacsDateTimePicker"], features: [i0.ɵɵProvidersFeature([{ provide: i5.NG_VALUE_ACCESSOR, useExisting: CmacsDateTimePickerComponent, multi: true }]), i0.ɵɵNgOnChangesFeature], decls: 8, vars: 16, consts: [[1, "ant-picker-input"], ["type", "text", 1, "cmacs-date-time-picker-input", 3, "size", "placeholder", "ngModel", "disabled", "ngModelChange", "focus", "blur", "keyup.enter", "keyup.escape"], ["inputElement", ""], [1, "ant-picker-suffix"], [4, "nzStringTemplateOutlet"], ["class", "ant-picker-clear", 3, "click", 4, "ngIf"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayOffsetY", "cdkConnectedOverlayWidth", "cdkConnectedOverlayPanelClass", "cdkConnectedOverlayTransformOriginOn", "detach", "overlayOutsideClick"], ["nz-icon", "", 3, "nzType"], [1, "ant-picker-clear", 3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], [1, "ant-picker-dropdown"], [1, "ant-picker-panel-container"], ["tabindex", "-1", 1, "ant-picker-panel"], [3, "ngClass", "format", "nzHourStep", "nzMinuteStep", "nzSecondStep", "hideSeconds", "nzDisabledHours", "nzDisabledMinutes", "nzDisabledSeconds", "nzPlaceHolder", "nzHideDisabledOptions", "nzUse12Hours", "nzDefaultOpenValue", "nzAddOn", "nzClearText", "nzNowText", "nzOkText", "nzAllowEmpty", "ngModel", "ngModelChange", "closePanel"]], template: function CmacsDateTimePickerComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "input", 1, 2);
@@ -16174,15 +16180,15 @@
             }
             if (rf & 2) {
                 i0.ɵɵadvance(1);
-                i0.ɵɵproperty("size", ctx.inputSize)("placeholder", ctx.placeHolder || i0.ɵɵpipeBind1(3, 11, ctx.i18nPlaceHolder$))("ngModel", ctx.inputValue)("disabled", ctx.disabled);
+                i0.ɵɵproperty("size", ctx.inputSize)("placeholder", ctx.placeHolder || i0.ɵɵpipeBind1(3, 13, ctx.i18nPlaceHolder$))("ngModel", ctx.inputValue)("disabled", ctx.disabled);
                 i0.ɵɵadvance(4);
                 i0.ɵɵproperty("nzStringTemplateOutlet", ctx.suffixIcon);
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", ctx.allowEmpty && !ctx.disabled && ctx.value);
                 i0.ɵɵadvance(1);
-                i0.ɵɵproperty("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.cmacsOpen)("cdkConnectedOverlayOffsetY", -2)("cdkConnectedOverlayTransformOriginOn", ".ant-picker-dropdown");
+                i0.ɵɵproperty("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.cmacsOpen)("cdkConnectedOverlayOffsetY", -2)("cdkConnectedOverlayWidth", ctx.calcWidth)("cdkConnectedOverlayPanelClass", i0.ɵɵpureFunction0(15, _c1$f))("cdkConnectedOverlayTransformOriginOn", ".ant-picker-dropdown");
             }
-        }, directives: [i5.DefaultValueAccessor, i5.NgControlStatus, i5.NgModel, i6.NzStringTemplateOutletDirective, i2$1.NgIf, i1$4.CdkConnectedOverlay, i4$1.NzConnectedOverlayDirective, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, CmacsDatetimePickerPanelComponent, i2$1.NgClass], pipes: [i2$1.AsyncPipe], styles: [".cmacs-datetime-picker-input-number{width:55px;height:30px!important;margin:11px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif}.ant-picker-time-panel .ant-picker-content{height:unset}cmacs-select .ant-select-selection{height:30px}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]{background:#f6f7fb;cursor:default;border:1px solid #dee0e5}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]+.ant-time-picker-icon{color:#bec4cd;cursor:default}.cmacs-datetime-dividers{display:inline-block;position:relative;top:-3px}.cmacs-datetime-picker .ant-time-picker-panel-inner{width:224px!important}.cmacs-datetime-picker .ampmdropdown{width:calc(100% - 156px)}::ng-deep .cmacs-datetime-picker .ant-time-picker-panel-inner cmacs-select.ant-select{height:30px!important;margin:12px 0!important;display:inline-flex;width:auto!important}.cmacs-datetime-picker .ant-time-picker-panel-inner.cmacs-datetime-picker-noseconds{width:148px!important}.ant-time-picker-panel-narrow .cmacs-datetime-picker .ant-time-picker-panel-input-wrap{max-width:unset}.ant-time-picker-clear.datetime-picker-clear-disabled{opacity:0!important;z-index:0!important}"], encapsulation: 2, data: { animation: [animation.slideMotion] }, changeDetection: 0 });
+        }, directives: [i5.DefaultValueAccessor, i5.NgControlStatus, i5.NgModel, i6.NzStringTemplateOutletDirective, i2$1.NgIf, i1$4.CdkConnectedOverlay, i4$1.NzConnectedOverlayDirective, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, CmacsDatetimePickerPanelComponent, i2$1.NgClass], pipes: [i2$1.AsyncPipe], styles: [".cmacs-datetime-picker-input-number{width:55px;height:30px!important;margin:11px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif}.cmacs-date-time-picker-input{color:#acb3bf!important}.ant-picker-input .ant-picker-suffix{color:#656c79!important}.ant-picker-time-panel .ant-picker-content{height:unset}cmacs-select .ant-select-selection{height:30px}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]{background:#f6f7fb;cursor:default;border:1px solid #dee0e5}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]+.ant-time-picker-icon{color:#bec4cd;cursor:default}.cmacs-datetime-dividers{display:inline-block;position:relative;top:-3px}.cmacs-datetime-picker .ant-time-picker-panel-inner{width:224px!important}.cmacs-datetime-picker .ampmdropdown{width:calc(100% - 156px)}::ng-deep .cmacs-datetime-picker .ant-time-picker-panel-inner cmacs-select.ant-select{height:30px!important;margin:12px 0!important;display:inline-flex;width:auto!important}.cmacs-datetime-picker .ant-time-picker-panel-inner.cmacs-datetime-picker-noseconds{width:148px!important}.ant-time-picker-panel-narrow .cmacs-datetime-picker .ant-time-picker-panel-input-wrap{max-width:unset}.ant-time-picker-clear.datetime-picker-clear-disabled{opacity:0!important;z-index:0!important}"], encapsulation: 2, data: { animation: [animation.slideMotion] }, changeDetection: 0 });
     __decorate([
         i1$1.WithConfig()
     ], CmacsDateTimePickerComponent.prototype, "hourStep", void 0);
@@ -16245,6 +16251,7 @@
                             '[class.ant-picker-small]': "size === 'small'",
                             '[class.ant-picker-disabled]': "disabled",
                             '[class.ant-picker-focused]': "focused",
+                            '[class.cmacs-time-picker-opened]': "cmacsOpen",
                             '[class.ant-picker-rtl]': "dir === 'rtl'",
                             '(click)': 'open()'
                         },
@@ -17405,7 +17412,7 @@
             i0.ɵɵproperty("nzStringTemplateOutlet", ctx_r1.dot);
         }
     }
-    var _c1$f = ["*"];
+    var _c1$g = ["*"];
     function isDefaultColor(color) {
         return TimelineTimeDefaultColors.findIndex(function (i) { return i === color; }) !== -1;
     }
@@ -17440,7 +17447,7 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.template = _t.first);
             }
-        }, inputs: { cmacsPosition: "cmacsPosition", color: "color", dot: "dot" }, exportAs: ["cmacsTimelineItem"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1$f, decls: 2, vars: 0, consts: [["template", ""], [1, "ant-timeline-item"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"]], template: function CmacsTimelineItemComponent_Template(rf, ctx) {
+        }, inputs: { cmacsPosition: "cmacsPosition", color: "color", dot: "dot" }, exportAs: ["cmacsTimelineItem"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1$g, decls: 2, vars: 0, consts: [["template", ""], [1, "ant-timeline-item"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"]], template: function CmacsTimelineItemComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵtemplate(0, CmacsTimelineItemComponent_ng_template_0_Template, 6, 19, "ng-template", null, 0, i0.ɵɵtemplateRefExtractor);
@@ -17810,7 +17817,7 @@
             i0.ɵɵelementContainer(0);
         }
     }
-    var _c1$g = function (a0, a1) { return { item: a0, columnId: a1 }; };
+    var _c1$h = function (a0, a1) { return { item: a0, columnId: a1 }; };
     function CmacsKanbanComponent_div_4_div_7_Template(rf, ctx) {
         if (rf & 1) {
             var _r26_1 = i0.ɵɵgetCurrentView();
@@ -17826,7 +17833,7 @@
             i0.ɵɵclassProp("task-selected", ctx_r7.isItemSelected(item_r22.id));
             i0.ɵɵproperty("cdkDragData", item_r22)("cdkDragDisabled", item_r22.disabled);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r7.getItemTemplate(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction2(6, _c1$g, item_r22, column_r1.id));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r7.getItemTemplate(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction2(6, _c1$h, item_r22, column_r1.id));
         }
     }
     function CmacsKanbanComponent_div_4_ng_container_8_Template(rf, ctx) {
@@ -19488,7 +19495,7 @@
         }
     }
     var _c0$P = [[["", "cmacs-comment-avatar", ""]], [["cmacs-comment-content"]], "*"];
-    var _c1$h = ["[cmacs-comment-avatar]", "cmacs-comment-content", "*"];
+    var _c1$i = ["[cmacs-comment-avatar]", "cmacs-comment-content", "*"];
     var CmacsCommentComponent = /** @class */ (function () {
         function CmacsCommentComponent(cdr, directionality) {
             this.cdr = cdr;
@@ -19524,7 +19531,7 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("ant-comment", true)("ant-comment-rtl", ctx.dir === "rtl");
             }
-        }, inputs: { author: "author", datetime: "datetime" }, exportAs: ["cmacsComment"], ngContentSelectors: _c1$h, decls: 12, vars: 3, consts: [[1, "ant-comment-inner"], [1, "ant-comment-avatar"], [1, "cmacs-comment-avatar"], [1, "ant-comment-content-author"], ["class", "ant-comment-content-author-name", 4, "ngIf"], ["class", "ant-comment-actions", 4, "ngIf"], [1, "ant-comment-content"], ["class", "ant-comment-content-author-time", 4, "ngIf"], [1, "ant-comment-nested"], [1, "ant-comment-content-author-name"], [4, "nzStringTemplateOutlet"], [1, "ant-comment-actions"], [4, "ngFor", "ngForOf"], [1, "iconspan"], [3, "nzCommentActionHost"], [1, "ant-comment-content-author-time"]], template: function CmacsCommentComponent_Template(rf, ctx) {
+        }, inputs: { author: "author", datetime: "datetime" }, exportAs: ["cmacsComment"], ngContentSelectors: _c1$i, decls: 12, vars: 3, consts: [[1, "ant-comment-inner"], [1, "ant-comment-avatar"], [1, "cmacs-comment-avatar"], [1, "ant-comment-content-author"], ["class", "ant-comment-content-author-name", 4, "ngIf"], ["class", "ant-comment-actions", 4, "ngIf"], [1, "ant-comment-content"], ["class", "ant-comment-content-author-time", 4, "ngIf"], [1, "ant-comment-nested"], [1, "ant-comment-content-author-name"], [4, "nzStringTemplateOutlet"], [1, "ant-comment-actions"], [4, "ngFor", "ngForOf"], [1, "iconspan"], [3, "nzCommentActionHost"], [1, "ant-comment-content-author-time"]], template: function CmacsCommentComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef(_c0$P);
                 i0.ɵɵelementStart(0, "div", 0);
@@ -20076,7 +20083,7 @@
     })();
 
     var _c0$Q = ["modalContainer"];
-    var _c1$i = ["bodyContainer"];
+    var _c1$j = ["bodyContainer"];
     var _c2$a = ["autoFocusButtonOk"];
     var _c3$4 = ["tipsCreationWizard"];
     function CmacsModalComponent_ng_template_0_Template(rf, ctx) {
@@ -22026,7 +22033,7 @@
     CmacsModalComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsModalComponent, selectors: [["cmacs-modal"]], viewQuery: function CmacsModalComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(_c0$Q, 1);
-                i0.ɵɵviewQuery(_c1$i, 1, i0.ViewContainerRef);
+                i0.ɵɵviewQuery(_c1$j, 1, i0.ViewContainerRef);
                 i0.ɵɵviewQuery(_c2$a, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c3$4, 1);
             }
@@ -22743,7 +22750,7 @@
             i0.ɵɵproperty("addIcon", ctx_r3.addIcon);
         }
     }
-    var _c1$j = function () { return { minWidth: "46px" }; };
+    var _c1$k = function () { return { minWidth: "46px" }; };
     var CmacsTabNavOperationComponent = /** @class */ (function () {
         function CmacsTabNavOperationComponent(cdr, elementRef) {
             this.cdr = cdr;
@@ -22814,7 +22821,7 @@
             }
             if (rf & 2) {
                 var _r1 = i0.ɵɵreference(4);
-                i0.ɵɵproperty("dropdownMenu", _r1)("overlayStyle", i0.ɵɵpureFunction0(5, _c1$j))("matchWidthElement", null);
+                i0.ɵɵproperty("dropdownMenu", _r1)("overlayStyle", i0.ɵɵpureFunction0(5, _c1$k))("matchWidthElement", null);
                 i0.ɵɵadvance(5);
                 i0.ɵɵproperty("ngIf", ctx.menuOpened);
                 i0.ɵɵadvance(1);
@@ -23090,7 +23097,7 @@
     })();
 
     var _c0$S = ["navWarp"];
-    var _c1$k = ["navList"];
+    var _c1$l = ["navList"];
     function CmacsTabNavBarComponent_button_5_Template(rf, ctx) {
         if (rf & 1) {
             var _r5_1 = i0.ɵɵgetCurrentView();
@@ -23560,7 +23567,7 @@
         }, viewQuery: function CmacsTabNavBarComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(_c0$S, 3);
-                i0.ɵɵviewQuery(_c1$k, 3);
+                i0.ɵɵviewQuery(_c1$l, 3);
                 i0.ɵɵviewQuery(CmacsTabNavOperationComponent, 3);
                 i0.ɵɵviewQuery(CmacsTabAddButtonComponent, 1);
                 i0.ɵɵviewQuery(CmacsTabsInkBarDirective, 3);
@@ -23758,7 +23765,7 @@
             i0.ɵɵprojection(0, 1);
         }
     }
-    var _c1$l = [[["", "cmacs-tab-link", ""]], "*"];
+    var _c1$m = [[["", "cmacs-tab-link", ""]], "*"];
     var _c2$c = ["[cmacs-tab-link]", "*"];
     /**
      * Used to provide a tab set to a tab without causing a circular dependency.
@@ -23832,7 +23839,7 @@
             }
         }, inputs: { cmacsTitle: "cmacsTitle", cmacsType: "cmacsType", closable: "closable", closeIcon: "closeIcon", disabled: "disabled", forceRender: "forceRender" }, outputs: { select: "select", deselect: "deselect", cmacsClick: "cmacsClick", cmacsContextmenu: "cmacsContextmenu" }, exportAs: ["cmacsTab"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c2$c, decls: 4, vars: 0, consts: [["tabLinkTemplate", ""], ["contentTemplate", ""]], template: function CmacsTabComponent_Template(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵprojectionDef(_c1$l);
+                i0.ɵɵprojectionDef(_c1$m);
                 i0.ɵɵtemplate(0, CmacsTabComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, i0.ɵɵtemplateRefExtractor);
                 i0.ɵɵtemplate(2, CmacsTabComponent_ng_template_2_Template, 1, 0, "ng-template", null, 1, i0.ɵɵtemplateRefExtractor);
             }
@@ -26286,7 +26293,7 @@
             i0.ɵɵproperty("ngForOf", ctx_r6.actions);
         }
     }
-    var _c1$m = ["*", [["", "cmacs-action-panel", ""]]];
+    var _c1$n = ["*", [["", "cmacs-action-panel", ""]]];
     var _c2$d = ["*", "[cmacs-action-panel]"];
     var CmacsCardComponent = /** @class */ (function () {
         function CmacsCardComponent(cdr, renderer, sanitizer, elementRef) {
@@ -26462,7 +26469,7 @@
             }
         }, inputs: { bordered: "bordered", opened: "opened", editable: "editable", isRadio: "isRadio", loading: "loading", disabled: "disabled", hoverable: "hoverable", useDefaultContent: "useDefaultContent", sources: "sources", bodyStyle: "bodyStyle", cover: "cover", body: "body", actions: "actions", team: "team", file: "file", project: "project", projectDateLabel: "projectDateLabel", todo: "todo", weather: "weather", celcius: "celcius", type: "type", cmacsType: "cmacsType", cmacsIcon: "cmacsIcon", cmacsIconOpenedFolder: "cmacsIconOpenedFolder", cmacsIconClosedFolder: "cmacsIconClosedFolder", title: "title", labelTitle: "labelTitle", extra: "extra", selected: "selected", value: "value", todoUserAssigned: "todoUserAssigned" }, outputs: { playerReady: "playerReady", titleChange: "titleChange", ondlclickCard: "ondlclickCard", open: "open", close: "close", selectedChange: "selectedChange", goToModule: "goToModule", iconToDoClick: "iconToDoClick" }, exportAs: ["cmacsCard"], ngContentSelectors: _c2$d, decls: 8, vars: 6, consts: [["content", ""], ["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], ["cmacs-radio", "", 3, "ngModel", "disabled", "ngModelChange"], [1, "cmacs-weather-card-temp"], [1, "cmacs-weather-card-cloud-img", 3, "src"], [1, "cmacs-weather-card-description-wrapper"], [1, "cmacs-weather-card-description"], [1, "cmacs-weather-card-temp-min-max"], [1, "cmacs-weather-col-1-3"], [1, "iconUILarge-Rain"], [1, "iconUILarge-Humidity"], [1, "iconUILarge-Wind"], ["nz-row", "", 1, "todo-card-header"], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "12", 4, "ngIf"], [1, "todo-card-content"], [1, "cmacs-todo-card-title"], ["placement", "bottom", "cmacs-tooltip", "", 3, "title"], ["class", "cmacs-todo-card-project", 4, "ngIf"], ["nz-row", "", 1, "cmacs-todo-card-action"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-person", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-team", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-priority", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-association", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-attachments", 3, "click", 4, "ngIf"], ["nz-col", "", "nzSpan", "4", "class", "cmacs-todo-card-comments", 3, "click", 4, "ngIf"], [1, "cmacs-todo-card-date"], [1, "cmacs-todo-card-project"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-person"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngIf"], [1, "iconCreation-User"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-team"], [1, "iconUILarge-Team"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-priority"], ["nz-icon", "", 3, "nzType"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-association"], [3, "click"], [1, "iconUILarge-Link"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-attachments", 3, "click"], [1, "iconUILarge-Attached"], ["nz-col", "", "nzSpan", "4", 1, "cmacs-todo-card-comments", 3, "click"], [1, "iconUILarge-Comments"], [1, "cmacs-card-big-file-meta"], [1, "cmacs-card-big-file-description"], [1, "cmacs-card-big-file-description-left-panel"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-big-file-title", 3, "title"], [1, "cmacs-card-big-file-date"], [1, "cmacs-card-big-file-description-right-panel"], ["class", "cmacs-card-big-file-extra", 4, "ngIf"], [1, "cmacs-card-big-file-icon-wrapper"], [1, "cmacs-card-big-file-extension-wrapper"], [1, "cmacs-card-big-file-extra"], [1, "cmacs-card-video-player-wrapper"], [3, "sources", "playerReady"], [1, "cmacs-card-video-description"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-video-title", 3, "title"], [1, "cmacs-card-files-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-label-recent", 3, "title"], ["class", "cmacs-card-file-extra", 4, "ngIf"], [1, "cmacs-card-file-extra"], [1, "cmacs-card-measure-icon-wrapper"], [1, "iconspan"], [1, "iconUILarge-Ruler"], [1, "cmacs-card-label-measure"], [2, "margin-bottom", "20px", "min-height", "25px", "display", "inline-flex"], ["class", "team-person-card", 3, "backgroundColor", "padding", "display", 4, "ngFor", "ngForOf"], ["class", "plus-team-card", 4, "ngIf"], [1, "team-person-card"], ["width", "30px", "height", "30px", 3, "src", 4, "ngIf"], ["width", "30px", "height", "30px", 3, "src"], [1, "plus-team-card"], [1, "projectimagecontainer"], ["class", "project-image", 3, "background-image", 4, "ngIf"], ["class", "cmacs-proj-card-div-Logo", 4, "ngIf"], [1, "project-status", 3, "cmacsGridType"], [1, "project-dates-wrapper"], [1, "project-dates-title"], [1, "project-dates", "project-dates-date"], [1, "iconArrowLarge-Arrow-Right", "project-dates"], [1, "project-card-progress-bar"], [1, "project-card-progress-bar-inner"], [1, "project-manager-details"], ["class", "manager-avatar", "width", "30px", "height", "30px", 3, "src", 4, "ngIf"], ["class", "cmacs-proj-avatar-text", 4, "ngIf"], [1, "project-manager-metadata"], [1, "manager-name", 3, "innerHtml"], [1, "manager-charge", 3, "innerHtml"], [1, "iconspan", "project-email-icon", 3, "click"], [1, "iconUILarge-Message"], [1, "project-image"], [1, "cmacs-proj-card-div-Logo"], [1, "cmacs-proj-card-text-Logo"], ["width", "30px", "height", "30px", 1, "manager-avatar", 3, "src"], [1, "cmacs-proj-avatar-text"], [1, "card-files-folders-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "card-files-folders-label", 3, "title", "click"], ["titleContainer", ""], [3, "keydown.enter", "keyup"], ["name", ""], ["class", "card-files-folder-extra iconspan", 4, "ngIf"], [1, "card-files-folder-extra", "iconspan"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function CmacsCardComponent_Template(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵprojectionDef(_c1$m);
+                i0.ɵɵprojectionDef(_c1$n);
                 i0.ɵɵtemplate(0, CmacsCardComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, i0.ɵɵtemplateRefExtractor);
                 i0.ɵɵtemplate(2, CmacsCardComponent_div_2_Template, 5, 3, "div", 1);
                 i0.ɵɵtemplate(3, CmacsCardComponent_div_3_Template, 3, 2, "div", 2);
@@ -27103,7 +27110,7 @@
             i0.ɵɵproperty("ngTemplateOutlet", ctx_r8.pagination);
         }
     }
-    var _c1$n = [[["cmacs-list-header"]], [["cmacs-list-footer"], ["", "cmacs-list-footer", ""]], [["cmacs-list-load-more"], ["", "cmacs-list-load-more", ""]], [["cmacs-list-pagination"], ["", "cmacs-list-pagination", ""]], "*"];
+    var _c1$o = [[["cmacs-list-header"]], [["cmacs-list-footer"], ["", "cmacs-list-footer", ""]], [["cmacs-list-load-more"], ["", "cmacs-list-load-more", ""]], [["cmacs-list-pagination"], ["", "cmacs-list-pagination", ""]], "*"];
     var _c2$e = ["cmacs-list-header", "cmacs-list-footer, [cmacs-list-footer]", "cmacs-list-load-more, [cmacs-list-load-more]", "cmacs-list-pagination, [cmacs-list-pagination]", "*"];
     var CmacsListComponent = /** @class */ (function () {
         function CmacsListComponent(elementRef, directionality) {
@@ -27182,7 +27189,7 @@
             }
         }, inputs: { dataSource: "dataSource", bordered: "bordered", grid: "grid", header: "header", footer: "footer", itemLayout: "itemLayout", classicGrid: "classicGrid", renderItem: "renderItem", loading: "loading", loadMore: "loadMore", pagination: "pagination", size: "size", split: "split", noResult: "noResult" }, exportAs: ["cmacsList"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c2$e, decls: 15, vars: 9, consts: [["itemsTpl", ""], [4, "ngIf"], [3, "nzSpinning"], [3, "min-height", 4, "ngIf"], ["nz-row", "", 3, "nzGutter", 4, "ngIf", "ngIfElse"], [3, "noResult", 4, "ngIf"], [3, "ngTemplateOutlet"], [1, "ant-list-items"], [4, "ngFor", "ngForOf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "cmacs-classic-grid", 3, "marginRight", 4, "ngFor", "ngForOf"], [1, "cmacs-classic-grid"], [4, "nzStringTemplateOutlet"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan", "nzXs", "nzSm", "nzMd", "nzLg", "nzXl", "nzXXl", 4, "ngFor", "ngForOf"], ["nz-col", "", 3, "nzSpan", "nzXs", "nzSm", "nzMd", "nzLg", "nzXl", "nzXXl"], [3, "noResult"]], template: function CmacsListComponent_Template(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵprojectionDef(_c1$n);
+                i0.ɵɵprojectionDef(_c1$o);
                 i0.ɵɵtemplate(0, CmacsListComponent_ng_template_0_Template, 4, 2, "ng-template", null, 0, i0.ɵɵtemplateRefExtractor);
                 i0.ɵɵtemplate(2, CmacsListComponent_cmacs_list_header_2_Template, 2, 1, "cmacs-list-header", 1);
                 i0.ɵɵprojection(3);
@@ -27304,7 +27311,7 @@
             i0.ɵɵprojection(0);
         }
     }
-    var _c1$o = ["cmacs-list-item-actions", ""];
+    var _c1$p = ["cmacs-list-item-actions", ""];
     function CmacsListItemActionsComponent_li_0_ng_template_1_Template(rf, ctx) { }
     function CmacsListItemActionsComponent_li_0_em_2_Template(rf, ctx) {
         if (rf & 1) {
@@ -27432,7 +27439,7 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.nzListItemActions = _t);
             }
-        }, hostAttrs: [1, "ant-list-item-action"], inputs: { cmacsActions: "cmacsActions" }, exportAs: ["cmacsListItemActions"], features: [i0.ɵɵNgOnChangesFeature], attrs: _c1$o, decls: 1, vars: 1, consts: [[4, "ngFor", "ngForOf"], [3, "ngTemplateOutlet"], ["class", "ant-list-item-action-split", 4, "ngIf"], [1, "ant-list-item-action-split"]], template: function CmacsListItemActionsComponent_Template(rf, ctx) {
+        }, hostAttrs: [1, "ant-list-item-action"], inputs: { cmacsActions: "cmacsActions" }, exportAs: ["cmacsListItemActions"], features: [i0.ɵɵNgOnChangesFeature], attrs: _c1$p, decls: 1, vars: 1, consts: [[4, "ngFor", "ngForOf"], [3, "ngTemplateOutlet"], ["class", "ant-list-item-action-split", 4, "ngIf"], [1, "ant-list-item-action-split"]], template: function CmacsListItemActionsComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, CmacsListItemActionsComponent_li_0_Template, 3, 2, "li", 0);
             }
@@ -27588,7 +27595,7 @@
         }
     }
     var _c0$10 = [[["cmacs-list-item-actions"], ["", "cmacs-list-item-actions", ""]], [["cmacs-list-item-meta"], ["", "cmacs-list-item-meta", ""]], "*", [["cmacs-list-item-extra"], ["", "cmacs-list-item-extra", ""]]];
-    var _c1$p = ["cmacs-list-item-actions, [cmacs-list-item-actions]", "cmacs-list-item-meta, [cmacs-list-item-meta]", "*", "cmacs-list-item-extra, [cmacs-list-item-extra]"];
+    var _c1$q = ["cmacs-list-item-actions, [cmacs-list-item-actions]", "cmacs-list-item-meta, [cmacs-list-item-meta]", "*", "cmacs-list-item-extra, [cmacs-list-item-extra]"];
     var CmacsListItemComponent = /** @class */ (function () {
         function CmacsListItemComponent(elementRef, renderer, parentComp, cdr) {
             this.parentComp = parentComp;
@@ -27632,7 +27639,7 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("ant-list-item-no-flex", ctx.nzNoFlex);
             }
-        }, inputs: { actions: "actions", content: "content", extra: "extra", nzNoFlex: "nzNoFlex" }, exportAs: ["cmacsListItem"], ngContentSelectors: _c1$p, decls: 9, vars: 2, consts: [["actionsTpl", ""], ["contentTpl", ""], ["extraTpl", ""], ["simpleTpl", ""], [4, "ngIf", "ngIfElse"], ["cmacs-list-item-actions", "", 3, "cmacsActions", 4, "ngIf"], ["cmacs-list-item-actions", "", 3, "cmacsActions"], [4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "ngTemplateOutlet"], [1, "ant-list-item-main"]], template: function CmacsListItemComponent_Template(rf, ctx) {
+        }, inputs: { actions: "actions", content: "content", extra: "extra", nzNoFlex: "nzNoFlex" }, exportAs: ["cmacsListItem"], ngContentSelectors: _c1$q, decls: 9, vars: 2, consts: [["actionsTpl", ""], ["contentTpl", ""], ["extraTpl", ""], ["simpleTpl", ""], [4, "ngIf", "ngIfElse"], ["cmacs-list-item-actions", "", 3, "cmacsActions", 4, "ngIf"], ["cmacs-list-item-actions", "", 3, "cmacsActions"], [4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "ngTemplateOutlet"], [1, "ant-list-item-main"]], template: function CmacsListItemComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef(_c0$10);
                 i0.ɵɵtemplate(0, CmacsListItemComponent_ng_template_0_Template, 2, 1, "ng-template", null, 0, i0.ɵɵtemplateRefExtractor);
@@ -27865,7 +27872,7 @@
         }
     }
     var _c0$12 = [[["cmacs-list-item-meta-avatar"]], [["cmacs-list-item-meta-title"]], [["cmacs-list-item-meta-description"]]];
-    var _c1$q = ["cmacs-list-item-meta-avatar", "cmacs-list-item-meta-title", "cmacs-list-item-meta-description"];
+    var _c1$r = ["cmacs-list-item-meta-avatar", "cmacs-list-item-meta-title", "cmacs-list-item-meta-description"];
     var CmacsListItemMetaComponent = /** @class */ (function () {
         function CmacsListItemMetaComponent(elementRef, renderer) {
             this.elementRef = elementRef;
@@ -27899,7 +27906,7 @@
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.descriptionComponent = _t.first);
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.titleComponent = _t.first);
             }
-        }, inputs: { avatar: "avatar", cmacsTitle: "cmacsTitle", description: "description" }, exportAs: ["cmacsListItemMeta"], ngContentSelectors: _c1$q, decls: 4, vars: 3, consts: [[3, "src", 4, "ngIf"], [4, "ngIf"], ["class", "ant-list-item-meta-content", 4, "ngIf"], [3, "src"], [3, "ngTemplateOutlet"], [1, "ant-list-item-meta-content"], [4, "nzStringTemplateOutlet"]], template: function CmacsListItemMetaComponent_Template(rf, ctx) {
+        }, inputs: { avatar: "avatar", cmacsTitle: "cmacsTitle", description: "description" }, exportAs: ["cmacsListItemMeta"], ngContentSelectors: _c1$r, decls: 4, vars: 3, consts: [[3, "src", 4, "ngIf"], [4, "ngIf"], ["class", "ant-list-item-meta-content", 4, "ngIf"], [3, "src"], [3, "ngTemplateOutlet"], [1, "ant-list-item-meta-content"], [4, "nzStringTemplateOutlet"]], template: function CmacsListItemMetaComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef(_c0$12);
                 i0.ɵɵtemplate(0, CmacsListItemMetaComponent_cmacs_list_item_meta_avatar_0_Template, 1, 1, "cmacs-list-item-meta-avatar", 0);
@@ -28763,7 +28770,7 @@
     })();
 
     var _c0$13 = ["gridComponent"];
-    var _c1$r = ["renderItemTemplate"];
+    var _c1$s = ["renderItemTemplate"];
     var _c2$f = ["fieldTypeInput"];
     var _c3$5 = ["fieldTypeInputNumber"];
     var _c4$2 = ["fieldTypeDatePicker"];
@@ -31419,7 +31426,7 @@
         CmacsCompactTableComponent.prototype.transformDate = function (date) {
             var m = moment$2(date);
             m.locale(this.i18n.getLocale().locale);
-            return m.format(this.i18n.getLocale().locale === 'de' ? 'DD. MMM YYYY' : 'MMM DD, YYYY');
+            return m.format(this.i18n.getLocale().locale === 'de' ? 'DD/MM/YYYY' : 'MM/DD/YYYY');
         };
         CmacsCompactTableComponent.prototype.selectTreeSingle = function (item) {
             if (!this.checkboxSelect) {
@@ -31438,7 +31445,7 @@
     CmacsCompactTableComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsCompactTableComponent, selectors: [["cmacs-compact-table"]], viewQuery: function CmacsCompactTableComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(_c0$13, 1);
-                i0.ɵɵviewQuery(_c1$r, 1);
+                i0.ɵɵviewQuery(_c1$s, 1);
                 i0.ɵɵviewQuery(_c2$f, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c3$5, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c3$5, 1, CmacsInputNumberComponent);
@@ -31745,7 +31752,7 @@
     })();
 
     var _c0$14 = ["renderItemTemplate"];
-    var _c1$s = ["fieldTypeInput"];
+    var _c1$t = ["fieldTypeInput"];
     var _c2$g = ["fieldTypeInputNumber"];
     var _c3$6 = ["fieldTypeDatePicker"];
     var _c4$3 = ["fieldTypeSelect"];
@@ -32813,7 +32820,7 @@
         CmacsTableComponent.prototype.transformDate = function (date) {
             var m = moment$3(date);
             m.locale(this.i18n.getLocale().locale);
-            return m.format(this.i18n.getLocale().locale === 'de' ? 'DD. MMM YYYY' : 'MMM DD, YYYY');
+            return m.format(this.i18n.getLocale().locale === 'de' ? 'DD/MM/YYYY' : 'MM/DD/YYYY');
         };
         return CmacsTableComponent;
     }());
@@ -32821,7 +32828,7 @@
     CmacsTableComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsTableComponent, selectors: [["cmacs-table"]], viewQuery: function CmacsTableComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(_c0$14, 1);
-                i0.ɵɵviewQuery(_c1$s, 1, i0.ElementRef);
+                i0.ɵɵviewQuery(_c1$t, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c2$g, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(CmacsInputNumberComponent, 1, CmacsInputNumberComponent);
                 i0.ɵɵviewQuery(_c3$6, 1, i0.ElementRef);
@@ -33128,7 +33135,7 @@
         }
     }
     function CmacsStepComponent_ng_template_4_ng_template_3_Template(rf, ctx) { }
-    var _c1$t = function (a0, a1, a2) { return { $implicit: a0, status: a1, index: a2 }; };
+    var _c1$u = function (a0, a1, a2) { return { $implicit: a0, status: a1, index: a2 }; };
     function CmacsStepComponent_ng_template_4_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "span", 11);
@@ -33140,7 +33147,7 @@
             var _r12 = i0.ɵɵreference(2);
             var ctx_r2 = i0.ɵɵnextContext();
             i0.ɵɵadvance(3);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r2.customProcessTemplate || _r12)("ngTemplateOutletContext", i0.ɵɵpureFunction3(2, _c1$t, _r12, ctx_r2.status, ctx_r2.index));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r2.customProcessTemplate || _r12)("ngTemplateOutletContext", i0.ɵɵpureFunction3(2, _c1$u, _r12, ctx_r2.status, ctx_r2.index));
         }
     }
     function CmacsStepComponent_ng_container_7_Template(rf, ctx) {
@@ -34500,14 +34507,14 @@
 
     var _c0$17 = ["dragElement"];
     function CmacsTreeNodeComponent_ng_container_3_ng_container_2_ng_container_1_1_ng_template_0_Template(rf, ctx) { }
-    var _c1$u = function (a0) { return { $implicit: a0 }; };
+    var _c1$v = function (a0) { return { $implicit: a0 }; };
     function CmacsTreeNodeComponent_ng_container_3_ng_container_2_ng_container_1_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵtemplate(0, CmacsTreeNodeComponent_ng_container_3_ng_container_2_ng_container_1_1_ng_template_0_Template, 0, 0, "ng-template", 4);
         }
         if (rf & 2) {
             var ctx_r10 = i0.ɵɵnextContext(4);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r10.expandedIcon)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c1$u, ctx_r10.treeNode));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r10.expandedIcon)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c1$v, ctx_r10.treeNode));
         }
     }
     function CmacsTreeNodeComponent_ng_container_3_ng_container_2_ng_container_1_i_2_Template(rf, ctx) {
@@ -34564,7 +34571,7 @@
         }
         if (rf & 2) {
             var ctx_r13 = i0.ɵɵnextContext(3);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r13.expandedIcon)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c1$u, ctx_r13.treeNode));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r13.expandedIcon)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c1$v, ctx_r13.treeNode));
         }
     }
     function CmacsTreeNodeComponent_ng_container_3_ng_container_3_ng_container_2_i_1_Template(rf, ctx) {
@@ -35350,7 +35357,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", !ctx.treeTemplate);
                 i0.ɵɵadvance(1);
-                i0.ɵɵproperty("ngTemplateOutlet", ctx.treeTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(27, _c1$u, ctx.treeNode));
+                i0.ɵɵproperty("ngTemplateOutlet", ctx.treeTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(27, _c1$v, ctx.treeNode));
                 i0.ɵɵadvance(1);
                 i0.ɵɵclassProp("ant-tree-child-tree-open", !ctx.selectMode || ctx.treeNode.isExpanded);
                 i0.ɵɵproperty("@.disabled", ctx.noAnimation)("@collapseMotion", ctx.treeNode.isExpanded ? "expanded" : "collapsed");
@@ -36225,7 +36232,7 @@
     })();
 
     var _c0$19 = ["columnTemplate"];
-    var _c1$v = ["chartcanvas"];
+    var _c1$w = ["chartcanvas"];
     var _c2$h = ["legendContent"];
     function CmacsKpiGroupComponent_div_0_span_2_Template(rf, ctx) {
         if (rf & 1) {
@@ -36571,7 +36578,7 @@
     CmacsKpiGroupComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKpiGroupComponent, selectors: [["cmacs-kpi-group"]], viewQuery: function CmacsKpiGroupComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(_c0$19, 1, i0.TemplateRef);
-                i0.ɵɵviewQuery(_c1$v, 1, i0.ElementRef);
+                i0.ɵɵviewQuery(_c1$w, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c2$h, 1, i0.ElementRef);
             }
             if (rf & 2) {
@@ -36625,7 +36632,7 @@
     })();
 
     var _c0$1a = ["columnTemplate"];
-    var _c1$w = ["legendContent"];
+    var _c1$x = ["legendContent"];
     function CmacsStatusDistributionComponent_div_0_span_2_Template(rf, ctx) {
         if (rf & 1) {
             var _r9_1 = i0.ɵɵgetCurrentView();
@@ -36899,7 +36906,7 @@
     CmacsStatusDistributionComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsStatusDistributionComponent, selectors: [["cmacs-status-distribution"]], viewQuery: function CmacsStatusDistributionComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(_c0$1a, 1, i0.TemplateRef);
-                i0.ɵɵviewQuery(_c1$w, 1, i0.ElementRef);
+                i0.ɵɵviewQuery(_c1$x, 1, i0.ElementRef);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -37354,7 +37361,7 @@
     })();
 
     var _c0$1c = ["legendContent"];
-    var _c1$x = ["chartcanvas"];
+    var _c1$y = ["chartcanvas"];
     function CmacsNormalizedHorizontalBarChartComponent_span_2_Template(rf, ctx) {
         if (rf & 1) {
             var _r6_1 = i0.ɵɵgetCurrentView();
@@ -37577,8 +37584,8 @@
     CmacsNormalizedHorizontalBarChartComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsNormalizedHorizontalBarChartComponent, selectors: [["cmacs-normalized-horizontal-bar-chart"]], viewQuery: function CmacsNormalizedHorizontalBarChartComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(_c0$1c, 1, i0.ElementRef);
-                i0.ɵɵviewQuery(_c1$x, 1, i0.ElementRef);
-                i0.ɵɵviewQuery(_c1$x, 1);
+                i0.ɵɵviewQuery(_c1$y, 1, i0.ElementRef);
+                i0.ɵɵviewQuery(_c1$y, 1);
             }
             if (rf & 2) {
                 var _t = void 0;
