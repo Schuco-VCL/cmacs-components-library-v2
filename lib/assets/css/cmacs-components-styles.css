@@ -17,6 +17,30 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+.ant-menu-inline .ant-menu-submenu-arrow-cmacs:before {
+  font-size: 16px;
+  font-family: 'ArrowLarge' !important;
+  content: "\e917" !important;
+  position: absolute !important;
+  width: unset !important;
+  height: unset !important;
+  background-color: transparent !important;
+  border-radius: unset !important;
+  transform: unset !important;
+  top: -8px;
+  color: #3b3f46 !important;
+}
+
+.ant-menu-inline .ant-menu-submenu-arrow-cmacs:after {
+  content: unset !important;
+}
+
+.ant-menu-inline .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow-cmacs:before {
+  font-family: 'ArrowLarge' !important;
+  content: "\e912" !important;
+  color: #3b3f46 !important;
+}
+
 cmacs-user-dropdown {
    width: 100%;
 }

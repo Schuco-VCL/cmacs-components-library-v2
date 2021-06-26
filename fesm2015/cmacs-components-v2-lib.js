@@ -5526,7 +5526,7 @@ NzSubMenuTitleComponent.ɵcmp = ɵɵdefineComponent({ type: NzSubMenuTitleCompon
     } if (rf & 2) {
         ɵɵstyleProp("padding-left", ctx.dir === "rtl" ? null : ctx.paddingLeft, "px")("padding-right", ctx.dir === "rtl" ? ctx.paddingLeft : null, "px");
         ɵɵclassProp("ant-dropdown-menu-submenu-title", ctx.isMenuInsideDropDown)("ant-menu-submenu-title", !ctx.isMenuInsideDropDown);
-    } }, inputs: { icon: "icon", title: "title", isMenuInsideDropDown: "isMenuInsideDropDown", disabled: "disabled", paddingLeft: "paddingLeft", mode: "mode" }, outputs: { toggleSubMenu: "toggleSubMenu", subMenuMouseState: "subMenuMouseState" }, exportAs: ["cmacsSubmenuTitle"], attrs: _c0$h, ngContentSelectors: _c1$7, decls: 6, vars: 4, consts: [["nz-icon", "", 3, "nzType", 4, "ngIf"], [4, "nzStringTemplateOutlet"], ["class", "ant-dropdown-menu-submenu-expand-icon", 3, "ngSwitch", 4, "ngIf", "ngIfElse"], ["notDropdownTpl", ""], ["nz-icon", "", 3, "nzType"], [1, "ant-dropdown-menu-submenu-expand-icon", 3, "ngSwitch"], ["class", "ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Left", 4, "ngSwitchCase"], ["class", "ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Right", 4, "ngSwitchDefault"], [1, "ant-dropdown-menu-submenu-arrow-icon", "iconArrowSmall-Solid-Left"], [1, "ant-dropdown-menu-submenu-arrow-icon", "iconArrowSmall-Solid-Right"], [1, "ant-menu-submenu-arrow"]], template: function NzSubMenuTitleComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { icon: "icon", title: "title", isMenuInsideDropDown: "isMenuInsideDropDown", disabled: "disabled", paddingLeft: "paddingLeft", mode: "mode" }, outputs: { toggleSubMenu: "toggleSubMenu", subMenuMouseState: "subMenuMouseState" }, exportAs: ["cmacsSubmenuTitle"], attrs: _c0$h, ngContentSelectors: _c1$7, decls: 6, vars: 4, consts: [["nz-icon", "", 3, "nzType", 4, "ngIf"], [4, "nzStringTemplateOutlet"], ["class", "ant-dropdown-menu-submenu-expand-icon", 3, "ngSwitch", 4, "ngIf", "ngIfElse"], ["notDropdownTpl", ""], ["nz-icon", "", 3, "nzType"], [1, "ant-dropdown-menu-submenu-expand-icon", 3, "ngSwitch"], ["class", "ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Left", 4, "ngSwitchCase"], ["class", "ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Right", 4, "ngSwitchDefault"], [1, "ant-dropdown-menu-submenu-arrow-icon", "iconArrowSmall-Solid-Left"], [1, "ant-dropdown-menu-submenu-arrow-icon", "iconArrowSmall-Solid-Right"], [1, "ant-menu-submenu-arrow", "ant-menu-submenu-arrow-cmacs"]], template: function NzSubMenuTitleComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵtemplate(0, NzSubMenuTitleComponent_i_0_Template, 1, 1, "i", 0);
         ɵɵtemplate(1, NzSubMenuTitleComponent_ng_container_1_Template, 3, 1, "ng-container", 1);
@@ -5559,7 +5559,7 @@ NzSubMenuTitleComponent.ɵcmp = ɵɵdefineComponent({ type: NzSubMenuTitleCompon
       <i *ngSwitchDefault class="ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Right"></i>
     </span>
     <ng-template #notDropdownTpl>
-      <i class="ant-menu-submenu-arrow"></i>
+      <i class="ant-menu-submenu-arrow ant-menu-submenu-arrow-cmacs"></i>
     </ng-template>
   `,
                 host: {
