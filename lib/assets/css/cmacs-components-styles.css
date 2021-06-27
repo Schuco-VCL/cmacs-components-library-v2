@@ -17,7 +17,7 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
-nz-disable-td.ant-table-cell {
+.nz-disable-td.ant-table-cell {
     overflow: hidden;
 }
 
