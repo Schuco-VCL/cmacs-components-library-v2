@@ -20478,6 +20478,9 @@ class CmacsXlsxLoaderComponent {
     }
     createHeaders(data) {
         data.forEach(header => {
+            if (header.toLowerCase === undefined) {
+                return;
+            }
             const value = header.toLowerCase();
             let matchedColumn = this.configuration.filter(item => item.DisplayName.toLowerCase() === value);
             if (matchedColumn.length) {

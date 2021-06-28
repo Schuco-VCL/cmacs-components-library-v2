@@ -22441,6 +22441,9 @@
         CmacsXlsxLoaderComponent.prototype.createHeaders = function (data) {
             var _this = this;
             data.forEach(function (header) {
+                if (header.toLowerCase === undefined) {
+                    return;
+                }
                 var value = header.toLowerCase();
                 var matchedColumn = _this.configuration.filter(function (item) { return item.DisplayName.toLowerCase() === value; });
                 if (matchedColumn.length) {
