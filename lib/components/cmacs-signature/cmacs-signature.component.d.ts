@@ -1,8 +1,7 @@
-import { EventEmitter, ChangeDetectorRef } from '@angular/core';
+import { EventEmitter, ChangeDetectorRef, AfterViewInit } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 import { SignaturePad } from 'angular2-signaturepad';
-import { Object } from 'core-js';
-import { NzUploadFile } from 'ng-zorro-antd/upload/interface';
+import { NzUploadFile } from 'ng-zorro-antd/upload';
 import * as i0 from "@angular/core";
 export declare const SIGNATURE_LOCALIZATION: {
     'Click here to sign': string;
@@ -20,7 +19,7 @@ export declare const SIGNATURE_LOCALIZATION: {
     'Drag & Drop File Here or': string;
     'Browse Computer': string;
 };
-export declare class CmacsSignatureComponent {
+export declare class CmacsSignatureComponent implements AfterViewInit {
     private fb;
     private cdr;
     _isVisible: boolean;
@@ -57,7 +56,6 @@ export declare class CmacsSignatureComponent {
     signaturePad: SignaturePad;
     ondrawend: EventEmitter<any>;
     set currentValue(value: any);
-    constructor(fb: FormBuilder, cdr: ChangeDetectorRef);
     ngAfterViewInit(): void;
     onResizeStop($event: any): void;
     onMoveEnd($event: any): void;
@@ -70,6 +68,7 @@ export declare class CmacsSignatureComponent {
     handleCancel(): void;
     handleOk(): void;
     checkPressedKeys($event: any): void;
+    constructor(fb: FormBuilder, cdr: ChangeDetectorRef);
     static ɵfac: i0.ɵɵFactoryDef<CmacsSignatureComponent, never>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSignatureComponent, "cmacs-signature", ["cmacsSignature"], { "i18n": "i18n"; "signaturePadOptions": "signaturePadOptions"; "extendedVersion": "extendedVersion"; "currentValue": "currentValue"; }, { "oncancel": "oncancel"; "onsubmit": "onsubmit"; "ondrawend": "ondrawend"; }, never, never>;
 }
