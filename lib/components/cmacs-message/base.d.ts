@@ -1,10 +1,10 @@
 import { AnimationEvent } from '@angular/animations';
 import { ComponentType, Overlay } from '@angular/cdk/overlay';
 import { ChangeDetectorRef, EventEmitter, Injector, OnDestroy, OnInit } from '@angular/core';
-import { MessageConfig, NzConfigService } from 'ng-zorro-antd/core/config';
+import { NzConfigService } from 'ng-zorro-antd/core/config';
 import { NzSingletonService } from 'ng-zorro-antd/core/services';
 import { Subject } from 'rxjs';
-import { NzMessageData, NzMessageDataOptions } from './typings';
+import { MessageConfig, NzMessageData, NzMessageDataOptions } from './typings';
 import * as i0 from "@angular/core";
 export declare abstract class NzMNService {
     protected nzSingletonService: NzSingletonService;

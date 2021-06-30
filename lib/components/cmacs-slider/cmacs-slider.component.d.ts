@@ -27,7 +27,7 @@ export declare class CmacsSliderComponent implements ControlValueAccessor, OnIni
     tooltipVisible: NzSliderShowTooltip;
     tooltipPlacement: string;
     tipFormatter?: null | ((value: number) => string);
-    readonly onAfterChange: EventEmitter<number | number[]>;
+    readonly onAfterChange: EventEmitter<NzSliderValue>;
     value: NzSliderValue | null;
     cacheSliderStart: number | null;
     cacheSliderLength: number | null;

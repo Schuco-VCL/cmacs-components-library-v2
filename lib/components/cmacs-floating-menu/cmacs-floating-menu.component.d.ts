@@ -43,7 +43,7 @@ export declare class CmacsFloatingMenuComponent implements OnChanges {
     dockToRight(): void;
     dockToTop(): void;
     dockToBottom(): void;
-    getPlacement(): "left" | "right" | "bottom" | "top";
+    getPlacement(): "top" | "bottom" | "left" | "right";
     resetDragDrop(): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsFloatingMenuComponent, never>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsFloatingMenuComponent, "cmacs-floating-menu", ["cmacsFloatingMenu"], { "position": "position"; "trigger": "trigger"; "visible": "visible"; "showExtras": "showExtras"; "dragBoundary": "dragBoundary"; "carrot": "carrot"; "top": "top"; "bottom": "bottom"; "left": "left"; "right": "right"; "topBoundary": "topBoundary"; "bottomBoundary": "bottomBoundary"; "leftBoundary": "leftBoundary"; "rightBoundary": "rightBoundary"; "i18n": "i18n"; }, { "positionChange": "positionChange"; }, never, ["*"]>;

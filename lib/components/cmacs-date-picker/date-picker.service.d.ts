@@ -12,7 +12,7 @@ export declare class DatePickerService implements OnDestroy {
     isRange: boolean;
     valueChange$: ReplaySubject<CompatibleValue>;
     emitValue$: Subject<void>;
-    inputPartChange$: Subject<"left" | "right">;
+    inputPartChange$: Subject<RangePartType>;
     initValue(): void;
     hasValue(value?: CompatibleValue): boolean;
     makeValue(value?: CompatibleDate): CompatibleValue;
