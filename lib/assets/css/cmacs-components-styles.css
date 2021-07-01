@@ -37,13 +37,13 @@ cmacs-datetime-picker {
   border-top: none;
   width: inherit;
   background-color: #fff;
-  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
-  clip-path: inset(0 -5px -7px -4px);
+  box-shadow: 0px 3px 7px rgb(59 63 70 / 20%) !important;
+  clip-path: inset(0 -10% -10% -10%);
 }
 
 .cmacs-time-picker-opened {
-  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%) !important;
-  clip-path: inset(-1px -5px 0 -4px);
+  box-shadow: 0px 3px 7px rgb(59 63 70 / 20%) !important;
+  clip-path: inset(-10% -10% 0 -10%);
 }
 
 .cmacs-datetime-picker-dropdown .ant-picker-dropdown .ant-picker-panel-container,
@@ -937,7 +937,7 @@ nz-dropdown-context .ant-dropdown-menu-submenu-title,
 
 .ant-menu-submenu {
   border: 1px solid #DEE0E5;
-  box-shadow: 0px 3px 7px rgba(59, 63, 70, 0.2) !important;
+  box-shadow: none !important;
   clip-path: inset(-10% -10% -10% 0%);
 }
 
@@ -1008,4 +1008,9 @@ nz-dropdown-context .ant-dropdown-menu-submenu-title,
 .ant-btn-danger:hover {
   background-color: #CC2229 !important;
   border-color: #CC2229 !important;
+}
+
+.ant-dropdown-menu,
+.ant-menu {
+  box-shadow: 0px 3px 7px rgb(59 63 70 / 20%) !important;
 }
