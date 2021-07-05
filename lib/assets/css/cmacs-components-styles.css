@@ -34,6 +34,7 @@ cmacs-datetime-picker {
 .cmacs-datetime-picker-dropdown .ant-picker-dropdown {
   top: -3px;
   border: 1px solid #dee0e5;
+  border-radius: 0 0 3px 3px;
   border-top: none;
   width: inherit;
   background-color: #fff;
@@ -44,6 +45,7 @@ cmacs-datetime-picker {
 .cmacs-time-picker-opened {
   box-shadow: 0px 3px 7px rgb(59 63 70 / 20%) !important;
   clip-path: inset(-10% -10% 0 -10%);
+  border-radius: 3px 3px 0 0 !important;
 }
 
 .cmacs-datetime-picker-dropdown .ant-picker-dropdown .ant-picker-panel-container,
@@ -1010,7 +1012,18 @@ nz-dropdown-context .ant-dropdown-menu-submenu-title,
   border-color: #CC2229 !important;
 }
 
+.ant-btn-danger:focus,
+.ant-btn-danger:active {
+  color: #fff !important;
+  background-color: #ff4d4f !important;
+  border-color: #ff4d4f !important;
+}
+
 .ant-dropdown-menu,
 .ant-menu {
   box-shadow: 0px 3px 7px rgb(59 63 70 / 20%) !important;
+}
+
+.ant-picker-separator .anticon.anticon-swap-right {
+  vertical-align: -.12em !important;
 }
