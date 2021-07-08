@@ -17,6 +17,10 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+cmacs-timeline-datepicker.ant-tabs {
+  padding: 12px 4px !important;
+}
+
 .nz-disable-td.ant-table-cell {
     overflow: hidden;
 }

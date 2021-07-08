@@ -38880,6 +38880,1157 @@
                 }] });
     })();
 
+    var PtbTabLabelDirective = /** @class */ (function () {
+        function PtbTabLabelDirective(elementRef, renderer) {
+            this.elementRef = elementRef;
+            this.disabled = false;
+            renderer.addClass(elementRef.nativeElement, 'ant-tabs-tab');
+        }
+        PtbTabLabelDirective.prototype.getOffsetLeft = function () {
+            return this.elementRef.nativeElement.offsetLeft;
+        };
+        PtbTabLabelDirective.prototype.getOffsetWidth = function () {
+            return this.elementRef.nativeElement.offsetWidth;
+        };
+        PtbTabLabelDirective.prototype.getOffsetTop = function () {
+            return this.elementRef.nativeElement.offsetTop;
+        };
+        PtbTabLabelDirective.prototype.getOffsetHeight = function () {
+            return this.elementRef.nativeElement.offsetHeight;
+        };
+        return PtbTabLabelDirective;
+    }());
+    PtbTabLabelDirective.ɵfac = function PtbTabLabelDirective_Factory(t) { return new (t || PtbTabLabelDirective)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2)); };
+    PtbTabLabelDirective.ɵdir = i0.ɵɵdefineDirective({ type: PtbTabLabelDirective, selectors: [["", "ptb-tab-label", ""]], hostVars: 2, hostBindings: function PtbTabLabelDirective_HostBindings(rf, ctx) {
+            if (rf & 2) {
+                i0.ɵɵclassProp("ant-tabs-tab-disabled", ctx.disabled);
+            }
+        }, inputs: { disabled: "disabled" }, exportAs: ["ptbTabLabel"] });
+    __decorate([
+        util.InputBoolean()
+    ], PtbTabLabelDirective.prototype, "disabled", void 0);
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PtbTabLabelDirective, [{
+                type: i0.Directive,
+                args: [{
+                        selector: '[ptb-tab-label]',
+                        exportAs: 'ptbTabLabel',
+                        host: {
+                            '[class.ant-tabs-tab-disabled]': 'disabled'
+                        }
+                    }]
+            }], function () { return [{ type: i0.ElementRef }, { type: i0.Renderer2 }]; }, { disabled: [{
+                    type: i0.Input
+                }] });
+    })();
+
+    var PtbTabsInkBarDirective = /** @class */ (function () {
+        function PtbTabsInkBarDirective(renderer, elementRef, ngZone) {
+            this.renderer = renderer;
+            this.elementRef = elementRef;
+            this.ngZone = ngZone;
+            this.nzAnimated = false;
+            this.nzPositionMode = 'horizontal';
+            renderer.addClass(elementRef.nativeElement, 'ant-tabs-ink-bar');
+        }
+        PtbTabsInkBarDirective.prototype.alignToElement = function (element) {
+            var _this = this;
+            if (typeof requestAnimationFrame !== 'undefined') {
+                this.ngZone.runOutsideAngular(function () {
+                    requestAnimationFrame(function () { return _this.setStyles(element); });
+                });
+            }
+            else {
+                this.setStyles(element);
+            }
+        };
+        PtbTabsInkBarDirective.prototype.setStyles = function (element) {
+            /** when horizontal remove height style and add transform left **/
+            if (this.nzPositionMode === 'horizontal') {
+                this.renderer.removeStyle(this.elementRef.nativeElement, 'height');
+                this.renderer.setStyle(this.elementRef.nativeElement, 'transform', "translate3d(" + this.getLeftPosition(element) + ", 0px, 0px)");
+                this.renderer.setStyle(this.elementRef.nativeElement, 'width', this.getElementWidth(element));
+            }
+            else {
+                /** when vertical remove width style and add transform top **/
+                this.renderer.removeStyle(this.elementRef.nativeElement, 'width');
+                this.renderer.setStyle(this.elementRef.nativeElement, 'transform', "translate3d(0px, " + this.getTopPosition(element) + ", 0px)");
+                this.renderer.setStyle(this.elementRef.nativeElement, 'height', this.getElementHeight(element));
+            }
+        };
+        PtbTabsInkBarDirective.prototype.getLeftPosition = function (element) {
+            return element ? element.offsetLeft + 'px' : '0';
+        };
+        PtbTabsInkBarDirective.prototype.getElementWidth = function (element) {
+            return element ? element.offsetWidth + 'px' : '0';
+        };
+        PtbTabsInkBarDirective.prototype.getTopPosition = function (element) {
+            return element ? element.offsetTop + 'px' : '0';
+        };
+        PtbTabsInkBarDirective.prototype.getElementHeight = function (element) {
+            return element ? element.offsetHeight + 'px' : '0';
+        };
+        return PtbTabsInkBarDirective;
+    }());
+    PtbTabsInkBarDirective.ɵfac = function PtbTabsInkBarDirective_Factory(t) { return new (t || PtbTabsInkBarDirective)(i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.NgZone)); };
+    PtbTabsInkBarDirective.ɵdir = i0.ɵɵdefineDirective({ type: PtbTabsInkBarDirective, selectors: [["", "ptb-tabs-ink-bar", ""]], hostVars: 4, hostBindings: function PtbTabsInkBarDirective_HostBindings(rf, ctx) {
+            if (rf & 2) {
+                i0.ɵɵclassProp("ant-tabs-ink-bar-animated", ctx.nzAnimated)("ant-tabs-ink-bar-no-animated", !ctx.nzAnimated);
+            }
+        }, inputs: { nzAnimated: "nzAnimated", nzPositionMode: "nzPositionMode" }, exportAs: ["ptbTabsInkBar"] });
+    __decorate([
+        util.InputBoolean()
+    ], PtbTabsInkBarDirective.prototype, "nzAnimated", void 0);
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PtbTabsInkBarDirective, [{
+                type: i0.Directive,
+                args: [{
+                        selector: '[ptb-tabs-ink-bar]',
+                        exportAs: 'ptbTabsInkBar',
+                        host: {
+                            '[class.ant-tabs-ink-bar-animated]': 'nzAnimated',
+                            '[class.ant-tabs-ink-bar-no-animated]': '!nzAnimated'
+                        }
+                    }]
+            }], function () { return [{ type: i0.Renderer2 }, { type: i0.ElementRef }, { type: i0.NgZone }]; }, { nzAnimated: [{
+                    type: i0.Input
+                }], nzPositionMode: [{
+                    type: i0.Input
+                }] });
+    })();
+
+    var _c0$1e = ["navContainerElement"];
+    var _c1$z = ["navListElement"];
+    var _c2$j = ["scrollListElement"];
+    function PtbTabsNavComponent_div_0_ng_template_1_Template(rf, ctx) { }
+    function PtbTabsNavComponent_div_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 15);
+            i0.ɵɵtemplate(1, PtbTabsNavComponent_div_0_ng_template_1_Template, 0, 0, "ng-template", 16);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.nzTabBarExtraContent);
+        }
+    }
+    var _c3$8 = ["*"];
+    var EXAGGERATED_OVERSCROLL = 64;
+    var PtbTabsNavComponent = /** @class */ (function () {
+        function PtbTabsNavComponent(elementRef, ngZone, renderer, cdr, dir) {
+            this.elementRef = elementRef;
+            this.ngZone = ngZone;
+            this.renderer = renderer;
+            this.cdr = cdr;
+            this.dir = dir;
+            this._tabPositionMode = 'horizontal';
+            this._scrollDistance = 0;
+            this._selectedIndex = 0;
+            this.showPaginationControls = false;
+            this.disableScrollAfter = true;
+            this.disableScrollBefore = true;
+            this.selectedIndexChanged = false;
+            this.realignInkBar = null;
+            this.nzOnNextClick = new i0.EventEmitter();
+            this.nzOnPrevClick = new i0.EventEmitter();
+            this.nzAnimated = true;
+            this.nzHideBar = false;
+            this.nzShowPagination = true;
+            this.nzType = 'line';
+        }
+        Object.defineProperty(PtbTabsNavComponent.prototype, "nzPositionMode", {
+            get: function () {
+                return this._tabPositionMode;
+            },
+            set: function (value) {
+                var _this = this;
+                this._tabPositionMode = value;
+                this.alignInkBarToSelectedTab();
+                if (this.nzShowPagination) {
+                    Promise.resolve().then(function () {
+                        _this.updatePagination();
+                    });
+                }
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(PtbTabsNavComponent.prototype, "selectedIndex", {
+            get: function () {
+                return this._selectedIndex;
+            },
+            set: function (value) {
+                this.selectedIndexChanged = this._selectedIndex !== value;
+                this._selectedIndex = value;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        PtbTabsNavComponent.prototype.onContentChanges = function () {
+            var _this = this;
+            var textContent = this.elementRef.nativeElement.textContent;
+            // We need to diff the text content of the header, because the MutationObserver callback
+            // will fire even if the text content didn't change which is inefficient and is prone
+            // to infinite loops if a poorly constructed expression is passed in (see #14249).
+            if (textContent !== this.currentTextContent) {
+                this.ngZone.run(function () {
+                    if (_this.nzShowPagination) {
+                        _this.updatePagination();
+                    }
+                    _this.alignInkBarToSelectedTab();
+                    _this.cdr.markForCheck();
+                });
+            }
+        };
+        PtbTabsNavComponent.prototype.scrollHeader = function (scrollDir) {
+            if (scrollDir === 'before' && !this.disableScrollBefore) {
+                this.nzOnPrevClick.emit();
+            }
+            else if (scrollDir === 'after' && !this.disableScrollAfter) {
+                this.nzOnNextClick.emit();
+            }
+            // Move the scroll distance one-third the length of the tab list's viewport.
+            this.scrollDistance += ((scrollDir === 'before' ? -1 : 1) * this.viewWidthHeightPix) / 3;
+        };
+        PtbTabsNavComponent.prototype.ngAfterContentChecked = function () {
+            if (this.tabLabelCount !== this.listOfNzTabLabelDirective.length) {
+                if (this.nzShowPagination) {
+                    this.updatePagination();
+                }
+                this.tabLabelCount = this.listOfNzTabLabelDirective.length;
+                this.cdr.markForCheck();
+            }
+            if (this.selectedIndexChanged) {
+                this.scrollToLabel(this._selectedIndex);
+                if (this.nzShowPagination) {
+                    this.checkScrollingControls();
+                }
+                this.alignInkBarToSelectedTab();
+                this.selectedIndexChanged = false;
+                this.cdr.markForCheck();
+            }
+            if (this.scrollDistanceChanged) {
+                if (this.nzShowPagination) {
+                    this.updateTabScrollPosition();
+                }
+                this.scrollDistanceChanged = false;
+                this.cdr.markForCheck();
+            }
+        };
+        PtbTabsNavComponent.prototype.ngAfterContentInit = function () {
+            var _this = this;
+            this.realignInkBar = this.ngZone.runOutsideAngular(function () {
+                var dirChange = _this.dir ? _this.dir.change : rxjs.of(null);
+                var resize = typeof window !== 'undefined' ? rxjs.fromEvent(window, 'resize').pipe(operators.auditTime(10)) : rxjs.of(null);
+                return rxjs.merge(dirChange, resize)
+                    .pipe(operators.startWith(null))
+                    .subscribe(function () {
+                    if (_this.nzShowPagination) {
+                        _this.updatePagination();
+                    }
+                    _this.alignInkBarToSelectedTab();
+                });
+            });
+        };
+        PtbTabsNavComponent.prototype.ngOnDestroy = function () {
+            if (this.realignInkBar) {
+                this.realignInkBar.unsubscribe();
+            }
+        };
+        PtbTabsNavComponent.prototype.updateTabScrollPosition = function () {
+            var scrollDistance = this.scrollDistance;
+            if (this.nzPositionMode === 'horizontal') {
+                var translateX = this.getLayoutDirection() === 'ltr' ? -scrollDistance : scrollDistance;
+                this.renderer.setStyle(this.navListElement.nativeElement, 'transform', "translate3d(" + translateX + "px, 0, 0)");
+            }
+            else {
+                this.renderer.setStyle(this.navListElement.nativeElement, 'transform', "translate3d(0," + -scrollDistance + "px, 0)");
+            }
+        };
+        PtbTabsNavComponent.prototype.updatePagination = function () {
+            this.checkPaginationEnabled();
+            this.checkScrollingControls();
+            this.updateTabScrollPosition();
+        };
+        PtbTabsNavComponent.prototype.checkPaginationEnabled = function () {
+            var isEnabled = this.tabListScrollWidthHeightPix > this.tabListScrollOffSetWidthHeight;
+            if (!isEnabled) {
+                this.scrollDistance = 0;
+            }
+            if (isEnabled !== this.showPaginationControls) {
+                this.cdr.markForCheck();
+            }
+            this.showPaginationControls = isEnabled;
+        };
+        PtbTabsNavComponent.prototype.scrollToLabel = function (labelIndex) {
+            var selectedLabel = this.listOfNzTabLabelDirective ? this.listOfNzTabLabelDirective.toArray()[labelIndex] : null;
+            if (selectedLabel) {
+                // The view length is the visible width of the tab labels.
+                var labelBeforePos = void 0;
+                var labelAfterPos = void 0;
+                if (this.nzPositionMode === 'horizontal') {
+                    if (this.getLayoutDirection() === 'ltr') {
+                        labelBeforePos = selectedLabel.getOffsetLeft();
+                        labelAfterPos = labelBeforePos + selectedLabel.getOffsetWidth();
+                    }
+                    else {
+                        labelAfterPos = this.navListElement.nativeElement.offsetWidth - selectedLabel.getOffsetLeft();
+                        labelBeforePos = labelAfterPos - selectedLabel.getOffsetWidth();
+                    }
+                }
+                else {
+                    labelBeforePos = selectedLabel.getOffsetTop();
+                    labelAfterPos = labelBeforePos + selectedLabel.getOffsetHeight();
+                }
+                var beforeVisiblePos = this.scrollDistance;
+                var afterVisiblePos = this.scrollDistance + this.viewWidthHeightPix;
+                if (labelBeforePos < beforeVisiblePos) {
+                    // Scroll header to move label to the before direction
+                    this.scrollDistance -= beforeVisiblePos - labelBeforePos + EXAGGERATED_OVERSCROLL;
+                }
+                else if (labelAfterPos > afterVisiblePos) {
+                    // Scroll header to move label to the after direction
+                    this.scrollDistance += labelAfterPos - afterVisiblePos + EXAGGERATED_OVERSCROLL;
+                }
+            }
+        };
+        PtbTabsNavComponent.prototype.checkScrollingControls = function () {
+            // Check if the pagination arrows should be activated.
+            this.disableScrollBefore = this.scrollDistance === 0;
+            this.disableScrollAfter = this.scrollDistance === this.getMaxScrollDistance();
+            this.cdr.markForCheck();
+        };
+        /**
+         * Determines what is the maximum length in pixels that can be set for the scroll distance. This
+         * is equal to the difference in width between the tab list container and tab header container.
+         *
+         * This is an expensive call that forces a layout reflow to compute box and scroll metrics and
+         * should be called sparingly.
+         */
+        PtbTabsNavComponent.prototype.getMaxScrollDistance = function () {
+            return this.tabListScrollWidthHeightPix - this.viewWidthHeightPix || 0;
+        };
+        Object.defineProperty(PtbTabsNavComponent.prototype, "scrollDistance", {
+            get: function () {
+                return this._scrollDistance;
+            },
+            /** Sets the distance in pixels that the tab header should be transformed in the X-axis. */
+            set: function (v) {
+                this._scrollDistance = Math.max(0, Math.min(this.getMaxScrollDistance(), v));
+                // Mark that the scroll distance has changed so that after the view is checked, the CSS
+                // transformation can move the header.
+                this.scrollDistanceChanged = true;
+                this.checkScrollingControls();
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(PtbTabsNavComponent.prototype, "viewWidthHeightPix", {
+            get: function () {
+                var PAGINATION_PIX = 0;
+                if (this.showPaginationControls) {
+                    PAGINATION_PIX = 64;
+                }
+                if (this.nzPositionMode === 'horizontal') {
+                    return this.navContainerElement.nativeElement.offsetWidth - PAGINATION_PIX;
+                }
+                else {
+                    return this.navContainerElement.nativeElement.offsetHeight - PAGINATION_PIX;
+                }
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(PtbTabsNavComponent.prototype, "tabListScrollWidthHeightPix", {
+            get: function () {
+                if (this.nzPositionMode === 'horizontal') {
+                    return this.navListElement.nativeElement.scrollWidth;
+                }
+                else {
+                    return this.navListElement.nativeElement.scrollHeight;
+                }
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(PtbTabsNavComponent.prototype, "tabListScrollOffSetWidthHeight", {
+            get: function () {
+                if (this.nzPositionMode === 'horizontal') {
+                    return this.scrollListElement.nativeElement.offsetWidth;
+                }
+                else {
+                    return this.elementRef.nativeElement.offsetHeight;
+                }
+            },
+            enumerable: false,
+            configurable: true
+        });
+        PtbTabsNavComponent.prototype.getLayoutDirection = function () {
+            return this.dir && this.dir.value === 'rtl' ? 'rtl' : 'ltr';
+        };
+        PtbTabsNavComponent.prototype.alignInkBarToSelectedTab = function () {
+            if (this.nzType === 'line') {
+                var selectedLabelWrapper = this.listOfNzTabLabelDirective && this.listOfNzTabLabelDirective.length
+                    ? this.listOfNzTabLabelDirective.toArray()[this.selectedIndex].elementRef.nativeElement
+                    : null;
+                if (this.nzTabsInkBarDirective) {
+                    this.nzTabsInkBarDirective.alignToElement(selectedLabelWrapper);
+                }
+            }
+        };
+        return PtbTabsNavComponent;
+    }());
+    PtbTabsNavComponent.ɵfac = function PtbTabsNavComponent_Factory(t) { return new (t || PtbTabsNavComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.NgZone), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i2.Directionality, 8)); };
+    PtbTabsNavComponent.ɵcmp = i0.ɵɵdefineComponent({ type: PtbTabsNavComponent, selectors: [["ptb-tabs-nav"]], contentQueries: function PtbTabsNavComponent_ContentQueries(rf, ctx, dirIndex) {
+            if (rf & 1) {
+                i0.ɵɵcontentQuery(dirIndex, PtbTabLabelDirective, 0);
+            }
+            if (rf & 2) {
+                var _t = void 0;
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.listOfNzTabLabelDirective = _t);
+            }
+        }, viewQuery: function PtbTabsNavComponent_Query(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵviewQuery(PtbTabsInkBarDirective, 1);
+                i0.ɵɵviewQuery(_c0$1e, 3);
+                i0.ɵɵviewQuery(_c1$z, 3);
+                i0.ɵɵviewQuery(_c2$j, 3);
+            }
+            if (rf & 2) {
+                var _t = void 0;
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.nzTabsInkBarDirective = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.navContainerElement = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.navListElement = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.scrollListElement = _t.first);
+            }
+        }, inputs: { nzTabBarExtraContent: "nzTabBarExtraContent", nzAnimated: "nzAnimated", nzHideBar: "nzHideBar", nzShowPagination: "nzShowPagination", nzType: "nzType", nzPositionMode: "nzPositionMode", selectedIndex: "selectedIndex" }, outputs: { nzOnNextClick: "nzOnNextClick", nzOnPrevClick: "nzOnPrevClick" }, exportAs: ["ptbTabsNav"], ngContentSelectors: _c3$8, decls: 17, vars: 18, consts: [["style", "float:right;", "class", "ant-tabs-extra-content", 4, "ngIf"], [1, "ant-tabs-nav-container"], ["navContainerElement", ""], [1, "ant-tabs-tab-prev", 3, "click"], [1, "ant-tabs-tab-prev-icon"], ["nz-icon", "", 1, "ant-tabs-tab-prev-icon-target", 3, "nzType"], [1, "ant-tabs-tab-next", 3, "click"], [1, "ant-tabs-tab-next-icon"], ["nz-icon", "", 1, "ant-tabs-tab-next-icon-target", 3, "nzType"], [1, "ant-tabs-nav-wrap"], [1, "ant-tabs-nav-scroll"], ["scrollListElement", ""], [1, "ant-tabs-nav", 3, "cdkObserveContent"], ["navListElement", ""], ["ptb-tabs-ink-bar", "", 2, "display", "block", 3, "hidden", "nzAnimated", "nzPositionMode"], [1, "ant-tabs-extra-content", 2, "float", "right"], [3, "ngTemplateOutlet"]], template: function PtbTabsNavComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵprojectionDef();
+                i0.ɵɵtemplate(0, PtbTabsNavComponent_div_0_Template, 2, 1, "div", 0);
+                i0.ɵɵelementStart(1, "div", 1, 2);
+                i0.ɵɵelementStart(3, "span", 3);
+                i0.ɵɵlistener("click", function PtbTabsNavComponent_Template_span_click_3_listener() { return ctx.scrollHeader("before"); });
+                i0.ɵɵelementStart(4, "span", 4);
+                i0.ɵɵelement(5, "i", 5);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(6, "span", 6);
+                i0.ɵɵlistener("click", function PtbTabsNavComponent_Template_span_click_6_listener() { return ctx.scrollHeader("after"); });
+                i0.ɵɵelementStart(7, "span", 7);
+                i0.ɵɵelement(8, "i", 8);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(9, "div", 9);
+                i0.ɵɵelementStart(10, "div", 10, 11);
+                i0.ɵɵelementStart(12, "div", 12, 13);
+                i0.ɵɵlistener("cdkObserveContent", function PtbTabsNavComponent_Template_div_cdkObserveContent_12_listener() { return ctx.onContentChanges(); });
+                i0.ɵɵelementStart(14, "div");
+                i0.ɵɵprojection(15);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelement(16, "div", 14);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("ngIf", ctx.nzTabBarExtraContent);
+                i0.ɵɵadvance(1);
+                i0.ɵɵclassProp("ant-tabs-nav-container-scrolling", ctx.showPaginationControls);
+                i0.ɵɵadvance(2);
+                i0.ɵɵclassProp("ant-tabs-tab-btn-disabled", ctx.disableScrollBefore)("ant-tabs-tab-arrow-show", ctx.showPaginationControls);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("nzType", ctx.nzPositionMode === "horizontal" ? "left" : "up");
+                i0.ɵɵadvance(1);
+                i0.ɵɵclassProp("ant-tabs-tab-btn-disabled", ctx.disableScrollAfter)("ant-tabs-tab-arrow-show", ctx.showPaginationControls);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("nzType", ctx.nzPositionMode === "horizontal" ? "right" : "down");
+                i0.ɵɵadvance(4);
+                i0.ɵɵclassProp("ant-tabs-nav-animated", ctx.nzAnimated);
+                i0.ɵɵadvance(4);
+                i0.ɵɵproperty("hidden", ctx.nzHideBar)("nzAnimated", ctx.nzAnimated)("nzPositionMode", ctx.nzPositionMode);
+            }
+        }, directives: [i2$1.NgIf, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, PtbTabsInkBarDirective, i2$1.NgTemplateOutlet], encapsulation: 2, changeDetection: 0 });
+    __decorate([
+        util.InputBoolean()
+    ], PtbTabsNavComponent.prototype, "nzAnimated", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], PtbTabsNavComponent.prototype, "nzHideBar", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], PtbTabsNavComponent.prototype, "nzShowPagination", void 0);
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PtbTabsNavComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'ptb-tabs-nav',
+                        exportAs: 'ptbTabsNav',
+                        preserveWhitespaces: false,
+                        changeDetection: i0.ChangeDetectionStrategy.OnPush,
+                        encapsulation: i0.ViewEncapsulation.None,
+                        templateUrl: './ptb-tabs-nav.component.html'
+                    }]
+            }], function () {
+            return [{ type: i0.ElementRef }, { type: i0.NgZone }, { type: i0.Renderer2 }, { type: i0.ChangeDetectorRef }, { type: i2.Directionality, decorators: [{
+                            type: i0.Optional
+                        }] }];
+        }, { listOfNzTabLabelDirective: [{
+                    type: i0.ContentChildren,
+                    args: [PtbTabLabelDirective]
+                }], nzTabsInkBarDirective: [{
+                    type: i0.ViewChild,
+                    args: [PtbTabsInkBarDirective]
+                }], navContainerElement: [{
+                    type: i0.ViewChild,
+                    args: ['navContainerElement', { static: true }]
+                }], navListElement: [{
+                    type: i0.ViewChild,
+                    args: ['navListElement', { static: true }]
+                }], scrollListElement: [{
+                    type: i0.ViewChild,
+                    args: ['scrollListElement', { static: true }]
+                }], nzOnNextClick: [{
+                    type: i0.Output
+                }], nzOnPrevClick: [{
+                    type: i0.Output
+                }], nzTabBarExtraContent: [{
+                    type: i0.Input
+                }], nzAnimated: [{
+                    type: i0.Input
+                }], nzHideBar: [{
+                    type: i0.Input
+                }], nzShowPagination: [{
+                    type: i0.Input
+                }], nzType: [{
+                    type: i0.Input
+                }], nzPositionMode: [{
+                    type: i0.Input
+                }], selectedIndex: [{
+                    type: i0.Input
+                }] });
+    })();
+
+    function CmacsTimelineDatepickerComponent_div_0_li_8_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r12_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "li", 14);
+            i0.ɵɵlistener("click", function CmacsTimelineDatepickerComponent_div_0_li_8_Template_li_click_0_listener() { i0.ɵɵrestoreView(_r12_1); var i_r10 = ctx.index; var ctx_r11 = i0.ɵɵnextContext(2); return ctx_r11.customSelect(i_r10); });
+            i0.ɵɵelement(1, "i", 15);
+            i0.ɵɵelementStart(2, "span");
+            i0.ɵɵtext(3);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var option_r9 = ctx.$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵstyleProp("opacity", option_r9.selected ? 1 : 0);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(option_r9.title);
+        }
+    }
+    function CmacsTimelineDatepickerComponent_div_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 7);
+            i0.ɵɵelementStart(1, "a", 8);
+            i0.ɵɵelementStart(2, "div", 9);
+            i0.ɵɵtext(3);
+            i0.ɵɵelement(4, "i", 10);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(5, "cmacs-dropdown-menu", null, 11);
+            i0.ɵɵelementStart(7, "ul", 12);
+            i0.ɵɵtemplate(8, CmacsTimelineDatepickerComponent_div_0_li_8_Template, 4, 3, "li", 13);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var _r7 = i0.ɵɵreference(6);
+            var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("cmacsTrigger", "click")("cmacsOpen", true)("dropdownMenu", _r7);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate1(" ", ctx_r0.getSelected().length ? ctx_r0.getSelected()[0].title : "Select", " ");
+            i0.ɵɵadvance(5);
+            i0.ɵɵproperty("ngForOf", ctx_r0.modeOptions);
+        }
+    }
+    function CmacsTimelineDatepickerComponent_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 7);
+            i0.ɵɵelementStart(1, "a", 16);
+            i0.ɵɵelementStart(2, "div", 9);
+            i0.ɵɵtext(3);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(3);
+            i0.ɵɵtextInterpolate1(" ", ctx_r1.getSelected().length ? ctx_r1.getSelected()[0].title : "Select", " ");
+        }
+    }
+    function CmacsTimelineDatepickerComponent_div_4_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 17);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r2 = i0.ɵɵnextContext();
+            i0.ɵɵstyleProp("margin-right", ctx_r2.gutter, "px");
+            i0.ɵɵclassProp("ant-tabs-tab-active", true);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1(" ", ctx_r2.previousYearWeek, " ");
+        }
+    }
+    function CmacsTimelineDatepickerComponent_div_5_ng_container_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var tab_r13 = i0.ɵɵnextContext().$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate(tab_r13.title);
+        }
+    }
+    function CmacsTimelineDatepickerComponent_div_5_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r18_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 18);
+            i0.ɵɵlistener("click", function CmacsTimelineDatepickerComponent_div_5_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r18_1); var i_r14 = ctx.index; var tab_r13 = ctx.$implicit; var ctx_r17 = i0.ɵɵnextContext(); return ctx_r17.clickLabel(i_r14, tab_r13.disabled); });
+            i0.ɵɵtemplate(1, CmacsTimelineDatepickerComponent_div_5_ng_container_1_Template, 2, 1, "ng-container", 19);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var tab_r13 = ctx.$implicit;
+            var i_r14 = ctx.index;
+            var ctx_r3 = i0.ɵɵnextContext();
+            i0.ɵɵstyleProp("margin-right", ctx_r3.gutter, "px");
+            i0.ɵɵclassProp("ant-tabs-tab-active", ctx_r3.checkActiveTab(i_r14));
+            i0.ɵɵproperty("disabled", tab_r13.disabled);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("nzStringTemplateOutlet", tab_r13.title);
+        }
+    }
+    function CmacsTimelineDatepickerComponent_ng_container_7_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r20_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "cmacs-week-picker", 20);
+            i0.ɵɵlistener("ngModelChange", function CmacsTimelineDatepickerComponent_ng_container_7_Template_cmacs_week_picker_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r20_1); var ctx_r19 = i0.ɵɵnextContext(); return ctx_r19.date = $event; })("ngModelChange", function CmacsTimelineDatepickerComponent_ng_container_7_Template_cmacs_week_picker_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r20_1); var ctx_r21 = i0.ɵɵnextContext(); return ctx_r21.getWeek($event); });
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r4 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngModel", ctx_r4.date);
+        }
+    }
+    function CmacsTimelineDatepickerComponent_ng_container_8_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r23_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "cmacs-month-picker", 20);
+            i0.ɵɵlistener("ngModelChange", function CmacsTimelineDatepickerComponent_ng_container_8_Template_cmacs_month_picker_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r23_1); var ctx_r22 = i0.ɵɵnextContext(); return ctx_r22.date = $event; })("ngModelChange", function CmacsTimelineDatepickerComponent_ng_container_8_Template_cmacs_month_picker_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r23_1); var ctx_r24 = i0.ɵɵnextContext(); return ctx_r24.getMonth($event); });
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r5 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngModel", ctx_r5.date);
+        }
+    }
+    function CmacsTimelineDatepickerComponent_ng_container_9_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r26_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "cmacs-range-picker", 21);
+            i0.ɵɵlistener("ngModelChange", function CmacsTimelineDatepickerComponent_ng_container_9_Template_cmacs_range_picker_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r26_1); var ctx_r25 = i0.ɵɵnextContext(); return ctx_r25.range = $event; })("ngModelChange", function CmacsTimelineDatepickerComponent_ng_container_9_Template_cmacs_range_picker_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r26_1); var ctx_r27 = i0.ɵɵnextContext(); return ctx_r27.onChange($event); });
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r6 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("dropdownClassName", "cmacs-timeline-range-popup")("ngModel", ctx_r6.range)("mode", "week");
+        }
+    }
+    var moment$4 = moment___namespace;
+    var CmacsTimelineDatepickerComponent = /** @class */ (function () {
+        function CmacsTimelineDatepickerComponent(renderer, elementRef, i18n, cdr) {
+            this.renderer = renderer;
+            this.elementRef = elementRef;
+            this.i18n = i18n;
+            this.cdr = cdr;
+            this.indexToSelect = null;
+            this.destroy$ = new rxjs.Subject();
+            this.el = this.elementRef.nativeElement;
+            this._selectedIndex = null;
+            this._selectedRangeIdxs = [];
+            this._date = new Date();
+            this._range = [];
+            this.gutter = 2;
+            this.mode = 'week';
+            this.restrictMode = false;
+            this.ranged = false;
+            this.weekLocale = { week: { dow: 7, doy: 11 } };
+            this.locale = 'en';
+            this.onNextClick = new i0.EventEmitter();
+            this.onPrevClick = new i0.EventEmitter();
+            this.selectChange = new i0.EventEmitter(true);
+            this.selectedIndexChange = new i0.EventEmitter();
+            this.dateChange = new i0.EventEmitter();
+            this.rangeChange = new i0.EventEmitter();
+            this.modeChange = new i0.EventEmitter();
+            this.showPreviousYearWeek = false;
+            this.previousYearWeek = null;
+            this.modeOptions = [
+                { title: 'Week', value: 'week', selected: true },
+                { title: 'Month', value: 'month', selected: false }
+            ];
+        }
+        Object.defineProperty(CmacsTimelineDatepickerComponent.prototype, "selectedIndex", {
+            get: function () {
+                return this._selectedIndex;
+            },
+            set: function (value) {
+                this.indexToSelect = value;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(CmacsTimelineDatepickerComponent.prototype, "selectedRangeIdxs", {
+            get: function () {
+                return this._selectedRangeIdxs;
+            },
+            set: function (value) {
+                this._selectedRangeIdxs = value;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(CmacsTimelineDatepickerComponent.prototype, "date", {
+            get: function () {
+                return this._date;
+            },
+            set: function (value) {
+                if (value !== null) {
+                    this._date = value;
+                    if (this.mode === 'week') {
+                        this.listOfNzTabComponent = this.getWeeksInYear(this.date);
+                        this.showPreviousYearWeek = false;
+                        this.selectedIndex = this.getWeekNumber(value) - 1;
+                    }
+                    else if (this.mode === 'month') {
+                        this.selectedIndex = value.getMonth();
+                    }
+                }
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(CmacsTimelineDatepickerComponent.prototype, "range", {
+            get: function () {
+                return this._range;
+            },
+            set: function (range) {
+                if (range !== null && range.length) {
+                    this.showPreviousYearWeek = false;
+                    this._range = range;
+                    var stDateYear = moment$4(this.range[0]).year();
+                    var ndDateYear = moment$4(this.range[1]).year();
+                    if (moment$4(this.range[0]).year() === moment$4(this.range[1]).year()) {
+                        if (this.mode === 'week') {
+                            this.selectedRangeIdxs = [this.getWeekNumber(this._range[0]) - 1, this.getWeekNumber(this._range[1]) - 1];
+                        }
+                        else {
+                            this.selectedRangeIdxs = [dateFns.getMonth(this._range[0]), dateFns.getMonth(this._range[1])];
+                        }
+                    }
+                    else {
+                        if (this.mode === 'week') {
+                            var sumWeeks = 0;
+                            while (ndDateYear - stDateYear) {
+                                sumWeeks += this.getWeeksInYearCustom(new Date(stDateYear));
+                                stDateYear++;
+                            }
+                            this.selectedRangeIdxs = [this.getWeekNumber(this._range[0]) - 1, sumWeeks + this.getWeekNumber(this._range[1]) - 1];
+                        }
+                        else {
+                            this.selectedRangeIdxs = [dateFns.getMonth(this._range[0]), 12 * (ndDateYear - stDateYear) + dateFns.getMonth(this._range[1])];
+                        }
+                    }
+                    this.selectedIndex = this._selectedRangeIdxs[0];
+                    this.listOfNzTabComponent = this.getValuesSlider();
+                }
+            },
+            enumerable: false,
+            configurable: true
+        });
+        CmacsTimelineDatepickerComponent.prototype.onChange = function (range) {
+            if (range !== null) {
+                this.range = range;
+                this.rangeChange.emit(range);
+            }
+        };
+        CmacsTimelineDatepickerComponent.prototype.getWeek = function (result) {
+            if (result !== null) {
+                this.dateChange.emit(result);
+            }
+        };
+        CmacsTimelineDatepickerComponent.prototype.getWeekNumber = function (date) {
+            var month = moment$4(date).month();
+            moment$4.updateLocale(this.locale, this.weekLocale);
+            var week = moment$4(date).week();
+            var weeksInYear = this.getWeeksInYearCustom(date);
+            if (month === 11 && week === 1) {
+                return weeksInYear;
+            }
+            if (month === 0 && (week === 53 || week === 52)) {
+                this.showPreviousYearWeek = true;
+                this.previousYearWeek = week;
+                return -1;
+            }
+            return week;
+        };
+        CmacsTimelineDatepickerComponent.prototype.getWeeksInYearCustom = function (date) {
+            moment$4.updateLocale(this.locale, this.weekLocale);
+            return moment$4(date).isoWeeksInYear();
+        };
+        CmacsTimelineDatepickerComponent.prototype.clickLabel = function (index, disabled) {
+            if (!disabled && this._date !== null) {
+                if (!this.ranged) {
+                    this.selectedIndex = index;
+                    if (this.mode === 'week') {
+                        var d = new Date(this._date.getFullYear(), 0, 1);
+                        var weeks = this.getWeeksInYearCustom(d);
+                        d.setDate(weeks === 52 ? d.getDate() + ((index + 1) * 7) : d.getDate() + (index * 7));
+                        this.date = d;
+                        this.dateChange.emit(this.date);
+                    }
+                    if (this.mode === 'month') {
+                        var d = new Date(this._date.getFullYear(), index, 1);
+                        this.date = d;
+                        this.dateChange.emit(this.date);
+                    }
+                }
+                else {
+                    this.selectedRangeIdxs = [index, index];
+                    if (this.mode === 'week') {
+                        var d = new Date(this._date.getFullYear(), 0, 1);
+                        var weeks = this.getWeeksInYearCustom(d);
+                        d.setDate(weeks === 52 ? d.getDate() + ((index + 1) * 7) : d.getDate() + (index * 7));
+                        this.range = [d, d];
+                        this.rangeChange.emit(this.range);
+                    }
+                    if (this.mode === 'month') {
+                        var start = new Date(this._date.getFullYear(), index, 1);
+                        var end = new Date(this._date.getFullYear(), index + 1, 0);
+                        this.range = [start, end];
+                        this.rangeChange.emit(this.range);
+                    }
+                }
+            }
+        };
+        CmacsTimelineDatepickerComponent.prototype.createChangeEvent = function (index) {
+            var event = new NzTabChangeEvent();
+            event.index = index;
+            if (this.listOfNzTabComponent && this.listOfNzTabComponent.length) {
+                event.tab = this.listOfNzTabComponent[index];
+                this.listOfNzTabComponent.forEach(function (item, i) {
+                    if (i !== index) {
+                        item.deselect.emit();
+                    }
+                });
+                event.tab.select.emit();
+            }
+            return event;
+        };
+        /** Clamps the given index to the bounds of 0 and the tabs length. */
+        CmacsTimelineDatepickerComponent.prototype.clampTabIndex = function (index) {
+            // Note the `|| 0`, which ensures that values like NaN can't get through
+            // and which would otherwise throw the component into an infinite loop
+            // (since Math.max(NaN, 0) === NaN).
+            return Math.min(this.listOfNzTabComponent.length - 1, Math.max(index || 0, 0));
+        };
+        CmacsTimelineDatepickerComponent.prototype.ngOnInit = function () {
+            var _this = this;
+            this.weekLocale = {
+                week: {
+                    dow: moment$4.localeData(this.locale).firstDayOfWeek(),
+                    doy: moment$4.localeData(this.locale).firstDayOfYear()
+                }
+            };
+            this.i18n.localeChange.pipe(operators.takeUntil(this.destroy$)).subscribe(function () {
+                switch (_this.i18n.getLocale().locale) {
+                    case 'de':
+                        _this.modeOptions[0].title = 'Woche';
+                        _this.modeOptions[1].title = 'Monat';
+                        break;
+                    case 'en':
+                        _this.modeOptions[0].title = 'Week';
+                        _this.modeOptions[1].title = 'Month';
+                        break;
+                    default:
+                        _this.modeOptions[0].title = 'Week';
+                        _this.modeOptions[1].title = 'Month';
+                }
+                _this.cdr.markForCheck();
+            });
+            this.updateSelectedMode();
+        };
+        CmacsTimelineDatepickerComponent.prototype.ngOnChanges = function (changes) {
+            if (changes.mode) {
+                this.updateSelectedMode();
+            }
+        };
+        CmacsTimelineDatepickerComponent.prototype.updateSelectedMode = function () {
+            var _this = this;
+            this.modeOptions.forEach(function (mode) {
+                mode.selected = mode.value === _this.mode;
+            });
+            this.listOfNzTabComponent = this.getValuesSlider();
+            if (this.ranged) {
+                this.range = this.range;
+            }
+        };
+        CmacsTimelineDatepickerComponent.prototype.getValuesSlider = function () {
+            if (this.mode === 'week' && !this.ranged) {
+                this.date = this.date;
+                return this.getWeeksInYear(this.date);
+            }
+            else if (this.mode === 'month') {
+                this.date = this.date;
+                if (this.range.length) {
+                    var stDateYear = moment$4(this.range[0]).year();
+                    var ndDateYear = moment$4(this.range[1]).year();
+                    if (stDateYear !== ndDateYear) {
+                        var rangedMonth = this.getDefaultMonths();
+                        while (ndDateYear - stDateYear) {
+                            stDateYear++;
+                            rangedMonth = rangedMonth.concat(this.getDefaultMonths());
+                        }
+                        return rangedMonth;
+                    }
+                    return this.getDefaultMonths();
+                }
+                return this.getDefaultMonths();
+            }
+            else if (this.mode === 'week' && this.ranged) {
+                if (this.range.length) {
+                    var stDateYear = moment$4(this.range[0]).year();
+                    var ndDateYear = moment$4(this.range[1]).year();
+                    if (stDateYear !== ndDateYear) {
+                        var rangedWeeks = this.getWeeksInYear(new Date(stDateYear));
+                        while (ndDateYear - stDateYear) {
+                            rangedWeeks = rangedWeeks.concat(this.getWeeksInYear(new Date(stDateYear)));
+                            stDateYear++;
+                        }
+                        return rangedWeeks;
+                    }
+                    return this.getWeeksInYear(this.range[0]);
+                }
+                return this.getWeeksInYear(new Date());
+            }
+        };
+        CmacsTimelineDatepickerComponent.prototype.getDefaultMonths = function () {
+            return this.i18n.getLocale().locale === 'de' ? [{ title: 'Jan.' }, { title: 'Feb.' }, { title: 'März' }, { title: 'Apr.' }, { title: 'Mai' }, { title: 'Juni' },
+                { title: 'Juli' }, { title: 'Aug.' }, { title: 'Sept.' }, { title: 'Okt.' }, { title: 'Nov.' }, { title: 'Dez.' }] :
+                [{ title: 'Jan' }, { title: 'Feb' }, { title: 'Mar' }, { title: 'Apr' }, { title: 'May' }, { title: 'Jun' },
+                    { title: 'Jul' }, { title: 'Aug' }, { title: 'Sep' }, { title: 'Oct' }, { title: 'Nov' }, { title: 'Dec' }];
+        };
+        CmacsTimelineDatepickerComponent.prototype.getWeeksInYear = function (date) {
+            var temp = [];
+            var length = this.getWeeksInYearCustom(date);
+            for (var i = 0; i < length; i++) {
+                temp.push({ title: this.formatWeekNumber(i + 1) });
+            }
+            return temp;
+        };
+        CmacsTimelineDatepickerComponent.prototype.formatWeekNumber = function (value) {
+            return ("0" + value).slice(-2);
+        };
+        CmacsTimelineDatepickerComponent.prototype.ngAfterContentChecked = function () {
+            var _this = this;
+            //this.updateSlider();
+            if (this.listOfNzTabComponent && this.listOfNzTabComponent.length) {
+                // Don't clamp the `indexToSelect` immediately in the setter because it can happen that
+                // the amount of tabs changes before the actual change detection runs.
+                var indexToSelect_1 = (this.indexToSelect = this.clampTabIndex(this.indexToSelect));
+                // If there is a change in selected index, emit a change event. Should not trigger if
+                // the selected index has not yet been initialized.
+                if (this._selectedIndex !== indexToSelect_1) {
+                    var isFirstRun_1 = this._selectedIndex == null;
+                    /*if (!isFirstRun) {
+                      this.selectChange.emit(this.createChangeEvent(indexToSelect));
+                    }*/
+                    // Changing these values after change detection has run
+                    // since the checked content may contain references to them.
+                    Promise.resolve().then(function () {
+                        _this.listOfNzTabComponent.forEach(function (tab, index) { return (tab.isActive = index === indexToSelect_1); });
+                        if (!isFirstRun_1) {
+                            _this.selectedIndexChange.emit(indexToSelect_1);
+                        }
+                    });
+                }
+                // Setup the position for each tab and optionally setup an origin on the next selected tab.
+                this.listOfNzTabComponent.forEach(function (tab, index) {
+                    tab.position = index - indexToSelect_1;
+                    // If there is already a selected tab, then set up an origin for the next selected tab
+                    // if it doesn't have one already.
+                    if (_this._selectedIndex != null && tab.position === 0 && !tab.origin) {
+                        tab.origin = indexToSelect_1 - _this._selectedIndex;
+                    }
+                });
+                if (this._selectedIndex !== indexToSelect_1) {
+                    this._selectedIndex = indexToSelect_1;
+                    this.cdr.markForCheck();
+                }
+            }
+        };
+        CmacsTimelineDatepickerComponent.prototype.customSelect = function (index) {
+            this.modeOptions.forEach(function (option) {
+                option.selected = false;
+            });
+            this.modeOptions[index].selected = true;
+            this.mode = this.modeOptions[index].value;
+            this.modeChange.emit(this.mode);
+            this.listOfNzTabComponent = this.getValuesSlider();
+            if (this.ranged) {
+                this.range = this.range;
+            }
+        };
+        CmacsTimelineDatepickerComponent.prototype.getSelected = function () {
+            return this.modeOptions.filter(function (item) { return item.selected; });
+        };
+        CmacsTimelineDatepickerComponent.prototype.getMonth = function (result) {
+            this.dateChange.emit(result);
+        };
+        CmacsTimelineDatepickerComponent.prototype.ngOnDestroy = function () {
+            this.destroy$.next();
+            this.destroy$.complete();
+        };
+        CmacsTimelineDatepickerComponent.prototype.checkActiveTab = function (index) {
+            if (!this.ranged) {
+                return this.selectedIndex >= 0 && !this.showPreviousYearWeek && this.selectedIndex === index;
+            }
+            else {
+                return this.selectedRangeIdxs.length ? index >= this.selectedRangeIdxs[0] && index <= this.selectedRangeIdxs[1] : false;
+            }
+        };
+        return CmacsTimelineDatepickerComponent;
+    }());
+    CmacsTimelineDatepickerComponent.ɵfac = function CmacsTimelineDatepickerComponent_Factory(t) { return new (t || CmacsTimelineDatepickerComponent)(i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i1$3.NzI18nService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef)); };
+    CmacsTimelineDatepickerComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsTimelineDatepickerComponent, selectors: [["cmacs-timeline-datepicker"]], hostVars: 4, hostBindings: function CmacsTimelineDatepickerComponent_HostBindings(rf, ctx) {
+            if (rf & 2) {
+                i0.ɵɵclassProp("ant-tabs", true)("ant-tabs-line", true);
+            }
+        }, inputs: { gutter: "gutter", mode: "mode", restrictMode: "restrictMode", ranged: "ranged", weekLocale: "weekLocale", locale: "locale", selectedIndex: "selectedIndex", selectedRangeIdxs: "selectedRangeIdxs", date: "date", range: "range" }, outputs: { onNextClick: "onNextClick", onPrevClick: "onPrevClick", selectChange: "selectChange", selectedIndexChange: "selectedIndexChange", dateChange: "dateChange", rangeChange: "rangeChange", modeChange: "modeChange" }, exportAs: ["cmacsTimelineDatepicker"], features: [i0.ɵɵNgOnChangesFeature], decls: 10, vars: 13, consts: [["class", "cmacs-timeline-item cmacs-timeline-item-dropdown", 4, "ngIf"], [1, "cmacs-timeline-item", 2, "margin-right", "10px", "max-width", "calc(100% - 160px - 16px)"], ["role", "tablist", "tabindex", "0", 1, "ant-tabs-bar", "ant-tabs-top-bar", "cmacs-timeline-datepicker-slider", 3, "nzType", "nzShowPagination", "nzPositionMode", "nzAnimated", "nzHideBar", "selectedIndex", "nzOnNextClick", "nzOnPrevClick"], ["ptb-tab-label", "", "role", "tab", "class", "cmacs-timeline-datepicker-label", 3, "margin-right", "ant-tabs-tab-active", 4, "ngIf"], ["ptb-tab-label", "", "role", "tab", "class", "cmacs-timeline-datepicker-label", 3, "margin-right", "ant-tabs-tab-active", "disabled", "click", 4, "ngFor", "ngForOf"], [1, "cmacs-timeline-item"], [4, "ngIf"], [1, "cmacs-timeline-item", "cmacs-timeline-item-dropdown"], ["cmacs-dropdown", "", 1, "cmacs-dropdowm-timeline-datepicker", 2, "display", "inline-flex", 3, "cmacsTrigger", "cmacsOpen", "dropdownMenu"], [1, "cmacs-open-dropdown-wrapper", 2, "width", "80px"], [1, "iconArrowLarge-Solid-Down"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 2, "min-width", "125px"], ["cmacs-menu-item", "", 3, "click", 4, "ngFor", "ngForOf"], ["cmacs-menu-item", "", 3, "click"], ["nz-icon", "", "nzType", "check"], [1, "cmacs-dropdowm-timeline-datepicker"], ["ptb-tab-label", "", "role", "tab", 1, "cmacs-timeline-datepicker-label"], ["ptb-tab-label", "", "role", "tab", 1, "cmacs-timeline-datepicker-label", 3, "disabled", "click"], [4, "nzStringTemplateOutlet"], ["placeHolder", "", 3, "ngModel", "ngModelChange"], ["placeHolder", "", 3, "dropdownClassName", "ngModel", "mode", "ngModelChange"]], template: function CmacsTimelineDatepickerComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵtemplate(0, CmacsTimelineDatepickerComponent_div_0_Template, 9, 5, "div", 0);
+                i0.ɵɵtemplate(1, CmacsTimelineDatepickerComponent_div_1_Template, 4, 1, "div", 0);
+                i0.ɵɵelementStart(2, "div", 1);
+                i0.ɵɵelementStart(3, "ptb-tabs-nav", 2);
+                i0.ɵɵlistener("nzOnNextClick", function CmacsTimelineDatepickerComponent_Template_ptb_tabs_nav_nzOnNextClick_3_listener() { return ctx.onNextClick.emit(); })("nzOnPrevClick", function CmacsTimelineDatepickerComponent_Template_ptb_tabs_nav_nzOnPrevClick_3_listener() { return ctx.onPrevClick.emit(); });
+                i0.ɵɵtemplate(4, CmacsTimelineDatepickerComponent_div_4_Template, 2, 5, "div", 3);
+                i0.ɵɵtemplate(5, CmacsTimelineDatepickerComponent_div_5_Template, 2, 6, "div", 4);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(6, "div", 5);
+                i0.ɵɵtemplate(7, CmacsTimelineDatepickerComponent_ng_container_7_Template, 2, 1, "ng-container", 6);
+                i0.ɵɵtemplate(8, CmacsTimelineDatepickerComponent_ng_container_8_Template, 2, 1, "ng-container", 6);
+                i0.ɵɵtemplate(9, CmacsTimelineDatepickerComponent_ng_container_9_Template, 2, 3, "ng-container", 6);
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("ngIf", !ctx.restrictMode);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.restrictMode);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("nzType", "line")("nzShowPagination", true)("nzPositionMode", "horizontal")("nzAnimated", true)("nzHideBar", true)("selectedIndex", ctx.selectedIndex);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.showPreviousYearWeek);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngForOf", ctx.listOfNzTabComponent);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngIf", ctx.mode === "week" && !ctx.ranged);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.mode === "month" && !ctx.ranged);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", (ctx.mode === "week" || ctx.mode === "month") && ctx.ranged);
+            }
+        }, directives: [i2$1.NgIf, PtbTabsNavComponent, i2$1.NgForOf, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownMenuComponent, CmacsMenuDirective, CmacsMenuItemDirective, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, PtbTabLabelDirective, i6.NzStringTemplateOutletDirective, CmacsDatePickerComponent, CmacsWeekPickerComponent, i5.NgControlStatus, i5.NgModel, CmacsMonthPickerComponent, CmacsRangePickerComponent], styles: [".cmacs-timeline-item .ant-tabs-bar{margin:0 0 16px;border-bottom:1px solid #e8e8e8;outline:none;transition:padding .3s cubic-bezier(.645,.045,.355,1)}::ng-deep .cmacs-timeline-item .ant-tabs{display:block!important}.cmacs-timeline-item .ant-tabs-ink-bar{position:absolute;bottom:1px;left:0;z-index:1;box-sizing:border-box;height:2px;background-color:#1890ff;transform-origin:0 0}[hidden]{display:none!important}.cmacs-timeline-item .ant-tabs-nav{position:relative;display:inline-block;box-sizing:border-box;margin:0;padding-left:0;list-style:none;transition:transform .3s cubic-bezier(.645,.045,.355,1)}.cmacs-timeline-item .ant-tabs-nav .ant-tabs-tab{position:relative;display:inline-block;box-sizing:border-box;height:100%;margin:0 32px 0 0;padding:12px 16px;text-decoration:none;cursor:pointer;transition:color .3s cubic-bezier(.645,.045,.355,1)}.cmacs-timeline-item .ant-tabs-nav-container-scrolling{padding-right:32px;padding-left:32px}.cmacs-timeline-item .ant-tabs-nav-container{position:relative;box-sizing:border-box;margin-bottom:-1px;overflow:hidden;font-size:14px;line-height:1.5;white-space:nowrap;transition:padding .3s cubic-bezier(.645,.045,.355,1);zoom:1}.cmacs-timeline-item .ant-tabs-tab-next.ant-tabs-tab-arrow-show,.cmacs-timeline-item .ant-tabs-tab-prev.ant-tabs-tab-arrow-show{width:32px;height:100%;opacity:1;pointer-events:auto}.cmacs-timeline-item .ant-tabs-tab-prev{left:0}.cmacs-timeline-item .ant-tabs-nav-scroll{overflow:hidden;white-space:nowrap}.cmacs-timeline-item .ant-tabs-tab-next{right:2px}.cmacs-timeline-item .ant-tabs-nav-wrap{margin-bottom:-1px;overflow:hidden}.cmacs-timeline-item .ant-tabs-tab-next,.cmacs-timeline-item .ant-tabs-tab-prev{position:absolute;z-index:2;width:0;height:100%;color:rgba(0,0,0,.45);text-align:center;background-color:transparent;border:0;cursor:pointer;opacity:0;transition:width .3s cubic-bezier(.645,.045,.355,1),opacity .3s cubic-bezier(.645,.045,.355,1),color .3s cubic-bezier(.645,.045,.355,1);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none}.cmacs-timeline-datepicker-label.ant-tabs-tab{padding:5px 9px!important;border-radius:3px;font-family:Roboto-Medium;font-size:14px;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.29;letter-spacing:normal;color:#656c79}.cmacs-timeline-datepicker-label.ant-tabs-tab-active{color:#fff!important;padding:6px 7px!important;border-radius:3px 3px 4px 4px;box-shadow:0 6px 10px 0 rgb(59 63 70/15%);background-color:#2a7cff}.cmacs-timeline-item .anticon.ant-tabs-tab-next-icon-target.anticon-right,.cmacs-timeline-item .anticon.ant-tabs-tab-prev-icon-target.anticon-left{color:#656c79;font-size:11px;top:3px;position:relative}.cmacs-timeline-datepicker-slider.ant-tabs-bar{border-bottom:none;margin-bottom:0}.cmacs-timeline-item{display:inline-block}.cmacs-timeline-item-dropdown{position:relative;margin:0 20px}.cmacs-timeline-item-dropdown .cmacs-dropdowm-timeline-datepicker{font-family:Roboto-Medium;font-size:14px;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.29;letter-spacing:normal;color:#3b3f46}.cmacs-timeline-datepicker-label.ant-tabs-tab-active:hover{color:#fff}.cmacs-timeline-item .ant-picker-input input{width:0;display:inline-block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;border:none;height:0}.cmacs-timeline-item .ant-picker,.cmacs-timeline-item .ant-picker:focus,.cmacs-timeline-item .ant-picker:hover{border:none;box-shadow:none;position:relative;top:-3px;color:#656c79;padding:0}.cmacs-timeline-item .ant-picker-suffix{color:#656c79;font-size:16px}.cmacs-timeline-item .ant-picker-input:hover .ant-picker-clear,.cmacs-timeline-item .ant-picker-range:hover .ant-picker-clear{opacity:0;display:none}.cmacs-timeline-item .ant-picker-icon{font-size:16px;position:relative;top:-7px}.cmacs-timeline-item .ant-picker-icon:hover{cursor:pointer}.cmacs-timeline-item-dropdown .cmacs-dropdowm-timeline-datepicker .cmacs-open-dropdown-wrapper{border:none;width:auto!important;color:#3b3f46;font-size:14px;font-weight:500;line-height:1.8}.cmacs-timeline-item-dropdown .cmacs-dropdowm-timeline-datepicker .cmacs-open-dropdown-wrapper i{margin-left:10px;color:#3b3f46;top:6px;position:relative}.cmacs-timeline-item .ant-picker:focus .ant-picker-input input:not(.ant-input-disabled){box-shadow:none}.cmacs-timeline-item .ant-picker-range .ant-picker-input input,.cmacs-timeline-item .ant-picker-range .ant-picker-range-separator{display:none}", "\n      cmacs-timeline-datepicker {\n        display: block;\n        border-radius: 3px;\n        box-shadow: 0 3px 7px 0 rgba(59, 63, 70, 0.15);\n        background-color: #ffffff;\n        padding: 7px 0 4px 0 !important;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTimelineDatepickerComponent.prototype, "restrictMode", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTimelineDatepickerComponent.prototype, "ranged", void 0);
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsTimelineDatepickerComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-timeline-datepicker',
+                        exportAs: 'cmacsTimelineDatepicker',
+                        templateUrl: './cmacs-timeline-datepicker.component.html',
+                        changeDetection: i0.ChangeDetectionStrategy.OnPush,
+                        encapsulation: i0.ViewEncapsulation.None,
+                        preserveWhitespaces: false,
+                        styleUrls: ['./cmacs-timeline-datepicker.component.css'],
+                        styles: [
+                            "\n      cmacs-timeline-datepicker {\n        display: block;\n        border-radius: 3px;\n        box-shadow: 0 3px 7px 0 rgba(59, 63, 70, 0.15);\n        background-color: #ffffff;\n        padding: 7px 0 4px 0 !important;\n      }\n    "
+                        ],
+                        host: {
+                            '[class.ant-tabs]': 'true',
+                            '[class.ant-tabs-line]': 'true'
+                        }
+                    }]
+            }], function () { return [{ type: i0.Renderer2 }, { type: i0.ElementRef }, { type: i1$3.NzI18nService }, { type: i0.ChangeDetectorRef }]; }, { gutter: [{
+                    type: i0.Input
+                }], mode: [{
+                    type: i0.Input
+                }], restrictMode: [{
+                    type: i0.Input
+                }], ranged: [{
+                    type: i0.Input
+                }], weekLocale: [{
+                    type: i0.Input
+                }], locale: [{
+                    type: i0.Input
+                }], onNextClick: [{
+                    type: i0.Output
+                }], onPrevClick: [{
+                    type: i0.Output
+                }], selectChange: [{
+                    type: i0.Output
+                }], selectedIndexChange: [{
+                    type: i0.Output
+                }], dateChange: [{
+                    type: i0.Output
+                }], rangeChange: [{
+                    type: i0.Output
+                }], modeChange: [{
+                    type: i0.Output
+                }], selectedIndex: [{
+                    type: i0.Input
+                }], selectedRangeIdxs: [{
+                    type: i0.Input
+                }], date: [{
+                    type: i0.Input
+                }], range: [{
+                    type: i0.Input
+                }] });
+    })();
+
     function CmacsTimelineChartComponent_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
@@ -38899,7 +40050,7 @@
             i0.ɵɵtextInterpolate(label_r1);
         }
     }
-    var moment$4 = moment___namespace;
+    var moment$5 = moment___namespace;
     var CmacsTimelineChartComponent = /** @class */ (function () {
         function CmacsTimelineChartComponent(cdr, i18n) {
             this.cdr = cdr;
@@ -38974,8 +40125,8 @@
             }
         };
         CmacsTimelineChartComponent.prototype.createCustomTooltip = function (data, color) {
-            var duration = moment$4.duration(moment$4(data[4]).diff(moment$4(data[3])));
-            return "<div class=\"cmacs-timeline-chart-tooltip-wrapper\">\n  <div class=\"cmacs-timeline-chart-tooltip-title\">\n    <span class=\"cmacs-timeline-chart-legend-marker\" style=\"background-color: " + color + "\"></span>\n    <span class=\"cmacs-timeline-chart-legend-label\">" + data[1] + "</span>\n  </div>\n  <div class=\"cmacs-timeline-chart-tooltip-project-title\">" + data[0] + ":</div>\n  <div class=\"cmacs-timeline-chart-tooltip-project-dates\">" + (this.i18n.getLocale().locale === 'de' ? moment$4(data[3]).locale('de').format('MMM YYYY') + " - " + moment$4(data[4]).locale('de').format('MMM YYYY') : moment$4(data[3]).format('MMM, YYYY') + " - " + moment$4(data[4]).format('MMM, YYYY')) + " </div>\n  <div class=\"cmacs-timeline-chart-tooltip-project-duration-wrapper\">\n    <div class=\"cmacs-timeline-chart-tooltip-project-duration\">" + (this.i18n.getLocale().locale === 'de' ? 'Dauer' : 'Duration') + ":</div>\n    <div class=\"cmacs-timeline-chart-tooltip-project-duration-date\">" + duration.get('years') + " " + (this.i18n.getLocale().locale === 'de' ? 'Jahre' : 'years') + ", " + duration.get('months') + " " + (this.i18n.getLocale().locale === 'de' ? 'Monate' : 'months') + ", " + duration.get('days') + " " + (this.i18n.getLocale().locale === 'de' ? 'Tage' : 'days') + "</div>\n  </div>\n</div>";
+            var duration = moment$5.duration(moment$5(data[4]).diff(moment$5(data[3])));
+            return "<div class=\"cmacs-timeline-chart-tooltip-wrapper\">\n  <div class=\"cmacs-timeline-chart-tooltip-title\">\n    <span class=\"cmacs-timeline-chart-legend-marker\" style=\"background-color: " + color + "\"></span>\n    <span class=\"cmacs-timeline-chart-legend-label\">" + data[1] + "</span>\n  </div>\n  <div class=\"cmacs-timeline-chart-tooltip-project-title\">" + data[0] + ":</div>\n  <div class=\"cmacs-timeline-chart-tooltip-project-dates\">" + (this.i18n.getLocale().locale === 'de' ? moment$5(data[3]).locale('de').format('MMM YYYY') + " - " + moment$5(data[4]).locale('de').format('MMM YYYY') : moment$5(data[3]).format('MMM, YYYY') + " - " + moment$5(data[4]).format('MMM, YYYY')) + " </div>\n  <div class=\"cmacs-timeline-chart-tooltip-project-duration-wrapper\">\n    <div class=\"cmacs-timeline-chart-tooltip-project-duration\">" + (this.i18n.getLocale().locale === 'de' ? 'Dauer' : 'Duration') + ":</div>\n    <div class=\"cmacs-timeline-chart-tooltip-project-duration-date\">" + duration.get('years') + " " + (this.i18n.getLocale().locale === 'de' ? 'Jahre' : 'years') + ", " + duration.get('months') + " " + (this.i18n.getLocale().locale === 'de' ? 'Monate' : 'months') + ", " + duration.get('days') + " " + (this.i18n.getLocale().locale === 'de' ? 'Tage' : 'days') + "</div>\n  </div>\n</div>";
         };
         CmacsTimelineChartComponent.prototype.ngOnDestroy = function () {
             this.destroy$.next();
@@ -39152,8 +40303,11 @@
             i3.EditorModule,
             i10.NzTimePickerModule] });
     (function () {
-        (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [CmacsTimelineChartComponent,
-                //CmacsTimelineDatepickerComponent,
+        (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [PtbTabLabelDirective,
+                PtbTabsNavComponent,
+                PtbTabsInkBarDirective,
+                CmacsTimelineChartComponent,
+                CmacsTimelineDatepickerComponent,
                 CmacsOpenTextareaComponent,
                 CmacsOpenInputComponent,
                 CmacsGridConfigurationModalComponent,
@@ -39359,8 +40513,11 @@
                 i1$6.VgOverlayPlayModule,
                 i1$6.VgBufferingModule,
                 i3.EditorModule,
-                i5.ReactiveFormsModule], exports: [i3$6.GoogleChartsModule,
-                //CmacsTimelineDatepickerComponent,
+                i5.ReactiveFormsModule], exports: [PtbTabLabelDirective,
+                PtbTabsNavComponent,
+                PtbTabsInkBarDirective,
+                i3$6.GoogleChartsModule,
+                CmacsTimelineDatepickerComponent,
                 CmacsTimelineChartComponent,
                 CmacsOpenTextareaComponent,
                 CmacsOpenInputComponent,
@@ -39563,8 +40720,11 @@
                 type: i0.NgModule,
                 args: [{
                         declarations: [
+                            PtbTabLabelDirective,
+                            PtbTabsNavComponent,
+                            PtbTabsInkBarDirective,
                             CmacsTimelineChartComponent,
-                            //CmacsTimelineDatepickerComponent,
+                            CmacsTimelineDatepickerComponent,
                             CmacsOpenTextareaComponent,
                             CmacsOpenInputComponent,
                             CmacsGridConfigurationModalComponent,
@@ -39776,8 +40936,11 @@
                             i5.ReactiveFormsModule
                         ],
                         exports: [
+                            PtbTabLabelDirective,
+                            PtbTabsNavComponent,
+                            PtbTabsInkBarDirective,
                             i3$6.GoogleChartsModule,
-                            //CmacsTimelineDatepickerComponent,
+                            CmacsTimelineDatepickerComponent,
                             CmacsTimelineChartComponent,
                             CmacsOpenTextareaComponent,
                             CmacsOpenInputComponent,
@@ -40334,6 +41497,7 @@
     exports.CmacsTextareaCountComponent = CmacsTextareaCountComponent;
     exports.CmacsTimelineChartComponent = CmacsTimelineChartComponent;
     exports.CmacsTimelineComponent = CmacsTimelineComponent;
+    exports.CmacsTimelineDatepickerComponent = CmacsTimelineDatepickerComponent;
     exports.CmacsTimelineItemComponent = CmacsTimelineItemComponent;
     exports.CmacsToCssUnitPipe = CmacsToCssUnitPipe;
     exports.CmacsToolTipComponent = CmacsToolTipComponent;
@@ -40382,6 +41546,9 @@
     exports.NzTreeNode = NzTreeNode;
     exports.NzTreeServiceFactory = NzTreeServiceFactory;
     exports.PREFIX_CLASS = PREFIX_CLASS;
+    exports.PtbTabLabelDirective = PtbTabLabelDirective;
+    exports.PtbTabsInkBarDirective = PtbTabsInkBarDirective;
+    exports.PtbTabsNavComponent = PtbTabsNavComponent;
     exports.ROBOTO = ROBOTO;
     exports.ROBOTO_BOLD = ROBOTO_BOLD;
     exports.SIGNATURE_LOCALIZATION = SIGNATURE_LOCALIZATION;

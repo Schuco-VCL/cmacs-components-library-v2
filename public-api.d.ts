@@ -174,4 +174,8 @@ export * from './lib/components/cmacs-grid-configuration-modal/cmacs-grid-config
 export * from './lib/components/cmacs-open-input/cmacs-open-input.component';
 export * from './lib/components/cmacs-open-textarea/cmacs-open-textarea.component';
 export * from './lib/components/cmacs-timeline-chart/cmacs-timeline-chart.component';
+export * from './lib/components/cmacs-timeline-datepicker/cmacs-timeline-datepicker.component';
+export * from './lib/components/cmacs-tabs/ptb-tab-label.directive';
+export * from './lib/components/cmacs-tabs/ptb-tabs-ink-bar.directive';
+export * from './lib/components/cmacs-tabs/ptb-tabs-nav.component';
 //# sourceMappingURL=public-api.d.ts.map
