@@ -178,4 +178,6 @@ export * from './lib/components/cmacs-timeline-datepicker/cmacs-timeline-datepic
 export * from './lib/components/cmacs-tabs/ptb-tab-label.directive';
 export * from './lib/components/cmacs-tabs/ptb-tabs-ink-bar.directive';
 export * from './lib/components/cmacs-tabs/ptb-tabs-nav.component';
+export * from './lib/components/cmacs-tree-select/cmacs-tree-select.component';
+export * from './lib/components/cmacs-tree-select/cmacs-tree-select.service';
 //# sourceMappingURL=public-api.d.ts.map

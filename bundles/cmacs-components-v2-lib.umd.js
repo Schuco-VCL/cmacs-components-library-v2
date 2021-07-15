@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/form'), require('ng2-tel-input'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/core/resize-observers'), require('moment'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('xlsx'), require('ng-zorro-antd/table'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ngx-export-as'), require('ngx-cookie-service'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment/locale/en-ie'), require('@angular/cdk/collections'), require('html2canvas'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('ng-zorro-antd/skeleton'), require('@swimlane/ngx-charts'), require('angular-google-charts')) :
-    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid', 'ng-zorro-antd/form', 'ng2-tel-input', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/core/resize-observers', 'moment', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/timeline', 'ng-zorro-antd/core/color', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'xlsx', 'ng-zorro-antd/table', 'ng-zorro-antd/upload', 'angular2-signaturepad', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'angular2-draggable', 'ng-zorro-antd/tabs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ngx-export-as', 'ngx-cookie-service', 'jspdf', 'jspdf-autotable', 'util', 'moment/locale/en-ie', '@angular/cdk/collections', 'html2canvas', 'ng-zorro-antd/rate', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', 'ng-zorro-antd/skeleton', '@swimlane/ngx-charts', 'angular-google-charts'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i4$3, global.i1$1, global.i5$1, global.i4, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i4$5, global.radio, global.ng.cdk.overlay, global.i1$2, global.animation, global.i4$1, global.i1$3, global.i8, global.select, global.i6$2, global.i6, global.i2$4, global.ng.router, global.menu, global.i12, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.ng.platformBrowser, global.i1$6, global.i3, global.i6$1, global.form, global.i3$1, global.alert, global.breadcrumb, global.time, global.i10, global.i3$2, global.i3$3, global.moment_, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.timeline, global.color, global.tag, global.popover, global.i4$4, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.card, global.i3$5, global.list, global.i1$7, global.i5$2, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i15$1, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$3, global.i2$6, global.i3$6));
-}(this, (function (exports, i0, i5, operators, rxjs, util, i1, i2, i2$1, i4$3, i1$1, i5$1, i4, checkbox, i2$2, slider, keycodes, i2$3, _switch, i4$5, radio, i1$4, i1$2, animation, i4$1, i1$3, i8, select, i6$2, i6, i2$4, i4$2, menu, i12, i2$5, portal, logger, i1$5, i1$6, i3, i6$1, form, i3$1, alert, breadcrumb, time, i10, i3$2, i3$3, moment_, datePicker, inputNumber, dateFns, polyfill, en, progress, timeline, color, tag, popover, i4$4, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, card, i3$5, list, i1$7, i5$2, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i15$1, steps, scrolling, tree, cloneDeep, i5$3, i2$6, i3$6) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/form'), require('ng2-tel-input'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/core/resize-observers'), require('moment'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('xlsx'), require('ng-zorro-antd/table'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ngx-export-as'), require('ngx-cookie-service'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment/locale/en-ie'), require('@angular/cdk/collections'), require('html2canvas'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('ng-zorro-antd/skeleton'), require('@swimlane/ngx-charts'), require('angular-google-charts'), require('ng-zorro-antd/tree-select')) :
+    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid', 'ng-zorro-antd/form', 'ng2-tel-input', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/core/resize-observers', 'moment', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/timeline', 'ng-zorro-antd/core/color', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'xlsx', 'ng-zorro-antd/table', 'ng-zorro-antd/upload', 'angular2-signaturepad', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'angular2-draggable', 'ng-zorro-antd/tabs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ngx-export-as', 'ngx-cookie-service', 'jspdf', 'jspdf-autotable', 'util', 'moment/locale/en-ie', '@angular/cdk/collections', 'html2canvas', 'ng-zorro-antd/rate', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', 'ng-zorro-antd/skeleton', '@swimlane/ngx-charts', 'angular-google-charts', 'ng-zorro-antd/tree-select'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i4$3, global.i1$1, global.i5$1, global.i4, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i4$5, global.radio, global.ng.cdk.overlay, global.i1$2, global.animation, global.i4$1, global.i1$3, global.i8, global.select, global.i6$2, global.i6, global.i2$4, global.ng.router, global.menu, global.i12, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.ng.platformBrowser, global.i1$6, global.i3, global.i6$1, global.form, global.i3$1, global.alert, global.breadcrumb, global.time, global.i10, global.i3$2, global.i3$3, global.moment_, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.timeline, global.color, global.tag, global.popover, global.i4$4, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.card, global.i3$5, global.list, global.i1$7, global.i5$2, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i15$1, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$3, global.i2$6, global.i3$6, global.treeSelect));
+}(this, (function (exports, i0, i5, operators, rxjs, util, i1, i2, i2$1, i4$3, i1$1, i5$1, i4, checkbox, i2$2, slider, keycodes, i2$3, _switch, i4$5, radio, i1$4, i1$2, animation, i4$1, i1$3, i8, select, i6$2, i6, i2$4, i4$2, menu, i12, i2$5, portal, logger, i1$5, i1$6, i3, i6$1, form, i3$1, alert, breadcrumb, time, i10, i3$2, i3$3, moment_, datePicker, inputNumber, dateFns, polyfill, en, progress, timeline, color, tag, popover, i4$4, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, card, i3$5, list, i1$7, i5$2, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i15$1, steps, scrolling, tree, cloneDeep, i5$3, i2$6, i3$6, treeSelect) { 'use strict';
 
     function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -35368,7 +35368,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngForOf", ctx.treeNode.getChildren());
             }
-        }, directives: [i2$1.NgClass, i2$1.NgIf, i2$1.NgTemplateOutlet, i2$1.NgForOf, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, CmacsTreeNodeComponent], styles: [".cmacs-tree-new-icon[_ngcontent-%COMP%]{color:#acb3bf;font-size:16px;float:right;top:2px;position:relative}.ant-tree-title[_ngcontent-%COMP%]{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ant-select-tree-checkbox-checked[_ngcontent-%COMP%]   .ant-select-tree-radio-btn-inner.ant-select-tree-checkbox-inner[_ngcontent-%COMP%]:after{position:absolute;display:table;height:10px;border:none;border-radius:100px;top:2px;left:2px;width:10px;transform:none!important;background-color:#2a7cff;opacity:1;transition:all .2s cubic-bezier(.12,.4,.29,1.46) .1s;content:\" \"}.ant-select-tree-radio-btn-inner.ant-select-tree-checkbox-inner[_ngcontent-%COMP%]{border-radius:100px}.ant-select-tree-checkbox-indeterminate[_ngcontent-%COMP%]   .ant-select-tree-radio-btn-inner.ant-select-tree-checkbox-inner[_ngcontent-%COMP%]:after{background-color:#fff}.ant-select-tree-checkbox-checked[_ngcontent-%COMP%]   .ant-select-tree-radio-btn-inner.ant-select-tree-checkbox-inner[_ngcontent-%COMP%]{background-color:#fff;border-color:#dee0e5}.cmacs-tree-borderless[_ngcontent-%COMP%]{border-left:2px solid transparent!important}"], data: { animation: [animation.collapseMotion] }, changeDetection: 0 });
+        }, directives: [i2$1.NgClass, i2$1.NgIf, i2$1.NgTemplateOutlet, i2$1.NgForOf, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, CmacsTreeNodeComponent], styles: [".cmacs-tree-new-icon[_ngcontent-%COMP%]{color:#acb3bf;font-size:16px;float:right;top:2px;position:relative;right:34px}.ant-tree-title[_ngcontent-%COMP%]{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ant-select-tree-checkbox-checked[_ngcontent-%COMP%]   .ant-select-tree-radio-btn-inner.ant-select-tree-checkbox-inner[_ngcontent-%COMP%]:after{position:absolute;display:table;height:10px;border:none;border-radius:100px;top:2px;left:2px;width:10px;transform:none!important;background-color:#2a7cff;opacity:1;transition:all .2s cubic-bezier(.12,.4,.29,1.46) .1s;content:\" \"}.ant-select-tree-radio-btn-inner.ant-select-tree-checkbox-inner[_ngcontent-%COMP%]{border-radius:100px}.ant-select-tree-checkbox-indeterminate[_ngcontent-%COMP%]   .ant-select-tree-radio-btn-inner.ant-select-tree-checkbox-inner[_ngcontent-%COMP%]:after{background-color:#fff}.ant-select-tree-checkbox-checked[_ngcontent-%COMP%]   .ant-select-tree-radio-btn-inner.ant-select-tree-checkbox-inner[_ngcontent-%COMP%]{background-color:#fff;border-color:#dee0e5}.cmacs-tree-borderless[_ngcontent-%COMP%]{border-left:2px solid transparent!important}"], data: { animation: [animation.collapseMotion] }, changeDetection: 0 });
     __decorate([
         util.InputBoolean()
     ], CmacsTreeNodeComponent.prototype, "showLine", void 0);
@@ -40173,6 +40173,902 @@
                 }] });
     })();
 
+    var CmacsTreeSelectService = /** @class */ (function (_super) {
+        __extends(CmacsTreeSelectService, _super);
+        function CmacsTreeSelectService() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        return CmacsTreeSelectService;
+    }(NzTreeBaseService));
+    CmacsTreeSelectService.ɵfac = function CmacsTreeSelectService_Factory(t) { return ɵCmacsTreeSelectService_BaseFactory(t || CmacsTreeSelectService); };
+    CmacsTreeSelectService.ɵprov = i0.ɵɵdefineInjectable({ token: CmacsTreeSelectService, factory: CmacsTreeSelectService.ɵfac });
+    var ɵCmacsTreeSelectService_BaseFactory = /*@__PURE__*/ i0.ɵɵgetInheritedFactory(CmacsTreeSelectService);
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsTreeSelectService, [{
+                type: i0.Injectable
+            }], null, null);
+    })();
+
+    var _c0$1f = ["inputElement"];
+    var _c1$A = ["treeRef"];
+    function CmacsTreeSelectComponent_ng_template_0_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r12_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "input", 10, 11);
+            i0.ɵɵlistener("compositionstart", function CmacsTreeSelectComponent_ng_template_0_Template_input_compositionstart_0_listener() { i0.ɵɵrestoreView(_r12_1); var ctx_r11 = i0.ɵɵnextContext(); return ctx_r11.isComposing = true; })("compositionend", function CmacsTreeSelectComponent_ng_template_0_Template_input_compositionend_0_listener() { i0.ɵɵrestoreView(_r12_1); var ctx_r13 = i0.ɵɵnextContext(); return ctx_r13.isComposing = false; })("keydown", function CmacsTreeSelectComponent_ng_template_0_Template_input_keydown_0_listener($event) { i0.ɵɵrestoreView(_r12_1); var ctx_r14 = i0.ɵɵnextContext(); return ctx_r14.onKeyDownInput($event); })("ngModelChange", function CmacsTreeSelectComponent_ng_template_0_Template_input_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r12_1); var ctx_r15 = i0.ɵɵnextContext(); return ctx_r15.setInputValue($event); });
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("no-margin-left", ctx_r1.selectedNodes.length);
+            i0.ɵɵproperty("ngModel", ctx_r1.inputValue)("disabled", ctx_r1.disabled);
+        }
+    }
+    function CmacsTreeSelectComponent_2_ng_template_0_ng_container_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainer(0);
+        }
+    }
+    function CmacsTreeSelectComponent_2_ng_template_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵtemplate(0, CmacsTreeSelectComponent_2_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 13);
+        }
+        if (rf & 2) {
+            i0.ɵɵnextContext(2);
+            var _r8 = i0.ɵɵreference(14);
+            i0.ɵɵproperty("ngTemplateOutlet", _r8);
+        }
+    }
+    function CmacsTreeSelectComponent_2_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r19_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵtemplate(0, CmacsTreeSelectComponent_2_ng_template_0_Template, 1, 1, "ng-template", 12);
+            i0.ɵɵlistener("backdropClick", function CmacsTreeSelectComponent_2_Template_ng_template_backdropClick_0_listener() { i0.ɵɵrestoreView(_r19_1); var ctx_r18 = i0.ɵɵnextContext(); return ctx_r18.closeDropDown(); })("detach", function CmacsTreeSelectComponent_2_Template_ng_template_detach_0_listener() { i0.ɵɵrestoreView(_r19_1); var ctx_r20 = i0.ɵɵnextContext(); return ctx_r20.closeDropDown(); })("positionChange", function CmacsTreeSelectComponent_2_Template_ng_template_positionChange_0_listener($event) { i0.ɵɵrestoreView(_r19_1); var ctx_r21 = i0.ɵɵnextContext(); return ctx_r21.onPositionChange($event); });
+        }
+        if (rf & 2) {
+            var ctx_r2 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("cdkConnectedOverlayOrigin", ctx_r2.cdkOverlayOrigin)("cdkConnectedOverlayOpen", ctx_r2.open)("cdkConnectedOverlayHasBackdrop", true)("cdkConnectedOverlayMinWidth", ctx_r2.dropdownMatchSelectWidth ? null : ctx_r2.triggerWidth)("cdkConnectedOverlayWidth", ctx_r2.dropdownMatchSelectWidth ? ctx_r2.triggerWidth : null);
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_6_div_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 18);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r22 = i0.ɵɵnextContext(2);
+            i0.ɵɵstyleProp("display", ctx_r22.placeHolderDisplay);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1(" ", ctx_r22.placeHolder, " ");
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_6_div_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 19);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r23 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("ngStyle", ctx_r23.selectedValueDisplay);
+            i0.ɵɵattribute("title", ctx_r23.displayWith(ctx_r23.selectedNodes[0]));
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1(" ", ctx_r23.displayWith(ctx_r23.selectedNodes[0]), " ");
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_6_div_4_ng_template_2_Template(rf, ctx) { }
+    function CmacsTreeSelectComponent_ng_container_6_div_4_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 20);
+            i0.ɵɵelementStart(1, "div", 21);
+            i0.ɵɵtemplate(2, CmacsTreeSelectComponent_ng_container_6_div_4_ng_template_2_Template, 0, 0, "ng-template", 22);
+            i0.ɵɵelementStart(3, "span", 23);
+            i0.ɵɵtext(4);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r24 = i0.ɵɵnextContext(2);
+            var _r0 = i0.ɵɵreference(1);
+            i0.ɵɵstyleProp("display", ctx_r24.searchDisplay);
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngTemplateOutlet", _r0);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate1("", ctx_r24.inputValue, "\u00A0");
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_6_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "div", 14);
+            i0.ɵɵtemplate(2, CmacsTreeSelectComponent_ng_container_6_div_2_Template, 2, 3, "div", 15);
+            i0.ɵɵtemplate(3, CmacsTreeSelectComponent_ng_container_6_div_3_Template, 2, 3, "div", 16);
+            i0.ɵɵtemplate(4, CmacsTreeSelectComponent_ng_container_6_div_4_Template, 5, 4, "div", 17);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r3 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngIf", ctx_r3.placeHolder && ctx_r3.selectedNodes.length === 0);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r3.selectedNodes.length === 1);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r3.showSearch);
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_7_div_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 18);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r26 = i0.ɵɵnextContext(2);
+            i0.ɵɵstyleProp("display", ctx_r26.placeHolderDisplay);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1(" ", ctx_r26.placeHolder, " ");
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_7_ng_container_3_span_2_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r35_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "span", 30);
+            i0.ɵɵlistener("mousedown", function CmacsTreeSelectComponent_ng_container_7_ng_container_3_span_2_Template_span_mousedown_0_listener($event) { return $event.preventDefault(); })("click", function CmacsTreeSelectComponent_ng_container_7_ng_container_3_span_2_Template_span_click_0_listener($event) { i0.ɵɵrestoreView(_r35_1); var node_r30 = i0.ɵɵnextContext().$implicit; var ctx_r33 = i0.ɵɵnextContext(2); return ctx_r33.removeSelected(node_r30, true, $event); });
+            i0.ɵɵelement(1, "i", 31);
+            i0.ɵɵelementEnd();
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_7_ng_container_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "li", 27);
+            i0.ɵɵtemplate(2, CmacsTreeSelectComponent_ng_container_7_ng_container_3_span_2_Template, 2, 0, "span", 28);
+            i0.ɵɵelementStart(3, "span", 29);
+            i0.ɵɵtext(4);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var node_r30 = ctx.$implicit;
+            var ctx_r27 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵclassProp("ant-select-selection__choice__disabled", node_r30.isDisabled);
+            i0.ɵɵproperty("@zoomMotion", undefined)("nzNoAnimation", ctx_r27.noAnimation == null ? null : ctx_r27.noAnimation.nzNoAnimation);
+            i0.ɵɵattribute("title", ctx_r27.displayWith(node_r30));
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !node_r30.isDisabled);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r27.displayWith(node_r30));
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_7_li_5_ng_container_2_ng_template_1_Template(rf, ctx) { }
+    var _c2$k = function (a0) { return { $implicit: a0 }; };
+    function CmacsTreeSelectComponent_ng_container_7_li_5_ng_container_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtemplate(1, CmacsTreeSelectComponent_ng_container_7_li_5_ng_container_2_ng_template_1_Template, 0, 0, "ng-template", 33);
+            i0.ɵɵpipe(2, "slice");
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r36 = i0.ɵɵnextContext(3);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r36.maxTagPlaceholder)("ngTemplateOutletContext", i0.ɵɵpureFunction1(5, _c2$k, i0.ɵɵpipeBind2(2, 2, ctx_r36.selectedNodes, ctx_r36.maxTagCount)));
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_7_li_5_ng_container_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r37 = i0.ɵɵnextContext(3);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1(" + ", ctx_r37.selectedNodes.length - ctx_r37.maxTagCount, " ... ");
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_7_li_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "li", 32);
+            i0.ɵɵelementStart(1, "div", 29);
+            i0.ɵɵtemplate(2, CmacsTreeSelectComponent_ng_container_7_li_5_ng_container_2_Template, 3, 7, "ng-container", 1);
+            i0.ɵɵtemplate(3, CmacsTreeSelectComponent_ng_container_7_li_5_ng_container_3_Template, 2, 1, "ng-container", 1);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r28 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("@zoomMotion", undefined);
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngIf", ctx_r28.maxTagPlaceholder);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r28.maxTagPlaceholder);
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_7_ng_template_7_Template(rf, ctx) { }
+    function CmacsTreeSelectComponent_ng_container_7_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "ul", 24);
+            i0.ɵɵtemplate(2, CmacsTreeSelectComponent_ng_container_7_div_2_Template, 2, 3, "div", 15);
+            i0.ɵɵtemplate(3, CmacsTreeSelectComponent_ng_container_7_ng_container_3_Template, 5, 7, "ng-container", 25);
+            i0.ɵɵpipe(4, "slice");
+            i0.ɵɵtemplate(5, CmacsTreeSelectComponent_ng_container_7_li_5_Template, 4, 3, "li", 26);
+            i0.ɵɵelementStart(6, "li", 20);
+            i0.ɵɵtemplate(7, CmacsTreeSelectComponent_ng_container_7_ng_template_7_Template, 0, 0, "ng-template", 22);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r4 = i0.ɵɵnextContext();
+            var _r0 = i0.ɵɵreference(1);
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngIf", ctx_r4.placeHolder && ctx_r4.selectedNodes.length === 0);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngForOf", i0.ɵɵpipeBind3(4, 5, ctx_r4.selectedNodes, 0, ctx_r4.maxTagCount))("ngForTrackBy", ctx_r4.trackValue);
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngIf", ctx_r4.selectedNodes.length > ctx_r4.maxTagCount);
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngTemplateOutlet", _r0);
+        }
+    }
+    function CmacsTreeSelectComponent_span_8_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r41_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "span", 34);
+            i0.ɵɵlistener("mousedown", function CmacsTreeSelectComponent_span_8_Template_span_mousedown_0_listener($event) { return $event.preventDefault(); })("click", function CmacsTreeSelectComponent_span_8_Template_span_click_0_listener($event) { i0.ɵɵrestoreView(_r41_1); var ctx_r40 = i0.ɵɵnextContext(); return ctx_r40.onClearSelection($event); });
+            i0.ɵɵelement(1, "i", 35);
+            i0.ɵɵelementEnd();
+        }
+    }
+    function CmacsTreeSelectComponent_span_11_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "span", 36);
+            i0.ɵɵelement(1, "i", 37);
+            i0.ɵɵelementEnd();
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_12_ng_container_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainer(0);
+        }
+    }
+    function CmacsTreeSelectComponent_ng_container_12_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtemplate(1, CmacsTreeSelectComponent_ng_container_12_ng_container_1_Template, 1, 0, "ng-container", 13);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            i0.ɵɵnextContext();
+            var _r8 = i0.ɵɵreference(14);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngTemplateOutlet", _r8);
+        }
+    }
+    function CmacsTreeSelectComponent_ng_template_13_ng_container_3_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r46_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "div", 41);
+            i0.ɵɵelementStart(2, "i", 42);
+            i0.ɵɵlistener("click", function CmacsTreeSelectComponent_ng_template_13_ng_container_3_Template_i_click_2_listener($event) { i0.ɵɵrestoreView(_r46_1); var ctx_r45 = i0.ɵɵnextContext(2); return ctx_r45.onaddparentevt($event); });
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(3, "span", 43);
+            i0.ɵɵtext(4, "New Category");
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+    }
+    var _c3$9 = function () { return []; };
+    function CmacsTreeSelectComponent_ng_template_13_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r48_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 38);
+            i0.ɵɵelementStart(1, "cmacs-tree", 39, 40);
+            i0.ɵɵlistener("nzExpandChange", function CmacsTreeSelectComponent_ng_template_13_Template_cmacs_tree_nzExpandChange_1_listener($event) { i0.ɵɵrestoreView(_r48_1); var ctx_r47 = i0.ɵɵnextContext(); return ctx_r47.onExpandedKeysChange($event); })("nzClick", function CmacsTreeSelectComponent_ng_template_13_Template_cmacs_tree_nzClick_1_listener($event) { i0.ɵɵrestoreView(_r48_1); var ctx_r49 = i0.ɵɵnextContext(); return ctx_r49.treeClick.emit($event); })("nzCheckedKeysChange", function CmacsTreeSelectComponent_ng_template_13_Template_cmacs_tree_nzCheckedKeysChange_1_listener() { i0.ɵɵrestoreView(_r48_1); var ctx_r50 = i0.ɵɵnextContext(); return ctx_r50.updateSelectedNodes(); })("nzSelectedKeysChange", function CmacsTreeSelectComponent_ng_template_13_Template_cmacs_tree_nzSelectedKeysChange_1_listener() { i0.ɵɵrestoreView(_r48_1); var ctx_r51 = i0.ɵɵnextContext(); return ctx_r51.updateSelectedNodes(); })("nzCheckBoxChange", function CmacsTreeSelectComponent_ng_template_13_Template_cmacs_tree_nzCheckBoxChange_1_listener($event) { i0.ɵɵrestoreView(_r48_1); var ctx_r52 = i0.ɵɵnextContext(); return ctx_r52.treeCheckBoxChange.emit($event); })("searchValueChange", function CmacsTreeSelectComponent_ng_template_13_Template_cmacs_tree_searchValueChange_1_listener($event) { i0.ɵɵrestoreView(_r48_1); var ctx_r53 = i0.ɵɵnextContext(); return ctx_r53.setSearchValues($event); })("onaddchild", function CmacsTreeSelectComponent_ng_template_13_Template_cmacs_tree_onaddchild_1_listener($event) { i0.ɵɵrestoreView(_r48_1); var ctx_r54 = i0.ɵɵnextContext(); return ctx_r54.onaddchildevt($event); });
+            i0.ɵɵelementEnd();
+            i0.ɵɵtemplate(3, CmacsTreeSelectComponent_ng_template_13_ng_container_3_Template, 5, 0, "ng-container", 1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r9 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("ant-select-dropdown--single", !ctx_r9.multiple)("ant-select-dropdown--multiple", ctx_r9.multiple)("ant-select-dropdown-placement-bottomLeft", ctx_r9.dropDownPosition === "bottom")("ant-select-dropdown-placement-topLeft", ctx_r9.dropDownPosition === "top");
+            i0.ɵɵproperty("@slideMotion", !ctx_r9.cmacsOpen && ctx_r9.open ? ctx_r9.dropDownPosition : "void")("nzNoAnimation", ctx_r9.noAnimation == null ? null : ctx_r9.noAnimation.nzNoAnimation)("ngStyle", ctx_r9.dropdownStyle);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("selectMode", true)("nzData", ctx_r9.nodes)("inlineEdit", ctx_r9.inlineEdit)("nzMultiple", ctx_r9.multiple)("searchValue", ctx_r9.inputValue)("checkable", ctx_r9.checkable)("radio", ctx_r9.radio)("asyncData", ctx_r9.asyncData)("showExpand", ctx_r9.showExpand)("showLine", ctx_r9.showLine)("expandedIcon", ctx_r9.expandedIcon)("nzBlockNode", true)("expandAll", ctx_r9.defaultExpandAll)("nzExpandedKeys", ctx_r9.defaultExpandedKeys)("nzCheckedKeys", ctx_r9.checkable ? ctx_r9.value : i0.ɵɵpureFunction0(28, _c3$9))("nzSelectedKeys", !ctx_r9.checkable ? ctx_r9.value : i0.ɵɵpureFunction0(29, _c3$9));
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngIf", ctx_r9.inlineEdit);
+        }
+    }
+    function higherOrderServiceFactory(injector) {
+        return injector.get(CmacsTreeSelectService);
+    }
+    var CmacsTreeSelectComponent = /** @class */ (function (_super) {
+        __extends(CmacsTreeSelectComponent, _super);
+        function CmacsTreeSelectComponent(nzTreeService, renderer, cdr, elementRef, noAnimation) {
+            var _this = _super.call(this, nzTreeService) || this;
+            _this.renderer = renderer;
+            _this.cdr = cdr;
+            _this.elementRef = elementRef;
+            _this.noAnimation = noAnimation;
+            _this.allowClear = true;
+            _this.showExpand = true;
+            _this.showLine = false;
+            _this.dropdownMatchSelectWidth = true;
+            _this.checkable = false;
+            _this.showSearch = false;
+            _this.disabled = false;
+            _this.asyncData = false;
+            _this.multiple = false;
+            _this.defaultExpandAll = false;
+            _this.cmacsOpen = false;
+            _this.inlineEdit = false;
+            _this.radio = false;
+            _this.nodes = [];
+            _this.open = false;
+            _this.size = 'default';
+            _this.placeHolder = '';
+            _this.defaultExpandedKeys = [];
+            _this.displayWith = function (node) { return node.title; };
+            _this.openChange = new i0.EventEmitter();
+            _this.cleared = new i0.EventEmitter();
+            _this.removed = new i0.EventEmitter();
+            _this.expandChange = new i0.EventEmitter();
+            _this.treeClick = new i0.EventEmitter();
+            _this.treeCheckBoxChange = new i0.EventEmitter();
+            _this.onaddchild = new i0.EventEmitter();
+            _this.onaddparent = new i0.EventEmitter();
+            _this.isComposing = false;
+            _this.isDestroy = true;
+            _this.isNotFound = false;
+            _this.inputValue = '';
+            _this.dropDownPosition = 'bottom';
+            _this.selectedNodes = [];
+            _this.value = [];
+            _this.onTouched = function () { return null; };
+            _this.renderer.addClass(_this.elementRef.nativeElement, 'ant-select');
+            return _this;
+        }
+        CmacsTreeSelectComponent.prototype.onaddparentevt = function ($event) {
+            $event.preventDefault();
+            $event.stopImmediatePropagation();
+            this.onaddparent.emit();
+        };
+        CmacsTreeSelectComponent.prototype.addParent = function (node) {
+            this.treeRef.addParent(node);
+        };
+        Object.defineProperty(CmacsTreeSelectComponent.prototype, "placeHolderDisplay", {
+            get: function () {
+                return this.inputValue || this.isComposing || this.selectedNodes.length ? 'none' : 'block';
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(CmacsTreeSelectComponent.prototype, "searchDisplay", {
+            get: function () {
+                return this.open ? 'block' : 'none';
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(CmacsTreeSelectComponent.prototype, "isMultiple", {
+            get: function () {
+                return this.multiple || this.checkable;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(CmacsTreeSelectComponent.prototype, "selectedValueDisplay", {
+            get: function () {
+                var showSelectedValue = false;
+                var opacity = 1;
+                if (!this.showSearch) {
+                    showSelectedValue = true;
+                }
+                else {
+                    if (this.open) {
+                        showSelectedValue = !(this.inputValue || this.isComposing);
+                        if (showSelectedValue) {
+                            opacity = 0.4;
+                        }
+                    }
+                    else {
+                        showSelectedValue = true;
+                    }
+                }
+                return {
+                    display: showSelectedValue ? 'block' : 'none',
+                    opacity: "" + opacity
+                };
+            },
+            enumerable: false,
+            configurable: true
+        });
+        CmacsTreeSelectComponent.prototype.ngOnInit = function () {
+            this.isDestroy = false;
+            this.selectionChangeSubscription = this.subscribeSelectionChange();
+            if (this.inlineEdit) {
+                this.showExpand = false;
+            }
+            if (this.checkable && this.cmacsOpen) {
+                this.defaultExpandAll = true;
+            }
+        };
+        CmacsTreeSelectComponent.prototype.ngAfterViewInit = function () {
+            if (this.cmacsOpen && this.treeRef) {
+                this.treeRef.searchValue = '';
+            }
+        };
+        CmacsTreeSelectComponent.prototype.onaddchildevt = function ($event) {
+            this.onaddchild.emit($event);
+        };
+        CmacsTreeSelectComponent.prototype.ngOnDestroy = function () {
+            this.isDestroy = true;
+            this.closeDropDown();
+            this.selectionChangeSubscription.unsubscribe();
+        };
+        CmacsTreeSelectComponent.prototype.setDisabledState = function (isDisabled) {
+            this.disabled = isDisabled;
+            this.closeDropDown();
+        };
+        CmacsTreeSelectComponent.prototype.ngOnChanges = function (changes) {
+            if (changes.hasOwnProperty('nodes')) {
+                this.updateSelectedNodes(true);
+            }
+        };
+        CmacsTreeSelectComponent.prototype.writeValue = function (value) {
+            var _this = this;
+            if (util.isNotNil(value)) {
+                if (this.isMultiple && Array.isArray(value)) {
+                    this.value = value;
+                }
+                else {
+                    this.value = [value];
+                }
+                this.updateSelectedNodes(true);
+            }
+            else {
+                this.value = [];
+                this.selectedNodes.forEach(function (node) {
+                    _this.removeSelected(node, false);
+                });
+                this.selectedNodes = [];
+            }
+            this.cdr.markForCheck();
+        };
+        CmacsTreeSelectComponent.prototype.registerOnChange = function (fn) {
+            this.onChange = fn;
+        };
+        CmacsTreeSelectComponent.prototype.registerOnTouched = function (fn) {
+            this.onTouched = fn;
+        };
+        CmacsTreeSelectComponent.prototype.trigger = function () {
+            if (this.disabled || (!this.disabled && this.open)) {
+                this.closeDropDown();
+            }
+            else {
+                this.openDropdown();
+                if (this.showSearch || this.isMultiple) {
+                    this.focusOnInput();
+                }
+            }
+        };
+        CmacsTreeSelectComponent.prototype.openDropdown = function () {
+            if (!this.disabled) {
+                this.open = true;
+                this.openChange.emit(this.open);
+                this.updateCdkConnectedOverlayStatus();
+                this.updatePosition();
+            }
+        };
+        CmacsTreeSelectComponent.prototype.closeDropDown = function () {
+            this.onTouched();
+            this.open = false;
+            this.openChange.emit(this.open);
+            this.cdr.markForCheck();
+        };
+        CmacsTreeSelectComponent.prototype.onKeyDownInput = function (e) {
+            var keyCode = e.keyCode;
+            var eventTarget = e.target;
+            if (this.isMultiple && !eventTarget.value && keyCode === keycodes.BACKSPACE) {
+                e.preventDefault();
+                if (this.selectedNodes.length) {
+                    var removeNode = this.selectedNodes[this.selectedNodes.length - 1];
+                    this.removeSelected(removeNode);
+                    this.nzTreeService.triggerEventChange$.next({
+                        eventName: 'removeSelect',
+                        node: removeNode
+                    });
+                }
+                if (this.cmacsOpen) {
+                    this.treeRef.searchValue = '';
+                }
+            }
+        };
+        CmacsTreeSelectComponent.prototype.onExpandedKeysChange = function (value) {
+            this.expandChange.emit(value);
+            this.defaultExpandedKeys = __spread(value.keys);
+        };
+        CmacsTreeSelectComponent.prototype.setInputValue = function (value) {
+            this.inputValue = value;
+            this.updateInputWidth();
+            this.updatePosition();
+        };
+        CmacsTreeSelectComponent.prototype.removeSelected = function (node, emit, event) {
+            if (emit === void 0) { emit = true; }
+            node.isSelected = false;
+            node.isChecked = false;
+            if (this.checkable) {
+                this.nzTreeService.conduct(node);
+            }
+            else {
+                this.nzTreeService.setSelectedNodeList(node, this.multiple);
+            }
+            if (emit) {
+                this.removed.emit(node);
+            }
+            // Do not trigger the popup
+            if (event && event.stopPropagation) {
+                event.stopPropagation();
+            }
+        };
+        CmacsTreeSelectComponent.prototype.focusOnInput = function () {
+            var _this = this;
+            setTimeout(function () {
+                if (_this.inputElement) {
+                    _this.inputElement.nativeElement.focus();
+                }
+            });
+        };
+        CmacsTreeSelectComponent.prototype.subscribeSelectionChange = function () {
+            var _this = this;
+            return rxjs.merge(this.treeClick.pipe(operators.tap(function (event) {
+                var node = event.node;
+                if (_this.radio && _this.checkable) {
+                    var nodes = _this.coerceTreeNodes(_this.nodes);
+                    _this.nzTreeService.calcCheckedKeys([], nodes, true);
+                    node.isChecked = !node.isChecked;
+                    _this.nzTreeService.calcCheckedKeys([node.key], nodes, true);
+                    _this.updateSelectedNodes();
+                }
+                else if (_this.checkable && !node.isDisabled && !node.isDisableCheckbox) {
+                    node.isChecked = !node.isChecked;
+                    _this.nzTreeService.conduct(node);
+                }
+                if (_this.checkable) {
+                    node.isSelected = false;
+                }
+            }), operators.filter(function (event) {
+                var node = event.node;
+                return _this.checkable ? !node.isDisabled && !node.isDisableCheckbox : !node.isDisabled;
+            })), this.checkable ? this.treeCheckBoxChange : rxjs.of(), this.cleared, this.removed).subscribe(function () {
+                _this.updateSelectedNodes();
+                var value = _this.selectedNodes.map(function (node) { return node.key; });
+                _this.value = __spread(value);
+                if (_this.showSearch || _this.isMultiple) {
+                    _this.inputValue = '';
+                    _this.isNotFound = false;
+                }
+                if (_this.isMultiple) {
+                    _this.onChange(value);
+                    _this.focusOnInput();
+                    _this.updatePosition();
+                }
+                else {
+                    _this.closeDropDown();
+                    _this.onChange(value.length ? value[0] : null);
+                }
+            });
+        };
+        CmacsTreeSelectComponent.prototype.updateSelectedNodes = function (init) {
+            if (init === void 0) { init = false; }
+            if (init) {
+                var nodes = this.coerceTreeNodes(this.nodes);
+                this.nzTreeService.isMultiple = this.isMultiple;
+                this.nzTreeService.initTree(nodes);
+                if (this.checkable && !this.radio) {
+                    this.nzTreeService.calcCheckedKeys(this.value, nodes);
+                }
+                else if (!this.radio) {
+                    this.nzTreeService.calcSelectedKeys(this.value, nodes, this.isMultiple);
+                }
+                else {
+                    this.nzTreeService.calcCheckedKeys(this.value, nodes, true);
+                }
+            }
+            if (this.checkable && !this.radio) {
+                this.selectedNodes = __spread(this.getCheckedNodeList());
+            }
+            else if (!this.radio) {
+                this.selectedNodes = __spread(this.getSelectedNodeList());
+            }
+            else {
+                this.selectedNodes = __spread(this.getCheckedNodeList());
+            }
+        };
+        CmacsTreeSelectComponent.prototype.updatePosition = function () {
+            var _this = this;
+            setTimeout(function () {
+                if (_this.cdkConnectedOverlay && _this.cdkConnectedOverlay.overlayRef) {
+                    _this.cdkConnectedOverlay.overlayRef.updatePosition();
+                }
+            });
+        };
+        CmacsTreeSelectComponent.prototype.onPositionChange = function (position) {
+            this.dropDownPosition = position.connectionPair.originY;
+        };
+        CmacsTreeSelectComponent.prototype.updateInputWidth = function () {
+            if (this.isMultiple && this.inputElement) {
+                if (this.inputValue || this.isComposing) {
+                    this.renderer.setStyle(this.inputElement.nativeElement, 'width', this.inputElement.nativeElement.scrollWidth + "px");
+                }
+                else {
+                    this.renderer.removeStyle(this.inputElement.nativeElement, 'width');
+                }
+            }
+        };
+        CmacsTreeSelectComponent.prototype.onClearSelection = function ($event) {
+            var _this = this;
+            $event.stopPropagation();
+            $event.preventDefault();
+            this.selectedNodes.forEach(function (node) {
+                _this.removeSelected(node, false);
+            });
+            this.cleared.emit();
+        };
+        CmacsTreeSelectComponent.prototype.setSearchValues = function ($event) {
+            var _this = this;
+            Promise.resolve().then(function () {
+                _this.isNotFound = (_this.showSearch || _this.isMultiple) && !!_this.inputValue && $event.matchedKeys.length === 0;
+            });
+        };
+        CmacsTreeSelectComponent.prototype.updateCdkConnectedOverlayStatus = function () {
+            this.triggerWidth = this.cdkOverlayOrigin.elementRef.nativeElement.getBoundingClientRect().width;
+        };
+        CmacsTreeSelectComponent.prototype.trackValue = function (_index, option) {
+            return option.key;
+        };
+        return CmacsTreeSelectComponent;
+    }(NzTreeBase));
+    CmacsTreeSelectComponent.ɵfac = function CmacsTreeSelectComponent_Factory(t) { return new (t || CmacsTreeSelectComponent)(i0.ɵɵdirectiveInject(CmacsTreeSelectService), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective, 9)); };
+    CmacsTreeSelectComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsTreeSelectComponent, selectors: [["cmacs-tree-select"]], viewQuery: function CmacsTreeSelectComponent_Query(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵviewQuery(_c0$1f, 1);
+                i0.ɵɵviewQuery(_c1$A, 1);
+                i0.ɵɵviewQuery(i1$4.CdkOverlayOrigin, 1);
+                i0.ɵɵviewQuery(i1$4.CdkConnectedOverlay, 1);
+            }
+            if (rf & 2) {
+                var _t = void 0;
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.inputElement = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.treeRef = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.cdkOverlayOrigin = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.cdkConnectedOverlay = _t.first);
+            }
+        }, hostVars: 12, hostBindings: function CmacsTreeSelectComponent_HostBindings(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵlistener("click", function CmacsTreeSelectComponent_click_HostBindingHandler() { return ctx.trigger(); });
+            }
+            if (rf & 2) {
+                i0.ɵɵclassProp("ant-select-lg", ctx.size === "large")("ant-select-sm", ctx.size === "small")("ant-select-enabled", !ctx.disabled)("ant-select-disabled", ctx.disabled)("ant-select-allow-clear", ctx.allowClear)("ant-select-open", ctx.open && !ctx.cmacsOpen);
+            }
+        }, inputs: { allowClear: "allowClear", showExpand: "showExpand", showLine: "showLine", expandedIcon: "expandedIcon", dropdownMatchSelectWidth: "dropdownMatchSelectWidth", checkable: "checkable", showSearch: "showSearch", disabled: "disabled", asyncData: "asyncData", multiple: "multiple", defaultExpandAll: "defaultExpandAll", cmacsOpen: "cmacsOpen", inlineEdit: "inlineEdit", radio: "radio", notFoundContent: "notFoundContent", nodes: "nodes", open: "open", size: "size", placeHolder: "placeHolder", dropdownStyle: "dropdownStyle", defaultExpandedKeys: "defaultExpandedKeys", displayWith: "displayWith", maxTagCount: "maxTagCount", maxTagPlaceholder: "maxTagPlaceholder" }, outputs: { openChange: "openChange", cleared: "cleared", removed: "removed", expandChange: "expandChange", treeClick: "treeClick", treeCheckBoxChange: "treeCheckBoxChange", onaddchild: "onaddchild", onaddparent: "onaddparent" }, exportAs: ["cmacsTreeSelect"], features: [i0.ɵɵProvidersFeature([
+                CmacsTreeSelectService,
+                {
+                    provide: NzTreeHigherOrderServiceToken,
+                    useFactory: higherOrderServiceFactory,
+                    deps: [[new i0.Self(), i0.Injector]]
+                },
+                {
+                    provide: i5.NG_VALUE_ACCESSOR,
+                    useExisting: i0.forwardRef(function () { return CmacsTreeSelectComponent; }),
+                    multi: true
+                }
+            ]), i0.ɵɵInheritDefinitionFeature, i0.ɵɵNgOnChangesFeature], decls: 15, vars: 12, consts: [["inputTemplate", ""], [4, "ngIf"], ["cdkOverlayOrigin", "", "tabindex", "0", 1, "ant-select-selection"], [1, "ant-select-selection__clear", "cmacs-tree-select-search-icon"], [1, "iconCreation-Search", "ant-select-clear-icon"], ["class", "ant-select-selection__clear", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__clear", "cmacs-tree-select-arrow"], [1, "ant-select-clear-icon", "iconArrowLarge-Arrow-Right"], ["class", "ant-select-arrow", 4, "ngIf"], ["content", ""], ["autocomplete", "off", 1, "ant-select-search__field", 3, "ngModel", "disabled", "compositionstart", "compositionend", "keydown", "ngModelChange"], ["inputElement", ""], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayMinWidth", "cdkConnectedOverlayWidth", "backdropClick", "detach", "positionChange"], [4, "ngTemplateOutlet"], [1, "ant-select-selection__rendered"], ["class", "ant-select-selection__placeholder", 3, "display", 4, "ngIf"], ["class", "ant-select-selection-selected-value", 3, "ngStyle", 4, "ngIf"], ["class", "ant-select-search ant-select-search--inline", 3, "display", 4, "ngIf"], [1, "ant-select-selection__placeholder"], [1, "ant-select-selection-selected-value", 3, "ngStyle"], [1, "ant-select-search", "ant-select-search--inline"], [1, "ant-select-search__field__wrap"], [3, "ngTemplateOutlet"], [1, "ant-select-search__field__mirror"], [1, "cmacs-tree-select-ul", "ant-select-selection__rendered"], [4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-selection__choice", 4, "ngIf"], [1, "ant-select-selection__choice", 3, "nzNoAnimation"], ["class", "ant-select-selection__choice__remove", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__choice__content"], [1, "ant-select-selection__choice__remove", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close", 1, "ant-select-remove-icon"], [1, "ant-select-selection__choice"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "ant-select-selection__clear", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close-circle", "theme", "fill", 1, "ant-select-clear-icon"], [1, "ant-select-arrow"], ["nz-icon", "", "nzType", "down", 1, "ant-select-arrow-icon"], [1, "ant-select-dropdown", "ant-select-tree-dropdown", "cmacs-tree-select-dropdown", "cmacs-custom-scrollbar", 3, "nzNoAnimation", "ngStyle"], ["nzNoAnimation", "", 3, "selectMode", "nzData", "inlineEdit", "nzMultiple", "searchValue", "checkable", "radio", "asyncData", "showExpand", "showLine", "expandedIcon", "nzBlockNode", "expandAll", "nzExpandedKeys", "nzCheckedKeys", "nzSelectedKeys", "nzExpandChange", "nzClick", "nzCheckedKeysChange", "nzSelectedKeysChange", "nzCheckBoxChange", "searchValueChange", "onaddchild"], ["treeRef", ""], [1, "cmacs-add-new-category"], [1, "iconUILarge-New", "cmacs-select-tree-new-icon", 3, "click"], [1, "cmacs-add-new-category-title"]], template: function CmacsTreeSelectComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵtemplate(0, CmacsTreeSelectComponent_ng_template_0_Template, 2, 4, "ng-template", null, 0, i0.ɵɵtemplateRefExtractor);
+                i0.ɵɵtemplate(2, CmacsTreeSelectComponent_2_Template, 1, 5, undefined, 1);
+                i0.ɵɵelementStart(3, "div", 2);
+                i0.ɵɵelementStart(4, "span", 3);
+                i0.ɵɵelement(5, "i", 4);
+                i0.ɵɵelementEnd();
+                i0.ɵɵtemplate(6, CmacsTreeSelectComponent_ng_container_6_Template, 5, 3, "ng-container", 1);
+                i0.ɵɵtemplate(7, CmacsTreeSelectComponent_ng_container_7_Template, 8, 9, "ng-container", 1);
+                i0.ɵɵtemplate(8, CmacsTreeSelectComponent_span_8_Template, 2, 0, "span", 5);
+                i0.ɵɵelementStart(9, "div", 6);
+                i0.ɵɵelement(10, "i", 7);
+                i0.ɵɵelementEnd();
+                i0.ɵɵtemplate(11, CmacsTreeSelectComponent_span_11_Template, 2, 0, "span", 8);
+                i0.ɵɵelementEnd();
+                i0.ɵɵtemplate(12, CmacsTreeSelectComponent_ng_container_12_Template, 2, 1, "ng-container", 1);
+                i0.ɵɵtemplate(13, CmacsTreeSelectComponent_ng_template_13_Template, 4, 30, "ng-template", null, 9, i0.ɵɵtemplateRefExtractor);
+            }
+            if (rf & 2) {
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngIf", !ctx.cmacsOpen);
+                i0.ɵɵadvance(1);
+                i0.ɵɵclassProp("ant-select-selection--single", !ctx.isMultiple)("ant-select-selection--multiple", ctx.isMultiple);
+                i0.ɵɵadvance(3);
+                i0.ɵɵproperty("ngIf", !ctx.isMultiple);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.isMultiple);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.allowClear && ctx.selectedNodes.length);
+                i0.ɵɵadvance(2);
+                i0.ɵɵclassProp("cmacs-selected-nodes", ctx.selectedNodes.length);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", !ctx.isMultiple);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.cmacsOpen);
+            }
+        }, directives: [i2$1.NgIf, i1$4.CdkOverlayOrigin, i5.DefaultValueAccessor, i5.NgControlStatus, i5.NgModel, i1$4.CdkConnectedOverlay, i4$1.NzConnectedOverlayDirective, i2$1.NgTemplateOutlet, i2$1.NgStyle, i2$1.NgForOf, i1$2.NzNoAnimationDirective, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, CmacsTreeComponent], pipes: [i2$1.SlicePipe], styles: [".cmacs-tree-select-dropdown[_ngcontent-%COMP%]{box-shadow:none;border-bottom:1px solid #dee0e5;border-right:1px solid #dee0e5;border-left:1px solid #dee0e5;border-radius:0 0 3px 3px;z-index:unset}  .ant-select-tree-dropdown .ant-select-switcher-icon{font-size:10px}  .ant-select-tree-dropdown .ant-select-tree-checkbox{margin:0 3px 0 0}  .ant-select-tree-dropdown .ant-select-tree .ant-select-tree-node-content-wrapper{top:2px}  .ant-select-tree-dropdown .ant-select-tree-switcher{position:relative;width:24px;line-height:24px;cursor:pointer;height:24px;display:inline-block;vertical-align:middle;text-align:center;margin:0}.cmacs-tree-select-dropdown[_ngcontent-%COMP%]{opacity:1!important;transform:none!important}[_nghost-%COMP%]     .ant-select-selection, [_nghost-%COMP%]     .ant-select-selection:focus, [_nghost-%COMP%]     .ant-select-selection:hover{border:1px solid #dee0e5;border-radius:3px 3px 0 0}.cmacs-tree-select-search-icon[_ngcontent-%COMP%]{left:11px;right:unset;z-index:unset;opacity:1!important;font-size:16px;top:14px}[_nghost-%COMP%]     .ant-select-selection--multiple .ant-select-selection__placeholder{margin-left:29px}.ant-select-selection__clear[_ngcontent-%COMP%]{right:14px}.cmacs-tree-select-arrow[_ngcontent-%COMP%]{z-index:unset;opacity:1!important;font-size:29px;top:7px;right:30px}.cmacs-tree-select-arrow[_ngcontent-%COMP%]:hover{cursor:pointer}.cmacs-tree-select-arrow[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{border-left:1px solid #dee0e5;padding:0 5px;font-size:24px;top:-14px;position:relative}.cmacs-tree-select-arrow[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:before{top:2px;position:relative}.ant-select-selection--multiple[_ngcontent-%COMP%]   .ant-select-search--inline[_ngcontent-%COMP%]   .ant-select-search__field[_ngcontent-%COMP%]{padding-left:0}.ant-select-selection[_ngcontent-%COMP%]:hover   .cmacs-selected-nodes.iconArrowLarge-Arrow-Right[_ngcontent-%COMP%]:before{opacity:0}.cmacs-add-new-category[_ngcontent-%COMP%]{font-weight:400;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#656c79;font-size:12px;font-family:Roboto-Regular;padding:5px 0 6px 10px;border-top:1px solid #dee0e5}.cmacs-add-new-category[_ngcontent-%COMP%]:hover{background-color:#f6f7fb}.cmacs-add-new-category-title[_ngcontent-%COMP%]{padding:3px 5px}.cmacs-select-tree-new-icon[_ngcontent-%COMP%]{color:#acb3bf;font-size:16px;top:2px;position:relative}.cmacs-select-tree-new-icon[_ngcontent-%COMP%]:hover{cursor:pointer}.no-margin-left[_ngcontent-%COMP%]{margin-left:0!important}  .ant-select-selection--multiple .cmacs-tree-select-ul .ant-select-search--inline .ant-select-search__field{max-width:84%;margin-left:28px}", ".ant-select-dropdown[_ngcontent-%COMP%] {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        overflow: auto;\n        scrollbar-color: #cfd3d9 #ffffff;\n        scrollbar-width: thin;\n      }\n\n      cmacs-tree-select[_ngcontent-%COMP%] {\n        overflow: hidden;\n      }"], data: { animation: [animation.slideMotion, animation.zoomMotion] } });
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "allowClear", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "showExpand", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "showLine", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "dropdownMatchSelectWidth", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "checkable", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "showSearch", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "disabled", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "asyncData", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "multiple", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "defaultExpandAll", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "cmacsOpen", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "inlineEdit", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsTreeSelectComponent.prototype, "radio", void 0);
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsTreeSelectComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-tree-select',
+                        exportAs: 'cmacsTreeSelect',
+                        animations: [animation.slideMotion, animation.zoomMotion],
+                        templateUrl: './cmacs-tree-select.component.html',
+                        styleUrls: ['./cmacs-tree-select.component.css'],
+                        providers: [
+                            CmacsTreeSelectService,
+                            {
+                                provide: NzTreeHigherOrderServiceToken,
+                                useFactory: higherOrderServiceFactory,
+                                deps: [[new i0.Self(), i0.Injector]]
+                            },
+                            {
+                                provide: i5.NG_VALUE_ACCESSOR,
+                                useExisting: i0.forwardRef(function () { return CmacsTreeSelectComponent; }),
+                                multi: true
+                            }
+                        ],
+                        host: {
+                            '[class.ant-select-lg]': 'size==="large"',
+                            '[class.ant-select-sm]': 'size==="small"',
+                            '[class.ant-select-enabled]': '!disabled',
+                            '[class.ant-select-disabled]': 'disabled',
+                            '[class.ant-select-allow-clear]': 'allowClear',
+                            '[class.ant-select-open]': 'open && !cmacsOpen',
+                            '(click)': 'trigger()'
+                        },
+                        styles: [
+                            "\n      .ant-select-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        overflow: auto;\n        scrollbar-color: #cfd3d9 #ffffff;\n        scrollbar-width: thin;\n      }\n\n      cmacs-tree-select {\n        overflow: hidden;\n      }\n    "
+                        ]
+                    }]
+            }], function () {
+            return [{ type: CmacsTreeSelectService }, { type: i0.Renderer2 }, { type: i0.ChangeDetectorRef }, { type: i0.ElementRef }, { type: i1$2.NzNoAnimationDirective, decorators: [{
+                            type: i0.Host
+                        }, {
+                            type: i0.Optional
+                        }] }];
+        }, { allowClear: [{
+                    type: i0.Input
+                }], showExpand: [{
+                    type: i0.Input
+                }], showLine: [{
+                    type: i0.Input
+                }], expandedIcon: [{
+                    type: i0.Input
+                }], dropdownMatchSelectWidth: [{
+                    type: i0.Input
+                }], checkable: [{
+                    type: i0.Input
+                }], showSearch: [{
+                    type: i0.Input
+                }], disabled: [{
+                    type: i0.Input
+                }], asyncData: [{
+                    type: i0.Input
+                }], multiple: [{
+                    type: i0.Input
+                }], defaultExpandAll: [{
+                    type: i0.Input
+                }], cmacsOpen: [{
+                    type: i0.Input
+                }], inlineEdit: [{
+                    type: i0.Input
+                }], radio: [{
+                    type: i0.Input
+                }], notFoundContent: [{
+                    type: i0.Input
+                }], nodes: [{
+                    type: i0.Input
+                }], open: [{
+                    type: i0.Input
+                }], size: [{
+                    type: i0.Input
+                }], placeHolder: [{
+                    type: i0.Input
+                }], dropdownStyle: [{
+                    type: i0.Input
+                }], defaultExpandedKeys: [{
+                    type: i0.Input
+                }], displayWith: [{
+                    type: i0.Input
+                }], maxTagCount: [{
+                    type: i0.Input
+                }], maxTagPlaceholder: [{
+                    type: i0.Input
+                }], openChange: [{
+                    type: i0.Output
+                }], cleared: [{
+                    type: i0.Output
+                }], removed: [{
+                    type: i0.Output
+                }], expandChange: [{
+                    type: i0.Output
+                }], treeClick: [{
+                    type: i0.Output
+                }], treeCheckBoxChange: [{
+                    type: i0.Output
+                }], onaddchild: [{
+                    type: i0.Output
+                }], onaddparent: [{
+                    type: i0.Output
+                }], inputElement: [{
+                    type: i0.ViewChild,
+                    args: ['inputElement']
+                }], treeRef: [{
+                    type: i0.ViewChild,
+                    args: ['treeRef']
+                }], cdkOverlayOrigin: [{
+                    type: i0.ViewChild,
+                    args: [i1$4.CdkOverlayOrigin]
+                }], cdkConnectedOverlay: [{
+                    type: i0.ViewChild,
+                    args: [i1$4.CdkConnectedOverlay]
+                }] });
+    })();
+
     i2$1.registerLocaleData(en__default['default']);
     var CmacsComponentsV2LibModule = /** @class */ (function () {
         function CmacsComponentsV2LibModule() {
@@ -40182,6 +41078,7 @@
     CmacsComponentsV2LibModule.ɵfac = function CmacsComponentsV2LibModule_Factory(t) { return new (t || CmacsComponentsV2LibModule)(); };
     CmacsComponentsV2LibModule.ɵmod = i0.ɵɵdefineNgModule({ type: CmacsComponentsV2LibModule });
     CmacsComponentsV2LibModule.ɵinj = i0.ɵɵdefineInjector({ providers: [i2$1.DatePipe, { provide: i1$3.NZ_I18N, useValue: i1$3.en_US }, i5$2.CookieService], imports: [[
+                treeSelect.NzTreeSelectModule,
                 i3$6.GoogleChartsModule,
                 i2.BidiModule,
                 i2$3.PlatformModule,
@@ -40245,7 +41142,8 @@
                 i1$6.VgBufferingModule,
                 i3.EditorModule,
                 i5.ReactiveFormsModule
-            ], i3$6.GoogleChartsModule,
+            ], treeSelect.NzTreeSelectModule,
+            i3$6.GoogleChartsModule,
             i2.BidiModule,
             i2$3.PlatformModule,
             i2$6.NgxChartsModule,
@@ -40303,6 +41201,7 @@
             i10.NzTimePickerModule] });
     (function () {
         (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [PtbTabLabelDirective,
+                CmacsTreeSelectComponent,
                 PtbTabsNavComponent,
                 PtbTabsInkBarDirective,
                 CmacsTimelineChartComponent,
@@ -40450,7 +41349,8 @@
                 CmacsDateTimePickerComponent,
                 CmacsDatetimePickerPanelComponent,
                 CmacsDatetimeValueAccessorDirective,
-                CmacsMessageContainerComponent], imports: [i3$6.GoogleChartsModule,
+                CmacsMessageContainerComponent], imports: [treeSelect.NzTreeSelectModule,
+                i3$6.GoogleChartsModule,
                 i2.BidiModule,
                 i2$3.PlatformModule,
                 i2$6.NgxChartsModule,
@@ -40512,7 +41412,9 @@
                 i1$6.VgOverlayPlayModule,
                 i1$6.VgBufferingModule,
                 i3.EditorModule,
-                i5.ReactiveFormsModule], exports: [PtbTabLabelDirective,
+                i5.ReactiveFormsModule], exports: [treeSelect.NzTreeSelectModule,
+                CmacsTreeSelectComponent,
+                PtbTabLabelDirective,
                 PtbTabsNavComponent,
                 PtbTabsInkBarDirective,
                 i3$6.GoogleChartsModule,
@@ -40720,6 +41622,7 @@
                 args: [{
                         declarations: [
                             PtbTabLabelDirective,
+                            CmacsTreeSelectComponent,
                             PtbTabsNavComponent,
                             PtbTabsInkBarDirective,
                             CmacsTimelineChartComponent,
@@ -40870,6 +41773,7 @@
                             CmacsMessageContainerComponent
                         ],
                         imports: [
+                            treeSelect.NzTreeSelectModule,
                             i3$6.GoogleChartsModule,
                             i2.BidiModule,
                             i2$3.PlatformModule,
@@ -40935,6 +41839,8 @@
                             i5.ReactiveFormsModule
                         ],
                         exports: [
+                            treeSelect.NzTreeSelectModule,
+                            CmacsTreeSelectComponent,
                             PtbTabLabelDirective,
                             PtbTabsNavComponent,
                             PtbTabsInkBarDirective,
@@ -41504,6 +42410,8 @@
     exports.CmacsTooltipDirective = CmacsTooltipDirective;
     exports.CmacsTreeComponent = CmacsTreeComponent;
     exports.CmacsTreeNodeComponent = CmacsTreeNodeComponent;
+    exports.CmacsTreeSelectComponent = CmacsTreeSelectComponent;
+    exports.CmacsTreeSelectService = CmacsTreeSelectService;
     exports.CmacsTreeService = CmacsTreeService;
     exports.CmacsUserDropdownComponent = CmacsUserDropdownComponent;
     exports.CmacsUserDropdownExternalListComponent = CmacsUserDropdownExternalListComponent;
@@ -41555,6 +42463,7 @@
     exports.UtilService = UtilService;
     exports.defaultFilterOption = defaultFilterOption;
     exports.getTimeConfig = getTimeConfig;
+    exports.higherOrderServiceFactory = higherOrderServiceFactory;
     exports.isAllowedDate = isAllowedDate;
     exports.isCheckDisabled = isCheckDisabled;
     exports.isInArray = isInArray;
