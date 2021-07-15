@@ -39,7 +39,7 @@ CmacsDividerComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsDividerCompone
         i0.ɵɵtemplate(0, CmacsDividerComponent_span_0_Template, 2, 1, "span", 0);
     } if (rf & 2) {
         i0.ɵɵproperty("ngIf", ctx.text);
-    } }, directives: [i1.NgIf, i2.NzStringTemplateOutletDirective], styles: [".ant-divider-vertical{height:1em!important}"], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [i1.NgIf, i2.NzStringTemplateOutletDirective], styles: [".ant-divider-vertical{height:1em}"], encapsulation: 2, changeDetection: 0 });
 __decorate([
     InputBoolean()
 ], CmacsDividerComponent.prototype, "dashed", void 0);

@@ -574,6 +574,9 @@ nz-divider {
 .has-error .ant-form-explain, cmacs-form-explain {
   color: #F6503C;
   font-size: 10px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
 }
 
 cmacs-datetime-picker.ant-time-picker {
@@ -673,6 +676,8 @@ cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] + .ant-ti
 .cmacs-dropdown ul {
   border: 1px solid #dee0e5;
   min-width: 190px;
+  padding:0px;
+    border-radius: 3px;
 }
 
 .cmacs-dropdown.ant-dropdown-placement-bottomCenter ul {
