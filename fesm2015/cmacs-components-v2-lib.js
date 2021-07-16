@@ -21,7 +21,7 @@ import { NzAutosizeDirective, NzInputModule } from 'ng-zorro-antd/input';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { CdkOverlayOrigin, CdkConnectedOverlay, Overlay, OverlayRef, ViewportRuler, ConnectionPositionPair, OverlayModule } from '@angular/cdk/overlay';
 import { NzNoAnimationDirective, NzNoAnimationModule } from 'ng-zorro-antd/core/no-animation';
-import { slideMotion, collapseMotion, zoomBigMotion, helpMotion, slideAlertMotion, moveUpMotion, zoomMotion } from 'ng-zorro-antd/core/animation';
+import { slideMotion, collapseMotion, zoomBigMotion, helpMotion, slideAlertMotion, moveUpMotion } from 'ng-zorro-antd/core/animation';
 import { NzConnectedOverlayDirective, POSITION_MAP, getPlacementName, DEFAULT_TOOLTIP_POSITIONS, NzOverlayModule } from 'ng-zorro-antd/core/overlay';
 import { NzI18nService, DateHelperService, NzI18nModule, NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 import { NzEmbedEmptyComponent, NzEmptyModule } from 'ng-zorro-antd/empty';
@@ -36545,7 +36545,7 @@ function CmacsTreeSelectComponent_ng_container_7_ng_container_3_Template(rf, ctx
     const ctx_r27 = ɵɵnextContext(2);
     ɵɵadvance(1);
     ɵɵclassProp("ant-select-selection__choice__disabled", node_r30.isDisabled);
-    ɵɵproperty("@zoomMotion", undefined)("nzNoAnimation", ctx_r27.noAnimation == null ? null : ctx_r27.noAnimation.nzNoAnimation);
+    ɵɵproperty("nzNoAnimation", ctx_r27.noAnimation == null ? null : ctx_r27.noAnimation.nzNoAnimation);
     ɵɵattribute("title", ctx_r27.displayWith(node_r30));
     ɵɵadvance(1);
     ɵɵproperty("ngIf", !node_r30.isDisabled);
@@ -36582,7 +36582,6 @@ function CmacsTreeSelectComponent_ng_container_7_li_5_Template(rf, ctx) { if (rf
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r28 = ɵɵnextContext(2);
-    ɵɵproperty("@zoomMotion", undefined);
     ɵɵadvance(2);
     ɵɵproperty("ngIf", ctx_r28.maxTagPlaceholder);
     ɵɵadvance(1);
@@ -36593,9 +36592,9 @@ function CmacsTreeSelectComponent_ng_container_7_Template(rf, ctx) { if (rf & 1)
     ɵɵelementContainerStart(0);
     ɵɵelementStart(1, "ul", 24);
     ɵɵtemplate(2, CmacsTreeSelectComponent_ng_container_7_div_2_Template, 2, 3, "div", 15);
-    ɵɵtemplate(3, CmacsTreeSelectComponent_ng_container_7_ng_container_3_Template, 5, 7, "ng-container", 25);
+    ɵɵtemplate(3, CmacsTreeSelectComponent_ng_container_7_ng_container_3_Template, 5, 6, "ng-container", 25);
     ɵɵpipe(4, "slice");
-    ɵɵtemplate(5, CmacsTreeSelectComponent_ng_container_7_li_5_Template, 4, 3, "li", 26);
+    ɵɵtemplate(5, CmacsTreeSelectComponent_ng_container_7_li_5_Template, 4, 2, "li", 26);
     ɵɵelementStart(6, "li", 20);
     ɵɵtemplate(7, CmacsTreeSelectComponent_ng_container_7_ng_template_7_Template, 0, 0, "ng-template", 22);
     ɵɵelementEnd();
@@ -36663,9 +36662,9 @@ function CmacsTreeSelectComponent_ng_template_13_Template(rf, ctx) { if (rf & 1)
 } if (rf & 2) {
     const ctx_r9 = ɵɵnextContext();
     ɵɵclassProp("ant-select-dropdown--single", !ctx_r9.multiple)("ant-select-dropdown--multiple", ctx_r9.multiple)("ant-select-dropdown-placement-bottomLeft", ctx_r9.dropDownPosition === "bottom")("ant-select-dropdown-placement-topLeft", ctx_r9.dropDownPosition === "top");
-    ɵɵproperty("@slideMotion", !ctx_r9.cmacsOpen && ctx_r9.open ? ctx_r9.dropDownPosition : "void")("nzNoAnimation", ctx_r9.noAnimation == null ? null : ctx_r9.noAnimation.nzNoAnimation)("ngStyle", ctx_r9.dropdownStyle);
+    ɵɵproperty("nzNoAnimation", ctx_r9.noAnimation == null ? null : ctx_r9.noAnimation.nzNoAnimation)("ngStyle", ctx_r9.dropdownStyle);
     ɵɵadvance(1);
-    ɵɵproperty("selectMode", true)("nzData", ctx_r9.nodes)("inlineEdit", ctx_r9.inlineEdit)("nzMultiple", ctx_r9.multiple)("searchValue", ctx_r9.inputValue)("checkable", ctx_r9.checkable)("radio", ctx_r9.radio)("asyncData", ctx_r9.asyncData)("showExpand", ctx_r9.showExpand)("showLine", ctx_r9.showLine)("expandedIcon", ctx_r9.expandedIcon)("nzBlockNode", true)("expandAll", ctx_r9.defaultExpandAll)("nzExpandedKeys", ctx_r9.defaultExpandedKeys)("nzCheckedKeys", ctx_r9.checkable ? ctx_r9.value : ɵɵpureFunction0(28, _c3$9))("nzSelectedKeys", !ctx_r9.checkable ? ctx_r9.value : ɵɵpureFunction0(29, _c3$9));
+    ɵɵproperty("selectMode", true)("nzData", ctx_r9.nodes)("inlineEdit", ctx_r9.inlineEdit)("nzMultiple", ctx_r9.multiple)("searchValue", ctx_r9.inputValue)("checkable", ctx_r9.checkable)("radio", ctx_r9.radio)("asyncData", ctx_r9.asyncData)("showExpand", ctx_r9.showExpand)("showLine", ctx_r9.showLine)("expandedIcon", ctx_r9.expandedIcon)("nzBlockNode", true)("expandAll", ctx_r9.defaultExpandAll)("nzExpandedKeys", ctx_r9.defaultExpandedKeys)("nzCheckedKeys", ctx_r9.checkable ? ctx_r9.value : ɵɵpureFunction0(27, _c3$9))("nzSelectedKeys", !ctx_r9.checkable ? ctx_r9.value : ɵɵpureFunction0(28, _c3$9));
     ɵɵadvance(2);
     ɵɵproperty("ngIf", ctx_r9.inlineEdit);
 } }
@@ -37036,7 +37035,7 @@ CmacsTreeSelectComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsTreeSelectComp
         ɵɵtemplate(11, CmacsTreeSelectComponent_span_11_Template, 2, 0, "span", 8);
         ɵɵelementEnd();
         ɵɵtemplate(12, CmacsTreeSelectComponent_ng_container_12_Template, 2, 1, "ng-container", 1);
-        ɵɵtemplate(13, CmacsTreeSelectComponent_ng_template_13_Template, 4, 30, "ng-template", null, 9, ɵɵtemplateRefExtractor);
+        ɵɵtemplate(13, CmacsTreeSelectComponent_ng_template_13_Template, 4, 29, "ng-template", null, 9, ɵɵtemplateRefExtractor);
     } if (rf & 2) {
         ɵɵadvance(2);
         ɵɵproperty("ngIf", !ctx.cmacsOpen);
@@ -37054,7 +37053,7 @@ CmacsTreeSelectComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsTreeSelectComp
         ɵɵproperty("ngIf", !ctx.isMultiple);
         ɵɵadvance(1);
         ɵɵproperty("ngIf", ctx.cmacsOpen);
-    } }, directives: [NgIf, CdkOverlayOrigin, DefaultValueAccessor, NgControlStatus, NgModel, CdkConnectedOverlay, NzConnectedOverlayDirective, NgTemplateOutlet, NgStyle, NgForOf, NzNoAnimationDirective, ɵNzTransitionPatchDirective, NzIconDirective, CmacsTreeComponent], pipes: [SlicePipe], styles: [".cmacs-tree-select-dropdown[_ngcontent-%COMP%]{box-shadow:none;border-bottom:1px solid #dee0e5;border-right:1px solid #dee0e5;border-left:1px solid #dee0e5;border-radius:0 0 3px 3px;z-index:unset}  .ant-select-tree-dropdown .ant-select-switcher-icon{font-size:10px}  .ant-select-tree-dropdown .ant-select-tree-checkbox{margin:0 3px 0 0}  .ant-select-tree-dropdown .ant-select-tree .ant-select-tree-node-content-wrapper{top:2px}  .ant-select-tree-dropdown .ant-select-tree-switcher{position:relative;width:24px;line-height:24px;cursor:pointer;height:24px;display:inline-block;vertical-align:middle;text-align:center;margin:0}.cmacs-tree-select-dropdown[_ngcontent-%COMP%]{opacity:1!important;transform:none!important}[_nghost-%COMP%]     .ant-select-selection, [_nghost-%COMP%]     .ant-select-selection:focus, [_nghost-%COMP%]     .ant-select-selection:hover{border:1px solid #dee0e5;border-radius:3px 3px 0 0}.cmacs-tree-select-search-icon[_ngcontent-%COMP%]{left:11px;right:unset;z-index:unset;opacity:1!important;font-size:16px;top:14px}[_nghost-%COMP%]     .ant-select-selection--multiple .ant-select-selection__placeholder{margin-left:29px}.ant-select-selection__clear[_ngcontent-%COMP%]{right:14px}.cmacs-tree-select-arrow[_ngcontent-%COMP%]{z-index:unset;opacity:1!important;font-size:29px;top:7px;right:30px}.cmacs-tree-select-arrow[_ngcontent-%COMP%]:hover{cursor:pointer}.cmacs-tree-select-arrow[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{border-left:1px solid #dee0e5;padding:0 5px;font-size:24px;top:-14px;position:relative}.cmacs-tree-select-arrow[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:before{top:2px;position:relative}.ant-select-selection--multiple[_ngcontent-%COMP%]   .ant-select-search--inline[_ngcontent-%COMP%]   .ant-select-search__field[_ngcontent-%COMP%]{padding-left:0}.ant-select-selection[_ngcontent-%COMP%]:hover   .cmacs-selected-nodes.iconArrowLarge-Arrow-Right[_ngcontent-%COMP%]:before{opacity:0}.cmacs-add-new-category[_ngcontent-%COMP%]{font-weight:400;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#656c79;font-size:12px;font-family:Roboto-Regular;padding:5px 0 6px 10px;border-top:1px solid #dee0e5}.cmacs-add-new-category[_ngcontent-%COMP%]:hover{background-color:#f6f7fb}.cmacs-add-new-category-title[_ngcontent-%COMP%]{padding:3px 5px}.cmacs-select-tree-new-icon[_ngcontent-%COMP%]{color:#acb3bf;font-size:16px;top:2px;position:relative}.cmacs-select-tree-new-icon[_ngcontent-%COMP%]:hover{cursor:pointer}.no-margin-left[_ngcontent-%COMP%]{margin-left:0!important}  .ant-select-selection--multiple .cmacs-tree-select-ul .ant-select-search--inline .ant-select-search__field{max-width:84%;margin-left:28px}", ".ant-select-dropdown[_ngcontent-%COMP%] {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        overflow: auto;\n        scrollbar-color: #cfd3d9 #ffffff;\n        scrollbar-width: thin;\n      }\n\n      cmacs-tree-select[_ngcontent-%COMP%] {\n        overflow: hidden;\n      }"], data: { animation: [slideMotion, zoomMotion] } });
+    } }, directives: [NgIf, CdkOverlayOrigin, DefaultValueAccessor, NgControlStatus, NgModel, CdkConnectedOverlay, NzConnectedOverlayDirective, NgTemplateOutlet, NgStyle, NgForOf, NzNoAnimationDirective, ɵNzTransitionPatchDirective, NzIconDirective, CmacsTreeComponent], pipes: [SlicePipe], styles: [".cmacs-tree-select-dropdown[_ngcontent-%COMP%]{box-shadow:none;border-bottom:1px solid #dee0e5;border-right:1px solid #dee0e5;border-left:1px solid #dee0e5;border-radius:0 0 3px 3px;z-index:unset}  .ant-select-tree-dropdown .ant-select-switcher-icon{font-size:10px}  .ant-select-tree-dropdown .ant-select-tree-checkbox{margin:0 3px 0 0}  .ant-select-tree-dropdown .ant-select-tree .ant-select-tree-node-content-wrapper{top:2px}  .ant-select-tree-dropdown .ant-select-tree-switcher{position:relative;width:24px;line-height:24px;cursor:pointer;height:24px;display:inline-block;vertical-align:middle;text-align:center;margin:0}.cmacs-tree-select-dropdown[_ngcontent-%COMP%]{opacity:1!important;transform:none!important}[_nghost-%COMP%]     .ant-select-selection, [_nghost-%COMP%]     .ant-select-selection:focus, [_nghost-%COMP%]     .ant-select-selection:hover{border:1px solid #dee0e5;border-radius:3px 3px 0 0}.cmacs-tree-select-search-icon[_ngcontent-%COMP%]{left:11px;right:unset;z-index:unset;opacity:1!important;font-size:16px;top:14px}[_nghost-%COMP%]     .ant-select-selection--multiple .ant-select-selection__placeholder{margin-left:29px}.ant-select-selection__clear[_ngcontent-%COMP%]{right:14px}.cmacs-tree-select-arrow[_ngcontent-%COMP%]{z-index:unset;opacity:1!important;font-size:29px;top:7px;right:30px}.cmacs-tree-select-arrow[_ngcontent-%COMP%]:hover{cursor:pointer}.cmacs-tree-select-arrow[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{border-left:1px solid #dee0e5;padding:0 5px;font-size:24px;top:-14px;position:relative}.cmacs-tree-select-arrow[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:before{top:2px;position:relative}.ant-select-selection--multiple[_ngcontent-%COMP%]   .ant-select-search--inline[_ngcontent-%COMP%]   .ant-select-search__field[_ngcontent-%COMP%]{padding-left:0}.ant-select-selection[_ngcontent-%COMP%]:hover   .cmacs-selected-nodes.iconArrowLarge-Arrow-Right[_ngcontent-%COMP%]:before{opacity:0}.cmacs-add-new-category[_ngcontent-%COMP%]{font-weight:400;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#656c79;font-size:12px;font-family:Roboto-Regular;padding:5px 0 6px 10px;border-top:1px solid #dee0e5}.cmacs-add-new-category[_ngcontent-%COMP%]:hover{background-color:#f6f7fb}.cmacs-add-new-category-title[_ngcontent-%COMP%]{padding:3px 5px}.cmacs-select-tree-new-icon[_ngcontent-%COMP%]{color:#acb3bf;font-size:16px;top:2px;position:relative}.cmacs-select-tree-new-icon[_ngcontent-%COMP%]:hover{cursor:pointer}.no-margin-left[_ngcontent-%COMP%]{margin-left:0!important}  .ant-select-selection--multiple .cmacs-tree-select-ul .ant-select-search--inline .ant-select-search__field{max-width:84%;margin-left:28px}", ".ant-select-dropdown[_ngcontent-%COMP%] {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        overflow: auto;\n        scrollbar-color: #cfd3d9 #ffffff;\n        scrollbar-width: thin;\n      }\n\n      cmacs-tree-select[_ngcontent-%COMP%] {\n        overflow: hidden;\n      }"] });
 __decorate([
     InputBoolean()
 ], CmacsTreeSelectComponent.prototype, "allowClear", void 0);
@@ -37099,7 +37098,6 @@ __decorate([
         args: [{
                 selector: 'cmacs-tree-select',
                 exportAs: 'cmacsTreeSelect',
-                animations: [slideMotion, zoomMotion],
                 templateUrl: './cmacs-tree-select.component.html',
                 styleUrls: ['./cmacs-tree-select.component.css'],
                 providers: [
