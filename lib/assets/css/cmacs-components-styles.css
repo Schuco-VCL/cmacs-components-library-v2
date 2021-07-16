@@ -3,6 +3,16 @@
 @import "~angular2-draggable/css/resizable.min.css";
 
 @font-face {
+  font-family: 'AlexBrush';
+  src: url('../fonts/AlexBrush-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'AlexBrush-Regular';
+  src: url('../fonts/AlexBrush-Regular.ttf');
+}
+
+@font-face {
   font-family: 'Roboto-Regular';
   src: url('../fonts/Roboto-Regular.ttf');
 }
