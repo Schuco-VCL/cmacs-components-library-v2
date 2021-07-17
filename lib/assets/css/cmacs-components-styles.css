@@ -27,6 +27,29 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+.ant-picker-panel-container .ant-picker-panel {
+  vertical-align: top;
+  background: 0 0;
+  border-width: 0 !important;
+  border-radius: 0;
+}
+
+.cmacs-timeline-datepicker-panel .ant-picker-month-panel {
+  width: 280px;
+}
+
+.ant-picker-dropdown-range {
+  padding: 0 !important;
+}
+
+.cmacs-timeline-datepicker-panel {
+  border-top: 1px solid #dee0e5 !important;
+}
+
+.ant-picker-range-arrow {
+  display: none !important;
+}
+
 cmacs-timeline-datepicker.ant-tabs {
   padding: 12px 4px !important;
 }

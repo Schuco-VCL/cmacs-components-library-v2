@@ -22,6 +22,7 @@ export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnCh
     isRange: boolean;
     open: boolean | undefined;
     disabled: boolean;
+    timeline: boolean;
     inputReadOnly: boolean;
     placeholder: string | string[];
     allowClear?: boolean;
@@ -42,6 +43,7 @@ export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnCh
     pickerInput?: ElementRef<HTMLInputElement>;
     rangePickerInputs?: QueryList<ElementRef<HTMLInputElement>>;
     panel: DateRangePopupComponent;
+    calcWidth: number;
     origin: CdkOverlayOrigin;
     document: Document;
     inputSize: number;
@@ -56,6 +58,7 @@ export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnCh
     currentPositionY: VerticalConnectionPos;
     get realOpenState(): boolean;
     constructor(elementRef: ElementRef, dateHelper: DateHelperService, cdr: ChangeDetectorRef, platform: Platform, nzResizeObserver: NzResizeObserver, datePickerService: DatePickerService, doc: NzSafeAny);
+    setPanelWidth(): void;
     ngOnInit(): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
@@ -83,6 +86,6 @@ export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnCh
     isEmptyValue(value: CompatibleValue): boolean;
     isOpenHandledByUser(): boolean;
     static ɵfac: i0.ɵɵFactoryDef<CmacsPickerComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsPickerComponent, "[cmacs-picker]", ["cmacsPicker"], { "noAnimation": "noAnimation"; "isRange": "isRange"; "open": "open"; "disabled": "disabled"; "inputReadOnly": "inputReadOnly"; "placeholder": "placeholder"; "allowClear": "allowClear"; "autoFocus": "autoFocus"; "format": "format"; "separator": "separator"; "popupStyle": "popupStyle"; "dropdownClassName": "dropdownClassName"; "suffixIcon": "suffixIcon"; "dir": "dir"; "id": "id"; "cmacsOpen": "cmacsOpen"; }, { "focusChange": "focusChange"; "valueChange": "valueChange"; "openChange": "openChange"; }, ["panel"], ["*"]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsPickerComponent, "[cmacs-picker]", ["cmacsPicker"], { "noAnimation": "noAnimation"; "isRange": "isRange"; "open": "open"; "disabled": "disabled"; "timeline": "timeline"; "inputReadOnly": "inputReadOnly"; "placeholder": "placeholder"; "allowClear": "allowClear"; "autoFocus": "autoFocus"; "format": "format"; "separator": "separator"; "popupStyle": "popupStyle"; "dropdownClassName": "dropdownClassName"; "suffixIcon": "suffixIcon"; "dir": "dir"; "id": "id"; "cmacsOpen": "cmacsOpen"; }, { "focusChange": "focusChange"; "valueChange": "valueChange"; "openChange": "openChange"; }, ["panel"], ["*"]>;
 }
 //# sourceMappingURL=picker.component.d.ts.map

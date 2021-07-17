@@ -12,6 +12,7 @@ export declare class DateRangePopupComponent implements OnInit, OnChanges, OnDes
     cdr: ChangeDetectorRef;
     isRange: boolean;
     showWeek: boolean;
+    timeline: boolean;
     showWeekCustom: boolean;
     locale: NzCalendarI18nInterface | undefined;
     disabledDate?: DisabledDateFn;
@@ -74,6 +75,6 @@ export declare class DateRangePopupComponent implements OnInit, OnChanges, OnDes
     private overrideTimeOptions;
     private overrideHms;
     static ɵfac: i0.ɵɵFactoryDef<DateRangePopupComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<DateRangePopupComponent, "date-range-popup", ["dateRangePopup"], { "isRange": "isRange"; "showWeek": "showWeek"; "showWeekCustom": "showWeekCustom"; "locale": "locale"; "disabledDate": "disabledDate"; "disabledTime": "disabledTime"; "showToday": "showToday"; "showNow": "showNow"; "showTime": "showTime"; "extraFooter": "extraFooter"; "ranges": "ranges"; "dateRender": "dateRender"; "panelMode": "panelMode"; "defaultPickerValue": "defaultPickerValue"; "dir": "dir"; }, { "panelModeChange": "panelModeChange"; "calendarChange": "calendarChange"; "resultOk": "resultOk"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<DateRangePopupComponent, "date-range-popup", ["dateRangePopup"], { "isRange": "isRange"; "showWeek": "showWeek"; "timeline": "timeline"; "showWeekCustom": "showWeekCustom"; "locale": "locale"; "disabledDate": "disabledDate"; "disabledTime": "disabledTime"; "showToday": "showToday"; "showNow": "showNow"; "showTime": "showTime"; "extraFooter": "extraFooter"; "ranges": "ranges"; "dateRender": "dateRender"; "panelMode": "panelMode"; "defaultPickerValue": "defaultPickerValue"; "dir": "dir"; }, { "panelModeChange": "panelModeChange"; "calendarChange": "calendarChange"; "resultOk": "resultOk"; }, never, never>;
 }
 //# sourceMappingURL=date-range-popup.component.d.ts.map

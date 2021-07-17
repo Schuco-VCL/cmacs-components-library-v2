@@ -11701,6 +11701,7 @@ class DateRangePopupComponent {
     constructor(datePickerService, cdr) {
         this.datePickerService = datePickerService;
         this.cdr = cdr;
+        this.timeline = false;
         this.panelModeChange = new EventEmitter();
         this.calendarChange = new EventEmitter();
         this.resultOk = new EventEmitter(); // Emitted when done with date selecting
@@ -11987,7 +11988,7 @@ class DateRangePopupComponent {
 DateRangePopupComponent.ɵfac = function DateRangePopupComponent_Factory(t) { return new (t || DateRangePopupComponent)(ɵɵdirectiveInject(DatePickerService), ɵɵdirectiveInject(ChangeDetectorRef)); };
 DateRangePopupComponent.ɵcmp = ɵɵdefineComponent({ type: DateRangePopupComponent, selectors: [["date-range-popup"]], hostBindings: function DateRangePopupComponent_HostBindings(rf, ctx) { if (rf & 1) {
         ɵɵlistener("mousedown", function DateRangePopupComponent_mousedown_HostBindingHandler($event) { return ctx.onMousedown($event); });
-    } }, inputs: { isRange: "isRange", showWeek: "showWeek", showWeekCustom: "showWeekCustom", locale: "locale", disabledDate: "disabledDate", disabledTime: "disabledTime", showToday: "showToday", showNow: "showNow", showTime: "showTime", extraFooter: "extraFooter", ranges: "ranges", dateRender: "dateRender", panelMode: "panelMode", defaultPickerValue: "defaultPickerValue", dir: "dir" }, outputs: { panelModeChange: "panelModeChange", calendarChange: "calendarChange", resultOk: "resultOk" }, exportAs: ["dateRangePopup"], features: [ɵɵNgOnChangesFeature], decls: 9, vars: 2, consts: [[4, "ngIf", "ngIfElse"], ["singlePanel", ""], ["tplInnerPopup", ""], ["tplFooter", ""], ["tplRangeQuickSelector", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [4, "ngTemplateOutlet"], ["tabindex", "-1"], [3, "showWeek", "showWeekCustom", "endPanelMode", "partType", "locale", "showTimePicker", "timeOptions", "panelMode", "activeDate", "value", "disabledDate", "dateRender", "selectedValue", "hoverValue", "panelModeChange", "cellHover", "selectDate", "selectTime", "headerChange"], [3, "locale", "isRange", "showToday", "showNow", "hasTimePicker", "okDisabled", "extraFooter", "rangeQuickSelector", "clickOk", "clickToday", 4, "ngIf"], [3, "locale", "isRange", "showToday", "showNow", "hasTimePicker", "okDisabled", "extraFooter", "rangeQuickSelector", "clickOk", "clickToday"], [3, "class", "click", "mouseenter", "mouseleave", 4, "ngFor", "ngForOf"], [3, "click", "mouseenter", "mouseleave"], [1, "ant-tag", "ant-tag-blue"]], template: function DateRangePopupComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { isRange: "isRange", showWeek: "showWeek", timeline: "timeline", showWeekCustom: "showWeekCustom", locale: "locale", disabledDate: "disabledDate", disabledTime: "disabledTime", showToday: "showToday", showNow: "showNow", showTime: "showTime", extraFooter: "extraFooter", ranges: "ranges", dateRender: "dateRender", panelMode: "panelMode", defaultPickerValue: "defaultPickerValue", dir: "dir" }, outputs: { panelModeChange: "panelModeChange", calendarChange: "calendarChange", resultOk: "resultOk" }, exportAs: ["dateRangePopup"], features: [ɵɵNgOnChangesFeature], decls: 9, vars: 2, consts: [[4, "ngIf", "ngIfElse"], ["singlePanel", ""], ["tplInnerPopup", ""], ["tplFooter", ""], ["tplRangeQuickSelector", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [4, "ngTemplateOutlet"], ["tabindex", "-1"], [3, "showWeek", "showWeekCustom", "endPanelMode", "partType", "locale", "showTimePicker", "timeOptions", "panelMode", "activeDate", "value", "disabledDate", "dateRender", "selectedValue", "hoverValue", "panelModeChange", "cellHover", "selectDate", "selectTime", "headerChange"], [3, "locale", "isRange", "showToday", "showNow", "hasTimePicker", "okDisabled", "extraFooter", "rangeQuickSelector", "clickOk", "clickToday", 4, "ngIf"], [3, "locale", "isRange", "showToday", "showNow", "hasTimePicker", "okDisabled", "extraFooter", "rangeQuickSelector", "clickOk", "clickToday"], [3, "class", "click", "mouseenter", "mouseleave", 4, "ngFor", "ngForOf"], [3, "click", "mouseenter", "mouseleave"], [1, "ant-tag", "ant-tag-blue"]], template: function DateRangePopupComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, DateRangePopupComponent_ng_container_0_Template, 8, 22, "ng-container", 0);
         ɵɵtemplate(1, DateRangePopupComponent_ng_template_1_Template, 4, 13, "ng-template", null, 1, ɵɵtemplateRefExtractor);
         ɵɵtemplate(3, DateRangePopupComponent_ng_template_3_Template, 2, 21, "ng-template", null, 2, ɵɵtemplateRefExtractor);
@@ -12095,6 +12096,8 @@ DateRangePopupComponent.ɵcmp = ɵɵdefineComponent({ type: DateRangePopupCompon
     }], function () { return [{ type: DatePickerService }, { type: ChangeDetectorRef }]; }, { isRange: [{
             type: Input
         }], showWeek: [{
+            type: Input
+        }], timeline: [{
             type: Input
         }], showWeekCustom: [{
             type: Input
@@ -12282,7 +12285,8 @@ function CmacsPickerComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
     ɵɵclassProp("ant-picker-dropdown-rtl", ctx_r6.dir === "rtl")("ant-picker-dropdown-placement-bottomLeft", ctx_r6.currentPositionY === "bottom" && ctx_r6.currentPositionX === "start")("ant-picker-dropdown-placement-topLeft", ctx_r6.currentPositionY === "top" && ctx_r6.currentPositionX === "start")("ant-picker-dropdown-placement-bottomRight", ctx_r6.currentPositionY === "bottom" && ctx_r6.currentPositionX === "end")("ant-picker-dropdown-placement-topRight", ctx_r6.currentPositionY === "top" && ctx_r6.currentPositionX === "end")("ant-picker-dropdown-range", ctx_r6.isRange);
     ɵɵproperty("ngStyle", ctx_r6.popupStyle);
 } }
-const _c6 = ["*"];
+const _c6 = function () { return ["cmacs-datetime-picker-dropdown"]; };
+const _c7 = ["*"];
 class CmacsPickerComponent {
     constructor(elementRef, dateHelper, cdr, platform, nzResizeObserver, datePickerService, doc) {
         this.elementRef = elementRef;
@@ -12295,6 +12299,7 @@ class CmacsPickerComponent {
         this.isRange = false;
         this.open = undefined;
         this.disabled = false;
+        this.timeline = false;
         this.inputReadOnly = false;
         this.popupStyle = null;
         this.dir = 'ltr';
@@ -12303,6 +12308,7 @@ class CmacsPickerComponent {
         this.focusChange = new EventEmitter();
         this.valueChange = new EventEmitter();
         this.openChange = new EventEmitter(); // Emitted when overlay's open state change
+        this.calcWidth = 0;
         this.inputSize = 12;
         this.destroy$ = new Subject();
         this.prefixCls = PREFIX_CLASS;
@@ -12349,7 +12355,11 @@ class CmacsPickerComponent {
     }
     get realOpenState() {
         // The value that really decide the open state of overlay
+        this.setPanelWidth();
         return this.isOpenHandledByUser() ? !!this.open : this.overlayOpen;
+    }
+    setPanelWidth() {
+        this.calcWidth = this.elementRef.nativeElement.offsetWidth + 24;
     }
     ngOnInit() {
         this.inputValue = this.isRange ? ['', ''] : '';
@@ -12573,7 +12583,7 @@ CmacsPickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsPickerComponent, s
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.separatorElement = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.pickerInput = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.rangePickerInputs = _t);
-    } }, inputs: { noAnimation: "noAnimation", isRange: "isRange", open: "open", disabled: "disabled", inputReadOnly: "inputReadOnly", placeholder: "placeholder", allowClear: "allowClear", autoFocus: "autoFocus", format: "format", separator: "separator", popupStyle: "popupStyle", dropdownClassName: "dropdownClassName", suffixIcon: "suffixIcon", dir: "dir", id: "id", cmacsOpen: "cmacsOpen" }, outputs: { focusChange: "focusChange", valueChange: "valueChange", openChange: "openChange" }, exportAs: ["cmacsPicker"], features: [ɵɵNgOnChangesFeature], attrs: _c3$2, ngContentSelectors: _c6, decls: 7, vars: 6, consts: [[3, "class", 4, "ngIf"], [4, "ngIf"], ["tplRangeInput", ""], ["tplRightRest", ""], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayPositions", "cdkConnectedOverlayTransformOriginOn", "positionChange", "detach", "overlayKeydown", "overlayOutsideClick"], [3, "disabled", "readOnly", "ngModel", "placeholder", "size", "ngModelChange", "focus", "blur", "keyup.enter"], ["pickerInput", ""], [4, "ngTemplateOutlet"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["separatorElement", ""], [4, "ngIf", "ngIfElse"], ["defaultSeparator", ""], ["nz-icon", "", "nzType", "swap-right", "nzTheme", "outline"], [3, "disabled", "readOnly", "size", "ngModel", "placeholder", "click", "blur", "focus", "keyup.enter", "ngModelChange"], ["rangePickerInput", ""], [3, "ngStyle"], [3, "class", "click", 4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], ["nz-icon", "", 3, "nzType"], [1, "ant-picker-wrapper", 2, "position", "relative", 3, "nzNoAnimation"]], template: function CmacsPickerComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { noAnimation: "noAnimation", isRange: "isRange", open: "open", disabled: "disabled", timeline: "timeline", inputReadOnly: "inputReadOnly", placeholder: "placeholder", allowClear: "allowClear", autoFocus: "autoFocus", format: "format", separator: "separator", popupStyle: "popupStyle", dropdownClassName: "dropdownClassName", suffixIcon: "suffixIcon", dir: "dir", id: "id", cmacsOpen: "cmacsOpen" }, outputs: { focusChange: "focusChange", valueChange: "valueChange", openChange: "openChange" }, exportAs: ["cmacsPicker"], features: [ɵɵNgOnChangesFeature], attrs: _c3$2, ngContentSelectors: _c7, decls: 7, vars: 9, consts: [[3, "class", 4, "ngIf"], [4, "ngIf"], ["tplRangeInput", ""], ["tplRightRest", ""], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayWidth", "cdkConnectedOverlayPanelClass", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayPositions", "cdkConnectedOverlayTransformOriginOn", "positionChange", "detach", "overlayKeydown", "overlayOutsideClick"], [3, "disabled", "readOnly", "ngModel", "placeholder", "size", "ngModelChange", "focus", "blur", "keyup.enter"], ["pickerInput", ""], [4, "ngTemplateOutlet"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["separatorElement", ""], [4, "ngIf", "ngIfElse"], ["defaultSeparator", ""], ["nz-icon", "", "nzType", "swap-right", "nzTheme", "outline"], [3, "disabled", "readOnly", "size", "ngModel", "placeholder", "click", "blur", "focus", "keyup.enter", "ngModelChange"], ["rangePickerInput", ""], [3, "ngStyle"], [3, "class", "click", 4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], ["nz-icon", "", 3, "nzType"], [1, "ant-picker-wrapper", 2, "position", "relative", 3, "nzNoAnimation"]], template: function CmacsPickerComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵtemplate(0, CmacsPickerComponent_div_0_Template, 4, 14, "div", 0);
         ɵɵtemplate(1, CmacsPickerComponent_ng_container_1_Template, 12, 21, "ng-container", 1);
@@ -12586,7 +12596,7 @@ CmacsPickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsPickerComponent, s
         ɵɵadvance(1);
         ɵɵproperty("ngIf", ctx.isRange);
         ɵɵadvance(5);
-        ɵɵproperty("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.realOpenState)("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayTransformOriginOn", ".ant-picker-wrapper");
+        ɵɵproperty("cdkConnectedOverlayWidth", !ctx.timeline ? ctx.calcWidth : "auto")("cdkConnectedOverlayPanelClass", ɵɵpureFunction0(8, _c6))("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.realOpenState)("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayTransformOriginOn", ".ant-picker-wrapper");
     } }, directives: [NgIf, CdkConnectedOverlay, NzConnectedOverlayDirective, DefaultValueAccessor, NgControlStatus, NgModel, NgTemplateOutlet, ɵNzTransitionPatchDirective, NzIconDirective, NgStyle, NzStringTemplateOutletDirective, NzNoAnimationDirective], encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsPickerComponent, [{
         type: Component,
@@ -12667,6 +12677,8 @@ CmacsPickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsPickerComponent, s
 
     <!-- Overlay -->
     <ng-template
+      [cdkConnectedOverlayWidth]="!timeline ? calcWidth : 'auto'"
+      [cdkConnectedOverlayPanelClass]="['cmacs-datetime-picker-dropdown']"
       cdkConnectedOverlay
       nzConnectedOverlay
       [cdkConnectedOverlayOrigin]="origin"
@@ -12708,6 +12720,8 @@ CmacsPickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsPickerComponent, s
         }], open: [{
             type: Input
         }], disabled: [{
+            type: Input
+        }], timeline: [{
             type: Input
         }], inputReadOnly: [{
             type: Input
@@ -12845,6 +12859,7 @@ class CmacsDatePickerComponent {
         this.nzShowTime = false;
         // --- Common API
         this.allowClear = true;
+        this.timeline = false;
         this.autoFocus = false;
         this.disabled = false;
         this.borderless = false;
@@ -13100,14 +13115,14 @@ CmacsDatePickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsDatePickerComp
         ɵɵlistener("click", function CmacsDatePickerComponent_click_HostBindingHandler($event) { return ctx.picker.onClickInputBox($event); });
     } if (rf & 2) {
         ɵɵclassProp("ant-picker-range", ctx.isRange)("ant-picker-large", ctx.size === "large")("ant-picker-small", ctx.size === "small")("ant-picker-disabled", ctx.disabled)("ant-picker-rtl", ctx.dir === "rtl")("ant-picker-borderless", ctx.borderless)("cmacs-open-date-picker", ctx.cmacsOpen);
-    } }, inputs: { allowClear: "allowClear", autoFocus: "autoFocus", disabled: "disabled", borderless: "borderless", showWeekCustom: "showWeekCustom", inputReadOnly: "inputReadOnly", nzOpen: "nzOpen", cmacsOpen: "cmacsOpen", disabledDate: "disabledDate", locale: "locale", placeHolder: "placeHolder", popupStyle: "popupStyle", dropdownClassName: "dropdownClassName", size: "size", format: "format", dateRender: "dateRender", disabledTime: "disabledTime", nzRenderExtraFooter: "nzRenderExtraFooter", showToday: "showToday", mode: "mode", showNow: "showNow", ranges: "ranges", defaultPickerValue: "defaultPickerValue", separator: "separator", suffixIcon: "suffixIcon", nzId: "nzId", width: "width", openPickerTitle: "openPickerTitle", openPickerSubtitle: "openPickerSubtitle", openPickerLeftRangeSub: "openPickerLeftRangeSub", openPickerRightRangeSub: "openPickerRightRangeSub", showTime: "showTime" }, outputs: { onPanelChange: "onPanelChange", onCalendarChange: "onCalendarChange", onOk: "onOk", onOpenChange: "onOpenChange" }, exportAs: ["cmacsDatePicker"], features: [ɵɵProvidersFeature([
+    } }, inputs: { allowClear: "allowClear", timeline: "timeline", autoFocus: "autoFocus", disabled: "disabled", borderless: "borderless", showWeekCustom: "showWeekCustom", inputReadOnly: "inputReadOnly", nzOpen: "nzOpen", cmacsOpen: "cmacsOpen", disabledDate: "disabledDate", locale: "locale", placeHolder: "placeHolder", popupStyle: "popupStyle", dropdownClassName: "dropdownClassName", size: "size", format: "format", dateRender: "dateRender", disabledTime: "disabledTime", nzRenderExtraFooter: "nzRenderExtraFooter", showToday: "showToday", mode: "mode", showNow: "showNow", ranges: "ranges", defaultPickerValue: "defaultPickerValue", separator: "separator", suffixIcon: "suffixIcon", nzId: "nzId", width: "width", openPickerTitle: "openPickerTitle", openPickerSubtitle: "openPickerSubtitle", openPickerLeftRangeSub: "openPickerLeftRangeSub", openPickerRightRangeSub: "openPickerRightRangeSub", showTime: "showTime" }, outputs: { onPanelChange: "onPanelChange", onCalendarChange: "onCalendarChange", onOk: "onOk", onOpenChange: "onOpenChange" }, exportAs: ["cmacsDatePicker"], features: [ɵɵProvidersFeature([
             DatePickerService,
             {
                 provide: NG_VALUE_ACCESSOR,
                 multi: true,
                 useExisting: forwardRef(() => CmacsDatePickerComponent)
             }
-        ]), ɵɵNgOnChangesFeature], decls: 5, vars: 37, consts: [[4, "ngIf"], ["cmacs-picker", "", 2, "display", "inherit", "align-items", "center", "width", "100%", 3, "isRange", "open", "cmacsOpen", "dir", "separator", "disabled", "inputReadOnly", "format", "allowClear", "autoFocus", "placeholder", "dropdownClassName", "popupStyle", "noAnimation", "suffixIcon", "id", "openChange", "focusChange"], [3, "isRange", "defaultPickerValue", "showWeek", "showWeekCustom", "panelMode", "locale", "showToday", "showNow", "showTime", "dateRender", "disabledDate", "disabledTime", "extraFooter", "ranges", "dir", "panelModeChange", "calendarChange", "resultOk"], [1, "cmacs-open-date-title"], [1, "cmacs-open-date-subtitle"], [1, "cmacs-open-date-picker-placeholder"], [1, "cmacs-open-range-picker-left"], [1, "cmacs-open-range-picker-right"]], template: function CmacsDatePickerComponent_Template(rf, ctx) { if (rf & 1) {
+        ]), ɵɵNgOnChangesFeature], decls: 5, vars: 39, consts: [[4, "ngIf"], ["cmacs-picker", "", 2, "display", "inherit", "align-items", "center", "width", "100%", 3, "isRange", "open", "timeline", "cmacsOpen", "dir", "separator", "disabled", "inputReadOnly", "format", "allowClear", "autoFocus", "placeholder", "dropdownClassName", "popupStyle", "noAnimation", "suffixIcon", "id", "openChange", "focusChange"], [3, "isRange", "timeline", "defaultPickerValue", "showWeek", "showWeekCustom", "panelMode", "locale", "showToday", "showNow", "showTime", "dateRender", "disabledDate", "disabledTime", "extraFooter", "ranges", "dir", "panelModeChange", "calendarChange", "resultOk"], [1, "cmacs-open-date-title"], [1, "cmacs-open-date-subtitle"], [1, "cmacs-open-date-picker-placeholder"], [1, "cmacs-open-range-picker-left"], [1, "cmacs-open-range-picker-right"]], template: function CmacsDatePickerComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "div");
         ɵɵtemplate(1, CmacsDatePickerComponent_ng_container_1_Template, 7, 5, "ng-container", 0);
         ɵɵtemplate(2, CmacsDatePickerComponent_ng_container_2_Template, 13, 9, "ng-container", 0);
@@ -13126,13 +13141,16 @@ CmacsDatePickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsDatePickerComp
         ɵɵproperty("ngIf", ctx.cmacsOpen && ctx.isRange);
         ɵɵadvance(1);
         ɵɵclassProp("ant-picker-dropdown-rtl", ctx.dir === "rtl");
-        ɵɵproperty("isRange", ctx.isRange)("open", ctx.nzOpen)("cmacsOpen", ctx.cmacsOpen)("dir", ctx.dir)("separator", ctx.separator)("disabled", ctx.disabled)("inputReadOnly", ctx.inputReadOnly)("format", ctx.format)("allowClear", ctx.allowClear)("autoFocus", ctx.autoFocus)("placeholder", ctx.placeHolder)("dropdownClassName", ctx.dropdownClassName)("popupStyle", ctx.popupStyle)("noAnimation", !!(ctx.noAnimation == null ? null : ctx.noAnimation.nzNoAnimation))("suffixIcon", ctx.suffixIcon)("id", ctx.nzId);
+        ɵɵproperty("isRange", ctx.isRange)("open", ctx.nzOpen)("timeline", ctx.timeline)("cmacsOpen", ctx.cmacsOpen)("dir", ctx.dir)("separator", ctx.separator)("disabled", ctx.disabled)("inputReadOnly", ctx.inputReadOnly)("format", ctx.format)("allowClear", ctx.allowClear)("autoFocus", ctx.autoFocus)("placeholder", ctx.placeHolder)("dropdownClassName", ctx.dropdownClassName)("popupStyle", ctx.popupStyle)("noAnimation", !!(ctx.noAnimation == null ? null : ctx.noAnimation.nzNoAnimation))("suffixIcon", ctx.suffixIcon)("id", ctx.nzId);
         ɵɵadvance(1);
-        ɵɵproperty("isRange", ctx.isRange)("defaultPickerValue", ctx.defaultPickerValue)("showWeek", ctx.mode === "week" || ctx.showWeekCustom)("showWeekCustom", ctx.showWeekCustom)("panelMode", ctx.panelMode)("locale", ctx.locale == null ? null : ctx.locale.lang)("showToday", ctx.mode === "date" && ctx.showToday && !ctx.isRange && !ctx.showTime)("showNow", ctx.mode === "date" && ctx.showNow && !ctx.isRange && !!ctx.showTime)("showTime", ctx.showTime)("dateRender", ctx.dateRender)("disabledDate", ctx.disabledDate)("disabledTime", ctx.disabledTime)("extraFooter", ctx.extraFooter)("ranges", ctx.ranges)("dir", ctx.dir);
-    } }, directives: [NgIf, CmacsPickerComponent, Dir, DateRangePopupComponent], styles: [".ant-picker-date-panel{width:308px}.ant-picker-week-panel-row-selected td{font-weight:700;background:#bae7ff!important;color:#656c79!important}.ant-picker-cell-week{color:#acb3bf!important;font-weight:400!important}.ant-picker-week-panel-row-selected td .ant-picker-cell-inner{color:rgba(0,0,0,.65)!important;font-weight:700!important}.ant-picker-week-panel-row-selected:hover td .ant-picker-cell-inner{color:rgba(0,0,0,.65)}.ant-picker-week-panel .ant-picker-cell-selected .ant-picker-cell-inner,.ant-picker-week-panel .ant-picker-cell-selected:hover .ant-picker-cell-inner{color:#fff!important;background-color:#2a7cff!important;border-color:#2a7cff!important;font-weight:700}.cmacs-open-date-title{font-size:12px;font-weight:600;margin-bottom:10px}.cmacs-open-range-picker:hover .ant-calendar-range-picker-input{color:transparent}.cmacs-open-range-picker:hover .ant-calendar-picker-clear{opacity:0;display:none}.cmacs-open-date-subtitle{font-size:12px;color:#acb3bf;margin-bottom:10px}.cmacs-open-date-picker-placeholder{font-size:12px;font-weight:600;color:#acb3bf}.cmacs-open-date-picker-selected-value{color:#2a7cff}.cmacs-open-date-picker:hover .ant-calendar-picker-clear{opacity:0}.cmacs-open-range-picker-left,.cmacs-open-range-picker-right{display:inline-block}.cmacs-open-range-picker-right{float:right}.cmacs-open-range-picker-left{float:left}.ant-calendar-picker-input{box-shadow:none}.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled){border-color:#bec4cd;color:#bec4cd}.ant-picker-cell-inner{padding-top:2px}.ant-picker-cell-today:not(.ant-calendar-selected-day):not(.ant-picker-cell-disabled) .ant-picker-cell-inner{display:grid}.ant-picker-cell{color:#acb3bf}.ant-picker-cell-in-view{color:#656c79}.ant-picker-cell-today:not(.ant-calendar-selected-day):not(.ant-picker-cell-disabled) .ant-picker-cell-inner{background-color:transparent;border-color:transparent;color:#656c79}.ant-picker-cell-disabled .ant-picker-cell-inner{color:#acb3bf}.ant-picker-cell-disabled:before,.ant-picker-decade-panel .ant-picker-cell-disabled .ant-picker-cell-inner,.ant-picker-month-panel .ant-picker-cell-disabled .ant-picker-cell-inner,.ant-picker-quarter-panel .ant-picker-cell-disabled .ant-picker-cell-inner,.ant-picker-year-panel .ant-picker-cell-disabled .ant-picker-cell-inner{background:#f3f3f4}.ant-picker-cell-today:not(.ant-calendar-selected-day):not(.ant-picker-cell-disabled) .ant-picker-cell-inner:after{content:\"\u25CF\";color:#2a7cff;margin-top:-13px;font-size:10px}.ant-calendar-selected-day:not(.ant-picker-cell-disabled) .ant-picker-cell-inner{color:#fff!important;background-color:#2a7cff!important;border-color:#2a7cff}.ant-picker-cell>.ant-picker-cell-inner{min-width:30px;height:30px}.ant-calendar-header{margin-top:17px;margin-bottom:17px;border:none;height:17px;line-height:17px}.ant-calendar-header a{line-height:17px!important}.ant-calendar th{padding-top:0;padding-bottom:12px}.ant-picker-cell-inner:hover{background-color:#f6f7fb}.ant-calendar-picker-icon{color:#656c79;cursor:pointer}.ant-calendar-picker-clear,.ant-calendar-picker-icon,.ant-calendar-picker i svg{height:16px;width:16px}.ant-picker-cell-disabled.ant-picker-cell-today .ant-picker-cell-inner:before{width:30px;height:30px;left:0}.cmacs-timeline-range-popup calendar-footer{display:none}.ant-picker-cell-disabled.ant-calendar-selected-day .ant-picker-cell-inner:before{position:absolute;top:-1px;left:-1px;width:30px;height:30px}.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner:before{content:unset}.datepickerwidth,cmacs-date-picker,cmacs-month-picker,cmacs-range-picker,cmacs-week-picker,cmacs-year-picker{width:100%}.datepickerwidth .ant-input-disabled,.datepickerwidth .ant-input[disabled]{background:#f6f7fb;cursor:default;border:1px solid #dee0e5}.datepickerwidth .ant-input-disabled+.ant-calendar-picker-icon,.datepickerwidth .ant-input[disabled]+.ant-calendar-picker-icon{color:#bec4cd;cursor:default}.cmacs-open-date-picker-input,.cmacs-open-date-picker-input:focus,.cmacs-open-date-picker-input:hover{border-top-color:transparent!important;border-left-color:transparent!important;border-right-color:transparent!important;border-radius:unset}.ant-calendar-picker:hover .cmacs-open-date-picker-icon,.cmacs-open-date-picker-icon,.cmacs-open-date-picker:hover .ant-calendar-picker-clear{color:transparent!important;display:none!important;opacity:0!important}.cmacs-open-date-picker-input{padding:0;font-size:12px;height:0;color:transparent}.cmacs-open-date-picker-input .ant-calendar-range-picker-input,.cmacs-open-date-picker-input .ant-calendar-range-picker-separator,.cmacs-open-date-picker:hover .ant-calendar-range-picker-input{color:transparent}"], encapsulation: 2, changeDetection: 0 });
+        ɵɵproperty("isRange", ctx.isRange)("timeline", ctx.timeline)("defaultPickerValue", ctx.defaultPickerValue)("showWeek", ctx.mode === "week" || ctx.showWeekCustom)("showWeekCustom", ctx.showWeekCustom)("panelMode", ctx.panelMode)("locale", ctx.locale == null ? null : ctx.locale.lang)("showToday", ctx.mode === "date" && ctx.showToday && !ctx.isRange && !ctx.showTime)("showNow", ctx.mode === "date" && ctx.showNow && !ctx.isRange && !!ctx.showTime)("showTime", ctx.showTime)("dateRender", ctx.dateRender)("disabledDate", ctx.disabledDate)("disabledTime", ctx.disabledTime)("extraFooter", ctx.extraFooter)("ranges", ctx.ranges)("dir", ctx.dir);
+    } }, directives: [NgIf, CmacsPickerComponent, Dir, DateRangePopupComponent], styles: [".ant-picker-date-panel{width:308px}.ant-picker-super-next-icon:after,.ant-picker-super-prev-icon:after{content:unset}.ant-picker-input>input{color:#656c79}.ant-picker-separator i{display:none}.ant-picker-separator:after{content:\"~\"}.ant-picker-panel-container{overflow-x:auto}.ant-picker-input>input-focused,.ant-picker-input>input:focus{border-color:transparent;border-right-width:1px!important;outline:0;box-shadow:none}.ant-picker-range .ant-picker-active-bar{background:transparent}.ant-picker-focused,.ant-picker:hover{border-color:#bec4cd!important;border-right-width:1px!important;box-shadow:none}.ant-picker-decade-panel,.ant-picker-month-panel,.ant-picker-quarter-panel,.ant-picker-year-panel{width:auto}.ant-picker-super-next-icon:before{font-family:ArrowLarge!important;content:\"\\e916\"}.ant-picker-super-prev-icon:before{font-family:ArrowLarge!important;content:\"\\e915\"}.ant-picker-decade-panel .ant-picker-cell-inner{line-height:2.5!important}.ant-picker-next-icon:before,.ant-picker-prev-icon:before,.ant-picker-super-next-icon:before,.ant-picker-super-prev-icon:before{position:absolute;top:-18px;left:-5px;display:inline-block;width:7px;height:7px;font-size:20px;border:none}.ant-picker-next-icon,.ant-picker-prev-icon,.ant-picker-super-next-icon,.ant-picker-super-prev-icon{transform:none}.ant-picker-week-panel-row-selected td{font-weight:700;background:#bae7ff!important;color:#656c79!important}.ant-picker-cell-week{color:#acb3bf!important;font-weight:400!important}.ant-picker-week-panel-row-selected td .ant-picker-cell-inner{color:rgba(0,0,0,.65)!important;font-weight:700!important}.ant-picker-decade-panel .ant-picker-content,.ant-picker-month-panel .ant-picker-content,.ant-picker-quarter-panel .ant-picker-content,.ant-picker-year-panel .ant-picker-content{height:204px}.ant-picker-header{border-bottom:none}.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner{color:#fff;background:#2a7cff}.ant-picker-cell>.ant-picker-cell-inner{min-width:32px;height:33px;color:#656c79;font-size:12px}.ant-picker-month-panel .ant-picker-cell-inner,.ant-picker-quarter-panel .ant-picker-cell-inner,.ant-picker-year-panel .ant-picker-cell-inner{min-width:32px!important;width:auto;line-height:2.5}.ant-picker-week-panel-row-selected:hover td .ant-picker-cell-inner{color:rgba(0,0,0,.65)}.ant-picker-week-panel .ant-picker-cell-selected .ant-picker-cell-inner,.ant-picker-week-panel .ant-picker-cell-selected:hover .ant-picker-cell-inner{color:#fff!important;background-color:#2a7cff!important;border-color:#2a7cff!important;font-weight:700}.cmacs-open-date-title{font-size:12px;font-weight:600;margin-bottom:10px}.cmacs-open-range-picker:hover .ant-calendar-range-picker-input{color:transparent}.cmacs-open-range-picker:hover .ant-calendar-picker-clear{opacity:0;display:none}.cmacs-open-date-subtitle{font-size:12px;color:#acb3bf;margin-bottom:10px}.cmacs-open-date-picker-placeholder{font-size:12px;font-weight:600;color:#acb3bf}.cmacs-open-date-picker-selected-value{color:#2a7cff}.cmacs-open-date-picker:hover .ant-calendar-picker-clear{opacity:0}.cmacs-open-range-picker-left,.cmacs-open-range-picker-right{display:inline-block}.cmacs-open-range-picker-right{float:right}.cmacs-open-range-picker-left{float:left}.ant-calendar-picker-input{box-shadow:none}.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled){border-color:#bec4cd;color:#bec4cd}.ant-picker-cell-inner{padding-top:2px}.ant-picker-cell-today:not(.ant-calendar-selected-day):not(.ant-picker-cell-disabled) .ant-picker-cell-inner{display:grid}.ant-picker-cell{color:#acb3bf}.ant-picker-cell-in-view{color:#656c79}.ant-picker-cell-today:not(.ant-calendar-selected-day):not(.ant-picker-cell-disabled) .ant-picker-cell-inner{background-color:transparent;border-color:transparent;color:#656c79}.ant-picker-cell-disabled .ant-picker-cell-inner{color:#acb3bf}.ant-picker-cell-disabled:before,.ant-picker-decade-panel .ant-picker-cell-disabled .ant-picker-cell-inner,.ant-picker-month-panel .ant-picker-cell-disabled .ant-picker-cell-inner,.ant-picker-quarter-panel .ant-picker-cell-disabled .ant-picker-cell-inner,.ant-picker-year-panel .ant-picker-cell-disabled .ant-picker-cell-inner{background:#f3f3f4}.ant-picker-cell-today:not(.ant-calendar-selected-day):not(.ant-picker-cell-disabled) .ant-picker-cell-inner:after{content:\"\u25CF\";color:#2a7cff;margin-top:-13px;font-size:10px}.ant-calendar-selected-day:not(.ant-picker-cell-disabled) .ant-picker-cell-inner{color:#fff!important;background-color:#2a7cff!important;border-color:#2a7cff}.ant-picker-cell>.ant-picker-cell-inner{min-width:30px;height:30px}.ant-calendar-header{margin-top:17px;margin-bottom:17px;border:none;height:17px;line-height:17px}.ant-calendar-header a{line-height:17px!important}.ant-calendar th{padding-top:0;padding-bottom:12px}.ant-picker-cell-inner:hover{background-color:#f6f7fb}.ant-calendar-picker-icon{color:#656c79;cursor:pointer}.ant-calendar-picker-clear,.ant-calendar-picker-icon,.ant-calendar-picker i svg{height:16px;width:16px}.ant-picker-cell-disabled.ant-picker-cell-today .ant-picker-cell-inner:before{width:30px;height:30px;left:0}.cmacs-timeline-range-popup calendar-footer{display:none}.ant-picker-cell-disabled.ant-calendar-selected-day .ant-picker-cell-inner:before{position:absolute;top:-1px;left:-1px;width:30px;height:30px}.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner:before{content:unset}.datepickerwidth,cmacs-date-picker,cmacs-month-picker,cmacs-range-picker,cmacs-week-picker,cmacs-year-picker{width:100%}.datepickerwidth .ant-input-disabled,.datepickerwidth .ant-input[disabled]{background:#f6f7fb;cursor:default;border:1px solid #dee0e5}.datepickerwidth .ant-input-disabled+.ant-calendar-picker-icon,.datepickerwidth .ant-input[disabled]+.ant-calendar-picker-icon{color:#bec4cd;cursor:default}.cmacs-open-date-picker-input,.cmacs-open-date-picker-input:focus,.cmacs-open-date-picker-input:hover{border-top-color:transparent!important;border-left-color:transparent!important;border-right-color:transparent!important;border-radius:unset}.ant-calendar-picker:hover .cmacs-open-date-picker-icon,.cmacs-open-date-picker-icon,.cmacs-open-date-picker:hover .ant-calendar-picker-clear{color:transparent!important;display:none!important;opacity:0!important}.cmacs-open-date-picker-input{padding:0;font-size:12px;height:0;color:transparent}.cmacs-open-date-picker-input .ant-calendar-range-picker-input,.cmacs-open-date-picker-input .ant-calendar-range-picker-separator,.cmacs-open-date-picker:hover .ant-calendar-range-picker-input{color:transparent}"], encapsulation: 2, changeDetection: 0 });
 __decorate([
     InputBoolean()
 ], CmacsDatePickerComponent.prototype, "allowClear", void 0);
+__decorate([
+    InputBoolean()
+], CmacsDatePickerComponent.prototype, "timeline", void 0);
 __decorate([
     InputBoolean()
 ], CmacsDatePickerComponent.prototype, "autoFocus", void 0);
@@ -13208,6 +13226,7 @@ __decorate([
       cmacs-picker
       [isRange]="isRange"
       [open]="nzOpen"
+      [timeline]="timeline"
       [cmacsOpen]="cmacsOpen"
       [dir]="dir"
       [separator]="separator"
@@ -13229,6 +13248,7 @@ __decorate([
     >
       <date-range-popup
         [isRange]="isRange"
+        [timeline]="timeline"
         [defaultPickerValue]="defaultPickerValue"
         [showWeek]="mode === 'week' || showWeekCustom"
         [showWeekCustom]="showWeekCustom"
@@ -13275,6 +13295,8 @@ __decorate([
             }, {
                 type: Optional
             }] }]; }, { allowClear: [{
+            type: Input
+        }], timeline: [{
             type: Input
         }], autoFocus: [{
             type: Input
@@ -14778,7 +14800,7 @@ CmacsDateTimePickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsDateTimePi
         ɵɵlistener("click", function CmacsDateTimePickerComponent_click_HostBindingHandler() { return ctx.open(); });
     } if (rf & 2) {
         ɵɵclassProp("ant-picker-large", ctx.size === "large")("ant-picker-small", ctx.size === "small")("ant-picker-disabled", ctx.disabled)("ant-picker-focused", ctx.focused)("cmacs-time-picker-opened", ctx.cmacsOpen)("ant-picker-rtl", ctx.dir === "rtl");
-    } }, inputs: { size: "size", hourStep: "hourStep", minuteStep: "minuteStep", secondStep: "secondStep", clearText: "clearText", nowText: "nowText", okText: "okText", popupClassName: "popupClassName", placeHolder: "placeHolder", addOn: "addOn", defaultOpenValue: "defaultOpenValue", disabledHours: "disabledHours", disabledMinutes: "disabledMinutes", disabledSeconds: "disabledSeconds", format: "format", cmacsOpen: "cmacsOpen", use12Hours: "use12Hours", suffixIcon: "suffixIcon", hideDisabledOptions: "hideDisabledOptions", hideSeconds: "hideSeconds", allowEmpty: "allowEmpty", disabled: "disabled", autoFocus: "autoFocus" }, outputs: { openChange: "openChange" }, exportAs: ["cmacsDateTimePicker"], features: [ɵɵProvidersFeature([{ provide: NG_VALUE_ACCESSOR, useExisting: CmacsDateTimePickerComponent, multi: true }]), ɵɵNgOnChangesFeature], decls: 8, vars: 16, consts: [[1, "ant-picker-input"], ["type", "text", 1, "cmacs-date-time-picker-input", 3, "size", "placeholder", "ngModel", "disabled", "ngModelChange", "focus", "blur", "keyup.enter", "keyup.escape"], ["inputElement", ""], [1, "ant-picker-suffix"], [4, "nzStringTemplateOutlet"], ["class", "ant-picker-clear", 3, "click", 4, "ngIf"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayOffsetY", "cdkConnectedOverlayWidth", "cdkConnectedOverlayPanelClass", "cdkConnectedOverlayTransformOriginOn", "detach", "overlayOutsideClick"], ["nz-icon", "", 3, "nzType"], [1, "ant-picker-clear", 3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], [1, "ant-picker-dropdown"], [1, "ant-picker-panel-container"], ["tabindex", "-1", 1, "ant-picker-panel"], [3, "ngClass", "format", "nzHourStep", "nzMinuteStep", "nzSecondStep", "hideSeconds", "nzDisabledHours", "nzDisabledMinutes", "nzDisabledSeconds", "nzPlaceHolder", "nzHideDisabledOptions", "nzUse12Hours", "nzDefaultOpenValue", "nzAddOn", "nzClearText", "nzNowText", "nzOkText", "nzAllowEmpty", "ngModel", "ngModelChange", "closePanel"]], template: function CmacsDateTimePickerComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { size: "size", hourStep: "hourStep", minuteStep: "minuteStep", secondStep: "secondStep", clearText: "clearText", nowText: "nowText", okText: "okText", popupClassName: "popupClassName", placeHolder: "placeHolder", addOn: "addOn", defaultOpenValue: "defaultOpenValue", disabledHours: "disabledHours", disabledMinutes: "disabledMinutes", disabledSeconds: "disabledSeconds", format: "format", cmacsOpen: "cmacsOpen", use12Hours: "use12Hours", suffixIcon: "suffixIcon", hideDisabledOptions: "hideDisabledOptions", hideSeconds: "hideSeconds", allowEmpty: "allowEmpty", disabled: "disabled", autoFocus: "autoFocus" }, outputs: { openChange: "openChange" }, exportAs: ["cmacsDateTimePicker"], features: [ɵɵProvidersFeature([{ provide: NG_VALUE_ACCESSOR, useExisting: CmacsDateTimePickerComponent, multi: true }]), ɵɵNgOnChangesFeature], decls: 8, vars: 16, consts: [[1, "ant-picker-input"], ["type", "text", 1, "cmacs-date-time-picker-input", 3, "size", "placeholder", "ngModel", "disabled", "ngModelChange", "focus", "blur", "keyup.enter", "keyup.escape"], ["inputElement", ""], [1, "ant-picker-suffix"], [4, "nzStringTemplateOutlet"], ["class", "ant-picker-clear", 3, "click", 4, "ngIf"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayOffsetY", "cdkConnectedOverlayWidth", "cdkConnectedOverlayPanelClass", "cdkConnectedOverlayTransformOriginOn", "detach", "overlayOutsideClick"], ["nz-icon", "", 3, "nzType"], [1, "ant-picker-clear", 3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], [1, "ant-picker-dropdown"], [1, "ant-picker-panel-container"], ["tabindex", "-1", 1, "ant-picker-panel", "cmacs-datetime-picker-panel-wrapper"], [3, "ngClass", "format", "nzHourStep", "nzMinuteStep", "nzSecondStep", "hideSeconds", "nzDisabledHours", "nzDisabledMinutes", "nzDisabledSeconds", "nzPlaceHolder", "nzHideDisabledOptions", "nzUse12Hours", "nzDefaultOpenValue", "nzAddOn", "nzClearText", "nzNowText", "nzOkText", "nzAllowEmpty", "ngModel", "ngModelChange", "closePanel"]], template: function CmacsDateTimePickerComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "div", 0);
         ɵɵelementStart(1, "input", 1, 2);
         ɵɵlistener("ngModelChange", function CmacsDateTimePickerComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; })("focus", function CmacsDateTimePickerComponent_Template_input_focus_1_listener() { return ctx.onFocus(true); })("blur", function CmacsDateTimePickerComponent_Template_input_blur_1_listener() { return ctx.onFocus(false); })("keyup.enter", function CmacsDateTimePickerComponent_Template_input_keyup_enter_1_listener() { return ctx.onKeyupEnter(); })("keyup.escape", function CmacsDateTimePickerComponent_Template_input_keyup_escape_1_listener() { return ctx.onKeyupEsc(); })("ngModelChange", function CmacsDateTimePickerComponent_Template_input_ngModelChange_1_listener($event) { return ctx.onInputChange($event); });
@@ -14800,7 +14822,7 @@ CmacsDateTimePickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsDateTimePi
         ɵɵproperty("ngIf", ctx.allowEmpty && !ctx.disabled && ctx.value);
         ɵɵadvance(1);
         ɵɵproperty("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.cmacsOpen)("cdkConnectedOverlayOffsetY", -2)("cdkConnectedOverlayWidth", ctx.calcWidth)("cdkConnectedOverlayPanelClass", ɵɵpureFunction0(15, _c1$f))("cdkConnectedOverlayTransformOriginOn", ".ant-picker-dropdown");
-    } }, directives: [DefaultValueAccessor, NgControlStatus, NgModel, NzStringTemplateOutletDirective, NgIf, CdkConnectedOverlay, NzConnectedOverlayDirective, ɵNzTransitionPatchDirective, NzIconDirective, CmacsDatetimePickerPanelComponent, NgClass], pipes: [AsyncPipe], styles: [".cmacs-datetime-picker-input-number{width:55px;height:30px!important;margin:11px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif}.cmacs-date-time-picker-input{color:#acb3bf!important}.ant-picker-input .ant-picker-suffix{color:#656c79!important}.ant-picker-time-panel .ant-picker-content{height:unset}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]{background:#f6f7fb;cursor:default;border:1px solid #dee0e5}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]+.ant-time-picker-icon{color:#bec4cd;cursor:default}.cmacs-datetime-dividers{display:inline-block;position:relative;top:-3px}.cmacs-datetime-picker .ant-time-picker-panel-inner{width:224px!important}.cmacs-datetime-picker .ampmdropdown{width:calc(100% - 156px)}::ng-deep .cmacs-datetime-picker .ant-time-picker-panel-inner cmacs-select.ant-select{height:30px!important;margin:12px 0!important;display:inline-flex;width:auto!important}.cmacs-datetime-picker .ant-time-picker-panel-inner.cmacs-datetime-picker-noseconds{width:148px!important}.ant-time-picker-panel-narrow .cmacs-datetime-picker .ant-time-picker-panel-input-wrap{max-width:unset}.ant-time-picker-clear.datetime-picker-clear-disabled{opacity:0!important;z-index:0!important}"], encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
+    } }, directives: [DefaultValueAccessor, NgControlStatus, NgModel, NzStringTemplateOutletDirective, NgIf, CdkConnectedOverlay, NzConnectedOverlayDirective, ɵNzTransitionPatchDirective, NzIconDirective, CmacsDatetimePickerPanelComponent, NgClass], pipes: [AsyncPipe], styles: [".cmacs-datetime-picker-input-number{width:55px;height:30px!important;margin:11px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif}.cmacs-date-time-picker-input{color:#acb3bf!important}.ant-picker-input .ant-picker-suffix{color:#656c79!important}.cmacs-datetime-picker-panel-wrapper .ant-picker-time-panel .ant-picker-content{height:unset}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]{background:#f6f7fb;cursor:default;border:1px solid #dee0e5}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]+.ant-time-picker-icon{color:#bec4cd;cursor:default}.cmacs-datetime-dividers{display:inline-block;position:relative;top:-3px}.cmacs-datetime-picker .ant-time-picker-panel-inner{width:224px!important}.cmacs-datetime-picker .ampmdropdown{width:calc(100% - 156px)}::ng-deep .cmacs-datetime-picker .ant-time-picker-panel-inner cmacs-select.ant-select{height:30px!important;margin:12px 0!important;display:inline-flex;width:auto!important}.cmacs-datetime-picker .ant-time-picker-panel-inner.cmacs-datetime-picker-noseconds{width:148px!important}.ant-time-picker-panel-narrow .cmacs-datetime-picker .ant-time-picker-panel-input-wrap{max-width:unset}.ant-time-picker-clear.datetime-picker-clear-disabled{opacity:0!important;z-index:0!important}"], encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
 __decorate([
     WithConfig()
 ], CmacsDateTimePickerComponent.prototype, "hourStep", void 0);
@@ -26281,7 +26303,7 @@ const _c3$5 = ["fieldTypeInputNumber"];
 const _c4$2 = ["fieldTypeDatePicker"];
 const _c5$2 = ["fieldTypeDateTimePicker"];
 const _c6$1 = ["fieldTypeSelect"];
-const _c7 = ["fieldTypeBool"];
+const _c7$1 = ["fieldTypeBool"];
 function CmacsCompactTableComponent_thead_3_th_2_Template(rf, ctx) { if (rf & 1) {
     const _r17 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "th", 14);
@@ -28629,7 +28651,7 @@ CmacsCompactTableComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCompactTable
         ɵɵviewQuery(_c4$2, 1, ElementRef);
         ɵɵviewQuery(_c5$2, 1, ElementRef);
         ɵɵviewQuery(_c6$1, 1, ElementRef);
-        ɵɵviewQuery(_c7, 1, ElementRef);
+        ɵɵviewQuery(_c7$1, 1, ElementRef);
         ɵɵviewQuery(CmacsDateTimePickerComponent, 1);
     } if (rf & 2) {
         let _t;
@@ -29342,7 +29364,7 @@ function CmacsTableComponent_tr_5_td_5_ng_template_2_Template(rf, ctx) { if (rf 
     ɵɵproperty("ngIf", ctx_r31.isSelect(field_r27));
 } }
 const _c6$2 = function (a1) { return ["editable-row", a1]; };
-const _c7$1 = function (a0) { return [a0]; };
+const _c7$2 = function (a0) { return [a0]; };
 function CmacsTableComponent_tr_5_td_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "td", 20);
     ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_container_1_Template, 4, 2, "ng-container", 21);
@@ -29353,7 +29375,7 @@ function CmacsTableComponent_tr_5_td_5_Template(rf, ctx) { if (rf & 1) {
     const _r30 = ɵɵreference(3);
     const ctx_r17 = ɵɵnextContext(2);
     ɵɵstyleProp("max-width", "100%");
-    ɵɵproperty("ngClass", ctx_r17.isCeldTypeDefault(field_r27) && ctx_r17.inLineEdit && !ctx_r17.isReadOnly(field_r27) ? ɵɵpureFunction1(5, _c6$2, "cmacs-table-cell-" + field_r27.property) : ɵɵpureFunction1(7, _c7$1, "cmacs-table-cell-" + field_r27.property));
+    ɵɵproperty("ngClass", ctx_r17.isCeldTypeDefault(field_r27) && ctx_r17.inLineEdit && !ctx_r17.isReadOnly(field_r27) ? ɵɵpureFunction1(5, _c6$2, "cmacs-table-cell-" + field_r27.property) : ɵɵpureFunction1(7, _c7$2, "cmacs-table-cell-" + field_r27.property));
     ɵɵadvance(1);
     ɵɵproperty("ngIf", ctx_r17.isCeldTypeDefault(field_r27) && ctx_r17.inLineEdit && !ctx_r17.isReadOnly(field_r27))("ngIfElse", _r30);
 } }
@@ -35808,31 +35830,31 @@ function CmacsTimelineDatepickerComponent_ng_container_7_Template(rf, ctx) { if 
 } if (rf & 2) {
     const ctx_r4 = ɵɵnextContext();
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r4.date);
+    ɵɵproperty("ngModel", ctx_r4.date)("dropdownClassName", "cmacs-timeline-datepicker-panel")("timeline", true);
 } }
 function CmacsTimelineDatepickerComponent_ng_container_8_Template(rf, ctx) { if (rf & 1) {
     const _r23 = ɵɵgetCurrentView();
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "cmacs-month-picker", 20);
+    ɵɵelementStart(1, "cmacs-month-picker", 21);
     ɵɵlistener("ngModelChange", function CmacsTimelineDatepickerComponent_ng_container_8_Template_cmacs_month_picker_ngModelChange_1_listener($event) { ɵɵrestoreView(_r23); const ctx_r22 = ɵɵnextContext(); return ctx_r22.date = $event; })("ngModelChange", function CmacsTimelineDatepickerComponent_ng_container_8_Template_cmacs_month_picker_ngModelChange_1_listener($event) { ɵɵrestoreView(_r23); const ctx_r24 = ɵɵnextContext(); return ctx_r24.getMonth($event); });
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r5 = ɵɵnextContext();
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r5.date);
+    ɵɵproperty("dropdownClassName", "cmacs-timeline-datepicker-panel")("timeline", true)("ngModel", ctx_r5.date);
 } }
 function CmacsTimelineDatepickerComponent_ng_container_9_Template(rf, ctx) { if (rf & 1) {
     const _r26 = ɵɵgetCurrentView();
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "cmacs-range-picker", 21);
+    ɵɵelementStart(1, "cmacs-range-picker", 22);
     ɵɵlistener("ngModelChange", function CmacsTimelineDatepickerComponent_ng_container_9_Template_cmacs_range_picker_ngModelChange_1_listener($event) { ɵɵrestoreView(_r26); const ctx_r25 = ɵɵnextContext(); return ctx_r25.range = $event; })("ngModelChange", function CmacsTimelineDatepickerComponent_ng_container_9_Template_cmacs_range_picker_ngModelChange_1_listener($event) { ɵɵrestoreView(_r26); const ctx_r27 = ɵɵnextContext(); return ctx_r27.onChange($event); });
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r6 = ɵɵnextContext();
     ɵɵadvance(1);
-    ɵɵproperty("dropdownClassName", "cmacs-timeline-range-popup")("ngModel", ctx_r6.range)("mode", "week");
+    ɵɵproperty("timeline", true)("dropdownClassName", "cmacs-timeline-datepicker-panel")("ngModel", ctx_r6.range)("mode", "week");
 } }
 const moment$4 = moment_;
 class CmacsTimelineDatepickerComponent {
@@ -36182,7 +36204,7 @@ class CmacsTimelineDatepickerComponent {
 CmacsTimelineDatepickerComponent.ɵfac = function CmacsTimelineDatepickerComponent_Factory(t) { return new (t || CmacsTimelineDatepickerComponent)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NzI18nService), ɵɵdirectiveInject(ChangeDetectorRef)); };
 CmacsTimelineDatepickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsTimelineDatepickerComponent, selectors: [["cmacs-timeline-datepicker"]], hostVars: 4, hostBindings: function CmacsTimelineDatepickerComponent_HostBindings(rf, ctx) { if (rf & 2) {
         ɵɵclassProp("ant-tabs", true)("ant-tabs-line", true);
-    } }, inputs: { gutter: "gutter", mode: "mode", restrictMode: "restrictMode", ranged: "ranged", weekLocale: "weekLocale", locale: "locale", selectedIndex: "selectedIndex", selectedRangeIdxs: "selectedRangeIdxs", date: "date", range: "range" }, outputs: { onNextClick: "onNextClick", onPrevClick: "onPrevClick", selectChange: "selectChange", selectedIndexChange: "selectedIndexChange", dateChange: "dateChange", rangeChange: "rangeChange", modeChange: "modeChange" }, exportAs: ["cmacsTimelineDatepicker"], features: [ɵɵNgOnChangesFeature], decls: 10, vars: 13, consts: [["class", "cmacs-timeline-item cmacs-timeline-item-dropdown", 4, "ngIf"], [1, "cmacs-timeline-item", 2, "margin-right", "10px", "max-width", "calc(100% - 160px - 16px)"], ["role", "tablist", "tabindex", "0", 1, "ant-tabs-bar", "ant-tabs-top-bar", "cmacs-timeline-datepicker-slider", 3, "nzType", "nzShowPagination", "nzPositionMode", "nzAnimated", "nzHideBar", "selectedIndex", "nzOnNextClick", "nzOnPrevClick"], ["ptb-tab-label", "", "role", "tab", "class", "cmacs-timeline-datepicker-label", 3, "margin-right", "ant-tabs-tab-active", 4, "ngIf"], ["ptb-tab-label", "", "role", "tab", "class", "cmacs-timeline-datepicker-label", 3, "margin-right", "ant-tabs-tab-active", "disabled", "click", 4, "ngFor", "ngForOf"], [1, "cmacs-timeline-item"], [4, "ngIf"], [1, "cmacs-timeline-item", "cmacs-timeline-item-dropdown"], ["cmacs-dropdown", "", 1, "cmacs-dropdowm-timeline-datepicker", 2, "display", "inline-flex", 3, "cmacsTrigger", "cmacsOpen", "dropdownMenu"], [1, "cmacs-open-dropdown-wrapper", 2, "width", "80px"], [1, "iconArrowLarge-Solid-Down"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 2, "min-width", "125px"], ["cmacs-menu-item", "", 3, "click", 4, "ngFor", "ngForOf"], ["cmacs-menu-item", "", 3, "click"], ["nz-icon", "", "nzType", "check"], [1, "cmacs-dropdowm-timeline-datepicker"], ["ptb-tab-label", "", "role", "tab", 1, "cmacs-timeline-datepicker-label"], ["ptb-tab-label", "", "role", "tab", 1, "cmacs-timeline-datepicker-label", 3, "disabled", "click"], [4, "nzStringTemplateOutlet"], ["placeHolder", "", 3, "ngModel", "ngModelChange"], ["placeHolder", "", 3, "dropdownClassName", "ngModel", "mode", "ngModelChange"]], template: function CmacsTimelineDatepickerComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { gutter: "gutter", mode: "mode", restrictMode: "restrictMode", ranged: "ranged", weekLocale: "weekLocale", locale: "locale", selectedIndex: "selectedIndex", selectedRangeIdxs: "selectedRangeIdxs", date: "date", range: "range" }, outputs: { onNextClick: "onNextClick", onPrevClick: "onPrevClick", selectChange: "selectChange", selectedIndexChange: "selectedIndexChange", dateChange: "dateChange", rangeChange: "rangeChange", modeChange: "modeChange" }, exportAs: ["cmacsTimelineDatepicker"], features: [ɵɵNgOnChangesFeature], decls: 10, vars: 13, consts: [["class", "cmacs-timeline-item cmacs-timeline-item-dropdown", 4, "ngIf"], [1, "cmacs-timeline-item", 2, "margin-right", "10px", "max-width", "calc(100% - 160px - 16px)"], ["role", "tablist", "tabindex", "0", 1, "ant-tabs-bar", "ant-tabs-top-bar", "cmacs-timeline-datepicker-slider", 3, "nzType", "nzShowPagination", "nzPositionMode", "nzAnimated", "nzHideBar", "selectedIndex", "nzOnNextClick", "nzOnPrevClick"], ["ptb-tab-label", "", "role", "tab", "class", "cmacs-timeline-datepicker-label", 3, "margin-right", "ant-tabs-tab-active", 4, "ngIf"], ["ptb-tab-label", "", "role", "tab", "class", "cmacs-timeline-datepicker-label", 3, "margin-right", "ant-tabs-tab-active", "disabled", "click", 4, "ngFor", "ngForOf"], [1, "cmacs-timeline-item"], [4, "ngIf"], [1, "cmacs-timeline-item", "cmacs-timeline-item-dropdown"], ["cmacs-dropdown", "", 1, "cmacs-dropdowm-timeline-datepicker", 2, "display", "inline-flex", 3, "cmacsTrigger", "cmacsOpen", "dropdownMenu"], [1, "cmacs-open-dropdown-wrapper", 2, "width", "80px"], [1, "iconArrowLarge-Solid-Down"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 2, "min-width", "125px"], ["cmacs-menu-item", "", 3, "click", 4, "ngFor", "ngForOf"], ["cmacs-menu-item", "", 3, "click"], ["nz-icon", "", "nzType", "check"], [1, "cmacs-dropdowm-timeline-datepicker"], ["ptb-tab-label", "", "role", "tab", 1, "cmacs-timeline-datepicker-label"], ["ptb-tab-label", "", "role", "tab", 1, "cmacs-timeline-datepicker-label", 3, "disabled", "click"], [4, "nzStringTemplateOutlet"], ["placeHolder", "", 3, "ngModel", "dropdownClassName", "timeline", "ngModelChange"], ["placeHolder", "", 3, "dropdownClassName", "timeline", "ngModel", "ngModelChange"], ["placeHolder", "", 3, "timeline", "dropdownClassName", "ngModel", "mode", "ngModelChange"]], template: function CmacsTimelineDatepickerComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, CmacsTimelineDatepickerComponent_div_0_Template, 9, 5, "div", 0);
         ɵɵtemplate(1, CmacsTimelineDatepickerComponent_div_1_Template, 4, 1, "div", 0);
         ɵɵelementStart(2, "div", 1);
@@ -36193,9 +36215,9 @@ CmacsTimelineDatepickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsTimeli
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementStart(6, "div", 5);
-        ɵɵtemplate(7, CmacsTimelineDatepickerComponent_ng_container_7_Template, 2, 1, "ng-container", 6);
-        ɵɵtemplate(8, CmacsTimelineDatepickerComponent_ng_container_8_Template, 2, 1, "ng-container", 6);
-        ɵɵtemplate(9, CmacsTimelineDatepickerComponent_ng_container_9_Template, 2, 3, "ng-container", 6);
+        ɵɵtemplate(7, CmacsTimelineDatepickerComponent_ng_container_7_Template, 2, 3, "ng-container", 6);
+        ɵɵtemplate(8, CmacsTimelineDatepickerComponent_ng_container_8_Template, 2, 3, "ng-container", 6);
+        ɵɵtemplate(9, CmacsTimelineDatepickerComponent_ng_container_9_Template, 2, 4, "ng-container", 6);
         ɵɵelementEnd();
     } if (rf & 2) {
         ɵɵproperty("ngIf", !ctx.restrictMode);
