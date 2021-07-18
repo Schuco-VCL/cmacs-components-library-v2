@@ -117,7 +117,7 @@ CmacsWizardComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsWizardComponent
         i0.ɵɵelementEnd();
     } if (rf & 2) {
         i0.ɵɵproperty("ngClass", ctx.classMap);
-    } }, directives: [i2.NgClass], styles: [".ant-steps{font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.6;letter-spacing:normal;color:#97a0ae}"], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [i2.NgClass], styles: [".ant-steps{font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.6;letter-spacing:normal;color:#97a0ae}.ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title,.ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-description,.ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title{color:#2a7cff}.ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-description,.ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title{color:#97a0ae}"], encapsulation: 2, changeDetection: 0 });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsWizardComponent, [{
         type: Component,
         args: [{
