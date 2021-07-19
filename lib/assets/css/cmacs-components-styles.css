@@ -34,6 +34,10 @@
   border-radius: 0;
 }
 
+.ant-picker {
+    height: 34px;
+}
+
 .cmacs-timeline-datepicker-panel .ant-picker-month-panel {
   width: 280px;
 }
@@ -69,7 +73,7 @@ cmacs-datetime-picker {
 }
 
 .cmacs-datetime-picker-dropdown .ant-picker-dropdown {
-  top: -3px;
+  top: -2px;
   border: 1px solid #dee0e5;
   border-radius: 0 0 3px 3px;
   border-top: none;
@@ -277,7 +281,7 @@ form .has-feedback > .ant-select .ant-select-arrow {
   right: 0;
 }
 
-.cmacs-input-fix:not(.cmacs-textarea){
+.cmacs-input-fix:not(.cmacs-textarea) {
   height: 34px;
   border: solid 1px #dee0e5;
   background-color: #ffffff;
@@ -286,7 +290,7 @@ form .has-feedback > .ant-select .ant-select-arrow {
   font-stretch: normal;
   line-height: 1.43;
   letter-spacing: normal;
-  color: #acb3bf;
+  color: #656c79;
   font-family: Roboto-Regular;
   font-size: 14px;
   border-radius: 3px;
@@ -1001,6 +1005,13 @@ nz-dropdown-context .ant-dropdown-menu-submenu-title,
   border: 1px solid #dee0e5 !important;
   top: -5px;
   left: 0px !important;
+}
+
+.ant-picker.ant-picker-disabled {
+  background: #f6f7fb;
+  border-color: #dee0e5;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
 .ant-select-disabled .ant-select-selection {
