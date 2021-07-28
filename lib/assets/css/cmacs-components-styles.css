@@ -611,7 +611,6 @@ nz-divider {
 .has-error .ant-form-explain, cmacs-form-explain {
   color: #F6503C;
   font-size: 10px;
-  position: absolute;
   top: 40px;
   left: 0px;
 }
@@ -1008,8 +1007,8 @@ nz-dropdown-context .ant-dropdown-menu-submenu-title,
 }
 
 .ant-picker.ant-picker-disabled {
-  background: #f6f7fb;
-  border-color: #dee0e5;
+  background: #f6f7fb !important;
+  border-color: #dee0e5 !important;
   cursor: not-allowed;
   box-shadow: none;
 }
