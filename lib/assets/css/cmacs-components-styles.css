@@ -38,8 +38,13 @@
     height: 34px;
 }
 
-.cmacs-timeline-datepicker-panel .ant-picker-month-panel {
-  width: 280px;
+.cmacs-timeline-datepicker-panel .ant-picker-month-panel,
+.cmacs-timeline-datepicker-panel .ant-picker-panel-container.ant-picker-week-number {
+  width: 280px !important;
+}
+
+.cmacs-timeline-datepicker-panel .ant-picker-range-wrapper {
+  width: 500px !important;
 }
 
 .ant-picker-dropdown-range {
@@ -90,10 +95,11 @@ cmacs-datetime-picker {
 }
 
 .cmacs-datetime-picker-dropdown .ant-picker-dropdown .ant-picker-panel-container,
-.cmacs-datetime-picker-dropdown .ant-picker-dropdown .ant-picker-panel-container .ant-picker-panel{
-   width: inherit;
-   background-color: transparent;
-   box-shadow: none;
+.cmacs-datetime-picker-dropdown .ant-picker-dropdown .ant-picker-panel-container .ant-picker-panel {
+  width: inherit;
+  background-color: transparent;
+  box-shadow: none;
+  max-height: 349px;
 }
 
 .ant-menu-inline .ant-menu-submenu-arrow-cmacs:before {
@@ -188,7 +194,7 @@ cmacs-breadcrumb-item {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
+  line-height: 1.7;
   letter-spacing: normal;
   color: #acb3bf;
   white-space: nowrap;
@@ -196,6 +202,7 @@ cmacs-breadcrumb-item {
   text-overflow: ellipsis;
   Display: inline-block;
   cursor: default;
+  font-family: 'Roboto-Regular';
 }
 
 cmacs-breadcrumb-item:last-child {
