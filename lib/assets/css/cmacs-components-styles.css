@@ -78,14 +78,16 @@ cmacs-datetime-picker {
 }
 
 .cmacs-datetime-picker-dropdown .ant-picker-dropdown {
-  top: -2px;
+  top: -3px;
   border: 1px solid #dee0e5;
   border-radius: 0 0 3px 3px;
-  border-top: none;
   width: inherit;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0px 3px 7px rgb(59 63 70 / 20%) !important;
   clip-path: inset(0 -10% -10% -10%);
+  color:#656C79;
+  font-size: 13px;
+  font-family: Roboto-Regular;
 }
 
 .cmacs-time-picker-opened {
@@ -100,6 +102,7 @@ cmacs-datetime-picker {
   background-color: transparent;
   box-shadow: none;
   max-height: 349px;
+   min-width: 225px;
 }
 
 .ant-menu-inline .ant-menu-submenu-arrow-cmacs:before {
