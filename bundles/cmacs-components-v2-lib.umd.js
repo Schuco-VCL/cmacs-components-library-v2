@@ -39173,35 +39173,38 @@
             this.showPaginationControls = isEnabled;
         };
         PtbTabsNavComponent.prototype.scrollToLabel = function (labelIndex) {
+            var _this = this;
             var selectedLabel = this.listOfNzTabLabelDirective ? this.listOfNzTabLabelDirective.toArray()[labelIndex] : null;
             if (selectedLabel) {
                 // The view length is the visible width of the tab labels.
-                var labelBeforePos = void 0;
-                var labelAfterPos = void 0;
-                if (this.nzPositionMode === 'horizontal') {
-                    if (this.getLayoutDirection() === 'ltr') {
-                        labelBeforePos = selectedLabel.getOffsetLeft();
-                        labelAfterPos = labelBeforePos + selectedLabel.getOffsetWidth();
+                setTimeout(function () {
+                    var labelBeforePos;
+                    var labelAfterPos;
+                    if (_this.nzPositionMode === 'horizontal') {
+                        if (_this.getLayoutDirection() === 'ltr') {
+                            labelBeforePos = selectedLabel.getOffsetLeft();
+                            labelAfterPos = labelBeforePos + selectedLabel.getOffsetWidth();
+                        }
+                        else {
+                            labelAfterPos = _this.navListElement.nativeElement.offsetWidth - selectedLabel.getOffsetLeft();
+                            labelBeforePos = labelAfterPos - selectedLabel.getOffsetWidth();
+                        }
                     }
                     else {
-                        labelAfterPos = this.navListElement.nativeElement.offsetWidth - selectedLabel.getOffsetLeft();
-                        labelBeforePos = labelAfterPos - selectedLabel.getOffsetWidth();
+                        labelBeforePos = selectedLabel.getOffsetTop();
+                        labelAfterPos = labelBeforePos + selectedLabel.getOffsetHeight();
                     }
-                }
-                else {
-                    labelBeforePos = selectedLabel.getOffsetTop();
-                    labelAfterPos = labelBeforePos + selectedLabel.getOffsetHeight();
-                }
-                var beforeVisiblePos = this.scrollDistance;
-                var afterVisiblePos = this.scrollDistance + this.viewWidthHeightPix;
-                if (labelBeforePos < beforeVisiblePos) {
-                    // Scroll header to move label to the before direction
-                    this.scrollDistance -= beforeVisiblePos - labelBeforePos + EXAGGERATED_OVERSCROLL;
-                }
-                else if (labelAfterPos > afterVisiblePos) {
-                    // Scroll header to move label to the after direction
-                    this.scrollDistance += labelAfterPos - afterVisiblePos + EXAGGERATED_OVERSCROLL;
-                }
+                    var beforeVisiblePos = _this.scrollDistance;
+                    var afterVisiblePos = _this.scrollDistance + _this.viewWidthHeightPix;
+                    if (labelBeforePos < beforeVisiblePos) {
+                        // Scroll header to move label to the before direction
+                        _this.scrollDistance -= beforeVisiblePos - labelBeforePos + EXAGGERATED_OVERSCROLL;
+                    }
+                    else if (labelAfterPos > afterVisiblePos) {
+                        // Scroll header to move label to the after direction
+                        _this.scrollDistance += labelAfterPos - afterVisiblePos + EXAGGERATED_OVERSCROLL;
+                    }
+                }, 200);
             }
         };
         PtbTabsNavComponent.prototype.checkScrollingControls = function () {

@@ -35507,32 +35507,34 @@ class PtbTabsNavComponent {
         const selectedLabel = this.listOfNzTabLabelDirective ? this.listOfNzTabLabelDirective.toArray()[labelIndex] : null;
         if (selectedLabel) {
             // The view length is the visible width of the tab labels.
-            let labelBeforePos;
-            let labelAfterPos;
-            if (this.nzPositionMode === 'horizontal') {
-                if (this.getLayoutDirection() === 'ltr') {
-                    labelBeforePos = selectedLabel.getOffsetLeft();
-                    labelAfterPos = labelBeforePos + selectedLabel.getOffsetWidth();
+            setTimeout(() => {
+                let labelBeforePos;
+                let labelAfterPos;
+                if (this.nzPositionMode === 'horizontal') {
+                    if (this.getLayoutDirection() === 'ltr') {
+                        labelBeforePos = selectedLabel.getOffsetLeft();
+                        labelAfterPos = labelBeforePos + selectedLabel.getOffsetWidth();
+                    }
+                    else {
+                        labelAfterPos = this.navListElement.nativeElement.offsetWidth - selectedLabel.getOffsetLeft();
+                        labelBeforePos = labelAfterPos - selectedLabel.getOffsetWidth();
+                    }
                 }
                 else {
-                    labelAfterPos = this.navListElement.nativeElement.offsetWidth - selectedLabel.getOffsetLeft();
-                    labelBeforePos = labelAfterPos - selectedLabel.getOffsetWidth();
+                    labelBeforePos = selectedLabel.getOffsetTop();
+                    labelAfterPos = labelBeforePos + selectedLabel.getOffsetHeight();
                 }
-            }
-            else {
-                labelBeforePos = selectedLabel.getOffsetTop();
-                labelAfterPos = labelBeforePos + selectedLabel.getOffsetHeight();
-            }
-            const beforeVisiblePos = this.scrollDistance;
-            const afterVisiblePos = this.scrollDistance + this.viewWidthHeightPix;
-            if (labelBeforePos < beforeVisiblePos) {
-                // Scroll header to move label to the before direction
-                this.scrollDistance -= beforeVisiblePos - labelBeforePos + EXAGGERATED_OVERSCROLL;
-            }
-            else if (labelAfterPos > afterVisiblePos) {
-                // Scroll header to move label to the after direction
-                this.scrollDistance += labelAfterPos - afterVisiblePos + EXAGGERATED_OVERSCROLL;
-            }
+                const beforeVisiblePos = this.scrollDistance;
+                const afterVisiblePos = this.scrollDistance + this.viewWidthHeightPix;
+                if (labelBeforePos < beforeVisiblePos) {
+                    // Scroll header to move label to the before direction
+                    this.scrollDistance -= beforeVisiblePos - labelBeforePos + EXAGGERATED_OVERSCROLL;
+                }
+                else if (labelAfterPos > afterVisiblePos) {
+                    // Scroll header to move label to the after direction
+                    this.scrollDistance += labelAfterPos - afterVisiblePos + EXAGGERATED_OVERSCROLL;
+                }
+            }, 200);
         }
     }
     checkScrollingControls() {
