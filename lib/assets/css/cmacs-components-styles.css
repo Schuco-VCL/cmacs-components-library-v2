@@ -102,7 +102,6 @@ cmacs-datetime-picker {
   background-color: transparent;
   box-shadow: none;
   max-height: 349px;
-   min-width: 225px;
 }
 
 .ant-menu-inline .ant-menu-submenu-arrow-cmacs:before {
