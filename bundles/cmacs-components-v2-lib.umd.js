@@ -983,9 +983,9 @@
     function CmacsButtonGroupComponent_button_0_Template(rf, ctx) {
         if (rf & 1) {
             var _r3_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "button", 1);
+            i0.ɵɵelementStart(0, "button", 2);
             i0.ɵɵlistener("click", function CmacsButtonGroupComponent_button_0_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r3_1); var ctx_r2 = i0.ɵɵnextContext(); return ctx_r2.moveLeft(); });
-            i0.ɵɵelement(1, "i", 2);
+            i0.ɵɵelement(1, "i", 3);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -996,9 +996,9 @@
     function CmacsButtonGroupComponent_button_2_Template(rf, ctx) {
         if (rf & 1) {
             var _r5_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "button", 1);
+            i0.ɵɵelementStart(0, "button", 4);
             i0.ɵɵlistener("click", function CmacsButtonGroupComponent_button_2_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r5_1); var ctx_r4 = i0.ɵɵnextContext(); return ctx_r4.moveRight(); });
-            i0.ɵɵelement(1, "i", 3);
+            i0.ɵɵelement(1, "i", 5);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -1086,12 +1086,12 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("ant-btn-group-lg", ctx.size === "large")("ant-btn-group-sm", ctx.size === "small")("ant-btn-group-rtl", ctx.dir === "rtl");
             }
-        }, inputs: { size: "size", overlap: "overlap", disabled: "disabled", disabledNav: "disabledNav" }, exportAs: ["cmacsButtonGroup"], ngContentSelectors: _c0$3, decls: 3, vars: 2, consts: [["cmacs-button", "", 3, "disabled", "click", 4, "ngIf"], ["cmacs-button", "", 3, "disabled", "click"], [1, "iconArrowLarge-Chevron-Left"], [1, "iconArrowLarge-Chevron-Right"]], template: function CmacsButtonGroupComponent_Template(rf, ctx) {
+        }, inputs: { size: "size", overlap: "overlap", disabled: "disabled", disabledNav: "disabledNav" }, exportAs: ["cmacsButtonGroup"], ngContentSelectors: _c0$3, decls: 3, vars: 2, consts: [["cmacs-button", "", "role", "button", "aria-label", "Left arrow", 3, "disabled", "click", 4, "ngIf"], ["cmacs-button", "", "role", "button", "aria-label", "right arrow", 3, "disabled", "click", 4, "ngIf"], ["cmacs-button", "", "role", "button", "aria-label", "Left arrow", 3, "disabled", "click"], [1, "iconArrowLarge-Chevron-Left"], ["cmacs-button", "", "role", "button", "aria-label", "right arrow", 3, "disabled", "click"], [1, "iconArrowLarge-Chevron-Right"]], template: function CmacsButtonGroupComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵtemplate(0, CmacsButtonGroupComponent_button_0_Template, 2, 1, "button", 0);
                 i0.ɵɵprojection(1);
-                i0.ɵɵtemplate(2, CmacsButtonGroupComponent_button_2_Template, 2, 1, "button", 0);
+                i0.ɵɵtemplate(2, CmacsButtonGroupComponent_button_2_Template, 2, 1, "button", 1);
             }
             if (rf & 2) {
                 i0.ɵɵproperty("ngIf", ctx.overlap);
@@ -7974,7 +7974,7 @@
                 i0.ɵɵstyleProp("top", ctx.top)("bottom", ctx.bottom)("left", ctx.left)("right", ctx.right);
                 i0.ɵɵclassProp("carrot-bottom-menu", ctx.carrot === "bottom")("carrot-top-menu", ctx.carrot === "top")("cmacs-floating-menu-align-x", ctx.position === "bottom" || ctx.position === "top")("cmacs-floating-menu-align-y", ctx.position === "left" || ctx.position === "right");
             }
-        }, inputs: { position: "position", trigger: "trigger", visible: "visible", showExtras: "showExtras", dragBoundary: "dragBoundary", carrot: "carrot", top: "top", bottom: "bottom", left: "left", right: "right", topBoundary: "topBoundary", bottomBoundary: "bottomBoundary", leftBoundary: "leftBoundary", rightBoundary: "rightBoundary", i18n: "i18n" }, outputs: { positionChange: "positionChange" }, exportAs: ["cmacsFloatingMenu"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$n, decls: 1, vars: 1, consts: [["cdkDrag", "", 3, "cdkDragBoundary", 4, "ngIf"], ["cdkDrag", "", 3, "cdkDragBoundary"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-north-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-south-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-east-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-west-area"], ["fixedEl", ""], ["cmacs-button", "", "ghost", "", 3, "click", 4, "ngIf"], ["class", "cmacs-floating-menu-main", 4, "ngIf"], ["class", "cmacs-floating-menu-user-content", 4, "ngIf"], ["cmacs-button", "", "ghost", "", 3, "click"], [1, "iconUILarge-Sort"], [1, "cmacs-floating-menu-main"], ["cmacs-button", "", "ghost", "", "cmacs-dropdown", "", 1, "cmacs-floating-menu-main-button", 3, "cmacsTrigger", "placement", "dropdownMenu"], [1, "iconUILarge-More-Veritcal_Icon"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 1, "cmacs-floating-menu-main-ul"], ["cmacs-menu-item", "", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "cmacs-floating-menu-user-content"]], template: function CmacsFloatingMenuComponent_Template(rf, ctx) {
+        }, inputs: { position: "position", trigger: "trigger", visible: "visible", showExtras: "showExtras", dragBoundary: "dragBoundary", carrot: "carrot", top: "top", bottom: "bottom", left: "left", right: "right", topBoundary: "topBoundary", bottomBoundary: "bottomBoundary", leftBoundary: "leftBoundary", rightBoundary: "rightBoundary", i18n: "i18n" }, outputs: { positionChange: "positionChange" }, exportAs: ["cmacsFloatingMenu"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$n, decls: 1, vars: 1, consts: [["cdkDrag", "", 3, "cdkDragBoundary", 4, "ngIf"], ["cdkDrag", "", 3, "cdkDragBoundary"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-north-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-south-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-east-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-west-area"], ["fixedEl", ""], ["cmacs-button", "", "ghost", "", "role", "button", "aria-label", "sort", 3, "click", 4, "ngIf"], ["class", "cmacs-floating-menu-main", 4, "ngIf"], ["class", "cmacs-floating-menu-user-content", 4, "ngIf"], ["cmacs-button", "", "ghost", "", "role", "button", "aria-label", "sort", 3, "click"], [1, "iconUILarge-Sort"], [1, "cmacs-floating-menu-main"], ["cmacs-button", "", "ghost", "", "cmacs-dropdown", "", "role", "button", "aria-label", "ellipsis vertical", 1, "cmacs-floating-menu-main-button", 3, "cmacsTrigger", "placement", "dropdownMenu"], [1, "iconUILarge-More-Veritcal_Icon"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 1, "cmacs-floating-menu-main-ul"], ["cmacs-menu-item", "", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "cmacs-floating-menu-user-content"]], template: function CmacsFloatingMenuComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵtemplate(0, CmacsFloatingMenuComponent_div_0_Template, 10, 10, "div", 0);
@@ -8687,7 +8687,7 @@
         return CmacsSectionComponent;
     }());
     CmacsSectionComponent.ɵfac = function CmacsSectionComponent_Factory(t) { return new (t || CmacsSectionComponent)(); };
-    CmacsSectionComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsSectionComponent, selectors: [["cmacs-section"]], inputs: { extra: "extra", widgetSpan: "widgetSpan", title: "title", titleIcon: "titleIcon", showCollapse: "showCollapse", extraData: "extraData", collapsed: "collapsed", validate: "validate" }, outputs: { onbeforecollapse: "onbeforecollapse", oncollapse: "oncollapse", onbeforeexpand: "onbeforeexpand", onexpand: "onexpand" }, features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1$a, decls: 10, vars: 5, consts: [["nz-col", "", 1, "widget-container", 3, "nzSpan"], ["nz-row", "", "nzType", "flex", "nzJustify", "space-between", 1, "widget-container-bar"], ["nz-col", ""], ["nz-row", "", 1, "widget-container-bar-title"], [3, "ngClass", 4, "ngIf"], ["nz-row", "", "class", "widget-container-bar-btns", 4, "ngIf"], ["class", "widget-container-content", 4, "ngIf"], [3, "ngClass"], ["nz-row", "", 1, "widget-container-bar-btns"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-button", "", "ghost", "", 1, "log-action-btn", 3, "action", "click"], [1, "widget-container-content"]], template: function CmacsSectionComponent_Template(rf, ctx) {
+    CmacsSectionComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsSectionComponent, selectors: [["cmacs-section"]], inputs: { extra: "extra", widgetSpan: "widgetSpan", title: "title", titleIcon: "titleIcon", showCollapse: "showCollapse", extraData: "extraData", collapsed: "collapsed", validate: "validate" }, outputs: { onbeforecollapse: "onbeforecollapse", oncollapse: "oncollapse", onbeforeexpand: "onbeforeexpand", onexpand: "onexpand" }, features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1$a, decls: 10, vars: 5, consts: [["nz-col", "", 1, "widget-container", 3, "nzSpan"], ["nz-row", "", "nzType", "flex", "nzJustify", "space-between", 1, "widget-container-bar"], ["nz-col", ""], ["nz-row", "", 1, "widget-container-bar-title"], [3, "ngClass", 4, "ngIf"], ["nz-row", "", "class", "widget-container-bar-btns", 4, "ngIf"], ["class", "widget-container-content", 4, "ngIf"], [3, "ngClass"], ["nz-row", "", 1, "widget-container-bar-btns"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-button", "", "aria-label", "collapse/expand", "role", "button", "ghost", "", 1, "log-action-btn", 3, "action", "click"], [1, "widget-container-content"]], template: function CmacsSectionComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "div", 0);
@@ -9725,7 +9725,7 @@
         return CmacsAlertComponent;
     }());
     CmacsAlertComponent.ɵfac = function CmacsAlertComponent_Factory(t) { return new (t || CmacsAlertComponent)(i0.ɵɵdirectiveInject(i1$1.NzConfigService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i2.Directionality, 8)); };
-    CmacsAlertComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsAlertComponent, selectors: [["cmacs-alert"]], inputs: { closeText: "closeText", iconType: "iconType", message: "message", description: "description", type: "type", closeable: "closeable", showIcon: "showIcon", banner: "banner", noAnimation: "noAnimation" }, outputs: { onClose: "onClose" }, exportAs: ["cmacsAlert"], features: [i0.ɵɵNgOnChangesFeature], decls: 1, vars: 1, consts: [["class", "ant-alert", 3, "ant-alert-rtl", "ant-alert-success", "ant-alert-info", "ant-alert-warning", "ant-alert-error", "ant-alert-no-icon", "ant-alert-banner", "ant-alert-closable", "ant-alert-with-description", 4, "ngIf"], [1, "ant-alert"], [4, "ngIf"], ["class", "ant-alert-content", 4, "ngIf"], ["type", "button", "tabindex", "0", "class", "ant-alert-close-icon", 3, "click", 4, "ngIf"], ["nz-icon", "", 1, "ant-alert-icon", 3, "nzType", "nzTheme"], [1, "ant-alert-content"], ["class", "ant-alert-message", 4, "ngIf"], ["class", "ant-alert-description", 4, "ngIf"], [1, "ant-alert-message"], [4, "nzStringTemplateOutlet"], [1, "ant-alert-description"], ["type", "button", "tabindex", "0", 1, "ant-alert-close-icon", 3, "click"], ["closeDefaultTemplate", ""], [4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close"], [1, "ant-alert-close-text"]], template: function CmacsAlertComponent_Template(rf, ctx) {
+    CmacsAlertComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsAlertComponent, selectors: [["cmacs-alert"]], inputs: { closeText: "closeText", iconType: "iconType", message: "message", description: "description", type: "type", closeable: "closeable", showIcon: "showIcon", banner: "banner", noAnimation: "noAnimation" }, outputs: { onClose: "onClose" }, exportAs: ["cmacsAlert"], features: [i0.ɵɵNgOnChangesFeature], decls: 1, vars: 1, consts: [["class", "ant-alert", 3, "ant-alert-rtl", "ant-alert-success", "ant-alert-info", "ant-alert-warning", "ant-alert-error", "ant-alert-no-icon", "ant-alert-banner", "ant-alert-closable", "ant-alert-with-description", 4, "ngIf"], [1, "ant-alert"], [4, "ngIf"], ["class", "ant-alert-content", 4, "ngIf"], ["type", "button", "aria-label", "Close", "role", "button", "tabindex", "0", "class", "ant-alert-close-icon", 3, "click", 4, "ngIf"], ["nz-icon", "", 1, "ant-alert-icon", 3, "nzType", "nzTheme"], [1, "ant-alert-content"], ["class", "ant-alert-message", 4, "ngIf"], ["class", "ant-alert-description", 4, "ngIf"], [1, "ant-alert-message"], [4, "nzStringTemplateOutlet"], [1, "ant-alert-description"], ["type", "button", "aria-label", "Close", "role", "button", "tabindex", "0", 1, "ant-alert-close-icon", 3, "click"], ["closeDefaultTemplate", ""], [4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close"], [1, "ant-alert-close-text"]], template: function CmacsAlertComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, CmacsAlertComponent_div_0_Template, 4, 23, "div", 0);
             }
@@ -9754,7 +9754,7 @@
                         selector: 'cmacs-alert',
                         exportAs: 'cmacsAlert',
                         animations: [animation.slideAlertMotion],
-                        template: "\n    <div\n      *ngIf=\"!closed\"\n      class=\"ant-alert\"\n      [class.ant-alert-rtl]=\"dir === 'rtl'\"\n      [class.ant-alert-success]=\"type === 'success'\"\n      [class.ant-alert-info]=\"type === 'info'\"\n      [class.ant-alert-warning]=\"type === 'warning'\"\n      [class.ant-alert-error]=\"type === 'error'\"\n      [class.ant-alert-no-icon]=\"!showIcon\"\n      [class.ant-alert-banner]=\"banner\"\n      [class.ant-alert-closable]=\"closeable\"\n      [class.ant-alert-with-description]=\"!!description\"\n      [@.disabled]=\"noAnimation\"\n      [@slideAlertMotion]\n      (@slideAlertMotion.done)=\"onFadeAnimationDone()\"\n    >\n      <ng-container *ngIf=\"showIcon\">\n        <i nz-icon class=\"ant-alert-icon\" [nzType]=\"iconType || inferredIconType\" [nzTheme]=\"iconTheme\"></i>\n      </ng-container>\n      <div class=\"ant-alert-content\" *ngIf=\"message || description\">\n        <span class=\"ant-alert-message\" *ngIf=\"message\">\n          <ng-container *nzStringTemplateOutlet=\"message\">{{ message }}</ng-container>\n        </span>\n        <span class=\"ant-alert-description\" *ngIf=\"description\">\n          <ng-container *nzStringTemplateOutlet=\"description\">{{ description }}</ng-container>\n        </span>\n      </div>\n      <button type=\"button\" tabindex=\"0\" *ngIf=\"closeable || closeText\" class=\"ant-alert-close-icon\" (click)=\"closeAlert()\">\n        <ng-template #closeDefaultTemplate>\n          <i nz-icon nzType=\"close\"></i>\n        </ng-template>\n        <ng-container *ngIf=\"closeText; else closeDefaultTemplate\">\n          <ng-container *nzStringTemplateOutlet=\"closeText\">\n            <span class=\"ant-alert-close-text\">{{ closeText }}</span>\n          </ng-container>\n        </ng-container>\n      </button>\n    </div>\n  ",
+                        template: "\n    <div\n      *ngIf=\"!closed\"\n      class=\"ant-alert\"\n      [class.ant-alert-rtl]=\"dir === 'rtl'\"\n      [class.ant-alert-success]=\"type === 'success'\"\n      [class.ant-alert-info]=\"type === 'info'\"\n      [class.ant-alert-warning]=\"type === 'warning'\"\n      [class.ant-alert-error]=\"type === 'error'\"\n      [class.ant-alert-no-icon]=\"!showIcon\"\n      [class.ant-alert-banner]=\"banner\"\n      [class.ant-alert-closable]=\"closeable\"\n      [class.ant-alert-with-description]=\"!!description\"\n      [@.disabled]=\"noAnimation\"\n      [@slideAlertMotion]\n      (@slideAlertMotion.done)=\"onFadeAnimationDone()\"\n    >\n      <ng-container *ngIf=\"showIcon\">\n        <i nz-icon class=\"ant-alert-icon\" [nzType]=\"iconType || inferredIconType\" [nzTheme]=\"iconTheme\"></i>\n      </ng-container>\n      <div class=\"ant-alert-content\" *ngIf=\"message || description\">\n        <span class=\"ant-alert-message\" *ngIf=\"message\">\n          <ng-container *nzStringTemplateOutlet=\"message\">{{ message }}</ng-container>\n        </span>\n        <span class=\"ant-alert-description\" *ngIf=\"description\">\n          <ng-container *nzStringTemplateOutlet=\"description\">{{ description }}</ng-container>\n        </span>\n      </div>\n      <button type=\"button\" aria-label=\"Close\" role=\"button\" tabindex=\"0\" *ngIf=\"closeable || closeText\" class=\"ant-alert-close-icon\" (click)=\"closeAlert()\">\n        <ng-template #closeDefaultTemplate>\n          <i nz-icon nzType=\"close\"></i>\n        </ng-template>\n        <ng-container *ngIf=\"closeText; else closeDefaultTemplate\">\n          <ng-container *nzStringTemplateOutlet=\"closeText\">\n            <span class=\"ant-alert-close-text\">{{ closeText }}</span>\n          </ng-container>\n        </ng-container>\n      </button>\n    </div>\n  ",
                         changeDetection: i0.ChangeDetectionStrategy.OnPush,
                         encapsulation: i0.ViewEncapsulation.None,
                         styleUrls: ['./cmacs-alert.component.css'],
@@ -10187,7 +10187,7 @@
     function DecadeHeaderComponent_ng_container_6_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "button", 6);
+            i0.ɵɵelementStart(1, "button", 9);
             i0.ɵɵlistener("click", function DecadeHeaderComponent_ng_container_6_Template_button_click_1_listener() { var selector_r1 = ctx.$implicit; return selector_r1.onClick(); });
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
@@ -10197,6 +10197,7 @@
             var selector_r1 = ctx.$implicit;
             i0.ɵɵadvance(1);
             i0.ɵɵclassMap(selector_r1.className);
+            i0.ɵɵpropertyInterpolate("aria-label", selector_r1.label);
             i0.ɵɵpropertyInterpolate("title", selector_r1.title || null);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", selector_r1.label, " ");
@@ -10244,27 +10245,27 @@
         return DecadeHeaderComponent;
     }(AbstractPanelHeader));
     DecadeHeaderComponent.ɵfac = function DecadeHeaderComponent_Factory(t) { return ɵDecadeHeaderComponent_BaseFactory(t || DecadeHeaderComponent); };
-    DecadeHeaderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: DecadeHeaderComponent, selectors: [["decade-header"]], exportAs: ["decadeHeader"], features: [i0.ɵɵInheritDefinitionFeature], decls: 11, vars: 31, consts: [["role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-prev-icon"], [1, "ant-picker-prev-icon"], [4, "ngFor", "ngForOf"], [1, "ant-picker-next-icon"], [1, "ant-picker-super-next-icon"], ["role", "button", "type", "button", 3, "title", "click"]], template: function DecadeHeaderComponent_Template(rf, ctx) {
+    DecadeHeaderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: DecadeHeaderComponent, selectors: [["decade-header"]], exportAs: ["decadeHeader"], features: [i0.ɵɵInheritDefinitionFeature], decls: 11, vars: 31, consts: [["aria-label", "rewind", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-prev-icon"], ["aria-label", "previous", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-prev-icon"], [4, "ngFor", "ngForOf"], ["aria-label", "next", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-next-icon"], ["aria-label", "fast forward", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-next-icon"], ["role", "button", "type", "button", 3, "aria-label", "title", "click"]], template: function DecadeHeaderComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div");
                 i0.ɵɵelementStart(1, "button", 0);
                 i0.ɵɵlistener("click", function DecadeHeaderComponent_Template_button_click_1_listener() { return ctx.superPrevious(); });
                 i0.ɵɵelement(2, "span", 1);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(3, "button", 0);
+                i0.ɵɵelementStart(3, "button", 2);
                 i0.ɵɵlistener("click", function DecadeHeaderComponent_Template_button_click_3_listener() { return ctx.previous(); });
-                i0.ɵɵelement(4, "span", 2);
+                i0.ɵɵelement(4, "span", 3);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementStart(5, "div");
-                i0.ɵɵtemplate(6, DecadeHeaderComponent_ng_container_6_Template, 3, 5, "ng-container", 3);
+                i0.ɵɵtemplate(6, DecadeHeaderComponent_ng_container_6_Template, 3, 6, "ng-container", 4);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(7, "button", 0);
+                i0.ɵɵelementStart(7, "button", 5);
                 i0.ɵɵlistener("click", function DecadeHeaderComponent_Template_button_click_7_listener() { return ctx.next(); });
-                i0.ɵɵelement(8, "span", 4);
+                i0.ɵɵelement(8, "span", 6);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(9, "button", 0);
+                i0.ɵɵelementStart(9, "button", 7);
                 i0.ɵɵlistener("click", function DecadeHeaderComponent_Template_button_click_9_listener() { return ctx.superNext(); });
-                i0.ɵɵelement(10, "span", 5);
+                i0.ɵɵelement(10, "span", 8);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
             }
@@ -10765,7 +10766,7 @@
     function YearHeaderComponent_ng_container_6_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "button", 6);
+            i0.ɵɵelementStart(1, "button", 9);
             i0.ɵɵlistener("click", function YearHeaderComponent_ng_container_6_Template_button_click_1_listener() { var selector_r1 = ctx.$implicit; return selector_r1.onClick(); });
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
@@ -10775,6 +10776,7 @@
             var selector_r1 = ctx.$implicit;
             i0.ɵɵadvance(1);
             i0.ɵɵclassMap(selector_r1.className);
+            i0.ɵɵpropertyInterpolate("aria-label", selector_r1.label);
             i0.ɵɵpropertyInterpolate("title", selector_r1.title || null);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", selector_r1.label, " ");
@@ -10819,27 +10821,27 @@
         return YearHeaderComponent;
     }(AbstractPanelHeader));
     YearHeaderComponent.ɵfac = function YearHeaderComponent_Factory(t) { return ɵYearHeaderComponent_BaseFactory(t || YearHeaderComponent); };
-    YearHeaderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: YearHeaderComponent, selectors: [["year-header"]], exportAs: ["yearHeader"], features: [i0.ɵɵInheritDefinitionFeature], decls: 11, vars: 31, consts: [["role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-prev-icon"], [1, "ant-picker-prev-icon"], [4, "ngFor", "ngForOf"], [1, "ant-picker-next-icon"], [1, "ant-picker-super-next-icon"], ["role", "button", "type", "button", 3, "title", "click"]], template: function YearHeaderComponent_Template(rf, ctx) {
+    YearHeaderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: YearHeaderComponent, selectors: [["year-header"]], exportAs: ["yearHeader"], features: [i0.ɵɵInheritDefinitionFeature], decls: 11, vars: 31, consts: [["aria-label", "rewind", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-prev-icon"], ["aria-label", "previous", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-prev-icon"], [4, "ngFor", "ngForOf"], ["aria-label", "next", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-next-icon"], ["aria-label", "fast forward", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-next-icon"], ["role", "button", "type", "button", 3, "aria-label", "title", "click"]], template: function YearHeaderComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div");
                 i0.ɵɵelementStart(1, "button", 0);
                 i0.ɵɵlistener("click", function YearHeaderComponent_Template_button_click_1_listener() { return ctx.superPrevious(); });
                 i0.ɵɵelement(2, "span", 1);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(3, "button", 0);
+                i0.ɵɵelementStart(3, "button", 2);
                 i0.ɵɵlistener("click", function YearHeaderComponent_Template_button_click_3_listener() { return ctx.previous(); });
-                i0.ɵɵelement(4, "span", 2);
+                i0.ɵɵelement(4, "span", 3);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementStart(5, "div");
-                i0.ɵɵtemplate(6, YearHeaderComponent_ng_container_6_Template, 3, 5, "ng-container", 3);
+                i0.ɵɵtemplate(6, YearHeaderComponent_ng_container_6_Template, 3, 6, "ng-container", 4);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(7, "button", 0);
+                i0.ɵɵelementStart(7, "button", 5);
                 i0.ɵɵlistener("click", function YearHeaderComponent_Template_button_click_7_listener() { return ctx.next(); });
-                i0.ɵɵelement(8, "span", 4);
+                i0.ɵɵelement(8, "span", 6);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(9, "button", 0);
+                i0.ɵɵelementStart(9, "button", 7);
                 i0.ɵɵlistener("click", function YearHeaderComponent_Template_button_click_9_listener() { return ctx.superNext(); });
-                i0.ɵɵelement(10, "span", 5);
+                i0.ɵɵelement(10, "span", 8);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
             }
@@ -11267,7 +11269,7 @@
     function MonthHeaderComponent_ng_container_6_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "button", 6);
+            i0.ɵɵelementStart(1, "button", 9);
             i0.ɵɵlistener("click", function MonthHeaderComponent_ng_container_6_Template_button_click_1_listener() { var selector_r1 = ctx.$implicit; return selector_r1.onClick(); });
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
@@ -11277,6 +11279,7 @@
             var selector_r1 = ctx.$implicit;
             i0.ɵɵadvance(1);
             i0.ɵɵclassMap(selector_r1.className);
+            i0.ɵɵpropertyInterpolate("aria-label", selector_r1.label);
             i0.ɵɵpropertyInterpolate("title", selector_r1.title || null);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", selector_r1.label, " ");
@@ -11303,27 +11306,27 @@
         return MonthHeaderComponent;
     }(AbstractPanelHeader));
     MonthHeaderComponent.ɵfac = function MonthHeaderComponent_Factory(t) { return new (t || MonthHeaderComponent)(i0.ɵɵdirectiveInject(i1$3.DateHelperService)); };
-    MonthHeaderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: MonthHeaderComponent, selectors: [["month-header"]], exportAs: ["monthHeader"], features: [i0.ɵɵInheritDefinitionFeature], decls: 11, vars: 31, consts: [["role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-prev-icon"], [1, "ant-picker-prev-icon"], [4, "ngFor", "ngForOf"], [1, "ant-picker-next-icon"], [1, "ant-picker-super-next-icon"], ["role", "button", "type", "button", 3, "title", "click"]], template: function MonthHeaderComponent_Template(rf, ctx) {
+    MonthHeaderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: MonthHeaderComponent, selectors: [["month-header"]], exportAs: ["monthHeader"], features: [i0.ɵɵInheritDefinitionFeature], decls: 11, vars: 31, consts: [["aria-label", "rewind", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-prev-icon"], ["aria-label", "previous", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-prev-icon"], [4, "ngFor", "ngForOf"], ["aria-label", "next", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-next-icon"], ["aria-label", "fast forward", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-next-icon"], ["role", "button", "type", "button", 3, "aria-label", "title", "click"]], template: function MonthHeaderComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div");
                 i0.ɵɵelementStart(1, "button", 0);
                 i0.ɵɵlistener("click", function MonthHeaderComponent_Template_button_click_1_listener() { return ctx.superPrevious(); });
                 i0.ɵɵelement(2, "span", 1);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(3, "button", 0);
+                i0.ɵɵelementStart(3, "button", 2);
                 i0.ɵɵlistener("click", function MonthHeaderComponent_Template_button_click_3_listener() { return ctx.previous(); });
-                i0.ɵɵelement(4, "span", 2);
+                i0.ɵɵelement(4, "span", 3);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementStart(5, "div");
-                i0.ɵɵtemplate(6, MonthHeaderComponent_ng_container_6_Template, 3, 5, "ng-container", 3);
+                i0.ɵɵtemplate(6, MonthHeaderComponent_ng_container_6_Template, 3, 6, "ng-container", 4);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(7, "button", 0);
+                i0.ɵɵelementStart(7, "button", 5);
                 i0.ɵɵlistener("click", function MonthHeaderComponent_Template_button_click_7_listener() { return ctx.next(); });
-                i0.ɵɵelement(8, "span", 4);
+                i0.ɵɵelement(8, "span", 6);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(9, "button", 0);
+                i0.ɵɵelementStart(9, "button", 7);
                 i0.ɵɵlistener("click", function MonthHeaderComponent_Template_button_click_9_listener() { return ctx.superNext(); });
-                i0.ɵɵelement(10, "span", 5);
+                i0.ɵɵelement(10, "span", 8);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
             }
@@ -11718,7 +11721,7 @@
     function DateHeaderComponent_ng_container_6_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "button", 6);
+            i0.ɵɵelementStart(1, "button", 9);
             i0.ɵɵlistener("click", function DateHeaderComponent_ng_container_6_Template_button_click_1_listener() { var selector_r1 = ctx.$implicit; return selector_r1.onClick(); });
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
@@ -11728,6 +11731,7 @@
             var selector_r1 = ctx.$implicit;
             i0.ɵɵadvance(1);
             i0.ɵɵclassMap(selector_r1.className);
+            i0.ɵɵpropertyInterpolate("aria-label", selector_r1.label);
             i0.ɵɵpropertyInterpolate("title", selector_r1.title || null);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", selector_r1.label, " ");
@@ -11760,27 +11764,27 @@
         return DateHeaderComponent;
     }(AbstractPanelHeader));
     DateHeaderComponent.ɵfac = function DateHeaderComponent_Factory(t) { return new (t || DateHeaderComponent)(i0.ɵɵdirectiveInject(i1$3.DateHelperService)); };
-    DateHeaderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: DateHeaderComponent, selectors: [["date-header"]], exportAs: ["dateHeader"], features: [i0.ɵɵInheritDefinitionFeature], decls: 11, vars: 31, consts: [["role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-prev-icon"], [1, "ant-picker-prev-icon"], [4, "ngFor", "ngForOf"], [1, "ant-picker-next-icon"], [1, "ant-picker-super-next-icon"], ["role", "button", "type", "button", 3, "title", "click"]], template: function DateHeaderComponent_Template(rf, ctx) {
+    DateHeaderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: DateHeaderComponent, selectors: [["date-header"]], exportAs: ["dateHeader"], features: [i0.ɵɵInheritDefinitionFeature], decls: 11, vars: 31, consts: [["aria-label", "rewind", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-prev-icon"], ["aria-label", "previous", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-prev-icon"], [4, "ngFor", "ngForOf"], ["aria-label", "next", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-next-icon"], ["aria-label", "fast forward", "role", "button", "tabindex", "-1", 3, "title", "click"], [1, "ant-picker-super-next-icon"], ["role", "button", "type", "button", 3, "aria-label", "title", "click"]], template: function DateHeaderComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div");
                 i0.ɵɵelementStart(1, "button", 0);
                 i0.ɵɵlistener("click", function DateHeaderComponent_Template_button_click_1_listener() { return ctx.superPrevious(); });
                 i0.ɵɵelement(2, "span", 1);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(3, "button", 0);
+                i0.ɵɵelementStart(3, "button", 2);
                 i0.ɵɵlistener("click", function DateHeaderComponent_Template_button_click_3_listener() { return ctx.previous(); });
-                i0.ɵɵelement(4, "span", 2);
+                i0.ɵɵelement(4, "span", 3);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementStart(5, "div");
-                i0.ɵɵtemplate(6, DateHeaderComponent_ng_container_6_Template, 3, 5, "ng-container", 3);
+                i0.ɵɵtemplate(6, DateHeaderComponent_ng_container_6_Template, 3, 6, "ng-container", 4);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(7, "button", 0);
+                i0.ɵɵelementStart(7, "button", 5);
                 i0.ɵɵlistener("click", function DateHeaderComponent_Template_button_click_7_listener() { return ctx.next(); });
-                i0.ɵɵelement(8, "span", 4);
+                i0.ɵɵelement(8, "span", 6);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(9, "button", 0);
+                i0.ɵɵelementStart(9, "button", 7);
                 i0.ɵɵlistener("click", function DateHeaderComponent_Template_button_click_9_listener() { return ctx.superNext(); });
-                i0.ɵɵelement(10, "span", 5);
+                i0.ɵɵelement(10, "span", 8);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
             }
@@ -12850,7 +12854,7 @@
         return CalendarFooterComponent;
     }());
     CalendarFooterComponent.ɵfac = function CalendarFooterComponent_Factory(t) { return new (t || CalendarFooterComponent)(i0.ɵɵdirectiveInject(i1$3.DateHelperService)); };
-    CalendarFooterComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CalendarFooterComponent, selectors: [["calendar-footer"]], inputs: { locale: "locale", showToday: "showToday", showNow: "showNow", hasTimePicker: "hasTimePicker", isRange: "isRange", okDisabled: "okDisabled", disabledDate: "disabledDate", extraFooter: "extraFooter", rangeQuickSelector: "rangeQuickSelector" }, outputs: { clickOk: "clickOk", clickToday: "clickToday" }, exportAs: ["calendarFooter"], features: [i0.ɵɵNgOnChangesFeature], decls: 4, vars: 6, consts: [[3, "class", 4, "ngIf"], ["role", "button", 3, "class", "title", "click", 4, "ngIf"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngTemplateOutlet"], [3, "innerHTML"], ["role", "button", 3, "title", "click"], [3, "click"], ["nz-button", "", "type", "button", "nzType", "primary", "nzSize", "small", 3, "disabled", "click"]], template: function CalendarFooterComponent_Template(rf, ctx) {
+    CalendarFooterComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CalendarFooterComponent, selectors: [["calendar-footer"]], inputs: { locale: "locale", showToday: "showToday", showNow: "showNow", hasTimePicker: "hasTimePicker", isRange: "isRange", okDisabled: "okDisabled", disabledDate: "disabledDate", extraFooter: "extraFooter", rangeQuickSelector: "rangeQuickSelector" }, outputs: { clickOk: "clickOk", clickToday: "clickToday" }, exportAs: ["calendarFooter"], features: [i0.ɵɵNgOnChangesFeature], decls: 4, vars: 6, consts: [[3, "class", 4, "ngIf"], ["role", "button", 3, "class", "title", "click", 4, "ngIf"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngTemplateOutlet"], [3, "innerHTML"], ["role", "button", 3, "title", "click"], [3, "click"], ["aria-label", "OK", "nz-button", "", "type", "button", "nzType", "primary", "nzSize", "small", "role", "button", 3, "disabled", "click"]], template: function CalendarFooterComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div");
                 i0.ɵɵtemplate(1, CalendarFooterComponent_div_1_Template, 4, 6, "div", 0);
@@ -12877,7 +12881,7 @@
                         // tslint:disable-next-line:component-selector
                         selector: 'calendar-footer',
                         exportAs: 'calendarFooter',
-                        template: "\n    <div class=\"{{ prefixCls }}-footer\">\n      <div *ngIf=\"extraFooter\" class=\"{{ prefixCls }}-footer-extra\">\n        <ng-container [ngSwitch]=\"true\">\n          <ng-container *ngSwitchCase=\"isTemplateRef(extraFooter)\">\n            <ng-container *ngTemplateOutlet=\"$any(extraFooter)\"></ng-container>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"isNonEmptyString(extraFooter)\">\n            <span [innerHTML]=\"extraFooter\"></span>\n          </ng-container>\n        </ng-container>\n      </div>\n      <a\n        *ngIf=\"showToday\"\n        class=\"{{ prefixCls }}-today-btn {{ isTodayDisabled ? prefixCls + '-today-btn-disabled' : '' }}\"\n        role=\"button\"\n        (click)=\"isTodayDisabled ? null : onClickToday()\"\n        title=\"{{ todayTitle }}\"\n      >\n        {{ locale.today }}\n      </a>\n      <ul *ngIf=\"hasTimePicker || rangeQuickSelector\" class=\"{{ prefixCls }}-ranges\">\n        <ng-container *ngTemplateOutlet=\"rangeQuickSelector\"></ng-container>\n        <li *ngIf=\"showNow\" class=\"{{ prefixCls }}-now\">\n          <a class=\"{{ prefixCls }}-now-btn\" (click)=\"isTodayDisabled ? null : onClickToday()\">\n            {{ locale.now }}\n          </a>\n        </li>\n        <li *ngIf=\"hasTimePicker\" class=\"{{ prefixCls }}-ok\">\n          <button\n            nz-button\n            type=\"button\"\n            nzType=\"primary\"\n            nzSize=\"small\"\n            [disabled]=\"okDisabled\"\n            (click)=\"okDisabled ? null : clickOk.emit()\"\n          >\n            {{ locale.ok }}\n          </button>\n        </li>\n      </ul>\n    </div>\n  "
+                        template: "\n    <div class=\"{{ prefixCls }}-footer\">\n      <div *ngIf=\"extraFooter\" class=\"{{ prefixCls }}-footer-extra\">\n        <ng-container [ngSwitch]=\"true\">\n          <ng-container *ngSwitchCase=\"isTemplateRef(extraFooter)\">\n            <ng-container *ngTemplateOutlet=\"$any(extraFooter)\"></ng-container>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"isNonEmptyString(extraFooter)\">\n            <span [innerHTML]=\"extraFooter\"></span>\n          </ng-container>\n        </ng-container>\n      </div>\n      <a\n        *ngIf=\"showToday\"\n        class=\"{{ prefixCls }}-today-btn {{ isTodayDisabled ? prefixCls + '-today-btn-disabled' : '' }}\"\n        role=\"button\"\n        (click)=\"isTodayDisabled ? null : onClickToday()\"\n        title=\"{{ todayTitle }}\"\n      >\n        {{ locale.today }}\n      </a>\n      <ul *ngIf=\"hasTimePicker || rangeQuickSelector\" class=\"{{ prefixCls }}-ranges\">\n        <ng-container *ngTemplateOutlet=\"rangeQuickSelector\"></ng-container>\n        <li *ngIf=\"showNow\" class=\"{{ prefixCls }}-now\">\n          <a class=\"{{ prefixCls }}-now-btn\" (click)=\"isTodayDisabled ? null : onClickToday()\">\n            {{ locale.now }}\n          </a>\n        </li>\n        <li *ngIf=\"hasTimePicker\" class=\"{{ prefixCls }}-ok\">\n          <button\n          aria-label=\"OK\"\n            nz-button\n            type=\"button\"\n            nzType=\"primary\"\n            nzSize=\"small\"\n            [disabled]=\"okDisabled\"\n            role=\"button\"\n            (click)=\"okDisabled ? null : clickOk.emit()\"\n          >\n            {{ locale.ok }}\n          </button>\n        </li>\n      </ul>\n    </div>\n  "
                     }]
             }], function () { return [{ type: i1$3.DateHelperService }]; }, { locale: [{
                     type: i0.Input
@@ -17275,7 +17279,7 @@
                     useExisting: i0.forwardRef(function () { return CmacsSwitchComponent; }),
                     multi: true
                 }
-            ])], decls: 9, vars: 15, consts: [["nz-wave", "", "type", "button", 1, "ant-switch", 3, "disabled", "nzWaveExtraNode", "keydown"], ["switchElement", ""], [1, "ant-switch-handle"], ["nz-icon", "", "nzType", "loading", "class", "ant-switch-loading-icon", 4, "ngIf"], [1, "ant-switch-inner"], [4, "ngIf", "ngIfElse"], ["uncheckTemplate", ""], [1, "ant-click-animating-node"], ["nz-icon", "", "nzType", "loading", 1, "ant-switch-loading-icon"], [4, "nzStringTemplateOutlet"]], template: function CmacsSwitchComponent_Template(rf, ctx) {
+            ])], decls: 9, vars: 15, consts: [["nz-wave", "", "type", "button", "role", "button", "aria-label", "switch", 1, "ant-switch", 3, "disabled", "nzWaveExtraNode", "keydown"], ["switchElement", ""], [1, "ant-switch-handle"], ["nz-icon", "", "nzType", "loading", "class", "ant-switch-loading-icon", 4, "ngIf"], [1, "ant-switch-inner"], [4, "ngIf", "ngIfElse"], ["uncheckTemplate", ""], [1, "ant-click-animating-node"], ["nz-icon", "", "nzType", "loading", 1, "ant-switch-loading-icon"], [4, "nzStringTemplateOutlet"]], template: function CmacsSwitchComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "button", 0, 1);
                 i0.ɵɵlistener("keydown", function CmacsSwitchComponent_Template_button_keydown_0_listener($event) { return ctx.onKeyDown($event); });
@@ -17327,7 +17331,7 @@
                                 multi: true
                             }
                         ],
-                        template: "\n    <button\n      nz-wave\n      type=\"button\"\n      class=\"ant-switch\"\n      #switchElement\n      [disabled]=\"disabled\"\n      [class.ant-switch-checked]=\"isChecked\"\n      [class.ant-switch-loading]=\"loading\"\n      [class.ant-switch-disabled]=\"disabled\"\n      [class.ant-switch-small]=\"size === 'small'\"\n      [class.ant-switch-rtl]=\"dir === 'rtl'\"\n      [nzWaveExtraNode]=\"true\"\n      (keydown)=\"onKeyDown($event)\"\n    >\n      <span class=\"ant-switch-handle\">\n        <i *ngIf=\"loading\" nz-icon nzType=\"loading\" class=\"ant-switch-loading-icon\"></i>\n      </span>\n      <span class=\"ant-switch-inner\">\n        <ng-container *ngIf=\"isChecked; else uncheckTemplate\">\n          <ng-container *nzStringTemplateOutlet=\"checkedChildren\">{{ checkedChildren }}</ng-container>\n        </ng-container>\n        <ng-template #uncheckTemplate>\n          <ng-container *nzStringTemplateOutlet=\"unCheckedChildren\">{{ unCheckedChildren }}</ng-container>\n        </ng-template>\n      </span>\n      <div class=\"ant-click-animating-node\"></div>\n    </button>\n  ",
+                        template: "\n    <button\n      nz-wave\n      type=\"button\"\n      class=\"ant-switch\"\n      #switchElement\n      [disabled]=\"disabled\"\n      role=\"button\"\n      [class.ant-switch-checked]=\"isChecked\"\n      [class.ant-switch-loading]=\"loading\"\n      [class.ant-switch-disabled]=\"disabled\"\n      [class.ant-switch-small]=\"size === 'small'\"\n      [class.ant-switch-rtl]=\"dir === 'rtl'\"\n      [nzWaveExtraNode]=\"true\"\n      (keydown)=\"onKeyDown($event)\"\n      aria-label=\"switch\"\n    >\n      <span class=\"ant-switch-handle\">\n        <i *ngIf=\"loading\" nz-icon nzType=\"loading\" class=\"ant-switch-loading-icon\"></i>\n      </span>\n      <span class=\"ant-switch-inner\">\n        <ng-container *ngIf=\"isChecked; else uncheckTemplate\">\n          <ng-container *nzStringTemplateOutlet=\"checkedChildren\">{{ checkedChildren }}</ng-container>\n        </ng-container>\n        <ng-template #uncheckTemplate>\n          <ng-container *nzStringTemplateOutlet=\"unCheckedChildren\">{{ unCheckedChildren }}</ng-container>\n        </ng-template>\n      </span>\n      <div class=\"ant-click-animating-node\"></div>\n    </button>\n  ",
                         host: {
                             '(click)': 'onHostClick($event)'
                         },
@@ -18023,7 +18027,7 @@
         return CmacsKanbanComponent;
     }());
     CmacsKanbanComponent.ɵfac = function CmacsKanbanComponent_Factory(t) { return new (t || CmacsKanbanComponent)(); };
-    CmacsKanbanComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "ngStyle", "cdkDropListDropped"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) {
+    CmacsKanbanComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "ngStyle", "cdkDropListDropped"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "div", 1);
@@ -20622,6 +20626,7 @@
         if (rf & 2) {
             var button_r61 = ctx.$implicit;
             var ctx_r60 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", button_r61.label);
             i0.ɵɵproperty("hidden", !ctx_r60.getButtonCallableProp(button_r61, "show"))("nzLoading", ctx_r60.getButtonCallableProp(button_r61, "loading"))("disabled", ctx_r60.getButtonCallableProp(button_r61, "disabled"))("nzType", button_r61.type)("nzShape", button_r61.shape)("nzSize", button_r61.size)("nzGhost", button_r61.ghost);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate(button_r61.label);
@@ -20630,7 +20635,7 @@
     function CmacsModalComponent_ng_template_6_div_5_ng_container_4_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_6_div_5_ng_container_4_button_1_Template, 2, 8, "button", 44);
+            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_6_div_5_ng_container_4_button_1_Template, 2, 9, "button", 44);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -20649,6 +20654,7 @@
         }
         if (rf & 2) {
             var ctx_r64 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r64.cancelText);
             i0.ɵɵproperty("nzLoading", ctx_r64.cancelLoading)("disabled", ctx_r64.cancelDisabled);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", ctx_r64.cancelText, " ");
@@ -20664,6 +20670,7 @@
         }
         if (rf & 2) {
             var ctx_r65 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r65.okText);
             i0.ɵɵproperty("nzType", ctx_r65.okType)("nzLoading", ctx_r65.okLoading)("disabled", ctx_r65.okDisabled);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", ctx_r65.okText, " ");
@@ -20672,8 +20679,8 @@
     function CmacsModalComponent_ng_template_6_div_5_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_6_div_5_ng_container_5_button_1_Template, 2, 3, "button", 46);
-            i0.ɵɵtemplate(2, CmacsModalComponent_ng_template_6_div_5_ng_container_5_button_2_Template, 2, 4, "button", 47);
+            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_6_div_5_ng_container_5_button_1_Template, 2, 4, "button", 46);
+            i0.ɵɵtemplate(2, CmacsModalComponent_ng_template_6_div_5_ng_container_5_button_2_Template, 2, 5, "button", 47);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -20836,6 +20843,7 @@
         if (rf & 2) {
             var button_r82 = ctx.$implicit;
             var ctx_r81 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", button_r82.label);
             i0.ɵɵproperty("hidden", !ctx_r81.getButtonCallableProp(button_r82, "show"))("nzLoading", ctx_r81.getButtonCallableProp(button_r82, "loading"))("disabled", ctx_r81.getButtonCallableProp(button_r82, "disabled"))("nzType", button_r82.type)("nzShape", button_r82.shape)("nzSize", button_r82.size)("nzGhost", button_r82.ghost);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate(button_r82.label);
@@ -20844,7 +20852,7 @@
     function CmacsModalComponent_ng_template_8_div_10_ng_container_4_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_8_div_10_ng_container_4_button_1_Template, 2, 8, "button", 44);
+            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_8_div_10_ng_container_4_button_1_Template, 2, 9, "button", 44);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -20863,6 +20871,7 @@
         }
         if (rf & 2) {
             var ctx_r85 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r85.cancelText);
             i0.ɵɵproperty("nzLoading", ctx_r85.cancelLoading)("disabled", ctx_r85.cancelDisabled);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", ctx_r85.cancelText, " ");
@@ -20878,6 +20887,7 @@
         }
         if (rf & 2) {
             var ctx_r86 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r86.okText);
             i0.ɵɵproperty("nzType", ctx_r86.okType)("nzLoading", ctx_r86.okLoading)("disabled", ctx_r86.okDisabled);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", ctx_r86.okText, " ");
@@ -20886,8 +20896,8 @@
     function CmacsModalComponent_ng_template_8_div_10_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_8_div_10_ng_container_5_button_1_Template, 2, 3, "button", 46);
-            i0.ɵɵtemplate(2, CmacsModalComponent_ng_template_8_div_10_ng_container_5_button_2_Template, 2, 4, "button", 47);
+            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_8_div_10_ng_container_5_button_1_Template, 2, 4, "button", 46);
+            i0.ɵɵtemplate(2, CmacsModalComponent_ng_template_8_div_10_ng_container_5_button_2_Template, 2, 5, "button", 47);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -21062,6 +21072,7 @@
         if (rf & 2) {
             var button_r102 = ctx.$implicit;
             var ctx_r101 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", button_r102.label);
             i0.ɵɵproperty("hidden", !ctx_r101.getButtonCallableProp(button_r102, "show"))("nzLoading", ctx_r101.getButtonCallableProp(button_r102, "loading"))("disabled", ctx_r101.getButtonCallableProp(button_r102, "disabled"))("nzType", button_r102.type)("nzShape", button_r102.shape)("nzSize", button_r102.size)("nzGhost", button_r102.ghost);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate(button_r102.label);
@@ -21070,7 +21081,7 @@
     function CmacsModalComponent_ng_template_10_div_7_ng_container_4_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_10_div_7_ng_container_4_button_1_Template, 2, 8, "button", 44);
+            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_10_div_7_ng_container_4_button_1_Template, 2, 9, "button", 44);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -21089,6 +21100,7 @@
         }
         if (rf & 2) {
             var ctx_r105 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r105.cancelText);
             i0.ɵɵproperty("nzLoading", ctx_r105.cancelLoading)("disabled", ctx_r105.cancelDisabled);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", ctx_r105.cancelText, " ");
@@ -21104,6 +21116,7 @@
         }
         if (rf & 2) {
             var ctx_r106 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r106.okText);
             i0.ɵɵproperty("nzType", ctx_r106.okType)("nzLoading", ctx_r106.okLoading)("disabled", ctx_r106.okDisabled);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", ctx_r106.okText, " ");
@@ -21112,8 +21125,8 @@
     function CmacsModalComponent_ng_template_10_div_7_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_10_div_7_ng_container_5_button_1_Template, 2, 3, "button", 46);
-            i0.ɵɵtemplate(2, CmacsModalComponent_ng_template_10_div_7_ng_container_5_button_2_Template, 2, 4, "button", 47);
+            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_10_div_7_ng_container_5_button_1_Template, 2, 4, "button", 46);
+            i0.ɵɵtemplate(2, CmacsModalComponent_ng_template_10_div_7_ng_container_5_button_2_Template, 2, 5, "button", 47);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -21282,6 +21295,7 @@
         if (rf & 2) {
             var button_r122 = ctx.$implicit;
             var ctx_r121 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", button_r122.label);
             i0.ɵɵproperty("hidden", !ctx_r121.getButtonCallableProp(button_r122, "show"))("nzLoading", ctx_r121.getButtonCallableProp(button_r122, "loading"))("disabled", ctx_r121.getButtonCallableProp(button_r122, "disabled"))("nzType", button_r122.type)("nzShape", button_r122.shape)("nzSize", button_r122.size)("nzGhost", button_r122.ghost);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate(button_r122.label);
@@ -21290,7 +21304,7 @@
     function CmacsModalComponent_ng_template_12_div_5_ng_container_4_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_12_div_5_ng_container_4_button_1_Template, 2, 8, "button", 44);
+            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_12_div_5_ng_container_4_button_1_Template, 2, 9, "button", 44);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -21309,6 +21323,7 @@
         }
         if (rf & 2) {
             var ctx_r125 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r125.cancelText);
             i0.ɵɵproperty("nzLoading", ctx_r125.cancelLoading)("disabled", ctx_r125.cancelDisabled);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", ctx_r125.cancelText, " ");
@@ -21324,6 +21339,7 @@
         }
         if (rf & 2) {
             var ctx_r126 = i0.ɵɵnextContext(4);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r126.okText);
             i0.ɵɵproperty("nzType", ctx_r126.okType)("nzLoading", ctx_r126.okLoading)("disabled", ctx_r126.okDisabled);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", ctx_r126.okText, " ");
@@ -21332,8 +21348,8 @@
     function CmacsModalComponent_ng_template_12_div_5_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_12_div_5_ng_container_5_button_1_Template, 2, 3, "button", 46);
-            i0.ɵɵtemplate(2, CmacsModalComponent_ng_template_12_div_5_ng_container_5_button_2_Template, 2, 4, "button", 47);
+            i0.ɵɵtemplate(1, CmacsModalComponent_ng_template_12_div_5_ng_container_5_button_1_Template, 2, 4, "button", 46);
+            i0.ɵɵtemplate(2, CmacsModalComponent_ng_template_12_div_5_ng_container_5_button_2_Template, 2, 5, "button", 47);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -21496,6 +21512,7 @@
         }
         if (rf & 2) {
             var ctx_r136 = i0.ɵɵnextContext(2);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r136.cancelText);
             i0.ɵɵproperty("nzLoading", ctx_r136.cancelLoading);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", ctx_r136.cancelText, " ");
@@ -21511,6 +21528,7 @@
         }
         if (rf & 2) {
             var ctx_r137 = i0.ɵɵnextContext(2);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r137.okText);
             i0.ɵɵproperty("nzType", ctx_r137.okType)("nzLoading", ctx_r137.okLoading);
             i0.ɵɵadvance(2);
             i0.ɵɵtextInterpolate1(" ", ctx_r137.okText, " ");
@@ -21537,8 +21555,8 @@
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(13, "div", 73);
-            i0.ɵɵtemplate(14, CmacsModalComponent_ng_template_14_button_14_Template, 2, 2, "button", 74);
-            i0.ɵɵtemplate(15, CmacsModalComponent_ng_template_14_button_15_Template, 3, 3, "button", 75);
+            i0.ɵɵtemplate(14, CmacsModalComponent_ng_template_14_button_14_Template, 2, 3, "button", 74);
+            i0.ɵɵtemplate(15, CmacsModalComponent_ng_template_14_button_15_Template, 3, 4, "button", 75);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -22051,7 +22069,7 @@
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.autoFocusButtonOk = _t.first);
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.tipsCreationWizard = _t);
             }
-        }, inputs: { visible: "visible", closable: "closable", okLoading: "okLoading", okDisabled: "okDisabled", cancelDisabled: "cancelDisabled", cancelLoading: "cancelLoading", keyboard: "keyboard", noAnimation: "noAnimation", cmacsMask: "cmacsMask", cmacsMaskClosable: "cmacsMaskClosable", showHelpfulTips: "showHelpfulTips", useCmacsDefaultSizes: "useCmacsDefaultSizes", content: "content", componentParams: "componentParams", footer: "footer", getContainer: "getContainer", zIndex: "zIndex", leftPanelCols: "leftPanelCols", centerPanelCols: "centerPanelCols", rightPanelCols: "rightPanelCols", width: "width", wrapClassName: "wrapClassName", className: "className", cmacsStyle: "cmacsStyle", title: "title", cmacsTitle: "cmacsTitle", maskStyle: "maskStyle", bodyStyle: "bodyStyle", cmacsOkText: "cmacsOkText", cmacsCancelText: "cmacsCancelText", okType: "okType", iconType: "iconType", modalType: "modalType", onOk: "onOk", onCancel: "onCancel" }, outputs: { onOk: "onOk", onCancel: "onCancel", cmacsAfterOpen: "cmacsAfterOpen", cmacsAfterClose: "cmacsAfterClose", visibleChange: "visibleChange" }, exportAs: ["cmacsModal"], features: [i0.ɵɵInheritDefinitionFeature, i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c5$1, decls: 16, vars: 2, consts: [["tplOriginContent", ""], [3, "nzNoAnimation", 4, "ngIf"], [4, "ngIf"], ["tplContentPassive", ""], ["tplContentDefault", ""], ["tplCreationDefault", ""], ["tplHelpfulTips", ""], ["tplHelpfulTipsWithoutPanel", ""], ["tplContentConfirm", ""], [3, "nzNoAnimation"], ["class", "ant-modal-mask", 3, "ngClass", "ant-modal-mask-hidden", "ngStyle", "zIndex", 4, "ngIf"], ["tabindex", "-1", "role", "dialog", 3, "click"], ["role", "document", 3, "ngClass", "ngStyle"], ["modalContainer", ""], [1, "ant-modal-content"], ["class", "ant-modal-close", "aria-label", "Close", 3, "click", 4, "ngIf"], [3, "ngSwitch", 4, "ngIf"], [1, "ant-modal-mask", 3, "ngClass", "ngStyle"], ["aria-label", "Close", 1, "ant-modal-close", 3, "click"], ["class", "iconspan", 3, "ant-modal-close-x", "ant-modal-close-x-basic", 4, "ngIf"], [1, "iconspan"], [1, "iconUILarge-Close"], [3, "ngSwitch"], [3, "ngTemplateOutlet", 4, "ngSwitchCase"], [3, "ngTemplateOutlet"], ["cdkDrag", "", 1, "cmacs-interaction-modal", 3, "ngStyle"], [1, "cmacs-interaction-modal-content"], [1, "ant-modal-close-x", "iconspan"], [1, "ant-modal-header", "cmacs-custom-header"], [1, "ant-modal-title", 2, "color", "#ffffff"], [1, "ant-modal-body", 2, "padding", "10px"], ["class", "ant-modal-header", "style", "height: 34px", 3, "padding", 4, "ngIf"], [1, "ant-modal-body", 3, "ngStyle"], ["bodyContainer", ""], [1, "ant-modal-header", 2, "height", "34px"], [1, "ant-modal-title"], [4, "ngSwitchCase"], [3, "ngTemplateOutlet", 4, "ngSwitchDefault"], ["class", "ant-modal-header", 3, "height", "padding", 4, "ngIf"], [1, "ant-modal-body", "trans-model-body", 3, "ngStyle"], ["class", "ant-modal-footer trans-model-footer", 3, "border-top", "padding-bottom", 4, "ngIf"], [1, "ant-modal-header"], [1, "ant-modal-footer", "trans-model-footer"], [4, "ngSwitchDefault"], ["nz-button", "", 3, "hidden", "nzLoading", "disabled", "nzType", "nzShape", "nzSize", "nzGhost", "click", 4, "ngFor", "ngForOf"], ["nz-button", "", 3, "hidden", "nzLoading", "disabled", "nzType", "nzShape", "nzSize", "nzGhost", "click"], ["nz-button", "", 3, "nzLoading", "disabled", "click", 4, "ngIf"], ["nz-button", "", 3, "nzType", "nzLoading", "disabled", "click", 4, "ngIf"], ["nz-button", "", 3, "nzLoading", "disabled", "click"], ["nz-button", "", 3, "nzType", "nzLoading", "disabled", "click"], ["class", "ant-modal-header creation-header", 4, "ngIf"], [1, "ant-modal-body", 2, "padding", "0", 3, "ngStyle"], ["nz-row", "", 2, "height", "100%", "overflow", "hidden"], ["nz-col", "", 1, "cmacs-modal-creation-left-panel", 3, "nzSpan"], ["nz-col", "", 1, "cmacs-modal-creation-center-panel", 3, "nzSpan"], ["nz-col", "", 1, "cmacs-modal-creation-right-panel", 3, "nzSpan"], ["tipsCreationWizard", ""], ["class", "ant-modal-footer creation-footer", 4, "ngIf"], [1, "ant-modal-header", "creation-header"], [1, "ant-modal-footer", "creation-footer"], ["class", "ant-modal-header helpful-header", 4, "ngIf"], [1, "ant-modal-body", 2, "padding", "0", "height", "531px", 3, "ngStyle"], ["nz-col", "", 1, "cmacs-modal-helpful-center-panel", 3, "nzSpan"], ["nz-col", "", 1, "cmacs-modal-helpful-right-panel", 3, "nzSpan"], ["class", "ant-modal-footer helpful-footer", 4, "ngIf"], [1, "ant-modal-header", "helpful-header"], [1, "ant-modal-footer", "helpful-footer"], ["nz-col", "", 1, "cmacs-modal-helpfulTips-no-panel-center", 3, "nzSpan"], [1, "ant-modal-confirm-body-wrapper"], [1, "ant-modal-confirm-body"], ["nz-icon", "", 3, "type"], [1, "ant-modal-confirm-title"], [1, "ant-modal-confirm-content"], [1, "ant-modal-confirm-btns"], ["nz-button", "", 3, "nzLoading", "click", 4, "ngIf"], ["nz-button", "", 3, "nzType", "nzLoading", "click", 4, "ngIf"], ["nz-button", "", 3, "nzLoading", "click"], ["nz-button", "", 3, "nzType", "nzLoading", "click"], ["autoFocusButtonOk", ""]], template: function CmacsModalComponent_Template(rf, ctx) {
+        }, inputs: { visible: "visible", closable: "closable", okLoading: "okLoading", okDisabled: "okDisabled", cancelDisabled: "cancelDisabled", cancelLoading: "cancelLoading", keyboard: "keyboard", noAnimation: "noAnimation", cmacsMask: "cmacsMask", cmacsMaskClosable: "cmacsMaskClosable", showHelpfulTips: "showHelpfulTips", useCmacsDefaultSizes: "useCmacsDefaultSizes", content: "content", componentParams: "componentParams", footer: "footer", getContainer: "getContainer", zIndex: "zIndex", leftPanelCols: "leftPanelCols", centerPanelCols: "centerPanelCols", rightPanelCols: "rightPanelCols", width: "width", wrapClassName: "wrapClassName", className: "className", cmacsStyle: "cmacsStyle", title: "title", cmacsTitle: "cmacsTitle", maskStyle: "maskStyle", bodyStyle: "bodyStyle", cmacsOkText: "cmacsOkText", cmacsCancelText: "cmacsCancelText", okType: "okType", iconType: "iconType", modalType: "modalType", onOk: "onOk", onCancel: "onCancel" }, outputs: { onOk: "onOk", onCancel: "onCancel", cmacsAfterOpen: "cmacsAfterOpen", cmacsAfterClose: "cmacsAfterClose", visibleChange: "visibleChange" }, exportAs: ["cmacsModal"], features: [i0.ɵɵInheritDefinitionFeature, i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c5$1, decls: 16, vars: 2, consts: [["tplOriginContent", ""], [3, "nzNoAnimation", 4, "ngIf"], [4, "ngIf"], ["tplContentPassive", ""], ["tplContentDefault", ""], ["tplCreationDefault", ""], ["tplHelpfulTips", ""], ["tplHelpfulTipsWithoutPanel", ""], ["tplContentConfirm", ""], [3, "nzNoAnimation"], ["class", "ant-modal-mask", 3, "ngClass", "ant-modal-mask-hidden", "ngStyle", "zIndex", 4, "ngIf"], ["tabindex", "-1", "role", "dialog", 3, "click"], ["role", "document", 3, "ngClass", "ngStyle"], ["modalContainer", ""], [1, "ant-modal-content"], ["role", "button", "class", "ant-modal-close", "aria-label", "Close", 3, "click", 4, "ngIf"], [3, "ngSwitch", 4, "ngIf"], [1, "ant-modal-mask", 3, "ngClass", "ngStyle"], ["role", "button", "aria-label", "Close", 1, "ant-modal-close", 3, "click"], ["class", "iconspan", 3, "ant-modal-close-x", "ant-modal-close-x-basic", 4, "ngIf"], [1, "iconspan"], [1, "iconUILarge-Close"], [3, "ngSwitch"], [3, "ngTemplateOutlet", 4, "ngSwitchCase"], [3, "ngTemplateOutlet"], ["cdkDrag", "", 1, "cmacs-interaction-modal", 3, "ngStyle"], [1, "cmacs-interaction-modal-content"], [1, "ant-modal-close-x", "iconspan"], [1, "ant-modal-header", "cmacs-custom-header"], [1, "ant-modal-title", 2, "color", "#ffffff"], [1, "ant-modal-body", 2, "padding", "10px"], ["class", "ant-modal-header", "style", "height: 34px", 3, "padding", 4, "ngIf"], [1, "ant-modal-body", 3, "ngStyle"], ["bodyContainer", ""], [1, "ant-modal-header", 2, "height", "34px"], [1, "ant-modal-title"], [4, "ngSwitchCase"], [3, "ngTemplateOutlet", 4, "ngSwitchDefault"], ["class", "ant-modal-header", 3, "height", "padding", 4, "ngIf"], [1, "ant-modal-body", "trans-model-body", 3, "ngStyle"], ["class", "ant-modal-footer trans-model-footer", 3, "border-top", "padding-bottom", 4, "ngIf"], [1, "ant-modal-header"], [1, "ant-modal-footer", "trans-model-footer"], [4, "ngSwitchDefault"], ["role", "button", "nz-button", "", 3, "hidden", "nzLoading", "disabled", "nzType", "nzShape", "nzSize", "nzGhost", "aria-label", "click", 4, "ngFor", "ngForOf"], ["role", "button", "nz-button", "", 3, "hidden", "nzLoading", "disabled", "nzType", "nzShape", "nzSize", "nzGhost", "aria-label", "click"], ["role", "button", "nz-button", "", 3, "nzLoading", "disabled", "aria-label", "click", 4, "ngIf"], ["role", "button", "nz-button", "", 3, "nzType", "nzLoading", "disabled", "aria-label", "click", 4, "ngIf"], ["role", "button", "nz-button", "", 3, "nzLoading", "disabled", "aria-label", "click"], ["role", "button", "nz-button", "", 3, "nzType", "nzLoading", "disabled", "aria-label", "click"], ["class", "ant-modal-header creation-header", 4, "ngIf"], [1, "ant-modal-body", 2, "padding", "0", 3, "ngStyle"], ["nz-row", "", 2, "height", "100%", "overflow", "hidden"], ["nz-col", "", 1, "cmacs-modal-creation-left-panel", 3, "nzSpan"], ["nz-col", "", 1, "cmacs-modal-creation-center-panel", 3, "nzSpan"], ["nz-col", "", 1, "cmacs-modal-creation-right-panel", 3, "nzSpan"], ["tipsCreationWizard", ""], ["class", "ant-modal-footer creation-footer", 4, "ngIf"], [1, "ant-modal-header", "creation-header"], [1, "ant-modal-footer", "creation-footer"], ["class", "ant-modal-header helpful-header", 4, "ngIf"], [1, "ant-modal-body", 2, "padding", "0", "height", "531px", 3, "ngStyle"], ["nz-col", "", 1, "cmacs-modal-helpful-center-panel", 3, "nzSpan"], ["nz-col", "", 1, "cmacs-modal-helpful-right-panel", 3, "nzSpan"], ["class", "ant-modal-footer helpful-footer", 4, "ngIf"], [1, "ant-modal-header", "helpful-header"], [1, "ant-modal-footer", "helpful-footer"], ["nz-col", "", 1, "cmacs-modal-helpfulTips-no-panel-center", 3, "nzSpan"], [1, "ant-modal-confirm-body-wrapper"], [1, "ant-modal-confirm-body"], ["nz-icon", "", 3, "type"], [1, "ant-modal-confirm-title"], [1, "ant-modal-confirm-content"], [1, "ant-modal-confirm-btns"], ["nz-button", "", "role", "button", 3, "nzLoading", "aria-label", "click", 4, "ngIf"], ["role", "button", "nz-button", "", 3, "nzType", "nzLoading", "aria-label", "click", 4, "ngIf"], ["nz-button", "", "role", "button", 3, "nzLoading", "aria-label", "click"], ["role", "button", "nz-button", "", 3, "nzType", "nzLoading", "aria-label", "click"], ["autoFocusButtonOk", ""]], template: function CmacsModalComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef(_c4$1);
                 i0.ɵɵtemplate(0, CmacsModalComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, i0.ɵɵtemplateRefExtractor);
@@ -22339,9 +22357,11 @@
         }
         if (rf & 2) {
             var ctx_r4 = i0.ɵɵnextContext();
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r4.cancelBtnLabel);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate(ctx_r4.cancelBtnLabel);
             i0.ɵɵadvance(1);
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r4.saveBtnLabel);
             i0.ɵɵproperty("disabled", ctx_r4.disableSaveBtn());
             i0.ɵɵadvance(2);
             i0.ɵɵtextInterpolate(ctx_r4.saveBtnLabel);
@@ -22489,7 +22509,7 @@
         return CmacsXlsxLoaderComponent;
     }());
     CmacsXlsxLoaderComponent.ɵfac = function CmacsXlsxLoaderComponent_Factory(t) { return new (t || CmacsXlsxLoaderComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i1$3.NzI18nService)); };
-    CmacsXlsxLoaderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsXlsxLoaderComponent, selectors: [["cmacs-xlsx-loader"]], inputs: { configuration: "configuration", modalTitle: "modalTitle", visible: "visible", saveBtnLabel: "saveBtnLabel", cancelBtnLabel: "cancelBtnLabel", placeholder: "placeholder", cmacsStyle: "cmacsStyle", files: "files", width: "width", infoTemplate: "infoTemplate" }, outputs: { configurationChange: "configurationChange", onsave: "onsave", visibleChange: "visibleChange" }, exportAs: ["cmacsXlsxLoader"], features: [i0.ɵɵNgOnChangesFeature], decls: 15, vars: 11, consts: [["modalType", "helpfulTips", 1, "cmacs-data-loader-modal", 3, "visible", "title", "width", "useCmacsDefaultSizes", "zIndex", "cmacsStyle", "footer", "visibleChange"], ["cmacs-modal-helpful-center-panel", ""], [1, "cmacs-xlsx-loader-body", "cmacs-custom-scrollbar"], [1, "cmacs-xlsx-loader-table"], ["class", "cmacs-xslx-loader", 4, "ngFor", "ngForOf"], ["class", "cmacs-xlsx-loader-header", 4, "ngFor", "ngForOf"], [4, "ngFor", "ngForOf"], ["cmacs-modal-helpful-right-panel", ""], [3, "ngTemplateOutlet"], ["modalFooter", ""], [1, "cmacs-xslx-loader"], [1, "cmacs-xlsx-loader-select"], [3, "ngModel", "allowClear", "placeHolder", "ngModelChange"], [3, "value", "label", 4, "ngIf"], ["customContent", "", 3, "value", "label", 4, "ngIf"], [3, "value", "label"], ["customContent", "", 3, "value", "label"], [2, "color", "#F6503C"], [1, "cmacs-xlsx-loader-header"], ["cmacs-button", "", "type", "default", "ghost", "", 2, "float", "left", 3, "click"], ["cmacs-button", "", "type", "primary", 3, "disabled", "click"]], template: function CmacsXlsxLoaderComponent_Template(rf, ctx) {
+    CmacsXlsxLoaderComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsXlsxLoaderComponent, selectors: [["cmacs-xlsx-loader"]], inputs: { configuration: "configuration", modalTitle: "modalTitle", visible: "visible", saveBtnLabel: "saveBtnLabel", cancelBtnLabel: "cancelBtnLabel", placeholder: "placeholder", cmacsStyle: "cmacsStyle", files: "files", width: "width", infoTemplate: "infoTemplate" }, outputs: { configurationChange: "configurationChange", onsave: "onsave", visibleChange: "visibleChange" }, exportAs: ["cmacsXlsxLoader"], features: [i0.ɵɵNgOnChangesFeature], decls: 15, vars: 11, consts: [["modalType", "helpfulTips", 1, "cmacs-data-loader-modal", 3, "visible", "title", "width", "useCmacsDefaultSizes", "zIndex", "cmacsStyle", "footer", "visibleChange"], ["cmacs-modal-helpful-center-panel", ""], [1, "cmacs-xlsx-loader-body", "cmacs-custom-scrollbar"], [1, "cmacs-xlsx-loader-table"], ["class", "cmacs-xslx-loader", 4, "ngFor", "ngForOf"], ["class", "cmacs-xlsx-loader-header", 4, "ngFor", "ngForOf"], [4, "ngFor", "ngForOf"], ["cmacs-modal-helpful-right-panel", ""], [3, "ngTemplateOutlet"], ["modalFooter", ""], [1, "cmacs-xslx-loader"], [1, "cmacs-xlsx-loader-select"], [1, "cmacs-data-loader-select", 3, "ngModel", "allowClear", "placeHolder", "ngModelChange"], [3, "value", "label", 4, "ngIf"], ["customContent", "", 3, "value", "label", 4, "ngIf"], [3, "value", "label"], ["customContent", "", 3, "value", "label"], [2, "color", "#F6503C"], [1, "cmacs-xlsx-loader-header"], ["cmacs-button", "", "type", "default", "role", "button", "ghost", "", 2, "float", "left", 3, "aria-label", "click"], ["cmacs-button", "", "type", "primary", "role", "button", 3, "disabled", "aria-label", "click"]], template: function CmacsXlsxLoaderComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "cmacs-modal", 0);
                 i0.ɵɵlistener("visibleChange", function CmacsXlsxLoaderComponent_Template_cmacs_modal_visibleChange_0_listener($event) { return ctx.visible = $event; })("visibleChange", function CmacsXlsxLoaderComponent_Template_cmacs_modal_visibleChange_0_listener($event) { return ctx.onVisibleChange($event); });
@@ -22514,7 +22534,7 @@
                 i0.ɵɵelementContainer(12, 8);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
-                i0.ɵɵtemplate(13, CmacsXlsxLoaderComponent_ng_template_13_Template, 5, 3, "ng-template", null, 9, i0.ɵɵtemplateRefExtractor);
+                i0.ɵɵtemplate(13, CmacsXlsxLoaderComponent_ng_template_13_Template, 5, 5, "ng-template", null, 9, i0.ɵɵtemplateRefExtractor);
             }
             if (rf & 2) {
                 var _r3 = i0.ɵɵreference(14);
@@ -22528,7 +22548,7 @@
                 i0.ɵɵadvance(2);
                 i0.ɵɵproperty("ngTemplateOutlet", ctx.infoTemplate);
             }
-        }, directives: [CmacsModalComponent, i7.NzTheadComponent, i7.NzTrDirective, i2$1.NgForOf, i7.NzTbodyComponent, i2$1.NgTemplateOutlet, i7.NzTableCellDirective, i7.NzThMeasureDirective, CmacsSelectComponent, i5.NgControlStatus, i5.NgModel, i2$1.NgIf, CmacsOptionComponent, CmacsButtonComponent], styles: [".cmacs-xlsx-loader-body th{text-align:center;box-shadow:inset 1px 1px #f6f7fb,0 1px #f6f7fb;border-collapse:collapse;padding:2px;font-size:12px;min-width:185px;background-color:#f6f7fb;position:-webkit-sticky;position:sticky;top:0}.cmacs-xlsx-loader-body th:last-child{border-right:1px solid #f6f7fb}.cmacs-xlsx-loader-body td{border:1px solid #dee0e5;border-collapse:collapse;padding:6px 10px;color:#3b3f46}.cmacs-xlsx-loader-header{background-color:#f6f7fb;font-weight:600;top:34px;border-left:none!important;border-right:none!important;border-top:none!important}.cmacs-xlsx-loader-header:last-child{border-right:1px solid #f6f7fb!important}.cmacs-xslx-loader{padding:2px}.cmacs-xlsx-loader-body{max-height:calc(531px - 80px);overflow:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-xlsx-loader-table{width:100%;font-size:12px}.cmacs-xlsx-loader-footer{padding:10px 10px 60px}.cmacs-xlsx-loader-select .ant-select-selection.ant-select-selection--single{height:30px;font-size:12px}.cmacs-xlsx-loader-select cmacs-select{width:100%}.cmacs-xlsx-loader-index{float:left;padding-top:7px}::ng-deep .cmacs-data-loader-modal .cmacs-modal-helpful-center-panel{padding:10px}"], encapsulation: 2 });
+        }, directives: [CmacsModalComponent, i7.NzTheadComponent, i7.NzTrDirective, i2$1.NgForOf, i7.NzTbodyComponent, i2$1.NgTemplateOutlet, i7.NzTableCellDirective, i7.NzThMeasureDirective, CmacsSelectComponent, i5.NgControlStatus, i5.NgModel, i2$1.NgIf, CmacsOptionComponent, CmacsButtonComponent], styles: [".cmacs-xlsx-loader-body th{text-align:center;box-shadow:inset 1px 1px #f6f7fb,0 1px #f6f7fb;border-collapse:collapse;padding:2px;font-size:12px;min-width:185px;background-color:#f6f7fb;position:-webkit-sticky;position:sticky;top:0}.cmacs-xlsx-loader-body th:last-child{border-right:1px solid #f6f7fb}.cmacs-xlsx-loader-body td{border:1px solid #dee0e5;border-collapse:collapse;padding:6px 10px;color:#3b3f46}.cmacs-xlsx-loader-header{background-color:#f6f7fb;top:34px;border-left:none!important;border-right:none!important;border-top:none!important;font-family:Roboto-Medium}.cmacs-xlsx-loader-header:last-child{border-right:1px solid #f6f7fb!important}.cmacs-xslx-loader{padding:2px}.cmacs-xlsx-loader-body{max-height:calc(531px - 80px);overflow:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-xlsx-loader-table{width:100%;font-size:12px}.cmacs-xlsx-loader-footer{padding:10px 10px 60px}.cmacs-xlsx-loader-select .ant-select-selection.ant-select-selection--single{height:30px;font-size:12px}.cmacs-xlsx-loader-select cmacs-select{width:100%}.cmacs-xlsx-loader-index{float:left;padding-top:7px}::ng-deep .cmacs-data-loader-modal .cmacs-modal-helpful-center-panel{padding:10px}"], encapsulation: 2 });
     __decorate([
         util.InputBoolean()
     ], CmacsXlsxLoaderComponent.prototype, "visible", void 0);
@@ -22819,7 +22839,7 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("ant-tabs-nav-operations-hidden", ctx.items.length === 0);
             }
-        }, inputs: { items: "items", addable: "addable", addIcon: "addIcon" }, outputs: { addClicked: "addClicked", selected: "selected" }, exportAs: ["cmacsTabNavOperation"], decls: 7, vars: 6, consts: [["cmacs-dropdown", "", "type", "button", "tabindex", "-1", "aria-hidden", "true", "overlayClassName", "nz-tabs-dropdown", 1, "ant-tabs-nav-more", 3, "dropdownMenu", "overlayStyle", "matchWidthElement", "visibleChange", "mouseenter"], ["dropdownTrigger", "cmacsDropdown"], ["nz-icon", "", "nzType", "ellipsis"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 4, "ngIf"], ["cmacs-tab-add-button", "", 3, "addIcon", "click", 4, "ngIf"], ["cmacs-menu", ""], ["cmacs-menu-item", "", "class", "ant-tabs-dropdown-menu-item", 3, "ant-tabs-dropdown-menu-item-disabled", "selected", "disabled", "click", "contextmenu", 4, "ngFor", "ngForOf"], ["cmacs-menu-item", "", 1, "ant-tabs-dropdown-menu-item", 3, "selected", "disabled", "click", "contextmenu"], [4, "nzStringTemplateOutlet", "nzStringTemplateOutletContext"], ["cmacs-tab-add-button", "", 3, "addIcon", "click"]], template: function CmacsTabNavOperationComponent_Template(rf, ctx) {
+        }, inputs: { items: "items", addable: "addable", addIcon: "addIcon" }, outputs: { addClicked: "addClicked", selected: "selected" }, exportAs: ["cmacsTabNavOperation"], decls: 7, vars: 6, consts: [["cmacs-dropdown", "", "type", "button", "tabindex", "-1", "aria-hidden", "true", "role", "button", "overlayClassName", "nz-tabs-dropdown", "aria-label", "ellipsis", 1, "ant-tabs-nav-more", 3, "dropdownMenu", "overlayStyle", "matchWidthElement", "visibleChange", "mouseenter"], ["dropdownTrigger", "cmacsDropdown"], ["nz-icon", "", "nzType", "ellipsis"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 4, "ngIf"], ["cmacs-tab-add-button", "", "aria-label", "add icon", "role", "button", 3, "addIcon", "click", 4, "ngIf"], ["cmacs-menu", ""], ["cmacs-menu-item", "", "class", "ant-tabs-dropdown-menu-item", 3, "ant-tabs-dropdown-menu-item-disabled", "selected", "disabled", "click", "contextmenu", 4, "ngFor", "ngForOf"], ["cmacs-menu-item", "", 1, "ant-tabs-dropdown-menu-item", 3, "selected", "disabled", "click", "contextmenu"], [4, "nzStringTemplateOutlet", "nzStringTemplateOutletContext"], ["cmacs-tab-add-button", "", "aria-label", "add icon", "role", "button", 3, "addIcon", "click"]], template: function CmacsTabNavOperationComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "button", 0, 1);
                 i0.ɵɵlistener("visibleChange", function CmacsTabNavOperationComponent_Template_button_visibleChange_0_listener($event) { return ctx.menuVisChange($event); })("mouseenter", function CmacsTabNavOperationComponent_Template_button_mouseenter_0_listener() { return ctx.showItems(); });
@@ -22848,7 +22868,7 @@
                         preserveWhitespaces: false,
                         changeDetection: i0.ChangeDetectionStrategy.OnPush,
                         encapsulation: i0.ViewEncapsulation.None,
-                        template: "\n    <button\n      cmacs-dropdown\n      class=\"ant-tabs-nav-more\"\n      type=\"button\"\n      tabindex=\"-1\"\n      aria-hidden=\"true\"\n      overlayClassName=\"nz-tabs-dropdown\"\n      #dropdownTrigger=\"cmacsDropdown\"\n      [dropdownMenu]=\"menu\"\n      [overlayStyle]=\"{ minWidth: '46px' }\"\n      [matchWidthElement]=\"null\"\n      (visibleChange)=\"menuVisChange($event)\"\n      (mouseenter)=\"showItems()\"\n    >\n      <i nz-icon nzType=\"ellipsis\"></i>\n    </button>\n    <cmacs-dropdown-menu #menu=\"cmacsDropdownMenu\">\n      <ul cmacs-menu *ngIf=\"menuOpened\">\n        <li\n          cmacs-menu-item\n          *ngFor=\"let item of items\"\n          class=\"ant-tabs-dropdown-menu-item\"\n          [class.ant-tabs-dropdown-menu-item-disabled]=\"item.disabled\"\n          [selected]=\"item.active\"\n          [disabled]=\"item.disabled\"\n          (click)=\"onSelect(item)\"\n          (contextmenu)=\"onContextmenu(item, $event)\"\n        >\n          <ng-container *nzStringTemplateOutlet=\"item.tab.label; context: { visible: false }\">{{ item.tab.label }}</ng-container>\n        </li>\n      </ul>\n    </cmacs-dropdown-menu>\n    <button *ngIf=\"addable\" cmacs-tab-add-button [addIcon]=\"addIcon\" (click)=\"addClicked.emit()\"></button>\n  ",
+                        template: "\n    <button\n      cmacs-dropdown\n      class=\"ant-tabs-nav-more\"\n      type=\"button\"\n      tabindex=\"-1\"\n      aria-hidden=\"true\"\n      role=\"button\"\n      overlayClassName=\"nz-tabs-dropdown\"\n      #dropdownTrigger=\"cmacsDropdown\"\n      [dropdownMenu]=\"menu\"\n      [overlayStyle]=\"{ minWidth: '46px' }\"\n      [matchWidthElement]=\"null\"\n      (visibleChange)=\"menuVisChange($event)\"\n      (mouseenter)=\"showItems()\"\n      aria-label=\"ellipsis\"\n    >\n      <i nz-icon nzType=\"ellipsis\"></i>\n    </button>\n    <cmacs-dropdown-menu #menu=\"cmacsDropdownMenu\">\n      <ul cmacs-menu *ngIf=\"menuOpened\">\n        <li\n          cmacs-menu-item\n          *ngFor=\"let item of items\"\n          class=\"ant-tabs-dropdown-menu-item\"\n          [class.ant-tabs-dropdown-menu-item-disabled]=\"item.disabled\"\n          [selected]=\"item.active\"\n          [disabled]=\"item.disabled\"\n          (click)=\"onSelect(item)\"\n          (contextmenu)=\"onContextmenu(item, $event)\"\n        >\n          <ng-container *nzStringTemplateOutlet=\"item.tab.label; context: { visible: false }\">{{ item.tab.label }}</ng-container>\n        </li>\n      </ul>\n    </cmacs-dropdown-menu>\n    <button *ngIf=\"addable\" cmacs-tab-add-button aria-label=\"add icon\" [addIcon]=\"addIcon\" role=\"button\" (click)=\"addClicked.emit()\"></button>\n  ",
                         host: {
                             class: 'ant-tabs-nav-operations',
                             '[class.ant-tabs-nav-operations-hidden]': 'items.length === 0'
@@ -23595,7 +23615,7 @@
             if (rf & 1) {
                 i0.ɵɵlistener("keydown", function CmacsTabNavBarComponent_keydown_HostBindingHandler($event) { return ctx.handleKeydown($event); });
             }
-        }, inputs: { position: "position", addable: "addable", hideBar: "hideBar", addIcon: "addIcon", inkBarAnimated: "inkBarAnimated", extraTemplate: "extraTemplate", cmacsType: "cmacsType", selectedIndex: "selectedIndex" }, outputs: { indexFocused: "indexFocused", selectFocusedIndex: "selectFocusedIndex", addClicked: "addClicked", tabScroll: "tabScroll" }, exportAs: ["cmacsTabsNav"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c2$b, decls: 9, vars: 24, consts: [[1, "ant-tabs-nav-wrap"], ["navWarp", ""], ["cmacsTabScrollList", "", 1, "ant-tabs-nav-list", 3, "offsetChange", "tabScroll"], ["navList", ""], ["cmacs-tab-add-button", "", 3, "addIcon", "click", 4, "ngIf"], ["cmacs-tabs-ink-bar", "", 3, "hidden", "position", "animated"], [3, "addIcon", "addable", "items", "addClicked", "selected"], ["class", "ant-tabs-extra-content", 4, "ngIf"], ["cmacs-tab-add-button", "", 3, "addIcon", "click"], [1, "ant-tabs-extra-content"], [3, "ngTemplateOutlet"]], template: function CmacsTabNavBarComponent_Template(rf, ctx) {
+        }, inputs: { position: "position", addable: "addable", hideBar: "hideBar", addIcon: "addIcon", inkBarAnimated: "inkBarAnimated", extraTemplate: "extraTemplate", cmacsType: "cmacsType", selectedIndex: "selectedIndex" }, outputs: { indexFocused: "indexFocused", selectFocusedIndex: "selectFocusedIndex", addClicked: "addClicked", tabScroll: "tabScroll" }, exportAs: ["cmacsTabsNav"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c2$b, decls: 9, vars: 24, consts: [[1, "ant-tabs-nav-wrap"], ["navWarp", ""], ["cmacsTabScrollList", "", 1, "ant-tabs-nav-list", 3, "offsetChange", "tabScroll"], ["navList", ""], ["cmacs-tab-add-button", "", "aria-label", "add icon", "role", "button", 3, "addIcon", "click", 4, "ngIf"], ["cmacs-tabs-ink-bar", "", 3, "hidden", "position", "animated"], [3, "addIcon", "addable", "items", "addClicked", "selected"], ["class", "ant-tabs-extra-content", 4, "ngIf"], ["cmacs-tab-add-button", "", "aria-label", "add icon", "role", "button", 3, "addIcon", "click"], [1, "ant-tabs-extra-content"], [3, "ngTemplateOutlet"]], template: function CmacsTabNavBarComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "div", 0, 1);
@@ -23634,7 +23654,7 @@
                         preserveWhitespaces: false,
                         changeDetection: i0.ChangeDetectionStrategy.OnPush,
                         encapsulation: i0.ViewEncapsulation.None,
-                        template: "\n    <div\n      class=\"ant-tabs-nav-wrap\"\n      [class.ant-tabs-nav-wrap-ping-left]=\"pingLeft\"\n      [class.ant-tabs-nav-wrap-ping-right]=\"pingRight\"\n      [class.ant-tabs-nav-wrap-ping-top]=\"pingTop\"\n      [class.ant-tabs-nav-wrap-ping-bottom]=\"pingBottom\"\n      #navWarp\n    >\n      <div class=\"ant-tabs-nav-list\"\n       [class.cmacs-tabs-icon]=\"isCmacsType('icon')\"\n         [class.cmacs-tabs-ems]=\"isCmacsType('ems')\"\n         [class.cmacs-tabs-schedule]=\"isCmacsType('schedule')\"\n         [class.cmacs-tabs-property]=\"isCmacsType('property')\"\n       #navList cmacsTabScrollList (offsetChange)=\"onOffsetChange($event)\" (tabScroll)=\"tabScroll.emit($event)\">\n        <ng-content></ng-content>\n        <button *ngIf=\"showAddButton\" cmacs-tab-add-button [addIcon]=\"addIcon\" (click)=\"addClicked.emit()\"></button>\n        <div cmacs-tabs-ink-bar [hidden]=\"hideBar\" [position]=\"position\" [animated]=\"inkBarAnimated\"></div>\n      </div>\n    </div>\n    <cmacs-tab-nav-operation\n      (addClicked)=\"addClicked.emit()\"\n      (selected)=\"onSelectedFromMenu($event)\"\n      [addIcon]=\"addIcon\"\n      [addable]=\"addable\"\n      [items]=\"hiddenItems\"\n    ></cmacs-tab-nav-operation>\n    <div class=\"ant-tabs-extra-content\" *ngIf=\"extraTemplate\">\n      <ng-template [ngTemplateOutlet]=\"extraTemplate\"></ng-template>\n    </div>\n  ",
+                        template: "\n    <div\n      class=\"ant-tabs-nav-wrap\"\n      [class.ant-tabs-nav-wrap-ping-left]=\"pingLeft\"\n      [class.ant-tabs-nav-wrap-ping-right]=\"pingRight\"\n      [class.ant-tabs-nav-wrap-ping-top]=\"pingTop\"\n      [class.ant-tabs-nav-wrap-ping-bottom]=\"pingBottom\"\n      #navWarp\n    >\n      <div class=\"ant-tabs-nav-list\"\n       [class.cmacs-tabs-icon]=\"isCmacsType('icon')\"\n         [class.cmacs-tabs-ems]=\"isCmacsType('ems')\"\n         [class.cmacs-tabs-schedule]=\"isCmacsType('schedule')\"\n         [class.cmacs-tabs-property]=\"isCmacsType('property')\"\n       #navList cmacsTabScrollList (offsetChange)=\"onOffsetChange($event)\" (tabScroll)=\"tabScroll.emit($event)\">\n        <ng-content></ng-content>\n        <button *ngIf=\"showAddButton\" cmacs-tab-add-button aria-label=\"add icon\" [addIcon]=\"addIcon\" role=\"button\" (click)=\"addClicked.emit()\"></button>\n        <div cmacs-tabs-ink-bar [hidden]=\"hideBar\" [position]=\"position\" [animated]=\"inkBarAnimated\"></div>\n      </div>\n    </div>\n    <cmacs-tab-nav-operation\n      (addClicked)=\"addClicked.emit()\"\n      (selected)=\"onSelectedFromMenu($event)\"\n      [addIcon]=\"addIcon\"\n      [addable]=\"addable\"\n      [items]=\"hiddenItems\"\n    ></cmacs-tab-nav-operation>\n    <div class=\"ant-tabs-extra-content\" *ngIf=\"extraTemplate\">\n      <ng-template [ngTemplateOutlet]=\"extraTemplate\"></ng-template>\n    </div>\n  ",
                         host: {
                             role: 'tablist',
                             class: 'ant-tabs-nav',
@@ -24456,7 +24476,7 @@
                     provide: NZ_TAB_SET,
                     useExisting: CmacsTabSetComponent
                 }
-            ])], decls: 4, vars: 16, consts: [[3, "ngStyle", "selectedIndex", "inkBarAnimated", "addable", "addIcon", "cmacsType", "hideBar", "position", "extraTemplate", "tabScroll", "selectFocusedIndex", "addClicked", 4, "ngIf"], [1, "ant-tabs-content-holder"], [1, "ant-tabs-content"], ["cmacs-tab-body", "", 3, "active", "content", "forceRender", "tabPaneAnimated", 4, "ngFor", "ngForOf"], [3, "ngStyle", "selectedIndex", "inkBarAnimated", "addable", "addIcon", "cmacsType", "hideBar", "position", "extraTemplate", "tabScroll", "selectFocusedIndex", "addClicked"], ["class", "ant-tabs-tab", 3, "margin-right", "margin-bottom", "ant-tabs-tab-active", "ant-tabs-tab-disabled", "click", "contextmenu", 4, "ngFor", "ngForOf"], [1, "ant-tabs-tab", 3, "click", "contextmenu"], ["role", "tab", "cmacsTabNavItem", "", "cdkMonitorElementFocus", "", 1, "ant-tabs-tab-btn", 3, "disabled", "tab", "active"], [4, "nzStringTemplateOutlet", "nzStringTemplateOutletContext"], ["cmacs-tab-close-button", "", 3, "closeIcon", "click", 4, "ngIf"], ["cmacs-tab-close-button", "", 3, "closeIcon", "click"], ["cmacs-tab-body", "", 3, "active", "content", "forceRender", "tabPaneAnimated"]], template: function CmacsTabSetComponent_Template(rf, ctx) {
+            ])], decls: 4, vars: 16, consts: [[3, "ngStyle", "selectedIndex", "inkBarAnimated", "addable", "addIcon", "cmacsType", "hideBar", "position", "extraTemplate", "tabScroll", "selectFocusedIndex", "addClicked", 4, "ngIf"], [1, "ant-tabs-content-holder"], [1, "ant-tabs-content"], ["cmacs-tab-body", "", 3, "active", "content", "forceRender", "tabPaneAnimated", 4, "ngFor", "ngForOf"], [3, "ngStyle", "selectedIndex", "inkBarAnimated", "addable", "addIcon", "cmacsType", "hideBar", "position", "extraTemplate", "tabScroll", "selectFocusedIndex", "addClicked"], ["class", "ant-tabs-tab", 3, "margin-right", "margin-bottom", "ant-tabs-tab-active", "ant-tabs-tab-disabled", "click", "contextmenu", 4, "ngFor", "ngForOf"], [1, "ant-tabs-tab", 3, "click", "contextmenu"], ["role", "tab", "cmacsTabNavItem", "", "cdkMonitorElementFocus", "", 1, "ant-tabs-tab-btn", 3, "disabled", "tab", "active"], [4, "nzStringTemplateOutlet", "nzStringTemplateOutletContext"], ["role", "button", "aria-label", "close icon", "cmacs-tab-close-button", "", 3, "closeIcon", "click", 4, "ngIf"], ["role", "button", "aria-label", "close icon", "cmacs-tab-close-button", "", 3, "closeIcon", "click"], ["cmacs-tab-body", "", 3, "active", "content", "forceRender", "tabPaneAnimated"]], template: function CmacsTabSetComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, CmacsTabSetComponent_cmacs_tabs_nav_0_Template, 2, 10, "cmacs-tabs-nav", 0);
                 i0.ɵɵelementStart(1, "div", 1);
@@ -24516,7 +24536,7 @@
                                 useExisting: CmacsTabSetComponent
                             }
                         ],
-                        template: "\n    <cmacs-tabs-nav\n      *ngIf=\"tabs.length\"\n      [ngStyle]=\"tabBarStyle\"\n      [selectedIndex]=\"cmacsSelectedIndex || 0\"\n      [inkBarAnimated]=\"inkBarAnimated\"\n      [addable]=\"addable\"\n      [addIcon]=\"addIcon\"\n      [cmacsType]=\"cmacsType\"\n      [hideBar]=\"hideAll\"\n      [position]=\"position\"\n      [extraTemplate]=\"tabBarExtraContent\"\n      (tabScroll)=\"tabListScroll.emit($event)\"\n      (selectFocusedIndex)=\"setSelectedIndex($event)\"\n      (addClicked)=\"onAdd()\"\n    >\n      <div\n        class=\"ant-tabs-tab\"\n        [style.margin-right.px]=\"position === 'horizontal' ? tabBarGutter : null\"\n        [style.margin-bottom.px]=\"position === 'vertical' ? tabBarGutter : null\"\n        [class.ant-tabs-tab-active]=\"cmacsSelectedIndex === i\"\n        [class.ant-tabs-tab-disabled]=\"tab.disabled\"\n        (click)=\"clickNavItem(tab, i, $event)\"\n        (contextmenu)=\"contextmenuNavItem(tab, $event)\"\n        *ngFor=\"let tab of tabs; let i = index\"\n      >\n        <div\n          role=\"tab\"\n          [attr.tabIndex]=\"getTabIndex(tab, i)\"\n          [attr.aria-disabled]=\"tab.disabled\"\n          [attr.aria-selected]=\"cmacsSelectedIndex === i && !hideAll\"\n          [attr.aria-controls]=\"getTabContentId(i)\"\n          [disabled]=\"tab.disabled\"\n          [tab]=\"tab\"\n          [active]=\"cmacsSelectedIndex === i\"\n          class=\"ant-tabs-tab-btn\"\n          cmacsTabNavItem\n          cdkMonitorElementFocus\n        >\n          <ng-container *nzStringTemplateOutlet=\"tab.label; context: { visible: true }\">{{ tab.label }}</ng-container>\n          <button\n            cmacs-tab-close-button\n            *ngIf=\"tab.closable && closable && !tab.disabled\"\n            [closeIcon]=\"tab.closeIcon\"\n            (click)=\"onClose(i, $event)\"\n          ></button>\n        </div>\n      </div>\n    </cmacs-tabs-nav>\n    <div class=\"ant-tabs-content-holder\">\n      <div\n        class=\"ant-tabs-content\"\n        [class.ant-tabs-content-top]=\"tabPosition === 'top'\"\n        [class.ant-tabs-content-bottom]=\"tabPosition === 'bottom'\"\n        [class.ant-tabs-content-left]=\"tabPosition === 'left'\"\n        [class.ant-tabs-content-right]=\"tabPosition === 'right'\"\n        [class.ant-tabs-content-animated]=\"tabPaneAnimated\"\n        [style.margin-left]=\"getTabContentMarginLeft()\"\n        [style.margin-right]=\"getTabContentMarginRight()\"\n      >\n        <div\n          cmacs-tab-body\n          *ngFor=\"let tab of tabs; let i = index\"\n          [active]=\"cmacsSelectedIndex == i && !hideAll\"\n          [content]=\"tab.content\"\n          [forceRender]=\"tab.forceRender\"\n          [tabPaneAnimated]=\"tabPaneAnimated\"\n        ></div>\n      </div>\n    </div>\n  ",
+                        template: "\n    <cmacs-tabs-nav\n      *ngIf=\"tabs.length\"\n      [ngStyle]=\"tabBarStyle\"\n      [selectedIndex]=\"cmacsSelectedIndex || 0\"\n      [inkBarAnimated]=\"inkBarAnimated\"\n      [addable]=\"addable\"\n      [addIcon]=\"addIcon\"\n      [cmacsType]=\"cmacsType\"\n      [hideBar]=\"hideAll\"\n      [position]=\"position\"\n      [extraTemplate]=\"tabBarExtraContent\"\n      (tabScroll)=\"tabListScroll.emit($event)\"\n      (selectFocusedIndex)=\"setSelectedIndex($event)\"\n      (addClicked)=\"onAdd()\"\n    >\n      <div\n        class=\"ant-tabs-tab\"\n        [style.margin-right.px]=\"position === 'horizontal' ? tabBarGutter : null\"\n        [style.margin-bottom.px]=\"position === 'vertical' ? tabBarGutter : null\"\n        [class.ant-tabs-tab-active]=\"cmacsSelectedIndex === i\"\n        [class.ant-tabs-tab-disabled]=\"tab.disabled\"\n        (click)=\"clickNavItem(tab, i, $event)\"\n        (contextmenu)=\"contextmenuNavItem(tab, $event)\"\n        *ngFor=\"let tab of tabs; let i = index\"\n      >\n        <div\n          role=\"tab\"\n          [attr.tabIndex]=\"getTabIndex(tab, i)\"\n          [attr.aria-disabled]=\"tab.disabled\"\n          [attr.aria-selected]=\"cmacsSelectedIndex === i && !hideAll\"\n          [attr.aria-controls]=\"getTabContentId(i)\"\n          [disabled]=\"tab.disabled\"\n          [tab]=\"tab\"\n          [active]=\"cmacsSelectedIndex === i\"\n          class=\"ant-tabs-tab-btn\"\n          cmacsTabNavItem\n          cdkMonitorElementFocus\n        >\n          <ng-container *nzStringTemplateOutlet=\"tab.label; context: { visible: true }\">{{ tab.label }}</ng-container>\n          <button role=\"button\" aria-label=\"close icon\"\n            cmacs-tab-close-button\n            *ngIf=\"tab.closable && closable && !tab.disabled\"\n            [closeIcon]=\"tab.closeIcon\"\n            (click)=\"onClose(i, $event)\"\n          ></button>\n        </div>\n      </div>\n    </cmacs-tabs-nav>\n    <div class=\"ant-tabs-content-holder\">\n      <div\n        class=\"ant-tabs-content\"\n        [class.ant-tabs-content-top]=\"tabPosition === 'top'\"\n        [class.ant-tabs-content-bottom]=\"tabPosition === 'bottom'\"\n        [class.ant-tabs-content-left]=\"tabPosition === 'left'\"\n        [class.ant-tabs-content-right]=\"tabPosition === 'right'\"\n        [class.ant-tabs-content-animated]=\"tabPaneAnimated\"\n        [style.margin-left]=\"getTabContentMarginLeft()\"\n        [style.margin-right]=\"getTabContentMarginRight()\"\n      >\n        <div\n          cmacs-tab-body\n          *ngFor=\"let tab of tabs; let i = index\"\n          [active]=\"cmacsSelectedIndex == i && !hideAll\"\n          [content]=\"tab.content\"\n          [forceRender]=\"tab.forceRender\"\n          [tabPaneAnimated]=\"tabPaneAnimated\"\n        ></div>\n      </div>\n    </div>\n  ",
                         host: {
                             class: 'ant-tabs',
                             '[class.ant-tabs-card]': "type === 'card' || type === 'editable-card'",
@@ -24651,19 +24671,21 @@
         if (rf & 2) {
             var ctx_r16 = i0.ɵɵnextContext(3);
             i0.ɵɵadvance(1);
+            i0.ɵɵpropertyInterpolate("alt", ctx_r16._currentValue.userSignature);
             i0.ɵɵproperty("src", ctx_r16._currentValue.userSignature, i0.ɵɵsanitizeUrl);
         }
     }
     function CmacsSignatureComponent_ng_container_1_ng_container_3_ng_container_3_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelement(1, "img", 22);
+            i0.ɵɵelement(1, "img", 23);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
             var ctx_r17 = i0.ɵɵnextContext(3);
             i0.ɵɵadvance(1);
             i0.ɵɵstyleProp("width", ctx_r17._currentValue.signatureImgStyle.size ? ctx_r17._currentValue.signatureImgStyle.size.width : null, "px")("height", ctx_r17._currentValue.signatureImgStyle.size ? ctx_r17._currentValue.signatureImgStyle.size.height : null, "px");
+            i0.ɵɵpropertyInterpolate("alt", ctx_r17._currentValue.userSignature);
             i0.ɵɵproperty("src", ctx_r17._currentValue.userSignature, i0.ɵɵsanitizeUrl);
         }
     }
@@ -24671,8 +24693,8 @@
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵtemplate(1, CmacsSignatureComponent_ng_container_1_ng_container_3_ng_container_1_Template, 3, 1, "ng-container", 0);
-            i0.ɵɵtemplate(2, CmacsSignatureComponent_ng_container_1_ng_container_3_ng_container_2_Template, 2, 1, "ng-container", 0);
-            i0.ɵɵtemplate(3, CmacsSignatureComponent_ng_container_1_ng_container_3_ng_container_3_Template, 2, 5, "ng-container", 0);
+            i0.ɵɵtemplate(2, CmacsSignatureComponent_ng_container_1_ng_container_3_ng_container_2_Template, 2, 2, "ng-container", 0);
+            i0.ɵɵtemplate(3, CmacsSignatureComponent_ng_container_1_ng_container_3_ng_container_3_Template, 2, 6, "ng-container", 0);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -24687,7 +24709,7 @@
     }
     function CmacsSignatureComponent_ng_container_1_div_17_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 23);
+            i0.ɵɵelementStart(0, "div", 24);
             i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
         }
@@ -24699,7 +24721,7 @@
     }
     function CmacsSignatureComponent_ng_container_1_div_18_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 24);
+            i0.ɵɵelementStart(0, "div", 25);
             i0.ɵɵtext(1, "Test");
             i0.ɵɵelementEnd();
         }
@@ -24708,15 +24730,15 @@
         if (rf & 1) {
             var _r19_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "nz-upload", 25);
+            i0.ɵɵelementStart(1, "nz-upload", 26);
             i0.ɵɵlistener("nzFileListChange", function CmacsSignatureComponent_ng_container_1_ng_container_39_Template_nz_upload_nzFileListChange_1_listener($event) { i0.ɵɵrestoreView(_r19_1); var ctx_r18 = i0.ɵɵnextContext(2); return ctx_r18.files = $event; });
-            i0.ɵɵelementStart(2, "span", 26);
-            i0.ɵɵelement(3, "img", 27);
+            i0.ɵɵelementStart(2, "span", 27);
+            i0.ɵɵelement(3, "img", 28);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(4, "p", 28);
+            i0.ɵɵelementStart(4, "p", 29);
             i0.ɵɵtext(5);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(6, "button", 29);
+            i0.ɵɵelementStart(6, "button", 30);
             i0.ɵɵtext(7);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -24736,14 +24758,14 @@
         if (rf & 1) {
             var _r22_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 30);
+            i0.ɵɵelementStart(1, "div", 31);
             i0.ɵɵelementStart(2, "span", 2);
             i0.ɵɵtext(3, "X");
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(4, "div", 31, 32);
-            i0.ɵɵelementStart(6, "div", 33);
+            i0.ɵɵelementStart(4, "div", 32, 33);
+            i0.ɵɵelementStart(6, "div", 34);
             i0.ɵɵlistener("rzStop", function CmacsSignatureComponent_ng_container_1_ng_container_40_Template_div_rzStop_6_listener($event) { i0.ɵɵrestoreView(_r22_1); var ctx_r21 = i0.ɵɵnextContext(2); return ctx_r21.onResizeStop($event); })("endOffset", function CmacsSignatureComponent_ng_container_1_ng_container_40_Template_div_endOffset_6_listener($event) { i0.ɵɵrestoreView(_r22_1); var ctx_r23 = i0.ɵɵnextContext(2); return ctx_r23.onMoveEnd($event); });
-            i0.ɵɵelement(7, "img", 34);
+            i0.ɵɵelement(7, "img", 35);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -24761,11 +24783,11 @@
     function CmacsSignatureComponent_ng_container_1_ng_template_45_Template(rf, ctx) {
         if (rf & 1) {
             var _r25_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "button", 35);
+            i0.ɵɵelementStart(0, "button", 36);
             i0.ɵɵlistener("click", function CmacsSignatureComponent_ng_container_1_ng_template_45_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r25_1); var ctx_r24 = i0.ɵɵnextContext(2); return ctx_r24.handleCancel(); });
             i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(2, "button", 36);
+            i0.ɵɵelementStart(2, "button", 37);
             i0.ɵɵlistener("click", function CmacsSignatureComponent_ng_container_1_ng_template_45_Template_button_click_2_listener() { i0.ɵɵrestoreView(_r25_1); var ctx_r26 = i0.ɵɵnextContext(2); return ctx_r26.handleOk(); });
             i0.ɵɵelementStart(3, "span");
             i0.ɵɵtext(4);
@@ -25096,7 +25118,7 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.signaturePad = _t.first);
             }
-        }, inputs: { i18n: "i18n", signaturePadOptions: "signaturePadOptions", extendedVersion: "extendedVersion", currentValue: "currentValue" }, outputs: { oncancel: "oncancel", onsubmit: "onsubmit", ondrawend: "ondrawend" }, exportAs: ["cmacsSignature"], decls: 2, vars: 2, consts: [[4, "ngIf"], ["tabindex", "1", 1, "cmacs-signature-sign-wrapper", "cmacs-signature-pad", 3, "keydown"], [1, "cmacs-signature-x"], [3, "options", "onEndEvent"], [1, "cmacs-signature-wrapper"], ["modalType", "helpfulTipsNoPanel", 1, "cmacs-signature-modal", 3, "visible", "width", "title", "footer", "visibleChange", "onCancel"], ["cmacs-modal-helpfulTips-no-panel-center", ""], [1, "cmacs-signature-tabset", "cmacs-width-100", 3, "cmacsSelectedIndex", "selectedIndexChange"], [3, "cmacsTitle"], ["cmacs-form", "", 3, "formGroup"], ["cmacsRequired", ""], ["cmacs-input", "", 1, "cmacs-signature-username-input", 3, "formControlName", "placeholder"], [1, "cmacs-signature-sign-wrapper"], ["class", "cmacs-signature-sign-input", 4, "ngIf"], ["class", "cmacs-signature-sign-input cmacs-invisible-font", 4, "ngIf"], [1, "cmacs-signature-text", "cmacs-signature-text-format"], ["cmacs-checkbox", "", 1, "cmacs-signature-text", 3, "ngModel", "ngModelChange"], [1, "cmacs-no-margin"], ["modalFooter", ""], [1, "cmacs-signature-close-icon", "iconUISmall-Excel"], [1, "cmacs-signature-placeholder", 3, "click"], [1, "cmacs-signature-sign-input", "cmacs-signature-input-userSignature"], [1, "centered", 2, "max-height", "50px !important", "max-width", "inherit", 3, "src"], [1, "cmacs-signature-sign-input"], [1, "cmacs-signature-sign-input", "cmacs-invisible-font"], ["nzType", "drag", "nzAccept", "image/*", 1, "cmacs-signature-upload-area", 3, "nzMultiple", "nzFileList", "nzBeforeUpload", "nzFileListChange"], [1, "ant-upload-drag-icon"], ["src", "assets/images/upload-computer.png"], [1, "cmacs-signature-upload-text"], ["cmacs-button", ""], [1, "cmacs-signature-sign-wrapper", "cmacs-signature-image-src"], [1, "cmacs-signature-sign-input", "cmacs-signature-img-wrapper", 2, "max-width", "480px", "width", "480px", "max-height", "100px", "height", "100px"], ["dragBounds", ""], ["ngResizable", "", "rzHandles", "n,s,e,w,se,sw", "ngDraggable", "", 1, "cmacs-signature-img-wrapper-resizable-area", 2, "max-width", "480px", "max-height", "100px", 3, "bounds", "inBounds", "preventDefaultEvent", "rzStop", "endOffset"], [2, "max-width", "480px", "width", "inherit", "max-height", "100px", "height", "inherit", 3, "src"], ["cmacs-button", "", "type", "default", "ghost", "", 2, "float", "left", 3, "click"], ["cmacs-button", "", "ghost", "", "type", "primary", 3, "disabled", "click"]], template: function CmacsSignatureComponent_Template(rf, ctx) {
+        }, inputs: { i18n: "i18n", signaturePadOptions: "signaturePadOptions", extendedVersion: "extendedVersion", currentValue: "currentValue" }, outputs: { oncancel: "oncancel", onsubmit: "onsubmit", ondrawend: "ondrawend" }, exportAs: ["cmacsSignature"], decls: 2, vars: 2, consts: [[4, "ngIf"], ["tabindex", "1", 1, "cmacs-signature-sign-wrapper", "cmacs-signature-pad", 3, "keydown"], [1, "cmacs-signature-x"], [3, "options", "onEndEvent"], [1, "cmacs-signature-wrapper"], ["modalType", "helpfulTipsNoPanel", 1, "cmacs-signature-modal", 3, "visible", "width", "title", "footer", "visibleChange", "onCancel"], ["cmacs-modal-helpfulTips-no-panel-center", ""], [1, "cmacs-signature-tabset", "cmacs-width-100", 3, "cmacsSelectedIndex", "selectedIndexChange"], [3, "cmacsTitle"], ["cmacs-form", "", 3, "formGroup"], ["cmacsRequired", ""], ["cmacs-input", "", 1, "cmacs-signature-username-input", 3, "formControlName", "placeholder"], [1, "cmacs-signature-sign-wrapper"], ["class", "cmacs-signature-sign-input", 4, "ngIf"], ["class", "cmacs-signature-sign-input cmacs-invisible-font", 4, "ngIf"], [1, "cmacs-signature-text", "cmacs-signature-text-format"], ["cmacs-checkbox", "", 1, "cmacs-signature-text", 3, "ngModel", "ngModelChange"], [1, "cmacs-no-margin"], ["modalFooter", ""], [1, "cmacs-signature-close-icon", "iconUISmall-Excel"], [1, "cmacs-signature-placeholder", 3, "click"], [1, "cmacs-signature-sign-input", "cmacs-signature-input-userSignature"], [1, "centered", 2, "max-height", "50px !important", "max-width", "inherit", 3, "src", "alt"], [1, "centered", 2, "max-height", "50px !important", "max-width", "inherit", 3, "alt", "src"], [1, "cmacs-signature-sign-input"], [1, "cmacs-signature-sign-input", "cmacs-invisible-font"], ["nzType", "drag", "nzAccept", "image/*", 1, "cmacs-signature-upload-area", 3, "nzMultiple", "nzFileList", "nzBeforeUpload", "nzFileListChange"], [1, "ant-upload-drag-icon"], ["src", "assets/images/upload-computer.png", "alt", "Upload Image"], [1, "cmacs-signature-upload-text"], ["cmacs-button", "", "role", "button", "aria-label", "Browse computer"], [1, "cmacs-signature-sign-wrapper", "cmacs-signature-image-src"], [1, "cmacs-signature-sign-input", "cmacs-signature-img-wrapper", 2, "max-width", "480px", "width", "480px", "max-height", "100px", "height", "100px"], ["dragBounds", ""], ["ngResizable", "", "rzHandles", "n,s,e,w,se,sw", "ngDraggable", "", 1, "cmacs-signature-img-wrapper-resizable-area", 2, "max-width", "480px", "max-height", "100px", 3, "bounds", "inBounds", "preventDefaultEvent", "rzStop", "endOffset"], ["alt", "Uploaded Signature", 2, "max-width", "480px", "width", "inherit", "max-height", "100px", "height", "inherit", 3, "src"], ["cmacs-button", "", "type", "default", "role", "button", "ghost", "", "aria-label", "cancel", 2, "float", "left", 3, "click"], ["cmacs-button", "", "ghost", "", "role", "button", "type", "primary", "aria-label", "verify", 3, "disabled", "click"]], template: function CmacsSignatureComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, CmacsSignatureComponent_ng_container_0_Template, 5, 1, "ng-container", 0);
                 i0.ɵɵtemplate(1, CmacsSignatureComponent_ng_container_1_Template, 47, 30, "ng-container", 0);
@@ -25495,9 +25517,10 @@
             i0.ɵɵadvance(2);
             i0.ɵɵtextInterpolate(ctx_r19.weather.temp + (ctx_r19.celcius ? "\u00B0C" : "\u00B0F"));
             i0.ɵɵadvance(1);
+            i0.ɵɵpropertyInterpolate("alt", ctx_r19.weather.description);
             i0.ɵɵproperty("src", ctx_r19.weather.icon, i0.ɵɵsanitizeUrl);
             i0.ɵɵadvance(3);
-            i0.ɵɵtextInterpolate(i0.ɵɵpipeBind1(7, 8, ctx_r19.weather.description));
+            i0.ɵɵtextInterpolate(i0.ɵɵpipeBind1(7, 9, ctx_r19.weather.description));
             i0.ɵɵadvance(4);
             i0.ɵɵtextInterpolate(ctx_r19.weather.temp_min + "\u00B0 / ");
             i0.ɵɵadvance(2);
@@ -25952,6 +25975,7 @@
         }
         if (rf & 2) {
             var person_r61 = i0.ɵɵnextContext().$implicit;
+            i0.ɵɵpropertyInterpolate("alt", person_r61.name);
             i0.ɵɵproperty("src", person_r61.image, i0.ɵɵsanitizeUrl);
         }
     }
@@ -25971,7 +25995,7 @@
     function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 81);
-            i0.ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_img_1_Template, 1, 1, "img", 82);
+            i0.ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_img_1_Template, 1, 2, "img", 82);
             i0.ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_span_2_Template, 2, 1, "span", 4);
             i0.ɵɵelementEnd();
         }
@@ -26060,6 +26084,7 @@
         }
         if (rf & 2) {
             var ctx_r69 = i0.ɵɵnextContext(3);
+            i0.ɵɵpropertyInterpolate("alt", ctx_r69.project.teamLead.name);
             i0.ɵɵproperty("src", ctx_r69.project.teamLead.avatar, i0.ɵɵsanitizeUrl);
         }
     }
@@ -26104,7 +26129,7 @@
             i0.ɵɵelement(16, "div", 94);
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(17, "div", 95);
-            i0.ɵɵtemplate(18, CmacsCardComponent_ng_container_5_ng_container_9_img_18_Template, 1, 1, "img", 96);
+            i0.ɵɵtemplate(18, CmacsCardComponent_ng_container_5_ng_container_9_img_18_Template, 1, 2, "img", 96);
             i0.ɵɵtemplate(19, CmacsCardComponent_ng_container_5_ng_container_9_span_19_Template, 2, 1, "span", 97);
             i0.ɵɵelementStart(20, "div", 98);
             i0.ɵɵelement(21, "div", 99);
@@ -26234,7 +26259,7 @@
     function CmacsCardComponent_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_1_Template, 25, 10, "ng-container", 4);
+            i0.ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_1_Template, 25, 11, "ng-container", 4);
             i0.ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_2_Template, 17, 13, "ng-container", 4);
             i0.ɵɵtemplate(3, CmacsCardComponent_ng_container_5_ng_container_3_Template, 14, 6, "ng-container", 4);
             i0.ɵɵtemplate(4, CmacsCardComponent_ng_container_5_ng_container_4_Template, 7, 3, "ng-container", 4);
@@ -26478,7 +26503,7 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("ant-card-loading", ctx.loading)("ant-card-bordered", ctx.bordered)("ant-card-hoverable", ctx.hoverable || ctx.cmacsType === "selection")("ant-card-type-inner", ctx.type === "inner")("ant-card-contain-tabs", !!ctx.tab)("cmacs-card-files-wrapper", ctx.cmacsType === "file")("cmacs-card-measure-wrapper", ctx.cmacsType === "measure")("cmacs-card-measure-wrapper-selected", ctx.cmacsType === "measure" && ctx.selected)("cmacs-selection-card", ctx.cmacsType === "selection")("cmacs-card-selected", ctx.cmacsType === "selection" && ctx.selected)("cmacs-card-disabled", ctx.cmacsType === "selection" && ctx.disabled)("cmacs-action-card", ctx.cmacsType === "action")("cmacs-weather-card", ctx.cmacsType === "weather")("cmacs-big-file-card", ctx.cmacsType === "big-file")("cmacs-big-file-card-selected", ctx.cmacsType === "big-file" && ctx.selected)("cmacs-action-card-disabled", ctx.cmacsType === "action" && ctx.disabled)("cmacs-information-card", ctx.cmacsType === "team")("cmacs-team-card", ctx.cmacsType === "project")("cmacs-video-player-card", ctx.cmacsType === "video")("cmacs-todo-card", ctx.cmacsType === "todo")("cmacs-todo-card-selected", ctx.cmacsType === "todo" && ctx.selected)("cmacs-team-card-selected", ctx.cmacsType === "project" && ctx.selected)("cmacs-card-files-folders-wrapper", ctx.cmacsType === "folder")("file-card-selected", ctx.cmacsType === "folder" && ctx.selected);
             }
-        }, inputs: { bordered: "bordered", opened: "opened", editable: "editable", isRadio: "isRadio", loading: "loading", disabled: "disabled", hoverable: "hoverable", useDefaultContent: "useDefaultContent", sources: "sources", bodyStyle: "bodyStyle", cover: "cover", body: "body", actions: "actions", team: "team", file: "file", project: "project", projectDateLabel: "projectDateLabel", todo: "todo", weather: "weather", celcius: "celcius", type: "type", cmacsType: "cmacsType", cmacsIcon: "cmacsIcon", cmacsIconOpenedFolder: "cmacsIconOpenedFolder", cmacsIconClosedFolder: "cmacsIconClosedFolder", title: "title", labelTitle: "labelTitle", extra: "extra", selected: "selected", value: "value", todoUserAssigned: "todoUserAssigned" }, outputs: { playerReady: "playerReady", titleChange: "titleChange", ondlclickCard: "ondlclickCard", open: "open", close: "close", selectedChange: "selectedChange", goToModule: "goToModule", iconToDoClick: "iconToDoClick" }, exportAs: ["cmacsCard"], ngContentSelectors: _c2$d, decls: 8, vars: 6, consts: [["content", ""], ["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], ["cmacs-radio", "", 3, "ngModel", "disabled", "ngModelChange"], [1, "cmacs-weather-card-temp"], [1, "cmacs-weather-card-cloud-img", 3, "src"], [1, "cmacs-weather-card-description-wrapper"], [1, "cmacs-weather-card-description"], [1, "cmacs-weather-card-temp-min-max"], [1, "cmacs-weather-col-1-3"], [1, "iconUILarge-Rain"], [1, "iconUILarge-Humidity"], [1, "iconUILarge-Wind"], ["nz-row", "", 1, "todo-card-header"], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "12", 4, "ngIf"], [1, "todo-card-content"], [1, "cmacs-todo-card-title"], ["placement", "bottom", "cmacs-tooltip", "", 3, "title"], ["class", "cmacs-todo-card-project", 4, "ngIf"], ["nz-row", "", 1, "cmacs-todo-card-action"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-person", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-team", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-priority", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-association", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-attachments", 3, "click", 4, "ngIf"], ["nz-col", "", "nzSpan", "4", "class", "cmacs-todo-card-comments", 3, "click", 4, "ngIf"], [1, "cmacs-todo-card-date"], [1, "cmacs-todo-card-project"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-person"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngIf"], [1, "iconCreation-User"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-team"], [1, "iconUILarge-Team"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-priority"], ["nz-icon", "", 3, "nzType"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-association"], [3, "click"], [1, "iconUILarge-Link"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-attachments", 3, "click"], [1, "iconUILarge-Attached"], ["nz-col", "", "nzSpan", "4", 1, "cmacs-todo-card-comments", 3, "click"], [1, "iconUILarge-Comments"], [1, "cmacs-card-big-file-meta"], [1, "cmacs-card-big-file-description"], [1, "cmacs-card-big-file-description-left-panel"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-big-file-title", 3, "title"], [1, "cmacs-card-big-file-date"], [1, "cmacs-card-big-file-description-right-panel"], ["class", "cmacs-card-big-file-extra", 4, "ngIf"], [1, "cmacs-card-big-file-icon-wrapper"], [1, "cmacs-card-big-file-extension-wrapper"], [1, "cmacs-card-big-file-extra"], [1, "cmacs-card-video-player-wrapper"], [3, "sources", "playerReady"], [1, "cmacs-card-video-description"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-video-title", 3, "title"], [1, "cmacs-card-files-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-label-recent", 3, "title"], ["class", "cmacs-card-file-extra", 4, "ngIf"], [1, "cmacs-card-file-extra"], [1, "cmacs-card-measure-icon-wrapper"], [1, "iconspan"], [1, "iconUILarge-Ruler"], [1, "cmacs-card-label-measure"], [2, "margin-bottom", "20px", "min-height", "25px", "display", "inline-flex"], ["class", "team-person-card", 3, "backgroundColor", "padding", "display", 4, "ngFor", "ngForOf"], ["class", "plus-team-card", 4, "ngIf"], [1, "team-person-card"], ["width", "30px", "height", "30px", 3, "src", 4, "ngIf"], ["width", "30px", "height", "30px", 3, "src"], [1, "plus-team-card"], [1, "projectimagecontainer"], ["class", "project-image", 3, "background-image", 4, "ngIf"], ["class", "cmacs-proj-card-div-Logo", 4, "ngIf"], [1, "project-status", 3, "cmacsGridType"], [1, "project-dates-wrapper"], [1, "project-dates-title"], [1, "project-dates", "project-dates-date"], [1, "iconArrowLarge-Arrow-Right", "project-dates"], [1, "project-card-progress-bar"], [1, "project-card-progress-bar-inner"], [1, "project-manager-details"], ["class", "manager-avatar", "width", "30px", "height", "30px", 3, "src", 4, "ngIf"], ["class", "cmacs-proj-avatar-text", 4, "ngIf"], [1, "project-manager-metadata"], [1, "manager-name", 3, "innerHtml"], [1, "manager-charge", 3, "innerHtml"], [1, "iconspan", "project-email-icon", 3, "click"], [1, "iconUILarge-Message"], [1, "project-image"], [1, "cmacs-proj-card-div-Logo"], [1, "cmacs-proj-card-text-Logo"], ["width", "30px", "height", "30px", 1, "manager-avatar", 3, "src"], [1, "cmacs-proj-avatar-text"], [1, "card-files-folders-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "card-files-folders-label", 3, "title", "click"], ["titleContainer", ""], [3, "keydown.enter", "keyup"], ["name", ""], ["class", "card-files-folder-extra iconspan", 4, "ngIf"], [1, "card-files-folder-extra", "iconspan"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function CmacsCardComponent_Template(rf, ctx) {
+        }, inputs: { bordered: "bordered", opened: "opened", editable: "editable", isRadio: "isRadio", loading: "loading", disabled: "disabled", hoverable: "hoverable", useDefaultContent: "useDefaultContent", sources: "sources", bodyStyle: "bodyStyle", cover: "cover", body: "body", actions: "actions", team: "team", file: "file", project: "project", projectDateLabel: "projectDateLabel", todo: "todo", weather: "weather", celcius: "celcius", type: "type", cmacsType: "cmacsType", cmacsIcon: "cmacsIcon", cmacsIconOpenedFolder: "cmacsIconOpenedFolder", cmacsIconClosedFolder: "cmacsIconClosedFolder", title: "title", labelTitle: "labelTitle", extra: "extra", selected: "selected", value: "value", todoUserAssigned: "todoUserAssigned" }, outputs: { playerReady: "playerReady", titleChange: "titleChange", ondlclickCard: "ondlclickCard", open: "open", close: "close", selectedChange: "selectedChange", goToModule: "goToModule", iconToDoClick: "iconToDoClick" }, exportAs: ["cmacsCard"], ngContentSelectors: _c2$d, decls: 8, vars: 6, consts: [["content", ""], ["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], ["cmacs-radio", "", 3, "ngModel", "disabled", "ngModelChange"], [1, "cmacs-weather-card-temp"], [1, "cmacs-weather-card-cloud-img", 3, "src", "alt"], [1, "cmacs-weather-card-description-wrapper"], [1, "cmacs-weather-card-description"], [1, "cmacs-weather-card-temp-min-max"], [1, "cmacs-weather-col-1-3"], [1, "iconUILarge-Rain"], [1, "iconUILarge-Humidity"], [1, "iconUILarge-Wind"], ["nz-row", "", 1, "todo-card-header"], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "12", 4, "ngIf"], [1, "todo-card-content"], [1, "cmacs-todo-card-title"], ["placement", "bottom", "cmacs-tooltip", "", 3, "title"], ["class", "cmacs-todo-card-project", 4, "ngIf"], ["nz-row", "", 1, "cmacs-todo-card-action"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-person", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-team", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-priority", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-association", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-attachments", 3, "click", 4, "ngIf"], ["nz-col", "", "nzSpan", "4", "class", "cmacs-todo-card-comments", 3, "click", 4, "ngIf"], [1, "cmacs-todo-card-date"], [1, "cmacs-todo-card-project"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-person"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngIf"], [1, "iconCreation-User"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-team"], [1, "iconUILarge-Team"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-priority"], ["nz-icon", "", 3, "nzType"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-association"], [3, "click"], [1, "iconUILarge-Link"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-attachments", 3, "click"], [1, "iconUILarge-Attached"], ["nz-col", "", "nzSpan", "4", 1, "cmacs-todo-card-comments", 3, "click"], [1, "iconUILarge-Comments"], [1, "cmacs-card-big-file-meta"], [1, "cmacs-card-big-file-description"], [1, "cmacs-card-big-file-description-left-panel"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-big-file-title", 3, "title"], [1, "cmacs-card-big-file-date"], [1, "cmacs-card-big-file-description-right-panel"], ["class", "cmacs-card-big-file-extra", 4, "ngIf"], [1, "cmacs-card-big-file-icon-wrapper"], [1, "cmacs-card-big-file-extension-wrapper"], [1, "cmacs-card-big-file-extra"], [1, "cmacs-card-video-player-wrapper"], [3, "sources", "playerReady"], [1, "cmacs-card-video-description"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-video-title", 3, "title"], [1, "cmacs-card-files-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-label-recent", 3, "title"], ["class", "cmacs-card-file-extra", 4, "ngIf"], [1, "cmacs-card-file-extra"], [1, "cmacs-card-measure-icon-wrapper"], [1, "iconspan"], [1, "iconUILarge-Ruler"], [1, "cmacs-card-label-measure"], [2, "margin-bottom", "20px", "min-height", "25px", "display", "inline-flex"], ["class", "team-person-card", 3, "backgroundColor", "padding", "display", 4, "ngFor", "ngForOf"], ["class", "plus-team-card", 4, "ngIf"], [1, "team-person-card"], ["width", "30px", "height", "30px", 3, "src", "alt", 4, "ngIf"], ["width", "30px", "height", "30px", 3, "src", "alt"], [1, "plus-team-card"], [1, "projectimagecontainer"], ["class", "project-image", 3, "background-image", 4, "ngIf"], ["class", "cmacs-proj-card-div-Logo", 4, "ngIf"], [1, "project-status", 3, "cmacsGridType"], [1, "project-dates-wrapper"], [1, "project-dates-title"], [1, "project-dates", "project-dates-date"], [1, "iconArrowLarge-Arrow-Right", "project-dates"], [1, "project-card-progress-bar"], [1, "project-card-progress-bar-inner"], [1, "project-manager-details"], ["class", "manager-avatar", "width", "30px", "height", "30px", 3, "alt", "src", 4, "ngIf"], ["class", "cmacs-proj-avatar-text", 4, "ngIf"], [1, "project-manager-metadata"], [1, "manager-name", 3, "innerHtml"], [1, "manager-charge", 3, "innerHtml"], [1, "iconspan", "project-email-icon", 3, "click"], [1, "iconUILarge-Message"], [1, "project-image"], [1, "cmacs-proj-card-div-Logo"], [1, "cmacs-proj-card-text-Logo"], ["width", "30px", "height", "30px", 1, "manager-avatar", 3, "alt", "src"], [1, "cmacs-proj-avatar-text"], [1, "card-files-folders-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "card-files-folders-label", 3, "title", "click"], ["titleContainer", ""], [3, "keydown.enter", "keyup"], ["name", ""], ["class", "card-files-folder-extra iconspan", 4, "ngIf"], [1, "card-files-folder-extra", "iconspan"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function CmacsCardComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef(_c1$n);
                 i0.ɵɵtemplate(0, CmacsCardComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, i0.ɵɵtemplateRefExtractor);
@@ -32145,6 +32170,7 @@
             var _r132 = i0.ɵɵreference(3);
             var field_r27 = i0.ɵɵnextContext(2).$implicit;
             var ctx_r122 = i0.ɵɵnextContext(2);
+            i0.ɵɵpropertyInterpolate("aria-label", field_r27.display);
             i0.ɵɵpropertyInterpolate("type", field_r27.button.style);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", !ctx_r122.isUndefined(field_r27.button.icon))("ngIfElse", _r132);
@@ -32261,7 +32287,7 @@
     function CmacsTableComponent_tr_5_td_5_ng_template_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵtemplate(0, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_0_Template, 3, 2, "ng-container", 3);
-            i0.ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_template_2_button_1_Template, 4, 3, "button", 49);
+            i0.ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_template_2_button_1_Template, 4, 4, "button", 49);
             i0.ɵɵtemplate(2, CmacsTableComponent_tr_5_td_5_ng_template_2_div_2_Template, 3, 6, "div", 50);
             i0.ɵɵtemplate(3, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_3_Template, 3, 3, "ng-container", 3);
             i0.ɵɵtemplate(4, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_Template, 3, 2, "ng-container", 3);
@@ -32863,7 +32889,7 @@
             if (rf & 1) {
                 i0.ɵɵlistener("mousedown", function CmacsTableComponent_mousedown_HostBindingHandler($event) { return ctx.handleMouseDown($event); }, false, i0.ɵɵresolveDocument);
             }
-        }, inputs: { size: "size", showTotal: "showTotal", pageSizeOptions: "pageSizeOptions", virtualScroll: "virtualScroll", virtualItemSize: "virtualItemSize", loadingDelay: "loadingDelay", loadingIndicator: "loadingIndicator", total: "total", title: "title", footer: "footer", noResult: "noResult", widthConfig: "widthConfig", pageIndex: "pageIndex", pageSize: "pageSize", data: "data", config: "config", fieldId: "fieldId", gridID: "gridID", paginationPosition: "paginationPosition", scroll: "scroll", printLandscape: "printLandscape", wrapLines: "wrapLines", frontPagination: "frontPagination", templateMode: "templateMode", bordered: "bordered", showPagination: "showPagination", loading: "loading", showSizeChanger: "showSizeChanger", hideOnSinglePage: "hideOnSinglePage", showQuickJumper: "showQuickJumper", simple: "simple", checkboxSelect: "checkboxSelect", inLineEdit: "inLineEdit", dataTable: "dataTable", showRate: "showRate", exportEvent: "exportEvent", rateCount: "rateCount", multiSelect: "multiSelect", contextmenu: "contextmenu" }, outputs: { configChange: "configChange", buttonClick: "buttonClick", rateChange: "rateChange", selectionChange: "selectionChange", ondlclickRow: "ondlclickRow", onclickRow: "onclickRow", onedit: "onedit", sortChange: "sortChange" }, exportAs: ["cmacsTable"], features: [i0.ɵɵNgOnChangesFeature], decls: 6, vars: 26, consts: [[3, "id"], [1, "cmacs-table", 3, "nzData", "nzShowTotal", "nzPageSizeOptions", "nzVirtualItemSize", "nzLoadingDelay", "nzLoadingIndicator", "nzTotal", "nzTitle", "nzFooter", "nzNoResult", "nzWidthConfig", "nzPageIndex", "nzPageSize", "nzPaginationPosition", "nzScroll", "nzFrontPagination", "nzTemplateMode", "nzShowPagination", "nzLoading", "nzShowSizeChanger", "nzHideOnSinglePage", "nzShowQuickJumper", "nzSimple"], ["gridComponent", ""], [4, "ngIf"], ["class", "cmacs-no-selection", 3, "ant-table-selected-row", "click", "touchstart", "contextmenu", 4, "ngFor", "ngForOf"], ["nzWidth", "40px", 3, "maxWidth", "minWidth", 4, "ngIf"], [3, "nzShowSort", "nzSort", "minWidth", "maxWidth", "nzWidth", "nzSortChange", "nzSortOrderChange", 4, "ngFor", "ngForOf"], [3, "minWidth", "maxWidth", "nzWidth", 4, "ngIf"], ["nzWidth", "40px"], ["cmacs-checkbox", "", 3, "ngModel", "indeterminate", "ngModelChange", "checkedChange"], [3, "nzShowSort", "nzSort", "nzWidth", "nzSortChange", "nzSortOrderChange"], [3, "nzWidth"], [1, "cmacs-no-selection", 3, "click", "touchstart", "contextmenu"], ["contextMenuTemplate", "cmacsDropdownMenu"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "maxWidth", "minWidth", 4, "ngIf"], [3, "ngClass", "maxWidth", 4, "ngFor", "ngForOf"], ["class", "cmacs-table-rating", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange"], [3, "ngClass"], [4, "ngIf", "ngIfElse"], ["componentTpl", ""], ["class", "editable-cell", 3, "maxWidth", 4, "ngIf", "ngIfElse"], ["editTpl", ""], [1, "editable-cell"], [1, "editable-cell-value-wrap"], [1, "iconUISmall-Edit", "cmacs-table-edit-icon", 3, "click"], ["style", "word-break: break-word;", 3, "cmacs-table-overflow-cell", "maxWidth", 4, "ngIf"], ["style", "word-break: break-word;", "cmacs-tooltip", "", "placement", "right", 3, "cmacs-table-overflow-cell", "maxWidth", "title", 4, "ngIf"], [2, "word-break", "break-word"], ["cmacs-tooltip", "", "placement", "right", 2, "word-break", "break-word", 3, "title"], ["type", "text", "cmacs-input", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["id", "testing2", "class", "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", 4, "ngIf"], ["class", "tableinput", 3, "format", "allowClear", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["style", "width: 100%;", "showSearch", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["type", "text", "cmacs-input", "", 1, "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInput", ""], ["id", "testing2", 1, "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInputNumber", ""], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange"], ["fieldTypeBool", ""], [1, "tableinput", 3, "format", "allowClear", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDatePicker", ""], ["showSearch", "", 1, "tableinput", 2, "width", "100%", 3, "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeSelect", ""], [3, "label", "value", 4, "ngFor", "ngForOf"], [3, "label", "value"], ["cmacs-button", "", 3, "type", "click", 4, "ngIf"], [3, "id", 4, "ngIf"], ["templateRefCeld", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-button", "", 3, "type", "click"], ["nz-icon", "", 3, "type", 4, "ngIf", "ngIfElse"], ["titleTpl", ""], ["nz-icon", "", 3, "type"], [3, "color", "cmacsGridType", "cmacsStatusType", "cmacsPriorityType"], [1, "cmacs-table-rating"], [3, "ngModel", "nzCount", "nzDisabled", "ngModelChange", "click"]], template: function CmacsTableComponent_Template(rf, ctx) {
+        }, inputs: { size: "size", showTotal: "showTotal", pageSizeOptions: "pageSizeOptions", virtualScroll: "virtualScroll", virtualItemSize: "virtualItemSize", loadingDelay: "loadingDelay", loadingIndicator: "loadingIndicator", total: "total", title: "title", footer: "footer", noResult: "noResult", widthConfig: "widthConfig", pageIndex: "pageIndex", pageSize: "pageSize", data: "data", config: "config", fieldId: "fieldId", gridID: "gridID", paginationPosition: "paginationPosition", scroll: "scroll", printLandscape: "printLandscape", wrapLines: "wrapLines", frontPagination: "frontPagination", templateMode: "templateMode", bordered: "bordered", showPagination: "showPagination", loading: "loading", showSizeChanger: "showSizeChanger", hideOnSinglePage: "hideOnSinglePage", showQuickJumper: "showQuickJumper", simple: "simple", checkboxSelect: "checkboxSelect", inLineEdit: "inLineEdit", dataTable: "dataTable", showRate: "showRate", exportEvent: "exportEvent", rateCount: "rateCount", multiSelect: "multiSelect", contextmenu: "contextmenu" }, outputs: { configChange: "configChange", buttonClick: "buttonClick", rateChange: "rateChange", selectionChange: "selectionChange", ondlclickRow: "ondlclickRow", onclickRow: "onclickRow", onedit: "onedit", sortChange: "sortChange" }, exportAs: ["cmacsTable"], features: [i0.ɵɵNgOnChangesFeature], decls: 6, vars: 26, consts: [[3, "id"], [1, "cmacs-table", 3, "nzData", "nzShowTotal", "nzPageSizeOptions", "nzVirtualItemSize", "nzLoadingDelay", "nzLoadingIndicator", "nzTotal", "nzTitle", "nzFooter", "nzNoResult", "nzWidthConfig", "nzPageIndex", "nzPageSize", "nzPaginationPosition", "nzScroll", "nzFrontPagination", "nzTemplateMode", "nzShowPagination", "nzLoading", "nzShowSizeChanger", "nzHideOnSinglePage", "nzShowQuickJumper", "nzSimple"], ["gridComponent", ""], [4, "ngIf"], ["class", "cmacs-no-selection", 3, "ant-table-selected-row", "click", "touchstart", "contextmenu", 4, "ngFor", "ngForOf"], ["nzWidth", "40px", 3, "maxWidth", "minWidth", 4, "ngIf"], [3, "nzShowSort", "nzSort", "minWidth", "maxWidth", "nzWidth", "nzSortChange", "nzSortOrderChange", 4, "ngFor", "ngForOf"], [3, "minWidth", "maxWidth", "nzWidth", 4, "ngIf"], ["nzWidth", "40px"], ["cmacs-checkbox", "", 3, "ngModel", "indeterminate", "ngModelChange", "checkedChange"], [3, "nzShowSort", "nzSort", "nzWidth", "nzSortChange", "nzSortOrderChange"], [3, "nzWidth"], [1, "cmacs-no-selection", 3, "click", "touchstart", "contextmenu"], ["contextMenuTemplate", "cmacsDropdownMenu"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "maxWidth", "minWidth", 4, "ngIf"], [3, "ngClass", "maxWidth", 4, "ngFor", "ngForOf"], ["class", "cmacs-table-rating", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange"], [3, "ngClass"], [4, "ngIf", "ngIfElse"], ["componentTpl", ""], ["class", "editable-cell", 3, "maxWidth", 4, "ngIf", "ngIfElse"], ["editTpl", ""], [1, "editable-cell"], [1, "editable-cell-value-wrap"], [1, "iconUISmall-Edit", "cmacs-table-edit-icon", 3, "click"], ["style", "word-break: break-word;", 3, "cmacs-table-overflow-cell", "maxWidth", 4, "ngIf"], ["style", "word-break: break-word;", "cmacs-tooltip", "", "placement", "right", 3, "cmacs-table-overflow-cell", "maxWidth", "title", 4, "ngIf"], [2, "word-break", "break-word"], ["cmacs-tooltip", "", "placement", "right", 2, "word-break", "break-word", 3, "title"], ["type", "text", "cmacs-input", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["id", "testing2", "class", "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", 4, "ngIf"], ["class", "tableinput", 3, "format", "allowClear", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["style", "width: 100%;", "showSearch", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["type", "text", "cmacs-input", "", 1, "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInput", ""], ["id", "testing2", 1, "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInputNumber", ""], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange"], ["fieldTypeBool", ""], [1, "tableinput", 3, "format", "allowClear", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDatePicker", ""], ["showSearch", "", 1, "tableinput", 2, "width", "100%", 3, "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeSelect", ""], [3, "label", "value", 4, "ngFor", "ngForOf"], [3, "label", "value"], ["role", "button", "cmacs-button", "", 3, "aria-label", "type", "click", 4, "ngIf"], [3, "id", 4, "ngIf"], ["templateRefCeld", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "button", "cmacs-button", "", 3, "aria-label", "type", "click"], ["nz-icon", "", 3, "type", 4, "ngIf", "ngIfElse"], ["titleTpl", ""], ["nz-icon", "", 3, "type"], [3, "color", "cmacsGridType", "cmacsStatusType", "cmacsPriorityType"], [1, "cmacs-table-rating"], [3, "ngModel", "nzCount", "nzDisabled", "ngModelChange", "click"]], template: function CmacsTableComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "nz-table", 1, 2);
@@ -38587,6 +38613,7 @@
         }
         if (rf & 2) {
             var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵpropertyInterpolate("aria-label", ctx_r0.saveBtnLabel);
             i0.ɵɵproperty("type", "primary");
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate(ctx_r0.saveBtnLabel);
@@ -38674,7 +38701,7 @@
         return CmacsGridConfigurationModalComponent;
     }());
     CmacsGridConfigurationModalComponent.ɵfac = function CmacsGridConfigurationModalComponent_Factory(t) { return new (t || CmacsGridConfigurationModalComponent)(i0.ɵɵdirectiveInject(i5$2.CookieService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i1$3.NzI18nService)); };
-    CmacsGridConfigurationModalComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsGridConfigurationModalComponent, selectors: [["cmacs-grid-configuration-modal"]], inputs: { visible: "visible", modalTitle: "modalTitle", header: "header", saveBtnLabel: "saveBtnLabel", cmacsStyle: "cmacsStyle", gridID: "gridID", data: "data" }, outputs: { visibleChange: "visibleChange", dataChange: "dataChange" }, exportAs: ["cmacsGridConfigurationModal"], features: [i0.ɵɵNgOnChangesFeature], decls: 4, vars: 8, consts: [["modalType", "interaction", 3, "visible", "title", "width", "zIndex", "cmacsStyle", "visibleChange"], [2, "padding", "10px 10px 60px 10px"], [3, "header", "data", "dataChange"], ["style", "margin-top: 20px; float: right", "cmacs-button", "", 3, "type", "click", 4, "ngIf"], ["cmacs-button", "", 2, "margin-top", "20px", "float", "right", 3, "type", "click"]], template: function CmacsGridConfigurationModalComponent_Template(rf, ctx) {
+    CmacsGridConfigurationModalComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsGridConfigurationModalComponent, selectors: [["cmacs-grid-configuration-modal"]], inputs: { visible: "visible", modalTitle: "modalTitle", header: "header", saveBtnLabel: "saveBtnLabel", cmacsStyle: "cmacsStyle", gridID: "gridID", data: "data" }, outputs: { visibleChange: "visibleChange", dataChange: "dataChange" }, exportAs: ["cmacsGridConfigurationModal"], features: [i0.ɵɵNgOnChangesFeature], decls: 4, vars: 8, consts: [["modalType", "interaction", 3, "visible", "title", "width", "zIndex", "cmacsStyle", "visibleChange"], [2, "padding", "10px 10px 60px 10px"], [3, "header", "data", "dataChange"], ["style", "margin-top: 20px; float: right", "cmacs-button", "", "role", "button", 3, "type", "aria-label", "click", 4, "ngIf"], ["cmacs-button", "", "role", "button", 2, "margin-top", "20px", "float", "right", 3, "type", "aria-label", "click"]], template: function CmacsGridConfigurationModalComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "cmacs-modal", 0);
                 i0.ɵɵlistener("visibleChange", function CmacsGridConfigurationModalComponent_Template_cmacs_modal_visibleChange_0_listener($event) { return ctx.visible = $event; })("visibleChange", function CmacsGridConfigurationModalComponent_Template_cmacs_modal_visibleChange_0_listener($event) { return ctx.onVisibleChange($event); });
@@ -38682,7 +38709,7 @@
                 i0.ɵɵelementStart(2, "cmacs-moveable-list", 2);
                 i0.ɵɵlistener("dataChange", function CmacsGridConfigurationModalComponent_Template_cmacs_moveable_list_dataChange_2_listener($event) { return ctx.data.fields = $event; })("dataChange", function CmacsGridConfigurationModalComponent_Template_cmacs_moveable_list_dataChange_2_listener($event) { return ctx.onDataChange($event); });
                 i0.ɵɵelementEnd();
-                i0.ɵɵtemplate(3, CmacsGridConfigurationModalComponent_button_3_Template, 2, 2, "button", 3);
+                i0.ɵɵtemplate(3, CmacsGridConfigurationModalComponent_button_3_Template, 2, 3, "button", 3);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
             }

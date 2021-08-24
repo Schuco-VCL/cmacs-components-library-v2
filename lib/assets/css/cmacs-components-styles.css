@@ -34,6 +34,16 @@
   border-radius: 0;
 }
 
+.cmacs-data-loader-select .ant-select-selection__placeholder,
+.cmacs-data-loader-select .ant-select-search__field__placeholder {
+  font-weight: normal;
+}
+
+.cmacs-data-loader-select .ant-select-selection-selected-value {
+  font-weight: normal;
+  font-family: 'Roboto-Medium';
+}
+
 .ant-picker {
     height: 34px;
 }
