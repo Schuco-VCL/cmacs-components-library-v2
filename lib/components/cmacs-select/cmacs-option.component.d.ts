@@ -8,10 +8,11 @@ export declare class CmacsOptionComponent implements OnChanges {
     divider: string;
     extendedData: string;
     nzValue: any;
+    visible: any;
     nzDisabled: boolean;
     nzCustomContent: boolean;
     ngOnChanges(): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsOptionComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsOptionComponent, "cmacs-option", ["cmacsOption"], { "nzLabel": "label"; "divider": "divider"; "extendedData": "extendedData"; "nzValue": "value"; "nzDisabled": "disabled"; "nzCustomContent": "customContent"; }, {}, never, ["*"]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsOptionComponent, "cmacs-option", ["cmacsOption"], { "nzLabel": "label"; "divider": "divider"; "extendedData": "extendedData"; "nzValue": "value"; "visible": "visible"; "nzDisabled": "disabled"; "nzCustomContent": "customContent"; }, {}, never, ["*"]>;
 }
 //# sourceMappingURL=cmacs-option.component.d.ts.map

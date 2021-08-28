@@ -16,6 +16,8 @@ export declare class CmacsSelectTopControlComponent implements OnInit, OnDestroy
     private destroy$;
     inputElement: ElementRef;
     inputElementCustom: ElementRef;
+    cmacsSelectTagWrapper: ElementRef;
+    cmacsSelectTagWrapperInner: ElementRef;
     nzShowSearch: boolean;
     showCustomSearch: boolean;
     showCmacsSearch: boolean;
@@ -37,6 +39,7 @@ export declare class CmacsSelectTopControlComponent implements OnInit, OnDestroy
         $implicit: any[];
     }>;
     nzTokenSeparators: string[];
+    checkWrapperSpace(option: CmacsOptionComponent): any;
     onClearSelection(e: MouseEvent): void;
     getSelectedValues(): any[];
     setInputValue(value: string): void;
