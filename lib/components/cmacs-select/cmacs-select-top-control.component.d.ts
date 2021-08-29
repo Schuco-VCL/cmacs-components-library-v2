@@ -35,11 +35,13 @@ export declare class CmacsSelectTopControlComponent implements OnInit, OnDestroy
     nzClearIcon: TemplateRef<void>;
     nzRemoveIcon: TemplateRef<void>;
     userDropdown: boolean;
+    maxTagCountAuto: boolean;
     nzMaxTagPlaceholder: TemplateRef<{
         $implicit: any[];
     }>;
     nzTokenSeparators: string[];
-    checkWrapperSpace(option: CmacsOptionComponent): any;
+    listOfCachedSelectedOption: any[];
+    checkWrapperSpace(): void;
     onClearSelection(e: MouseEvent): void;
     getSelectedValues(): any[];
     setInputValue(value: string): void;
@@ -60,6 +62,6 @@ export declare class CmacsSelectTopControlComponent implements OnInit, OnDestroy
     ngOnDestroy(): void;
     ngOnChanges(changes: SimpleChanges): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsSelectTopControlComponent, [null, null, null, { optional: true; host: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSelectTopControlComponent, "[cmacs-select-top-control]", ["cmacsSelectTopControl"], { "searchValue": "searchValue"; "nzShowSearch": "nzShowSearch"; "showCustomSearch": "showCustomSearch"; "showCmacsSearch": "showCmacsSearch"; "nzPlaceHolder": "nzPlaceHolder"; "tagsOut": "tagsOut"; "nzOpen": "nzOpen"; "cmacsOpen": "cmacsOpen"; "cmacsEditable": "cmacsEditable"; "action": "action"; "nzMaxTagCount": "nzMaxTagCount"; "nzAllowClear": "nzAllowClear"; "nzShowArrow": "nzShowArrow"; "nzLoading": "nzLoading"; "nzSuffixIcon": "nzSuffixIcon"; "nzClearIcon": "nzClearIcon"; "nzRemoveIcon": "nzRemoveIcon"; "userDropdown": "userDropdown"; "nzMaxTagPlaceholder": "nzMaxTagPlaceholder"; "nzTokenSeparators": "nzTokenSeparators"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSelectTopControlComponent, "[cmacs-select-top-control]", ["cmacsSelectTopControl"], { "searchValue": "searchValue"; "nzShowSearch": "nzShowSearch"; "showCustomSearch": "showCustomSearch"; "showCmacsSearch": "showCmacsSearch"; "nzPlaceHolder": "nzPlaceHolder"; "tagsOut": "tagsOut"; "nzOpen": "nzOpen"; "cmacsOpen": "cmacsOpen"; "cmacsEditable": "cmacsEditable"; "action": "action"; "nzMaxTagCount": "nzMaxTagCount"; "nzAllowClear": "nzAllowClear"; "nzShowArrow": "nzShowArrow"; "nzLoading": "nzLoading"; "nzSuffixIcon": "nzSuffixIcon"; "nzClearIcon": "nzClearIcon"; "nzRemoveIcon": "nzRemoveIcon"; "userDropdown": "userDropdown"; "maxTagCountAuto": "maxTagCountAuto"; "nzMaxTagPlaceholder": "nzMaxTagPlaceholder"; "nzTokenSeparators": "nzTokenSeparators"; }, {}, never, never>;
 }
 //# sourceMappingURL=cmacs-select-top-control.component.d.ts.map
