@@ -3024,18 +3024,30 @@ class CmacsSelectTopControlComponent {
         this.listOfCachedSelectedOption = [];
     }
     checkWrapperSpace() {
-        if (!this.nzSelectService.isMultipleOrTags || !this.maxTagCountAuto) {
-            return;
-        }
-        let tagsLength = 0;
-        for (let i = 0; i < this.nzSelectService.listOfCachedSelectedOption.length; i++) {
-            const option = this.nzSelectService.listOfCachedSelectedOption[i];
-            tagsLength += option.nzLabel.length * 7.6 + 30;
-            if (tagsLength + 34 > this.cmacsSelectTagWrapper.nativeElement.offsetWidth) {
-                this.nzMaxTagCount = i ? i - 1 : 0;
-                this.cdr.detectChanges();
-                return;
+        if (this.nzSelectService.isMultipleOrTags && this.maxTagCountAuto) {
+            this.nzMaxTagCount = undefined;
+            this.cdr.markForCheck();
+            const tagsOrdered = this.nzSelectService.listOfCachedSelectedOption.sort((a, b) => a.nzLabel.length - b.nzLabel.length);
+            this.listOfCachedSelectedOption = [...tagsOrdered];
+            let tagsLength = 0;
+            for (let i = 0; i < tagsOrdered.length; i++) {
+                const option = this.nzSelectService.listOfCachedSelectedOption[i];
+                const newLength = option.nzLabel.length * 7.6 + 30;
+                tagsLength += newLength;
+                if (tagsLength + 34 > this.cmacsSelectTagWrapper.nativeElement.offsetWidth) {
+                    if (tagsLength - newLength + 104 <= this.cmacsSelectTagWrapper.nativeElement.offsetWidth) {
+                        this.nzMaxTagCount = i ? i : 0;
+                    }
+                    else {
+                        this.nzMaxTagCount = i ? i - 1 : 0;
+                    }
+                    this.cdr.detectChanges();
+                    return;
+                }
             }
+        }
+        else {
+            this.listOfCachedSelectedOption = this.nzSelectService.listOfCachedSelectedOption;
         }
     }
     onClearSelection(e) {
@@ -3168,11 +3180,8 @@ class CmacsSelectTopControlComponent {
             }
         });
         this.nzSelectService.check$.pipe(takeUntil(this.destroy$)).subscribe(() => {
-            this.cdr.markForCheck();
-        });
-        this.nzSelectService.listOfSelectedValue$.pipe(takeUntil(this.destroy$)).subscribe(() => {
             this.checkWrapperSpace();
-            this.listOfCachedSelectedOption = this.nzSelectService.listOfCachedSelectedOption;
+            this.cdr.markForCheck();
         });
     }
     ngOnDestroy() {

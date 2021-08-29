@@ -3613,18 +3613,30 @@
             this.listOfCachedSelectedOption = [];
         }
         CmacsSelectTopControlComponent.prototype.checkWrapperSpace = function () {
-            if (!this.nzSelectService.isMultipleOrTags || !this.maxTagCountAuto) {
-                return;
-            }
-            var tagsLength = 0;
-            for (var i = 0; i < this.nzSelectService.listOfCachedSelectedOption.length; i++) {
-                var option = this.nzSelectService.listOfCachedSelectedOption[i];
-                tagsLength += option.nzLabel.length * 7.6 + 30;
-                if (tagsLength + 34 > this.cmacsSelectTagWrapper.nativeElement.offsetWidth) {
-                    this.nzMaxTagCount = i ? i - 1 : 0;
-                    this.cdr.detectChanges();
-                    return;
+            if (this.nzSelectService.isMultipleOrTags && this.maxTagCountAuto) {
+                this.nzMaxTagCount = undefined;
+                this.cdr.markForCheck();
+                var tagsOrdered = this.nzSelectService.listOfCachedSelectedOption.sort(function (a, b) { return a.nzLabel.length - b.nzLabel.length; });
+                this.listOfCachedSelectedOption = __spread(tagsOrdered);
+                var tagsLength = 0;
+                for (var i = 0; i < tagsOrdered.length; i++) {
+                    var option = this.nzSelectService.listOfCachedSelectedOption[i];
+                    var newLength = option.nzLabel.length * 7.6 + 30;
+                    tagsLength += newLength;
+                    if (tagsLength + 34 > this.cmacsSelectTagWrapper.nativeElement.offsetWidth) {
+                        if (tagsLength - newLength + 104 <= this.cmacsSelectTagWrapper.nativeElement.offsetWidth) {
+                            this.nzMaxTagCount = i ? i : 0;
+                        }
+                        else {
+                            this.nzMaxTagCount = i ? i - 1 : 0;
+                        }
+                        this.cdr.detectChanges();
+                        return;
+                    }
                 }
+            }
+            else {
+                this.listOfCachedSelectedOption = this.nzSelectService.listOfCachedSelectedOption;
             }
         };
         CmacsSelectTopControlComponent.prototype.onClearSelection = function (e) {
@@ -3770,11 +3782,8 @@
                 }
             });
             this.nzSelectService.check$.pipe(operators.takeUntil(this.destroy$)).subscribe(function () {
-                _this.cdr.markForCheck();
-            });
-            this.nzSelectService.listOfSelectedValue$.pipe(operators.takeUntil(this.destroy$)).subscribe(function () {
                 _this.checkWrapperSpace();
-                _this.listOfCachedSelectedOption = _this.nzSelectService.listOfCachedSelectedOption;
+                _this.cdr.markForCheck();
             });
         };
         CmacsSelectTopControlComponent.prototype.ngOnDestroy = function () {
