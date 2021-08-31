@@ -30722,9 +30722,16 @@
             while (child !== null) {
                 if (child === ancestor)
                     return true;
-                if (child.classList && child.classList.length > 0 && child.className && typeof child.className === 'string' &&
-                    child.className.indexOf('cdk-overlay-pane') >= 0)
+                if (child.classList && child.classList.length > 0 && child.className && typeof child.className === 'string'
+                    && child.className.indexOf('cdk-overlay-pane') >= 0) {
+                    for (var i = 0; i < child.childNodes.length; ++i) {
+                        var node_1 = child.childNodes[i];
+                        if (node_1.nodeName === 'CMACS-MODAL')
+                            return false;
+                    }
                     return true;
+                }
+                ;
                 child = child.parentNode;
             }
             return false;
@@ -31211,11 +31218,11 @@
                 try {
                     for (var _b = __values(subtree.children), _c = _b.next(); !_c.done; _c = _b.next()) {
                         var child = _c.value;
-                        var node_1 = this.getNode(child[this.fieldID]);
-                        if (node_1.selected === true) {
+                        var node_2 = this.getNode(child[this.fieldID]);
+                        if (node_2.selected === true) {
                             checked++;
                         }
-                        if (node_1.selected === -1) {
+                        if (node_2.selected === -1) {
                             indeterminate++;
                         }
                     }
@@ -32559,8 +32566,15 @@
                 if (child === ancestor)
                     return true;
                 if (child.classList && child.classList.length > 0 && child.className && typeof child.className === 'string'
-                    && child.className.indexOf('cdk-overlay-pane') >= 0)
+                    && child.className.indexOf('cdk-overlay-pane') >= 0) {
+                    for (var i = 0; i < child.childNodes.length; ++i) {
+                        var node_1 = child.childNodes[i];
+                        if (node_1.nodeName === 'CMACS-MODAL')
+                            return false;
+                    }
                     return true;
+                }
+                ;
                 child = child.parentNode;
             }
             return false;

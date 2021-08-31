@@ -27942,9 +27942,16 @@ class CmacsCompactTableComponent {
         while (child !== null) {
             if (child === ancestor)
                 return true;
-            if (child.classList && child.classList.length > 0 && child.className && typeof child.className === 'string' &&
-                child.className.indexOf('cdk-overlay-pane') >= 0)
+            if (child.classList && child.classList.length > 0 && child.className && typeof child.className === 'string'
+                && child.className.indexOf('cdk-overlay-pane') >= 0) {
+                for (let i = 0; i < child.childNodes.length; ++i) {
+                    const node = child.childNodes[i];
+                    if (node.nodeName === 'CMACS-MODAL')
+                        return false;
+                }
                 return true;
+            }
+            ;
             child = child.parentNode;
         }
         return false;
@@ -29626,8 +29633,15 @@ class CmacsTableComponent {
             if (child === ancestor)
                 return true;
             if (child.classList && child.classList.length > 0 && child.className && typeof child.className === 'string'
-                && child.className.indexOf('cdk-overlay-pane') >= 0)
+                && child.className.indexOf('cdk-overlay-pane') >= 0) {
+                for (let i = 0; i < child.childNodes.length; ++i) {
+                    const node = child.childNodes[i];
+                    if (node.nodeName === 'CMACS-MODAL')
+                        return false;
+                }
                 return true;
+            }
+            ;
             child = child.parentNode;
         }
         return false;
