@@ -13749,10 +13749,13 @@
             ];
             this.currentPositionX = 'start';
             this.currentPositionY = 'bottom';
-            this.scroll = function () {
-                _this.ngZone.run(function () {
-                    _this.hideOverlay();
-                });
+            this.scroll = function (e) {
+                var target = e.target;
+                if (!target.className || target.className.indexOf('ant-picker-time-panel-column') < 0) {
+                    _this.ngZone.run(function () {
+                        _this.hideOverlay();
+                    });
+                }
             };
             this.document = doc;
             this.origin = new i1$4.CdkOverlayOrigin(this.elementRef);

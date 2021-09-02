@@ -12408,10 +12408,13 @@ class CmacsPickerComponent {
         ];
         this.currentPositionX = 'start';
         this.currentPositionY = 'bottom';
-        this.scroll = () => {
-            this.ngZone.run(() => {
-                this.hideOverlay();
-            });
+        this.scroll = (e) => {
+            const target = e.target;
+            if (!target.className || target.className.indexOf('ant-picker-time-panel-column') < 0) {
+                this.ngZone.run(() => {
+                    this.hideOverlay();
+                });
+            }
         };
         this.document = doc;
         this.origin = new CdkOverlayOrigin(this.elementRef);

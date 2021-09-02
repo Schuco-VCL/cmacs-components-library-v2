@@ -59,7 +59,7 @@ export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnCh
     currentPositionY: VerticalConnectionPos;
     get realOpenState(): boolean;
     constructor(elementRef: ElementRef, dateHelper: DateHelperService, cdr: ChangeDetectorRef, platform: Platform, ngZone: NgZone, nzResizeObserver: NzResizeObserver, datePickerService: DatePickerService, doc: NzSafeAny);
-    scroll: () => void;
+    scroll: (e: Event) => void;
     setPanelWidth(): void;
     ngOnInit(): void;
     ngAfterViewInit(): void;
