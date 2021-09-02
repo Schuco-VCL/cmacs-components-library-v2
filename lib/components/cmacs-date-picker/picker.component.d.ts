@@ -1,6 +1,6 @@
 import { CdkConnectedOverlay, CdkOverlayOrigin, ConnectedOverlayPositionChange, ConnectionPositionPair, HorizontalConnectionPos, VerticalConnectionPos } from '@angular/cdk/overlay';
 import { Platform } from '@angular/cdk/platform';
-import { AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, QueryList, SimpleChanges, TemplateRef } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, NgZone, OnChanges, OnDestroy, OnInit, QueryList, SimpleChanges, TemplateRef } from '@angular/core';
 import { NzResizeObserver } from 'ng-zorro-antd/core/resize-observers';
 import { Direction } from '@angular/cdk/bidi';
 import { CandyDate, CompatibleValue } from 'ng-zorro-antd/core/time';
@@ -16,6 +16,7 @@ export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnCh
     private dateHelper;
     private cdr;
     private platform;
+    private ngZone;
     private nzResizeObserver;
     datePickerService: DatePickerService;
     noAnimation: boolean;
@@ -57,7 +58,8 @@ export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnCh
     currentPositionX: HorizontalConnectionPos;
     currentPositionY: VerticalConnectionPos;
     get realOpenState(): boolean;
-    constructor(elementRef: ElementRef, dateHelper: DateHelperService, cdr: ChangeDetectorRef, platform: Platform, nzResizeObserver: NzResizeObserver, datePickerService: DatePickerService, doc: NzSafeAny);
+    constructor(elementRef: ElementRef, dateHelper: DateHelperService, cdr: ChangeDetectorRef, platform: Platform, ngZone: NgZone, nzResizeObserver: NzResizeObserver, datePickerService: DatePickerService, doc: NzSafeAny);
+    scroll: () => void;
     setPanelWidth(): void;
     ngOnInit(): void;
     ngAfterViewInit(): void;
