@@ -145,7 +145,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     getCustomPadding(item: any, i: number): number;
     childOf(node: any, ancestor: any): boolean;
     endEditMode($event: KeyboardEvent, index: number, data?: any): void;
-    endEditModeNgModel(index: number, data?: any, property?: any): void;
+    endEditModeNgModel(index: number, data?: any, property?: any, field?: Field): void;
     ngModelChange(index: number, data?: any): void;
     getIndex(id: any): number;
     order: number;
