@@ -30778,7 +30778,7 @@
             if (field === void 0) { field = null; }
             if (this.expandable) {
                 data.cmacsEditedProp = property ? property : this.property;
-                if (field.mode === 'tagsSingleSelect') {
+                if (field && field.mode === 'tagsSingleSelect') {
                     data[field.property] = data[field.property].length ? data[field.property][0] : null;
                 }
                 this.onedit.emit(data);
@@ -30786,7 +30786,7 @@
             else {
                 var data_1 = this.data[index];
                 data_1.cmacsEditedProp = property ? property : this.property;
-                if (field.mode === 'tagsSingleSelect') {
+                if (field && field.mode === 'tagsSingleSelect') {
                     data_1[field.property] = data_1[field.property].length ? data_1[field.property][0] : null;
                 }
                 this.onedit.emit(this.data[index]);

@@ -27993,7 +27993,7 @@ class CmacsCompactTableComponent {
     endEditModeNgModel(index, data = null, property = null, field = null) {
         if (this.expandable) {
             data.cmacsEditedProp = property ? property : this.property;
-            if (field.mode === 'tagsSingleSelect') {
+            if (field && field.mode === 'tagsSingleSelect') {
                 data[field.property] = data[field.property].length ? data[field.property][0] : null;
             }
             this.onedit.emit(data);
@@ -28001,7 +28001,7 @@ class CmacsCompactTableComponent {
         else {
             const data = this.data[index];
             data.cmacsEditedProp = property ? property : this.property;
-            if (field.mode === 'tagsSingleSelect') {
+            if (field && field.mode === 'tagsSingleSelect') {
                 data[field.property] = data[field.property].length ? data[field.property][0] : null;
             }
             this.onedit.emit(this.data[index]);
