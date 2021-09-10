@@ -3,9 +3,11 @@ import { Platform } from '@angular/cdk/platform';
 import { AfterViewInit, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, ViewContainerRef } from '@angular/core';
 import { IndexableObject } from 'ng-zorro-antd/core/types';
 import { CmacsDropdownMenuComponent, NzPlacementType } from './dropdown-menu.component';
+import { DeviceDetectorService } from 'ngx-device-detector';
 import * as i0 from "@angular/core";
 export declare class CmacsDropDownDirective implements AfterViewInit, OnDestroy, OnChanges, OnInit {
     elementRef: ElementRef;
+    private deviceService;
     private overlay;
     private renderer;
     private viewContainerRef;
@@ -34,7 +36,7 @@ export declare class CmacsDropDownDirective implements AfterViewInit, OnDestroy,
     placement: NzPlacementType;
     readonly visibleChange: EventEmitter<boolean>;
     setDropdownMenuValue<T extends keyof CmacsDropdownMenuComponent>(key: T, value: CmacsDropdownMenuComponent[T]): void;
-    constructor(elementRef: ElementRef, overlay: Overlay, renderer: Renderer2, viewContainerRef: ViewContainerRef, platform: Platform);
+    constructor(elementRef: ElementRef, deviceService: DeviceDetectorService, overlay: Overlay, renderer: Renderer2, viewContainerRef: ViewContainerRef, platform: Platform);
     ngOnInit(): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;

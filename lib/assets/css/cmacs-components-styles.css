@@ -81,6 +81,7 @@ cmacs-timeline-datepicker.ant-tabs {
 cmacs-datetime-picker {
   border: solid 1px #dee0e5 !important;
   box-shadow: none !important;
+  width:100%;
 }
 
 .cmacs-datetime-picker-dropdown .ant-picker-dropdown {

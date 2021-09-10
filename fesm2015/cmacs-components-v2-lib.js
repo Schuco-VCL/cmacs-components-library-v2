@@ -35,6 +35,7 @@ import { NzDropDownDirective, NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { CdkDrag, CdkDragHandle, moveItemInArray, transferArrayItem, CdkDropListGroup, CdkDropList, DragDropModule } from '@angular/cdk/drag-drop';
 import { TemplatePortal, CdkPortalOutlet, ComponentPortal } from '@angular/cdk/portal';
 import { warnDeprecation, PREFIX, warn } from 'ng-zorro-antd/core/logger';
+import { DeviceDetectorService } from 'ngx-device-detector';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ɵr, ɵt, ɵa, ɵb, ɵf, ɵd, ɵe, ɵh, ɵk, ɵi, ɵm, ɵc, ɵp, VgCoreModule, VgControlsModule, VgOverlayPlayModule, VgBufferingModule } from 'ngx-videogular';
 import { EditorComponent, EditorModule } from '@tinymce/tinymce-angular';
@@ -6542,8 +6543,9 @@ CmacsDropdownButtonDirective.ɵdir = ɵɵdefineDirective({ type: CmacsDropdownBu
 
 const listOfPositions = [POSITION_MAP.bottomLeft, POSITION_MAP.bottomRight, POSITION_MAP.topRight, POSITION_MAP.topLeft];
 class CmacsDropDownDirective {
-    constructor(elementRef, overlay, renderer, viewContainerRef, platform) {
+    constructor(elementRef, deviceService, overlay, renderer, viewContainerRef, platform) {
         this.elementRef = elementRef;
+        this.deviceService = deviceService;
         this.overlay = overlay;
         this.renderer = renderer;
         this.viewContainerRef = viewContainerRef;
@@ -6593,7 +6595,11 @@ class CmacsDropDownDirective {
             /** merged mouse state **/
             const mergedMouseState$ = merge(menuMouseState$, hostMouseState$);
             /** host click state **/
-            const hostClickState$ = fromEvent(nativeElement, 'click').pipe(map(() => !this.visible));
+            const hostClickState$ = this.deviceService.isDesktop() ? fromEvent(nativeElement, 'click').pipe(map(() => !this.visible)) :
+                fromEvent(nativeElement, 'touchstart', {
+                    once: false,
+                    capture: true
+                }).pipe(map(() => !this.visible));
             /** visible state switch by cmacsTrigger **/
             const visibleStateByTrigger$ = this.cmacsTrigger$.pipe(switchMap(trigger => {
                 if (trigger === 'hover') {
@@ -6692,7 +6698,7 @@ class CmacsDropDownDirective {
         }
     }
 }
-CmacsDropDownDirective.ɵfac = function CmacsDropDownDirective_Factory(t) { return new (t || CmacsDropDownDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Overlay), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(Platform)); };
+CmacsDropDownDirective.ɵfac = function CmacsDropDownDirective_Factory(t) { return new (t || CmacsDropDownDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(DeviceDetectorService), ɵɵdirectiveInject(Overlay), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(Platform)); };
 CmacsDropDownDirective.ɵdir = ɵɵdefineDirective({ type: CmacsDropDownDirective, selectors: [["", "cmacs-dropdown", ""]], inputs: { dropdownMenu: "dropdownMenu", cmacsTrigger: "cmacsTrigger", matchWidthElement: "matchWidthElement", backdrop: "backdrop", hasBackdrop: "hasBackdrop", clickHide: "clickHide", disabled: "disabled", visible: "visible", overlayClassName: "overlayClassName", overlayStyle: "overlayStyle", placement: "placement" }, outputs: { visibleChange: "visibleChange" }, exportAs: ["cmacsDropdown"], features: [ɵɵNgOnChangesFeature] });
 __decorate([
     InputBoolean()
@@ -6715,7 +6721,7 @@ __decorate([
                 selector: '[cmacs-dropdown]',
                 exportAs: 'cmacsDropdown'
             }]
-    }], function () { return [{ type: ElementRef }, { type: Overlay }, { type: Renderer2 }, { type: ViewContainerRef }, { type: Platform }]; }, { dropdownMenu: [{
+    }], function () { return [{ type: ElementRef }, { type: DeviceDetectorService }, { type: Overlay }, { type: Renderer2 }, { type: ViewContainerRef }, { type: Platform }]; }, { dropdownMenu: [{
             type: Input
         }], cmacsTrigger: [{
             type: Input
