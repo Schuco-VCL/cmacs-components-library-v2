@@ -28746,8 +28746,11 @@ class CmacsCompactTableComponent {
     }
     transformDate(date) {
         const m = moment$2(date);
-        m.locale(this.i18n.getLocale().locale);
-        return m.format(this.i18n.getLocale().locale === 'de' ? 'DD/MM/YYYY' : 'MM/DD/YYYY');
+        if (m.isValid()) {
+            m.locale(this.i18n.getLocale().locale);
+            return m.format(this.i18n.getLocale().locale === 'de' ? 'DD/MM/YYYY' : 'MM/DD/YYYY');
+        }
+        return '';
     }
     selectTreeSingle(item) {
         if (!this.checkboxSelect) {
@@ -30022,8 +30025,11 @@ class CmacsTableComponent {
     }
     transformDate(date) {
         const m = moment$3(date);
-        m.locale(this.i18n.getLocale().locale);
-        return m.format(this.i18n.getLocale().locale === 'de' ? 'DD/MM/YYYY' : 'MM/DD/YYYY');
+        if (m.isValid()) {
+            m.locale(this.i18n.getLocale().locale);
+            return m.format(this.i18n.getLocale().locale === 'de' ? 'DD/MM/YYYY' : 'MM/DD/YYYY');
+        }
+        return '';
     }
 }
 CmacsTableComponent.ɵfac = function CmacsTableComponent_Factory(t) { return new (t || CmacsTableComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NzI18nService), ɵɵdirectiveInject(ExportAsService), ɵɵdirectiveInject(CmacsContextMenuService), ɵɵdirectiveInject(ExcelService), ɵɵdirectiveInject(UtilService), ɵɵdirectiveInject(DatePipe), ɵɵdirectiveInject(CookieService)); };

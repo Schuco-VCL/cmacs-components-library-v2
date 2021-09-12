@@ -31564,8 +31564,11 @@
         };
         CmacsCompactTableComponent.prototype.transformDate = function (date) {
             var m = moment$2(date);
-            m.locale(this.i18n.getLocale().locale);
-            return m.format(this.i18n.getLocale().locale === 'de' ? 'DD/MM/YYYY' : 'MM/DD/YYYY');
+            if (m.isValid()) {
+                m.locale(this.i18n.getLocale().locale);
+                return m.format(this.i18n.getLocale().locale === 'de' ? 'DD/MM/YYYY' : 'MM/DD/YYYY');
+            }
+            return '';
         };
         CmacsCompactTableComponent.prototype.selectTreeSingle = function (item) {
             if (!this.checkboxSelect) {
@@ -32966,8 +32969,11 @@
         };
         CmacsTableComponent.prototype.transformDate = function (date) {
             var m = moment$3(date);
-            m.locale(this.i18n.getLocale().locale);
-            return m.format(this.i18n.getLocale().locale === 'de' ? 'DD/MM/YYYY' : 'MM/DD/YYYY');
+            if (m.isValid()) {
+                m.locale(this.i18n.getLocale().locale);
+                return m.format(this.i18n.getLocale().locale === 'de' ? 'DD/MM/YYYY' : 'MM/DD/YYYY');
+            }
+            return '';
         };
         return CmacsTableComponent;
     }());
