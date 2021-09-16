@@ -31,6 +31,7 @@ export declare class CmacsKpiComponent implements AfterViewInit {
     sanitizeStyle(style: string): import("@angular/platform-browser").SafeStyle;
     getTotalCount(): number;
     getWidth(count: number): number;
+    getTotalWidth(): number;
     getColoredData(): any;
     static ɵfac: i0.ɵɵFactoryDef<CmacsKpiComponent, never>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsKpiComponent, "cmacs-kpi", ["cmacsKpi"], { "data": "data"; "title": "title"; "priority": "priority"; "type": "type"; "width": "width"; "showTotalCount": "showTotalCount"; "fixed": "fixed"; }, {}, never, never>;

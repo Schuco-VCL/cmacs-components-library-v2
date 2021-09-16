@@ -7225,7 +7225,7 @@ function CmacsKpiComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(2);
     ɵɵtextInterpolate(ctx_r1.title);
     ɵɵadvance(1);
-    ɵɵstyleProp("width", ctx_r1.width, "px");
+    ɵɵstyleProp("width", ctx_r1.getTotalWidth(), "px");
     ɵɵadvance(3);
     ɵɵtextInterpolate(ctx_r1.getTotalCount().toFixed(ctx_r1.fixed));
     ɵɵadvance(4);
@@ -7284,8 +7284,8 @@ class CmacsKpiComponent {
     ngAfterViewInit() {
         if (this.canvasRef) {
             const canvas = this.canvasRef.nativeElement;
-            canvas.width = this.width;
-            canvas.height = this.width;
+            canvas.width = this.getTotalWidth();
+            canvas.height = this.getTotalWidth();
             const ctx = canvas.getContext("2d");
             let start_angle = 0;
             let data = this.getColoredData();
@@ -7350,6 +7350,10 @@ class CmacsKpiComponent {
     }
     getWidth(count) {
         return count !== 0 ? Math.trunc(count * 100 / this.getTotalCount()) - 2 : 0;
+    }
+    getTotalWidth() {
+        const width = this.getTotalCount().toFixed(this.fixed).toString().length * 20;
+        return width <= 84 ? 84 : width;
     }
     getColoredData() {
         if (!this.priority) {

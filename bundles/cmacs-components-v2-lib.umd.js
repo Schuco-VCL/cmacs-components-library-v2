@@ -8219,7 +8219,7 @@
             i0.ɵɵadvance(2);
             i0.ɵɵtextInterpolate(ctx_r1.title);
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("width", ctx_r1.width, "px");
+            i0.ɵɵstyleProp("width", ctx_r1.getTotalWidth(), "px");
             i0.ɵɵadvance(3);
             i0.ɵɵtextInterpolate(ctx_r1.getTotalCount().toFixed(ctx_r1.fixed));
             i0.ɵɵadvance(4);
@@ -8286,8 +8286,8 @@
             var e_1, _a;
             if (this.canvasRef) {
                 var canvas = this.canvasRef.nativeElement;
-                canvas.width = this.width;
-                canvas.height = this.width;
+                canvas.width = this.getTotalWidth();
+                canvas.height = this.getTotalWidth();
                 var ctx = canvas.getContext("2d");
                 var start_angle = 0;
                 var data = this.getColoredData();
@@ -8362,6 +8362,10 @@
         };
         CmacsKpiComponent.prototype.getWidth = function (count) {
             return count !== 0 ? Math.trunc(count * 100 / this.getTotalCount()) - 2 : 0;
+        };
+        CmacsKpiComponent.prototype.getTotalWidth = function () {
+            var width = this.getTotalCount().toFixed(this.fixed).toString().length * 20;
+            return width <= 84 ? 84 : width;
         };
         CmacsKpiComponent.prototype.getColoredData = function () {
             if (!this.priority) {
