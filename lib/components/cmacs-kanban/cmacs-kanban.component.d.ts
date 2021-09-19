@@ -1,8 +1,10 @@
 import { EventEmitter, OnInit, TemplateRef } from '@angular/core';
 import { CdkDragDrop } from '@angular/cdk/drag-drop';
 import { KanbanBoard, KanbanColumn, KanbanItem, KanbanColumnTemplate } from './cmacs-kanban-definitions';
+import { DeviceDetectorService } from 'ngx-device-detector';
 import * as i0 from "@angular/core";
 export declare class CmacsKanbanComponent implements OnInit {
+    private deviceDetector;
     /** Items to display  */
     board: KanbanBoard;
     multiselect: boolean;
@@ -35,7 +37,8 @@ export declare class CmacsKanbanComponent implements OnInit {
     onColumnExpand: EventEmitter<KanbanColumn>;
     selectedItems: KanbanItem[];
     dragStartedColumn: KanbanColumn;
-    constructor();
+    mobile: boolean;
+    constructor(deviceDetector: DeviceDetectorService);
     ngOnInit(): void;
     getItemTemplate(id: string): TemplateRef<any>;
     getActionPanel(id: string): TemplateRef<any>;

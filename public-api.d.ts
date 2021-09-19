@@ -180,4 +180,9 @@ export * from './lib/components/cmacs-tabs/ptb-tabs-ink-bar.directive';
 export * from './lib/components/cmacs-tabs/ptb-tabs-nav.component';
 export * from './lib/components/cmacs-tree-select/cmacs-tree-select.component';
 export * from './lib/components/cmacs-tree-select/cmacs-tree-select.service';
+export * from './lib/components/cmacs-lightbox/directives/lightbox-img.directive';
+export * from './lib/components/cmacs-lightbox/directives/lightbox-video.directive';
+export * from './lib/components/cmacs-lightbox/services/lightbox-configuration.service';
+export * from './lib/components/cmacs-youtube/index';
+export * from './lib/components/cmacs-lazy-loading/index';
 //# sourceMappingURL=public-api.d.ts.map

@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('ngx-device-detector'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/form'), require('ng2-tel-input'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/core/resize-observers'), require('moment'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('xlsx'), require('ng-zorro-antd/table'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ngx-export-as'), require('ngx-cookie-service'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment/locale/en-ie'), require('@angular/cdk/collections'), require('html2canvas'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('ng-zorro-antd/skeleton'), require('@swimlane/ngx-charts'), require('angular-google-charts'), require('ng-zorro-antd/tree-select')) :
-    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', 'ngx-device-detector', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid', 'ng-zorro-antd/form', 'ng2-tel-input', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/core/resize-observers', 'moment', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/timeline', 'ng-zorro-antd/core/color', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'xlsx', 'ng-zorro-antd/table', 'ng-zorro-antd/upload', 'angular2-signaturepad', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'angular2-draggable', 'ng-zorro-antd/tabs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ngx-export-as', 'ngx-cookie-service', 'jspdf', 'jspdf-autotable', 'util', 'moment/locale/en-ie', '@angular/cdk/collections', 'html2canvas', 'ng-zorro-antd/rate', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', 'ng-zorro-antd/skeleton', '@swimlane/ngx-charts', 'angular-google-charts', 'ng-zorro-antd/tree-select'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i9, global.i1$1, global.i5$1, global.i4, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i4$5, global.radio, global.ng.cdk.overlay, global.i1$2, global.animation, global.i4$1, global.i1$3, global.i8, global.select, global.i6$2, global.i6, global.i2$3, global.ng.router, global.menu, global.i12, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.i1$5, global.ng.platformBrowser, global.i1$7, global.i3$1, global.i6$1, global.form, global.i3$2, global.alert, global.breadcrumb, global.time, global.i10, global.i3$3, global.moment_, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.i4$3, global.timeline, global.color, global.tag, global.popover, global.i4$4, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.card, global.i3$5, global.list, global.i1$8, global.i5$2, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i15$1, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$3, global.i2$5, global.i3$6, global.treeSelect));
-}(this, (function (exports, i0, i5, operators, rxjs, util, i1, i2, i2$1, i9, i1$1, i5$1, i4, checkbox, i2$2, slider, keycodes, i3, _switch, i4$5, radio, i1$4, i1$2, animation, i4$1, i1$3, i8, select, i6$2, i6, i2$3, i4$2, menu, i12, i2$4, portal, logger, i1$5, i1$6, i1$7, i3$1, i6$1, form, i3$2, alert, breadcrumb, time, i10, i3$3, moment_, datePicker, inputNumber, dateFns, polyfill, en, progress, i4$3, timeline, color, tag, popover, i4$4, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, card, i3$5, list, i1$8, i5$2, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i15$1, steps, scrolling, tree, cloneDeep, i5$3, i2$5, i3$6, treeSelect) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('ngx-device-detector'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/form'), require('ng2-tel-input'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/core/resize-observers'), require('moment'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('xlsx'), require('ng-zorro-antd/table'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ngx-export-as'), require('ngx-cookie-service'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment/locale/en-ie'), require('@angular/cdk/collections'), require('html2canvas'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('ng-zorro-antd/skeleton'), require('@swimlane/ngx-charts'), require('angular-google-charts'), require('ng-zorro-antd/tree-select'), require('@angular/animations'), require('hammerjs')) :
+    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', 'ngx-device-detector', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid', 'ng-zorro-antd/form', 'ng2-tel-input', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/core/resize-observers', 'moment', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/timeline', 'ng-zorro-antd/core/color', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'xlsx', 'ng-zorro-antd/table', 'ng-zorro-antd/upload', 'angular2-signaturepad', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'angular2-draggable', 'ng-zorro-antd/tabs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ngx-export-as', 'ngx-cookie-service', 'jspdf', 'jspdf-autotable', 'util', 'moment/locale/en-ie', '@angular/cdk/collections', 'html2canvas', 'ng-zorro-antd/rate', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', 'ng-zorro-antd/skeleton', '@swimlane/ngx-charts', 'angular-google-charts', 'ng-zorro-antd/tree-select', '@angular/animations', 'hammerjs'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i9, global.i1$1, global.i5$1, global.i4, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i4$5, global.radio, global.ng.cdk.overlay, global.i1$2, global.animation, global.i4$1, global.i1$3, global.i8, global.select, global.i6$2, global.i6, global.i2$3, global.ng.router, global.menu, global.i12, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.i1$5, global.ng.platformBrowser, global.i1$7, global.i3$1, global.i6$1, global.form, global.i3$2, global.alert, global.breadcrumb, global.time, global.i10, global.i3$3, global.moment_, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.i4$3, global.timeline, global.color, global.tag, global.popover, global.i4$4, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.card, global.i3$5, global.list, global.i1$8, global.i5$2, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i15$1, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$3, global.i2$5, global.i3$6, global.treeSelect, global.ng.animations, global.Hammer));
+}(this, (function (exports, i0, i5, operators, rxjs, util, i1, i2, i2$1, i9, i1$1, i5$1, i4, checkbox, i2$2, slider, keycodes, i3, _switch, i4$5, radio, i1$4, i1$2, animation, i4$1, i1$3, i8, select, i6$2, i6, i2$3, i4$2, menu, i12, i2$4, portal, logger, i1$5, i1$6, i1$7, i3$1, i6$1, form, i3$2, alert, breadcrumb, time, i10, i3$3, moment_, datePicker, inputNumber, dateFns, polyfill, en, progress, i4$3, timeline, color, tag, popover, i4$4, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, card, i3$5, list, i1$8, i5$2, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i15$1, steps, scrolling, tree, cloneDeep, i5$3, i2$5, i3$6, treeSelect, animations$1, Hammer) { 'use strict';
 
     function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -17939,7 +17939,14 @@
             i0.ɵɵproperty("ngIf", ctx_r6.getActionPanel(column_r1.id));
         }
     }
-    function CmacsKanbanComponent_div_4_div_7_ng_container_1_Template(rf, ctx) {
+    function CmacsKanbanComponent_div_4_div_7_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 34);
+            i0.ɵɵelement(1, "i", 35);
+            i0.ɵɵelementEnd();
+        }
+    }
+    function CmacsKanbanComponent_div_4_div_7_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainer(0);
         }
@@ -17947,10 +17954,11 @@
     var _c1$h = function (a0, a1) { return { item: a0, columnId: a1 }; };
     function CmacsKanbanComponent_div_4_div_7_Template(rf, ctx) {
         if (rf & 1) {
-            var _r26_1 = i0.ɵɵgetCurrentView();
+            var _r27_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 31);
-            i0.ɵɵlistener("cdkDragStarted", function CmacsKanbanComponent_div_4_div_7_Template_div_cdkDragStarted_0_listener() { i0.ɵɵrestoreView(_r26_1); var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r24 = i0.ɵɵnextContext(); return ctx_r24.setDragStartedColumn(column_r1); })("click", function CmacsKanbanComponent_div_4_div_7_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r26_1); var item_r22 = ctx.$implicit; var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r27 = i0.ɵɵnextContext(); return ctx_r27.clickItem(item_r22, column_r1.id); })("dblclick", function CmacsKanbanComponent_div_4_div_7_Template_div_dblclick_0_listener() { i0.ɵɵrestoreView(_r26_1); var item_r22 = ctx.$implicit; var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r29 = i0.ɵɵnextContext(); return ctx_r29.dblclickItem(item_r22, column_r1.id); });
-            i0.ɵɵtemplate(1, CmacsKanbanComponent_div_4_div_7_ng_container_1_Template, 1, 0, "ng-container", 32);
+            i0.ɵɵlistener("cdkDragStarted", function CmacsKanbanComponent_div_4_div_7_Template_div_cdkDragStarted_0_listener() { i0.ɵɵrestoreView(_r27_1); var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r25 = i0.ɵɵnextContext(); return ctx_r25.setDragStartedColumn(column_r1); })("click", function CmacsKanbanComponent_div_4_div_7_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r27_1); var item_r22 = ctx.$implicit; var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r28 = i0.ɵɵnextContext(); return ctx_r28.clickItem(item_r22, column_r1.id); })("dblclick", function CmacsKanbanComponent_div_4_div_7_Template_div_dblclick_0_listener() { i0.ɵɵrestoreView(_r27_1); var item_r22 = ctx.$implicit; var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r30 = i0.ɵɵnextContext(); return ctx_r30.dblclickItem(item_r22, column_r1.id); });
+            i0.ɵɵtemplate(1, CmacsKanbanComponent_div_4_div_7_div_1_Template, 2, 0, "div", 32);
+            i0.ɵɵtemplate(2, CmacsKanbanComponent_div_4_div_7_ng_container_2_Template, 1, 0, "ng-container", 33);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -17960,12 +17968,14 @@
             i0.ɵɵclassProp("task-selected", ctx_r7.isItemSelected(item_r22.id));
             i0.ɵɵproperty("cdkDragData", item_r22)("cdkDragDisabled", item_r22.disabled);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r7.getItemTemplate(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction2(6, _c1$h, item_r22, column_r1.id));
+            i0.ɵɵproperty("ngIf", ctx_r7.mobile);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r7.getItemTemplate(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction2(7, _c1$h, item_r22, column_r1.id));
         }
     }
     function CmacsKanbanComponent_div_4_ng_container_8_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementContainer(0, 33);
+            i0.ɵɵelementContainer(0, 36);
         }
         if (rf & 2) {
             var column_r1 = i0.ɵɵnextContext().$implicit;
@@ -17975,7 +17985,7 @@
     }
     function CmacsKanbanComponent_div_4_Template(rf, ctx) {
         if (rf & 1) {
-            var _r34_1 = i0.ɵɵgetCurrentView();
+            var _r35_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 5);
             i0.ɵɵtemplate(1, CmacsKanbanComponent_div_4_div_1_Template, 7, 5, "div", 6);
             i0.ɵɵtemplate(2, CmacsKanbanComponent_div_4_ng_container_2_Template, 1, 1, "ng-container", 7);
@@ -17983,8 +17993,8 @@
             i0.ɵɵtemplate(4, CmacsKanbanComponent_div_4_ng_container_4_Template, 1, 1, "ng-container", 9);
             i0.ɵɵtemplate(5, CmacsKanbanComponent_div_4_ng_container_5_Template, 1, 1, "ng-container", 9);
             i0.ɵɵelementStart(6, "div", 10);
-            i0.ɵɵlistener("cdkDropListDropped", function CmacsKanbanComponent_div_4_Template_div_cdkDropListDropped_6_listener($event) { i0.ɵɵrestoreView(_r34_1); var column_r1 = ctx.$implicit; var ctx_r33 = i0.ɵɵnextContext(); return ctx_r33.drop($event, column_r1.id); });
-            i0.ɵɵtemplate(7, CmacsKanbanComponent_div_4_div_7_Template, 2, 9, "div", 11);
+            i0.ɵɵlistener("cdkDropListDropped", function CmacsKanbanComponent_div_4_Template_div_cdkDropListDropped_6_listener($event) { i0.ɵɵrestoreView(_r35_1); var column_r1 = ctx.$implicit; var ctx_r34 = i0.ɵɵnextContext(); return ctx_r34.drop($event, column_r1.id); });
+            i0.ɵɵtemplate(7, CmacsKanbanComponent_div_4_div_7_Template, 3, 10, "div", 11);
             i0.ɵɵelementEnd();
             i0.ɵɵtemplate(8, CmacsKanbanComponent_div_4_ng_container_8_Template, 1, 1, "ng-container", 12);
             i0.ɵɵelementEnd();
@@ -18013,7 +18023,8 @@
         }
     }
     var CmacsKanbanComponent = /** @class */ (function () {
-        function CmacsKanbanComponent() {
+        function CmacsKanbanComponent(deviceDetector) {
+            this.deviceDetector = deviceDetector;
             this.multiselect = false;
             /**
              * Template for items to render. "item" object ist passed (see examples)
@@ -18044,6 +18055,8 @@
             this.onColumnExpand = new i0.EventEmitter();
             this.selectedItems = [];
             this.dragStartedColumn = null;
+            this.mobile = false;
+            this.mobile = deviceDetector.isMobile() || deviceDetector.isTablet();
         }
         CmacsKanbanComponent.prototype.ngOnInit = function () {
         };
@@ -18142,8 +18155,8 @@
         };
         return CmacsKanbanComponent;
     }());
-    CmacsKanbanComponent.ɵfac = function CmacsKanbanComponent_Factory(t) { return new (t || CmacsKanbanComponent)(); };
-    CmacsKanbanComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "ngStyle", "cdkDropListDropped"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) {
+    CmacsKanbanComponent.ɵfac = function CmacsKanbanComponent_Factory(t) { return new (t || CmacsKanbanComponent)(i0.ɵɵdirectiveInject(i1$5.DeviceDetectorService)); };
+    CmacsKanbanComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["id", "tasks-container", "cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "ngStyle", "cdkDropListDropped"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], ["class", "cmacs-kanban-item-drag-handler", "cdkDragHandle", "", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cdkDragHandle", "", 1, "cmacs-kanban-item-drag-handler"], [1, "iconArrowLarge-Full-View"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "div", 1);
@@ -18161,7 +18174,7 @@
                 i0.ɵɵadvance(3);
                 i0.ɵɵproperty("ngForOf", ctx.board.columns);
             }
-        }, directives: [i2$1.NgStyle, i2$4.CdkDropListGroup, i2$1.NgForOf, i2$1.NgClass, i2$1.NgIf, i2$1.NgTemplateOutlet, i2$4.CdkDropList, CmacsButtonComponent, i6$1.NzRowDirective, i6$1.NzColDirective, i2$4.CdkDrag], styles: [".root{height:100%}.board,.root{display:flex;flex-direction:column}.board{flex-grow:1;min-width:0;min-height:0}.board-name{font-size:20px;font-weight:700}.board-wrapper{overflow-x:auto}.board-column,.board-columns,.board-wrapper{display:flex;flex-grow:1}.board-column{flex-direction:column;flex-basis:0;border-radius:4px}.board-column:not(:first-child){margin-left:0}.column-header{padding:12px 15px 10px;font-family:Roboto-Regular;line-height:1;border-left:1px solid #dee0e5;box-shadow:0 3px 7px -3px rgba(5,6,6,.18);margin-bottom:10px}.column-title{text-transform:capitalize;color:#656c79;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 82px);display:inline-block}.column-title-items{color:#97a0ae!important;font-size:12px!important;font-family:Roboto-Medium!important}.column-shrink{height:20px!important;width:20px;padding-right:0!important;padding-left:0!important;margin-left:5px;float:right}.tasks-container{flex-grow:1;overflow-y:auto;margin-bottom:2px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.board-wrapper::-webkit-scrollbar,.tasks-container::-webkit-scrollbar{-webkit-appearance:none;width:7px;height:7px;-webkit-overflow-scrolling:auto}.board-wrapper::-webkit-scrollbar-thumb,.tasks-container::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.board-wrapper::-webkit-scrollbar-thumb:hover,.tasks-container::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.task{display:flex}.task.cdk-drag-preview{opacity:.9}.task-selected{border-color:#2a7cff}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating,.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.board-column.collapsed{min-width:37px!important;padding:0;margin:0 10px;flex-basis:0;flex-grow:0}.board-column.collapsed>.column-action-panel,.board-column.collapsed>.column-description-panel,.board-column.collapsed>.column-header,.board-column.collapsed>.column-header-template,.board-column.collapsed>.tasks-container{display:none}.column-header-collapsed{display:contents;height:100%}.column-header-collapsed-line{background-color:#acb3bf;width:1px;margin:0 auto}.column-header-collapsed-line-1{margin-top:14px;margin-bottom:14px;height:25px}.column-header-collapsed-line-2{margin-top:14px;height:inherit}.column-header-collapsed-text{transform:none;-ms-writing-mode:tb-lr;writing-mode:vertical-lr;margin:0 0 0 10px;text-transform:capitalize;color:#656c79;font-size:14px;font-weight:500;font-family:Roboto-Medium;display:table}.column-header-collapsed-text>*{display:table-cell;white-space:nowrap}.column-header .column-shrink{display:block}.column-shrink,.header-actions{height:100%!important}.column-shrink i{font-size:17px!important}"], encapsulation: 2 });
+        }, directives: [i2$1.NgStyle, i2$4.CdkDropListGroup, i2$1.NgForOf, i2$1.NgClass, i2$1.NgIf, i2$1.NgTemplateOutlet, i2$4.CdkDropList, CmacsButtonComponent, i6$1.NzRowDirective, i6$1.NzColDirective, i2$4.CdkDrag, i2$4.CdkDragHandle], styles: [".cmacs-kanban-item-drag-handler{position:absolute;top:5px;left:10px;cursor:-webkit-grab;cursor:grab;color:#656c79}.root{height:100%}.board,.root{display:flex;flex-direction:column}.board{flex-grow:1;min-width:0;min-height:0}.board-name{font-size:20px;font-weight:700}.board-wrapper{overflow-x:auto}.board-column,.board-columns,.board-wrapper{display:flex;flex-grow:1}.board-column{flex-direction:column;flex-basis:0;border-radius:4px}.board-column:not(:first-child){margin-left:0}.column-header{padding:12px 15px 10px;font-family:Roboto-Regular;line-height:1;border-left:1px solid #dee0e5;box-shadow:0 3px 7px -3px rgba(5,6,6,.18);margin-bottom:10px}.column-title{text-transform:capitalize;color:#656c79;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 82px);display:inline-block}.column-title-items{color:#97a0ae!important;font-size:12px!important;font-family:Roboto-Medium!important}.column-shrink{height:20px!important;width:20px;padding-right:0!important;padding-left:0!important;margin-left:5px;float:right}.tasks-container{flex-grow:1;overflow-y:auto;margin-bottom:2px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.board-wrapper::-webkit-scrollbar,.tasks-container::-webkit-scrollbar{-webkit-appearance:none;width:7px;height:7px;-webkit-overflow-scrolling:auto}.board-wrapper::-webkit-scrollbar-thumb,.tasks-container::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.board-wrapper::-webkit-scrollbar-thumb:hover,.tasks-container::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.task{display:flex;position:relative}.task.cdk-drag-preview{opacity:.9}.task-selected{border-color:#2a7cff}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating,.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.board-column.collapsed{min-width:37px!important;padding:0;margin:0 10px;flex-basis:0;flex-grow:0}.board-column.collapsed>.column-action-panel,.board-column.collapsed>.column-description-panel,.board-column.collapsed>.column-header,.board-column.collapsed>.column-header-template,.board-column.collapsed>.tasks-container{display:none}.column-header-collapsed{display:contents;height:100%}.column-header-collapsed-line{background-color:#acb3bf;width:1px;margin:0 auto}.column-header-collapsed-line-1{margin-top:14px;margin-bottom:14px;height:25px}.column-header-collapsed-line-2{margin-top:14px;height:inherit}.column-header-collapsed-text{transform:none;-ms-writing-mode:tb-lr;writing-mode:vertical-lr;margin:0 0 0 10px;text-transform:capitalize;color:#656c79;font-size:14px;font-weight:500;font-family:Roboto-Medium;display:table}.column-header-collapsed-text>*{display:table-cell;white-space:nowrap}.column-header .column-shrink{display:block}.column-shrink,.header-actions{height:100%!important}.column-shrink i{font-size:17px!important}"], encapsulation: 2 });
     __decorate([
         util.InputBoolean()
     ], CmacsKanbanComponent.prototype, "multiselect", void 0);
@@ -18181,7 +18194,7 @@
                         styleUrls: ['./cmacs-kanban.component.css'],
                         encapsulation: i0.ViewEncapsulation.None
                     }]
-            }], function () { return []; }, { board: [{
+            }], function () { return [{ type: i1$5.DeviceDetectorService }]; }, { board: [{
                     type: i0.Input
                 }], multiselect: [{
                     type: i0.Input
@@ -41271,6 +41284,2840 @@
                 }] });
     })();
 
+    var getWindow = function () { return window; };
+    var YoutubeApiService = /** @class */ (function () {
+        function YoutubeApiService() {
+            this.apiEmitter = new i0.EventEmitter();
+            this.hasLoaded = false;
+            this._window = getWindow();
+        }
+        YoutubeApiService.prototype.loadApi = function () {
+            var _this = this;
+            if (!this.hasLoaded) {
+                var scriptTag = this._window.document.createElement('script');
+                scriptTag.type = 'text/javascript';
+                scriptTag.src = 'https://www.youtube.com/iframe_api';
+                this._window.document.body.appendChild(scriptTag);
+                this._window['onYouTubeIframeAPIReady'] = function () {
+                    _this.apiEmitter.emit();
+                };
+                this.hasLoaded = true;
+            }
+        };
+        return YoutubeApiService;
+    }());
+    YoutubeApiService.ɵfac = function YoutubeApiService_Factory(t) { return new (t || YoutubeApiService)(); };
+    YoutubeApiService.ɵprov = i0.ɵɵdefineInjectable({ token: YoutubeApiService, factory: YoutubeApiService.ɵfac });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(YoutubeApiService, [{
+                type: i0.Injectable
+            }], function () { return []; }, null);
+    })();
+
+    var getWindow$1 = function () { return window; };
+    var YoutubePlayerService = /** @class */ (function () {
+        function YoutubePlayerService(zone, youtubeApi) {
+            this.zone = zone;
+            this.youtubeApi = youtubeApi;
+            this._window = getWindow$1();
+        }
+        YoutubePlayerService.prototype.initialise = function (playerId, config) {
+            var _this = this;
+            if (!this._player) {
+                if (this._window['YT'] === undefined) {
+                    this.youtubeApi.apiEmitter.subscribe(function () { return _this.zone.run(function () {
+                        _this._newPlayer(playerId, config);
+                    }); });
+                }
+                else {
+                    this.zone.run(function () { return _this._newPlayer(playerId, config); });
+                }
+            }
+        };
+        YoutubePlayerService.prototype._newPlayer = function (playerId, config) {
+            return this._player = new YT.Player(playerId, config);
+        };
+        return YoutubePlayerService;
+    }());
+    YoutubePlayerService.ɵfac = function YoutubePlayerService_Factory(t) { return new (t || YoutubePlayerService)(i0.ɵɵinject(i0.NgZone), i0.ɵɵinject(YoutubeApiService)); };
+    YoutubePlayerService.ɵprov = i0.ɵɵdefineInjectable({ token: YoutubePlayerService, factory: YoutubePlayerService.ɵfac });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(YoutubePlayerService, [{
+                type: i0.Injectable
+            }], function () { return [{ type: i0.NgZone }, { type: YoutubeApiService }]; }, null);
+    })();
+
+    var YoutubeComponent = /** @class */ (function () {
+        function YoutubeComponent(youtubeApi, youtubePlayer) {
+            this.youtubeApi = youtubeApi;
+            this.youtubePlayer = youtubePlayer;
+            this.ready = new i0.EventEmitter();
+            this.change = new i0.EventEmitter();
+            this.error = new i0.EventEmitter();
+            this._ready = new rxjs.BehaviorSubject(false);
+            this.youtubeApi.loadApi();
+            this._config = {
+                height: this.height ? this.height : 390,
+                width: this.width ? this.width : 390,
+                videoId: '',
+                playerVars: this.playerVars ? this.playerVars : {
+                    rel: 0,
+                    showinfo: 0
+                },
+                events: {
+                    onReady: this.onReady.bind(this),
+                    onError: this.onError.bind(this)
+                }
+            };
+        }
+        YoutubeComponent.prototype.ngOnChanges = function (changes) {
+            var _this = this;
+            if (changes['videoId'] && changes['videoId'].currentValue) {
+                this._config.videoId = changes['videoId'].currentValue;
+                this.youtubePlayer.initialise('lightbox-youtube-player', this._config);
+                this._ready.pipe(operators.filter(function (value) { return value; }), operators.first()).subscribe(function () {
+                    if (_this.videoId) {
+                        _this.ytPlayer.cueVideoById(_this.videoId);
+                    }
+                });
+            }
+        };
+        YoutubeComponent.prototype.onReady = function (event) {
+            var _this = this;
+            this.ytPlayer = event.target;
+            this._ready.next(true);
+            this.ytPlayer.addEventListener('onStateChange', function (e) {
+                _this.onChange(e);
+            });
+            this.ready.emit(event);
+        };
+        YoutubeComponent.prototype.onChange = function (event) {
+            this.change.emit(event);
+        };
+        YoutubeComponent.prototype.onError = function (event) {
+            this.error.emit(event);
+        };
+        YoutubeComponent.prototype.ngOnDestroy = function () {
+            if (this.ytPlayer) {
+                this.ytPlayer.destroy();
+            }
+        };
+        return YoutubeComponent;
+    }());
+    YoutubeComponent.ɵfac = function YoutubeComponent_Factory(t) { return new (t || YoutubeComponent)(i0.ɵɵdirectiveInject(YoutubeApiService), i0.ɵɵdirectiveInject(YoutubePlayerService)); };
+    YoutubeComponent.ɵcmp = i0.ɵɵdefineComponent({ type: YoutubeComponent, selectors: [["youtube"]], inputs: { videoId: "videoId", height: "height", width: "width", playerVars: "playerVars" }, outputs: { ready: "ready", change: "change", error: "error" }, features: [i0.ɵɵNgOnChangesFeature], decls: 1, vars: 0, consts: [["id", "lightbox-youtube-player"]], template: function YoutubeComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelement(0, "div", 0);
+            }
+        }, styles: ["youtube iframe{top:0;position:absolute;z-index:1;height:100%;width:100%}"], encapsulation: 2 });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(YoutubeComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'youtube',
+                        templateUrl: 'youtube.component.html',
+                        styleUrls: ['youtube.component.scss'],
+                        encapsulation: i0.ViewEncapsulation.None,
+                    }]
+            }], function () { return [{ type: YoutubeApiService }, { type: YoutubePlayerService }]; }, { videoId: [{
+                    type: i0.Input
+                }], height: [{
+                    type: i0.Input
+                }], width: [{
+                    type: i0.Input
+                }], playerVars: [{
+                    type: i0.Input
+                }], ready: [{
+                    type: i0.Output
+                }], change: [{
+                    type: i0.Output
+                }], error: [{
+                    type: i0.Output
+                }] });
+    })();
+
+    var YoutubeModule = /** @class */ (function () {
+        function YoutubeModule() {
+        }
+        return YoutubeModule;
+    }());
+    YoutubeModule.ɵfac = function YoutubeModule_Factory(t) { return new (t || YoutubeModule)(); };
+    YoutubeModule.ɵmod = i0.ɵɵdefineNgModule({ type: YoutubeModule });
+    YoutubeModule.ɵinj = i0.ɵɵdefineInjector({ providers: [
+            YoutubeApiService,
+            YoutubePlayerService
+        ], imports: [[
+                i2$1.CommonModule
+            ]] });
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(YoutubeModule, { declarations: [YoutubeComponent], imports: [i2$1.CommonModule], exports: [YoutubeComponent] }); })();
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(YoutubeModule, [{
+                type: i0.NgModule,
+                args: [{
+                        imports: [
+                            i2$1.CommonModule
+                        ],
+                        providers: [
+                            YoutubeApiService,
+                            YoutubePlayerService
+                        ],
+                        declarations: [
+                            YoutubeComponent
+                        ],
+                        exports: [
+                            YoutubeComponent
+                        ]
+                    }]
+            }], null, null);
+    })();
+
+    var _c0$1g = ["lightbox-button", ""];
+    var _c1$B = ["*"];
+    var BUTTON_HOST_ATTRIBUTES = [
+        'lightbox-button',
+        'lightbox-icon-button'
+    ];
+    var LightboxButtonComponent = /** @class */ (function () {
+        function LightboxButtonComponent(_elementRef) {
+            var e_1, _a;
+            this._elementRef = _elementRef;
+            this.disable = false;
+            this.hoverAnimation = 'leave';
+            this._isIconButton = this._hasHostAttributes('lightbox-icon-button');
+            try {
+                for (var BUTTON_HOST_ATTRIBUTES_1 = __values(BUTTON_HOST_ATTRIBUTES), BUTTON_HOST_ATTRIBUTES_1_1 = BUTTON_HOST_ATTRIBUTES_1.next(); !BUTTON_HOST_ATTRIBUTES_1_1.done; BUTTON_HOST_ATTRIBUTES_1_1 = BUTTON_HOST_ATTRIBUTES_1.next()) {
+                    var attr = BUTTON_HOST_ATTRIBUTES_1_1.value;
+                    if (this._hasHostAttributes(attr)) {
+                        _elementRef.nativeElement.classList.add(attr);
+                    }
+                }
+            }
+            catch (e_1_1) { e_1 = { error: e_1_1 }; }
+            finally {
+                try {
+                    if (BUTTON_HOST_ATTRIBUTES_1_1 && !BUTTON_HOST_ATTRIBUTES_1_1.done && (_a = BUTTON_HOST_ATTRIBUTES_1.return)) _a.call(BUTTON_HOST_ATTRIBUTES_1);
+                }
+                finally { if (e_1) throw e_1.error; }
+            }
+        }
+        LightboxButtonComponent.prototype.ngOnChanges = function () {
+            if (this.disable) {
+                this._elementRef.nativeElement.classList.add('disable');
+                if (this.hoverAnimation === 'enter') {
+                    this.hoverAnimation = 'leave';
+                }
+            }
+            else {
+                if (this._elementRef.nativeElement.classList.contains('disable')) {
+                    this._elementRef.nativeElement.classList.remove('disable');
+                }
+            }
+        };
+        LightboxButtonComponent.prototype._onMouseEnter = function () {
+            if (!this.disable) {
+                this.hoverAnimation = 'enter';
+            }
+        };
+        LightboxButtonComponent.prototype._onMouseLeave = function () {
+            this.hoverAnimation = 'leave';
+        };
+        LightboxButtonComponent.prototype._getHostElement = function () {
+            return this._elementRef.nativeElement;
+        };
+        LightboxButtonComponent.prototype._hasHostAttributes = function () {
+            var _this = this;
+            var attributes = [];
+            for (var _i = 0; _i < arguments.length; _i++) {
+                attributes[_i] = arguments[_i];
+            }
+            return attributes.some(function (attribute) { return _this._getHostElement().hasAttribute(attribute); });
+        };
+        return LightboxButtonComponent;
+    }());
+    LightboxButtonComponent.ɵfac = function LightboxButtonComponent_Factory(t) { return new (t || LightboxButtonComponent)(i0.ɵɵdirectiveInject(i0.ElementRef)); };
+    LightboxButtonComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxButtonComponent, selectors: [["button", "lightbox-button", ""], ["button", "lightbox-icon-button", ""]], hostBindings: function LightboxButtonComponent_HostBindings(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵlistener("mouseenter", function LightboxButtonComponent_mouseenter_HostBindingHandler() { return ctx._onMouseEnter(); })("mouseleave", function LightboxButtonComponent_mouseleave_HostBindingHandler() { return ctx._onMouseLeave(); });
+            }
+        }, inputs: { disable: "disable" }, features: [i0.ɵɵNgOnChangesFeature], attrs: _c0$1g, ngContentSelectors: _c1$B, decls: 2, vars: 1, consts: [[1, "button-focus-overlay"]], template: function LightboxButtonComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵprojectionDef();
+                i0.ɵɵelementStart(0, "div", 0);
+                i0.ɵɵprojection(1);
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("@hoverAnimation", ctx.hoverAnimation);
+            }
+        }, styles: ["[_nghost-%COMP%]{color:inherit;border:none;cursor:pointer;height:40px;width:40px;border-radius:50%;position:relative;background-color:transparent;padding:0;outline:none}[_nghost-%COMP%]   .button-focus-overlay[_ngcontent-%COMP%]{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:50%;padding:8px}.disable[_nghost-%COMP%]{opacity:.5;cursor:default}"], data: { animation: [
+                animations$1.trigger('hoverAnimation', [
+                    animations$1.state('enter', animations$1.style({ backgroundColor: 'rgba(255, 255, 255, 0.3)' })),
+                    animations$1.state('leave', animations$1.style({ backgroundColor: 'rgba(255, 255, 255, 0)' })),
+                    animations$1.transition('leave => enter', [
+                        animations$1.animate('.1s')
+                    ]),
+                    animations$1.transition('enter => leave', [
+                        animations$1.animate('.1s')
+                    ])
+                ])
+            ] } });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxButtonComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'button[lightbox-button], button[lightbox-icon-button]',
+                        templateUrl: 'lightbox-button.component.html',
+                        styleUrls: ['lightbox-button.component.scss'],
+                        animations: [
+                            animations$1.trigger('hoverAnimation', [
+                                animations$1.state('enter', animations$1.style({ backgroundColor: 'rgba(255, 255, 255, 0.3)' })),
+                                animations$1.state('leave', animations$1.style({ backgroundColor: 'rgba(255, 255, 255, 0)' })),
+                                animations$1.transition('leave => enter', [
+                                    animations$1.animate('.1s')
+                                ]),
+                                animations$1.transition('enter => leave', [
+                                    animations$1.animate('.1s')
+                                ])
+                            ])
+                        ],
+                        host: {
+                            '(mouseenter)': '_onMouseEnter()',
+                            '(mouseleave)': '_onMouseLeave()'
+                        }
+                    }]
+            }], function () { return [{ type: i0.ElementRef }]; }, { disable: [{
+                    type: i0.Input
+                }] });
+    })();
+
+    var Animator = /** @class */ (function () {
+        function Animator() {
+            this.animation = { value: 'state1' };
+            this._startBehaviorSubject = new rxjs.BehaviorSubject('state1');
+            this._doneBehaviorSubject = new rxjs.BehaviorSubject('state1');
+        }
+        Animator.prototype.animationStart = function (event) {
+            this._startBehaviorSubject.next(event.toState);
+        };
+        Animator.prototype.animationDone = function (event) {
+            this._doneBehaviorSubject.next(event.toState);
+        };
+        Animator.prototype.animate = function (params, startCb, doneCb) {
+            var animation = {
+                value: this.animation.value === 'state1' ? 'state2' : 'state1',
+                params: Object.assign({}, params)
+            };
+            this.animation = animation;
+            if (startCb) {
+                this._startBehaviorSubject.pipe(operators.filter(function (value) { return value === animation.value; }), operators.first()).subscribe(function () {
+                    startCb();
+                });
+            }
+            if (doneCb) {
+                this._doneBehaviorSubject.pipe(operators.filter(function (value) { return value === animation.value; }), operators.first()).subscribe(function () {
+                    doneCb();
+                });
+            }
+        };
+        return Animator;
+    }());
+
+    var LightboxSliceAnimator = /** @class */ (function (_super) {
+        __extends(LightboxSliceAnimator, _super);
+        function LightboxSliceAnimator() {
+            return _super.call(this) || this;
+        }
+        LightboxSliceAnimator.prototype.slice = function (offset, duration, startCb, doneCb) {
+            var params = {
+                left: offset,
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        return LightboxSliceAnimator;
+    }(Animator));
+
+    var LightboxAnimations = {
+        visibilityAnimation: animations$1.trigger('backgroundVisibility', [
+            animations$1.state('state1', animations$1.style({ opacity: '{{opacity}}' }), { params: { opacity: 0 } }),
+            animations$1.state('state2', animations$1.style({ opacity: '{{opacity}}' }), { params: { opacity: 0 } }),
+            animations$1.transition('* => *', [
+                animations$1.animate('{{duration}}s'),
+            ], { params: { duration: 0 } }),
+        ]),
+        sliceAnimation: animations$1.trigger('lightboxSlice', [
+            animations$1.state('state1', animations$1.style({ left: '{{left}}%' }), { params: { left: 0 } }),
+            animations$1.state('state2', animations$1.style({ left: '{{left}}%' }), { params: { left: 0 } }),
+            animations$1.transition('* => *', [
+                animations$1.animate('{{duration}}s')
+            ], { params: { duration: 0 } })
+        ])
+    };
+
+    var BackgroundVisibilityAnimator = /** @class */ (function (_super) {
+        __extends(BackgroundVisibilityAnimator, _super);
+        function BackgroundVisibilityAnimator() {
+            return _super.call(this) || this;
+        }
+        BackgroundVisibilityAnimator.prototype.hide = function (duration, startCb, doneCb) {
+            var params = {
+                opacity: 0,
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        BackgroundVisibilityAnimator.prototype.show = function (opacity, duration, startCb, doneCb) {
+            var params = {
+                opacity: opacity,
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        return BackgroundVisibilityAnimator;
+    }(Animator));
+
+    var Dimensions = /** @class */ (function () {
+        function Dimensions(width, height) {
+            this._height = height;
+            this._width = width;
+            this._ratio = this._width / this._height;
+        }
+        Object.defineProperty(Dimensions.prototype, "width", {
+            get: function () {
+                return this._width;
+            },
+            set: function (value) {
+                this._width = value;
+                this._ratio = this._width / this._height;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(Dimensions.prototype, "height", {
+            get: function () {
+                return this._height;
+            },
+            set: function (value) {
+                this._height = value;
+                this._ratio = this._width / this._height;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(Dimensions.prototype, "ratio", {
+            get: function () {
+                return this._ratio;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        return Dimensions;
+    }());
+
+    var LightboxConfigurationService = /** @class */ (function () {
+        function LightboxConfigurationService() {
+            this._configuration = {
+                controls: {
+                    toolbar: { position: 'top' },
+                    back: { icon: 'arrow_back' },
+                    navigation: { disable: false },
+                    jumpToStart: { disable: false, icon: 'first_page' },
+                    backward: { disable: false, icon: 'navigate_before' },
+                    itemIndex: { disable: false },
+                    forward: { disable: false, icon: 'navigate_next' },
+                    jumpToEnd: { disable: false, icon: 'last_page' },
+                    thumbnails: { disable: false, icon: 'list', position: 'right' },
+                    zoom: { disable: false },
+                    zoomIn: { disable: false, icon: 'add' },
+                    zoomOut: { disable: false, icon: 'remove' },
+                    feetToWidth: { disable: false, icon: 'zoom_in' },
+                    resetZoom: { disable: false, icon: 'zoom_out' },
+                },
+                animations: {
+                    toolbarShow: { duration: .4 },
+                    toolbarHide: { duration: .05 },
+                    backgroundFadeIn: { duration: .4, opacity: .9 },
+                    backgroundFadeOut: { duration: .05 },
+                    thumbnailsShow: { duration: .4 },
+                    thumbnailsHide: { duration: .05 },
+                    thumbnailsSlice: { duration: .4 },
+                    zoomShow: { duration: .4 },
+                    zoomHide: { duration: .05 },
+                    zoomIn: { duration: .4 },
+                    zoomOut: { duration: .4 },
+                    feetToWidth: { duration: .4 },
+                    resetZoom: { duration: .4 },
+                    itemSlice: { duration: .4 },
+                    itemOpen: { duration: .4 },
+                }
+            };
+        }
+        Object.defineProperty(LightboxConfigurationService.prototype, "controls", {
+            get: function () {
+                return this._configuration.controls;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(LightboxConfigurationService.prototype, "animations", {
+            get: function () {
+                return this._configuration.animations;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        return LightboxConfigurationService;
+    }());
+    LightboxConfigurationService.ɵfac = function LightboxConfigurationService_Factory(t) { return new (t || LightboxConfigurationService)(); };
+    LightboxConfigurationService.ɵprov = i0.ɵɵdefineInjectable({ token: LightboxConfigurationService, factory: LightboxConfigurationService.ɵfac });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxConfigurationService, [{
+                type: i0.Injectable
+            }], function () { return []; }, null);
+    })();
+
+    var ToolbarAnimations = {
+        visibilityAnimation: animations$1.trigger('toolbarVisibility', [
+            animations$1.state('state1', animations$1.style({ height: '{{height}}px' }), { params: { height: 0 } }),
+            animations$1.state('state2', animations$1.style({ height: '{{height}}px' }), { params: { height: 0 } }),
+            animations$1.transition('* => *', [
+                animations$1.animate('{{duration}}s')
+            ], { params: { duration: 0 } })
+        ])
+    };
+
+    var ToolbarVisibilityAnimator = /** @class */ (function (_super) {
+        __extends(ToolbarVisibilityAnimator, _super);
+        function ToolbarVisibilityAnimator() {
+            return _super.call(this) || this;
+        }
+        ToolbarVisibilityAnimator.prototype.show = function (duration, startCb, doneCb) {
+            var params = {
+                height: 64,
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        ToolbarVisibilityAnimator.prototype.hide = function (duration, startCb, doneCb) {
+            var params = {
+                height: 0,
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        return ToolbarVisibilityAnimator;
+    }(Animator));
+
+    function LightboxToolbarComponent_button_8_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r7_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 11);
+            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_8_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r7_1); var ctx_r6 = i0.ɵɵnextContext(); return ctx_r6.onFirst(); });
+            i0.ɵɵelementStart(1, "span", 2);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("disable", ctx_r0.pagination.current === 1);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r0.config.controls.jumpToStart.icon);
+        }
+    }
+    function LightboxToolbarComponent_button_9_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r9_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 12);
+            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_9_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r8 = i0.ɵɵnextContext(); return ctx_r8.onPrevious(); });
+            i0.ɵɵelementStart(1, "span", 2);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("disable", ctx_r1.pagination.current === 1);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r1.config.controls.backward.icon);
+        }
+    }
+    function LightboxToolbarComponent_span_10_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "span", 13);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r2 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate2("", ctx_r2.pagination == null ? null : ctx_r2.pagination.current, " / ", ctx_r2.pagination == null ? null : ctx_r2.pagination.count, "");
+        }
+    }
+    function LightboxToolbarComponent_button_11_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r11_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 14);
+            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_11_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r11_1); var ctx_r10 = i0.ɵɵnextContext(); return ctx_r10.onNext(); });
+            i0.ɵɵelementStart(1, "span", 2);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r3 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("disable", ctx_r3.pagination.current === ctx_r3.pagination.count);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r3.config.controls.forward.icon);
+        }
+    }
+    function LightboxToolbarComponent_button_12_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r13_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 15);
+            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_12_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r13_1); var ctx_r12 = i0.ɵɵnextContext(); return ctx_r12.onLast(); });
+            i0.ɵɵelementStart(1, "span", 2);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r4 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("disable", ctx_r4.pagination.current === ctx_r4.pagination.count);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r4.config.controls.jumpToEnd.icon);
+        }
+    }
+    function LightboxToolbarComponent_button_14_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r15_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 16);
+            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_14_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r15_1); var ctx_r14 = i0.ɵɵnextContext(); return ctx_r14.onThumbnailsToggle(); });
+            i0.ɵɵelementStart(1, "span", 2);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r5 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r5.config.controls.thumbnails.icon);
+        }
+    }
+    var LightboxToolbarComponent = /** @class */ (function () {
+        function LightboxToolbarComponent(_lightboxConfigurationService) {
+            this._lightboxConfigurationService = _lightboxConfigurationService;
+            this.nextEvent = new i0.EventEmitter();
+            this.previousEvent = new i0.EventEmitter();
+            this.firstEvent = new i0.EventEmitter();
+            this.lastEvent = new i0.EventEmitter();
+            this.closeEvent = new i0.EventEmitter();
+            this.thumbnailsToggleEvent = new i0.EventEmitter();
+            this._state = 'closed';
+        }
+        Object.defineProperty(LightboxToolbarComponent.prototype, "config", {
+            get: function () {
+                return this._lightboxConfigurationService;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        LightboxToolbarComponent.prototype.ngOnInit = function () {
+            this.toolbarVisibilityAnimator = new ToolbarVisibilityAnimator();
+        };
+        LightboxToolbarComponent.prototype.onNext = function () {
+            this.nextEvent.emit();
+        };
+        LightboxToolbarComponent.prototype.onPrevious = function () {
+            this.previousEvent.emit();
+        };
+        LightboxToolbarComponent.prototype.onFirst = function () {
+            this.firstEvent.emit();
+        };
+        LightboxToolbarComponent.prototype.onLast = function () {
+            this.lastEvent.emit();
+        };
+        LightboxToolbarComponent.prototype.onClose = function () {
+            this.closeEvent.emit();
+        };
+        LightboxToolbarComponent.prototype.onThumbnailsToggle = function () {
+            this.thumbnailsToggleEvent.emit();
+        };
+        LightboxToolbarComponent.prototype.open = function () {
+            if (this._state !== 'opened') {
+                this._state = 'opened';
+                this.toolbarVisibilityAnimator.show(this.config.animations.toolbarShow.duration);
+            }
+        };
+        LightboxToolbarComponent.prototype.close = function () {
+            if (this._state !== 'closed') {
+                this._state = 'closed';
+                this.toolbarVisibilityAnimator.hide(this.config.animations.toolbarHide.duration);
+            }
+        };
+        LightboxToolbarComponent.prototype.toggle = function () {
+            if (this._state === 'opened') {
+                this.close();
+            }
+            else {
+                this.open();
+            }
+        };
+        return LightboxToolbarComponent;
+    }());
+    LightboxToolbarComponent.ɵfac = function LightboxToolbarComponent_Factory(t) { return new (t || LightboxToolbarComponent)(i0.ɵɵdirectiveInject(LightboxConfigurationService)); };
+    LightboxToolbarComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxToolbarComponent, selectors: [["lightbox-toolbar"]], hostVars: 1, hostBindings: function LightboxToolbarComponent_HostBindings(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵsyntheticHostListener("@toolbarVisibility.start", function LightboxToolbarComponent_animation_toolbarVisibility_start_HostBindingHandler($event) { return ctx.toolbarVisibilityAnimator.animationStart($event); })("@toolbarVisibility.done", function LightboxToolbarComponent_animation_toolbarVisibility_done_HostBindingHandler($event) { return ctx.toolbarVisibilityAnimator.animationDone($event); });
+            }
+            if (rf & 2) {
+                i0.ɵɵsyntheticHostProperty("@toolbarVisibility", ctx.toolbarVisibilityAnimator.animation);
+            }
+        }, inputs: { title: "title", pagination: "pagination" }, outputs: { nextEvent: "nextEvent", previousEvent: "previousEvent", firstEvent: "firstEvent", lastEvent: "lastEvent", closeEvent: "closeEvent", thumbnailsToggleEvent: "thumbnailsToggleEvent" }, decls: 15, vars: 8, consts: [[1, "toolbar-container"], ["lightbox-icon-button", "", "title", "Close", 3, "tap"], [1, "material-icons"], [1, "toolbar-title"], [1, "nav-menu"], ["lightbox-icon-button", "", "title", "First", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Previous", 3, "disable", "tap", 4, "ngIf"], ["class", "nav-pagination", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Next", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Last", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "List", 3, "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "First", 3, "disable", "tap"], ["lightbox-icon-button", "", "title", "Previous", 3, "disable", "tap"], [1, "nav-pagination"], ["lightbox-icon-button", "", "title", "Next", 3, "disable", "tap"], ["lightbox-icon-button", "", "title", "Last", 3, "disable", "tap"], ["lightbox-icon-button", "", "title", "List", 3, "tap"]], template: function LightboxToolbarComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelementStart(0, "div", 0);
+                i0.ɵɵelementStart(1, "div");
+                i0.ɵɵelementStart(2, "button", 1);
+                i0.ɵɵlistener("tap", function LightboxToolbarComponent_Template_button_tap_2_listener() { return ctx.onClose(); });
+                i0.ɵɵelementStart(3, "span", 2);
+                i0.ɵɵtext(4);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(5, "span", 3);
+                i0.ɵɵtext(6);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(7, "div", 4);
+                i0.ɵɵtemplate(8, LightboxToolbarComponent_button_8_Template, 3, 2, "button", 5);
+                i0.ɵɵtemplate(9, LightboxToolbarComponent_button_9_Template, 3, 2, "button", 6);
+                i0.ɵɵtemplate(10, LightboxToolbarComponent_span_10_Template, 2, 2, "span", 7);
+                i0.ɵɵtemplate(11, LightboxToolbarComponent_button_11_Template, 3, 2, "button", 8);
+                i0.ɵɵtemplate(12, LightboxToolbarComponent_button_12_Template, 3, 2, "button", 9);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(13, "div");
+                i0.ɵɵtemplate(14, LightboxToolbarComponent_button_14_Template, 3, 1, "button", 10);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵadvance(4);
+                i0.ɵɵtextInterpolate(ctx.config.controls.back.icon);
+                i0.ɵɵadvance(2);
+                i0.ɵɵtextInterpolate(ctx.title);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngIf", !ctx.config.controls.navigation.disable && !ctx.config.controls.jumpToStart.disable);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", !ctx.config.controls.navigation.disable && !ctx.config.controls.backward.disable);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", !ctx.config.controls.navigation.disable && !ctx.config.controls.itemIndex.disable);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", !ctx.config.controls.navigation.disable && !ctx.config.controls.forward.disable);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", !ctx.config.controls.navigation.disable && !ctx.config.controls.jumpToEnd.disable);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngIf", !ctx.config.controls.thumbnails.disable);
+            }
+        }, directives: [LightboxButtonComponent, i2$1.NgIf], styles: ["[_nghost-%COMP%]{display:block;position:relative;overflow:hidden}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]{background-color:#000;color:#fff;height:64px;display:flex;align-content:center;justify-content:space-between;position:absolute;z-index:3;bottom:0;width:100%}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{display:flex;align-items:center}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]:first-child{flex:1 1 0%;justify-content:flex-start;overflow:hidden;padding-left:12px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .nav-menu[_ngcontent-%COMP%]{flex:0 0 auto;padding:0 12px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .nav-menu[_ngcontent-%COMP%]   .nav-pagination[_ngcontent-%COMP%]{margin:0 12px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]:last-child{flex:1 1 0%;justify-content:flex-end;padding-right:12px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .toolbar-title[_ngcontent-%COMP%]{overflow:hidden;margin-left:12px;white-space:nowrap;text-overflow:ellipsis;max-width:calc(100% - 52px)}@media (max-width:479px){[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .toolbar-title[_ngcontent-%COMP%]{display:none}}@media (max-width:359px){[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]:last-child{display:none}}"], data: { animation: [ToolbarAnimations.visibilityAnimation] } });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxToolbarComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'lightbox-toolbar',
+                        templateUrl: 'lightbox-toolbar.component.html',
+                        styleUrls: ['lightbox-toolbar.component.scss'],
+                        animations: [ToolbarAnimations.visibilityAnimation],
+                        host: {
+                            '[@toolbarVisibility]': 'toolbarVisibilityAnimator.animation',
+                            '(@toolbarVisibility.start)': 'toolbarVisibilityAnimator.animationStart($event)',
+                            '(@toolbarVisibility.done)': 'toolbarVisibilityAnimator.animationDone($event)'
+                        }
+                    }]
+            }], function () { return [{ type: LightboxConfigurationService }]; }, { nextEvent: [{
+                    type: i0.Output
+                }], previousEvent: [{
+                    type: i0.Output
+                }], firstEvent: [{
+                    type: i0.Output
+                }], lastEvent: [{
+                    type: i0.Output
+                }], closeEvent: [{
+                    type: i0.Output
+                }], thumbnailsToggleEvent: [{
+                    type: i0.Output
+                }], title: [{
+                    type: i0.Input
+                }], pagination: [{
+                    type: i0.Input
+                }] });
+    })();
+
+    var ZoomAnimations = {
+        visibilityAnimation: animations$1.trigger('zoomVisibility', [
+            animations$1.state('state1', animations$1.style({ height: '{{height}}px' }), { params: { height: 0 } }),
+            animations$1.state('state2', animations$1.style({ height: '{{height}}px' }), { params: { height: 0 } }),
+            animations$1.transition('* => *', [
+                animations$1.animate('{{duration}}s')
+            ], { params: { duration: 0 } })
+        ])
+    };
+
+    var ZoomVisibilityAnimator = /** @class */ (function (_super) {
+        __extends(ZoomVisibilityAnimator, _super);
+        function ZoomVisibilityAnimator() {
+            return _super.call(this) || this;
+        }
+        ZoomVisibilityAnimator.prototype.show = function (duration, startCb, doneCb) {
+            var params = {
+                height: 64,
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        ZoomVisibilityAnimator.prototype.hide = function (duration, startCb, doneCb) {
+            var params = {
+                height: 0,
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        return ZoomVisibilityAnimator;
+    }(Animator));
+
+    function LightboxZoomComponent_div_0_button_1_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r6_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 5);
+            i0.ɵɵlistener("tap", function LightboxZoomComponent_div_0_button_1_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r6_1); var ctx_r5 = i0.ɵɵnextContext(2); return ctx_r5.onZoomOut(); });
+            i0.ɵɵelementStart(1, "span", 6);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("disable", ctx_r1.disableZoomOut);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r1.config.controls.zoomOut.icon);
+        }
+    }
+    function LightboxZoomComponent_div_0_button_2_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r8_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 7);
+            i0.ɵɵlistener("tap", function LightboxZoomComponent_div_0_button_2_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r8_1); var ctx_r7 = i0.ɵɵnextContext(2); return ctx_r7.onResetZoom(); });
+            i0.ɵɵelementStart(1, "span", 6);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r2 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("disable", ctx_r2.disableResetZoom);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r2.config.controls.resetZoom.icon);
+        }
+    }
+    function LightboxZoomComponent_div_0_button_3_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r10_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 8);
+            i0.ɵɵlistener("tap", function LightboxZoomComponent_div_0_button_3_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r10_1); var ctx_r9 = i0.ɵɵnextContext(2); return ctx_r9.onFeetToWidth(); });
+            i0.ɵɵelementStart(1, "span", 6);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r3 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("disable", ctx_r3.disableFeetToWidth);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r3.config.controls.feetToWidth.icon);
+        }
+    }
+    function LightboxZoomComponent_div_0_button_4_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r12_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 9);
+            i0.ɵɵlistener("tap", function LightboxZoomComponent_div_0_button_4_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r12_1); var ctx_r11 = i0.ɵɵnextContext(2); return ctx_r11.onZoomIn(); });
+            i0.ɵɵelementStart(1, "span", 6);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r4 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("disable", ctx_r4.disableZoomIn);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r4.config.controls.zoomIn.icon);
+        }
+    }
+    function LightboxZoomComponent_div_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div");
+            i0.ɵɵtemplate(1, LightboxZoomComponent_div_0_button_1_Template, 3, 2, "button", 1);
+            i0.ɵɵtemplate(2, LightboxZoomComponent_div_0_button_2_Template, 3, 2, "button", 2);
+            i0.ɵɵtemplate(3, LightboxZoomComponent_div_0_button_3_Template, 3, 2, "button", 3);
+            i0.ɵɵtemplate(4, LightboxZoomComponent_div_0_button_4_Template, 3, 2, "button", 4);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r0.config.controls.zoomOut.disable);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r0.config.controls.resetZoom.disable);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r0.config.controls.feetToWidth.disable);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r0.config.controls.zoomIn.disable);
+        }
+    }
+    var LightboxZoomComponent = /** @class */ (function () {
+        function LightboxZoomComponent(_lightboxConfigurationService) {
+            this._lightboxConfigurationService = _lightboxConfigurationService;
+            this.zoomInEvent = new i0.EventEmitter();
+            this.zoomOutEvent = new i0.EventEmitter();
+            this.resetZoomEvent = new i0.EventEmitter();
+            this.feetToWidthEvent = new i0.EventEmitter();
+            this._state = 'closed';
+        }
+        Object.defineProperty(LightboxZoomComponent.prototype, "config", {
+            get: function () {
+                return this._lightboxConfigurationService;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        LightboxZoomComponent.prototype.ngOnInit = function () {
+            this.zoomVisibilityAnimator = new ZoomVisibilityAnimator();
+        };
+        LightboxZoomComponent.prototype.close = function () {
+            if (!this.config.controls.zoom.disable && this._state !== 'closed') {
+                this._state = 'closed';
+                this.zoomVisibilityAnimator.hide(this.config.animations.toolbarHide.duration);
+            }
+        };
+        LightboxZoomComponent.prototype.open = function () {
+            if (!this.config.controls.zoom.disable && this._state !== 'opened') {
+                this._state = 'opened';
+                this.zoomVisibilityAnimator.show(this.config.animations.zoomShow.duration);
+            }
+        };
+        LightboxZoomComponent.prototype.toggle = function () {
+            if (!this.config.controls.zoom.disable) {
+                if (this._state === 'opened') {
+                    this.close();
+                }
+                else {
+                    this.open();
+                }
+            }
+        };
+        LightboxZoomComponent.prototype.onZoomIn = function () {
+            if (!this.disableZoomIn) {
+                this.zoomInEvent.emit();
+            }
+        };
+        LightboxZoomComponent.prototype.onZoomOut = function () {
+            if (!this.disableZoomOut) {
+                this.zoomOutEvent.emit();
+            }
+        };
+        LightboxZoomComponent.prototype.onResetZoom = function () {
+            if (!this.disableResetZoom) {
+                this.resetZoomEvent.emit();
+            }
+        };
+        LightboxZoomComponent.prototype.onFeetToWidth = function () {
+            if (!this.disableFeetToWidth) {
+                this.feetToWidthEvent.emit();
+            }
+        };
+        return LightboxZoomComponent;
+    }());
+    LightboxZoomComponent.ɵfac = function LightboxZoomComponent_Factory(t) { return new (t || LightboxZoomComponent)(i0.ɵɵdirectiveInject(LightboxConfigurationService)); };
+    LightboxZoomComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxZoomComponent, selectors: [["lightbox-zoom"]], hostVars: 1, hostBindings: function LightboxZoomComponent_HostBindings(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵsyntheticHostListener("@zoomVisibility.start", function LightboxZoomComponent_animation_zoomVisibility_start_HostBindingHandler($event) { return ctx.zoomVisibilityAnimator.animationStart($event); })("@zoomVisibility.done", function LightboxZoomComponent_animation_zoomVisibility_done_HostBindingHandler($event) { return ctx.zoomVisibilityAnimator.animationDone($event); });
+            }
+            if (rf & 2) {
+                i0.ɵɵsyntheticHostProperty("@zoomVisibility", ctx.zoomVisibilityAnimator.animation);
+            }
+        }, inputs: { disableZoomIn: "disableZoomIn", disableZoomOut: "disableZoomOut", disableResetZoom: "disableResetZoom", disableFeetToWidth: "disableFeetToWidth" }, outputs: { zoomInEvent: "zoomInEvent", zoomOutEvent: "zoomOutEvent", resetZoomEvent: "resetZoomEvent", feetToWidthEvent: "feetToWidthEvent" }, decls: 1, vars: 1, consts: [[4, "ngIf"], ["lightbox-icon-button", "", "title", "Zoom out", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Reset zoom", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Feet to width", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Zoom in", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Zoom out", 3, "disable", "tap"], [1, "material-icons"], ["lightbox-icon-button", "", "title", "Reset zoom", 3, "disable", "tap"], ["lightbox-icon-button", "", "title", "Feet to width", 3, "disable", "tap"], ["lightbox-icon-button", "", "title", "Zoom in", 3, "disable", "tap"]], template: function LightboxZoomComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵtemplate(0, LightboxZoomComponent_div_0_Template, 5, 4, "div", 0);
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("ngIf", !ctx.config.controls.zoom.disable);
+            }
+        }, directives: [i2$1.NgIf, LightboxButtonComponent], styles: ["[_nghost-%COMP%]{color:#fff;height:64px;display:flex;align-items:center;align-content:center;justify-content:center;position:absolute;width:100%;z-index:2;pointer-events:none;overflow:hidden;bottom:12px}[_nghost-%COMP%] > div[_ngcontent-%COMP%]{pointer-events:auto;padding:3px;height:40px;width:auto;border-radius:3px;display:flex}[_nghost-%COMP%] > div[_ngcontent-%COMP%], [_nghost-%COMP%]   button[_ngcontent-%COMP%]{background-color:#000}"], data: { animation: [ZoomAnimations.visibilityAnimation] } });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxZoomComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'lightbox-zoom',
+                        templateUrl: 'lightbox-zoom.component.html',
+                        styleUrls: ['lightbox-zoom.component.scss'],
+                        animations: [ZoomAnimations.visibilityAnimation],
+                        host: {
+                            '[@zoomVisibility]': 'zoomVisibilityAnimator.animation',
+                            '(@zoomVisibility.start)': 'zoomVisibilityAnimator.animationStart($event)',
+                            '(@zoomVisibility.done)': 'zoomVisibilityAnimator.animationDone($event)'
+                        }
+                    }]
+            }], function () { return [{ type: LightboxConfigurationService }]; }, { zoomInEvent: [{
+                    type: i0.Output
+                }], zoomOutEvent: [{
+                    type: i0.Output
+                }], resetZoomEvent: [{
+                    type: i0.Output
+                }], feetToWidthEvent: [{
+                    type: i0.Output
+                }], disableZoomIn: [{
+                    type: i0.Input
+                }], disableZoomOut: [{
+                    type: i0.Input
+                }], disableResetZoom: [{
+                    type: i0.Input
+                }], disableFeetToWidth: [{
+                    type: i0.Input
+                }] });
+    })();
+
+    var ThumbnailsAnimations = {
+        visibilityAnimation: animations$1.trigger('thumbnailsVisibility', [
+            animations$1.state('state1', animations$1.style({ maxWidth: '{{maxWidth}}', maxHeight: '{{maxHeight}}' }), { params: { maxWidth: '0px', maxHeight: '0px' } }),
+            animations$1.state('state2', animations$1.style({ maxWidth: '{{maxWidth}}', maxHeight: '{{maxHeight}}' }), { params: { maxWidth: '0px', maxHeight: '0px' } }),
+            animations$1.transition('* => *', [
+                animations$1.animate('{{duration}}s')
+            ], { params: { duration: 0 } })
+        ]),
+        sliceAnimation: animations$1.trigger('thumbnailsSlice', [
+            animations$1.state('state1', animations$1.style({ top: '{{top}}px', left: '{{left}}px' }), { params: { top: 0, left: 0 } }),
+            animations$1.state('state2', animations$1.style({ top: '{{top}}px', left: '{{left}}px' }), { params: { top: 0, left: 0 } }),
+            animations$1.transition('* => *', [
+                animations$1.animate('{{duration}}s')
+            ], { params: { duration: 0 } })
+        ])
+    };
+
+    var ThumbnailsVisibilityAnimator = /** @class */ (function (_super) {
+        __extends(ThumbnailsVisibilityAnimator, _super);
+        function ThumbnailsVisibilityAnimator(direction, thickness) {
+            var _this = _super.call(this) || this;
+            _this._thickness = thickness;
+            _this.setDirection(direction);
+            return _this;
+        }
+        ThumbnailsVisibilityAnimator.prototype.setDirection = function (direction) {
+            this._direction = direction;
+            var params = {
+                maxHeight: direction === 'horizontal' ? '0px' : '100%',
+                maxWidth: direction === 'horizontal' ? '100%' : '0px',
+                duration: 0
+            };
+            this.animate(params, null, null);
+        };
+        ThumbnailsVisibilityAnimator.prototype.setThickness = function (duration, thickness) {
+            this._thickness = thickness;
+            var params = {
+                maxHeight: this._direction === 'horizontal' ? (this.animation.params.maxHeight === '0px' ? '0px' : thickness + 'px') : '100%',
+                maxWidth: this._direction === 'horizontal' ? '100%' : (this.animation.params.maxWidth === '0px' ? '0px' : thickness + 'px'),
+                duration: duration
+            };
+            this.animate(params, null, null);
+        };
+        ThumbnailsVisibilityAnimator.prototype.hide = function (duration, startCb, doneCb) {
+            var params = {
+                maxHeight: this._direction === 'horizontal' ? '0px' : '100%',
+                maxWidth: this._direction === 'horizontal' ? '100%' : '0px',
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        ThumbnailsVisibilityAnimator.prototype.show = function (duration, startCb, doneCb) {
+            var params = {
+                maxHeight: this._direction === 'horizontal' ? this._thickness + 'px' : '100%',
+                maxWidth: this._direction === 'horizontal' ? '100%' : this._thickness + 'px',
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        return ThumbnailsVisibilityAnimator;
+    }(Animator));
+
+    var ThumbnailsSliceAnimator = /** @class */ (function (_super) {
+        __extends(ThumbnailsSliceAnimator, _super);
+        function ThumbnailsSliceAnimator(direction) {
+            var _this = _super.call(this) || this;
+            _this.setDirection(direction);
+            return _this;
+        }
+        ThumbnailsSliceAnimator.prototype.setDirection = function (direction) {
+            this._direction = direction;
+            var params = {
+                top: direction === 'horizontal' ? 0 : 0,
+                left: direction === 'horizontal' ? 0 : 0,
+                duration: 0
+            };
+            this.animate(params, null, null);
+        };
+        ThumbnailsSliceAnimator.prototype.slice = function (offset, duration, startCb, doneCb) {
+            var params = {
+                top: this._direction === 'horizontal' ? 0 : offset,
+                left: this._direction === 'horizontal' ? offset : 0,
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        return ThumbnailsSliceAnimator;
+    }(Animator));
+
+    var _c0$1h = ["thumnailsContainer"];
+    var _c1$C = ["thumnailsList"];
+    var _c2$l = ["thumnails"];
+    var _c3$a = function (a0) { return { "active": a0 }; };
+    function LightboxThumbnailsComponent_div_4_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r6_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 4, 5);
+            i0.ɵɵlistener("tap", function LightboxThumbnailsComponent_div_4_Template_div_tap_0_listener() { i0.ɵɵrestoreView(_r6_1); var item_r3 = ctx.$implicit; var ctx_r5 = i0.ɵɵnextContext(); return ctx_r5.onTap(item_r3); });
+            i0.ɵɵelement(2, "img", 6);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var item_r3 = ctx.$implicit;
+            var ctx_r2 = i0.ɵɵnextContext();
+            i0.ɵɵstyleProp("width", ctx_r2.thumbnailsWidth)("height", ctx_r2.thumbnailsHeight);
+            i0.ɵɵproperty("ngClass", i0.ɵɵpureFunction1(7, _c3$a, item_r3 === ctx_r2.activeItem));
+            i0.ɵɵadvance(2);
+            i0.ɵɵpropertyInterpolate("title", item_r3.title);
+            i0.ɵɵproperty("src", ctx_r2.getItemSrc(item_r3), i0.ɵɵsanitizeUrl);
+        }
+    }
+    var WINDOW = new i0.InjectionToken('Window');
+    function _window() { return window; }
+    var LightboxThumbnailsComponent = /** @class */ (function () {
+        function LightboxThumbnailsComponent(_lightboxConfigurationService, _win) {
+            this._lightboxConfigurationService = _lightboxConfigurationService;
+            this._win = _win;
+            this.items = [];
+            this.selectEvent = new i0.EventEmitter();
+            this._state = 'closed';
+        }
+        LightboxThumbnailsComponent.prototype.ngOnInit = function () {
+            if (this._win.innerWidth <= 767) {
+                this.thickness = 80;
+            }
+            else if (this._win.innerWidth <= 1023) {
+                this.thickness = 120;
+            }
+            else if (this._win.innerWidth > 1023) {
+                this.thickness = 170;
+            }
+            this.checkThumbnailsDimensions();
+            this.thumbnailsVisibilityAnimator = new ThumbnailsVisibilityAnimator(this.direction, this.thickness);
+            this.thumbnailsSliceAnimator = new ThumbnailsSliceAnimator(this.direction);
+        };
+        Object.defineProperty(LightboxThumbnailsComponent.prototype, "direction", {
+            get: function () {
+                return this.config.controls.thumbnails.position === 'left' || this.config.controls.thumbnails.position === 'right' ? 'vertical' : 'horizontal';
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(LightboxThumbnailsComponent.prototype, "config", {
+            get: function () {
+                return this._lightboxConfigurationService;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        LightboxThumbnailsComponent.prototype.open = function () {
+            if (!this.config.controls.thumbnails.disable && this._state !== 'opened') {
+                this._state = 'opened';
+                this.thumbnailsVisibilityAnimator.show(this.config.animations.thumbnailsShow.duration, null, null);
+            }
+        };
+        LightboxThumbnailsComponent.prototype.close = function () {
+            if (!this.config.controls.thumbnails.disable && this._state !== 'closed') {
+                this._state = 'closed';
+                this.thumbnailsVisibilityAnimator.hide(this.config.animations.thumbnailsHide.duration, null, null);
+            }
+        };
+        LightboxThumbnailsComponent.prototype.toggle = function () {
+            if (!this.config.controls.thumbnails.disable) {
+                if (this._state === 'opened') {
+                    this.close();
+                }
+                else {
+                    this.open();
+                }
+            }
+        };
+        LightboxThumbnailsComponent.prototype.resize = function () {
+            var _this = this;
+            if (this._win.innerWidth <= 767 && this.thickness !== 80) {
+                this.thickness = 80;
+                this._refreshThickness();
+            }
+            else if (this._win.innerWidth <= 1023 && this._win.innerWidth > 767 && this.thickness !== 120) {
+                this.thickness = 120;
+                this._refreshThickness();
+            }
+            else if (this._win.innerWidth > 1023 && this.thickness !== 170) {
+                this.thickness = 170;
+                this._refreshThickness();
+            }
+            setTimeout(function () {
+                _this._animateSlice(_this.activeItem, 0);
+            }, 0);
+        };
+        LightboxThumbnailsComponent.prototype.onTap = function (item) {
+            if (item !== this.activeItem) {
+                this.selectEvent.emit(item);
+            }
+        };
+        LightboxThumbnailsComponent.prototype.selectItem = function (item) {
+            if (!this.config.controls.thumbnails.disable) {
+                this.activeItem = item;
+                this._animateSlice(this.activeItem, this.config.animations.itemSlice.duration);
+            }
+        };
+        LightboxThumbnailsComponent.prototype.onWheel = function (event) {
+            var top = this._thumnailsListRef.nativeElement.offsetTop - 12;
+            if (event.deltaY > 0) {
+                top -= 50;
+            }
+            else {
+                top += 50;
+            }
+            top = this._getTop(top);
+            this._thumnailsListRef.nativeElement.style.top = top + 'px';
+            this.thumbnailsSliceAnimator.animation.params.top = top;
+        };
+        LightboxThumbnailsComponent.prototype.onSwipe = function (event) {
+            if ((event.type === 'swipeleft' || event.type === 'swiperight') && this.direction === 'horizontal') {
+                var left = this._thumnailsListRef.nativeElement.offsetLeft - 12;
+                left += event.deltaX;
+                this.thumbnailsSliceAnimator.slice(this._getLeft(left), this.config.animations.thumbnailsSlice.duration);
+            }
+            if ((event.type === 'swipeup' || event.type === 'swipedown') && this.direction === 'vertical') {
+                var top = this._thumnailsListRef.nativeElement.offsetTop - 12;
+                top += event.deltaY;
+                this.thumbnailsSliceAnimator.slice(this._getTop(top), this.config.animations.thumbnailsSlice.duration);
+            }
+        };
+        LightboxThumbnailsComponent.prototype.getItemSrc = function (item) {
+            if (item.src) {
+                return item.src;
+            }
+            if (item.xsSrc) {
+                return item.xsSrc;
+            }
+            if (item.smSrc) {
+                return item.smSrc;
+            }
+            if (item.mdSrc) {
+                return item.mdSrc;
+            }
+            if (item.lgSrc) {
+                return item.lgSrc;
+            }
+            if (item.xlSrc) {
+                return item.xlSrc;
+            }
+            return '';
+        };
+        LightboxThumbnailsComponent.prototype.checkDirection = function () {
+            if (this.direction === 'vertical') {
+                this.thumbnailsSliceAnimator.setDirection('vertical');
+                this.thumbnailsVisibilityAnimator.setDirection('vertical');
+            }
+            else {
+                this.thumbnailsSliceAnimator.setDirection('horizontal');
+                this.thumbnailsVisibilityAnimator.setDirection('horizontal');
+            }
+        };
+        LightboxThumbnailsComponent.prototype.checkThumbnailsDimensions = function () {
+            if (this.direction === 'vertical') {
+                this.thumbnailsWidth = this.thickness + 'px';
+                this.thumbnailsHeight = 'auto';
+            }
+            else {
+                this.thumbnailsWidth = 'auto';
+                this.thumbnailsHeight = this.thickness + 'px';
+            }
+        };
+        LightboxThumbnailsComponent.prototype._refreshThickness = function () {
+            this.thumbnailsVisibilityAnimator.setThickness(0, this.thickness);
+            this.checkThumbnailsDimensions();
+        };
+        LightboxThumbnailsComponent.prototype._animateSlice = function (item, duration) {
+            var activeItemRef = this._thumnailsRef.toArray()[this.items.indexOf(item)];
+            if (this.direction === 'horizontal') {
+                var left = Math.round(((this._thumnailsContainerRef.nativeElement.clientWidth - activeItemRef.nativeElement.clientWidth) / 2) - activeItemRef.nativeElement.offsetLeft);
+                this.thumbnailsSliceAnimator.slice(this._getLeft(left), duration);
+            }
+            else {
+                var top = Math.round(((this._thumnailsContainerRef.nativeElement.clientHeight - activeItemRef.nativeElement.clientHeight) / 2) - activeItemRef.nativeElement.offsetTop);
+                this.thumbnailsSliceAnimator.slice(this._getTop(top), duration);
+            }
+        };
+        LightboxThumbnailsComponent.prototype._getTop = function (value) {
+            var top = value;
+            if (top < (this._thumnailsContainerRef.nativeElement.clientHeight - this._thumnailsListRef.nativeElement.clientHeight + 12)) {
+                top = this._thumnailsContainerRef.nativeElement.clientHeight - this._thumnailsListRef.nativeElement.clientHeight + 12;
+            }
+            if (top > 0) {
+                top = 0;
+            }
+            return top;
+        };
+        LightboxThumbnailsComponent.prototype._getLeft = function (value) {
+            var left = value;
+            if (left < (this._thumnailsContainerRef.nativeElement.clientWidth - this._thumnailsListRef.nativeElement.clientWidth + 12)) {
+                left = this._thumnailsContainerRef.nativeElement.clientWidth - this._thumnailsListRef.nativeElement.clientWidth + 12;
+            }
+            if (left > 0) {
+                left = 0;
+            }
+            return left;
+        };
+        return LightboxThumbnailsComponent;
+    }());
+    LightboxThumbnailsComponent.ɵfac = function LightboxThumbnailsComponent_Factory(t) { return new (t || LightboxThumbnailsComponent)(i0.ɵɵdirectiveInject(LightboxConfigurationService), i0.ɵɵdirectiveInject(WINDOW)); };
+    LightboxThumbnailsComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxThumbnailsComponent, selectors: [["lightbox-thumbnails"]], viewQuery: function LightboxThumbnailsComponent_Query(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵviewQuery(_c0$1h, 1);
+                i0.ɵɵviewQuery(_c1$C, 1);
+                i0.ɵɵviewQuery(_c2$l, 1);
+            }
+            if (rf & 2) {
+                var _t = void 0;
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx._thumnailsContainerRef = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx._thumnailsListRef = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx._thumnailsRef = _t);
+            }
+        }, hostVars: 1, hostBindings: function LightboxThumbnailsComponent_HostBindings(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵsyntheticHostListener("@thumbnailsVisibility.start", function LightboxThumbnailsComponent_animation_thumbnailsVisibility_start_HostBindingHandler($event) { return ctx.thumbnailsVisibilityAnimator.animationStart($event); })("@thumbnailsVisibility.done", function LightboxThumbnailsComponent_animation_thumbnailsVisibility_done_HostBindingHandler($event) { return ctx.thumbnailsVisibilityAnimator.animationDone($event); });
+            }
+            if (rf & 2) {
+                i0.ɵɵsyntheticHostProperty("@thumbnailsVisibility", ctx.thumbnailsVisibilityAnimator.animation);
+            }
+        }, inputs: { items: "items" }, outputs: { selectEvent: "selectEvent" }, features: [i0.ɵɵProvidersFeature([
+                { provide: WINDOW, useFactory: _window }
+            ])], decls: 5, vars: 2, consts: [[1, "thumbnail-container", 3, "swipeleft", "swiperight", "swipeup", "swipedown", "wheel"], ["thumnailsContainer", ""], ["thumnailsList", ""], ["class", "thumbnail", 3, "width", "height", "ngClass", "tap", 4, "ngFor", "ngForOf"], [1, "thumbnail", 3, "ngClass", "tap"], ["thumnails", ""], [3, "src", "title"]], template: function LightboxThumbnailsComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelementStart(0, "div", 0, 1);
+                i0.ɵɵlistener("swipeleft", function LightboxThumbnailsComponent_Template_div_swipeleft_0_listener($event) { return ctx.onSwipe($event); })("swiperight", function LightboxThumbnailsComponent_Template_div_swiperight_0_listener($event) { return ctx.onSwipe($event); })("swipeup", function LightboxThumbnailsComponent_Template_div_swipeup_0_listener($event) { return ctx.onSwipe($event); })("swipedown", function LightboxThumbnailsComponent_Template_div_swipedown_0_listener($event) { return ctx.onSwipe($event); })("wheel", function LightboxThumbnailsComponent_Template_div_wheel_0_listener($event) { return ctx.onWheel($event); });
+                i0.ɵɵelementStart(2, "div", null, 2);
+                i0.ɵɵlistener("@thumbnailsSlice.start", function LightboxThumbnailsComponent_Template_div_animation_thumbnailsSlice_start_2_listener($event) { return ctx.thumbnailsSliceAnimator.animationStart($event); })("@thumbnailsSlice.done", function LightboxThumbnailsComponent_Template_div_animation_thumbnailsSlice_done_2_listener($event) { return ctx.thumbnailsSliceAnimator.animationDone($event); });
+                i0.ɵɵtemplate(4, LightboxThumbnailsComponent_div_4_Template, 3, 9, "div", 3);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("@thumbnailsSlice", ctx.thumbnailsSliceAnimator.animation);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngForOf", ctx.items);
+            }
+        }, directives: [i2$1.NgForOf, i2$1.NgClass], styles: ["[_nghost-%COMP%]{background-color:#222;flex:1 1 0%;box-sizing:border-box;z-index:2;position:relative}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]{overflow:hidden}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{display:inline-block;position:relative}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]{display:inline-block;cursor:pointer}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{display:block;pointer-events:none}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail.active[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{cursor:default}@media (max-width:359px){[_nghost-%COMP%]{display:none}}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]{margin:12px 0 0;height:calc(100% - 24px)}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{flex-direction:column}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]{margin-bottom:12px}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{width:calc(100% - 24px);margin-left:12px;margin-right:12px}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail.active[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{width:calc(100% - 12px);margin-left:6px;margin-right:6px}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]{height:100%;margin:0 0 0 12px;width:calc(100% - 24px)}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{height:100%;white-space:nowrap}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]{margin-right:12px}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{height:calc(100% - 24px);margin-top:12px;margin-bottom:12px}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail.active[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{height:calc(100% - 12px);margin-top:6px;margin-bottom:6px}"], data: { animation: [ThumbnailsAnimations.visibilityAnimation, ThumbnailsAnimations.sliceAnimation] } });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxThumbnailsComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'lightbox-thumbnails',
+                        templateUrl: 'lightbox-thumbnails.component.html',
+                        styleUrls: ['lightbox-thumbnails.component.scss'],
+                        animations: [ThumbnailsAnimations.visibilityAnimation, ThumbnailsAnimations.sliceAnimation],
+                        providers: [
+                            { provide: WINDOW, useFactory: _window }
+                        ],
+                        host: {
+                            '[@thumbnailsVisibility]': 'thumbnailsVisibilityAnimator.animation',
+                            '(@thumbnailsVisibility.start)': 'thumbnailsVisibilityAnimator.animationStart($event)',
+                            '(@thumbnailsVisibility.done)': 'thumbnailsVisibilityAnimator.animationDone($event)'
+                        }
+                    }]
+            }], function () {
+            return [{ type: LightboxConfigurationService }, { type: undefined, decorators: [{
+                            type: i0.Inject,
+                            args: [WINDOW]
+                        }] }];
+        }, { items: [{
+                    type: i0.Input,
+                    args: ['items']
+                }], selectEvent: [{
+                    type: i0.Output
+                }], _thumnailsContainerRef: [{
+                    type: i0.ViewChild,
+                    args: ['thumnailsContainer']
+                }], _thumnailsListRef: [{
+                    type: i0.ViewChild,
+                    args: ['thumnailsList']
+                }], _thumnailsRef: [{
+                    type: i0.ViewChildren,
+                    args: ['thumnails']
+                }] });
+    })();
+
+    var Item = /** @class */ (function () {
+        function Item() {
+            this._dimensionsBehaviorSubject = new rxjs.BehaviorSubject(undefined);
+        }
+        Object.defineProperty(Item.prototype, "dimensions", {
+            get: function () {
+                return this._dimensionsBehaviorSubject.getValue();
+            },
+            set: function (value) {
+                this._dimensionsBehaviorSubject.next(value);
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(Item.prototype, "$dimensions", {
+            get: function () {
+                return this._dimensionsBehaviorSubject.asObservable();
+            },
+            enumerable: false,
+            configurable: true
+        });
+        return Item;
+    }());
+
+    var Video = /** @class */ (function (_super) {
+        __extends(Video, _super);
+        function Video() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        return Video;
+    }(Item));
+
+    var LightboxItemAnimations = {
+        zoomAnimation: animations$1.trigger('lightboxItemZoom', [
+            animations$1.state('state1', animations$1.style({ top: '{{offsetTop}}px', left: '{{offsetLeft}}px', width: '{{width}}%', height: 'auto' }), { params: { offsetLeft: 0, offsetTop: 0, width: 0 } }),
+            animations$1.state('state2', animations$1.style({ top: '{{offsetTop}}px', left: '{{offsetLeft}}px', width: '{{width}}%', height: 'auto' }), { params: { offsetLeft: 0, offsetTop: 0, width: 0 } }),
+            animations$1.transition('* => *', [
+                animations$1.animate('{{duration}}s')
+            ], { params: { duration: 0 } })
+        ])
+    };
+
+    var ZOOM_PERCENT = 10;
+    var LightboxItemZoomAnimator = /** @class */ (function (_super) {
+        __extends(LightboxItemZoomAnimator, _super);
+        function LightboxItemZoomAnimator() {
+            return _super.call(this) || this;
+        }
+        LightboxItemZoomAnimator.prototype.origin = function (itemOriginalDimensions, itemOriginalPosition, containerDimensions, startCb, doneCb) {
+            var offsetLeft = Math.round(itemOriginalPosition.offsetLeft + (itemOriginalDimensions.width - containerDimensions.width) / 2);
+            var offsetTop = Math.round(itemOriginalPosition.offsetTop + (itemOriginalDimensions.height - containerDimensions.height) / 2);
+            var params = {
+                width: Math.round(itemOriginalDimensions.width * 100 / containerDimensions.width),
+                offsetTop: offsetTop,
+                offsetLeft: offsetLeft,
+                duration: 0
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        LightboxItemZoomAnimator.prototype.zoom = function (width, itemOriginalDimensions, itemDimensions, containerDimensions, duration, startCb, doneCb) {
+            var params = {
+                width: width,
+                offsetLeft: this.animation.params ? this._getZoomOffsetLeft(itemDimensions, containerDimensions, this.animation.params.offsetLeft, itemOriginalDimensions.width * width / 100) : 0,
+                offsetTop: this.animation.params ? this._getZoomOffsetTop(itemDimensions, containerDimensions, this.animation.params.offsetTop, itemOriginalDimensions.height * width / 100) : 0,
+                duration: duration
+            };
+            this.animate(params, function () {
+                if (startCb) {
+                    startCb();
+                }
+            }, function () {
+                if (doneCb) {
+                    doneCb();
+                }
+            });
+        };
+        LightboxItemZoomAnimator.prototype._getZoomOffsetLeft = function (itemDimensions, containerDimensions, offset, width) {
+            if (containerDimensions.width >= width) {
+                return 0;
+            }
+            if (offset > (width - itemDimensions.width) / 2) {
+                offset = (width - itemDimensions.width) / 2;
+            }
+            if (offset < -1 * (width - itemDimensions.width) / 2) {
+                offset = -1 * (width - itemDimensions.width) / 2;
+            }
+            return offset;
+        };
+        LightboxItemZoomAnimator.prototype._getZoomOffsetTop = function (itemDimensions, containerDimensions, offset, height) {
+            if (containerDimensions.height >= height) {
+                return 0;
+            }
+            if (offset > (height - itemDimensions.height) / 2) {
+                offset = (height - itemDimensions.height) / 2;
+            }
+            if (offset < -1 * (height - itemDimensions.height) / 2) {
+                offset = -1 * (height - itemDimensions.height) / 2;
+            }
+            return offset;
+        };
+        return LightboxItemZoomAnimator;
+    }(Animator));
+
+    var DoomSensorService = /** @class */ (function () {
+        function DoomSensorService() {
+            var _this = this;
+            this._trackedItems = [];
+            this._testList = function () {
+                _this._trackedItems.forEach(function (item) {
+                    _this._testItem(item);
+                });
+            };
+            this._trackInterval = setInterval(this._testList, 100);
+        }
+        DoomSensorService.prototype.track = function (nativeElement, trackedProperties, callBack) {
+            if (this._trackedItems.find(function (item) { return item.nativeElement === nativeElement; })) {
+                throw new Error('Duplicate tracked element');
+            }
+            if (trackedProperties.width || trackedProperties.height || trackedProperties.top || trackedProperties.left) {
+                var trackedItem = {
+                    nativeElement: nativeElement,
+                    lastState: this._getState(nativeElement, trackedProperties),
+                    trackedProperties: trackedProperties,
+                    callBack: callBack
+                };
+                this._trackedItems.push(trackedItem);
+            }
+        };
+        DoomSensorService.prototype.untrack = function (nativeElement) {
+            var trackedItem = this._trackedItems.find(function (item) { return item.nativeElement === nativeElement; });
+            if (!trackedItem) {
+                throw new Error('tracked item not found');
+            }
+            var index = this._trackedItems.indexOf(trackedItem);
+            this._trackedItems.splice(index, 1);
+        };
+        DoomSensorService.prototype._testItem = function (trackedItem) {
+            var currentState = this._getState(trackedItem.nativeElement, trackedItem.trackedProperties);
+            if (trackedItem.lastState.width !== currentState.width ||
+                trackedItem.lastState.height !== currentState.height ||
+                trackedItem.lastState.top !== currentState.top ||
+                trackedItem.lastState.left !== currentState.left) {
+                trackedItem.lastState = currentState;
+                trackedItem.callBack();
+            }
+        };
+        DoomSensorService.prototype._getState = function (nativeElement, trackedProperties) {
+            var trackedItemState = {};
+            if (trackedProperties.width) {
+                trackedItemState.width = nativeElement.clientWidth;
+            }
+            if (trackedProperties.height) {
+                trackedItemState.height = nativeElement.clientHeight;
+            }
+            if (trackedProperties.top) {
+                trackedItemState.top = Math.round(nativeElement.getBoundingClientRect().top);
+            }
+            if (trackedProperties.left) {
+                trackedItemState.left = Math.round(nativeElement.getBoundingClientRect().left);
+            }
+            return trackedItemState;
+        };
+        return DoomSensorService;
+    }());
+    DoomSensorService.ɵfac = function DoomSensorService_Factory(t) { return new (t || DoomSensorService)(); };
+    DoomSensorService.ɵprov = i0.ɵɵdefineInjectable({ token: DoomSensorService, factory: DoomSensorService.ɵfac });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(DoomSensorService, [{
+                type: i0.Injectable
+            }], function () { return []; }, null);
+    })();
+
+    var XS_BREAKPOINT = 150;
+    var SM_BREAKPOINT = 300;
+    var MD_BREAKPOINT = 600;
+    var LG_BREAKPOINT = 1200;
+    var LazyLoadingDirective = /** @class */ (function () {
+        function LazyLoadingDirective(_doomSensorService, _elementRef) {
+            this._doomSensorService = _doomSensorService;
+            this._elementRef = _elementRef;
+        }
+        LazyLoadingDirective.prototype.ngOnInit = function () {
+            if (!this.xsSrc && !this.smSrc && !this.mdSrc && !this.lgSrc && !this.xlSrc && !this.src) {
+                throw new Error("At least one of this attributes must be defined 'xs-src | sm-src | md-src | lg-src | xl-src | src'");
+            }
+            if (!this.xsBreakpoint) {
+                this.xsBreakpoint = XS_BREAKPOINT;
+            }
+            if (!this.smBreakpoint) {
+                this.smBreakpoint = SM_BREAKPOINT;
+            }
+            if (!this.mdBreakpoint) {
+                this.mdBreakpoint = MD_BREAKPOINT;
+            }
+            if (!this.lgBreakpoint) {
+                this.lgBreakpoint = LG_BREAKPOINT;
+            }
+            if (this.src) {
+                this._elementRef.nativeElement.src = this.src;
+                this._elementRef.nativeElement.style.background = 'url(' + this.src + ')';
+            }
+        };
+        LazyLoadingDirective.prototype.ngAfterViewInit = function () {
+            var _this = this;
+            this._setSrc();
+            var trackedProperties = {
+                width: true,
+                height: true,
+                top: true,
+                left: true
+            };
+            this._doomSensorService.track(this._elementRef.nativeElement, trackedProperties, function () {
+                _this._setSrc();
+            });
+        };
+        LazyLoadingDirective.prototype.ngOnDestroy = function () {
+            this._doomSensorService.untrack(this._elementRef.nativeElement);
+        };
+        LazyLoadingDirective.prototype._setSrc = function () {
+            if (this._isInViewPort() || this.load) {
+                var width = this._elementRef.nativeElement.clientWidth;
+                if (this.xlSrc && width > this.lgBreakpoint) {
+                    if (!this._currentResolution || this._currentResolution !== 'xl') {
+                        this._currentResolution = 'xl';
+                        this._elementRef.nativeElement.src = this.xlSrc;
+                        this._elementRef.nativeElement.style.background = 'url(' + this.xlSrc + ')';
+                    }
+                    return;
+                }
+                if (this.lgSrc && width > this.mdBreakpoint) {
+                    if (!this._currentResolution || this._currentResolution !== 'lg') {
+                        this._currentResolution = 'lg';
+                        this._elementRef.nativeElement.src = this.lgSrc;
+                        this._elementRef.nativeElement.style.background = 'url(' + this.lgSrc + ')';
+                    }
+                    return;
+                }
+                if (this.mdSrc && width > this.smBreakpoint) {
+                    if (!this._currentResolution || this._currentResolution !== 'md') {
+                        this._currentResolution = 'md';
+                        this._elementRef.nativeElement.src = this.mdSrc;
+                        this._elementRef.nativeElement.style.background = 'url(' + this.mdSrc + ')';
+                    }
+                    return;
+                }
+                if (this.smSrc && width > this.xsBreakpoint) {
+                    if (!this._currentResolution || this._currentResolution !== 'sm') {
+                        this._currentResolution = 'sm';
+                        this._elementRef.nativeElement.src = this.smSrc;
+                        this._elementRef.nativeElement.style.background = 'url(' + this.smSrc + ')';
+                    }
+                    return;
+                }
+                if (this.xsSrc) {
+                    if (!this._currentResolution || this._currentResolution !== 'xs') {
+                        this._currentResolution = 'xs';
+                        this._elementRef.nativeElement.src = this.xsSrc;
+                        this._elementRef.nativeElement.style.background = 'url(' + this.xsSrc + ')';
+                    }
+                    return;
+                }
+                if (this.src) {
+                    this._elementRef.nativeElement.src = this.src;
+                    this._elementRef.nativeElement.style.background = 'url(' + this.src + ')';
+                }
+                else {
+                    this._elementRef.nativeElement.src = '';
+                    this._elementRef.nativeElement.style.background = 'none';
+                }
+            }
+        };
+        LazyLoadingDirective.prototype._isInViewPort = function () {
+            var elementTop = Math.round(this._elementRef.nativeElement.getBoundingClientRect().top);
+            var elementBottom = elementTop + this._elementRef.nativeElement.clientHeight;
+            var elementLeft = Math.round(this._elementRef.nativeElement.getBoundingClientRect().left);
+            var elementRight = elementLeft + this._elementRef.nativeElement.clientWidth;
+            return (elementLeft <= window.innerWidth && elementRight >= 0 && elementTop <= window.innerHeight && elementBottom >= 0);
+        };
+        return LazyLoadingDirective;
+    }());
+    LazyLoadingDirective.ɵfac = function LazyLoadingDirective_Factory(t) { return new (t || LazyLoadingDirective)(i0.ɵɵdirectiveInject(DoomSensorService), i0.ɵɵdirectiveInject(i0.ElementRef)); };
+    LazyLoadingDirective.ɵdir = i0.ɵɵdefineDirective({ type: LazyLoadingDirective, selectors: [["img", "lazy-loading", ""]], inputs: { xsBreakpoint: ["xs-breakpoint", "xsBreakpoint"], smBreakpoint: ["sm-breakpoint", "smBreakpoint"], mdBreakpoint: ["md-breakpoint", "mdBreakpoint"], lgBreakpoint: ["lg-breakpoint", "lgBreakpoint"], xsSrc: ["xs-src", "xsSrc"], smSrc: ["sm-src", "smSrc"], mdSrc: ["md-src", "mdSrc"], lgSrc: ["lg-src", "lgSrc"], xlSrc: ["xl-src", "xlSrc"], src: "src", load: "load" } });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LazyLoadingDirective, [{
+                type: i0.Directive,
+                args: [{
+                        selector: 'img[lazy-loading]',
+                    }]
+            }], function () { return [{ type: DoomSensorService }, { type: i0.ElementRef }]; }, { xsBreakpoint: [{
+                    type: i0.Input,
+                    args: ['xs-breakpoint']
+                }], smBreakpoint: [{
+                    type: i0.Input,
+                    args: ['sm-breakpoint']
+                }], mdBreakpoint: [{
+                    type: i0.Input,
+                    args: ['md-breakpoint']
+                }], lgBreakpoint: [{
+                    type: i0.Input,
+                    args: ['lg-breakpoint']
+                }], xsSrc: [{
+                    type: i0.Input,
+                    args: ['xs-src']
+                }], smSrc: [{
+                    type: i0.Input,
+                    args: ['sm-src']
+                }], mdSrc: [{
+                    type: i0.Input,
+                    args: ['md-src']
+                }], lgSrc: [{
+                    type: i0.Input,
+                    args: ['lg-src']
+                }], xlSrc: [{
+                    type: i0.Input,
+                    args: ['xl-src']
+                }], src: [{
+                    type: i0.Input,
+                    args: ['src']
+                }], load: [{
+                    type: i0.Input,
+                    args: ['load']
+                }] });
+    })();
+
+    var _c0$1i = ["img"];
+    var ZOOM_PERCENT$1 = 10;
+    var ZOOM_MAX_AFTER_WIDTH = 3;
+    var LightboxItemComponent = /** @class */ (function () {
+        function LightboxItemComponent(_elementRef, config) {
+            this._elementRef = _elementRef;
+            this.config = config;
+            this.toggleEvent = new i0.EventEmitter();
+            this._dragging = false;
+            this._zoomMax = 100 + ZOOM_MAX_AFTER_WIDTH * ZOOM_PERCENT$1;
+        }
+        LightboxItemComponent.prototype.ngOnInit = function () {
+            this.lightboxItemZoomAnimator = new LightboxItemZoomAnimator();
+            this.item.isVideo = this.item instanceof Video;
+            this.lightboxItemZoomAnimator.animation = { value: 'state1' };
+        };
+        LightboxItemComponent.prototype.open = function (containerDimensions, startCb, doneCb) {
+            var _this = this;
+            if (this.item.dimensions) {
+                var width = 100 - ZOOM_PERCENT$1;
+                while (containerDimensions.width * (width / 100) / this.item.dimensions.ratio > containerDimensions.height * 9 / 10) {
+                    width -= ZOOM_PERCENT$1;
+                }
+                this._zoomMin = width;
+                this._currentZoom = width;
+                this.lightboxItemZoomAnimator.origin(this.item.dimensions, this.item.position, this._getContainerDimensions(), startCb, function () {
+                    _this.resetZoom(_this.config.animations.itemOpen.duration, containerDimensions, null, doneCb);
+                });
+            }
+            else {
+                if (startCb) {
+                    startCb();
+                }
+                if (doneCb) {
+                    doneCb();
+                }
+            }
+        };
+        LightboxItemComponent.prototype.resetZoom = function (duration, containerDimensions, startCb, doneCb) {
+            var _this = this;
+            if (this.item.dimensions) {
+                if (containerDimensions) {
+                    var width = 100 - ZOOM_PERCENT$1;
+                    while (containerDimensions.width * (width / 100) / this.item.dimensions.ratio > containerDimensions.height * 9 / 10) {
+                        width -= ZOOM_PERCENT$1;
+                    }
+                    this._zoomMin = width;
+                    this._currentZoom = width;
+                    this.lightboxItemZoomAnimator.zoom(width, this.item.dimensions, this._getItemDimensions(), containerDimensions, duration, startCb, doneCb);
+                }
+                else {
+                    var width = 100 - ZOOM_PERCENT$1;
+                    while (this._getContainerDimensions().width * (width / 100) / this.item.dimensions.ratio > this._getContainerDimensions().height * 9 / 10) {
+                        width -= ZOOM_PERCENT$1;
+                    }
+                    this._zoomMin = width;
+                    this._currentZoom = width;
+                    this.lightboxItemZoomAnimator.zoom(width, this.item.dimensions, this._getItemDimensions(), this._getContainerDimensions(), duration, startCb, doneCb);
+                }
+            }
+            else {
+                if (startCb) {
+                    startCb();
+                }
+                if (doneCb) {
+                    doneCb();
+                }
+                this.item.$dimensions.pipe(operators.filter(function (value) { return value !== undefined; }), operators.first()).subscribe(function () {
+                    _this.resetZoom(0);
+                });
+            }
+        };
+        LightboxItemComponent.prototype.zoomIn = function (startCb, doneCb) {
+            if (this.item.dimensions) {
+                this.lightboxItemZoomAnimator.zoom(this._currentZoom + ZOOM_PERCENT$1, this.item.dimensions, this._getItemDimensions(), this._getContainerDimensions(), this.config.animations.zoomIn.duration, startCb, doneCb);
+                this._currentZoom += ZOOM_PERCENT$1;
+            }
+            else {
+                if (startCb) {
+                    startCb();
+                }
+                if (doneCb) {
+                    doneCb();
+                }
+            }
+        };
+        LightboxItemComponent.prototype.zoomOut = function (startCb, doneCb) {
+            if (this.item.dimensions) {
+                this.lightboxItemZoomAnimator.zoom(this._currentZoom - ZOOM_PERCENT$1, this.item.dimensions, this._getItemDimensions(), this._getContainerDimensions(), this.config.animations.zoomIn.duration, startCb, doneCb);
+                this._currentZoom -= ZOOM_PERCENT$1;
+            }
+            else {
+                if (startCb) {
+                    startCb();
+                }
+                if (doneCb) {
+                    doneCb();
+                }
+            }
+        };
+        LightboxItemComponent.prototype.feetToWidth = function (startCb, doneCb) {
+            if (this.item.dimensions) {
+                this.lightboxItemZoomAnimator.zoom(100, this.item.dimensions, this._getItemDimensions(), this._getContainerDimensions(), this.config.animations.zoomIn.duration, startCb, doneCb);
+                this._currentZoom = 100;
+            }
+            else {
+                if (startCb) {
+                    startCb();
+                }
+                if (doneCb) {
+                    doneCb();
+                }
+            }
+        };
+        LightboxItemComponent.prototype.onClick = function (event) {
+            if (!this.item.isVideo) {
+                this.toggleEvent.emit();
+            }
+        };
+        LightboxItemComponent.prototype.isFeetToWidth = function () {
+            return this._currentZoom === 100;
+        };
+        LightboxItemComponent.prototype.isZoomMin = function () {
+            return this._currentZoom <= this._zoomMin;
+        };
+        LightboxItemComponent.prototype.isZoomMax = function () {
+            return this._currentZoom >= this._zoomMax;
+        };
+        LightboxItemComponent.prototype.onDrag = function (event) {
+            if (!this._dragging) {
+                if (this._currentZoom === this._zoomMin || (this._elementRef.nativeElement.clientWidth >=
+                    this._img.nativeElement.clientWidth && this._elementRef.nativeElement.clientHeight >= this._img.nativeElement.clientHeight)) {
+                    return;
+                }
+                this._img.nativeElement.style.cursor = 'move';
+                this._dragPosition = {
+                    startX: event.deltaX,
+                    startY: event.deltaY
+                };
+            }
+            else {
+                if (this._elementRef.nativeElement.clientWidth >= this._img.nativeElement.clientWidth) {
+                    this._dragPosition.endX = 0;
+                }
+                else {
+                    this._dragPosition.endX = this.lightboxItemZoomAnimator.animation.params.offsetLeft - this._dragPosition.startX + event.deltaX;
+                    if (this._dragPosition.endX > (this._img.nativeElement.clientWidth - this._elementRef.nativeElement.clientWidth) / 2) {
+                        this._dragPosition.endX = (this._img.nativeElement.clientWidth - this._elementRef.nativeElement.clientWidth) / 2;
+                    }
+                    if (this._dragPosition.endX < -1 * (this._img.nativeElement.clientWidth - this._elementRef.nativeElement.clientWidth) / 2) {
+                        this._dragPosition.endX = -1 * (this._img.nativeElement.clientWidth - this._elementRef.nativeElement.clientWidth) / 2;
+                    }
+                }
+                if (this._elementRef.nativeElement.clientHeight >= this._img.nativeElement.clientHeight) {
+                    this._dragPosition.endY = 0;
+                }
+                else {
+                    this._dragPosition.endY = this.lightboxItemZoomAnimator.animation.params.offsetTop - this._dragPosition.startY + event.deltaY;
+                    if (this._dragPosition.endY > (this._img.nativeElement.clientHeight - this._elementRef.nativeElement.clientHeight) / 2) {
+                        this._dragPosition.endY = (this._img.nativeElement.clientHeight - this._elementRef.nativeElement.clientHeight) / 2;
+                    }
+                    if (this._dragPosition.endY < -1 * (this._img.nativeElement.clientHeight - this._elementRef.nativeElement.clientHeight) / 2) {
+                        this._dragPosition.endY = -1 * (this._img.nativeElement.clientHeight - this._elementRef.nativeElement.clientHeight) / 2;
+                    }
+                }
+                this._img.nativeElement.parentNode.style.left = this._dragPosition.endX + 'px';
+                this._img.nativeElement.parentNode.style.top = this._dragPosition.endY + 'px';
+            }
+            if (event.isFinal) {
+                this.lightboxItemZoomAnimator.animation.params.offsetLeft = this._dragPosition.endX;
+                this.lightboxItemZoomAnimator.animation.params.offsetTop = this._dragPosition.endY;
+                this._img.nativeElement.style.cursor = 'default';
+                this._dragging = false;
+            }
+            else {
+                this._dragging = true;
+            }
+        };
+        LightboxItemComponent.prototype.onLoad = function (event) {
+            if (!this.item.dimensions) {
+                this.item.dimensions = new Dimensions(this._img.nativeElement.naturalWidth, this._img.nativeElement.naturalHeight);
+            }
+        };
+        LightboxItemComponent.prototype.getDefaultSrc = function () {
+            if (this.item.src) {
+                return this.item.src;
+            }
+            if (this.item.xsSrc) {
+                return this.item.xsSrc;
+            }
+            if (this.item.smSrc) {
+                return this.item.smSrc;
+            }
+            if (this.item.mdSrc) {
+                return this.item.mdSrc;
+            }
+            if (this.item.lgSrc) {
+                return this.item.lgSrc;
+            }
+            if (this.item.xlSrc) {
+                return this.item.xlSrc;
+            }
+        };
+        LightboxItemComponent.prototype.resize = function () {
+            if (this.isZoomMin()) {
+                this.resetZoom(0);
+            }
+            else {
+                this.lightboxItemZoomAnimator.zoom(this._currentZoom, this.item.dimensions, this._getItemDimensions(), this._getContainerDimensions(), this.config.animations.zoomIn.duration);
+            }
+        };
+        LightboxItemComponent.prototype._getContainerDimensions = function () {
+            return new Dimensions(this._elementRef.nativeElement.clientWidth, this._elementRef.nativeElement.clientHeight);
+        };
+        LightboxItemComponent.prototype._getItemDimensions = function () {
+            return new Dimensions(this._img.nativeElement.clientWidth, this._img.nativeElement.clientHeight);
+        };
+        return LightboxItemComponent;
+    }());
+    LightboxItemComponent.ɵfac = function LightboxItemComponent_Factory(t) { return new (t || LightboxItemComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(LightboxConfigurationService)); };
+    LightboxItemComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxItemComponent, selectors: [["lightbox-item"]], viewQuery: function LightboxItemComponent_Query(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵviewQuery(_c0$1i, 1);
+            }
+            if (rf & 2) {
+                var _t = void 0;
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx._img = _t.first);
+            }
+        }, inputs: { item: "item" }, outputs: { toggleEvent: "toggleEvent" }, decls: 3, vars: 11, consts: [["draggable", "true", 3, "tap", "pan"], ["lazy-loading", "", "draggable", "false", 3, "src", "xs-src", "sm-src", "md-src", "lg-src", "xl-src", "xs-breakpoint", "sm-breakpoint", "md-breakpoint", "lg-breakpoint", "load"], ["img", ""]], template: function LightboxItemComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelementStart(0, "div", 0);
+                i0.ɵɵlistener("tap", function LightboxItemComponent_Template_div_tap_0_listener($event) { return ctx.onClick($event); })("pan", function LightboxItemComponent_Template_div_pan_0_listener($event) { return ctx.onDrag($event); })("@lightboxItemZoom.start", function LightboxItemComponent_Template_div_animation_lightboxItemZoom_start_0_listener($event) { return ctx.lightboxItemZoomAnimator.animationStart($event); })("@lightboxItemZoom.done", function LightboxItemComponent_Template_div_animation_lightboxItemZoom_done_0_listener($event) { return ctx.lightboxItemZoomAnimator.animationDone($event); });
+                i0.ɵɵelementStart(1, "img", 1, 2);
+                i0.ɵɵlistener("load", function LightboxItemComponent_Template_img_load_1_listener($event) { return ctx.onLoad($event); });
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("@lightboxItemZoom", ctx.lightboxItemZoomAnimator.animation);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("src", ctx.getDefaultSrc(), i0.ɵɵsanitizeUrl)("xs-src", ctx.item.xsSrc)("sm-src", ctx.item.smSrc)("md-src", ctx.item.mdSrc)("lg-src", ctx.item.lgSrc)("xl-src", ctx.item.xlSrc)("xs-breakpoint", ctx.item.xsBreakpoint)("sm-breakpoint", ctx.item.smBreakpoint)("md-breakpoint", ctx.item.mdBreakpoint)("lg-breakpoint", ctx.item.lgBreakpoint);
+            }
+        }, directives: [LazyLoadingDirective], styles: ["[_nghost-%COMP%]{z-index:1;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;width:100%;flex:0 0 100%;pointer-events:none}[_nghost-%COMP%] > div[_ngcontent-%COMP%]{pointer-events:auto;position:relative}[_nghost-%COMP%]   img[_ngcontent-%COMP%]{position:relative;height:auto;width:100%}"], data: { animation: [LightboxItemAnimations.zoomAnimation] } });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxItemComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'lightbox-item',
+                        templateUrl: 'lightbox-item.component.html',
+                        styleUrls: ['lightbox-item.component.scss'],
+                        animations: [LightboxItemAnimations.zoomAnimation]
+                    }]
+            }], function () { return [{ type: i0.ElementRef }, { type: LightboxConfigurationService }]; }, { item: [{
+                    type: i0.Input,
+                    args: ['item']
+                }], toggleEvent: [{
+                    type: i0.Output
+                }], _img: [{
+                    type: i0.ViewChild,
+                    args: ['img']
+                }] });
+    })();
+
+    var _c0$1j = ["background"];
+    var _c1$D = ["toolbar"];
+    var _c2$m = ["thumbnails"];
+    var _c3$b = ["lightboxZoom"];
+    var _c4$5 = ["itemList"];
+    var _c5$5 = ["lightboxItem"];
+    function LightboxComponent_div_7_lightbox_item_2_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r10_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "lightbox-item", 16, 17);
+            i0.ɵɵlistener("toggleEvent", function LightboxComponent_div_7_lightbox_item_2_Template_lightbox_item_toggleEvent_0_listener() { i0.ɵɵrestoreView(_r10_1); var ctx_r9 = i0.ɵɵnextContext(2); return ctx_r9.onToggle(); });
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var item_r7 = ctx.$implicit;
+            i0.ɵɵproperty("item", item_r7);
+        }
+    }
+    function LightboxComponent_div_7_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r12_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 13, 14);
+            i0.ɵɵlistener("@lightboxSlice.start", function LightboxComponent_div_7_Template_div_animation_lightboxSlice_start_0_listener($event) { i0.ɵɵrestoreView(_r12_1); var ctx_r11 = i0.ɵɵnextContext(); return ctx_r11.lightboxSliceAnimator.animationStart($event); })("@lightboxSlice.done", function LightboxComponent_div_7_Template_div_animation_lightboxSlice_done_0_listener($event) { i0.ɵɵrestoreView(_r12_1); var ctx_r13 = i0.ɵɵnextContext(); return ctx_r13.lightboxSliceAnimator.animationDone($event); });
+            i0.ɵɵtemplate(2, LightboxComponent_div_7_lightbox_item_2_Template, 2, 1, "lightbox-item", 15);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r2 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("@lightboxSlice", ctx_r2.lightboxSliceAnimator.animation);
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngForOf", ctx_r2.items[ctx_r2.activeItem.container]);
+        }
+    }
+    var _c6$3 = function (a0) { return { "order": a0 }; };
+    var _c7$3 = function (a0, a1) { return { "vertical-container": a0, "horizontal-container": a1 }; };
+    var _c8$2 = function (a0) { return { "visibility": a0 }; };
+    var _c9$1 = function (a0, a1) { return { "vertical-thumbnails": a0, "horizontal-thumbnails": a1 }; };
+    var _c10$1 = function () { return []; };
+    var LightboxComponent = /** @class */ (function () {
+        function LightboxComponent(_lightboxConfigurationService) {
+            this._lightboxConfigurationService = _lightboxConfigurationService;
+            this.pagination = { current: 0, count: 0 };
+            this.displayZoom = 'hidden';
+            this.displayYoutube = false;
+            this.items = {};
+            this.state = 'closed';
+            this._stateBehaviorSubject = new rxjs.BehaviorSubject('closed');
+            this._pointerEvents = 'none';
+        }
+        Object.defineProperty(LightboxComponent.prototype, "$state", {
+            get: function () {
+                return this._stateBehaviorSubject.asObservable();
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(LightboxComponent.prototype, "config", {
+            get: function () {
+                return this._lightboxConfigurationService;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        LightboxComponent.prototype.ngOnInit = function () {
+            var _this = this;
+            this.lightboxSliceAnimator = new LightboxSliceAnimator();
+            this.backgroundVisibilityAnimator = new BackgroundVisibilityAnimator();
+            this._stateSubscription = this.$state.subscribe(function (value) {
+                _this.state = value;
+            });
+        };
+        LightboxComponent.prototype.ngOnDestroy = function () {
+            this._stateSubscription.unsubscribe();
+        };
+        LightboxComponent.prototype.openItem = function (item) {
+            var _this = this;
+            if (this.state === 'closed') {
+                this.activeItem = item;
+                this._pointerEvents = 'auto';
+                setTimeout(function () {
+                    var activeItemIndex = _this._itemIndex(_this.activeItem);
+                    var activeItemRef = _this._itemRef(activeItemIndex);
+                    _this.backgroundVisibilityAnimator.show(_this.config.animations.backgroundFadeIn.opacity, _this.config.animations.backgroundFadeIn.duration);
+                    _this.thumbnails.checkDirection();
+                    _this.thumbnails.checkThumbnailsDimensions();
+                    _this._openControls();
+                    _this._updatePagination();
+                    _this._initItems();
+                    _this.lightboxSliceAnimator.slice(-1 * activeItemIndex * 100, 0, function () {
+                        activeItemRef.open(_this._getContainerDimensionsAfterOpen(), function () {
+                            _this.displayYoutube = false;
+                            _this._stateBehaviorSubject.next('opening');
+                            _this._checkZoom(activeItemRef);
+                        }, function () {
+                            _this._checkYoutube(item);
+                            _this._stateBehaviorSubject.next('opened');
+                        });
+                        _this.thumbnails.selectItem(_this.activeItem);
+                    });
+                }, 0);
+            }
+        };
+        LightboxComponent.prototype.getYoutubeVideoId = function () {
+            return this.activeItem.youtubeVieoId;
+        };
+        LightboxComponent.prototype.addItem = function (item) {
+            if (!this.items[item.container]) {
+                this.items[item.container] = [];
+            }
+            this.items[item.container].push(item);
+        };
+        LightboxComponent.prototype.thumbnailsToggle = function () {
+            this.thumbnails.toggle();
+        };
+        LightboxComponent.prototype.removeItem = function (item) {
+            var index = this._itemIndex(item);
+            if (index > -1) {
+                this.items[item.container].splice(index, 1);
+            }
+        };
+        LightboxComponent.prototype.onToggle = function () {
+            this.toolbar.toggle();
+            this.lightboxZoom.toggle();
+            this.thumbnails.toggle();
+        };
+        LightboxComponent.prototype.onClose = function (event) {
+            var _this = this;
+            if ((!event || event.target === this.background.nativeElement) && this.state === 'opened') {
+                this.activeItem = undefined;
+                this._stateBehaviorSubject.next('closing');
+                this.displayYoutube = false;
+                this.backgroundVisibilityAnimator.hide(this.config.animations.backgroundFadeOut.duration, null, function () {
+                    _this._pointerEvents = 'none';
+                    _this._stateBehaviorSubject.next('closed');
+                });
+                this._closeControls();
+                if (this._ytPlayer) {
+                    this._ytPlayer.stopVideo();
+                }
+            }
+        };
+        LightboxComponent.prototype.selectItem = function (item) {
+            var _this = this;
+            if (item !== this.activeItem) {
+                if (this.activeItem) {
+                    var lastActiveItemIndex = this._itemIndex(this.activeItem);
+                    var lastActiveItemRef = this._itemRef(lastActiveItemIndex);
+                    lastActiveItemRef.resetZoom(0);
+                }
+                this.activeItem = item;
+                var activeItemIndex_1 = this._itemIndex(this.activeItem);
+                var activeItemRef = this._itemRef(activeItemIndex_1);
+                activeItemRef.resetZoom(0, null, function () {
+                    _this.displayYoutube = false;
+                }, function () {
+                    _this.lightboxSliceAnimator.slice(-1 * activeItemIndex_1 * 100, _this.config.animations.itemSlice.duration, null, function () {
+                        _this._checkYoutube(item);
+                    });
+                });
+                this._updatePagination();
+                this.thumbnails.selectItem(this.activeItem);
+                this._checkZoom(activeItemRef);
+            }
+        };
+        LightboxComponent.prototype.onNext = function () {
+            var activeItemIndex = this._itemIndex(this.activeItem);
+            if (activeItemIndex >= 0 && activeItemIndex < this.items[this.activeItem.container].length - 1) {
+                var item = this.items[this.activeItem.container][activeItemIndex + 1];
+                this.selectItem(item);
+            }
+        };
+        LightboxComponent.prototype.onLast = function () {
+            var activeItemIndex = this._itemIndex(this.activeItem);
+            if (activeItemIndex >= 0 && activeItemIndex < this.items[this.activeItem.container].length - 1) {
+                var item = this.items[this.activeItem.container][this.items[this.activeItem.container].length - 1];
+                this.selectItem(item);
+            }
+        };
+        LightboxComponent.prototype.onFirst = function () {
+            var activeItemIndex = this._itemIndex(this.activeItem);
+            if (activeItemIndex > 0) {
+                var item = this.items[this.activeItem.container][0];
+                this.selectItem(item);
+            }
+        };
+        LightboxComponent.prototype.onPrevious = function () {
+            var activeItemIndex = this._itemIndex(this.activeItem);
+            if (activeItemIndex > 0) {
+                var item = this.items[this.activeItem.container][activeItemIndex - 1];
+                this.selectItem(item);
+            }
+        };
+        LightboxComponent.prototype.zoomIn = function () {
+            var _this = this;
+            var activeItemRef = this._itemRef(this._itemIndex(this.activeItem));
+            activeItemRef.zoomIn(null, function () {
+                _this._checkZoom(activeItemRef);
+            });
+        };
+        LightboxComponent.prototype.zoomOut = function () {
+            var _this = this;
+            var activeItemRef = this._itemRef(this._itemIndex(this.activeItem));
+            activeItemRef.zoomOut(null, function () {
+                _this._checkZoom(activeItemRef);
+            });
+        };
+        LightboxComponent.prototype.resetZoom = function () {
+            var _this = this;
+            var activeItemRef = this._itemRef(this._itemIndex(this.activeItem));
+            activeItemRef.resetZoom(this.config.animations.resetZoom.duration, null, function () {
+                _this._checkZoom(activeItemRef);
+            });
+        };
+        LightboxComponent.prototype.feetToWidth = function () {
+            var _this = this;
+            var activeItemRef = this._itemRef(this._itemIndex(this.activeItem));
+            activeItemRef.feetToWidth(null, function () {
+                _this._checkZoom(activeItemRef);
+            });
+        };
+        LightboxComponent.prototype.swipe = function (action) {
+            var itemIndex = this._itemIndex(this.activeItem);
+            var itemRef = this._itemRef(itemIndex);
+            if (!itemRef.isZoomMin()) {
+                return;
+            }
+            switch (action) {
+                case 'swipeleft':
+                    this.onNext();
+                    break;
+                case 'swiperight':
+                    this.onPrevious();
+                    break;
+            }
+        };
+        LightboxComponent.prototype.onReady = function (event) {
+            this._ytPlayer = event.target;
+        };
+        LightboxComponent.prototype.onError = function (event) {
+            // on error
+        };
+        LightboxComponent.prototype.onChange = function (event) {
+            switch (event.data) {
+                case YT.PlayerState.PLAYING:
+                    this._closeControls();
+                    break;
+                case YT.PlayerState.PAUSED:
+                    this._openControls();
+                    break;
+            }
+        };
+        LightboxComponent.prototype._initItems = function () {
+            var _this = this;
+            this.items[this.activeItem.container].forEach(function (element) {
+                if (element !== _this.activeItem) {
+                    var elementIndex = _this._itemIndex(element);
+                    var elementRef = _this._itemRef(elementIndex);
+                    elementRef.resetZoom(0);
+                }
+            });
+        };
+        LightboxComponent.prototype._openControls = function () {
+            this.toolbar.open();
+            this.lightboxZoom.open();
+            this.thumbnails.open();
+        };
+        LightboxComponent.prototype._closeControls = function () {
+            this.toolbar.close();
+            this.lightboxZoom.close();
+            this.thumbnails.close();
+        };
+        LightboxComponent.prototype._getContainerDimensionsAfterOpen = function () {
+            var containerDimensions;
+            if (!this.config.controls.thumbnails.disable) {
+                if (this.thumbnails.direction === 'horizontal') {
+                    containerDimensions = new Dimensions(this._itemList.nativeElement.clientWidth, this._itemList.nativeElement.clientHeight - this.thumbnails.thickness - 64);
+                }
+                else {
+                    containerDimensions = new Dimensions(this._itemList.nativeElement.clientWidth - this.thumbnails.thickness, this._itemList.nativeElement.clientHeight - 64);
+                }
+            }
+            else {
+                containerDimensions = new Dimensions(this._itemList.nativeElement.clientWidth, this._itemList.nativeElement.clientHeight - 64);
+            }
+            return containerDimensions;
+        };
+        LightboxComponent.prototype._updatePagination = function () {
+            var activeItemIndex = this._itemIndex(this.activeItem);
+            this.pagination.current = activeItemIndex + 1;
+            this.pagination.count = this.items[this.activeItem.container].length;
+        };
+        LightboxComponent.prototype._checkYoutube = function (item) {
+            var _this = this;
+            setTimeout(function () {
+                if (item !== _this.activeItem) {
+                    _this.displayYoutube = false;
+                }
+                else {
+                    if (item.isVideo) {
+                        _this.displayYoutube = true;
+                    }
+                    else {
+                        _this.displayYoutube = false;
+                    }
+                }
+            }, 0);
+        };
+        LightboxComponent.prototype._itemRef = function (index) {
+            return this._itemsRef.toArray()[index];
+        };
+        LightboxComponent.prototype._itemIndex = function (item) {
+            return this.items[item.container].indexOf(item);
+        };
+        LightboxComponent.prototype._onResize = function (event) {
+            if (this.activeItem) {
+                var activeItemRef = this._itemRef(this._itemIndex(this.activeItem));
+                if (!this.activeItem.isVideo) {
+                    activeItemRef.resize();
+                }
+                this._checkZoom(activeItemRef);
+                this.thumbnails.resize();
+            }
+        };
+        LightboxComponent.prototype._checkZoom = function (item) {
+            if (this.activeItem.isVideo) {
+                this.displayZoom = 'hidden';
+            }
+            else {
+                this.displayZoom = 'visible';
+            }
+            this.disableZoomIn = item.isZoomMax();
+            this.disableZoomOut = item.isZoomMin();
+            this.disableResetZoom = item.isZoomMin();
+            this.disableFeetToWidth = item.isFeetToWidth();
+        };
+        return LightboxComponent;
+    }());
+    LightboxComponent.ɵfac = function LightboxComponent_Factory(t) { return new (t || LightboxComponent)(i0.ɵɵdirectiveInject(LightboxConfigurationService)); };
+    LightboxComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxComponent, selectors: [["lightbox"]], viewQuery: function LightboxComponent_Query(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵviewQuery(_c0$1j, 1);
+                i0.ɵɵviewQuery(_c1$D, 1);
+                i0.ɵɵviewQuery(_c2$m, 1);
+                i0.ɵɵviewQuery(_c3$b, 1);
+                i0.ɵɵviewQuery(_c4$5, 1);
+                i0.ɵɵviewQuery(_c5$5, 1);
+            }
+            if (rf & 2) {
+                var _t = void 0;
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.background = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.toolbar = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.thumbnails = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.lightboxZoom = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx._itemList = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx._itemsRef = _t);
+            }
+        }, hostVars: 2, hostBindings: function LightboxComponent_HostBindings(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵlistener("resize", function LightboxComponent_resize_HostBindingHandler($event) { return ctx._onResize($event); }, false, i0.ɵɵresolveWindow);
+            }
+            if (rf & 2) {
+                i0.ɵɵstyleProp("pointer-events", ctx._pointerEvents);
+            }
+        }, decls: 13, vars: 39, consts: [[1, "lightbox-background"], [3, "ngStyle", "pagination", "title", "closeEvent", "firstEvent", "previousEvent", "nextEvent", "lastEvent", "thumbnailsToggleEvent"], ["toolbar", ""], [1, "lightbox-container", 3, "ngStyle", "ngClass"], [1, "lightbox-items-container", 3, "ngStyle"], [1, "lightbox-items-background", 3, "ngStyle", "tap", "swipeleft", "swiperight"], ["background", ""], ["class", "item-list", 4, "ngIf"], [3, "disableZoomIn", "disableZoomOut", "disableResetZoom", "disableFeetToWidth", "zoomInEvent", "zoomOutEvent", "resetZoomEvent", "feetToWidthEvent"], ["lightboxZoom", ""], [3, "ngStyle", "videoId", "ready", "change", "error"], [3, "ngClass", "items", "ngStyle", "selectEvent"], ["thumbnails", ""], [1, "item-list"], ["itemList", ""], [3, "item", "toggleEvent", 4, "ngFor", "ngForOf"], [3, "item", "toggleEvent"], ["lightboxItem", ""]], template: function LightboxComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelementStart(0, "div", 0);
+                i0.ɵɵlistener("@backgroundVisibility.start", function LightboxComponent_Template_div_animation_backgroundVisibility_start_0_listener($event) { return ctx.backgroundVisibilityAnimator.animationStart($event); })("@backgroundVisibility.done", function LightboxComponent_Template_div_animation_backgroundVisibility_done_0_listener($event) { return ctx.backgroundVisibilityAnimator.animationDone($event); });
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(1, "lightbox-toolbar", 1, 2);
+                i0.ɵɵlistener("closeEvent", function LightboxComponent_Template_lightbox_toolbar_closeEvent_1_listener($event) { return ctx.onClose($event); })("firstEvent", function LightboxComponent_Template_lightbox_toolbar_firstEvent_1_listener() { return ctx.onFirst(); })("previousEvent", function LightboxComponent_Template_lightbox_toolbar_previousEvent_1_listener() { return ctx.onPrevious(); })("nextEvent", function LightboxComponent_Template_lightbox_toolbar_nextEvent_1_listener() { return ctx.onNext(); })("lastEvent", function LightboxComponent_Template_lightbox_toolbar_lastEvent_1_listener() { return ctx.onLast(); })("thumbnailsToggleEvent", function LightboxComponent_Template_lightbox_toolbar_thumbnailsToggleEvent_1_listener() { return ctx.thumbnailsToggle(); });
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(3, "div", 3);
+                i0.ɵɵelementStart(4, "div", 4);
+                i0.ɵɵelementStart(5, "div", 5, 6);
+                i0.ɵɵlistener("tap", function LightboxComponent_Template_div_tap_5_listener($event) { return ctx.onClose($event); })("swipeleft", function LightboxComponent_Template_div_swipeleft_5_listener($event) { return ctx.swipe($event.type); })("swiperight", function LightboxComponent_Template_div_swiperight_5_listener($event) { return ctx.swipe($event.type); });
+                i0.ɵɵtemplate(7, LightboxComponent_div_7_Template, 3, 2, "div", 7);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(8, "lightbox-zoom", 8, 9);
+                i0.ɵɵlistener("zoomInEvent", function LightboxComponent_Template_lightbox_zoom_zoomInEvent_8_listener() { return ctx.zoomIn(); })("zoomOutEvent", function LightboxComponent_Template_lightbox_zoom_zoomOutEvent_8_listener() { return ctx.zoomOut(); })("resetZoomEvent", function LightboxComponent_Template_lightbox_zoom_resetZoomEvent_8_listener() { return ctx.resetZoom(); })("feetToWidthEvent", function LightboxComponent_Template_lightbox_zoom_feetToWidthEvent_8_listener() { return ctx.feetToWidth(); });
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(10, "youtube", 10);
+                i0.ɵɵlistener("ready", function LightboxComponent_Template_youtube_ready_10_listener($event) { return ctx.onReady($event); })("change", function LightboxComponent_Template_youtube_change_10_listener($event) { return ctx.onChange($event); })("error", function LightboxComponent_Template_youtube_error_10_listener($event) { return ctx.onError($event); });
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(11, "lightbox-thumbnails", 11, 12);
+                i0.ɵɵlistener("selectEvent", function LightboxComponent_Template_lightbox_thumbnails_selectEvent_11_listener($event) { return ctx.selectItem($event); });
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("@backgroundVisibility", ctx.backgroundVisibilityAnimator.animation);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngStyle", i0.ɵɵpureFunction1(20, _c6$3, ctx.config.controls.toolbar.position === "top" ? 1 : 2))("pagination", ctx.pagination)("title", ctx.activeItem == null ? null : ctx.activeItem.title);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngStyle", i0.ɵɵpureFunction1(22, _c6$3, ctx.config.controls.toolbar.position === "bottom" ? 1 : 2))("ngClass", i0.ɵɵpureFunction2(24, _c7$3, ctx.config.controls.thumbnails.position === "left" || ctx.config.controls.thumbnails.position === "right", ctx.config.controls.thumbnails.position === "top" || ctx.config.controls.thumbnails.position === "bottom"));
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngStyle", i0.ɵɵpureFunction1(27, _c6$3, ctx.config.controls.thumbnails.position === "bottom" || ctx.config.controls.thumbnails.position === "right" ? 1 : 2));
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngStyle", i0.ɵɵpureFunction1(29, _c8$2, ctx.state === "closed" || ctx.state === "closing" ? "hidden" : "visible"));
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngIf", ctx.activeItem);
+                i0.ɵɵadvance(1);
+                i0.ɵɵstyleProp("visibility", ctx.displayZoom);
+                i0.ɵɵproperty("disableZoomIn", ctx.disableZoomIn)("disableZoomOut", ctx.disableZoomOut)("disableResetZoom", ctx.disableResetZoom)("disableFeetToWidth", ctx.disableFeetToWidth);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngStyle", i0.ɵɵpureFunction1(31, _c8$2, ctx.displayYoutube ? "visible" : "hidden"))("videoId", ctx.activeItem ? ctx.getYoutubeVideoId() : undefined);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngClass", i0.ɵɵpureFunction2(33, _c9$1, ctx.config.controls.thumbnails.position === "left" || ctx.config.controls.thumbnails.position === "right", ctx.config.controls.thumbnails.position === "top" || ctx.config.controls.thumbnails.position === "bottom"))("items", ctx.activeItem ? ctx.items[ctx.activeItem.container] : i0.ɵɵpureFunction0(36, _c10$1))("ngStyle", i0.ɵɵpureFunction1(37, _c6$3, ctx.config.controls.thumbnails.position === "top" || ctx.config.controls.thumbnails.position === "left" ? 1 : 2));
+            }
+        }, directives: [LightboxToolbarComponent, i2$1.NgStyle, i2$1.NgClass, i2$1.NgIf, LightboxZoomComponent, YoutubeComponent, LightboxThumbnailsComponent, i2$1.NgForOf, LightboxItemComponent], styles: ["lightbox{pointer-events:none;top:0;left:0;height:100%;width:100%;display:flex;flex-direction:column}lightbox .lightbox-background,lightbox .lightbox-items-background{height:100%;width:100%;position:absolute;top:0;z-index:1}lightbox .lightbox-background .item-list,lightbox .lightbox-items-background .item-list{position:relative;height:100%;display:flex}lightbox .lightbox-container{display:flex;flex:1 1 0%;position:relative;overflow:hidden}lightbox .lightbox-items-container{flex:1 1 0%;box-sizing:border-box;height:100%;position:relative}.lightbox-overlay-container{pointer-events:none;position:fixed;z-index:10000;height:100%;width:100%;top:0;left:0}lightbox .lightbox-container.vertical-container{flex-direction:row}lightbox .lightbox-container.horizontal-container{flex-direction:column}"], encapsulation: 2, data: { animation: [LightboxAnimations.visibilityAnimation, LightboxAnimations.sliceAnimation] } });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'lightbox',
+                        templateUrl: 'lightbox.component.html',
+                        styleUrls: ['lightbox.component.scss'],
+                        animations: [LightboxAnimations.visibilityAnimation, LightboxAnimations.sliceAnimation],
+                        host: {
+                            '[style.pointer-events]': '_pointerEvents',
+                        },
+                        encapsulation: i0.ViewEncapsulation.None
+                    }]
+            }], function () { return [{ type: LightboxConfigurationService }]; }, { background: [{
+                    type: i0.ViewChild,
+                    args: ['background']
+                }], toolbar: [{
+                    type: i0.ViewChild,
+                    args: ['toolbar']
+                }], thumbnails: [{
+                    type: i0.ViewChild,
+                    args: ['thumbnails']
+                }], lightboxZoom: [{
+                    type: i0.ViewChild,
+                    args: ['lightboxZoom']
+                }], _itemList: [{
+                    type: i0.ViewChild,
+                    args: ['itemList']
+                }], _itemsRef: [{
+                    type: i0.ViewChildren,
+                    args: ['lightboxItem']
+                }], _onResize: [{
+                    type: i0.HostListener,
+                    args: ['window:resize', ['$event']]
+                }] });
+    })();
+
+    var DoomService = /** @class */ (function () {
+        function DoomService(_appRef, _componentFactoryResolver, _injector, _document) {
+            this._appRef = _appRef;
+            this._componentFactoryResolver = _componentFactoryResolver;
+            this._injector = _injector;
+            this._document = _document;
+            this._lightboxComponentRef = this._componentFactoryResolver
+                .resolveComponentFactory(LightboxComponent)
+                .create(this._injector);
+            this._lightboxComponentRef.changeDetectorRef.detectChanges();
+            this._appRef.attachView(this._lightboxComponentRef.hostView);
+            var domElement = this._lightboxComponentRef.hostView
+                .rootNodes[0];
+            var container = this._document.createElement('div');
+            container.classList.add('lightbox-overlay-container');
+            this._document.body.appendChild(container);
+            container.appendChild(domElement);
+        }
+        Object.defineProperty(DoomService.prototype, "lightboxComponentRef", {
+            get: function () {
+                return this._lightboxComponentRef;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        return DoomService;
+    }());
+    DoomService.ɵfac = function DoomService_Factory(t) { return new (t || DoomService)(i0.ɵɵinject(i0.ApplicationRef), i0.ɵɵinject(i0.ComponentFactoryResolver), i0.ɵɵinject(i0.Injector), i0.ɵɵinject(i2$1.DOCUMENT)); };
+    DoomService.ɵprov = i0.ɵɵdefineInjectable({ token: DoomService, factory: DoomService.ɵfac });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(DoomService, [{
+                type: i0.Injectable
+            }], function () {
+            return [{ type: i0.ApplicationRef }, { type: i0.ComponentFactoryResolver }, { type: i0.Injector }, { type: undefined, decorators: [{
+                            type: i0.Inject,
+                            args: [i2$1.DOCUMENT]
+                        }] }];
+        }, null);
+    })();
+
+    var LightboxService = /** @class */ (function () {
+        function LightboxService(_doomService) {
+            this._doomService = _doomService;
+        }
+        LightboxService.prototype.addItem = function (item) {
+            this._doomService.lightboxComponentRef.instance.addItem(item);
+        };
+        LightboxService.prototype.openItem = function (item) {
+            this._doomService.lightboxComponentRef.instance.openItem(item);
+        };
+        LightboxService.prototype.removeItem = function (item) {
+            this._doomService.lightboxComponentRef.instance.removeItem(item);
+        };
+        LightboxService.prototype.onClosed = function (func) {
+            this._doomService.lightboxComponentRef.instance.$state.pipe(operators.filter(function (state) { return state === 'closed'; }), operators.skip(1), operators.first()).subscribe(function () {
+                func();
+            });
+        };
+        LightboxService.prototype.onOpening = function (func) {
+            this._doomService.lightboxComponentRef.instance.$state.pipe(operators.filter(function (state) { return state === 'opening'; }), operators.first()).subscribe(function () {
+                func();
+            });
+        };
+        return LightboxService;
+    }());
+    LightboxService.ɵfac = function LightboxService_Factory(t) { return new (t || LightboxService)(i0.ɵɵinject(DoomService)); };
+    LightboxService.ɵprov = i0.ɵɵdefineInjectable({ token: LightboxService, factory: LightboxService.ɵfac });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxService, [{
+                type: i0.Injectable
+            }], function () { return [{ type: DoomService }]; }, null);
+    })();
+
+    var ItemDirectiveBase = /** @class */ (function () {
+        function ItemDirectiveBase(lightboxService, elementRef) {
+            this.lightboxService = lightboxService;
+            this.elementRef = elementRef;
+            this.cursor = 'pointer';
+            this._loaded = false;
+        }
+        ItemDirectiveBase.prototype.onClick = function (event) {
+            var _this = this;
+            if (this._loaded) {
+                this.lightboxService.onOpening(function () {
+                    _this.visibility = 'hidden';
+                });
+                this.item.position = {
+                    offsetTop: Math.round(this.elementRef.nativeElement.getBoundingClientRect().top),
+                    offsetLeft: Math.round(this.elementRef.nativeElement.getBoundingClientRect().left)
+                };
+                this.item.dimensions = new Dimensions(this.elementRef.nativeElement.clientWidth, this.elementRef.nativeElement.clientHeight);
+                this.lightboxService.openItem(this.item);
+                this.lightboxService.onClosed(function () {
+                    _this.visibility = 'visible';
+                });
+            }
+        };
+        ItemDirectiveBase.prototype.onLoad = function (event) {
+            this._loaded = true;
+            if (!this.item.dimensions) {
+                this.item.dimensions = new Dimensions(this.elementRef.nativeElement.naturalWidth, this.elementRef.nativeElement.naturalHeight);
+            }
+        };
+        return ItemDirectiveBase;
+    }());
+    ItemDirectiveBase.ɵfac = function ItemDirectiveBase_Factory(t) { return new (t || ItemDirectiveBase)(i0.ɵɵdirectiveInject(LightboxService), i0.ɵɵdirectiveInject(i0.ElementRef)); };
+    ItemDirectiveBase.ɵdir = i0.ɵɵdefineDirective({ type: ItemDirectiveBase, inputs: { container: "container", src: "src", title: "title", xsBreakpoint: ["xs-breakpoint", "xsBreakpoint"], smBreakpoint: ["sm-breakpoint", "smBreakpoint"], mdBreakpoint: ["md-breakpoint", "mdBreakpoint"], lgBreakpoint: ["lg-breakpoint", "lgBreakpoint"], xsSrc: ["xs-src", "xsSrc"], smSrc: ["sm-src", "smSrc"], mdSrc: ["md-src", "mdSrc"], lgSrc: ["lg-src", "lgSrc"], xlSrc: ["xl-src", "xlSrc"] } });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(ItemDirectiveBase, [{
+                type: i0.Directive
+            }], function () { return [{ type: LightboxService }, { type: i0.ElementRef }]; }, { container: [{
+                    type: i0.Input,
+                    args: ['container']
+                }], src: [{
+                    type: i0.Input,
+                    args: ['src']
+                }], title: [{
+                    type: i0.Input,
+                    args: ['title']
+                }], xsBreakpoint: [{
+                    type: i0.Input,
+                    args: ['xs-breakpoint']
+                }], smBreakpoint: [{
+                    type: i0.Input,
+                    args: ['sm-breakpoint']
+                }], mdBreakpoint: [{
+                    type: i0.Input,
+                    args: ['md-breakpoint']
+                }], lgBreakpoint: [{
+                    type: i0.Input,
+                    args: ['lg-breakpoint']
+                }], xsSrc: [{
+                    type: i0.Input,
+                    args: ['xs-src']
+                }], smSrc: [{
+                    type: i0.Input,
+                    args: ['sm-src']
+                }], mdSrc: [{
+                    type: i0.Input,
+                    args: ['md-src']
+                }], lgSrc: [{
+                    type: i0.Input,
+                    args: ['lg-src']
+                }], xlSrc: [{
+                    type: i0.Input,
+                    args: ['xl-src']
+                }] });
+    })();
+
+    var Img = /** @class */ (function (_super) {
+        __extends(Img, _super);
+        function Img() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        return Img;
+    }(Item));
+
+    var LightboxImgDirective = /** @class */ (function (_super) {
+        __extends(LightboxImgDirective, _super);
+        function LightboxImgDirective(_lightboxService, _elementRef) {
+            var _this = _super.call(this, _lightboxService, _elementRef) || this;
+            _this._lightboxService = _lightboxService;
+            _this._elementRef = _elementRef;
+            return _this;
+        }
+        LightboxImgDirective.prototype.ngOnInit = function () {
+            if (!this.container) {
+                throw new Error("Attribute 'lightbox-container' is required");
+            }
+            if (!this.title) {
+                throw new Error("Attribute 'lightbox-title' is required");
+            }
+            var item = new Img();
+            item.title = this.title;
+            item.container = this.container;
+            item.src = this.src;
+            item.xsSrc = this.xsSrc;
+            item.smSrc = this.smSrc;
+            item.mdSrc = this.mdSrc;
+            item.lgSrc = this.lgSrc;
+            item.xlSrc = this.xlSrc;
+            item.xsBreakpoint = this.xsBreakpoint;
+            item.smBreakpoint = this.smBreakpoint;
+            item.mdBreakpoint = this.mdBreakpoint;
+            item.lgBreakpoint = this.mdBreakpoint;
+            item.isVideo = false;
+            this.item = item;
+            this._lightboxService.addItem(this.item);
+        };
+        LightboxImgDirective.prototype.ngOnDestroy = function () {
+            this.lightboxService.removeItem(this.item);
+        };
+        return LightboxImgDirective;
+    }(ItemDirectiveBase));
+    LightboxImgDirective.ɵfac = function LightboxImgDirective_Factory(t) { return new (t || LightboxImgDirective)(i0.ɵɵdirectiveInject(LightboxService), i0.ɵɵdirectiveInject(i0.ElementRef)); };
+    LightboxImgDirective.ɵdir = i0.ɵɵdefineDirective({ type: LightboxImgDirective, selectors: [["img", "lightbox-img", ""]], hostVars: 4, hostBindings: function LightboxImgDirective_HostBindings(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵlistener("tap", function LightboxImgDirective_tap_HostBindingHandler($event) { return ctx.onClick($event); })("load", function LightboxImgDirective_load_HostBindingHandler($event) { return ctx.onLoad($event); });
+            }
+            if (rf & 2) {
+                i0.ɵɵstyleProp("cursor", ctx.cursor)("visibility", ctx.visibility);
+            }
+        }, features: [i0.ɵɵInheritDefinitionFeature] });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxImgDirective, [{
+                type: i0.Directive,
+                args: [{
+                        selector: 'img[lightbox-img]',
+                        host: {
+                            '[style.cursor]': 'cursor',
+                            '[style.visibility]': 'visibility',
+                            '(tap)': 'onClick($event)',
+                            '(load)': 'onLoad($event)'
+                        }
+                    }]
+            }], function () { return [{ type: LightboxService }, { type: i0.ElementRef }]; }, null);
+    })();
+
+    var LightboxVideoDirective = /** @class */ (function (_super) {
+        __extends(LightboxVideoDirective, _super);
+        function LightboxVideoDirective(_lightboxService, _elementRef) {
+            var _this = _super.call(this, _lightboxService, _elementRef) || this;
+            _this._lightboxService = _lightboxService;
+            _this._elementRef = _elementRef;
+            return _this;
+        }
+        LightboxVideoDirective.prototype.ngOnInit = function () {
+            if (!this.container) {
+                throw new Error("Attribute 'lightbox-container' is required");
+            }
+            if (!this.title) {
+                throw new Error("Attribute 'lightbox-title' is required");
+            }
+            if (!this.youtubeId) {
+                throw new Error("Attribute 'youtube-id' is required");
+            }
+            var item = new Video();
+            item.title = this.title;
+            item.container = this.container;
+            item.youtubeVieoId = this.youtubeId;
+            item.src = this.src;
+            item.xsSrc = this.xsSrc;
+            item.smSrc = this.smSrc;
+            item.mdSrc = this.mdSrc;
+            item.lgSrc = this.lgSrc;
+            item.xlSrc = this.xlSrc;
+            item.xsBreakpoint = this.xsBreakpoint;
+            item.smBreakpoint = this.smBreakpoint;
+            item.mdBreakpoint = this.mdBreakpoint;
+            item.lgBreakpoint = this.mdBreakpoint;
+            item.isVideo = true;
+            this.item = item;
+            this._lightboxService.addItem(this.item);
+        };
+        LightboxVideoDirective.prototype.ngOnDestroy = function () {
+            this.lightboxService.removeItem(this.item);
+        };
+        return LightboxVideoDirective;
+    }(ItemDirectiveBase));
+    LightboxVideoDirective.ɵfac = function LightboxVideoDirective_Factory(t) { return new (t || LightboxVideoDirective)(i0.ɵɵdirectiveInject(LightboxService), i0.ɵɵdirectiveInject(i0.ElementRef)); };
+    LightboxVideoDirective.ɵdir = i0.ɵɵdefineDirective({ type: LightboxVideoDirective, selectors: [["img", "lightbox-video", ""]], hostVars: 4, hostBindings: function LightboxVideoDirective_HostBindings(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵlistener("tap", function LightboxVideoDirective_tap_HostBindingHandler($event) { return ctx.onClick($event); })("load", function LightboxVideoDirective_load_HostBindingHandler($event) { return ctx.onLoad($event); });
+            }
+            if (rf & 2) {
+                i0.ɵɵstyleProp("cursor", ctx.cursor)("visibility", ctx.visibility);
+            }
+        }, inputs: { youtubeId: ["youtube-id", "youtubeId"] }, features: [i0.ɵɵInheritDefinitionFeature] });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxVideoDirective, [{
+                type: i0.Directive,
+                args: [{
+                        selector: 'img[lightbox-video]',
+                        host: {
+                            '[style.cursor]': 'cursor',
+                            '[style.visibility]': 'visibility',
+                            '(tap)': 'onClick($event)',
+                            '(load)': 'onLoad($event)'
+                        }
+                    }]
+            }], function () { return [{ type: LightboxService }, { type: i0.ElementRef }]; }, { youtubeId: [{
+                    type: i0.Input,
+                    args: ['youtube-id']
+                }] });
+    })();
+
+    var HammerConfig = /** @class */ (function (_super) {
+        __extends(HammerConfig, _super);
+        function HammerConfig() {
+            var _this = _super.apply(this, __spread(arguments)) || this;
+            _this.overrides = {
+                swipe: { direction: Hammer.DIRECTION_ALL },
+                pan: { direction: Hammer.DIRECTION_ALL }
+            };
+            return _this;
+        }
+        return HammerConfig;
+    }(i1$6.HammerGestureConfig));
+
+    var LazyLoadingModule = /** @class */ (function () {
+        function LazyLoadingModule() {
+        }
+        return LazyLoadingModule;
+    }());
+    LazyLoadingModule.ɵfac = function LazyLoadingModule_Factory(t) { return new (t || LazyLoadingModule)(); };
+    LazyLoadingModule.ɵmod = i0.ɵɵdefineNgModule({ type: LazyLoadingModule });
+    LazyLoadingModule.ɵinj = i0.ɵɵdefineInjector({ providers: [
+            DoomSensorService
+        ], imports: [[
+                i2$1.CommonModule
+            ]] });
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(LazyLoadingModule, { declarations: [LazyLoadingDirective], imports: [i2$1.CommonModule], exports: [LazyLoadingDirective] }); })();
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LazyLoadingModule, [{
+                type: i0.NgModule,
+                args: [{
+                        imports: [
+                            i2$1.CommonModule
+                        ],
+                        declarations: [
+                            LazyLoadingDirective
+                        ],
+                        exports: [
+                            LazyLoadingDirective
+                        ],
+                        providers: [
+                            DoomSensorService
+                        ]
+                    }]
+            }], null, null);
+    })();
+
     i2$1.registerLocaleData(en__default['default']);
     var CmacsComponentsV2LibModule = /** @class */ (function () {
         function CmacsComponentsV2LibModule() {
@@ -41279,7 +44126,17 @@
     }());
     CmacsComponentsV2LibModule.ɵfac = function CmacsComponentsV2LibModule_Factory(t) { return new (t || CmacsComponentsV2LibModule)(); };
     CmacsComponentsV2LibModule.ɵmod = i0.ɵɵdefineNgModule({ type: CmacsComponentsV2LibModule });
-    CmacsComponentsV2LibModule.ɵinj = i0.ɵɵdefineInjector({ providers: [i2$1.DatePipe, { provide: i1$3.NZ_I18N, useValue: i1$3.en_US }, i5$2.CookieService], imports: [[
+    CmacsComponentsV2LibModule.ɵinj = i0.ɵɵdefineInjector({ providers: [i2$1.DatePipe, { provide: i1$3.NZ_I18N, useValue: i1$3.en_US }, i5$2.CookieService, {
+                provide: i1$6.HAMMER_GESTURE_CONFIG,
+                useClass: HammerConfig
+            },
+            LightboxService,
+            DoomService,
+            LightboxConfigurationService
+        ], imports: [[
+                i1$6.HammerModule,
+                LazyLoadingModule,
+                YoutubeModule,
                 treeSelect.NzTreeSelectModule,
                 i3$6.GoogleChartsModule,
                 i2.BidiModule,
@@ -41344,7 +44201,10 @@
                 i1$7.VgBufferingModule,
                 i3$1.EditorModule,
                 i5.ReactiveFormsModule
-            ], treeSelect.NzTreeSelectModule,
+            ], i1$6.HammerModule,
+            LazyLoadingModule,
+            YoutubeModule,
+            treeSelect.NzTreeSelectModule,
             i3$6.GoogleChartsModule,
             i2.BidiModule,
             i3.PlatformModule,
@@ -41402,7 +44262,15 @@
             i3$1.EditorModule,
             i10.NzTimePickerModule] });
     (function () {
-        (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [PtbTabLabelDirective,
+        (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(CmacsComponentsV2LibModule, { declarations: [LightboxButtonComponent,
+                LightboxComponent,
+                LightboxToolbarComponent,
+                LightboxImgDirective,
+                LightboxVideoDirective,
+                LightboxItemComponent,
+                LightboxZoomComponent,
+                LightboxThumbnailsComponent,
+                PtbTabLabelDirective,
                 CmacsTreeSelectComponent,
                 PtbTabsNavComponent,
                 PtbTabsInkBarDirective,
@@ -41551,7 +44419,10 @@
                 CmacsDateTimePickerComponent,
                 CmacsDatetimePickerPanelComponent,
                 CmacsDatetimeValueAccessorDirective,
-                CmacsMessageContainerComponent], imports: [treeSelect.NzTreeSelectModule,
+                CmacsMessageContainerComponent], imports: [i1$6.HammerModule,
+                LazyLoadingModule,
+                YoutubeModule,
+                treeSelect.NzTreeSelectModule,
                 i3$6.GoogleChartsModule,
                 i2.BidiModule,
                 i3.PlatformModule,
@@ -41614,7 +44485,12 @@
                 i1$7.VgOverlayPlayModule,
                 i1$7.VgBufferingModule,
                 i3$1.EditorModule,
-                i5.ReactiveFormsModule], exports: [treeSelect.NzTreeSelectModule,
+                i5.ReactiveFormsModule], exports: [LightboxImgDirective,
+                LightboxVideoDirective,
+                i1$6.HammerModule,
+                LazyLoadingModule,
+                YoutubeModule,
+                treeSelect.NzTreeSelectModule,
                 CmacsTreeSelectComponent,
                 PtbTabLabelDirective,
                 PtbTabsNavComponent,
@@ -41823,6 +44699,14 @@
                 type: i0.NgModule,
                 args: [{
                         declarations: [
+                            LightboxButtonComponent,
+                            LightboxComponent,
+                            LightboxToolbarComponent,
+                            LightboxImgDirective,
+                            LightboxVideoDirective,
+                            LightboxItemComponent,
+                            LightboxZoomComponent,
+                            LightboxThumbnailsComponent,
                             PtbTabLabelDirective,
                             CmacsTreeSelectComponent,
                             PtbTabsNavComponent,
@@ -41975,6 +44859,9 @@
                             CmacsMessageContainerComponent
                         ],
                         imports: [
+                            i1$6.HammerModule,
+                            LazyLoadingModule,
+                            YoutubeModule,
                             treeSelect.NzTreeSelectModule,
                             i3$6.GoogleChartsModule,
                             i2.BidiModule,
@@ -42041,6 +44928,11 @@
                             i5.ReactiveFormsModule
                         ],
                         exports: [
+                            LightboxImgDirective,
+                            LightboxVideoDirective,
+                            i1$6.HammerModule,
+                            LazyLoadingModule,
+                            YoutubeModule,
                             treeSelect.NzTreeSelectModule,
                             CmacsTreeSelectComponent,
                             PtbTabLabelDirective,
@@ -42246,7 +45138,14 @@
                             i10.NzTimePickerModule
                         ],
                         entryComponents: [CmacsDropdownMenuComponent, CmacsMessageContainerComponent, CmacsModalComponent],
-                        providers: [i2$1.DatePipe, { provide: i1$3.NZ_I18N, useValue: i1$3.en_US }, i5$2.CookieService]
+                        providers: [i2$1.DatePipe, { provide: i1$3.NZ_I18N, useValue: i1$3.en_US }, i5$2.CookieService, {
+                                provide: i1$6.HAMMER_GESTURE_CONFIG,
+                                useClass: HammerConfig
+                            },
+                            LightboxService,
+                            DoomService,
+                            LightboxConfigurationService
+                        ]
                     }]
             }], null, null);
     })();
@@ -42626,7 +45525,12 @@
     exports.FLOATING_MENU_LOCALIZATION = FLOATING_MENU_LOCALIZATION;
     exports.KPI_COLORS = KPI_COLORS;
     exports.KPI_PRIORITY_COLORS = KPI_PRIORITY_COLORS;
+    exports.LazyLoadingDirective = LazyLoadingDirective;
+    exports.LazyLoadingModule = LazyLoadingModule;
     exports.LibPackerModule = LibPackerModule;
+    exports.LightboxConfigurationService = LightboxConfigurationService;
+    exports.LightboxImgDirective = LightboxImgDirective;
+    exports.LightboxVideoDirective = LightboxVideoDirective;
     exports.MODAL_ANIMATE_DURATION = MODAL_ANIMATE_DURATION;
     exports.MODAL_CONFIG = MODAL_CONFIG;
     exports.MenuDropDownTokenFactory = MenuDropDownTokenFactory;
@@ -42663,6 +45567,8 @@
     exports.SIGNATURE_LOCALIZATION = SIGNATURE_LOCALIZATION;
     exports.TimelineService = TimelineService;
     exports.UtilService = UtilService;
+    exports.YoutubeComponent = YoutubeComponent;
+    exports.YoutubeModule = YoutubeModule;
     exports.defaultFilterOption = defaultFilterOption;
     exports.getTimeConfig = getTimeConfig;
     exports.higherOrderServiceFactory = higherOrderServiceFactory;

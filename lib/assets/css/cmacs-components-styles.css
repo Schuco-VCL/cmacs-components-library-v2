@@ -1097,3 +1097,6 @@ nz-dropdown-context .ant-dropdown-menu-submenu-title,
 .ant-picker-separator .anticon.anticon-swap-right {
   vertical-align: -.12em !important;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
