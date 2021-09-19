@@ -75,15 +75,14 @@ export declare class CmacsCardComponent implements OnInit {
     onClick(event: Event): void;
     onDblClick(event: Event): void;
     tapTimeoutHandler: any;
-    onTouchStart($event: Event): void;
     markForCheck(): void;
-    select(event: Event): void;
+    select(event: any): void;
     handleEnter(event: KeyboardEvent, titleContainer: any, titleSpan: any): void;
     handleEdit(event: KeyboardEvent, titleSpan: any): void;
     toggleEdit(titleContainer: any): void;
     getInitials(name: any): any;
     getBackgroundImage(): import("@angular/platform-browser").SafeStyle;
-    iconsToDoClick(icon: string): void;
+    iconsToDoClick(event: any, icon: string): void;
     goToModuleToDo(event: any, url: string): void;
     buildLabel(value: string): string;
     static ɵfac: i0.ɵɵFactoryDef<CmacsCardComponent, never>;
