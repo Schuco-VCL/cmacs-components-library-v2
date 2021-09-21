@@ -2563,7 +2563,7 @@ class CmacsSelectService {
         this.listOfFilteredOption = this.addedTagOption
             ? [this.addedTagOption, ...listOfFilteredOption]
             : [...listOfFilteredOption];
-        const isMatch = this.listOfTagAndTemplateOption.find(item => item.nzLabel.indexOf(this.searchValue) >= 0);
+        const isMatch = this.listOfTagAndTemplateOption.find(item => item.nzLabel && item.nzLabel.indexOf(this.searchValue) >= 0);
         this.isShowNotFound = (!this.isTagsMode && !this.isTagsSingleSelectMode && !this.listOfFilteredOption.length)
             || (this.isTagsSingleSelectMode && !isMatch && this.searchValue.length && this.searchValue.trim() === '');
     }

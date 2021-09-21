@@ -3050,7 +3050,7 @@
             var listOfFilteredOption = new NzFilterOptionPipe().transform(this.listOfTagAndTemplateOption, this.searchValue, this.filterOption, this.serverSearch);
             this.listOfFilteredOption = this.addedTagOption
                 ? __spread([this.addedTagOption], listOfFilteredOption) : __spread(listOfFilteredOption);
-            var isMatch = this.listOfTagAndTemplateOption.find(function (item) { return item.nzLabel.indexOf(_this.searchValue) >= 0; });
+            var isMatch = this.listOfTagAndTemplateOption.find(function (item) { return item.nzLabel && item.nzLabel.indexOf(_this.searchValue) >= 0; });
             this.isShowNotFound = (!this.isTagsMode && !this.isTagsSingleSelectMode && !this.listOfFilteredOption.length)
                 || (this.isTagsSingleSelectMode && !isMatch && this.searchValue.length && this.searchValue.trim() === '');
         };
