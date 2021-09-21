@@ -2,10 +2,10 @@ import { HammerGestureConfig } from '@angular/platform-browser';
 export declare class HammerConfig extends HammerGestureConfig {
     overrides: {
         swipe: {
-            direction: any;
+            direction: 30;
         };
         pan: {
-            direction: any;
+            direction: 30;
         };
     };
 }
