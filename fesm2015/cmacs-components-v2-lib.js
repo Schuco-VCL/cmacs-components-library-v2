@@ -7355,7 +7355,7 @@ class CmacsKpiComponent {
         return count !== 0 ? Math.trunc(count * 100 / this.getTotalCount()) - 2 : 0;
     }
     getTotalWidth() {
-        const width = this.getTotalCount().toFixed(this.fixed).toString().length * 20;
+        const width = this.getTotalCount().toFixed(this.fixed).toString().length * 25;
         return width <= 84 ? 84 : width;
     }
     getColoredData() {
