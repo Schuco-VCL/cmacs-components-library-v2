@@ -24297,7 +24297,6 @@ class CmacsCardComponent {
     }
     iconsToDoClick(event, icon) {
         event.preventDefault();
-        event.stopPropagation();
         this.iconToDoClick.next({ icon, id: this.todo.UniqueId });
     }
     goToModuleToDo(event, url) {

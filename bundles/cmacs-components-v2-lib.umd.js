@@ -26584,7 +26584,6 @@
         };
         CmacsCardComponent.prototype.iconsToDoClick = function (event, icon) {
             event.preventDefault();
-            event.stopPropagation();
             this.iconToDoClick.next({ icon: icon, id: this.todo.UniqueId });
         };
         CmacsCardComponent.prototype.goToModuleToDo = function (event, url) {
