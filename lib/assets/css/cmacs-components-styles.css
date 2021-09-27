@@ -27,6 +27,10 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+.lightbox-video-player vg-player {
+    z-index: 1;
+}
+
 .ant-picker-panel-container .ant-picker-panel {
   vertical-align: top;
   background: 0 0;

@@ -1,5 +1,9 @@
 import { Item } from './item';
+export interface VideoSources {
+    url: string;
+    type: string;
+}
 export declare class Video extends Item {
-    youtubeVieoId: string;
+    sources: VideoSources[];
 }
 //# sourceMappingURL=video.d.ts.map

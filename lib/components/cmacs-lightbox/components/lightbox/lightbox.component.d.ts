@@ -6,9 +6,11 @@ import { LightboxThumbnailsComponent } from '../lightbox-thumbnails/lightbox-thu
 import { LightboxZoomComponent } from '../lightbox-zoom/lightbox-zoom.component';
 import { Item } from '../../models/item';
 import { LightboxConfigurationService } from '../../services/lightbox-configuration.service';
+import { VideoSources } from '../../models/video';
 import { LightboxSliceAnimator } from '../../models/lightbox/animations/lightbox-slice-animator';
 import { BackgroundVisibilityAnimator } from '../../models/lightbox/animations/background-visibility-animator';
 import { Observable } from 'rxjs';
+import { VgAPI } from 'ngx-videogular';
 import * as i0 from "@angular/core";
 export declare class LightboxComponent implements OnInit, OnDestroy {
     private readonly _lightboxConfigurationService;
@@ -34,6 +36,7 @@ export declare class LightboxComponent implements OnInit, OnDestroy {
     disableFeetToWidth: boolean;
     private _itemList;
     private _itemsRef;
+    private _vgapi;
     private _stateSubscription;
     private _stateBehaviorSubject;
     get $state(): Observable<'opening' | 'opened' | 'closing' | 'closed'>;
@@ -44,7 +47,7 @@ export declare class LightboxComponent implements OnInit, OnDestroy {
     ngOnInit(): void;
     ngOnDestroy(): void;
     openItem(item: Item): void;
-    getYoutubeVideoId(): string;
+    getVideoSources(): VideoSources[];
     addItem(item: Item): void;
     thumbnailsToggle(): void;
     removeItem(item: Item): void;
@@ -62,6 +65,7 @@ export declare class LightboxComponent implements OnInit, OnDestroy {
     swipe(action: string): void;
     onReady(event: YT.PlayerEvent): void;
     onError(event: YT.OnErrorEvent): void;
+    onPlayerReady(api: VgAPI): void;
     onChange(event: any): void;
     private _initItems;
     private _openControls;

@@ -16707,7 +16707,6 @@ class CmacsKanbanComponent {
         this.draggedItem.emit(data);
     }
     clickItem(item, columnId) {
-        console.log(this.board);
         item.columnId = columnId;
         this.onclickItem.emit(item);
         // add or remove elements to selected items
@@ -39314,6 +39313,7 @@ class LightboxComponent {
         this.displayYoutube = false;
         this.items = {};
         this.state = 'closed';
+        this._vgapi = null;
         this._stateBehaviorSubject = new BehaviorSubject('closed');
         this._pointerEvents = 'none';
     }
@@ -39360,8 +39360,8 @@ class LightboxComponent {
             }, 0);
         }
     }
-    getYoutubeVideoId() {
-        return this.activeItem.youtubeVieoId;
+    getVideoSources() {
+        return this.activeItem.sources;
     }
     addItem(item) {
         if (!this.items[item.container]) {
@@ -39493,6 +39493,15 @@ class LightboxComponent {
     onError(event) {
         // on error
     }
+    onPlayerReady(api) {
+        this._vgapi = api;
+        this._vgapi.getDefaultMedia().subscriptions.playing.subscribe(() => {
+            this._closeControls();
+        });
+        this._vgapi.getDefaultMedia().subscriptions.pause.subscribe(() => {
+            this._openControls();
+        });
+    }
     onChange(event) {
         switch (event.data) {
             case YT.PlayerState.PLAYING:
@@ -39606,7 +39615,7 @@ LightboxComponent.ɵcmp = ɵɵdefineComponent({ type: LightboxComponent, selecto
         ɵɵlistener("resize", function LightboxComponent_resize_HostBindingHandler($event) { return ctx._onResize($event); }, false, ɵɵresolveWindow);
     } if (rf & 2) {
         ɵɵstyleProp("pointer-events", ctx._pointerEvents);
-    } }, decls: 13, vars: 39, consts: [[1, "lightbox-background"], [3, "ngStyle", "pagination", "title", "closeEvent", "firstEvent", "previousEvent", "nextEvent", "lastEvent", "thumbnailsToggleEvent"], ["toolbar", ""], [1, "lightbox-container", 3, "ngStyle", "ngClass"], [1, "lightbox-items-container", 3, "ngStyle"], [1, "lightbox-items-background", 3, "ngStyle", "tap", "swipeleft", "swiperight"], ["background", ""], ["class", "item-list", 4, "ngIf"], [3, "disableZoomIn", "disableZoomOut", "disableResetZoom", "disableFeetToWidth", "zoomInEvent", "zoomOutEvent", "resetZoomEvent", "feetToWidthEvent"], ["lightboxZoom", ""], [3, "ngStyle", "videoId", "ready", "change", "error"], [3, "ngClass", "items", "ngStyle", "selectEvent"], ["thumbnails", ""], [1, "item-list"], ["itemList", ""], [3, "item", "toggleEvent", 4, "ngFor", "ngForOf"], [3, "item", "toggleEvent"], ["lightboxItem", ""]], template: function LightboxComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 13, vars: 39, consts: [[1, "lightbox-background"], [3, "ngStyle", "pagination", "title", "closeEvent", "firstEvent", "previousEvent", "nextEvent", "lastEvent", "thumbnailsToggleEvent"], ["toolbar", ""], [1, "lightbox-container", 3, "ngStyle", "ngClass"], [1, "lightbox-items-container", 3, "ngStyle"], [1, "lightbox-items-background", 3, "ngStyle", "tap", "swipeleft", "swiperight"], ["background", ""], ["class", "item-list", 4, "ngIf"], [3, "disableZoomIn", "disableZoomOut", "disableResetZoom", "disableFeetToWidth", "zoomInEvent", "zoomOutEvent", "resetZoomEvent", "feetToWidthEvent"], ["lightboxZoom", ""], [1, "lightbox-video-player", 3, "sources", "ngStyle", "playerReady"], [3, "ngClass", "items", "ngStyle", "selectEvent"], ["thumbnails", ""], [1, "item-list"], ["itemList", ""], [3, "item", "toggleEvent", 4, "ngFor", "ngForOf"], [3, "item", "toggleEvent"], ["lightboxItem", ""]], template: function LightboxComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "div", 0);
         ɵɵlistener("@backgroundVisibility.start", function LightboxComponent_Template_div_animation_backgroundVisibility_start_0_listener($event) { return ctx.backgroundVisibilityAnimator.animationStart($event); })("@backgroundVisibility.done", function LightboxComponent_Template_div_animation_backgroundVisibility_done_0_listener($event) { return ctx.backgroundVisibilityAnimator.animationDone($event); });
         ɵɵelementEnd();
@@ -39622,8 +39631,8 @@ LightboxComponent.ɵcmp = ɵɵdefineComponent({ type: LightboxComponent, selecto
         ɵɵelementStart(8, "lightbox-zoom", 8, 9);
         ɵɵlistener("zoomInEvent", function LightboxComponent_Template_lightbox_zoom_zoomInEvent_8_listener() { return ctx.zoomIn(); })("zoomOutEvent", function LightboxComponent_Template_lightbox_zoom_zoomOutEvent_8_listener() { return ctx.zoomOut(); })("resetZoomEvent", function LightboxComponent_Template_lightbox_zoom_resetZoomEvent_8_listener() { return ctx.resetZoom(); })("feetToWidthEvent", function LightboxComponent_Template_lightbox_zoom_feetToWidthEvent_8_listener() { return ctx.feetToWidth(); });
         ɵɵelementEnd();
-        ɵɵelementStart(10, "youtube", 10);
-        ɵɵlistener("ready", function LightboxComponent_Template_youtube_ready_10_listener($event) { return ctx.onReady($event); })("change", function LightboxComponent_Template_youtube_change_10_listener($event) { return ctx.onChange($event); })("error", function LightboxComponent_Template_youtube_error_10_listener($event) { return ctx.onError($event); });
+        ɵɵelementStart(10, "cmacs-video-player", 10);
+        ɵɵlistener("playerReady", function LightboxComponent_Template_cmacs_video_player_playerReady_10_listener($event) { return ctx.onPlayerReady($event); });
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementStart(11, "lightbox-thumbnails", 11, 12);
@@ -39646,10 +39655,10 @@ LightboxComponent.ɵcmp = ɵɵdefineComponent({ type: LightboxComponent, selecto
         ɵɵstyleProp("visibility", ctx.displayZoom);
         ɵɵproperty("disableZoomIn", ctx.disableZoomIn)("disableZoomOut", ctx.disableZoomOut)("disableResetZoom", ctx.disableResetZoom)("disableFeetToWidth", ctx.disableFeetToWidth);
         ɵɵadvance(2);
-        ɵɵproperty("ngStyle", ɵɵpureFunction1(31, _c8$2, ctx.displayYoutube ? "visible" : "hidden"))("videoId", ctx.activeItem ? ctx.getYoutubeVideoId() : undefined);
+        ɵɵproperty("sources", ctx.activeItem ? ctx.getVideoSources() : undefined)("ngStyle", ɵɵpureFunction1(31, _c8$2, ctx.displayYoutube ? "visible" : "hidden"));
         ɵɵadvance(1);
         ɵɵproperty("ngClass", ɵɵpureFunction2(33, _c9$1, ctx.config.controls.thumbnails.position === "left" || ctx.config.controls.thumbnails.position === "right", ctx.config.controls.thumbnails.position === "top" || ctx.config.controls.thumbnails.position === "bottom"))("items", ctx.activeItem ? ctx.items[ctx.activeItem.container] : ɵɵpureFunction0(36, _c10$1))("ngStyle", ɵɵpureFunction1(37, _c6$3, ctx.config.controls.thumbnails.position === "top" || ctx.config.controls.thumbnails.position === "left" ? 1 : 2));
-    } }, directives: [LightboxToolbarComponent, NgStyle, NgClass, NgIf, LightboxZoomComponent, YoutubeComponent, LightboxThumbnailsComponent, NgForOf, LightboxItemComponent], styles: ["lightbox{pointer-events:none;top:0;left:0;height:100%;width:100%;display:flex;flex-direction:column}lightbox .lightbox-background,lightbox .lightbox-items-background{height:100%;width:100%;position:absolute;top:0;z-index:1}lightbox .lightbox-background .item-list,lightbox .lightbox-items-background .item-list{position:relative;height:100%;display:flex}lightbox .lightbox-container{display:flex;flex:1 1 0%;position:relative;overflow:hidden}lightbox .lightbox-items-container{flex:1 1 0%;box-sizing:border-box;height:100%;position:relative}.lightbox-overlay-container{pointer-events:none;position:fixed;z-index:10000;height:100%;width:100%;top:0;left:0}lightbox .lightbox-container.vertical-container{flex-direction:row}lightbox .lightbox-container.horizontal-container{flex-direction:column}"], encapsulation: 2, data: { animation: [LightboxAnimations.visibilityAnimation, LightboxAnimations.sliceAnimation] } });
+    } }, directives: [LightboxToolbarComponent, NgStyle, NgClass, NgIf, LightboxZoomComponent, CmacsVideoPlayerComponent, LightboxThumbnailsComponent, NgForOf, LightboxItemComponent], styles: ["lightbox{pointer-events:none;top:0;left:0;height:100%;width:100%;display:flex;flex-direction:column}lightbox .lightbox-background,lightbox .lightbox-items-background{height:100%;width:100%;position:absolute;top:0;z-index:1}lightbox .lightbox-background .item-list,lightbox .lightbox-items-background .item-list{position:relative;height:100%;display:flex}lightbox .lightbox-container{display:flex;flex:1 1 0%;position:relative;overflow:hidden}lightbox .lightbox-items-container{flex:1 1 0%;box-sizing:border-box;height:100%;position:relative}.lightbox-overlay-container{pointer-events:none;position:fixed;z-index:10000;height:100%;width:100%;top:0;left:0}lightbox .lightbox-container.vertical-container{flex-direction:row}lightbox .lightbox-container.horizontal-container{flex-direction:column}"], encapsulation: 2, data: { animation: [LightboxAnimations.visibilityAnimation, LightboxAnimations.sliceAnimation] } });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(LightboxComponent, [{
         type: Component,
         args: [{
@@ -39887,13 +39896,13 @@ class LightboxVideoDirective extends ItemDirectiveBase {
         if (!this.title) {
             throw new Error("Attribute 'lightbox-title' is required");
         }
-        if (!this.youtubeId) {
-            throw new Error("Attribute 'youtube-id' is required");
+        if (!this.sources) {
+            throw new Error("Attribute 'sources' is required");
         }
         const item = new Video();
         item.title = this.title;
         item.container = this.container;
-        item.youtubeVieoId = this.youtubeId;
+        item.sources = this.sources;
         item.src = this.src;
         item.xsSrc = this.xsSrc;
         item.smSrc = this.smSrc;
@@ -39917,7 +39926,7 @@ LightboxVideoDirective.ɵdir = ɵɵdefineDirective({ type: LightboxVideoDirectiv
         ɵɵlistener("tap", function LightboxVideoDirective_tap_HostBindingHandler($event) { return ctx.onClick($event); })("load", function LightboxVideoDirective_load_HostBindingHandler($event) { return ctx.onLoad($event); });
     } if (rf & 2) {
         ɵɵstyleProp("cursor", ctx.cursor)("visibility", ctx.visibility);
-    } }, inputs: { youtubeId: ["youtube-id", "youtubeId"] }, features: [ɵɵInheritDefinitionFeature] });
+    } }, inputs: { sources: "sources" }, features: [ɵɵInheritDefinitionFeature] });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(LightboxVideoDirective, [{
         type: Directive,
         args: [{
@@ -39929,9 +39938,9 @@ LightboxVideoDirective.ɵdir = ɵɵdefineDirective({ type: LightboxVideoDirectiv
                     '(load)': 'onLoad($event)'
                 }
             }]
-    }], function () { return [{ type: LightboxService }, { type: ElementRef }]; }, { youtubeId: [{
+    }], function () { return [{ type: LightboxService }, { type: ElementRef }]; }, { sources: [{
             type: Input,
-            args: ['youtube-id']
+            args: ['sources']
         }] }); })();
 
 class HammerConfig extends HammerGestureConfig {
