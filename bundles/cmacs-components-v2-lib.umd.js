@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('ngx-device-detector'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/form'), require('ng2-tel-input'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/core/resize-observers'), require('moment'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('xlsx'), require('ng-zorro-antd/table'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('propagating-hammerjs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ngx-export-as'), require('ngx-cookie-service'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment/locale/en-ie'), require('@angular/cdk/collections'), require('html2canvas'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('ng-zorro-antd/skeleton'), require('@swimlane/ngx-charts'), require('angular-google-charts'), require('ng-zorro-antd/tree-select'), require('@angular/animations'), require('@egjs/hammerjs')) :
-    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', 'ngx-device-detector', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid', 'ng-zorro-antd/form', 'ng2-tel-input', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/core/resize-observers', 'moment', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/timeline', 'ng-zorro-antd/core/color', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'xlsx', 'ng-zorro-antd/table', 'ng-zorro-antd/upload', 'angular2-signaturepad', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'angular2-draggable', 'ng-zorro-antd/tabs', 'propagating-hammerjs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ngx-export-as', 'ngx-cookie-service', 'jspdf', 'jspdf-autotable', 'util', 'moment/locale/en-ie', '@angular/cdk/collections', 'html2canvas', 'ng-zorro-antd/rate', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', 'ng-zorro-antd/skeleton', '@swimlane/ngx-charts', 'angular-google-charts', 'ng-zorro-antd/tree-select', '@angular/animations', '@egjs/hammerjs'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i9, global.i1$1, global.i5$1, global.i4, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i4$5, global.radio, global.ng.cdk.overlay, global.i1$2, global.animation, global.i4$1, global.i1$3, global.i8, global.select, global.i6$2, global.i6, global.i2$3, global.ng.router, global.menu, global.i12, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.i1$5, global.ng.platformBrowser, global.i1$7, global.i3$1, global.i6$1, global.form, global.i3$2, global.alert, global.breadcrumb, global.time, global.i10, global.i3$3, global.moment_, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.i4$3, global.timeline, global.color, global.tag, global.popover, global.i4$4, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.propagating, global.card, global.i3$5, global.list, global.i1$8, global.i5$2, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i15$1, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$3, global.i2$5, global.i3$6, global.treeSelect, global.ng.animations, global.Hammer$1));
-}(this, (function (exports, i0, i5, operators, rxjs, util, i1, i2, i2$1, i9, i1$1, i5$1, i4, checkbox, i2$2, slider, keycodes, i3, _switch, i4$5, radio, i1$4, i1$2, animation, i4$1, i1$3, i8, select, i6$2, i6, i2$3, i4$2, menu, i12, i2$4, portal, logger, i1$5, i1$6, i1$7, i3$1, i6$1, form, i3$2, alert, breadcrumb, time, i10, i3$3, moment_, datePicker, inputNumber, dateFns, polyfill, en, progress, i4$3, timeline, color, tag, popover, i4$4, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, propagating, card, i3$5, list, i1$8, i5$2, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i15$1, steps, scrolling, tree, cloneDeep, i5$3, i2$5, i3$6, treeSelect, animations$1, Hammer$1) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('ngx-device-detector'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/form'), require('ng2-tel-input'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/core/resize-observers'), require('moment'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/timeline'), require('ngx-perfect-scrollbar'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('xlsx'), require('ng-zorro-antd/table'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('propagating-hammerjs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ngx-export-as'), require('ngx-cookie-service'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment/locale/en-ie'), require('@angular/cdk/collections'), require('html2canvas'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('ng-zorro-antd/skeleton'), require('@swimlane/ngx-charts'), require('angular-google-charts'), require('ng-zorro-antd/tree-select'), require('@angular/animations'), require('@egjs/hammerjs')) :
+    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', 'ngx-device-detector', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid', 'ng-zorro-antd/form', 'ng2-tel-input', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/core/resize-observers', 'moment', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/timeline', 'ngx-perfect-scrollbar', 'ng-zorro-antd/core/color', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'xlsx', 'ng-zorro-antd/table', 'ng-zorro-antd/upload', 'angular2-signaturepad', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'angular2-draggable', 'ng-zorro-antd/tabs', 'propagating-hammerjs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ngx-export-as', 'ngx-cookie-service', 'jspdf', 'jspdf-autotable', 'util', 'moment/locale/en-ie', '@angular/cdk/collections', 'html2canvas', 'ng-zorro-antd/rate', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', 'ng-zorro-antd/skeleton', '@swimlane/ngx-charts', 'angular-google-charts', 'ng-zorro-antd/tree-select', '@angular/animations', '@egjs/hammerjs'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i9, global.i1$1, global.i5$1, global.i4, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i4$6, global.radio, global.ng.cdk.overlay, global.i1$2, global.animation, global.i4$1, global.i1$3, global.i8, global.select, global.i6$2, global.i6, global.i2$3, global.ng.router, global.menu, global.i12, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.i1$5, global.ng.platformBrowser, global.i1$7, global.i3$1, global.i6$1, global.form, global.i3$2, global.alert, global.breadcrumb, global.time, global.i10, global.i3$3, global.moment_, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.i4$3, global.timeline, global.i4$4, global.color, global.tag, global.popover, global.i4$5, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.propagating, global.card, global.i3$5, global.list, global.i1$8, global.i5$2, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i15$1, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$3, global.i2$5, global.i3$6, global.treeSelect, global.ng.animations, global.Hammer$1));
+}(this, (function (exports, i0, i5, operators, rxjs, util, i1, i2, i2$1, i9, i1$1, i5$1, i4, checkbox, i2$2, slider, keycodes, i3, _switch, i4$6, radio, i1$4, i1$2, animation, i4$1, i1$3, i8, select, i6$2, i6, i2$3, i4$2, menu, i12, i2$4, portal, logger, i1$5, i1$6, i1$7, i3$1, i6$1, form, i3$2, alert, breadcrumb, time, i10, i3$3, moment_, datePicker, inputNumber, dateFns, polyfill, en, progress, i4$3, timeline, i4$4, color, tag, popover, i4$5, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, propagating, card, i3$5, list, i1$8, i5$2, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i15$1, steps, scrolling, tree, cloneDeep, i5$3, i2$5, i3$6, treeSelect, animations$1, Hammer$1) { 'use strict';
 
     function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -17837,7 +17837,7 @@
 
     function CmacsKanbanComponent_div_4_div_1_ng_container_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementContainer(0, 20);
+            i0.ɵɵelementContainer(0, 21);
         }
         if (rf & 2) {
             var ctx_r9 = i0.ɵɵnextContext(3);
@@ -17846,7 +17846,7 @@
     }
     function CmacsKanbanComponent_div_4_div_1_div_5_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 21);
+            i0.ɵɵelementStart(0, "div", 22);
             i0.ɵɵelementStart(1, "span");
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
@@ -17862,15 +17862,15 @@
     function CmacsKanbanComponent_div_4_div_1_Template(rf, ctx) {
         if (rf & 1) {
             var _r14_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "div", 13);
+            i0.ɵɵelementStart(0, "div", 14);
             i0.ɵɵlistener("click", function CmacsKanbanComponent_div_4_div_1_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r14_1); var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r12 = i0.ɵɵnextContext(); return ctx_r12.columnExpand(column_r1); });
-            i0.ɵɵelementStart(1, "button", 14);
-            i0.ɵɵelement(2, "i", 15);
+            i0.ɵɵelementStart(1, "button", 15);
+            i0.ɵɵelement(2, "i", 16);
             i0.ɵɵelementEnd();
-            i0.ɵɵelement(3, "div", 16);
-            i0.ɵɵtemplate(4, CmacsKanbanComponent_div_4_div_1_ng_container_4_Template, 1, 1, "ng-container", 17);
-            i0.ɵɵtemplate(5, CmacsKanbanComponent_div_4_div_1_div_5_Template, 3, 1, "div", 18);
-            i0.ɵɵelement(6, "div", 19);
+            i0.ɵɵelement(3, "div", 17);
+            i0.ɵɵtemplate(4, CmacsKanbanComponent_div_4_div_1_ng_container_4_Template, 1, 1, "ng-container", 18);
+            i0.ɵɵtemplate(5, CmacsKanbanComponent_div_4_div_1_div_5_Template, 3, 1, "div", 19);
+            i0.ɵɵelement(6, "div", 20);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -17884,7 +17884,7 @@
     }
     function CmacsKanbanComponent_div_4_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementContainer(0, 22);
+            i0.ɵɵelementContainer(0, 23);
         }
         if (rf & 2) {
             var ctx_r3 = i0.ɵɵnextContext(2);
@@ -17894,22 +17894,22 @@
     function CmacsKanbanComponent_div_4_div_3_button_5_Template(rf, ctx) {
         if (rf & 1) {
             var _r19_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "button", 28);
+            i0.ɵɵelementStart(0, "button", 29);
             i0.ɵɵlistener("click", function CmacsKanbanComponent_div_4_div_3_button_5_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r19_1); var column_r1 = i0.ɵɵnextContext(2).$implicit; var ctx_r17 = i0.ɵɵnextContext(); return ctx_r17.columnCollapse(column_r1); });
-            i0.ɵɵelement(1, "i", 29);
+            i0.ɵɵelement(1, "i", 30);
             i0.ɵɵelementEnd();
         }
     }
     function CmacsKanbanComponent_div_4_div_3_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 23);
-            i0.ɵɵelementStart(1, "div", 24);
-            i0.ɵɵelementStart(2, "div", 25);
+            i0.ɵɵelementStart(0, "div", 24);
+            i0.ɵɵelementStart(1, "div", 25);
+            i0.ɵɵelementStart(2, "div", 26);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(4, "div", 26);
-            i0.ɵɵtemplate(5, CmacsKanbanComponent_div_4_div_3_button_5_Template, 2, 0, "button", 27);
+            i0.ɵɵelementStart(4, "div", 27);
+            i0.ɵɵtemplate(5, CmacsKanbanComponent_div_4_div_3_button_5_Template, 2, 0, "button", 28);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
@@ -17924,7 +17924,7 @@
     }
     function CmacsKanbanComponent_div_4_ng_container_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementContainer(0, 30);
+            i0.ɵɵelementContainer(0, 31);
         }
         if (rf & 2) {
             var ctx_r5 = i0.ɵɵnextContext(2);
@@ -17933,7 +17933,7 @@
     }
     function CmacsKanbanComponent_div_4_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementContainer(0, 30);
+            i0.ɵɵelementContainer(0, 31);
         }
         if (rf & 2) {
             var column_r1 = i0.ɵɵnextContext().$implicit;
@@ -17941,26 +17941,18 @@
             i0.ɵɵproperty("ngIf", ctx_r6.getActionPanel(column_r1.id));
         }
     }
-    function CmacsKanbanComponent_div_4_div_7_div_1_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 34);
-            i0.ɵɵelement(1, "i", 35);
-            i0.ɵɵelementEnd();
-        }
-    }
-    function CmacsKanbanComponent_div_4_div_7_ng_container_2_Template(rf, ctx) {
+    function CmacsKanbanComponent_div_4_div_8_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainer(0);
         }
     }
     var _c1$h = function (a0, a1) { return { item: a0, columnId: a1 }; };
-    function CmacsKanbanComponent_div_4_div_7_Template(rf, ctx) {
+    function CmacsKanbanComponent_div_4_div_8_Template(rf, ctx) {
         if (rf & 1) {
-            var _r27_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "div", 31);
-            i0.ɵɵlistener("cdkDragStarted", function CmacsKanbanComponent_div_4_div_7_Template_div_cdkDragStarted_0_listener() { i0.ɵɵrestoreView(_r27_1); var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r25 = i0.ɵɵnextContext(); return ctx_r25.setDragStartedColumn(column_r1); })("click", function CmacsKanbanComponent_div_4_div_7_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r27_1); var item_r22 = ctx.$implicit; var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r28 = i0.ɵɵnextContext(); return ctx_r28.clickItem(item_r22, column_r1.id); })("dblclick", function CmacsKanbanComponent_div_4_div_7_Template_div_dblclick_0_listener() { i0.ɵɵrestoreView(_r27_1); var item_r22 = ctx.$implicit; var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r30 = i0.ɵɵnextContext(); return ctx_r30.dblclickItem(item_r22, column_r1.id); });
-            i0.ɵɵtemplate(1, CmacsKanbanComponent_div_4_div_7_div_1_Template, 2, 0, "div", 32);
-            i0.ɵɵtemplate(2, CmacsKanbanComponent_div_4_div_7_ng_container_2_Template, 1, 0, "ng-container", 33);
+            var _r26_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 32);
+            i0.ɵɵlistener("cdkDragStarted", function CmacsKanbanComponent_div_4_div_8_Template_div_cdkDragStarted_0_listener() { i0.ɵɵrestoreView(_r26_1); var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r24 = i0.ɵɵnextContext(); return ctx_r24.setDragStartedColumn(column_r1); })("click", function CmacsKanbanComponent_div_4_div_8_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r26_1); var item_r22 = ctx.$implicit; var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r27 = i0.ɵɵnextContext(); return ctx_r27.clickItem(item_r22, column_r1.id); })("dblclick", function CmacsKanbanComponent_div_4_div_8_Template_div_dblclick_0_listener() { i0.ɵɵrestoreView(_r26_1); var item_r22 = ctx.$implicit; var column_r1 = i0.ɵɵnextContext().$implicit; var ctx_r29 = i0.ɵɵnextContext(); return ctx_r29.dblclickItem(item_r22, column_r1.id); });
+            i0.ɵɵtemplate(1, CmacsKanbanComponent_div_4_div_8_ng_container_1_Template, 1, 0, "ng-container", 33);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -17970,14 +17962,12 @@
             i0.ɵɵclassProp("task-selected", ctx_r7.isItemSelected(item_r22.id));
             i0.ɵɵproperty("cdkDragData", item_r22)("cdkDragDisabled", item_r22.disabled);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.mobile);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r7.getItemTemplate(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction2(7, _c1$h, item_r22, column_r1.id));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r7.getItemTemplate(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction2(6, _c1$h, item_r22, column_r1.id));
         }
     }
-    function CmacsKanbanComponent_div_4_ng_container_8_Template(rf, ctx) {
+    function CmacsKanbanComponent_div_4_ng_container_9_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementContainer(0, 36);
+            i0.ɵɵelementContainer(0, 34);
         }
         if (rf & 2) {
             var column_r1 = i0.ɵɵnextContext().$implicit;
@@ -17987,18 +17977,20 @@
     }
     function CmacsKanbanComponent_div_4_Template(rf, ctx) {
         if (rf & 1) {
-            var _r35_1 = i0.ɵɵgetCurrentView();
+            var _r34_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 5);
             i0.ɵɵtemplate(1, CmacsKanbanComponent_div_4_div_1_Template, 7, 5, "div", 6);
             i0.ɵɵtemplate(2, CmacsKanbanComponent_div_4_ng_container_2_Template, 1, 1, "ng-container", 7);
             i0.ɵɵtemplate(3, CmacsKanbanComponent_div_4_div_3_Template, 6, 2, "div", 8);
             i0.ɵɵtemplate(4, CmacsKanbanComponent_div_4_ng_container_4_Template, 1, 1, "ng-container", 9);
             i0.ɵɵtemplate(5, CmacsKanbanComponent_div_4_ng_container_5_Template, 1, 1, "ng-container", 9);
-            i0.ɵɵelementStart(6, "div", 10);
-            i0.ɵɵlistener("cdkDropListDropped", function CmacsKanbanComponent_div_4_Template_div_cdkDropListDropped_6_listener($event) { i0.ɵɵrestoreView(_r35_1); var column_r1 = ctx.$implicit; var ctx_r34 = i0.ɵɵnextContext(); return ctx_r34.drop($event, column_r1.id); });
-            i0.ɵɵtemplate(7, CmacsKanbanComponent_div_4_div_7_Template, 3, 10, "div", 11);
+            i0.ɵɵelementStart(6, "perfect-scrollbar", 10);
+            i0.ɵɵelementStart(7, "div", 11);
+            i0.ɵɵlistener("cdkDropListDropped", function CmacsKanbanComponent_div_4_Template_div_cdkDropListDropped_7_listener($event) { i0.ɵɵrestoreView(_r34_1); var column_r1 = ctx.$implicit; var ctx_r33 = i0.ɵɵnextContext(); return ctx_r33.drop($event, column_r1.id); });
+            i0.ɵɵtemplate(8, CmacsKanbanComponent_div_4_div_8_Template, 2, 9, "div", 12);
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(8, CmacsKanbanComponent_div_4_ng_container_8_Template, 1, 1, "ng-container", 12);
+            i0.ɵɵelementEnd();
+            i0.ɵɵtemplate(9, CmacsKanbanComponent_div_4_ng_container_9_Template, 1, 1, "ng-container", 13);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -18009,19 +18001,21 @@
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", column_r1.collapsed);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.columnHeaderTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(17, _c0$L, column_r1));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.columnHeaderTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(18, _c0$L, column_r1));
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", !ctx_r0.columnHeaderTemplate);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.subHeader)("ngTemplateOutletContext", i0.ɵɵpureFunction1(19, _c0$L, column_r1));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.subHeader)("ngTemplateOutletContext", i0.ɵɵpureFunction1(20, _c0$L, column_r1));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.getActionPanel(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction1(21, _c0$L, column_r1));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.getActionPanel(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction1(22, _c0$L, column_r1));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("cdkDropListData", column_r1.items)("ngStyle", ctx_r0.verticalScrollStyle());
+            i0.ɵɵproperty("ngStyle", ctx_r0.verticalScrollStyle())("ngStyle", ctx_r0.verticalScrollStyle());
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("cdkDropListData", column_r1.items);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngForOf", column_r1.items);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.getDescriptionPanel(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction1(23, _c0$L, column_r1));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.getDescriptionPanel(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction1(24, _c0$L, column_r1));
         }
     }
     var CmacsKanbanComponent = /** @class */ (function () {
@@ -18157,13 +18151,13 @@
         return CmacsKanbanComponent;
     }());
     CmacsKanbanComponent.ɵfac = function CmacsKanbanComponent_Factory(t) { return new (t || CmacsKanbanComponent)(i0.ɵɵdirectiveInject(i1$5.DeviceDetectorService)); };
-    CmacsKanbanComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["id", "tasks-container", "cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "ngStyle", "cdkDropListDropped"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], ["class", "cmacs-kanban-item-drag-handler", "cdkDragHandle", "", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cdkDragHandle", "", 1, "cmacs-kanban-item-drag-handler"], [1, "iconArrowLarge-Full-View"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) {
+    CmacsKanbanComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-kanban-scrollbar", 3, "ngStyle"], ["id", "tasks-container", "cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "cdkDropListDropped"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "div", 1);
                 i0.ɵɵelementStart(2, "div", 2);
                 i0.ɵɵelementStart(3, "div", 3);
-                i0.ɵɵtemplate(4, CmacsKanbanComponent_div_4_Template, 9, 25, "div", 4);
+                i0.ɵɵtemplate(4, CmacsKanbanComponent_div_4_Template, 10, 26, "div", 4);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
@@ -18175,7 +18169,7 @@
                 i0.ɵɵadvance(3);
                 i0.ɵɵproperty("ngForOf", ctx.board.columns);
             }
-        }, directives: [i2$1.NgStyle, i2$4.CdkDropListGroup, i2$1.NgForOf, i2$1.NgClass, i2$1.NgIf, i2$1.NgTemplateOutlet, i2$4.CdkDropList, CmacsButtonComponent, i6$1.NzRowDirective, i6$1.NzColDirective, i2$4.CdkDrag, i2$4.CdkDragHandle], styles: [".cmacs-kanban-item-drag-handler{position:absolute;top:5px;left:10px;cursor:-webkit-grab;cursor:grab;color:#656c79}.root{height:100%}.board,.root{display:flex;flex-direction:column}.board{flex-grow:1;min-width:0;min-height:0}.board-name{font-size:20px;font-weight:700}.board-wrapper{overflow-x:auto}.board-column,.board-columns,.board-wrapper{display:flex;flex-grow:1}.board-column{flex-direction:column;flex-basis:0;border-radius:4px}.board-column:not(:first-child){margin-left:0}.column-header{padding:12px 15px 10px;font-family:Roboto-Regular;line-height:1;border-left:1px solid #dee0e5;box-shadow:0 3px 7px -3px rgba(5,6,6,.18);margin-bottom:10px}.column-title{text-transform:capitalize;color:#656c79;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 82px);display:inline-block}.column-title-items{color:#97a0ae!important;font-size:12px!important;font-family:Roboto-Medium!important}.column-shrink{height:20px!important;width:20px;padding-right:0!important;padding-left:0!important;margin-left:5px;float:right}.tasks-container{flex-grow:1;overflow-y:auto;margin-bottom:2px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.board-wrapper::-webkit-scrollbar,.tasks-container::-webkit-scrollbar{-webkit-appearance:none;width:7px;height:7px;-webkit-overflow-scrolling:auto}.board-wrapper::-webkit-scrollbar-thumb,.tasks-container::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.board-wrapper::-webkit-scrollbar-thumb:hover,.tasks-container::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.task{display:flex;position:relative}.task.cdk-drag-preview{opacity:.9}.task-selected{border-color:#2a7cff}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating,.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.board-column.collapsed{min-width:37px!important;padding:0;margin:0 10px;flex-basis:0;flex-grow:0}.board-column.collapsed>.column-action-panel,.board-column.collapsed>.column-description-panel,.board-column.collapsed>.column-header,.board-column.collapsed>.column-header-template,.board-column.collapsed>.tasks-container{display:none}.column-header-collapsed{display:contents;height:100%}.column-header-collapsed-line{background-color:#acb3bf;width:1px;margin:0 auto}.column-header-collapsed-line-1{margin-top:14px;margin-bottom:14px;height:25px}.column-header-collapsed-line-2{margin-top:14px;height:inherit}.column-header-collapsed-text{transform:none;-ms-writing-mode:tb-lr;writing-mode:vertical-lr;margin:0 0 0 10px;text-transform:capitalize;color:#656c79;font-size:14px;font-weight:500;font-family:Roboto-Medium;display:table}.column-header-collapsed-text>*{display:table-cell;white-space:nowrap}.column-header .column-shrink{display:block}.column-shrink,.header-actions{height:100%!important}.column-shrink i{font-size:17px!important}"], encapsulation: 2 });
+        }, directives: [i2$1.NgStyle, i2$4.CdkDropListGroup, i2$1.NgForOf, i2$1.NgClass, i2$1.NgIf, i2$1.NgTemplateOutlet, i4$4.PerfectScrollbarComponent, i2$4.CdkDropList, CmacsButtonComponent, i6$1.NzRowDirective, i6$1.NzColDirective, i2$4.CdkDrag], styles: [".cmacs-kanban-scrollbar .ps__rail-y{display:block!important;opacity:1!important;width:15px!important;background-color:transparent!important}.cmacs-kanban-scrollbar .ps.ps--active-y .ps-content{padding-right:15px}.cmacs-kanban-scrollbar .ps__thumb-y{display:block!important;opacity:1!important;width:7px!important;background-color:#cfd3d9!important}.root{height:100%}.board,.root{display:flex;flex-direction:column}.board{flex-grow:1;min-width:0;min-height:0}.board-name{font-size:20px;font-weight:700}.board-wrapper{overflow-x:auto}.board-column,.board-columns,.board-wrapper{display:flex;flex-grow:1}.board-column{flex-direction:column;flex-basis:0;border-radius:4px}.board-column:not(:first-child){margin-left:0}.column-header{padding:12px 15px 10px;font-family:Roboto-Regular;line-height:1;border-left:1px solid #dee0e5;box-shadow:0 3px 7px -3px rgba(5,6,6,.18);margin-bottom:10px}.column-title{text-transform:capitalize;color:#656c79;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 82px);display:inline-block}.column-title-items{color:#97a0ae!important;font-size:12px!important;font-family:Roboto-Medium!important}.column-shrink{height:20px!important;width:20px;padding-right:0!important;padding-left:0!important;margin-left:5px;float:right}.tasks-container{flex-grow:1;overflow-y:auto;margin-bottom:2px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.board-wrapper::-webkit-scrollbar,.tasks-container::-webkit-scrollbar{-webkit-appearance:none;width:7px;height:7px;-webkit-overflow-scrolling:auto}.board-wrapper::-webkit-scrollbar-thumb,.tasks-container::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.board-wrapper::-webkit-scrollbar-thumb:hover,.tasks-container::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.task{display:flex;position:relative}.task.cdk-drag-preview{opacity:.9}.task-selected{border-color:#2a7cff}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating,.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.board-column.collapsed{min-width:37px!important;padding:0;margin:0 10px;flex-basis:0;flex-grow:0}.board-column.collapsed .column-action-panel,.board-column.collapsed .column-description-panel,.board-column.collapsed .column-header,.board-column.collapsed .column-header-template,.board-column.collapsed .tasks-container{display:none}.column-header-collapsed{display:contents;height:100%}.column-header-collapsed-line{background-color:#acb3bf;width:1px;margin:0 auto}.column-header-collapsed-line-1{margin-top:14px;margin-bottom:14px;height:25px}.column-header-collapsed-line-2{margin-top:14px;height:inherit}.column-header-collapsed-text{transform:none;-ms-writing-mode:tb-lr;writing-mode:vertical-lr;margin:0 0 0 10px;text-transform:capitalize;color:#656c79;font-size:14px;font-weight:500;font-family:Roboto-Medium;display:table}.column-header-collapsed-text>*{display:table-cell;white-space:nowrap}.column-header .column-shrink{display:block}.column-shrink,.header-actions{height:100%!important}.column-shrink i{font-size:17px!important}"], encapsulation: 2 });
     __decorate([
         util.InputBoolean()
     ], CmacsKanbanComponent.prototype, "multiselect", void 0);
@@ -19702,7 +19696,7 @@
                 i0.ɵɵadvance(3);
                 i0.ɵɵproperty("ngIf", ctx.datetime);
             }
-        }, directives: [i2$1.NgIf, i6.NzStringTemplateOutletDirective, i2$1.NgForOf, i4$4.NzCommentActionHostDirective], styles: [".ant-comment-content-author{display:inline-block;margin-left:10px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.2;letter-spacing:normal;color:#3b3f46;width:calc(100% - 140px)}.ant-comment-content-author-name{white-space:pre-line;display:-moz-box;display:-webkit-box;-webkit-line-clamp:2;-moz-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;color:#3b3f46;font-size:14px!important;line-height:unset!important;padding-right:unset!important}.ant-comment-inner{display:block;padding:0 0 20px}.ant-comment-avatar{margin-bottom:14px}.ant-comment-content{line-height:1.83;color:#97a0ae}.ant-comment-content,.ant-comment-content-author-time{font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;letter-spacing:normal}.ant-comment-content-author-time{line-height:1.33;color:#656c79}.ant-comment-actions{float:right;padding:0;margin:0;line-height:32px}.cmacs-comment-avatar,.cmacs-comment-avatar img{display:inline-block;border-radius:4px;border:none;max-width:32px;max-height:32px}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.iconspan i{font-size:16px;position:relative;height:16px;width:16px;display:inline-block;vertical-align:sub}.ant-comment-actions>li:not(:last-child){padding-right:10px}.ant-comment-actions>li>span{padding-right:0;margin-right:0}.ant-comment-actions>li{line-height:20px}.ant-comment-content-detail{margin-bottom:1em}"], encapsulation: 2, changeDetection: 0 });
+        }, directives: [i2$1.NgIf, i6.NzStringTemplateOutletDirective, i2$1.NgForOf, i4$5.NzCommentActionHostDirective], styles: [".ant-comment-content-author{display:inline-block;margin-left:10px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.2;letter-spacing:normal;color:#3b3f46;width:calc(100% - 140px)}.ant-comment-content-author-name{white-space:pre-line;display:-moz-box;display:-webkit-box;-webkit-line-clamp:2;-moz-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;color:#3b3f46;font-size:14px!important;line-height:unset!important;padding-right:unset!important}.ant-comment-inner{display:block;padding:0 0 20px}.ant-comment-avatar{margin-bottom:14px}.ant-comment-content{line-height:1.83;color:#97a0ae}.ant-comment-content,.ant-comment-content-author-time{font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;letter-spacing:normal}.ant-comment-content-author-time{line-height:1.33;color:#656c79}.ant-comment-actions{float:right;padding:0;margin:0;line-height:32px}.cmacs-comment-avatar,.cmacs-comment-avatar img{display:inline-block;border-radius:4px;border:none;max-width:32px;max-height:32px}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.iconspan i{font-size:16px;position:relative;height:16px;width:16px;display:inline-block;vertical-align:sub}.ant-comment-actions>li:not(:last-child){padding-right:10px}.ant-comment-actions>li>span{padding-right:0;margin-right:0}.ant-comment-actions>li{line-height:20px}.ant-comment-content-detail{margin-bottom:1em}"], encapsulation: 2, changeDetection: 0 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsCommentComponent, [{
                 type: i0.Component,
@@ -39009,7 +39003,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", ctx.isTextEnabled());
             }
-        }, directives: [CmacsDividerComponent, i2$1.NgIf, CmacsInputDirective, i4$5.NzAutosizeDirective, i5.DefaultValueAccessor, i5.NgControlStatus, i5.FormControlDirective], styles: [".cmacs-textarea[_ngcontent-%COMP%]{padding:5px 0 0;overflow:hidden;font-size:12px;min-height:31px;line-height:1.83;font-family:Roboto-Regular}.cmacs-text-area-span[_ngcontent-%COMP%]:after{content:\"\"}.cmacs-text-area-span[_ngcontent-%COMP%]:hover:after{font-family:UISmall!important;content:\"\\e99f\";font-size:19px;position:absolute;margin-top:-3px;margin-left:5px;color:#2a7cff}.cmacs-open-textarea-divider[_ngcontent-%COMP%]{height:20px;margin-top:2px}.cmacs-input-opened.ant-input[_ngcontent-%COMP%]:enabled:hover, .cmacs-input-opened.ant-input[_ngcontent-%COMP%]:focus{box-shadow:none;border:none}textarea.cmacs-input-opened[_ngcontent-%COMP%]{border:none;resize:none}", "cmacs-open-textarea[_ngcontent-%COMP%] {\n        display: block;\n      }"], data: { animation: [animation.slideAlertMotion] } });
+        }, directives: [CmacsDividerComponent, i2$1.NgIf, CmacsInputDirective, i4$6.NzAutosizeDirective, i5.DefaultValueAccessor, i5.NgControlStatus, i5.FormControlDirective], styles: [".cmacs-textarea[_ngcontent-%COMP%]{padding:5px 0 0;overflow:hidden;font-size:12px;min-height:31px;line-height:1.83;font-family:Roboto-Regular}.cmacs-text-area-span[_ngcontent-%COMP%]:after{content:\"\"}.cmacs-text-area-span[_ngcontent-%COMP%]:hover:after{font-family:UISmall!important;content:\"\\e99f\";font-size:19px;position:absolute;margin-top:-3px;margin-left:5px;color:#2a7cff}.cmacs-open-textarea-divider[_ngcontent-%COMP%]{height:20px;margin-top:2px}.cmacs-input-opened.ant-input[_ngcontent-%COMP%]:enabled:hover, .cmacs-input-opened.ant-input[_ngcontent-%COMP%]:focus{box-shadow:none;border:none}textarea.cmacs-input-opened[_ngcontent-%COMP%]{border:none;resize:none}", "cmacs-open-textarea[_ngcontent-%COMP%] {\n        display: block;\n      }"], data: { animation: [animation.slideAlertMotion] } });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsOpenTextareaComponent, [{
                 type: i0.Component,
@@ -44114,6 +44108,9 @@
             }], null, null);
     })();
 
+    var DEFAULT_PERFECT_SCROLLBAR_CONFIG = {
+        suppressScrollX: true
+    };
     i2$1.registerLocaleData(en__default['default']);
     var CmacsComponentsV2LibModule = /** @class */ (function () {
         function CmacsComponentsV2LibModule() {
@@ -44122,14 +44119,26 @@
     }());
     CmacsComponentsV2LibModule.ɵfac = function CmacsComponentsV2LibModule_Factory(t) { return new (t || CmacsComponentsV2LibModule)(); };
     CmacsComponentsV2LibModule.ɵmod = i0.ɵɵdefineNgModule({ type: CmacsComponentsV2LibModule });
-    CmacsComponentsV2LibModule.ɵinj = i0.ɵɵdefineInjector({ providers: [i2$1.DatePipe, { provide: i1$3.NZ_I18N, useValue: i1$3.en_US }, i5$2.CookieService, {
+    CmacsComponentsV2LibModule.ɵinj = i0.ɵɵdefineInjector({ providers: [
+            i2$1.DatePipe,
+            {
+                provide: i1$3.NZ_I18N,
+                useValue: i1$3.en_US
+            },
+            i5$2.CookieService,
+            {
                 provide: i1$6.HAMMER_GESTURE_CONFIG,
                 useClass: HammerConfig
+            },
+            {
+                provide: i4$4.PERFECT_SCROLLBAR_CONFIG,
+                useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
             },
             LightboxService,
             DoomService,
             LightboxConfigurationService
         ], imports: [[
+                i4$4.PerfectScrollbarModule,
                 i1$6.HammerModule,
                 LazyLoadingModule,
                 YoutubeModule,
@@ -44155,7 +44164,7 @@
                 list.NzListModule,
                 modal.NzModalModule,
                 message.NzMessageModule,
-                i4$4.NzCommentModule,
+                i4$5.NzCommentModule,
                 popover.NzPopoverModule,
                 i2$2.NzToolTipModule,
                 tag.NzTagModule,
@@ -44179,7 +44188,7 @@
                 checkbox.NzCheckboxModule,
                 slider.NzSliderModule,
                 _switch.NzSwitchModule,
-                i4$5.NzInputModule,
+                i4$6.NzInputModule,
                 radio.NzRadioModule,
                 select.NzSelectModule,
                 i6$2.NzDividerModule,
@@ -44197,7 +44206,8 @@
                 i1$7.VgBufferingModule,
                 i3$1.EditorModule,
                 i5.ReactiveFormsModule
-            ], i1$6.HammerModule,
+            ], i4$4.PerfectScrollbarModule,
+            i1$6.HammerModule,
             LazyLoadingModule,
             YoutubeModule,
             treeSelect.NzTreeSelectModule,
@@ -44221,7 +44231,7 @@
             modal.NzModalModule,
             message.NzMessageModule,
             i13.NzUploadModule,
-            i4$4.NzCommentModule,
+            i4$5.NzCommentModule,
             popover.NzPopoverModule,
             tag.NzTagModule,
             timeline.NzTimelineModule,
@@ -44245,7 +44255,7 @@
             i2$2.NzToolTipModule,
             slider.NzSliderModule,
             _switch.NzSwitchModule,
-            i4$5.NzInputModule,
+            i4$6.NzInputModule,
             radio.NzRadioModule,
             select.NzSelectModule,
             i5$1.NzIconModule,
@@ -44415,7 +44425,8 @@
                 CmacsDateTimePickerComponent,
                 CmacsDatetimePickerPanelComponent,
                 CmacsDatetimeValueAccessorDirective,
-                CmacsMessageContainerComponent], imports: [i1$6.HammerModule,
+                CmacsMessageContainerComponent], imports: [i4$4.PerfectScrollbarModule,
+                i1$6.HammerModule,
                 LazyLoadingModule,
                 YoutubeModule,
                 treeSelect.NzTreeSelectModule,
@@ -44440,7 +44451,7 @@
                 list.NzListModule,
                 modal.NzModalModule,
                 message.NzMessageModule,
-                i4$4.NzCommentModule,
+                i4$5.NzCommentModule,
                 popover.NzPopoverModule,
                 i2$2.NzToolTipModule,
                 tag.NzTagModule,
@@ -44464,7 +44475,7 @@
                 checkbox.NzCheckboxModule,
                 slider.NzSliderModule,
                 _switch.NzSwitchModule,
-                i4$5.NzInputModule,
+                i4$6.NzInputModule,
                 radio.NzRadioModule,
                 select.NzSelectModule,
                 i6$2.NzDividerModule,
@@ -44481,7 +44492,8 @@
                 i1$7.VgOverlayPlayModule,
                 i1$7.VgBufferingModule,
                 i3$1.EditorModule,
-                i5.ReactiveFormsModule], exports: [LightboxImgDirective,
+                i5.ReactiveFormsModule], exports: [i4$4.PerfectScrollbarModule,
+                LightboxImgDirective,
                 LightboxVideoDirective,
                 i1$6.HammerModule,
                 LazyLoadingModule,
@@ -44570,7 +44582,7 @@
                 CmacsMessageContainerComponent,
                 CmacsMessageComponent,
                 i13.NzUploadModule,
-                i4$4.NzCommentModule,
+                i4$5.NzCommentModule,
                 CmacsCommentActionComponent,
                 CmacsCommentActionHostDirective,
                 CmacsCommentAvatarDirective,
@@ -44647,7 +44659,7 @@
                 i2$2.NzToolTipModule,
                 slider.NzSliderModule,
                 _switch.NzSwitchModule,
-                i4$5.NzInputModule,
+                i4$6.NzInputModule,
                 CmacsRadioGroupComponent,
                 CmacsRadioComponent,
                 CmacsRadioButtonDirective,
@@ -44855,6 +44867,7 @@
                             CmacsMessageContainerComponent
                         ],
                         imports: [
+                            i4$4.PerfectScrollbarModule,
                             i1$6.HammerModule,
                             LazyLoadingModule,
                             YoutubeModule,
@@ -44880,7 +44893,7 @@
                             list.NzListModule,
                             modal.NzModalModule,
                             message.NzMessageModule,
-                            i4$4.NzCommentModule,
+                            i4$5.NzCommentModule,
                             popover.NzPopoverModule,
                             i2$2.NzToolTipModule,
                             tag.NzTagModule,
@@ -44904,7 +44917,7 @@
                             checkbox.NzCheckboxModule,
                             slider.NzSliderModule,
                             _switch.NzSwitchModule,
-                            i4$5.NzInputModule,
+                            i4$6.NzInputModule,
                             radio.NzRadioModule,
                             select.NzSelectModule,
                             i6$2.NzDividerModule,
@@ -44924,6 +44937,7 @@
                             i5.ReactiveFormsModule
                         ],
                         exports: [
+                            i4$4.PerfectScrollbarModule,
                             LightboxImgDirective,
                             LightboxVideoDirective,
                             i1$6.HammerModule,
@@ -45013,7 +45027,7 @@
                             CmacsMessageContainerComponent,
                             CmacsMessageComponent,
                             i13.NzUploadModule,
-                            i4$4.NzCommentModule,
+                            i4$5.NzCommentModule,
                             CmacsCommentActionComponent,
                             CmacsCommentActionHostDirective,
                             CmacsCommentAvatarDirective,
@@ -45090,7 +45104,7 @@
                             i2$2.NzToolTipModule,
                             slider.NzSliderModule,
                             _switch.NzSwitchModule,
-                            i4$5.NzInputModule,
+                            i4$6.NzInputModule,
                             CmacsRadioGroupComponent,
                             CmacsRadioComponent,
                             CmacsRadioButtonDirective,
@@ -45134,9 +45148,20 @@
                             i10.NzTimePickerModule
                         ],
                         entryComponents: [CmacsDropdownMenuComponent, CmacsMessageContainerComponent, CmacsModalComponent],
-                        providers: [i2$1.DatePipe, { provide: i1$3.NZ_I18N, useValue: i1$3.en_US }, i5$2.CookieService, {
+                        providers: [
+                            i2$1.DatePipe,
+                            {
+                                provide: i1$3.NZ_I18N,
+                                useValue: i1$3.en_US
+                            },
+                            i5$2.CookieService,
+                            {
                                 provide: i1$6.HAMMER_GESTURE_CONFIG,
                                 useClass: HammerConfig
+                            },
+                            {
+                                provide: i4$4.PERFECT_SCROLLBAR_CONFIG,
+                                useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
                             },
                             LightboxService,
                             DoomService,
