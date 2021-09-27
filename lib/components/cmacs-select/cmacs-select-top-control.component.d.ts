@@ -41,6 +41,7 @@ export declare class CmacsSelectTopControlComponent implements OnInit, OnDestroy
     }>;
     nzTokenSeparators: string[];
     listOfCachedSelectedOption: any[];
+    onResize(event: any): void;
     checkWrapperSpace(): void;
     onClearSelection(e: MouseEvent): void;
     getSelectedValues(): any[];

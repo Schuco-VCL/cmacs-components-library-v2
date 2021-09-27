@@ -57,6 +57,7 @@ export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnCh
     overlayPositions: ConnectionPositionPair[];
     currentPositionX: HorizontalConnectionPos;
     currentPositionY: VerticalConnectionPos;
+    state: string;
     get realOpenState(): boolean;
     constructor(elementRef: ElementRef, dateHelper: DateHelperService, cdr: ChangeDetectorRef, platform: Platform, ngZone: NgZone, nzResizeObserver: NzResizeObserver, datePickerService: DatePickerService, doc: NzSafeAny);
     scroll: (e: Event) => void;
