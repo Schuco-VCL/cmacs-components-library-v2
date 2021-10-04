@@ -7,6 +7,7 @@ export declare class LightboxImgDirective extends ItemDirectiveBase implements O
     private readonly _elementRef;
     constructor(_lightboxService: LightboxService, _elementRef: ElementRef);
     ngOnInit(): void;
+    open(): void;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDef<LightboxImgDirective, never>;
     static ɵdir: i0.ɵɵDirectiveDefWithMeta<LightboxImgDirective, "img[lightbox-img]", never, {}, {}, never>;

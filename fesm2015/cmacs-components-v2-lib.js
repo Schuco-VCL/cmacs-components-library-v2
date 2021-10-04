@@ -56,7 +56,6 @@ import en from '@angular/common/locales/en';
 import { NzProgressModule } from 'ng-zorro-antd/progress';
 import { NzWaveDirective, NzWaveModule } from 'ng-zorro-antd/core/wave';
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
-import { PerfectScrollbarComponent, PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { isPresetColor } from 'ng-zorro-antd/core/color';
 import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NzPopoverModule } from 'ng-zorro-antd/popover';
@@ -16467,13 +16466,13 @@ function getInferredTimelineItemPosition(index, mode) {
 }
 
 function CmacsKanbanComponent_div_4_div_1_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 21);
+    ɵɵelementContainer(0, 20);
 } if (rf & 2) {
     const ctx_r9 = ɵɵnextContext(3);
     ɵɵproperty("ngIf", ctx_r9.columnHeaderCollapsedTemplate);
 } }
 function CmacsKanbanComponent_div_4_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 22);
+    ɵɵelementStart(0, "div", 21);
     ɵɵelementStart(1, "span");
     ɵɵtext(2);
     ɵɵelementEnd();
@@ -16486,15 +16485,15 @@ function CmacsKanbanComponent_div_4_div_1_div_5_Template(rf, ctx) { if (rf & 1) 
 const _c0$L = function (a0) { return { column: a0 }; };
 function CmacsKanbanComponent_div_4_div_1_Template(rf, ctx) { if (rf & 1) {
     const _r14 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 14);
+    ɵɵelementStart(0, "div", 13);
     ɵɵlistener("click", function CmacsKanbanComponent_div_4_div_1_Template_div_click_0_listener() { ɵɵrestoreView(_r14); const column_r1 = ɵɵnextContext().$implicit; const ctx_r12 = ɵɵnextContext(); return ctx_r12.columnExpand(column_r1); });
-    ɵɵelementStart(1, "button", 15);
-    ɵɵelement(2, "i", 16);
+    ɵɵelementStart(1, "button", 14);
+    ɵɵelement(2, "i", 15);
     ɵɵelementEnd();
-    ɵɵelement(3, "div", 17);
-    ɵɵtemplate(4, CmacsKanbanComponent_div_4_div_1_ng_container_4_Template, 1, 1, "ng-container", 18);
-    ɵɵtemplate(5, CmacsKanbanComponent_div_4_div_1_div_5_Template, 3, 1, "div", 19);
-    ɵɵelement(6, "div", 20);
+    ɵɵelement(3, "div", 16);
+    ɵɵtemplate(4, CmacsKanbanComponent_div_4_div_1_ng_container_4_Template, 1, 1, "ng-container", 17);
+    ɵɵtemplate(5, CmacsKanbanComponent_div_4_div_1_div_5_Template, 3, 1, "div", 18);
+    ɵɵelement(6, "div", 19);
     ɵɵelementEnd();
 } if (rf & 2) {
     const column_r1 = ɵɵnextContext().$implicit;
@@ -16505,27 +16504,27 @@ function CmacsKanbanComponent_div_4_div_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵproperty("ngIf", !ctx_r2.columnHeaderCollapsedTemplate);
 } }
 function CmacsKanbanComponent_div_4_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 23);
+    ɵɵelementContainer(0, 22);
 } if (rf & 2) {
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵproperty("ngIf", ctx_r3.columnHeaderTemplate);
 } }
 function CmacsKanbanComponent_div_4_div_3_button_5_Template(rf, ctx) { if (rf & 1) {
     const _r19 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 29);
+    ɵɵelementStart(0, "button", 28);
     ɵɵlistener("click", function CmacsKanbanComponent_div_4_div_3_button_5_Template_button_click_0_listener() { ɵɵrestoreView(_r19); const column_r1 = ɵɵnextContext(2).$implicit; const ctx_r17 = ɵɵnextContext(); return ctx_r17.columnCollapse(column_r1); });
-    ɵɵelement(1, "i", 30);
+    ɵɵelement(1, "i", 29);
     ɵɵelementEnd();
 } }
 function CmacsKanbanComponent_div_4_div_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 24);
-    ɵɵelementStart(1, "div", 25);
-    ɵɵelementStart(2, "div", 26);
+    ɵɵelementStart(0, "div", 23);
+    ɵɵelementStart(1, "div", 24);
+    ɵɵelementStart(2, "div", 25);
     ɵɵtext(3);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 27);
-    ɵɵtemplate(5, CmacsKanbanComponent_div_4_div_3_button_5_Template, 2, 0, "button", 28);
+    ɵɵelementStart(4, "div", 26);
+    ɵɵtemplate(5, CmacsKanbanComponent_div_4_div_3_button_5_Template, 2, 0, "button", 27);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -16537,27 +16536,33 @@ function CmacsKanbanComponent_div_4_div_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵproperty("ngIf", ctx_r4.showShrink);
 } }
 function CmacsKanbanComponent_div_4_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 31);
+    ɵɵelementContainer(0, 30);
 } if (rf & 2) {
     const ctx_r5 = ɵɵnextContext(2);
     ɵɵproperty("ngIf", ctx_r5.subHeader);
 } }
 function CmacsKanbanComponent_div_4_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 31);
+    ɵɵelementContainer(0, 30);
 } if (rf & 2) {
     const column_r1 = ɵɵnextContext().$implicit;
     const ctx_r6 = ɵɵnextContext();
     ɵɵproperty("ngIf", ctx_r6.getActionPanel(column_r1.id));
 } }
-function CmacsKanbanComponent_div_4_div_8_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+function CmacsKanbanComponent_div_4_div_7_div_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 34);
+    ɵɵelement(1, "i", 35);
+    ɵɵelementEnd();
+} }
+function CmacsKanbanComponent_div_4_div_7_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
 } }
 const _c1$h = function (a0, a1) { return { item: a0, columnId: a1 }; };
-function CmacsKanbanComponent_div_4_div_8_Template(rf, ctx) { if (rf & 1) {
-    const _r26 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 32);
-    ɵɵlistener("cdkDragStarted", function CmacsKanbanComponent_div_4_div_8_Template_div_cdkDragStarted_0_listener() { ɵɵrestoreView(_r26); const column_r1 = ɵɵnextContext().$implicit; const ctx_r24 = ɵɵnextContext(); return ctx_r24.setDragStartedColumn(column_r1); })("click", function CmacsKanbanComponent_div_4_div_8_Template_div_click_0_listener() { ɵɵrestoreView(_r26); const item_r22 = ctx.$implicit; const column_r1 = ɵɵnextContext().$implicit; const ctx_r27 = ɵɵnextContext(); return ctx_r27.clickItem(item_r22, column_r1.id); })("dblclick", function CmacsKanbanComponent_div_4_div_8_Template_div_dblclick_0_listener() { ɵɵrestoreView(_r26); const item_r22 = ctx.$implicit; const column_r1 = ɵɵnextContext().$implicit; const ctx_r29 = ɵɵnextContext(); return ctx_r29.dblclickItem(item_r22, column_r1.id); });
-    ɵɵtemplate(1, CmacsKanbanComponent_div_4_div_8_ng_container_1_Template, 1, 0, "ng-container", 33);
+function CmacsKanbanComponent_div_4_div_7_Template(rf, ctx) { if (rf & 1) {
+    const _r27 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 31);
+    ɵɵlistener("cdkDragStarted", function CmacsKanbanComponent_div_4_div_7_Template_div_cdkDragStarted_0_listener() { ɵɵrestoreView(_r27); const column_r1 = ɵɵnextContext().$implicit; const ctx_r25 = ɵɵnextContext(); return ctx_r25.setDragStartedColumn(column_r1); })("click", function CmacsKanbanComponent_div_4_div_7_Template_div_click_0_listener() { ɵɵrestoreView(_r27); const item_r22 = ctx.$implicit; const column_r1 = ɵɵnextContext().$implicit; const ctx_r28 = ɵɵnextContext(); return ctx_r28.clickItem(item_r22, column_r1.id); })("dblclick", function CmacsKanbanComponent_div_4_div_7_Template_div_dblclick_0_listener() { ɵɵrestoreView(_r27); const item_r22 = ctx.$implicit; const column_r1 = ɵɵnextContext().$implicit; const ctx_r30 = ɵɵnextContext(); return ctx_r30.dblclickItem(item_r22, column_r1.id); });
+    ɵɵtemplate(1, CmacsKanbanComponent_div_4_div_7_div_1_Template, 2, 0, "div", 32);
+    ɵɵtemplate(2, CmacsKanbanComponent_div_4_div_7_ng_container_2_Template, 1, 0, "ng-container", 33);
     ɵɵelementEnd();
 } if (rf & 2) {
     const item_r22 = ctx.$implicit;
@@ -16566,30 +16571,30 @@ function CmacsKanbanComponent_div_4_div_8_Template(rf, ctx) { if (rf & 1) {
     ɵɵclassProp("task-selected", ctx_r7.isItemSelected(item_r22.id));
     ɵɵproperty("cdkDragData", item_r22)("cdkDragDisabled", item_r22.disabled);
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r7.getItemTemplate(column_r1.id))("ngTemplateOutletContext", ɵɵpureFunction2(6, _c1$h, item_r22, column_r1.id));
+    ɵɵproperty("ngIf", ctx_r7.mobile);
+    ɵɵadvance(1);
+    ɵɵproperty("ngTemplateOutlet", ctx_r7.getItemTemplate(column_r1.id))("ngTemplateOutletContext", ɵɵpureFunction2(7, _c1$h, item_r22, column_r1.id));
 } }
-function CmacsKanbanComponent_div_4_ng_container_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 34);
+function CmacsKanbanComponent_div_4_ng_container_8_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainer(0, 36);
 } if (rf & 2) {
     const column_r1 = ɵɵnextContext().$implicit;
     const ctx_r8 = ɵɵnextContext();
     ɵɵproperty("ngIf", ctx_r8.getDescriptionPanel(column_r1.id));
 } }
 function CmacsKanbanComponent_div_4_Template(rf, ctx) { if (rf & 1) {
-    const _r34 = ɵɵgetCurrentView();
+    const _r35 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 5);
     ɵɵtemplate(1, CmacsKanbanComponent_div_4_div_1_Template, 7, 5, "div", 6);
     ɵɵtemplate(2, CmacsKanbanComponent_div_4_ng_container_2_Template, 1, 1, "ng-container", 7);
     ɵɵtemplate(3, CmacsKanbanComponent_div_4_div_3_Template, 6, 2, "div", 8);
     ɵɵtemplate(4, CmacsKanbanComponent_div_4_ng_container_4_Template, 1, 1, "ng-container", 9);
     ɵɵtemplate(5, CmacsKanbanComponent_div_4_ng_container_5_Template, 1, 1, "ng-container", 9);
-    ɵɵelementStart(6, "perfect-scrollbar", 10);
-    ɵɵelementStart(7, "div", 11);
-    ɵɵlistener("cdkDropListDropped", function CmacsKanbanComponent_div_4_Template_div_cdkDropListDropped_7_listener($event) { ɵɵrestoreView(_r34); const column_r1 = ctx.$implicit; const ctx_r33 = ɵɵnextContext(); return ctx_r33.drop($event, column_r1.id); });
-    ɵɵtemplate(8, CmacsKanbanComponent_div_4_div_8_Template, 2, 9, "div", 12);
+    ɵɵelementStart(6, "div", 10);
+    ɵɵlistener("cdkDropListDropped", function CmacsKanbanComponent_div_4_Template_div_cdkDropListDropped_6_listener($event) { ɵɵrestoreView(_r35); const column_r1 = ctx.$implicit; const ctx_r34 = ɵɵnextContext(); return ctx_r34.drop($event, column_r1.id); });
+    ɵɵtemplate(7, CmacsKanbanComponent_div_4_div_7_Template, 3, 10, "div", 11);
     ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵtemplate(9, CmacsKanbanComponent_div_4_ng_container_9_Template, 1, 1, "ng-container", 13);
+    ɵɵtemplate(8, CmacsKanbanComponent_div_4_ng_container_8_Template, 1, 1, "ng-container", 12);
     ɵɵelementEnd();
 } if (rf & 2) {
     const column_r1 = ctx.$implicit;
@@ -16599,21 +16604,19 @@ function CmacsKanbanComponent_div_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵproperty("ngIf", column_r1.collapsed);
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.columnHeaderTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(18, _c0$L, column_r1));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.columnHeaderTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(17, _c0$L, column_r1));
     ɵɵadvance(1);
     ɵɵproperty("ngIf", !ctx_r0.columnHeaderTemplate);
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.subHeader)("ngTemplateOutletContext", ɵɵpureFunction1(20, _c0$L, column_r1));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.subHeader)("ngTemplateOutletContext", ɵɵpureFunction1(19, _c0$L, column_r1));
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.getActionPanel(column_r1.id))("ngTemplateOutletContext", ɵɵpureFunction1(22, _c0$L, column_r1));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.getActionPanel(column_r1.id))("ngTemplateOutletContext", ɵɵpureFunction1(21, _c0$L, column_r1));
     ɵɵadvance(1);
-    ɵɵproperty("ngStyle", ctx_r0.verticalScrollStyle())("ngStyle", ctx_r0.verticalScrollStyle());
-    ɵɵadvance(1);
-    ɵɵproperty("cdkDropListData", column_r1.items);
+    ɵɵproperty("cdkDropListData", column_r1.items)("ngStyle", ctx_r0.verticalScrollStyle());
     ɵɵadvance(1);
     ɵɵproperty("ngForOf", column_r1.items);
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.getDescriptionPanel(column_r1.id))("ngTemplateOutletContext", ɵɵpureFunction1(24, _c0$L, column_r1));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.getDescriptionPanel(column_r1.id))("ngTemplateOutletContext", ɵɵpureFunction1(23, _c0$L, column_r1));
 } }
 class CmacsKanbanComponent {
     constructor(deviceDetector) {
@@ -16747,12 +16750,12 @@ class CmacsKanbanComponent {
     }
 }
 CmacsKanbanComponent.ɵfac = function CmacsKanbanComponent_Factory(t) { return new (t || CmacsKanbanComponent)(ɵɵdirectiveInject(DeviceDetectorService)); };
-CmacsKanbanComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-kanban-scrollbar", 3, "ngStyle"], ["id", "tasks-container", "cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "cdkDropListDropped"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsKanbanComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["id", "tasks-container", "cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "ngStyle", "cdkDropListDropped"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], ["class", "cmacs-kanban-item-drag-handler", "cdkDragHandle", "", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cdkDragHandle", "", 1, "cmacs-kanban-item-drag-handler"], [1, "iconArrowLarge-Full-View"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "div", 0);
         ɵɵelementStart(1, "div", 1);
         ɵɵelementStart(2, "div", 2);
         ɵɵelementStart(3, "div", 3);
-        ɵɵtemplate(4, CmacsKanbanComponent_div_4_Template, 10, 26, "div", 4);
+        ɵɵtemplate(4, CmacsKanbanComponent_div_4_Template, 9, 25, "div", 4);
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
@@ -16762,7 +16765,7 @@ CmacsKanbanComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKanbanComponent, s
         ɵɵproperty("ngStyle", ctx.boardStyle());
         ɵɵadvance(3);
         ɵɵproperty("ngForOf", ctx.board.columns);
-    } }, directives: [NgStyle, CdkDropListGroup, NgForOf, NgClass, NgIf, NgTemplateOutlet, PerfectScrollbarComponent, CdkDropList, CmacsButtonComponent, NzRowDirective, NzColDirective, CdkDrag], styles: [".cmacs-kanban-scrollbar .ps__rail-y{display:block!important;opacity:1!important;width:15px!important;background-color:transparent!important}.cmacs-kanban-scrollbar .ps.ps--active-y .ps-content{padding-right:15px}.cmacs-kanban-scrollbar .ps__thumb-y{display:block!important;opacity:1!important;width:7px!important;background-color:#cfd3d9!important}.root{height:100%}.board,.root{display:flex;flex-direction:column}.board{flex-grow:1;min-width:0;min-height:0}.board-name{font-size:20px;font-weight:700}.board-wrapper{overflow-x:auto}.board-column,.board-columns,.board-wrapper{display:flex;flex-grow:1}.board-column{flex-direction:column;flex-basis:0;border-radius:4px}.board-column:not(:first-child){margin-left:0}.column-header{padding:12px 15px 10px;font-family:Roboto-Regular;line-height:1;border-left:1px solid #dee0e5;box-shadow:0 3px 7px -3px rgba(5,6,6,.18);margin-bottom:10px}.column-title{text-transform:capitalize;color:#656c79;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 82px);display:inline-block}.column-title-items{color:#97a0ae!important;font-size:12px!important;font-family:Roboto-Medium!important}.column-shrink{height:20px!important;width:20px;padding-right:0!important;padding-left:0!important;margin-left:5px;float:right}.tasks-container{flex-grow:1;overflow-y:auto;margin-bottom:2px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.board-wrapper::-webkit-scrollbar,.tasks-container::-webkit-scrollbar{-webkit-appearance:none;width:7px;height:7px;-webkit-overflow-scrolling:auto}.board-wrapper::-webkit-scrollbar-thumb,.tasks-container::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.board-wrapper::-webkit-scrollbar-thumb:hover,.tasks-container::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.task{display:flex;position:relative}.task.cdk-drag-preview{opacity:.9}.task-selected{border-color:#2a7cff}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating,.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.board-column.collapsed{min-width:37px!important;padding:0;margin:0 10px;flex-basis:0;flex-grow:0}.board-column.collapsed .column-action-panel,.board-column.collapsed .column-description-panel,.board-column.collapsed .column-header,.board-column.collapsed .column-header-template,.board-column.collapsed .tasks-container{display:none}.column-header-collapsed{display:contents;height:100%}.column-header-collapsed-line{background-color:#acb3bf;width:1px;margin:0 auto}.column-header-collapsed-line-1{margin-top:14px;margin-bottom:14px;height:25px}.column-header-collapsed-line-2{margin-top:14px;height:inherit}.column-header-collapsed-text{transform:none;-ms-writing-mode:tb-lr;writing-mode:vertical-lr;margin:0 0 0 10px;text-transform:capitalize;color:#656c79;font-size:14px;font-weight:500;font-family:Roboto-Medium;display:table}.column-header-collapsed-text>*{display:table-cell;white-space:nowrap}.column-header .column-shrink{display:block}.column-shrink,.header-actions{height:100%!important}.column-shrink i{font-size:17px!important}"], encapsulation: 2 });
+    } }, directives: [NgStyle, CdkDropListGroup, NgForOf, NgClass, NgIf, NgTemplateOutlet, CdkDropList, CmacsButtonComponent, NzRowDirective, NzColDirective, CdkDrag, CdkDragHandle], styles: [".cmacs-kanban-item-drag-handler{position:absolute;top:5px;left:10px;cursor:-webkit-grab;cursor:grab;color:#656c79}.root{height:100%}.board,.root{display:flex;flex-direction:column}.board{flex-grow:1;min-width:0;min-height:0}.board-name{font-size:20px;font-weight:700}.board-wrapper{overflow-x:auto}.board-column,.board-columns,.board-wrapper{display:flex;flex-grow:1}.board-column{flex-direction:column;flex-basis:0;border-radius:4px}.board-column:not(:first-child){margin-left:0}.column-header{padding:12px 15px 10px;font-family:Roboto-Regular;line-height:1;border-left:1px solid #dee0e5;box-shadow:0 3px 7px -3px rgba(5,6,6,.18);margin-bottom:10px}.column-title{text-transform:capitalize;color:#656c79;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 82px);display:inline-block}.column-title-items{color:#97a0ae!important;font-size:12px!important;font-family:Roboto-Medium!important}.column-shrink{height:20px!important;width:20px;padding-right:0!important;padding-left:0!important;margin-left:5px;float:right}.tasks-container{flex-grow:1;overflow-y:auto;margin-bottom:2px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.board-wrapper::-webkit-scrollbar,.tasks-container::-webkit-scrollbar{-webkit-appearance:none;width:7px;height:7px;-webkit-overflow-scrolling:auto}.board-wrapper::-webkit-scrollbar-thumb,.tasks-container::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.board-wrapper::-webkit-scrollbar-thumb:hover,.tasks-container::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.task{display:flex;position:relative}.task.cdk-drag-preview{opacity:.9}.task-selected{border-color:#2a7cff}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating,.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.board-column.collapsed{min-width:37px!important;padding:0;margin:0 10px;flex-basis:0;flex-grow:0}.board-column.collapsed>.column-action-panel,.board-column.collapsed>.column-description-panel,.board-column.collapsed>.column-header,.board-column.collapsed>.column-header-template,.board-column.collapsed>.tasks-container{display:none}.column-header-collapsed{display:contents;height:100%}.column-header-collapsed-line{background-color:#acb3bf;width:1px;margin:0 auto}.column-header-collapsed-line-1{margin-top:14px;margin-bottom:14px;height:25px}.column-header-collapsed-line-2{margin-top:14px;height:inherit}.column-header-collapsed-text{transform:none;-ms-writing-mode:tb-lr;writing-mode:vertical-lr;margin:0 0 0 10px;text-transform:capitalize;color:#656c79;font-size:14px;font-weight:500;font-family:Roboto-Medium;display:table}.column-header-collapsed-text>*{display:table-cell;white-space:nowrap}.column-header .column-shrink{display:block}.column-shrink,.header-actions{height:100%!important}.column-shrink i{font-size:17px!important}"], encapsulation: 2 });
 __decorate([
     InputBoolean()
 ], CmacsKanbanComponent.prototype, "multiselect", void 0);
@@ -39874,6 +39877,9 @@ class LightboxImgDirective extends ItemDirectiveBase {
         this.item = item;
         this._lightboxService.addItem(this.item);
     }
+    open() {
+        this.onClick(null);
+    }
     ngOnDestroy() {
         this.lightboxService.removeItem(this.item);
     }
@@ -39995,34 +40001,19 @@ LazyLoadingModule.ɵinj = ɵɵdefineInjector({ providers: [
             }]
     }], null, null); })();
 
-const DEFAULT_PERFECT_SCROLLBAR_CONFIG = {
-    suppressScrollX: true
-};
 registerLocaleData(en);
 class CmacsComponentsV2LibModule {
 }
 CmacsComponentsV2LibModule.ɵfac = function CmacsComponentsV2LibModule_Factory(t) { return new (t || CmacsComponentsV2LibModule)(); };
 CmacsComponentsV2LibModule.ɵmod = ɵɵdefineNgModule({ type: CmacsComponentsV2LibModule });
-CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [
-        DatePipe,
-        {
-            provide: NZ_I18N,
-            useValue: en_US
-        },
-        CookieService,
-        {
+CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [DatePipe, { provide: NZ_I18N, useValue: en_US }, CookieService, {
             provide: HAMMER_GESTURE_CONFIG,
             useClass: HammerConfig
-        },
-        {
-            provide: PERFECT_SCROLLBAR_CONFIG,
-            useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
         },
         LightboxService,
         DoomService,
         LightboxConfigurationService
     ], imports: [[
-            PerfectScrollbarModule,
             HammerModule,
             LazyLoadingModule,
             YoutubeModule,
@@ -40090,8 +40081,7 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [
             VgBufferingModule,
             EditorModule,
             ReactiveFormsModule
-        ], PerfectScrollbarModule,
-        HammerModule,
+        ], HammerModule,
         LazyLoadingModule,
         YoutubeModule,
         NzTreeSelectModule,
@@ -40308,8 +40298,7 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [
         CmacsDateTimePickerComponent,
         CmacsDatetimePickerPanelComponent,
         CmacsDatetimeValueAccessorDirective,
-        CmacsMessageContainerComponent], imports: [PerfectScrollbarModule,
-        HammerModule,
+        CmacsMessageContainerComponent], imports: [HammerModule,
         LazyLoadingModule,
         YoutubeModule,
         NzTreeSelectModule,
@@ -40375,8 +40364,7 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [
         VgOverlayPlayModule,
         VgBufferingModule,
         EditorModule,
-        ReactiveFormsModule], exports: [PerfectScrollbarModule,
-        LightboxImgDirective,
+        ReactiveFormsModule], exports: [LightboxImgDirective,
         LightboxVideoDirective,
         HammerModule,
         LazyLoadingModule,
@@ -40748,7 +40736,6 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [
                     CmacsMessageContainerComponent
                 ],
                 imports: [
-                    PerfectScrollbarModule,
                     HammerModule,
                     LazyLoadingModule,
                     YoutubeModule,
@@ -40818,7 +40805,6 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [
                     ReactiveFormsModule
                 ],
                 exports: [
-                    PerfectScrollbarModule,
                     LightboxImgDirective,
                     LightboxVideoDirective,
                     HammerModule,
@@ -41029,20 +41015,9 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [
                     NzTimePickerModule
                 ],
                 entryComponents: [CmacsDropdownMenuComponent, CmacsMessageContainerComponent, CmacsModalComponent],
-                providers: [
-                    DatePipe,
-                    {
-                        provide: NZ_I18N,
-                        useValue: en_US
-                    },
-                    CookieService,
-                    {
+                providers: [DatePipe, { provide: NZ_I18N, useValue: en_US }, CookieService, {
                         provide: HAMMER_GESTURE_CONFIG,
                         useClass: HammerConfig
-                    },
-                    {
-                        provide: PERFECT_SCROLLBAR_CONFIG,
-                        useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
                     },
                     LightboxService,
                     DoomService,
