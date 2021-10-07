@@ -371,18 +371,21 @@
     function __importDefault(mod) {
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
-    function __classPrivateFieldGet(receiver, privateMap) {
-        if (!privateMap.has(receiver)) {
-            throw new TypeError("attempted to get private field on non-instance");
-        }
-        return privateMap.get(receiver);
+    function __classPrivateFieldGet(receiver, state, kind, f) {
+        if (kind === "a" && !f)
+            throw new TypeError("Private accessor was defined without a getter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
+            throw new TypeError("Cannot read private member from an object whose class did not declare it");
+        return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
     }
-    function __classPrivateFieldSet(receiver, privateMap, value) {
-        if (!privateMap.has(receiver)) {
-            throw new TypeError("attempted to set private field on non-instance");
-        }
-        privateMap.set(receiver, value);
-        return value;
+    function __classPrivateFieldSet(receiver, state, value, kind, f) {
+        if (kind === "m")
+            throw new TypeError("Private method is not writable");
+        if (kind === "a" && !f)
+            throw new TypeError("Private accessor was defined without a setter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
+            throw new TypeError("Cannot write private member to an object whose class did not declare it");
+        return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
     }
 
     var _c0 = ["*"];
@@ -43878,6 +43881,7 @@
         function ItemDirectiveBase(lightboxService, elementRef) {
             this.lightboxService = lightboxService;
             this.elementRef = elementRef;
+            this.openOnClick = true;
             this.cursor = 'pointer';
             this._loaded = false;
         }
@@ -43907,13 +43911,16 @@
         return ItemDirectiveBase;
     }());
     ItemDirectiveBase.ɵfac = function ItemDirectiveBase_Factory(t) { return new (t || ItemDirectiveBase)(i0.ɵɵdirectiveInject(LightboxService), i0.ɵɵdirectiveInject(i0.ElementRef)); };
-    ItemDirectiveBase.ɵdir = i0.ɵɵdefineDirective({ type: ItemDirectiveBase, inputs: { container: "container", src: "src", title: "title", xsBreakpoint: ["xs-breakpoint", "xsBreakpoint"], smBreakpoint: ["sm-breakpoint", "smBreakpoint"], mdBreakpoint: ["md-breakpoint", "mdBreakpoint"], lgBreakpoint: ["lg-breakpoint", "lgBreakpoint"], xsSrc: ["xs-src", "xsSrc"], smSrc: ["sm-src", "smSrc"], mdSrc: ["md-src", "mdSrc"], lgSrc: ["lg-src", "lgSrc"], xlSrc: ["xl-src", "xlSrc"] } });
+    ItemDirectiveBase.ɵdir = i0.ɵɵdefineDirective({ type: ItemDirectiveBase, inputs: { container: "container", openOnClick: "openOnClick", src: "src", title: "title", xsBreakpoint: ["xs-breakpoint", "xsBreakpoint"], smBreakpoint: ["sm-breakpoint", "smBreakpoint"], mdBreakpoint: ["md-breakpoint", "mdBreakpoint"], lgBreakpoint: ["lg-breakpoint", "lgBreakpoint"], xsSrc: ["xs-src", "xsSrc"], smSrc: ["sm-src", "smSrc"], mdSrc: ["md-src", "mdSrc"], lgSrc: ["lg-src", "lgSrc"], xlSrc: ["xl-src", "xlSrc"] } });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(ItemDirectiveBase, [{
                 type: i0.Directive
             }], function () { return [{ type: LightboxService }, { type: i0.ElementRef }]; }, { container: [{
                     type: i0.Input,
                     args: ['container']
+                }], openOnClick: [{
+                    type: i0.Input,
+                    args: ['openOnClick']
                 }], src: [{
                     type: i0.Input,
                     args: ['src']
@@ -43990,9 +43997,21 @@
             this.item = item;
             this._lightboxService.addItem(this.item);
         };
+        LightboxImgDirective.prototype.handleTap = function ($event) {
+            if (this.openOnClick) {
+                this.onClick($event);
+            }
+        };
         LightboxImgDirective.prototype.open = function () {
             this.onClick(null);
         };
+        Object.defineProperty(LightboxImgDirective.prototype, "isLoaded", {
+            get: function () {
+                return this._loaded;
+            },
+            enumerable: false,
+            configurable: true
+        });
         LightboxImgDirective.prototype.ngOnDestroy = function () {
             this.lightboxService.removeItem(this.item);
         };
@@ -44001,7 +44020,7 @@
     LightboxImgDirective.ɵfac = function LightboxImgDirective_Factory(t) { return new (t || LightboxImgDirective)(i0.ɵɵdirectiveInject(LightboxService), i0.ɵɵdirectiveInject(i0.ElementRef)); };
     LightboxImgDirective.ɵdir = i0.ɵɵdefineDirective({ type: LightboxImgDirective, selectors: [["img", "lightbox-img", ""]], hostVars: 4, hostBindings: function LightboxImgDirective_HostBindings(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵlistener("tap", function LightboxImgDirective_tap_HostBindingHandler($event) { return ctx.onClick($event); })("load", function LightboxImgDirective_load_HostBindingHandler($event) { return ctx.onLoad($event); });
+                i0.ɵɵlistener("tap", function LightboxImgDirective_tap_HostBindingHandler($event) { return ctx.handleTap($event); })("load", function LightboxImgDirective_load_HostBindingHandler($event) { return ctx.onLoad($event); });
             }
             if (rf & 2) {
                 i0.ɵɵstyleProp("cursor", ctx.cursor)("visibility", ctx.visibility);
@@ -44015,7 +44034,7 @@
                         host: {
                             '[style.cursor]': 'cursor',
                             '[style.visibility]': 'visibility',
-                            '(tap)': 'onClick($event)',
+                            '(tap)': 'handleTap($event)',
                             '(load)': 'onLoad($event)'
                         }
                     }]

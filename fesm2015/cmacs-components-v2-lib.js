@@ -39776,6 +39776,7 @@ class ItemDirectiveBase {
     constructor(lightboxService, elementRef) {
         this.lightboxService = lightboxService;
         this.elementRef = elementRef;
+        this.openOnClick = true;
         this.cursor = 'pointer';
         this._loaded = false;
     }
@@ -39803,12 +39804,15 @@ class ItemDirectiveBase {
     }
 }
 ItemDirectiveBase.ɵfac = function ItemDirectiveBase_Factory(t) { return new (t || ItemDirectiveBase)(ɵɵdirectiveInject(LightboxService), ɵɵdirectiveInject(ElementRef)); };
-ItemDirectiveBase.ɵdir = ɵɵdefineDirective({ type: ItemDirectiveBase, inputs: { container: "container", src: "src", title: "title", xsBreakpoint: ["xs-breakpoint", "xsBreakpoint"], smBreakpoint: ["sm-breakpoint", "smBreakpoint"], mdBreakpoint: ["md-breakpoint", "mdBreakpoint"], lgBreakpoint: ["lg-breakpoint", "lgBreakpoint"], xsSrc: ["xs-src", "xsSrc"], smSrc: ["sm-src", "smSrc"], mdSrc: ["md-src", "mdSrc"], lgSrc: ["lg-src", "lgSrc"], xlSrc: ["xl-src", "xlSrc"] } });
+ItemDirectiveBase.ɵdir = ɵɵdefineDirective({ type: ItemDirectiveBase, inputs: { container: "container", openOnClick: "openOnClick", src: "src", title: "title", xsBreakpoint: ["xs-breakpoint", "xsBreakpoint"], smBreakpoint: ["sm-breakpoint", "smBreakpoint"], mdBreakpoint: ["md-breakpoint", "mdBreakpoint"], lgBreakpoint: ["lg-breakpoint", "lgBreakpoint"], xsSrc: ["xs-src", "xsSrc"], smSrc: ["sm-src", "smSrc"], mdSrc: ["md-src", "mdSrc"], lgSrc: ["lg-src", "lgSrc"], xlSrc: ["xl-src", "xlSrc"] } });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(ItemDirectiveBase, [{
         type: Directive
     }], function () { return [{ type: LightboxService }, { type: ElementRef }]; }, { container: [{
             type: Input,
             args: ['container']
+        }], openOnClick: [{
+            type: Input,
+            args: ['openOnClick']
         }], src: [{
             type: Input,
             args: ['src']
@@ -39877,8 +39881,16 @@ class LightboxImgDirective extends ItemDirectiveBase {
         this.item = item;
         this._lightboxService.addItem(this.item);
     }
+    handleTap($event) {
+        if (this.openOnClick) {
+            this.onClick($event);
+        }
+    }
     open() {
         this.onClick(null);
+    }
+    get isLoaded() {
+        return this._loaded;
     }
     ngOnDestroy() {
         this.lightboxService.removeItem(this.item);
@@ -39886,7 +39898,7 @@ class LightboxImgDirective extends ItemDirectiveBase {
 }
 LightboxImgDirective.ɵfac = function LightboxImgDirective_Factory(t) { return new (t || LightboxImgDirective)(ɵɵdirectiveInject(LightboxService), ɵɵdirectiveInject(ElementRef)); };
 LightboxImgDirective.ɵdir = ɵɵdefineDirective({ type: LightboxImgDirective, selectors: [["img", "lightbox-img", ""]], hostVars: 4, hostBindings: function LightboxImgDirective_HostBindings(rf, ctx) { if (rf & 1) {
-        ɵɵlistener("tap", function LightboxImgDirective_tap_HostBindingHandler($event) { return ctx.onClick($event); })("load", function LightboxImgDirective_load_HostBindingHandler($event) { return ctx.onLoad($event); });
+        ɵɵlistener("tap", function LightboxImgDirective_tap_HostBindingHandler($event) { return ctx.handleTap($event); })("load", function LightboxImgDirective_load_HostBindingHandler($event) { return ctx.onLoad($event); });
     } if (rf & 2) {
         ɵɵstyleProp("cursor", ctx.cursor)("visibility", ctx.visibility);
     } }, features: [ɵɵInheritDefinitionFeature] });
@@ -39897,7 +39909,7 @@ LightboxImgDirective.ɵdir = ɵɵdefineDirective({ type: LightboxImgDirective, s
                 host: {
                     '[style.cursor]': 'cursor',
                     '[style.visibility]': 'visibility',
-                    '(tap)': 'onClick($event)',
+                    '(tap)': 'handleTap($event)',
                     '(load)': 'onLoad($event)'
                 }
             }]
