@@ -5,7 +5,7 @@ import { NzResizeObserver } from 'ng-zorro-antd/core/resize-observers';
 import { Direction } from '@angular/cdk/bidi';
 import { CandyDate, CompatibleValue } from 'ng-zorro-antd/core/time';
 import { NgStyleInterface, NzSafeAny } from 'ng-zorro-antd/core/types';
-import { DateHelperService } from 'ng-zorro-antd/i18n';
+import { DateHelperService, NzI18nService } from 'ng-zorro-antd/i18n';
 import { Subject } from 'rxjs';
 import { DatePickerService } from './date-picker.service';
 import { DateRangePopupComponent } from './date-range-popup.component';
@@ -14,6 +14,7 @@ import * as i0 from "@angular/core";
 export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnChanges, OnDestroy {
     private elementRef;
     private dateHelper;
+    protected i18n: NzI18nService;
     private cdr;
     private platform;
     private ngZone;
@@ -59,7 +60,7 @@ export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnCh
     currentPositionY: VerticalConnectionPos;
     state: string;
     get realOpenState(): boolean;
-    constructor(elementRef: ElementRef, dateHelper: DateHelperService, cdr: ChangeDetectorRef, platform: Platform, ngZone: NgZone, nzResizeObserver: NzResizeObserver, datePickerService: DatePickerService, doc: NzSafeAny);
+    constructor(elementRef: ElementRef, dateHelper: DateHelperService, i18n: NzI18nService, cdr: ChangeDetectorRef, platform: Platform, ngZone: NgZone, nzResizeObserver: NzResizeObserver, datePickerService: DatePickerService, doc: NzSafeAny);
     scroll: (e: Event) => void;
     setPanelWidth(): void;
     ngOnInit(): void;
