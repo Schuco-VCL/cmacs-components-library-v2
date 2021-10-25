@@ -42,6 +42,7 @@ export interface Field {
     max?: number;
     showCmacsSearch?: boolean;
     mode?: string;
+    resizable?: boolean;
 }
 export interface SelectConfig {
     selectData: any[];

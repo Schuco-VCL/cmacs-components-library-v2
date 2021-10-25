@@ -1,5 +1,6 @@
 @import "../icons/global_styles.css";
 @import "~ngx-videogular/fonts/videogular.css";
+@import "~ng-zorro-antd/resizable/style/index.min.css";
 @import "~angular2-draggable/css/resizable.min.css";
 
 @font-face {
@@ -501,6 +502,10 @@ nz-divider {
 
 .cmacs-menu-side-bar.ant-menu-inline-collapsed .ant-menu-submenu>.ant-menu-submenu-title .ant-menu-submenu-arrow {
   display: none;
+}
+
+.ant-menu-item:active, .ant-menu-submenu-title:active{
+  background-color: #F2F7FF !important;
 }
 
 /* Dropdown multi */
