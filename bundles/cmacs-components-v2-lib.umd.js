@@ -38005,12 +38005,17 @@
         };
         CmacsGeneralChartComponent.prototype.getLegendLabels = function () {
             if (this.chartSelected === exports.WidgetActionType.horizontalStackedBarChart
-                || this.chartSelected === exports.WidgetActionType.verticalStackedBarChart
-                || this.chartSelected === exports.WidgetActionType.lineChart) {
+                || this.chartSelected === exports.WidgetActionType.verticalStackedBarChart) {
                 if (this.isNull(this.data) || this.isEmpty(this.data) || this.isNull(this.data[0].series)) {
                     return [];
                 }
                 return this.data[0].series.map(function (el) { return el.name; });
+            }
+            if (this.chartSelected === exports.WidgetActionType.lineChart) {
+                if (this.isNull(this.data) || this.isEmpty(this.data)) {
+                    return [];
+                }
+                return this.data.map(function (el) { return el.name; });
             }
             return [];
         };

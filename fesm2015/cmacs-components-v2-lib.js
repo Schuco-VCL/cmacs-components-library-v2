@@ -34468,12 +34468,17 @@ class CmacsGeneralChartComponent {
     }
     getLegendLabels() {
         if (this.chartSelected === WidgetActionType.horizontalStackedBarChart
-            || this.chartSelected === WidgetActionType.verticalStackedBarChart
-            || this.chartSelected === WidgetActionType.lineChart) {
+            || this.chartSelected === WidgetActionType.verticalStackedBarChart) {
             if (this.isNull(this.data) || this.isEmpty(this.data) || this.isNull(this.data[0].series)) {
                 return [];
             }
             return this.data[0].series.map(el => el.name);
+        }
+        if (this.chartSelected === WidgetActionType.lineChart) {
+            if (this.isNull(this.data) || this.isEmpty(this.data)) {
+                return [];
+            }
+            return this.data.map(el => el.name);
         }
         return [];
     }
