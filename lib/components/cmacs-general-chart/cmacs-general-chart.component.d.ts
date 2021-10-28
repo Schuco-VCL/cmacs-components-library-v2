@@ -23,6 +23,9 @@ export declare class CmacsGeneralChartComponent implements OnInit {
     WidgetDataTypeEnum: typeof WidgetDataType;
     constructor();
     ngOnInit(): void;
+    getLegendLabels(): any;
+    isNull(el: any): boolean;
+    isEmpty(el: any): boolean;
     menuClick(type: WidgetActionType): void;
     isChartTypeMenu(type: WidgetActionType): boolean;
     static ɵfac: i0.ɵɵFactoryDef<CmacsGeneralChartComponent, never>;

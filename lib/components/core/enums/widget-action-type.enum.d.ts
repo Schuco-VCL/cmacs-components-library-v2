@@ -8,6 +8,8 @@ export declare enum WidgetActionType {
     lineChart = 6,
     gauge = 7,
     fitToData = 8,
-    distributeEvenly = 9
+    distributeEvenly = 9,
+    verticalStackedBarChart = 10,
+    horizontalStackedBarChart = 11
 }
 //# sourceMappingURL=widget-action-type.enum.d.ts.map

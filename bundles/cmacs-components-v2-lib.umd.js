@@ -22280,7 +22280,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", ctx.isModalType("interaction"));
             }
-        }, directives: [i2$1.NgIf, i1$2.NzNoAnimationDirective, i2$1.NgClass, i2$1.NgStyle, i2$1.NgSwitch, i2$1.NgSwitchCase, i2$1.NgTemplateOutlet, i2$4.CdkDrag, i2$1.NgSwitchDefault, i2$1.NgForOf, i4$3.NzWaveDirective, i9.NzButtonComponent, i4.ɵNzTransitionPatchDirective, i6$1.NzRowDirective, i6$1.NzColDirective, i5$1.NzIconDirective], pipes: [CmacsToCssUnitPipe], styles: [".ant-modal-content[_ngcontent-%COMP%]{border-radius:4px;box-shadow:0 3px 7px rgba(59,63,70,.2)}.ant-modal-body[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;line-height:1.5;word-wrap:break-word;color:#656c79}  .ant-modal-body h2{font-weight:400;font-size:16px;line-height:1.25em;color:#3b3f46;margin-bottom:18px}.model-wrapper[_ngcontent-%COMP%]{display:flex!important;height:100%}  .cmacs-signature-modal .cmacs-modal-helpfulTips-no-panel-center{padding-top:20px!important}  .ant-modal-footer .ant-btn-danger:hover{opacity:1!important}.model-container[_ngcontent-%COMP%]{margin:auto;top:0}.ant-btn-danger[_ngcontent-%COMP%], .ant-btn-danger[_ngcontent-%COMP%]:hover{background-color:#f6503c!important;border-color:#f6503c!important}.ant-modal-header[_ngcontent-%COMP%]{background:#2a7cff;height:50px;border-bottom:1px solid #2a7cff;border-radius:3px 3px 0 0}.ant-modal-title[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.29;letter-spacing:normal;color:#fff}.ant-modal-close-x[_ngcontent-%COMP%]{color:#fff;line-height:34px;margin-right:20px}.ant-modal-close-x-basic[_ngcontent-%COMP%]{color:#fff;margin-right:20px;padding-right:15px;line-height:50px}.ant-modal-close[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{color:#fff}.cmacs-interaction-modal[_ngcontent-%COMP%]{box-sizing:border-box;font-size:14px;font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:\"tnum\";position:absolute;width:auto;min-width:150px;margin:0 auto;padding-bottom:24px}.cmacs-interaction-modal-content[_ngcontent-%COMP%]{position:relative;background-color:#fff;background-clip:padding-box;border:0;border-radius:4px;box-shadow:0 4px 12px rgba(0,0,0,.15)}.cmacs-custom-header[_ngcontent-%COMP%]{height:30px;padding:6px 12px;background:#2a7cff;border-bottom:1px solid #2a7cff}.cmacs-interaction-modal-content[_ngcontent-%COMP%]   .ant-modal-close-x[_ngcontent-%COMP%]{margin-right:12px}.trans-model-body[_ngcontent-%COMP%]{padding:24px 20px 10px}.trans-model-footer[_ngcontent-%COMP%]{padding:10px 20px 20px}  .trans-model-footer.ant-modal-footer button+button{margin-left:15px}.creation-footer[_ngcontent-%COMP%], .creation-header[_ngcontent-%COMP%], .helpful-footer[_ngcontent-%COMP%], .helpful-header[_ngcontent-%COMP%]{padding:16px 40px}.cmacs-modal-creation-left-panel[_ngcontent-%COMP%]{padding:0 40px;height:calc(100% - 80px);overflow:auto;border-right:1px solid #dee0e5;margin-top:40px;margin-bottom:40px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%], .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%], .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]{height:100%;padding:40px;overflow:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-modal-creation-right-panel[_ngcontent-%COMP%], .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]{background-color:#f6f7fb;padding:40px 35px 35px;height:100%;overflow:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.creation-footer[_ngcontent-%COMP%], .helpful-footer[_ngcontent-%COMP%]{box-shadow:0 -2px 5px rgba(59,63,70,.1);border-top:none;border-radius:0 0 3px 3px;z-index:1;position:relative}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar{width:6px;height:6px}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}@media screen and (max-width:1024px){.ant-modal.largemodal[_ngcontent-%COMP%]{max-width:100vw;max-height:100vh;margin:auto;width:100%!important;height:100%;padding:0}.ant-modal.largemodal[_ngcontent-%COMP%] > .ant-modal-content[_ngcontent-%COMP%]{height:100%}.ant-modal.largemodal[_ngcontent-%COMP%] > .ant-modal-content[_ngcontent-%COMP%] > .ant-modal-body[_ngcontent-%COMP%]{height:calc(100% - 116px)!important}}"] });
+        }, directives: [i2$1.NgIf, i1$2.NzNoAnimationDirective, i2$1.NgClass, i2$1.NgStyle, i2$1.NgSwitch, i2$1.NgSwitchCase, i2$1.NgTemplateOutlet, i2$4.CdkDrag, i2$1.NgSwitchDefault, i2$1.NgForOf, i4$3.NzWaveDirective, i9.NzButtonComponent, i4.ɵNzTransitionPatchDirective, i6$1.NzRowDirective, i6$1.NzColDirective, i5$1.NzIconDirective], pipes: [CmacsToCssUnitPipe], styles: [".ant-modal-content[_ngcontent-%COMP%]{border-radius:4px;box-shadow:0 3px 7px rgba(59,63,70,.2)}.ant-modal-body[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;line-height:1.5;word-wrap:break-word;color:#656c79}  .ant-modal-body h2{font-weight:400;font-size:16px;line-height:1.25em;color:#3b3f46;margin-bottom:18px}.model-wrapper[_ngcontent-%COMP%]{display:flex!important;height:100%}  .cmacs-signature-modal .cmacs-modal-helpfulTips-no-panel-center{padding-top:20px!important}  .ant-modal-footer .ant-btn-danger:hover{opacity:1!important}.model-container[_ngcontent-%COMP%]{margin:auto;top:0}.ant-btn-danger[_ngcontent-%COMP%], .ant-btn-danger[_ngcontent-%COMP%]:hover{background-color:#f6503c!important;border-color:#f6503c!important}.ant-modal-header[_ngcontent-%COMP%]{background:#2a7cff;height:50px;border-bottom:1px solid #2a7cff;border-radius:3px 3px 0 0}.ant-modal-title[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.29;letter-spacing:normal;color:#fff}.ant-modal-close-x[_ngcontent-%COMP%]{color:#fff;line-height:34px;margin-right:20px}.ant-modal-close-x-basic[_ngcontent-%COMP%]{color:#fff;margin-right:20px;padding-right:15px;line-height:50px}.ant-modal-close[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{color:#fff}.cmacs-interaction-modal[_ngcontent-%COMP%]{box-sizing:border-box;font-size:14px;font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:\"tnum\";position:absolute;width:auto;min-width:150px;margin:0 auto;padding-bottom:24px}.cmacs-interaction-modal-content[_ngcontent-%COMP%]{position:relative;background-color:#fff;background-clip:padding-box;border:0;border-radius:4px;box-shadow:0 4px 12px rgba(0,0,0,.15)}.cmacs-custom-header[_ngcontent-%COMP%]{height:30px;padding:6px 12px;background:#2a7cff;border-bottom:1px solid #2a7cff}.cmacs-interaction-modal-content[_ngcontent-%COMP%]   .ant-modal-close-x[_ngcontent-%COMP%]{margin-right:12px}.trans-model-body[_ngcontent-%COMP%]{padding:24px 20px 10px}.trans-model-footer[_ngcontent-%COMP%]{padding:10px 20px 20px}  .trans-model-footer.ant-modal-footer button+button{margin-left:15px}.creation-footer[_ngcontent-%COMP%], .creation-header[_ngcontent-%COMP%], .helpful-footer[_ngcontent-%COMP%], .helpful-header[_ngcontent-%COMP%]{padding:16px 40px}.cmacs-modal-creation-left-panel[_ngcontent-%COMP%]{padding:0 40px;height:calc(100% - 80px);overflow:auto;border-right:1px solid #dee0e5;margin-top:40px;margin-bottom:40px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%], .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%], .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]{height:100%;padding:40px;overflow:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-modal-creation-right-panel[_ngcontent-%COMP%], .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]{background-color:#f6f7fb;padding:40px 35px 35px;height:100%;overflow:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.creation-footer[_ngcontent-%COMP%], .helpful-footer[_ngcontent-%COMP%]{box-shadow:0 -2px 5px rgba(59,63,70,.1);border-top:none;border-radius:0 0 3px 3px;z-index:1;position:relative}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar{width:6px;height:6px}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}@media screen and (max-width:1024px){.ant-modal.largemodal[_ngcontent-%COMP%]{max-width:100vw;max-height:100vh;margin:auto;width:100%!important;height:100%;padding:0;top:0!important}.ant-modal.largemodal[_ngcontent-%COMP%] > .ant-modal-content[_ngcontent-%COMP%]{height:100%}.ant-modal.largemodal[_ngcontent-%COMP%] > .ant-modal-content[_ngcontent-%COMP%] > .ant-modal-body[_ngcontent-%COMP%]{height:calc(100% - 116px)!important}}"] });
     __decorate([
         util.InputBoolean()
     ], CmacsModalComponent.prototype, "visible", void 0);
@@ -37703,6 +37703,8 @@
         WidgetActionType[WidgetActionType["gauge"] = 7] = "gauge";
         WidgetActionType[WidgetActionType["fitToData"] = 8] = "fitToData";
         WidgetActionType[WidgetActionType["distributeEvenly"] = 9] = "distributeEvenly";
+        WidgetActionType[WidgetActionType["verticalStackedBarChart"] = 10] = "verticalStackedBarChart";
+        WidgetActionType[WidgetActionType["horizontalStackedBarChart"] = 11] = "horizontalStackedBarChart";
     })(exports.WidgetActionType || (exports.WidgetActionType = {}));
 
     (function (WidgetType) {
@@ -37723,7 +37725,7 @@
 
     function CmacsGeneralChartComponent_ngx_charts_bar_vertical_2d_0_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-bar-vertical-2d", 6);
+            i0.ɵɵelement(0, "ngx-charts-bar-vertical-2d", 7);
         }
         if (rf & 2) {
             var ctx_r0 = i0.ɵɵnextContext();
@@ -37732,7 +37734,7 @@
     }
     function CmacsGeneralChartComponent_ngx_charts_bar_horizontal_2d_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-bar-horizontal-2d", 7);
+            i0.ɵɵelement(0, "ngx-charts-bar-horizontal-2d", 8);
         }
         if (rf & 2) {
             var ctx_r1 = i0.ɵɵnextContext();
@@ -37741,7 +37743,7 @@
     }
     function CmacsGeneralChartComponent_ngx_charts_line_chart_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-line-chart", 8);
+            i0.ɵɵelement(0, "ngx-charts-line-chart", 9);
         }
         if (rf & 2) {
             var ctx_r2 = i0.ɵɵnextContext();
@@ -37750,7 +37752,7 @@
     }
     function CmacsGeneralChartComponent_ngx_charts_bar_vertical_3_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-bar-vertical", 9);
+            i0.ɵɵelement(0, "ngx-charts-bar-vertical", 10);
         }
         if (rf & 2) {
             var ctx_r3 = i0.ɵɵnextContext();
@@ -37759,7 +37761,7 @@
     }
     function CmacsGeneralChartComponent_ngx_charts_bar_horizontal_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-bar-horizontal", 9);
+            i0.ɵɵelement(0, "ngx-charts-bar-horizontal", 10);
         }
         if (rf & 2) {
             var ctx_r4 = i0.ɵɵnextContext();
@@ -37768,7 +37770,7 @@
     }
     function CmacsGeneralChartComponent_ngx_charts_pie_chart_5_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-pie-chart", 10);
+            i0.ɵɵelement(0, "ngx-charts-pie-chart", 11);
         }
         if (rf & 2) {
             var ctx_r5 = i0.ɵɵnextContext();
@@ -37777,11 +37779,129 @@
     }
     function CmacsGeneralChartComponent_ngx_charts_gauge_6_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-gauge", 11);
+            i0.ɵɵelement(0, "ngx-charts-gauge", 12);
         }
         if (rf & 2) {
             var ctx_r6 = i0.ɵɵnextContext();
             i0.ɵɵproperty("view", ctx_r6.view)("scheme", ctx_r6.colorScheme)("results", ctx_r6.data)("legend", ctx_r6.showLegend)("legendTitle", ctx_r6.legendTitle)("legendPosition", ctx_r6.legendPosition)("bigSegments", 3)("smallSegments", 0);
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_7_ng_container_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelement(1, "span", 17);
+            i0.ɵɵelementStart(2, "span", 18);
+            i0.ɵɵtext(3);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var label_r12 = ctx.$implicit;
+            var i_r13 = ctx.index;
+            var ctx_r9 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵstyleProp("background-color", ctx_r9.colorScheme.domain[i_r13]);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(label_r12);
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_7_ng_template_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 19);
+            i0.ɵɵelementStart(1, "span", 20);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(3, "span");
+            i0.ɵɵtext(4);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var model_r14 = ctx.model;
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate1("", model_r14.name, ":");
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(model_r14.value);
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_7_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "div", 13);
+            i0.ɵɵtemplate(2, CmacsGeneralChartComponent_ng_container_7_ng_container_2_Template, 4, 3, "ng-container", 14);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(3, "div");
+            i0.ɵɵelementStart(4, "ngx-charts-bar-horizontal-stacked", 15);
+            i0.ɵɵtemplate(5, CmacsGeneralChartComponent_ng_container_7_ng_template_5_Template, 5, 2, "ng-template", null, 16, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r7 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngForOf", ctx_r7.getLegendLabels());
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("view", ctx_r7.view)("scheme", ctx_r7.colorScheme)("results", ctx_r7.data)("xAxis", ctx_r7.showXAxis)("yAxis", ctx_r7.showYAxis)("rotateXAxisTicks", false)("legend", false)("showXAxisLabel", ctx_r7.showXAxisLabel)("showYAxisLabel", ctx_r7.showYAxisLabel)("xAxisLabel", ctx_r7.xAxisLabel)("yAxisLabel", ctx_r7.yAxisLabel);
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_8_ng_container_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelement(1, "span", 17);
+            i0.ɵɵelementStart(2, "span", 18);
+            i0.ɵɵtext(3);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var label_r18 = ctx.$implicit;
+            var i_r19 = ctx.index;
+            var ctx_r15 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵstyleProp("background-color", ctx_r15.colorScheme.domain[i_r19]);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(label_r18);
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_8_ng_template_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 19);
+            i0.ɵɵelementStart(1, "span", 20);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(3, "span");
+            i0.ɵɵtext(4);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var model_r20 = ctx.model;
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate1("", model_r20.name, ":");
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(model_r20.value);
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_8_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "div", 13);
+            i0.ɵɵtemplate(2, CmacsGeneralChartComponent_ng_container_8_ng_container_2_Template, 4, 3, "ng-container", 14);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(3, "div");
+            i0.ɵɵelementStart(4, "ngx-charts-bar-vertical-stacked", 15);
+            i0.ɵɵtemplate(5, CmacsGeneralChartComponent_ng_container_8_ng_template_5_Template, 5, 2, "ng-template", null, 16, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r8 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngForOf", ctx_r8.getLegendLabels());
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("view", ctx_r8.view)("scheme", ctx_r8.colorScheme)("results", ctx_r8.data)("xAxis", ctx_r8.showXAxis)("yAxis", ctx_r8.showYAxis)("rotateXAxisTicks", false)("legend", false)("showXAxisLabel", ctx_r8.showXAxisLabel)("showYAxisLabel", ctx_r8.showYAxisLabel)("xAxisLabel", ctx_r8.xAxisLabel)("yAxisLabel", ctx_r8.yAxisLabel);
         }
     }
     var CmacsGeneralChartComponent = /** @class */ (function () {
@@ -37808,6 +37928,21 @@
         }
         CmacsGeneralChartComponent.prototype.ngOnInit = function () {
         };
+        CmacsGeneralChartComponent.prototype.getLegendLabels = function () {
+            if (this.chartSelected === exports.WidgetActionType.horizontalStackedBarChart || this.chartSelected === exports.WidgetActionType.verticalStackedBarChart) {
+                if (this.isNull(this.data) || this.isEmpty(this.data) || this.isNull(this.data[0].series)) {
+                    return [];
+                }
+                return this.data[0].series.map(function (el) { return el.name; });
+            }
+            return [];
+        };
+        CmacsGeneralChartComponent.prototype.isNull = function (el) {
+            return el === null || el === undefined;
+        };
+        CmacsGeneralChartComponent.prototype.isEmpty = function (el) {
+            return !el.length;
+        };
         CmacsGeneralChartComponent.prototype.menuClick = function (type) {
             if (this.isChartTypeMenu(type)) {
                 this.chartSelected = type;
@@ -37820,7 +37955,7 @@
         return CmacsGeneralChartComponent;
     }());
     CmacsGeneralChartComponent.ɵfac = function CmacsGeneralChartComponent_Factory(t) { return new (t || CmacsGeneralChartComponent)(); };
-    CmacsGeneralChartComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsGeneralChartComponent, selectors: [["cmacs-general-chart"]], inputs: { data: "data", chartSelected: "chartSelected", dataType: "dataType", showXAxis: "showXAxis", showXAxisLabel: "showXAxisLabel", xAxisLabel: "xAxisLabel", showYAxis: "showYAxis", showYAxisLabel: "showYAxisLabel", yAxisLabel: "yAxisLabel", showLegend: "showLegend", legendTitle: "legendTitle", view: "view", colorScheme: "colorScheme" }, decls: 7, vars: 7, consts: [[3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "legendPosition", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "groupPadding", "barPadding", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", "groupPadding", "barPadding", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundDomains", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "legend", "legendTitle", "doughnut", "labels", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "legend", "legendTitle", "legendPosition", "bigSegments", "smallSegments", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "legendPosition", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "groupPadding", "barPadding"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", "groupPadding", "barPadding"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundDomains", "legendPosition"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition"], [3, "view", "scheme", "results", "legend", "legendTitle", "doughnut", "labels", "legendPosition"], [3, "view", "scheme", "results", "legend", "legendTitle", "legendPosition", "bigSegments", "smallSegments"]], template: function CmacsGeneralChartComponent_Template(rf, ctx) {
+    CmacsGeneralChartComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsGeneralChartComponent, selectors: [["cmacs-general-chart"]], inputs: { data: "data", chartSelected: "chartSelected", dataType: "dataType", showXAxis: "showXAxis", showXAxisLabel: "showXAxisLabel", xAxisLabel: "xAxisLabel", showYAxis: "showYAxis", showYAxisLabel: "showYAxisLabel", yAxisLabel: "yAxisLabel", showLegend: "showLegend", legendTitle: "legendTitle", view: "view", colorScheme: "colorScheme" }, decls: 9, vars: 9, consts: [[3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "legendPosition", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "groupPadding", "barPadding", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", "groupPadding", "barPadding", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundDomains", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "legend", "legendTitle", "doughnut", "labels", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "legend", "legendTitle", "legendPosition", "bigSegments", "smallSegments", 4, "ngIf"], [4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "legendPosition", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "groupPadding", "barPadding"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", "groupPadding", "barPadding"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundDomains", "legendPosition"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition"], [3, "view", "scheme", "results", "legend", "legendTitle", "doughnut", "labels", "legendPosition"], [3, "view", "scheme", "results", "legend", "legendTitle", "legendPosition", "bigSegments", "smallSegments"], [1, "cmacs-stacked-bar-chart-legend-wrapper"], [4, "ngFor", "ngForOf"], [1, "cmacs-stacked-bar-char", 3, "view", "scheme", "results", "xAxis", "yAxis", "rotateXAxisTicks", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel"], ["tooltipTemplate", ""], [1, "cmacs-stacked-chart-legend-marker"], [1, "cmacs-stacked-chart-legend-label"], [2, "padding", "5px"], [2, "margin-right", "5px"]], template: function CmacsGeneralChartComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, CmacsGeneralChartComponent_ngx_charts_bar_vertical_2d_0_Template, 1, 17, "ngx-charts-bar-vertical-2d", 0);
                 i0.ɵɵtemplate(1, CmacsGeneralChartComponent_ngx_charts_bar_horizontal_2d_1_Template, 1, 17, "ngx-charts-bar-horizontal-2d", 1);
@@ -37829,6 +37964,8 @@
                 i0.ɵɵtemplate(4, CmacsGeneralChartComponent_ngx_charts_bar_horizontal_4_Template, 1, 15, "ngx-charts-bar-horizontal", 3);
                 i0.ɵɵtemplate(5, CmacsGeneralChartComponent_ngx_charts_pie_chart_5_Template, 1, 8, "ngx-charts-pie-chart", 4);
                 i0.ɵɵtemplate(6, CmacsGeneralChartComponent_ngx_charts_gauge_6_Template, 1, 8, "ngx-charts-gauge", 5);
+                i0.ɵɵtemplate(7, CmacsGeneralChartComponent_ng_container_7_Template, 7, 12, "ng-container", 6);
+                i0.ɵɵtemplate(8, CmacsGeneralChartComponent_ng_container_8_Template, 7, 12, "ng-container", 6);
             }
             if (rf & 2) {
                 i0.ɵɵproperty("ngIf", ctx.chartSelected === ctx.WidgetActionTypeEnum.verticalBarChart && ctx.dataType === ctx.WidgetDataTypeEnum.multi && ctx.view && ctx.view.length > 0);
@@ -37844,8 +37981,12 @@
                 i0.ɵɵproperty("ngIf", ctx.chartSelected === ctx.WidgetActionTypeEnum.pieChart && ctx.dataType === ctx.WidgetDataTypeEnum.single && ctx.view && ctx.view.length > 0);
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", ctx.chartSelected === ctx.WidgetActionTypeEnum.gauge && ctx.dataType === ctx.WidgetDataTypeEnum.single && ctx.view && ctx.view.length > 0);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.chartSelected === ctx.WidgetActionTypeEnum.horizontalStackedBarChart && ctx.view && ctx.view.length > 0);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.chartSelected === ctx.WidgetActionTypeEnum.verticalStackedBarChart && ctx.view && ctx.view.length > 0);
             }
-        }, directives: [i2$1.NgIf, i2$5.BarVertical2DComponent, i2$5.BarHorizontal2DComponent, i2$5.LineChartComponent, i2$5.BarVerticalComponent, i2$5.BarHorizontalComponent, i2$5.PieChartComponent, i2$5.GaugeComponent], styles: [""] });
+        }, directives: [i2$1.NgIf, i2$5.BarVertical2DComponent, i2$5.BarHorizontal2DComponent, i2$5.LineChartComponent, i2$5.BarVerticalComponent, i2$5.BarHorizontalComponent, i2$5.PieChartComponent, i2$5.GaugeComponent, i2$1.NgForOf, i2$5.BarHorizontalStackedComponent, i2$5.BarVerticalStackedComponent], styles: [".cmacs-stacked-bar-chart-legend-wrapper[_ngcontent-%COMP%]{padding-bottom:10px;text-align:right;border:none!important}.cmacs-stacked-chart-legend-marker[_ngcontent-%COMP%]{width:4px;height:10px;border-radius:5px;display:inline-block}.cmacs-stacked-chart-legend-label[_ngcontent-%COMP%]{padding-left:6px;padding-right:20px;font-family:Roboto-Regular;font-size:12px;color:#acb3bf}  .cmacs-stacked-bar-char .tick text{fill:#3b3f46;font-family:Roboto-Medium;font-weight:500}"] });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsGeneralChartComponent, [{
                 type: i0.Component,
@@ -42541,7 +42682,7 @@
             if (rf & 2) {
                 i0.ɵɵsyntheticHostProperty("@toolbarVisibility", ctx.toolbarVisibilityAnimator.animation);
             }
-        }, inputs: { title: "title", pagination: "pagination" }, outputs: { nextEvent: "nextEvent", previousEvent: "previousEvent", firstEvent: "firstEvent", lastEvent: "lastEvent", closeEvent: "closeEvent", thumbnailsToggleEvent: "thumbnailsToggleEvent" }, decls: 15, vars: 8, consts: [[1, "toolbar-container"], ["lightbox-icon-button", "", "title", "Close", 3, "tap"], [1, "material-icons"], [1, "toolbar-title"], [1, "nav-menu"], ["lightbox-icon-button", "", "title", "First", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Previous", 3, "disable", "tap", 4, "ngIf"], ["class", "nav-pagination", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Next", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Last", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "List", 3, "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "First", 3, "disable", "tap"], ["lightbox-icon-button", "", "title", "Previous", 3, "disable", "tap"], [1, "nav-pagination"], ["lightbox-icon-button", "", "title", "Next", 3, "disable", "tap"], ["lightbox-icon-button", "", "title", "Last", 3, "disable", "tap"], ["lightbox-icon-button", "", "title", "List", 3, "tap"]], template: function LightboxToolbarComponent_Template(rf, ctx) {
+        }, inputs: { title: "title", pagination: "pagination" }, outputs: { nextEvent: "nextEvent", previousEvent: "previousEvent", firstEvent: "firstEvent", lastEvent: "lastEvent", closeEvent: "closeEvent", thumbnailsToggleEvent: "thumbnailsToggleEvent" }, decls: 15, vars: 8, consts: [[1, "toolbar-container"], ["lightbox-icon-button", "", "title", "Close", "role", "button", "aria-label", "Close", 3, "tap"], [1, "material-icons"], [1, "toolbar-title"], [1, "nav-menu"], ["role", "button", "lightbox-icon-button", "", "title", "First", "aria-label", "First", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Previous", "aria-label", "Previous", 3, "disable", "tap", 4, "ngIf"], ["class", "nav-pagination", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Next", "aria-label", "Next", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Last", "aria-label", "title", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "List", "aria-label", "List", 3, "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "First", "aria-label", "First", 3, "disable", "tap"], ["role", "button", "lightbox-icon-button", "", "title", "Previous", "aria-label", "Previous", 3, "disable", "tap"], [1, "nav-pagination"], ["role", "button", "lightbox-icon-button", "", "title", "Next", "aria-label", "Next", 3, "disable", "tap"], ["role", "button", "lightbox-icon-button", "", "title", "Last", "aria-label", "title", 3, "disable", "tap"], ["role", "button", "lightbox-icon-button", "", "title", "List", "aria-label", "List", 3, "tap"]], template: function LightboxToolbarComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "div");
@@ -42827,7 +42968,7 @@
             if (rf & 2) {
                 i0.ɵɵsyntheticHostProperty("@zoomVisibility", ctx.zoomVisibilityAnimator.animation);
             }
-        }, inputs: { disableZoomIn: "disableZoomIn", disableZoomOut: "disableZoomOut", disableResetZoom: "disableResetZoom", disableFeetToWidth: "disableFeetToWidth" }, outputs: { zoomInEvent: "zoomInEvent", zoomOutEvent: "zoomOutEvent", resetZoomEvent: "resetZoomEvent", feetToWidthEvent: "feetToWidthEvent" }, decls: 1, vars: 1, consts: [[4, "ngIf"], ["lightbox-icon-button", "", "title", "Zoom out", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Reset zoom", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Feet to width", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Zoom in", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Zoom out", 3, "disable", "tap"], [1, "material-icons"], ["lightbox-icon-button", "", "title", "Reset zoom", 3, "disable", "tap"], ["lightbox-icon-button", "", "title", "Feet to width", 3, "disable", "tap"], ["lightbox-icon-button", "", "title", "Zoom in", 3, "disable", "tap"]], template: function LightboxZoomComponent_Template(rf, ctx) {
+        }, inputs: { disableZoomIn: "disableZoomIn", disableZoomOut: "disableZoomOut", disableResetZoom: "disableResetZoom", disableFeetToWidth: "disableFeetToWidth" }, outputs: { zoomInEvent: "zoomInEvent", zoomOutEvent: "zoomOutEvent", resetZoomEvent: "resetZoomEvent", feetToWidthEvent: "feetToWidthEvent" }, decls: 1, vars: 1, consts: [[4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Zoom out", "aria-label", "Zoom out", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Reset zoom", "aria-label", "Reset zoom", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Feet to width", "aria-label", "Feet to width", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Zoom in", "aria-label", "Zoom in", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Zoom out", "aria-label", "Zoom out", 3, "disable", "tap"], [1, "material-icons"], ["role", "button", "lightbox-icon-button", "", "title", "Reset zoom", "aria-label", "Reset zoom", 3, "disable", "tap"], ["role", "button", "lightbox-icon-button", "", "title", "Feet to width", "aria-label", "Feet to width", 3, "disable", "tap"], ["role", "button", "lightbox-icon-button", "", "title", "Zoom in", "aria-label", "Zoom in", 3, "disable", "tap"]], template: function LightboxZoomComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, LightboxZoomComponent_div_0_Template, 5, 4, "div", 0);
             }
