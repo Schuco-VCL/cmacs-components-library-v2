@@ -37725,7 +37725,7 @@
 
     function CmacsGeneralChartComponent_ngx_charts_bar_vertical_2d_0_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-bar-vertical-2d", 7);
+            i0.ɵɵelement(0, "ngx-charts-bar-vertical-2d", 6);
         }
         if (rf & 2) {
             var ctx_r0 = i0.ɵɵnextContext();
@@ -37734,25 +37734,54 @@
     }
     function CmacsGeneralChartComponent_ngx_charts_bar_horizontal_2d_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-bar-horizontal-2d", 8);
+            i0.ɵɵelement(0, "ngx-charts-bar-horizontal-2d", 7);
         }
         if (rf & 2) {
             var ctx_r1 = i0.ɵɵnextContext();
             i0.ɵɵproperty("view", ctx_r1.view)("scheme", ctx_r1.colorScheme)("results", ctx_r1.data)("xAxis", ctx_r1.showXAxis)("yAxis", ctx_r1.showYAxis)("legend", ctx_r1.showLegend)("showXAxisLabel", ctx_r1.showXAxisLabel)("showYAxisLabel", ctx_r1.showYAxisLabel)("xAxisLabel", ctx_r1.xAxisLabel)("yAxisLabel", ctx_r1.yAxisLabel)("legendTitle", ctx_r1.legendTitle)("roundEdges", false)("trimXAxisTicks", true)("roundDomains", true)("legendPosition", ctx_r1.legendPosition)("groupPadding", 1)("barPadding", 1);
         }
     }
-    function CmacsGeneralChartComponent_ngx_charts_line_chart_2_Template(rf, ctx) {
+    function CmacsGeneralChartComponent_ng_container_2_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-line-chart", 9);
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelement(1, "span", 11);
+            i0.ɵɵelementStart(2, "span", 12);
+            i0.ɵɵtext(3);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var label_r10 = ctx.$implicit;
+            var i_r11 = ctx.index;
+            var ctx_r9 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵstyleProp("background-color", ctx_r9.colorScheme.domain[i_r11]);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(label_r10);
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "div", 8);
+            i0.ɵɵtemplate(2, CmacsGeneralChartComponent_ng_container_2_ng_container_2_Template, 4, 3, "ng-container", 9);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(3, "div");
+            i0.ɵɵelement(4, "ngx-charts-line-chart", 10);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
             var ctx_r2 = i0.ɵɵnextContext();
-            i0.ɵɵproperty("view", ctx_r2.view)("scheme", ctx_r2.colorScheme)("results", ctx_r2.data)("xAxis", ctx_r2.showXAxis)("yAxis", ctx_r2.showYAxis)("legend", ctx_r2.showLegend)("showXAxisLabel", ctx_r2.showXAxisLabel)("showYAxisLabel", ctx_r2.showYAxisLabel)("xAxisLabel", ctx_r2.xAxisLabel)("yAxisLabel", ctx_r2.yAxisLabel)("legendTitle", ctx_r2.legendTitle)("roundDomains", true)("legendPosition", ctx_r2.legendPosition);
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngForOf", ctx_r2.getLegendLabels());
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("view", ctx_r2.view)("scheme", ctx_r2.colorScheme)("results", ctx_r2.data)("xAxis", ctx_r2.showXAxis)("yAxis", ctx_r2.showYAxis)("legend", false)("showXAxisLabel", ctx_r2.showXAxisLabel)("showYAxisLabel", ctx_r2.showYAxisLabel)("xAxisLabel", ctx_r2.xAxisLabel)("yAxisLabel", ctx_r2.yAxisLabel)("legendTitle", ctx_r2.legendTitle)("roundDomains", true)("legendPosition", ctx_r2.legendPosition);
         }
     }
     function CmacsGeneralChartComponent_ngx_charts_bar_vertical_3_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-bar-vertical", 10);
+            i0.ɵɵelement(0, "ngx-charts-bar-vertical", 13);
         }
         if (rf & 2) {
             var ctx_r3 = i0.ɵɵnextContext();
@@ -37761,7 +37790,7 @@
     }
     function CmacsGeneralChartComponent_ngx_charts_bar_horizontal_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-bar-horizontal", 10);
+            i0.ɵɵelement(0, "ngx-charts-bar-horizontal", 13);
         }
         if (rf & 2) {
             var ctx_r4 = i0.ɵɵnextContext();
@@ -37770,7 +37799,7 @@
     }
     function CmacsGeneralChartComponent_ngx_charts_pie_chart_5_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-pie-chart", 11);
+            i0.ɵɵelement(0, "ngx-charts-pie-chart", 14);
         }
         if (rf & 2) {
             var ctx_r5 = i0.ɵɵnextContext();
@@ -37779,7 +37808,7 @@
     }
     function CmacsGeneralChartComponent_ngx_charts_gauge_6_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "ngx-charts-gauge", 12);
+            i0.ɵɵelement(0, "ngx-charts-gauge", 15);
         }
         if (rf & 2) {
             var ctx_r6 = i0.ɵɵnextContext();
@@ -37789,26 +37818,37 @@
     function CmacsGeneralChartComponent_ng_container_7_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelement(1, "span", 17);
-            i0.ɵɵelementStart(2, "span", 18);
+            i0.ɵɵelement(1, "span", 11);
+            i0.ɵɵelementStart(2, "span", 12);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var label_r12 = ctx.$implicit;
-            var i_r13 = ctx.index;
-            var ctx_r9 = i0.ɵɵnextContext(2);
+            var label_r15 = ctx.$implicit;
+            var i_r16 = ctx.index;
+            var ctx_r12 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("background-color", ctx_r9.colorScheme.domain[i_r13]);
+            i0.ɵɵstyleProp("background-color", ctx_r12.colorScheme.domain[i_r16]);
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(label_r12);
+            i0.ɵɵtextInterpolate(label_r15);
         }
     }
-    function CmacsGeneralChartComponent_ng_container_7_ng_template_5_Template(rf, ctx) {
+    var _c0$1c = function (a0) { return { model: a0 }; };
+    function CmacsGeneralChartComponent_ng_container_7_ng_template_5_ng_container_0_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 19);
-            i0.ɵɵelementStart(1, "span", 20);
+            i0.ɵɵelementContainer(0, 20);
+        }
+        if (rf & 2) {
+            var model_r17 = i0.ɵɵnextContext().model;
+            var ctx_r18 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r18.customTooltipTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$1c, model_r17));
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_7_ng_template_5_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 21);
+            i0.ɵɵelementStart(1, "span", 22);
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(3, "span");
@@ -37817,22 +37857,34 @@
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var model_r14 = ctx.model;
+            var model_r17 = i0.ɵɵnextContext().model;
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate1("", model_r14.name, ":");
+            i0.ɵɵtextInterpolate1("", model_r17.name, ":");
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(model_r14.value);
+            i0.ɵɵtextInterpolate(model_r17.value);
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_7_ng_template_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵtemplate(0, CmacsGeneralChartComponent_ng_container_7_ng_template_5_ng_container_0_Template, 1, 4, "ng-container", 18);
+            i0.ɵɵtemplate(1, CmacsGeneralChartComponent_ng_container_7_ng_template_5_div_1_Template, 5, 2, "div", 19);
+        }
+        if (rf & 2) {
+            var ctx_r14 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("ngIf", ctx_r14.customTooltipTemplate);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r14.customTooltipTemplate);
         }
     }
     function CmacsGeneralChartComponent_ng_container_7_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 13);
-            i0.ɵɵtemplate(2, CmacsGeneralChartComponent_ng_container_7_ng_container_2_Template, 4, 3, "ng-container", 14);
+            i0.ɵɵelementStart(1, "div", 8);
+            i0.ɵɵtemplate(2, CmacsGeneralChartComponent_ng_container_7_ng_container_2_Template, 4, 3, "ng-container", 9);
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(3, "div");
-            i0.ɵɵelementStart(4, "ngx-charts-bar-horizontal-stacked", 15);
-            i0.ɵɵtemplate(5, CmacsGeneralChartComponent_ng_container_7_ng_template_5_Template, 5, 2, "ng-template", null, 16, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵelementStart(4, "ngx-charts-bar-horizontal-stacked", 16);
+            i0.ɵɵtemplate(5, CmacsGeneralChartComponent_ng_container_7_ng_template_5_Template, 2, 2, "ng-template", null, 17, i0.ɵɵtemplateRefExtractor);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
@@ -37848,26 +37900,36 @@
     function CmacsGeneralChartComponent_ng_container_8_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelement(1, "span", 17);
-            i0.ɵɵelementStart(2, "span", 18);
+            i0.ɵɵelement(1, "span", 11);
+            i0.ɵɵelementStart(2, "span", 12);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var label_r18 = ctx.$implicit;
-            var i_r19 = ctx.index;
-            var ctx_r15 = i0.ɵɵnextContext(2);
+            var label_r25 = ctx.$implicit;
+            var i_r26 = ctx.index;
+            var ctx_r22 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("background-color", ctx_r15.colorScheme.domain[i_r19]);
+            i0.ɵɵstyleProp("background-color", ctx_r22.colorScheme.domain[i_r26]);
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(label_r18);
+            i0.ɵɵtextInterpolate(label_r25);
         }
     }
-    function CmacsGeneralChartComponent_ng_container_8_ng_template_5_Template(rf, ctx) {
+    function CmacsGeneralChartComponent_ng_container_8_ng_template_5_ng_container_0_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 19);
-            i0.ɵɵelementStart(1, "span", 20);
+            i0.ɵɵelementContainer(0, 20);
+        }
+        if (rf & 2) {
+            var model_r27 = i0.ɵɵnextContext().model;
+            var ctx_r28 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r28.customTooltipTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$1c, model_r27));
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_8_ng_template_5_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 21);
+            i0.ɵɵelementStart(1, "span", 22);
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(3, "span");
@@ -37876,22 +37938,34 @@
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var model_r20 = ctx.model;
+            var model_r27 = i0.ɵɵnextContext().model;
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate1("", model_r20.name, ":");
+            i0.ɵɵtextInterpolate1("", model_r27.name, ":");
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(model_r20.value);
+            i0.ɵɵtextInterpolate(model_r27.value);
+        }
+    }
+    function CmacsGeneralChartComponent_ng_container_8_ng_template_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵtemplate(0, CmacsGeneralChartComponent_ng_container_8_ng_template_5_ng_container_0_Template, 1, 4, "ng-container", 18);
+            i0.ɵɵtemplate(1, CmacsGeneralChartComponent_ng_container_8_ng_template_5_div_1_Template, 5, 2, "div", 19);
+        }
+        if (rf & 2) {
+            var ctx_r24 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("ngIf", ctx_r24.customTooltipTemplate);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r24.customTooltipTemplate);
         }
     }
     function CmacsGeneralChartComponent_ng_container_8_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 13);
-            i0.ɵɵtemplate(2, CmacsGeneralChartComponent_ng_container_8_ng_container_2_Template, 4, 3, "ng-container", 14);
+            i0.ɵɵelementStart(1, "div", 8);
+            i0.ɵɵtemplate(2, CmacsGeneralChartComponent_ng_container_8_ng_container_2_Template, 4, 3, "ng-container", 9);
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(3, "div");
-            i0.ɵɵelementStart(4, "ngx-charts-bar-vertical-stacked", 15);
-            i0.ɵɵtemplate(5, CmacsGeneralChartComponent_ng_container_8_ng_template_5_Template, 5, 2, "ng-template", null, 16, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵelementStart(4, "ngx-charts-bar-vertical-stacked", 16);
+            i0.ɵɵtemplate(5, CmacsGeneralChartComponent_ng_container_8_ng_template_5_Template, 2, 2, "ng-template", null, 17, i0.ɵɵtemplateRefExtractor);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
@@ -37919,6 +37993,7 @@
             this.yAxisLabel = '';
             this.showLegend = true;
             this.legendTitle = '';
+            this.customTooltipTemplate = null;
             this.colorScheme = {
                 domain: ['#5AA454', '#C7B42C', '#AAAAAA']
             };
@@ -37929,7 +38004,9 @@
         CmacsGeneralChartComponent.prototype.ngOnInit = function () {
         };
         CmacsGeneralChartComponent.prototype.getLegendLabels = function () {
-            if (this.chartSelected === exports.WidgetActionType.horizontalStackedBarChart || this.chartSelected === exports.WidgetActionType.verticalStackedBarChart) {
+            if (this.chartSelected === exports.WidgetActionType.horizontalStackedBarChart
+                || this.chartSelected === exports.WidgetActionType.verticalStackedBarChart
+                || this.chartSelected === exports.WidgetActionType.lineChart) {
                 if (this.isNull(this.data) || this.isEmpty(this.data) || this.isNull(this.data[0].series)) {
                     return [];
                 }
@@ -37955,17 +38032,17 @@
         return CmacsGeneralChartComponent;
     }());
     CmacsGeneralChartComponent.ɵfac = function CmacsGeneralChartComponent_Factory(t) { return new (t || CmacsGeneralChartComponent)(); };
-    CmacsGeneralChartComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsGeneralChartComponent, selectors: [["cmacs-general-chart"]], inputs: { data: "data", chartSelected: "chartSelected", dataType: "dataType", showXAxis: "showXAxis", showXAxisLabel: "showXAxisLabel", xAxisLabel: "xAxisLabel", showYAxis: "showYAxis", showYAxisLabel: "showYAxisLabel", yAxisLabel: "yAxisLabel", showLegend: "showLegend", legendTitle: "legendTitle", view: "view", colorScheme: "colorScheme" }, decls: 9, vars: 9, consts: [[3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "legendPosition", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "groupPadding", "barPadding", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", "groupPadding", "barPadding", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundDomains", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "legend", "legendTitle", "doughnut", "labels", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "legend", "legendTitle", "legendPosition", "bigSegments", "smallSegments", 4, "ngIf"], [4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "legendPosition", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "groupPadding", "barPadding"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", "groupPadding", "barPadding"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundDomains", "legendPosition"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition"], [3, "view", "scheme", "results", "legend", "legendTitle", "doughnut", "labels", "legendPosition"], [3, "view", "scheme", "results", "legend", "legendTitle", "legendPosition", "bigSegments", "smallSegments"], [1, "cmacs-stacked-bar-chart-legend-wrapper"], [4, "ngFor", "ngForOf"], [1, "cmacs-stacked-bar-char", 3, "view", "scheme", "results", "xAxis", "yAxis", "rotateXAxisTicks", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel"], ["tooltipTemplate", ""], [1, "cmacs-stacked-chart-legend-marker"], [1, "cmacs-stacked-chart-legend-label"], [2, "padding", "5px"], [2, "margin-right", "5px"]], template: function CmacsGeneralChartComponent_Template(rf, ctx) {
+    CmacsGeneralChartComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsGeneralChartComponent, selectors: [["cmacs-general-chart"]], inputs: { data: "data", chartSelected: "chartSelected", dataType: "dataType", showXAxis: "showXAxis", showXAxisLabel: "showXAxisLabel", xAxisLabel: "xAxisLabel", showYAxis: "showYAxis", showYAxisLabel: "showYAxisLabel", yAxisLabel: "yAxisLabel", showLegend: "showLegend", legendTitle: "legendTitle", customTooltipTemplate: "customTooltipTemplate", view: "view", colorScheme: "colorScheme" }, decls: 9, vars: 9, consts: [[3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "legendPosition", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "groupPadding", "barPadding", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", "groupPadding", "barPadding", 4, "ngIf"], [4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "legend", "legendTitle", "doughnut", "labels", "legendPosition", 4, "ngIf"], [3, "view", "scheme", "results", "legend", "legendTitle", "legendPosition", "bigSegments", "smallSegments", 4, "ngIf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "legendPosition", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "groupPadding", "barPadding"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition", "groupPadding", "barPadding"], [1, "cmacs-stacked-bar-chart-legend-wrapper"], [4, "ngFor", "ngForOf"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundDomains", "legendPosition"], [1, "cmacs-stacked-chart-legend-marker"], [1, "cmacs-stacked-chart-legend-label"], [3, "view", "scheme", "results", "xAxis", "yAxis", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel", "legendTitle", "roundEdges", "trimXAxisTicks", "roundDomains", "legendPosition"], [3, "view", "scheme", "results", "legend", "legendTitle", "doughnut", "labels", "legendPosition"], [3, "view", "scheme", "results", "legend", "legendTitle", "legendPosition", "bigSegments", "smallSegments"], [1, "cmacs-stacked-bar-char", 3, "view", "scheme", "results", "xAxis", "yAxis", "rotateXAxisTicks", "legend", "showXAxisLabel", "showYAxisLabel", "xAxisLabel", "yAxisLabel"], ["tooltipTemplate", ""], [3, "ngTemplateOutlet", "ngTemplateOutletContext", 4, "ngIf"], ["style", "padding: 5px", 4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [2, "padding", "5px"], [2, "margin-right", "5px"]], template: function CmacsGeneralChartComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, CmacsGeneralChartComponent_ngx_charts_bar_vertical_2d_0_Template, 1, 17, "ngx-charts-bar-vertical-2d", 0);
                 i0.ɵɵtemplate(1, CmacsGeneralChartComponent_ngx_charts_bar_horizontal_2d_1_Template, 1, 17, "ngx-charts-bar-horizontal-2d", 1);
-                i0.ɵɵtemplate(2, CmacsGeneralChartComponent_ngx_charts_line_chart_2_Template, 1, 13, "ngx-charts-line-chart", 2);
+                i0.ɵɵtemplate(2, CmacsGeneralChartComponent_ng_container_2_Template, 5, 14, "ng-container", 2);
                 i0.ɵɵtemplate(3, CmacsGeneralChartComponent_ngx_charts_bar_vertical_3_Template, 1, 15, "ngx-charts-bar-vertical", 3);
                 i0.ɵɵtemplate(4, CmacsGeneralChartComponent_ngx_charts_bar_horizontal_4_Template, 1, 15, "ngx-charts-bar-horizontal", 3);
                 i0.ɵɵtemplate(5, CmacsGeneralChartComponent_ngx_charts_pie_chart_5_Template, 1, 8, "ngx-charts-pie-chart", 4);
                 i0.ɵɵtemplate(6, CmacsGeneralChartComponent_ngx_charts_gauge_6_Template, 1, 8, "ngx-charts-gauge", 5);
-                i0.ɵɵtemplate(7, CmacsGeneralChartComponent_ng_container_7_Template, 7, 12, "ng-container", 6);
-                i0.ɵɵtemplate(8, CmacsGeneralChartComponent_ng_container_8_Template, 7, 12, "ng-container", 6);
+                i0.ɵɵtemplate(7, CmacsGeneralChartComponent_ng_container_7_Template, 7, 12, "ng-container", 2);
+                i0.ɵɵtemplate(8, CmacsGeneralChartComponent_ng_container_8_Template, 7, 12, "ng-container", 2);
             }
             if (rf & 2) {
                 i0.ɵɵproperty("ngIf", ctx.chartSelected === ctx.WidgetActionTypeEnum.verticalBarChart && ctx.dataType === ctx.WidgetDataTypeEnum.multi && ctx.view && ctx.view.length > 0);
@@ -37986,7 +38063,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", ctx.chartSelected === ctx.WidgetActionTypeEnum.verticalStackedBarChart && ctx.view && ctx.view.length > 0);
             }
-        }, directives: [i2$1.NgIf, i2$5.BarVertical2DComponent, i2$5.BarHorizontal2DComponent, i2$5.LineChartComponent, i2$5.BarVerticalComponent, i2$5.BarHorizontalComponent, i2$5.PieChartComponent, i2$5.GaugeComponent, i2$1.NgForOf, i2$5.BarHorizontalStackedComponent, i2$5.BarVerticalStackedComponent], styles: [".cmacs-stacked-bar-chart-legend-wrapper[_ngcontent-%COMP%]{padding-bottom:10px;text-align:right;border:none!important}.cmacs-stacked-chart-legend-marker[_ngcontent-%COMP%]{width:4px;height:10px;border-radius:5px;display:inline-block}.cmacs-stacked-chart-legend-label[_ngcontent-%COMP%]{padding-left:6px;padding-right:20px;font-family:Roboto-Regular;font-size:12px;color:#acb3bf}  .cmacs-stacked-bar-char .tick text{fill:#3b3f46;font-family:Roboto-Medium;font-weight:500}"] });
+        }, directives: [i2$1.NgIf, i2$5.BarVertical2DComponent, i2$5.BarHorizontal2DComponent, i2$1.NgForOf, i2$5.LineChartComponent, i2$5.BarVerticalComponent, i2$5.BarHorizontalComponent, i2$5.PieChartComponent, i2$5.GaugeComponent, i2$5.BarHorizontalStackedComponent, i2$1.NgTemplateOutlet, i2$5.BarVerticalStackedComponent], styles: [".cmacs-stacked-bar-chart-legend-wrapper[_ngcontent-%COMP%]{padding-bottom:10px;text-align:right;border:none!important}.cmacs-stacked-chart-legend-marker[_ngcontent-%COMP%]{width:4px;height:10px;border-radius:5px;display:inline-block}.cmacs-stacked-chart-legend-label[_ngcontent-%COMP%]{padding-left:6px;padding-right:20px;font-family:Roboto-Regular;font-size:12px;color:#acb3bf}  .cmacs-stacked-bar-char .tick text{fill:#3b3f46;font-family:Roboto-Medium;font-weight:500}"] });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsGeneralChartComponent, [{
                 type: i0.Component,
@@ -38017,6 +38094,8 @@
                     type: i0.Input
                 }], legendTitle: [{
                     type: i0.Input
+                }], customTooltipTemplate: [{
+                    type: i0.Input
                 }], view: [{
                     type: i0.Input
                 }], colorScheme: [{
@@ -38024,7 +38103,7 @@
                 }] });
     })();
 
-    var _c0$1c = ["canvas"];
+    var _c0$1d = ["canvas"];
     function CmacsKPIOverviewComponent_ng_container_8_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainer(0);
@@ -38193,7 +38272,7 @@
     CmacsKPIOverviewComponent.ɵfac = function CmacsKPIOverviewComponent_Factory(t) { return new (t || CmacsKPIOverviewComponent)(i0.ɵɵdirectiveInject(i1$6.DomSanitizer)); };
     CmacsKPIOverviewComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKPIOverviewComponent, selectors: [["cmacs-kpi-overview"]], viewQuery: function CmacsKPIOverviewComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1c, 1, i0.ElementRef);
+                i0.ɵɵviewQuery(_c0$1d, 1, i0.ElementRef);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -38246,7 +38325,7 @@
                 }] });
     })();
 
-    var _c0$1d = ["legendContent"];
+    var _c0$1e = ["legendContent"];
     var _c1$z = ["chartcanvas"];
     function CmacsNormalizedHorizontalBarChartComponent_span_2_Template(rf, ctx) {
         if (rf & 1) {
@@ -38469,7 +38548,7 @@
     CmacsNormalizedHorizontalBarChartComponent.ɵfac = function CmacsNormalizedHorizontalBarChartComponent_Factory(t) { return new (t || CmacsNormalizedHorizontalBarChartComponent)(i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(UtilService)); };
     CmacsNormalizedHorizontalBarChartComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsNormalizedHorizontalBarChartComponent, selectors: [["cmacs-normalized-horizontal-bar-chart"]], viewQuery: function CmacsNormalizedHorizontalBarChartComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1d, 1, i0.ElementRef);
+                i0.ɵɵviewQuery(_c0$1e, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c1$z, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c1$z, 1);
             }
@@ -39600,7 +39679,7 @@
                 }] });
     })();
 
-    var _c0$1e = ["textarea"];
+    var _c0$1f = ["textarea"];
     function CmacsOpenTextareaComponent_textarea_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "textarea", 4, 5);
@@ -39666,7 +39745,7 @@
     CmacsOpenTextareaComponent.ɵfac = function CmacsOpenTextareaComponent_Factory(t) { return new (t || CmacsOpenTextareaComponent)(); };
     CmacsOpenTextareaComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsOpenTextareaComponent, selectors: [["cmacs-open-textarea"]], viewQuery: function CmacsOpenTextareaComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1e, 1, i0.ElementRef);
+                i0.ɵɵviewQuery(_c0$1f, 1, i0.ElementRef);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -39881,7 +39960,7 @@
                 }] });
     })();
 
-    var _c0$1f = ["navContainerElement"];
+    var _c0$1g = ["navContainerElement"];
     var _c1$A = ["navListElement"];
     var _c2$k = ["scrollListElement"];
     function PtbTabsNavComponent_div_0_ng_template_1_Template(rf, ctx) { }
@@ -40178,7 +40257,7 @@
         }, viewQuery: function PtbTabsNavComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(PtbTabsInkBarDirective, 1);
-                i0.ɵɵviewQuery(_c0$1f, 3);
+                i0.ɵɵviewQuery(_c0$1g, 3);
                 i0.ɵɵviewQuery(_c1$A, 3);
                 i0.ɵɵviewQuery(_c2$k, 3);
             }
@@ -41075,7 +41154,7 @@
             }], null, null);
     })();
 
-    var _c0$1g = ["inputElement"];
+    var _c0$1h = ["inputElement"];
     var _c1$B = ["treeRef"];
     function CmacsTreeSelectComponent_ng_template_0_Template(rf, ctx) {
         if (rf & 1) {
@@ -41726,7 +41805,7 @@
     CmacsTreeSelectComponent.ɵfac = function CmacsTreeSelectComponent_Factory(t) { return new (t || CmacsTreeSelectComponent)(i0.ɵɵdirectiveInject(CmacsTreeSelectService), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective, 9)); };
     CmacsTreeSelectComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsTreeSelectComponent, selectors: [["cmacs-tree-select"]], viewQuery: function CmacsTreeSelectComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1g, 1);
+                i0.ɵɵviewQuery(_c0$1h, 1);
                 i0.ɵɵviewQuery(_c1$B, 1);
                 i0.ɵɵviewQuery(i1$4.CdkOverlayOrigin, 1);
                 i0.ɵɵviewQuery(i1$4.CdkConnectedOverlay, 1);
@@ -42140,7 +42219,7 @@
             }], null, null);
     })();
 
-    var _c0$1h = ["lightbox-button", ""];
+    var _c0$1i = ["lightbox-button", ""];
     var _c1$C = ["*"];
     var BUTTON_HOST_ATTRIBUTES = [
         'lightbox-button',
@@ -42208,7 +42287,7 @@
             if (rf & 1) {
                 i0.ɵɵlistener("mouseenter", function LightboxButtonComponent_mouseenter_HostBindingHandler() { return ctx._onMouseEnter(); })("mouseleave", function LightboxButtonComponent_mouseleave_HostBindingHandler() { return ctx._onMouseLeave(); });
             }
-        }, inputs: { disable: "disable" }, features: [i0.ɵɵNgOnChangesFeature], attrs: _c0$1h, ngContentSelectors: _c1$C, decls: 2, vars: 1, consts: [[1, "button-focus-overlay"]], template: function LightboxButtonComponent_Template(rf, ctx) {
+        }, inputs: { disable: "disable" }, features: [i0.ɵɵNgOnChangesFeature], attrs: _c0$1i, ngContentSelectors: _c1$C, decls: 2, vars: 1, consts: [[1, "button-focus-overlay"]], template: function LightboxButtonComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "div", 0);
@@ -43122,7 +43201,7 @@
         return ThumbnailsSliceAnimator;
     }(Animator));
 
-    var _c0$1i = ["thumnailsContainer"];
+    var _c0$1j = ["thumnailsContainer"];
     var _c1$D = ["thumnailsList"];
     var _c2$m = ["thumnails"];
     var _c3$b = function (a0) { return { "active": a0 }; };
@@ -43338,7 +43417,7 @@
     LightboxThumbnailsComponent.ɵfac = function LightboxThumbnailsComponent_Factory(t) { return new (t || LightboxThumbnailsComponent)(i0.ɵɵdirectiveInject(LightboxConfigurationService), i0.ɵɵdirectiveInject(WINDOW)); };
     LightboxThumbnailsComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxThumbnailsComponent, selectors: [["lightbox-thumbnails"]], viewQuery: function LightboxThumbnailsComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1i, 1);
+                i0.ɵɵviewQuery(_c0$1j, 1);
                 i0.ɵɵviewQuery(_c1$D, 1);
                 i0.ɵɵviewQuery(_c2$m, 1);
             }
@@ -43745,7 +43824,7 @@
                 }] });
     })();
 
-    var _c0$1j = ["img"];
+    var _c0$1k = ["img"];
     var ZOOM_PERCENT$1 = 10;
     var ZOOM_MAX_AFTER_WIDTH = 3;
     var LightboxItemComponent = /** @class */ (function () {
@@ -43967,7 +44046,7 @@
     LightboxItemComponent.ɵfac = function LightboxItemComponent_Factory(t) { return new (t || LightboxItemComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(LightboxConfigurationService)); };
     LightboxItemComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxItemComponent, selectors: [["lightbox-item"]], viewQuery: function LightboxItemComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1j, 1);
+                i0.ɵɵviewQuery(_c0$1k, 1);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -44008,7 +44087,7 @@
                 }] });
     })();
 
-    var _c0$1k = ["background"];
+    var _c0$1l = ["background"];
     var _c1$E = ["toolbar"];
     var _c2$n = ["thumbnails"];
     var _c3$c = ["lightboxZoom"];
@@ -44359,7 +44438,7 @@
     LightboxComponent.ɵfac = function LightboxComponent_Factory(t) { return new (t || LightboxComponent)(i0.ɵɵdirectiveInject(LightboxConfigurationService)); };
     LightboxComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxComponent, selectors: [["lightbox"]], viewQuery: function LightboxComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1k, 1);
+                i0.ɵɵviewQuery(_c0$1l, 1);
                 i0.ɵɵviewQuery(_c1$E, 1);
                 i0.ɵɵviewQuery(_c2$n, 1);
                 i0.ɵɵviewQuery(_c3$c, 1);
