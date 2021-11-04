@@ -638,8 +638,11 @@ nz-divider {
 .has-error .ant-form-explain, cmacs-form-explain {
   color: #F6503C;
   font-size: 10px;
-  top: 40px;
   left: 0px;
+  display: block;
+  margin-bottom: -35px;
+  margin-top: 5px;
+  height: 30px;
 }
 
 cmacs-datetime-picker.ant-time-picker {
@@ -657,6 +660,10 @@ cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] {
 cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled] + .ant-time-picker-icon {
   color: #BEC4CD;
   cursor: default;
+}
+
+cmacs-phone-number {
+  display: block;
 }
 
 /* Dropdown */
