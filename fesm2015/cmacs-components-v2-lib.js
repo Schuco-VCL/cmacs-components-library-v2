@@ -39525,9 +39525,10 @@ class LazyLoadingDirective {
         this._elementRef = _elementRef;
     }
     ngOnInit() {
-        if (!this.xsSrc && !this.smSrc && !this.mdSrc && !this.lgSrc && !this.xlSrc && !this.src) {
+        /*if (!this.xsSrc && !this.smSrc && !this.mdSrc && !this.lgSrc && !this.xlSrc && !this.src) {
+
             throw new Error("At least one of this attributes must be defined 'xs-src | sm-src | md-src | lg-src | xl-src | src'");
-        }
+        }*/
         if (!this.xsBreakpoint) {
             this.xsBreakpoint = XS_BREAKPOINT;
         }
