@@ -42507,25 +42507,25 @@
                     zoom: { disable: false },
                     zoomIn: { disable: false, icon: 'add' },
                     zoomOut: { disable: false, icon: 'remove' },
-                    feetToWidth: { disable: false, icon: 'zoom_in' },
-                    resetZoom: { disable: false, icon: 'zoom_out' },
+                    feetToWidth: { disable: true, icon: 'zoom_in' },
+                    resetZoom: { disable: true, icon: 'zoom_out' },
                 },
                 animations: {
                     toolbarShow: { duration: .4 },
-                    toolbarHide: { duration: .05 },
+                    toolbarHide: { duration: .0 },
                     backgroundFadeIn: { duration: .4, opacity: .9 },
-                    backgroundFadeOut: { duration: .05 },
+                    backgroundFadeOut: { duration: .0 },
                     thumbnailsShow: { duration: .4 },
-                    thumbnailsHide: { duration: .05 },
+                    thumbnailsHide: { duration: .0 },
                     thumbnailsSlice: { duration: .4 },
-                    zoomShow: { duration: .4 },
-                    zoomHide: { duration: .05 },
-                    zoomIn: { duration: .4 },
-                    zoomOut: { duration: .4 },
-                    feetToWidth: { duration: .4 },
-                    resetZoom: { duration: .4 },
+                    zoomShow: { duration: .0 },
+                    zoomHide: { duration: .0 },
+                    zoomIn: { duration: .0 },
+                    zoomOut: { duration: .0 },
+                    feetToWidth: { duration: .0 },
+                    resetZoom: { duration: .0 },
                     itemSlice: { duration: .4 },
-                    itemOpen: { duration: .4 },
+                    itemOpen: { duration: .0 },
                 }
             };
         }
@@ -42697,6 +42697,11 @@
             i0.ɵɵtextInterpolate(ctx_r5.config.controls.thumbnails.icon);
         }
     }
+    var KEY_CODE;
+    (function (KEY_CODE) {
+        KEY_CODE[KEY_CODE["RIGHT_ARROW"] = 39] = "RIGHT_ARROW";
+        KEY_CODE[KEY_CODE["LEFT_ARROW"] = 37] = "LEFT_ARROW";
+    })(KEY_CODE || (KEY_CODE = {}));
     var LightboxToolbarComponent = /** @class */ (function () {
         function LightboxToolbarComponent(_lightboxConfigurationService) {
             this._lightboxConfigurationService = _lightboxConfigurationService;
@@ -42715,6 +42720,17 @@
             enumerable: false,
             configurable: true
         });
+        LightboxToolbarComponent.prototype.onKeyboardEvent = function ($event) {
+            var code = $event.keyCode;
+            switch (code) {
+                case KEY_CODE.LEFT_ARROW:
+                    this.onPrevious();
+                    break;
+                case KEY_CODE.RIGHT_ARROW:
+                    this.onNext();
+                    break;
+            }
+        };
         LightboxToolbarComponent.prototype.ngOnInit = function () {
             this.toolbarVisibilityAnimator = new ToolbarVisibilityAnimator();
         };
@@ -42762,6 +42778,7 @@
     LightboxToolbarComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxToolbarComponent, selectors: [["lightbox-toolbar"]], hostVars: 1, hostBindings: function LightboxToolbarComponent_HostBindings(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵsyntheticHostListener("@toolbarVisibility.start", function LightboxToolbarComponent_animation_toolbarVisibility_start_HostBindingHandler($event) { return ctx.toolbarVisibilityAnimator.animationStart($event); })("@toolbarVisibility.done", function LightboxToolbarComponent_animation_toolbarVisibility_done_HostBindingHandler($event) { return ctx.toolbarVisibilityAnimator.animationDone($event); });
+                i0.ɵɵlistener("keyup", function LightboxToolbarComponent_keyup_HostBindingHandler($event) { return ctx.onKeyboardEvent($event); }, false, i0.ɵɵresolveWindow);
             }
             if (rf & 2) {
                 i0.ɵɵsyntheticHostProperty("@toolbarVisibility", ctx.toolbarVisibilityAnimator.animation);
@@ -42841,6 +42858,9 @@
                     type: i0.Input
                 }], pagination: [{
                     type: i0.Input
+                }], onKeyboardEvent: [{
+                    type: i0.HostListener,
+                    args: ['window:keyup', ['$event']]
                 }] });
     })();
 
@@ -42906,7 +42926,7 @@
             var ctx_r1 = i0.ɵɵnextContext(2);
             i0.ɵɵproperty("disable", ctx_r1.disableZoomOut);
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(ctx_r1.config.controls.zoomOut.icon);
+            i0.ɵɵtextInterpolate(ctx_r1.config.controls.resetZoom.icon);
         }
     }
     function LightboxZoomComponent_div_0_button_2_Template(rf, ctx) {
@@ -42923,7 +42943,7 @@
             var ctx_r2 = i0.ɵɵnextContext(2);
             i0.ɵɵproperty("disable", ctx_r2.disableResetZoom);
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(ctx_r2.config.controls.resetZoom.icon);
+            i0.ɵɵtextInterpolate(ctx_r2.config.controls.zoomOut.icon);
         }
     }
     function LightboxZoomComponent_div_0_button_3_Template(rf, ctx) {
@@ -42940,7 +42960,7 @@
             var ctx_r3 = i0.ɵɵnextContext(2);
             i0.ɵɵproperty("disable", ctx_r3.disableFeetToWidth);
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(ctx_r3.config.controls.feetToWidth.icon);
+            i0.ɵɵtextInterpolate(ctx_r3.config.controls.zoomIn.icon);
         }
     }
     function LightboxZoomComponent_div_0_button_4_Template(rf, ctx) {
@@ -42957,7 +42977,7 @@
             var ctx_r4 = i0.ɵɵnextContext(2);
             i0.ɵɵproperty("disable", ctx_r4.disableZoomIn);
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(ctx_r4.config.controls.zoomIn.icon);
+            i0.ɵɵtextInterpolate(ctx_r4.config.controls.feetToWidth.icon);
         }
     }
     function LightboxZoomComponent_div_0_Template(rf, ctx) {
@@ -43059,7 +43079,7 @@
             if (rf & 2) {
                 i0.ɵɵproperty("ngIf", !ctx.config.controls.zoom.disable);
             }
-        }, directives: [i2$1.NgIf, LightboxButtonComponent], styles: ["[_nghost-%COMP%]{color:#fff;height:64px;display:flex;align-items:center;align-content:center;justify-content:center;position:absolute;width:100%;z-index:2;pointer-events:none;overflow:hidden;bottom:12px}[_nghost-%COMP%] > div[_ngcontent-%COMP%]{pointer-events:auto;padding:3px;height:40px;width:auto;border-radius:3px;display:flex}[_nghost-%COMP%] > div[_ngcontent-%COMP%], [_nghost-%COMP%]   button[_ngcontent-%COMP%]{background-color:#000}"], data: { animation: [ZoomAnimations.visibilityAnimation] } });
+        }, directives: [i2$1.NgIf, LightboxButtonComponent], styles: ["[_nghost-%COMP%]{color:#fff;height:64px;display:flex;align-items:center;align-content:center;justify-content:center;position:absolute;width:100%;z-index:2;pointer-events:none;overflow:hidden;bottom:12px}[_nghost-%COMP%] > div[_ngcontent-%COMP%]{pointer-events:auto;padding:5px;height:50px;width:auto;border-radius:3px;display:flex}[_nghost-%COMP%] > div[_ngcontent-%COMP%], [_nghost-%COMP%]   button[_ngcontent-%COMP%]{background-color:#000}"], data: { animation: [ZoomAnimations.visibilityAnimation] } });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxZoomComponent, [{
                 type: i0.Component,
@@ -43945,9 +43965,10 @@
             }
         };
         LightboxItemComponent.prototype.onClick = function (event) {
-            if (!this.item.isVideo) {
+            /*if (!this.item.isVideo) {
+
                 this.toggleEvent.emit();
-            }
+            }*/
         };
         LightboxItemComponent.prototype.isFeetToWidth = function () {
             return this._currentZoom === 100;
@@ -44513,7 +44534,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngClass", i0.ɵɵpureFunction2(33, _c9$1, ctx.config.controls.thumbnails.position === "left" || ctx.config.controls.thumbnails.position === "right", ctx.config.controls.thumbnails.position === "top" || ctx.config.controls.thumbnails.position === "bottom"))("items", ctx.activeItem ? ctx.items[ctx.activeItem.container] : i0.ɵɵpureFunction0(36, _c10$1))("ngStyle", i0.ɵɵpureFunction1(37, _c6$3, ctx.config.controls.thumbnails.position === "top" || ctx.config.controls.thumbnails.position === "left" ? 1 : 2));
             }
-        }, directives: [LightboxToolbarComponent, i2$1.NgStyle, i2$1.NgClass, i2$1.NgIf, LightboxZoomComponent, CmacsVideoPlayerComponent, LightboxThumbnailsComponent, i2$1.NgForOf, LightboxItemComponent], styles: ["lightbox{pointer-events:none;top:0;left:0;height:100%;width:100%;display:flex;flex-direction:column}lightbox .lightbox-background,lightbox .lightbox-items-background{height:100%;width:100%;position:absolute;top:0;z-index:1}lightbox .lightbox-background .item-list,lightbox .lightbox-items-background .item-list{position:relative;height:100%;display:flex}lightbox .lightbox-container{display:flex;flex:1 1 0%;position:relative;overflow:hidden}lightbox .lightbox-items-container{flex:1 1 0%;box-sizing:border-box;height:100%;position:relative}.lightbox-overlay-container{pointer-events:none;position:fixed;z-index:10000;height:100%;width:100%;top:0;left:0}lightbox .lightbox-container.vertical-container{flex-direction:row}lightbox .lightbox-container.horizontal-container{flex-direction:column}"], encapsulation: 2, data: { animation: [LightboxAnimations.visibilityAnimation, LightboxAnimations.sliceAnimation] } });
+        }, directives: [LightboxToolbarComponent, i2$1.NgStyle, i2$1.NgClass, i2$1.NgIf, LightboxZoomComponent, CmacsVideoPlayerComponent, LightboxThumbnailsComponent, i2$1.NgForOf, LightboxItemComponent], styles: ["lightbox{pointer-events:none;top:0;left:0;height:100%;width:100%;display:flex;flex-direction:column}lightbox .lightbox-background,lightbox .lightbox-items-background{height:100%;width:100%;position:absolute;top:0;z-index:1}lightbox .lightbox-background .item-list,lightbox .lightbox-items-background .item-list{position:relative;height:100%;display:flex}lightbox .lightbox-container{display:flex;flex:1 1 0%;position:relative;overflow:hidden}lightbox .lightbox-items-container{flex:1 1 0%;box-sizing:border-box;height:100%;position:relative}.lightbox-items-background{background-color:#222}.lightbox-overlay-container{pointer-events:none;position:fixed;z-index:10000;height:100%;width:100%;top:0;left:0}lightbox .lightbox-container.vertical-container{flex-direction:row}lightbox .lightbox-container.horizontal-container{flex-direction:column}"], encapsulation: 2, data: { animation: [LightboxAnimations.visibilityAnimation, LightboxAnimations.sliceAnimation] } });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxComponent, [{
                 type: i0.Component,

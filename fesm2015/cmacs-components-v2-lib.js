@@ -38471,25 +38471,25 @@ class LightboxConfigurationService {
                 zoom: { disable: false },
                 zoomIn: { disable: false, icon: 'add' },
                 zoomOut: { disable: false, icon: 'remove' },
-                feetToWidth: { disable: false, icon: 'zoom_in' },
-                resetZoom: { disable: false, icon: 'zoom_out' },
+                feetToWidth: { disable: true, icon: 'zoom_in' },
+                resetZoom: { disable: true, icon: 'zoom_out' },
             },
             animations: {
                 toolbarShow: { duration: .4 },
-                toolbarHide: { duration: .05 },
+                toolbarHide: { duration: .0 },
                 backgroundFadeIn: { duration: .4, opacity: .9 },
-                backgroundFadeOut: { duration: .05 },
+                backgroundFadeOut: { duration: .0 },
                 thumbnailsShow: { duration: .4 },
-                thumbnailsHide: { duration: .05 },
+                thumbnailsHide: { duration: .0 },
                 thumbnailsSlice: { duration: .4 },
-                zoomShow: { duration: .4 },
-                zoomHide: { duration: .05 },
-                zoomIn: { duration: .4 },
-                zoomOut: { duration: .4 },
-                feetToWidth: { duration: .4 },
-                resetZoom: { duration: .4 },
+                zoomShow: { duration: .0 },
+                zoomHide: { duration: .0 },
+                zoomIn: { duration: .0 },
+                zoomOut: { duration: .0 },
+                feetToWidth: { duration: .0 },
+                resetZoom: { duration: .0 },
                 itemSlice: { duration: .4 },
-                itemOpen: { duration: .4 },
+                itemOpen: { duration: .0 },
             }
         };
     }
@@ -38630,6 +38630,11 @@ function LightboxToolbarComponent_button_14_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(2);
     ɵɵtextInterpolate(ctx_r5.config.controls.thumbnails.icon);
 } }
+var KEY_CODE;
+(function (KEY_CODE) {
+    KEY_CODE[KEY_CODE["RIGHT_ARROW"] = 39] = "RIGHT_ARROW";
+    KEY_CODE[KEY_CODE["LEFT_ARROW"] = 37] = "LEFT_ARROW";
+})(KEY_CODE || (KEY_CODE = {}));
 class LightboxToolbarComponent {
     constructor(_lightboxConfigurationService) {
         this._lightboxConfigurationService = _lightboxConfigurationService;
@@ -38643,6 +38648,17 @@ class LightboxToolbarComponent {
     }
     get config() {
         return this._lightboxConfigurationService;
+    }
+    onKeyboardEvent($event) {
+        const code = $event.keyCode;
+        switch (code) {
+            case KEY_CODE.LEFT_ARROW:
+                this.onPrevious();
+                break;
+            case KEY_CODE.RIGHT_ARROW:
+                this.onNext();
+                break;
+        }
     }
     ngOnInit() {
         this.toolbarVisibilityAnimator = new ToolbarVisibilityAnimator();
@@ -38689,6 +38705,7 @@ class LightboxToolbarComponent {
 LightboxToolbarComponent.ɵfac = function LightboxToolbarComponent_Factory(t) { return new (t || LightboxToolbarComponent)(ɵɵdirectiveInject(LightboxConfigurationService)); };
 LightboxToolbarComponent.ɵcmp = ɵɵdefineComponent({ type: LightboxToolbarComponent, selectors: [["lightbox-toolbar"]], hostVars: 1, hostBindings: function LightboxToolbarComponent_HostBindings(rf, ctx) { if (rf & 1) {
         ɵɵsyntheticHostListener("@toolbarVisibility.start", function LightboxToolbarComponent_animation_toolbarVisibility_start_HostBindingHandler($event) { return ctx.toolbarVisibilityAnimator.animationStart($event); })("@toolbarVisibility.done", function LightboxToolbarComponent_animation_toolbarVisibility_done_HostBindingHandler($event) { return ctx.toolbarVisibilityAnimator.animationDone($event); });
+        ɵɵlistener("keyup", function LightboxToolbarComponent_keyup_HostBindingHandler($event) { return ctx.onKeyboardEvent($event); }, false, ɵɵresolveWindow);
     } if (rf & 2) {
         ɵɵsyntheticHostProperty("@toolbarVisibility", ctx.toolbarVisibilityAnimator.animation);
     } }, inputs: { title: "title", pagination: "pagination" }, outputs: { nextEvent: "nextEvent", previousEvent: "previousEvent", firstEvent: "firstEvent", lastEvent: "lastEvent", closeEvent: "closeEvent", thumbnailsToggleEvent: "thumbnailsToggleEvent" }, decls: 15, vars: 8, consts: [[1, "toolbar-container"], ["lightbox-icon-button", "", "title", "Close", "role", "button", "aria-label", "Close", 3, "tap"], [1, "material-icons"], [1, "toolbar-title"], [1, "nav-menu"], ["role", "button", "lightbox-icon-button", "", "title", "First", "aria-label", "First", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Previous", "aria-label", "Previous", 3, "disable", "tap", 4, "ngIf"], ["class", "nav-pagination", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Next", "aria-label", "Next", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Last", "aria-label", "title", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "List", "aria-label", "List", 3, "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "First", "aria-label", "First", 3, "disable", "tap"], ["role", "button", "lightbox-icon-button", "", "title", "Previous", "aria-label", "Previous", 3, "disable", "tap"], [1, "nav-pagination"], ["role", "button", "lightbox-icon-button", "", "title", "Next", "aria-label", "Next", 3, "disable", "tap"], ["role", "button", "lightbox-icon-button", "", "title", "Last", "aria-label", "title", 3, "disable", "tap"], ["role", "button", "lightbox-icon-button", "", "title", "List", "aria-label", "List", 3, "tap"]], template: function LightboxToolbarComponent_Template(rf, ctx) { if (rf & 1) {
@@ -38762,6 +38779,9 @@ LightboxToolbarComponent.ɵcmp = ɵɵdefineComponent({ type: LightboxToolbarComp
             type: Input
         }], pagination: [{
             type: Input
+        }], onKeyboardEvent: [{
+            type: HostListener,
+            args: ['window:keyup', ['$event']]
         }] }); })();
 
 const ZoomAnimations = {
@@ -38822,7 +38842,7 @@ function LightboxZoomComponent_div_0_button_1_Template(rf, ctx) { if (rf & 1) {
     const ctx_r1 = ɵɵnextContext(2);
     ɵɵproperty("disable", ctx_r1.disableZoomOut);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r1.config.controls.zoomOut.icon);
+    ɵɵtextInterpolate(ctx_r1.config.controls.resetZoom.icon);
 } }
 function LightboxZoomComponent_div_0_button_2_Template(rf, ctx) { if (rf & 1) {
     const _r8 = ɵɵgetCurrentView();
@@ -38836,7 +38856,7 @@ function LightboxZoomComponent_div_0_button_2_Template(rf, ctx) { if (rf & 1) {
     const ctx_r2 = ɵɵnextContext(2);
     ɵɵproperty("disable", ctx_r2.disableResetZoom);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r2.config.controls.resetZoom.icon);
+    ɵɵtextInterpolate(ctx_r2.config.controls.zoomOut.icon);
 } }
 function LightboxZoomComponent_div_0_button_3_Template(rf, ctx) { if (rf & 1) {
     const _r10 = ɵɵgetCurrentView();
@@ -38850,7 +38870,7 @@ function LightboxZoomComponent_div_0_button_3_Template(rf, ctx) { if (rf & 1) {
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵproperty("disable", ctx_r3.disableFeetToWidth);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r3.config.controls.feetToWidth.icon);
+    ɵɵtextInterpolate(ctx_r3.config.controls.zoomIn.icon);
 } }
 function LightboxZoomComponent_div_0_button_4_Template(rf, ctx) { if (rf & 1) {
     const _r12 = ɵɵgetCurrentView();
@@ -38864,7 +38884,7 @@ function LightboxZoomComponent_div_0_button_4_Template(rf, ctx) { if (rf & 1) {
     const ctx_r4 = ɵɵnextContext(2);
     ɵɵproperty("disable", ctx_r4.disableZoomIn);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r4.config.controls.zoomIn.icon);
+    ɵɵtextInterpolate(ctx_r4.config.controls.feetToWidth.icon);
 } }
 function LightboxZoomComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div");
@@ -38951,7 +38971,7 @@ LightboxZoomComponent.ɵcmp = ɵɵdefineComponent({ type: LightboxZoomComponent,
         ɵɵtemplate(0, LightboxZoomComponent_div_0_Template, 5, 4, "div", 0);
     } if (rf & 2) {
         ɵɵproperty("ngIf", !ctx.config.controls.zoom.disable);
-    } }, directives: [NgIf, LightboxButtonComponent], styles: ["[_nghost-%COMP%]{color:#fff;height:64px;display:flex;align-items:center;align-content:center;justify-content:center;position:absolute;width:100%;z-index:2;pointer-events:none;overflow:hidden;bottom:12px}[_nghost-%COMP%] > div[_ngcontent-%COMP%]{pointer-events:auto;padding:3px;height:40px;width:auto;border-radius:3px;display:flex}[_nghost-%COMP%] > div[_ngcontent-%COMP%], [_nghost-%COMP%]   button[_ngcontent-%COMP%]{background-color:#000}"], data: { animation: [ZoomAnimations.visibilityAnimation] } });
+    } }, directives: [NgIf, LightboxButtonComponent], styles: ["[_nghost-%COMP%]{color:#fff;height:64px;display:flex;align-items:center;align-content:center;justify-content:center;position:absolute;width:100%;z-index:2;pointer-events:none;overflow:hidden;bottom:12px}[_nghost-%COMP%] > div[_ngcontent-%COMP%]{pointer-events:auto;padding:5px;height:50px;width:auto;border-radius:3px;display:flex}[_nghost-%COMP%] > div[_ngcontent-%COMP%], [_nghost-%COMP%]   button[_ngcontent-%COMP%]{background-color:#000}"], data: { animation: [ZoomAnimations.visibilityAnimation] } });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(LightboxZoomComponent, [{
         type: Component,
         args: [{
@@ -39777,9 +39797,10 @@ class LightboxItemComponent {
         }
     }
     onClick(event) {
-        if (!this.item.isVideo) {
+        /*if (!this.item.isVideo) {
+
             this.toggleEvent.emit();
-        }
+        }*/
     }
     isFeetToWidth() {
         return this._currentZoom === 100;
@@ -40301,7 +40322,7 @@ LightboxComponent.ɵcmp = ɵɵdefineComponent({ type: LightboxComponent, selecto
         ɵɵproperty("sources", ctx.activeItem ? ctx.getVideoSources() : undefined)("ngStyle", ɵɵpureFunction1(31, _c8$2, ctx.displayYoutube ? "visible" : "hidden"));
         ɵɵadvance(1);
         ɵɵproperty("ngClass", ɵɵpureFunction2(33, _c9$1, ctx.config.controls.thumbnails.position === "left" || ctx.config.controls.thumbnails.position === "right", ctx.config.controls.thumbnails.position === "top" || ctx.config.controls.thumbnails.position === "bottom"))("items", ctx.activeItem ? ctx.items[ctx.activeItem.container] : ɵɵpureFunction0(36, _c10$1))("ngStyle", ɵɵpureFunction1(37, _c6$3, ctx.config.controls.thumbnails.position === "top" || ctx.config.controls.thumbnails.position === "left" ? 1 : 2));
-    } }, directives: [LightboxToolbarComponent, NgStyle, NgClass, NgIf, LightboxZoomComponent, CmacsVideoPlayerComponent, LightboxThumbnailsComponent, NgForOf, LightboxItemComponent], styles: ["lightbox{pointer-events:none;top:0;left:0;height:100%;width:100%;display:flex;flex-direction:column}lightbox .lightbox-background,lightbox .lightbox-items-background{height:100%;width:100%;position:absolute;top:0;z-index:1}lightbox .lightbox-background .item-list,lightbox .lightbox-items-background .item-list{position:relative;height:100%;display:flex}lightbox .lightbox-container{display:flex;flex:1 1 0%;position:relative;overflow:hidden}lightbox .lightbox-items-container{flex:1 1 0%;box-sizing:border-box;height:100%;position:relative}.lightbox-overlay-container{pointer-events:none;position:fixed;z-index:10000;height:100%;width:100%;top:0;left:0}lightbox .lightbox-container.vertical-container{flex-direction:row}lightbox .lightbox-container.horizontal-container{flex-direction:column}"], encapsulation: 2, data: { animation: [LightboxAnimations.visibilityAnimation, LightboxAnimations.sliceAnimation] } });
+    } }, directives: [LightboxToolbarComponent, NgStyle, NgClass, NgIf, LightboxZoomComponent, CmacsVideoPlayerComponent, LightboxThumbnailsComponent, NgForOf, LightboxItemComponent], styles: ["lightbox{pointer-events:none;top:0;left:0;height:100%;width:100%;display:flex;flex-direction:column}lightbox .lightbox-background,lightbox .lightbox-items-background{height:100%;width:100%;position:absolute;top:0;z-index:1}lightbox .lightbox-background .item-list,lightbox .lightbox-items-background .item-list{position:relative;height:100%;display:flex}lightbox .lightbox-container{display:flex;flex:1 1 0%;position:relative;overflow:hidden}lightbox .lightbox-items-container{flex:1 1 0%;box-sizing:border-box;height:100%;position:relative}.lightbox-items-background{background-color:#222}.lightbox-overlay-container{pointer-events:none;position:fixed;z-index:10000;height:100%;width:100%;top:0;left:0}lightbox .lightbox-container.vertical-container{flex-direction:row}lightbox .lightbox-container.horizontal-container{flex-direction:column}"], encapsulation: 2, data: { animation: [LightboxAnimations.visibilityAnimation, LightboxAnimations.sliceAnimation] } });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(LightboxComponent, [{
         type: Component,
         args: [{

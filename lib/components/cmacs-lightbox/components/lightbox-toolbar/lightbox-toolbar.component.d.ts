@@ -3,6 +3,10 @@ import { Pagination } from '../../models/pagination.interface';
 import { LightboxConfigurationService } from '../../services/lightbox-configuration.service';
 import { ToolbarVisibilityAnimator } from '../../models/toolbar/animations/toolbar-visibility-animator';
 import * as i0 from "@angular/core";
+export declare enum KEY_CODE {
+    RIGHT_ARROW = 39,
+    LEFT_ARROW = 37
+}
 export declare class LightboxToolbarComponent implements OnInit {
     private readonly _lightboxConfigurationService;
     nextEvent: EventEmitter<any>;
@@ -17,6 +21,7 @@ export declare class LightboxToolbarComponent implements OnInit {
     private _state;
     get config(): LightboxConfigurationService;
     constructor(_lightboxConfigurationService: LightboxConfigurationService);
+    onKeyboardEvent($event: KeyboardEvent): void;
     ngOnInit(): void;
     onNext(): void;
     onPrevious(): void;
