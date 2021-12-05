@@ -27,6 +27,9 @@
   font-family: 'Roboto-Medium';
   src: url('../fonts/Roboto-Medium.ttf');
 }
+.ant-modal-mask{
+  background-color: rgba(13, 30, 59, 0.4) !important;
+}
 
 .lightbox-video-player vg-player {
     z-index: 1;
@@ -504,8 +507,18 @@ nz-divider {
   display: none;
 }
 
-.ant-menu-item:active, .ant-menu-submenu-title:active{
+.ant-menu-item:active, .ant-menu-submenu-title:active,
+.ant-menu-submenu-title:hover{
   background-color: #F2F7FF !important;
+}
+
+.ant-menu-submenu-title:active .ant-menu-submenu-arrow-cmacs:before,
+.ant-menu-submenu-title:hover .ant-menu-submenu-arrow-cmacs:before,
+.ant-menu-inline .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title:active .ant-menu-submenu-arrow-cmacs:before,
+.ant-menu-inline .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow-cmacs:before,
+.ant-menu-submenu-title:active span,
+.ant-menu-submenu-title:hover span{
+color: #2A7CFF !important;
 }
 
 /* Dropdown multi */
