@@ -14406,10 +14406,10 @@
         CmacsDatePickerComponent.prototype.setModeAndFormat = function () {
             var inputFormats = {
                 year: 'yyyy',
-                month: this.i18n.getLocale().locale === 'de' ? 'MM.yyyy' : 'yyyy-MM',
-                week: this.i18n.getDateLocale() ? 'RRRR-II' : this.i18n.getLocale().locale === 'de' ? 'ww.yyyy' : 'yyyy-ww',
-                date: this.showTime ? (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy HH:mm:ss' : 'yyyy-MM-dd HH:mm:ss') :
-                    (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy' : 'yyyy-MM-dd')
+                month: this.i18n.getLocale().locale === 'de' ? 'MM.yyyy' : 'yyyy/MM',
+                week: this.i18n.getDateLocale() ? 'RRRR-II' : this.i18n.getLocale().locale === 'de' ? 'ww.yyyy' : 'yyyy/ww',
+                date: this.showTime ? (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy HH:mm:ss' : 'yyyy/MM/dd HH:mm:ss') :
+                    (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy' : 'yyyy/MM/dd')
             };
             if (!this.mode) {
                 this.mode = 'date';
