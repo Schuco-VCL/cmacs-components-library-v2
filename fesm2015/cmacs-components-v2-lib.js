@@ -1,4 +1,4 @@
-import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, EventEmitter, ɵɵdirectiveInject, Renderer2, ElementRef, ɵɵprojectionDef, ɵɵprojection, ChangeDetectionStrategy, ViewEncapsulation, Output, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵlistener, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵelement, ɵɵadvance, ɵɵproperty, Optional, ViewChild, Input, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵtextInterpolate, ɵɵtemplate, ɵɵcontentQuery, ɵɵattribute, ɵɵNgOnChangesFeature, ContentChild, ContentChildren, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵstyleProp, ɵɵsanitizeHtml, ViewChildren, ɵɵdefineDirective, Directive, TemplateRef, ɵɵdefinePipe, Pipe, ɵɵtextInterpolate1, ɵɵreference, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵtemplateRefExtractor, ɵɵresolveWindow, Host, HostListener, ɵɵpropertyInterpolate, ɵɵelementContainer, ɵɵpipeBind4, NgZone, Self, isDevMode, InjectionToken, ɵɵinject, SkipSelf, Inject, ɵɵsyntheticHostProperty, ViewContainerRef, ɵɵsanitizeUrl, Injector, ɵɵclassMap, ɵɵInheritDefinitionFeature, ɵɵclassMapInterpolate1, ɵɵgetInheritedFactory, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, ɵɵclassMapInterpolate2, ɵɵpureFunction0, ɵɵclassMapInterpolate4, ɵɵpipeBind1, ɵɵnamespaceSVG, ɵɵpureFunction2, ComponentFactoryResolver, Type, QueryList, HostBinding, ɵɵattributeInterpolate2, ɵɵpureFunction5, ɵɵpureFunction3, ɵɵpureFunction4, ɵɵresolveDocument, ɵɵpropertyInterpolate1, ɵɵpropertyInterpolate2, ɵɵtextInterpolate2, ɵɵsyntheticHostListener, ApplicationRef, ɵɵsetComponentScope } from '@angular/core';
+import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, EventEmitter, ɵɵdirectiveInject, Renderer2, ElementRef, ɵɵprojectionDef, ɵɵprojection, ChangeDetectionStrategy, ViewEncapsulation, Output, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵlistener, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵelement, ɵɵadvance, ɵɵproperty, Optional, ViewChild, Input, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵtextInterpolate, ɵɵtemplate, ɵɵcontentQuery, ɵɵattribute, ɵɵNgOnChangesFeature, ContentChild, ContentChildren, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵstyleProp, ɵɵsanitizeHtml, ViewChildren, ɵɵdefineDirective, Directive, TemplateRef, ɵɵdefinePipe, Pipe, ɵɵtextInterpolate1, ɵɵreference, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵtemplateRefExtractor, ɵɵresolveWindow, Host, HostListener, ɵɵpropertyInterpolate, ɵɵelementContainer, ɵɵpipeBind4, NgZone, Self, isDevMode, InjectionToken, ɵɵinject, SkipSelf, Inject, ɵɵsyntheticHostProperty, ViewContainerRef, ɵɵsanitizeUrl, ComponentFactoryResolver, ɵɵInheritDefinitionFeature, Injector, ɵɵclassMap, ɵɵclassMapInterpolate1, ɵɵgetInheritedFactory, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, ɵɵclassMapInterpolate2, ɵɵpureFunction0, ɵɵclassMapInterpolate4, ɵɵpipeBind1, ɵɵnamespaceSVG, ɵɵpureFunction2, Type, QueryList, HostBinding, ɵɵattributeInterpolate2, ɵɵpureFunction5, ɵɵpureFunction3, ɵɵpureFunction4, ɵɵresolveDocument, ɵɵpropertyInterpolate1, ɵɵpropertyInterpolate2, ɵɵtextInterpolate2, ɵɵsyntheticHostListener, ApplicationRef, ɵɵsetComponentScope } from '@angular/core';
 import { __decorate, __rest } from 'tslib';
 import { NG_VALUE_ACCESSOR, CheckboxControlValueAccessor, NgControlStatus, NgModel, DefaultValueAccessor, NgControl, AbstractControl, FormControlName, FormControlDirective, FormControl, FormsModule, Validators, FormBuilder, ɵangular_packages_forms_forms_ba, NgControlStatusGroup, FormGroupDirective, ReactiveFormsModule } from '@angular/forms';
 import { takeUntil, startWith, filter, tap, pluck, map, distinctUntilChanged, share, skip, flatMap, switchMap, mergeMap, mapTo, auditTime, take, first, delay } from 'rxjs/operators';
@@ -40,6 +40,7 @@ import { DomSanitizer, HammerGestureConfig, HAMMER_GESTURE_CONFIG, HammerModule 
 import { ɵr, ɵt, ɵa, ɵb, ɵf, ɵd, ɵe, ɵh, ɵk, ɵi, ɵm, ɵc, ɵp, VgCoreModule, VgControlsModule, VgOverlayPlayModule, VgBufferingModule } from 'ngx-videogular';
 import { EditorComponent, EditorModule } from '@tinymce/tinymce-angular';
 import { NzColDirective, NzRowDirective, NzGridModule } from 'ng-zorro-antd/grid';
+import { isPresetColor } from 'ng-zorro-antd/core/color';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { Ng2TelInput, Ng2TelInputModule } from 'ng2-tel-input';
 import { NzAlertModule } from 'ng-zorro-antd/alert';
@@ -56,7 +57,6 @@ import en from '@angular/common/locales/en';
 import { NzProgressModule } from 'ng-zorro-antd/progress';
 import { NzWaveDirective, NzWaveModule } from 'ng-zorro-antd/core/wave';
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
-import { isPresetColor } from 'ng-zorro-antd/core/color';
 import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NzPopoverModule } from 'ng-zorro-antd/popover';
 import { NzCommentActionHostDirective, NzCommentModule } from 'ng-zorro-antd/comment';
@@ -7638,6 +7638,520 @@ CmacsEditorComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsEditorComponent, s
             type: Input
         }] }); })();
 
+const _c0$p = ["overlay"];
+class NzTooltipBaseDirective {
+    constructor(elementRef, hostView, resolver, renderer, noAnimation) {
+        this.elementRef = elementRef;
+        this.hostView = hostView;
+        this.resolver = resolver;
+        this.renderer = renderer;
+        this.noAnimation = noAnimation;
+        this.visibleChange = new EventEmitter();
+        this.internalVisible = false;
+        this.destroy$ = new Subject();
+        this.triggerDisposables = [];
+    }
+    /**
+     * This true title that would be used in other parts on this component.
+     */
+    get _title() {
+        return this.title || this.directiveTitle || null;
+    }
+    get _content() {
+        return this.content || this.directiveContent || null;
+    }
+    get _trigger() {
+        return typeof this.trigger !== 'undefined' ? this.trigger : 'hover';
+    }
+    get _placement() {
+        const p = this.placement;
+        return Array.isArray(p) && p.length > 0 ? p : typeof p === 'string' && p ? [p] : ['top'];
+    }
+    get _visible() {
+        return (typeof this.visible !== 'undefined' ? this.visible : this.internalVisible) || false;
+    }
+    get _mouseEnterDelay() {
+        return this.mouseEnterDelay || 0.15;
+    }
+    get _mouseLeaveDelay() {
+        return this.mouseLeaveDelay || 0.1;
+    }
+    get _overlayClassName() {
+        return this.overlayClassName || null;
+    }
+    get _overlayStyle() {
+        return this.overlayStyle || null;
+    }
+    getProxyPropertyMap() {
+        return {
+            noAnimation: ['noAnimation', () => this.noAnimation]
+        };
+    }
+    ngOnChanges(changes) {
+        const { specificTrigger } = changes;
+        if (specificTrigger && !specificTrigger.isFirstChange()) {
+            this.registerTriggers();
+        }
+        if (this.component) {
+            this.updatePropertiesByChanges(changes);
+        }
+    }
+    ngAfterViewInit() {
+        this.createComponent();
+        this.registerTriggers();
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+        // Clear toggling timer. Issue #3875 #4317 #4386
+        this.clearTogglingTimer();
+        this.removeTriggerListeners();
+    }
+    show() {
+        var _a;
+        (_a = this.component) === null || _a === void 0 ? void 0 : _a.show();
+    }
+    hide() {
+        var _a;
+        (_a = this.component) === null || _a === void 0 ? void 0 : _a.hide();
+    }
+    /**
+     * Force the component to update its position.
+     */
+    updatePosition() {
+        if (this.component) {
+            this.component.updatePosition();
+        }
+    }
+    /**
+     * Create a dynamic tooltip component. This method can be override.
+     */
+    createComponent() {
+        const componentRef = this.hostView.createComponent(this.componentFactory);
+        this.component = componentRef.instance;
+        // Remove the component's DOM because it should be in the overlay container.
+        this.renderer.removeChild(this.renderer.parentNode(this.elementRef.nativeElement), componentRef.location.nativeElement);
+        this.component.setOverlayOrigin({ elementRef: this.origin || this.elementRef });
+        this.initProperties();
+        this.component.cmacsVisibleChange.pipe(distinctUntilChanged(), takeUntil(this.destroy$)).subscribe((visible) => {
+            this.internalVisible = visible;
+            this.visibleChange.emit(visible);
+        });
+    }
+    registerTriggers() {
+        // When the method gets invoked, all properties has been synced to the dynamic component.
+        // After removing the old API, we can just check the directive's own `cmacsTrigger`.
+        const el = this.elementRef.nativeElement;
+        const trigger = this.trigger;
+        this.removeTriggerListeners();
+        if (trigger === 'hover') {
+            let overlayElement;
+            this.triggerDisposables.push(this.renderer.listen(el, 'mouseenter', () => {
+                this.delayEnterLeave(true, true, this._mouseEnterDelay);
+            }));
+            this.triggerDisposables.push(this.renderer.listen(el, 'mouseleave', () => {
+                var _a;
+                this.delayEnterLeave(true, false, this._mouseLeaveDelay);
+                if (((_a = this.component) === null || _a === void 0 ? void 0 : _a.overlay.overlayRef) && !overlayElement) {
+                    overlayElement = this.component.overlay.overlayRef.overlayElement;
+                    this.triggerDisposables.push(this.renderer.listen(overlayElement, 'mouseenter', () => {
+                        this.delayEnterLeave(false, true, this._mouseEnterDelay);
+                    }));
+                    this.triggerDisposables.push(this.renderer.listen(overlayElement, 'mouseleave', () => {
+                        this.delayEnterLeave(false, false, this._mouseLeaveDelay);
+                    }));
+                }
+            }));
+        }
+        else if (trigger === 'focus') {
+            this.triggerDisposables.push(this.renderer.listen(el, 'focus', () => this.show()));
+            this.triggerDisposables.push(this.renderer.listen(el, 'blur', () => this.hide()));
+        }
+        else if (trigger === 'click') {
+            this.triggerDisposables.push(this.renderer.listen(el, 'click', (e) => {
+                e.preventDefault();
+                this.show();
+            }));
+        }
+        // Else do nothing because user wants to control the visibility programmatically.
+    }
+    updatePropertiesByChanges(changes) {
+        this.updatePropertiesByKeys(Object.keys(changes));
+    }
+    updatePropertiesByKeys(keys) {
+        var _a;
+        const mappingProperties = Object.assign({ 
+            // common mappings
+            title: ['cmacsTitle', () => this._title], directiveTitle: ['cmacsTitle', () => this._title], content: ['cmacsContent', () => this._content], directiveContent: ['cmacsContent', () => this._content], trigger: ['cmacsTrigger', () => this._trigger], placement: ['cmacsPlacement', () => this._placement], visible: ['cmacsVisible', () => this._visible], mouseEnterDelay: ['cmacsMouseEnterDelay', () => this._mouseEnterDelay], mouseLeaveDelay: ['cmacsMouseLeaveDelay', () => this._mouseLeaveDelay], overlayClassName: ['cmacsOverlayClassName', () => this._overlayClassName], overlayStyle: ['cmacsOverlayStyle', () => this._overlayStyle] }, this.getProxyPropertyMap());
+        (keys || Object.keys(mappingProperties).filter(key => !key.startsWith('directive'))).forEach((property) => {
+            if (mappingProperties[property]) {
+                const [name, valueFn] = mappingProperties[property];
+                this.updateComponentValue(name, valueFn());
+            }
+        });
+        (_a = this.component) === null || _a === void 0 ? void 0 : _a.updateByDirective();
+    }
+    initProperties() {
+        this.updatePropertiesByKeys();
+    }
+    updateComponentValue(key, value) {
+        if (typeof value !== 'undefined') {
+            // @ts-ignore
+            this.component[key] = value;
+        }
+    }
+    delayEnterLeave(isOrigin, isEnter, delay = -1) {
+        if (this.delayTimer) {
+            this.clearTogglingTimer();
+        }
+        else if (delay > 0) {
+            this.delayTimer = setTimeout(() => {
+                this.delayTimer = undefined;
+                isEnter ? this.show() : this.hide();
+            }, delay * 1000);
+        }
+        else {
+            // `isOrigin` is used due to the tooltip will not hide immediately
+            // (may caused by the fade-out animation).
+            isEnter && isOrigin ? this.show() : this.hide();
+        }
+    }
+    removeTriggerListeners() {
+        this.triggerDisposables.forEach(dispose => dispose());
+        this.triggerDisposables.length = 0;
+    }
+    clearTogglingTimer() {
+        if (this.delayTimer) {
+            clearTimeout(this.delayTimer);
+            this.delayTimer = undefined;
+        }
+    }
+}
+NzTooltipBaseDirective.ɵfac = function NzTooltipBaseDirective_Factory(t) { return new (t || NzTooltipBaseDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(ComponentFactoryResolver), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NzNoAnimationDirective)); };
+NzTooltipBaseDirective.ɵdir = ɵɵdefineDirective({ type: NzTooltipBaseDirective, features: [ɵɵNgOnChangesFeature] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(NzTooltipBaseDirective, [{
+        type: Directive
+    }], function () { return [{ type: ElementRef }, { type: ViewContainerRef }, { type: ComponentFactoryResolver }, { type: Renderer2 }, { type: NzNoAnimationDirective }]; }, null); })();
+// tslint:disable-next-line:directive-class-suffix
+class CmacsTooltipBaseComponent {
+    constructor(cdr, directionality, noAnimation) {
+        this.cdr = cdr;
+        this.directionality = directionality;
+        this.noAnimation = noAnimation;
+        this.cmacsTitle = null;
+        this.cmacsContent = null;
+        this.cmacsOverlayStyle = {};
+        this.cmacsVisibleChange = new Subject();
+        this._visible = false;
+        this._trigger = 'hover';
+        this.preferredPlacement = 'top';
+        this.dir = 'ltr';
+        this._classMap = {};
+        this._hasBackdrop = false;
+        this._prefix = 'ant-tooltip';
+        this._positions = [...DEFAULT_TOOLTIP_POSITIONS];
+        this.destroy$ = new Subject();
+    }
+    set cmacsVisible(value) {
+        const visible = toBoolean(value);
+        if (this._visible !== visible) {
+            this._visible = visible;
+            this.cmacsVisibleChange.next(visible);
+        }
+    }
+    get cmacsVisible() {
+        return this._visible;
+    }
+    set cmacsTrigger(value) {
+        this._trigger = value;
+    }
+    get cmacsTrigger() {
+        return this._trigger;
+    }
+    set cmacsPlacement(value) {
+        const preferredPosition = value.map(placement => POSITION_MAP[placement]);
+        this._positions = [...preferredPosition, ...DEFAULT_TOOLTIP_POSITIONS];
+    }
+    ngOnInit() {
+        var _a;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(takeUntil(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.cdr.detectChanges();
+        });
+        this.dir = this.directionality.value;
+    }
+    ngOnDestroy() {
+        this.cmacsVisibleChange.complete();
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+    show() {
+        if (this.cmacsVisible) {
+            return;
+        }
+        if (!this.isEmpty()) {
+            this.cmacsVisible = true;
+            this.cmacsVisibleChange.next(true);
+            this.cdr.detectChanges();
+        }
+        // for ltr for overlay to display tooltip in correct placement in rtl direction.
+        if (this.origin && this.overlay && this.overlay.overlayRef && this.overlay.overlayRef.getDirection() === 'rtl') {
+            this.overlay.overlayRef.setDirection('ltr');
+        }
+    }
+    hide() {
+        if (!this.cmacsVisible) {
+            return;
+        }
+        this.cmacsVisible = false;
+        this.cmacsVisibleChange.next(false);
+        this.cdr.detectChanges();
+    }
+    updateByDirective() {
+        this.updateStyles();
+        this.cdr.detectChanges();
+        Promise.resolve().then(() => {
+            this.updatePosition();
+            this.updateVisibilityByTitle();
+        });
+    }
+    /**
+     * Force the component to update its position.
+     */
+    updatePosition() {
+        if (this.origin && this.overlay && this.overlay.overlayRef) {
+            this.overlay.overlayRef.updatePosition();
+        }
+    }
+    onPositionChange(position) {
+        this.preferredPlacement = getPlacementName(position);
+        this.updateStyles();
+        // We have to trigger immediate change detection or the element would blink.
+        this.cdr.detectChanges();
+    }
+    updateStyles() {
+        this._classMap = {
+            [this.cmacsOverlayClassName]: true,
+            [`${this._prefix}-placement-${this.preferredPlacement}`]: true
+        };
+    }
+    setOverlayOrigin(origin) {
+        this.origin = origin;
+        this.cdr.markForCheck();
+    }
+    onClickOutside(event) {
+        if (!this.origin.elementRef.nativeElement.contains(event.target)) {
+            this.hide();
+        }
+    }
+    /**
+     * Hide the component while the content is empty.
+     */
+    updateVisibilityByTitle() {
+        if (this.isEmpty()) {
+            this.hide();
+        }
+    }
+}
+CmacsTooltipBaseComponent.ɵfac = function CmacsTooltipBaseComponent_Factory(t) { return new (t || CmacsTooltipBaseComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NzNoAnimationDirective)); };
+CmacsTooltipBaseComponent.ɵdir = ɵɵdefineDirective({ type: CmacsTooltipBaseComponent, viewQuery: function CmacsTooltipBaseComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵɵviewQuery(_c0$p, 1);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.overlay = _t.first);
+    } } });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsTooltipBaseComponent, [{
+        type: Directive
+    }], function () { return [{ type: ChangeDetectorRef }, { type: Directionality, decorators: [{
+                type: Optional
+            }] }, { type: NzNoAnimationDirective }]; }, { overlay: [{
+            type: ViewChild,
+            args: ['overlay', { static: false }]
+        }] }); })();
+function isTooltipEmpty(value) {
+    return value instanceof TemplateRef ? false : value === '' || !isNotNil(value);
+}
+
+function CmacsToolTipComponent_ng_template_0_ng_container_5_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵtext(1);
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const ctx_r2 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r2.cmacsTitle);
+} }
+function CmacsToolTipComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 2);
+    ɵɵelementStart(1, "div", 3);
+    ɵɵelementStart(2, "div", 4);
+    ɵɵelement(3, "span", 5);
+    ɵɵelementEnd();
+    ɵɵelementStart(4, "div", 6);
+    ɵɵtemplate(5, CmacsToolTipComponent_ng_template_0_ng_container_5_Template, 2, 1, "ng-container", 7);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵclassProp("ant-tooltip-rtl", ctx_r1.dir === "rtl");
+    ɵɵproperty("ngClass", ctx_r1._classMap)("ngStyle", ctx_r1.cmacsOverlayStyle)("@.disabled", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("@zoomBigMotion", "active");
+    ɵɵadvance(3);
+    ɵɵproperty("ngStyle", ctx_r1._contentStyleMap);
+    ɵɵadvance(1);
+    ɵɵproperty("ngStyle", ctx_r1._contentStyleMap);
+    ɵɵadvance(1);
+    ɵɵproperty("nzStringTemplateOutlet", ctx_r1.cmacsTitle);
+} }
+class CmacsTooltipDirective extends NzTooltipBaseDirective {
+    constructor(elementRef, hostView, resolver, renderer, noAnimation) {
+        super(elementRef, hostView, resolver, renderer, noAnimation);
+        this.trigger = 'hover';
+        this.placement = 'top';
+        // tslint:disable-next-line:no-output-rename
+        this.visibleChange = new EventEmitter();
+        this.componentFactory = this.resolver.resolveComponentFactory(CmacsToolTipComponent);
+    }
+    getProxyPropertyMap() {
+        return {
+            cmacsTooltipColor: ['cmacsColor', () => this.cmacsTooltipColor]
+        };
+    }
+}
+CmacsTooltipDirective.ɵfac = function CmacsTooltipDirective_Factory(t) { return new (t || CmacsTooltipDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(ComponentFactoryResolver), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NzNoAnimationDirective, 9)); };
+CmacsTooltipDirective.ɵdir = ɵɵdefineDirective({ type: CmacsTooltipDirective, selectors: [["", "cmacs-tooltip", ""]], hostVars: 2, hostBindings: function CmacsTooltipDirective_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵɵclassProp("ant-tooltip-open", ctx.visible);
+    } }, inputs: { title: ["cmacsTooltipTitle", "title"], directiveTitle: ["cmacs-tooltip", "directiveTitle"], trigger: ["cmacsTooltipTrigger", "trigger"], placement: ["cmacsTooltipPlacement", "placement"], origin: ["cmacsTooltipOrigin", "origin"], visible: ["cmacsTooltipVisible", "visible"], mouseEnterDelay: ["cmacsTooltipMouseEnterDelay", "mouseEnterDelay"], mouseLeaveDelay: ["cmacsTooltipMouseLeaveDelay", "mouseLeaveDelay"], overlayClassName: ["cmacsTooltipOverlayClassName", "overlayClassName"], overlayStyle: ["cmacsTooltipOverlayStyle", "overlayStyle"], cmacsTooltipColor: "cmacsTooltipColor" }, outputs: { visibleChange: "cmacsTooltipVisibleChange" }, exportAs: ["cmacsTooltip"], features: [ɵɵInheritDefinitionFeature] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsTooltipDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[cmacs-tooltip]',
+                exportAs: 'cmacsTooltip',
+                host: {
+                    '[class.ant-tooltip-open]': 'visible'
+                }
+            }]
+    }], function () { return [{ type: ElementRef }, { type: ViewContainerRef }, { type: ComponentFactoryResolver }, { type: Renderer2 }, { type: NzNoAnimationDirective, decorators: [{
+                type: Host
+            }, {
+                type: Optional
+            }] }]; }, { title: [{
+            type: Input,
+            args: ['cmacsTooltipTitle']
+        }], directiveTitle: [{
+            type: Input,
+            args: ['cmacs-tooltip']
+        }], trigger: [{
+            type: Input,
+            args: ['cmacsTooltipTrigger']
+        }], placement: [{
+            type: Input,
+            args: ['cmacsTooltipPlacement']
+        }], origin: [{
+            type: Input,
+            args: ['cmacsTooltipOrigin']
+        }], visible: [{
+            type: Input,
+            args: ['cmacsTooltipVisible']
+        }], mouseEnterDelay: [{
+            type: Input,
+            args: ['cmacsTooltipMouseEnterDelay']
+        }], mouseLeaveDelay: [{
+            type: Input,
+            args: ['cmacsTooltipMouseLeaveDelay']
+        }], overlayClassName: [{
+            type: Input,
+            args: ['cmacsTooltipOverlayClassName']
+        }], overlayStyle: [{
+            type: Input,
+            args: ['cmacsTooltipOverlayStyle']
+        }], cmacsTooltipColor: [{
+            type: Input
+        }], visibleChange: [{
+            type: Output,
+            args: ['cmacsTooltipVisibleChange']
+        }] }); })();
+class CmacsToolTipComponent extends CmacsTooltipBaseComponent {
+    constructor(cdr, directionality, noAnimation) {
+        super(cdr, directionality, noAnimation);
+        this.noAnimation = noAnimation;
+        this.cmacsTitle = null;
+        this._contentStyleMap = {};
+    }
+    isEmpty() {
+        return isTooltipEmpty(this.cmacsTitle);
+    }
+    updateStyles() {
+        const isColorPreset = this.cmacsColor && isPresetColor(this.cmacsColor);
+        this._classMap = {
+            [this.cmacsOverlayClassName]: true,
+            [`${this._prefix}-placement-${this.preferredPlacement}`]: true,
+            [`${this._prefix}-${this.cmacsColor}`]: isColorPreset
+        };
+        this._contentStyleMap = {
+            backgroundColor: !!this.cmacsColor && !isColorPreset ? this.cmacsColor : null
+        };
+    }
+}
+CmacsToolTipComponent.ɵfac = function CmacsToolTipComponent_Factory(t) { return new (t || CmacsToolTipComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NzNoAnimationDirective, 9)); };
+CmacsToolTipComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsToolTipComponent, selectors: [["cmacs-tooltip"]], exportAs: ["cmacsTooltipComponent"], features: [ɵɵInheritDefinitionFeature], decls: 2, vars: 4, consts: [["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayPositions", "cdkConnectedOverlayPush", "overlayOutsideClick", "detach", "positionChange"], ["overlay", "cdkConnectedOverlay"], [1, "ant-tooltip", 3, "ngClass", "ngStyle", "nzNoAnimation"], [1, "ant-tooltip-content"], [1, "ant-tooltip-arrow"], [1, "ant-tooltip-arrow-content", 3, "ngStyle"], [1, "ant-tooltip-inner", 3, "ngStyle"], [4, "nzStringTemplateOutlet"]], template: function CmacsToolTipComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵtemplate(0, CmacsToolTipComponent_ng_template_0_Template, 6, 10, "ng-template", 0, 1, ɵɵtemplateRefExtractor);
+        ɵɵlistener("overlayOutsideClick", function CmacsToolTipComponent_Template_ng_template_overlayOutsideClick_0_listener($event) { return ctx.onClickOutside($event); })("detach", function CmacsToolTipComponent_Template_ng_template_detach_0_listener() { return ctx.hide(); })("positionChange", function CmacsToolTipComponent_Template_ng_template_positionChange_0_listener($event) { return ctx.onPositionChange($event); });
+    } if (rf & 2) {
+        ɵɵproperty("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx._visible)("cdkConnectedOverlayPositions", ctx._positions)("cdkConnectedOverlayPush", true);
+    } }, directives: [CdkConnectedOverlay, NzConnectedOverlayDirective, NgClass, NgStyle, NzNoAnimationDirective, NzStringTemplateOutletDirective], styles: [".ant-tooltip-content{background-color:#0d1e3b;color:#fff;max-width:180px;border-radius:3px}.ant-tooltip-placement-top .ant-tooltip-arrow{border-top-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-topLeft .ant-tooltip-arrow,.ant-tooltip-placement-topRight .ant-tooltip-arrow{border-top-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-left .ant-tooltip-arrow,.ant-tooltip-placement-leftBottom .ant-tooltip-arrow,.ant-tooltip-placement-leftTop .ant-tooltip-arrow{border-left-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-right .ant-tooltip-arrow,.ant-tooltip-placement-rightBottom .ant-tooltip-arrow,.ant-tooltip-placement-rightTop .ant-tooltip-arrow{border-right-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-bottom .ant-tooltip-arrow{border-bottom-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,.ant-tooltip-placement-bottomRight .ant-tooltip-arrow{border-bottom-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-inner{background-color:#0d1e3b;border-radius:3px;box-shadow:none;padding:8px 10px;min-height:34px}"], encapsulation: 2, data: { animation: [zoomBigMotion] }, changeDetection: 0 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsToolTipComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-tooltip',
+                exportAs: 'cmacsTooltipComponent',
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                animations: [zoomBigMotion],
+                styleUrls: ['./cmacs-tooltip.component.css'],
+                template: `
+    <ng-template
+      #overlay="cdkConnectedOverlay"
+      cdkConnectedOverlay
+      nzConnectedOverlay
+      [cdkConnectedOverlayOrigin]="origin"
+      [cdkConnectedOverlayOpen]="_visible"
+      [cdkConnectedOverlayPositions]="_positions"
+      [cdkConnectedOverlayPush]="true"
+      (overlayOutsideClick)="onClickOutside($event)"
+      (detach)="hide()"
+      (positionChange)="onPositionChange($event)"
+    >
+      <div
+        class="ant-tooltip"
+        [class.ant-tooltip-rtl]="dir === 'rtl'"
+        [ngClass]="_classMap"
+        [ngStyle]="cmacsOverlayStyle"
+        [@.disabled]="noAnimation?.nzNoAnimation"
+        [nzNoAnimation]="noAnimation?.nzNoAnimation"
+        [@zoomBigMotion]="'active'"
+      >
+        <div class="ant-tooltip-content">
+          <div class="ant-tooltip-arrow">
+            <span class="ant-tooltip-arrow-content" [ngStyle]="_contentStyleMap"></span>
+          </div>
+          <div class="ant-tooltip-inner" [ngStyle]="_contentStyleMap">
+            <ng-container *nzStringTemplateOutlet="cmacsTitle">{{ cmacsTitle }}</ng-container>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  `,
+                preserveWhitespaces: false
+            }]
+    }], function () { return [{ type: ChangeDetectorRef }, { type: Directionality, decorators: [{
+                type: Optional
+            }] }, { type: NzNoAnimationDirective, decorators: [{
+                type: Host
+            }, {
+                type: Optional
+            }] }]; }, null); })();
+
 function CmacsSectionComponent_i_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "i", 7);
 } if (rf & 2) {
@@ -7653,27 +8167,27 @@ function CmacsSectionComponent_div_8_ng_container_1_Template(rf, ctx) { if (rf &
     ɵɵadvance(1);
     ɵɵtextInterpolate(ctx_r3.extra);
 } }
-const _c0$p = function (a0) { return { data: a0 }; };
+const _c0$q = function (a0) { return { data: a0 }; };
 function CmacsSectionComponent_div_8_Template(rf, ctx) { if (rf & 1) {
     const _r5 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 8);
     ɵɵtemplate(1, CmacsSectionComponent_div_8_ng_container_1_Template, 2, 1, "ng-container", 9);
     ɵɵelementStart(2, "button", 10);
     ɵɵlistener("click", function CmacsSectionComponent_div_8_Template_button_click_2_listener() { ɵɵrestoreView(_r5); const ctx_r4 = ɵɵnextContext(); return ctx_r4.collapseSection(); });
-    ɵɵelement(3, "i");
+    ɵɵelement(3, "i", 11);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.extra)("ngTemplateOutletContext", ɵɵpureFunction1(7, _c0$p, ctx_r1.extraData));
+    ɵɵproperty("ngTemplateOutlet", ctx_r1.extra)("ngTemplateOutletContext", ɵɵpureFunction1(7, _c0$q, ctx_r1.extraData));
     ɵɵadvance(1);
     ɵɵproperty("action", true);
     ɵɵadvance(1);
     ɵɵclassProp("iconArrowSmall-Chevron-Up", ctx_r1.collapsed)("iconArrowSmall-Chevron-Down", !ctx_r1.collapsed);
 } }
 function CmacsSectionComponent_div_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 11);
+    ɵɵelementStart(0, "div", 12);
     ɵɵprojection(1);
     ɵɵelementEnd();
 } }
@@ -7724,7 +8238,7 @@ class CmacsSectionComponent {
     }
 }
 CmacsSectionComponent.ɵfac = function CmacsSectionComponent_Factory(t) { return new (t || CmacsSectionComponent)(); };
-CmacsSectionComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSectionComponent, selectors: [["cmacs-section"]], inputs: { extra: "extra", widgetSpan: "widgetSpan", title: "title", titleIcon: "titleIcon", showCollapse: "showCollapse", extraData: "extraData", collapsed: "collapsed", validate: "validate" }, outputs: { onbeforecollapse: "onbeforecollapse", oncollapse: "oncollapse", onbeforeexpand: "onbeforeexpand", onexpand: "onexpand" }, features: [ɵɵNgOnChangesFeature], ngContentSelectors: _c1$a, decls: 10, vars: 5, consts: [["nz-col", "", 1, "widget-container", 3, "nzSpan"], ["nz-row", "", "nzType", "flex", "nzJustify", "space-between", 1, "widget-container-bar"], ["nz-col", ""], ["nz-row", "", 1, "widget-container-bar-title"], [3, "ngClass", 4, "ngIf"], ["nz-row", "", "class", "widget-container-bar-btns", 4, "ngIf"], ["class", "widget-container-content", 4, "ngIf"], [3, "ngClass"], ["nz-row", "", 1, "widget-container-bar-btns"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-button", "", "aria-label", "collapse/expand", "role", "button", "ghost", "", 1, "log-action-btn", 3, "action", "click"], [1, "widget-container-content"]], template: function CmacsSectionComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsSectionComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSectionComponent, selectors: [["cmacs-section"]], inputs: { extra: "extra", widgetSpan: "widgetSpan", title: "title", titleIcon: "titleIcon", showCollapse: "showCollapse", extraData: "extraData", collapsed: "collapsed", validate: "validate" }, outputs: { onbeforecollapse: "onbeforecollapse", oncollapse: "oncollapse", onbeforeexpand: "onbeforeexpand", onexpand: "onexpand" }, features: [ɵɵNgOnChangesFeature], ngContentSelectors: _c1$a, decls: 10, vars: 5, consts: [["nz-col", "", 1, "widget-container", 3, "nzSpan"], ["nz-row", "", "nzType", "flex", "nzJustify", "space-between", 1, "widget-container-bar"], ["nz-col", ""], ["nz-row", "", 1, "widget-container-bar-title"], [3, "ngClass", 4, "ngIf"], ["nz-row", "", "class", "widget-container-bar-btns", 4, "ngIf"], ["class", "widget-container-content", 4, "ngIf"], [3, "ngClass"], ["nz-row", "", 1, "widget-container-bar-btns"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-button", "", "aria-label", "collapse/expand", "role", "button", "ghost", "", 1, "log-action-btn", 3, "action", "click"], ["cmacsTooltipPlacement", "bottom", "cmacs-tooltip", "", "cmacsTooltipTitle", "collapse/expand"], [1, "widget-container-content"]], template: function CmacsSectionComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵelementStart(0, "div", 0);
         ɵɵelementStart(1, "div", 1);
@@ -7752,7 +8266,7 @@ CmacsSectionComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSectionComponent,
         ɵɵproperty("ngIf", ctx.extra);
         ɵɵadvance(1);
         ɵɵproperty("ngIf", !ctx.collapsed);
-    } }, directives: [NzColDirective, NzRowDirective, NgIf, NgClass, NgTemplateOutlet, CmacsButtonComponent], styles: [".widget-container[_ngcontent-%COMP%]{border-top:3px solid #00cda1;padding:20px 40px 30px;margin-bottom:40px;background-color:#f6f7fb;box-shadow:0 2px 4px rgba(0,0,0,.1)}.widget-container-bar-title[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{font-size:20px;vertical-align:sub}.widget-container-bar-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{margin-left:8px;font-family:Roboto-Medium;font-size:14px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#3b3f46}.widget-container-bar[_ngcontent-%COMP%]{margin-bottom:20px}.widget-container-content[_ngcontent-%COMP%]{overflow-x:auto;overflow-y:hidden}"], changeDetection: 0 });
+    } }, directives: [NzColDirective, NzRowDirective, NgIf, NgClass, NgTemplateOutlet, CmacsButtonComponent, CmacsTooltipDirective], styles: [".widget-container[_ngcontent-%COMP%]{border-top:3px solid #00cda1;padding:20px 40px 30px;margin-bottom:40px;background-color:#f6f7fb;box-shadow:0 2px 4px rgba(0,0,0,.1)}.widget-container-bar-title[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{font-size:20px;vertical-align:sub}.widget-container-bar-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{margin-left:8px;font-family:Roboto-Medium;font-size:14px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#3b3f46}.widget-container-bar[_ngcontent-%COMP%]{margin-bottom:20px}.widget-container-content[_ngcontent-%COMP%]{overflow-x:auto;overflow-y:hidden}"], changeDetection: 0 });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsSectionComponent, [{
         type: Component,
         args: [{
@@ -7788,7 +8302,7 @@ CmacsSectionComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSectionComponent,
             type: Output
         }] }); })();
 
-const _c0$q = ["*"];
+const _c0$r = ["*"];
 /** should add nz-row directive to host, track https://github.com/angular/angular/issues/8785 **/
 class CmacsFormItemComponent {
     constructor(elementRef, renderer, cdr) {
@@ -7819,7 +8333,7 @@ class CmacsFormItemComponent {
 CmacsFormItemComponent.ɵfac = function CmacsFormItemComponent_Factory(t) { return new (t || CmacsFormItemComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef)); };
 CmacsFormItemComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsFormItemComponent, selectors: [["cmacs-form-item"]], hostVars: 12, hostBindings: function CmacsFormItemComponent_HostBindings(rf, ctx) { if (rf & 2) {
         ɵɵclassProp("ant-form-item-has-success", ctx.status === "success")("ant-form-item-has-warning", ctx.status === "warning")("ant-form-item-has-error", ctx.status === "error")("ant-form-item-is-validating", ctx.status === "validating")("ant-form-item-has-feedback", ctx.hasFeedback && ctx.status)("ant-form-item-with-help", ctx.withHelpClass);
-    } }, exportAs: ["cmacsFormItem"], ngContentSelectors: _c0$q, decls: 1, vars: 0, template: function CmacsFormItemComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, exportAs: ["cmacsFormItem"], ngContentSelectors: _c0$r, decls: 1, vars: 0, template: function CmacsFormItemComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵprojection(0);
     } }, encapsulation: 2, changeDetection: 0 });
@@ -7941,7 +8455,7 @@ function CmacsFormControlComponent_div_5_ng_container_2_Template(rf, ctx) { if (
     ɵɵadvance(1);
     ɵɵtextInterpolate(ctx_r3.innerTip);
 } }
-const _c0$r = function (a1) { return ["ant-form-item-explain", a1]; };
+const _c0$s = function (a1) { return ["ant-form-item-explain", a1]; };
 const _c1$b = function (a0) { return { $implicit: a0 }; };
 function CmacsFormControlComponent_div_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 7);
@@ -7951,7 +8465,7 @@ function CmacsFormControlComponent_div_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ɵɵpureFunction1(4, _c0$r, "ant-form-item-explain-" + ctx_r1.status));
+    ɵɵproperty("ngClass", ɵɵpureFunction1(4, _c0$s, "ant-form-item-explain-" + ctx_r1.status));
     ɵɵadvance(1);
     ɵɵproperty("@helpMotion", undefined);
     ɵɵadvance(1);
@@ -8252,7 +8766,7 @@ function CmacsFormLabelComponent_span_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵproperty("nzStringTemplateOutlet", ctx_r0.tooltipIcon.type);
 } }
-const _c0$s = ["*"];
+const _c0$t = ["*"];
 function toTooltipIcon(value) {
     const icon = typeof value === 'string' ? { type: value } : value;
     return Object.assign(Object.assign({}, DefaultTooltipIcon), icon);
@@ -8298,7 +8812,7 @@ class CmacsFormLabelComponent {
     }
 }
 CmacsFormLabelComponent.ɵfac = function CmacsFormLabelComponent_Factory(t) { return new (t || CmacsFormLabelComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(CmacsFormDirective, 12)); };
-CmacsFormLabelComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsFormLabelComponent, selectors: [["cmacs-form-label"]], inputs: { cmacsFor: "cmacsFor", cmacsRequired: "cmacsRequired", cmacsNoColon: "cmacsNoColon", cmacsTooltipTitle: "cmacsTooltipTitle", cmacsTooltipIcon: "cmacsTooltipIcon" }, exportAs: ["cmacsFormLabel"], ngContentSelectors: _c0$s, decls: 3, vars: 6, consts: [["class", "ant-form-item-tooltip", "nz-tooltip", "", 3, "nzTooltipTitle", 4, "ngIf"], ["nz-tooltip", "", 1, "ant-form-item-tooltip", 3, "nzTooltipTitle"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", 3, "nzType", "nzTheme"]], template: function CmacsFormLabelComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsFormLabelComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsFormLabelComponent, selectors: [["cmacs-form-label"]], inputs: { cmacsFor: "cmacsFor", cmacsRequired: "cmacsRequired", cmacsNoColon: "cmacsNoColon", cmacsTooltipTitle: "cmacsTooltipTitle", cmacsTooltipIcon: "cmacsTooltipIcon" }, exportAs: ["cmacsFormLabel"], ngContentSelectors: _c0$t, decls: 3, vars: 6, consts: [["class", "ant-form-item-tooltip", "nz-tooltip", "", 3, "nzTooltipTitle", 4, "ngIf"], ["nz-tooltip", "", 1, "ant-form-item-tooltip", 3, "nzTooltipTitle"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", 3, "nzType", "nzTheme"]], template: function CmacsFormLabelComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵelementStart(0, "label");
         ɵɵprojection(1);
@@ -8348,7 +8862,7 @@ __decorate([
             type: Input
         }] }); })();
 
-const _c0$t = ["*"];
+const _c0$u = ["*"];
 class CmacsFormTextComponent {
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
@@ -8357,7 +8871,7 @@ class CmacsFormTextComponent {
     }
 }
 CmacsFormTextComponent.ɵfac = function CmacsFormTextComponent_Factory(t) { return new (t || CmacsFormTextComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-CmacsFormTextComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsFormTextComponent, selectors: [["cmacs-form-text"]], exportAs: ["cmacsFormText"], ngContentSelectors: _c0$t, decls: 1, vars: 0, template: function CmacsFormTextComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsFormTextComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsFormTextComponent, selectors: [["cmacs-form-text"]], exportAs: ["cmacsFormText"], ngContentSelectors: _c0$u, decls: 1, vars: 0, template: function CmacsFormTextComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵprojection(0);
     } }, encapsulation: 2, changeDetection: 0 });
@@ -8373,7 +8887,7 @@ CmacsFormTextComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsFormTextComponen
             }]
     }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
 
-const _c0$u = ["*"];
+const _c0$v = ["*"];
 class CmacsFormSplitComponent {
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
@@ -8382,7 +8896,7 @@ class CmacsFormSplitComponent {
     }
 }
 CmacsFormSplitComponent.ɵfac = function CmacsFormSplitComponent_Factory(t) { return new (t || CmacsFormSplitComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-CmacsFormSplitComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsFormSplitComponent, selectors: [["cmacs-form-split"]], exportAs: ["cmacsFormSplit"], ngContentSelectors: _c0$u, decls: 1, vars: 0, template: function CmacsFormSplitComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsFormSplitComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsFormSplitComponent, selectors: [["cmacs-form-split"]], exportAs: ["cmacsFormSplit"], ngContentSelectors: _c0$v, decls: 1, vars: 0, template: function CmacsFormSplitComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵprojection(0);
     } }, encapsulation: 2, changeDetection: 0 });
@@ -8769,7 +9283,7 @@ function CmacsBreadCrumbComponent_ng_container_1_Template(rf, ctx) { if (rf & 1)
     ɵɵadvance(1);
     ɵɵproperty("ngForOf", ctx_r0.breadcrumbs);
 } }
-const _c0$v = ["*"];
+const _c0$w = ["*"];
 class CmacsBreadCrumbComponent {
     constructor(injector, ngZone, cdr, elementRef, renderer, directionality) {
         this.injector = injector;
@@ -8865,7 +9379,7 @@ class CmacsBreadCrumbComponent {
     }
 }
 CmacsBreadCrumbComponent.ɵfac = function CmacsBreadCrumbComponent_Factory(t) { return new (t || CmacsBreadCrumbComponent)(ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(Directionality, 8)); };
-CmacsBreadCrumbComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsBreadCrumbComponent, selectors: [["cmacs-breadcrumb"]], inputs: { autoGenerate: "autoGenerate", separator: "separator", routeLabel: "routeLabel", routeLabelFn: "routeLabelFn" }, exportAs: ["cmacsBreadcrumb"], ngContentSelectors: _c0$v, decls: 2, vars: 1, consts: [[4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "click"]], template: function CmacsBreadCrumbComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsBreadCrumbComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsBreadCrumbComponent, selectors: [["cmacs-breadcrumb"]], inputs: { autoGenerate: "autoGenerate", separator: "separator", routeLabel: "routeLabel", routeLabelFn: "routeLabelFn" }, exportAs: ["cmacsBreadcrumb"], ngContentSelectors: _c0$w, decls: 2, vars: 1, consts: [[4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "click"]], template: function CmacsBreadCrumbComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵprojection(0);
         ɵɵtemplate(1, CmacsBreadCrumbComponent_ng_container_1_Template, 2, 1, "ng-container", 0);
@@ -8949,14 +9463,14 @@ function CmacsBreadCrumbItemComponent_span_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵproperty("nzStringTemplateOutlet", ctx_r3.nzBreadCrumbComponent.separator);
 } }
-const _c0$w = ["*"];
+const _c0$x = ["*"];
 class CmacsBreadCrumbItemComponent {
     constructor(nzBreadCrumbComponent) {
         this.nzBreadCrumbComponent = nzBreadCrumbComponent;
     }
 }
 CmacsBreadCrumbItemComponent.ɵfac = function CmacsBreadCrumbItemComponent_Factory(t) { return new (t || CmacsBreadCrumbItemComponent)(ɵɵdirectiveInject(CmacsBreadCrumbComponent)); };
-CmacsBreadCrumbItemComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsBreadCrumbItemComponent, selectors: [["cmacs-breadcrumb-item"]], inputs: { overlay: "overlay" }, exportAs: ["cmacsBreadcrumbItem"], ngContentSelectors: _c0$w, decls: 4, vars: 3, consts: [[4, "ngIf", "ngIfElse"], ["noMenuTpl", ""], ["class", "ant-breadcrumb-separator", 4, "ngIf"], ["cmacs-dropdown", "", 1, "ant-breadcrumb-overlay-link", 3, "cmacsDropdownMenu"], [3, "ngTemplateOutlet"], ["nz-icon", "", "nzType", "down", 4, "ngIf"], ["nz-icon", "", "nzType", "down"], [1, "ant-breadcrumb-link"], [1, "ant-breadcrumb-separator"], [4, "nzStringTemplateOutlet"]], template: function CmacsBreadCrumbItemComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsBreadCrumbItemComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsBreadCrumbItemComponent, selectors: [["cmacs-breadcrumb-item"]], inputs: { overlay: "overlay" }, exportAs: ["cmacsBreadcrumbItem"], ngContentSelectors: _c0$x, decls: 4, vars: 3, consts: [[4, "ngIf", "ngIfElse"], ["noMenuTpl", ""], ["class", "ant-breadcrumb-separator", 4, "ngIf"], ["cmacs-dropdown", "", 1, "ant-breadcrumb-overlay-link", 3, "cmacsDropdownMenu"], [3, "ngTemplateOutlet"], ["nz-icon", "", "nzType", "down", 4, "ngIf"], ["nz-icon", "", "nzType", "down"], [1, "ant-breadcrumb-link"], [1, "ant-breadcrumb-separator"], [4, "nzStringTemplateOutlet"]], template: function CmacsBreadCrumbItemComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵtemplate(0, CmacsBreadCrumbItemComponent_ng_container_0_Template, 4, 3, "ng-container", 0);
         ɵɵtemplate(1, CmacsBreadCrumbItemComponent_ng_template_1_Template, 2, 0, "ng-template", null, 1, ɵɵtemplateRefExtractor);
@@ -9001,11 +9515,11 @@ CmacsBreadCrumbItemComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsBreadCrumb
             type: Input
         }] }); })();
 
-const _c0$x = ["*"];
+const _c0$y = ["*"];
 class CmacsBreadCrumbSeparatorComponent {
 }
 CmacsBreadCrumbSeparatorComponent.ɵfac = function CmacsBreadCrumbSeparatorComponent_Factory(t) { return new (t || CmacsBreadCrumbSeparatorComponent)(); };
-CmacsBreadCrumbSeparatorComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsBreadCrumbSeparatorComponent, selectors: [["cmacs-breadcrumb-separator"]], exportAs: ["cmacsBreadcrumbSeparator"], ngContentSelectors: _c0$x, decls: 2, vars: 0, consts: [[1, "ant-breadcrumb-separator"]], template: function CmacsBreadCrumbSeparatorComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsBreadCrumbSeparatorComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsBreadCrumbSeparatorComponent, selectors: [["cmacs-breadcrumb-separator"]], exportAs: ["cmacsBreadcrumbSeparator"], ngContentSelectors: _c0$y, decls: 2, vars: 0, consts: [[1, "ant-breadcrumb-separator"]], template: function CmacsBreadCrumbSeparatorComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵelementStart(0, "span", 0);
         ɵɵprojection(1);
@@ -9382,7 +9896,7 @@ function DecadeTableComponent_tr_3_td_1_Template(rf, ctx) { if (rf & 1) {
 function DecadeTableComponent_tr_3_td_2_ng_container_2_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
 } }
-const _c0$y = function (a0) { return { $implicit: a0 }; };
+const _c0$z = function (a0) { return { $implicit: a0 }; };
 function DecadeTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵtemplate(1, DecadeTableComponent_tr_3_td_2_ng_container_2_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 16);
@@ -9390,7 +9904,7 @@ function DecadeTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(r
 } if (rf & 2) {
     const cell_r9 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$y, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$z, cell_r9.value));
 } }
 function DecadeTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
@@ -9444,7 +9958,7 @@ function DecadeTableComponent_tr_3_td_2_ng_container_3_ng_container_2_Template(r
 } if (rf & 2) {
     const cell_r9 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$y, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$z, cell_r9.value));
 } }
 function DecadeTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
@@ -9465,7 +9979,7 @@ function DecadeTableComponent_tr_3_td_2_ng_container_3_ng_template_3_Template(rf
     ɵɵadvance(1);
     ɵɵclassMapInterpolate1("", ctx_r22.prefixCls, "-date-content");
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(9, _c0$y, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(9, _c0$z, cell_r9.value));
 } }
 function DecadeTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
@@ -9755,7 +10269,7 @@ function YearTableComponent_tr_3_td_1_Template(rf, ctx) { if (rf & 1) {
 function YearTableComponent_tr_3_td_2_ng_container_2_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
 } }
-const _c0$z = function (a0) { return { $implicit: a0 }; };
+const _c0$A = function (a0) { return { $implicit: a0 }; };
 function YearTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵtemplate(1, YearTableComponent_tr_3_td_2_ng_container_2_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 16);
@@ -9763,7 +10277,7 @@ function YearTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf,
 } if (rf & 2) {
     const cell_r9 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$z, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$A, cell_r9.value));
 } }
 function YearTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
@@ -9817,7 +10331,7 @@ function YearTableComponent_tr_3_td_2_ng_container_3_ng_container_2_Template(rf,
 } if (rf & 2) {
     const cell_r9 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$z, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$A, cell_r9.value));
 } }
 function YearTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
@@ -9838,7 +10352,7 @@ function YearTableComponent_tr_3_td_2_ng_container_3_ng_template_3_Template(rf, 
     ɵɵadvance(1);
     ɵɵclassMapInterpolate1("", ctx_r22.prefixCls, "-date-content");
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(9, _c0$z, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(9, _c0$A, cell_r9.value));
 } }
 function YearTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
@@ -10178,7 +10692,7 @@ function MonthTableComponent_tr_3_td_1_Template(rf, ctx) { if (rf & 1) {
 function MonthTableComponent_tr_3_td_2_ng_container_2_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
 } }
-const _c0$A = function (a0) { return { $implicit: a0 }; };
+const _c0$B = function (a0) { return { $implicit: a0 }; };
 function MonthTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵtemplate(1, MonthTableComponent_tr_3_td_2_ng_container_2_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 16);
@@ -10186,7 +10700,7 @@ function MonthTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf
 } if (rf & 2) {
     const cell_r9 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$A, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$B, cell_r9.value));
 } }
 function MonthTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
@@ -10240,7 +10754,7 @@ function MonthTableComponent_tr_3_td_2_ng_container_3_ng_container_2_Template(rf
 } if (rf & 2) {
     const cell_r9 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$A, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$B, cell_r9.value));
 } }
 function MonthTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
@@ -10261,7 +10775,7 @@ function MonthTableComponent_tr_3_td_2_ng_container_3_ng_template_3_Template(rf,
     ɵɵadvance(1);
     ɵɵclassMapInterpolate1("", ctx_r22.prefixCls, "-date-content");
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(9, _c0$A, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(9, _c0$B, cell_r9.value));
 } }
 function MonthTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
@@ -10576,7 +11090,7 @@ function DateTableComponent_tr_3_td_1_Template(rf, ctx) { if (rf & 1) {
 function DateTableComponent_tr_3_td_2_ng_container_2_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
 } }
-const _c0$B = function (a0) { return { $implicit: a0 }; };
+const _c0$C = function (a0) { return { $implicit: a0 }; };
 function DateTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵtemplate(1, DateTableComponent_tr_3_td_2_ng_container_2_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 16);
@@ -10584,7 +11098,7 @@ function DateTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf,
 } if (rf & 2) {
     const cell_r9 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$B, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$C, cell_r9.value));
 } }
 function DateTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
@@ -10638,7 +11152,7 @@ function DateTableComponent_tr_3_td_2_ng_container_3_ng_container_2_Template(rf,
 } if (rf & 2) {
     const cell_r9 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$B, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0$C, cell_r9.value));
 } }
 function DateTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
@@ -10659,7 +11173,7 @@ function DateTableComponent_tr_3_td_2_ng_container_3_ng_template_3_Template(rf, 
     ɵɵadvance(1);
     ɵɵclassMapInterpolate1("", ctx_r22.prefixCls, "-date-content");
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(9, _c0$B, cell_r9.value));
+    ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", ɵɵpureFunction1(9, _c0$C, cell_r9.value));
 } }
 function DateTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
@@ -11668,7 +12182,7 @@ function DateRangePopupComponent_ng_container_0_ng_container_6_Template(rf, ctx)
 function DateRangePopupComponent_ng_container_0_ng_container_7_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
 } }
-const _c0$C = function () { return { partType: "left" }; };
+const _c0$D = function () { return { partType: "left" }; };
 const _c1$c = function () { return { partType: "right" }; };
 function DateRangePopupComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
@@ -11697,7 +12211,7 @@ function DateRangePopupComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) 
     ɵɵadvance(1);
     ɵɵclassMapInterpolate1("", ctx_r0.prefixCls, "-panels");
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", _r3)("ngTemplateOutletContext", ɵɵpureFunction0(20, _c0$C));
+    ɵɵproperty("ngTemplateOutlet", _r3)("ngTemplateOutletContext", ɵɵpureFunction0(20, _c0$D));
     ɵɵadvance(1);
     ɵɵproperty("ngTemplateOutlet", _r3)("ngTemplateOutletContext", ɵɵpureFunction0(21, _c1$c));
     ɵɵadvance(1);
@@ -12230,7 +12744,7 @@ __decorate([
             type: Input
         }] }); })();
 
-const _c0$D = ["separatorElement"];
+const _c0$E = ["separatorElement"];
 const _c1$d = ["pickerInput"];
 const _c2$8 = ["rangePickerInput"];
 const _c3$2 = ["cmacs-picker", ""];
@@ -12693,7 +13207,7 @@ CmacsPickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsPickerComponent, s
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.panel = _t.first);
     } }, viewQuery: function CmacsPickerComponent_Query(rf, ctx) { if (rf & 1) {
         ɵɵviewQuery(CdkConnectedOverlay, 1);
-        ɵɵviewQuery(_c0$D, 1);
+        ɵɵviewQuery(_c0$E, 1);
         ɵɵviewQuery(_c1$d, 1);
         ɵɵviewQuery(_c2$8, 1);
     } if (rf & 2) {
@@ -13111,10 +13625,10 @@ class CmacsDatePickerComponent {
     setModeAndFormat() {
         const inputFormats = {
             year: 'yyyy',
-            month: this.i18n.getLocale().locale === 'de' ? 'MM.yyyy' : 'yyyy/MM',
-            week: this.i18n.getDateLocale() ? 'RRRR-II' : this.i18n.getLocale().locale === 'de' ? 'ww.yyyy' : 'yyyy/ww',
-            date: this.showTime ? (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy HH:mm:ss' : 'yyyy/MM/dd HH:mm:ss') :
-                (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy' : 'yyyy/MM/dd')
+            month: this.i18n.getLocale().locale === 'de' ? 'MM.yyyy' : 'MM/yyyy',
+            week: this.i18n.getDateLocale() ? 'RRRR-II' : this.i18n.getLocale().locale === 'de' ? 'ww.yyyy' : 'ww/yyyy',
+            date: this.showTime ? (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy HH:mm:ss' : 'MM/dd/yyyy HH:mm:ss') :
+                (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy' : 'MM/dd/yyyy')
         };
         if (!this.mode) {
             this.mode = 'date';
@@ -13582,7 +14096,7 @@ CmacsRangePickerComponent.ɵdir = ɵɵdefineDirective({ type: CmacsRangePickerCo
                 type: Host
             }] }]; }, null); })();
 
-const _c0$E = ["inputElement"];
+const _c0$F = ["inputElement"];
 class CmacsInputNumberComponent {
     constructor(elementRef, renderer, cdr, focusMonitor) {
         this.elementRef = elementRef;
@@ -13878,7 +14392,7 @@ class CmacsInputNumberComponent {
 }
 CmacsInputNumberComponent.ɵfac = function CmacsInputNumberComponent_Factory(t) { return new (t || CmacsInputNumberComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FocusMonitor)); };
 CmacsInputNumberComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsInputNumberComponent, selectors: [["cmacs-input-number"]], viewQuery: function CmacsInputNumberComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵviewQuery(_c0$E, 3);
+        ɵɵviewQuery(_c0$F, 3);
     } if (rf & 2) {
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputElement = _t.first);
@@ -14131,7 +14645,7 @@ class TimeHolder {
     }
 }
 
-const _c0$F = ["hourListElement"];
+const _c0$G = ["hourListElement"];
 const _c1$e = ["minuteListElement"];
 const _c2$9 = ["secondListElement"];
 const _c3$3 = ["use12HoursListElement"];
@@ -14547,7 +15061,7 @@ class CmacsDatetimePickerPanelComponent {
 }
 CmacsDatetimePickerPanelComponent.ɵfac = function CmacsDatetimePickerPanelComponent_Factory(t) { return new (t || CmacsDatetimePickerPanelComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(DateHelperService), ɵɵdirectiveInject(ElementRef)); };
 CmacsDatetimePickerPanelComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsDatetimePickerPanelComponent, selectors: [["cmacs-datetime-picker-panel"]], viewQuery: function CmacsDatetimePickerPanelComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵviewQuery(_c0$F, 1);
+        ɵɵviewQuery(_c0$G, 1);
         ɵɵviewQuery(_c1$e, 1);
         ɵɵviewQuery(_c2$9, 1);
         ɵɵviewQuery(_c3$3, 1);
@@ -14663,7 +15177,7 @@ __decorate([
             type: Input
         }] }); })();
 
-const _c0$G = ["inputElement"];
+const _c0$H = ["inputElement"];
 function CmacsDateTimePickerComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵelement(1, "i", 7);
@@ -14917,7 +15431,7 @@ class CmacsDateTimePickerComponent {
 }
 CmacsDateTimePickerComponent.ɵfac = function CmacsDateTimePickerComponent_Factory(t) { return new (t || CmacsDateTimePickerComponent)(ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(NzI18nService), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(DateHelperService), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Directionality, 8)); };
 CmacsDateTimePickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsDateTimePickerComponent, selectors: [["cmacs-datetime-picker"]], viewQuery: function CmacsDateTimePickerComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵviewQuery(_c0$G, 3);
+        ɵɵviewQuery(_c0$H, 3);
     } if (rf & 2) {
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputRef = _t.first);
@@ -15190,12 +15704,12 @@ function CmacsProgressComponent_ng_template_0_span_0_ng_template_2_ng_container_
     ɵɵadvance(1);
     ɵɵtextInterpolate1(" ", formatter_r9(ctx_r8.percent), " ");
 } }
-const _c0$H = function (a0) { return { $implicit: a0 }; };
+const _c0$I = function (a0) { return { $implicit: a0 }; };
 function CmacsProgressComponent_ng_template_0_span_0_ng_template_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵtemplate(0, CmacsProgressComponent_ng_template_0_span_0_ng_template_2_ng_container_0_Template, 2, 1, "ng-container", 9);
 } if (rf & 2) {
     const ctx_r7 = ɵɵnextContext(3);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r7.formatter)("nzStringTemplateOutletContext", ɵɵpureFunction1(2, _c0$H, ctx_r7.percent));
+    ɵɵproperty("nzStringTemplateOutlet", ctx_r7.formatter)("nzStringTemplateOutletContext", ɵɵpureFunction1(2, _c0$I, ctx_r7.percent));
 } }
 function CmacsProgressComponent_ng_template_0_span_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "span", 5);
@@ -15859,7 +16373,7 @@ __decorate([
             type: Input
         }] }); })();
 
-const _c0$I = ["switchElement"];
+const _c0$J = ["switchElement"];
 function CmacsSwitchComponent_i_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "i", 8);
 } }
@@ -15990,7 +16504,7 @@ class CmacsSwitchComponent {
 }
 CmacsSwitchComponent.ɵfac = function CmacsSwitchComponent_Factory(t) { return new (t || CmacsSwitchComponent)(ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FocusMonitor), ɵɵdirectiveInject(Directionality, 8)); };
 CmacsSwitchComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSwitchComponent, selectors: [["cmacs-switch"]], viewQuery: function CmacsSwitchComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵviewQuery(_c0$I, 3);
+        ɵɵviewQuery(_c0$J, 3);
     } if (rf & 2) {
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.switchElement = _t.first);
@@ -16131,7 +16645,7 @@ TimelineService.ɵprov = ɵɵdefineInjectable({ token: TimelineService, factory:
         type: Injectable
     }], null, null); })();
 
-const _c0$J = ["template"];
+const _c0$K = ["template"];
 function CmacsTimelineItemComponent_ng_template_0_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵtext(1);
@@ -16187,7 +16701,7 @@ class CmacsTimelineItemComponent {
 }
 CmacsTimelineItemComponent.ɵfac = function CmacsTimelineItemComponent_Factory(t) { return new (t || CmacsTimelineItemComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(TimelineService)); };
 CmacsTimelineItemComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsTimelineItemComponent, selectors: [["cmacs-timeline-item"], ["", "cmacs-timeline-item", ""]], viewQuery: function CmacsTimelineItemComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵviewQuery(_c0$J, 1);
+        ɵɵviewQuery(_c0$K, 1);
     } if (rf & 2) {
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.template = _t.first);
@@ -16313,7 +16827,7 @@ function CmacsTimelineComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
     const ctx_r4 = ɵɵnextContext();
     ɵɵproperty("ngIf", ctx_r4.pending);
 } }
-const _c0$K = ["*"];
+const _c0$L = ["*"];
 class CmacsTimelineComponent {
     constructor(cdr, timelineService, directionality) {
         this.cdr = cdr;
@@ -16375,7 +16889,7 @@ CmacsTimelineComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsTimelineComponen
     } if (rf & 2) {
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfItems = _t);
-    } }, inputs: { mode: "mode", pending: "pending", pendingDot: "pendingDot", reverse: "reverse" }, exportAs: ["cmacsTimeline"], features: [ɵɵProvidersFeature([TimelineService]), ɵɵNgOnChangesFeature], ngContentSelectors: _c0$K, decls: 7, vars: 13, consts: [[1, "ant-timeline"], [3, "ngTemplateOutlet", 4, "ngIf"], [4, "ngFor", "ngForOf"], ["pendingTemplate", ""], [3, "ngTemplateOutlet"], ["class", "ant-timeline-item ant-timeline-item-pending", 4, "ngIf"], [1, "ant-timeline-item", "ant-timeline-item-pending"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head", "ant-timeline-item-head-custom", "ant-timeline-item-head-blue"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"], ["nz-icon", "", "nzType", "loading", 4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function CmacsTimelineComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { mode: "mode", pending: "pending", pendingDot: "pendingDot", reverse: "reverse" }, exportAs: ["cmacsTimeline"], features: [ɵɵProvidersFeature([TimelineService]), ɵɵNgOnChangesFeature], ngContentSelectors: _c0$L, decls: 7, vars: 13, consts: [[1, "ant-timeline"], [3, "ngTemplateOutlet", 4, "ngIf"], [4, "ngFor", "ngForOf"], ["pendingTemplate", ""], [3, "ngTemplateOutlet"], ["class", "ant-timeline-item ant-timeline-item-pending", 4, "ngIf"], [1, "ant-timeline-item", "ant-timeline-item-pending"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head", "ant-timeline-item-head-custom", "ant-timeline-item-head-blue"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"], ["nz-icon", "", "nzType", "loading", 4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function CmacsTimelineComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵelementStart(0, "ul", 0);
         ɵɵtemplate(1, CmacsTimelineComponent_ng_container_1_Template, 1, 1, "ng-container", 1);
@@ -16487,7 +17001,7 @@ function CmacsKanbanComponent_div_4_div_1_div_5_Template(rf, ctx) { if (rf & 1) 
     ɵɵadvance(2);
     ɵɵtextInterpolate(column_r1.name);
 } }
-const _c0$L = function (a0) { return { column: a0 }; };
+const _c0$M = function (a0) { return { column: a0 }; };
 function CmacsKanbanComponent_div_4_div_1_Template(rf, ctx) { if (rf & 1) {
     const _r16 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 14);
@@ -16504,7 +17018,7 @@ function CmacsKanbanComponent_div_4_div_1_Template(rf, ctx) { if (rf & 1) {
     const column_r1 = ɵɵnextContext().$implicit;
     const ctx_r2 = ɵɵnextContext();
     ɵɵadvance(4);
-    ɵɵproperty("ngTemplateOutlet", ctx_r2.columnHeaderCollapsedTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(3, _c0$L, column_r1));
+    ɵɵproperty("ngTemplateOutlet", ctx_r2.columnHeaderCollapsedTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(3, _c0$M, column_r1));
     ɵɵadvance(1);
     ɵɵproperty("ngIf", !ctx_r2.columnHeaderCollapsedTemplate);
 } }
@@ -16636,19 +17150,19 @@ function CmacsKanbanComponent_div_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵproperty("ngIf", column_r1.collapsed);
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.columnHeaderTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(18, _c0$L, column_r1));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.columnHeaderTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(18, _c0$M, column_r1));
     ɵɵadvance(1);
     ɵɵproperty("ngIf", !ctx_r0.columnHeaderTemplate);
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.subHeader)("ngTemplateOutletContext", ɵɵpureFunction1(20, _c0$L, column_r1));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.subHeader)("ngTemplateOutletContext", ɵɵpureFunction1(20, _c0$M, column_r1));
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.getActionPanel(column_r1.id))("ngTemplateOutletContext", ɵɵpureFunction1(22, _c0$L, column_r1));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.getActionPanel(column_r1.id))("ngTemplateOutletContext", ɵɵpureFunction1(22, _c0$M, column_r1));
     ɵɵadvance(1);
     ɵɵproperty("cdkDropListData", column_r1.items)("ngStyle", ctx_r0.verticalScrollStyle());
     ɵɵadvance(1);
     ɵɵproperty("ngIf", ctx_r0.mobile)("ngIfElse", _r8);
     ɵɵadvance(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.getDescriptionPanel(column_r1.id))("ngTemplateOutletContext", ɵɵpureFunction1(24, _c0$L, column_r1));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.getDescriptionPanel(column_r1.id))("ngTemplateOutletContext", ɵɵpureFunction1(24, _c0$M, column_r1));
 } }
 class CmacsKanbanComponent {
     constructor(deviceDetector) {
@@ -16782,7 +17296,7 @@ class CmacsKanbanComponent {
     }
 }
 CmacsKanbanComponent.ɵfac = function CmacsKanbanComponent_Factory(t) { return new (t || CmacsKanbanComponent)(ɵɵdirectiveInject(DeviceDetectorService)); };
-CmacsKanbanComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["id", "tasks-container", "cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "ngStyle", "cdkDropListDropped"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "tap", "doubletap", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "tap", "doubletap"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsKanbanComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["id", "tasks-container", "cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "ngStyle", "cdkDropListDropped"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", "cmacsTooltipPlacement", "bottom", "cmacs-tooltip", "", "cmacsTooltipTitle", "Expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacsTooltipPlacement", "bottom", "cmacs-tooltip", "", "cmacsTooltipTitle", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacsTooltipPlacement", "bottom", "cmacs-tooltip", "", "cmacsTooltipTitle", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "tap", "doubletap", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "tap", "doubletap"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "div", 0);
         ɵɵelementStart(1, "div", 1);
         ɵɵelementStart(2, "div", 2);
@@ -16797,7 +17311,7 @@ CmacsKanbanComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKanbanComponent, s
         ɵɵproperty("ngStyle", ctx.boardStyle());
         ɵɵadvance(3);
         ɵɵproperty("ngForOf", ctx.board.columns);
-    } }, directives: [NgStyle, CdkDropListGroup, NgForOf, NgClass, NgIf, NgTemplateOutlet, CdkDropList, CmacsButtonComponent, NzRowDirective, NzColDirective, CdkDrag], styles: [".cmacs-kanban-item-drag-handler{position:absolute;top:5px;left:10px;cursor:-webkit-grab;cursor:grab;color:#656c79}.root{height:100%}.board,.root{display:flex;flex-direction:column}.board{flex-grow:1;min-width:0;min-height:0}.board-name{font-size:20px;font-weight:700}.board-wrapper{overflow-x:auto}.board-column,.board-columns,.board-wrapper{display:flex;flex-grow:1}.board-column{flex-direction:column;flex-basis:0;border-radius:4px}.board-column:not(:first-child){margin-left:0}.column-header{padding:12px 15px 10px;font-family:Roboto-Regular;line-height:1;border-left:1px solid #dee0e5;box-shadow:0 3px 7px -3px rgba(5,6,6,.18);margin-bottom:10px}.column-title{text-transform:capitalize;color:#656c79;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 82px);display:inline-block}.column-title-items{color:#97a0ae!important;font-size:12px!important;font-family:Roboto-Medium!important}.column-shrink{height:20px!important;width:20px;padding-right:0!important;padding-left:0!important;margin-left:5px;float:right}.tasks-container{flex-grow:1;overflow-y:auto;margin-bottom:2px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.board-wrapper::-webkit-scrollbar,.tasks-container::-webkit-scrollbar{-webkit-appearance:none;width:7px;height:7px;-webkit-overflow-scrolling:auto}.board-wrapper::-webkit-scrollbar-thumb,.tasks-container::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.board-wrapper::-webkit-scrollbar-thumb:hover,.tasks-container::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.task{display:flex;position:relative}.task,.task .cmacs-todo-card{touch-action:manipulation!important}.task.cdk-drag-preview{opacity:.9}.task-selected{border-color:#2a7cff}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating,.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.board-column.collapsed{min-width:37px!important;padding:0;margin:0 10px;flex-basis:0;flex-grow:0}.board-column.collapsed>.column-action-panel,.board-column.collapsed>.column-description-panel,.board-column.collapsed>.column-header,.board-column.collapsed>.column-header-template,.board-column.collapsed>.tasks-container{display:none}.column-header-collapsed{display:contents;height:100%}.column-header-collapsed-line{background-color:#acb3bf;width:1px;margin:0 auto}.column-header-collapsed-line-1{margin-top:14px;margin-bottom:14px;height:25px}.column-header-collapsed-line-2{margin-top:14px;height:inherit}.column-header-collapsed-text{transform:none;-ms-writing-mode:tb-lr;writing-mode:vertical-lr;margin:0 0 0 10px;text-transform:capitalize;color:#656c79;font-size:14px;font-weight:500;font-family:Roboto-Medium;display:table}.column-header-collapsed-text>*{display:table-cell;white-space:nowrap}.column-header .column-shrink{display:block}.column-shrink,.header-actions{height:100%!important}.column-shrink i{font-size:17px!important}"], encapsulation: 2 });
+    } }, directives: [NgStyle, CdkDropListGroup, NgForOf, NgClass, NgIf, NgTemplateOutlet, CdkDropList, CmacsButtonComponent, CmacsTooltipDirective, NzRowDirective, NzColDirective, CdkDrag], styles: [".cmacs-kanban-item-drag-handler{position:absolute;top:5px;left:10px;cursor:-webkit-grab;cursor:grab;color:#656c79}.root{height:100%}.board,.root{display:flex;flex-direction:column}.board{flex-grow:1;min-width:0;min-height:0}.board-name{font-size:20px;font-weight:700}.board-wrapper{overflow-x:auto}.board-column,.board-columns,.board-wrapper{display:flex;flex-grow:1}.board-column{flex-direction:column;flex-basis:0;border-radius:4px}.board-column:not(:first-child){margin-left:0}.column-header{padding:12px 15px 10px;font-family:Roboto-Regular;line-height:1;border-left:1px solid #dee0e5;box-shadow:0 3px 7px -3px rgba(5,6,6,.18);margin-bottom:10px}.column-title{text-transform:capitalize;color:#656c79;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 82px);display:inline-block}.column-title-items{color:#97a0ae!important;font-size:12px!important;font-family:Roboto-Medium!important}.column-shrink{height:20px!important;width:20px;padding-right:0!important;padding-left:0!important;margin-left:5px;float:right}.tasks-container{flex-grow:1;overflow-y:auto;margin-bottom:2px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.board-wrapper::-webkit-scrollbar,.tasks-container::-webkit-scrollbar{-webkit-appearance:none;width:7px;height:7px;-webkit-overflow-scrolling:auto}.board-wrapper::-webkit-scrollbar-thumb,.tasks-container::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.board-wrapper::-webkit-scrollbar-thumb:hover,.tasks-container::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.task{display:flex;position:relative}.task,.task .cmacs-todo-card{touch-action:manipulation!important}.task.cdk-drag-preview{opacity:.9}.task-selected{border-color:#2a7cff}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating,.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.board-column.collapsed{min-width:37px!important;padding:0;margin:0 10px;flex-basis:0;flex-grow:0}.board-column.collapsed>.column-action-panel,.board-column.collapsed>.column-description-panel,.board-column.collapsed>.column-header,.board-column.collapsed>.column-header-template,.board-column.collapsed>.tasks-container{display:none}.column-header-collapsed{display:contents;height:100%}.column-header-collapsed-line{background-color:#acb3bf;width:1px;margin:0 auto}.column-header-collapsed-line-1{margin-top:14px;margin-bottom:14px;height:25px}.column-header-collapsed-line-2{margin-top:14px;height:inherit}.column-header-collapsed-text{transform:none;-ms-writing-mode:tb-lr;writing-mode:vertical-lr;margin:0 0 0 10px;text-transform:capitalize;color:#656c79;font-size:14px;font-weight:500;font-family:Roboto-Medium;display:table}.column-header-collapsed-text>*{display:table-cell;white-space:nowrap}.column-header .column-shrink{display:block}.column-shrink,.header-actions{height:100%!important}.column-shrink i{font-size:17px!important}"], encapsulation: 2 });
 __decorate([
     InputBoolean()
 ], CmacsKanbanComponent.prototype, "multiselect", void 0);
@@ -16864,7 +17378,7 @@ function CmacsTagComponent_i_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵlistener("click", function CmacsTagComponent_i_3_Template_i_click_0_listener($event) { ɵɵrestoreView(_r2); const ctx_r1 = ɵɵnextContext(); return ctx_r1.closeTag($event); });
     ɵɵelementEnd();
 } }
-const _c0$M = ["*"];
+const _c0$N = ["*"];
 class CmacsTagComponent {
     constructor(cdr, renderer, elementRef, directionality) {
         this.cdr = cdr;
@@ -16928,7 +17442,7 @@ CmacsTagComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsTagComponent, selecto
         ɵɵclassMap(ctx.isPresetColor ? "ant-tag-" + ctx.color : "");
         ɵɵstyleProp("background-color", ctx.isPresetColor ? "" : ctx.color)("border-left", ctx.cmacsTemplateType ? "3px solid " + ctx.color : null);
         ɵɵclassProp("ant-tag-has-color", ctx.color && !ctx.isPresetColor)("ant-tag-checkable", ctx.mode === "checkable")("ant-tag-checkable-checked", ctx.checked)("ant-tag-rtl", ctx.dir === "rtl")("cmacs-tag", ctx.cmacsStatusType || ctx.cmacsPriorityType || ctx.cmacsGridType || ctx.cmacsMoneyType)("cmacs-tag-active", ctx.cmacsGridType && ctx.cmacsGridType === "active")("cmacs-tag-created", ctx.cmacsGridType && ctx.cmacsGridType === "created")("cmacs-tag-pre-bid", ctx.cmacsGridType && ctx.cmacsGridType === "pre-bid")("cmacs-tag-archive", ctx.cmacsGridType && ctx.cmacsGridType === "archive")("cmacs-tag-inactive", ctx.cmacsGridType && ctx.cmacsGridType === "inactive")("cmacs-tag-warranty", ctx.cmacsGridType && ctx.cmacsGridType === "warranty")("cmacs-tag-high-priority", ctx.cmacsPriorityType && ctx.cmacsPriorityType === "high")("cmacs-tag-low-priority", ctx.cmacsPriorityType && ctx.cmacsPriorityType === "low")("cmacs-tag-medium-priority", ctx.cmacsPriorityType && ctx.cmacsPriorityType === "medium")("cmacs-tag-money", ctx.cmacsMoneyType)("cmacs-tag-template", ctx.cmacsTemplateType)("cmacs-tag-status", ctx.cmacsStatusType)("cmacs-tag-closeable", ctx.mode === "closeable");
-    } }, inputs: { cmacsGridType: "cmacsGridType", cmacsPriorityType: "cmacsPriorityType", cmacsStatusType: "cmacsStatusType", cmacsMoneyType: "cmacsMoneyType", cmacsTemplateType: "cmacsTemplateType", disabled: "disabled", mode: "mode", color: "color", checked: "checked" }, outputs: { onClose: "onClose", checkedChange: "checkedChange" }, exportAs: ["cmacsTag"], features: [ɵɵNgOnChangesFeature], ngContentSelectors: _c0$M, decls: 4, vars: 5, consts: [["nz-icon", "", "nzType", "close", "tabindex", "-1", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzType", "close", "tabindex", "-1", 3, "click"]], template: function CmacsTagComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { cmacsGridType: "cmacsGridType", cmacsPriorityType: "cmacsPriorityType", cmacsStatusType: "cmacsStatusType", cmacsMoneyType: "cmacsMoneyType", cmacsTemplateType: "cmacsTemplateType", disabled: "disabled", mode: "mode", color: "color", checked: "checked" }, outputs: { onClose: "onClose", checkedChange: "checkedChange" }, exportAs: ["cmacsTag"], features: [ɵɵNgOnChangesFeature], ngContentSelectors: _c0$N, decls: 4, vars: 5, consts: [["nz-icon", "", "nzType", "close", "tabindex", "-1", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzType", "close", "tabindex", "-1", 3, "click"]], template: function CmacsTagComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵelementStart(0, "div");
         ɵɵelementStart(1, "span");
@@ -17010,520 +17524,6 @@ __decorate([
         }], checkedChange: [{
             type: Output
         }] }); })();
-
-const _c0$N = ["overlay"];
-class NzTooltipBaseDirective {
-    constructor(elementRef, hostView, resolver, renderer, noAnimation) {
-        this.elementRef = elementRef;
-        this.hostView = hostView;
-        this.resolver = resolver;
-        this.renderer = renderer;
-        this.noAnimation = noAnimation;
-        this.visibleChange = new EventEmitter();
-        this.internalVisible = false;
-        this.destroy$ = new Subject();
-        this.triggerDisposables = [];
-    }
-    /**
-     * This true title that would be used in other parts on this component.
-     */
-    get _title() {
-        return this.title || this.directiveTitle || null;
-    }
-    get _content() {
-        return this.content || this.directiveContent || null;
-    }
-    get _trigger() {
-        return typeof this.trigger !== 'undefined' ? this.trigger : 'hover';
-    }
-    get _placement() {
-        const p = this.placement;
-        return Array.isArray(p) && p.length > 0 ? p : typeof p === 'string' && p ? [p] : ['top'];
-    }
-    get _visible() {
-        return (typeof this.visible !== 'undefined' ? this.visible : this.internalVisible) || false;
-    }
-    get _mouseEnterDelay() {
-        return this.mouseEnterDelay || 0.15;
-    }
-    get _mouseLeaveDelay() {
-        return this.mouseLeaveDelay || 0.1;
-    }
-    get _overlayClassName() {
-        return this.overlayClassName || null;
-    }
-    get _overlayStyle() {
-        return this.overlayStyle || null;
-    }
-    getProxyPropertyMap() {
-        return {
-            noAnimation: ['noAnimation', () => this.noAnimation]
-        };
-    }
-    ngOnChanges(changes) {
-        const { specificTrigger } = changes;
-        if (specificTrigger && !specificTrigger.isFirstChange()) {
-            this.registerTriggers();
-        }
-        if (this.component) {
-            this.updatePropertiesByChanges(changes);
-        }
-    }
-    ngAfterViewInit() {
-        this.createComponent();
-        this.registerTriggers();
-    }
-    ngOnDestroy() {
-        this.destroy$.next();
-        this.destroy$.complete();
-        // Clear toggling timer. Issue #3875 #4317 #4386
-        this.clearTogglingTimer();
-        this.removeTriggerListeners();
-    }
-    show() {
-        var _a;
-        (_a = this.component) === null || _a === void 0 ? void 0 : _a.show();
-    }
-    hide() {
-        var _a;
-        (_a = this.component) === null || _a === void 0 ? void 0 : _a.hide();
-    }
-    /**
-     * Force the component to update its position.
-     */
-    updatePosition() {
-        if (this.component) {
-            this.component.updatePosition();
-        }
-    }
-    /**
-     * Create a dynamic tooltip component. This method can be override.
-     */
-    createComponent() {
-        const componentRef = this.hostView.createComponent(this.componentFactory);
-        this.component = componentRef.instance;
-        // Remove the component's DOM because it should be in the overlay container.
-        this.renderer.removeChild(this.renderer.parentNode(this.elementRef.nativeElement), componentRef.location.nativeElement);
-        this.component.setOverlayOrigin({ elementRef: this.origin || this.elementRef });
-        this.initProperties();
-        this.component.cmacsVisibleChange.pipe(distinctUntilChanged(), takeUntil(this.destroy$)).subscribe((visible) => {
-            this.internalVisible = visible;
-            this.visibleChange.emit(visible);
-        });
-    }
-    registerTriggers() {
-        // When the method gets invoked, all properties has been synced to the dynamic component.
-        // After removing the old API, we can just check the directive's own `cmacsTrigger`.
-        const el = this.elementRef.nativeElement;
-        const trigger = this.trigger;
-        this.removeTriggerListeners();
-        if (trigger === 'hover') {
-            let overlayElement;
-            this.triggerDisposables.push(this.renderer.listen(el, 'mouseenter', () => {
-                this.delayEnterLeave(true, true, this._mouseEnterDelay);
-            }));
-            this.triggerDisposables.push(this.renderer.listen(el, 'mouseleave', () => {
-                var _a;
-                this.delayEnterLeave(true, false, this._mouseLeaveDelay);
-                if (((_a = this.component) === null || _a === void 0 ? void 0 : _a.overlay.overlayRef) && !overlayElement) {
-                    overlayElement = this.component.overlay.overlayRef.overlayElement;
-                    this.triggerDisposables.push(this.renderer.listen(overlayElement, 'mouseenter', () => {
-                        this.delayEnterLeave(false, true, this._mouseEnterDelay);
-                    }));
-                    this.triggerDisposables.push(this.renderer.listen(overlayElement, 'mouseleave', () => {
-                        this.delayEnterLeave(false, false, this._mouseLeaveDelay);
-                    }));
-                }
-            }));
-        }
-        else if (trigger === 'focus') {
-            this.triggerDisposables.push(this.renderer.listen(el, 'focus', () => this.show()));
-            this.triggerDisposables.push(this.renderer.listen(el, 'blur', () => this.hide()));
-        }
-        else if (trigger === 'click') {
-            this.triggerDisposables.push(this.renderer.listen(el, 'click', (e) => {
-                e.preventDefault();
-                this.show();
-            }));
-        }
-        // Else do nothing because user wants to control the visibility programmatically.
-    }
-    updatePropertiesByChanges(changes) {
-        this.updatePropertiesByKeys(Object.keys(changes));
-    }
-    updatePropertiesByKeys(keys) {
-        var _a;
-        const mappingProperties = Object.assign({ 
-            // common mappings
-            title: ['cmacsTitle', () => this._title], directiveTitle: ['cmacsTitle', () => this._title], content: ['cmacsContent', () => this._content], directiveContent: ['cmacsContent', () => this._content], trigger: ['cmacsTrigger', () => this._trigger], placement: ['cmacsPlacement', () => this._placement], visible: ['cmacsVisible', () => this._visible], mouseEnterDelay: ['cmacsMouseEnterDelay', () => this._mouseEnterDelay], mouseLeaveDelay: ['cmacsMouseLeaveDelay', () => this._mouseLeaveDelay], overlayClassName: ['cmacsOverlayClassName', () => this._overlayClassName], overlayStyle: ['cmacsOverlayStyle', () => this._overlayStyle] }, this.getProxyPropertyMap());
-        (keys || Object.keys(mappingProperties).filter(key => !key.startsWith('directive'))).forEach((property) => {
-            if (mappingProperties[property]) {
-                const [name, valueFn] = mappingProperties[property];
-                this.updateComponentValue(name, valueFn());
-            }
-        });
-        (_a = this.component) === null || _a === void 0 ? void 0 : _a.updateByDirective();
-    }
-    initProperties() {
-        this.updatePropertiesByKeys();
-    }
-    updateComponentValue(key, value) {
-        if (typeof value !== 'undefined') {
-            // @ts-ignore
-            this.component[key] = value;
-        }
-    }
-    delayEnterLeave(isOrigin, isEnter, delay = -1) {
-        if (this.delayTimer) {
-            this.clearTogglingTimer();
-        }
-        else if (delay > 0) {
-            this.delayTimer = setTimeout(() => {
-                this.delayTimer = undefined;
-                isEnter ? this.show() : this.hide();
-            }, delay * 1000);
-        }
-        else {
-            // `isOrigin` is used due to the tooltip will not hide immediately
-            // (may caused by the fade-out animation).
-            isEnter && isOrigin ? this.show() : this.hide();
-        }
-    }
-    removeTriggerListeners() {
-        this.triggerDisposables.forEach(dispose => dispose());
-        this.triggerDisposables.length = 0;
-    }
-    clearTogglingTimer() {
-        if (this.delayTimer) {
-            clearTimeout(this.delayTimer);
-            this.delayTimer = undefined;
-        }
-    }
-}
-NzTooltipBaseDirective.ɵfac = function NzTooltipBaseDirective_Factory(t) { return new (t || NzTooltipBaseDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(ComponentFactoryResolver), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NzNoAnimationDirective)); };
-NzTooltipBaseDirective.ɵdir = ɵɵdefineDirective({ type: NzTooltipBaseDirective, features: [ɵɵNgOnChangesFeature] });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(NzTooltipBaseDirective, [{
-        type: Directive
-    }], function () { return [{ type: ElementRef }, { type: ViewContainerRef }, { type: ComponentFactoryResolver }, { type: Renderer2 }, { type: NzNoAnimationDirective }]; }, null); })();
-// tslint:disable-next-line:directive-class-suffix
-class CmacsTooltipBaseComponent {
-    constructor(cdr, directionality, noAnimation) {
-        this.cdr = cdr;
-        this.directionality = directionality;
-        this.noAnimation = noAnimation;
-        this.cmacsTitle = null;
-        this.cmacsContent = null;
-        this.cmacsOverlayStyle = {};
-        this.cmacsVisibleChange = new Subject();
-        this._visible = false;
-        this._trigger = 'hover';
-        this.preferredPlacement = 'top';
-        this.dir = 'ltr';
-        this._classMap = {};
-        this._hasBackdrop = false;
-        this._prefix = 'ant-tooltip';
-        this._positions = [...DEFAULT_TOOLTIP_POSITIONS];
-        this.destroy$ = new Subject();
-    }
-    set cmacsVisible(value) {
-        const visible = toBoolean(value);
-        if (this._visible !== visible) {
-            this._visible = visible;
-            this.cmacsVisibleChange.next(visible);
-        }
-    }
-    get cmacsVisible() {
-        return this._visible;
-    }
-    set cmacsTrigger(value) {
-        this._trigger = value;
-    }
-    get cmacsTrigger() {
-        return this._trigger;
-    }
-    set cmacsPlacement(value) {
-        const preferredPosition = value.map(placement => POSITION_MAP[placement]);
-        this._positions = [...preferredPosition, ...DEFAULT_TOOLTIP_POSITIONS];
-    }
-    ngOnInit() {
-        var _a;
-        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(takeUntil(this.destroy$)).subscribe((direction) => {
-            this.dir = direction;
-            this.cdr.detectChanges();
-        });
-        this.dir = this.directionality.value;
-    }
-    ngOnDestroy() {
-        this.cmacsVisibleChange.complete();
-        this.destroy$.next();
-        this.destroy$.complete();
-    }
-    show() {
-        if (this.cmacsVisible) {
-            return;
-        }
-        if (!this.isEmpty()) {
-            this.cmacsVisible = true;
-            this.cmacsVisibleChange.next(true);
-            this.cdr.detectChanges();
-        }
-        // for ltr for overlay to display tooltip in correct placement in rtl direction.
-        if (this.origin && this.overlay && this.overlay.overlayRef && this.overlay.overlayRef.getDirection() === 'rtl') {
-            this.overlay.overlayRef.setDirection('ltr');
-        }
-    }
-    hide() {
-        if (!this.cmacsVisible) {
-            return;
-        }
-        this.cmacsVisible = false;
-        this.cmacsVisibleChange.next(false);
-        this.cdr.detectChanges();
-    }
-    updateByDirective() {
-        this.updateStyles();
-        this.cdr.detectChanges();
-        Promise.resolve().then(() => {
-            this.updatePosition();
-            this.updateVisibilityByTitle();
-        });
-    }
-    /**
-     * Force the component to update its position.
-     */
-    updatePosition() {
-        if (this.origin && this.overlay && this.overlay.overlayRef) {
-            this.overlay.overlayRef.updatePosition();
-        }
-    }
-    onPositionChange(position) {
-        this.preferredPlacement = getPlacementName(position);
-        this.updateStyles();
-        // We have to trigger immediate change detection or the element would blink.
-        this.cdr.detectChanges();
-    }
-    updateStyles() {
-        this._classMap = {
-            [this.cmacsOverlayClassName]: true,
-            [`${this._prefix}-placement-${this.preferredPlacement}`]: true
-        };
-    }
-    setOverlayOrigin(origin) {
-        this.origin = origin;
-        this.cdr.markForCheck();
-    }
-    onClickOutside(event) {
-        if (!this.origin.elementRef.nativeElement.contains(event.target)) {
-            this.hide();
-        }
-    }
-    /**
-     * Hide the component while the content is empty.
-     */
-    updateVisibilityByTitle() {
-        if (this.isEmpty()) {
-            this.hide();
-        }
-    }
-}
-CmacsTooltipBaseComponent.ɵfac = function CmacsTooltipBaseComponent_Factory(t) { return new (t || CmacsTooltipBaseComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NzNoAnimationDirective)); };
-CmacsTooltipBaseComponent.ɵdir = ɵɵdefineDirective({ type: CmacsTooltipBaseComponent, viewQuery: function CmacsTooltipBaseComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵviewQuery(_c0$N, 1);
-    } if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.overlay = _t.first);
-    } } });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsTooltipBaseComponent, [{
-        type: Directive
-    }], function () { return [{ type: ChangeDetectorRef }, { type: Directionality, decorators: [{
-                type: Optional
-            }] }, { type: NzNoAnimationDirective }]; }, { overlay: [{
-            type: ViewChild,
-            args: ['overlay', { static: false }]
-        }] }); })();
-function isTooltipEmpty(value) {
-    return value instanceof TemplateRef ? false : value === '' || !isNotNil(value);
-}
-
-function CmacsToolTipComponent_ng_template_0_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r2 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r2.cmacsTitle);
-} }
-function CmacsToolTipComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 2);
-    ɵɵelementStart(1, "div", 3);
-    ɵɵelementStart(2, "div", 4);
-    ɵɵelement(3, "span", 5);
-    ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 6);
-    ɵɵtemplate(5, CmacsToolTipComponent_ng_template_0_ng_container_5_Template, 2, 1, "ng-container", 7);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext();
-    ɵɵclassProp("ant-tooltip-rtl", ctx_r1.dir === "rtl");
-    ɵɵproperty("ngClass", ctx_r1._classMap)("ngStyle", ctx_r1.cmacsOverlayStyle)("@.disabled", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("@zoomBigMotion", "active");
-    ɵɵadvance(3);
-    ɵɵproperty("ngStyle", ctx_r1._contentStyleMap);
-    ɵɵadvance(1);
-    ɵɵproperty("ngStyle", ctx_r1._contentStyleMap);
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r1.cmacsTitle);
-} }
-class CmacsTooltipDirective extends NzTooltipBaseDirective {
-    constructor(elementRef, hostView, resolver, renderer, noAnimation) {
-        super(elementRef, hostView, resolver, renderer, noAnimation);
-        this.trigger = 'hover';
-        this.placement = 'top';
-        // tslint:disable-next-line:no-output-rename
-        this.visibleChange = new EventEmitter();
-        this.componentFactory = this.resolver.resolveComponentFactory(CmacsToolTipComponent);
-    }
-    getProxyPropertyMap() {
-        return {
-            cmacsTooltipColor: ['cmacsColor', () => this.cmacsTooltipColor]
-        };
-    }
-}
-CmacsTooltipDirective.ɵfac = function CmacsTooltipDirective_Factory(t) { return new (t || CmacsTooltipDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(ComponentFactoryResolver), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NzNoAnimationDirective, 9)); };
-CmacsTooltipDirective.ɵdir = ɵɵdefineDirective({ type: CmacsTooltipDirective, selectors: [["", "cmacs-tooltip", ""]], hostVars: 2, hostBindings: function CmacsTooltipDirective_HostBindings(rf, ctx) { if (rf & 2) {
-        ɵɵclassProp("ant-tooltip-open", ctx.visible);
-    } }, inputs: { title: ["cmacsTooltipTitle", "title"], directiveTitle: ["cmacs-tooltip", "directiveTitle"], trigger: ["cmacsTooltipTrigger", "trigger"], placement: ["cmacsTooltipPlacement", "placement"], origin: ["cmacsTooltipOrigin", "origin"], visible: ["cmacsTooltipVisible", "visible"], mouseEnterDelay: ["cmacsTooltipMouseEnterDelay", "mouseEnterDelay"], mouseLeaveDelay: ["cmacsTooltipMouseLeaveDelay", "mouseLeaveDelay"], overlayClassName: ["cmacsTooltipOverlayClassName", "overlayClassName"], overlayStyle: ["cmacsTooltipOverlayStyle", "overlayStyle"], cmacsTooltipColor: "cmacsTooltipColor" }, outputs: { visibleChange: "cmacsTooltipVisibleChange" }, exportAs: ["cmacsTooltip"], features: [ɵɵInheritDefinitionFeature] });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsTooltipDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[cmacs-tooltip]',
-                exportAs: 'cmacsTooltip',
-                host: {
-                    '[class.ant-tooltip-open]': 'visible'
-                }
-            }]
-    }], function () { return [{ type: ElementRef }, { type: ViewContainerRef }, { type: ComponentFactoryResolver }, { type: Renderer2 }, { type: NzNoAnimationDirective, decorators: [{
-                type: Host
-            }, {
-                type: Optional
-            }] }]; }, { title: [{
-            type: Input,
-            args: ['cmacsTooltipTitle']
-        }], directiveTitle: [{
-            type: Input,
-            args: ['cmacs-tooltip']
-        }], trigger: [{
-            type: Input,
-            args: ['cmacsTooltipTrigger']
-        }], placement: [{
-            type: Input,
-            args: ['cmacsTooltipPlacement']
-        }], origin: [{
-            type: Input,
-            args: ['cmacsTooltipOrigin']
-        }], visible: [{
-            type: Input,
-            args: ['cmacsTooltipVisible']
-        }], mouseEnterDelay: [{
-            type: Input,
-            args: ['cmacsTooltipMouseEnterDelay']
-        }], mouseLeaveDelay: [{
-            type: Input,
-            args: ['cmacsTooltipMouseLeaveDelay']
-        }], overlayClassName: [{
-            type: Input,
-            args: ['cmacsTooltipOverlayClassName']
-        }], overlayStyle: [{
-            type: Input,
-            args: ['cmacsTooltipOverlayStyle']
-        }], cmacsTooltipColor: [{
-            type: Input
-        }], visibleChange: [{
-            type: Output,
-            args: ['cmacsTooltipVisibleChange']
-        }] }); })();
-class CmacsToolTipComponent extends CmacsTooltipBaseComponent {
-    constructor(cdr, directionality, noAnimation) {
-        super(cdr, directionality, noAnimation);
-        this.noAnimation = noAnimation;
-        this.cmacsTitle = null;
-        this._contentStyleMap = {};
-    }
-    isEmpty() {
-        return isTooltipEmpty(this.cmacsTitle);
-    }
-    updateStyles() {
-        const isColorPreset = this.cmacsColor && isPresetColor(this.cmacsColor);
-        this._classMap = {
-            [this.cmacsOverlayClassName]: true,
-            [`${this._prefix}-placement-${this.preferredPlacement}`]: true,
-            [`${this._prefix}-${this.cmacsColor}`]: isColorPreset
-        };
-        this._contentStyleMap = {
-            backgroundColor: !!this.cmacsColor && !isColorPreset ? this.cmacsColor : null
-        };
-    }
-}
-CmacsToolTipComponent.ɵfac = function CmacsToolTipComponent_Factory(t) { return new (t || CmacsToolTipComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NzNoAnimationDirective, 9)); };
-CmacsToolTipComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsToolTipComponent, selectors: [["cmacs-tooltip"]], exportAs: ["cmacsTooltipComponent"], features: [ɵɵInheritDefinitionFeature], decls: 2, vars: 4, consts: [["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayPositions", "cdkConnectedOverlayPush", "overlayOutsideClick", "detach", "positionChange"], ["overlay", "cdkConnectedOverlay"], [1, "ant-tooltip", 3, "ngClass", "ngStyle", "nzNoAnimation"], [1, "ant-tooltip-content"], [1, "ant-tooltip-arrow"], [1, "ant-tooltip-arrow-content", 3, "ngStyle"], [1, "ant-tooltip-inner", 3, "ngStyle"], [4, "nzStringTemplateOutlet"]], template: function CmacsToolTipComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵtemplate(0, CmacsToolTipComponent_ng_template_0_Template, 6, 10, "ng-template", 0, 1, ɵɵtemplateRefExtractor);
-        ɵɵlistener("overlayOutsideClick", function CmacsToolTipComponent_Template_ng_template_overlayOutsideClick_0_listener($event) { return ctx.onClickOutside($event); })("detach", function CmacsToolTipComponent_Template_ng_template_detach_0_listener() { return ctx.hide(); })("positionChange", function CmacsToolTipComponent_Template_ng_template_positionChange_0_listener($event) { return ctx.onPositionChange($event); });
-    } if (rf & 2) {
-        ɵɵproperty("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx._visible)("cdkConnectedOverlayPositions", ctx._positions)("cdkConnectedOverlayPush", true);
-    } }, directives: [CdkConnectedOverlay, NzConnectedOverlayDirective, NgClass, NgStyle, NzNoAnimationDirective, NzStringTemplateOutletDirective], styles: [".ant-tooltip-content{background-color:#0d1e3b;color:#fff;max-width:180px;border-radius:3px}.ant-tooltip-placement-top .ant-tooltip-arrow{border-top-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-topLeft .ant-tooltip-arrow,.ant-tooltip-placement-topRight .ant-tooltip-arrow{border-top-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-left .ant-tooltip-arrow,.ant-tooltip-placement-leftBottom .ant-tooltip-arrow,.ant-tooltip-placement-leftTop .ant-tooltip-arrow{border-left-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-right .ant-tooltip-arrow,.ant-tooltip-placement-rightBottom .ant-tooltip-arrow,.ant-tooltip-placement-rightTop .ant-tooltip-arrow{border-right-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-bottom .ant-tooltip-arrow{border-bottom-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,.ant-tooltip-placement-bottomRight .ant-tooltip-arrow{border-bottom-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-inner{background-color:#0d1e3b;border-radius:3px;box-shadow:none;padding:8px 10px;min-height:34px}"], encapsulation: 2, data: { animation: [zoomBigMotion] }, changeDetection: 0 });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsToolTipComponent, [{
-        type: Component,
-        args: [{
-                selector: 'cmacs-tooltip',
-                exportAs: 'cmacsTooltipComponent',
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                animations: [zoomBigMotion],
-                styleUrls: ['./cmacs-tooltip.component.css'],
-                template: `
-    <ng-template
-      #overlay="cdkConnectedOverlay"
-      cdkConnectedOverlay
-      nzConnectedOverlay
-      [cdkConnectedOverlayOrigin]="origin"
-      [cdkConnectedOverlayOpen]="_visible"
-      [cdkConnectedOverlayPositions]="_positions"
-      [cdkConnectedOverlayPush]="true"
-      (overlayOutsideClick)="onClickOutside($event)"
-      (detach)="hide()"
-      (positionChange)="onPositionChange($event)"
-    >
-      <div
-        class="ant-tooltip"
-        [class.ant-tooltip-rtl]="dir === 'rtl'"
-        [ngClass]="_classMap"
-        [ngStyle]="cmacsOverlayStyle"
-        [@.disabled]="noAnimation?.nzNoAnimation"
-        [nzNoAnimation]="noAnimation?.nzNoAnimation"
-        [@zoomBigMotion]="'active'"
-      >
-        <div class="ant-tooltip-content">
-          <div class="ant-tooltip-arrow">
-            <span class="ant-tooltip-arrow-content" [ngStyle]="_contentStyleMap"></span>
-          </div>
-          <div class="ant-tooltip-inner" [ngStyle]="_contentStyleMap">
-            <ng-container *nzStringTemplateOutlet="cmacsTitle">{{ cmacsTitle }}</ng-container>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-  `,
-                preserveWhitespaces: false
-            }]
-    }], function () { return [{ type: ChangeDetectorRef }, { type: Directionality, decorators: [{
-                type: Optional
-            }] }, { type: NzNoAnimationDirective, decorators: [{
-                type: Host
-            }, {
-                type: Optional
-            }] }]; }, null); })();
 
 function CmacsPopoverComponent_ng_template_0_div_4_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);

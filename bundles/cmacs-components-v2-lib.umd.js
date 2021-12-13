@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('ngx-device-detector'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/form'), require('ng2-tel-input'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('moment'), require('ng-zorro-antd/core/resize-observers'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('xlsx'), require('ng-zorro-antd/table'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('propagating-hammerjs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ngx-export-as'), require('ngx-cookie-service'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment/locale/en-ie'), require('@angular/cdk/collections'), require('html2canvas'), require('ng-zorro-antd/resizable'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('ng-zorro-antd/skeleton'), require('@swimlane/ngx-charts'), require('angular-google-charts'), require('ng-zorro-antd/tree-select'), require('@angular/animations'), require('@egjs/hammerjs')) :
-    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', 'ngx-device-detector', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid', 'ng-zorro-antd/form', 'ng2-tel-input', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'moment', 'ng-zorro-antd/core/resize-observers', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/timeline', 'ng-zorro-antd/core/color', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'xlsx', 'ng-zorro-antd/table', 'ng-zorro-antd/upload', 'angular2-signaturepad', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'angular2-draggable', 'ng-zorro-antd/tabs', 'propagating-hammerjs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ngx-export-as', 'ngx-cookie-service', 'jspdf', 'jspdf-autotable', 'util', 'moment/locale/en-ie', '@angular/cdk/collections', 'html2canvas', 'ng-zorro-antd/resizable', 'ng-zorro-antd/rate', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', 'ng-zorro-antd/skeleton', '@swimlane/ngx-charts', 'angular-google-charts', 'ng-zorro-antd/tree-select', '@angular/animations', '@egjs/hammerjs'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i9, global.i1$1, global.i5$1, global.i4, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i4$5, global.radio, global.ng.cdk.overlay, global.i1$2, global.animation, global.i4$1, global.i1$3, global.i8, global.select, global.i6$2, global.i6, global.i2$3, global.ng.router, global.menu, global.i13$1, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.i1$5, global.ng.platformBrowser, global.i1$7, global.i3$1, global.i6$1, global.form, global.i3$2, global.alert, global.breadcrumb, global.time, global.i10, global.moment_, global.i3$3, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.i4$3, global.timeline, global.color, global.tag, global.popover, global.i4$4, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.propagating, global.card, global.i3$5, global.list, global.i1$8, global.i5$2, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i10$1, global.i16, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$3, global.i2$5, global.i3$6, global.treeSelect, global.ng.animations, global.Hammer$1));
-}(this, (function (exports, i0, i5, operators, rxjs, util, i1, i2, i2$1, i9, i1$1, i5$1, i4, checkbox, i2$2, slider, keycodes, i3, _switch, i4$5, radio, i1$4, i1$2, animation, i4$1, i1$3, i8, select, i6$2, i6, i2$3, i4$2, menu, i13$1, i2$4, portal, logger, i1$5, i1$6, i1$7, i3$1, i6$1, form, i3$2, alert, breadcrumb, time, i10, moment_, i3$3, datePicker, inputNumber, dateFns, polyfill, en, progress, i4$3, timeline, color, tag, popover, i4$4, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, propagating, card, i3$5, list, i1$8, i5$2, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i10$1, i16, steps, scrolling, tree, cloneDeep, i5$3, i2$5, i3$6, treeSelect, animations$1, Hammer$1) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('ngx-device-detector'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/form'), require('ng2-tel-input'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('moment'), require('ng-zorro-antd/core/resize-observers'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('xlsx'), require('ng-zorro-antd/table'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('propagating-hammerjs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ngx-export-as'), require('ngx-cookie-service'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment/locale/en-ie'), require('@angular/cdk/collections'), require('html2canvas'), require('ng-zorro-antd/resizable'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('ng-zorro-antd/skeleton'), require('@swimlane/ngx-charts'), require('angular-google-charts'), require('ng-zorro-antd/tree-select'), require('@angular/animations'), require('@egjs/hammerjs')) :
+    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', 'ngx-device-detector', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid', 'ng-zorro-antd/core/color', 'ng-zorro-antd/form', 'ng2-tel-input', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'moment', 'ng-zorro-antd/core/resize-observers', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/timeline', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'xlsx', 'ng-zorro-antd/table', 'ng-zorro-antd/upload', 'angular2-signaturepad', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'angular2-draggable', 'ng-zorro-antd/tabs', 'propagating-hammerjs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ngx-export-as', 'ngx-cookie-service', 'jspdf', 'jspdf-autotable', 'util', 'moment/locale/en-ie', '@angular/cdk/collections', 'html2canvas', 'ng-zorro-antd/resizable', 'ng-zorro-antd/rate', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', 'ng-zorro-antd/skeleton', '@swimlane/ngx-charts', 'angular-google-charts', 'ng-zorro-antd/tree-select', '@angular/animations', '@egjs/hammerjs'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i9, global.i1$1, global.i5$1, global.i4, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i4$5, global.radio, global.ng.cdk.overlay, global.i1$2, global.animation, global.i4$1, global.i1$3, global.i8, global.select, global.i6$2, global.i6, global.i2$3, global.ng.router, global.menu, global.i13$1, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.i1$5, global.ng.platformBrowser, global.i1$7, global.i3$1, global.i6$1, global.color, global.form, global.i3$2, global.alert, global.breadcrumb, global.time, global.i10, global.moment_, global.i3$3, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.i4$3, global.timeline, global.tag, global.popover, global.i4$4, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.propagating, global.card, global.i3$5, global.list, global.i1$8, global.i5$2, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i10$1, global.i16, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$3, global.i2$5, global.i3$6, global.treeSelect, global.ng.animations, global.Hammer$1));
+}(this, (function (exports, i0, i5, operators, rxjs, util, i1, i2, i2$1, i9, i1$1, i5$1, i4, checkbox, i2$2, slider, keycodes, i3, _switch, i4$5, radio, i1$4, i1$2, animation, i4$1, i1$3, i8, select, i6$2, i6, i2$3, i4$2, menu, i13$1, i2$4, portal, logger, i1$5, i1$6, i1$7, i3$1, i6$1, color, form, i3$2, alert, breadcrumb, time, i10, moment_, i3$3, datePicker, inputNumber, dateFns, polyfill, en, progress, i4$3, timeline, tag, popover, i4$4, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, propagating, card, i3$5, list, i1$8, i5$2, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i10$1, i16, steps, scrolling, tree, cloneDeep, i5$3, i2$5, i3$6, treeSelect, animations$1, Hammer$1) { 'use strict';
 
     function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -8677,6 +8677,584 @@
                 }] });
     })();
 
+    var _c0$p = ["overlay"];
+    var NzTooltipBaseDirective = /** @class */ (function () {
+        function NzTooltipBaseDirective(elementRef, hostView, resolver, renderer, noAnimation) {
+            this.elementRef = elementRef;
+            this.hostView = hostView;
+            this.resolver = resolver;
+            this.renderer = renderer;
+            this.noAnimation = noAnimation;
+            this.visibleChange = new i0.EventEmitter();
+            this.internalVisible = false;
+            this.destroy$ = new rxjs.Subject();
+            this.triggerDisposables = [];
+        }
+        Object.defineProperty(NzTooltipBaseDirective.prototype, "_title", {
+            /**
+             * This true title that would be used in other parts on this component.
+             */
+            get: function () {
+                return this.title || this.directiveTitle || null;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(NzTooltipBaseDirective.prototype, "_content", {
+            get: function () {
+                return this.content || this.directiveContent || null;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(NzTooltipBaseDirective.prototype, "_trigger", {
+            get: function () {
+                return typeof this.trigger !== 'undefined' ? this.trigger : 'hover';
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(NzTooltipBaseDirective.prototype, "_placement", {
+            get: function () {
+                var p = this.placement;
+                return Array.isArray(p) && p.length > 0 ? p : typeof p === 'string' && p ? [p] : ['top'];
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(NzTooltipBaseDirective.prototype, "_visible", {
+            get: function () {
+                return (typeof this.visible !== 'undefined' ? this.visible : this.internalVisible) || false;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(NzTooltipBaseDirective.prototype, "_mouseEnterDelay", {
+            get: function () {
+                return this.mouseEnterDelay || 0.15;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(NzTooltipBaseDirective.prototype, "_mouseLeaveDelay", {
+            get: function () {
+                return this.mouseLeaveDelay || 0.1;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(NzTooltipBaseDirective.prototype, "_overlayClassName", {
+            get: function () {
+                return this.overlayClassName || null;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(NzTooltipBaseDirective.prototype, "_overlayStyle", {
+            get: function () {
+                return this.overlayStyle || null;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        NzTooltipBaseDirective.prototype.getProxyPropertyMap = function () {
+            var _this = this;
+            return {
+                noAnimation: ['noAnimation', function () { return _this.noAnimation; }]
+            };
+        };
+        NzTooltipBaseDirective.prototype.ngOnChanges = function (changes) {
+            var specificTrigger = changes.specificTrigger;
+            if (specificTrigger && !specificTrigger.isFirstChange()) {
+                this.registerTriggers();
+            }
+            if (this.component) {
+                this.updatePropertiesByChanges(changes);
+            }
+        };
+        NzTooltipBaseDirective.prototype.ngAfterViewInit = function () {
+            this.createComponent();
+            this.registerTriggers();
+        };
+        NzTooltipBaseDirective.prototype.ngOnDestroy = function () {
+            this.destroy$.next();
+            this.destroy$.complete();
+            // Clear toggling timer. Issue #3875 #4317 #4386
+            this.clearTogglingTimer();
+            this.removeTriggerListeners();
+        };
+        NzTooltipBaseDirective.prototype.show = function () {
+            var _a;
+            (_a = this.component) === null || _a === void 0 ? void 0 : _a.show();
+        };
+        NzTooltipBaseDirective.prototype.hide = function () {
+            var _a;
+            (_a = this.component) === null || _a === void 0 ? void 0 : _a.hide();
+        };
+        /**
+         * Force the component to update its position.
+         */
+        NzTooltipBaseDirective.prototype.updatePosition = function () {
+            if (this.component) {
+                this.component.updatePosition();
+            }
+        };
+        /**
+         * Create a dynamic tooltip component. This method can be override.
+         */
+        NzTooltipBaseDirective.prototype.createComponent = function () {
+            var _this = this;
+            var componentRef = this.hostView.createComponent(this.componentFactory);
+            this.component = componentRef.instance;
+            // Remove the component's DOM because it should be in the overlay container.
+            this.renderer.removeChild(this.renderer.parentNode(this.elementRef.nativeElement), componentRef.location.nativeElement);
+            this.component.setOverlayOrigin({ elementRef: this.origin || this.elementRef });
+            this.initProperties();
+            this.component.cmacsVisibleChange.pipe(operators.distinctUntilChanged(), operators.takeUntil(this.destroy$)).subscribe(function (visible) {
+                _this.internalVisible = visible;
+                _this.visibleChange.emit(visible);
+            });
+        };
+        NzTooltipBaseDirective.prototype.registerTriggers = function () {
+            var _this = this;
+            // When the method gets invoked, all properties has been synced to the dynamic component.
+            // After removing the old API, we can just check the directive's own `cmacsTrigger`.
+            var el = this.elementRef.nativeElement;
+            var trigger = this.trigger;
+            this.removeTriggerListeners();
+            if (trigger === 'hover') {
+                var overlayElement_1;
+                this.triggerDisposables.push(this.renderer.listen(el, 'mouseenter', function () {
+                    _this.delayEnterLeave(true, true, _this._mouseEnterDelay);
+                }));
+                this.triggerDisposables.push(this.renderer.listen(el, 'mouseleave', function () {
+                    var _a;
+                    _this.delayEnterLeave(true, false, _this._mouseLeaveDelay);
+                    if (((_a = _this.component) === null || _a === void 0 ? void 0 : _a.overlay.overlayRef) && !overlayElement_1) {
+                        overlayElement_1 = _this.component.overlay.overlayRef.overlayElement;
+                        _this.triggerDisposables.push(_this.renderer.listen(overlayElement_1, 'mouseenter', function () {
+                            _this.delayEnterLeave(false, true, _this._mouseEnterDelay);
+                        }));
+                        _this.triggerDisposables.push(_this.renderer.listen(overlayElement_1, 'mouseleave', function () {
+                            _this.delayEnterLeave(false, false, _this._mouseLeaveDelay);
+                        }));
+                    }
+                }));
+            }
+            else if (trigger === 'focus') {
+                this.triggerDisposables.push(this.renderer.listen(el, 'focus', function () { return _this.show(); }));
+                this.triggerDisposables.push(this.renderer.listen(el, 'blur', function () { return _this.hide(); }));
+            }
+            else if (trigger === 'click') {
+                this.triggerDisposables.push(this.renderer.listen(el, 'click', function (e) {
+                    e.preventDefault();
+                    _this.show();
+                }));
+            }
+            // Else do nothing because user wants to control the visibility programmatically.
+        };
+        NzTooltipBaseDirective.prototype.updatePropertiesByChanges = function (changes) {
+            this.updatePropertiesByKeys(Object.keys(changes));
+        };
+        NzTooltipBaseDirective.prototype.updatePropertiesByKeys = function (keys) {
+            var _this = this;
+            var _a;
+            var mappingProperties = Object.assign({
+                // common mappings
+                title: ['cmacsTitle', function () { return _this._title; }], directiveTitle: ['cmacsTitle', function () { return _this._title; }], content: ['cmacsContent', function () { return _this._content; }], directiveContent: ['cmacsContent', function () { return _this._content; }], trigger: ['cmacsTrigger', function () { return _this._trigger; }], placement: ['cmacsPlacement', function () { return _this._placement; }], visible: ['cmacsVisible', function () { return _this._visible; }], mouseEnterDelay: ['cmacsMouseEnterDelay', function () { return _this._mouseEnterDelay; }], mouseLeaveDelay: ['cmacsMouseLeaveDelay', function () { return _this._mouseLeaveDelay; }], overlayClassName: ['cmacsOverlayClassName', function () { return _this._overlayClassName; }], overlayStyle: ['cmacsOverlayStyle', function () { return _this._overlayStyle; }]
+            }, this.getProxyPropertyMap());
+            (keys || Object.keys(mappingProperties).filter(function (key) { return !key.startsWith('directive'); })).forEach(function (property) {
+                if (mappingProperties[property]) {
+                    var _b = __read(mappingProperties[property], 2), name = _b[0], valueFn = _b[1];
+                    _this.updateComponentValue(name, valueFn());
+                }
+            });
+            (_a = this.component) === null || _a === void 0 ? void 0 : _a.updateByDirective();
+        };
+        NzTooltipBaseDirective.prototype.initProperties = function () {
+            this.updatePropertiesByKeys();
+        };
+        NzTooltipBaseDirective.prototype.updateComponentValue = function (key, value) {
+            if (typeof value !== 'undefined') {
+                // @ts-ignore
+                this.component[key] = value;
+            }
+        };
+        NzTooltipBaseDirective.prototype.delayEnterLeave = function (isOrigin, isEnter, delay) {
+            var _this = this;
+            if (delay === void 0) { delay = -1; }
+            if (this.delayTimer) {
+                this.clearTogglingTimer();
+            }
+            else if (delay > 0) {
+                this.delayTimer = setTimeout(function () {
+                    _this.delayTimer = undefined;
+                    isEnter ? _this.show() : _this.hide();
+                }, delay * 1000);
+            }
+            else {
+                // `isOrigin` is used due to the tooltip will not hide immediately
+                // (may caused by the fade-out animation).
+                isEnter && isOrigin ? this.show() : this.hide();
+            }
+        };
+        NzTooltipBaseDirective.prototype.removeTriggerListeners = function () {
+            this.triggerDisposables.forEach(function (dispose) { return dispose(); });
+            this.triggerDisposables.length = 0;
+        };
+        NzTooltipBaseDirective.prototype.clearTogglingTimer = function () {
+            if (this.delayTimer) {
+                clearTimeout(this.delayTimer);
+                this.delayTimer = undefined;
+            }
+        };
+        return NzTooltipBaseDirective;
+    }());
+    NzTooltipBaseDirective.ɵfac = function NzTooltipBaseDirective_Factory(t) { return new (t || NzTooltipBaseDirective)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.ViewContainerRef), i0.ɵɵdirectiveInject(i0.ComponentFactoryResolver), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective)); };
+    NzTooltipBaseDirective.ɵdir = i0.ɵɵdefineDirective({ type: NzTooltipBaseDirective, features: [i0.ɵɵNgOnChangesFeature] });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(NzTooltipBaseDirective, [{
+                type: i0.Directive
+            }], function () { return [{ type: i0.ElementRef }, { type: i0.ViewContainerRef }, { type: i0.ComponentFactoryResolver }, { type: i0.Renderer2 }, { type: i1$2.NzNoAnimationDirective }]; }, null);
+    })();
+    // tslint:disable-next-line:directive-class-suffix
+    var CmacsTooltipBaseComponent = /** @class */ (function () {
+        function CmacsTooltipBaseComponent(cdr, directionality, noAnimation) {
+            this.cdr = cdr;
+            this.directionality = directionality;
+            this.noAnimation = noAnimation;
+            this.cmacsTitle = null;
+            this.cmacsContent = null;
+            this.cmacsOverlayStyle = {};
+            this.cmacsVisibleChange = new rxjs.Subject();
+            this._visible = false;
+            this._trigger = 'hover';
+            this.preferredPlacement = 'top';
+            this.dir = 'ltr';
+            this._classMap = {};
+            this._hasBackdrop = false;
+            this._prefix = 'ant-tooltip';
+            this._positions = __spread(i4$1.DEFAULT_TOOLTIP_POSITIONS);
+            this.destroy$ = new rxjs.Subject();
+        }
+        Object.defineProperty(CmacsTooltipBaseComponent.prototype, "cmacsVisible", {
+            get: function () {
+                return this._visible;
+            },
+            set: function (value) {
+                var visible = util.toBoolean(value);
+                if (this._visible !== visible) {
+                    this._visible = visible;
+                    this.cmacsVisibleChange.next(visible);
+                }
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(CmacsTooltipBaseComponent.prototype, "cmacsTrigger", {
+            get: function () {
+                return this._trigger;
+            },
+            set: function (value) {
+                this._trigger = value;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(CmacsTooltipBaseComponent.prototype, "cmacsPlacement", {
+            set: function (value) {
+                var preferredPosition = value.map(function (placement) { return i4$1.POSITION_MAP[placement]; });
+                this._positions = __spread(preferredPosition, i4$1.DEFAULT_TOOLTIP_POSITIONS);
+            },
+            enumerable: false,
+            configurable: true
+        });
+        CmacsTooltipBaseComponent.prototype.ngOnInit = function () {
+            var _this = this;
+            var _a;
+            (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(operators.takeUntil(this.destroy$)).subscribe(function (direction) {
+                _this.dir = direction;
+                _this.cdr.detectChanges();
+            });
+            this.dir = this.directionality.value;
+        };
+        CmacsTooltipBaseComponent.prototype.ngOnDestroy = function () {
+            this.cmacsVisibleChange.complete();
+            this.destroy$.next();
+            this.destroy$.complete();
+        };
+        CmacsTooltipBaseComponent.prototype.show = function () {
+            if (this.cmacsVisible) {
+                return;
+            }
+            if (!this.isEmpty()) {
+                this.cmacsVisible = true;
+                this.cmacsVisibleChange.next(true);
+                this.cdr.detectChanges();
+            }
+            // for ltr for overlay to display tooltip in correct placement in rtl direction.
+            if (this.origin && this.overlay && this.overlay.overlayRef && this.overlay.overlayRef.getDirection() === 'rtl') {
+                this.overlay.overlayRef.setDirection('ltr');
+            }
+        };
+        CmacsTooltipBaseComponent.prototype.hide = function () {
+            if (!this.cmacsVisible) {
+                return;
+            }
+            this.cmacsVisible = false;
+            this.cmacsVisibleChange.next(false);
+            this.cdr.detectChanges();
+        };
+        CmacsTooltipBaseComponent.prototype.updateByDirective = function () {
+            var _this = this;
+            this.updateStyles();
+            this.cdr.detectChanges();
+            Promise.resolve().then(function () {
+                _this.updatePosition();
+                _this.updateVisibilityByTitle();
+            });
+        };
+        /**
+         * Force the component to update its position.
+         */
+        CmacsTooltipBaseComponent.prototype.updatePosition = function () {
+            if (this.origin && this.overlay && this.overlay.overlayRef) {
+                this.overlay.overlayRef.updatePosition();
+            }
+        };
+        CmacsTooltipBaseComponent.prototype.onPositionChange = function (position) {
+            this.preferredPlacement = i4$1.getPlacementName(position);
+            this.updateStyles();
+            // We have to trigger immediate change detection or the element would blink.
+            this.cdr.detectChanges();
+        };
+        CmacsTooltipBaseComponent.prototype.updateStyles = function () {
+            var _b;
+            this._classMap = (_b = {},
+                _b[this.cmacsOverlayClassName] = true,
+                _b[this._prefix + "-placement-" + this.preferredPlacement] = true,
+                _b);
+        };
+        CmacsTooltipBaseComponent.prototype.setOverlayOrigin = function (origin) {
+            this.origin = origin;
+            this.cdr.markForCheck();
+        };
+        CmacsTooltipBaseComponent.prototype.onClickOutside = function (event) {
+            if (!this.origin.elementRef.nativeElement.contains(event.target)) {
+                this.hide();
+            }
+        };
+        /**
+         * Hide the component while the content is empty.
+         */
+        CmacsTooltipBaseComponent.prototype.updateVisibilityByTitle = function () {
+            if (this.isEmpty()) {
+                this.hide();
+            }
+        };
+        return CmacsTooltipBaseComponent;
+    }());
+    CmacsTooltipBaseComponent.ɵfac = function CmacsTooltipBaseComponent_Factory(t) { return new (t || CmacsTooltipBaseComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i2.Directionality, 8), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective)); };
+    CmacsTooltipBaseComponent.ɵdir = i0.ɵɵdefineDirective({ type: CmacsTooltipBaseComponent, viewQuery: function CmacsTooltipBaseComponent_Query(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵviewQuery(_c0$p, 1);
+            }
+            if (rf & 2) {
+                var _t = void 0;
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.overlay = _t.first);
+            }
+        } });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsTooltipBaseComponent, [{
+                type: i0.Directive
+            }], function () {
+            return [{ type: i0.ChangeDetectorRef }, { type: i2.Directionality, decorators: [{
+                            type: i0.Optional
+                        }] }, { type: i1$2.NzNoAnimationDirective }];
+        }, { overlay: [{
+                    type: i0.ViewChild,
+                    args: ['overlay', { static: false }]
+                }] });
+    })();
+    function isTooltipEmpty(value) {
+        return value instanceof i0.TemplateRef ? false : value === '' || !util.isNotNil(value);
+    }
+
+    function CmacsToolTipComponent_ng_template_0_ng_container_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r2 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate(ctx_r2.cmacsTitle);
+        }
+    }
+    function CmacsToolTipComponent_ng_template_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 2);
+            i0.ɵɵelementStart(1, "div", 3);
+            i0.ɵɵelementStart(2, "div", 4);
+            i0.ɵɵelement(3, "span", 5);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(4, "div", 6);
+            i0.ɵɵtemplate(5, CmacsToolTipComponent_ng_template_0_ng_container_5_Template, 2, 1, "ng-container", 7);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("ant-tooltip-rtl", ctx_r1.dir === "rtl");
+            i0.ɵɵproperty("ngClass", ctx_r1._classMap)("ngStyle", ctx_r1.cmacsOverlayStyle)("@.disabled", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("@zoomBigMotion", "active");
+            i0.ɵɵadvance(3);
+            i0.ɵɵproperty("ngStyle", ctx_r1._contentStyleMap);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngStyle", ctx_r1._contentStyleMap);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("nzStringTemplateOutlet", ctx_r1.cmacsTitle);
+        }
+    }
+    var CmacsTooltipDirective = /** @class */ (function (_super) {
+        __extends(CmacsTooltipDirective, _super);
+        function CmacsTooltipDirective(elementRef, hostView, resolver, renderer, noAnimation) {
+            var _this = _super.call(this, elementRef, hostView, resolver, renderer, noAnimation) || this;
+            _this.trigger = 'hover';
+            _this.placement = 'top';
+            // tslint:disable-next-line:no-output-rename
+            _this.visibleChange = new i0.EventEmitter();
+            _this.componentFactory = _this.resolver.resolveComponentFactory(CmacsToolTipComponent);
+            return _this;
+        }
+        CmacsTooltipDirective.prototype.getProxyPropertyMap = function () {
+            var _this = this;
+            return {
+                cmacsTooltipColor: ['cmacsColor', function () { return _this.cmacsTooltipColor; }]
+            };
+        };
+        return CmacsTooltipDirective;
+    }(NzTooltipBaseDirective));
+    CmacsTooltipDirective.ɵfac = function CmacsTooltipDirective_Factory(t) { return new (t || CmacsTooltipDirective)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.ViewContainerRef), i0.ɵɵdirectiveInject(i0.ComponentFactoryResolver), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective, 9)); };
+    CmacsTooltipDirective.ɵdir = i0.ɵɵdefineDirective({ type: CmacsTooltipDirective, selectors: [["", "cmacs-tooltip", ""]], hostVars: 2, hostBindings: function CmacsTooltipDirective_HostBindings(rf, ctx) {
+            if (rf & 2) {
+                i0.ɵɵclassProp("ant-tooltip-open", ctx.visible);
+            }
+        }, inputs: { title: ["cmacsTooltipTitle", "title"], directiveTitle: ["cmacs-tooltip", "directiveTitle"], trigger: ["cmacsTooltipTrigger", "trigger"], placement: ["cmacsTooltipPlacement", "placement"], origin: ["cmacsTooltipOrigin", "origin"], visible: ["cmacsTooltipVisible", "visible"], mouseEnterDelay: ["cmacsTooltipMouseEnterDelay", "mouseEnterDelay"], mouseLeaveDelay: ["cmacsTooltipMouseLeaveDelay", "mouseLeaveDelay"], overlayClassName: ["cmacsTooltipOverlayClassName", "overlayClassName"], overlayStyle: ["cmacsTooltipOverlayStyle", "overlayStyle"], cmacsTooltipColor: "cmacsTooltipColor" }, outputs: { visibleChange: "cmacsTooltipVisibleChange" }, exportAs: ["cmacsTooltip"], features: [i0.ɵɵInheritDefinitionFeature] });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsTooltipDirective, [{
+                type: i0.Directive,
+                args: [{
+                        selector: '[cmacs-tooltip]',
+                        exportAs: 'cmacsTooltip',
+                        host: {
+                            '[class.ant-tooltip-open]': 'visible'
+                        }
+                    }]
+            }], function () {
+            return [{ type: i0.ElementRef }, { type: i0.ViewContainerRef }, { type: i0.ComponentFactoryResolver }, { type: i0.Renderer2 }, { type: i1$2.NzNoAnimationDirective, decorators: [{
+                            type: i0.Host
+                        }, {
+                            type: i0.Optional
+                        }] }];
+        }, { title: [{
+                    type: i0.Input,
+                    args: ['cmacsTooltipTitle']
+                }], directiveTitle: [{
+                    type: i0.Input,
+                    args: ['cmacs-tooltip']
+                }], trigger: [{
+                    type: i0.Input,
+                    args: ['cmacsTooltipTrigger']
+                }], placement: [{
+                    type: i0.Input,
+                    args: ['cmacsTooltipPlacement']
+                }], origin: [{
+                    type: i0.Input,
+                    args: ['cmacsTooltipOrigin']
+                }], visible: [{
+                    type: i0.Input,
+                    args: ['cmacsTooltipVisible']
+                }], mouseEnterDelay: [{
+                    type: i0.Input,
+                    args: ['cmacsTooltipMouseEnterDelay']
+                }], mouseLeaveDelay: [{
+                    type: i0.Input,
+                    args: ['cmacsTooltipMouseLeaveDelay']
+                }], overlayClassName: [{
+                    type: i0.Input,
+                    args: ['cmacsTooltipOverlayClassName']
+                }], overlayStyle: [{
+                    type: i0.Input,
+                    args: ['cmacsTooltipOverlayStyle']
+                }], cmacsTooltipColor: [{
+                    type: i0.Input
+                }], visibleChange: [{
+                    type: i0.Output,
+                    args: ['cmacsTooltipVisibleChange']
+                }] });
+    })();
+    var CmacsToolTipComponent = /** @class */ (function (_super) {
+        __extends(CmacsToolTipComponent, _super);
+        function CmacsToolTipComponent(cdr, directionality, noAnimation) {
+            var _this = _super.call(this, cdr, directionality, noAnimation) || this;
+            _this.noAnimation = noAnimation;
+            _this.cmacsTitle = null;
+            _this._contentStyleMap = {};
+            return _this;
+        }
+        CmacsToolTipComponent.prototype.isEmpty = function () {
+            return isTooltipEmpty(this.cmacsTitle);
+        };
+        CmacsToolTipComponent.prototype.updateStyles = function () {
+            var _a;
+            var isColorPreset = this.cmacsColor && color.isPresetColor(this.cmacsColor);
+            this._classMap = (_a = {},
+                _a[this.cmacsOverlayClassName] = true,
+                _a[this._prefix + "-placement-" + this.preferredPlacement] = true,
+                _a[this._prefix + "-" + this.cmacsColor] = isColorPreset,
+                _a);
+            this._contentStyleMap = {
+                backgroundColor: !!this.cmacsColor && !isColorPreset ? this.cmacsColor : null
+            };
+        };
+        return CmacsToolTipComponent;
+    }(CmacsTooltipBaseComponent));
+    CmacsToolTipComponent.ɵfac = function CmacsToolTipComponent_Factory(t) { return new (t || CmacsToolTipComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i2.Directionality, 8), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective, 9)); };
+    CmacsToolTipComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsToolTipComponent, selectors: [["cmacs-tooltip"]], exportAs: ["cmacsTooltipComponent"], features: [i0.ɵɵInheritDefinitionFeature], decls: 2, vars: 4, consts: [["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayPositions", "cdkConnectedOverlayPush", "overlayOutsideClick", "detach", "positionChange"], ["overlay", "cdkConnectedOverlay"], [1, "ant-tooltip", 3, "ngClass", "ngStyle", "nzNoAnimation"], [1, "ant-tooltip-content"], [1, "ant-tooltip-arrow"], [1, "ant-tooltip-arrow-content", 3, "ngStyle"], [1, "ant-tooltip-inner", 3, "ngStyle"], [4, "nzStringTemplateOutlet"]], template: function CmacsToolTipComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵtemplate(0, CmacsToolTipComponent_ng_template_0_Template, 6, 10, "ng-template", 0, 1, i0.ɵɵtemplateRefExtractor);
+                i0.ɵɵlistener("overlayOutsideClick", function CmacsToolTipComponent_Template_ng_template_overlayOutsideClick_0_listener($event) { return ctx.onClickOutside($event); })("detach", function CmacsToolTipComponent_Template_ng_template_detach_0_listener() { return ctx.hide(); })("positionChange", function CmacsToolTipComponent_Template_ng_template_positionChange_0_listener($event) { return ctx.onPositionChange($event); });
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx._visible)("cdkConnectedOverlayPositions", ctx._positions)("cdkConnectedOverlayPush", true);
+            }
+        }, directives: [i1$4.CdkConnectedOverlay, i4$1.NzConnectedOverlayDirective, i2$1.NgClass, i2$1.NgStyle, i1$2.NzNoAnimationDirective, i6.NzStringTemplateOutletDirective], styles: [".ant-tooltip-content{background-color:#0d1e3b;color:#fff;max-width:180px;border-radius:3px}.ant-tooltip-placement-top .ant-tooltip-arrow{border-top-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-topLeft .ant-tooltip-arrow,.ant-tooltip-placement-topRight .ant-tooltip-arrow{border-top-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-left .ant-tooltip-arrow,.ant-tooltip-placement-leftBottom .ant-tooltip-arrow,.ant-tooltip-placement-leftTop .ant-tooltip-arrow{border-left-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-right .ant-tooltip-arrow,.ant-tooltip-placement-rightBottom .ant-tooltip-arrow,.ant-tooltip-placement-rightTop .ant-tooltip-arrow{border-right-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-bottom .ant-tooltip-arrow{border-bottom-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,.ant-tooltip-placement-bottomRight .ant-tooltip-arrow{border-bottom-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-inner{background-color:#0d1e3b;border-radius:3px;box-shadow:none;padding:8px 10px;min-height:34px}"], encapsulation: 2, data: { animation: [animation.zoomBigMotion] }, changeDetection: 0 });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsToolTipComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-tooltip',
+                        exportAs: 'cmacsTooltipComponent',
+                        changeDetection: i0.ChangeDetectionStrategy.OnPush,
+                        encapsulation: i0.ViewEncapsulation.None,
+                        animations: [animation.zoomBigMotion],
+                        styleUrls: ['./cmacs-tooltip.component.css'],
+                        template: "\n    <ng-template\n      #overlay=\"cdkConnectedOverlay\"\n      cdkConnectedOverlay\n      nzConnectedOverlay\n      [cdkConnectedOverlayOrigin]=\"origin\"\n      [cdkConnectedOverlayOpen]=\"_visible\"\n      [cdkConnectedOverlayPositions]=\"_positions\"\n      [cdkConnectedOverlayPush]=\"true\"\n      (overlayOutsideClick)=\"onClickOutside($event)\"\n      (detach)=\"hide()\"\n      (positionChange)=\"onPositionChange($event)\"\n    >\n      <div\n        class=\"ant-tooltip\"\n        [class.ant-tooltip-rtl]=\"dir === 'rtl'\"\n        [ngClass]=\"_classMap\"\n        [ngStyle]=\"cmacsOverlayStyle\"\n        [@.disabled]=\"noAnimation?.nzNoAnimation\"\n        [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n        [@zoomBigMotion]=\"'active'\"\n      >\n        <div class=\"ant-tooltip-content\">\n          <div class=\"ant-tooltip-arrow\">\n            <span class=\"ant-tooltip-arrow-content\" [ngStyle]=\"_contentStyleMap\"></span>\n          </div>\n          <div class=\"ant-tooltip-inner\" [ngStyle]=\"_contentStyleMap\">\n            <ng-container *nzStringTemplateOutlet=\"cmacsTitle\">{{ cmacsTitle }}</ng-container>\n          </div>\n        </div>\n      </div>\n    </ng-template>\n  ",
+                        preserveWhitespaces: false
+                    }]
+            }], function () {
+            return [{ type: i0.ChangeDetectorRef }, { type: i2.Directionality, decorators: [{
+                            type: i0.Optional
+                        }] }, { type: i1$2.NzNoAnimationDirective, decorators: [{
+                            type: i0.Host
+                        }, {
+                            type: i0.Optional
+                        }] }];
+        }, null);
+    })();
+
     function CmacsSectionComponent_i_4_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelement(0, "i", 7);
@@ -8698,7 +9276,7 @@
             i0.ɵɵtextInterpolate(ctx_r3.extra);
         }
     }
-    var _c0$p = function (a0) { return { data: a0 }; };
+    var _c0$q = function (a0) { return { data: a0 }; };
     function CmacsSectionComponent_div_8_Template(rf, ctx) {
         if (rf & 1) {
             var _r5_1 = i0.ɵɵgetCurrentView();
@@ -8706,14 +9284,14 @@
             i0.ɵɵtemplate(1, CmacsSectionComponent_div_8_ng_container_1_Template, 2, 1, "ng-container", 9);
             i0.ɵɵelementStart(2, "button", 10);
             i0.ɵɵlistener("click", function CmacsSectionComponent_div_8_Template_button_click_2_listener() { i0.ɵɵrestoreView(_r5_1); var ctx_r4 = i0.ɵɵnextContext(); return ctx_r4.collapseSection(); });
-            i0.ɵɵelement(3, "i");
+            i0.ɵɵelement(3, "i", 11);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var ctx_r1 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r1.extra)("ngTemplateOutletContext", i0.ɵɵpureFunction1(7, _c0$p, ctx_r1.extraData));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r1.extra)("ngTemplateOutletContext", i0.ɵɵpureFunction1(7, _c0$q, ctx_r1.extraData));
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("action", true);
             i0.ɵɵadvance(1);
@@ -8722,7 +9300,7 @@
     }
     function CmacsSectionComponent_div_9_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 11);
+            i0.ɵɵelementStart(0, "div", 12);
             i0.ɵɵprojection(1);
             i0.ɵɵelementEnd();
         }
@@ -8775,7 +9353,7 @@
         return CmacsSectionComponent;
     }());
     CmacsSectionComponent.ɵfac = function CmacsSectionComponent_Factory(t) { return new (t || CmacsSectionComponent)(); };
-    CmacsSectionComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsSectionComponent, selectors: [["cmacs-section"]], inputs: { extra: "extra", widgetSpan: "widgetSpan", title: "title", titleIcon: "titleIcon", showCollapse: "showCollapse", extraData: "extraData", collapsed: "collapsed", validate: "validate" }, outputs: { onbeforecollapse: "onbeforecollapse", oncollapse: "oncollapse", onbeforeexpand: "onbeforeexpand", onexpand: "onexpand" }, features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1$a, decls: 10, vars: 5, consts: [["nz-col", "", 1, "widget-container", 3, "nzSpan"], ["nz-row", "", "nzType", "flex", "nzJustify", "space-between", 1, "widget-container-bar"], ["nz-col", ""], ["nz-row", "", 1, "widget-container-bar-title"], [3, "ngClass", 4, "ngIf"], ["nz-row", "", "class", "widget-container-bar-btns", 4, "ngIf"], ["class", "widget-container-content", 4, "ngIf"], [3, "ngClass"], ["nz-row", "", 1, "widget-container-bar-btns"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-button", "", "aria-label", "collapse/expand", "role", "button", "ghost", "", 1, "log-action-btn", 3, "action", "click"], [1, "widget-container-content"]], template: function CmacsSectionComponent_Template(rf, ctx) {
+    CmacsSectionComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsSectionComponent, selectors: [["cmacs-section"]], inputs: { extra: "extra", widgetSpan: "widgetSpan", title: "title", titleIcon: "titleIcon", showCollapse: "showCollapse", extraData: "extraData", collapsed: "collapsed", validate: "validate" }, outputs: { onbeforecollapse: "onbeforecollapse", oncollapse: "oncollapse", onbeforeexpand: "onbeforeexpand", onexpand: "onexpand" }, features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1$a, decls: 10, vars: 5, consts: [["nz-col", "", 1, "widget-container", 3, "nzSpan"], ["nz-row", "", "nzType", "flex", "nzJustify", "space-between", 1, "widget-container-bar"], ["nz-col", ""], ["nz-row", "", 1, "widget-container-bar-title"], [3, "ngClass", 4, "ngIf"], ["nz-row", "", "class", "widget-container-bar-btns", 4, "ngIf"], ["class", "widget-container-content", 4, "ngIf"], [3, "ngClass"], ["nz-row", "", 1, "widget-container-bar-btns"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-button", "", "aria-label", "collapse/expand", "role", "button", "ghost", "", 1, "log-action-btn", 3, "action", "click"], ["cmacsTooltipPlacement", "bottom", "cmacs-tooltip", "", "cmacsTooltipTitle", "collapse/expand"], [1, "widget-container-content"]], template: function CmacsSectionComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "div", 0);
@@ -8806,7 +9384,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", !ctx.collapsed);
             }
-        }, directives: [i6$1.NzColDirective, i6$1.NzRowDirective, i2$1.NgIf, i2$1.NgClass, i2$1.NgTemplateOutlet, CmacsButtonComponent], styles: [".widget-container[_ngcontent-%COMP%]{border-top:3px solid #00cda1;padding:20px 40px 30px;margin-bottom:40px;background-color:#f6f7fb;box-shadow:0 2px 4px rgba(0,0,0,.1)}.widget-container-bar-title[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{font-size:20px;vertical-align:sub}.widget-container-bar-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{margin-left:8px;font-family:Roboto-Medium;font-size:14px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#3b3f46}.widget-container-bar[_ngcontent-%COMP%]{margin-bottom:20px}.widget-container-content[_ngcontent-%COMP%]{overflow-x:auto;overflow-y:hidden}"], changeDetection: 0 });
+        }, directives: [i6$1.NzColDirective, i6$1.NzRowDirective, i2$1.NgIf, i2$1.NgClass, i2$1.NgTemplateOutlet, CmacsButtonComponent, CmacsTooltipDirective], styles: [".widget-container[_ngcontent-%COMP%]{border-top:3px solid #00cda1;padding:20px 40px 30px;margin-bottom:40px;background-color:#f6f7fb;box-shadow:0 2px 4px rgba(0,0,0,.1)}.widget-container-bar-title[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{font-size:20px;vertical-align:sub}.widget-container-bar-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{margin-left:8px;font-family:Roboto-Medium;font-size:14px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#3b3f46}.widget-container-bar[_ngcontent-%COMP%]{margin-bottom:20px}.widget-container-content[_ngcontent-%COMP%]{overflow-x:auto;overflow-y:hidden}"], changeDetection: 0 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsSectionComponent, [{
                 type: i0.Component,
@@ -8844,7 +9422,7 @@
                 }] });
     })();
 
-    var _c0$q = ["*"];
+    var _c0$r = ["*"];
     /** should add nz-row directive to host, track https://github.com/angular/angular/issues/8785 **/
     var CmacsFormItemComponent = /** @class */ (function () {
         function CmacsFormItemComponent(elementRef, renderer, cdr) {
@@ -8878,7 +9456,7 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("ant-form-item-has-success", ctx.status === "success")("ant-form-item-has-warning", ctx.status === "warning")("ant-form-item-has-error", ctx.status === "error")("ant-form-item-is-validating", ctx.status === "validating")("ant-form-item-has-feedback", ctx.hasFeedback && ctx.status)("ant-form-item-with-help", ctx.withHelpClass);
             }
-        }, exportAs: ["cmacsFormItem"], ngContentSelectors: _c0$q, decls: 1, vars: 0, template: function CmacsFormItemComponent_Template(rf, ctx) {
+        }, exportAs: ["cmacsFormItem"], ngContentSelectors: _c0$r, decls: 1, vars: 0, template: function CmacsFormItemComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵprojection(0);
@@ -9016,7 +9594,7 @@
             i0.ɵɵtextInterpolate(ctx_r3.innerTip);
         }
     }
-    var _c0$r = function (a1) { return ["ant-form-item-explain", a1]; };
+    var _c0$s = function (a1) { return ["ant-form-item-explain", a1]; };
     var _c1$b = function (a0) { return { $implicit: a0 }; };
     function CmacsFormControlComponent_div_5_Template(rf, ctx) {
         if (rf & 1) {
@@ -9028,7 +9606,7 @@
         }
         if (rf & 2) {
             var ctx_r1 = i0.ɵɵnextContext();
-            i0.ɵɵproperty("ngClass", i0.ɵɵpureFunction1(4, _c0$r, "ant-form-item-explain-" + ctx_r1.status));
+            i0.ɵɵproperty("ngClass", i0.ɵɵpureFunction1(4, _c0$s, "ant-form-item-explain-" + ctx_r1.status));
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("@helpMotion", undefined);
             i0.ɵɵadvance(1);
@@ -9351,7 +9929,7 @@
             i0.ɵɵproperty("nzStringTemplateOutlet", ctx_r0.tooltipIcon.type);
         }
     }
-    var _c0$s = ["*"];
+    var _c0$t = ["*"];
     function toTooltipIcon(value) {
         var icon = typeof value === 'string' ? { type: value } : value;
         return Object.assign(Object.assign({}, DefaultTooltipIcon), icon);
@@ -9411,7 +9989,7 @@
         return CmacsFormLabelComponent;
     }());
     CmacsFormLabelComponent.ɵfac = function CmacsFormLabelComponent_Factory(t) { return new (t || CmacsFormLabelComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(CmacsFormDirective, 12)); };
-    CmacsFormLabelComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsFormLabelComponent, selectors: [["cmacs-form-label"]], inputs: { cmacsFor: "cmacsFor", cmacsRequired: "cmacsRequired", cmacsNoColon: "cmacsNoColon", cmacsTooltipTitle: "cmacsTooltipTitle", cmacsTooltipIcon: "cmacsTooltipIcon" }, exportAs: ["cmacsFormLabel"], ngContentSelectors: _c0$s, decls: 3, vars: 6, consts: [["class", "ant-form-item-tooltip", "nz-tooltip", "", 3, "nzTooltipTitle", 4, "ngIf"], ["nz-tooltip", "", 1, "ant-form-item-tooltip", 3, "nzTooltipTitle"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", 3, "nzType", "nzTheme"]], template: function CmacsFormLabelComponent_Template(rf, ctx) {
+    CmacsFormLabelComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsFormLabelComponent, selectors: [["cmacs-form-label"]], inputs: { cmacsFor: "cmacsFor", cmacsRequired: "cmacsRequired", cmacsNoColon: "cmacsNoColon", cmacsTooltipTitle: "cmacsTooltipTitle", cmacsTooltipIcon: "cmacsTooltipIcon" }, exportAs: ["cmacsFormLabel"], ngContentSelectors: _c0$t, decls: 3, vars: 6, consts: [["class", "ant-form-item-tooltip", "nz-tooltip", "", 3, "nzTooltipTitle", 4, "ngIf"], ["nz-tooltip", "", 1, "ant-form-item-tooltip", 3, "nzTooltipTitle"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", 3, "nzType", "nzTheme"]], template: function CmacsFormLabelComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "label");
@@ -9459,7 +10037,7 @@
                 }] });
     })();
 
-    var _c0$t = ["*"];
+    var _c0$u = ["*"];
     var CmacsFormTextComponent = /** @class */ (function () {
         function CmacsFormTextComponent(elementRef, renderer) {
             this.elementRef = elementRef;
@@ -9469,7 +10047,7 @@
         return CmacsFormTextComponent;
     }());
     CmacsFormTextComponent.ɵfac = function CmacsFormTextComponent_Factory(t) { return new (t || CmacsFormTextComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2)); };
-    CmacsFormTextComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsFormTextComponent, selectors: [["cmacs-form-text"]], exportAs: ["cmacsFormText"], ngContentSelectors: _c0$t, decls: 1, vars: 0, template: function CmacsFormTextComponent_Template(rf, ctx) {
+    CmacsFormTextComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsFormTextComponent, selectors: [["cmacs-form-text"]], exportAs: ["cmacsFormText"], ngContentSelectors: _c0$u, decls: 1, vars: 0, template: function CmacsFormTextComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵprojection(0);
@@ -9489,7 +10067,7 @@
             }], function () { return [{ type: i0.ElementRef }, { type: i0.Renderer2 }]; }, null);
     })();
 
-    var _c0$u = ["*"];
+    var _c0$v = ["*"];
     var CmacsFormSplitComponent = /** @class */ (function () {
         function CmacsFormSplitComponent(elementRef, renderer) {
             this.elementRef = elementRef;
@@ -9499,7 +10077,7 @@
         return CmacsFormSplitComponent;
     }());
     CmacsFormSplitComponent.ɵfac = function CmacsFormSplitComponent_Factory(t) { return new (t || CmacsFormSplitComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2)); };
-    CmacsFormSplitComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsFormSplitComponent, selectors: [["cmacs-form-split"]], exportAs: ["cmacsFormSplit"], ngContentSelectors: _c0$u, decls: 1, vars: 0, template: function CmacsFormSplitComponent_Template(rf, ctx) {
+    CmacsFormSplitComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsFormSplitComponent, selectors: [["cmacs-form-split"]], exportAs: ["cmacsFormSplit"], ngContentSelectors: _c0$v, decls: 1, vars: 0, template: function CmacsFormSplitComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵprojection(0);
@@ -9905,7 +10483,7 @@
             i0.ɵɵproperty("ngForOf", ctx_r0.breadcrumbs);
         }
     }
-    var _c0$v = ["*"];
+    var _c0$w = ["*"];
     var CmacsBreadCrumbComponent = /** @class */ (function () {
         function CmacsBreadCrumbComponent(injector, ngZone, cdr, elementRef, renderer, directionality) {
             this.injector = injector;
@@ -10018,7 +10596,7 @@
         return CmacsBreadCrumbComponent;
     }());
     CmacsBreadCrumbComponent.ɵfac = function CmacsBreadCrumbComponent_Factory(t) { return new (t || CmacsBreadCrumbComponent)(i0.ɵɵdirectiveInject(i0.Injector), i0.ɵɵdirectiveInject(i0.NgZone), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i2.Directionality, 8)); };
-    CmacsBreadCrumbComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsBreadCrumbComponent, selectors: [["cmacs-breadcrumb"]], inputs: { autoGenerate: "autoGenerate", separator: "separator", routeLabel: "routeLabel", routeLabelFn: "routeLabelFn" }, exportAs: ["cmacsBreadcrumb"], ngContentSelectors: _c0$v, decls: 2, vars: 1, consts: [[4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "click"]], template: function CmacsBreadCrumbComponent_Template(rf, ctx) {
+    CmacsBreadCrumbComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsBreadCrumbComponent, selectors: [["cmacs-breadcrumb"]], inputs: { autoGenerate: "autoGenerate", separator: "separator", routeLabel: "routeLabel", routeLabelFn: "routeLabelFn" }, exportAs: ["cmacsBreadcrumb"], ngContentSelectors: _c0$w, decls: 2, vars: 1, consts: [[4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "click"]], template: function CmacsBreadCrumbComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵprojection(0);
@@ -10115,7 +10693,7 @@
             i0.ɵɵproperty("nzStringTemplateOutlet", ctx_r3.nzBreadCrumbComponent.separator);
         }
     }
-    var _c0$w = ["*"];
+    var _c0$x = ["*"];
     var CmacsBreadCrumbItemComponent = /** @class */ (function () {
         function CmacsBreadCrumbItemComponent(nzBreadCrumbComponent) {
             this.nzBreadCrumbComponent = nzBreadCrumbComponent;
@@ -10123,7 +10701,7 @@
         return CmacsBreadCrumbItemComponent;
     }());
     CmacsBreadCrumbItemComponent.ɵfac = function CmacsBreadCrumbItemComponent_Factory(t) { return new (t || CmacsBreadCrumbItemComponent)(i0.ɵɵdirectiveInject(CmacsBreadCrumbComponent)); };
-    CmacsBreadCrumbItemComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsBreadCrumbItemComponent, selectors: [["cmacs-breadcrumb-item"]], inputs: { overlay: "overlay" }, exportAs: ["cmacsBreadcrumbItem"], ngContentSelectors: _c0$w, decls: 4, vars: 3, consts: [[4, "ngIf", "ngIfElse"], ["noMenuTpl", ""], ["class", "ant-breadcrumb-separator", 4, "ngIf"], ["cmacs-dropdown", "", 1, "ant-breadcrumb-overlay-link", 3, "cmacsDropdownMenu"], [3, "ngTemplateOutlet"], ["nz-icon", "", "nzType", "down", 4, "ngIf"], ["nz-icon", "", "nzType", "down"], [1, "ant-breadcrumb-link"], [1, "ant-breadcrumb-separator"], [4, "nzStringTemplateOutlet"]], template: function CmacsBreadCrumbItemComponent_Template(rf, ctx) {
+    CmacsBreadCrumbItemComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsBreadCrumbItemComponent, selectors: [["cmacs-breadcrumb-item"]], inputs: { overlay: "overlay" }, exportAs: ["cmacsBreadcrumbItem"], ngContentSelectors: _c0$x, decls: 4, vars: 3, consts: [[4, "ngIf", "ngIfElse"], ["noMenuTpl", ""], ["class", "ant-breadcrumb-separator", 4, "ngIf"], ["cmacs-dropdown", "", 1, "ant-breadcrumb-overlay-link", 3, "cmacsDropdownMenu"], [3, "ngTemplateOutlet"], ["nz-icon", "", "nzType", "down", 4, "ngIf"], ["nz-icon", "", "nzType", "down"], [1, "ant-breadcrumb-link"], [1, "ant-breadcrumb-separator"], [4, "nzStringTemplateOutlet"]], template: function CmacsBreadCrumbItemComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵtemplate(0, CmacsBreadCrumbItemComponent_ng_container_0_Template, 4, 3, "ng-container", 0);
@@ -10154,14 +10732,14 @@
                 }] });
     })();
 
-    var _c0$x = ["*"];
+    var _c0$y = ["*"];
     var CmacsBreadCrumbSeparatorComponent = /** @class */ (function () {
         function CmacsBreadCrumbSeparatorComponent() {
         }
         return CmacsBreadCrumbSeparatorComponent;
     }());
     CmacsBreadCrumbSeparatorComponent.ɵfac = function CmacsBreadCrumbSeparatorComponent_Factory(t) { return new (t || CmacsBreadCrumbSeparatorComponent)(); };
-    CmacsBreadCrumbSeparatorComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsBreadCrumbSeparatorComponent, selectors: [["cmacs-breadcrumb-separator"]], exportAs: ["cmacsBreadcrumbSeparator"], ngContentSelectors: _c0$x, decls: 2, vars: 0, consts: [[1, "ant-breadcrumb-separator"]], template: function CmacsBreadCrumbSeparatorComponent_Template(rf, ctx) {
+    CmacsBreadCrumbSeparatorComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsBreadCrumbSeparatorComponent, selectors: [["cmacs-breadcrumb-separator"]], exportAs: ["cmacsBreadcrumbSeparator"], ngContentSelectors: _c0$y, decls: 2, vars: 0, consts: [[1, "ant-breadcrumb-separator"]], template: function CmacsBreadCrumbSeparatorComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "span", 0);
@@ -10571,7 +11149,7 @@
             i0.ɵɵelementContainer(0);
         }
     }
-    var _c0$y = function (a0) { return { $implicit: a0 }; };
+    var _c0$z = function (a0) { return { $implicit: a0 }; };
     function DecadeTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
@@ -10581,7 +11159,7 @@
         if (rf & 2) {
             var cell_r9 = i0.ɵɵnextContext(2).$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$y, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$z, cell_r9.value));
         }
     }
     function DecadeTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) {
@@ -10649,7 +11227,7 @@
         if (rf & 2) {
             var cell_r9 = i0.ɵɵnextContext(2).$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$y, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$z, cell_r9.value));
         }
     }
     function DecadeTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) {
@@ -10675,7 +11253,7 @@
             i0.ɵɵadvance(1);
             i0.ɵɵclassMapInterpolate1("", ctx_r22.prefixCls, "-date-content");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(9, _c0$y, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(9, _c0$z, cell_r9.value));
         }
     }
     function DecadeTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) {
@@ -11026,7 +11604,7 @@
             i0.ɵɵelementContainer(0);
         }
     }
-    var _c0$z = function (a0) { return { $implicit: a0 }; };
+    var _c0$A = function (a0) { return { $implicit: a0 }; };
     function YearTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
@@ -11036,7 +11614,7 @@
         if (rf & 2) {
             var cell_r9 = i0.ɵɵnextContext(2).$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$z, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$A, cell_r9.value));
         }
     }
     function YearTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) {
@@ -11104,7 +11682,7 @@
         if (rf & 2) {
             var cell_r9 = i0.ɵɵnextContext(2).$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$z, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$A, cell_r9.value));
         }
     }
     function YearTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) {
@@ -11130,7 +11708,7 @@
             i0.ɵɵadvance(1);
             i0.ɵɵclassMapInterpolate1("", ctx_r22.prefixCls, "-date-content");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(9, _c0$z, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(9, _c0$A, cell_r9.value));
         }
     }
     function YearTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) {
@@ -11511,7 +12089,7 @@
             i0.ɵɵelementContainer(0);
         }
     }
-    var _c0$A = function (a0) { return { $implicit: a0 }; };
+    var _c0$B = function (a0) { return { $implicit: a0 }; };
     function MonthTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
@@ -11521,7 +12099,7 @@
         if (rf & 2) {
             var cell_r9 = i0.ɵɵnextContext(2).$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$A, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$B, cell_r9.value));
         }
     }
     function MonthTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) {
@@ -11589,7 +12167,7 @@
         if (rf & 2) {
             var cell_r9 = i0.ɵɵnextContext(2).$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$A, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$B, cell_r9.value));
         }
     }
     function MonthTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) {
@@ -11615,7 +12193,7 @@
             i0.ɵɵadvance(1);
             i0.ɵɵclassMapInterpolate1("", ctx_r22.prefixCls, "-date-content");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(9, _c0$A, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(9, _c0$B, cell_r9.value));
         }
     }
     function MonthTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) {
@@ -11970,7 +12548,7 @@
             i0.ɵɵelementContainer(0);
         }
     }
-    var _c0$B = function (a0) { return { $implicit: a0 }; };
+    var _c0$C = function (a0) { return { $implicit: a0 }; };
     function DateTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
@@ -11980,7 +12558,7 @@
         if (rf & 2) {
             var cell_r9 = i0.ɵɵnextContext(2).$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$B, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$C, cell_r9.value));
         }
     }
     function DateTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) {
@@ -12048,7 +12626,7 @@
         if (rf & 2) {
             var cell_r9 = i0.ɵɵnextContext(2).$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$B, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$C, cell_r9.value));
         }
     }
     function DateTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) {
@@ -12074,7 +12652,7 @@
             i0.ɵɵadvance(1);
             i0.ɵɵclassMapInterpolate1("", ctx_r22.prefixCls, "-date-content");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(9, _c0$B, cell_r9.value));
+            i0.ɵɵproperty("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", i0.ɵɵpureFunction1(9, _c0$C, cell_r9.value));
         }
     }
     function DateTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) {
@@ -13014,7 +13592,7 @@
             i0.ɵɵelementContainer(0);
         }
     }
-    var _c0$C = function () { return { partType: "left" }; };
+    var _c0$D = function () { return { partType: "left" }; };
     var _c1$c = function () { return { partType: "right" }; };
     function DateRangePopupComponent_ng_container_0_Template(rf, ctx) {
         if (rf & 1) {
@@ -13045,7 +13623,7 @@
             i0.ɵɵadvance(1);
             i0.ɵɵclassMapInterpolate1("", ctx_r0.prefixCls, "-panels");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", _r3)("ngTemplateOutletContext", i0.ɵɵpureFunction0(20, _c0$C));
+            i0.ɵɵproperty("ngTemplateOutlet", _r3)("ngTemplateOutletContext", i0.ɵɵpureFunction0(20, _c0$D));
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngTemplateOutlet", _r3)("ngTemplateOutletContext", i0.ɵɵpureFunction0(21, _c1$c));
             i0.ɵɵadvance(1);
@@ -13543,7 +14121,7 @@
                 }] });
     })();
 
-    var _c0$D = ["separatorElement"];
+    var _c0$E = ["separatorElement"];
     var _c1$d = ["pickerInput"];
     var _c2$8 = ["rangePickerInput"];
     var _c3$2 = ["cmacs-picker", ""];
@@ -14054,7 +14632,7 @@
         }, viewQuery: function CmacsPickerComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(i1$4.CdkConnectedOverlay, 1);
-                i0.ɵɵviewQuery(_c0$D, 1);
+                i0.ɵɵviewQuery(_c0$E, 1);
                 i0.ɵɵviewQuery(_c1$d, 1);
                 i0.ɵɵviewQuery(_c2$8, 1);
             }
@@ -14406,10 +14984,10 @@
         CmacsDatePickerComponent.prototype.setModeAndFormat = function () {
             var inputFormats = {
                 year: 'yyyy',
-                month: this.i18n.getLocale().locale === 'de' ? 'MM.yyyy' : 'yyyy/MM',
-                week: this.i18n.getDateLocale() ? 'RRRR-II' : this.i18n.getLocale().locale === 'de' ? 'ww.yyyy' : 'yyyy/ww',
-                date: this.showTime ? (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy HH:mm:ss' : 'yyyy/MM/dd HH:mm:ss') :
-                    (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy' : 'yyyy/MM/dd')
+                month: this.i18n.getLocale().locale === 'de' ? 'MM.yyyy' : 'MM/yyyy',
+                week: this.i18n.getDateLocale() ? 'RRRR-II' : this.i18n.getLocale().locale === 'de' ? 'ww.yyyy' : 'ww/yyyy',
+                date: this.showTime ? (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy HH:mm:ss' : 'MM/dd/yyyy HH:mm:ss') :
+                    (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy' : 'MM/dd/yyyy')
             };
             if (!this.mode) {
                 this.mode = 'date';
@@ -14835,7 +15413,7 @@
         }, null);
     })();
 
-    var _c0$E = ["inputElement"];
+    var _c0$F = ["inputElement"];
     var CmacsInputNumberComponent = /** @class */ (function () {
         function CmacsInputNumberComponent(elementRef, renderer, cdr, focusMonitor) {
             this.elementRef = elementRef;
@@ -15136,7 +15714,7 @@
     CmacsInputNumberComponent.ɵfac = function CmacsInputNumberComponent_Factory(t) { return new (t || CmacsInputNumberComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i1.FocusMonitor)); };
     CmacsInputNumberComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsInputNumberComponent, selectors: [["cmacs-input-number"]], viewQuery: function CmacsInputNumberComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$E, 3);
+                i0.ɵɵviewQuery(_c0$F, 3);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -15427,7 +16005,7 @@
         return TimeHolder;
     }());
 
-    var _c0$F = ["hourListElement"];
+    var _c0$G = ["hourListElement"];
     var _c1$e = ["minuteListElement"];
     var _c2$9 = ["secondListElement"];
     var _c3$3 = ["use12HoursListElement"];
@@ -15913,7 +16491,7 @@
     CmacsDatetimePickerPanelComponent.ɵfac = function CmacsDatetimePickerPanelComponent_Factory(t) { return new (t || CmacsDatetimePickerPanelComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i1$3.DateHelperService), i0.ɵɵdirectiveInject(i0.ElementRef)); };
     CmacsDatetimePickerPanelComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsDatetimePickerPanelComponent, selectors: [["cmacs-datetime-picker-panel"]], viewQuery: function CmacsDatetimePickerPanelComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$F, 1);
+                i0.ɵɵviewQuery(_c0$G, 1);
                 i0.ɵɵviewQuery(_c1$e, 1);
                 i0.ɵɵviewQuery(_c2$9, 1);
                 i0.ɵɵviewQuery(_c3$3, 1);
@@ -16038,7 +16616,7 @@
                 }] });
     })();
 
-    var _c0$G = ["inputElement"];
+    var _c0$H = ["inputElement"];
     function CmacsDateTimePickerComponent_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
@@ -16305,7 +16883,7 @@
     CmacsDateTimePickerComponent.ɵfac = function CmacsDateTimePickerComponent_Factory(t) { return new (t || CmacsDateTimePickerComponent)(i0.ɵɵdirectiveInject(i1$1.NzConfigService), i0.ɵɵdirectiveInject(i1$3.NzI18nService), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i1$3.DateHelperService), i0.ɵɵdirectiveInject(i3.Platform), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i2.Directionality, 8)); };
     CmacsDateTimePickerComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsDateTimePickerComponent, selectors: [["cmacs-datetime-picker"]], viewQuery: function CmacsDateTimePickerComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$G, 3);
+                i0.ɵɵviewQuery(_c0$H, 3);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -16607,14 +17185,14 @@
             i0.ɵɵtextInterpolate1(" ", formatter_r9(ctx_r8.percent), " ");
         }
     }
-    var _c0$H = function (a0) { return { $implicit: a0 }; };
+    var _c0$I = function (a0) { return { $implicit: a0 }; };
     function CmacsProgressComponent_ng_template_0_span_0_ng_template_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵtemplate(0, CmacsProgressComponent_ng_template_0_span_0_ng_template_2_ng_container_0_Template, 2, 1, "ng-container", 9);
         }
         if (rf & 2) {
             var ctx_r7 = i0.ɵɵnextContext(3);
-            i0.ɵɵproperty("nzStringTemplateOutlet", ctx_r7.formatter)("nzStringTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$H, ctx_r7.percent));
+            i0.ɵɵproperty("nzStringTemplateOutlet", ctx_r7.formatter)("nzStringTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$I, ctx_r7.percent));
         }
     }
     function CmacsProgressComponent_ng_template_0_span_0_Template(rf, ctx) {
@@ -17258,7 +17836,7 @@
                 }] });
     })();
 
-    var _c0$I = ["switchElement"];
+    var _c0$J = ["switchElement"];
     function CmacsSwitchComponent_i_3_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelement(0, "i", 8);
@@ -17407,7 +17985,7 @@
     CmacsSwitchComponent.ɵfac = function CmacsSwitchComponent_Factory(t) { return new (t || CmacsSwitchComponent)(i0.ɵɵdirectiveInject(i1$1.NzConfigService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i1.FocusMonitor), i0.ɵɵdirectiveInject(i2.Directionality, 8)); };
     CmacsSwitchComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsSwitchComponent, selectors: [["cmacs-switch"]], viewQuery: function CmacsSwitchComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$I, 3);
+                i0.ɵɵviewQuery(_c0$J, 3);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -17532,7 +18110,7 @@
             }], null, null);
     })();
 
-    var _c0$J = ["template"];
+    var _c0$K = ["template"];
     function CmacsTimelineItemComponent_ng_template_0_ng_container_3_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
@@ -17596,7 +18174,7 @@
     CmacsTimelineItemComponent.ɵfac = function CmacsTimelineItemComponent_Factory(t) { return new (t || CmacsTimelineItemComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(TimelineService)); };
     CmacsTimelineItemComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsTimelineItemComponent, selectors: [["cmacs-timeline-item"], ["", "cmacs-timeline-item", ""]], viewQuery: function CmacsTimelineItemComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$J, 1);
+                i0.ɵɵviewQuery(_c0$K, 1);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -17726,7 +18304,7 @@
             i0.ɵɵproperty("ngIf", ctx_r4.pending);
         }
     }
-    var _c0$K = ["*"];
+    var _c0$L = ["*"];
     var CmacsTimelineComponent = /** @class */ (function () {
         function CmacsTimelineComponent(cdr, timelineService, directionality) {
             this.cdr = cdr;
@@ -17795,7 +18373,7 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.listOfItems = _t);
             }
-        }, inputs: { mode: "mode", pending: "pending", pendingDot: "pendingDot", reverse: "reverse" }, exportAs: ["cmacsTimeline"], features: [i0.ɵɵProvidersFeature([TimelineService]), i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$K, decls: 7, vars: 13, consts: [[1, "ant-timeline"], [3, "ngTemplateOutlet", 4, "ngIf"], [4, "ngFor", "ngForOf"], ["pendingTemplate", ""], [3, "ngTemplateOutlet"], ["class", "ant-timeline-item ant-timeline-item-pending", 4, "ngIf"], [1, "ant-timeline-item", "ant-timeline-item-pending"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head", "ant-timeline-item-head-custom", "ant-timeline-item-head-blue"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"], ["nz-icon", "", "nzType", "loading", 4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function CmacsTimelineComponent_Template(rf, ctx) {
+        }, inputs: { mode: "mode", pending: "pending", pendingDot: "pendingDot", reverse: "reverse" }, exportAs: ["cmacsTimeline"], features: [i0.ɵɵProvidersFeature([TimelineService]), i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$L, decls: 7, vars: 13, consts: [[1, "ant-timeline"], [3, "ngTemplateOutlet", 4, "ngIf"], [4, "ngFor", "ngForOf"], ["pendingTemplate", ""], [3, "ngTemplateOutlet"], ["class", "ant-timeline-item ant-timeline-item-pending", 4, "ngIf"], [1, "ant-timeline-item", "ant-timeline-item-pending"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head", "ant-timeline-item-head-custom", "ant-timeline-item-head-blue"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"], ["nz-icon", "", "nzType", "loading", 4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function CmacsTimelineComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "ul", 0);
@@ -17884,7 +18462,7 @@
             i0.ɵɵtextInterpolate(column_r1.name);
         }
     }
-    var _c0$L = function (a0) { return { column: a0 }; };
+    var _c0$M = function (a0) { return { column: a0 }; };
     function CmacsKanbanComponent_div_4_div_1_Template(rf, ctx) {
         if (rf & 1) {
             var _r16_1 = i0.ɵɵgetCurrentView();
@@ -17903,7 +18481,7 @@
             var column_r1 = i0.ɵɵnextContext().$implicit;
             var ctx_r2 = i0.ɵɵnextContext();
             i0.ɵɵadvance(4);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r2.columnHeaderCollapsedTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(3, _c0$L, column_r1));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r2.columnHeaderCollapsedTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(3, _c0$M, column_r1));
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", !ctx_r2.columnHeaderCollapsedTemplate);
         }
@@ -18071,19 +18649,19 @@
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", column_r1.collapsed);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.columnHeaderTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(18, _c0$L, column_r1));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.columnHeaderTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(18, _c0$M, column_r1));
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", !ctx_r0.columnHeaderTemplate);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.subHeader)("ngTemplateOutletContext", i0.ɵɵpureFunction1(20, _c0$L, column_r1));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.subHeader)("ngTemplateOutletContext", i0.ɵɵpureFunction1(20, _c0$M, column_r1));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.getActionPanel(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction1(22, _c0$L, column_r1));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.getActionPanel(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction1(22, _c0$M, column_r1));
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("cdkDropListData", column_r1.items)("ngStyle", ctx_r0.verticalScrollStyle());
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx_r0.mobile)("ngIfElse", _r8);
             i0.ɵɵadvance(3);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.getDescriptionPanel(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction1(24, _c0$L, column_r1));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.getDescriptionPanel(column_r1.id))("ngTemplateOutletContext", i0.ɵɵpureFunction1(24, _c0$M, column_r1));
         }
     }
     var CmacsKanbanComponent = /** @class */ (function () {
@@ -18219,7 +18797,7 @@
         return CmacsKanbanComponent;
     }());
     CmacsKanbanComponent.ɵfac = function CmacsKanbanComponent_Factory(t) { return new (t || CmacsKanbanComponent)(i0.ɵɵdirectiveInject(i1$5.DeviceDetectorService)); };
-    CmacsKanbanComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["id", "tasks-container", "cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "ngStyle", "cdkDropListDropped"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "tap", "doubletap", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "tap", "doubletap"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) {
+    CmacsKanbanComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKanbanComponent, selectors: [["cmacs-kanban"]], inputs: { board: "board", multiselect: "multiselect", itemTemplate: "itemTemplate", itemTemplates: "itemTemplates", columnHeaderTemplate: "columnHeaderTemplate", columnHeaderCollapsedTemplate: "columnHeaderCollapsedTemplate", showShrink: "showShrink", hasVerticalScroll: "hasVerticalScroll", heightContainer: "heightContainer", actionPanelTemplates: "actionPanelTemplates", descriptionPanelTemplates: "descriptionPanelTemplates", columnWidth: "columnWidth", itemType: "itemType", subHeader: "subHeader" }, outputs: { draggedItem: "draggedItem", noDraggedItem: "noDraggedItem", onclickItem: "onclickItem", ondblclickItem: "ondblclickItem", selectionChange: "selectionChange", onColumnExpand: "onColumnExpand" }, exportAs: ["cmacsKanban"], decls: 5, vars: 2, consts: [[1, "root"], [1, "board", 3, "ngStyle"], [1, "board-wrapper"], ["cdkDropListGroup", "", 1, "board-columns"], ["class", "board-column", 3, "ngStyle", "ngClass", "collapsed", 4, "ngFor", "ngForOf"], [1, "board-column", 3, "ngStyle", "ngClass"], ["class", "column-header-collapsed", 3, "click", 4, "ngIf"], ["class", "column-header-template", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-row", "", "class", "column-header", 4, "ngIf"], ["class", "column-action-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["id", "tasks-container", "cdkDropList", "", 1, "tasks-container", 3, "cdkDropListData", "ngStyle", "cdkDropListDropped"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], ["class", "column-description-panel", 3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "column-header-collapsed", 3, "click"], ["cmacs-button", "", "role", "button", "aria-label", "expand", "cmacsTooltipPlacement", "bottom", "cmacs-tooltip", "", "cmacsTooltipTitle", "Expand", 2, "padding", "8px"], [1, "iconArrowLarge-Expand"], [1, "column-header-collapsed-line", "column-header-collapsed-line-1"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "column-header-collapsed-text", 4, "ngIf"], [1, "column-header-collapsed-line", "column-header-collapsed-line-2"], [3, "ngIf"], [1, "column-header-collapsed-text"], [1, "column-header-template", 3, "ngIf"], ["nz-row", "", 1, "column-header"], ["nz-col", "", "nzSpan", "18"], [1, "column-title"], ["nz-col", "", "nzSpan", "6", 1, "header-actions"], ["role", "button", "aria-label", "collapse", "cmacsTooltipPlacement", "bottom", "cmacs-tooltip", "", "cmacsTooltipTitle", "collapse", "cmacs-button", "", "class", "column-shrink", "ghost", "", 3, "click", 4, "ngIf"], ["role", "button", "aria-label", "collapse", "cmacsTooltipPlacement", "bottom", "cmacs-tooltip", "", "cmacsTooltipTitle", "collapse", "cmacs-button", "", "ghost", "", 1, "column-shrink", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "column-action-panel", 3, "ngIf"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "tap", "doubletap", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "tap", "doubletap"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "task", "cdkDrag", "", 3, "cdkDragData", "cdkDragDisabled", "task-selected", "cdkDragStarted", "click", "dblclick", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "task", 3, "cdkDragData", "cdkDragDisabled", "cdkDragStarted", "click", "dblclick"], [1, "column-description-panel", 3, "ngIf"]], template: function CmacsKanbanComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "div", 1);
@@ -18237,7 +18815,7 @@
                 i0.ɵɵadvance(3);
                 i0.ɵɵproperty("ngForOf", ctx.board.columns);
             }
-        }, directives: [i2$1.NgStyle, i2$4.CdkDropListGroup, i2$1.NgForOf, i2$1.NgClass, i2$1.NgIf, i2$1.NgTemplateOutlet, i2$4.CdkDropList, CmacsButtonComponent, i6$1.NzRowDirective, i6$1.NzColDirective, i2$4.CdkDrag], styles: [".cmacs-kanban-item-drag-handler{position:absolute;top:5px;left:10px;cursor:-webkit-grab;cursor:grab;color:#656c79}.root{height:100%}.board,.root{display:flex;flex-direction:column}.board{flex-grow:1;min-width:0;min-height:0}.board-name{font-size:20px;font-weight:700}.board-wrapper{overflow-x:auto}.board-column,.board-columns,.board-wrapper{display:flex;flex-grow:1}.board-column{flex-direction:column;flex-basis:0;border-radius:4px}.board-column:not(:first-child){margin-left:0}.column-header{padding:12px 15px 10px;font-family:Roboto-Regular;line-height:1;border-left:1px solid #dee0e5;box-shadow:0 3px 7px -3px rgba(5,6,6,.18);margin-bottom:10px}.column-title{text-transform:capitalize;color:#656c79;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 82px);display:inline-block}.column-title-items{color:#97a0ae!important;font-size:12px!important;font-family:Roboto-Medium!important}.column-shrink{height:20px!important;width:20px;padding-right:0!important;padding-left:0!important;margin-left:5px;float:right}.tasks-container{flex-grow:1;overflow-y:auto;margin-bottom:2px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.board-wrapper::-webkit-scrollbar,.tasks-container::-webkit-scrollbar{-webkit-appearance:none;width:7px;height:7px;-webkit-overflow-scrolling:auto}.board-wrapper::-webkit-scrollbar-thumb,.tasks-container::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.board-wrapper::-webkit-scrollbar-thumb:hover,.tasks-container::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.task{display:flex;position:relative}.task,.task .cmacs-todo-card{touch-action:manipulation!important}.task.cdk-drag-preview{opacity:.9}.task-selected{border-color:#2a7cff}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating,.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.board-column.collapsed{min-width:37px!important;padding:0;margin:0 10px;flex-basis:0;flex-grow:0}.board-column.collapsed>.column-action-panel,.board-column.collapsed>.column-description-panel,.board-column.collapsed>.column-header,.board-column.collapsed>.column-header-template,.board-column.collapsed>.tasks-container{display:none}.column-header-collapsed{display:contents;height:100%}.column-header-collapsed-line{background-color:#acb3bf;width:1px;margin:0 auto}.column-header-collapsed-line-1{margin-top:14px;margin-bottom:14px;height:25px}.column-header-collapsed-line-2{margin-top:14px;height:inherit}.column-header-collapsed-text{transform:none;-ms-writing-mode:tb-lr;writing-mode:vertical-lr;margin:0 0 0 10px;text-transform:capitalize;color:#656c79;font-size:14px;font-weight:500;font-family:Roboto-Medium;display:table}.column-header-collapsed-text>*{display:table-cell;white-space:nowrap}.column-header .column-shrink{display:block}.column-shrink,.header-actions{height:100%!important}.column-shrink i{font-size:17px!important}"], encapsulation: 2 });
+        }, directives: [i2$1.NgStyle, i2$4.CdkDropListGroup, i2$1.NgForOf, i2$1.NgClass, i2$1.NgIf, i2$1.NgTemplateOutlet, i2$4.CdkDropList, CmacsButtonComponent, CmacsTooltipDirective, i6$1.NzRowDirective, i6$1.NzColDirective, i2$4.CdkDrag], styles: [".cmacs-kanban-item-drag-handler{position:absolute;top:5px;left:10px;cursor:-webkit-grab;cursor:grab;color:#656c79}.root{height:100%}.board,.root{display:flex;flex-direction:column}.board{flex-grow:1;min-width:0;min-height:0}.board-name{font-size:20px;font-weight:700}.board-wrapper{overflow-x:auto}.board-column,.board-columns,.board-wrapper{display:flex;flex-grow:1}.board-column{flex-direction:column;flex-basis:0;border-radius:4px}.board-column:not(:first-child){margin-left:0}.column-header{padding:12px 15px 10px;font-family:Roboto-Regular;line-height:1;border-left:1px solid #dee0e5;box-shadow:0 3px 7px -3px rgba(5,6,6,.18);margin-bottom:10px}.column-title{text-transform:capitalize;color:#656c79;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 82px);display:inline-block}.column-title-items{color:#97a0ae!important;font-size:12px!important;font-family:Roboto-Medium!important}.column-shrink{height:20px!important;width:20px;padding-right:0!important;padding-left:0!important;margin-left:5px;float:right}.tasks-container{flex-grow:1;overflow-y:auto;margin-bottom:2px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.board-wrapper::-webkit-scrollbar,.tasks-container::-webkit-scrollbar{-webkit-appearance:none;width:7px;height:7px;-webkit-overflow-scrolling:auto}.board-wrapper::-webkit-scrollbar-thumb,.tasks-container::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.board-wrapper::-webkit-scrollbar-thumb:hover,.tasks-container::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.task{display:flex;position:relative}.task,.task .cmacs-todo-card{touch-action:manipulation!important}.task.cdk-drag-preview{opacity:.9}.task-selected{border-color:#2a7cff}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating,.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.board-column.collapsed{min-width:37px!important;padding:0;margin:0 10px;flex-basis:0;flex-grow:0}.board-column.collapsed>.column-action-panel,.board-column.collapsed>.column-description-panel,.board-column.collapsed>.column-header,.board-column.collapsed>.column-header-template,.board-column.collapsed>.tasks-container{display:none}.column-header-collapsed{display:contents;height:100%}.column-header-collapsed-line{background-color:#acb3bf;width:1px;margin:0 auto}.column-header-collapsed-line-1{margin-top:14px;margin-bottom:14px;height:25px}.column-header-collapsed-line-2{margin-top:14px;height:inherit}.column-header-collapsed-text{transform:none;-ms-writing-mode:tb-lr;writing-mode:vertical-lr;margin:0 0 0 10px;text-transform:capitalize;color:#656c79;font-size:14px;font-weight:500;font-family:Roboto-Medium;display:table}.column-header-collapsed-text>*{display:table-cell;white-space:nowrap}.column-header .column-shrink{display:block}.column-shrink,.header-actions{height:100%!important}.column-shrink i{font-size:17px!important}"], encapsulation: 2 });
     __decorate([
         util.InputBoolean()
     ], CmacsKanbanComponent.prototype, "multiselect", void 0);
@@ -18308,7 +18886,7 @@
             i0.ɵɵelementEnd();
         }
     }
-    var _c0$M = ["*"];
+    var _c0$N = ["*"];
     var CmacsTagComponent = /** @class */ (function () {
         function CmacsTagComponent(cdr, renderer, elementRef, directionality) {
             this.cdr = cdr;
@@ -18377,7 +18955,7 @@
                 i0.ɵɵstyleProp("background-color", ctx.isPresetColor ? "" : ctx.color)("border-left", ctx.cmacsTemplateType ? "3px solid " + ctx.color : null);
                 i0.ɵɵclassProp("ant-tag-has-color", ctx.color && !ctx.isPresetColor)("ant-tag-checkable", ctx.mode === "checkable")("ant-tag-checkable-checked", ctx.checked)("ant-tag-rtl", ctx.dir === "rtl")("cmacs-tag", ctx.cmacsStatusType || ctx.cmacsPriorityType || ctx.cmacsGridType || ctx.cmacsMoneyType)("cmacs-tag-active", ctx.cmacsGridType && ctx.cmacsGridType === "active")("cmacs-tag-created", ctx.cmacsGridType && ctx.cmacsGridType === "created")("cmacs-tag-pre-bid", ctx.cmacsGridType && ctx.cmacsGridType === "pre-bid")("cmacs-tag-archive", ctx.cmacsGridType && ctx.cmacsGridType === "archive")("cmacs-tag-inactive", ctx.cmacsGridType && ctx.cmacsGridType === "inactive")("cmacs-tag-warranty", ctx.cmacsGridType && ctx.cmacsGridType === "warranty")("cmacs-tag-high-priority", ctx.cmacsPriorityType && ctx.cmacsPriorityType === "high")("cmacs-tag-low-priority", ctx.cmacsPriorityType && ctx.cmacsPriorityType === "low")("cmacs-tag-medium-priority", ctx.cmacsPriorityType && ctx.cmacsPriorityType === "medium")("cmacs-tag-money", ctx.cmacsMoneyType)("cmacs-tag-template", ctx.cmacsTemplateType)("cmacs-tag-status", ctx.cmacsStatusType)("cmacs-tag-closeable", ctx.mode === "closeable");
             }
-        }, inputs: { cmacsGridType: "cmacsGridType", cmacsPriorityType: "cmacsPriorityType", cmacsStatusType: "cmacsStatusType", cmacsMoneyType: "cmacsMoneyType", cmacsTemplateType: "cmacsTemplateType", disabled: "disabled", mode: "mode", color: "color", checked: "checked" }, outputs: { onClose: "onClose", checkedChange: "checkedChange" }, exportAs: ["cmacsTag"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$M, decls: 4, vars: 5, consts: [["nz-icon", "", "nzType", "close", "tabindex", "-1", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzType", "close", "tabindex", "-1", 3, "click"]], template: function CmacsTagComponent_Template(rf, ctx) {
+        }, inputs: { cmacsGridType: "cmacsGridType", cmacsPriorityType: "cmacsPriorityType", cmacsStatusType: "cmacsStatusType", cmacsMoneyType: "cmacsMoneyType", cmacsTemplateType: "cmacsTemplateType", disabled: "disabled", mode: "mode", color: "color", checked: "checked" }, outputs: { onClose: "onClose", checkedChange: "checkedChange" }, exportAs: ["cmacsTag"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$N, decls: 4, vars: 5, consts: [["nz-icon", "", "nzType", "close", "tabindex", "-1", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzType", "close", "tabindex", "-1", 3, "click"]], template: function CmacsTagComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "div");
@@ -18459,584 +19037,6 @@
                 }], checkedChange: [{
                     type: i0.Output
                 }] });
-    })();
-
-    var _c0$N = ["overlay"];
-    var NzTooltipBaseDirective = /** @class */ (function () {
-        function NzTooltipBaseDirective(elementRef, hostView, resolver, renderer, noAnimation) {
-            this.elementRef = elementRef;
-            this.hostView = hostView;
-            this.resolver = resolver;
-            this.renderer = renderer;
-            this.noAnimation = noAnimation;
-            this.visibleChange = new i0.EventEmitter();
-            this.internalVisible = false;
-            this.destroy$ = new rxjs.Subject();
-            this.triggerDisposables = [];
-        }
-        Object.defineProperty(NzTooltipBaseDirective.prototype, "_title", {
-            /**
-             * This true title that would be used in other parts on this component.
-             */
-            get: function () {
-                return this.title || this.directiveTitle || null;
-            },
-            enumerable: false,
-            configurable: true
-        });
-        Object.defineProperty(NzTooltipBaseDirective.prototype, "_content", {
-            get: function () {
-                return this.content || this.directiveContent || null;
-            },
-            enumerable: false,
-            configurable: true
-        });
-        Object.defineProperty(NzTooltipBaseDirective.prototype, "_trigger", {
-            get: function () {
-                return typeof this.trigger !== 'undefined' ? this.trigger : 'hover';
-            },
-            enumerable: false,
-            configurable: true
-        });
-        Object.defineProperty(NzTooltipBaseDirective.prototype, "_placement", {
-            get: function () {
-                var p = this.placement;
-                return Array.isArray(p) && p.length > 0 ? p : typeof p === 'string' && p ? [p] : ['top'];
-            },
-            enumerable: false,
-            configurable: true
-        });
-        Object.defineProperty(NzTooltipBaseDirective.prototype, "_visible", {
-            get: function () {
-                return (typeof this.visible !== 'undefined' ? this.visible : this.internalVisible) || false;
-            },
-            enumerable: false,
-            configurable: true
-        });
-        Object.defineProperty(NzTooltipBaseDirective.prototype, "_mouseEnterDelay", {
-            get: function () {
-                return this.mouseEnterDelay || 0.15;
-            },
-            enumerable: false,
-            configurable: true
-        });
-        Object.defineProperty(NzTooltipBaseDirective.prototype, "_mouseLeaveDelay", {
-            get: function () {
-                return this.mouseLeaveDelay || 0.1;
-            },
-            enumerable: false,
-            configurable: true
-        });
-        Object.defineProperty(NzTooltipBaseDirective.prototype, "_overlayClassName", {
-            get: function () {
-                return this.overlayClassName || null;
-            },
-            enumerable: false,
-            configurable: true
-        });
-        Object.defineProperty(NzTooltipBaseDirective.prototype, "_overlayStyle", {
-            get: function () {
-                return this.overlayStyle || null;
-            },
-            enumerable: false,
-            configurable: true
-        });
-        NzTooltipBaseDirective.prototype.getProxyPropertyMap = function () {
-            var _this = this;
-            return {
-                noAnimation: ['noAnimation', function () { return _this.noAnimation; }]
-            };
-        };
-        NzTooltipBaseDirective.prototype.ngOnChanges = function (changes) {
-            var specificTrigger = changes.specificTrigger;
-            if (specificTrigger && !specificTrigger.isFirstChange()) {
-                this.registerTriggers();
-            }
-            if (this.component) {
-                this.updatePropertiesByChanges(changes);
-            }
-        };
-        NzTooltipBaseDirective.prototype.ngAfterViewInit = function () {
-            this.createComponent();
-            this.registerTriggers();
-        };
-        NzTooltipBaseDirective.prototype.ngOnDestroy = function () {
-            this.destroy$.next();
-            this.destroy$.complete();
-            // Clear toggling timer. Issue #3875 #4317 #4386
-            this.clearTogglingTimer();
-            this.removeTriggerListeners();
-        };
-        NzTooltipBaseDirective.prototype.show = function () {
-            var _a;
-            (_a = this.component) === null || _a === void 0 ? void 0 : _a.show();
-        };
-        NzTooltipBaseDirective.prototype.hide = function () {
-            var _a;
-            (_a = this.component) === null || _a === void 0 ? void 0 : _a.hide();
-        };
-        /**
-         * Force the component to update its position.
-         */
-        NzTooltipBaseDirective.prototype.updatePosition = function () {
-            if (this.component) {
-                this.component.updatePosition();
-            }
-        };
-        /**
-         * Create a dynamic tooltip component. This method can be override.
-         */
-        NzTooltipBaseDirective.prototype.createComponent = function () {
-            var _this = this;
-            var componentRef = this.hostView.createComponent(this.componentFactory);
-            this.component = componentRef.instance;
-            // Remove the component's DOM because it should be in the overlay container.
-            this.renderer.removeChild(this.renderer.parentNode(this.elementRef.nativeElement), componentRef.location.nativeElement);
-            this.component.setOverlayOrigin({ elementRef: this.origin || this.elementRef });
-            this.initProperties();
-            this.component.cmacsVisibleChange.pipe(operators.distinctUntilChanged(), operators.takeUntil(this.destroy$)).subscribe(function (visible) {
-                _this.internalVisible = visible;
-                _this.visibleChange.emit(visible);
-            });
-        };
-        NzTooltipBaseDirective.prototype.registerTriggers = function () {
-            var _this = this;
-            // When the method gets invoked, all properties has been synced to the dynamic component.
-            // After removing the old API, we can just check the directive's own `cmacsTrigger`.
-            var el = this.elementRef.nativeElement;
-            var trigger = this.trigger;
-            this.removeTriggerListeners();
-            if (trigger === 'hover') {
-                var overlayElement_1;
-                this.triggerDisposables.push(this.renderer.listen(el, 'mouseenter', function () {
-                    _this.delayEnterLeave(true, true, _this._mouseEnterDelay);
-                }));
-                this.triggerDisposables.push(this.renderer.listen(el, 'mouseleave', function () {
-                    var _a;
-                    _this.delayEnterLeave(true, false, _this._mouseLeaveDelay);
-                    if (((_a = _this.component) === null || _a === void 0 ? void 0 : _a.overlay.overlayRef) && !overlayElement_1) {
-                        overlayElement_1 = _this.component.overlay.overlayRef.overlayElement;
-                        _this.triggerDisposables.push(_this.renderer.listen(overlayElement_1, 'mouseenter', function () {
-                            _this.delayEnterLeave(false, true, _this._mouseEnterDelay);
-                        }));
-                        _this.triggerDisposables.push(_this.renderer.listen(overlayElement_1, 'mouseleave', function () {
-                            _this.delayEnterLeave(false, false, _this._mouseLeaveDelay);
-                        }));
-                    }
-                }));
-            }
-            else if (trigger === 'focus') {
-                this.triggerDisposables.push(this.renderer.listen(el, 'focus', function () { return _this.show(); }));
-                this.triggerDisposables.push(this.renderer.listen(el, 'blur', function () { return _this.hide(); }));
-            }
-            else if (trigger === 'click') {
-                this.triggerDisposables.push(this.renderer.listen(el, 'click', function (e) {
-                    e.preventDefault();
-                    _this.show();
-                }));
-            }
-            // Else do nothing because user wants to control the visibility programmatically.
-        };
-        NzTooltipBaseDirective.prototype.updatePropertiesByChanges = function (changes) {
-            this.updatePropertiesByKeys(Object.keys(changes));
-        };
-        NzTooltipBaseDirective.prototype.updatePropertiesByKeys = function (keys) {
-            var _this = this;
-            var _a;
-            var mappingProperties = Object.assign({
-                // common mappings
-                title: ['cmacsTitle', function () { return _this._title; }], directiveTitle: ['cmacsTitle', function () { return _this._title; }], content: ['cmacsContent', function () { return _this._content; }], directiveContent: ['cmacsContent', function () { return _this._content; }], trigger: ['cmacsTrigger', function () { return _this._trigger; }], placement: ['cmacsPlacement', function () { return _this._placement; }], visible: ['cmacsVisible', function () { return _this._visible; }], mouseEnterDelay: ['cmacsMouseEnterDelay', function () { return _this._mouseEnterDelay; }], mouseLeaveDelay: ['cmacsMouseLeaveDelay', function () { return _this._mouseLeaveDelay; }], overlayClassName: ['cmacsOverlayClassName', function () { return _this._overlayClassName; }], overlayStyle: ['cmacsOverlayStyle', function () { return _this._overlayStyle; }]
-            }, this.getProxyPropertyMap());
-            (keys || Object.keys(mappingProperties).filter(function (key) { return !key.startsWith('directive'); })).forEach(function (property) {
-                if (mappingProperties[property]) {
-                    var _b = __read(mappingProperties[property], 2), name = _b[0], valueFn = _b[1];
-                    _this.updateComponentValue(name, valueFn());
-                }
-            });
-            (_a = this.component) === null || _a === void 0 ? void 0 : _a.updateByDirective();
-        };
-        NzTooltipBaseDirective.prototype.initProperties = function () {
-            this.updatePropertiesByKeys();
-        };
-        NzTooltipBaseDirective.prototype.updateComponentValue = function (key, value) {
-            if (typeof value !== 'undefined') {
-                // @ts-ignore
-                this.component[key] = value;
-            }
-        };
-        NzTooltipBaseDirective.prototype.delayEnterLeave = function (isOrigin, isEnter, delay) {
-            var _this = this;
-            if (delay === void 0) { delay = -1; }
-            if (this.delayTimer) {
-                this.clearTogglingTimer();
-            }
-            else if (delay > 0) {
-                this.delayTimer = setTimeout(function () {
-                    _this.delayTimer = undefined;
-                    isEnter ? _this.show() : _this.hide();
-                }, delay * 1000);
-            }
-            else {
-                // `isOrigin` is used due to the tooltip will not hide immediately
-                // (may caused by the fade-out animation).
-                isEnter && isOrigin ? this.show() : this.hide();
-            }
-        };
-        NzTooltipBaseDirective.prototype.removeTriggerListeners = function () {
-            this.triggerDisposables.forEach(function (dispose) { return dispose(); });
-            this.triggerDisposables.length = 0;
-        };
-        NzTooltipBaseDirective.prototype.clearTogglingTimer = function () {
-            if (this.delayTimer) {
-                clearTimeout(this.delayTimer);
-                this.delayTimer = undefined;
-            }
-        };
-        return NzTooltipBaseDirective;
-    }());
-    NzTooltipBaseDirective.ɵfac = function NzTooltipBaseDirective_Factory(t) { return new (t || NzTooltipBaseDirective)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.ViewContainerRef), i0.ɵɵdirectiveInject(i0.ComponentFactoryResolver), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective)); };
-    NzTooltipBaseDirective.ɵdir = i0.ɵɵdefineDirective({ type: NzTooltipBaseDirective, features: [i0.ɵɵNgOnChangesFeature] });
-    (function () {
-        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(NzTooltipBaseDirective, [{
-                type: i0.Directive
-            }], function () { return [{ type: i0.ElementRef }, { type: i0.ViewContainerRef }, { type: i0.ComponentFactoryResolver }, { type: i0.Renderer2 }, { type: i1$2.NzNoAnimationDirective }]; }, null);
-    })();
-    // tslint:disable-next-line:directive-class-suffix
-    var CmacsTooltipBaseComponent = /** @class */ (function () {
-        function CmacsTooltipBaseComponent(cdr, directionality, noAnimation) {
-            this.cdr = cdr;
-            this.directionality = directionality;
-            this.noAnimation = noAnimation;
-            this.cmacsTitle = null;
-            this.cmacsContent = null;
-            this.cmacsOverlayStyle = {};
-            this.cmacsVisibleChange = new rxjs.Subject();
-            this._visible = false;
-            this._trigger = 'hover';
-            this.preferredPlacement = 'top';
-            this.dir = 'ltr';
-            this._classMap = {};
-            this._hasBackdrop = false;
-            this._prefix = 'ant-tooltip';
-            this._positions = __spread(i4$1.DEFAULT_TOOLTIP_POSITIONS);
-            this.destroy$ = new rxjs.Subject();
-        }
-        Object.defineProperty(CmacsTooltipBaseComponent.prototype, "cmacsVisible", {
-            get: function () {
-                return this._visible;
-            },
-            set: function (value) {
-                var visible = util.toBoolean(value);
-                if (this._visible !== visible) {
-                    this._visible = visible;
-                    this.cmacsVisibleChange.next(visible);
-                }
-            },
-            enumerable: false,
-            configurable: true
-        });
-        Object.defineProperty(CmacsTooltipBaseComponent.prototype, "cmacsTrigger", {
-            get: function () {
-                return this._trigger;
-            },
-            set: function (value) {
-                this._trigger = value;
-            },
-            enumerable: false,
-            configurable: true
-        });
-        Object.defineProperty(CmacsTooltipBaseComponent.prototype, "cmacsPlacement", {
-            set: function (value) {
-                var preferredPosition = value.map(function (placement) { return i4$1.POSITION_MAP[placement]; });
-                this._positions = __spread(preferredPosition, i4$1.DEFAULT_TOOLTIP_POSITIONS);
-            },
-            enumerable: false,
-            configurable: true
-        });
-        CmacsTooltipBaseComponent.prototype.ngOnInit = function () {
-            var _this = this;
-            var _a;
-            (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(operators.takeUntil(this.destroy$)).subscribe(function (direction) {
-                _this.dir = direction;
-                _this.cdr.detectChanges();
-            });
-            this.dir = this.directionality.value;
-        };
-        CmacsTooltipBaseComponent.prototype.ngOnDestroy = function () {
-            this.cmacsVisibleChange.complete();
-            this.destroy$.next();
-            this.destroy$.complete();
-        };
-        CmacsTooltipBaseComponent.prototype.show = function () {
-            if (this.cmacsVisible) {
-                return;
-            }
-            if (!this.isEmpty()) {
-                this.cmacsVisible = true;
-                this.cmacsVisibleChange.next(true);
-                this.cdr.detectChanges();
-            }
-            // for ltr for overlay to display tooltip in correct placement in rtl direction.
-            if (this.origin && this.overlay && this.overlay.overlayRef && this.overlay.overlayRef.getDirection() === 'rtl') {
-                this.overlay.overlayRef.setDirection('ltr');
-            }
-        };
-        CmacsTooltipBaseComponent.prototype.hide = function () {
-            if (!this.cmacsVisible) {
-                return;
-            }
-            this.cmacsVisible = false;
-            this.cmacsVisibleChange.next(false);
-            this.cdr.detectChanges();
-        };
-        CmacsTooltipBaseComponent.prototype.updateByDirective = function () {
-            var _this = this;
-            this.updateStyles();
-            this.cdr.detectChanges();
-            Promise.resolve().then(function () {
-                _this.updatePosition();
-                _this.updateVisibilityByTitle();
-            });
-        };
-        /**
-         * Force the component to update its position.
-         */
-        CmacsTooltipBaseComponent.prototype.updatePosition = function () {
-            if (this.origin && this.overlay && this.overlay.overlayRef) {
-                this.overlay.overlayRef.updatePosition();
-            }
-        };
-        CmacsTooltipBaseComponent.prototype.onPositionChange = function (position) {
-            this.preferredPlacement = i4$1.getPlacementName(position);
-            this.updateStyles();
-            // We have to trigger immediate change detection or the element would blink.
-            this.cdr.detectChanges();
-        };
-        CmacsTooltipBaseComponent.prototype.updateStyles = function () {
-            var _b;
-            this._classMap = (_b = {},
-                _b[this.cmacsOverlayClassName] = true,
-                _b[this._prefix + "-placement-" + this.preferredPlacement] = true,
-                _b);
-        };
-        CmacsTooltipBaseComponent.prototype.setOverlayOrigin = function (origin) {
-            this.origin = origin;
-            this.cdr.markForCheck();
-        };
-        CmacsTooltipBaseComponent.prototype.onClickOutside = function (event) {
-            if (!this.origin.elementRef.nativeElement.contains(event.target)) {
-                this.hide();
-            }
-        };
-        /**
-         * Hide the component while the content is empty.
-         */
-        CmacsTooltipBaseComponent.prototype.updateVisibilityByTitle = function () {
-            if (this.isEmpty()) {
-                this.hide();
-            }
-        };
-        return CmacsTooltipBaseComponent;
-    }());
-    CmacsTooltipBaseComponent.ɵfac = function CmacsTooltipBaseComponent_Factory(t) { return new (t || CmacsTooltipBaseComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i2.Directionality, 8), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective)); };
-    CmacsTooltipBaseComponent.ɵdir = i0.ɵɵdefineDirective({ type: CmacsTooltipBaseComponent, viewQuery: function CmacsTooltipBaseComponent_Query(rf, ctx) {
-            if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$N, 1);
-            }
-            if (rf & 2) {
-                var _t = void 0;
-                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.overlay = _t.first);
-            }
-        } });
-    (function () {
-        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsTooltipBaseComponent, [{
-                type: i0.Directive
-            }], function () {
-            return [{ type: i0.ChangeDetectorRef }, { type: i2.Directionality, decorators: [{
-                            type: i0.Optional
-                        }] }, { type: i1$2.NzNoAnimationDirective }];
-        }, { overlay: [{
-                    type: i0.ViewChild,
-                    args: ['overlay', { static: false }]
-                }] });
-    })();
-    function isTooltipEmpty(value) {
-        return value instanceof i0.TemplateRef ? false : value === '' || !util.isNotNil(value);
-    }
-
-    function CmacsToolTipComponent_ng_template_0_ng_container_5_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtext(1);
-            i0.ɵɵelementContainerEnd();
-        }
-        if (rf & 2) {
-            var ctx_r2 = i0.ɵɵnextContext(2);
-            i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r2.cmacsTitle);
-        }
-    }
-    function CmacsToolTipComponent_ng_template_0_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 2);
-            i0.ɵɵelementStart(1, "div", 3);
-            i0.ɵɵelementStart(2, "div", 4);
-            i0.ɵɵelement(3, "span", 5);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(4, "div", 6);
-            i0.ɵɵtemplate(5, CmacsToolTipComponent_ng_template_0_ng_container_5_Template, 2, 1, "ng-container", 7);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementEnd();
-        }
-        if (rf & 2) {
-            var ctx_r1 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("ant-tooltip-rtl", ctx_r1.dir === "rtl");
-            i0.ɵɵproperty("ngClass", ctx_r1._classMap)("ngStyle", ctx_r1.cmacsOverlayStyle)("@.disabled", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("@zoomBigMotion", "active");
-            i0.ɵɵadvance(3);
-            i0.ɵɵproperty("ngStyle", ctx_r1._contentStyleMap);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngStyle", ctx_r1._contentStyleMap);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("nzStringTemplateOutlet", ctx_r1.cmacsTitle);
-        }
-    }
-    var CmacsTooltipDirective = /** @class */ (function (_super) {
-        __extends(CmacsTooltipDirective, _super);
-        function CmacsTooltipDirective(elementRef, hostView, resolver, renderer, noAnimation) {
-            var _this = _super.call(this, elementRef, hostView, resolver, renderer, noAnimation) || this;
-            _this.trigger = 'hover';
-            _this.placement = 'top';
-            // tslint:disable-next-line:no-output-rename
-            _this.visibleChange = new i0.EventEmitter();
-            _this.componentFactory = _this.resolver.resolveComponentFactory(CmacsToolTipComponent);
-            return _this;
-        }
-        CmacsTooltipDirective.prototype.getProxyPropertyMap = function () {
-            var _this = this;
-            return {
-                cmacsTooltipColor: ['cmacsColor', function () { return _this.cmacsTooltipColor; }]
-            };
-        };
-        return CmacsTooltipDirective;
-    }(NzTooltipBaseDirective));
-    CmacsTooltipDirective.ɵfac = function CmacsTooltipDirective_Factory(t) { return new (t || CmacsTooltipDirective)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.ViewContainerRef), i0.ɵɵdirectiveInject(i0.ComponentFactoryResolver), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective, 9)); };
-    CmacsTooltipDirective.ɵdir = i0.ɵɵdefineDirective({ type: CmacsTooltipDirective, selectors: [["", "cmacs-tooltip", ""]], hostVars: 2, hostBindings: function CmacsTooltipDirective_HostBindings(rf, ctx) {
-            if (rf & 2) {
-                i0.ɵɵclassProp("ant-tooltip-open", ctx.visible);
-            }
-        }, inputs: { title: ["cmacsTooltipTitle", "title"], directiveTitle: ["cmacs-tooltip", "directiveTitle"], trigger: ["cmacsTooltipTrigger", "trigger"], placement: ["cmacsTooltipPlacement", "placement"], origin: ["cmacsTooltipOrigin", "origin"], visible: ["cmacsTooltipVisible", "visible"], mouseEnterDelay: ["cmacsTooltipMouseEnterDelay", "mouseEnterDelay"], mouseLeaveDelay: ["cmacsTooltipMouseLeaveDelay", "mouseLeaveDelay"], overlayClassName: ["cmacsTooltipOverlayClassName", "overlayClassName"], overlayStyle: ["cmacsTooltipOverlayStyle", "overlayStyle"], cmacsTooltipColor: "cmacsTooltipColor" }, outputs: { visibleChange: "cmacsTooltipVisibleChange" }, exportAs: ["cmacsTooltip"], features: [i0.ɵɵInheritDefinitionFeature] });
-    (function () {
-        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsTooltipDirective, [{
-                type: i0.Directive,
-                args: [{
-                        selector: '[cmacs-tooltip]',
-                        exportAs: 'cmacsTooltip',
-                        host: {
-                            '[class.ant-tooltip-open]': 'visible'
-                        }
-                    }]
-            }], function () {
-            return [{ type: i0.ElementRef }, { type: i0.ViewContainerRef }, { type: i0.ComponentFactoryResolver }, { type: i0.Renderer2 }, { type: i1$2.NzNoAnimationDirective, decorators: [{
-                            type: i0.Host
-                        }, {
-                            type: i0.Optional
-                        }] }];
-        }, { title: [{
-                    type: i0.Input,
-                    args: ['cmacsTooltipTitle']
-                }], directiveTitle: [{
-                    type: i0.Input,
-                    args: ['cmacs-tooltip']
-                }], trigger: [{
-                    type: i0.Input,
-                    args: ['cmacsTooltipTrigger']
-                }], placement: [{
-                    type: i0.Input,
-                    args: ['cmacsTooltipPlacement']
-                }], origin: [{
-                    type: i0.Input,
-                    args: ['cmacsTooltipOrigin']
-                }], visible: [{
-                    type: i0.Input,
-                    args: ['cmacsTooltipVisible']
-                }], mouseEnterDelay: [{
-                    type: i0.Input,
-                    args: ['cmacsTooltipMouseEnterDelay']
-                }], mouseLeaveDelay: [{
-                    type: i0.Input,
-                    args: ['cmacsTooltipMouseLeaveDelay']
-                }], overlayClassName: [{
-                    type: i0.Input,
-                    args: ['cmacsTooltipOverlayClassName']
-                }], overlayStyle: [{
-                    type: i0.Input,
-                    args: ['cmacsTooltipOverlayStyle']
-                }], cmacsTooltipColor: [{
-                    type: i0.Input
-                }], visibleChange: [{
-                    type: i0.Output,
-                    args: ['cmacsTooltipVisibleChange']
-                }] });
-    })();
-    var CmacsToolTipComponent = /** @class */ (function (_super) {
-        __extends(CmacsToolTipComponent, _super);
-        function CmacsToolTipComponent(cdr, directionality, noAnimation) {
-            var _this = _super.call(this, cdr, directionality, noAnimation) || this;
-            _this.noAnimation = noAnimation;
-            _this.cmacsTitle = null;
-            _this._contentStyleMap = {};
-            return _this;
-        }
-        CmacsToolTipComponent.prototype.isEmpty = function () {
-            return isTooltipEmpty(this.cmacsTitle);
-        };
-        CmacsToolTipComponent.prototype.updateStyles = function () {
-            var _a;
-            var isColorPreset = this.cmacsColor && color.isPresetColor(this.cmacsColor);
-            this._classMap = (_a = {},
-                _a[this.cmacsOverlayClassName] = true,
-                _a[this._prefix + "-placement-" + this.preferredPlacement] = true,
-                _a[this._prefix + "-" + this.cmacsColor] = isColorPreset,
-                _a);
-            this._contentStyleMap = {
-                backgroundColor: !!this.cmacsColor && !isColorPreset ? this.cmacsColor : null
-            };
-        };
-        return CmacsToolTipComponent;
-    }(CmacsTooltipBaseComponent));
-    CmacsToolTipComponent.ɵfac = function CmacsToolTipComponent_Factory(t) { return new (t || CmacsToolTipComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i2.Directionality, 8), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective, 9)); };
-    CmacsToolTipComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsToolTipComponent, selectors: [["cmacs-tooltip"]], exportAs: ["cmacsTooltipComponent"], features: [i0.ɵɵInheritDefinitionFeature], decls: 2, vars: 4, consts: [["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayPositions", "cdkConnectedOverlayPush", "overlayOutsideClick", "detach", "positionChange"], ["overlay", "cdkConnectedOverlay"], [1, "ant-tooltip", 3, "ngClass", "ngStyle", "nzNoAnimation"], [1, "ant-tooltip-content"], [1, "ant-tooltip-arrow"], [1, "ant-tooltip-arrow-content", 3, "ngStyle"], [1, "ant-tooltip-inner", 3, "ngStyle"], [4, "nzStringTemplateOutlet"]], template: function CmacsToolTipComponent_Template(rf, ctx) {
-            if (rf & 1) {
-                i0.ɵɵtemplate(0, CmacsToolTipComponent_ng_template_0_Template, 6, 10, "ng-template", 0, 1, i0.ɵɵtemplateRefExtractor);
-                i0.ɵɵlistener("overlayOutsideClick", function CmacsToolTipComponent_Template_ng_template_overlayOutsideClick_0_listener($event) { return ctx.onClickOutside($event); })("detach", function CmacsToolTipComponent_Template_ng_template_detach_0_listener() { return ctx.hide(); })("positionChange", function CmacsToolTipComponent_Template_ng_template_positionChange_0_listener($event) { return ctx.onPositionChange($event); });
-            }
-            if (rf & 2) {
-                i0.ɵɵproperty("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx._visible)("cdkConnectedOverlayPositions", ctx._positions)("cdkConnectedOverlayPush", true);
-            }
-        }, directives: [i1$4.CdkConnectedOverlay, i4$1.NzConnectedOverlayDirective, i2$1.NgClass, i2$1.NgStyle, i1$2.NzNoAnimationDirective, i6.NzStringTemplateOutletDirective], styles: [".ant-tooltip-content{background-color:#0d1e3b;color:#fff;max-width:180px;border-radius:3px}.ant-tooltip-placement-top .ant-tooltip-arrow{border-top-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-topLeft .ant-tooltip-arrow,.ant-tooltip-placement-topRight .ant-tooltip-arrow{border-top-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-left .ant-tooltip-arrow,.ant-tooltip-placement-leftBottom .ant-tooltip-arrow,.ant-tooltip-placement-leftTop .ant-tooltip-arrow{border-left-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-right .ant-tooltip-arrow,.ant-tooltip-placement-rightBottom .ant-tooltip-arrow,.ant-tooltip-placement-rightTop .ant-tooltip-arrow{border-right-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-bottom .ant-tooltip-arrow{border-bottom-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,.ant-tooltip-placement-bottomRight .ant-tooltip-arrow{border-bottom-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-inner{background-color:#0d1e3b;border-radius:3px;box-shadow:none;padding:8px 10px;min-height:34px}"], encapsulation: 2, data: { animation: [animation.zoomBigMotion] }, changeDetection: 0 });
-    (function () {
-        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsToolTipComponent, [{
-                type: i0.Component,
-                args: [{
-                        selector: 'cmacs-tooltip',
-                        exportAs: 'cmacsTooltipComponent',
-                        changeDetection: i0.ChangeDetectionStrategy.OnPush,
-                        encapsulation: i0.ViewEncapsulation.None,
-                        animations: [animation.zoomBigMotion],
-                        styleUrls: ['./cmacs-tooltip.component.css'],
-                        template: "\n    <ng-template\n      #overlay=\"cdkConnectedOverlay\"\n      cdkConnectedOverlay\n      nzConnectedOverlay\n      [cdkConnectedOverlayOrigin]=\"origin\"\n      [cdkConnectedOverlayOpen]=\"_visible\"\n      [cdkConnectedOverlayPositions]=\"_positions\"\n      [cdkConnectedOverlayPush]=\"true\"\n      (overlayOutsideClick)=\"onClickOutside($event)\"\n      (detach)=\"hide()\"\n      (positionChange)=\"onPositionChange($event)\"\n    >\n      <div\n        class=\"ant-tooltip\"\n        [class.ant-tooltip-rtl]=\"dir === 'rtl'\"\n        [ngClass]=\"_classMap\"\n        [ngStyle]=\"cmacsOverlayStyle\"\n        [@.disabled]=\"noAnimation?.nzNoAnimation\"\n        [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n        [@zoomBigMotion]=\"'active'\"\n      >\n        <div class=\"ant-tooltip-content\">\n          <div class=\"ant-tooltip-arrow\">\n            <span class=\"ant-tooltip-arrow-content\" [ngStyle]=\"_contentStyleMap\"></span>\n          </div>\n          <div class=\"ant-tooltip-inner\" [ngStyle]=\"_contentStyleMap\">\n            <ng-container *nzStringTemplateOutlet=\"cmacsTitle\">{{ cmacsTitle }}</ng-container>\n          </div>\n        </div>\n      </div>\n    </ng-template>\n  ",
-                        preserveWhitespaces: false
-                    }]
-            }], function () {
-            return [{ type: i0.ChangeDetectorRef }, { type: i2.Directionality, decorators: [{
-                            type: i0.Optional
-                        }] }, { type: i1$2.NzNoAnimationDirective, decorators: [{
-                            type: i0.Host
-                        }, {
-                            type: i0.Optional
-                        }] }];
-        }, null);
     })();
 
     function CmacsPopoverComponent_ng_template_0_div_4_ng_container_1_Template(rf, ctx) {
