@@ -38513,10 +38513,12 @@
                             context.moveTo(move, 0);
                             context.lineWidth = 15;
                             var val_1 = elems[j].value;
-                            move += val_1 / total * canvas.width;
-                            context.strokeStyle = _this.colorScheme.domain[j];
-                            context.lineTo(move - 5, 0);
-                            context.stroke();
+                            if (val_1) {
+                                move += val_1 / total * canvas.width;
+                                context.strokeStyle = _this.colorScheme.domain[j];
+                                context.lineTo(move - 5, 0);
+                                context.stroke();
+                            }
                         }
                     }
                 }

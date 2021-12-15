@@ -34916,10 +34916,12 @@ class CmacsNormalizedHorizontalBarChartComponent {
                         context.moveTo(move, 0);
                         context.lineWidth = 15;
                         const val = elems[j].value;
-                        move += val / total * canvas.width;
-                        context.strokeStyle = this.colorScheme.domain[j];
-                        context.lineTo(move - 5, 0);
-                        context.stroke();
+                        if (val) {
+                            move += val / total * canvas.width;
+                            context.strokeStyle = this.colorScheme.domain[j];
+                            context.lineTo(move - 5, 0);
+                            context.stroke();
+                        }
                     }
                 }
             }
