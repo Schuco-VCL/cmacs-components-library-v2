@@ -75,7 +75,7 @@
 
 cmacs-timeline-datepicker.ant-tabs {
   padding: 12px 4px !important;
-}
+  border-radius: 8px;}
 
 .nz-disable-td.ant-table-cell {
     overflow: hidden;
