@@ -213,6 +213,10 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     tapCount: number;
     tapHandler($event: any, data: any): void;
     clickBooleanCell(data: any, id: any, field: Field, index: number, $event: null): void;
+    showViewModeTpl(field: any, item: any): boolean;
+    showViewModeTplTree(field: any, data: any): boolean;
+    showEditTpl(item: any, field: any): any;
+    showEditTplTree(data: any, field: any): any;
     emitOnEditEvent(): void;
     getClassMap(field: Field): {
         [x: string]: number | boolean;
