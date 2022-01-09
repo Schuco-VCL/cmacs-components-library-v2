@@ -23991,44 +23991,35 @@ function CmacsCardComponent_ng_container_5_ng_container_8_Template(rf, ctx) { if
     ɵɵadvance(1);
     ɵɵproperty("ngIf", !ctx_r26.useDefaultContent);
 } }
-function CmacsCardComponent_ng_container_5_ng_container_9_div_1_Template(rf, ctx) { if (rf & 1) {
+function CmacsCardComponent_ng_container_5_ng_container_9_img_3_Template(rf, ctx) { if (rf & 1) {
     const _r75 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 102);
-    ɵɵelementStart(1, "div", 103);
-    ɵɵelementStart(2, "img", 104);
-    ɵɵlistener("error", function CmacsCardComponent_ng_container_5_ng_container_9_div_1_Template_img_error_2_listener() { ɵɵrestoreView(_r75); const ctx_r74 = ɵɵnextContext(3); return ctx_r74.onError(ctx_r74.project); });
-    ɵɵelementEnd();
-    ɵɵelementEnd();
+    ɵɵelementStart(0, "img", 104);
+    ɵɵlistener("error", function CmacsCardComponent_ng_container_5_ng_container_9_img_3_Template_img_error_0_listener() { ɵɵrestoreView(_r75); const ctx_r74 = ɵɵnextContext(3); return ctx_r74.onError(ctx_r74.project); });
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r70 = ɵɵnextContext(3);
-    ɵɵadvance(2);
     ɵɵpropertyInterpolate("src", ctx_r70.getBackgroundImage(), ɵɵsanitizeUrl);
     ɵɵpropertyInterpolate("alt", ctx_r70.project.name);
 } }
-function CmacsCardComponent_ng_container_5_ng_container_9_div_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 105);
-    ɵɵelementStart(1, "span", 106);
-    ɵɵtext(2);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
+function CmacsCardComponent_ng_container_5_ng_container_9_img_4_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "img", 105);
 } if (rf & 2) {
     const ctx_r71 = ɵɵnextContext(3);
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r71.getInitials(ctx_r71.project.name));
+    ɵɵpropertyInterpolate("src", ctx_r71.defaultImage, ɵɵsanitizeUrl);
+    ɵɵpropertyInterpolate("alt", ctx_r71.project.name);
 } }
-function CmacsCardComponent_ng_container_5_ng_container_9_img_17_Template(rf, ctx) { if (rf & 1) {
+function CmacsCardComponent_ng_container_5_ng_container_9_img_19_Template(rf, ctx) { if (rf & 1) {
     const _r77 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "img", 107);
-    ɵɵlistener("error", function CmacsCardComponent_ng_container_5_ng_container_9_img_17_Template_img_error_0_listener() { ɵɵrestoreView(_r77); const ctx_r76 = ɵɵnextContext(3); return ctx_r76.onError(ctx_r76.project.teamLead); });
+    ɵɵelementStart(0, "img", 106);
+    ɵɵlistener("error", function CmacsCardComponent_ng_container_5_ng_container_9_img_19_Template_img_error_0_listener() { ɵɵrestoreView(_r77); const ctx_r76 = ɵɵnextContext(3); return ctx_r76.onError(ctx_r76.project.teamLead); });
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r72 = ɵɵnextContext(3);
     ɵɵpropertyInterpolate("alt", ctx_r72.project.teamLead.name);
     ɵɵproperty("src", ctx_r72.project.teamLead.avatar, ɵɵsanitizeUrl);
 } }
-function CmacsCardComponent_ng_container_5_ng_container_9_span_18_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "span", 108);
+function CmacsCardComponent_ng_container_5_ng_container_9_span_20_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "span", 107);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -24039,44 +24030,48 @@ function CmacsCardComponent_ng_container_5_ng_container_9_span_18_Template(rf, c
 function CmacsCardComponent_ng_container_5_ng_container_9_Template(rf, ctx) { if (rf & 1) {
     const _r79 = ɵɵgetCurrentView();
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_9_div_1_Template, 3, 2, "div", 85);
-    ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_9_div_2_Template, 3, 1, "div", 86);
-    ɵɵelementStart(3, "cmacs-tag", 87);
-    ɵɵtext(4);
+    ɵɵelementStart(1, "div", 85);
+    ɵɵelementStart(2, "div", 86);
+    ɵɵtemplate(3, CmacsCardComponent_ng_container_5_ng_container_9_img_3_Template, 1, 2, "img", 87);
+    ɵɵtemplate(4, CmacsCardComponent_ng_container_5_ng_container_9_img_4_Template, 1, 2, "img", 88);
     ɵɵelementEnd();
-    ɵɵelementStart(5, "div", 88);
-    ɵɵelementStart(6, "span", 89);
-    ɵɵtext(7);
     ɵɵelementEnd();
-    ɵɵelementStart(8, "span", 90);
+    ɵɵelementStart(5, "cmacs-tag", 89);
+    ɵɵtext(6);
+    ɵɵelementEnd();
+    ɵɵelementStart(7, "div", 90);
+    ɵɵelementStart(8, "span", 91);
     ɵɵtext(9);
     ɵɵelementEnd();
-    ɵɵelementStart(10, "a", 75);
-    ɵɵelement(11, "i", 91);
+    ɵɵelementStart(10, "span", 92);
+    ɵɵtext(11);
     ɵɵelementEnd();
-    ɵɵelementStart(12, "span", 90);
-    ɵɵtext(13);
+    ɵɵelementStart(12, "a", 75);
+    ɵɵelement(13, "i", 93);
     ɵɵelementEnd();
+    ɵɵelementStart(14, "span", 92);
+    ɵɵtext(15);
     ɵɵelementEnd();
-    ɵɵelementStart(14, "div", 92);
-    ɵɵelement(15, "div", 93);
     ɵɵelementEnd();
     ɵɵelementStart(16, "div", 94);
-    ɵɵtemplate(17, CmacsCardComponent_ng_container_5_ng_container_9_img_17_Template, 1, 2, "img", 95);
-    ɵɵtemplate(18, CmacsCardComponent_ng_container_5_ng_container_9_span_18_Template, 2, 1, "span", 96);
-    ɵɵelementStart(19, "div", 97);
-    ɵɵelement(20, "div", 98);
-    ɵɵelement(21, "div", 99);
+    ɵɵelement(17, "div", 95);
     ɵɵelementEnd();
-    ɵɵelementStart(22, "a", 100);
-    ɵɵlistener("click", function CmacsCardComponent_ng_container_5_ng_container_9_Template_a_click_22_listener($event) { ɵɵrestoreView(_r79); const ctx_r78 = ɵɵnextContext(2); return ctx_r78.openMail($event); });
-    ɵɵelement(23, "i", 101);
+    ɵɵelementStart(18, "div", 96);
+    ɵɵtemplate(19, CmacsCardComponent_ng_container_5_ng_container_9_img_19_Template, 1, 2, "img", 97);
+    ɵɵtemplate(20, CmacsCardComponent_ng_container_5_ng_container_9_span_20_Template, 2, 1, "span", 98);
+    ɵɵelementStart(21, "div", 99);
+    ɵɵelement(22, "div", 100);
+    ɵɵelement(23, "div", 101);
+    ɵɵelementEnd();
+    ɵɵelementStart(24, "a", 102);
+    ɵɵlistener("click", function CmacsCardComponent_ng_container_5_ng_container_9_Template_a_click_24_listener($event) { ɵɵrestoreView(_r79); const ctx_r78 = ɵɵnextContext(2); return ctx_r78.openMail($event); });
+    ɵɵelement(25, "i", 103);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r27 = ɵɵnextContext(2);
-    ɵɵadvance(1);
+    ɵɵadvance(3);
     ɵɵproperty("ngIf", ctx_r27.project.projectImage !== "" && !ctx_r27.project.pictureError);
     ɵɵadvance(1);
     ɵɵproperty("ngIf", ctx_r27.project.projectImage === "" || ctx_r27.project.pictureError);
@@ -24122,7 +24117,7 @@ function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_
     ɵɵtextInterpolate(ctx_r86.extra);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 115);
+    ɵɵelementStart(0, "div", 114);
     ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_ng_container_1_Template, 2, 1, "ng-container", 11);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -24133,19 +24128,19 @@ function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_
 function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     const _r88 = ɵɵgetCurrentView();
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 109);
+    ɵɵelementStart(1, "div", 108);
     ɵɵelementStart(2, "a", 75);
     ɵɵelement(3, "i");
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 110, 111);
+    ɵɵelementStart(4, "div", 109, 110);
     ɵɵlistener("click", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_div_click_4_listener() { ɵɵrestoreView(_r88); const _r83 = ɵɵreference(5); const ctx_r87 = ɵɵnextContext(3); return ctx_r87.toggleEdit(_r83); });
-    ɵɵelementStart(6, "span", 112, 113);
+    ɵɵelementStart(6, "span", 111, 112);
     ɵɵlistener("keydown.enter", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_span_keydown_enter_6_listener($event) { ɵɵrestoreView(_r88); const _r83 = ɵɵreference(5); const _r84 = ɵɵreference(7); const ctx_r89 = ɵɵnextContext(3); return ctx_r89.handleEnter($event, _r83, _r84); })("keyup", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_span_keyup_6_listener($event) { ɵɵrestoreView(_r88); const _r84 = ɵɵreference(7); const ctx_r90 = ɵɵnextContext(3); return ctx_r90.handleEdit($event, _r84); });
     ɵɵtext(8);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_Template, 2, 1, "div", 114);
+    ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_Template, 2, 1, "div", 113);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r81 = ɵɵnextContext(3);
@@ -24182,7 +24177,7 @@ function CmacsCardComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵtemplate(6, CmacsCardComponent_ng_container_5_ng_container_6_Template, 7, 1, "ng-container", 4);
     ɵɵtemplate(7, CmacsCardComponent_ng_container_5_ng_container_7_Template, 2, 1, "ng-container", 4);
     ɵɵtemplate(8, CmacsCardComponent_ng_container_5_ng_container_8_Template, 3, 2, "ng-container", 4);
-    ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_9_Template, 24, 13, "ng-container", 4);
+    ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_9_Template, 26, 13, "ng-container", 4);
     ɵɵtemplate(10, CmacsCardComponent_ng_container_5_ng_container_10_Template, 3, 2, "ng-container", 4);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
@@ -24226,8 +24221,8 @@ function CmacsCardComponent_ul_7_li_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵproperty("ngTemplateOutlet", action_r92);
 } }
 function CmacsCardComponent_ul_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "ul", 116);
-    ɵɵtemplate(1, CmacsCardComponent_ul_7_li_1_Template, 3, 3, "li", 117);
+    ɵɵelementStart(0, "ul", 115);
+    ɵɵtemplate(1, CmacsCardComponent_ul_7_li_1_Template, 3, 3, "li", 116);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r6 = ɵɵnextContext();
@@ -24269,6 +24264,7 @@ class CmacsCardComponent {
         this.selectedChange = new EventEmitter();
         this.goToModule = new EventEmitter();
         this.iconToDoClick = new EventEmitter();
+        this.defaultImage = 'assets/images/Project_images/D_1.svg';
         this.tapTimeoutHandler = null;
         renderer.addClass(elementRef.nativeElement, 'ant-card');
     }
@@ -24394,7 +24390,7 @@ CmacsCardComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCardComponent, selec
         ɵɵlistener("tap", function CmacsCardComponent_tap_HostBindingHandler($event) { return ctx.onClick($event); })("doubletap", function CmacsCardComponent_doubletap_HostBindingHandler($event) { return ctx.onDblClick($event); });
     } if (rf & 2) {
         ɵɵclassProp("ant-card-loading", ctx.loading)("ant-card-bordered", ctx.bordered)("ant-card-hoverable", ctx.hoverable || ctx.cmacsType === "selection")("ant-card-type-inner", ctx.type === "inner")("ant-card-contain-tabs", !!ctx.tab)("cmacs-card-files-wrapper", ctx.cmacsType === "file")("cmacs-card-measure-wrapper", ctx.cmacsType === "measure")("cmacs-card-measure-wrapper-selected", ctx.cmacsType === "measure" && ctx.selected)("cmacs-selection-card", ctx.cmacsType === "selection")("cmacs-card-selected", ctx.cmacsType === "selection" && ctx.selected)("cmacs-card-disabled", ctx.cmacsType === "selection" && ctx.disabled)("cmacs-action-card", ctx.cmacsType === "action")("cmacs-weather-card", ctx.cmacsType === "weather")("cmacs-big-file-card", ctx.cmacsType === "big-file")("cmacs-big-file-card-selected", ctx.cmacsType === "big-file" && ctx.selected)("cmacs-action-card-disabled", ctx.cmacsType === "action" && ctx.disabled)("cmacs-information-card", ctx.cmacsType === "team")("cmacs-team-card", ctx.cmacsType === "project")("cmacs-video-player-card", ctx.cmacsType === "video")("cmacs-todo-card", ctx.cmacsType === "todo")("cmacs-todo-card-selected", ctx.cmacsType === "todo" && ctx.selected)("cmacs-team-card-selected", ctx.cmacsType === "project" && ctx.selected)("cmacs-card-files-folders-wrapper", ctx.cmacsType === "folder")("file-card-selected", ctx.cmacsType === "folder" && ctx.selected);
-    } }, inputs: { bordered: "bordered", opened: "opened", editable: "editable", isRadio: "isRadio", loading: "loading", disabled: "disabled", hoverable: "hoverable", useDefaultContent: "useDefaultContent", sources: "sources", bodyStyle: "bodyStyle", cover: "cover", body: "body", actions: "actions", team: "team", file: "file", project: "project", projectDateLabel: "projectDateLabel", todo: "todo", weather: "weather", celcius: "celcius", type: "type", cmacsType: "cmacsType", cmacsIcon: "cmacsIcon", cmacsIconOpenedFolder: "cmacsIconOpenedFolder", cmacsIconClosedFolder: "cmacsIconClosedFolder", title: "title", labelTitle: "labelTitle", extra: "extra", selected: "selected", value: "value", todoUserAssigned: "todoUserAssigned" }, outputs: { playerReady: "playerReady", titleChange: "titleChange", ondlclickCard: "ondlclickCard", open: "open", close: "close", selectedChange: "selectedChange", goToModule: "goToModule", iconToDoClick: "iconToDoClick" }, exportAs: ["cmacsCard"], ngContentSelectors: _c2$d, decls: 8, vars: 6, consts: [["content", ""], ["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], ["cmacs-radio", "", 3, "ngModel", "disabled", "ngModelChange"], [1, "cmacs-weather-card-temp"], [1, "cmacs-weather-card-cloud-img", 3, "src", "alt"], [1, "cmacs-weather-card-description-wrapper"], [1, "cmacs-weather-card-description"], [1, "cmacs-weather-card-temp-min-max"], [1, "cmacs-weather-col-1-3"], [1, "iconUILarge-Rain"], [1, "iconUILarge-Humidity"], [1, "iconUILarge-Wind"], ["nz-row", "", 1, "todo-card-header"], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "12", 4, "ngIf"], [1, "todo-card-content"], [1, "cmacs-todo-card-title"], ["placement", "bottom", "cmacs-tooltip", "", 3, "title"], ["class", "cmacs-todo-card-project", 4, "ngIf"], ["nz-row", "", 1, "cmacs-todo-card-action"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-person", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-team", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-priority", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-association", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-attachments", 3, "tap", 4, "ngIf"], ["nz-col", "", "nzSpan", "4", "class", "cmacs-todo-card-comments", 3, "tap", 4, "ngIf"], [1, "cmacs-todo-card-date"], [1, "cmacs-todo-card-project"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-person"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngIf"], [1, "iconCreation-User"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-team"], [1, "iconUILarge-Team"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-priority"], ["nz-icon", "", 3, "nzType"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-association"], [3, "click"], [1, "iconUILarge-Link"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-attachments", 3, "tap"], [1, "iconUILarge-Attached"], ["nz-col", "", "nzSpan", "4", 1, "cmacs-todo-card-comments", 3, "tap"], [1, "iconUILarge-Comments"], [1, "cmacs-card-big-file-meta"], [1, "cmacs-card-big-file-description"], [1, "cmacs-card-big-file-description-left-panel"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-big-file-title", 3, "title"], [1, "cmacs-card-big-file-date"], [1, "cmacs-card-big-file-description-right-panel"], ["class", "cmacs-card-big-file-extra", 4, "ngIf"], [1, "cmacs-card-big-file-icon-wrapper"], [1, "cmacs-card-big-file-extension-wrapper"], [1, "cmacs-card-big-file-extra"], [1, "cmacs-card-video-player-wrapper"], [3, "sources", "playerReady"], [1, "cmacs-card-video-description"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-video-title", 3, "title"], [1, "cmacs-card-files-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-label-recent", 3, "title"], ["class", "cmacs-card-file-extra", 4, "ngIf"], [1, "cmacs-card-file-extra"], [1, "cmacs-card-measure-icon-wrapper"], [1, "iconspan"], [1, "iconUILarge-Ruler"], [1, "cmacs-card-label-measure"], [2, "margin-bottom", "20px", "min-height", "25px", "display", "inline-flex"], ["class", "team-person-card", 3, "backgroundColor", "padding", "display", 4, "ngFor", "ngForOf"], ["class", "plus-team-card", 4, "ngIf"], [1, "team-person-card"], ["width", "30px", "height", "30px", 3, "src", "alt", "error", 4, "ngIf"], ["width", "30px", "height", "30px", 3, "src", "alt", "error"], [1, "plus-team-card"], ["class", "projectimagecontainer", 4, "ngIf"], ["class", "cmacs-proj-card-div-Logo", 4, "ngIf"], [1, "project-status", 3, "cmacsGridType"], [1, "project-dates-wrapper"], [1, "project-dates-title"], [1, "project-dates", "project-dates-date"], [1, "iconArrowLarge-Arrow-Right", "project-dates"], [1, "project-card-progress-bar"], [1, "project-card-progress-bar-inner"], [1, "project-manager-details"], ["class", "manager-avatar", "width", "30px", "height", "30px", 3, "alt", "src", "error", 4, "ngIf"], ["class", "cmacs-proj-avatar-text", 4, "ngIf"], [1, "project-manager-metadata"], [1, "manager-name", 3, "innerHtml"], [1, "manager-charge", 3, "innerHtml"], [1, "iconspan", "project-email-icon", 3, "click"], [1, "iconUILarge-Message"], [1, "projectimagecontainer"], [1, "project-image"], [3, "src", "alt", "error"], [1, "cmacs-proj-card-div-Logo"], [1, "cmacs-proj-card-text-Logo"], ["width", "30px", "height", "30px", 1, "manager-avatar", 3, "alt", "src", "error"], [1, "cmacs-proj-avatar-text"], [1, "card-files-folders-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "card-files-folders-label", 3, "title", "click"], ["titleContainer", ""], [3, "keydown.enter", "keyup"], ["name", ""], ["class", "card-files-folder-extra iconspan", 4, "ngIf"], [1, "card-files-folder-extra", "iconspan"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function CmacsCardComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { bordered: "bordered", opened: "opened", editable: "editable", isRadio: "isRadio", loading: "loading", disabled: "disabled", hoverable: "hoverable", useDefaultContent: "useDefaultContent", sources: "sources", bodyStyle: "bodyStyle", cover: "cover", body: "body", actions: "actions", team: "team", file: "file", project: "project", projectDateLabel: "projectDateLabel", todo: "todo", weather: "weather", celcius: "celcius", type: "type", cmacsType: "cmacsType", cmacsIcon: "cmacsIcon", cmacsIconOpenedFolder: "cmacsIconOpenedFolder", cmacsIconClosedFolder: "cmacsIconClosedFolder", title: "title", labelTitle: "labelTitle", extra: "extra", selected: "selected", value: "value", todoUserAssigned: "todoUserAssigned" }, outputs: { playerReady: "playerReady", titleChange: "titleChange", ondlclickCard: "ondlclickCard", open: "open", close: "close", selectedChange: "selectedChange", goToModule: "goToModule", iconToDoClick: "iconToDoClick" }, exportAs: ["cmacsCard"], ngContentSelectors: _c2$d, decls: 8, vars: 6, consts: [["content", ""], ["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], ["cmacs-radio", "", 3, "ngModel", "disabled", "ngModelChange"], [1, "cmacs-weather-card-temp"], [1, "cmacs-weather-card-cloud-img", 3, "src", "alt"], [1, "cmacs-weather-card-description-wrapper"], [1, "cmacs-weather-card-description"], [1, "cmacs-weather-card-temp-min-max"], [1, "cmacs-weather-col-1-3"], [1, "iconUILarge-Rain"], [1, "iconUILarge-Humidity"], [1, "iconUILarge-Wind"], ["nz-row", "", 1, "todo-card-header"], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "12", 4, "ngIf"], [1, "todo-card-content"], [1, "cmacs-todo-card-title"], ["placement", "bottom", "cmacs-tooltip", "", 3, "title"], ["class", "cmacs-todo-card-project", 4, "ngIf"], ["nz-row", "", 1, "cmacs-todo-card-action"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-person", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-team", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-priority", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-association", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-attachments", 3, "tap", 4, "ngIf"], ["nz-col", "", "nzSpan", "4", "class", "cmacs-todo-card-comments", 3, "tap", 4, "ngIf"], [1, "cmacs-todo-card-date"], [1, "cmacs-todo-card-project"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-person"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngIf"], [1, "iconCreation-User"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-team"], [1, "iconUILarge-Team"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-priority"], ["nz-icon", "", 3, "nzType"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-association"], [3, "click"], [1, "iconUILarge-Link"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-attachments", 3, "tap"], [1, "iconUILarge-Attached"], ["nz-col", "", "nzSpan", "4", 1, "cmacs-todo-card-comments", 3, "tap"], [1, "iconUILarge-Comments"], [1, "cmacs-card-big-file-meta"], [1, "cmacs-card-big-file-description"], [1, "cmacs-card-big-file-description-left-panel"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-big-file-title", 3, "title"], [1, "cmacs-card-big-file-date"], [1, "cmacs-card-big-file-description-right-panel"], ["class", "cmacs-card-big-file-extra", 4, "ngIf"], [1, "cmacs-card-big-file-icon-wrapper"], [1, "cmacs-card-big-file-extension-wrapper"], [1, "cmacs-card-big-file-extra"], [1, "cmacs-card-video-player-wrapper"], [3, "sources", "playerReady"], [1, "cmacs-card-video-description"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-video-title", 3, "title"], [1, "cmacs-card-files-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-label-recent", 3, "title"], ["class", "cmacs-card-file-extra", 4, "ngIf"], [1, "cmacs-card-file-extra"], [1, "cmacs-card-measure-icon-wrapper"], [1, "iconspan"], [1, "iconUILarge-Ruler"], [1, "cmacs-card-label-measure"], [2, "margin-bottom", "20px", "min-height", "25px", "display", "inline-flex"], ["class", "team-person-card", 3, "backgroundColor", "padding", "display", 4, "ngFor", "ngForOf"], ["class", "plus-team-card", 4, "ngIf"], [1, "team-person-card"], ["width", "30px", "height", "30px", 3, "src", "alt", "error", 4, "ngIf"], ["width", "30px", "height", "30px", 3, "src", "alt", "error"], [1, "plus-team-card"], [1, "projectimagecontainer"], [1, "project-image"], [3, "src", "alt", "error", 4, "ngIf"], [3, "src", "alt", 4, "ngIf"], [1, "project-status", 3, "cmacsGridType"], [1, "project-dates-wrapper"], [1, "project-dates-title"], [1, "project-dates", "project-dates-date"], [1, "iconArrowLarge-Arrow-Right", "project-dates"], [1, "project-card-progress-bar"], [1, "project-card-progress-bar-inner"], [1, "project-manager-details"], ["class", "manager-avatar", "width", "30px", "height", "30px", 3, "alt", "src", "error", 4, "ngIf"], ["class", "cmacs-proj-avatar-text", 4, "ngIf"], [1, "project-manager-metadata"], [1, "manager-name", 3, "innerHtml"], [1, "manager-charge", 3, "innerHtml"], [1, "iconspan", "project-email-icon", 3, "click"], [1, "iconUILarge-Message"], [3, "src", "alt", "error"], [3, "src", "alt"], ["width", "30px", "height", "30px", 1, "manager-avatar", 3, "alt", "src", "error"], [1, "cmacs-proj-avatar-text"], [1, "card-files-folders-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "card-files-folders-label", 3, "title", "click"], ["titleContainer", ""], [3, "keydown.enter", "keyup"], ["name", ""], ["class", "card-files-folder-extra iconspan", 4, "ngIf"], [1, "card-files-folder-extra", "iconspan"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function CmacsCardComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef(_c1$n);
         ɵɵtemplate(0, CmacsCardComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, ɵɵtemplateRefExtractor);
         ɵɵtemplate(2, CmacsCardComponent_div_2_Template, 5, 3, "div", 1);

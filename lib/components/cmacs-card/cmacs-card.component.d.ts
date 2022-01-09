@@ -67,6 +67,7 @@ export declare class CmacsCardComponent implements OnInit {
     goToModule: EventEmitter<string>;
     todoUserAssigned: TemplateRef<void>;
     iconToDoClick: EventEmitter<any>;
+    defaultImage: string;
     constructor(cdr: ChangeDetectorRef, renderer: Renderer2, sanitizer: DomSanitizer, elementRef: ElementRef);
     openMail($event: Event): void;
     ngOnInit(): void;
