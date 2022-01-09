@@ -1,8 +1,7 @@
-import { EventEmitter } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { ChangeDetectorRef, EventEmitter } from '@angular/core';
 import * as i0 from "@angular/core";
 export declare class CmacsUserDropdownExternalListComponent {
-    private sanitizer;
+    private cdr;
     _data: any[];
     listDividers: any[];
     origin: any[];
@@ -10,10 +9,11 @@ export declare class CmacsUserDropdownExternalListComponent {
     selectedValue: any;
     set data(value: any[]);
     get data(): any[];
-    constructor(sanitizer: DomSanitizer);
+    constructor(cdr: ChangeDetectorRef);
     operateData(values: any[]): any[];
     getInitials(name: any): any;
-    getBackgroundImage(picture: any): import("@angular/platform-browser").SafeStyle;
+    getSafeImage(picture: any): any;
+    onError(elem: any): void;
     removeOption(elem: any): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsUserDropdownExternalListComponent, never>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsUserDropdownExternalListComponent, "cmacs-user-dropdown-external-list", ["cmacsUserDropdownExternalList"], { "data": "data"; }, { "removedOption": "removedOption"; }, never, never>;

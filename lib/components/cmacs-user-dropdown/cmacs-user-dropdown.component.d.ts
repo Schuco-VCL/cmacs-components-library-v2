@@ -1,10 +1,8 @@
 import { EventEmitter, ChangeDetectorRef } from '@angular/core';
 import { CmacsSelectComponent } from '../cmacs-select/cmacs-select.component';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { DomSanitizer } from '@angular/platform-browser';
 import * as i0 from "@angular/core";
 export declare class CmacsUserDropdownComponent {
-    private sanitizer;
     private cdr;
     private fb;
     mode: string;
@@ -34,14 +32,15 @@ export declare class CmacsUserDropdownComponent {
     set inviteGuest(value: boolean);
     set listOfOption(value: any[]);
     get listOfOption(): any[];
-    constructor(sanitizer: DomSanitizer, cdr: ChangeDetectorRef, fb: FormBuilder);
+    constructor(cdr: ChangeDetectorRef, fb: FormBuilder);
     onSelectedValueChange($event: any): void;
     get searchValue(): string;
     operateData(): void;
     onsearch($event: any): void;
     getFirstElemByDivider(): void;
     getInitials(name: any): any;
-    getBackgroundImage(picture: any): import("@angular/platform-browser").SafeStyle;
+    getSafeImage(picture: any): any;
+    onError(elem: any): void;
     addGuestUser(): void;
     addOption(option: any): void;
     removeOption(option: any): void;

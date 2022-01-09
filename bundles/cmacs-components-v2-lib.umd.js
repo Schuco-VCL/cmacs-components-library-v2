@@ -1,8 +1,8 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('ngx-device-detector'), require('@angular/platform-browser'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/form'), require('ng2-tel-input'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('moment'), require('ng-zorro-antd/core/resize-observers'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('xlsx'), require('ng-zorro-antd/table'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('propagating-hammerjs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ngx-export-as'), require('ngx-cookie-service'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment/locale/en-ie'), require('@angular/cdk/collections'), require('html2canvas'), require('ng-zorro-antd/resizable'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('ng-zorro-antd/skeleton'), require('@swimlane/ngx-charts'), require('angular-google-charts'), require('ng-zorro-antd/tree-select'), require('@angular/animations'), require('@egjs/hammerjs')) :
     typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', 'ngx-device-detector', '@angular/platform-browser', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/grid', 'ng-zorro-antd/core/color', 'ng-zorro-antd/form', 'ng2-tel-input', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'moment', 'ng-zorro-antd/core/resize-observers', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/timeline', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'xlsx', 'ng-zorro-antd/table', 'ng-zorro-antd/upload', 'angular2-signaturepad', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'angular2-draggable', 'ng-zorro-antd/tabs', 'propagating-hammerjs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ngx-export-as', 'ngx-cookie-service', 'jspdf', 'jspdf-autotable', 'util', 'moment/locale/en-ie', '@angular/cdk/collections', 'html2canvas', 'ng-zorro-antd/resizable', 'ng-zorro-antd/rate', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', 'ng-zorro-antd/skeleton', '@swimlane/ngx-charts', 'angular-google-charts', 'ng-zorro-antd/tree-select', '@angular/animations', '@egjs/hammerjs'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i9, global.i1$1, global.i5$1, global.i4, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i4$5, global.radio, global.ng.cdk.overlay, global.i1$2, global.animation, global.i4$1, global.i1$3, global.i8, global.select, global.i6$2, global.i6, global.i2$3, global.ng.router, global.menu, global.i14, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.i1$5, global.ng.platformBrowser, global.i1$7, global.i3$1, global.i6$1, global.color, global.form, global.i3$2, global.alert, global.breadcrumb, global.time, global.i10, global.moment_, global.i3$3, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.i4$3, global.timeline, global.tag, global.popover, global.i4$4, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.propagating, global.card, global.i3$5, global.list, global.i1$8, global.i5$2, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i10$1, global.i17, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$3, global.i2$5, global.i3$6, global.treeSelect, global.ng.animations, global.Hammer$1));
-}(this, (function (exports, i0, i5, operators, rxjs, util, i1, i2, i2$1, i9, i1$1, i5$1, i4, checkbox, i2$2, slider, keycodes, i3, _switch, i4$5, radio, i1$4, i1$2, animation, i4$1, i1$3, i8, select, i6$2, i6, i2$3, i4$2, menu, i14, i2$4, portal, logger, i1$5, i1$6, i1$7, i3$1, i6$1, color, form, i3$2, alert, breadcrumb, time, i10, moment_, i3$3, datePicker, inputNumber, dateFns, polyfill, en, progress, i4$3, timeline, tag, popover, i4$4, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, propagating, card, i3$5, list, i1$8, i5$2, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i10$1, i17, steps, scrolling, tree, cloneDeep, i5$3, i2$5, i3$6, treeSelect, animations$1, Hammer$1) { 'use strict';
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i9, global.i1$1, global.i5$1, global.i4, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i4$5, global.radio, global.ng.cdk.overlay, global.i1$2, global.animation, global.i4$1, global.i1$3, global.i8, global.select, global.i5$4, global.i6, global.i2$3, global.ng.router, global.menu, global.i14, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.i1$5, global.ng.platformBrowser, global.i1$7, global.i3$1, global.i6$1, global.color, global.form, global.i3$2, global.alert, global.breadcrumb, global.time, global.i10, global.moment_, global.i3$3, global.datePicker, global.inputNumber, global.dateFns, global.polyfill, global.ng.common.locales.en, global.progress, global.i4$3, global.timeline, global.tag, global.popover, global.i4$4, global.message, global.modal, global.XLSX, global.i7, global.i13, global.i3$4, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i15, global.tabs, global.propagating, global.card, global.i3$5, global.list, global.i1$8, global.i5$2, global.jsPDF, null, global.util$1, null, global.ng.cdk.collections, global.html2canvas, global.i10$1, global.i17, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i5$3, global.i2$5, global.i3$6, global.treeSelect, global.ng.animations, global.Hammer$1));
+}(this, (function (exports, i0, i5, operators, rxjs, util, i1, i2, i2$1, i9, i1$1, i5$1, i4, checkbox, i2$2, slider, keycodes, i3, _switch, i4$5, radio, i1$4, i1$2, animation, i4$1, i1$3, i8, select, i5$4, i6, i2$3, i4$2, menu, i14, i2$4, portal, logger, i1$5, i1$6, i1$7, i3$1, i6$1, color, form, i3$2, alert, breadcrumb, time, i10, moment_, i3$3, datePicker, inputNumber, dateFns, polyfill, en, progress, i4$3, timeline, tag, popover, i4$4, message, modal, XLSX, i7, i13, i3$4, coercion, animations, i15, tabs, propagating, card, i3$5, list, i1$8, i5$2, jsPDF, jspdfAutotable, util$1, enIe, collections, html2canvas, i10$1, i17, steps, scrolling, tree, cloneDeep, i5$3, i2$5, i3$6, treeSelect, animations$1, Hammer$1) { 'use strict';
 
     function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -26163,7 +26163,10 @@
     }
     function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_img_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "img", 83);
+            var _r67_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "img", 83);
+            i0.ɵɵlistener("error", function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_img_1_Template_img_error_0_listener() { i0.ɵɵrestoreView(_r67_1); var person_r61 = i0.ɵɵnextContext().$implicit; var ctx_r65 = i0.ɵɵnextContext(4); return ctx_r65.onError(person_r61); });
+            i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var person_r61 = i0.ɵɵnextContext().$implicit;
@@ -26195,11 +26198,11 @@
             var person_r61 = ctx.$implicit;
             var i_r62 = ctx.index;
             var ctx_r59 = i0.ɵɵnextContext(4);
-            i0.ɵɵstyleProp("background-color", !person_r61.image ? "#512DA8" : "#c7f5ff")("padding", !person_r61.image ? "4px" : "0px")("display", i_r62 >= 4 && ctx_r59.team.length > 5 ? "none" : "inline-block");
+            i0.ɵɵstyleProp("background-color", !person_r61.image || person_r61.pictureError ? "#512DA8" : "#c7f5ff")("padding", !person_r61.image || person_r61.pictureError ? "4px" : "0px")("display", i_r62 >= 4 && ctx_r59.team.length > 5 ? "none" : "inline-block");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", person_r61.image);
+            i0.ɵɵproperty("ngIf", person_r61.image && !person_r61.pictureError);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !person_r61.image);
+            i0.ɵɵproperty("ngIf", !person_r61.image || person_r61.pictureError);
         }
     }
     function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_3_Template(rf, ctx) {
@@ -26247,99 +26250,109 @@
             i0.ɵɵproperty("ngIf", !ctx_r26.useDefaultContent);
         }
     }
-    function CmacsCardComponent_ng_container_5_ng_container_9_div_2_Template(rf, ctx) {
+    function CmacsCardComponent_ng_container_5_ng_container_9_div_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "div", 103);
+            var _r75_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 102);
+            i0.ɵɵelementStart(1, "div", 103);
+            i0.ɵɵelementStart(2, "img", 104);
+            i0.ɵɵlistener("error", function CmacsCardComponent_ng_container_5_ng_container_9_div_1_Template_img_error_2_listener() { i0.ɵɵrestoreView(_r75_1); var ctx_r74 = i0.ɵɵnextContext(3); return ctx_r74.onError(ctx_r74.project); });
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r67 = i0.ɵɵnextContext(3);
-            i0.ɵɵstyleProp("background-image", ctx_r67.getBackgroundImage());
+            var ctx_r70 = i0.ɵɵnextContext(3);
+            i0.ɵɵadvance(2);
+            i0.ɵɵpropertyInterpolate("src", ctx_r70.getBackgroundImage(), i0.ɵɵsanitizeUrl);
+            i0.ɵɵpropertyInterpolate("alt", ctx_r70.project.name);
         }
     }
-    function CmacsCardComponent_ng_container_5_ng_container_9_div_3_Template(rf, ctx) {
+    function CmacsCardComponent_ng_container_5_ng_container_9_div_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 104);
-            i0.ɵɵelementStart(1, "span", 105);
+            i0.ɵɵelementStart(0, "div", 105);
+            i0.ɵɵelementStart(1, "span", 106);
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r68 = i0.ɵɵnextContext(3);
+            var ctx_r71 = i0.ɵɵnextContext(3);
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(ctx_r68.getInitials(ctx_r68.project.name));
+            i0.ɵɵtextInterpolate(ctx_r71.getInitials(ctx_r71.project.name));
         }
     }
-    function CmacsCardComponent_ng_container_5_ng_container_9_img_18_Template(rf, ctx) {
+    function CmacsCardComponent_ng_container_5_ng_container_9_img_17_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "img", 106);
+            var _r77_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "img", 107);
+            i0.ɵɵlistener("error", function CmacsCardComponent_ng_container_5_ng_container_9_img_17_Template_img_error_0_listener() { i0.ɵɵrestoreView(_r77_1); var ctx_r76 = i0.ɵɵnextContext(3); return ctx_r76.onError(ctx_r76.project.teamLead); });
+            i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r69 = i0.ɵɵnextContext(3);
-            i0.ɵɵpropertyInterpolate("alt", ctx_r69.project.teamLead.name);
-            i0.ɵɵproperty("src", ctx_r69.project.teamLead.avatar, i0.ɵɵsanitizeUrl);
+            var ctx_r72 = i0.ɵɵnextContext(3);
+            i0.ɵɵpropertyInterpolate("alt", ctx_r72.project.teamLead.name);
+            i0.ɵɵproperty("src", ctx_r72.project.teamLead.avatar, i0.ɵɵsanitizeUrl);
         }
     }
-    function CmacsCardComponent_ng_container_5_ng_container_9_span_19_Template(rf, ctx) {
+    function CmacsCardComponent_ng_container_5_ng_container_9_span_18_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "span", 107);
+            i0.ɵɵelementStart(0, "span", 108);
             i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r70 = i0.ɵɵnextContext(3);
+            var ctx_r73 = i0.ɵɵnextContext(3);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r70.getInitials(ctx_r70.project.teamLead.name));
+            i0.ɵɵtextInterpolate(ctx_r73.getInitials(ctx_r73.project.teamLead.name));
         }
     }
     function CmacsCardComponent_ng_container_5_ng_container_9_Template(rf, ctx) {
         if (rf & 1) {
-            var _r72_1 = i0.ɵɵgetCurrentView();
+            var _r79_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 85);
-            i0.ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_9_div_2_Template, 1, 2, "div", 86);
+            i0.ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_9_div_1_Template, 3, 2, "div", 85);
+            i0.ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_9_div_2_Template, 3, 1, "div", 86);
+            i0.ɵɵelementStart(3, "cmacs-tag", 87);
+            i0.ɵɵtext(4);
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(3, CmacsCardComponent_ng_container_5_ng_container_9_div_3_Template, 3, 1, "div", 87);
-            i0.ɵɵelementStart(4, "cmacs-tag", 88);
-            i0.ɵɵtext(5);
+            i0.ɵɵelementStart(5, "div", 88);
+            i0.ɵɵelementStart(6, "span", 89);
+            i0.ɵɵtext(7);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(6, "div", 89);
-            i0.ɵɵelementStart(7, "span", 90);
-            i0.ɵɵtext(8);
+            i0.ɵɵelementStart(8, "span", 90);
+            i0.ɵɵtext(9);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(9, "span", 91);
-            i0.ɵɵtext(10);
+            i0.ɵɵelementStart(10, "a", 75);
+            i0.ɵɵelement(11, "i", 91);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(11, "a", 75);
-            i0.ɵɵelement(12, "i", 92);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(13, "span", 91);
-            i0.ɵɵtext(14);
+            i0.ɵɵelementStart(12, "span", 90);
+            i0.ɵɵtext(13);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(15, "div", 93);
-            i0.ɵɵelement(16, "div", 94);
+            i0.ɵɵelementStart(14, "div", 92);
+            i0.ɵɵelement(15, "div", 93);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(17, "div", 95);
-            i0.ɵɵtemplate(18, CmacsCardComponent_ng_container_5_ng_container_9_img_18_Template, 1, 2, "img", 96);
-            i0.ɵɵtemplate(19, CmacsCardComponent_ng_container_5_ng_container_9_span_19_Template, 2, 1, "span", 97);
-            i0.ɵɵelementStart(20, "div", 98);
+            i0.ɵɵelementStart(16, "div", 94);
+            i0.ɵɵtemplate(17, CmacsCardComponent_ng_container_5_ng_container_9_img_17_Template, 1, 2, "img", 95);
+            i0.ɵɵtemplate(18, CmacsCardComponent_ng_container_5_ng_container_9_span_18_Template, 2, 1, "span", 96);
+            i0.ɵɵelementStart(19, "div", 97);
+            i0.ɵɵelement(20, "div", 98);
             i0.ɵɵelement(21, "div", 99);
-            i0.ɵɵelement(22, "div", 100);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(23, "a", 101);
-            i0.ɵɵlistener("click", function CmacsCardComponent_ng_container_5_ng_container_9_Template_a_click_23_listener($event) { i0.ɵɵrestoreView(_r72_1); var ctx_r71 = i0.ɵɵnextContext(2); return ctx_r71.openMail($event); });
-            i0.ɵɵelement(24, "i", 102);
+            i0.ɵɵelementStart(22, "a", 100);
+            i0.ɵɵlistener("click", function CmacsCardComponent_ng_container_5_ng_container_9_Template_a_click_22_listener($event) { i0.ɵɵrestoreView(_r79_1); var ctx_r78 = i0.ɵɵnextContext(2); return ctx_r78.openMail($event); });
+            i0.ɵɵelement(23, "i", 101);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
             var ctx_r27 = i0.ɵɵnextContext(2);
-            i0.ɵɵadvance(2);
-            i0.ɵɵproperty("ngIf", ctx_r27.project.projectImage !== "");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r27.project.projectImage === "");
+            i0.ɵɵproperty("ngIf", ctx_r27.project.projectImage !== "" && !ctx_r27.project.pictureError);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r27.project.projectImage === "" || ctx_r27.project.pictureError);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("cmacsGridType", ctx_r27.project.statusTag);
             i0.ɵɵadvance(1);
@@ -26353,9 +26366,9 @@
             i0.ɵɵadvance(2);
             i0.ɵɵstyleProp("width", ctx_r27.project.completion);
             i0.ɵɵadvance(2);
-            i0.ɵɵproperty("ngIf", ctx_r27.project.teamLead.avatar);
+            i0.ɵɵproperty("ngIf", !ctx_r27.project.teamLead.pictureError);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !ctx_r27.project.teamLead.avatar || ctx_r27.project.teamLead.avatar === "");
+            i0.ɵɵproperty("ngIf", !ctx_r27.project.teamLead.avatar || ctx_r27.project.teamLead.avatar === "" || ctx_r27.project.teamLead.pictureError);
             i0.ɵɵadvance(2);
             i0.ɵɵproperty("innerHtml", ctx_r27.buildLabel(ctx_r27.project.teamLead.name), i0.ɵɵsanitizeHtml);
             i0.ɵɵadvance(1);
@@ -26383,54 +26396,54 @@
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r79 = i0.ɵɵnextContext(5);
+            var ctx_r86 = i0.ɵɵnextContext(5);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r79.extra);
+            i0.ɵɵtextInterpolate(ctx_r86.extra);
         }
     }
     function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 114);
+            i0.ɵɵelementStart(0, "div", 115);
             i0.ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_ng_container_1_Template, 2, 1, "ng-container", 11);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r78 = i0.ɵɵnextContext(4);
+            var ctx_r85 = i0.ɵɵnextContext(4);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("nzStringTemplateOutlet", ctx_r78.extra);
+            i0.ɵɵproperty("nzStringTemplateOutlet", ctx_r85.extra);
         }
     }
     function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r81_1 = i0.ɵɵgetCurrentView();
+            var _r88_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 108);
+            i0.ɵɵelementStart(1, "div", 109);
             i0.ɵɵelementStart(2, "a", 75);
             i0.ɵɵelement(3, "i");
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(4, "div", 109, 110);
-            i0.ɵɵlistener("click", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_div_click_4_listener() { i0.ɵɵrestoreView(_r81_1); var _r76 = i0.ɵɵreference(5); var ctx_r80 = i0.ɵɵnextContext(3); return ctx_r80.toggleEdit(_r76); });
-            i0.ɵɵelementStart(6, "span", 111, 112);
-            i0.ɵɵlistener("keydown.enter", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_span_keydown_enter_6_listener($event) { i0.ɵɵrestoreView(_r81_1); var _r76 = i0.ɵɵreference(5); var _r77 = i0.ɵɵreference(7); var ctx_r82 = i0.ɵɵnextContext(3); return ctx_r82.handleEnter($event, _r76, _r77); })("keyup", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_span_keyup_6_listener($event) { i0.ɵɵrestoreView(_r81_1); var _r77 = i0.ɵɵreference(7); var ctx_r83 = i0.ɵɵnextContext(3); return ctx_r83.handleEdit($event, _r77); });
+            i0.ɵɵelementStart(4, "div", 110, 111);
+            i0.ɵɵlistener("click", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_div_click_4_listener() { i0.ɵɵrestoreView(_r88_1); var _r83 = i0.ɵɵreference(5); var ctx_r87 = i0.ɵɵnextContext(3); return ctx_r87.toggleEdit(_r83); });
+            i0.ɵɵelementStart(6, "span", 112, 113);
+            i0.ɵɵlistener("keydown.enter", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_span_keydown_enter_6_listener($event) { i0.ɵɵrestoreView(_r88_1); var _r83 = i0.ɵɵreference(5); var _r84 = i0.ɵɵreference(7); var ctx_r89 = i0.ɵɵnextContext(3); return ctx_r89.handleEnter($event, _r83, _r84); })("keyup", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_span_keyup_6_listener($event) { i0.ɵɵrestoreView(_r88_1); var _r84 = i0.ɵɵreference(7); var ctx_r90 = i0.ɵɵnextContext(3); return ctx_r90.handleEdit($event, _r84); });
             i0.ɵɵtext(8);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_Template, 2, 1, "div", 113);
+            i0.ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_Template, 2, 1, "div", 114);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r74 = i0.ɵɵnextContext(3);
+            var ctx_r81 = i0.ɵɵnextContext(3);
             i0.ɵɵadvance(3);
-            i0.ɵɵclassMap(ctx_r74.folderIcon);
+            i0.ɵɵclassMap(ctx_r81.folderIcon);
             i0.ɵɵadvance(1);
-            i0.ɵɵpropertyInterpolate("title", ctx_r74.title);
+            i0.ɵɵpropertyInterpolate("title", ctx_r81.title);
             i0.ɵɵadvance(2);
-            i0.ɵɵattribute("contentEditable", ctx_r74.isEditable);
+            i0.ɵɵattribute("contentEditable", ctx_r81.isEditable);
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(ctx_r74.title);
+            i0.ɵɵtextInterpolate(ctx_r81.title);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r74.extra);
+            i0.ɵɵproperty("ngIf", ctx_r81.extra);
         }
     }
     function CmacsCardComponent_ng_container_5_ng_container_10_Template(rf, ctx) {
@@ -26459,7 +26472,7 @@
             i0.ɵɵtemplate(6, CmacsCardComponent_ng_container_5_ng_container_6_Template, 7, 1, "ng-container", 4);
             i0.ɵɵtemplate(7, CmacsCardComponent_ng_container_5_ng_container_7_Template, 2, 1, "ng-container", 4);
             i0.ɵɵtemplate(8, CmacsCardComponent_ng_container_5_ng_container_8_Template, 3, 2, "ng-container", 4);
-            i0.ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_9_Template, 25, 13, "ng-container", 4);
+            i0.ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_9_Template, 24, 13, "ng-container", 4);
             i0.ɵɵtemplate(10, CmacsCardComponent_ng_container_5_ng_container_10_Template, 3, 2, "ng-container", 4);
             i0.ɵɵelementContainerEnd();
         }
@@ -26502,17 +26515,17 @@
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var action_r85 = ctx.$implicit;
-            var ctx_r84 = i0.ɵɵnextContext(2);
-            i0.ɵɵstyleProp("width", 100 / ctx_r84.actions.length, "%");
+            var action_r92 = ctx.$implicit;
+            var ctx_r91 = i0.ɵɵnextContext(2);
+            i0.ɵɵstyleProp("width", 100 / ctx_r91.actions.length, "%");
             i0.ɵɵadvance(2);
-            i0.ɵɵproperty("ngTemplateOutlet", action_r85);
+            i0.ɵɵproperty("ngTemplateOutlet", action_r92);
         }
     }
     function CmacsCardComponent_ul_7_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "ul", 115);
-            i0.ɵɵtemplate(1, CmacsCardComponent_ul_7_li_1_Template, 3, 3, "li", 116);
+            i0.ɵɵelementStart(0, "ul", 116);
+            i0.ɵɵtemplate(1, CmacsCardComponent_ul_7_li_1_Template, 3, 3, "li", 117);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -26643,7 +26656,11 @@
             return initials;
         };
         CmacsCardComponent.prototype.getBackgroundImage = function () {
-            return this.sanitizer.bypassSecurityTrustStyle('url(\'' + this.project.projectImage + '\')');
+            return this.project.projectImage;
+        };
+        CmacsCardComponent.prototype.onError = function (elem) {
+            elem.pictureError = true;
+            this.cdr.detectChanges();
         };
         CmacsCardComponent.prototype.iconsToDoClick = function (event, icon) {
             event.preventDefault();
@@ -26684,7 +26701,7 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("ant-card-loading", ctx.loading)("ant-card-bordered", ctx.bordered)("ant-card-hoverable", ctx.hoverable || ctx.cmacsType === "selection")("ant-card-type-inner", ctx.type === "inner")("ant-card-contain-tabs", !!ctx.tab)("cmacs-card-files-wrapper", ctx.cmacsType === "file")("cmacs-card-measure-wrapper", ctx.cmacsType === "measure")("cmacs-card-measure-wrapper-selected", ctx.cmacsType === "measure" && ctx.selected)("cmacs-selection-card", ctx.cmacsType === "selection")("cmacs-card-selected", ctx.cmacsType === "selection" && ctx.selected)("cmacs-card-disabled", ctx.cmacsType === "selection" && ctx.disabled)("cmacs-action-card", ctx.cmacsType === "action")("cmacs-weather-card", ctx.cmacsType === "weather")("cmacs-big-file-card", ctx.cmacsType === "big-file")("cmacs-big-file-card-selected", ctx.cmacsType === "big-file" && ctx.selected)("cmacs-action-card-disabled", ctx.cmacsType === "action" && ctx.disabled)("cmacs-information-card", ctx.cmacsType === "team")("cmacs-team-card", ctx.cmacsType === "project")("cmacs-video-player-card", ctx.cmacsType === "video")("cmacs-todo-card", ctx.cmacsType === "todo")("cmacs-todo-card-selected", ctx.cmacsType === "todo" && ctx.selected)("cmacs-team-card-selected", ctx.cmacsType === "project" && ctx.selected)("cmacs-card-files-folders-wrapper", ctx.cmacsType === "folder")("file-card-selected", ctx.cmacsType === "folder" && ctx.selected);
             }
-        }, inputs: { bordered: "bordered", opened: "opened", editable: "editable", isRadio: "isRadio", loading: "loading", disabled: "disabled", hoverable: "hoverable", useDefaultContent: "useDefaultContent", sources: "sources", bodyStyle: "bodyStyle", cover: "cover", body: "body", actions: "actions", team: "team", file: "file", project: "project", projectDateLabel: "projectDateLabel", todo: "todo", weather: "weather", celcius: "celcius", type: "type", cmacsType: "cmacsType", cmacsIcon: "cmacsIcon", cmacsIconOpenedFolder: "cmacsIconOpenedFolder", cmacsIconClosedFolder: "cmacsIconClosedFolder", title: "title", labelTitle: "labelTitle", extra: "extra", selected: "selected", value: "value", todoUserAssigned: "todoUserAssigned" }, outputs: { playerReady: "playerReady", titleChange: "titleChange", ondlclickCard: "ondlclickCard", open: "open", close: "close", selectedChange: "selectedChange", goToModule: "goToModule", iconToDoClick: "iconToDoClick" }, exportAs: ["cmacsCard"], ngContentSelectors: _c2$d, decls: 8, vars: 6, consts: [["content", ""], ["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], ["cmacs-radio", "", 3, "ngModel", "disabled", "ngModelChange"], [1, "cmacs-weather-card-temp"], [1, "cmacs-weather-card-cloud-img", 3, "src", "alt"], [1, "cmacs-weather-card-description-wrapper"], [1, "cmacs-weather-card-description"], [1, "cmacs-weather-card-temp-min-max"], [1, "cmacs-weather-col-1-3"], [1, "iconUILarge-Rain"], [1, "iconUILarge-Humidity"], [1, "iconUILarge-Wind"], ["nz-row", "", 1, "todo-card-header"], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "12", 4, "ngIf"], [1, "todo-card-content"], [1, "cmacs-todo-card-title"], ["placement", "bottom", "cmacs-tooltip", "", 3, "title"], ["class", "cmacs-todo-card-project", 4, "ngIf"], ["nz-row", "", 1, "cmacs-todo-card-action"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-person", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-team", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-priority", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-association", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-attachments", 3, "tap", 4, "ngIf"], ["nz-col", "", "nzSpan", "4", "class", "cmacs-todo-card-comments", 3, "tap", 4, "ngIf"], [1, "cmacs-todo-card-date"], [1, "cmacs-todo-card-project"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-person"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngIf"], [1, "iconCreation-User"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-team"], [1, "iconUILarge-Team"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-priority"], ["nz-icon", "", 3, "nzType"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-association"], [3, "click"], [1, "iconUILarge-Link"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-attachments", 3, "tap"], [1, "iconUILarge-Attached"], ["nz-col", "", "nzSpan", "4", 1, "cmacs-todo-card-comments", 3, "tap"], [1, "iconUILarge-Comments"], [1, "cmacs-card-big-file-meta"], [1, "cmacs-card-big-file-description"], [1, "cmacs-card-big-file-description-left-panel"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-big-file-title", 3, "title"], [1, "cmacs-card-big-file-date"], [1, "cmacs-card-big-file-description-right-panel"], ["class", "cmacs-card-big-file-extra", 4, "ngIf"], [1, "cmacs-card-big-file-icon-wrapper"], [1, "cmacs-card-big-file-extension-wrapper"], [1, "cmacs-card-big-file-extra"], [1, "cmacs-card-video-player-wrapper"], [3, "sources", "playerReady"], [1, "cmacs-card-video-description"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-video-title", 3, "title"], [1, "cmacs-card-files-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-label-recent", 3, "title"], ["class", "cmacs-card-file-extra", 4, "ngIf"], [1, "cmacs-card-file-extra"], [1, "cmacs-card-measure-icon-wrapper"], [1, "iconspan"], [1, "iconUILarge-Ruler"], [1, "cmacs-card-label-measure"], [2, "margin-bottom", "20px", "min-height", "25px", "display", "inline-flex"], ["class", "team-person-card", 3, "backgroundColor", "padding", "display", 4, "ngFor", "ngForOf"], ["class", "plus-team-card", 4, "ngIf"], [1, "team-person-card"], ["width", "30px", "height", "30px", 3, "src", "alt", 4, "ngIf"], ["width", "30px", "height", "30px", 3, "src", "alt"], [1, "plus-team-card"], [1, "projectimagecontainer"], ["class", "project-image", 3, "background-image", 4, "ngIf"], ["class", "cmacs-proj-card-div-Logo", 4, "ngIf"], [1, "project-status", 3, "cmacsGridType"], [1, "project-dates-wrapper"], [1, "project-dates-title"], [1, "project-dates", "project-dates-date"], [1, "iconArrowLarge-Arrow-Right", "project-dates"], [1, "project-card-progress-bar"], [1, "project-card-progress-bar-inner"], [1, "project-manager-details"], ["class", "manager-avatar", "width", "30px", "height", "30px", 3, "alt", "src", 4, "ngIf"], ["class", "cmacs-proj-avatar-text", 4, "ngIf"], [1, "project-manager-metadata"], [1, "manager-name", 3, "innerHtml"], [1, "manager-charge", 3, "innerHtml"], [1, "iconspan", "project-email-icon", 3, "click"], [1, "iconUILarge-Message"], [1, "project-image"], [1, "cmacs-proj-card-div-Logo"], [1, "cmacs-proj-card-text-Logo"], ["width", "30px", "height", "30px", 1, "manager-avatar", 3, "alt", "src"], [1, "cmacs-proj-avatar-text"], [1, "card-files-folders-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "card-files-folders-label", 3, "title", "click"], ["titleContainer", ""], [3, "keydown.enter", "keyup"], ["name", ""], ["class", "card-files-folder-extra iconspan", 4, "ngIf"], [1, "card-files-folder-extra", "iconspan"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function CmacsCardComponent_Template(rf, ctx) {
+        }, inputs: { bordered: "bordered", opened: "opened", editable: "editable", isRadio: "isRadio", loading: "loading", disabled: "disabled", hoverable: "hoverable", useDefaultContent: "useDefaultContent", sources: "sources", bodyStyle: "bodyStyle", cover: "cover", body: "body", actions: "actions", team: "team", file: "file", project: "project", projectDateLabel: "projectDateLabel", todo: "todo", weather: "weather", celcius: "celcius", type: "type", cmacsType: "cmacsType", cmacsIcon: "cmacsIcon", cmacsIconOpenedFolder: "cmacsIconOpenedFolder", cmacsIconClosedFolder: "cmacsIconClosedFolder", title: "title", labelTitle: "labelTitle", extra: "extra", selected: "selected", value: "value", todoUserAssigned: "todoUserAssigned" }, outputs: { playerReady: "playerReady", titleChange: "titleChange", ondlclickCard: "ondlclickCard", open: "open", close: "close", selectedChange: "selectedChange", goToModule: "goToModule", iconToDoClick: "iconToDoClick" }, exportAs: ["cmacsCard"], ngContentSelectors: _c2$d, decls: 8, vars: 6, consts: [["content", ""], ["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], ["cmacs-radio", "", 3, "ngModel", "disabled", "ngModelChange"], [1, "cmacs-weather-card-temp"], [1, "cmacs-weather-card-cloud-img", 3, "src", "alt"], [1, "cmacs-weather-card-description-wrapper"], [1, "cmacs-weather-card-description"], [1, "cmacs-weather-card-temp-min-max"], [1, "cmacs-weather-col-1-3"], [1, "iconUILarge-Rain"], [1, "iconUILarge-Humidity"], [1, "iconUILarge-Wind"], ["nz-row", "", 1, "todo-card-header"], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "12", 4, "ngIf"], [1, "todo-card-content"], [1, "cmacs-todo-card-title"], ["placement", "bottom", "cmacs-tooltip", "", 3, "title"], ["class", "cmacs-todo-card-project", 4, "ngIf"], ["nz-row", "", 1, "cmacs-todo-card-action"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-person", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-team", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-priority", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-association", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-attachments", 3, "tap", 4, "ngIf"], ["nz-col", "", "nzSpan", "4", "class", "cmacs-todo-card-comments", 3, "tap", 4, "ngIf"], [1, "cmacs-todo-card-date"], [1, "cmacs-todo-card-project"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-person"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngIf"], [1, "iconCreation-User"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-team"], [1, "iconUILarge-Team"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-priority"], ["nz-icon", "", 3, "nzType"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-association"], [3, "click"], [1, "iconUILarge-Link"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-attachments", 3, "tap"], [1, "iconUILarge-Attached"], ["nz-col", "", "nzSpan", "4", 1, "cmacs-todo-card-comments", 3, "tap"], [1, "iconUILarge-Comments"], [1, "cmacs-card-big-file-meta"], [1, "cmacs-card-big-file-description"], [1, "cmacs-card-big-file-description-left-panel"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-big-file-title", 3, "title"], [1, "cmacs-card-big-file-date"], [1, "cmacs-card-big-file-description-right-panel"], ["class", "cmacs-card-big-file-extra", 4, "ngIf"], [1, "cmacs-card-big-file-icon-wrapper"], [1, "cmacs-card-big-file-extension-wrapper"], [1, "cmacs-card-big-file-extra"], [1, "cmacs-card-video-player-wrapper"], [3, "sources", "playerReady"], [1, "cmacs-card-video-description"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-video-title", 3, "title"], [1, "cmacs-card-files-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-label-recent", 3, "title"], ["class", "cmacs-card-file-extra", 4, "ngIf"], [1, "cmacs-card-file-extra"], [1, "cmacs-card-measure-icon-wrapper"], [1, "iconspan"], [1, "iconUILarge-Ruler"], [1, "cmacs-card-label-measure"], [2, "margin-bottom", "20px", "min-height", "25px", "display", "inline-flex"], ["class", "team-person-card", 3, "backgroundColor", "padding", "display", 4, "ngFor", "ngForOf"], ["class", "plus-team-card", 4, "ngIf"], [1, "team-person-card"], ["width", "30px", "height", "30px", 3, "src", "alt", "error", 4, "ngIf"], ["width", "30px", "height", "30px", 3, "src", "alt", "error"], [1, "plus-team-card"], ["class", "projectimagecontainer", 4, "ngIf"], ["class", "cmacs-proj-card-div-Logo", 4, "ngIf"], [1, "project-status", 3, "cmacsGridType"], [1, "project-dates-wrapper"], [1, "project-dates-title"], [1, "project-dates", "project-dates-date"], [1, "iconArrowLarge-Arrow-Right", "project-dates"], [1, "project-card-progress-bar"], [1, "project-card-progress-bar-inner"], [1, "project-manager-details"], ["class", "manager-avatar", "width", "30px", "height", "30px", 3, "alt", "src", "error", 4, "ngIf"], ["class", "cmacs-proj-avatar-text", 4, "ngIf"], [1, "project-manager-metadata"], [1, "manager-name", 3, "innerHtml"], [1, "manager-charge", 3, "innerHtml"], [1, "iconspan", "project-email-icon", 3, "click"], [1, "iconUILarge-Message"], [1, "projectimagecontainer"], [1, "project-image"], [3, "src", "alt", "error"], [1, "cmacs-proj-card-div-Logo"], [1, "cmacs-proj-card-text-Logo"], ["width", "30px", "height", "30px", 1, "manager-avatar", 3, "alt", "src", "error"], [1, "cmacs-proj-avatar-text"], [1, "card-files-folders-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "card-files-folders-label", 3, "title", "click"], ["titleContainer", ""], [3, "keydown.enter", "keyup"], ["name", ""], ["class", "card-files-folder-extra iconspan", 4, "ngIf"], [1, "card-files-folder-extra", "iconspan"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function CmacsCardComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef(_c1$n);
                 i0.ɵɵtemplate(0, CmacsCardComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, i0.ɵɵtemplateRefExtractor);
@@ -26710,7 +26727,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", ctx.actions.length);
             }
-        }, directives: [i2$1.NgIf, i2$1.NgStyle, i6.NzStringTemplateOutletDirective, i2$1.NgTemplateOutlet, CmacsRadioComponent, i5.NgControlStatus, i5.NgModel, i6$1.NzRowDirective, i6$1.NzColDirective, CmacsTooltipDirective, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, CmacsVideoPlayerComponent, i2$1.NgForOf, CmacsTagComponent, CmacsCardLoadingComponent], pipes: [i2$1.TitleCasePipe], styles: [".cmacs-weather-card{width:318px;height:218px;border-radius:10px;background-color:#fff;border-color:transparent;box-shadow:0 2px 4px rgba(0,0,0,.1)}.cmacs-weather-card .ant-card-body{padding-top:35px}.cmacs-weather-card-cloud-img{width:75px;height:auto;float:right}.cmacs-weather-card-temp-min-max{font-family:Roboto-Regular;font-size:12px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;color:#97a0ae;margin-left:10px}.cmacs-weather-card-description-wrapper{margin-top:14px;margin-bottom:18px;height:40px}.cmacs-weather-card-description{font-family:Roboto-Regular;font-size:14px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.43;letter-spacing:normal;color:#656c79}.cmacs-weather-col-1-3 i{font-size:22px}.cmacs-weather-col-1-3{width:33.3333%;display:inline-block;text-align:center;font-size:12px;font-weight:400;line-height:1.67}.cmacs-weather-card-temp,.cmacs-weather-col-1-3{font-family:Roboto-Regular;font-stretch:normal;font-style:normal;letter-spacing:normal;color:#3b3f46}.cmacs-weather-card-temp{font-size:24px;font-weight:500;line-height:2.08}.ant-card,.ant-card-head{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79}.ant-card-extra,.ant-card-head-title{padding:0;font-size:12px;font-weight:500;font-family:Roboto-Medium}.ant-card-head{min-height:40px;padding:12px}.ant-card-grid{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79;cursor:pointer}.card-list-row .ant-card-grid>*{display:block}.card-list-row .ant-card-grid>*,.cmacs-card-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-shared-I .cmacs-card-title{width:100%}.cmacs-card-left-panel label.cmacs-checkbox-card{float:left}.cmacs-card-shared-II .cmacs-card-title{width:calc(100% - 40px);left:80px}.cmacs-card-person-info-II{display:flex}.cmacs-card-shared-III .cmacs-card-title{width:calc(100% - 60px)}.cmacs-card-files-wrapper{width:223px;height:36px;border:none}.cmacs-card-measure-wrapper{height:36px;border:1px solid #dee0e5}.cmacs-card-label-measure{padding:6px 20px;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;width:calc(100% - 35px)}.cmacs-card-measure-wrapper-selected,.cmacs-card-measure-wrapper:hover{border-color:#2a7cff;cursor:pointer;box-shadow:0 6px 10px 0 rgba(0,0,0,.15)}.cmacs-card-measure-wrapper-selected .cmacs-card-measure-icon-wrapper,.cmacs-card-measure-wrapper:hover .cmacs-card-measure-icon-wrapper{border-right-color:#2a7cff}.cmacs-card-measure-wrapper-selected .cmacs-card-measure-icon-wrapper i,.cmacs-card-measure-wrapper:hover .cmacs-card-measure-icon-wrapper i{color:#2a7cff}.cmacs-card-files-wrapper:hover{background-color:#f6f7fb;cursor:pointer}.cmacs-card-files-wrapper .ant-card-body,.cmacs-card-measure-wrapper .ant-card-body{padding:0;width:100%}.cmacs-card-files-wrapper div,.cmacs-card-measure-wrapper div{display:inline-block}.cmacs-card-files-icon-wrapper{width:36px;height:36px;border-radius:3px;box-shadow:0 6px 10px 0 rgba(0,0,0,.15);background-color:#fff;margin-right:16px;text-align:center;position:relative;top:-8px}.cmacs-card-measure-icon-wrapper{background-color:#fff;text-align:center;padding:7px 7px 6px;border-right:1px solid #dee0e5}.cmacs-card-measure-icon-wrapper i{color:#dee0e5}.cmacs-card-files-icon-wrapper i{color:#fb3147!important;font-size:18px;top:23%;position:relative}.cmacs-card-file-extra{font-size:22px;float:right;margin-top:2px;margin-right:5px}.cmacs-card-file-extra i{color:#bec4cd!important}.cmacs-card-label-recent{padding:10px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:calc(100% - 96px);vertical-align:middle}.cmacs-selection-card{height:100%;border-radius:8px}.cmacs-selection-card .ant-card-cover{padding:15px}.cmacs-selection-card .ant-card-body{padding:10px 10px 30px;text-align:center;font-size:12px}.cmacs-selection-card .ant-card-meta-description{color:#656c79}.cmacs-selection-card.ant-card-hoverable:hover:not(.cmacs-card-disabled){border:1px solid #bec4cd;box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-selection-card.ant-card-hoverable:hover:not(.cmacs-card-disabled) .ant-radio-inner{border-color:#bec4cd}.cmacs-card-selected,.cmacs-card-selected:hover,.cmacs-card-selected:hover .ant-radio-inner{border-color:#2a7cff!important}.ant-radio-disabled+span,.ant-radio-disabled .ant-radio-inner,.ant-radio-disabled .ant-radio-input,.ant-radio.ant-radio-disabled,input[type=radio][disabled]{cursor:default}.cmacs-card-disabled:hover .ant-radio-inner{border-color:#dee0e5!important;cursor:default;background-color:#f3f3f4}.cmacs-card-selected .ant-card-meta-description{color:#2a7cff!important}.cmacs-card-disabled,.cmacs-card-disabled:hover{border-color:#dee0e5;cursor:default;box-shadow:none}.cmacs-card-disabled .ant-card-meta-description{color:#97a0ae!important}.cmacs-action-card{border:none;margin-left:auto;margin-right:auto;min-width:131px}.cmacs-action-card:hover{cursor:pointer}.cmacs-action-card-disabled:hover{cursor:default}.cmacs-action-card:hover .ant-card-meta-title{color:#2164c9}.cmacs-action-card .ant-card-meta-description{text-align:center;color:#acb3bf}.cmacs-action-card .ant-card-body{padding:13px}.cmacs-action-card .ant-card-meta-title{color:#2a7cff;white-space:normal;text-align:center;font-size:12px;padding-top:18px}.cmacs-action-card-disabled .ant-card-meta-title,.cmacs-action-card-disabled:hover .ant-card-meta-title{color:#97a0ae}.cmacs-information-card.ant-card-bordered{border-color:#dee0e5;border-radius:8px}.cmacs-information-card .ant-card-head{min-height:30px}.cmacs-information-card .cmacs-btn-action{border-color:#dee0e5}.cmacs-information-card:hover .cmacs-btn-action,.cmacs-information-card:hover .cmacs-btn-action span i{color:#2a7cff!important}.cmacs-information-card .ant-card-body{padding:20px 10px}.cmacs-information-card .team-person-card{line-height:22px;font-size:12px;width:30px;height:30px;display:inline-block;border-radius:3px;background:#512da8;color:#fff;text-align:center;cursor:pointer;margin-right:10px}.cmacs-information-card img{border-radius:3px}.cmacs-information-card .team-person-card:last-child{margin-right:0}.cmacs-information-card .plus-team-card{line-height:22px;font-size:12px;width:30px;height:30px;display:inline-block;border-radius:3px;background-color:#dae8ff;color:#2a7cff;text-align:center;cursor:pointer;padding:4px}.iconspan i{font-size:16px;position:relative;height:16px;width:16px;display:inline-block;vertical-align:text-top}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.cmacs-team-card.ant-card-bordered{border-color:#dee0e5;border-radius:8px}.cmacs-team-card.ant-card-bordered:hover{box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-team-card-selected.ant-card-bordered{border-color:#2a7cff}.cmacs-team-card .ant-card-head{min-height:30px}.cmacs-team-card .ant-card-body{padding:0}.project-card-progress-bar-inner{height:5px;background-color:#2a7cff;border-radius:5px}.project-card-progress-bar{height:5px;background-color:#dee0e5;border-radius:5px;width:83%;margin:0 auto}.project-dates{display:inline-block}.project-status{position:relative;top:-36px;left:18px}.project-dates-wrapper{padding:0 20px;margin-top:-10px;margin-bottom:10px}.project-dates-title{color:#97a0ae;display:block;margin-bottom:5px}.project-dates-date{color:#656c79}.project-dates-wrapper a,.project-manager-metadata{margin-left:10px;margin-right:10px}.project-manager-metadata{display:inline-block}.manager-name{font-family:Roboto-Medium;font-size:12px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.33;letter-spacing:normal;color:#97a0ae;height:15.45px}.manager-charge,.manager-name{max-width:111px;width:111px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;position:relative}.manager-charge{color:#acb3bf;height:17.26px}.project-manager-details{margin:20px}.manager-avatar{display:inline-block;border-radius:3px;font-size:12px;color:#fff;text-align:center;line-height:1.33;float:left}.project-manager-details i{color:#656c79}.project-email-icon{float:right}.cmacs-card-files-folders-wrapper{height:48px;background-color:#fff;border:1px solid #dee0e5;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer!important;border-radius:8px}.card-files-uploading-wrapper{width:170px;height:48px;background-color:#f3f3f4;border:1px solid #dee0e5}.cmacs-card-files-folders-wrapper:hover{background-color:#f6f7fb;cursor:pointer}.file-card-selected,.file-card-selected:hover{background-color:#f2f7ff;border-color:#2a7cff}.cmacs-card-files-folders-wrapper:hover .card-files-folders-label{color:#2a7cff}.cmacs-card-files-folders-wrapper:hover .card-files-folder-extra a{opacity:1}.card-files-folder-extra{display:inline-block;font-size:20px}.card-files-folder-extra a{opacity:0}.card-files-folders-label{width:calc(100% - 50px);display:inline-block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;vertical-align:middle}.card-files-uploading-wrapper .ant-card-body,.cmacs-card-files-folders-wrapper .ant-card-body{padding:14px 10px}.card-files-folders-icon-wrapper{margin-right:10px;display:inline-block;vertical-align:middle}.card-files-uploading-wrapper i,.cmacs-card-files-folders-wrapper i{color:#656c79!important}.card-files-progress-bar-inner{height:5px;background-color:#2a7cff;border-radius:5px}.card-files-progress-bar{height:5px;background-color:#dee0e5;border-radius:5px;margin-top:7px}.cmacs-big-file-card{width:243px;border:none;overflow:hidden}.cmacs-big-file-card .ant-card-body{padding:0}.cmacs-card-big-file-meta{border:1px solid #dee0e5;transition:all .3s}.cmacs-big-file-card:before{content:\" \";width:40px;height:21px;background-color:#fff;position:absolute;left:calc(100% - 26px);transform:rotate(45deg);top:-4px;border-bottom:1px solid #dee0e5;transition:all .3s}.cmacs-card-big-file-icon-wrapper{font-size:22px;margin:0 auto;width:22px;padding-top:60px;padding-bottom:40px}.cmacs-card-big-file-extension-wrapper{text-align:right;padding:0 10px 10px 0;color:#acb3bf}.cmacs-card-big-file-description{height:61px;margin-top:10px;transition:all .3s}.cmacs-card-big-file-title{padding:10px 10px 5px;font-size:12px;color:#3b3f46;font-weight:500;transition:all .3s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-big-file-date{padding:0 10px 10px;font-size:12px;color:#acb3bf;font-weight:500}.cmacs-card-big-file-extra{font-size:21px;padding-top:3px;transition:all .3s}.cmacs-card-big-file-extra a{color:#656c79;opacity:0;transition:all .3s}.cmacs-card-big-file-description-left-panel{width:90%;float:left}.cmacs-card-big-file-description-right-panel{width:10%;float:right}.cmacs-big-file-card:hover{cursor:pointer}.cmacs-big-file-card:hover .cmacs-card-big-file-description{background-color:#f6f7fb}.cmacs-big-file-card:hover .cmacs-card-big-file-title{color:#2a7cff}.cmacs-big-file-card:hover .cmacs-card-big-file-extra a{opacity:1}.cmacs-big-file-card-selected .cmacs-card-big-file-description,.cmacs-big-file-card-selected:hover .cmacs-card-big-file-description{background-color:#f2f7ff}.cmacs-big-file-card-selected.cmacs-big-file-card:before,.cmacs-big-file-card-selected .cmacs-card-big-file-meta{border-color:#2a7cff}.cmacs-card-video-description{color:#3b3f46;font-weight:600;font-size:12px;margin-top:17px}.cmacs-card-video-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-video-player-wrapper{width:337px;height:226px;border:1px solid #dee0e5}.cmacs-video-player-card{border:none;width:337px}.cmacs-video-player-card .ant-card-body{padding:0}.cmacs-todo-card-upper-line{width:95%;margin:5px;height:2px;border-radius:100px}.cmacs-todo-card{width:243px;margin:7px auto;border:1px solid #dee0e5;border-radius:8px}.cmacs-todo-card.ant-card-hoverable:hover{box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-todo-card .ant-card-body{padding:0}.cmacs-todo-card-title{color:#3b3f46;margin:15px 14px 0;white-space:pre-line;display:-moz-box;display:-webkit-box;-webkit-line-clamp:2;-moz-line-clamp:2;-webkit-box-orient:vertical}.cmacs-todo-card-project,.cmacs-todo-card-title{font-size:12px;overflow:hidden;text-overflow:ellipsis}.cmacs-todo-card-project{color:#97a0ae;margin:10px 14px 0;white-space:nowrap}.cmacs-todo-card-date{color:#656c79;background-color:#f6f7fb;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;float:right;padding:0 5px}.cmacs-todo-card-action{padding:15px 14px 0 15px;font-size:14px;position:absolute;bottom:12px;width:100%}.cmacs-todo-card-attachments,.cmacs-todo-card-comments,.cmacs-todo-card-person,.cmacs-todo-card-team{float:left}.cmacs-todo-card-attachments span,.cmacs-todo-card-comments span{margin-right:3px;color:#2a7cff;font-size:12px}.cmacs-todo-card-priority{float:left}.cmacs-todo-card-attachments a,.cmacs-todo-card-comments a,.cmacs-todo-card-person a,.cmacs-todo-card-team a{color:#656c79}.cmacs-todo-card-project-img{width:241px;height:100px;overflow:hidden}.cmacs-todo-card-project-img img{width:241px}.cmacs-todo-card-selected{border-color:#2a7cff!important}.cmacs-proj-card-text-Logo{font-size:50px;color:#fff;background-color:#512da8}.cmacs-proj-card-div-Logo{background-color:#512da8;width:221px;height:107px;text-align:center}.cmacs-proj-avatar-text{height:30px;width:30px;line-height:22px;font-size:11px;border-radius:3px;background:#512da8;color:#fff;text-align:center;cursor:pointer;padding:4px;display:inline-block;float:left}.projectimagecontainer{height:107px;border-top:1px solid #dee0e5;border-bottom:1px solid #dee0e5;background-color:#f6f7fb}.project-image{background-repeat:no-repeat;background-position:50%;background-size:contain;height:100%;width:auto}.cmacs-todo-card-attachments span,.cmacs-todo-card-comments span,.cmacs-todo-card-person a{vertical-align:middle}.cmacs-todo-card-attachments a,.cmacs-todo-card-comments a{vertical-align:sub;font-size:18px}.cmacs-todo-card-team a{font-size:19px;vertical-align:top}.cmacs-todo-card-overdue{color:#f5222d}.cmacs-todo-card-association{float:left;cursor:pointer;font-size:18px}.todo-card-header{padding:12px;border-bottom:1px solid #dee0e5}.todo-card-content{min-height:110px}.cardrow{margin-left:-4px;margin-right:-4px}.cardcolumn{padding-left:4px;padding-right:4px}", "cmacs-card {\n        display: block;\n      }\n    "], encapsulation: 2 });
+        }, directives: [i2$1.NgIf, i2$1.NgStyle, i6.NzStringTemplateOutletDirective, i2$1.NgTemplateOutlet, CmacsRadioComponent, i5.NgControlStatus, i5.NgModel, i6$1.NzRowDirective, i6$1.NzColDirective, CmacsTooltipDirective, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, CmacsVideoPlayerComponent, i2$1.NgForOf, CmacsTagComponent, CmacsCardLoadingComponent], pipes: [i2$1.TitleCasePipe], styles: [".cmacs-weather-card{width:318px;height:218px;border-radius:10px;background-color:#fff;border-color:transparent;box-shadow:0 2px 4px rgba(0,0,0,.1)}.cmacs-weather-card .ant-card-body{padding-top:35px}.cmacs-weather-card-cloud-img{width:75px;height:auto;float:right}.cmacs-weather-card-temp-min-max{font-family:Roboto-Regular;font-size:12px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;color:#97a0ae;margin-left:10px}.cmacs-weather-card-description-wrapper{margin-top:14px;margin-bottom:18px;height:40px}.cmacs-weather-card-description{font-family:Roboto-Regular;font-size:14px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.43;letter-spacing:normal;color:#656c79}.cmacs-weather-col-1-3 i{font-size:22px}.cmacs-weather-col-1-3{width:33.3333%;display:inline-block;text-align:center;font-size:12px;font-weight:400;line-height:1.67}.cmacs-weather-card-temp,.cmacs-weather-col-1-3{font-family:Roboto-Regular;font-stretch:normal;font-style:normal;letter-spacing:normal;color:#3b3f46}.cmacs-weather-card-temp{font-size:24px;font-weight:500;line-height:2.08}.ant-card,.ant-card-head{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79}.ant-card-extra,.ant-card-head-title{padding:0;font-size:12px;font-weight:500;font-family:Roboto-Medium}.ant-card-head{min-height:40px;padding:12px}.ant-card-grid{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79;cursor:pointer}.card-list-row .ant-card-grid>*{display:block}.card-list-row .ant-card-grid>*,.cmacs-card-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-shared-I .cmacs-card-title{width:100%}.cmacs-card-left-panel label.cmacs-checkbox-card{float:left}.cmacs-card-shared-II .cmacs-card-title{width:calc(100% - 40px);left:80px}.cmacs-card-person-info-II{display:flex}.cmacs-card-shared-III .cmacs-card-title{width:calc(100% - 60px)}.cmacs-card-files-wrapper{width:223px;height:36px;border:none}.cmacs-card-measure-wrapper{height:36px;border:1px solid #dee0e5}.cmacs-card-label-measure{padding:6px 20px;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;width:calc(100% - 35px)}.cmacs-card-measure-wrapper-selected,.cmacs-card-measure-wrapper:hover{border-color:#2a7cff;cursor:pointer;box-shadow:0 6px 10px 0 rgba(0,0,0,.15)}.cmacs-card-measure-wrapper-selected .cmacs-card-measure-icon-wrapper,.cmacs-card-measure-wrapper:hover .cmacs-card-measure-icon-wrapper{border-right-color:#2a7cff}.cmacs-card-measure-wrapper-selected .cmacs-card-measure-icon-wrapper i,.cmacs-card-measure-wrapper:hover .cmacs-card-measure-icon-wrapper i{color:#2a7cff}.cmacs-card-files-wrapper:hover{background-color:#f6f7fb;cursor:pointer}.cmacs-card-files-wrapper .ant-card-body,.cmacs-card-measure-wrapper .ant-card-body{padding:0;width:100%}.cmacs-card-files-wrapper div,.cmacs-card-measure-wrapper div{display:inline-block}.cmacs-card-files-icon-wrapper{width:36px;height:36px;border-radius:3px;box-shadow:0 6px 10px 0 rgba(0,0,0,.15);background-color:#fff;margin-right:16px;text-align:center;position:relative;top:-8px}.cmacs-card-measure-icon-wrapper{background-color:#fff;text-align:center;padding:7px 7px 6px;border-right:1px solid #dee0e5}.cmacs-card-measure-icon-wrapper i{color:#dee0e5}.cmacs-card-files-icon-wrapper i{color:#fb3147!important;font-size:18px;top:23%;position:relative}.cmacs-card-file-extra{font-size:22px;float:right;margin-top:2px;margin-right:5px}.cmacs-card-file-extra i{color:#bec4cd!important}.cmacs-card-label-recent{padding:10px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:calc(100% - 96px);vertical-align:middle}.cmacs-selection-card{height:100%;border-radius:8px}.cmacs-selection-card .ant-card-cover{padding:15px}.cmacs-selection-card .ant-card-body{padding:10px 10px 30px;text-align:center;font-size:12px}.cmacs-selection-card .ant-card-meta-description{color:#656c79}.cmacs-selection-card.ant-card-hoverable:hover:not(.cmacs-card-disabled){border:1px solid #bec4cd;box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-selection-card.ant-card-hoverable:hover:not(.cmacs-card-disabled) .ant-radio-inner{border-color:#bec4cd}.cmacs-card-selected,.cmacs-card-selected:hover,.cmacs-card-selected:hover .ant-radio-inner{border-color:#2a7cff!important}.ant-radio-disabled+span,.ant-radio-disabled .ant-radio-inner,.ant-radio-disabled .ant-radio-input,.ant-radio.ant-radio-disabled,input[type=radio][disabled]{cursor:default}.cmacs-card-disabled:hover .ant-radio-inner{border-color:#dee0e5!important;cursor:default;background-color:#f3f3f4}.cmacs-card-selected .ant-card-meta-description{color:#2a7cff!important}.cmacs-card-disabled,.cmacs-card-disabled:hover{border-color:#dee0e5;cursor:default;box-shadow:none}.cmacs-card-disabled .ant-card-meta-description{color:#97a0ae!important}.cmacs-action-card{border:none;margin-left:auto;margin-right:auto;min-width:131px}.cmacs-action-card:hover{cursor:pointer}.cmacs-action-card-disabled:hover{cursor:default}.cmacs-action-card:hover .ant-card-meta-title{color:#2164c9}.cmacs-action-card .ant-card-meta-description{text-align:center;color:#acb3bf}.cmacs-action-card .ant-card-body{padding:13px}.cmacs-action-card .ant-card-meta-title{color:#2a7cff;white-space:normal;text-align:center;font-size:12px;padding-top:18px}.cmacs-action-card-disabled .ant-card-meta-title,.cmacs-action-card-disabled:hover .ant-card-meta-title{color:#97a0ae}.cmacs-information-card.ant-card-bordered{border-color:#dee0e5;border-radius:8px}.cmacs-information-card .ant-card-head{min-height:30px}.cmacs-information-card .cmacs-btn-action{border-color:#dee0e5}.cmacs-information-card:hover .cmacs-btn-action,.cmacs-information-card:hover .cmacs-btn-action span i{color:#2a7cff!important}.cmacs-information-card .ant-card-body{padding:20px 10px}.cmacs-information-card .team-person-card{line-height:22px;font-size:12px;width:30px;height:30px;display:inline-block;border-radius:3px;background:#512da8;color:#fff;text-align:center;cursor:pointer;margin-right:10px}.cmacs-information-card img{border-radius:3px}.cmacs-information-card .team-person-card:last-child{margin-right:0}.cmacs-information-card .plus-team-card{line-height:22px;font-size:12px;width:30px;height:30px;display:inline-block;border-radius:3px;background-color:#dae8ff;color:#2a7cff;text-align:center;cursor:pointer;padding:4px}.iconspan i{font-size:16px;position:relative;height:16px;width:16px;display:inline-block;vertical-align:text-top}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.cmacs-team-card.ant-card-bordered{border-color:#dee0e5;border-radius:8px}.cmacs-team-card.ant-card-bordered:hover{box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-team-card-selected.ant-card-bordered{border-color:#2a7cff}.cmacs-team-card .ant-card-head{min-height:30px}.cmacs-team-card .ant-card-body{padding:0}.project-card-progress-bar-inner{height:5px;background-color:#2a7cff;border-radius:5px}.project-card-progress-bar{height:5px;background-color:#dee0e5;border-radius:5px;width:83%;margin:0 auto}.project-dates{display:inline-block}.project-status{position:relative;top:-36px;left:18px}.project-dates-wrapper{padding:0 20px;margin-top:-10px;margin-bottom:10px}.project-dates-title{color:#97a0ae;display:block;margin-bottom:5px}.project-dates-date{color:#656c79}.project-dates-wrapper a,.project-manager-metadata{margin-left:10px;margin-right:10px}.project-manager-metadata{display:inline-block}.manager-name{font-family:Roboto-Medium;font-size:12px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.33;letter-spacing:normal;color:#97a0ae;height:15.45px}.manager-charge,.manager-name{max-width:111px;width:111px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;position:relative}.manager-charge{color:#acb3bf;height:17.26px}.project-manager-details{margin:20px}.manager-avatar{display:inline-block;border-radius:3px;font-size:12px;color:#fff;text-align:center;line-height:1.33;float:left}.project-manager-details i{color:#656c79}.project-email-icon{float:right}.cmacs-card-files-folders-wrapper{height:48px;background-color:#fff;border:1px solid #dee0e5;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer!important;border-radius:8px}.card-files-uploading-wrapper{width:170px;height:48px;background-color:#f3f3f4;border:1px solid #dee0e5}.cmacs-card-files-folders-wrapper:hover{background-color:#f6f7fb;cursor:pointer}.file-card-selected,.file-card-selected:hover{background-color:#f2f7ff;border-color:#2a7cff}.cmacs-card-files-folders-wrapper:hover .card-files-folders-label{color:#2a7cff}.cmacs-card-files-folders-wrapper:hover .card-files-folder-extra a{opacity:1}.card-files-folder-extra{display:inline-block;font-size:20px}.card-files-folder-extra a{opacity:0}.card-files-folders-label{width:calc(100% - 50px);display:inline-block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;vertical-align:middle}.card-files-uploading-wrapper .ant-card-body,.cmacs-card-files-folders-wrapper .ant-card-body{padding:14px 10px}.card-files-folders-icon-wrapper{margin-right:10px;display:inline-block;vertical-align:middle}.card-files-uploading-wrapper i,.cmacs-card-files-folders-wrapper i{color:#656c79!important}.card-files-progress-bar-inner{height:5px;background-color:#2a7cff;border-radius:5px}.card-files-progress-bar{height:5px;background-color:#dee0e5;border-radius:5px;margin-top:7px}.cmacs-big-file-card{width:243px;border:none;overflow:hidden}.cmacs-big-file-card .ant-card-body{padding:0}.cmacs-card-big-file-meta{border:1px solid #dee0e5;transition:all .3s}.cmacs-big-file-card:before{content:\" \";width:40px;height:21px;background-color:#fff;position:absolute;left:calc(100% - 26px);transform:rotate(45deg);top:-4px;border-bottom:1px solid #dee0e5;transition:all .3s}.cmacs-card-big-file-icon-wrapper{font-size:22px;margin:0 auto;width:22px;padding-top:60px;padding-bottom:40px}.cmacs-card-big-file-extension-wrapper{text-align:right;padding:0 10px 10px 0;color:#acb3bf}.cmacs-card-big-file-description{height:61px;margin-top:10px;transition:all .3s}.cmacs-card-big-file-title{padding:10px 10px 5px;font-size:12px;color:#3b3f46;font-weight:500;transition:all .3s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-big-file-date{padding:0 10px 10px;font-size:12px;color:#acb3bf;font-weight:500}.cmacs-card-big-file-extra{font-size:21px;padding-top:3px;transition:all .3s}.cmacs-card-big-file-extra a{color:#656c79;opacity:0;transition:all .3s}.cmacs-card-big-file-description-left-panel{width:90%;float:left}.cmacs-card-big-file-description-right-panel{width:10%;float:right}.cmacs-big-file-card:hover{cursor:pointer}.cmacs-big-file-card:hover .cmacs-card-big-file-description{background-color:#f6f7fb}.cmacs-big-file-card:hover .cmacs-card-big-file-title{color:#2a7cff}.cmacs-big-file-card:hover .cmacs-card-big-file-extra a{opacity:1}.cmacs-big-file-card-selected .cmacs-card-big-file-description,.cmacs-big-file-card-selected:hover .cmacs-card-big-file-description{background-color:#f2f7ff}.cmacs-big-file-card-selected.cmacs-big-file-card:before,.cmacs-big-file-card-selected .cmacs-card-big-file-meta{border-color:#2a7cff}.cmacs-card-video-description{color:#3b3f46;font-weight:600;font-size:12px;margin-top:17px}.cmacs-card-video-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-video-player-wrapper{width:337px;height:226px;border:1px solid #dee0e5}.cmacs-video-player-card{border:none;width:337px}.cmacs-video-player-card .ant-card-body{padding:0}.cmacs-todo-card-upper-line{width:95%;margin:5px;height:2px;border-radius:100px}.cmacs-todo-card{width:243px;margin:7px auto;border:1px solid #dee0e5;border-radius:8px}.cmacs-todo-card.ant-card-hoverable:hover{box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-todo-card .ant-card-body{padding:0}.cmacs-todo-card-title{color:#3b3f46;margin:15px 14px 0;white-space:pre-line;display:-moz-box;display:-webkit-box;-webkit-line-clamp:2;-moz-line-clamp:2;-webkit-box-orient:vertical}.cmacs-todo-card-project,.cmacs-todo-card-title{font-size:12px;overflow:hidden;text-overflow:ellipsis}.cmacs-todo-card-project{color:#97a0ae;margin:10px 14px 0;white-space:nowrap}.cmacs-todo-card-date{color:#656c79;background-color:#f6f7fb;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;float:right;padding:0 5px}.cmacs-todo-card-action{padding:15px 14px 0 15px;font-size:14px;position:absolute;bottom:12px;width:100%}.cmacs-todo-card-attachments,.cmacs-todo-card-comments,.cmacs-todo-card-person,.cmacs-todo-card-team{float:left}.cmacs-todo-card-attachments span,.cmacs-todo-card-comments span{margin-right:3px;color:#2a7cff;font-size:12px}.cmacs-todo-card-priority{float:left}.cmacs-todo-card-attachments a,.cmacs-todo-card-comments a,.cmacs-todo-card-person a,.cmacs-todo-card-team a{color:#656c79}.cmacs-todo-card-project-img{width:241px;height:100px;overflow:hidden}.cmacs-todo-card-project-img img{width:241px}.cmacs-todo-card-selected{border-color:#2a7cff!important}.cmacs-proj-card-text-Logo{font-size:50px;color:#fff;background-color:#512da8}.cmacs-proj-card-div-Logo{background-color:#512da8;width:221px;height:107px;text-align:center}.cmacs-proj-avatar-text{height:30px;width:30px;line-height:22px;font-size:11px;border-radius:3px;background:#512da8;color:#fff;text-align:center;cursor:pointer;padding:4px;display:inline-block;float:left}.projectimagecontainer{height:107px;border-top:1px solid #dee0e5;border-bottom:1px solid #dee0e5;background-color:#f6f7fb}.project-image{background-repeat:no-repeat;background-position:50%;background-size:contain;text-align:center}.project-image,.project-image img{height:100%;width:auto}.cmacs-todo-card-attachments span,.cmacs-todo-card-comments span,.cmacs-todo-card-person a{vertical-align:middle}.cmacs-todo-card-attachments a,.cmacs-todo-card-comments a{vertical-align:sub;font-size:18px}.cmacs-todo-card-team a{font-size:19px;vertical-align:top}.cmacs-todo-card-overdue{color:#f5222d}.cmacs-todo-card-association{float:left;cursor:pointer;font-size:18px}.todo-card-header{padding:12px;border-bottom:1px solid #dee0e5}.todo-card-content{min-height:110px}.cardrow{margin-left:-4px;margin-right:-4px}.cardcolumn{padding-left:4px;padding-right:4px}", "cmacs-card {\n        display: block;\n      }\n    "], encapsulation: 2 });
     __decorate([
         util.InputBoolean()
     ], CmacsCardComponent.prototype, "bordered", void 0);
@@ -38804,72 +38821,117 @@
             i0.ɵɵproperty("ngTemplateOutlet", elem_r9.template.ref)("ngTemplateOutletContext", elem_r9.template.context);
         }
     }
-    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_span_1_Template(rf, ctx) {
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_img_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "span", 22);
-            i0.ɵɵtext(1);
+            var _r27_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "img", 23);
+            i0.ɵɵlistener("error", function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_img_1_Template_img_error_0_listener() { i0.ɵɵrestoreView(_r27_1); var elem_r9 = i0.ɵɵnextContext(3).$implicit; var ctx_r25 = i0.ɵɵnextContext(2); return ctx_r25.onError(elem_r9); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var elem_r9 = i0.ɵɵnextContext(3).$implicit;
             var ctx_r23 = i0.ɵɵnextContext(2);
+            i0.ɵɵpropertyInterpolate("src", ctx_r23.getSafeImage(elem_r9.picture), i0.ɵɵsanitizeUrl);
+            i0.ɵɵpropertyInterpolate("alt", elem_r9.label);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_span_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "span", 24);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r24 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r23.getInitials(elem_r9.label));
+            i0.ɵɵtextInterpolate(ctx_r24.getInitials(elem_r9.label));
         }
     }
     function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 20);
-            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_span_1_Template, 2, 1, "span", 21);
+            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_img_1_Template, 1, 2, "img", 21);
+            i0.ɵɵtemplate(2, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_span_2_Template, 2, 1, "span", 22);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var elem_r9 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r17 = i0.ɵɵnextContext(2);
-            i0.ɵɵstyleProp("background-image", elem_r9.picture ? ctx_r17.getBackgroundImage(elem_r9.picture) : "none");
             i0.ɵɵclassProp("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !elem_r9.picture);
+            i0.ɵɵproperty("ngIf", !elem_r9.pictureError);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r9.pictureError);
         }
     }
-    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_i_1_Template(rf, ctx) {
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_img_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 24);
+            var _r35_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "img", 23);
+            i0.ɵɵlistener("error", function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_img_1_Template_img_error_0_listener() { i0.ɵɵrestoreView(_r35_1); var elem_r9 = i0.ɵɵnextContext(3).$implicit; var ctx_r33 = i0.ɵɵnextContext(2); return ctx_r33.onError(elem_r9); });
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r31 = i0.ɵɵnextContext(2);
+            i0.ɵɵpropertyInterpolate("src", ctx_r31.getSafeImage(elem_r9.picture), i0.ɵɵsanitizeUrl);
+            i0.ɵɵpropertyInterpolate("alt", elem_r9.label);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_i_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 26);
         }
     }
     function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 20);
-            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_i_1_Template, 1, 0, "i", 23);
+            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_img_1_Template, 1, 2, "img", 21);
+            i0.ɵɵtemplate(2, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_i_2_Template, 1, 0, "i", 25);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var elem_r9 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r18 = i0.ɵɵnextContext(2);
-            i0.ɵɵstyleProp("background-image", elem_r9.picture ? ctx_r18.getBackgroundImage(elem_r9.picture) : "none");
-            i0.ɵɵclassProp("cmacs-guest-no-picture", !elem_r9.picture)("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
+            i0.ɵɵclassProp("cmacs-guest-no-picture", !elem_r9.picture || elem_r9.pictureError)("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !elem_r9.picture);
+            i0.ɵɵproperty("ngIf", !elem_r9.pictureError);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r9.pictureError);
         }
     }
-    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_i_1_Template(rf, ctx) {
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_img_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 26);
+            var _r42_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "img", 23);
+            i0.ɵɵlistener("error", function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_img_1_Template_img_error_0_listener() { i0.ɵɵrestoreView(_r42_1); var elem_r9 = i0.ɵɵnextContext(3).$implicit; var ctx_r40 = i0.ɵɵnextContext(2); return ctx_r40.onError(elem_r9); });
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r9 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r38 = i0.ɵɵnextContext(2);
+            i0.ɵɵpropertyInterpolate("src", ctx_r38.getSafeImage(elem_r9.picture), i0.ɵɵsanitizeUrl);
+            i0.ɵɵpropertyInterpolate("alt", elem_r9.label);
+        }
+    }
+    function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_i_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 28);
         }
     }
     function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 20);
-            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_i_1_Template, 1, 0, "i", 25);
+            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_img_1_Template, 1, 2, "img", 21);
+            i0.ɵɵtemplate(2, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_i_2_Template, 1, 0, "i", 27);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var elem_r9 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r19 = i0.ɵɵnextContext(2);
-            i0.ɵɵstyleProp("background-image", elem_r9.picture ? ctx_r19.getBackgroundImage(elem_r9.picture) : "none");
-            i0.ɵɵclassProp("cmacs-team-no-picture", !elem_r9.picture)("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
+            i0.ɵɵclassProp("cmacs-team-no-picture", !elem_r9.picture || elem_r9.pictureError)("cmacs-user-dropdown-no-picture", elem_r9.hidePicture);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !elem_r9.picture);
+            i0.ɵɵproperty("ngIf", !elem_r9.pictureError);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r9.pictureError);
         }
     }
     function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_5_Template(rf, ctx) {
@@ -38877,7 +38939,7 @@
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "span");
             i0.ɵɵtext(2);
-            i0.ɵɵelementStart(3, "span", 27);
+            i0.ɵɵelementStart(3, "span", 29);
             i0.ɵɵtext(4);
             i0.ɵɵelementEnd();
             i0.ɵɵtext(5);
@@ -38908,7 +38970,7 @@
     }
     function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_7_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 28);
+            i0.ɵɵelementStart(0, "div", 30);
             i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
         }
@@ -38921,9 +38983,9 @@
     function CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 13);
-            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_Template, 2, 5, "div", 14);
-            i0.ɵɵtemplate(2, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_Template, 2, 7, "div", 15);
-            i0.ɵɵtemplate(3, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_Template, 2, 7, "div", 16);
+            i0.ɵɵtemplate(1, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_1_Template, 3, 4, "div", 14);
+            i0.ɵɵtemplate(2, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_2_Template, 3, 6, "div", 15);
+            i0.ɵɵtemplate(3, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_div_3_Template, 3, 6, "div", 16);
             i0.ɵɵelementStart(4, "div", 17);
             i0.ɵɵtemplate(5, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_5_Template, 6, 3, "ng-container", 18);
             i0.ɵɵtemplate(6, CmacsUserDropdownComponent_ng_container_1_ng_container_1_ng_template_5_ng_container_6_Template, 2, 1, "ng-container", 18);
@@ -38993,9 +39055,9 @@
     }
     function CmacsUserDropdownComponent_cmacs_option_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "cmacs-option", 29);
-            i0.ɵɵelementStart(1, "div", 30);
-            i0.ɵɵelement(2, "i", 31);
+            i0.ɵɵelementStart(0, "cmacs-option", 31);
+            i0.ɵɵelementStart(1, "div", 32);
+            i0.ɵɵelement(2, "i", 33);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -39008,10 +39070,10 @@
     }
     function CmacsUserDropdownComponent_ng_template_3_Template(rf, ctx) {
         if (rf & 1) {
-            var _r35_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "div", 32);
-            i0.ɵɵlistener("click", function CmacsUserDropdownComponent_ng_template_3_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r35_1); var ctx_r34 = i0.ɵɵnextContext(); return ctx_r34.addGuestUser(); });
-            i0.ɵɵelement(1, "i", 33);
+            var _r50_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 34);
+            i0.ɵɵlistener("click", function CmacsUserDropdownComponent_ng_template_3_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r50_1); var ctx_r49 = i0.ɵɵnextContext(); return ctx_r49.addGuestUser(); });
+            i0.ɵɵelement(1, "i", 35);
             i0.ɵɵelementStart(2, "span");
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
@@ -39025,19 +39087,19 @@
     }
     function CmacsUserDropdownComponent_ng_template_5_div_0_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 35);
+            i0.ɵɵelementStart(0, "div", 37);
             i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r36 = i0.ɵɵnextContext(2);
+            var ctx_r51 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r36.emailErrorLabel);
+            i0.ɵɵtextInterpolate(ctx_r51.emailErrorLabel);
         }
     }
     function CmacsUserDropdownComponent_ng_template_5_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵtemplate(0, CmacsUserDropdownComponent_ng_template_5_div_0_Template, 2, 1, "div", 34);
+            i0.ɵɵtemplate(0, CmacsUserDropdownComponent_ng_template_5_div_0_Template, 2, 1, "div", 36);
         }
         if (rf & 2) {
             var ctx_r5 = i0.ɵɵnextContext();
@@ -39045,8 +39107,7 @@
         }
     }
     var CmacsUserDropdownComponent = /** @class */ (function () {
-        function CmacsUserDropdownComponent(sanitizer, cdr, fb) {
-            this.sanitizer = sanitizer;
+        function CmacsUserDropdownComponent(cdr, fb) {
             this.cdr = cdr;
             this.fb = fb;
             this.mode = 'default';
@@ -39155,8 +39216,12 @@
             initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
             return initials;
         };
-        CmacsUserDropdownComponent.prototype.getBackgroundImage = function (picture) {
-            return this.sanitizer.bypassSecurityTrustStyle('url(\'' + picture + '\')');
+        CmacsUserDropdownComponent.prototype.getSafeImage = function (picture) {
+            return picture;
+        };
+        CmacsUserDropdownComponent.prototype.onError = function (elem) {
+            elem.pictureError = true;
+            this.cdr.detectChanges();
         };
         CmacsUserDropdownComponent.prototype.addGuestUser = function () {
             if (this._searchValue) {
@@ -39206,7 +39271,7 @@
         };
         return CmacsUserDropdownComponent;
     }());
-    CmacsUserDropdownComponent.ɵfac = function CmacsUserDropdownComponent_Factory(t) { return new (t || CmacsUserDropdownComponent)(i0.ɵɵdirectiveInject(i1$6.DomSanitizer), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i5.FormBuilder)); };
+    CmacsUserDropdownComponent.ɵfac = function CmacsUserDropdownComponent_Factory(t) { return new (t || CmacsUserDropdownComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i5.FormBuilder)); };
     CmacsUserDropdownComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsUserDropdownComponent, selectors: [["cmacs-user-dropdown"]], viewQuery: function CmacsUserDropdownComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(CmacsSelectComponent, 1);
@@ -39215,7 +39280,7 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.selectComponent = _t.first);
             }
-        }, inputs: { mode: "mode", emailErrorLabel: "emailErrorLabel", inviteGuestLabel: "inviteGuestLabel", loadingLabel: "loadingLabel", placeHolder: "placeHolder", selectedValue: "selectedValue", maxTagCount: "maxTagCount", serverSearch: "serverSearch", isLoading: "isLoading", inviteGuest: "inviteGuest", listOfOption: "listOfOption" }, outputs: { selectedValueChange: "selectedValueChange", onAddGuestUserByEmail: "onAddGuestUserByEmail", cmacsOnSearch: "cmacsOnSearch" }, exportAs: ["cmacsUserDropdown"], decls: 7, vars: 13, consts: [["allowClear", "", 3, "showCmacsSearch", "maxTagCount", "mode", "showSelectAll", "showArrow", "userDropdown", "notFoundContentCustom", "placeHolder", "serverSearch", "dropdownRender", "ngModel", "cmacsOnSearch", "ngModelChange"], [4, "ngFor", "ngForOf"], ["disabled", "", "customContent", "", 4, "ngIf"], ["render", ""], ["notFoundContent", ""], ["customContent", "", 3, "label", "value", "extendedData"], [1, "cmacs-user-dropdown-option-wrapper"], ["class", "cmacs-user-dropdown-divider", 4, "ngIf"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], [1, "cmacs-user-dropdown-divider"], [2, "color", "#97a0ae"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-user-dropdown-info-wrapper"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-guest-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-team-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], [1, "cmacs-user-dropdown-title"], [4, "ngIf"], ["class", "cmacs-user-dropdown-subtitle", 4, "ngIf"], [1, "cmacs-user-dropdown-person-picture"], ["class", "cmacs-user-dropdown-initials", 4, "ngIf"], [1, "cmacs-user-dropdown-initials"], ["class", "iconCreation-User", 4, "ngIf"], [1, "iconCreation-User"], ["class", "iconCreation-Team", 4, "ngIf"], [1, "iconCreation-Team"], [2, "color", "#2a7cff"], [1, "cmacs-user-dropdown-subtitle"], ["disabled", "", "customContent", ""], [1, "cmacs-user-dropdown-loading-wrapper"], ["nz-icon", "", "nzType", "loading", 1, "cmacs-user-dropdown-loading-icon"], [1, "cmacs-user-dropdown-invite-guest", 3, "click"], [1, "iconUISmall-Message", 2, "font-size", "17px", "position", "relative", "top", "3px", "margin-right", "6px"], ["class", "cmacs-user-dropdown-error", 4, "ngIf"], [1, "cmacs-user-dropdown-error"]], template: function CmacsUserDropdownComponent_Template(rf, ctx) {
+        }, inputs: { mode: "mode", emailErrorLabel: "emailErrorLabel", inviteGuestLabel: "inviteGuestLabel", loadingLabel: "loadingLabel", placeHolder: "placeHolder", selectedValue: "selectedValue", maxTagCount: "maxTagCount", serverSearch: "serverSearch", isLoading: "isLoading", inviteGuest: "inviteGuest", listOfOption: "listOfOption" }, outputs: { selectedValueChange: "selectedValueChange", onAddGuestUserByEmail: "onAddGuestUserByEmail", cmacsOnSearch: "cmacsOnSearch" }, exportAs: ["cmacsUserDropdown"], decls: 7, vars: 13, consts: [["allowClear", "", 3, "showCmacsSearch", "maxTagCount", "mode", "showSelectAll", "showArrow", "userDropdown", "notFoundContentCustom", "placeHolder", "serverSearch", "dropdownRender", "ngModel", "cmacsOnSearch", "ngModelChange"], [4, "ngFor", "ngForOf"], ["disabled", "", "customContent", "", 4, "ngIf"], ["render", ""], ["notFoundContent", ""], ["customContent", "", 3, "label", "value", "extendedData"], [1, "cmacs-user-dropdown-option-wrapper"], ["class", "cmacs-user-dropdown-divider", 4, "ngIf"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], [1, "cmacs-user-dropdown-divider"], [2, "color", "#97a0ae"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-user-dropdown-info-wrapper"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-user-dropdown-no-picture", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-guest-no-picture", "cmacs-user-dropdown-no-picture", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-team-no-picture", "cmacs-user-dropdown-no-picture", 4, "ngIf"], [1, "cmacs-user-dropdown-title"], [4, "ngIf"], ["class", "cmacs-user-dropdown-subtitle", 4, "ngIf"], [1, "cmacs-user-dropdown-person-picture"], ["class", "cmacs-user-dropdown-img", 3, "src", "alt", "error", 4, "ngIf"], ["class", "cmacs-user-dropdown-initials", 4, "ngIf"], [1, "cmacs-user-dropdown-img", 3, "src", "alt", "error"], [1, "cmacs-user-dropdown-initials"], ["class", "iconCreation-User", 4, "ngIf"], [1, "iconCreation-User"], ["class", "iconCreation-Team", 4, "ngIf"], [1, "iconCreation-Team"], [2, "color", "#2a7cff"], [1, "cmacs-user-dropdown-subtitle"], ["disabled", "", "customContent", ""], [1, "cmacs-user-dropdown-loading-wrapper"], ["nz-icon", "", "nzType", "loading", 1, "cmacs-user-dropdown-loading-icon"], [1, "cmacs-user-dropdown-invite-guest", 3, "click"], [1, "iconUISmall-Message", 2, "font-size", "17px", "position", "relative", "top", "3px", "margin-right", "6px"], ["class", "cmacs-user-dropdown-error", 4, "ngIf"], [1, "cmacs-user-dropdown-error"]], template: function CmacsUserDropdownComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "cmacs-select", 0);
                 i0.ɵɵlistener("cmacsOnSearch", function CmacsUserDropdownComponent_Template_cmacs_select_cmacsOnSearch_0_listener($event) { return ctx.onsearch($event); })("ngModelChange", function CmacsUserDropdownComponent_Template_cmacs_select_ngModelChange_0_listener($event) { return ctx.onSelectedValueChange($event); })("ngModelChange", function CmacsUserDropdownComponent_Template_cmacs_select_ngModelChange_0_listener($event) { return ctx.selectedValue = $event; });
@@ -39234,7 +39299,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", ctx._isLoading);
             }
-        }, directives: [CmacsSelectComponent, i5.NgControlStatus, i5.NgModel, i2$1.NgForOf, i2$1.NgIf, CmacsOptionComponent, i6$2.NzDividerComponent, i2$1.NgTemplateOutlet, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective], styles: [".cmacs-user-dropdown-person-picture{text-align:center;padding-top:2px;border-radius:3px;width:34px;height:34px;background-color:#a100cd;color:#fff;background-repeat:no-repeat;background-position:50%;background-size:contain}.cmacs-user-dropdown-divider{font-family:Roboto-Medium;font-size:13px;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.23;letter-spacing:normal;color:#3b3f46;padding:7px 14px 8px}.cmacs-user-dropdown-divider,.cmacs-user-dropdown-divider:hover{background-color:#fff!important}.cmacs-user-dropdown-divider nz-divider:first-child{transform:scaleX(1.5);position:relative;top:-7px}.cmacs-user-dropdown-initials{position:relative;top:5px;font-size:14px}.cmacs-user-dropdown-title{top:0;font-weight:500;color:#656c79}.cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-title{position:absolute;left:45px;font-family:Roboto-Regular;font-size:12px;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100% - 75px)}.cmacs-user-dropdown-subtitle{top:16px;font-weight:400;color:#97a0ae}.cmacs-team-no-picture{border-radius:3px;border:1.1px solid #dee0e5;background-color:#fff;color:#656c79;font-size:16px;padding:5px 0}.cmacs-user-dropdown-team-title{top:7px}.cmacs-guest-no-picture{border-radius:3px;background-color:#00cda1;font-size:16px;padding:6px 0}.cmacs-user-dropdown-error{color:#f6503c;font-size:10px;font-weight:400;font-stretch:normal;font-style:normal;line-height:2;letter-spacing:normal;padding:5px 0;position:relative;left:12px}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .cmacs-user-dropdown-error{left:12px}.cmacs-select-user-dropdown .ant-select-dropdown-menu-item{padding:0!important}.cmacs-user-dropdown-option-wrapper{padding:7px 0}.cmacs-user-dropdown-info-wrapper{position:relative;margin:0 14px}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .cmacs-user-dropdown-info-wrapper{margin:0 14px 0 42px}.cmacs-user-dropdown-divider-first-option{padding-top:0}.cmacs-user-dropdown-divider-first-option .cmacs-user-dropdown-info-wrapper{margin-top:7px!important}.cmacs-user-dropdown-last-elem{padding-bottom:14px}.cmacs-user-dropdown-invite-guest{height:34px;box-shadow:0 -2px 5px 0 rgba(59,63,70,.1);background-color:#fff;color:#2a7cff;padding:6px 11px;font-size:12px;cursor:pointer}.cmacs-user-dropdown-invite-guest:hover{background-color:#f2f7ff}.cmacs-user-dropdown-no-picture{opacity:0}.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-title{left:0}.ant-select-dropdown-menu{scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-user-dropdown-loading-wrapper{padding:7px 12px}.cmacs-user-dropdown-loading-icon{margin-right:6px}"], encapsulation: 2, changeDetection: 0 });
+        }, directives: [CmacsSelectComponent, i5.NgControlStatus, i5.NgModel, i2$1.NgForOf, i2$1.NgIf, CmacsOptionComponent, i5$4.NzDividerComponent, i2$1.NgTemplateOutlet, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective], styles: [".cmacs-user-dropdown-person-picture{text-align:center;border-radius:3px;width:34px;height:34px;background-color:#a100cd;color:#fff;background-repeat:no-repeat;background-position:50%;background-size:contain}.cmacs-user-dropdown-img{width:34px;height:34px}.cmacs-user-dropdown-divider{font-family:Roboto-Medium;font-size:13px;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.23;letter-spacing:normal;color:#3b3f46;padding:7px 14px 8px}.cmacs-user-dropdown-divider,.cmacs-user-dropdown-divider:hover{background-color:#fff!important}.cmacs-user-dropdown-divider nz-divider:first-child{transform:scaleX(1.5);position:relative;top:-7px}.cmacs-user-dropdown-initials{position:relative;top:5px;font-size:14px}.cmacs-user-dropdown-title{top:0;font-weight:500;color:#656c79}.cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-title{position:absolute;left:45px;font-family:Roboto-Regular;font-size:12px;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100% - 75px)}.cmacs-user-dropdown-subtitle{top:16px;font-weight:400;color:#97a0ae}.cmacs-team-no-picture{border-radius:3px;border:1.1px solid #dee0e5;background-color:#fff;color:#656c79;font-size:16px;padding:5px 0}.cmacs-user-dropdown-team-title{top:7px}.cmacs-guest-no-picture{border-radius:3px;background-color:#00cda1;font-size:16px;padding:6px 0}.cmacs-user-dropdown-error{color:#f6503c;font-size:10px;font-weight:400;font-stretch:normal;font-style:normal;line-height:2;letter-spacing:normal;padding:5px 0;position:relative;left:12px}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .cmacs-user-dropdown-error{left:12px}.cmacs-select-user-dropdown .ant-select-dropdown-menu-item{padding:0!important}.cmacs-user-dropdown-option-wrapper{padding:7px 0}.cmacs-user-dropdown-info-wrapper{position:relative;margin:0 14px}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .cmacs-user-dropdown-info-wrapper{margin:0 14px 0 42px}.cmacs-user-dropdown-divider-first-option{padding-top:0}.cmacs-user-dropdown-divider-first-option .cmacs-user-dropdown-info-wrapper{margin-top:7px!important}.cmacs-user-dropdown-last-elem{padding-bottom:14px}.cmacs-user-dropdown-invite-guest{height:34px;box-shadow:0 -2px 5px 0 rgba(59,63,70,.1);background-color:#fff;color:#2a7cff;padding:6px 11px;font-size:12px;cursor:pointer}.cmacs-user-dropdown-invite-guest:hover{background-color:#f2f7ff}.cmacs-user-dropdown-no-picture{opacity:0}.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-title{left:0}.ant-select-dropdown-menu{scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-user-dropdown-loading-wrapper{padding:7px 12px}.cmacs-user-dropdown-loading-icon{margin-right:6px}"], encapsulation: 2, changeDetection: 0 });
     __decorate([
         util.InputBoolean()
     ], CmacsUserDropdownComponent.prototype, "serverSearch", void 0);
@@ -39256,7 +39321,7 @@
                         preserveWhitespaces: false,
                         styleUrls: ['./cmacs-user-dropdown.component.css']
                     }]
-            }], function () { return [{ type: i1$6.DomSanitizer }, { type: i0.ChangeDetectorRef }, { type: i5.FormBuilder }]; }, { mode: [{
+            }], function () { return [{ type: i0.ChangeDetectorRef }, { type: i5.FormBuilder }]; }, { mode: [{
                     type: i0.Input
                 }], emailErrorLabel: [{
                     type: i0.Input
@@ -39302,77 +39367,122 @@
             i0.ɵɵproperty("ngTemplateOutlet", elem_r4.template.ref)("ngTemplateOutletContext", elem_r4.template.context);
         }
     }
-    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_span_1_Template(rf, ctx) {
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_img_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "span", 15);
-            i0.ɵɵtext(1);
+            var _r18_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "img", 16);
+            i0.ɵɵlistener("error", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_img_1_Template_img_error_0_listener() { i0.ɵɵrestoreView(_r18_1); var elem_r4 = i0.ɵɵnextContext(3).$implicit; var ctx_r16 = i0.ɵɵnextContext(2); return ctx_r16.onError(elem_r4); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var elem_r4 = i0.ɵɵnextContext(3).$implicit;
             var ctx_r14 = i0.ɵɵnextContext(2);
+            i0.ɵɵpropertyInterpolate("src", ctx_r14.getSafeImage(elem_r4.picture), i0.ɵɵsanitizeUrl);
+            i0.ɵɵpropertyInterpolate("alt", elem_r4.label);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_span_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "span", 17);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r15 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r14.getInitials(elem_r4.label));
+            i0.ɵɵtextInterpolate(ctx_r15.getInitials(elem_r4.label));
         }
     }
     function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 13);
-            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_span_1_Template, 2, 1, "span", 14);
+            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_img_1_Template, 1, 2, "img", 14);
+            i0.ɵɵtemplate(2, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_span_2_Template, 2, 1, "span", 15);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var elem_r4 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r10 = i0.ɵɵnextContext(2);
-            i0.ɵɵstyleProp("background-image", elem_r4.picture ? ctx_r10.getBackgroundImage(elem_r4.picture) : "none");
             i0.ɵɵclassProp("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !elem_r4.picture);
+            i0.ɵɵproperty("ngIf", !elem_r4.pictureError);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r4.pictureError);
         }
     }
-    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_i_1_Template(rf, ctx) {
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_img_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 17);
+            var _r26_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "img", 16);
+            i0.ɵɵlistener("error", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_img_1_Template_img_error_0_listener() { i0.ɵɵrestoreView(_r26_1); var elem_r4 = i0.ɵɵnextContext(3).$implicit; var ctx_r24 = i0.ɵɵnextContext(2); return ctx_r24.onError(elem_r4); });
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r22 = i0.ɵɵnextContext(2);
+            i0.ɵɵpropertyInterpolate("src", ctx_r22.getSafeImage(elem_r4.picture), i0.ɵɵsanitizeUrl);
+            i0.ɵɵpropertyInterpolate("alt", elem_r4.label);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_i_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 19);
         }
     }
     function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 13);
-            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_i_1_Template, 1, 0, "i", 16);
+            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_img_1_Template, 1, 2, "img", 14);
+            i0.ɵɵtemplate(2, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_i_2_Template, 1, 0, "i", 18);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var elem_r4 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r11 = i0.ɵɵnextContext(2);
-            i0.ɵɵstyleProp("background-image", elem_r4.picture ? ctx_r11.getBackgroundImage(elem_r4.picture) : "none");
-            i0.ɵɵclassProp("cmacs-guest-no-picture", !elem_r4.picture)("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
+            i0.ɵɵclassProp("cmacs-guest-no-picture", !elem_r4.picture || elem_r4.pictureError)("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !elem_r4.picture);
+            i0.ɵɵproperty("ngIf", !elem_r4.pictureError);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r4.pictureError);
         }
     }
-    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_i_1_Template(rf, ctx) {
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_img_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 19);
+            var _r33_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "img", 16);
+            i0.ɵɵlistener("error", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_img_1_Template_img_error_0_listener() { i0.ɵɵrestoreView(_r33_1); var elem_r4 = i0.ɵɵnextContext(3).$implicit; var ctx_r31 = i0.ɵɵnextContext(2); return ctx_r31.onError(elem_r4); });
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var elem_r4 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r29 = i0.ɵɵnextContext(2);
+            i0.ɵɵpropertyInterpolate("src", ctx_r29.getSafeImage(elem_r4.picture), i0.ɵɵsanitizeUrl);
+            i0.ɵɵpropertyInterpolate("alt", elem_r4.label);
+        }
+    }
+    function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_i_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 21);
         }
     }
     function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 13);
-            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_i_1_Template, 1, 0, "i", 18);
+            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_img_1_Template, 1, 2, "img", 14);
+            i0.ɵɵtemplate(2, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_i_2_Template, 1, 0, "i", 20);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var elem_r4 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r12 = i0.ɵɵnextContext(2);
-            i0.ɵɵstyleProp("background-image", elem_r4.picture ? ctx_r12.getBackgroundImage(elem_r4.picture) : "none");
-            i0.ɵɵclassProp("cmacs-team-no-picture", !elem_r4.picture)("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
+            i0.ɵɵclassProp("cmacs-team-no-picture", !elem_r4.picture || elem_r4.pictureError)("cmacs-user-dropdown-no-picture", elem_r4.hidePicture);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !elem_r4.picture);
+            i0.ɵɵproperty("ngIf", !elem_r4.pictureError);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", elem_r4.pictureError);
         }
     }
     function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_6_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 20);
+            i0.ɵɵelementStart(0, "div", 22);
             i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
         }
@@ -39385,9 +39495,9 @@
     function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 7);
-            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_Template, 2, 5, "div", 8);
-            i0.ɵɵtemplate(2, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_Template, 2, 7, "div", 9);
-            i0.ɵɵtemplate(3, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_Template, 2, 7, "div", 10);
+            i0.ɵɵtemplate(1, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_1_Template, 3, 4, "div", 8);
+            i0.ɵɵtemplate(2, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_2_Template, 3, 6, "div", 9);
+            i0.ɵɵtemplate(3, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_div_3_Template, 3, 6, "div", 10);
             i0.ɵɵelementStart(4, "div", 11);
             i0.ɵɵtext(5);
             i0.ɵɵelementEnd();
@@ -39413,14 +39523,14 @@
     }
     function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r24_1 = i0.ɵɵgetCurrentView();
+            var _r39_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 1);
-            i0.ɵɵlistener("click", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template_div_click_1_listener() { i0.ɵɵrestoreView(_r24_1); var elem_r4 = ctx.$implicit; var ctx_r23 = i0.ɵɵnextContext(2); return ctx_r23.selectedValue = elem_r4; });
+            i0.ɵɵlistener("click", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template_div_click_1_listener() { i0.ɵɵrestoreView(_r39_1); var elem_r4 = ctx.$implicit; var ctx_r38 = i0.ɵɵnextContext(2); return ctx_r38.selectedValue = elem_r4; });
             i0.ɵɵtemplate(2, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_container_2_Template, 2, 2, "ng-container", 2);
             i0.ɵɵtemplate(3, CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_ng_template_3_Template, 7, 9, "ng-template", null, 3, i0.ɵɵtemplateRefExtractor);
             i0.ɵɵelementStart(5, "span", 4);
-            i0.ɵɵlistener("click", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template_span_click_5_listener() { i0.ɵɵrestoreView(_r24_1); var elem_r4 = ctx.$implicit; var ctx_r25 = i0.ɵɵnextContext(2); return ctx_r25.removeOption(elem_r4); });
+            i0.ɵɵlistener("click", function CmacsUserDropdownExternalListComponent_ng_container_0_ng_container_1_Template_span_click_5_listener() { i0.ɵɵrestoreView(_r39_1); var elem_r4 = ctx.$implicit; var ctx_r40 = i0.ɵɵnextContext(2); return ctx_r40.removeOption(elem_r4); });
             i0.ɵɵelement(6, "i", 5);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -39449,8 +39559,8 @@
         }
     }
     var CmacsUserDropdownExternalListComponent = /** @class */ (function () {
-        function CmacsUserDropdownExternalListComponent(sanitizer) {
-            this.sanitizer = sanitizer;
+        function CmacsUserDropdownExternalListComponent(cdr) {
+            this.cdr = cdr;
             this._data = [];
             this.listDividers = [];
             this.origin = [];
@@ -39491,8 +39601,12 @@
             initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
             return initials;
         };
-        CmacsUserDropdownExternalListComponent.prototype.getBackgroundImage = function (picture) {
-            return this.sanitizer.bypassSecurityTrustStyle('url(\'' + picture + '\')');
+        CmacsUserDropdownExternalListComponent.prototype.getSafeImage = function (picture) {
+            return picture;
+        };
+        CmacsUserDropdownExternalListComponent.prototype.onError = function (elem) {
+            elem.pictureError = true;
+            this.cdr.detectChanges();
         };
         CmacsUserDropdownExternalListComponent.prototype.removeOption = function (elem) {
             var filteredData = this.origin.filter(function (item) { return item.value !== elem.value; });
@@ -39501,15 +39615,15 @@
         };
         return CmacsUserDropdownExternalListComponent;
     }());
-    CmacsUserDropdownExternalListComponent.ɵfac = function CmacsUserDropdownExternalListComponent_Factory(t) { return new (t || CmacsUserDropdownExternalListComponent)(i0.ɵɵdirectiveInject(i1$6.DomSanitizer)); };
-    CmacsUserDropdownExternalListComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsUserDropdownExternalListComponent, selectors: [["cmacs-user-dropdown-external-list"]], inputs: { data: "data" }, outputs: { removedOption: "removedOption" }, exportAs: ["cmacsUserDropdownExternalList"], decls: 1, vars: 1, consts: [[4, "ngFor", "ngForOf"], [1, "cmacs-user-dropdown-option-wrapper", "cmacs-user-dropdown-external-list-wrapper", 3, "click"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], [1, "cmacs-user-dropdown-external-list-remove-icon", 3, "click"], [1, "iconUISmall-Close"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-user-dropdown-info-wrapper"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-guest-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-team-no-picture", "cmacs-user-dropdown-no-picture", "background-image", 4, "ngIf"], [1, "cmacs-user-dropdown-title"], ["class", "cmacs-user-dropdown-subtitle", 4, "ngIf"], [1, "cmacs-user-dropdown-person-picture"], ["class", "cmacs-user-dropdown-initials", 4, "ngIf"], [1, "cmacs-user-dropdown-initials"], ["class", "iconCreation-User", 4, "ngIf"], [1, "iconCreation-User"], ["class", "iconCreation-Team", 4, "ngIf"], [1, "iconCreation-Team"], [1, "cmacs-user-dropdown-subtitle"]], template: function CmacsUserDropdownExternalListComponent_Template(rf, ctx) {
+    CmacsUserDropdownExternalListComponent.ɵfac = function CmacsUserDropdownExternalListComponent_Factory(t) { return new (t || CmacsUserDropdownExternalListComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef)); };
+    CmacsUserDropdownExternalListComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsUserDropdownExternalListComponent, selectors: [["cmacs-user-dropdown-external-list"]], inputs: { data: "data" }, outputs: { removedOption: "removedOption" }, exportAs: ["cmacsUserDropdownExternalList"], decls: 1, vars: 1, consts: [[4, "ngFor", "ngForOf"], [1, "cmacs-user-dropdown-option-wrapper", "cmacs-user-dropdown-external-list-wrapper", 3, "click"], [4, "ngIf", "ngIfElse"], ["defaultTPL", ""], [1, "cmacs-user-dropdown-external-list-remove-icon", 3, "click"], [1, "iconUISmall-Close"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-user-dropdown-info-wrapper"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-user-dropdown-no-picture", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-guest-no-picture", "cmacs-user-dropdown-no-picture", 4, "ngIf"], ["class", "cmacs-user-dropdown-person-picture", 3, "cmacs-team-no-picture", "cmacs-user-dropdown-no-picture", 4, "ngIf"], [1, "cmacs-user-dropdown-title"], ["class", "cmacs-user-dropdown-subtitle", 4, "ngIf"], [1, "cmacs-user-dropdown-person-picture"], ["class", "cmacs-user-dropdown-img", 3, "src", "alt", "error", 4, "ngIf"], ["class", "cmacs-user-dropdown-initials", 4, "ngIf"], [1, "cmacs-user-dropdown-img", 3, "src", "alt", "error"], [1, "cmacs-user-dropdown-initials"], ["class", "iconCreation-User", 4, "ngIf"], [1, "iconCreation-User"], ["class", "iconCreation-Team", 4, "ngIf"], [1, "iconCreation-Team"], [1, "cmacs-user-dropdown-subtitle"]], template: function CmacsUserDropdownExternalListComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, CmacsUserDropdownExternalListComponent_ng_container_0_Template, 2, 1, "ng-container", 0);
             }
             if (rf & 2) {
                 i0.ɵɵproperty("ngForOf", ctx._data);
             }
-        }, directives: [i2$1.NgForOf, i2$1.NgIf, i2$1.NgTemplateOutlet], styles: [".cmacs-user-dropdown-person-picture{text-align:center;padding-top:2px;border-radius:3px;width:34px;height:34px;background-color:#a100cd;color:#fff;background-repeat:no-repeat;background-position:50%;background-size:contain}.cmacs-user-dropdown-divider{font-family:Roboto-Medium;font-size:13px;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.23;letter-spacing:normal;color:#3b3f46;padding:7px 14px 8px;background-color:#fff!important}.cmacs-user-dropdown-initials{position:relative;top:5px;font-size:14px}.cmacs-user-dropdown-title{top:0;font-weight:500;color:#656c79}.cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-title{position:absolute;left:45px;font-family:Roboto-Regular;font-size:12px;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100% - 75px)}.cmacs-user-dropdown-subtitle{top:16px;font-weight:400;color:#97a0ae}.cmacs-team-no-picture{border-radius:3px;border:1.1px solid #dee0e5;background-color:#fff;color:#656c79;font-size:16px;padding:5px 0}.cmacs-user-dropdown-team-title{top:7px}.cmacs-guest-no-picture{border-radius:3px;background-color:#00cda1;font-size:16px;padding:6px 0}.cmacs-user-dropdown-error{color:#f6503c;font-size:10px;font-weight:400;font-stretch:normal;font-style:normal;line-height:2;letter-spacing:normal;padding:5px 0;position:relative;left:12px}.cmacs-user-dropdown-no-picture{opacity:0}.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-title{left:0}.cmacs-user-dropdown-external-list-remove-icon{float:right;position:relative;font-size:18px;top:-29px;right:10px;color:#97a0ae;cursor:pointer;opacity:0}.cmacs-user-dropdown-external-list-wrapper{border-radius:5px}.cmacs-user-dropdown-external-list-wrapper:hover{background-color:#f2f7ff}.cmacs-user-dropdown-external-list-wrapper:hover .cmacs-user-dropdown-external-list-remove-icon{opacity:1}.cmacs-user-dropdown-external-list-item-selected{background-color:#f2f7ff}.cmacs-user-dropdown-external-list-item-selected .cmacs-user-dropdown-external-list-remove-icon{opacity:1}", "cmacs-user-dropdown-external-list {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+        }, directives: [i2$1.NgForOf, i2$1.NgIf, i2$1.NgTemplateOutlet], styles: [".cmacs-user-dropdown-person-picture{text-align:center;border-radius:3px;width:34px;height:34px;background-color:#a100cd;color:#fff;background-repeat:no-repeat;background-position:50%;background-size:contain}.cmacs-user-dropdown-img{width:34px;height:34px}.cmacs-user-dropdown-divider{font-family:Roboto-Medium;font-size:13px;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.23;letter-spacing:normal;color:#3b3f46;padding:7px 14px 8px;background-color:#fff!important}.cmacs-user-dropdown-initials{position:relative;top:5px;font-size:14px}.cmacs-user-dropdown-title{top:0;font-weight:500;color:#656c79}.cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-title{position:absolute;left:45px;font-family:Roboto-Regular;font-size:12px;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100% - 75px)}.cmacs-user-dropdown-subtitle{top:16px;font-weight:400;color:#97a0ae}.cmacs-team-no-picture{border-radius:3px;border:1.1px solid #dee0e5;background-color:#fff;color:#656c79;font-size:16px;padding:5px 0}.cmacs-user-dropdown-team-title{top:7px}.cmacs-guest-no-picture{border-radius:3px;background-color:#00cda1;font-size:16px;padding:6px 0}.cmacs-user-dropdown-error{color:#f6503c;font-size:10px;font-weight:400;font-stretch:normal;font-style:normal;line-height:2;letter-spacing:normal;padding:5px 0;position:relative;left:12px}.cmacs-user-dropdown-no-picture{opacity:0}.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-subtitle,.cmacs-user-dropdown-hide-picture .cmacs-user-dropdown-title{left:0}.cmacs-user-dropdown-external-list-remove-icon{float:right;position:relative;font-size:18px;top:-29px;right:10px;color:#97a0ae;cursor:pointer;opacity:0}.cmacs-user-dropdown-external-list-wrapper{border-radius:5px}.cmacs-user-dropdown-external-list-wrapper:hover{background-color:#f2f7ff}.cmacs-user-dropdown-external-list-wrapper:hover .cmacs-user-dropdown-external-list-remove-icon{opacity:1}.cmacs-user-dropdown-external-list-item-selected{background-color:#f2f7ff}.cmacs-user-dropdown-external-list-item-selected .cmacs-user-dropdown-external-list-remove-icon{opacity:1}", "cmacs-user-dropdown-external-list {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsUserDropdownExternalListComponent, [{
                 type: i0.Component,
@@ -39525,7 +39639,7 @@
                             "cmacs-user-dropdown-external-list {\n        display: block;\n      }\n    "
                         ]
                     }]
-            }], function () { return [{ type: i1$6.DomSanitizer }]; }, { removedOption: [{
+            }], function () { return [{ type: i0.ChangeDetectorRef }]; }, { removedOption: [{
                     type: i0.Output
                 }], data: [{
                     type: i0.Input
@@ -44991,7 +45105,7 @@
                 i4$5.NzInputModule,
                 radio.NzRadioModule,
                 select.NzSelectModule,
-                i6$2.NzDividerModule,
+                i5$4.NzDividerModule,
                 i5$1.NzIconModule,
                 menu.NzMenuModule,
                 i1$4.OverlayModule,
@@ -45049,7 +45163,7 @@
             i1$7.VgOverlayPlayModule,
             i1$7.VgBufferingModule,
             i8.NzEmptyModule,
-            i6$2.NzDividerModule,
+            i5$4.NzDividerModule,
             i9.NzButtonModule,
             checkbox.NzCheckboxModule,
             i2$2.NzToolTipModule,
@@ -45279,7 +45393,7 @@
                 i4$5.NzInputModule,
                 radio.NzRadioModule,
                 select.NzSelectModule,
-                i6$2.NzDividerModule,
+                i5$4.NzDividerModule,
                 i5$1.NzIconModule,
                 menu.NzMenuModule,
                 i1$4.OverlayModule,
@@ -45443,7 +45557,7 @@
                 CmacsKpiComponent,
                 i8.NzEmptyModule,
                 CmacsDividerComponent,
-                i6$2.NzDividerModule,
+                i5$4.NzDividerModule,
                 CmacsComponentsV2LibComponent,
                 CmacsCheckboxComponent,
                 CmacsCheckboxWrapperComponent,
@@ -45723,7 +45837,7 @@
                             i4$5.NzInputModule,
                             radio.NzRadioModule,
                             select.NzSelectModule,
-                            i6$2.NzDividerModule,
+                            i5$4.NzDividerModule,
                             i5$1.NzIconModule,
                             menu.NzMenuModule,
                             i1$4.OverlayModule,
@@ -45890,7 +46004,7 @@
                             CmacsKpiComponent,
                             i8.NzEmptyModule,
                             CmacsDividerComponent,
-                            i6$2.NzDividerModule,
+                            i5$4.NzDividerModule,
                             CmacsComponentsV2LibComponent,
                             CmacsCheckboxComponent,
                             CmacsCheckboxWrapperComponent,

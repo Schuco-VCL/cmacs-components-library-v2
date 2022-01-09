@@ -81,7 +81,8 @@ export declare class CmacsCardComponent implements OnInit {
     handleEdit(event: KeyboardEvent, titleSpan: any): void;
     toggleEdit(titleContainer: any): void;
     getInitials(name: any): any;
-    getBackgroundImage(): import("@angular/platform-browser").SafeStyle;
+    getBackgroundImage(): any;
+    onError(elem: any): void;
     iconsToDoClick(event: any, icon: string): void;
     goToModuleToDo(event: any, url: string): void;
     buildLabel(value: string): string;
