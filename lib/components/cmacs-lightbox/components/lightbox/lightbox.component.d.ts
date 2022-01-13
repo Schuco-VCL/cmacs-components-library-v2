@@ -11,9 +11,11 @@ import { LightboxSliceAnimator } from '../../models/lightbox/animations/lightbox
 import { BackgroundVisibilityAnimator } from '../../models/lightbox/animations/background-visibility-animator';
 import { Observable } from 'rxjs';
 import { VgAPI } from 'ngx-videogular';
+import { DeviceDetectorService } from 'ngx-device-detector';
 import * as i0 from "@angular/core";
 export declare class LightboxComponent implements OnInit, OnDestroy {
     private readonly _lightboxConfigurationService;
+    private deviceSelector;
     pagination: Pagination;
     displayZoom: 'hidden' | 'visible';
     background: ElementRef;
@@ -43,7 +45,7 @@ export declare class LightboxComponent implements OnInit, OnDestroy {
     private _ytPlayer;
     private _pointerEvents;
     get config(): LightboxConfigurationService;
-    constructor(_lightboxConfigurationService: LightboxConfigurationService);
+    constructor(_lightboxConfigurationService: LightboxConfigurationService, deviceSelector: DeviceDetectorService);
     ngOnInit(): void;
     ngOnDestroy(): void;
     openItem(item: Item): void;
