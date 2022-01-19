@@ -28,6 +28,8 @@ export interface Field {
     dateFormat?: string;
     timeFormat?: string;
     readonly?: boolean;
+    formatter?: (value: number | string) => string | number;
+    parser?: (value: string) => string | number;
     default?: any;
     left?: string;
     right?: string;

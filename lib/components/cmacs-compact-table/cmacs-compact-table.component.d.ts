@@ -134,6 +134,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     dateTimePicker: CmacsDateTimePickerComponent;
     oncontextmenuevt($event: any, item: any): void;
     isEllipsisActive(id: string, field: any): boolean;
+    getInputNumberValue(data: any, field: Field): any;
     getStringFieldValue(data: any, field: any): any;
     onResize({ width }: NzResizeEvent, col: string): void;
     preventDefault($event: MouseEvent): void;
