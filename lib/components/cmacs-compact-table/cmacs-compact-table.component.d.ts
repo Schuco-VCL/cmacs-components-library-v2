@@ -172,6 +172,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     isString(field: Field): boolean;
     isReadOnly(field: Field): boolean;
     isNumber(field: Field): boolean;
+    isNull(value: any): boolean;
     isBoolean(field: any): boolean;
     isObject(value: any): boolean;
     isDate(field: Field): boolean;
