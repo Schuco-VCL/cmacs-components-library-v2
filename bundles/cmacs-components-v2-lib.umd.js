@@ -30367,7 +30367,7 @@
             var _r366_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 108);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_1_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r366_1); var ctx_r365 = i0.ɵɵnextContext(); var data_r351 = ctx_r365.data; var field_r350 = ctx_r365.field; var ctx_r364 = i0.ɵɵnextContext(); return ctx_r364.startEdit(data_r351[ctx_r364.config.fieldId], field_r350.property, $event); });
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_1_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r366_1); var ctx_r365 = i0.ɵɵnextContext(); var data_r351 = ctx_r365.data; var field_r350 = ctx_r365.field; var ctx_r364 = i0.ɵɵnextContext(); return ctx_r364.startEdit(data_r351[ctx_r364.config.fieldId], field_r350.property, $event, data_r351); });
             i0.ɵɵelementStart(2, "div", 109);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
@@ -30400,7 +30400,7 @@
             var _r370_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 108);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_2_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r370_1); var ctx_r369 = i0.ɵɵnextContext(); var data_r351 = ctx_r369.data; var field_r350 = ctx_r369.field; var ctx_r368 = i0.ɵɵnextContext(); return ctx_r368.startEdit(data_r351[ctx_r368.config.fieldId], field_r350.property, $event); });
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_2_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r370_1); var ctx_r369 = i0.ɵɵnextContext(); var data_r351 = ctx_r369.data; var field_r350 = ctx_r369.field; var ctx_r368 = i0.ɵɵnextContext(); return ctx_r368.startEdit(data_r351[ctx_r368.config.fieldId], field_r350.property, $event, data_r351); });
             i0.ɵɵelementStart(2, "div", 112);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
@@ -30433,7 +30433,7 @@
             var _r374_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 108);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_3_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r374_1); var ctx_r373 = i0.ɵɵnextContext(); var data_r351 = ctx_r373.data; var field_r350 = ctx_r373.field; var ctx_r372 = i0.ɵɵnextContext(); return ctx_r372.startEdit(data_r351[ctx_r372.config.fieldId], field_r350.property, $event); });
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_3_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r374_1); var ctx_r373 = i0.ɵɵnextContext(); var data_r351 = ctx_r373.data; var field_r350 = ctx_r373.field; var ctx_r372 = i0.ɵɵnextContext(); return ctx_r372.startEdit(data_r351[ctx_r372.config.fieldId], field_r350.property, $event, data_r351); });
             i0.ɵɵelementStart(2, "div", 112);
             i0.ɵɵpipe(3, "date");
             i0.ɵɵtext(4);
@@ -30468,7 +30468,7 @@
             var _r378_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 108);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r378_1); var ctx_r377 = i0.ɵɵnextContext(); var data_r351 = ctx_r377.data; var field_r350 = ctx_r377.field; var ctx_r376 = i0.ɵɵnextContext(); return ctx_r376.startEdit(data_r351[ctx_r376.config.fieldId], field_r350.property, $event); });
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r378_1); var ctx_r377 = i0.ɵɵnextContext(); var data_r351 = ctx_r377.data; var field_r350 = ctx_r377.field; var ctx_r376 = i0.ɵɵnextContext(); return ctx_r376.startEdit(data_r351[ctx_r376.config.fieldId], field_r350.property, $event, data_r351); });
             i0.ɵɵelementStart(2, "div", 115);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
@@ -30501,7 +30501,7 @@
             var _r382_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 108);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r382_1); var ctx_r381 = i0.ɵɵnextContext(); var data_r351 = ctx_r381.data; var field_r350 = ctx_r381.field; var ctx_r380 = i0.ɵɵnextContext(); return ctx_r380.startEdit(data_r351[ctx_r380.config.fieldId], field_r350.property, $event); });
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r382_1); var ctx_r381 = i0.ɵɵnextContext(); var data_r351 = ctx_r381.data; var field_r350 = ctx_r381.field; var ctx_r380 = i0.ɵɵnextContext(); return ctx_r380.startEdit(data_r351[ctx_r380.config.fieldId], field_r350.property, $event, data_r351); });
             i0.ɵɵelementStart(2, "div", 117);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
@@ -30572,7 +30572,7 @@
             var _r392_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 108);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_6_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r392_1); var ctx_r391 = i0.ɵɵnextContext(); var data_r351 = ctx_r391.data; var field_r350 = ctx_r391.field; var ctx_r390 = i0.ɵɵnextContext(); return ctx_r390.startEdit(data_r351[ctx_r390.config.fieldId], field_r350.property, $event); });
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_6_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r392_1); var ctx_r391 = i0.ɵɵnextContext(); var data_r351 = ctx_r391.data; var field_r350 = ctx_r391.field; var ctx_r390 = i0.ɵɵnextContext(); return ctx_r390.startEdit(data_r351[ctx_r390.config.fieldId], field_r350.property, $event, data_r351); });
             i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_8_ng_container_6_span_2_Template, 1, 4, "span", 119);
             i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_8_ng_container_6_span_3_Template, 2, 4, "span", 120);
             i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_6_i_4_Template, 1, 4, "i", 121);
@@ -30840,14 +30840,18 @@
                 this.preventDefault($event);
             }
         };
-        CmacsCompactTableComponent.prototype.startEdit = function (id, property, event) {
+        CmacsCompactTableComponent.prototype.startEdit = function (id, property, event, data) {
             if (this.inLineEdit) {
-                event.preventDefault();
-                event.stopPropagation();
+                //event.preventDefault();
+                //event.stopPropagation();
+                if (!this.isNull(data.notEditableFields)
+                    && data.notEditableFields.filter(function (x) { return x === property; }).length) {
+                    return;
+                }
                 if (this.editId !== null) {
                     this.emitOnEditEvent();
                 }
-                this.editId = id;
+                this.editId = data[this.config.fieldId];
                 this.property = property;
                 this.cdr.detectChanges();
                 this.focusSelect(this.inputElement);

@@ -144,7 +144,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     drop(event: CdkDragDrop<string[]>): void;
     editionOpTriggered: boolean;
     deleteRow(idx: number, $event?: any): void;
-    startEdit(id: string, property: string, event: MouseEvent): void;
+    startEdit(id: string, property: string, event: MouseEvent, data: any): void;
     focusSelect(elem: any): void;
     sort($event: any, fieldProperty: string): void;
     filter($event: any, fieldProperty: string): void;
