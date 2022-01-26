@@ -26818,7 +26818,7 @@ function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_con
     const ctx_r67 = ɵɵnextContext(5);
     ɵɵstyleProp("padding-left", ctx_r67.getCustomPadding(item_r64, i_r79), "px")("min-width", field_r78.width);
     ɵɵclassProp("cmacs-editable-column", field_r78.editable)("cmacs-compact-table-on-edit-expandable", ctx_r67.editId === item_r64[ctx_r67.config.fieldId] && ctx_r67.property === field_r78.property && field_r78.editable && (ctx_r67.isString(field_r78) || ctx_r67.isDate(field_r78) || ctx_r67.isTime(field_r78) || ctx_r67.isSelect(field_r78) || ctx_r67.isNumber(field_r78) && field_r78.editable))("cmacs-compact-table-logs-header-th-font", ctx_r67.logs && !!item_r64.children)("cmacs-compact-table-expandable-td", !i_r79);
-    ɵɵproperty("ngClass", ctx_r67.getCustomClass(field_r78))("nzShowExpand", item_r64.children && !i_r79)("nzExpand", item_r64.expand)("nzLeft", field_r78.left ? field_r78.left : false)("nzRight", field_r78.right ? field_r78.right : false);
+    ɵɵproperty("ngClass", ctx_r67.getCustomClass(field_r78))("nzShowExpand", !ctx_r67.isNull(item_r64.children) && !i_r79)("nzExpand", item_r64.expand)("nzLeft", field_r78.left ? field_r78.left : false)("nzRight", field_r78.right ? field_r78.right : false);
     ɵɵadvance(1);
     ɵɵproperty("ngIf", ctx_r67.showViewModeTpl(field_r78, item_r64));
     ɵɵadvance(1);
@@ -28351,6 +28351,18 @@ class CmacsCompactTableComponent {
             }
         }
         this.cdr.detectChanges();
+        this.disableSelectEventOnExpand();
+    }
+    disableSelectEventOnExpand() {
+        const expandButton = document.getElementsByClassName('ant-table-row-expand-icon');
+        if (!this.isNull(expandButton)) {
+            for (let b of Array.from(expandButton)) {
+                b.addEventListener("click", ($event) => {
+                    this.preventDefault($event);
+                });
+            }
+            this.cdr.markForCheck();
+        }
     }
     getIndexCookie() {
         let allowIndexPageCookie = false;
@@ -28817,15 +28829,31 @@ class CmacsCompactTableComponent {
         }
     }
     showViewModeTpl(field, item) {
+        if (!this.isNull(item.hiddenFields)
+            && item.hiddenFields.filter(x => x === field.property).length) {
+            return false;
+        }
         return this.config && ((this.isBoolean(field) && !this.inLineEdit) || (!this.isBoolean(field) && (this.editId !== item[this.config.fieldId] || this.property !== field.property || field.editable === false)));
     }
     showViewModeTplTree(field, data) {
+        if (!this.isNull(data.hiddenFields)
+            && data.hiddenFields.filter(x => x === field.property).length) {
+            return false;
+        }
         return this.config && ((this.isBoolean(field) && !this.inLineEdit) || (!this.isBoolean(field) && (this.editId !== data[this.config.fieldId] || this.property !== field.property || field.editable === false)));
     }
     showEditTpl(item, field) {
+        if (!this.isNull(item.hiddenFields)
+            && item.hiddenFields.filter(x => x === field.property).length) {
+            return false;
+        }
         return this.config && ((this.isBoolean(field) && this.inLineEdit && (field.editable || field.editable === undefined)) || (!this.isBoolean(field) && this.editId === item[this.config.fieldId] && this.property === field.property && (field.editable || field.editable === undefined)));
     }
     showEditTplTree(data, field) {
+        if (!this.isNull(data.hiddenFields)
+            && data.hiddenFields.filter(x => x === field.property).length) {
+            return false;
+        }
         return this.config && ((this.isBoolean(field) && this.inLineEdit && (field.editable || field.editable === undefined)) || (!this.isBoolean(field) && this.editId === data[this.config.fieldId] && this.property === field.property && (field.editable || field.editable === undefined)));
     }
     emitOnEditEvent() {

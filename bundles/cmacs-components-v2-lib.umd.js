@@ -29397,7 +29397,7 @@
             var ctx_r67 = i0.ɵɵnextContext(5);
             i0.ɵɵstyleProp("padding-left", ctx_r67.getCustomPadding(item_r64, i_r79), "px")("min-width", field_r78.width);
             i0.ɵɵclassProp("cmacs-editable-column", field_r78.editable)("cmacs-compact-table-on-edit-expandable", ctx_r67.editId === item_r64[ctx_r67.config.fieldId] && ctx_r67.property === field_r78.property && field_r78.editable && (ctx_r67.isString(field_r78) || ctx_r67.isDate(field_r78) || ctx_r67.isTime(field_r78) || ctx_r67.isSelect(field_r78) || ctx_r67.isNumber(field_r78) && field_r78.editable))("cmacs-compact-table-logs-header-th-font", ctx_r67.logs && !!item_r64.children)("cmacs-compact-table-expandable-td", !i_r79);
-            i0.ɵɵproperty("ngClass", ctx_r67.getCustomClass(field_r78))("nzShowExpand", item_r64.children && !i_r79)("nzExpand", item_r64.expand)("nzLeft", field_r78.left ? field_r78.left : false)("nzRight", field_r78.right ? field_r78.right : false);
+            i0.ɵɵproperty("ngClass", ctx_r67.getCustomClass(field_r78))("nzShowExpand", !ctx_r67.isNull(item_r64.children) && !i_r79)("nzExpand", item_r64.expand)("nzLeft", field_r78.left ? field_r78.left : false)("nzRight", field_r78.right ? field_r78.right : false);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx_r67.showViewModeTpl(field_r78, item_r64));
             i0.ɵɵadvance(1);
@@ -31162,6 +31162,30 @@
                 }
             }
             this.cdr.detectChanges();
+            this.disableSelectEventOnExpand();
+        };
+        CmacsCompactTableComponent.prototype.disableSelectEventOnExpand = function () {
+            var e_1, _a;
+            var _this = this;
+            var expandButton = document.getElementsByClassName('ant-table-row-expand-icon');
+            if (!this.isNull(expandButton)) {
+                try {
+                    for (var _b = __values(Array.from(expandButton)), _c = _b.next(); !_c.done; _c = _b.next()) {
+                        var b = _c.value;
+                        b.addEventListener("click", function ($event) {
+                            _this.preventDefault($event);
+                        });
+                    }
+                }
+                catch (e_1_1) { e_1 = { error: e_1_1 }; }
+                finally {
+                    try {
+                        if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+                    }
+                    finally { if (e_1) throw e_1.error; }
+                }
+                this.cdr.markForCheck();
+            }
         };
         CmacsCompactTableComponent.prototype.getIndexCookie = function () {
             var allowIndexPageCookie = false;
@@ -31422,7 +31446,7 @@
             }
         };
         CmacsCompactTableComponent.prototype.refreshSubTreeCheckboxes = function (subtree) {
-            var e_1, _a;
+            var e_2, _a;
             if (subtree.children) {
                 var checked = 0;
                 var indeterminate = 0;
@@ -31438,12 +31462,12 @@
                         }
                     }
                 }
-                catch (e_1_1) { e_1 = { error: e_1_1 }; }
+                catch (e_2_1) { e_2 = { error: e_2_1 }; }
                 finally {
                     try {
                         if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
                     }
-                    finally { if (e_1) throw e_1.error; }
+                    finally { if (e_2) throw e_2.error; }
                 }
                 var node = this.getNode(subtree[this.fieldID]);
                 node.selected = false;
@@ -31655,15 +31679,31 @@
             }
         };
         CmacsCompactTableComponent.prototype.showViewModeTpl = function (field, item) {
+            if (!this.isNull(item.hiddenFields)
+                && item.hiddenFields.filter(function (x) { return x === field.property; }).length) {
+                return false;
+            }
             return this.config && ((this.isBoolean(field) && !this.inLineEdit) || (!this.isBoolean(field) && (this.editId !== item[this.config.fieldId] || this.property !== field.property || field.editable === false)));
         };
         CmacsCompactTableComponent.prototype.showViewModeTplTree = function (field, data) {
+            if (!this.isNull(data.hiddenFields)
+                && data.hiddenFields.filter(function (x) { return x === field.property; }).length) {
+                return false;
+            }
             return this.config && ((this.isBoolean(field) && !this.inLineEdit) || (!this.isBoolean(field) && (this.editId !== data[this.config.fieldId] || this.property !== field.property || field.editable === false)));
         };
         CmacsCompactTableComponent.prototype.showEditTpl = function (item, field) {
+            if (!this.isNull(item.hiddenFields)
+                && item.hiddenFields.filter(function (x) { return x === field.property; }).length) {
+                return false;
+            }
             return this.config && ((this.isBoolean(field) && this.inLineEdit && (field.editable || field.editable === undefined)) || (!this.isBoolean(field) && this.editId === item[this.config.fieldId] && this.property === field.property && (field.editable || field.editable === undefined)));
         };
         CmacsCompactTableComponent.prototype.showEditTplTree = function (data, field) {
+            if (!this.isNull(data.hiddenFields)
+                && data.hiddenFields.filter(function (x) { return x === field.property; }).length) {
+                return false;
+            }
             return this.config && ((this.isBoolean(field) && this.inLineEdit && (field.editable || field.editable === undefined)) || (!this.isBoolean(field) && this.editId === data[this.config.fieldId] && this.property === field.property && (field.editable || field.editable === undefined)));
         };
         CmacsCompactTableComponent.prototype.emitOnEditEvent = function () {

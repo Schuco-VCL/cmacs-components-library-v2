@@ -137,7 +137,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     getInputNumberValue(data: any, field: Field): any;
     getStringFieldValue(data: any, field: any): any;
     onResize({ width }: NzResizeEvent, col: string): void;
-    preventDefault($event: MouseEvent): void;
+    preventDefault($event: Event): void;
     contextMenu($event: MouseEvent, template: any, item?: any): void;
     validate(data: any, field: Field): boolean;
     addRow(idx: number, $event?: any): void;
@@ -186,6 +186,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     isRowSelected(data: any): boolean;
     constructor(cdr: ChangeDetectorRef, i18n: NzI18nService, excelService: ExcelService, datePipe: DatePipe, nzDropdownService: CmacsContextMenuService, cookies: CookieService, utilService: UtilService);
     ngAfterViewInit(): void;
+    disableSelectEventOnExpand(): void;
     getIndexCookie(): boolean;
     setFieldsDefault(): void;
     ngOnInit(): void;
