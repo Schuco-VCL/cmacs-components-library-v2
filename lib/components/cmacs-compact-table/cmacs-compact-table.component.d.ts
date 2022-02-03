@@ -110,6 +110,8 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     selected: boolean;
     formatter: (value: number) => any;
     parser: (value: string) => any;
+    defaultFormatter: (value: number) => number;
+    defaultParser: (value: string) => string;
     defaultSortOrder: any;
     checkboxCache: CheckboxSelect[];
     isIndeterminate: boolean;

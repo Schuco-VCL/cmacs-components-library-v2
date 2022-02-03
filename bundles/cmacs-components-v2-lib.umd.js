@@ -30304,7 +30304,7 @@
             var field_r272 = ctx_r342.field;
             var ctx_r280 = i0.ɵɵnextContext();
             i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r280.validate(data_r273, field_r272));
-            i0.ɵɵproperty("ngModel", data_r273[field_r272.property])("formatter", field_r272.formatter)("parser", field_r272.parser)("cmacsStep", field_r272.cmacsStep ? field_r272.cmacsStep : 1)("min", field_r272.min)("max", field_r272.max);
+            i0.ɵɵproperty("ngModel", data_r273[field_r272.property])("formatter", !ctx_r280.isNull(field_r272.formatter) ? field_r272.formatter : ctx_r280.defaultFormatter)("parser", !ctx_r280.isNull(field_r272.parser) ? field_r272.parser : ctx_r280.defaultParser)("cmacsStep", field_r272.cmacsStep ? field_r272.cmacsStep : 1)("min", field_r272.min)("max", field_r272.max);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_label_6_Template(rf, ctx) {
@@ -30735,6 +30735,12 @@
                 if (value) {
                     return accounting.unformat(value, ',');
                 }
+                return value;
+            };
+            this.defaultFormatter = function (value) {
+                return value;
+            };
+            this.defaultParser = function (value) {
                 return value;
             };
             this.defaultSortOrder = null;
