@@ -42785,11 +42785,11 @@
             i0.ɵɵelementEnd();
         }
     }
-    function LightboxToolbarComponent_button_4_Template(rf, ctx) {
+    function LightboxToolbarComponent_button_6_Template(rf, ctx) {
         if (rf & 1) {
             var _r9_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "button", 13);
-            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_4_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r8 = i0.ɵɵnextContext(); return ctx_r8.onFirst(); });
+            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_6_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r8 = i0.ɵɵnextContext(); return ctx_r8.onFirst(); });
             i0.ɵɵelement(1, "span", 14);
             i0.ɵɵelementEnd();
         }
@@ -42798,11 +42798,11 @@
             i0.ɵɵproperty("disable", ctx_r1.pagination.current === 1);
         }
     }
-    function LightboxToolbarComponent_button_5_Template(rf, ctx) {
+    function LightboxToolbarComponent_button_7_Template(rf, ctx) {
         if (rf & 1) {
             var _r11_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "button", 15);
-            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_5_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r11_1); var ctx_r10 = i0.ɵɵnextContext(); return ctx_r10.onPrevious(); });
+            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_7_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r11_1); var ctx_r10 = i0.ɵɵnextContext(); return ctx_r10.onPrevious(); });
             i0.ɵɵelement(1, "span", 16);
             i0.ɵɵelementEnd();
         }
@@ -42811,7 +42811,7 @@
             i0.ɵɵproperty("disable", ctx_r2.pagination.current === 1);
         }
     }
-    function LightboxToolbarComponent_span_6_Template(rf, ctx) {
+    function LightboxToolbarComponent_span_8_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "span", 17);
             i0.ɵɵtext(1);
@@ -42823,11 +42823,11 @@
             i0.ɵɵtextInterpolate2("", ctx_r3.pagination == null ? null : ctx_r3.pagination.current, " / ", ctx_r3.pagination == null ? null : ctx_r3.pagination.count, "");
         }
     }
-    function LightboxToolbarComponent_button_7_Template(rf, ctx) {
+    function LightboxToolbarComponent_button_9_Template(rf, ctx) {
         if (rf & 1) {
             var _r13_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "button", 18);
-            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_7_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r13_1); var ctx_r12 = i0.ɵɵnextContext(); return ctx_r12.onNext(); });
+            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_9_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r13_1); var ctx_r12 = i0.ɵɵnextContext(); return ctx_r12.onNext(); });
             i0.ɵɵelement(1, "span", 19);
             i0.ɵɵelementEnd();
         }
@@ -42836,11 +42836,11 @@
             i0.ɵɵproperty("disable", ctx_r4.pagination.current === ctx_r4.pagination.count);
         }
     }
-    function LightboxToolbarComponent_button_8_Template(rf, ctx) {
+    function LightboxToolbarComponent_button_10_Template(rf, ctx) {
         if (rf & 1) {
             var _r15_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "button", 20);
-            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_8_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r15_1); var ctx_r14 = i0.ɵɵnextContext(); return ctx_r14.onLast(); });
+            i0.ɵɵlistener("tap", function LightboxToolbarComponent_button_10_Template_button_tap_0_listener() { i0.ɵɵrestoreView(_r15_1); var ctx_r14 = i0.ɵɵnextContext(); return ctx_r14.onLast(); });
             i0.ɵɵelement(1, "span", 21);
             i0.ɵɵelementEnd();
         }
@@ -42935,23 +42935,23 @@
             if (rf & 2) {
                 i0.ɵɵsyntheticHostProperty("@toolbarVisibility", ctx.toolbarVisibilityAnimator.animation);
             }
-        }, inputs: { title: "title", pagination: "pagination" }, outputs: { nextEvent: "nextEvent", previousEvent: "previousEvent", firstEvent: "firstEvent", lastEvent: "lastEvent", closeEvent: "closeEvent", thumbnailsToggleEvent: "thumbnailsToggleEvent" }, decls: 14, vars: 7, consts: [[1, "toolbar-container"], ["role", "button", "lightbox-icon-button", "", "title", "List", "aria-label", "List", 3, "tap", 4, "ngIf"], [1, "nav-menu"], ["role", "button", "lightbox-icon-button", "", "title", "First", "aria-label", "First", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Previous", "aria-label", "Previous", 3, "disable", "tap", 4, "ngIf"], ["class", "nav-pagination", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Next", "aria-label", "Next", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Last", "aria-label", "title", 3, "disable", "tap", 4, "ngIf"], [1, "toolbar-title"], ["lightbox-icon-button", "", "title", "Close", "role", "button", "aria-label", "Close", 3, "tap"], [1, "material-icons", "iconUILarge-Close"], ["role", "button", "lightbox-icon-button", "", "title", "List", "aria-label", "List", 3, "tap"], [1, "material-icons", "iconUILarge-Sidebar"], ["role", "button", "lightbox-icon-button", "", "title", "First", "aria-label", "First", 3, "disable", "tap"], [1, "material-icons", "iconArrowLarge-Chevron-First-Rewind"], ["role", "button", "lightbox-icon-button", "", "title", "Previous", "aria-label", "Previous", 3, "disable", "tap"], [1, "material-icons", "iconArrowLarge-Chevron-Left"], [1, "nav-pagination"], ["role", "button", "lightbox-icon-button", "", "title", "Next", "aria-label", "Next", 3, "disable", "tap"], [1, "material-icons", "iconArrowLarge-Chevron-Right"], ["role", "button", "lightbox-icon-button", "", "title", "Last", "aria-label", "title", 3, "disable", "tap"], [1, "material-icons", "iconArrowLarge-Chevron-Last-FastForward"]], template: function LightboxToolbarComponent_Template(rf, ctx) {
+        }, inputs: { title: "title", pagination: "pagination" }, outputs: { nextEvent: "nextEvent", previousEvent: "previousEvent", firstEvent: "firstEvent", lastEvent: "lastEvent", closeEvent: "closeEvent", thumbnailsToggleEvent: "thumbnailsToggleEvent" }, decls: 14, vars: 7, consts: [[1, "toolbar-container"], ["role", "button", "lightbox-icon-button", "", "title", "List", "aria-label", "List", 3, "tap", 4, "ngIf"], [1, "toolbar-title"], [1, "nav-menu"], ["role", "button", "lightbox-icon-button", "", "title", "First", "aria-label", "First", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Previous", "aria-label", "Previous", 3, "disable", "tap", 4, "ngIf"], ["class", "nav-pagination", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Next", "aria-label", "Next", 3, "disable", "tap", 4, "ngIf"], ["role", "button", "lightbox-icon-button", "", "title", "Last", "aria-label", "title", 3, "disable", "tap", 4, "ngIf"], ["lightbox-icon-button", "", "title", "Close", "role", "button", "aria-label", "Close", 3, "tap"], [1, "material-icons", "iconUILarge-Close"], ["role", "button", "lightbox-icon-button", "", "title", "List", "aria-label", "List", 3, "tap"], [1, "material-icons", "iconUILarge-Sidebar"], ["role", "button", "lightbox-icon-button", "", "title", "First", "aria-label", "First", 3, "disable", "tap"], [1, "material-icons", "iconArrowLarge-Chevron-First-Rewind"], ["role", "button", "lightbox-icon-button", "", "title", "Previous", "aria-label", "Previous", 3, "disable", "tap"], [1, "material-icons", "iconArrowLarge-Chevron-Left"], [1, "nav-pagination"], ["role", "button", "lightbox-icon-button", "", "title", "Next", "aria-label", "Next", 3, "disable", "tap"], [1, "material-icons", "iconArrowLarge-Chevron-Right"], ["role", "button", "lightbox-icon-button", "", "title", "Last", "aria-label", "title", 3, "disable", "tap"], [1, "material-icons", "iconArrowLarge-Chevron-Last-FastForward"]], template: function LightboxToolbarComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "div");
                 i0.ɵɵtemplate(2, LightboxToolbarComponent_button_2_Template, 2, 0, "button", 1);
+                i0.ɵɵelementStart(3, "span", 2);
+                i0.ɵɵtext(4);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(3, "div", 2);
-                i0.ɵɵtemplate(4, LightboxToolbarComponent_button_4_Template, 2, 1, "button", 3);
-                i0.ɵɵtemplate(5, LightboxToolbarComponent_button_5_Template, 2, 1, "button", 4);
-                i0.ɵɵtemplate(6, LightboxToolbarComponent_span_6_Template, 2, 2, "span", 5);
-                i0.ɵɵtemplate(7, LightboxToolbarComponent_button_7_Template, 2, 1, "button", 6);
-                i0.ɵɵtemplate(8, LightboxToolbarComponent_button_8_Template, 2, 1, "button", 7);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(9, "div");
-                i0.ɵɵelementStart(10, "span", 8);
-                i0.ɵɵtext(11);
+                i0.ɵɵelementStart(5, "div", 3);
+                i0.ɵɵtemplate(6, LightboxToolbarComponent_button_6_Template, 2, 1, "button", 4);
+                i0.ɵɵtemplate(7, LightboxToolbarComponent_button_7_Template, 2, 1, "button", 5);
+                i0.ɵɵtemplate(8, LightboxToolbarComponent_span_8_Template, 2, 2, "span", 6);
+                i0.ɵɵtemplate(9, LightboxToolbarComponent_button_9_Template, 2, 1, "button", 7);
+                i0.ɵɵtemplate(10, LightboxToolbarComponent_button_10_Template, 2, 1, "button", 8);
                 i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(11, "div");
                 i0.ɵɵelementStart(12, "button", 9);
                 i0.ɵɵlistener("tap", function LightboxToolbarComponent_Template_button_tap_12_listener() { return ctx.onClose(); });
                 i0.ɵɵelement(13, "span", 10);
@@ -42963,6 +42963,8 @@
                 i0.ɵɵadvance(2);
                 i0.ɵɵproperty("ngIf", !ctx.config.controls.thumbnails.disable);
                 i0.ɵɵadvance(2);
+                i0.ɵɵtextInterpolate(ctx.title);
+                i0.ɵɵadvance(2);
                 i0.ɵɵproperty("ngIf", !ctx.config.controls.navigation.disable && !ctx.config.controls.jumpToStart.disable);
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", !ctx.config.controls.navigation.disable && !ctx.config.controls.backward.disable);
@@ -42972,10 +42974,8 @@
                 i0.ɵɵproperty("ngIf", !ctx.config.controls.navigation.disable && !ctx.config.controls.forward.disable);
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", !ctx.config.controls.navigation.disable && !ctx.config.controls.jumpToEnd.disable);
-                i0.ɵɵadvance(3);
-                i0.ɵɵtextInterpolate(ctx.title);
             }
-        }, directives: [i2$1.NgIf, LightboxButtonComponent], styles: ["[_nghost-%COMP%]{display:block;position:relative;overflow:hidden}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]{background-color:#0d1e3b;color:#fff;height:64px;display:flex;align-content:center;justify-content:space-between;position:absolute;z-index:3;bottom:0;width:100%}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{display:flex;align-items:center}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]:first-child{flex:1 1 0%;justify-content:flex-start;overflow:hidden;padding-left:20px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .nav-menu[_ngcontent-%COMP%]{flex:0 0 auto;padding:0 12px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .nav-menu[_ngcontent-%COMP%]   .nav-pagination[_ngcontent-%COMP%]{margin:0 12px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]:last-child{flex:1 1 0%;justify-content:flex-end;padding-right:20px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .toolbar-title[_ngcontent-%COMP%]{overflow:hidden;margin-right:12px;white-space:nowrap;text-overflow:ellipsis;max-width:calc(100% - 52px)}@media (max-width:479px){[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .toolbar-title[_ngcontent-%COMP%]{display:none}}@media (max-width:359px){[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]:last-child{display:none}}.material-icons[_ngcontent-%COMP%]{color:#656c79;font-size:20px;line-height:.9}.lightbox-icon-button[_ngcontent-%COMP%]:not(.disable):hover   .material-icons[_ngcontent-%COMP%]{color:#fff}"], data: { animation: [ToolbarAnimations.visibilityAnimation] } });
+        }, directives: [i2$1.NgIf, LightboxButtonComponent], styles: ["[_nghost-%COMP%]{display:block;position:relative;overflow:hidden}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]{background-color:#0d1e3b;color:#fff;height:64px;display:flex;align-content:center;justify-content:space-between;position:absolute;z-index:3;bottom:0;width:100%}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{display:flex;align-items:center}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]:first-child{flex:1 1 0%;justify-content:flex-start;overflow:hidden;padding-left:20px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .nav-menu[_ngcontent-%COMP%]{flex:0 0 auto;padding:0 12px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .nav-menu[_ngcontent-%COMP%]   .nav-pagination[_ngcontent-%COMP%]{margin:0 12px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]:last-child{flex:1 1 0%;justify-content:flex-end;padding-right:20px}[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .toolbar-title[_ngcontent-%COMP%]{overflow:hidden;margin-left:12px;white-space:nowrap;text-overflow:ellipsis;max-width:calc(100% - 52px);position:relative;top:-1px}@media (max-width:479px){[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%]   .toolbar-title[_ngcontent-%COMP%]{display:none}}@media (max-width:359px){[_nghost-%COMP%]   .toolbar-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]:last-child{display:none}}.material-icons[_ngcontent-%COMP%]{color:#656c79;font-size:20px;line-height:.9}.lightbox-icon-button[_ngcontent-%COMP%]:not(.disable):hover   .material-icons[_ngcontent-%COMP%]{color:#fff}"], data: { animation: [ToolbarAnimations.visibilityAnimation] } });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxToolbarComponent, [{
                 type: i0.Component,
@@ -43617,7 +43617,7 @@
                 i0.ɵɵadvance(2);
                 i0.ɵɵproperty("ngForOf", ctx.items);
             }
-        }, directives: [i2$1.NgForOf, i2$1.NgClass], styles: ["[_nghost-%COMP%]{background-color:#0d1e3b;flex:1 1 0%;box-sizing:border-box;z-index:2;position:relative}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]{overflow:hidden}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{display:inline-block;position:relative}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]{display:inline-block;cursor:pointer;width:150px!important;margin-left:10px;margin-right:10px;border:2px solid #0d1e3b}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{display:block;pointer-events:none}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail.active[_ngcontent-%COMP%]{border:2px solid #2a7cff}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail.active[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{cursor:default}@media (max-width:359px){[_nghost-%COMP%]{display:none}}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]{margin:0;height:calc(100% - 0px)}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{flex-direction:column}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]{margin-bottom:12px}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{margin:0 auto;height:95px;width:auto;max-width:100%}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]{height:100%;margin:0;width:calc(100% - 0px)}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{height:100%;white-space:nowrap}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]{margin-right:12px}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{height:calc(100% - 24px);margin-top:12px;margin-bottom:12px}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail.active[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{height:calc(100% - 12px);margin-top:6px;margin-bottom:6px}.cmacs-thumbnail-scroll[_ngcontent-%COMP%]{overflow-x:hidden;overflow-y:scroll;height:calc(100% - 0px);padding-top:20px}"], data: { animation: [ThumbnailsAnimations.visibilityAnimation, ThumbnailsAnimations.sliceAnimation] } });
+        }, directives: [i2$1.NgForOf, i2$1.NgClass], styles: ["[_nghost-%COMP%]{background-color:#0d1e3b;flex:1 1 0%;box-sizing:border-box;z-index:2;position:relative}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]{overflow:hidden}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{display:inline-block;position:relative}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]{display:inline-block;cursor:pointer;width:150px!important;margin-left:10px;margin-right:10px;border:2px solid #0d1e3b}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{display:block;pointer-events:none}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail.active[_ngcontent-%COMP%]{border:2px solid #2a7cff}[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail.active[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{cursor:default}@media (max-width:359px){[_nghost-%COMP%]{display:none}}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]{margin:0;height:calc(100% - 0px)}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{flex-direction:column}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]{margin-bottom:12px}.vertical-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{margin:0 auto;height:95px;width:auto;max-width:100%}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]{height:100%;margin:0;width:calc(100% - 0px)}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]{height:100%;white-space:nowrap}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]{margin-right:12px}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{height:calc(100% - 24px);margin-top:12px;margin-bottom:12px}.horizontal-thumbnails[_nghost-%COMP%]   .thumbnail-container[_ngcontent-%COMP%]   .thumbnail.active[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{height:calc(100% - 12px);margin-top:6px;margin-bottom:6px}.cmacs-thumbnail-scroll[_ngcontent-%COMP%]{overflow-x:hidden;overflow-y:scroll;height:calc(100% - 0px);padding-top:20px}.cmacs-thumbnail-scroll[_ngcontent-%COMP%]::-webkit-scrollbar{width:10px;height:6px}.cmacs-thumbnail-scroll[_ngcontent-%COMP%]::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px;border:3px solid #0d1e3b}.cmacs-thumbnail-scroll[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}"], data: { animation: [ThumbnailsAnimations.visibilityAnimation, ThumbnailsAnimations.sliceAnimation] } });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxThumbnailsComponent, [{
                 type: i0.Component,
@@ -44219,10 +44219,10 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx._img = _t.first);
             }
-        }, inputs: { item: "item" }, outputs: { toggleEvent: "toggleEvent" }, decls: 3, vars: 11, consts: [["draggable", "true", 3, "tap", "pan"], ["lazy-loading", "", "draggable", "false", 3, "src", "xs-src", "sm-src", "md-src", "lg-src", "xl-src", "xs-breakpoint", "sm-breakpoint", "md-breakpoint", "lg-breakpoint", "load"], ["img", ""]], template: function LightboxItemComponent_Template(rf, ctx) {
+        }, inputs: { item: "item" }, outputs: { toggleEvent: "toggleEvent" }, decls: 3, vars: 11, consts: [[3, "tap"], ["lazy-loading", "", "draggable", "false", 3, "src", "xs-src", "sm-src", "md-src", "lg-src", "xl-src", "xs-breakpoint", "sm-breakpoint", "md-breakpoint", "lg-breakpoint", "load"], ["img", ""]], template: function LightboxItemComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
-                i0.ɵɵlistener("tap", function LightboxItemComponent_Template_div_tap_0_listener($event) { return ctx.onClick($event); })("pan", function LightboxItemComponent_Template_div_pan_0_listener($event) { return ctx.onDrag($event); })("@lightboxItemZoom.start", function LightboxItemComponent_Template_div_animation_lightboxItemZoom_start_0_listener($event) { return ctx.lightboxItemZoomAnimator.animationStart($event); })("@lightboxItemZoom.done", function LightboxItemComponent_Template_div_animation_lightboxItemZoom_done_0_listener($event) { return ctx.lightboxItemZoomAnimator.animationDone($event); });
+                i0.ɵɵlistener("tap", function LightboxItemComponent_Template_div_tap_0_listener($event) { return ctx.onClick($event); })("@lightboxItemZoom.start", function LightboxItemComponent_Template_div_animation_lightboxItemZoom_start_0_listener($event) { return ctx.lightboxItemZoomAnimator.animationStart($event); })("@lightboxItemZoom.done", function LightboxItemComponent_Template_div_animation_lightboxItemZoom_done_0_listener($event) { return ctx.lightboxItemZoomAnimator.animationDone($event); });
                 i0.ɵɵelementStart(1, "img", 1, 2);
                 i0.ɵɵlistener("load", function LightboxItemComponent_Template_img_load_1_listener($event) { return ctx.onLoad($event); });
                 i0.ɵɵelementEnd();
@@ -44233,7 +44233,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("src", ctx.getDefaultSrc(), i0.ɵɵsanitizeUrl)("xs-src", ctx.item.xsSrc)("sm-src", ctx.item.smSrc)("md-src", ctx.item.mdSrc)("lg-src", ctx.item.lgSrc)("xl-src", ctx.item.xlSrc)("xs-breakpoint", ctx.item.xsBreakpoint)("sm-breakpoint", ctx.item.smBreakpoint)("md-breakpoint", ctx.item.mdBreakpoint)("lg-breakpoint", ctx.item.lgBreakpoint);
             }
-        }, directives: [LazyLoadingDirective], styles: ["[_nghost-%COMP%]{z-index:1;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;width:100%;flex:0 0 100%;pointer-events:none}[_nghost-%COMP%] > div[_ngcontent-%COMP%]{pointer-events:auto;position:relative}[_nghost-%COMP%]   img[_ngcontent-%COMP%]{position:relative;height:auto;width:100%}"], data: { animation: [LightboxItemAnimations.zoomAnimation] } });
+        }, directives: [LazyLoadingDirective], styles: ["[_nghost-%COMP%]{z-index:1;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;width:100%;flex:0 0 100%;overflow:auto}[_nghost-%COMP%] > div[_ngcontent-%COMP%]{pointer-events:auto;position:relative}[_nghost-%COMP%]   img[_ngcontent-%COMP%]{position:relative;height:auto;width:100%}"], data: { animation: [LightboxItemAnimations.zoomAnimation] } });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(LightboxItemComponent, [{
                 type: i0.Component,
@@ -44325,6 +44325,10 @@
             this.backgroundVisibilityAnimator = new BackgroundVisibilityAnimator();
             this._stateSubscription = this.$state.subscribe(function (value) {
                 _this.state = value;
+                var html = document.getElementsByTagName('html');
+                if (html.length) {
+                    html[0].style.overflow = _this.state === 'closed' ? 'inherit' : 'hidden';
+                }
             });
         };
         LightboxComponent.prototype.ngOnDestroy = function () {
