@@ -30941,26 +30941,29 @@
             return false;
         };
         CmacsCompactTableComponent.prototype.endEditMode = function ($event, index, data) {
+            var _this = this;
             if (data === void 0) { data = null; }
-            if ($event.key === ('Enter' || 'enter')) {
-                this.editId = null;
-                this.rowOnEdition = -1;
-                if (this.expandable) {
-                    data.cmacsEditedProp = this.property;
-                    this.onedit.emit(data);
-                    return;
+            setTimeout(function () {
+                if ($event.key === ('Enter' || 'enter')) {
+                    _this.editId = null;
+                    _this.rowOnEdition = -1;
+                    if (_this.expandable) {
+                        data.cmacsEditedProp = _this.property;
+                        _this.onedit.emit(data);
+                        return;
+                    }
+                    _this.data[index].cmacsEditedProp = _this.property;
+                    _this.onedit.emit(_this.data[index]);
+                    _this.property = null;
                 }
-                this.data[index].cmacsEditedProp = this.property;
-                this.onedit.emit(this.data[index]);
-                this.property = null;
-            }
-            else {
-                if (this.expandable) {
-                    this.nodeOnEdition = data;
-                    return;
+                else {
+                    if (_this.expandable) {
+                        _this.nodeOnEdition = data;
+                        return;
+                    }
+                    _this.rowOnEdition = index;
                 }
-                this.rowOnEdition = index;
-            }
+            }, 300);
         };
         CmacsCompactTableComponent.prototype.endEditModeNgModel = function (index, data, property, field) {
             if (data === void 0) { data = null; }

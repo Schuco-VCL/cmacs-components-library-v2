@@ -28139,25 +28139,27 @@ class CmacsCompactTableComponent {
         return false;
     }
     endEditMode($event, index, data = null) {
-        if ($event.key === ('Enter' || 'enter')) {
-            this.editId = null;
-            this.rowOnEdition = -1;
-            if (this.expandable) {
-                data.cmacsEditedProp = this.property;
-                this.onedit.emit(data);
-                return;
+        setTimeout(() => {
+            if ($event.key === ('Enter' || 'enter')) {
+                this.editId = null;
+                this.rowOnEdition = -1;
+                if (this.expandable) {
+                    data.cmacsEditedProp = this.property;
+                    this.onedit.emit(data);
+                    return;
+                }
+                this.data[index].cmacsEditedProp = this.property;
+                this.onedit.emit(this.data[index]);
+                this.property = null;
             }
-            this.data[index].cmacsEditedProp = this.property;
-            this.onedit.emit(this.data[index]);
-            this.property = null;
-        }
-        else {
-            if (this.expandable) {
-                this.nodeOnEdition = data;
-                return;
+            else {
+                if (this.expandable) {
+                    this.nodeOnEdition = data;
+                    return;
+                }
+                this.rowOnEdition = index;
             }
-            this.rowOnEdition = index;
-        }
+        }, 300);
     }
     endEditModeNgModel(index, data = null, property = null, field = null) {
         if (this.expandable) {
