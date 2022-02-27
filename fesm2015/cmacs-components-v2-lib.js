@@ -1,4 +1,4 @@
-import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, EventEmitter, ɵɵdirectiveInject, Renderer2, ElementRef, ɵɵprojectionDef, ɵɵprojection, ChangeDetectionStrategy, ViewEncapsulation, Output, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵlistener, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵelement, ɵɵadvance, ɵɵproperty, Optional, ViewChild, Input, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵtextInterpolate, ɵɵtemplate, ɵɵcontentQuery, ɵɵattribute, ɵɵNgOnChangesFeature, ContentChild, ContentChildren, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵstyleProp, ɵɵsanitizeHtml, ViewChildren, ɵɵdefineDirective, Directive, TemplateRef, ɵɵdefinePipe, Pipe, ɵɵtextInterpolate1, ɵɵreference, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵtemplateRefExtractor, ɵɵresolveWindow, Host, HostListener, ɵɵpropertyInterpolate, ɵɵelementContainer, ɵɵpipeBind4, NgZone, Self, isDevMode, InjectionToken, ɵɵinject, SkipSelf, Inject, ɵɵsyntheticHostProperty, ViewContainerRef, ɵɵsanitizeUrl, ComponentFactoryResolver, ɵɵInheritDefinitionFeature, Injector, ɵɵclassMap, ɵɵclassMapInterpolate1, ɵɵgetInheritedFactory, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, ɵɵclassMapInterpolate2, ɵɵpureFunction0, ɵɵclassMapInterpolate4, ɵɵpipeBind1, ɵɵnamespaceSVG, ɵɵpureFunction2, Type, QueryList, ɵɵpureFunction3, HostBinding, ɵɵattributeInterpolate2, ɵɵpureFunction5, ɵɵpropertyInterpolate1, ɵɵpureFunction4, ɵɵattributeInterpolate3, ɵɵresolveDocument, ɵɵpropertyInterpolate2, ɵɵtextInterpolate2, ɵɵsyntheticHostListener, ApplicationRef, ɵɵsetComponentScope } from '@angular/core';
+import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, EventEmitter, ɵɵdirectiveInject, Renderer2, ElementRef, ɵɵprojectionDef, ɵɵprojection, ChangeDetectionStrategy, ViewEncapsulation, Output, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵlistener, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵelement, ɵɵadvance, ɵɵproperty, Optional, ViewChild, Input, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵtextInterpolate, ɵɵtemplate, ɵɵcontentQuery, ɵɵattribute, ɵɵNgOnChangesFeature, ContentChild, ContentChildren, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵstyleProp, ɵɵsanitizeHtml, ViewChildren, ɵɵdefineDirective, Directive, TemplateRef, ɵɵdefinePipe, Pipe, ɵɵtextInterpolate1, ɵɵreference, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵtemplateRefExtractor, Host, ɵɵpropertyInterpolate, ɵɵelementContainer, ɵɵpipeBind4, NgZone, Self, isDevMode, InjectionToken, ɵɵinject, SkipSelf, Inject, ɵɵsyntheticHostProperty, ViewContainerRef, ɵɵsanitizeUrl, ComponentFactoryResolver, ɵɵInheritDefinitionFeature, Injector, ɵɵclassMap, ɵɵclassMapInterpolate1, ɵɵgetInheritedFactory, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, ɵɵclassMapInterpolate2, ɵɵpureFunction0, ɵɵclassMapInterpolate4, ɵɵpipeBind1, HostListener, ɵɵnamespaceSVG, ɵɵpureFunction2, ɵɵresolveWindow, Type, QueryList, ɵɵpureFunction3, HostBinding, ɵɵattributeInterpolate2, ɵɵpureFunction5, ɵɵpropertyInterpolate1, ɵɵpureFunction4, ɵɵattributeInterpolate3, ɵɵresolveDocument, ɵɵpropertyInterpolate2, ɵɵtextInterpolate2, ɵɵsyntheticHostListener, ApplicationRef, ɵɵsetComponentScope } from '@angular/core';
 import { __decorate, __rest } from 'tslib';
 import { NG_VALUE_ACCESSOR, CheckboxControlValueAccessor, NgControlStatus, NgModel, DefaultValueAccessor, NgControl, AbstractControl, FormControlName, FormControlDirective, FormControl, FormsModule, Validators, FormBuilder, ɵangular_packages_forms_forms_ba, NgControlStatusGroup, FormGroupDirective, ReactiveFormsModule } from '@angular/forms';
 import { takeUntil, startWith, filter, tap, pluck, map, distinctUntilChanged, share, skip, flatMap, switchMap, mergeMap, mapTo, auditTime, take, first, delay } from 'rxjs/operators';
@@ -20,6 +20,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzAutosizeDirective, NzInputModule } from 'ng-zorro-antd/input';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { CdkOverlayOrigin, CdkConnectedOverlay, Overlay, OverlayRef, ViewportRuler, ConnectionPositionPair, OverlayModule } from '@angular/cdk/overlay';
+import { ResizeObserver } from '@juggle/resize-observer';
 import { NzNoAnimationDirective, NzNoAnimationModule } from 'ng-zorro-antd/core/no-animation';
 import { slideMotion, collapseMotion, zoomBigMotion, helpMotion, slideAlertMotion, moveUpMotion } from 'ng-zorro-antd/core/animation';
 import { NzConnectedOverlayDirective, POSITION_MAP, getPlacementName, DEFAULT_TOOLTIP_POSITIONS, NzOverlayModule } from 'ng-zorro-antd/core/overlay';
@@ -3005,8 +3006,9 @@ function CmacsSelectTopControlComponent_ng_template_12_Template(rf, ctx) { if (r
     ɵɵproperty("ngIf", ctx_r12.nzShowArrow);
 } }
 class CmacsSelectTopControlComponent {
-    constructor(renderer, nzSelectService, cdr, noAnimation) {
+    constructor(renderer, ref, nzSelectService, cdr, noAnimation) {
         this.renderer = renderer;
+        this.ref = ref;
         this.nzSelectService = nzSelectService;
         this.cdr = cdr;
         this.noAnimation = noAnimation;
@@ -3030,10 +3032,6 @@ class CmacsSelectTopControlComponent {
         this.maxTagCountAuto = false;
         this.nzTokenSeparators = [];
         this.listOfCachedSelectedOption = [];
-    }
-    onResize(event) {
-        this.checkWrapperSpace();
-        this.cdr.markForCheck();
     }
     checkWrapperSpace() {
         if (this.nzSelectService.isMultipleOrTags && this.maxTagCountAuto) {
@@ -3195,6 +3193,14 @@ class CmacsSelectTopControlComponent {
             this.checkWrapperSpace();
             this.cdr.markForCheck();
         });
+        this.checkResizeEvent();
+    }
+    checkResizeEvent() {
+        const ro = new ResizeObserver((entries, observer) => {
+            this.checkWrapperSpace();
+            this.cdr.markForCheck();
+        });
+        ro.observe(this.ref.nativeElement);
     }
     ngOnDestroy() {
         this.destroy$.next();
@@ -3206,7 +3212,7 @@ class CmacsSelectTopControlComponent {
         }
     }
 }
-CmacsSelectTopControlComponent.ɵfac = function CmacsSelectTopControlComponent_Factory(t) { return new (t || CmacsSelectTopControlComponent)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(CmacsSelectService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NzNoAnimationDirective, 9)); };
+CmacsSelectTopControlComponent.ɵfac = function CmacsSelectTopControlComponent_Factory(t) { return new (t || CmacsSelectTopControlComponent)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(CmacsSelectService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NzNoAnimationDirective, 9)); };
 CmacsSelectTopControlComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSelectTopControlComponent, selectors: [["", "cmacs-select-top-control", ""]], viewQuery: function CmacsSelectTopControlComponent_Query(rf, ctx) { if (rf & 1) {
         ɵɵviewQuery(_c0$9, 1);
         ɵɵviewQuery(_c1$3, 1);
@@ -3218,8 +3224,6 @@ CmacsSelectTopControlComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSelectTo
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputElementCustom = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.cmacsSelectTagWrapper = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.cmacsSelectTagWrapperInner = _t.first);
-    } }, hostBindings: function CmacsSelectTopControlComponent_HostBindings(rf, ctx) { if (rf & 1) {
-        ɵɵlistener("resize", function CmacsSelectTopControlComponent_resize_HostBindingHandler($event) { return ctx.onResize($event); }, false, ɵɵresolveWindow);
     } }, inputs: { searchValue: "searchValue", nzShowSearch: "nzShowSearch", showCustomSearch: "showCustomSearch", showCmacsSearch: "showCmacsSearch", nzPlaceHolder: "nzPlaceHolder", tagsOut: "tagsOut", nzOpen: "nzOpen", cmacsOpen: "cmacsOpen", cmacsEditable: "cmacsEditable", action: "action", nzMaxTagCount: "nzMaxTagCount", nzAllowClear: "nzAllowClear", nzShowArrow: "nzShowArrow", nzLoading: "nzLoading", nzSuffixIcon: "nzSuffixIcon", nzClearIcon: "nzClearIcon", nzRemoveIcon: "nzRemoveIcon", userDropdown: "userDropdown", maxTagCountAuto: "maxTagCountAuto", nzMaxTagPlaceholder: "nzMaxTagPlaceholder", nzTokenSeparators: "nzTokenSeparators" }, exportAs: ["cmacsSelectTopControl"], features: [ɵɵNgOnChangesFeature], attrs: _c4, decls: 14, vars: 9, consts: [["inputTemplate", ""], ["customInputTemplate", ""], ["class", "ant-select-arrow cmacs-search-search-icon", "cmacs-select-unselectable", "", 4, "ngIf"], [1, "ant-select-selection__rendered"], ["cmacsSelectTagWrapper", ""], ["cmacs-select-unselectable", "", "class", "ant-select-selection__placeholder", 3, "display", 4, "ngIf"], [4, "ngIf"], ["class", "cmacs-select-tag-wrapper-inner", 4, "ngIf"], ["class", "ant-select-selection__clear", "cmacs-select-unselectable", "", 3, "ant-select-selection__clear-search", "mousedown", "click", 4, "ngIf"], ["class", "ant-select-arrow cmacs-search-arrow-right", "cmacs-select-unselectable", "", 3, "cmacs-selected-nodes", 4, "ngIf", "ngIfElse"], ["notCustomArrow", ""], ["autocomplete", "something-new", 1, "ant-select-search__field", 3, "ngStyle", "ngModel", "disabled", "compositionstart", "compositionend", "input", "ngModelChange"], ["inputElement", ""], ["inputElementCustom", ""], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-search-search-icon"], [1, "iconCreation-Search"], ["cmacs-select-unselectable", "", 1, "ant-select-selection__placeholder"], ["class", "ant-select-selection-selected-value", 3, "ngStyle", 4, "ngIf"], ["class", "ant-select-search ant-select-search--inline", 3, "display", 4, "ngIf"], [1, "ant-select-selection-selected-value", 3, "ngStyle"], [1, "ant-select-search", "ant-select-search--inline"], [1, "ant-select-search__field__wrap"], [3, "ngTemplateOutlet"], [1, "ant-select-search__field__mirror"], [1, "cmacs-select-tag-wrapper-inner"], ["cmacsSelectTagWrapperInner", ""], [4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-selection__choice", 3, "nzNoAnimation", 4, "ngIf"], [1, "ant-select-selection__choice", 3, "nzNoAnimation"], [1, "ant-select-selection__choice__content"], ["class", "ant-select-selection__choice__remove", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__choice__remove", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close", "class", "ant-select-remove-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close", 1, "ant-select-remove-icon"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-select-unselectable", "", 1, "ant-select-selection__clear", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close-circle", "theme", "fill", "class", "ant-select-close-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close-circle", "theme", "fill", 1, "ant-select-close-icon"], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-search-arrow-right"], [1, "iconArrowLarge-Arrow-Right"], ["class", "ant-select-arrow cmacs-dropdown-arrow", "cmacs-select-unselectable", "", 3, "cmacs-select-action", 4, "ngIf"], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-dropdown-arrow"], ["nz-icon", "", "nzType", "loading", 4, "ngIf", "ngIfElse"], ["defaultArrow", ""], ["nz-icon", "", "nzType", "loading"], ["nz-icon", "", "nzType", "down", "class", "ant-select-arrow-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "down", 1, "ant-select-arrow-icon"]], template: function CmacsSelectTopControlComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, CmacsSelectTopControlComponent_ng_template_0_Template, 2, 5, "ng-template", null, 0, ɵɵtemplateRefExtractor);
         ɵɵtemplate(2, CmacsSelectTopControlComponent_ng_template_2_Template, 2, 5, "ng-template", null, 1, ɵɵtemplateRefExtractor);
@@ -3266,7 +3270,7 @@ __decorate([
                 templateUrl: './cmacs-select-top-control.component.html',
                 styleUrls: ['./cmacs-select-top-control.component.css']
             }]
-    }], function () { return [{ type: Renderer2 }, { type: CmacsSelectService }, { type: ChangeDetectorRef }, { type: NzNoAnimationDirective, decorators: [{
+    }], function () { return [{ type: Renderer2 }, { type: ElementRef }, { type: CmacsSelectService }, { type: ChangeDetectorRef }, { type: NzNoAnimationDirective, decorators: [{
                 type: Host
             }, {
                 type: Optional
@@ -3324,9 +3328,6 @@ __decorate([
             type: Input
         }], nzTokenSeparators: [{
             type: Input
-        }], onResize: [{
-            type: HostListener,
-            args: ['window:resize', ['$event']]
         }] }); })();
 
 const _c0$a = ["*"];

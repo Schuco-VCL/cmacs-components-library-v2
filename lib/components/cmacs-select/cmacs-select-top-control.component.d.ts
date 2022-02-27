@@ -5,6 +5,7 @@ import { NzNoAnimationDirective } from 'ng-zorro-antd/core/no-animation';
 import * as i0 from "@angular/core";
 export declare class CmacsSelectTopControlComponent implements OnInit, OnDestroy, OnChanges {
     private renderer;
+    private ref;
     nzSelectService: CmacsSelectService;
     private cdr;
     noAnimation?: NzNoAnimationDirective;
@@ -41,7 +42,6 @@ export declare class CmacsSelectTopControlComponent implements OnInit, OnDestroy
     }>;
     nzTokenSeparators: string[];
     listOfCachedSelectedOption: any[];
-    onResize(event: any): void;
     checkWrapperSpace(): void;
     onClearSelection(e: MouseEvent): void;
     getSelectedValues(): any[];
@@ -58,11 +58,12 @@ export declare class CmacsSelectTopControlComponent implements OnInit, OnDestroy
     updateWidth(): void;
     updateWidthCustom(): void;
     removeSelectedValue(option: CmacsOptionComponent, e: MouseEvent): void;
-    constructor(renderer: Renderer2, nzSelectService: CmacsSelectService, cdr: ChangeDetectorRef, noAnimation?: NzNoAnimationDirective);
+    constructor(renderer: Renderer2, ref: ElementRef, nzSelectService: CmacsSelectService, cdr: ChangeDetectorRef, noAnimation?: NzNoAnimationDirective);
     ngOnInit(): void;
+    checkResizeEvent(): void;
     ngOnDestroy(): void;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSelectTopControlComponent, [null, null, null, { optional: true; host: true; }]>;
+    static ɵfac: i0.ɵɵFactoryDef<CmacsSelectTopControlComponent, [null, null, null, null, { optional: true; host: true; }]>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSelectTopControlComponent, "[cmacs-select-top-control]", ["cmacsSelectTopControl"], { "searchValue": "searchValue"; "nzShowSearch": "nzShowSearch"; "showCustomSearch": "showCustomSearch"; "showCmacsSearch": "showCmacsSearch"; "nzPlaceHolder": "nzPlaceHolder"; "tagsOut": "tagsOut"; "nzOpen": "nzOpen"; "cmacsOpen": "cmacsOpen"; "cmacsEditable": "cmacsEditable"; "action": "action"; "nzMaxTagCount": "nzMaxTagCount"; "nzAllowClear": "nzAllowClear"; "nzShowArrow": "nzShowArrow"; "nzLoading": "nzLoading"; "nzSuffixIcon": "nzSuffixIcon"; "nzClearIcon": "nzClearIcon"; "nzRemoveIcon": "nzRemoveIcon"; "userDropdown": "userDropdown"; "maxTagCountAuto": "maxTagCountAuto"; "nzMaxTagPlaceholder": "nzMaxTagPlaceholder"; "nzTokenSeparators": "nzTokenSeparators"; }, {}, never, never>;
 }
 //# sourceMappingURL=cmacs-select-top-control.component.d.ts.map
