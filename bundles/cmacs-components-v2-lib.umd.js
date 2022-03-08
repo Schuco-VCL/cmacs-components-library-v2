@@ -8150,7 +8150,7 @@
             }], function () { return [{ type: i0.ElementRef }]; }, null);
     })();
 
-    var _c0$o = ["canvas"];
+    var _c0$o = ["canvasImg"];
     function CmacsKpiComponent_div_0_div_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 9);
@@ -8223,9 +8223,9 @@
             i0.ɵɵtext(6);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
-            i0.ɵɵelement(7, "canvas", null, 16);
+            i0.ɵɵelement(7, "img", 16, 17);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(9, "div", 17);
+            i0.ɵɵelementStart(9, "div", 18);
             i0.ɵɵtemplate(10, CmacsKpiComponent_div_1_ng_container_10_Template, 1, 0, "ng-container", 8);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -8245,12 +8245,12 @@
     }
     function CmacsKpiComponent_ng_template_2_div_0_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 19);
-            i0.ɵɵelement(1, "div", 20);
-            i0.ɵɵelementStart(2, "div", 21);
+            i0.ɵɵelementStart(0, "div", 20);
+            i0.ɵɵelement(1, "div", 21);
+            i0.ɵɵelementStart(2, "div", 22);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(4, "div", 22);
+            i0.ɵɵelementStart(4, "div", 23);
             i0.ɵɵtext(5);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -8268,7 +8268,7 @@
     }
     function CmacsKpiComponent_ng_template_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵtemplate(0, CmacsKpiComponent_ng_template_2_div_0_Template, 6, 6, "div", 18);
+            i0.ɵɵtemplate(0, CmacsKpiComponent_ng_template_2_div_0_Template, 6, 6, "div", 19);
         }
         if (rf & 2) {
             var ctx_r3 = i0.ɵɵnextContext();
@@ -8291,8 +8291,9 @@
         low: '#00ce7d'
     };
     var CmacsKpiComponent = /** @class */ (function () {
-        function CmacsKpiComponent(sanitizer) {
+        function CmacsKpiComponent(sanitizer, cdr) {
             this.sanitizer = sanitizer;
+            this.cdr = cdr;
             this.priority = false;
             this.type = 'line';
             this.width = 84;
@@ -8301,8 +8302,8 @@
         }
         CmacsKpiComponent.prototype.ngAfterViewInit = function () {
             var e_1, _a;
-            if (this.canvasRef) {
-                var canvas = this.canvasRef.nativeElement;
+            if (this.canvasImgRef) {
+                var canvas = document.createElement('canvas');
                 canvas.width = this.getTotalWidth();
                 canvas.height = this.getTotalWidth();
                 var ctx = canvas.getContext("2d");
@@ -8334,6 +8335,13 @@
                 //drawing a white circle over the chart
                 //to create the doughnut chart
                 this.drawPieSlice(ctx, canvas.width / 2, canvas.height / 2, 0.8 * Math.min(canvas.width / 2, canvas.height / 2), 0, 2 * Math.PI, "#ffffff");
+                //convert canvas to img
+                var img = this.canvasImgRef.nativeElement;
+                img.src = canvas.toDataURL();
+                canvas.remove();
+                img.width = this.getTotalWidth();
+                img.height = this.getTotalWidth();
+                this.cdr.detectChanges();
             }
         };
         CmacsKpiComponent.prototype.getColoredDataPriority = function () {
@@ -8424,16 +8432,16 @@
         };
         return CmacsKpiComponent;
     }());
-    CmacsKpiComponent.ɵfac = function CmacsKpiComponent_Factory(t) { return new (t || CmacsKpiComponent)(i0.ɵɵdirectiveInject(i1$6.DomSanitizer)); };
+    CmacsKpiComponent.ɵfac = function CmacsKpiComponent_Factory(t) { return new (t || CmacsKpiComponent)(i0.ɵɵdirectiveInject(i1$6.DomSanitizer), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef)); };
     CmacsKpiComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKpiComponent, selectors: [["cmacs-kpi"]], viewQuery: function CmacsKpiComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(_c0$o, 1, i0.ElementRef);
             }
             if (rf & 2) {
                 var _t = void 0;
-                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.canvasRef = _t.first);
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.canvasImgRef = _t.first);
             }
-        }, inputs: { data: "data", title: "title", priority: "priority", type: "type", width: "width", showTotalCount: "showTotalCount", fixed: "fixed" }, exportAs: ["cmacsKpi"], decls: 4, vars: 2, consts: [["class", "cmacs-kpi-wrapper", 4, "ngIf"], ["class", "cmacs-kpi-doughnut-container", 4, "ngIf"], ["legend", ""], [1, "cmacs-kpi-wrapper"], ["class", "cmacs-kpi-total-count", 4, "ngIf"], [2, "flex", "1 0 auto"], [1, "cmacs-kpi-title"], ["class", "cmacs-kpi-line", 3, "border-radius-left", "border-radius-right", "width", "background-color", "opacity", 4, "ngFor", "ngForOf"], [4, "ngTemplateOutlet"], [1, "cmacs-kpi-total-count"], [1, "cmacs-kpi-line"], [1, "cmacs-kpi-doughnut-container"], [1, "cmacs-kpi-doughnut-title"], [1, "cmacs-kpi-doughnut-wrapper"], [1, "cmacs-kpi-total-count-wrapper"], [1, "cmacs-kpi-doughnut-total-count"], ["canvas", ""], [1, "cmacs-kpi-doughnut-legend-wrapper"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-divider"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKpiComponent_Template(rf, ctx) {
+        }, inputs: { data: "data", title: "title", priority: "priority", type: "type", width: "width", showTotalCount: "showTotalCount", fixed: "fixed" }, exportAs: ["cmacsKpi"], decls: 4, vars: 2, consts: [["class", "cmacs-kpi-wrapper", 4, "ngIf"], ["class", "cmacs-kpi-doughnut-container", 4, "ngIf"], ["legend", ""], [1, "cmacs-kpi-wrapper"], ["class", "cmacs-kpi-total-count", 4, "ngIf"], [2, "flex", "1 0 auto"], [1, "cmacs-kpi-title"], ["class", "cmacs-kpi-line", 3, "border-radius-left", "border-radius-right", "width", "background-color", "opacity", 4, "ngFor", "ngForOf"], [4, "ngTemplateOutlet"], [1, "cmacs-kpi-total-count"], [1, "cmacs-kpi-line"], [1, "cmacs-kpi-doughnut-container"], [1, "cmacs-kpi-doughnut-title"], [1, "cmacs-kpi-doughnut-wrapper"], [1, "cmacs-kpi-total-count-wrapper"], [1, "cmacs-kpi-doughnut-total-count"], [1, "cmacs-kpi-canvas-toimage"], ["canvasImg", ""], [1, "cmacs-kpi-doughnut-legend-wrapper"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-divider"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKpiComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, CmacsKpiComponent_div_0_Template, 7, 4, "div", 0);
                 i0.ɵɵtemplate(1, CmacsKpiComponent_div_1_Template, 11, 5, "div", 1);
@@ -8463,7 +8471,7 @@
                             "\n      cmacs-kpi {\n        display: block;\n      }\n    "
                         ]
                     }]
-            }], function () { return [{ type: i1$6.DomSanitizer }]; }, { data: [{
+            }], function () { return [{ type: i1$6.DomSanitizer }, { type: i0.ChangeDetectorRef }]; }, { data: [{
                     type: i0.Input
                 }], title: [{
                     type: i0.Input
@@ -8477,9 +8485,9 @@
                     type: i0.Input
                 }], fixed: [{
                     type: i0.Input
-                }], canvasRef: [{
+                }], canvasImgRef: [{
                     type: i0.ViewChild,
-                    args: ['canvas', { read: i0.ElementRef }]
+                    args: ['canvasImg', { read: i0.ElementRef }]
                 }] });
     })();
 

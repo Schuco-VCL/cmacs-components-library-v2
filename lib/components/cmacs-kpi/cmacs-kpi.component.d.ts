@@ -1,4 +1,4 @@
-import { ElementRef, AfterViewInit } from '@angular/core';
+import { ElementRef, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { DomSanitizer } from "@angular/platform-browser";
 import * as i0 from "@angular/core";
 export declare const KPI_COLORS: string[];
@@ -14,6 +14,7 @@ export interface KPI {
 }
 export declare class CmacsKpiComponent implements AfterViewInit {
     private sanitizer;
+    private cdr;
     data: KPI[];
     title: string;
     priority: boolean;
@@ -21,8 +22,8 @@ export declare class CmacsKpiComponent implements AfterViewInit {
     width: number;
     showTotalCount: boolean;
     fixed: number;
-    canvasRef: ElementRef;
-    constructor(sanitizer: DomSanitizer);
+    canvasImgRef: ElementRef;
+    constructor(sanitizer: DomSanitizer, cdr: ChangeDetectorRef);
     ngAfterViewInit(): void;
     getColoredDataPriority(): any[];
     drawPieSlice(ctx: any, centerX: number, centerY: number, radius: number, startAngle: number, endAngle: number, color: any): void;
