@@ -59,6 +59,7 @@ export declare class CmacsSelectTopControlComponent implements OnInit, OnDestroy
     updateWidthCustom(): void;
     removeSelectedValue(option: CmacsOptionComponent, e: MouseEvent): void;
     constructor(renderer: Renderer2, ref: ElementRef, nzSelectService: CmacsSelectService, cdr: ChangeDetectorRef, noAnimation?: NzNoAnimationDirective);
+    focusInput(): void;
     ngOnInit(): void;
     checkResizeEvent(): void;
     ngOnDestroy(): void;

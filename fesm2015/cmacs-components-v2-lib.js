@@ -2789,7 +2789,7 @@ function CmacsSelectTopControlComponent_div_7_Template(rf, ctx) { if (rf & 1) {
     ɵɵtextInterpolate(ctx_r6.nzPlaceHolder);
 } }
 function CmacsSelectTopControlComponent_ng_container_8_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 19);
+    ɵɵelementStart(0, "div", 20);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -2801,10 +2801,12 @@ function CmacsSelectTopControlComponent_ng_container_8_div_1_Template(rf, ctx) {
 } }
 function CmacsSelectTopControlComponent_ng_container_8_div_2_ng_template_2_Template(rf, ctx) { }
 function CmacsSelectTopControlComponent_ng_container_8_div_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 20);
-    ɵɵelementStart(1, "div", 21);
-    ɵɵtemplate(2, CmacsSelectTopControlComponent_ng_container_8_div_2_ng_template_2_Template, 0, 0, "ng-template", 22);
-    ɵɵelementStart(3, "span", 23);
+    const _r30 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 21);
+    ɵɵlistener("tap", function CmacsSelectTopControlComponent_ng_container_8_div_2_Template_div_tap_0_listener() { ɵɵrestoreView(_r30); const ctx_r29 = ɵɵnextContext(2); return ctx_r29.focusInput(); });
+    ɵɵelementStart(1, "div", 22);
+    ɵɵtemplate(2, CmacsSelectTopControlComponent_ng_container_8_div_2_ng_template_2_Template, 0, 0, "ng-template", 23);
+    ɵɵelementStart(3, "span", 24);
     ɵɵtext(4);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -2820,10 +2822,10 @@ function CmacsSelectTopControlComponent_ng_container_8_div_2_Template(rf, ctx) {
 } }
 function CmacsSelectTopControlComponent_ng_container_8_div_3_ng_template_2_Template(rf, ctx) { }
 function CmacsSelectTopControlComponent_ng_container_8_div_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 20);
-    ɵɵelementStart(1, "div", 21);
-    ɵɵtemplate(2, CmacsSelectTopControlComponent_ng_container_8_div_3_ng_template_2_Template, 0, 0, "ng-template", 22);
-    ɵɵelementStart(3, "span", 23);
+    ɵɵelementStart(0, "div", 25);
+    ɵɵelementStart(1, "div", 22);
+    ɵɵtemplate(2, CmacsSelectTopControlComponent_ng_container_8_div_3_ng_template_2_Template, 0, 0, "ng-template", 23);
+    ɵɵelementStart(3, "span", 24);
     ɵɵtext(4);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -2841,7 +2843,7 @@ function CmacsSelectTopControlComponent_ng_container_8_Template(rf, ctx) { if (r
     ɵɵelementContainerStart(0);
     ɵɵtemplate(1, CmacsSelectTopControlComponent_ng_container_8_div_1_Template, 2, 3, "div", 17);
     ɵɵtemplate(2, CmacsSelectTopControlComponent_ng_container_8_div_2_Template, 5, 4, "div", 18);
-    ɵɵtemplate(3, CmacsSelectTopControlComponent_ng_container_8_div_3_Template, 5, 4, "div", 18);
+    ɵɵtemplate(3, CmacsSelectTopControlComponent_ng_container_8_div_3_Template, 5, 4, "div", 19);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r7 = ɵɵnextContext();
@@ -2853,95 +2855,95 @@ function CmacsSelectTopControlComponent_ng_container_8_Template(rf, ctx) { if (r
     ɵɵproperty("ngIf", ctx_r7.cmacsEditable);
 } }
 function CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_span_4_i_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 33);
+    ɵɵelement(0, "i", 35);
 } }
 function CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_span_4_Template(rf, ctx) { if (rf & 1) {
-    const _r41 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "span", 31);
-    ɵɵlistener("mousedown", function CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_span_4_Template_span_mousedown_0_listener($event) { return $event.preventDefault(); })("click", function CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_span_4_Template_span_click_0_listener($event) { ɵɵrestoreView(_r41); const option_r35 = ɵɵnextContext().$implicit; const ctx_r39 = ɵɵnextContext(3); return ctx_r39.removeSelectedValue(option_r35, $event); });
-    ɵɵtemplate(1, CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_span_4_i_1_Template, 1, 0, "i", 32);
+    const _r43 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "span", 33);
+    ɵɵlistener("mousedown", function CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_span_4_Template_span_mousedown_0_listener($event) { return $event.preventDefault(); })("click", function CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_span_4_Template_span_click_0_listener($event) { ɵɵrestoreView(_r43); const option_r37 = ɵɵnextContext().$implicit; const ctx_r41 = ɵɵnextContext(3); return ctx_r41.removeSelectedValue(option_r37, $event); });
+    ɵɵtemplate(1, CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_span_4_i_1_Template, 1, 0, "i", 34);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r36 = ɵɵnextContext(4);
+    const ctx_r38 = ɵɵnextContext(4);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", !ctx_r36.nzRemoveIcon)("ngIfElse", ctx_r36.nzRemoveIcon);
+    ɵɵproperty("ngIf", !ctx_r38.nzRemoveIcon)("ngIfElse", ctx_r38.nzRemoveIcon);
 } }
 function CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "li", 28);
-    ɵɵelementStart(2, "div", 29);
+    ɵɵelementStart(1, "li", 30);
+    ɵɵelementStart(2, "div", 31);
     ɵɵtext(3);
     ɵɵelementEnd();
-    ɵɵtemplate(4, CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_span_4_Template, 2, 2, "span", 30);
+    ɵɵtemplate(4, CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_span_4_Template, 2, 2, "span", 32);
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const option_r35 = ctx.$implicit;
-    const ctx_r33 = ɵɵnextContext(3);
+    const option_r37 = ctx.$implicit;
+    const ctx_r35 = ɵɵnextContext(3);
     ɵɵadvance(1);
-    ɵɵclassProp("ant-select-selection__choice__disabled", option_r35.nzDisabled);
-    ɵɵproperty("nzNoAnimation", ctx_r33.noAnimation == null ? null : ctx_r33.noAnimation.nzNoAnimation);
-    ɵɵattribute("title", option_r35.nzLabel);
+    ɵɵclassProp("ant-select-selection__choice__disabled", option_r37.nzDisabled);
+    ɵɵproperty("nzNoAnimation", ctx_r35.noAnimation == null ? null : ctx_r35.noAnimation.nzNoAnimation);
+    ɵɵattribute("title", option_r37.nzLabel);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(option_r35.nzLabel);
+    ɵɵtextInterpolate(option_r37.nzLabel);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", !option_r35.nzDisabled);
+    ɵɵproperty("ngIf", !option_r37.nzDisabled);
 } }
 function CmacsSelectTopControlComponent_ul_9_ng_container_2_li_3_ng_container_2_ng_template_1_Template(rf, ctx) { }
 const _c5 = function (a0) { return { $implicit: a0 }; };
 function CmacsSelectTopControlComponent_ul_9_ng_container_2_li_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, CmacsSelectTopControlComponent_ul_9_ng_container_2_li_3_ng_container_2_ng_template_1_Template, 0, 0, "ng-template", 34);
+    ɵɵtemplate(1, CmacsSelectTopControlComponent_ul_9_ng_container_2_li_3_ng_container_2_ng_template_1_Template, 0, 0, "ng-template", 36);
     ɵɵpipe(2, "slice");
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r42 = ɵɵnextContext(4);
+    const ctx_r44 = ɵɵnextContext(4);
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r42.nzMaxTagPlaceholder)("ngTemplateOutletContext", ɵɵpureFunction1(5, _c5, ɵɵpipeBind2(2, 2, ctx_r42.nzSelectService.listOfSelectedValue, ctx_r42.nzMaxTagCount)));
+    ɵɵproperty("ngTemplateOutlet", ctx_r44.nzMaxTagPlaceholder)("ngTemplateOutletContext", ɵɵpureFunction1(5, _c5, ɵɵpipeBind2(2, 2, ctx_r44.nzSelectService.listOfSelectedValue, ctx_r44.nzMaxTagCount)));
 } }
 function CmacsSelectTopControlComponent_ul_9_ng_container_2_li_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵtext(1);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r43 = ɵɵnextContext(4);
+    const ctx_r45 = ɵɵnextContext(4);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" + ", ctx_r43.nzSelectService.listOfCachedSelectedOption.length - ctx_r43.nzMaxTagCount, " ... ");
+    ɵɵtextInterpolate1(" + ", ctx_r45.nzSelectService.listOfCachedSelectedOption.length - ctx_r45.nzMaxTagCount, " ... ");
 } }
 function CmacsSelectTopControlComponent_ul_9_ng_container_2_li_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "li", 28);
-    ɵɵelementStart(1, "div", 29);
+    ɵɵelementStart(0, "li", 30);
+    ɵɵelementStart(1, "div", 31);
     ɵɵtemplate(2, CmacsSelectTopControlComponent_ul_9_ng_container_2_li_3_ng_container_2_Template, 3, 7, "ng-container", 6);
     ɵɵtemplate(3, CmacsSelectTopControlComponent_ul_9_ng_container_2_li_3_ng_container_3_Template, 2, 1, "ng-container", 6);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r34 = ɵɵnextContext(3);
-    ɵɵproperty("nzNoAnimation", ctx_r34.noAnimation == null ? null : ctx_r34.noAnimation.nzNoAnimation);
+    const ctx_r36 = ɵɵnextContext(3);
+    ɵɵproperty("nzNoAnimation", ctx_r36.noAnimation == null ? null : ctx_r36.noAnimation.nzNoAnimation);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", ctx_r34.nzMaxTagPlaceholder);
+    ɵɵproperty("ngIf", ctx_r36.nzMaxTagPlaceholder);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", !ctx_r34.nzMaxTagPlaceholder);
+    ɵɵproperty("ngIf", !ctx_r36.nzMaxTagPlaceholder);
 } }
 function CmacsSelectTopControlComponent_ul_9_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_Template, 5, 6, "ng-container", 26);
+    ɵɵtemplate(1, CmacsSelectTopControlComponent_ul_9_ng_container_2_ng_container_1_Template, 5, 6, "ng-container", 28);
     ɵɵpipe(2, "slice");
-    ɵɵtemplate(3, CmacsSelectTopControlComponent_ul_9_ng_container_2_li_3_Template, 4, 3, "li", 27);
+    ɵɵtemplate(3, CmacsSelectTopControlComponent_ul_9_ng_container_2_li_3_Template, 4, 3, "li", 29);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r31 = ɵɵnextContext(2);
+    const ctx_r33 = ɵɵnextContext(2);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ɵɵpipeBind3(2, 3, ctx_r31.listOfCachedSelectedOption, 0, ctx_r31.nzMaxTagCount))("ngForTrackBy", ctx_r31.trackValue);
+    ɵɵproperty("ngForOf", ɵɵpipeBind3(2, 3, ctx_r33.listOfCachedSelectedOption, 0, ctx_r33.nzMaxTagCount))("ngForTrackBy", ctx_r33.trackValue);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", ctx_r31.nzSelectService.listOfCachedSelectedOption.length > ctx_r31.nzMaxTagCount);
+    ɵɵproperty("ngIf", ctx_r33.nzSelectService.listOfCachedSelectedOption.length > ctx_r33.nzMaxTagCount);
 } }
 function CmacsSelectTopControlComponent_ul_9_ng_template_4_Template(rf, ctx) { }
 function CmacsSelectTopControlComponent_ul_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "ul", 24, 25);
+    ɵɵelementStart(0, "ul", 26, 27);
     ɵɵtemplate(2, CmacsSelectTopControlComponent_ul_9_ng_container_2_Template, 4, 7, "ng-container", 6);
-    ɵɵelementStart(3, "li", 20);
-    ɵɵtemplate(4, CmacsSelectTopControlComponent_ul_9_ng_template_4_Template, 0, 0, "ng-template", 22);
+    ɵɵelementStart(3, "li", 25);
+    ɵɵtemplate(4, CmacsSelectTopControlComponent_ul_9_ng_template_4_Template, 0, 0, "ng-template", 23);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -2953,13 +2955,13 @@ function CmacsSelectTopControlComponent_ul_9_Template(rf, ctx) { if (rf & 1) {
     ɵɵproperty("ngTemplateOutlet", _r0);
 } }
 function CmacsSelectTopControlComponent_span_10_i_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 37);
+    ɵɵelement(0, "i", 39);
 } }
 function CmacsSelectTopControlComponent_span_10_Template(rf, ctx) { if (rf & 1) {
-    const _r48 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "span", 35);
-    ɵɵlistener("mousedown", function CmacsSelectTopControlComponent_span_10_Template_span_mousedown_0_listener($event) { return $event.preventDefault(); })("click", function CmacsSelectTopControlComponent_span_10_Template_span_click_0_listener($event) { ɵɵrestoreView(_r48); const ctx_r47 = ɵɵnextContext(); return ctx_r47.onClearSelection($event); });
-    ɵɵtemplate(1, CmacsSelectTopControlComponent_span_10_i_1_Template, 1, 0, "i", 36);
+    const _r50 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "span", 37);
+    ɵɵlistener("mousedown", function CmacsSelectTopControlComponent_span_10_Template_span_mousedown_0_listener($event) { return $event.preventDefault(); })("click", function CmacsSelectTopControlComponent_span_10_Template_span_click_0_listener($event) { ɵɵrestoreView(_r50); const ctx_r49 = ɵɵnextContext(); return ctx_r49.onClearSelection($event); });
+    ɵɵtemplate(1, CmacsSelectTopControlComponent_span_10_i_1_Template, 1, 0, "i", 38);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r9 = ɵɵnextContext();
@@ -2968,39 +2970,39 @@ function CmacsSelectTopControlComponent_span_10_Template(rf, ctx) { if (rf & 1) 
     ɵɵproperty("ngIf", !ctx_r9.nzClearIcon)("ngIfElse", ctx_r9.nzClearIcon);
 } }
 function CmacsSelectTopControlComponent_span_11_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "span", 38);
-    ɵɵelement(1, "i", 39);
+    ɵɵelementStart(0, "span", 40);
+    ɵɵelement(1, "i", 41);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r10 = ɵɵnextContext();
     ɵɵclassProp("cmacs-selected-nodes", ctx_r10.getSelectedValues().length);
 } }
 function CmacsSelectTopControlComponent_ng_template_12_span_0_i_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 44);
-} }
-function CmacsSelectTopControlComponent_ng_template_12_span_0_ng_template_2_i_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "i", 46);
 } }
+function CmacsSelectTopControlComponent_ng_template_12_span_0_ng_template_2_i_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 48);
+} }
 function CmacsSelectTopControlComponent_ng_template_12_span_0_ng_template_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵtemplate(0, CmacsSelectTopControlComponent_ng_template_12_span_0_ng_template_2_i_0_Template, 1, 0, "i", 45);
+    ɵɵtemplate(0, CmacsSelectTopControlComponent_ng_template_12_span_0_ng_template_2_i_0_Template, 1, 0, "i", 47);
 } if (rf & 2) {
-    const ctx_r52 = ɵɵnextContext(3);
-    ɵɵproperty("ngIf", !ctx_r52.nzSuffixIcon)("ngIfElse", ctx_r52.nzSuffixIcon);
+    const ctx_r54 = ɵɵnextContext(3);
+    ɵɵproperty("ngIf", !ctx_r54.nzSuffixIcon)("ngIfElse", ctx_r54.nzSuffixIcon);
 } }
 function CmacsSelectTopControlComponent_ng_template_12_span_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "span", 41);
-    ɵɵtemplate(1, CmacsSelectTopControlComponent_ng_template_12_span_0_i_1_Template, 1, 0, "i", 42);
-    ɵɵtemplate(2, CmacsSelectTopControlComponent_ng_template_12_span_0_ng_template_2_Template, 1, 2, "ng-template", null, 43, ɵɵtemplateRefExtractor);
+    ɵɵelementStart(0, "span", 43);
+    ɵɵtemplate(1, CmacsSelectTopControlComponent_ng_template_12_span_0_i_1_Template, 1, 0, "i", 44);
+    ɵɵtemplate(2, CmacsSelectTopControlComponent_ng_template_12_span_0_ng_template_2_Template, 1, 2, "ng-template", null, 45, ɵɵtemplateRefExtractor);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const _r51 = ɵɵreference(3);
-    const ctx_r49 = ɵɵnextContext(2);
-    ɵɵclassProp("cmacs-select-action", ctx_r49.action);
+    const _r53 = ɵɵreference(3);
+    const ctx_r51 = ɵɵnextContext(2);
+    ɵɵclassProp("cmacs-select-action", ctx_r51.action);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r49.nzLoading)("ngIfElse", _r51);
+    ɵɵproperty("ngIf", ctx_r51.nzLoading)("ngIfElse", _r53);
 } }
 function CmacsSelectTopControlComponent_ng_template_12_Template(rf, ctx) { if (rf & 1) {
-    ɵɵtemplate(0, CmacsSelectTopControlComponent_ng_template_12_span_0_Template, 4, 4, "span", 40);
+    ɵɵtemplate(0, CmacsSelectTopControlComponent_ng_template_12_span_0_Template, 4, 4, "span", 42);
 } if (rf & 2) {
     const ctx_r12 = ɵɵnextContext();
     ɵɵproperty("ngIf", ctx_r12.nzShowArrow);
@@ -3168,19 +3170,37 @@ class CmacsSelectTopControlComponent {
         e.stopPropagation();
         this.nzSelectService.removeValueFormSelected(option);
     }
+    focusInput() {
+        setTimeout(() => {
+            if (this.inputElement && this.nzOpen) {
+                this.cdr.detectChanges();
+                setTimeout(() => {
+                    this.inputElement.nativeElement.focus();
+                }, 100);
+            }
+        }, 300);
+    }
     ngOnInit() {
         this.nzSelectService.open$.pipe(takeUntil(this.destroy$)).subscribe(open => {
             if (this.inputElement && open) {
-                setTimeout(() => this.inputElement.nativeElement.focus());
+                this.cdr.detectChanges();
+                setTimeout(() => {
+                    this.inputElement.nativeElement.focus();
+                }, 300);
             }
             if (this.inputElement && this.cmacsOpen) {
-                setTimeout(() => this.inputElement.nativeElement.focus());
+                this.cdr.detectChanges();
+                setTimeout(() => {
+                    this.inputElement.nativeElement.focus();
+                }, 300);
             }
             if (this.inputElementCustom && open) {
-                setTimeout(() => this.inputElementCustom.nativeElement.focus());
+                this.cdr.detectChanges();
+                setTimeout(() => this.inputElementCustom.nativeElement.focus(), 300);
             }
             if (this.inputElementCustom && this.cmacsOpen) {
-                setTimeout(() => this.inputElementCustom.nativeElement.focus());
+                this.cdr.detectChanges();
+                setTimeout(() => this.inputElementCustom.nativeElement.focus(), 300);
             }
         });
         this.nzSelectService.clearInput$.pipe(takeUntil(this.destroy$)).subscribe(() => {
@@ -3224,7 +3244,7 @@ CmacsSelectTopControlComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSelectTo
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputElementCustom = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.cmacsSelectTagWrapper = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.cmacsSelectTagWrapperInner = _t.first);
-    } }, inputs: { searchValue: "searchValue", nzShowSearch: "nzShowSearch", showCustomSearch: "showCustomSearch", showCmacsSearch: "showCmacsSearch", nzPlaceHolder: "nzPlaceHolder", tagsOut: "tagsOut", nzOpen: "nzOpen", cmacsOpen: "cmacsOpen", cmacsEditable: "cmacsEditable", action: "action", nzMaxTagCount: "nzMaxTagCount", nzAllowClear: "nzAllowClear", nzShowArrow: "nzShowArrow", nzLoading: "nzLoading", nzSuffixIcon: "nzSuffixIcon", nzClearIcon: "nzClearIcon", nzRemoveIcon: "nzRemoveIcon", userDropdown: "userDropdown", maxTagCountAuto: "maxTagCountAuto", nzMaxTagPlaceholder: "nzMaxTagPlaceholder", nzTokenSeparators: "nzTokenSeparators" }, exportAs: ["cmacsSelectTopControl"], features: [ɵɵNgOnChangesFeature], attrs: _c4, decls: 14, vars: 9, consts: [["inputTemplate", ""], ["customInputTemplate", ""], ["class", "ant-select-arrow cmacs-search-search-icon", "cmacs-select-unselectable", "", 4, "ngIf"], [1, "ant-select-selection__rendered"], ["cmacsSelectTagWrapper", ""], ["cmacs-select-unselectable", "", "class", "ant-select-selection__placeholder", 3, "display", 4, "ngIf"], [4, "ngIf"], ["class", "cmacs-select-tag-wrapper-inner", 4, "ngIf"], ["class", "ant-select-selection__clear", "cmacs-select-unselectable", "", 3, "ant-select-selection__clear-search", "mousedown", "click", 4, "ngIf"], ["class", "ant-select-arrow cmacs-search-arrow-right", "cmacs-select-unselectable", "", 3, "cmacs-selected-nodes", 4, "ngIf", "ngIfElse"], ["notCustomArrow", ""], ["autocomplete", "something-new", 1, "ant-select-search__field", 3, "ngStyle", "ngModel", "disabled", "compositionstart", "compositionend", "input", "ngModelChange"], ["inputElement", ""], ["inputElementCustom", ""], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-search-search-icon"], [1, "iconCreation-Search"], ["cmacs-select-unselectable", "", 1, "ant-select-selection__placeholder"], ["class", "ant-select-selection-selected-value", 3, "ngStyle", 4, "ngIf"], ["class", "ant-select-search ant-select-search--inline", 3, "display", 4, "ngIf"], [1, "ant-select-selection-selected-value", 3, "ngStyle"], [1, "ant-select-search", "ant-select-search--inline"], [1, "ant-select-search__field__wrap"], [3, "ngTemplateOutlet"], [1, "ant-select-search__field__mirror"], [1, "cmacs-select-tag-wrapper-inner"], ["cmacsSelectTagWrapperInner", ""], [4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-selection__choice", 3, "nzNoAnimation", 4, "ngIf"], [1, "ant-select-selection__choice", 3, "nzNoAnimation"], [1, "ant-select-selection__choice__content"], ["class", "ant-select-selection__choice__remove", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__choice__remove", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close", "class", "ant-select-remove-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close", 1, "ant-select-remove-icon"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-select-unselectable", "", 1, "ant-select-selection__clear", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close-circle", "theme", "fill", "class", "ant-select-close-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close-circle", "theme", "fill", 1, "ant-select-close-icon"], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-search-arrow-right"], [1, "iconArrowLarge-Arrow-Right"], ["class", "ant-select-arrow cmacs-dropdown-arrow", "cmacs-select-unselectable", "", 3, "cmacs-select-action", 4, "ngIf"], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-dropdown-arrow"], ["nz-icon", "", "nzType", "loading", 4, "ngIf", "ngIfElse"], ["defaultArrow", ""], ["nz-icon", "", "nzType", "loading"], ["nz-icon", "", "nzType", "down", "class", "ant-select-arrow-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "down", 1, "ant-select-arrow-icon"]], template: function CmacsSelectTopControlComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { searchValue: "searchValue", nzShowSearch: "nzShowSearch", showCustomSearch: "showCustomSearch", showCmacsSearch: "showCmacsSearch", nzPlaceHolder: "nzPlaceHolder", tagsOut: "tagsOut", nzOpen: "nzOpen", cmacsOpen: "cmacsOpen", cmacsEditable: "cmacsEditable", action: "action", nzMaxTagCount: "nzMaxTagCount", nzAllowClear: "nzAllowClear", nzShowArrow: "nzShowArrow", nzLoading: "nzLoading", nzSuffixIcon: "nzSuffixIcon", nzClearIcon: "nzClearIcon", nzRemoveIcon: "nzRemoveIcon", userDropdown: "userDropdown", maxTagCountAuto: "maxTagCountAuto", nzMaxTagPlaceholder: "nzMaxTagPlaceholder", nzTokenSeparators: "nzTokenSeparators" }, exportAs: ["cmacsSelectTopControl"], features: [ɵɵNgOnChangesFeature], attrs: _c4, decls: 14, vars: 9, consts: [["inputTemplate", ""], ["customInputTemplate", ""], ["class", "ant-select-arrow cmacs-search-search-icon", "cmacs-select-unselectable", "", 4, "ngIf"], [1, "ant-select-selection__rendered"], ["cmacsSelectTagWrapper", ""], ["cmacs-select-unselectable", "", "class", "ant-select-selection__placeholder", 3, "display", 4, "ngIf"], [4, "ngIf"], ["class", "cmacs-select-tag-wrapper-inner", 4, "ngIf"], ["class", "ant-select-selection__clear", "cmacs-select-unselectable", "", 3, "ant-select-selection__clear-search", "mousedown", "click", 4, "ngIf"], ["class", "ant-select-arrow cmacs-search-arrow-right", "cmacs-select-unselectable", "", 3, "cmacs-selected-nodes", 4, "ngIf", "ngIfElse"], ["notCustomArrow", ""], ["autocomplete", "something-new", 1, "ant-select-search__field", 3, "ngStyle", "ngModel", "disabled", "compositionstart", "compositionend", "input", "ngModelChange"], ["inputElement", ""], ["inputElementCustom", ""], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-search-search-icon"], [1, "iconCreation-Search"], ["cmacs-select-unselectable", "", 1, "ant-select-selection__placeholder"], ["class", "ant-select-selection-selected-value", 3, "ngStyle", 4, "ngIf"], ["class", "ant-select-search ant-select-search--inline", 3, "display", "tap", 4, "ngIf"], ["class", "ant-select-search ant-select-search--inline", 3, "display", 4, "ngIf"], [1, "ant-select-selection-selected-value", 3, "ngStyle"], [1, "ant-select-search", "ant-select-search--inline", 3, "tap"], [1, "ant-select-search__field__wrap"], [3, "ngTemplateOutlet"], [1, "ant-select-search__field__mirror"], [1, "ant-select-search", "ant-select-search--inline"], [1, "cmacs-select-tag-wrapper-inner"], ["cmacsSelectTagWrapperInner", ""], [4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-selection__choice", 3, "nzNoAnimation", 4, "ngIf"], [1, "ant-select-selection__choice", 3, "nzNoAnimation"], [1, "ant-select-selection__choice__content"], ["class", "ant-select-selection__choice__remove", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__choice__remove", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close", "class", "ant-select-remove-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close", 1, "ant-select-remove-icon"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["cmacs-select-unselectable", "", 1, "ant-select-selection__clear", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close-circle", "theme", "fill", "class", "ant-select-close-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close-circle", "theme", "fill", 1, "ant-select-close-icon"], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-search-arrow-right"], [1, "iconArrowLarge-Arrow-Right"], ["class", "ant-select-arrow cmacs-dropdown-arrow", "cmacs-select-unselectable", "", 3, "cmacs-select-action", 4, "ngIf"], ["cmacs-select-unselectable", "", 1, "ant-select-arrow", "cmacs-dropdown-arrow"], ["nz-icon", "", "nzType", "loading", 4, "ngIf", "ngIfElse"], ["defaultArrow", ""], ["nz-icon", "", "nzType", "loading"], ["nz-icon", "", "nzType", "down", "class", "ant-select-arrow-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "down", 1, "ant-select-arrow-icon"]], template: function CmacsSelectTopControlComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, CmacsSelectTopControlComponent_ng_template_0_Template, 2, 5, "ng-template", null, 0, ɵɵtemplateRefExtractor);
         ɵɵtemplate(2, CmacsSelectTopControlComponent_ng_template_2_Template, 2, 5, "ng-template", null, 1, ɵɵtemplateRefExtractor);
         ɵɵtemplate(4, CmacsSelectTopControlComponent_span_4_Template, 2, 0, "span", 2);
