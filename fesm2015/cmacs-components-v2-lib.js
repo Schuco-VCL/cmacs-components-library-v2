@@ -3186,21 +3186,37 @@ class CmacsSelectTopControlComponent {
                 this.cdr.detectChanges();
                 setTimeout(() => {
                     this.inputElement.nativeElement.focus();
+                    this.inputElement.nativeElement.onclick = (e) => {
+                        e.preventDefault();
+                        e.stopImmediatePropagation();
+                        e.stopPropagation();
+                    };
+                    this.inputElement.nativeElement.click();
                 }, 300);
             }
             if (this.inputElement && this.cmacsOpen) {
                 this.cdr.detectChanges();
                 setTimeout(() => {
                     this.inputElement.nativeElement.focus();
+                    this.inputElement.nativeElement.onclick = (e) => {
+                        e.preventDefault();
+                        e.stopImmediatePropagation();
+                        e.stopPropagation();
+                    };
+                    this.inputElement.nativeElement.click();
                 }, 300);
             }
             if (this.inputElementCustom && open) {
                 this.cdr.detectChanges();
-                setTimeout(() => this.inputElementCustom.nativeElement.focus(), 300);
+                setTimeout(() => {
+                    this.inputElementCustom.nativeElement.focus();
+                }, 300);
             }
             if (this.inputElementCustom && this.cmacsOpen) {
                 this.cdr.detectChanges();
-                setTimeout(() => this.inputElementCustom.nativeElement.focus(), 300);
+                setTimeout(() => {
+                    this.inputElementCustom.nativeElement.focus();
+                }, 300);
             }
         });
         this.nzSelectService.clearInput$.pipe(takeUntil(this.destroy$)).subscribe(() => {

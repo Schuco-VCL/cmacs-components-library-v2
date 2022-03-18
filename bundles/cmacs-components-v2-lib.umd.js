@@ -3789,21 +3789,37 @@
                     _this.cdr.detectChanges();
                     setTimeout(function () {
                         _this.inputElement.nativeElement.focus();
+                        _this.inputElement.nativeElement.onclick = function (e) {
+                            e.preventDefault();
+                            e.stopImmediatePropagation();
+                            e.stopPropagation();
+                        };
+                        _this.inputElement.nativeElement.click();
                     }, 300);
                 }
                 if (_this.inputElement && _this.cmacsOpen) {
                     _this.cdr.detectChanges();
                     setTimeout(function () {
                         _this.inputElement.nativeElement.focus();
+                        _this.inputElement.nativeElement.onclick = function (e) {
+                            e.preventDefault();
+                            e.stopImmediatePropagation();
+                            e.stopPropagation();
+                        };
+                        _this.inputElement.nativeElement.click();
                     }, 300);
                 }
                 if (_this.inputElementCustom && open) {
                     _this.cdr.detectChanges();
-                    setTimeout(function () { return _this.inputElementCustom.nativeElement.focus(); }, 300);
+                    setTimeout(function () {
+                        _this.inputElementCustom.nativeElement.focus();
+                    }, 300);
                 }
                 if (_this.inputElementCustom && _this.cmacsOpen) {
                     _this.cdr.detectChanges();
-                    setTimeout(function () { return _this.inputElementCustom.nativeElement.focus(); }, 300);
+                    setTimeout(function () {
+                        _this.inputElementCustom.nativeElement.focus();
+                    }, 300);
                 }
             });
             this.nzSelectService.clearInput$.pipe(operators.takeUntil(this.destroy$)).subscribe(function () {
