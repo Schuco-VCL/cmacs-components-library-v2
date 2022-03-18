@@ -17,11 +17,13 @@ import { NzSizeMDSType } from 'ng-zorro-antd/core/types';
 import { NzTableComponent } from 'ng-zorro-antd/table';
 import { CmacsContextMenuService } from '../cmacs-dropdown/context-menu.service';
 import { NzResizeEvent } from 'ng-zorro-antd/resizable';
+import { DeviceDetectorService } from 'ngx-device-detector';
 import * as i0 from "@angular/core";
 export declare class CmacsCompactTableComponent implements OnInit, OnChanges, OnDestroy, AfterViewInit {
     private cdr;
     private i18n;
     private excelService;
+    private deviceDetector;
     private datePipe;
     private nzDropdownService;
     private cookies;
@@ -135,6 +137,9 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     boolElement: ElementRef;
     dateTimePicker: CmacsDateTimePickerComponent;
     oncontextmenuevt($event: any, item: any): void;
+    onFieldTapEllipsis(id: string): void;
+    onDataTapEllipsis(id: string): void;
+    getTooltipEllipsisTrigger(): "click" | "hover";
     isEllipsisActive(id: string, field: any): boolean;
     getInputNumberValue(data: any, field: Field): any;
     getStringFieldValue(data: any, field: any): any;
@@ -186,7 +191,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     isCeldTypeTemplateRef(field: Field): boolean;
     isUndefined(value: any): boolean;
     isRowSelected(data: any): boolean;
-    constructor(cdr: ChangeDetectorRef, i18n: NzI18nService, excelService: ExcelService, datePipe: DatePipe, nzDropdownService: CmacsContextMenuService, cookies: CookieService, utilService: UtilService);
+    constructor(cdr: ChangeDetectorRef, i18n: NzI18nService, excelService: ExcelService, deviceDetector: DeviceDetectorService, datePipe: DatePipe, nzDropdownService: CmacsContextMenuService, cookies: CookieService, utilService: UtilService);
     ngAfterViewInit(): void;
     disableSelectEventOnExpand(): void;
     getIndexCookie(): boolean;
