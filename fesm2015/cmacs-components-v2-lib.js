@@ -3185,11 +3185,11 @@ class CmacsSelectTopControlComponent {
             if (this.inputElement && open) {
                 this.cdr.detectChanges();
                 setTimeout(() => {
-                    this.inputElement.nativeElement.focus();
                     this.inputElement.nativeElement.onclick = (e) => {
                         e.preventDefault();
                         e.stopImmediatePropagation();
                         e.stopPropagation();
+                        this.inputElement.nativeElement.focus();
                     };
                     this.inputElement.nativeElement.click();
                 }, 300);
@@ -3197,11 +3197,11 @@ class CmacsSelectTopControlComponent {
             if (this.inputElement && this.cmacsOpen) {
                 this.cdr.detectChanges();
                 setTimeout(() => {
-                    this.inputElement.nativeElement.focus();
                     this.inputElement.nativeElement.onclick = (e) => {
                         e.preventDefault();
                         e.stopImmediatePropagation();
                         e.stopPropagation();
+                        this.inputElement.nativeElement.focus();
                     };
                     this.inputElement.nativeElement.click();
                 }, 300);

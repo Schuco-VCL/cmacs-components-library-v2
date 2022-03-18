@@ -3788,11 +3788,11 @@
                 if (_this.inputElement && open) {
                     _this.cdr.detectChanges();
                     setTimeout(function () {
-                        _this.inputElement.nativeElement.focus();
                         _this.inputElement.nativeElement.onclick = function (e) {
                             e.preventDefault();
                             e.stopImmediatePropagation();
                             e.stopPropagation();
+                            _this.inputElement.nativeElement.focus();
                         };
                         _this.inputElement.nativeElement.click();
                     }, 300);
@@ -3800,11 +3800,11 @@
                 if (_this.inputElement && _this.cmacsOpen) {
                     _this.cdr.detectChanges();
                     setTimeout(function () {
-                        _this.inputElement.nativeElement.focus();
                         _this.inputElement.nativeElement.onclick = function (e) {
                             e.preventDefault();
                             e.stopImmediatePropagation();
                             e.stopPropagation();
+                            _this.inputElement.nativeElement.focus();
                         };
                         _this.inputElement.nativeElement.click();
                     }, 300);
