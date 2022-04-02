@@ -12,7 +12,8 @@ export interface Field {
     display: string;
     property?: string;
     width?: string;
-    minWidth?: string;
+    minWidth?: string | number;
+    maxWidth?: string | number;
     showTooltip?: boolean;
     ngClass?: string;
     hidden?: boolean;
