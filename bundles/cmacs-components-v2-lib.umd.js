@@ -30861,9 +30861,26 @@
                     var field = this.config.fields[i];
                     if (field.property === col) {
                         found = true;
-                        field.width = width + "px";
                         var elWidth = field.width ? Number(field.width.replace(/[^\d.-]/g, '')) : 0;
-                        this.scroll.x = this.scroll.x ? Number(this.scroll.x.replace(/[^\d.-]/g, '')) - elWidth + width + "px" : null;
+                        if (this.scroll.x && i + 1 === this.config.fields.length - 1 && this.config.fields[i + 1] !== null && this.config.fields[i + 1] !== undefined) {
+                            var elWidthNext = this.config.fields[i + 1].width ? Number(this.config.fields[i + 1].width.replace(/[^\d.-]/g, '')) : 0;
+                            var delta = width - elWidth;
+                            if (delta > 0 && delta < elWidthNext) {
+                                if (this.config.fields[i + 1].minWidth !== null && this.config.fields[i + 1].minWidth !== undefined) {
+                                    if (this.config.fields[i + 1].minWidth > (elWidthNext - delta)) {
+                                        this.config.fields[i + 1].width = elWidthNext - delta + "px";
+                                    }
+                                }
+                                else {
+                                    this.config.fields[i + 1].width = elWidthNext - delta + "px";
+                                }
+                            }
+                            if (delta < 0) {
+                                this.config.fields[i + 1].width = elWidthNext + delta + "px";
+                            }
+                        }
+                        field.width = width + "px";
+                        //this.scroll.x = this.scroll.x ? `${Number(this.scroll.x.replace(/[^\d.-]/g, '')) - elWidth + width}px` : null;
                         continue;
                     }
                 }
