@@ -30876,7 +30876,7 @@
                                 }
                             }
                             if (delta < 0) {
-                                this.config.fields[i + 1].width = elWidthNext + delta + "px";
+                                this.config.fields[i + 1].width = elWidthNext - delta + "px";
                             }
                         }
                         field.width = width + "px";
