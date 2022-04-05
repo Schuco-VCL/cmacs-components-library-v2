@@ -28069,7 +28069,7 @@ class CmacsCompactTableComponent {
                         const delta = width - elWidth;
                         if (delta > 0 && delta < elWidthNext) {
                             if (this.config.fields[i + 1].minWidth !== null && this.config.fields[i + 1].minWidth !== undefined) {
-                                if (this.config.fields[i + 1].minWidth > (elWidthNext - delta)) {
+                                if (this.config.fields[i + 1].minWidth < (elWidthNext - delta)) {
                                     this.config.fields[i + 1].width = `${elWidthNext - delta}px`;
                                 }
                             }
