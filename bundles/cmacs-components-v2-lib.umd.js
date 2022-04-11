@@ -30887,6 +30887,9 @@
             }
             this.onresize.emit({ col: col, config: this.config });
             this.configChange.emit(this.config);
+            if (this.getIndexCookie()) {
+                this.cookies.set(this.gridID, JSON.stringify(this.config), 365);
+            }
         };
         CmacsCompactTableComponent.prototype.preventDefault = function ($event) {
             $event.preventDefault();
@@ -32949,6 +32952,9 @@
             }
             this.onresize.emit({ col: col, config: this.config });
             this.configChange.emit(this.config);
+            if (this.getIndexCookie()) {
+                this.cookies.set(this.gridID, JSON.stringify(this.config), 365);
+            }
         };
         CmacsTableComponent.prototype.handleMouseDown = function (e) {
             var element = e.target;

@@ -28089,6 +28089,9 @@ class CmacsCompactTableComponent {
         }
         this.onresize.emit({ col: col, config: this.config });
         this.configChange.emit(this.config);
+        if (this.getIndexCookie()) {
+            this.cookies.set(this.gridID, JSON.stringify(this.config), 365);
+        }
     }
     preventDefault($event) {
         $event.preventDefault();
@@ -29978,6 +29981,9 @@ class CmacsTableComponent {
         }
         this.onresize.emit({ col: col, config: this.config });
         this.configChange.emit(this.config);
+        if (this.getIndexCookie()) {
+            this.cookies.set(this.gridID, JSON.stringify(this.config), 365);
+        }
     }
     handleMouseDown(e) {
         const element = e.target;
