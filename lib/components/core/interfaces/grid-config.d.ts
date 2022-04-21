@@ -32,8 +32,8 @@ export interface Field {
     formatter?: (value: number | string) => string | number;
     parser?: (value: string) => string | number;
     default?: any;
-    left?: string;
-    right?: string;
+    left?: string | boolean;
+    right?: string | boolean;
     template?: CmacsGridTemplateRef;
     editable?: boolean;
     filterMultiple?: boolean;
