@@ -19265,11 +19265,26 @@
         }, null);
     })();
 
-    function CmacsMoveableListComponent_div_8_div_4_Template(rf, ctx) {
+    function CmacsMoveableListComponent_div_8_div_1_Template(rf, ctx) {
         if (rf & 1) {
             var _r9_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "div", 14);
-            i0.ɵɵlistener("click", function CmacsMoveableListComponent_div_8_div_4_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r8 = i0.ɵɵnextContext(); var item_r1 = ctx_r8.$implicit; var i_r2 = ctx_r8.index; var ctx_r7 = i0.ɵɵnextContext(); return ctx_r7.switchToEditMode(item_r1, i_r2); });
+            i0.ɵɵelementStart(0, "div", 13);
+            i0.ɵɵlistener("mousedown", function CmacsMoveableListComponent_div_8_div_1_Template_div_mousedown_0_listener() { i0.ɵɵrestoreView(_r9_1); var ctx_r8 = i0.ɵɵnextContext(2); return ctx_r8.onEditIdx = null; });
+            i0.ɵɵelementStart(1, "span", 4);
+            i0.ɵɵelement(2, "i", 14);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var item_r1 = i0.ɵɵnextContext().$implicit;
+            i0.ɵɵclassProp("cmacs-custom-grid-drag-disabled", item_r1.draggable !== undefined && !item_r1.draggable);
+        }
+    }
+    function CmacsMoveableListComponent_div_8_div_2_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r13_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 15);
+            i0.ɵɵlistener("click", function CmacsMoveableListComponent_div_8_div_2_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r13_1); var ctx_r12 = i0.ɵɵnextContext(); var item_r1 = ctx_r12.$implicit; var i_r2 = ctx_r12.index; var ctx_r11 = i0.ɵɵnextContext(); return ctx_r11.switchToEditMode(item_r1, i_r2); });
             i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
         }
@@ -19280,50 +19295,50 @@
             i0.ɵɵtextInterpolate(item_r1.display);
         }
     }
-    function CmacsMoveableListComponent_div_8_input_5_Template(rf, ctx) {
+    function CmacsMoveableListComponent_div_8_input_3_Template(rf, ctx) {
         if (rf & 1) {
-            var _r12_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "input", 15);
-            i0.ɵɵlistener("keydown.enter", function CmacsMoveableListComponent_div_8_input_5_Template_input_keydown_enter_0_listener() { i0.ɵɵrestoreView(_r12_1); var ctx_r11 = i0.ɵɵnextContext(2); return ctx_r11.stopEdition(); });
+            var _r16_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "input", 16);
+            i0.ɵɵlistener("keydown.enter", function CmacsMoveableListComponent_div_8_input_3_Template_input_keydown_enter_0_listener() { i0.ɵɵrestoreView(_r16_1); var ctx_r15 = i0.ɵɵnextContext(2); return ctx_r15.stopEdition(); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r4 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("formControl", ctx_r4.formControl);
+            var ctx_r5 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("formControl", ctx_r5.formControl);
         }
     }
-    function CmacsMoveableListComponent_div_8_div_6_i_2_Template(rf, ctx) {
+    function CmacsMoveableListComponent_div_8_div_4_i_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelement(0, "i", 5);
         }
     }
-    function CmacsMoveableListComponent_div_8_div_6_i_3_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelement(0, "i", 20);
-        }
-        if (rf & 2) {
-            var ctx_r14 = i0.ɵɵnextContext(3);
-            i0.ɵɵproperty("cmacsTooltipTitle", ctx_r14.showLabel);
-        }
-    }
-    function CmacsMoveableListComponent_div_8_div_6_i_4_Template(rf, ctx) {
+    function CmacsMoveableListComponent_div_8_div_4_i_3_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelement(0, "i", 21);
         }
         if (rf & 2) {
-            var ctx_r15 = i0.ɵɵnextContext(3);
-            i0.ɵɵproperty("cmacsTooltipTitle", ctx_r15.hideLabel);
+            var ctx_r18 = i0.ɵɵnextContext(3);
+            i0.ɵɵproperty("cmacsTooltipTitle", ctx_r18.showLabel);
         }
     }
-    function CmacsMoveableListComponent_div_8_div_6_Template(rf, ctx) {
+    function CmacsMoveableListComponent_div_8_div_4_i_4_Template(rf, ctx) {
         if (rf & 1) {
-            var _r18_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "div", 16);
-            i0.ɵɵlistener("click", function CmacsMoveableListComponent_div_8_div_6_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r18_1); var i_r2 = i0.ɵɵnextContext().index; var ctx_r16 = i0.ɵɵnextContext(); return ctx_r16.hideShow(i_r2); });
+            i0.ɵɵelement(0, "i", 22);
+        }
+        if (rf & 2) {
+            var ctx_r19 = i0.ɵɵnextContext(3);
+            i0.ɵɵproperty("cmacsTooltipTitle", ctx_r19.hideLabel);
+        }
+    }
+    function CmacsMoveableListComponent_div_8_div_4_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r22_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 17);
+            i0.ɵɵlistener("click", function CmacsMoveableListComponent_div_8_div_4_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r22_1); var i_r2 = i0.ɵɵnextContext().index; var ctx_r20 = i0.ɵɵnextContext(); return ctx_r20.hideShow(i_r2); });
             i0.ɵɵelementStart(1, "span", 4);
-            i0.ɵɵtemplate(2, CmacsMoveableListComponent_div_8_div_6_i_2_Template, 1, 0, "i", 17);
-            i0.ɵɵtemplate(3, CmacsMoveableListComponent_div_8_div_6_i_3_Template, 1, 1, "i", 18);
-            i0.ɵɵtemplate(4, CmacsMoveableListComponent_div_8_div_6_i_4_Template, 1, 1, "i", 19);
+            i0.ɵɵtemplate(2, CmacsMoveableListComponent_div_8_div_4_i_2_Template, 1, 0, "i", 18);
+            i0.ɵɵtemplate(3, CmacsMoveableListComponent_div_8_div_4_i_3_Template, 1, 1, "i", 19);
+            i0.ɵɵtemplate(4, CmacsMoveableListComponent_div_8_div_4_i_4_Template, 1, 1, "i", 20);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
@@ -19338,10 +19353,10 @@
             i0.ɵɵproperty("ngIf", item_r1.hidden !== undefined && !item_r1.hidden);
         }
     }
-    function CmacsMoveableListComponent_div_8_ng_container_7_Template(rf, ctx) {
+    function CmacsMoveableListComponent_div_8_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelement(1, "div", 22);
+            i0.ɵɵelement(1, "div", 23);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -19352,19 +19367,14 @@
     }
     function CmacsMoveableListComponent_div_8_Template(rf, ctx) {
         if (rf & 1) {
-            var _r22_1 = i0.ɵɵgetCurrentView();
+            var _r26_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 7);
-            i0.ɵɵlistener("click", function CmacsMoveableListComponent_div_8_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r22_1); var i_r2 = ctx.index; var ctx_r21 = i0.ɵɵnextContext(); return ctx_r21.select(i_r2); });
-            i0.ɵɵelementStart(1, "div", 8);
-            i0.ɵɵlistener("mousedown", function CmacsMoveableListComponent_div_8_Template_div_mousedown_1_listener() { i0.ɵɵrestoreView(_r22_1); var ctx_r23 = i0.ɵɵnextContext(); return ctx_r23.onEditIdx = null; });
-            i0.ɵɵelementStart(2, "span", 4);
-            i0.ɵɵelement(3, "i", 9);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(4, CmacsMoveableListComponent_div_8_div_4_Template, 2, 5, "div", 10);
-            i0.ɵɵtemplate(5, CmacsMoveableListComponent_div_8_input_5_Template, 1, 1, "input", 11);
-            i0.ɵɵtemplate(6, CmacsMoveableListComponent_div_8_div_6_Template, 5, 5, "div", 12);
-            i0.ɵɵtemplate(7, CmacsMoveableListComponent_div_8_ng_container_7_Template, 2, 2, "ng-container", 13);
+            i0.ɵɵlistener("click", function CmacsMoveableListComponent_div_8_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r26_1); var i_r2 = ctx.index; var ctx_r25 = i0.ɵɵnextContext(); return ctx_r25.select(i_r2); });
+            i0.ɵɵtemplate(1, CmacsMoveableListComponent_div_8_div_1_Template, 3, 2, "div", 8);
+            i0.ɵɵtemplate(2, CmacsMoveableListComponent_div_8_div_2_Template, 2, 5, "div", 9);
+            i0.ɵɵtemplate(3, CmacsMoveableListComponent_div_8_input_3_Template, 1, 1, "input", 10);
+            i0.ɵɵtemplate(4, CmacsMoveableListComponent_div_8_div_4_Template, 5, 5, "div", 11);
+            i0.ɵɵtemplate(5, CmacsMoveableListComponent_div_8_ng_container_5_Template, 2, 2, "ng-container", 12);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -19372,10 +19382,10 @@
             var i_r2 = ctx.index;
             var ctx_r0 = i0.ɵɵnextContext();
             i0.ɵɵclassProp("cmacs-custom-grid-box-selected", ctx_r0.rowSelectedIdx === i_r2);
-            i0.ɵɵproperty("cdkDragDisabled", item_r1.draggable !== undefined && !item_r1.draggable);
+            i0.ɵɵproperty("cdkDragDisabled", item_r1.draggable !== undefined && !item_r1.draggable || ctx_r0.dragDisabled);
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-custom-grid-drag-disabled", item_r1.draggable !== undefined && !item_r1.draggable);
-            i0.ɵɵadvance(3);
+            i0.ɵɵproperty("ngIf", !ctx_r0.dragDisabled);
+            i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx_r0.onEditIdx !== i_r2);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", item_r1.editable && ctx_r0.allowEdition && ctx_r0.onEditIdx === i_r2);
@@ -19393,6 +19403,7 @@
             /* Custom grid with pop up */
             this.header = 'Default Title';
             this.showLabel = 'Show';
+            this.dragDisabled = false;
             this.hideLabel = 'Hide';
             this.data = [];
             this.dataChange = new i0.EventEmitter();
@@ -19492,7 +19503,7 @@
             if (rf & 1) {
                 i0.ɵɵlistener("click", function CmacsMoveableListComponent_click_HostBindingHandler($event) { return ctx.handleClick($event); }, false, i0.ɵɵresolveWindow);
             }
-        }, inputs: { header: "header", showLabel: "showLabel", hideLabel: "hideLabel", data: "data" }, outputs: { dataChange: "dataChange", displayChange: "displayChange", selectedChange: "selectedChange" }, exportAs: ["cmacsMoveableList"], decls: 9, vars: 2, consts: [["cdkDropList", "", 1, "cmacs-custom-grid-list", 2, "margin", "0 auto", 3, "cdkDropListDropped"], [1, "cmacs-custom-grid-box"], [1, "cmacs-custom-grid-title"], [1, "cmacs-custom-grid-lock"], [1, "movespan"], [1, "iconUILarge-Lcok-Movement"], ["class", "cmacs-custom-grid-box", "cdkDrag", "", 3, "cmacs-custom-grid-box-selected", "cdkDragDisabled", "click", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "cmacs-custom-grid-box", 3, "cdkDragDisabled", "click"], ["cdkDragHandle", "", 1, "handler-icon", 3, "mousedown"], [1, "iconUILarge-Move_Horizen"], ["class", "moveable-title", 3, "user-select", "color", "click", 4, "ngIf"], ["class", "moveable-title cmacs-custom-grid-input", "cmacs-input", "", 3, "formControl", "keydown.enter", 4, "ngIf"], ["class", "cmacs-custom-hide-show", 3, "color", "click", 4, "ngIf"], [4, "ngIf"], [1, "moveable-title", 3, "click"], ["cmacs-input", "", 1, "moveable-title", "cmacs-custom-grid-input", 3, "formControl", "keydown.enter"], [1, "cmacs-custom-hide-show", 3, "click"], ["class", "iconUILarge-Lcok-Movement", 4, "ngIf"], ["class", "iconUILarge-EyeSlash", "cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 3, "cmacsTooltipTitle", 4, "ngIf"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", "class", "iconUILarge-Eye", 3, "cmacsTooltipTitle", 4, "ngIf"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 1, "iconUILarge-EyeSlash", 3, "cmacsTooltipTitle"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 1, "iconUILarge-Eye", 3, "cmacsTooltipTitle"], [1, "cmacs-custom-hide-show", 3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function CmacsMoveableListComponent_Template(rf, ctx) {
+        }, inputs: { header: "header", showLabel: "showLabel", dragDisabled: "dragDisabled", hideLabel: "hideLabel", data: "data" }, outputs: { dataChange: "dataChange", displayChange: "displayChange", selectedChange: "selectedChange" }, exportAs: ["cmacsMoveableList"], decls: 9, vars: 2, consts: [["cdkDropList", "", 1, "cmacs-custom-grid-list", 2, "margin", "0 auto", 3, "cdkDropListDropped"], [1, "cmacs-custom-grid-box"], [1, "cmacs-custom-grid-title"], [1, "cmacs-custom-grid-lock"], [1, "movespan"], [1, "iconUILarge-Lcok-Movement"], ["class", "cmacs-custom-grid-box", "cdkDrag", "", 3, "cmacs-custom-grid-box-selected", "cdkDragDisabled", "click", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "cmacs-custom-grid-box", 3, "cdkDragDisabled", "click"], ["cdkDragHandle", "", "class", "handler-icon", 3, "cmacs-custom-grid-drag-disabled", "mousedown", 4, "ngIf"], ["class", "moveable-title", 3, "user-select", "color", "click", 4, "ngIf"], ["class", "moveable-title cmacs-custom-grid-input", "cmacs-input", "", 3, "formControl", "keydown.enter", 4, "ngIf"], ["class", "cmacs-custom-hide-show", 3, "color", "click", 4, "ngIf"], [4, "ngIf"], ["cdkDragHandle", "", 1, "handler-icon", 3, "mousedown"], [1, "iconUILarge-Move_Horizen"], [1, "moveable-title", 3, "click"], ["cmacs-input", "", 1, "moveable-title", "cmacs-custom-grid-input", 3, "formControl", "keydown.enter"], [1, "cmacs-custom-hide-show", 3, "click"], ["class", "iconUILarge-Lcok-Movement", 4, "ngIf"], ["class", "iconUILarge-EyeSlash", "cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 3, "cmacsTooltipTitle", 4, "ngIf"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", "class", "iconUILarge-Eye", 3, "cmacsTooltipTitle", 4, "ngIf"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 1, "iconUILarge-EyeSlash", 3, "cmacsTooltipTitle"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 1, "iconUILarge-Eye", 3, "cmacsTooltipTitle"], [1, "cmacs-custom-hide-show", 3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function CmacsMoveableListComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵlistener("cdkDropListDropped", function CmacsMoveableListComponent_Template_div_cdkDropListDropped_0_listener($event) { return ctx.drop($event); });
@@ -19508,7 +19519,7 @@
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
-                i0.ɵɵtemplate(8, CmacsMoveableListComponent_div_8_Template, 8, 9, "div", 6);
+                i0.ɵɵtemplate(8, CmacsMoveableListComponent_div_8_Template, 6, 8, "div", 6);
                 i0.ɵɵelementEnd();
             }
             if (rf & 2) {
@@ -19517,7 +19528,10 @@
                 i0.ɵɵadvance(4);
                 i0.ɵɵproperty("ngForOf", ctx.data);
             }
-        }, directives: [i2$4.CdkDropList, i2$1.NgForOf, i2$4.CdkDrag, i2$4.CdkDragHandle, i2$1.NgIf, CmacsInputDirective, i5.DefaultValueAccessor, i5.NgControlStatus, i5.FormControlDirective, CmacsTooltipDirective, i2$1.NgTemplateOutlet], styles: [".cmacs-custom-grid-list[_ngcontent-%COMP%]{max-width:100%;border:1px solid #dee0e5;display:block;border-radius:8px;overflow:hidden;line-height:1.5;color:#97a0ae}.cmacs-custom-grid-box[_ngcontent-%COMP%], .cmacs-custom-grid-list[_ngcontent-%COMP%]{background:#fff;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;letter-spacing:normal}.cmacs-custom-grid-box[_ngcontent-%COMP%]{border-bottom:1px solid #dee0e5;box-sizing:border-box;display:flex;color:#656c79;padding:0 10px}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);opacity:0}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:1;border-bottom:1px solid #2a7cff!important}.cdk-drag-animating[_ngcontent-%COMP%]{transition:transform .25s cubic-bezier(0,0,.2,1)}.cmacs-custom-grid-box[_ngcontent-%COMP%]:last-child{border:none}.cmacs-custom-grid-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .cmacs-custom-grid-box[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.handler-icon[_ngcontent-%COMP%]{font-size:20px;color:#bec4cd;position:relative;cursor:move;line-height:26px}.moveable-title[_ngcontent-%COMP%]{padding-left:15px;line-height:32px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-custom-grid-title[_ngcontent-%COMP%]{align-items:flex-start;position:relative;color:#97a0ae;line-height:32px;padding:0 10px 0 35px}.cmacs-custom-grid-lock[_ngcontent-%COMP%]{margin-left:auto;font-size:20px;padding-right:15px}.cmacs-custom-grid-box[_ngcontent-%COMP%]:not(.cmacs-custom-grid-box-selected):hover{background-color:#f6f7fb}.cmacs-custom-grid-box-selected[_ngcontent-%COMP%]{background-color:#f2f7ff}.cmacs-custom-grid-box-selected[_ngcontent-%COMP%]   .handler-icon[_ngcontent-%COMP%]{color:#656c79}.cmacs-custom-grid-input[_ngcontent-%COMP%]{height:32px;width:371px;position:relative;padding-left:7px;font-size:12px;margin-left:7px}.cmacs-custom-grid-input[_ngcontent-%COMP%]:focus, .cmacs-custom-grid-input[_ngcontent-%COMP%]:hover{border-color:#2a7cff}.cmacs-custom-hide-show[_ngcontent-%COMP%]{margin-left:auto;font-size:20px;position:relative;padding-right:15px}.cmacs-custom-hide-show[_ngcontent-%COMP%]   .iconUILarge-Eye[_ngcontent-%COMP%], .cmacs-custom-hide-show[_ngcontent-%COMP%]   .iconUILarge-EyeSlash[_ngcontent-%COMP%]{cursor:pointer}.cmacs-custom-grid-drag-disabled[_ngcontent-%COMP%]{color:#97a0ae;cursor:default}.movespan[_ngcontent-%COMP%]{height:20px;width:20px;position:relative;font-size:20px;line-height:20px;vertical-align:middle;text-align:center;display:inline-block}", "cmacs-moveable-list[_ngcontent-%COMP%] {\n        display: block;\n      }"] });
+        }, directives: [i2$4.CdkDropList, i2$1.NgForOf, i2$4.CdkDrag, i2$1.NgIf, i2$4.CdkDragHandle, CmacsInputDirective, i5.DefaultValueAccessor, i5.NgControlStatus, i5.FormControlDirective, CmacsTooltipDirective, i2$1.NgTemplateOutlet], styles: [".cmacs-custom-grid-list[_ngcontent-%COMP%]{max-width:100%;border:1px solid #dee0e5;display:block;border-radius:8px;overflow:hidden;line-height:1.5;color:#97a0ae}.cmacs-custom-grid-box[_ngcontent-%COMP%], .cmacs-custom-grid-list[_ngcontent-%COMP%]{background:#fff;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;letter-spacing:normal}.cmacs-custom-grid-box[_ngcontent-%COMP%]{border-bottom:1px solid #dee0e5;box-sizing:border-box;display:flex;color:#656c79;padding:0 10px}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);opacity:0}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:1;border-bottom:1px solid #2a7cff!important}.cdk-drag-animating[_ngcontent-%COMP%]{transition:transform .25s cubic-bezier(0,0,.2,1)}.cmacs-custom-grid-box[_ngcontent-%COMP%]:last-child{border:none}.cmacs-custom-grid-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .cmacs-custom-grid-box[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.handler-icon[_ngcontent-%COMP%]{font-size:20px;color:#bec4cd;position:relative;cursor:move;line-height:26px}.moveable-title[_ngcontent-%COMP%]{padding-left:15px;line-height:32px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-custom-grid-title[_ngcontent-%COMP%]{align-items:flex-start;position:relative;color:#97a0ae;line-height:32px;padding:0 10px 0 35px}.cmacs-custom-grid-lock[_ngcontent-%COMP%]{margin-left:auto;font-size:20px;padding-right:15px}.cmacs-custom-grid-box[_ngcontent-%COMP%]:not(.cmacs-custom-grid-box-selected):hover{background-color:#f6f7fb}.cmacs-custom-grid-box-selected[_ngcontent-%COMP%]{background-color:#f2f7ff}.cmacs-custom-grid-box-selected[_ngcontent-%COMP%]   .handler-icon[_ngcontent-%COMP%]{color:#656c79}.cmacs-custom-grid-input[_ngcontent-%COMP%]{height:32px;width:371px;position:relative;padding-left:7px;font-size:12px;margin-left:7px}.cmacs-custom-grid-input[_ngcontent-%COMP%]:focus, .cmacs-custom-grid-input[_ngcontent-%COMP%]:hover{border-color:#2a7cff}.cmacs-custom-hide-show[_ngcontent-%COMP%]{margin-left:auto;font-size:20px;position:relative;padding-right:15px}.cmacs-custom-hide-show[_ngcontent-%COMP%]   .iconUILarge-Eye[_ngcontent-%COMP%], .cmacs-custom-hide-show[_ngcontent-%COMP%]   .iconUILarge-EyeSlash[_ngcontent-%COMP%]{cursor:pointer}.cmacs-custom-grid-drag-disabled[_ngcontent-%COMP%]{color:#97a0ae;cursor:default}.movespan[_ngcontent-%COMP%]{height:20px;width:20px;position:relative;font-size:20px;line-height:20px;vertical-align:middle;text-align:center;display:inline-block}", "cmacs-moveable-list[_ngcontent-%COMP%] {\n        display: block;\n      }"] });
+    __decorate([
+        util.InputBoolean()
+    ], CmacsMoveableListComponent.prototype, "dragDisabled", void 0);
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsMoveableListComponent, [{
                 type: i0.Component,
@@ -19533,6 +19547,8 @@
             }], function () { return [{ type: i0.ChangeDetectorRef }, { type: i1$3.NzI18nService }]; }, { header: [{
                     type: i0.Input
                 }], showLabel: [{
+                    type: i0.Input
+                }], dragDisabled: [{
                     type: i0.Input
                 }], hideLabel: [{
                     type: i0.Input
@@ -30778,6 +30794,10 @@
             this.oncontextmenu = new i0.EventEmitter();
             this.indentSize = 0;
             this.virtualMaxBufferPx = 200;
+            this._onresize$ = new rxjs.Subject();
+            this.onresizeobs = this._onresize$.asObservable();
+            this._onsort$ = new rxjs.Subject();
+            this.onsortobs = this._onsort$.asObservable();
             this.selected = false;
             this.formatter = function (value) {
                 if (value) {
@@ -30853,8 +30873,12 @@
         CmacsCompactTableComponent.prototype.getStringFieldValue = function (data, field) {
             return data[field.property] && data[field.property].length ? data[field.property] : field.placeholder;
         };
-        CmacsCompactTableComponent.prototype.onResize = function (_a, col) {
+        CmacsCompactTableComponent.prototype.onResize = function (event, col) {
+            this._onresize$.next({ event: event, col: col });
+        };
+        CmacsCompactTableComponent.prototype.onResizeEvt = function (_a, col) {
             var width = _a.width;
+            console.log('Resize');
             var found = false;
             if (this.config && this.config.fields) {
                 for (var i = 0; i < this.config.fields.length; i++) {
@@ -30966,7 +30990,7 @@
             }
         };
         CmacsCompactTableComponent.prototype.sort = function ($event, fieldProperty) {
-            this.sortChange.emit({ sortName: fieldProperty, sortValue: $event });
+            this._onsort$.next({ sortName: fieldProperty, sortValue: $event });
         };
         CmacsCompactTableComponent.prototype.filter = function ($event, fieldProperty) {
             this.filterChange.emit({ filterName: fieldProperty, filterValue: $event });
@@ -31381,6 +31405,21 @@
             this.excelService.exportCompleted.subscribe(function () {
                 _this.loading = false;
                 _this.cdr.markForCheck();
+            });
+            this.checkSortEvent();
+            this.checkResizeEvent();
+        };
+        CmacsCompactTableComponent.prototype.checkSortEvent = function () {
+            var _this = this;
+            this.onsortobs.pipe(operators.tap(function () { console.log('test'); }), operators.takeUntil(this._onresize$), operators.delay(300), operators.repeat(), operators.takeUntil(this.destroy$)).subscribe(function (obj) {
+                console.log('Sort', obj);
+                _this.sortChange.emit({ sortName: obj.sortName, sortValue: obj.sortValue });
+            });
+        };
+        CmacsCompactTableComponent.prototype.checkResizeEvent = function () {
+            var _this = this;
+            this.onresizeobs.pipe(operators.takeUntil(this.destroy$)).subscribe(function (obj) {
+                _this.onResizeEvt(obj.event, obj.col);
             });
         };
         CmacsCompactTableComponent.prototype.ngOnChanges = function (changes) {

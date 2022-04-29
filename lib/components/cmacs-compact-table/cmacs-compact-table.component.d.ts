@@ -108,6 +108,10 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     contextmenu: string | TemplateRef<void>;
     indentSize: number;
     virtualMaxBufferPx: number;
+    private _onresize$;
+    onresizeobs: import("rxjs").Observable<any>;
+    private _onsort$;
+    onsortobs: import("rxjs").Observable<any>;
     dropdown: any;
     selected: boolean;
     formatter: (value: number) => any;
@@ -143,7 +147,8 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     isEllipsisActive(id: string, field: any): boolean;
     getInputNumberValue(data: any, field: Field): any;
     getStringFieldValue(data: any, field: any): any;
-    onResize({ width }: NzResizeEvent, col: string): void;
+    onResize(event: NzResizeEvent, col: string): void;
+    onResizeEvt({ width }: NzResizeEvent, col: string): void;
     preventDefault($event: Event): void;
     contextMenu($event: MouseEvent, template: any, item?: any): void;
     validate(data: any, field: Field): boolean;
@@ -197,6 +202,8 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     getIndexCookie(): boolean;
     setFieldsDefault(): void;
     ngOnInit(): void;
+    checkSortEvent(): void;
+    checkResizeEvent(): void;
     ngOnChanges(changes: SimpleChanges): void;
     exportTreePdf(fileName: string): void;
     exportTreeToPdfRec(rows: any, data: any, offSetMargin?: number): void;

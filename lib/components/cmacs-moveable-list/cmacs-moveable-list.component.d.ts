@@ -17,6 +17,7 @@ export declare class CmacsMoveableListComponent implements OnDestroy, OnInit {
     private destroy$;
     header: string;
     showLabel: string;
+    dragDisabled: boolean;
     hideLabel: string;
     data: MoveableListItem[];
     dataChange: EventEmitter<MoveableListItem[]>;
@@ -37,6 +38,6 @@ export declare class CmacsMoveableListComponent implements OnDestroy, OnInit {
     hideShow(index: number): void;
     remove(idx: number): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsMoveableListComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsMoveableListComponent, "cmacs-moveable-list", ["cmacsMoveableList"], { "header": "header"; "showLabel": "showLabel"; "hideLabel": "hideLabel"; "data": "data"; }, { "dataChange": "dataChange"; "displayChange": "displayChange"; "selectedChange": "selectedChange"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsMoveableListComponent, "cmacs-moveable-list", ["cmacsMoveableList"], { "header": "header"; "showLabel": "showLabel"; "dragDisabled": "dragDisabled"; "hideLabel": "hideLabel"; "data": "data"; }, { "dataChange": "dataChange"; "displayChange": "displayChange"; "selectedChange": "selectedChange"; }, never, never>;
 }
 //# sourceMappingURL=cmacs-moveable-list.component.d.ts.map

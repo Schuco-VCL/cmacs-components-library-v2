@@ -1,7 +1,7 @@
 import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, EventEmitter, ɵɵdirectiveInject, Renderer2, ElementRef, ɵɵprojectionDef, ɵɵprojection, ChangeDetectionStrategy, ViewEncapsulation, Output, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵlistener, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵelement, ɵɵadvance, ɵɵproperty, Optional, ViewChild, Input, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵtextInterpolate, ɵɵtemplate, ɵɵcontentQuery, ɵɵattribute, ɵɵNgOnChangesFeature, ContentChild, ContentChildren, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵstyleProp, ɵɵsanitizeHtml, ViewChildren, ɵɵdefineDirective, Directive, TemplateRef, ɵɵdefinePipe, Pipe, ɵɵtextInterpolate1, ɵɵreference, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵtemplateRefExtractor, Host, ɵɵpropertyInterpolate, ɵɵelementContainer, ɵɵpipeBind4, NgZone, Self, isDevMode, InjectionToken, ɵɵinject, SkipSelf, Inject, ɵɵsyntheticHostProperty, ViewContainerRef, ɵɵsanitizeUrl, ComponentFactoryResolver, ɵɵInheritDefinitionFeature, Injector, ɵɵclassMap, ɵɵclassMapInterpolate1, ɵɵgetInheritedFactory, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, ɵɵclassMapInterpolate2, ɵɵpureFunction0, ɵɵclassMapInterpolate4, ɵɵpipeBind1, HostListener, ɵɵnamespaceSVG, ɵɵpureFunction2, ɵɵresolveWindow, Type, QueryList, ɵɵpureFunction3, HostBinding, ɵɵattributeInterpolate2, ɵɵpureFunction5, ɵɵpropertyInterpolate1, ɵɵpureFunction4, ɵɵattributeInterpolate3, ɵɵresolveDocument, ɵɵpropertyInterpolate2, ɵɵtextInterpolate2, ɵɵsyntheticHostListener, ApplicationRef, ɵɵsetComponentScope } from '@angular/core';
 import { __decorate, __rest } from 'tslib';
 import { NG_VALUE_ACCESSOR, CheckboxControlValueAccessor, NgControlStatus, NgModel, DefaultValueAccessor, NgControl, AbstractControl, FormControlName, FormControlDirective, FormControl, FormsModule, Validators, FormBuilder, ɵangular_packages_forms_forms_ba, NgControlStatusGroup, FormGroupDirective, ReactiveFormsModule } from '@angular/forms';
-import { takeUntil, startWith, filter, tap, pluck, map, distinctUntilChanged, share, skip, flatMap, switchMap, mergeMap, mapTo, auditTime, take, first, delay } from 'rxjs/operators';
+import { takeUntil, startWith, filter, tap, pluck, map, distinctUntilChanged, share, skip, flatMap, switchMap, mergeMap, mapTo, auditTime, take, first, delay, repeat } from 'rxjs/operators';
 import { Subject, fromEvent, merge, ReplaySubject, BehaviorSubject, combineLatest, EMPTY, Subscription, of, animationFrameScheduler, asapScheduler, defer } from 'rxjs';
 import { InputBoolean, InputNumber, ensureNumberInRange, silentEvent, getPrecision, getPercent, getElementOffset, arraysEqual, isNotNil, isNil, toBoolean, isTemplateRef, isNonEmptyString, valueFunctionProp, toCssPixel, isPromise, wrapIntoObservable } from 'ng-zorro-antd/core/util';
 import { FocusMonitor, FocusTrapFactory, FocusKeyManager } from '@angular/cdk/a11y';
@@ -17757,10 +17757,22 @@ CmacsPopoverComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsPopoverComponent,
                 type: Optional
             }] }]; }, null); })();
 
-function CmacsMoveableListComponent_div_8_div_4_Template(rf, ctx) { if (rf & 1) {
+function CmacsMoveableListComponent_div_8_div_1_Template(rf, ctx) { if (rf & 1) {
     const _r9 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 14);
-    ɵɵlistener("click", function CmacsMoveableListComponent_div_8_div_4_Template_div_click_0_listener() { ɵɵrestoreView(_r9); const ctx_r8 = ɵɵnextContext(); const item_r1 = ctx_r8.$implicit; const i_r2 = ctx_r8.index; const ctx_r7 = ɵɵnextContext(); return ctx_r7.switchToEditMode(item_r1, i_r2); });
+    ɵɵelementStart(0, "div", 13);
+    ɵɵlistener("mousedown", function CmacsMoveableListComponent_div_8_div_1_Template_div_mousedown_0_listener() { ɵɵrestoreView(_r9); const ctx_r8 = ɵɵnextContext(2); return ctx_r8.onEditIdx = null; });
+    ɵɵelementStart(1, "span", 4);
+    ɵɵelement(2, "i", 14);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const item_r1 = ɵɵnextContext().$implicit;
+    ɵɵclassProp("cmacs-custom-grid-drag-disabled", item_r1.draggable !== undefined && !item_r1.draggable);
+} }
+function CmacsMoveableListComponent_div_8_div_2_Template(rf, ctx) { if (rf & 1) {
+    const _r13 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 15);
+    ɵɵlistener("click", function CmacsMoveableListComponent_div_8_div_2_Template_div_click_0_listener() { ɵɵrestoreView(_r13); const ctx_r12 = ɵɵnextContext(); const item_r1 = ctx_r12.$implicit; const i_r2 = ctx_r12.index; const ctx_r11 = ɵɵnextContext(); return ctx_r11.switchToEditMode(item_r1, i_r2); });
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -17769,38 +17781,38 @@ function CmacsMoveableListComponent_div_8_div_4_Template(rf, ctx) { if (rf & 1) 
     ɵɵadvance(1);
     ɵɵtextInterpolate(item_r1.display);
 } }
-function CmacsMoveableListComponent_div_8_input_5_Template(rf, ctx) { if (rf & 1) {
-    const _r12 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "input", 15);
-    ɵɵlistener("keydown.enter", function CmacsMoveableListComponent_div_8_input_5_Template_input_keydown_enter_0_listener() { ɵɵrestoreView(_r12); const ctx_r11 = ɵɵnextContext(2); return ctx_r11.stopEdition(); });
+function CmacsMoveableListComponent_div_8_input_3_Template(rf, ctx) { if (rf & 1) {
+    const _r16 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "input", 16);
+    ɵɵlistener("keydown.enter", function CmacsMoveableListComponent_div_8_input_3_Template_input_keydown_enter_0_listener() { ɵɵrestoreView(_r16); const ctx_r15 = ɵɵnextContext(2); return ctx_r15.stopEdition(); });
     ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r4 = ɵɵnextContext(2);
-    ɵɵproperty("formControl", ctx_r4.formControl);
+    const ctx_r5 = ɵɵnextContext(2);
+    ɵɵproperty("formControl", ctx_r5.formControl);
 } }
-function CmacsMoveableListComponent_div_8_div_6_i_2_Template(rf, ctx) { if (rf & 1) {
+function CmacsMoveableListComponent_div_8_div_4_i_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "i", 5);
 } }
-function CmacsMoveableListComponent_div_8_div_6_i_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 20);
-} if (rf & 2) {
-    const ctx_r14 = ɵɵnextContext(3);
-    ɵɵproperty("cmacsTooltipTitle", ctx_r14.showLabel);
-} }
-function CmacsMoveableListComponent_div_8_div_6_i_4_Template(rf, ctx) { if (rf & 1) {
+function CmacsMoveableListComponent_div_8_div_4_i_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "i", 21);
 } if (rf & 2) {
-    const ctx_r15 = ɵɵnextContext(3);
-    ɵɵproperty("cmacsTooltipTitle", ctx_r15.hideLabel);
+    const ctx_r18 = ɵɵnextContext(3);
+    ɵɵproperty("cmacsTooltipTitle", ctx_r18.showLabel);
 } }
-function CmacsMoveableListComponent_div_8_div_6_Template(rf, ctx) { if (rf & 1) {
-    const _r18 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 16);
-    ɵɵlistener("click", function CmacsMoveableListComponent_div_8_div_6_Template_div_click_0_listener() { ɵɵrestoreView(_r18); const i_r2 = ɵɵnextContext().index; const ctx_r16 = ɵɵnextContext(); return ctx_r16.hideShow(i_r2); });
+function CmacsMoveableListComponent_div_8_div_4_i_4_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "i", 22);
+} if (rf & 2) {
+    const ctx_r19 = ɵɵnextContext(3);
+    ɵɵproperty("cmacsTooltipTitle", ctx_r19.hideLabel);
+} }
+function CmacsMoveableListComponent_div_8_div_4_Template(rf, ctx) { if (rf & 1) {
+    const _r22 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 17);
+    ɵɵlistener("click", function CmacsMoveableListComponent_div_8_div_4_Template_div_click_0_listener() { ɵɵrestoreView(_r22); const i_r2 = ɵɵnextContext().index; const ctx_r20 = ɵɵnextContext(); return ctx_r20.hideShow(i_r2); });
     ɵɵelementStart(1, "span", 4);
-    ɵɵtemplate(2, CmacsMoveableListComponent_div_8_div_6_i_2_Template, 1, 0, "i", 17);
-    ɵɵtemplate(3, CmacsMoveableListComponent_div_8_div_6_i_3_Template, 1, 1, "i", 18);
-    ɵɵtemplate(4, CmacsMoveableListComponent_div_8_div_6_i_4_Template, 1, 1, "i", 19);
+    ɵɵtemplate(2, CmacsMoveableListComponent_div_8_div_4_i_2_Template, 1, 0, "i", 18);
+    ɵɵtemplate(3, CmacsMoveableListComponent_div_8_div_4_i_3_Template, 1, 1, "i", 19);
+    ɵɵtemplate(4, CmacsMoveableListComponent_div_8_div_4_i_4_Template, 1, 1, "i", 20);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -17813,9 +17825,9 @@ function CmacsMoveableListComponent_div_8_div_6_Template(rf, ctx) { if (rf & 1) 
     ɵɵadvance(1);
     ɵɵproperty("ngIf", item_r1.hidden !== undefined && !item_r1.hidden);
 } }
-function CmacsMoveableListComponent_div_8_ng_container_7_Template(rf, ctx) { if (rf & 1) {
+function CmacsMoveableListComponent_div_8_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵelement(1, "div", 22);
+    ɵɵelement(1, "div", 23);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const item_r1 = ɵɵnextContext().$implicit;
@@ -17823,29 +17835,24 @@ function CmacsMoveableListComponent_div_8_ng_container_7_Template(rf, ctx) { if 
     ɵɵproperty("ngTemplateOutlet", item_r1.template.ref)("ngTemplateOutletContext", item_r1.template.context);
 } }
 function CmacsMoveableListComponent_div_8_Template(rf, ctx) { if (rf & 1) {
-    const _r22 = ɵɵgetCurrentView();
+    const _r26 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 7);
-    ɵɵlistener("click", function CmacsMoveableListComponent_div_8_Template_div_click_0_listener() { ɵɵrestoreView(_r22); const i_r2 = ctx.index; const ctx_r21 = ɵɵnextContext(); return ctx_r21.select(i_r2); });
-    ɵɵelementStart(1, "div", 8);
-    ɵɵlistener("mousedown", function CmacsMoveableListComponent_div_8_Template_div_mousedown_1_listener() { ɵɵrestoreView(_r22); const ctx_r23 = ɵɵnextContext(); return ctx_r23.onEditIdx = null; });
-    ɵɵelementStart(2, "span", 4);
-    ɵɵelement(3, "i", 9);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵtemplate(4, CmacsMoveableListComponent_div_8_div_4_Template, 2, 5, "div", 10);
-    ɵɵtemplate(5, CmacsMoveableListComponent_div_8_input_5_Template, 1, 1, "input", 11);
-    ɵɵtemplate(6, CmacsMoveableListComponent_div_8_div_6_Template, 5, 5, "div", 12);
-    ɵɵtemplate(7, CmacsMoveableListComponent_div_8_ng_container_7_Template, 2, 2, "ng-container", 13);
+    ɵɵlistener("click", function CmacsMoveableListComponent_div_8_Template_div_click_0_listener() { ɵɵrestoreView(_r26); const i_r2 = ctx.index; const ctx_r25 = ɵɵnextContext(); return ctx_r25.select(i_r2); });
+    ɵɵtemplate(1, CmacsMoveableListComponent_div_8_div_1_Template, 3, 2, "div", 8);
+    ɵɵtemplate(2, CmacsMoveableListComponent_div_8_div_2_Template, 2, 5, "div", 9);
+    ɵɵtemplate(3, CmacsMoveableListComponent_div_8_input_3_Template, 1, 1, "input", 10);
+    ɵɵtemplate(4, CmacsMoveableListComponent_div_8_div_4_Template, 5, 5, "div", 11);
+    ɵɵtemplate(5, CmacsMoveableListComponent_div_8_ng_container_5_Template, 2, 2, "ng-container", 12);
     ɵɵelementEnd();
 } if (rf & 2) {
     const item_r1 = ctx.$implicit;
     const i_r2 = ctx.index;
     const ctx_r0 = ɵɵnextContext();
     ɵɵclassProp("cmacs-custom-grid-box-selected", ctx_r0.rowSelectedIdx === i_r2);
-    ɵɵproperty("cdkDragDisabled", item_r1.draggable !== undefined && !item_r1.draggable);
+    ɵɵproperty("cdkDragDisabled", item_r1.draggable !== undefined && !item_r1.draggable || ctx_r0.dragDisabled);
     ɵɵadvance(1);
-    ɵɵclassProp("cmacs-custom-grid-drag-disabled", item_r1.draggable !== undefined && !item_r1.draggable);
-    ɵɵadvance(3);
+    ɵɵproperty("ngIf", !ctx_r0.dragDisabled);
+    ɵɵadvance(1);
     ɵɵproperty("ngIf", ctx_r0.onEditIdx !== i_r2);
     ɵɵadvance(1);
     ɵɵproperty("ngIf", item_r1.editable && ctx_r0.allowEdition && ctx_r0.onEditIdx === i_r2);
@@ -17862,6 +17869,7 @@ class CmacsMoveableListComponent {
         /* Custom grid with pop up */
         this.header = 'Default Title';
         this.showLabel = 'Show';
+        this.dragDisabled = false;
         this.hideLabel = 'Hide';
         this.data = [];
         this.dataChange = new EventEmitter();
@@ -17957,7 +17965,7 @@ class CmacsMoveableListComponent {
 CmacsMoveableListComponent.ɵfac = function CmacsMoveableListComponent_Factory(t) { return new (t || CmacsMoveableListComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NzI18nService)); };
 CmacsMoveableListComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsMoveableListComponent, selectors: [["cmacs-moveable-list"]], hostBindings: function CmacsMoveableListComponent_HostBindings(rf, ctx) { if (rf & 1) {
         ɵɵlistener("click", function CmacsMoveableListComponent_click_HostBindingHandler($event) { return ctx.handleClick($event); }, false, ɵɵresolveWindow);
-    } }, inputs: { header: "header", showLabel: "showLabel", hideLabel: "hideLabel", data: "data" }, outputs: { dataChange: "dataChange", displayChange: "displayChange", selectedChange: "selectedChange" }, exportAs: ["cmacsMoveableList"], decls: 9, vars: 2, consts: [["cdkDropList", "", 1, "cmacs-custom-grid-list", 2, "margin", "0 auto", 3, "cdkDropListDropped"], [1, "cmacs-custom-grid-box"], [1, "cmacs-custom-grid-title"], [1, "cmacs-custom-grid-lock"], [1, "movespan"], [1, "iconUILarge-Lcok-Movement"], ["class", "cmacs-custom-grid-box", "cdkDrag", "", 3, "cmacs-custom-grid-box-selected", "cdkDragDisabled", "click", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "cmacs-custom-grid-box", 3, "cdkDragDisabled", "click"], ["cdkDragHandle", "", 1, "handler-icon", 3, "mousedown"], [1, "iconUILarge-Move_Horizen"], ["class", "moveable-title", 3, "user-select", "color", "click", 4, "ngIf"], ["class", "moveable-title cmacs-custom-grid-input", "cmacs-input", "", 3, "formControl", "keydown.enter", 4, "ngIf"], ["class", "cmacs-custom-hide-show", 3, "color", "click", 4, "ngIf"], [4, "ngIf"], [1, "moveable-title", 3, "click"], ["cmacs-input", "", 1, "moveable-title", "cmacs-custom-grid-input", 3, "formControl", "keydown.enter"], [1, "cmacs-custom-hide-show", 3, "click"], ["class", "iconUILarge-Lcok-Movement", 4, "ngIf"], ["class", "iconUILarge-EyeSlash", "cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 3, "cmacsTooltipTitle", 4, "ngIf"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", "class", "iconUILarge-Eye", 3, "cmacsTooltipTitle", 4, "ngIf"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 1, "iconUILarge-EyeSlash", 3, "cmacsTooltipTitle"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 1, "iconUILarge-Eye", 3, "cmacsTooltipTitle"], [1, "cmacs-custom-hide-show", 3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function CmacsMoveableListComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { header: "header", showLabel: "showLabel", dragDisabled: "dragDisabled", hideLabel: "hideLabel", data: "data" }, outputs: { dataChange: "dataChange", displayChange: "displayChange", selectedChange: "selectedChange" }, exportAs: ["cmacsMoveableList"], decls: 9, vars: 2, consts: [["cdkDropList", "", 1, "cmacs-custom-grid-list", 2, "margin", "0 auto", 3, "cdkDropListDropped"], [1, "cmacs-custom-grid-box"], [1, "cmacs-custom-grid-title"], [1, "cmacs-custom-grid-lock"], [1, "movespan"], [1, "iconUILarge-Lcok-Movement"], ["class", "cmacs-custom-grid-box", "cdkDrag", "", 3, "cmacs-custom-grid-box-selected", "cdkDragDisabled", "click", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "cmacs-custom-grid-box", 3, "cdkDragDisabled", "click"], ["cdkDragHandle", "", "class", "handler-icon", 3, "cmacs-custom-grid-drag-disabled", "mousedown", 4, "ngIf"], ["class", "moveable-title", 3, "user-select", "color", "click", 4, "ngIf"], ["class", "moveable-title cmacs-custom-grid-input", "cmacs-input", "", 3, "formControl", "keydown.enter", 4, "ngIf"], ["class", "cmacs-custom-hide-show", 3, "color", "click", 4, "ngIf"], [4, "ngIf"], ["cdkDragHandle", "", 1, "handler-icon", 3, "mousedown"], [1, "iconUILarge-Move_Horizen"], [1, "moveable-title", 3, "click"], ["cmacs-input", "", 1, "moveable-title", "cmacs-custom-grid-input", 3, "formControl", "keydown.enter"], [1, "cmacs-custom-hide-show", 3, "click"], ["class", "iconUILarge-Lcok-Movement", 4, "ngIf"], ["class", "iconUILarge-EyeSlash", "cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 3, "cmacsTooltipTitle", 4, "ngIf"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", "class", "iconUILarge-Eye", 3, "cmacsTooltipTitle", 4, "ngIf"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 1, "iconUILarge-EyeSlash", 3, "cmacsTooltipTitle"], ["cmacsTooltipPlacement", "right", "cmacs-tooltip", "", 1, "iconUILarge-Eye", 3, "cmacsTooltipTitle"], [1, "cmacs-custom-hide-show", 3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function CmacsMoveableListComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "div", 0);
         ɵɵlistener("cdkDropListDropped", function CmacsMoveableListComponent_Template_div_cdkDropListDropped_0_listener($event) { return ctx.drop($event); });
         ɵɵelementStart(1, "div", 1);
@@ -17972,14 +17980,17 @@ CmacsMoveableListComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsMoveableList
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
-        ɵɵtemplate(8, CmacsMoveableListComponent_div_8_Template, 8, 9, "div", 6);
+        ɵɵtemplate(8, CmacsMoveableListComponent_div_8_Template, 6, 8, "div", 6);
         ɵɵelementEnd();
     } if (rf & 2) {
         ɵɵadvance(4);
         ɵɵtextInterpolate(ctx.header);
         ɵɵadvance(4);
         ɵɵproperty("ngForOf", ctx.data);
-    } }, directives: [CdkDropList, NgForOf, CdkDrag, CdkDragHandle, NgIf, CmacsInputDirective, DefaultValueAccessor, NgControlStatus, FormControlDirective, CmacsTooltipDirective, NgTemplateOutlet], styles: [".cmacs-custom-grid-list[_ngcontent-%COMP%]{max-width:100%;border:1px solid #dee0e5;display:block;border-radius:8px;overflow:hidden;line-height:1.5;color:#97a0ae}.cmacs-custom-grid-box[_ngcontent-%COMP%], .cmacs-custom-grid-list[_ngcontent-%COMP%]{background:#fff;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;letter-spacing:normal}.cmacs-custom-grid-box[_ngcontent-%COMP%]{border-bottom:1px solid #dee0e5;box-sizing:border-box;display:flex;color:#656c79;padding:0 10px}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);opacity:0}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:1;border-bottom:1px solid #2a7cff!important}.cdk-drag-animating[_ngcontent-%COMP%]{transition:transform .25s cubic-bezier(0,0,.2,1)}.cmacs-custom-grid-box[_ngcontent-%COMP%]:last-child{border:none}.cmacs-custom-grid-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .cmacs-custom-grid-box[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.handler-icon[_ngcontent-%COMP%]{font-size:20px;color:#bec4cd;position:relative;cursor:move;line-height:26px}.moveable-title[_ngcontent-%COMP%]{padding-left:15px;line-height:32px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-custom-grid-title[_ngcontent-%COMP%]{align-items:flex-start;position:relative;color:#97a0ae;line-height:32px;padding:0 10px 0 35px}.cmacs-custom-grid-lock[_ngcontent-%COMP%]{margin-left:auto;font-size:20px;padding-right:15px}.cmacs-custom-grid-box[_ngcontent-%COMP%]:not(.cmacs-custom-grid-box-selected):hover{background-color:#f6f7fb}.cmacs-custom-grid-box-selected[_ngcontent-%COMP%]{background-color:#f2f7ff}.cmacs-custom-grid-box-selected[_ngcontent-%COMP%]   .handler-icon[_ngcontent-%COMP%]{color:#656c79}.cmacs-custom-grid-input[_ngcontent-%COMP%]{height:32px;width:371px;position:relative;padding-left:7px;font-size:12px;margin-left:7px}.cmacs-custom-grid-input[_ngcontent-%COMP%]:focus, .cmacs-custom-grid-input[_ngcontent-%COMP%]:hover{border-color:#2a7cff}.cmacs-custom-hide-show[_ngcontent-%COMP%]{margin-left:auto;font-size:20px;position:relative;padding-right:15px}.cmacs-custom-hide-show[_ngcontent-%COMP%]   .iconUILarge-Eye[_ngcontent-%COMP%], .cmacs-custom-hide-show[_ngcontent-%COMP%]   .iconUILarge-EyeSlash[_ngcontent-%COMP%]{cursor:pointer}.cmacs-custom-grid-drag-disabled[_ngcontent-%COMP%]{color:#97a0ae;cursor:default}.movespan[_ngcontent-%COMP%]{height:20px;width:20px;position:relative;font-size:20px;line-height:20px;vertical-align:middle;text-align:center;display:inline-block}", "cmacs-moveable-list[_ngcontent-%COMP%] {\n        display: block;\n      }"] });
+    } }, directives: [CdkDropList, NgForOf, CdkDrag, NgIf, CdkDragHandle, CmacsInputDirective, DefaultValueAccessor, NgControlStatus, FormControlDirective, CmacsTooltipDirective, NgTemplateOutlet], styles: [".cmacs-custom-grid-list[_ngcontent-%COMP%]{max-width:100%;border:1px solid #dee0e5;display:block;border-radius:8px;overflow:hidden;line-height:1.5;color:#97a0ae}.cmacs-custom-grid-box[_ngcontent-%COMP%], .cmacs-custom-grid-list[_ngcontent-%COMP%]{background:#fff;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;letter-spacing:normal}.cmacs-custom-grid-box[_ngcontent-%COMP%]{border-bottom:1px solid #dee0e5;box-sizing:border-box;display:flex;color:#656c79;padding:0 10px}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);opacity:0}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:1;border-bottom:1px solid #2a7cff!important}.cdk-drag-animating[_ngcontent-%COMP%]{transition:transform .25s cubic-bezier(0,0,.2,1)}.cmacs-custom-grid-box[_ngcontent-%COMP%]:last-child{border:none}.cmacs-custom-grid-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .cmacs-custom-grid-box[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.handler-icon[_ngcontent-%COMP%]{font-size:20px;color:#bec4cd;position:relative;cursor:move;line-height:26px}.moveable-title[_ngcontent-%COMP%]{padding-left:15px;line-height:32px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-custom-grid-title[_ngcontent-%COMP%]{align-items:flex-start;position:relative;color:#97a0ae;line-height:32px;padding:0 10px 0 35px}.cmacs-custom-grid-lock[_ngcontent-%COMP%]{margin-left:auto;font-size:20px;padding-right:15px}.cmacs-custom-grid-box[_ngcontent-%COMP%]:not(.cmacs-custom-grid-box-selected):hover{background-color:#f6f7fb}.cmacs-custom-grid-box-selected[_ngcontent-%COMP%]{background-color:#f2f7ff}.cmacs-custom-grid-box-selected[_ngcontent-%COMP%]   .handler-icon[_ngcontent-%COMP%]{color:#656c79}.cmacs-custom-grid-input[_ngcontent-%COMP%]{height:32px;width:371px;position:relative;padding-left:7px;font-size:12px;margin-left:7px}.cmacs-custom-grid-input[_ngcontent-%COMP%]:focus, .cmacs-custom-grid-input[_ngcontent-%COMP%]:hover{border-color:#2a7cff}.cmacs-custom-hide-show[_ngcontent-%COMP%]{margin-left:auto;font-size:20px;position:relative;padding-right:15px}.cmacs-custom-hide-show[_ngcontent-%COMP%]   .iconUILarge-Eye[_ngcontent-%COMP%], .cmacs-custom-hide-show[_ngcontent-%COMP%]   .iconUILarge-EyeSlash[_ngcontent-%COMP%]{cursor:pointer}.cmacs-custom-grid-drag-disabled[_ngcontent-%COMP%]{color:#97a0ae;cursor:default}.movespan[_ngcontent-%COMP%]{height:20px;width:20px;position:relative;font-size:20px;line-height:20px;vertical-align:middle;text-align:center;display:inline-block}", "cmacs-moveable-list[_ngcontent-%COMP%] {\n        display: block;\n      }"] });
+__decorate([
+    InputBoolean()
+], CmacsMoveableListComponent.prototype, "dragDisabled", void 0);
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsMoveableListComponent, [{
         type: Component,
         args: [{
@@ -17998,6 +18009,8 @@ CmacsMoveableListComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsMoveableList
     }], function () { return [{ type: ChangeDetectorRef }, { type: NzI18nService }]; }, { header: [{
             type: Input
         }], showLabel: [{
+            type: Input
+        }], dragDisabled: [{
             type: Input
         }], hideLabel: [{
             type: Input
@@ -27981,6 +27994,10 @@ class CmacsCompactTableComponent {
         this.oncontextmenu = new EventEmitter();
         this.indentSize = 0;
         this.virtualMaxBufferPx = 200;
+        this._onresize$ = new Subject();
+        this.onresizeobs = this._onresize$.asObservable();
+        this._onsort$ = new Subject();
+        this.onsortobs = this._onsort$.asObservable();
         this.selected = false;
         this.formatter = (value) => {
             if (value) {
@@ -28056,7 +28073,11 @@ class CmacsCompactTableComponent {
     getStringFieldValue(data, field) {
         return data[field.property] && data[field.property].length ? data[field.property] : field.placeholder;
     }
-    onResize({ width }, col) {
+    onResize(event, col) {
+        this._onresize$.next({ event, col });
+    }
+    onResizeEvt({ width }, col) {
+        console.log('Resize');
         let found = false;
         if (this.config && this.config.fields) {
             for (let i = 0; i < this.config.fields.length; i++) {
@@ -28165,7 +28186,7 @@ class CmacsCompactTableComponent {
         }
     }
     sort($event, fieldProperty) {
-        this.sortChange.emit({ sortName: fieldProperty, sortValue: $event });
+        this._onsort$.next({ sortName: fieldProperty, sortValue: $event });
     }
     filter($event, fieldProperty) {
         this.filterChange.emit({ filterName: fieldProperty, filterValue: $event });
@@ -28557,6 +28578,19 @@ class CmacsCompactTableComponent {
         this.excelService.exportCompleted.subscribe(() => {
             this.loading = false;
             this.cdr.markForCheck();
+        });
+        this.checkSortEvent();
+        this.checkResizeEvent();
+    }
+    checkSortEvent() {
+        this.onsortobs.pipe(tap(() => { console.log('test'); }), takeUntil(this._onresize$), delay(300), repeat(), takeUntil(this.destroy$)).subscribe((obj) => {
+            console.log('Sort', obj);
+            this.sortChange.emit({ sortName: obj.sortName, sortValue: obj.sortValue });
+        });
+    }
+    checkResizeEvent() {
+        this.onresizeobs.pipe(takeUntil(this.destroy$)).subscribe((obj) => {
+            this.onResizeEvt(obj.event, obj.col);
         });
     }
     ngOnChanges(changes) {
