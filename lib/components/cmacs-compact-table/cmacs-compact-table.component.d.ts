@@ -147,8 +147,8 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     isEllipsisActive(id: string, field: any): boolean;
     getInputNumberValue(data: any, field: Field): any;
     getStringFieldValue(data: any, field: any): any;
-    onResize(event: NzResizeEvent, col: string): void;
-    onResizeEvt({ width }: NzResizeEvent, col: string): void;
+    onResize(event: NzResizeEvent, col: string, field: Field): void;
+    onResizeEvt({ width }: NzResizeEvent, col: string, field: Field): void;
     preventDefault($event: Event): void;
     contextMenu($event: MouseEvent, template: any, item?: any): void;
     validate(data: any, field: Field): boolean;

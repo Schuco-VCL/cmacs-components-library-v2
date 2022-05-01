@@ -100,12 +100,17 @@ export declare class CmacsTableComponent implements OnInit, OnChanges, OnDestroy
     datePickerElement: ElementRef;
     selectElement: ElementRef;
     boolElement: ElementRef;
+    private _onresize$;
+    onresizeobs: import("rxjs").Observable<any>;
+    private _onsort$;
+    onsortobs: import("rxjs").Observable<any>;
     contextMenu($event: MouseEvent, template: any): void;
     startEdit(id: string, property: string, event: MouseEvent): void;
-    onResize({ width }: NzResizeEvent, col: string): void;
+    sort($event: any, fieldProperty: string): void;
+    onResize(event: NzResizeEvent, col: string, field: Field): void;
+    onResizeEvt({ width }: NzResizeEvent, col: string, field: Field): void;
     handleMouseDown(e: Event): void;
     focusSelect(elem: any): void;
-    sort($event: any, fieldProperty: string): void;
     getHeaderMaxWidth(field: Field): "calc(100% - 15px)" | "100%";
     childOf(node: any, ancestor: any): boolean;
     endEditMode($event: KeyboardEvent, index: number): void;
@@ -141,6 +146,8 @@ export declare class CmacsTableComponent implements OnInit, OnChanges, OnDestroy
     ngAfterViewInit(): void;
     getIndexCookie(): boolean;
     ngOnInit(): void;
+    checkSortEvent(): void;
+    checkResizeEvent(): void;
     ngOnChanges(changes: SimpleChanges): void;
     exportToPng(fileName: string): void;
     exportToExcel(fileName: string): void;
