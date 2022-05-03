@@ -31321,20 +31321,21 @@
             this.cdr.detectChanges();
         };
         CmacsCompactTableComponent.prototype.getIndexCookie = function () {
-            var allowIndexPageCookie = false;
-            var consentCookie = this.cookies.get('OptanonConsent');
+            return true;
+            /*let allowIndexPageCookie = false;
+            let consentCookie = this.cookies.get('OptanonConsent');
             if (consentCookie != "") {
-                var groupIndex = consentCookie.indexOf('groups=');
-                var groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
-                var functionalGroupIndex = groups.indexOf('C0009:');
-                if (functionalGroupIndex != -1) {
-                    var categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
-                    if (Number(categoryValue) === 1) {
-                        allowIndexPageCookie = true;
-                    }
+              let groupIndex = consentCookie.indexOf('groups=');
+              let groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
+              let functionalGroupIndex = groups.indexOf('C0009:');
+              if (functionalGroupIndex != -1) {
+                const categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
+                if (Number(categoryValue) === 1) {
+                  allowIndexPageCookie = true;
                 }
+              }
             }
-            return allowIndexPageCookie;
+            return allowIndexPageCookie;*/
         };
         CmacsCompactTableComponent.prototype.setFieldsDefault = function () {
             if (this.config && this.config.fields) {
@@ -33200,20 +33201,21 @@
             this.cdr.detectChanges();
         };
         CmacsTableComponent.prototype.getIndexCookie = function () {
-            var allowIndexPageCookie = false;
-            var consentCookie = this.cookies.get('OptanonConsent');
+            return true;
+            /*let allowIndexPageCookie = false;
+            let consentCookie = this.cookies.get('OptanonConsent');
             if (consentCookie != "") {
-                var groupIndex = consentCookie.indexOf('groups=');
-                var groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
-                var functionalGroupIndex = groups.indexOf('C0009:');
-                if (functionalGroupIndex != -1) {
-                    var categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
-                    if (Number(categoryValue) === 1) {
-                        allowIndexPageCookie = true;
-                    }
+              let groupIndex = consentCookie.indexOf('groups=');
+              let groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
+              let functionalGroupIndex = groups.indexOf('C0009:');
+              if (functionalGroupIndex != -1) {
+                const categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
+                if (Number(categoryValue) === 1) {
+                  allowIndexPageCookie = true;
                 }
+              }
             }
-            return allowIndexPageCookie;
+            return allowIndexPageCookie;*/
         };
         CmacsTableComponent.prototype.ngOnInit = function () {
             var _this = this;
@@ -40003,20 +40005,21 @@
             }
         };
         CmacsGridConfigurationModalComponent.prototype.getIndexCookie = function () {
-            var allowIndexPageCookie = false;
-            var consentCookie = this.cookies.get('OptanonConsent');
+            return true;
+            /*let allowIndexPageCookie = false;
+            let consentCookie = this.cookies.get('OptanonConsent');
             if (consentCookie != "") {
-                var groupIndex = consentCookie.indexOf('groups=');
-                var groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
-                var functionalGroupIndex = groups.indexOf('C0009:');
-                if (functionalGroupIndex != -1) {
-                    var categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
-                    if (Number(categoryValue) === 1) {
-                        allowIndexPageCookie = true;
-                    }
+              let groupIndex = consentCookie.indexOf('groups=');
+              let groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
+              let functionalGroupIndex = groups.indexOf('C0009:');
+              if (functionalGroupIndex != -1) {
+                const categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
+                if (Number(categoryValue) === 1) {
+                  allowIndexPageCookie = true;
                 }
+              }
             }
-            return allowIndexPageCookie;
+            return allowIndexPageCookie;*/
         };
         CmacsGridConfigurationModalComponent.prototype.onVisibleChange = function ($event) {
             if (this.getIndexCookie()) {

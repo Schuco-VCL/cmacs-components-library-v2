@@ -28495,20 +28495,21 @@ class CmacsCompactTableComponent {
         this.cdr.detectChanges();
     }
     getIndexCookie() {
-        let allowIndexPageCookie = false;
+        return true;
+        /*let allowIndexPageCookie = false;
         let consentCookie = this.cookies.get('OptanonConsent');
         if (consentCookie != "") {
-            let groupIndex = consentCookie.indexOf('groups=');
-            let groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
-            let functionalGroupIndex = groups.indexOf('C0009:');
-            if (functionalGroupIndex != -1) {
-                const categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
-                if (Number(categoryValue) === 1) {
-                    allowIndexPageCookie = true;
-                }
+          let groupIndex = consentCookie.indexOf('groups=');
+          let groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
+          let functionalGroupIndex = groups.indexOf('C0009:');
+          if (functionalGroupIndex != -1) {
+            const categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
+            if (Number(categoryValue) === 1) {
+              allowIndexPageCookie = true;
             }
+          }
         }
-        return allowIndexPageCookie;
+        return allowIndexPageCookie;*/
     }
     setFieldsDefault() {
         if (this.config && this.config.fields) {
@@ -30220,20 +30221,21 @@ class CmacsTableComponent {
         this.cdr.detectChanges();
     }
     getIndexCookie() {
-        let allowIndexPageCookie = false;
+        return true;
+        /*let allowIndexPageCookie = false;
         let consentCookie = this.cookies.get('OptanonConsent');
         if (consentCookie != "") {
-            let groupIndex = consentCookie.indexOf('groups=');
-            let groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
-            let functionalGroupIndex = groups.indexOf('C0009:');
-            if (functionalGroupIndex != -1) {
-                const categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
-                if (Number(categoryValue) === 1) {
-                    allowIndexPageCookie = true;
-                }
+          let groupIndex = consentCookie.indexOf('groups=');
+          let groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
+          let functionalGroupIndex = groups.indexOf('C0009:');
+          if (functionalGroupIndex != -1) {
+            const categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
+            if (Number(categoryValue) === 1) {
+              allowIndexPageCookie = true;
             }
+          }
         }
-        return allowIndexPageCookie;
+        return allowIndexPageCookie;*/
     }
     ngOnInit() {
         this.i18n.localeChange.pipe(takeUntil(this.destroy$)).subscribe(() => {
@@ -36218,20 +36220,21 @@ class CmacsGridConfigurationModalComponent {
         }
     }
     getIndexCookie() {
-        let allowIndexPageCookie = false;
+        return true;
+        /*let allowIndexPageCookie = false;
         let consentCookie = this.cookies.get('OptanonConsent');
         if (consentCookie != "") {
-            let groupIndex = consentCookie.indexOf('groups=');
-            let groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
-            let functionalGroupIndex = groups.indexOf('C0009:');
-            if (functionalGroupIndex != -1) {
-                const categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
-                if (Number(categoryValue) === 1) {
-                    allowIndexPageCookie = true;
-                }
+          let groupIndex = consentCookie.indexOf('groups=');
+          let groups = consentCookie.substring(groupIndex); //will return somethinglike groups=C0002:0,C0001:1
+          let functionalGroupIndex = groups.indexOf('C0009:');
+          if (functionalGroupIndex != -1) {
+            const categoryValue = groups.substring(functionalGroupIndex + 6, functionalGroupIndex + 7);
+            if (Number(categoryValue) === 1) {
+              allowIndexPageCookie = true;
             }
+          }
         }
-        return allowIndexPageCookie;
+        return allowIndexPageCookie;*/
     }
     onVisibleChange($event) {
         if (this.getIndexCookie()) {
