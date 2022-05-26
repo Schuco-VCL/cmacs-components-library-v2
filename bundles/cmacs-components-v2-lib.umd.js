@@ -17761,6 +17761,7 @@
         function CmacsSearchComponent() {
             this.disabled = false;
             this.allowClear = false;
+            this.maxTagCountAuto = false;
             this.showSearch = false;
             this.cmacsOpen = false;
             this.tagsOut = false;
@@ -17801,13 +17802,13 @@
         return CmacsSearchComponent;
     }());
     CmacsSearchComponent.ɵfac = function CmacsSearchComponent_Factory(t) { return new (t || CmacsSearchComponent)(); };
-    CmacsSearchComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsSearchComponent, selectors: [["cmacs-search"]], inputs: { options: "options", disabled: "disabled", maxTagCount: "maxTagCount", allowClear: "allowClear", showSearch: "showSearch", cmacsOpen: "cmacsOpen", tagsOut: "tagsOut", size: "size", placeholder: "placeholder", selected: "selected", mode: "mode" }, outputs: { selectedChange: "selectedChange" }, features: [i0.ɵɵProvidersFeature([
+    CmacsSearchComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsSearchComponent, selectors: [["cmacs-search"]], inputs: { options: "options", disabled: "disabled", maxTagCount: "maxTagCount", allowClear: "allowClear", maxTagCountAuto: "maxTagCountAuto", showSearch: "showSearch", cmacsOpen: "cmacsOpen", tagsOut: "tagsOut", size: "size", placeholder: "placeholder", selected: "selected", mode: "mode" }, outputs: { selectedChange: "selectedChange" }, features: [i0.ɵɵProvidersFeature([
                 {
                     provide: i5.NG_VALUE_ACCESSOR,
                     useExisting: i0.forwardRef(function () { return CmacsSearchComponent; }),
                     multi: true
                 }
-            ])], decls: 2, vars: 14, consts: [["showCustomSearch", "", 1, "cmacs-search", 2, "width", "100%", 3, "ngModel", "disabled", "allowClear", "placeHolder", "size", "mode", "showCmacsSearch", "showSearch", "maxTagCount", "tagsOut", "open", "cmacsOpen", "ngModelChange"], [3, "disabled", "value", "label", "divider", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "disabled", "value", "label", "divider"]], template: function CmacsSearchComponent_Template(rf, ctx) {
+            ])], decls: 2, vars: 15, consts: [["showCustomSearch", "", 1, "cmacs-search", 2, "width", "100%", 3, "ngModel", "disabled", "allowClear", "placeHolder", "size", "mode", "showCmacsSearch", "showSearch", "maxTagCount", "maxTagCountAuto", "tagsOut", "open", "cmacsOpen", "ngModelChange"], [3, "disabled", "value", "label", "divider", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "disabled", "value", "label", "divider"]], template: function CmacsSearchComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "cmacs-select", 0);
                 i0.ɵɵlistener("ngModelChange", function CmacsSearchComponent_Template_cmacs_select_ngModelChange_0_listener($event) { return ctx.selected = $event; })("ngModelChange", function CmacsSearchComponent_Template_cmacs_select_ngModelChange_0_listener() { return ctx.onSelectedChange(); });
@@ -17817,7 +17818,7 @@
             if (rf & 2) {
                 i0.ɵɵpropertyInterpolate("placeHolder", ctx.placeholder);
                 i0.ɵɵpropertyInterpolate("mode", ctx.mode);
-                i0.ɵɵproperty("ngModel", ctx.selected)("disabled", ctx.disabled)("allowClear", ctx.allowClear)("size", ctx.size)("showCmacsSearch", true)("showSearch", true)("maxTagCount", ctx.maxTagCount)("tagsOut", ctx.tagsOut)("open", ctx.cmacsOpen)("cmacsOpen", ctx.cmacsOpen);
+                i0.ɵɵproperty("ngModel", ctx.selected)("disabled", ctx.disabled)("allowClear", ctx.allowClear)("size", ctx.size)("showCmacsSearch", true)("showSearch", true)("maxTagCount", ctx.maxTagCount)("maxTagCountAuto", ctx.maxTagCountAuto)("tagsOut", ctx.tagsOut)("open", ctx.cmacsOpen)("cmacsOpen", ctx.cmacsOpen);
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngForOf", ctx.options)("ngForTrackBy", ctx.trackByFn);
             }
@@ -17828,6 +17829,9 @@
     __decorate([
         util.InputBoolean()
     ], CmacsSearchComponent.prototype, "allowClear", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsSearchComponent.prototype, "maxTagCountAuto", void 0);
     __decorate([
         util.InputBoolean()
     ], CmacsSearchComponent.prototype, "showSearch", void 0);
@@ -17860,6 +17864,8 @@
                 }], maxTagCount: [{
                     type: i0.Input
                 }], allowClear: [{
+                    type: i0.Input
+                }], maxTagCountAuto: [{
                     type: i0.Input
                 }], showSearch: [{
                     type: i0.Input

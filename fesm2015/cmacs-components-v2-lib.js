@@ -16305,6 +16305,7 @@ class CmacsSearchComponent {
     constructor() {
         this.disabled = false;
         this.allowClear = false;
+        this.maxTagCountAuto = false;
         this.showSearch = false;
         this.cmacsOpen = false;
         this.tagsOut = false;
@@ -16344,13 +16345,13 @@ class CmacsSearchComponent {
     }
 }
 CmacsSearchComponent.ɵfac = function CmacsSearchComponent_Factory(t) { return new (t || CmacsSearchComponent)(); };
-CmacsSearchComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSearchComponent, selectors: [["cmacs-search"]], inputs: { options: "options", disabled: "disabled", maxTagCount: "maxTagCount", allowClear: "allowClear", showSearch: "showSearch", cmacsOpen: "cmacsOpen", tagsOut: "tagsOut", size: "size", placeholder: "placeholder", selected: "selected", mode: "mode" }, outputs: { selectedChange: "selectedChange" }, features: [ɵɵProvidersFeature([
+CmacsSearchComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSearchComponent, selectors: [["cmacs-search"]], inputs: { options: "options", disabled: "disabled", maxTagCount: "maxTagCount", allowClear: "allowClear", maxTagCountAuto: "maxTagCountAuto", showSearch: "showSearch", cmacsOpen: "cmacsOpen", tagsOut: "tagsOut", size: "size", placeholder: "placeholder", selected: "selected", mode: "mode" }, outputs: { selectedChange: "selectedChange" }, features: [ɵɵProvidersFeature([
             {
                 provide: NG_VALUE_ACCESSOR,
                 useExisting: forwardRef(() => CmacsSearchComponent),
                 multi: true
             }
-        ])], decls: 2, vars: 14, consts: [["showCustomSearch", "", 1, "cmacs-search", 2, "width", "100%", 3, "ngModel", "disabled", "allowClear", "placeHolder", "size", "mode", "showCmacsSearch", "showSearch", "maxTagCount", "tagsOut", "open", "cmacsOpen", "ngModelChange"], [3, "disabled", "value", "label", "divider", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "disabled", "value", "label", "divider"]], template: function CmacsSearchComponent_Template(rf, ctx) { if (rf & 1) {
+        ])], decls: 2, vars: 15, consts: [["showCustomSearch", "", 1, "cmacs-search", 2, "width", "100%", 3, "ngModel", "disabled", "allowClear", "placeHolder", "size", "mode", "showCmacsSearch", "showSearch", "maxTagCount", "maxTagCountAuto", "tagsOut", "open", "cmacsOpen", "ngModelChange"], [3, "disabled", "value", "label", "divider", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "disabled", "value", "label", "divider"]], template: function CmacsSearchComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "cmacs-select", 0);
         ɵɵlistener("ngModelChange", function CmacsSearchComponent_Template_cmacs_select_ngModelChange_0_listener($event) { return ctx.selected = $event; })("ngModelChange", function CmacsSearchComponent_Template_cmacs_select_ngModelChange_0_listener() { return ctx.onSelectedChange(); });
         ɵɵtemplate(1, CmacsSearchComponent_cmacs_option_1_Template, 1, 4, "cmacs-option", 1);
@@ -16358,7 +16359,7 @@ CmacsSearchComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsSearchComponent, s
     } if (rf & 2) {
         ɵɵpropertyInterpolate("placeHolder", ctx.placeholder);
         ɵɵpropertyInterpolate("mode", ctx.mode);
-        ɵɵproperty("ngModel", ctx.selected)("disabled", ctx.disabled)("allowClear", ctx.allowClear)("size", ctx.size)("showCmacsSearch", true)("showSearch", true)("maxTagCount", ctx.maxTagCount)("tagsOut", ctx.tagsOut)("open", ctx.cmacsOpen)("cmacsOpen", ctx.cmacsOpen);
+        ɵɵproperty("ngModel", ctx.selected)("disabled", ctx.disabled)("allowClear", ctx.allowClear)("size", ctx.size)("showCmacsSearch", true)("showSearch", true)("maxTagCount", ctx.maxTagCount)("maxTagCountAuto", ctx.maxTagCountAuto)("tagsOut", ctx.tagsOut)("open", ctx.cmacsOpen)("cmacsOpen", ctx.cmacsOpen);
         ɵɵadvance(1);
         ɵɵproperty("ngForOf", ctx.options)("ngForTrackBy", ctx.trackByFn);
     } }, directives: [CmacsSelectComponent, NgControlStatus, NgModel, NgForOf, CmacsOptionComponent], styles: ["[_nghost-%COMP%]     .cmacs-search .ant-select-selection__placeholder{margin-left:21px}[_nghost-%COMP%]     .cmacs-search .ant-select-arrow{color:rgba(0,0,0,.25)!important}[_nghost-%COMP%]     .cmacs-search .ant-select-selection--multiple .ant-select-selection__placeholder{margin-left:26px}[_nghost-%COMP%]     .cmacs-search .anticon-search{margin-left:8px}[_nghost-%COMP%]     .cmacs-search .ant-select-selection-selected-value{padding-left:10px}[_nghost-%COMP%]     .cmacs-search .ant-select-arrow{top:14px}  .cmacs-search .ant-select-search--inline .ant-select-search__field{max-width:77%;margin-left:21px!important}  .cmacs-search .cmacs-select-selection--multiple .ant-select-search--inline .ant-select-search__field{margin-left:26px!important;padding-right:36px;min-width:38px;max-width:94%}  .cmacs-search .cmacs-select-selection--multiple .ant-select-search--inline .ant-select-search__field.cmacs-select-selection-not-empty{margin-left:0!important}"] });
@@ -16368,6 +16369,9 @@ __decorate([
 __decorate([
     InputBoolean()
 ], CmacsSearchComponent.prototype, "allowClear", void 0);
+__decorate([
+    InputBoolean()
+], CmacsSearchComponent.prototype, "maxTagCountAuto", void 0);
 __decorate([
     InputBoolean()
 ], CmacsSearchComponent.prototype, "showSearch", void 0);
@@ -16399,6 +16403,8 @@ __decorate([
         }], maxTagCount: [{
             type: Input
         }], allowClear: [{
+            type: Input
+        }], maxTagCountAuto: [{
             type: Input
         }], showSearch: [{
             type: Input

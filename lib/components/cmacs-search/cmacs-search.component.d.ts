@@ -7,6 +7,7 @@ export declare class CmacsSearchComponent implements ControlValueAccessor, OnIni
     disabled: boolean;
     maxTagCount: number;
     allowClear: boolean;
+    maxTagCountAuto: boolean;
     showSearch: boolean;
     cmacsOpen: boolean;
     tagsOut: boolean;
@@ -25,6 +26,6 @@ export declare class CmacsSearchComponent implements ControlValueAccessor, OnIni
     trackByFn(index: any, item: any): any;
     ngOnInit(): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsSearchComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSearchComponent, "cmacs-search", never, { "options": "options"; "disabled": "disabled"; "maxTagCount": "maxTagCount"; "allowClear": "allowClear"; "showSearch": "showSearch"; "cmacsOpen": "cmacsOpen"; "tagsOut": "tagsOut"; "size": "size"; "placeholder": "placeholder"; "selected": "selected"; "mode": "mode"; }, { "selectedChange": "selectedChange"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSearchComponent, "cmacs-search", never, { "options": "options"; "disabled": "disabled"; "maxTagCount": "maxTagCount"; "allowClear": "allowClear"; "maxTagCountAuto": "maxTagCountAuto"; "showSearch": "showSearch"; "cmacsOpen": "cmacsOpen"; "tagsOut": "tagsOut"; "size": "size"; "placeholder": "placeholder"; "selected": "selected"; "mode": "mode"; }, { "selectedChange": "selectedChange"; }, never, never>;
 }
 //# sourceMappingURL=cmacs-search.component.d.ts.map
