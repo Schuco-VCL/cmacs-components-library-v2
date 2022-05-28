@@ -37090,6 +37090,9 @@
                         display: '',
                         property: 'color',
                         width: '60px',
+                        minWidth: 60,
+                        maxWidth: 120,
+                        resizable: true
                     },
                     {
                         celdType: 0,
@@ -37097,12 +37100,16 @@
                         property: 'name',
                         editTemplate: 3,
                         width: this.col2 * this.p + 'px',
+                        minWidth: this.col2 * this.p - 10,
+                        maxWidth: this.col2 * this.p + 100,
+                        resizable: true
                     },
                     {
                         celdType: 0,
                         display: this.columnsHeader[1],
                         property: 'value',
                         width: this.col3 * this.p + 'px',
+                        minWidth: this.col3 * this.p - 10,
                         editTemplate: 2,
                         editable: false
                     }
@@ -37504,6 +37511,9 @@
                         display: '',
                         property: 'color',
                         width: '60px',
+                        minWidth: 60,
+                        maxWidth: 120,
+                        resizable: true
                     },
                     {
                         celdType: 0,
@@ -37511,12 +37521,16 @@
                         property: 'name',
                         editTemplate: 3,
                         width: this.col2 * this.p + 'px',
+                        minWidth: this.col2 * this.p - 10,
+                        maxWidth: this.col2 * this.p + 100,
+                        resizable: true
                     },
                     {
                         celdType: 0,
                         display: this.columnsHeader[1],
                         property: 'value',
                         width: this.col3 * this.p + 'px',
+                        minWidth: this.col3 * this.p - 10,
                         editTemplate: 2,
                         editable: false
                     }
@@ -37843,6 +37857,9 @@
                         display: '',
                         property: 'color',
                         width: '60px',
+                        minWidth: 60,
+                        maxWidth: 120,
+                        resizable: true
                     },
                     {
                         celdType: 0,
@@ -37850,12 +37867,16 @@
                         property: 'name',
                         editTemplate: 3,
                         width: this.col2 * this.p + 'px',
+                        minWidth: this.col2 * this.p - 10,
+                        maxWidth: this.col2 * this.p + 100,
+                        resizable: true,
                     },
                     {
                         celdType: 0,
                         display: this.columnsHeader[1],
                         property: 'value',
                         width: this.col3 * this.p + 'px',
+                        minWidth: this.col3 * this.p - 10,
                         editTemplate: 2,
                         editable: false
                     }

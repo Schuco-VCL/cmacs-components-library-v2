@@ -33742,6 +33742,9 @@ class CmacsKpiGroupComponent {
                     display: '',
                     property: 'color',
                     width: '60px',
+                    minWidth: 60,
+                    maxWidth: 120,
+                    resizable: true
                 },
                 {
                     celdType: 0,
@@ -33749,12 +33752,16 @@ class CmacsKpiGroupComponent {
                     property: 'name',
                     editTemplate: 3,
                     width: this.col2 * this.p + 'px',
+                    minWidth: this.col2 * this.p - 10,
+                    maxWidth: this.col2 * this.p + 100,
+                    resizable: true
                 },
                 {
                     celdType: 0,
                     display: this.columnsHeader[1],
                     property: 'value',
                     width: this.col3 * this.p + 'px',
+                    minWidth: this.col3 * this.p - 10,
                     editTemplate: 2,
                     editable: false
                 }
@@ -34092,6 +34099,9 @@ class CmacsKpiGroupTotalComponent {
                     display: '',
                     property: 'color',
                     width: '60px',
+                    minWidth: 60,
+                    maxWidth: 120,
+                    resizable: true
                 },
                 {
                     celdType: 0,
@@ -34099,12 +34109,16 @@ class CmacsKpiGroupTotalComponent {
                     property: 'name',
                     editTemplate: 3,
                     width: this.col2 * this.p + 'px',
+                    minWidth: this.col2 * this.p - 10,
+                    maxWidth: this.col2 * this.p + 100,
+                    resizable: true
                 },
                 {
                     celdType: 0,
                     display: this.columnsHeader[1],
                     property: 'value',
                     width: this.col3 * this.p + 'px',
+                    minWidth: this.col3 * this.p - 10,
                     editTemplate: 2,
                     editable: false
                 }
@@ -34371,6 +34385,9 @@ class CmacsStatusDistributionComponent {
                     display: '',
                     property: 'color',
                     width: '60px',
+                    minWidth: 60,
+                    maxWidth: 120,
+                    resizable: true
                 },
                 {
                     celdType: 0,
@@ -34378,12 +34395,16 @@ class CmacsStatusDistributionComponent {
                     property: 'name',
                     editTemplate: 3,
                     width: this.col2 * this.p + 'px',
+                    minWidth: this.col2 * this.p - 10,
+                    maxWidth: this.col2 * this.p + 100,
+                    resizable: true,
                 },
                 {
                     celdType: 0,
                     display: this.columnsHeader[1],
                     property: 'value',
                     width: this.col3 * this.p + 'px',
+                    minWidth: this.col3 * this.p - 10,
                     editTemplate: 2,
                     editable: false
                 }
