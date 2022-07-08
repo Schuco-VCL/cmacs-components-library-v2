@@ -4,7 +4,7 @@ import { VgAPI } from 'ngx-videogular';
 import { Source } from "../cmacs-video-player/cmacs-video-player.component";
 import { DomSanitizer } from "@angular/platform-browser";
 import * as i0 from "@angular/core";
-export declare type CmacsCardType = 'file' | 'selection' | 'action' | 'team' | 'project' | 'folder' | 'measure' | 'weather' | 'big-file' | 'none' | 'video' | 'todo';
+export declare type CmacsCardType = 'file' | 'selection' | 'action' | 'team' | 'project' | 'folder' | 'measure' | 'weather' | 'big-file' | 'none' | 'video' | 'todo' | 'template';
 export interface BigFile {
     title?: string;
     extension?: string;
@@ -24,6 +24,9 @@ export declare class CmacsCardComponent implements OnInit {
     private cdr;
     private sanitizer;
     folderIcon: string;
+    newIcon: string;
+    iconspan_template: string;
+    icon_template: string;
     isEditable: boolean;
     bordered: boolean;
     opened: boolean;
@@ -44,6 +47,7 @@ export declare class CmacsCardComponent implements OnInit {
     team: any;
     file: BigFile;
     project: any;
+    template: any;
     projectDateLabel: string;
     todo: any;
     weather: Weather;
@@ -66,6 +70,8 @@ export declare class CmacsCardComponent implements OnInit {
     selectedChange: EventEmitter<boolean>;
     goToModule: EventEmitter<string>;
     todoUserAssigned: TemplateRef<void>;
+    cmacsTagContents: Array<string>;
+    cmacsTagsOverflow: number;
     iconToDoClick: EventEmitter<any>;
     defaultImage: string;
     constructor(cdr: ChangeDetectorRef, renderer: Renderer2, sanitizer: DomSanitizer, elementRef: ElementRef);
@@ -88,6 +94,6 @@ export declare class CmacsCardComponent implements OnInit {
     goToModuleToDo(event: any, url: string): void;
     buildLabel(value: string): string;
     static ɵfac: i0.ɵɵFactoryDef<CmacsCardComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCardComponent, "cmacs-card", ["cmacsCard"], { "bordered": "bordered"; "opened": "opened"; "editable": "editable"; "isRadio": "isRadio"; "loading": "loading"; "disabled": "disabled"; "hoverable": "hoverable"; "useDefaultContent": "useDefaultContent"; "sources": "sources"; "bodyStyle": "bodyStyle"; "cover": "cover"; "body": "body"; "actions": "actions"; "team": "team"; "file": "file"; "project": "project"; "projectDateLabel": "projectDateLabel"; "todo": "todo"; "weather": "weather"; "celcius": "celcius"; "type": "type"; "cmacsType": "cmacsType"; "cmacsIcon": "cmacsIcon"; "cmacsIconOpenedFolder": "cmacsIconOpenedFolder"; "cmacsIconClosedFolder": "cmacsIconClosedFolder"; "title": "title"; "labelTitle": "labelTitle"; "extra": "extra"; "selected": "selected"; "value": "value"; "todoUserAssigned": "todoUserAssigned"; }, { "playerReady": "playerReady"; "titleChange": "titleChange"; "ondlclickCard": "ondlclickCard"; "open": "open"; "close": "close"; "selectedChange": "selectedChange"; "goToModule": "goToModule"; "iconToDoClick": "iconToDoClick"; }, ["tab"], ["*", "[cmacs-action-panel]"]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCardComponent, "cmacs-card", ["cmacsCard"], { "bordered": "bordered"; "opened": "opened"; "editable": "editable"; "isRadio": "isRadio"; "loading": "loading"; "disabled": "disabled"; "hoverable": "hoverable"; "useDefaultContent": "useDefaultContent"; "sources": "sources"; "bodyStyle": "bodyStyle"; "cover": "cover"; "body": "body"; "actions": "actions"; "team": "team"; "file": "file"; "project": "project"; "template": "template"; "projectDateLabel": "projectDateLabel"; "todo": "todo"; "weather": "weather"; "celcius": "celcius"; "type": "type"; "cmacsType": "cmacsType"; "cmacsIcon": "cmacsIcon"; "cmacsIconOpenedFolder": "cmacsIconOpenedFolder"; "cmacsIconClosedFolder": "cmacsIconClosedFolder"; "title": "title"; "labelTitle": "labelTitle"; "extra": "extra"; "selected": "selected"; "value": "value"; "todoUserAssigned": "todoUserAssigned"; }, { "playerReady": "playerReady"; "titleChange": "titleChange"; "ondlclickCard": "ondlclickCard"; "open": "open"; "close": "close"; "selectedChange": "selectedChange"; "goToModule": "goToModule"; "iconToDoClick": "iconToDoClick"; }, ["tab"], ["*", "[cmacs-action-panel]"]>;
 }
 //# sourceMappingURL=cmacs-card.component.d.ts.map
