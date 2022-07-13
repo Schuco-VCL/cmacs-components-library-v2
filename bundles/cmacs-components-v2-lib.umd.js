@@ -1164,23 +1164,24 @@
         if (rf & 2) {
             var ctx_r0 = i0.ɵɵnextContext();
             i0.ɵɵadvance(2);
-            i0.ɵɵclassProp("cmacs-color-picker-color-wrapper-selected", "transparent" === ctx_r0.color);
+            i0.ɵɵclassProp("cmacs-color-picker-color-wrapper-selected", "transparent" === ctx_r0.color)("is-mobile", ctx_r0.mobile);
         }
     }
     function CmacsColorPickerComponent_div_2_Template(rf, ctx) {
         if (rf & 1) {
             var _r6_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "div", 4);
+            i0.ɵɵelementStart(0, "div", 6);
             i0.ɵɵlistener("click", function CmacsColorPickerComponent_div_2_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r6_1); var $color_r4 = ctx.$implicit; var ctx_r5 = i0.ɵɵnextContext(); return ctx_r5.setColor($color_r4); });
-            i0.ɵɵelement(1, "div", 6);
+            i0.ɵɵelement(1, "div", 7);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var $color_r4 = ctx.$implicit;
             var ctx_r1 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-color-picker-color-wrapper-selected", $color_r4 === ctx_r1.color);
+            i0.ɵɵclassProp("is-mobile", ctx_r1.mobile)("cmacs-color-picker-color-wrapper-selected", $color_r4 === ctx_r1.color);
             i0.ɵɵadvance(1);
             i0.ɵɵstyleProp("background-color", $color_r4)("border-color", $color_r4 === "#ffffff" ? "#dee0e5" : "transparent");
+            i0.ɵɵclassProp("is-white", $color_r4 === "#ffffff");
         }
     }
     var CmacsColorPickerComponent = /** @class */ (function () {
@@ -1188,6 +1189,7 @@
             this.ref = ref;
             this.cdr = cdr;
             this.type = 'basic';
+            this.mobile = false;
             this.colorChange = new i0.EventEmitter();
             this.width = 0;
             this.basicColorList = [
@@ -1221,11 +1223,11 @@
         return CmacsColorPickerComponent;
     }());
     CmacsColorPickerComponent.ɵfac = function CmacsColorPickerComponent_Factory(t) { return new (t || CmacsColorPickerComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef)); };
-    CmacsColorPickerComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsColorPickerComponent, selectors: [["cmacs-color-picker"]], hostAttrs: [1, "cmacs-color-picker"], inputs: { type: "type", color: "color" }, outputs: { colorChange: "colorChange" }, exportAs: ["cmacsColorPicker"], decls: 3, vars: 4, consts: [[4, "ngIf"], [2, "display", "inline-block", "float", "right"], ["class", "cmacs-color-picker-color-wrapper", 3, "cmacs-color-picker-color-wrapper-selected", "click", 4, "ngFor", "ngForOf"], [2, "width", "18px", "margin-right", "4px", "display", "inline-block"], [1, "cmacs-color-picker-color-wrapper", 3, "click"], [1, "cmacs-color-picker-color-transparent"], [1, "cmacs-color-picker-color"]], template: function CmacsColorPickerComponent_Template(rf, ctx) {
+    CmacsColorPickerComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsColorPickerComponent, selectors: [["cmacs-color-picker"]], hostAttrs: [1, "cmacs-color-picker"], inputs: { type: "type", color: "color", mobile: "mobile" }, outputs: { colorChange: "colorChange" }, exportAs: ["cmacsColorPicker"], decls: 3, vars: 4, consts: [[4, "ngIf"], [2, "display", "inline-block", "float", "right"], ["class", "cmacs-color-picker-color-wrapper", 3, "is-mobile", "cmacs-color-picker-color-wrapper-selected", "click", 4, "ngFor", "ngForOf"], [1, "cmacs-color-picker-color-transparent-wrapper", 2, "width", "18px", "margin-right", "4px", "display", "inline-block"], [1, "cmacs-color-picker-color-wrapper", "cmacs-color-picker-color-transparent-inner-wrapper", 3, "click"], [1, "cmacs-color-picker-color-transparent"], [1, "cmacs-color-picker-color-wrapper", 3, "click"], [1, "cmacs-color-picker-color"]], template: function CmacsColorPickerComponent_Template(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵtemplate(0, CmacsColorPickerComponent_ng_container_0_Template, 4, 2, "ng-container", 0);
+                i0.ɵɵtemplate(0, CmacsColorPickerComponent_ng_container_0_Template, 4, 4, "ng-container", 0);
                 i0.ɵɵelementStart(1, "div", 1);
-                i0.ɵɵtemplate(2, CmacsColorPickerComponent_div_2_Template, 2, 6, "div", 2);
+                i0.ɵɵtemplate(2, CmacsColorPickerComponent_div_2_Template, 2, 10, "div", 2);
                 i0.ɵɵelementEnd();
             }
             if (rf & 2) {
@@ -1235,7 +1237,10 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngForOf", ctx.basicColorList);
             }
-        }, directives: [i2$1.NgIf, i2$1.NgForOf], styles: [".cmacs-color-picker-color{width:12px;height:12px;border-radius:100px;border:1px solid;margin:0 auto}.cmacs-color-picker-color-wrapper{width:18px;height:18px;border-radius:100px;background-color:transparent;padding-top:3px;display:inline-block;transition:all .3s}.cmacs-color-picker-color-wrapper-selected,.cmacs-color-picker-color-wrapper:hover{cursor:pointer;background-color:#dee0e5}.cmacs-color-picker-color-wrapper-selected .cmacs-color-picker-color,.cmacs-color-picker-color-wrapper-selected .cmacs-color-picker-color-transparent,.cmacs-color-picker-color-wrapper:hover .cmacs-color-picker-color,.cmacs-color-picker-color-wrapper:hover .cmacs-color-picker-color-transparent{border:none}.cmacs-color-picker-color-transparent{width:12px;height:12px;border-radius:100px;border:1px solid #dee0e5;margin:0 auto;background-color:#dee0e5;overflow:hidden}.cmacs-color-picker-color-transparent:before{content:\"/\";font-size:12px;color:#f6503c;transform:rotate(20deg);display:block;position:relative;top:-3px;left:3px}.cmacs-color-picker-color-wrapper-selected .cmacs-color-picker-color-transparent:before,.cmacs-color-picker-color-wrapper:hover .cmacs-color-picker-color-transparent:before{font-size:14px}", "\n      cmacs-color-picker {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+        }, directives: [i2$1.NgIf, i2$1.NgForOf], styles: [".cmacs-color-picker-color-wrapper.cmacs-color-picker-color-wrapper-selected.is-mobile .cmacs-color-picker-color:after{position:relative;display:table;border:2px solid #fff;border-top:0;border-left:0;transform:rotate(45deg) scale(1) translate(-50%,-50%);opacity:1;transition:all .2s cubic-bezier(.12,.4,.29,1.46) .1s;content:\" \";left:2.8px;top:4.8px;width:3px;height:6px}.cmacs-color-picker-color-wrapper.cmacs-color-picker-color-wrapper-selected.is-mobile .cmacs-color-picker-color.is-white:after{border:2px solid #dee0e5;border-top:0;border-left:0}.cmacs-color-picker-color{width:12px;height:12px;border-radius:100px;border:1px solid;margin:0 auto}.cmacs-color-picker-color-wrapper{width:18px;height:18px;border-radius:100px;background-color:transparent;padding-top:3px;display:inline-block;transition:all .3s}.cmacs-color-picker-color-wrapper-selected:not(.is-mobile),.cmacs-color-picker-color-wrapper:not(.is-mobile):hover{cursor:pointer;background-color:#dee0e5}.cmacs-color-picker-color-wrapper-selected:not(.is-mobile) .cmacs-color-picker-color,.cmacs-color-picker-color-wrapper-selected:not(.is-mobile) .cmacs-color-picker-color-transparent,.cmacs-color-picker-color-wrapper:not(.is-mobile):hover .cmacs-color-picker-color,.cmacs-color-picker-color-wrapper:not(.is-mobile):hover .cmacs-color-picker-color-transparent{border:none}.cmacs-color-picker-color-transparent{width:12px;height:12px;border-radius:100px;border:1px solid #dee0e5;margin:0 auto;background-color:#dee0e5;overflow:hidden}.cmacs-color-picker-color-transparent:before{content:\"/\";font-size:12px;color:#f6503c;transform:rotate(20deg);display:block;position:relative;top:-3px;left:3px}.cmacs-color-picker-color-wrapper-selected:not(.is-mobile) .cmacs-color-picker-color-transparent:before,.cmacs-color-picker-color-wrapper:not(.is-mobile):hover .cmacs-color-picker-color-transparent:before{font-size:14px}", "\n      cmacs-color-picker {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+    __decorate([
+        util.InputBoolean()
+    ], CmacsColorPickerComponent.prototype, "mobile", void 0);
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsColorPickerComponent, [{
                 type: i0.Component,
@@ -1256,6 +1261,8 @@
             }], function () { return [{ type: i0.ElementRef }, { type: i0.ChangeDetectorRef }]; }, { type: [{
                     type: i0.Input
                 }], color: [{
+                    type: i0.Input
+                }], mobile: [{
                     type: i0.Input
                 }], colorChange: [{
                     type: i0.Output
