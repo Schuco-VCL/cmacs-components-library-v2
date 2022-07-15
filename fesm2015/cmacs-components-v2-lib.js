@@ -875,7 +875,7 @@ class CmacsColorPickerComponent {
     }
 }
 CmacsColorPickerComponent.ɵfac = function CmacsColorPickerComponent_Factory(t) { return new (t || CmacsColorPickerComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef)); };
-CmacsColorPickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsColorPickerComponent, selectors: [["cmacs-color-picker"]], hostAttrs: [1, "cmacs-color-picker"], inputs: { type: "type", color: "color", mobile: "mobile" }, outputs: { colorChange: "colorChange" }, exportAs: ["cmacsColorPicker"], decls: 3, vars: 4, consts: [[4, "ngIf"], [2, "display", "inline-block", "float", "right"], ["class", "cmacs-color-picker-color-wrapper", 3, "is-mobile", "cmacs-color-picker-color-wrapper-selected", "click", 4, "ngFor", "ngForOf"], [1, "cmacs-color-picker-color-transparent-wrapper", 2, "width", "18px", "margin-right", "4px", "display", "inline-block"], [1, "cmacs-color-picker-color-wrapper", "cmacs-color-picker-color-transparent-inner-wrapper", 3, "click"], [1, "cmacs-color-picker-color-transparent"], [1, "cmacs-color-picker-color-wrapper", 3, "click"], [1, "cmacs-color-picker-color"]], template: function CmacsColorPickerComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsColorPickerComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsColorPickerComponent, selectors: [["cmacs-color-picker"]], hostAttrs: [1, "cmacs-color-picker"], inputs: { type: "type", color: "color", mobile: "mobile", basicColorList: "basicColorList" }, outputs: { colorChange: "colorChange" }, exportAs: ["cmacsColorPicker"], decls: 3, vars: 4, consts: [[4, "ngIf"], [2, "display", "inline-block", "float", "right"], ["class", "cmacs-color-picker-color-wrapper", 3, "is-mobile", "cmacs-color-picker-color-wrapper-selected", "click", 4, "ngFor", "ngForOf"], [1, "cmacs-color-picker-color-transparent-wrapper", 2, "width", "18px", "margin-right", "4px", "display", "inline-block"], [1, "cmacs-color-picker-color-wrapper", "cmacs-color-picker-color-transparent-inner-wrapper", 3, "click"], [1, "cmacs-color-picker-color-transparent"], [1, "cmacs-color-picker-color-wrapper", 3, "click"], [1, "cmacs-color-picker-color"]], template: function CmacsColorPickerComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, CmacsColorPickerComponent_ng_container_0_Template, 4, 4, "ng-container", 0);
         ɵɵelementStart(1, "div", 1);
         ɵɵtemplate(2, CmacsColorPickerComponent_div_2_Template, 2, 10, "div", 2);
@@ -918,6 +918,8 @@ __decorate([
             type: Input
         }], colorChange: [{
             type: Output
+        }], basicColorList: [{
+            type: Input
         }] }); })();
 
 class NzSliderService {

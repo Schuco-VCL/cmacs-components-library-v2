@@ -1223,7 +1223,7 @@
         return CmacsColorPickerComponent;
     }());
     CmacsColorPickerComponent.ɵfac = function CmacsColorPickerComponent_Factory(t) { return new (t || CmacsColorPickerComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef)); };
-    CmacsColorPickerComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsColorPickerComponent, selectors: [["cmacs-color-picker"]], hostAttrs: [1, "cmacs-color-picker"], inputs: { type: "type", color: "color", mobile: "mobile" }, outputs: { colorChange: "colorChange" }, exportAs: ["cmacsColorPicker"], decls: 3, vars: 4, consts: [[4, "ngIf"], [2, "display", "inline-block", "float", "right"], ["class", "cmacs-color-picker-color-wrapper", 3, "is-mobile", "cmacs-color-picker-color-wrapper-selected", "click", 4, "ngFor", "ngForOf"], [1, "cmacs-color-picker-color-transparent-wrapper", 2, "width", "18px", "margin-right", "4px", "display", "inline-block"], [1, "cmacs-color-picker-color-wrapper", "cmacs-color-picker-color-transparent-inner-wrapper", 3, "click"], [1, "cmacs-color-picker-color-transparent"], [1, "cmacs-color-picker-color-wrapper", 3, "click"], [1, "cmacs-color-picker-color"]], template: function CmacsColorPickerComponent_Template(rf, ctx) {
+    CmacsColorPickerComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsColorPickerComponent, selectors: [["cmacs-color-picker"]], hostAttrs: [1, "cmacs-color-picker"], inputs: { type: "type", color: "color", mobile: "mobile", basicColorList: "basicColorList" }, outputs: { colorChange: "colorChange" }, exportAs: ["cmacsColorPicker"], decls: 3, vars: 4, consts: [[4, "ngIf"], [2, "display", "inline-block", "float", "right"], ["class", "cmacs-color-picker-color-wrapper", 3, "is-mobile", "cmacs-color-picker-color-wrapper-selected", "click", 4, "ngFor", "ngForOf"], [1, "cmacs-color-picker-color-transparent-wrapper", 2, "width", "18px", "margin-right", "4px", "display", "inline-block"], [1, "cmacs-color-picker-color-wrapper", "cmacs-color-picker-color-transparent-inner-wrapper", 3, "click"], [1, "cmacs-color-picker-color-transparent"], [1, "cmacs-color-picker-color-wrapper", 3, "click"], [1, "cmacs-color-picker-color"]], template: function CmacsColorPickerComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, CmacsColorPickerComponent_ng_container_0_Template, 4, 4, "ng-container", 0);
                 i0.ɵɵelementStart(1, "div", 1);
@@ -1266,6 +1266,8 @@
                     type: i0.Input
                 }], colorChange: [{
                     type: i0.Output
+                }], basicColorList: [{
+                    type: i0.Input
                 }] });
     })();
 
