@@ -877,10 +877,10 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.contentElement = _t.first);
             }
-        }, hostVars: 36, hostBindings: function CmacsButtonComponent_HostBindings(rf, ctx) {
+        }, hostVars: 38, hostBindings: function CmacsButtonComponent_HostBindings(rf, ctx) {
             if (rf & 2) {
                 i0.ɵɵattribute("tabindex", ctx.disabled ? -1 : ctx.tabIndex === null ? null : ctx.tabIndex)("disabled", ctx.disabled || null);
-                i0.ɵɵclassProp("ant-btn-primary", ctx.type === "primary")("ant-btn-default", ctx.type === "default")("ant-btn-dashed", ctx.type === "dashed")("ant-btn-link", ctx.type === "link")("ant-btn-text", ctx.type === "text")("ant-btn-danger", ctx.type === "danger")("ant-btn-circle", ctx.shape === "circle")("ant-btn-round", ctx.shape === "round")("ant-btn-lg", ctx.size === "large")("ant-btn-sm", ctx.size === "small")("ant-btn-dangerous", ctx.danger)("ant-btn-loading", ctx.loading)("ant-btn-background-ghost", ctx.ghost)("ant-btn-block", ctx.block)("ant-input-search-button", ctx.search)("cmacs-btn-action", ctx.action)("ant-btn-rtl", ctx.dir === "rtl");
+                i0.ɵɵclassProp("ant-btn-primary", ctx.type === "primary")("ant-btn-default", ctx.type === "default")("ant-btn-dashed", ctx.type === "dashed")("ant-btn-link", ctx.type === "link")("ant-btn-text", ctx.type === "text")("ant-btn-danger", ctx.type === "danger")("ant-btn-favorite", ctx.type === "favorite")("ant-btn-circle", ctx.shape === "circle")("ant-btn-round", ctx.shape === "round")("ant-btn-lg", ctx.size === "large")("ant-btn-sm", ctx.size === "small")("ant-btn-dangerous", ctx.danger)("ant-btn-loading", ctx.loading)("ant-btn-background-ghost", ctx.ghost)("ant-btn-block", ctx.block)("ant-input-search-button", ctx.search)("cmacs-btn-action", ctx.action)("ant-btn-rtl", ctx.dir === "rtl");
             }
         }, inputs: { block: "block", ghost: "ghost", search: "search", loading: "loading", danger: "danger", disabled: "disabled", tabIndex: "tabIndex", type: "type", shape: "shape", size: "size", action: "action" }, exportAs: ["cmacsButton"], features: [i0.ɵɵNgOnChangesFeature], attrs: _c1$1, ngContentSelectors: _c2$1, decls: 2, vars: 1, consts: [["nz-icon", "", "type", "loading", 4, "ngIf"], ["nz-icon", "", "type", "loading"]], template: function CmacsButtonComponent_Template(rf, ctx) {
             if (rf & 1) {
@@ -891,7 +891,7 @@
             if (rf & 2) {
                 i0.ɵɵproperty("ngIf", ctx.loading);
             }
-        }, directives: [i2$1.NgIf, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective], styles: [".ant-btn{font-size:14px;line-height:20px;font-weight:400;height:34px;box-shadow:none;border-radius:3px;padding:0 14px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif;text-shadow:none}.ant-btn-primary{background-color:#2a7cff;border:1px solid #2a7cff}.ant-btn-primary:focus,.ant-btn-primary:hover{background-color:#2164c9;border-color:#2164c9}.ant-btn-primary[disabled],.ant-btn-primary[disabled]:focus,.ant-btn-primary[disabled]:hover{border:none;color:#97a0ae;background-color:#f3f3f4;cursor:default}.ant-btn-default{border:1px solid #bec4cd;color:#2a7cff}.ant-btn-default i,.ant-btn-primary i{font-size:16px;position:relative;height:16px;width:16px;vertical-align:middle;margin:2px}.ant-btn-default:not(.ant-btn-icon-only) i,.ant-btn-primary:not(.ant-btn-icon-only) i{margin-right:5px}.ant-btn-icon-only{vertical-align:unset!important}.ant-btn-default:focus,.ant-btn-default:hover{background-color:#f6f7fb;color:#2164c9;border:1px solid #bec4cd}.ant-btn-default[disabled],.ant-btn-default[disabled]:focus,.ant-btn-default[disabled]:hover{color:#97a0ae;background-color:#fff;border-color:#dee0e5;cursor:default}.ant-btn-background-ghost.ant-btn-default:enabled,.ant-btn-background-ghost.ant-btn-primary:enabled{color:#2a7cff;border:none}.ant-btn-background-ghost:hover{border:none!important}.ant-btn-background-ghost.ant-btn-default:enabled:focus,.ant-btn-background-ghost.ant-btn-default:enabled:hover,.ant-btn-background-ghost.ant-btn-primary:enabled:focus,.ant-btn-background-ghost.ant-btn-primary:enabled:hover{background-color:#f6f7fb!important;color:#2a7cff}.ant-btn-background-ghost:disabled{background-color:transparent!important;border:none;color:#97a0ae}.ant-btn-icon-only i{color:#656c79}.ant-btn-background-ghost:disabled i{color:#97a0ae!important}.ant-btn-icon-only,.ant-btn-icon-only:focus,.ant-btn-icon-only:hover{border:1px solid #dee0e5}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.ant-btn-icon-only:enabled:focus i,.ant-btn-icon-only:enabled:hover i{color:#2a7cff}.ant-btn-icon-only:not(.ant-btn-background-ghost),.ant-btn-icon-only:not(.ant-btn-background-ghost):focus,.ant-btn-icon-only:not(.ant-btn-background-ghost):hover{background-color:#fff}.ant-btn-icon-only:disabled{background-color:#f3f3f4!important;cursor:default}.ant-btn-icon-only:disabled span i{color:#97a0ae}.cmacs-btn-action{height:30px}.ant-btn:not(.ant-btn-circle):not(.ant-btn-circle-outline).ant-btn-icon-only.cmacs-btn-action{padding-right:4px;padding-left:4px}.ant-btn:not(.ant-btn-circle):not(.ant-btn-circle-outline).ant-btn-icon-only{padding-right:6px;padding-left:6px}.ant-btn-danger{color:#fff;background-color:#ff4d4f;border-color:#ff4d4f}"], encapsulation: 2, changeDetection: 0 });
+        }, directives: [i2$1.NgIf, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective], styles: [".ant-btn{font-size:14px;line-height:20px;font-weight:400;height:34px;box-shadow:none;border-radius:3px;padding:0 14px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif;text-shadow:none}.ant-btn-primary{background-color:#2a7cff;border:1px solid #2a7cff}.ant-btn-primary:focus,.ant-btn-primary:hover{background-color:#2164c9;border-color:#2164c9}.ant-btn-primary[disabled],.ant-btn-primary[disabled]:focus,.ant-btn-primary[disabled]:hover{border:none;color:#97a0ae;background-color:#f3f3f4;cursor:default}.ant-btn-default{border:1px solid #bec4cd;color:#2a7cff}.ant-btn-default i,.ant-btn-primary i{font-size:16px;position:relative;height:16px;width:16px;vertical-align:middle;margin:2px}.ant-btn-default:not(.ant-btn-icon-only) i,.ant-btn-primary:not(.ant-btn-icon-only) i{margin-right:5px}.ant-btn-icon-only{vertical-align:unset!important}.ant-btn-default:focus,.ant-btn-default:hover{background-color:#f6f7fb;color:#2164c9;border:1px solid #bec4cd}.ant-btn-default[disabled],.ant-btn-default[disabled]:focus,.ant-btn-default[disabled]:hover{color:#97a0ae;background-color:#fff;border-color:#dee0e5;cursor:default}.ant-btn-background-ghost.ant-btn-default:enabled,.ant-btn-background-ghost.ant-btn-primary:enabled{color:#2a7cff;border:none}.ant-btn-background-ghost:hover{border:none!important}.ant-btn-background-ghost.ant-btn-default:enabled:focus,.ant-btn-background-ghost.ant-btn-default:enabled:hover,.ant-btn-background-ghost.ant-btn-primary:enabled:focus,.ant-btn-background-ghost.ant-btn-primary:enabled:hover{background-color:#f6f7fb!important;color:#2a7cff}.ant-btn-background-ghost:disabled{background-color:transparent!important;border:none;color:#97a0ae}.ant-btn-icon-only i{color:#656c79}.ant-btn-background-ghost:disabled i{color:#97a0ae!important}.ant-btn-icon-only,.ant-btn-icon-only:focus,.ant-btn-icon-only:hover{border:1px solid #dee0e5}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.ant-btn-icon-only:enabled:focus i,.ant-btn-icon-only:enabled:hover i{color:#2a7cff}.ant-btn-icon-only:not(.ant-btn-background-ghost),.ant-btn-icon-only:not(.ant-btn-background-ghost):focus,.ant-btn-icon-only:not(.ant-btn-background-ghost):hover{background-color:#fff}.ant-btn-icon-only:disabled{background-color:#f3f3f4!important;cursor:default}.ant-btn-icon-only:disabled span i{color:#97a0ae}.cmacs-btn-action{height:30px}.ant-btn:not(.ant-btn-circle):not(.ant-btn-circle-outline).ant-btn-icon-only.cmacs-btn-action{padding-right:4px;padding-left:4px}.ant-btn:not(.ant-btn-circle):not(.ant-btn-circle-outline).ant-btn-icon-only{padding-right:6px;padding-left:6px}.ant-btn-danger{color:#fff;background-color:#ff4d4f;border-color:#ff4d4f}.ant-btn-favorite{background-color:transparent!important;border-color:transparent!important;outline:none!important}.ant-btn-favorite.ant-btn-icon-only>*{color:#ffc634!important}"], encapsulation: 2, changeDetection: 0 });
     __decorate([
         util.InputBoolean()
     ], CmacsButtonComponent.prototype, "block", void 0);
@@ -935,6 +935,7 @@
                             '[class.ant-btn-link]': "type === 'link'",
                             '[class.ant-btn-text]': "type === 'text'",
                             '[class.ant-btn-danger]': "type === 'danger'",
+                            '[class.ant-btn-favorite]': "type === 'favorite'",
                             '[class.ant-btn-circle]': "shape === 'circle'",
                             '[class.ant-btn-round]': "shape === 'round'",
                             '[class.ant-btn-lg]': "size === 'large'",
@@ -30498,10 +30499,10 @@
         }
         if (rf & 2) {
             var ctx_r326 = i0.ɵɵnextContext();
-            var data_r279 = ctx_r326.data;
             var field_r278 = ctx_r326.field;
+            var data_r279 = ctx_r326.data;
             var ctx_r284 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r284.validate(data_r279, field_r278));
+            i0.ɵɵclassProp("cmacs-compact-table-field-mode-status", field_r278.mode === "status")("cmacs-compact-table-field-mode-status-low-edit", field_r278.mode === "status" && ctx_r284.getClassStatus(data_r279, field_r278) === "low")("cmacs-compact-table-field-mode-status-medium-edit", field_r278.mode === "status" && ctx_r284.getClassStatus(data_r279, field_r278) === "medium")("cmacs-compact-table-field-mode-status-high-edit", field_r278.mode === "status" && ctx_r284.getClassStatus(data_r279, field_r278) === "high")("cmacs-compact-table-edit-mode-invalid", !ctx_r284.validate(data_r279, field_r278));
             i0.ɵɵproperty("placeHolder", field_r278.placeholder ? field_r278.placeholder : "")("mode", field_r278.mode ? field_r278.mode : "default")("showCmacsSearch", field_r278.showCmacsSearch)("ngModel", data_r279[field_r278.property]);
             i0.ɵɵadvance(2);
             i0.ɵɵproperty("ngForOf", field_r278.select.selectData);
@@ -30560,7 +30561,7 @@
             i0.ɵɵtemplate(0, CmacsCompactTableComponent_ng_template_6_input_0_Template, 2, 4, "input", 86);
             i0.ɵɵtemplate(1, CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template, 2, 4, "cmacs-date-picker", 87);
             i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template, 2, 6, "cmacs-datetime-picker", 88);
-            i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template, 3, 7, "cmacs-select", 89);
+            i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template, 3, 15, "cmacs-select", 89);
             i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_6_cmacs_input_number_4_Template, 2, 8, "cmacs-input-number", 90);
             i0.ɵɵtemplate(5, CmacsCompactTableComponent_ng_template_6_cmacs_input_number_5_Template, 2, 8, "cmacs-input-number", 91);
             i0.ɵɵtemplate(6, CmacsCompactTableComponent_ng_template_6_label_6_Template, 2, 3, "label", 92);
@@ -30697,60 +30698,70 @@
             i0.ɵɵclassProp("cmacs-compact-table-calendar-icon", ctx_r363.inLineEdit && field_r356.editable)("cmacs-compact-table-calendar-icon-view", !ctx_r363.inLineEdit || !field_r356.editable);
         }
     }
+    function CmacsCompactTableComponent_ng_template_8_ng_container_4_i_4_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 117);
+        }
+        if (rf & 2) {
+            var field_r356 = i0.ɵɵnextContext(2).field;
+            var ctx_r388 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-select-icon", ctx_r388.inLineEdit && field_r356.editable)("cmacs-compact-table-select-icon-view", !ctx_r388.inLineEdit || !field_r356.editable);
+        }
+    }
     function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template(rf, ctx) {
         if (rf & 1) {
-            var _r390_1 = i0.ɵɵgetCurrentView();
+            var _r392_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 108);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r390_1); var ctx_r389 = i0.ɵɵnextContext(); var data_r357 = ctx_r389.data; var field_r356 = ctx_r389.field; var ctx_r388 = i0.ɵɵnextContext(); return ctx_r388.startEdit(data_r357[ctx_r388.config.fieldId], field_r356.property, $event, data_r357); });
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r392_1); var ctx_r391 = i0.ɵɵnextContext(); var data_r357 = ctx_r391.data; var field_r356 = ctx_r391.field; var ctx_r390 = i0.ɵɵnextContext(); return ctx_r390.startEdit(data_r357[ctx_r390.config.fieldId], field_r356.property, $event, data_r357); });
             i0.ɵɵelementStart(2, "div", 115);
-            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r390_1); var ctx_r392 = i0.ɵɵnextContext(); var i_r358 = ctx_r392.i; var field_r356 = ctx_r392.field; var ctx_r391 = i0.ɵɵnextContext(); return ctx_r391.onDataTapEllipsis(ctx_r391.gridID + "-row-" + i_r358 + "-" + field_r356.property); });
+            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r392_1); var ctx_r394 = i0.ɵɵnextContext(); var i_r358 = ctx_r394.i; var field_r356 = ctx_r394.field; var ctx_r393 = i0.ɵɵnextContext(); return ctx_r393.onDataTapEllipsis(ctx_r393.gridID + "-row-" + i_r358 + "-" + field_r356.property); });
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
-            i0.ɵɵelement(4, "i", 116);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_4_i_4_Template, 1, 4, "i", 116);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r393 = i0.ɵɵnextContext();
-            var data_r357 = ctx_r393.data;
-            var field_r356 = ctx_r393.field;
-            var item_r359 = ctx_r393.item;
-            var i_r358 = ctx_r393.i;
+            var ctx_r395 = i0.ɵɵnextContext();
+            var data_r357 = ctx_r395.data;
+            var field_r356 = ctx_r395.field;
+            var item_r359 = ctx_r395.item;
+            var i_r358 = ctx_r395.i;
             var ctx_r364 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
             i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r364.editId === data_r357[ctx_r364.config.fieldId] && ctx_r364.property === field_r356.property && field_r356.editable && (ctx_r364.isString(field_r356) || ctx_r364.isDate(field_r356) || ctx_r364.isSelect(field_r356) || ctx_r364.isTime(field_r356)))("cmacs-compact-table-on-edit-no-padding", ctx_r364.editId === data_r357[ctx_r364.config.fieldId] && ctx_r364.property === field_r356.property && field_r356.editable && (ctx_r364.isNumber(field_r356) || ctx_r364.isDate(field_r356) || ctx_r364.isTime(field_r356) || ctx_r364.isString(field_r356)));
             i0.ɵɵadvance(1);
             i0.ɵɵstyleProp("max-width", ctx_r364.getMaxWidth(field_r356, item_r359, i_r358));
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r364.validate(data_r357, field_r356))("cmacs-compact-table-overflow-cell", !ctx_r364.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r364.isNull(ctx_r364.getLabel(data_r357, field_r356)) || !ctx_r364.getLabel(data_r357, field_r356).length);
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r364.validate(data_r357, field_r356))("cmacs-compact-table-overflow-cell", !ctx_r364.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r364.isNull(ctx_r364.getLabel(data_r357, field_r356)) || !ctx_r364.getLabel(data_r357, field_r356).length)("cmacs-compact-table-field-mode-status-low", field_r356.mode === "status" && ctx_r364.getClassStatus(data_r357, field_r356) === "low")("cmacs-compact-table-field-mode-status-medium", field_r356.mode === "status" && ctx_r364.getClassStatus(data_r357, field_r356) === "medium")("cmacs-compact-table-field-mode-status-high", field_r356.mode === "status" && ctx_r364.getClassStatus(data_r357, field_r356) === "high");
             i0.ɵɵattributeInterpolate3("id", "", ctx_r364.gridID, "-row-", i_r358, "-", field_r356.property, "");
             i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r364.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r364.isEllipsisActive(ctx_r364.gridID + "-row-" + i_r358 + "-" + field_r356.property, field_r356) ? ctx_r364.getLabel(data_r357, field_r356) && ctx_r364.getLabel(data_r357, field_r356).length ? ctx_r364.getLabel(data_r357, field_r356) : field_r356.placeholder : null);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate(ctx_r364.getLabel(data_r357, field_r356) && ctx_r364.getLabel(data_r357, field_r356).length ? ctx_r364.getLabel(data_r357, field_r356) : field_r356.placeholder);
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-select-icon", ctx_r364.inLineEdit && field_r356.editable)("cmacs-compact-table-select-icon-view", !ctx_r364.inLineEdit || !field_r356.editable);
+            i0.ɵɵproperty("ngIf", field_r356.mode !== "status");
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
-            var _r396_1 = i0.ɵɵgetCurrentView();
+            var _r398_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 108);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r396_1); var ctx_r395 = i0.ɵɵnextContext(); var data_r357 = ctx_r395.data; var field_r356 = ctx_r395.field; var ctx_r394 = i0.ɵɵnextContext(); return ctx_r394.startEdit(data_r357[ctx_r394.config.fieldId], field_r356.property, $event, data_r357); });
-            i0.ɵɵelementStart(2, "div", 117);
-            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r396_1); var ctx_r398 = i0.ɵɵnextContext(); var i_r358 = ctx_r398.i; var field_r356 = ctx_r398.field; var ctx_r397 = i0.ɵɵnextContext(); return ctx_r397.onDataTapEllipsis(ctx_r397.gridID + "-row-" + i_r358 + "-" + field_r356.property); });
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r398_1); var ctx_r397 = i0.ɵɵnextContext(); var data_r357 = ctx_r397.data; var field_r356 = ctx_r397.field; var ctx_r396 = i0.ɵɵnextContext(); return ctx_r396.startEdit(data_r357[ctx_r396.config.fieldId], field_r356.property, $event, data_r357); });
+            i0.ɵɵelementStart(2, "div", 118);
+            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r398_1); var ctx_r400 = i0.ɵɵnextContext(); var i_r358 = ctx_r400.i; var field_r356 = ctx_r400.field; var ctx_r399 = i0.ɵɵnextContext(); return ctx_r399.onDataTapEllipsis(ctx_r399.gridID + "-row-" + i_r358 + "-" + field_r356.property); });
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
-            i0.ɵɵelement(4, "i", 118);
+            i0.ɵɵelement(4, "i", 119);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r399 = i0.ɵɵnextContext();
-            var data_r357 = ctx_r399.data;
-            var field_r356 = ctx_r399.field;
-            var item_r359 = ctx_r399.item;
-            var i_r358 = ctx_r399.i;
+            var ctx_r401 = i0.ɵɵnextContext();
+            var data_r357 = ctx_r401.data;
+            var field_r356 = ctx_r401.field;
+            var item_r359 = ctx_r401.item;
+            var i_r358 = ctx_r401.i;
             var ctx_r365 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
             i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r365.editId === data_r357[ctx_r365.config.fieldId] && ctx_r365.property === field_r356.property && field_r356.editable && (ctx_r365.isString(field_r356) || ctx_r365.isDate(field_r356) || ctx_r365.isSelect(field_r356) || ctx_r365.isTime(field_r356)))("cmacs-compact-table-on-edit-no-padding", ctx_r365.editId === data_r357[ctx_r365.config.fieldId] && ctx_r365.property === field_r356.property && field_r356.editable && (ctx_r365.isNumber(field_r356) || ctx_r365.isDate(field_r356) || ctx_r365.isTime(field_r356) || ctx_r365.isString(field_r356)));
@@ -30767,33 +30778,7 @@
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_6_span_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "span", 122);
-        }
-        if (rf & 2) {
-            var ctx_r403 = i0.ɵɵnextContext(2);
-            var data_r357 = ctx_r403.data;
-            var field_r356 = ctx_r403.field;
-            var ctx_r400 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r400.validate(data_r357, field_r356));
-        }
-    }
-    function CmacsCompactTableComponent_ng_template_8_ng_container_6_span_3_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelementStart(0, "span", 123);
-            i0.ɵɵelement(1, "span", 124);
-            i0.ɵɵelementEnd();
-        }
-        if (rf & 2) {
-            var ctx_r404 = i0.ɵɵnextContext(2);
-            var data_r357 = ctx_r404.data;
-            var field_r356 = ctx_r404.field;
-            var ctx_r401 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r401.validate(data_r357, field_r356));
-        }
-    }
-    function CmacsCompactTableComponent_ng_template_8_ng_container_6_i_4_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelement(0, "i", 125);
+            i0.ɵɵelement(0, "span", 123);
         }
         if (rf & 2) {
             var ctx_r405 = i0.ɵɵnextContext(2);
@@ -30803,22 +30788,48 @@
             i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r402.validate(data_r357, field_r356));
         }
     }
+    function CmacsCompactTableComponent_ng_template_8_ng_container_6_span_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "span", 124);
+            i0.ɵɵelement(1, "span", 125);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r406 = i0.ɵɵnextContext(2);
+            var data_r357 = ctx_r406.data;
+            var field_r356 = ctx_r406.field;
+            var ctx_r403 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r403.validate(data_r357, field_r356));
+        }
+    }
+    function CmacsCompactTableComponent_ng_template_8_ng_container_6_i_4_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 126);
+        }
+        if (rf & 2) {
+            var ctx_r407 = i0.ɵɵnextContext(2);
+            var data_r357 = ctx_r407.data;
+            var field_r356 = ctx_r407.field;
+            var ctx_r404 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r404.validate(data_r357, field_r356));
+        }
+    }
     function CmacsCompactTableComponent_ng_template_8_ng_container_6_Template(rf, ctx) {
         if (rf & 1) {
-            var _r408_1 = i0.ɵɵgetCurrentView();
+            var _r410_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 108);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_6_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r408_1); var ctx_r407 = i0.ɵɵnextContext(); var data_r357 = ctx_r407.data; var field_r356 = ctx_r407.field; var ctx_r406 = i0.ɵɵnextContext(); return ctx_r406.startEdit(data_r357[ctx_r406.config.fieldId], field_r356.property, $event, data_r357); });
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_8_ng_container_6_span_2_Template, 1, 2, "span", 119);
-            i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_8_ng_container_6_span_3_Template, 2, 2, "span", 120);
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_6_i_4_Template, 1, 2, "i", 121);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_6_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r410_1); var ctx_r409 = i0.ɵɵnextContext(); var data_r357 = ctx_r409.data; var field_r356 = ctx_r409.field; var ctx_r408 = i0.ɵɵnextContext(); return ctx_r408.startEdit(data_r357[ctx_r408.config.fieldId], field_r356.property, $event, data_r357); });
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_8_ng_container_6_span_2_Template, 1, 2, "span", 120);
+            i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_8_ng_container_6_span_3_Template, 2, 2, "span", 121);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_6_i_4_Template, 1, 2, "i", 122);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r409 = i0.ɵɵnextContext();
-            var data_r357 = ctx_r409.data;
-            var field_r356 = ctx_r409.field;
+            var ctx_r411 = i0.ɵɵnextContext();
+            var data_r357 = ctx_r411.data;
+            var field_r356 = ctx_r411.field;
             var ctx_r366 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
             i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r366.editId === data_r357[ctx_r366.config.fieldId] && ctx_r366.property === field_r356.property && field_r356.editable && (ctx_r366.isString(field_r356) || ctx_r366.isDate(field_r356) || ctx_r366.isSelect(field_r356) || ctx_r366.isTime(field_r356)))("cmacs-compact-table-on-edit-no-padding", ctx_r366.editId === data_r357[ctx_r366.config.fieldId] && ctx_r366.property === field_r356.property && field_r356.editable && (ctx_r366.isNumber(field_r356) || ctx_r366.isDate(field_r356) || ctx_r366.isTime(field_r356) || ctx_r366.isString(field_r356)));
@@ -30837,18 +30848,18 @@
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_7_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementContainerStart(0, null, 126);
-            i0.ɵɵelementStart(2, "div", 127);
+            i0.ɵɵelementContainerStart(0, null, 127);
+            i0.ɵɵelementStart(2, "div", 128);
             i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_8_ng_container_7_ng_container_3_Template, 1, 0, "ng-container", 49);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r412 = i0.ɵɵnextContext();
-            var data_r357 = ctx_r412.data;
-            var field_r356 = ctx_r412.field;
-            var ci_r360 = ctx_r412.ci;
-            var i_r358 = ctx_r412.i;
+            var ctx_r414 = i0.ɵɵnextContext();
+            var data_r357 = ctx_r414.data;
+            var field_r356 = ctx_r414.field;
+            var ci_r360 = ctx_r414.ci;
+            var i_r358 = ctx_r414.i;
             var ctx_r367 = i0.ɵɵnextContext();
             i0.ɵɵadvance(2);
             i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r367.editId === data_r357[ctx_r367.config.fieldId] && ctx_r367.property === field_r356.property && field_r356.editable && (ctx_r367.isString(field_r356) || ctx_r367.isDate(field_r356) || ctx_r367.isSelect(field_r356) || ctx_r367.isTime(field_r356)))("cmacs-compact-table-on-edit-no-padding", ctx_r367.editId === data_r357[ctx_r367.config.fieldId] && ctx_r367.property === field_r356.property && field_r356.editable && (ctx_r367.isNumber(field_r356) || ctx_r367.isDate(field_r356) || ctx_r367.isTime(field_r356) || ctx_r367.isString(field_r356)));
@@ -30863,7 +30874,7 @@
             i0.ɵɵtemplate(1, CmacsCompactTableComponent_ng_template_8_ng_container_1_Template, 5, 19, "ng-container", 3);
             i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_8_ng_container_2_Template, 5, 22, "ng-container", 3);
             i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_8_ng_container_3_Template, 7, 28, "ng-container", 3);
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_4_Template, 5, 22, "ng-container", 3);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_4_Template, 5, 25, "ng-container", 3);
             i0.ɵɵtemplate(5, CmacsCompactTableComponent_ng_template_8_ng_container_5_Template, 5, 22, "ng-container", 3);
             i0.ɵɵtemplate(6, CmacsCompactTableComponent_ng_template_8_ng_container_6_Template, 5, 7, "ng-container", 3);
             i0.ɵɵtemplate(7, CmacsCompactTableComponent_ng_template_8_ng_container_7_Template, 4, 7, "ng-container", 3);
@@ -32173,7 +32184,7 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("cmacs-compact-table-logs", ctx.logs);
             }
-        }, inputs: { size: "size", showTotal: "showTotal", pageSizeOptions: "pageSizeOptions", virtualScroll: "virtualScroll", exclusiveSelect: "exclusiveSelect", logs: "logs", expandable: "expandable", smartTable: "smartTable", draggable: "draggable", virtualItemSize: "virtualItemSize", expandAll: "expandAll", loadingDelay: "loadingDelay", loadingIndicator: "loadingIndicator", total: "total", title: "title", footer: "footer", noResult: "noResult", widthConfig: "widthConfig", pageIndex: "pageIndex", pageSize: "pageSize", actionColumnWidth: "actionColumnWidth", wrapLines: "wrapLines", data: "data", config: "config", use12Hours: "use12Hours", fieldId: "fieldId", gridID: "gridID", paginationPosition: "paginationPosition", scroll: "scroll", frontPagination: "frontPagination", templateMode: "templateMode", bordered: "bordered", centerTable: "centerTable", showPagination: "showPagination", loading: "loading", showSizeChanger: "showSizeChanger", hideOnSinglePage: "hideOnSinglePage", showQuickJumper: "showQuickJumper", simple: "simple", checkboxSelect: "checkboxSelect", inLineEdit: "inLineEdit", dataTable: "dataTable", showRate: "showRate", exportEvent: "exportEvent", rateCount: "rateCount", multiSelect: "multiSelect", extra: "extra", contextmenu: "contextmenu", indentSize: "indentSize", virtualMaxBufferPx: "virtualMaxBufferPx" }, outputs: { configChange: "configChange", buttonClick: "buttonClick", rateChange: "rateChange", selectionChange: "selectionChange", ondlclickRow: "ondlclickRow", onclickRow: "onclickRow", onedit: "onedit", onRowExpandCollapse: "onRowExpandCollapse", ondrop: "ondrop", sortChange: "sortChange", filterChange: "filterChange", onrowdeleted: "onrowdeleted", onrowadded: "onrowadded", onresize: "onresize", oncontextmenu: "oncontextmenu" }, exportAs: ["cmacsCompactTable"], features: [i0.ɵɵNgOnChangesFeature], decls: 10, vars: 36, consts: [[3, "id"], [1, "cmacs-compact-table", 3, "nzData", "nzShowTotal", "nzPageSizeOptions", "nzVirtualItemSize", "nzLoadingDelay", "nzVirtualMaxBufferPx", "nzLoadingIndicator", "nzTotal", "nzTitle", "nzFooter", "nzNoResult", "nzWidthConfig", "nzPageIndex", "nzPageSize", "nzPaginationPosition", "nzScroll", "nzFrontPagination", "nzTemplateMode", "nzShowPagination", "nzLoading", "nzShowSizeChanger", "nzHideOnSinglePage", "nzShowQuickJumper", "nzSimple"], ["gridComponent", ""], [4, "ngIf"], ["cdkDropList", "", 3, "cdkDropListDropped", 4, "ngIf"], ["editTpl", ""], ["viewModeTpl", ""], ["nzWidth", "40px", "class", "cmacs-compact-table-smart-table-hot-spot-row-add cmacs-compact-table-smart-action-header", 3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "minWidth", "maxWidth", "nzLeft", 4, "ngIf"], ["nzWidth", "40px", 3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], ["nzWidth", "30px", "nzLeft", "0px", 3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzWidth", "maxWidth", "minWidth", "nzRight", 4, "ngIf"], ["nzWidth", "40px", "class", "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "minWidth", "maxWidth", "nzRight", "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], [3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], ["nzWidth", "40px", 1, "cmacs-compact-table-smart-table-hot-spot-row-add", "cmacs-compact-table-smart-action-header", 3, "nzLeft"], [1, "cmacs-compact-table-smart-table-hot-spot-row-add-icon", "iconUILarge-New", 3, "click"], ["nzWidth", "40px", 3, "nzLeft"], ["nzWidth", "30px", "nzLeft", "0px", 3, "nzLeft"], ["cmacs-checkbox", "", 3, "ngModel", "indeterminate", "ngModelChange", "checkedChange"], [4, "ngIf", "ngIfElse"], ["thWithFilters", ""], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzShowSort", "nzShowFilter", "nzFilters", "nzFilterMultiple", "nzDisabled", "nzMinWidth", "nzMaxWidth", "ngClass", "nzSortOrder", "nzWidth", "nzLeft", "nzRight", "nzFilterChange", "nzResizeEnd", "nzSortOrderChange"], [3, "id", 4, "ngIf"], ["nzDirection", "right", 4, "ngIf"], ["cmacs-tooltip", "", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nzDirection", "right"], [1, "cmacs-compact-table-resize-trigger"], ["nzCustomFilter", "", "nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzShowSort", "nzDisabled", "ngClass", "nzSortOrder", "nzWidth", "nzMinWidth", "nzMaxWidth", "nzLeft", "nzRight", "nzResizeEnd", "nzSortOrderChange"], ["nzTrigger", "click", "nzPlacement", "bottomRight", "nzTableFilter", "", 3, "nzClickHide"], ["dropdown", ""], ["nz-icon", "", "nzType", "search", "nz-dropdown", "", 1, "ant-table-filter-icon"], [3, "nzWidth", "nzRight"], [1, "cmacs-compact-table-extra"], [4, "nzStringTemplateOutlet"], ["nzWidth", "40px", 1, "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "nzRight"], ["cdkDropList", "", 3, "cdkDropListDropped"], ["defaultTpl", ""], [3, "id", "cmacs-compact-table-expandable-row", "cmacs-compact-table-row-active", "cmacs-compact-table-header-logs", "ant-table-selected-row", "click", "touchstart", "contextmenu", "dblclick", 4, "ngIf"], [3, "id", "click", "touchstart", "contextmenu", "dblclick"], ["style", "padding: 7px 10px", 3, "nzLeft", "minWidth", "maxWidth", "width", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], [3, "ngClass", "cmacs-editable-column", "cmacs-compact-table-on-edit-expandable", "cmacs-compact-table-logs-header-th-font", "cmacs-compact-table-expandable-td", "paddingLeft", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "minWidth", "nzExpandChange", 4, "ngFor", "ngForOf"], ["class", "cmacs-compact-table-rating", "style", "padding: 7px 10px", 3, "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "cmacs-compact-table-logs-header-th-font", "nzRight", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-align-td", 3, "cmacs-compact-table-logs-td", 4, "ngIf"], [2, "padding", "7px 10px", 3, "nzLeft"], [3, "ngClass", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "nzExpandChange"], [3, "display", "cmacs-compact-table-overflow-cell-container-logs", "width", 4, "ngIf"], [3, "display", "width", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-compact-table-rating", 2, "padding", "7px 10px"], [3, "ngModel", "nzCount", "nzDisabled", "ngModelChange", "click"], [2, "padding", "7px 10px", 3, "nzRight"], [1, "cmacs-compact-table-align-td", 2, "padding", "7px 10px"], ["cdkDrag", "", "class", "cmacs-no-selection", 3, "cdkDragDisabled", "id", "cmacs-compact-table-row-active", "ant-table-selected-row", "cmacs-compact-table-editable-row", "cmacs-compact-table-smart-table-row", "click", "touchstart", "contextmenu", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "cmacs-no-selection", 3, "cdkDragDisabled", "id", "click", "touchstart", "contextmenu"], ["contextMenuTemplate", "cmacsDropdownMenu"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-add", 3, "maxWidth", "minWidth", "cmacs-compact-table-logs-td", "nzLeft", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-drag-col cmacs-compact-table-fst-td", 3, "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "nzLeft", "cmacs-compact-table-fst-td", 4, "ngIf"], [3, "ngClass", "cmacs-editable-column", "cmacs-compact-table-fst-td", "nzLeft", "nzRight", "minWidth", 4, "ngFor", "ngForOf"], ["style", "padding: 7px 10px", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "nzRight", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "nzRight", "maxWidth", "minWidth", "cmacs-compact-table-logs-td", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-row-add", 2, "padding", "7px 10px", 3, "nzLeft"], [1, "cmacs-compact-table-drag-col", "cmacs-compact-table-fst-td", 2, "padding", "7px 10px", 3, "nzLeft"], ["cdkDragHandle", "", 1, "iconUILarge-Move", "cmacs-compact-table-drag-handler"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange"], [3, "ngClass", "nzLeft", "nzRight"], ["style", "max-width: 98%", 4, "ngIf"], [2, "max-width", "98%"], [2, "padding", "7px 10px"], [3, "ngModel", "nzCount", "ngModelChange", "click"], [1, "cmacs-compact-table-smart-table-hot-spot-row-delete", 2, "padding", "7px 10px", 3, "nzRight"], ["class", "cmacs-compact-table-smart-table-hot-spot-row-delete-icon iconUISmall-Close", 3, "click", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-row-delete-icon", "iconUISmall-Close", 3, "click"], ["nz-virtual-scroll", ""], ["defaultTplVirtualScroll", ""], [3, "id", "cmacs-compact-table-row-active", "cmacs-compact-table-expandable-row", "cmacs-compact-table-header-logs", "touchstart", "contextmenu", "dblclick", 4, "ngIf"], [3, "id", "touchstart", "contextmenu", "dblclick"], [3, "cmacs-editable-column", "cmacs-compact-table-on-edit-expandable", "cmacs-compact-table-logs-header-th-font", "cmacs-compact-table-expandable-td", "paddingLeft", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "minWidth", "nzExpandChange", 4, "ngFor", "ngForOf"], [3, "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "nzExpandChange"], ["contextMenuTemplate", ""], [3, "cmacs-editable-column", "cmacs-compact-table-fst-td", "nzLeft", "nzRight", "minWidth", 4, "ngFor", "ngForOf"], [3, "nzLeft", "nzRight"], ["class", "cmacs-compact-table-input", "type", "text", "cmacs-input", "", 3, "cmacs-compact-table-edit-mode-invalid", "placeholder", "ngModel", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["class", "cmacs-compact-table-date-edit", 3, "allowClear", "cmacs-compact-table-edit-mode-invalid", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["class", "cmacs-compact-table-datetime-picker", "hideSeconds", "", 3, "use12Hours", "cmacs-compact-table-edit-mode-invalid", "format", "defaultOpenValue", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["class", "cmacs-compact-table-select-cell", "showSearch", "", 3, "cmacs-compact-table-edit-mode-invalid", "placeHolder", "mode", "showCmacsSearch", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["class", "cmacs-compact-table-input-number-edit", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "cmacsStep", "min", "max", "formatter", "parser", "ngModelChange", "click", "dblclick", "keyup", 4, "ngIf"], ["class", "cmacs-compact-table-input-number-edit", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "formatter", "parser", "cmacsStep", "min", "max", "ngModelChange", "click", "dblclick", "keyup", 4, "ngIf"], ["cmacs-checkbox", "", "class", "cmacs-compact-tabe-editable-checkbox", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "ngModelChange", 4, "ngIf"], ["type", "text", "cmacs-input", "", 1, "cmacs-compact-table-input", 3, "placeholder", "ngModel", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInput", ""], [1, "cmacs-compact-table-date-edit", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDatePicker", ""], ["hideSeconds", "", 1, "cmacs-compact-table-datetime-picker", 3, "use12Hours", "format", "defaultOpenValue", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDateTimePicker", ""], ["showSearch", "", 1, "cmacs-compact-table-select-cell", 3, "placeHolder", "mode", "showCmacsSearch", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeSelect", ""], [3, "label", "value", "divider", "disabled", 4, "ngFor", "ngForOf"], [3, "label", "value", "divider", "disabled"], [1, "cmacs-compact-table-input-number-edit", 3, "ngModel", "cmacsStep", "min", "max", "formatter", "parser", "ngModelChange", "click", "dblclick", "keyup"], ["fieldTypeInputNumber", ""], [1, "cmacs-compact-table-input-number-edit", 3, "ngModel", "formatter", "parser", "cmacsStep", "min", "max", "ngModelChange", "click", "dblclick", "keyup"], ["cmacs-checkbox", "", 1, "cmacs-compact-tabe-editable-checkbox", 3, "ngModel", "ngModelChange"], ["fieldTypeBool", ""], [2, "width", "98%", "max-width", "98%", "padding", "7px 10px", 3, "click"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], ["class", "iconUISmall-Edit", 3, "cmacs-compact-table-edit-icon", "cmacs-compact-table-edit-icon-view", 4, "ngIf"], [1, "iconUISmall-Edit"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-date", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [1, "iconUILarge-Calendar"], [1, "iconUILarge-Time"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-select", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [1, "iconArrowLarge-Chevron-Down"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-input-number", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [1, "iconArrowLarge-Solid-UpDown"], ["class", "cmacs-compact-table-boolean-false-icon cmacs-compact-table-boolean-icon", 3, "cmacs-compact-table-invalid", 4, "ngIf"], ["class", "cmacs-compact-table-boolean-indeterminate-icon cmacs-compact-table-boolean-icon", 3, "cmacs-compact-table-invalid", 4, "ngIf"], ["class", "iconUILarge-Select-All cmacs-compact-table-boolean-icon-true", 3, "cmacs-compact-table-invalid", 4, "ngIf"], [1, "cmacs-compact-table-boolean-false-icon", "cmacs-compact-table-boolean-icon"], [1, "cmacs-compact-table-boolean-indeterminate-icon", "cmacs-compact-table-boolean-icon"], [1, "cmacs-compact-table-boolean-indeterminate-icon-inner"], [1, "iconUILarge-Select-All", "cmacs-compact-table-boolean-icon-true"], ["templateRefCeld", ""], [2, "width", "98%", "max-width", "98%", "padding", "7px 10px", 3, "id"]], template: function CmacsCompactTableComponent_Template(rf, ctx) {
+        }, inputs: { size: "size", showTotal: "showTotal", pageSizeOptions: "pageSizeOptions", virtualScroll: "virtualScroll", exclusiveSelect: "exclusiveSelect", logs: "logs", expandable: "expandable", smartTable: "smartTable", draggable: "draggable", virtualItemSize: "virtualItemSize", expandAll: "expandAll", loadingDelay: "loadingDelay", loadingIndicator: "loadingIndicator", total: "total", title: "title", footer: "footer", noResult: "noResult", widthConfig: "widthConfig", pageIndex: "pageIndex", pageSize: "pageSize", actionColumnWidth: "actionColumnWidth", wrapLines: "wrapLines", data: "data", config: "config", use12Hours: "use12Hours", fieldId: "fieldId", gridID: "gridID", paginationPosition: "paginationPosition", scroll: "scroll", frontPagination: "frontPagination", templateMode: "templateMode", bordered: "bordered", centerTable: "centerTable", showPagination: "showPagination", loading: "loading", showSizeChanger: "showSizeChanger", hideOnSinglePage: "hideOnSinglePage", showQuickJumper: "showQuickJumper", simple: "simple", checkboxSelect: "checkboxSelect", inLineEdit: "inLineEdit", dataTable: "dataTable", showRate: "showRate", exportEvent: "exportEvent", rateCount: "rateCount", multiSelect: "multiSelect", extra: "extra", contextmenu: "contextmenu", indentSize: "indentSize", virtualMaxBufferPx: "virtualMaxBufferPx" }, outputs: { configChange: "configChange", buttonClick: "buttonClick", rateChange: "rateChange", selectionChange: "selectionChange", ondlclickRow: "ondlclickRow", onclickRow: "onclickRow", onedit: "onedit", onRowExpandCollapse: "onRowExpandCollapse", ondrop: "ondrop", sortChange: "sortChange", filterChange: "filterChange", onrowdeleted: "onrowdeleted", onrowadded: "onrowadded", onresize: "onresize", oncontextmenu: "oncontextmenu" }, exportAs: ["cmacsCompactTable"], features: [i0.ɵɵNgOnChangesFeature], decls: 10, vars: 36, consts: [[3, "id"], [1, "cmacs-compact-table", 3, "nzData", "nzShowTotal", "nzPageSizeOptions", "nzVirtualItemSize", "nzLoadingDelay", "nzVirtualMaxBufferPx", "nzLoadingIndicator", "nzTotal", "nzTitle", "nzFooter", "nzNoResult", "nzWidthConfig", "nzPageIndex", "nzPageSize", "nzPaginationPosition", "nzScroll", "nzFrontPagination", "nzTemplateMode", "nzShowPagination", "nzLoading", "nzShowSizeChanger", "nzHideOnSinglePage", "nzShowQuickJumper", "nzSimple"], ["gridComponent", ""], [4, "ngIf"], ["cdkDropList", "", 3, "cdkDropListDropped", 4, "ngIf"], ["editTpl", ""], ["viewModeTpl", ""], ["nzWidth", "40px", "class", "cmacs-compact-table-smart-table-hot-spot-row-add cmacs-compact-table-smart-action-header", 3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "minWidth", "maxWidth", "nzLeft", 4, "ngIf"], ["nzWidth", "40px", 3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], ["nzWidth", "30px", "nzLeft", "0px", 3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzWidth", "maxWidth", "minWidth", "nzRight", 4, "ngIf"], ["nzWidth", "40px", "class", "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "minWidth", "maxWidth", "nzRight", "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], [3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], ["nzWidth", "40px", 1, "cmacs-compact-table-smart-table-hot-spot-row-add", "cmacs-compact-table-smart-action-header", 3, "nzLeft"], [1, "cmacs-compact-table-smart-table-hot-spot-row-add-icon", "iconUILarge-New", 3, "click"], ["nzWidth", "40px", 3, "nzLeft"], ["nzWidth", "30px", "nzLeft", "0px", 3, "nzLeft"], ["cmacs-checkbox", "", 3, "ngModel", "indeterminate", "ngModelChange", "checkedChange"], [4, "ngIf", "ngIfElse"], ["thWithFilters", ""], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzShowSort", "nzShowFilter", "nzFilters", "nzFilterMultiple", "nzDisabled", "nzMinWidth", "nzMaxWidth", "ngClass", "nzSortOrder", "nzWidth", "nzLeft", "nzRight", "nzFilterChange", "nzResizeEnd", "nzSortOrderChange"], [3, "id", 4, "ngIf"], ["nzDirection", "right", 4, "ngIf"], ["cmacs-tooltip", "", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nzDirection", "right"], [1, "cmacs-compact-table-resize-trigger"], ["nzCustomFilter", "", "nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzShowSort", "nzDisabled", "ngClass", "nzSortOrder", "nzWidth", "nzMinWidth", "nzMaxWidth", "nzLeft", "nzRight", "nzResizeEnd", "nzSortOrderChange"], ["nzTrigger", "click", "nzPlacement", "bottomRight", "nzTableFilter", "", 3, "nzClickHide"], ["dropdown", ""], ["nz-icon", "", "nzType", "search", "nz-dropdown", "", 1, "ant-table-filter-icon"], [3, "nzWidth", "nzRight"], [1, "cmacs-compact-table-extra"], [4, "nzStringTemplateOutlet"], ["nzWidth", "40px", 1, "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "nzRight"], ["cdkDropList", "", 3, "cdkDropListDropped"], ["defaultTpl", ""], [3, "id", "cmacs-compact-table-expandable-row", "cmacs-compact-table-row-active", "cmacs-compact-table-header-logs", "ant-table-selected-row", "click", "touchstart", "contextmenu", "dblclick", 4, "ngIf"], [3, "id", "click", "touchstart", "contextmenu", "dblclick"], ["style", "padding: 7px 10px", 3, "nzLeft", "minWidth", "maxWidth", "width", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], [3, "ngClass", "cmacs-editable-column", "cmacs-compact-table-on-edit-expandable", "cmacs-compact-table-logs-header-th-font", "cmacs-compact-table-expandable-td", "paddingLeft", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "minWidth", "nzExpandChange", 4, "ngFor", "ngForOf"], ["class", "cmacs-compact-table-rating", "style", "padding: 7px 10px", 3, "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "cmacs-compact-table-logs-header-th-font", "nzRight", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-align-td", 3, "cmacs-compact-table-logs-td", 4, "ngIf"], [2, "padding", "7px 10px", 3, "nzLeft"], [3, "ngClass", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "nzExpandChange"], [3, "display", "cmacs-compact-table-overflow-cell-container-logs", "width", 4, "ngIf"], [3, "display", "width", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-compact-table-rating", 2, "padding", "7px 10px"], [3, "ngModel", "nzCount", "nzDisabled", "ngModelChange", "click"], [2, "padding", "7px 10px", 3, "nzRight"], [1, "cmacs-compact-table-align-td", 2, "padding", "7px 10px"], ["cdkDrag", "", "class", "cmacs-no-selection", 3, "cdkDragDisabled", "id", "cmacs-compact-table-row-active", "ant-table-selected-row", "cmacs-compact-table-editable-row", "cmacs-compact-table-smart-table-row", "click", "touchstart", "contextmenu", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "cmacs-no-selection", 3, "cdkDragDisabled", "id", "click", "touchstart", "contextmenu"], ["contextMenuTemplate", "cmacsDropdownMenu"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-add", 3, "maxWidth", "minWidth", "cmacs-compact-table-logs-td", "nzLeft", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-drag-col cmacs-compact-table-fst-td", 3, "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "nzLeft", "cmacs-compact-table-fst-td", 4, "ngIf"], [3, "ngClass", "cmacs-editable-column", "cmacs-compact-table-fst-td", "nzLeft", "nzRight", "minWidth", 4, "ngFor", "ngForOf"], ["style", "padding: 7px 10px", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "nzRight", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "nzRight", "maxWidth", "minWidth", "cmacs-compact-table-logs-td", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-row-add", 2, "padding", "7px 10px", 3, "nzLeft"], [1, "cmacs-compact-table-drag-col", "cmacs-compact-table-fst-td", 2, "padding", "7px 10px", 3, "nzLeft"], ["cdkDragHandle", "", 1, "iconUILarge-Move", "cmacs-compact-table-drag-handler"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange"], [3, "ngClass", "nzLeft", "nzRight"], ["style", "max-width: 98%", 4, "ngIf"], [2, "max-width", "98%"], [2, "padding", "7px 10px"], [3, "ngModel", "nzCount", "ngModelChange", "click"], [1, "cmacs-compact-table-smart-table-hot-spot-row-delete", 2, "padding", "7px 10px", 3, "nzRight"], ["class", "cmacs-compact-table-smart-table-hot-spot-row-delete-icon iconUISmall-Close", 3, "click", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-row-delete-icon", "iconUISmall-Close", 3, "click"], ["nz-virtual-scroll", ""], ["defaultTplVirtualScroll", ""], [3, "id", "cmacs-compact-table-row-active", "cmacs-compact-table-expandable-row", "cmacs-compact-table-header-logs", "touchstart", "contextmenu", "dblclick", 4, "ngIf"], [3, "id", "touchstart", "contextmenu", "dblclick"], [3, "cmacs-editable-column", "cmacs-compact-table-on-edit-expandable", "cmacs-compact-table-logs-header-th-font", "cmacs-compact-table-expandable-td", "paddingLeft", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "minWidth", "nzExpandChange", 4, "ngFor", "ngForOf"], [3, "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "nzExpandChange"], ["contextMenuTemplate", ""], [3, "cmacs-editable-column", "cmacs-compact-table-fst-td", "nzLeft", "nzRight", "minWidth", 4, "ngFor", "ngForOf"], [3, "nzLeft", "nzRight"], ["class", "cmacs-compact-table-input", "type", "text", "cmacs-input", "", 3, "cmacs-compact-table-edit-mode-invalid", "placeholder", "ngModel", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["class", "cmacs-compact-table-date-edit", 3, "allowClear", "cmacs-compact-table-edit-mode-invalid", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["class", "cmacs-compact-table-datetime-picker", "hideSeconds", "", 3, "use12Hours", "cmacs-compact-table-edit-mode-invalid", "format", "defaultOpenValue", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["class", "cmacs-compact-table-select-cell", "showSearch", "", 3, "cmacs-compact-table-field-mode-status", "cmacs-compact-table-field-mode-status-low-edit", "cmacs-compact-table-field-mode-status-medium-edit", "cmacs-compact-table-field-mode-status-high-edit", "cmacs-compact-table-edit-mode-invalid", "placeHolder", "mode", "showCmacsSearch", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["class", "cmacs-compact-table-input-number-edit", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "cmacsStep", "min", "max", "formatter", "parser", "ngModelChange", "click", "dblclick", "keyup", 4, "ngIf"], ["class", "cmacs-compact-table-input-number-edit", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "formatter", "parser", "cmacsStep", "min", "max", "ngModelChange", "click", "dblclick", "keyup", 4, "ngIf"], ["cmacs-checkbox", "", "class", "cmacs-compact-tabe-editable-checkbox", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "ngModelChange", 4, "ngIf"], ["type", "text", "cmacs-input", "", 1, "cmacs-compact-table-input", 3, "placeholder", "ngModel", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInput", ""], [1, "cmacs-compact-table-date-edit", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDatePicker", ""], ["hideSeconds", "", 1, "cmacs-compact-table-datetime-picker", 3, "use12Hours", "format", "defaultOpenValue", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDateTimePicker", ""], ["showSearch", "", 1, "cmacs-compact-table-select-cell", 3, "placeHolder", "mode", "showCmacsSearch", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeSelect", ""], [3, "label", "value", "divider", "disabled", 4, "ngFor", "ngForOf"], [3, "label", "value", "divider", "disabled"], [1, "cmacs-compact-table-input-number-edit", 3, "ngModel", "cmacsStep", "min", "max", "formatter", "parser", "ngModelChange", "click", "dblclick", "keyup"], ["fieldTypeInputNumber", ""], [1, "cmacs-compact-table-input-number-edit", 3, "ngModel", "formatter", "parser", "cmacsStep", "min", "max", "ngModelChange", "click", "dblclick", "keyup"], ["cmacs-checkbox", "", 1, "cmacs-compact-tabe-editable-checkbox", 3, "ngModel", "ngModelChange"], ["fieldTypeBool", ""], [2, "width", "98%", "max-width", "98%", "padding", "7px 10px", 3, "click"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], ["class", "iconUISmall-Edit", 3, "cmacs-compact-table-edit-icon", "cmacs-compact-table-edit-icon-view", 4, "ngIf"], [1, "iconUISmall-Edit"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-date", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [1, "iconUILarge-Calendar"], [1, "iconUILarge-Time"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-select", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], ["class", "iconArrowLarge-Chevron-Down", 3, "cmacs-compact-table-select-icon", "cmacs-compact-table-select-icon-view", 4, "ngIf"], [1, "iconArrowLarge-Chevron-Down"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-input-number", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [1, "iconArrowLarge-Solid-UpDown"], ["class", "cmacs-compact-table-boolean-false-icon cmacs-compact-table-boolean-icon", 3, "cmacs-compact-table-invalid", 4, "ngIf"], ["class", "cmacs-compact-table-boolean-indeterminate-icon cmacs-compact-table-boolean-icon", 3, "cmacs-compact-table-invalid", 4, "ngIf"], ["class", "iconUILarge-Select-All cmacs-compact-table-boolean-icon-true", 3, "cmacs-compact-table-invalid", 4, "ngIf"], [1, "cmacs-compact-table-boolean-false-icon", "cmacs-compact-table-boolean-icon"], [1, "cmacs-compact-table-boolean-indeterminate-icon", "cmacs-compact-table-boolean-icon"], [1, "cmacs-compact-table-boolean-indeterminate-icon-inner"], [1, "iconUILarge-Select-All", "cmacs-compact-table-boolean-icon-true"], ["templateRefCeld", ""], [2, "width", "98%", "max-width", "98%", "padding", "7px 10px", 3, "id"]], template: function CmacsCompactTableComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "nz-table", 1, 2);
@@ -32450,6 +32461,47 @@
                 }], handleMouseDown: [{
                     type: i0.HostListener,
                     args: ['document:mousedown', ['$event']]
+                }] });
+    })();
+
+    var CmacsButtonFavoriteComponent = /** @class */ (function () {
+        function CmacsButtonFavoriteComponent() {
+            this.onChangedValue = new i0.EventEmitter();
+            this.iconFavorites = '';
+        }
+        CmacsButtonFavoriteComponent.prototype.ngOnInit = function () {
+        };
+        CmacsButtonFavoriteComponent.prototype.changedValue = function () {
+            this.value = this.value ? false : true;
+            this.onChangedValue.emit(this.value);
+        };
+        return CmacsButtonFavoriteComponent;
+    }());
+    CmacsButtonFavoriteComponent.ɵfac = function CmacsButtonFavoriteComponent_Factory(t) { return new (t || CmacsButtonFavoriteComponent)(); };
+    CmacsButtonFavoriteComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsButtonFavoriteComponent, selectors: [["cmacs-button-favorite"]], inputs: { value: "value" }, outputs: { onChangedValue: "onChangedValue" }, decls: 2, vars: 1, consts: [["cmacs-button", "", "role", "button", "type", "favorite", 3, "click"], [3, "ngClass"]], template: function CmacsButtonFavoriteComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelementStart(0, "button", 0);
+                i0.ɵɵlistener("click", function CmacsButtonFavoriteComponent_Template_button_click_0_listener() { return ctx.changedValue(); });
+                i0.ɵɵelement(1, "i", 1);
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngClass", ctx.value ? "iconUILarge-Favorites" : "iconUILarge-Favorites_Unselcted");
+            }
+        }, directives: [CmacsButtonComponent, i2$1.NgClass], styles: [""] });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsButtonFavoriteComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-button-favorite',
+                        templateUrl: './cmacs-button-favorite.component.html',
+                        styleUrls: ['./cmacs-button-favorite.component.css']
+                    }]
+            }], function () { return []; }, { value: [{
+                    type: i0.Input
+                }], onChangedValue: [{
+                    type: i0.Output
                 }] });
     })();
 
@@ -32834,47 +32886,63 @@
     }
     function CmacsTableComponent_tr_5_td_5_ng_template_2_button_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r140_1 = i0.ɵɵgetCurrentView();
+            var _r141_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "button", 56);
-            i0.ɵɵlistener("click", function CmacsTableComponent_tr_5_td_5_ng_template_2_button_1_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r140_1); var data_r15 = i0.ɵɵnextContext(3).$implicit; var ctx_r138 = i0.ɵɵnextContext(); return ctx_r138.onButtonClick(data_r15); });
+            i0.ɵɵlistener("click", function CmacsTableComponent_tr_5_td_5_ng_template_2_button_1_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r141_1); var data_r15 = i0.ɵɵnextContext(3).$implicit; var ctx_r139 = i0.ɵɵnextContext(); return ctx_r139.onButtonClick(data_r15); });
             i0.ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_template_2_button_1_i_1_Template, 1, 1, "i", 57);
             i0.ɵɵtemplate(2, CmacsTableComponent_tr_5_td_5_ng_template_2_button_1_ng_template_2_Template, 1, 1, "ng-template", null, 58, i0.ɵɵtemplateRefExtractor);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var _r134 = i0.ɵɵreference(3);
+            var _r135 = i0.ɵɵreference(3);
             var field_r29 = i0.ɵɵnextContext(2).$implicit;
             var ctx_r124 = i0.ɵɵnextContext(2);
             i0.ɵɵpropertyInterpolate("aria-label", field_r29.display);
             i0.ɵɵpropertyInterpolate("type", field_r29.button.style);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !ctx_r124.isUndefined(field_r29.button.icon))("ngIfElse", _r134);
+            i0.ɵɵproperty("ngIf", !ctx_r124.isUndefined(field_r29.button.icon))("ngIfElse", _r135);
         }
     }
     function CmacsTableComponent_tr_5_td_5_ng_template_2_div_2_Template(rf, ctx) {
         if (rf & 1) {
+            var _r145_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div");
+            i0.ɵɵelementStart(1, "cmacs-button-favorite", 60);
+            i0.ɵɵlistener("onChangedValue", function CmacsTableComponent_tr_5_td_5_ng_template_2_div_2_Template_cmacs_button_favorite_onChangedValue_1_listener($event) { i0.ɵɵrestoreView(_r145_1); var field_r29 = i0.ɵɵnextContext(2).$implicit; var data_r15 = i0.ɵɵnextContext().$implicit; var ctx_r143 = i0.ɵɵnextContext(); return ctx_r143.onFavoriteChange($event, field_r29, data_r15); });
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var field_r29 = i0.ɵɵnextContext(2).$implicit;
+            var data_r15 = i0.ɵɵnextContext().$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("value", data_r15[field_r29.property]);
+        }
+    }
+    function CmacsTableComponent_tr_5_td_5_ng_template_2_div_3_Template(rf, ctx) {
+        if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 0);
-            i0.ɵɵelementStart(1, "cmacs-tag", 60);
+            i0.ɵɵelementStart(1, "cmacs-tag", 61);
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r142 = i0.ɵɵnextContext(2);
-            var fi_r30 = ctx_r142.index;
-            var field_r29 = ctx_r142.$implicit;
-            var ctx_r143 = i0.ɵɵnextContext();
-            var i_r16 = ctx_r143.index;
-            var data_r15 = ctx_r143.$implicit;
-            var ctx_r125 = i0.ɵɵnextContext();
-            i0.ɵɵproperty("id", ctx_r125.gridID + "column" + fi_r30 + "row" + i_r16);
+            var ctx_r149 = i0.ɵɵnextContext(2);
+            var fi_r30 = ctx_r149.index;
+            var field_r29 = ctx_r149.$implicit;
+            var ctx_r150 = i0.ɵɵnextContext();
+            var i_r16 = ctx_r150.index;
+            var data_r15 = ctx_r150.$implicit;
+            var ctx_r126 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("id", ctx_r126.gridID + "column" + fi_r30 + "row" + i_r16);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("color", field_r29.tag.color ? data_r15[field_r29.tag.color] : null)("cmacsGridType", field_r29.tag.cmacsGridType ? data_r15[field_r29.tag.cmacsGridType] : null)("cmacsStatusType", field_r29.tag.cmacsStatusType ? data_r15[field_r29.tag.cmacsStatusType] : null)("cmacsPriorityType", field_r29.tag.cmacsPriorityType ? data_r15[field_r29.tag.cmacsPriorityType] : null);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", data_r15[field_r29.property], " ");
         }
     }
-    function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_3_Template(rf, ctx) {
+    function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 33);
@@ -32885,14 +32953,14 @@
         if (rf & 2) {
             var field_r29 = i0.ɵɵnextContext(2).$implicit;
             var data_r15 = i0.ɵɵnextContext().$implicit;
-            var ctx_r126 = i0.ɵɵnextContext();
+            var ctx_r127 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r126.wrapLines);
+            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r127.wrapLines);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r126.transformDate(data_r15[field_r29.property]));
+            i0.ɵɵtextInterpolate(ctx_r127.transformDate(data_r15[field_r29.property]));
         }
     }
-    function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_div_1_Template(rf, ctx) {
+    function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_5_div_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 33);
             i0.ɵɵtext(1);
@@ -32901,14 +32969,14 @@
         if (rf & 2) {
             var field_r29 = i0.ɵɵnextContext(3).$implicit;
             var data_r15 = i0.ɵɵnextContext().$implicit;
-            var ctx_r146 = i0.ɵɵnextContext();
-            i0.ɵɵstyleProp("max-width", ctx_r146.getMaxWidth());
-            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r146.wrapLines);
+            var ctx_r153 = i0.ɵɵnextContext();
+            i0.ɵɵstyleProp("max-width", ctx_r153.getMaxWidth());
+            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r153.wrapLines);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", data_r15[field_r29.property] !== null && data_r15[field_r29.property] !== undefined && data_r15[field_r29.property] !== "" ? data_r15[field_r29.property] : field_r29.placeholder, " ");
         }
     }
-    function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_div_2_Template(rf, ctx) {
+    function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_5_div_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 34);
             i0.ɵɵtext(1);
@@ -32917,19 +32985,19 @@
         if (rf & 2) {
             var field_r29 = i0.ɵɵnextContext(3).$implicit;
             var data_r15 = i0.ɵɵnextContext().$implicit;
-            var ctx_r147 = i0.ɵɵnextContext();
-            i0.ɵɵstyleProp("max-width", ctx_r147.getMaxWidth());
-            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r147.wrapLines);
+            var ctx_r154 = i0.ɵɵnextContext();
+            i0.ɵɵstyleProp("max-width", ctx_r154.getMaxWidth());
+            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r154.wrapLines);
             i0.ɵɵproperty("title", data_r15[field_r29.property]);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", data_r15[field_r29.property], " ");
         }
     }
-    function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_Template(rf, ctx) {
+    function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_div_1_Template, 2, 5, "div", 31);
-            i0.ɵɵtemplate(2, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_div_2_Template, 2, 6, "div", 32);
+            i0.ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_5_div_1_Template, 2, 5, "div", 31);
+            i0.ɵɵtemplate(2, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_5_div_2_Template, 2, 6, "div", 32);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
@@ -32941,7 +33009,7 @@
             i0.ɵɵproperty("ngIf", field_r29.showTooltip && data_r15[field_r29.property]);
         }
     }
-    function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_5_Template(rf, ctx) {
+    function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_6_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "div", 33);
@@ -32952,21 +33020,22 @@
         if (rf & 2) {
             var field_r29 = i0.ɵɵnextContext(2).$implicit;
             var data_r15 = i0.ɵɵnextContext().$implicit;
-            var ctx_r128 = i0.ɵɵnextContext();
+            var ctx_r129 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r128.wrapLines);
+            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r129.wrapLines);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r128.getLabel(data_r15, field_r29));
+            i0.ɵɵtextInterpolate(ctx_r129.getLabel(data_r15, field_r29));
         }
     }
     function CmacsTableComponent_tr_5_td_5_ng_template_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵtemplate(0, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_0_Template, 3, 2, "ng-container", 3);
             i0.ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_template_2_button_1_Template, 4, 4, "button", 52);
-            i0.ɵɵtemplate(2, CmacsTableComponent_tr_5_td_5_ng_template_2_div_2_Template, 3, 6, "div", 53);
-            i0.ɵɵtemplate(3, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_3_Template, 3, 3, "ng-container", 3);
-            i0.ɵɵtemplate(4, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_Template, 3, 2, "ng-container", 3);
-            i0.ɵɵtemplate(5, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_5_Template, 3, 3, "ng-container", 3);
+            i0.ɵɵtemplate(2, CmacsTableComponent_tr_5_td_5_ng_template_2_div_2_Template, 2, 1, "div", 3);
+            i0.ɵɵtemplate(3, CmacsTableComponent_tr_5_td_5_ng_template_2_div_3_Template, 3, 6, "div", 53);
+            i0.ɵɵtemplate(4, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_Template, 3, 3, "ng-container", 3);
+            i0.ɵɵtemplate(5, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_5_Template, 3, 2, "ng-container", 3);
+            i0.ɵɵtemplate(6, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_6_Template, 3, 3, "ng-container", 3);
         }
         if (rf & 2) {
             var field_r29 = i0.ɵɵnextContext().$implicit;
@@ -32975,11 +33044,13 @@
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx_r33.isCeldTypeButton(field_r29));
             i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r33.isCeldTypeButtonFavorite(field_r29));
+            i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx_r33.isCeldTypeTag(field_r29) && field_r29.tag !== undefined);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", (!ctx_r33.inLineEdit || ctx_r33.isReadOnly(field_r29)) && ctx_r33.isDate(field_r29));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", (!ctx_r33.inLineEdit || ctx_r33.isReadOnly(field_r29)) && !ctx_r33.isCeldTypeButton(field_r29) && !ctx_r33.isCeldTypeTag(field_r29) && !ctx_r33.isCeldTypeTemplateRef(field_r29) && !ctx_r33.isDate(field_r29) && !ctx_r33.isSelect(field_r29));
+            i0.ɵɵproperty("ngIf", (!ctx_r33.inLineEdit || ctx_r33.isReadOnly(field_r29)) && !ctx_r33.isCeldTypeButton(field_r29) && !ctx_r33.isCeldTypeButtonFavorite(field_r29) && !ctx_r33.isCeldTypeTag(field_r29) && !ctx_r33.isCeldTypeTemplateRef(field_r29) && !ctx_r33.isDate(field_r29) && !ctx_r33.isSelect(field_r29));
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx_r33.isSelect(field_r29));
         }
@@ -32990,7 +33061,7 @@
         if (rf & 1) {
             i0.ɵɵelementStart(0, "td", 23);
             i0.ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_container_1_Template, 4, 2, "ng-container", 24);
-            i0.ɵɵtemplate(2, CmacsTableComponent_tr_5_td_5_ng_template_2_Template, 6, 6, "ng-template", null, 25, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵtemplate(2, CmacsTableComponent_tr_5_td_5_ng_template_2_Template, 7, 7, "ng-template", null, 25, i0.ɵɵtemplateRefExtractor);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -33005,10 +33076,10 @@
     }
     function CmacsTableComponent_tr_5_td_6_Template(rf, ctx) {
         if (rf & 1) {
-            var _r159_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 61);
-            i0.ɵɵelementStart(1, "nz-rate", 62);
-            i0.ɵɵlistener("ngModelChange", function CmacsTableComponent_tr_5_td_6_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r159_1); var data_r15 = i0.ɵɵnextContext().$implicit; var ctx_r157 = i0.ɵɵnextContext(); return ctx_r157.onRateChange($event, data_r15); })("click", function CmacsTableComponent_tr_5_td_6_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r159_1); var ctx_r160 = i0.ɵɵnextContext(2); return ctx_r160.onRateClick($event); });
+            var _r166_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "td", 62);
+            i0.ɵɵelementStart(1, "nz-rate", 63);
+            i0.ɵɵlistener("ngModelChange", function CmacsTableComponent_tr_5_td_6_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r166_1); var data_r15 = i0.ɵɵnextContext().$implicit; var ctx_r164 = i0.ɵɵnextContext(); return ctx_r164.onRateChange($event, data_r15); })("click", function CmacsTableComponent_tr_5_td_6_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r166_1); var ctx_r167 = i0.ɵɵnextContext(2); return ctx_r167.onRateClick($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
@@ -33022,9 +33093,9 @@
     var _c9$1 = function (a0) { return { data: a0 }; };
     function CmacsTableComponent_tr_5_Template(rf, ctx) {
         if (rf & 1) {
-            var _r163_1 = i0.ɵɵgetCurrentView();
+            var _r170_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "tr", 15);
-            i0.ɵɵlistener("click", function CmacsTableComponent_tr_5_Template_tr_click_0_listener($event) { i0.ɵɵrestoreView(_r163_1); var data_r15 = ctx.$implicit; var ctx_r162 = i0.ɵɵnextContext(); return ctx_r162.clickRow($event, data_r15); })("touchstart", function CmacsTableComponent_tr_5_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r163_1); var data_r15 = ctx.$implicit; var ctx_r164 = i0.ɵɵnextContext(); return ctx_r164.tapHandler($event, data_r15); })("contextmenu", function CmacsTableComponent_tr_5_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r163_1); var _r17 = i0.ɵɵreference(2); var ctx_r165 = i0.ɵɵnextContext(); return ctx_r165.contextMenu($event, _r17); });
+            i0.ɵɵlistener("click", function CmacsTableComponent_tr_5_Template_tr_click_0_listener($event) { i0.ɵɵrestoreView(_r170_1); var data_r15 = ctx.$implicit; var ctx_r169 = i0.ɵɵnextContext(); return ctx_r169.clickRow($event, data_r15); })("touchstart", function CmacsTableComponent_tr_5_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r170_1); var data_r15 = ctx.$implicit; var ctx_r171 = i0.ɵɵnextContext(); return ctx_r171.tapHandler($event, data_r15); })("contextmenu", function CmacsTableComponent_tr_5_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r170_1); var _r17 = i0.ɵɵreference(2); var ctx_r172 = i0.ɵɵnextContext(); return ctx_r172.contextMenu($event, _r17); });
             i0.ɵɵelementStart(1, "cmacs-dropdown-menu", null, 16);
             i0.ɵɵelementContainer(3, 17);
             i0.ɵɵelementEnd();
@@ -33098,6 +33169,7 @@
             this.selectionChange = new i0.EventEmitter();
             this.ondlclickRow = new i0.EventEmitter();
             this.onclickRow = new i0.EventEmitter();
+            this.onclickFavorite = new i0.EventEmitter();
             this.onedit = new i0.EventEmitter();
             this.rateCount = 5;
             this.multiSelect = false;
@@ -33300,6 +33372,10 @@
             data[this.config.fieldRate] = count;
             this.rateChange.emit(data);
         };
+        CmacsTableComponent.prototype.onFavoriteChange = function (isFavorite, field, data) {
+            data[field.property] = isFavorite;
+            this.onclickFavorite.emit(data);
+        };
         CmacsTableComponent.prototype.onRateClick = function (event) {
             this.preventDefault(event);
         };
@@ -33354,6 +33430,10 @@
         };
         CmacsTableComponent.prototype.isCeldTypeTemplateRef = function (field) {
             return field !== undefined && field.celdType === exports.CeldType.TemplateRef;
+        };
+        CmacsTableComponent.prototype.isCeldTypeButtonFavorite = function (field) {
+            var result = field !== undefined && field.celdType === exports.CeldType.Favorite;
+            return result;
         };
         CmacsTableComponent.prototype.isUndefined = function (value) {
             return value === undefined;
@@ -33640,7 +33720,7 @@
             if (rf & 1) {
                 i0.ɵɵlistener("mousedown", function CmacsTableComponent_mousedown_HostBindingHandler($event) { return ctx.handleMouseDown($event); }, false, i0.ɵɵresolveDocument);
             }
-        }, inputs: { size: "size", showTotal: "showTotal", pageSizeOptions: "pageSizeOptions", virtualScroll: "virtualScroll", virtualItemSize: "virtualItemSize", loadingDelay: "loadingDelay", loadingIndicator: "loadingIndicator", total: "total", title: "title", footer: "footer", noResult: "noResult", widthConfig: "widthConfig", pageIndex: "pageIndex", pageSize: "pageSize", data: "data", config: "config", fieldId: "fieldId", gridID: "gridID", paginationPosition: "paginationPosition", scroll: "scroll", printLandscape: "printLandscape", wrapLines: "wrapLines", frontPagination: "frontPagination", templateMode: "templateMode", bordered: "bordered", showPagination: "showPagination", loading: "loading", showSizeChanger: "showSizeChanger", hideOnSinglePage: "hideOnSinglePage", showQuickJumper: "showQuickJumper", simple: "simple", checkboxSelect: "checkboxSelect", inLineEdit: "inLineEdit", dataTable: "dataTable", showRate: "showRate", exportEvent: "exportEvent", rateCount: "rateCount", multiSelect: "multiSelect", contextmenu: "contextmenu" }, outputs: { configChange: "configChange", buttonClick: "buttonClick", rateChange: "rateChange", selectionChange: "selectionChange", ondlclickRow: "ondlclickRow", onclickRow: "onclickRow", onedit: "onedit", sortChange: "sortChange", onresize: "onresize" }, exportAs: ["cmacsTable"], features: [i0.ɵɵNgOnChangesFeature], decls: 6, vars: 26, consts: [[3, "id"], [1, "cmacs-table", 3, "nzData", "nzShowTotal", "nzPageSizeOptions", "nzVirtualItemSize", "nzLoadingDelay", "nzLoadingIndicator", "nzTotal", "nzTitle", "nzFooter", "nzNoResult", "nzWidthConfig", "nzPageIndex", "nzPageSize", "nzPaginationPosition", "nzScroll", "nzFrontPagination", "nzTemplateMode", "nzShowPagination", "nzLoading", "nzShowSizeChanger", "nzHideOnSinglePage", "nzShowQuickJumper", "nzSimple"], ["gridComponent", ""], [4, "ngIf"], ["class", "cmacs-no-selection", 3, "ant-table-selected-row", "click", "touchstart", "contextmenu", 4, "ngFor", "ngForOf"], ["nzWidth", "40px", 3, "maxWidth", "minWidth", 4, "ngIf"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzDisabled", "nzMinWidth", "nzMaxWidth", "nzShowSort", "nzSortDirections", "cmacs-table-sorted-null", "cmacs-table-sorted-ascend", "cmacs-table-sorted-descend", "nzSortOrder", "minWidth", "maxWidth", "nzWidth", "nzResizeEnd", "nzSortOrderChange", 4, "ngFor", "ngForOf"], [3, "minWidth", "maxWidth", "nzWidth", 4, "ngIf"], ["nzWidth", "40px"], ["cmacs-checkbox", "", 3, "ngModel", "indeterminate", "ngModelChange", "checkedChange"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzDisabled", "nzMinWidth", "nzMaxWidth", "nzShowSort", "nzSortDirections", "nzSortOrder", "nzWidth", "nzResizeEnd", "nzSortOrderChange"], ["nzDirection", "right", 4, "ngIf"], ["nzDirection", "right"], [1, "cmacs-table-resize-trigger"], [3, "nzWidth"], [1, "cmacs-no-selection", 3, "click", "touchstart", "contextmenu"], ["contextMenuTemplate", "cmacsDropdownMenu"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "maxWidth", "minWidth", 4, "ngIf"], [3, "ngClass", "maxWidth", 4, "ngFor", "ngForOf"], ["class", "cmacs-table-rating", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange"], [3, "ngClass"], [4, "ngIf", "ngIfElse"], ["componentTpl", ""], ["class", "editable-cell", 3, "maxWidth", 4, "ngIf", "ngIfElse"], ["editTpl", ""], [1, "editable-cell"], [1, "editable-cell-value-wrap"], [1, "iconUISmall-Edit", "cmacs-table-edit-icon", 3, "click"], ["style", "word-break: break-word;", 3, "cmacs-table-overflow-cell", "maxWidth", 4, "ngIf"], ["style", "word-break: break-word;", "cmacs-tooltip", "", "placement", "right", 3, "cmacs-table-overflow-cell", "maxWidth", "title", 4, "ngIf"], [2, "word-break", "break-word"], ["cmacs-tooltip", "", "placement", "right", 2, "word-break", "break-word", 3, "title"], ["type", "text", "cmacs-input", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["id", "testing2", "class", "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", 4, "ngIf"], ["class", "tableinput", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["style", "width: 100%;", "showSearch", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["type", "text", "cmacs-input", "", 1, "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInput", ""], ["id", "testing2", 1, "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInputNumber", ""], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange"], ["fieldTypeBool", ""], [1, "tableinput", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDatePicker", ""], ["showSearch", "", 1, "tableinput", 2, "width", "100%", 3, "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeSelect", ""], [3, "label", "value", 4, "ngFor", "ngForOf"], [3, "label", "value"], ["role", "button", "cmacs-button", "", 3, "aria-label", "type", "click", 4, "ngIf"], [3, "id", 4, "ngIf"], ["templateRefCeld", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "button", "cmacs-button", "", 3, "aria-label", "type", "click"], ["nz-icon", "", 3, "type", 4, "ngIf", "ngIfElse"], ["titleTpl", ""], ["nz-icon", "", 3, "type"], [3, "color", "cmacsGridType", "cmacsStatusType", "cmacsPriorityType"], [1, "cmacs-table-rating"], [3, "ngModel", "nzCount", "nzDisabled", "ngModelChange", "click"]], template: function CmacsTableComponent_Template(rf, ctx) {
+        }, inputs: { size: "size", showTotal: "showTotal", pageSizeOptions: "pageSizeOptions", virtualScroll: "virtualScroll", virtualItemSize: "virtualItemSize", loadingDelay: "loadingDelay", loadingIndicator: "loadingIndicator", total: "total", title: "title", footer: "footer", noResult: "noResult", widthConfig: "widthConfig", pageIndex: "pageIndex", pageSize: "pageSize", data: "data", config: "config", fieldId: "fieldId", gridID: "gridID", paginationPosition: "paginationPosition", scroll: "scroll", printLandscape: "printLandscape", wrapLines: "wrapLines", frontPagination: "frontPagination", templateMode: "templateMode", bordered: "bordered", showPagination: "showPagination", loading: "loading", showSizeChanger: "showSizeChanger", hideOnSinglePage: "hideOnSinglePage", showQuickJumper: "showQuickJumper", simple: "simple", checkboxSelect: "checkboxSelect", inLineEdit: "inLineEdit", dataTable: "dataTable", showRate: "showRate", exportEvent: "exportEvent", rateCount: "rateCount", multiSelect: "multiSelect", contextmenu: "contextmenu" }, outputs: { configChange: "configChange", buttonClick: "buttonClick", rateChange: "rateChange", selectionChange: "selectionChange", ondlclickRow: "ondlclickRow", onclickRow: "onclickRow", onclickFavorite: "onclickFavorite", onedit: "onedit", sortChange: "sortChange", onresize: "onresize" }, exportAs: ["cmacsTable"], features: [i0.ɵɵNgOnChangesFeature], decls: 6, vars: 26, consts: [[3, "id"], [1, "cmacs-table", 3, "nzData", "nzShowTotal", "nzPageSizeOptions", "nzVirtualItemSize", "nzLoadingDelay", "nzLoadingIndicator", "nzTotal", "nzTitle", "nzFooter", "nzNoResult", "nzWidthConfig", "nzPageIndex", "nzPageSize", "nzPaginationPosition", "nzScroll", "nzFrontPagination", "nzTemplateMode", "nzShowPagination", "nzLoading", "nzShowSizeChanger", "nzHideOnSinglePage", "nzShowQuickJumper", "nzSimple"], ["gridComponent", ""], [4, "ngIf"], ["class", "cmacs-no-selection", 3, "ant-table-selected-row", "click", "touchstart", "contextmenu", 4, "ngFor", "ngForOf"], ["nzWidth", "40px", 3, "maxWidth", "minWidth", 4, "ngIf"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzDisabled", "nzMinWidth", "nzMaxWidth", "nzShowSort", "nzSortDirections", "cmacs-table-sorted-null", "cmacs-table-sorted-ascend", "cmacs-table-sorted-descend", "nzSortOrder", "minWidth", "maxWidth", "nzWidth", "nzResizeEnd", "nzSortOrderChange", 4, "ngFor", "ngForOf"], [3, "minWidth", "maxWidth", "nzWidth", 4, "ngIf"], ["nzWidth", "40px"], ["cmacs-checkbox", "", 3, "ngModel", "indeterminate", "ngModelChange", "checkedChange"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzDisabled", "nzMinWidth", "nzMaxWidth", "nzShowSort", "nzSortDirections", "nzSortOrder", "nzWidth", "nzResizeEnd", "nzSortOrderChange"], ["nzDirection", "right", 4, "ngIf"], ["nzDirection", "right"], [1, "cmacs-table-resize-trigger"], [3, "nzWidth"], [1, "cmacs-no-selection", 3, "click", "touchstart", "contextmenu"], ["contextMenuTemplate", "cmacsDropdownMenu"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "maxWidth", "minWidth", 4, "ngIf"], [3, "ngClass", "maxWidth", 4, "ngFor", "ngForOf"], ["class", "cmacs-table-rating", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange"], [3, "ngClass"], [4, "ngIf", "ngIfElse"], ["componentTpl", ""], ["class", "editable-cell", 3, "maxWidth", 4, "ngIf", "ngIfElse"], ["editTpl", ""], [1, "editable-cell"], [1, "editable-cell-value-wrap"], [1, "iconUISmall-Edit", "cmacs-table-edit-icon", 3, "click"], ["style", "word-break: break-word;", 3, "cmacs-table-overflow-cell", "maxWidth", 4, "ngIf"], ["style", "word-break: break-word;", "cmacs-tooltip", "", "placement", "right", 3, "cmacs-table-overflow-cell", "maxWidth", "title", 4, "ngIf"], [2, "word-break", "break-word"], ["cmacs-tooltip", "", "placement", "right", 2, "word-break", "break-word", 3, "title"], ["type", "text", "cmacs-input", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["id", "testing2", "class", "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", 4, "ngIf"], ["class", "tableinput", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["style", "width: 100%;", "showSearch", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["type", "text", "cmacs-input", "", 1, "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInput", ""], ["id", "testing2", 1, "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInputNumber", ""], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange"], ["fieldTypeBool", ""], [1, "tableinput", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDatePicker", ""], ["showSearch", "", 1, "tableinput", 2, "width", "100%", 3, "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeSelect", ""], [3, "label", "value", 4, "ngFor", "ngForOf"], [3, "label", "value"], ["role", "button", "cmacs-button", "", 3, "aria-label", "type", "click", 4, "ngIf"], [3, "id", 4, "ngIf"], ["templateRefCeld", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "button", "cmacs-button", "", 3, "aria-label", "type", "click"], ["nz-icon", "", 3, "type", 4, "ngIf", "ngIfElse"], ["titleTpl", ""], ["nz-icon", "", 3, "type"], [3, "value", "onChangedValue"], [3, "color", "cmacsGridType", "cmacsStatusType", "cmacsPriorityType"], [1, "cmacs-table-rating"], [3, "ngModel", "nzCount", "nzDisabled", "ngModelChange", "click"]], template: function CmacsTableComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "nz-table", 1, 2);
@@ -33661,7 +33741,7 @@
                 i0.ɵɵadvance(2);
                 i0.ɵɵproperty("ngForOf", _r0.data);
             }
-        }, directives: [i8$1.NzTableComponent, i2$1.NgIf, i8$1.NzTbodyComponent, i2$1.NgForOf, i8$1.NzTheadComponent, i8$1.NzTrDirective, i8$1.NzTableCellDirective, i8$1.NzThMeasureDirective, CmacsCheckboxComponent, i5.NgControlStatus, i5.NgModel, i8$1.NzThAddOnComponent, i11.NzResizableDirective, i11.NzResizeHandleComponent, CmacsDropdownMenuComponent, i2$1.NgTemplateOutlet, i2$1.NgClass, CmacsTooltipDirective, CmacsInputDirective, i5.DefaultValueAccessor, CmacsInputNumberComponent, CmacsDatePickerComponent, CmacsSelectComponent, CmacsOptionComponent, CmacsButtonComponent, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, CmacsTagComponent, i18.NzRateComponent], pipes: [i2$1.DatePipe], styles: [".cmacs-table .cmacs-table-sorted-ascend .anticon.ant-table-column-sorter-up:before,   .cmacs-table .cmacs-table-sorted-null .anticon.ant-table-column-sorter-up:before{font-family:ArrowSmall!important;content:\"\\e90f\";display:block;font-size:25px;margin-top:24px}  .cmacs-table .ant-table-thead th.ant-table-column-has-sorters{cursor:pointer;transition:none!important}  .cmacs-table .anticon.ant-table-column-sorter-down.active:after,   .cmacs-table .anticon.ant-table-column-sorter-up.active:before{color:#2a7cff}  .cmacs-table .cmacs-table-sorted-descend .anticon.ant-table-column-sorter-down:after{font-family:ArrowSmall!important;content:\"\\e90c\";display:block;font-size:25px}  .cmacs-table .ant-table-column-sorter-up+.ant-table-column-sorter-down{margin-top:0}  .cmacs-table .anticon.ant-table-column-sorter-down svg,   .cmacs-table .anticon.ant-table-column-sorter-up svg{display:none}.cmacs-table-resize-trigger[_ngcontent-%COMP%]{width:1px;height:100%;background-color:#bfbfbf;position:absolute;right:10px;opacity:0}  .cmacs-table th:hover .cmacs-table-resize-trigger{opacity:1}  .cmacs-table .nz-resizable-preview{border-top:none!important;border-left:none!important;border:solid #2a7cff;border-width:0 1px 0 0;height:100%;max-height:100%;padding:0;margin:0}  .cmacs-table .nz-resizable .ant-table-filter-trigger-container{right:10px;display:inline-block}  .cmacs-compact-table .ant-table-cell.ant-table-cell-fix-right,   .cmacs-table .ant-table-cell.ant-table-cell-fix-left{z-index:10}  .cmacs-table .nz-resizable.ant-table-cell.ant-table-cell-fix-left.ant-table-cell-fix-left-last .nz-resizable-handle-right{right:0!important}  .cmacs-table .ant-table-filter-column{margin:0}  .cmacs-table .ant-table-filter-column-title{padding:0}  .cmacs-table .nz-resizable-handle-right{right:0}  .cmacs-table .ant-table-column-sorter-inner{margin-left:0;margin-right:0}  .cmacs-table .ant-table-placeholder .ant-table-cell,   .cmacs-table .ant-table-tbody>tr.ant-table-placeholder:hover{box-shadow:none!important;border-bottom:none!important}  .cmacs-table tr.ant-table-placeholder .ant-table-expanded-row-fixed{margin:0!important;padding:0!important}  .cmacs-table .ant-table-tbody>tr.ant-table-placeholder:hover>td{box-shadow:none!important}.cmacs-table[_ngcontent-%COMP%]   .cmacs-table-rating[_ngcontent-%COMP%]{min-width:105px}.cmacs-table-overflow-cell[_ngcontent-%COMP%]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;max-width:100%;vertical-align:middle}.cmacs-table[_ngcontent-%COMP%]   tbody[_ngcontent-%COMP%]   td[_ngcontent-%COMP%] > .cmacs-table-overflow-cell[_ngcontent-%COMP%]{line-height:24px!important}.cmacs-table[_ngcontent-%COMP%]   .cmacs-table-overflow-cell-header[_ngcontent-%COMP%]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}  .cmacs-table .ant-table-column-sorter{width:12px;display:none!important;right:8px;position:absolute}  .cmacs-table th:hover .ant-table-column-sorter{display:table-cell!important;right:8px;position:absolute}  .cmacs-table .ant-table-column-sorters,   .cmacs-table .ant-table-header-column{width:100%;padding:0}  .cmacs-table .ant-table-column-sorters span:not(.ant-table-column-sorter){width:100%}  .cmacs-table .ant-table-thead>tr>th.ant-table-column-has-actions.ant-table-column-has-sorters:hover{background-color:#f6f7fb}  .cmacs-table .ant-table-thead>tr>th .ant-table-header-column .ant-table-column-sorters:hover:before{background-color:transparent}.cmacs-table[_ngcontent-%COMP%]   .editable-cell[_ngcontent-%COMP%]{position:relative}.cmacs-table[_ngcontent-%COMP%]   .editable-cell-value-wrap[_ngcontent-%COMP%]{padding:6px 0;cursor:pointer;min-height:30px;max-height:30px}.cmacs-table[_ngcontent-%COMP%]   .ant-table-tbody[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%]:hover > td.editable-row[_ngcontent-%COMP%]   .cmacs-table-edit-icon[_ngcontent-%COMP%]{opacity:1}.cmacs-table[_ngcontent-%COMP%]   .ant-table-tbody[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%] > td.editable-row[_ngcontent-%COMP%], .cmacs-table[_ngcontent-%COMP%]   .ant-table-tbody[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%]   td.editable-row[_ngcontent-%COMP%]:first-child{padding:9px 10px}  .cmacs-table .ant-rate{height:16px;font-size:16px}  .cmacs-table .ant-rate-star{font-size:16px;margin:0}.cmacs-table[_ngcontent-%COMP%]   .ant-table-thead[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%]{box-shadow:0 3px 7px -3px rgba(5,6,6,.18)}  .cmacs-table .ant-table-thead>tr>th{color:#656c79;background-color:#f6f7fb;border-bottom:1px solid transparent}  .cmacs-table .ant-table-thead th.ant-table-column-has-sorters:hover{background-color:#f6f7fb!important}  .cmacs-table .ant-table-tbody>tr>td{padding:12px 10px;border-bottom:0;box-shadow:inset 0 -1px 0 #dee0e5}  .cmacs-table .ant-table-tbody>tr:hover{box-shadow:0 3px 7px -3px rgba(5,6,6,.18);position:relative}  .cmacs-table .ant-table-tbody>tr td:first-child{padding:12px 10px;box-shadow:inset 0 -1px 0 #dee0e5}  .cmacs-table .ant-table-thead>tr>th{padding:15px 10px}  .cmacs-table .ant-table-tbody>tr:hover td:first-child{box-shadow:inset 3px 0 0 #2a7cff,inset 0 -1px 0 #dee0e5}  .cmacs-table .ant-table-tbody>.ant-table-selected-row:hover td:first-child{box-shadow:inset 3px 0 0 #2a7cff,inset 0 1px 0 #2a7cff,inset 0 -1px 0 #2a7cff}  .cmacs-table .ant-table-tbody>.ant-table-selected-row:hover td{box-shadow:inset 0 1px 0 #2a7cff,inset 0 -1px 0 #2a7cff}  .cmacs-table .ant-table-thead{line-height:1.25;position:relative}.cmacs-table[_ngcontent-%COMP%]   .editable-row[_ngcontent-%COMP%], .cmacs-table[_ngcontent-%COMP%]   .ng-star-inserted[_ngcontent-%COMP%],   .cmacs-table .ant-table-thead{font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;letter-spacing:normal}.cmacs-table[_ngcontent-%COMP%]   .editable-row[_ngcontent-%COMP%], .cmacs-table[_ngcontent-%COMP%]   .ng-star-inserted[_ngcontent-%COMP%]{line-height:1.5}.cmacs-table[_ngcontent-%COMP%]   cmacs-tag[_ngcontent-%COMP%]{padding:1px 5px!important;height:unset}.cmacs-table[_ngcontent-%COMP%]   .ant-table-tbody[_ngcontent-%COMP%] > tr.ant-table-row-hover[_ngcontent-%COMP%]:not(.ant-table-expanded-row):not(.ant-table-selected-row) > td[_ngcontent-%COMP%], .cmacs-table[_ngcontent-%COMP%]   .ant-table-tbody[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%]:hover:not(.ant-table-expanded-row):not(.ant-table-selected-row) > td[_ngcontent-%COMP%], .cmacs-table[_ngcontent-%COMP%]   .ant-table-thead[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%]:hover:not(.ant-table-expanded-row):not(.ant-table-selected-row) > td[_ngcontent-%COMP%],   .cmacs-table .ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-selected-row)>td{background-color:#fff}  .cmacs-table .ant-table-tbody>tr.ant-table-selected-row>td{background-color:#f2f7ff}  .cmacs-table .ant-spin-nested-loading{clear:both}  .cmacs-table .ant-table table{border-collapse:collapse}  .cmacs-table .tableinput.ant-input:focus,   .cmacs-table .tableinput.ant-input:hover{box-shadow:none;border:1px solid #2a7cff}  .cmacs-table .ant-input-number:not(.cmacs-datetime-picker-input-number),   .cmacs-table .tableinput,   .cmacs-table .tableinput .ant-select-selection--single,   .cmacs-table .tableinput .datepickerwidth,   .cmacs-table .tableinput .datepickerwidth .ant-input,   .cmacs-table .tableinput>*{height:30px!important}  .cmacs-table tr:not(.cmacs-no-selection) .tableinput{margin-left:-5px}  .cmacs-table tr:not(.cmacs-no-selection) input.tableinput{padding:5px 4px}  .cmacs-table cmacs-date-picker.tableinput{margin-left:-5px}  .cmacs-table .tableinput .datepickerwidth .ant-input{padding:0 4px}  .cmacs-table .tableinput .ant-select-selection--single .ant-select-selection__rendered{margin-left:4px;line-height:30px}  .cmacs-table .tableinput .ant-input-number-input{padding-left:4px}  .cmacs-table .ant-input-number:not(.cmacs-datetime-picker-input-number){overflow:visible}  .cmacs-table cmacs-input-number.tableinput,   .cmacs-table cmacs-select.tableinput{margin-left:-5px}  .cmacs-table .tableinput .ant-input-number-handler-wrap{height:28px!important}.cmacs-table[_ngcontent-%COMP%]   .cmacs-no-selection[_ngcontent-%COMP%]{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}  .cmacs-table .cmacs-no-selection .editable-cell,   .cmacs-table .cmacs-no-selection .tableinput{margin-top:-4px;margin-bottom:-3px;height:30px}  .cmacs-table .cmacs-no-selection input.tableinput{padding:6px 4px 5px;margin-left:-5px}  .cmacs-table .cmacs-no-selection .editable-cell-value-wrap{height:30px}  .cmacs-table table{table-layout:fixed}  .cmacs-table .ant-table-thead>tr>th .ant-table-header-column .ant-table-column-sorters{display:inline-flex;position:relative;top:3px}  .cmacs-table .ant-table-thead>tr>th.ant-table-column-has-actions.ant-table-column-has-sorters:active .ant-table-column-sorter-down:not(.on),   .cmacs-table .ant-table-thead>tr>th.ant-table-column-has-actions.ant-table-column-has-sorters:active .ant-table-column-sorter-up:not(.on),   .cmacs-table .ant-table-thead>tr>th .ant-table-column-sorter .ant-table-column-sorter-inner{color:#bec4cd}  .cmacs-table .ant-table-thead>tr>th .ant-table-column-sorter .ant-table-column-sorter-inner-full{margin-left:0!important}  .cmacs-table .ant-table-fixed-header .ant-table-scroll .ant-table-header{overflow:hidden;margin-bottom:-20px!important;padding-bottom:20px!important;opacity:1}  .cmacs-table .ant-table-fixed-header>.ant-table-container>.ant-table-body{scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin;overflow:auto!important;position:inherit}[_ngcontent-%COMP%]::-webkit-scrollbar,   .ant-table-fixed-header>.ant-table-container>.ant-table-body::-webkit-scrollbar{width:6px;height:6px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb,   .ant-table-fixed-header>.ant-table-container>.ant-table-body::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover,   .ant-table-fixed-header>.ant-table-container>.ant-table-body::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.cmacs-table-edit-icon[_ngcontent-%COMP%]{position:relative;top:3px;left:5px;opacity:0;float:right;font-size:14px}.cmacs-table-edit-icon[_ngcontent-%COMP%]:hover{color:#2a7cff}"], changeDetection: 0 });
+        }, directives: [i8$1.NzTableComponent, i2$1.NgIf, i8$1.NzTbodyComponent, i2$1.NgForOf, i8$1.NzTheadComponent, i8$1.NzTrDirective, i8$1.NzTableCellDirective, i8$1.NzThMeasureDirective, CmacsCheckboxComponent, i5.NgControlStatus, i5.NgModel, i8$1.NzThAddOnComponent, i11.NzResizableDirective, i11.NzResizeHandleComponent, CmacsDropdownMenuComponent, i2$1.NgTemplateOutlet, i2$1.NgClass, CmacsTooltipDirective, CmacsInputDirective, i5.DefaultValueAccessor, CmacsInputNumberComponent, CmacsDatePickerComponent, CmacsSelectComponent, CmacsOptionComponent, CmacsButtonComponent, i4.ɵNzTransitionPatchDirective, i5$1.NzIconDirective, CmacsButtonFavoriteComponent, CmacsTagComponent, i18.NzRateComponent], pipes: [i2$1.DatePipe], styles: [".cmacs-table .cmacs-table-sorted-ascend .anticon.ant-table-column-sorter-up:before,   .cmacs-table .cmacs-table-sorted-null .anticon.ant-table-column-sorter-up:before{font-family:ArrowSmall!important;content:\"\\e90f\";display:block;font-size:25px;margin-top:24px}  .cmacs-table .ant-table-thead th.ant-table-column-has-sorters{cursor:pointer;transition:none!important}  .cmacs-table .anticon.ant-table-column-sorter-down.active:after,   .cmacs-table .anticon.ant-table-column-sorter-up.active:before{color:#2a7cff}  .cmacs-table .cmacs-table-sorted-descend .anticon.ant-table-column-sorter-down:after{font-family:ArrowSmall!important;content:\"\\e90c\";display:block;font-size:25px}  .cmacs-table .ant-table-column-sorter-up+.ant-table-column-sorter-down{margin-top:0}  .cmacs-table .anticon.ant-table-column-sorter-down svg,   .cmacs-table .anticon.ant-table-column-sorter-up svg{display:none}.cmacs-table-resize-trigger[_ngcontent-%COMP%]{width:1px;height:100%;background-color:#bfbfbf;position:absolute;right:10px;opacity:0}  .cmacs-table th:hover .cmacs-table-resize-trigger{opacity:1}  .cmacs-table .nz-resizable-preview{border-top:none!important;border-left:none!important;border:solid #2a7cff;border-width:0 1px 0 0;height:100%;max-height:100%;padding:0;margin:0}  .cmacs-table .nz-resizable .ant-table-filter-trigger-container{right:10px;display:inline-block}  .cmacs-compact-table .ant-table-cell.ant-table-cell-fix-right,   .cmacs-table .ant-table-cell.ant-table-cell-fix-left{z-index:10}  .cmacs-table .nz-resizable.ant-table-cell.ant-table-cell-fix-left.ant-table-cell-fix-left-last .nz-resizable-handle-right{right:0!important}  .cmacs-table .ant-table-filter-column{margin:0}  .cmacs-table .ant-table-filter-column-title{padding:0}  .cmacs-table .nz-resizable-handle-right{right:0}  .cmacs-table .ant-table-column-sorter-inner{margin-left:0;margin-right:0}  .cmacs-table .ant-table-placeholder .ant-table-cell,   .cmacs-table .ant-table-tbody>tr.ant-table-placeholder:hover{box-shadow:none!important;border-bottom:none!important}  .cmacs-table tr.ant-table-placeholder .ant-table-expanded-row-fixed{margin:0!important;padding:0!important}  .cmacs-table .ant-table-tbody>tr.ant-table-placeholder:hover>td{box-shadow:none!important}.cmacs-table[_ngcontent-%COMP%]   .cmacs-table-rating[_ngcontent-%COMP%]{min-width:105px}.cmacs-table-overflow-cell[_ngcontent-%COMP%]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;max-width:100%;vertical-align:middle}.cmacs-table[_ngcontent-%COMP%]   tbody[_ngcontent-%COMP%]   td[_ngcontent-%COMP%] > .cmacs-table-overflow-cell[_ngcontent-%COMP%]{line-height:24px!important}.cmacs-table[_ngcontent-%COMP%]   .cmacs-table-overflow-cell-header[_ngcontent-%COMP%]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}  .cmacs-table .ant-table-column-sorter{width:12px;display:none!important;right:8px;position:absolute}  .cmacs-table th:hover .ant-table-column-sorter{display:table-cell!important;right:8px;position:absolute}  .cmacs-table .ant-table-column-sorters,   .cmacs-table .ant-table-header-column{width:100%;padding:0}  .cmacs-table .ant-table-column-sorters span:not(.ant-table-column-sorter){width:100%}  .cmacs-table .ant-table-thead>tr>th.ant-table-column-has-actions.ant-table-column-has-sorters:hover{background-color:#f6f7fb}  .cmacs-table .ant-table-thead>tr>th .ant-table-header-column .ant-table-column-sorters:hover:before{background-color:transparent}.cmacs-table[_ngcontent-%COMP%]   .editable-cell[_ngcontent-%COMP%]{position:relative}.cmacs-table[_ngcontent-%COMP%]   .editable-cell-value-wrap[_ngcontent-%COMP%]{padding:6px 0;cursor:pointer;min-height:30px;max-height:30px}.cmacs-table[_ngcontent-%COMP%]   .ant-table-tbody[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%]:hover > td.editable-row[_ngcontent-%COMP%]   .cmacs-table-edit-icon[_ngcontent-%COMP%]{opacity:1}.cmacs-table[_ngcontent-%COMP%]   .ant-table-tbody[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%] > td.editable-row[_ngcontent-%COMP%], .cmacs-table[_ngcontent-%COMP%]   .ant-table-tbody[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%]   td.editable-row[_ngcontent-%COMP%]:first-child{padding:9px 10px}  .cmacs-table .ant-rate{height:16px;font-size:16px}  .cmacs-table .ant-rate-star{font-size:16px;margin:0}.cmacs-table[_ngcontent-%COMP%]   .ant-table-thead[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%]{box-shadow:0 3px 7px -3px rgba(5,6,6,.18)}  .cmacs-table .ant-table-thead>tr>th{color:#656c79;background-color:#f6f7fb;border-bottom:1px solid transparent}  .cmacs-table .ant-table-thead th.ant-table-column-has-sorters:hover{background-color:#f6f7fb!important}  .cmacs-table .ant-table-tbody>tr>td{padding:12px 10px;border-bottom:0;box-shadow:inset 0 -1px 0 #dee0e5}  .cmacs-table .ant-table-tbody>tr:hover{box-shadow:0 3px 7px -3px rgba(5,6,6,.18);position:relative}  .cmacs-table .ant-table-tbody>tr td:first-child{padding:12px 10px;box-shadow:inset 0 -1px 0 #dee0e5}  .cmacs-table .ant-table-thead>tr>th{padding:15px 10px}  .cmacs-table .ant-table-tbody>tr:hover td:first-child{box-shadow:inset 3px 0 0 #2a7cff,inset 0 -1px 0 #dee0e5}  .cmacs-table .ant-table-tbody>.ant-table-selected-row:hover td:first-child{box-shadow:inset 3px 0 0 #2a7cff,inset 0 1px 0 #2a7cff,inset 0 -1px 0 #2a7cff}  .cmacs-table .ant-table-tbody>.ant-table-selected-row:hover td{box-shadow:inset 0 1px 0 #2a7cff,inset 0 -1px 0 #2a7cff}  .cmacs-table .ant-table-thead{line-height:1.25;position:relative}.cmacs-table[_ngcontent-%COMP%]   .editable-row[_ngcontent-%COMP%], .cmacs-table[_ngcontent-%COMP%]   .ng-star-inserted[_ngcontent-%COMP%],   .cmacs-table .ant-table-thead{font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;letter-spacing:normal}.cmacs-table[_ngcontent-%COMP%]   .editable-row[_ngcontent-%COMP%], .cmacs-table[_ngcontent-%COMP%]   .ng-star-inserted[_ngcontent-%COMP%]{line-height:1.5}.cmacs-table[_ngcontent-%COMP%]   cmacs-tag[_ngcontent-%COMP%]{padding:1px 5px!important;height:unset}.cmacs-table[_ngcontent-%COMP%]   .ant-table-tbody[_ngcontent-%COMP%] > tr.ant-table-row-hover[_ngcontent-%COMP%]:not(.ant-table-expanded-row):not(.ant-table-selected-row) > td[_ngcontent-%COMP%], .cmacs-table[_ngcontent-%COMP%]   .ant-table-tbody[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%]:hover:not(.ant-table-expanded-row):not(.ant-table-selected-row) > td[_ngcontent-%COMP%], .cmacs-table[_ngcontent-%COMP%]   .ant-table-thead[_ngcontent-%COMP%] > tr[_ngcontent-%COMP%]:hover:not(.ant-table-expanded-row):not(.ant-table-selected-row) > td[_ngcontent-%COMP%],   .cmacs-table .ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-selected-row)>td{background-color:#fff}  .cmacs-table .ant-table-tbody>tr.ant-table-selected-row>td{background-color:#f2f7ff}  .cmacs-table .ant-spin-nested-loading{clear:both}  .cmacs-table .ant-table table{border-collapse:collapse}  .cmacs-table .tableinput.ant-input:focus,   .cmacs-table .tableinput.ant-input:hover{box-shadow:none;border:1px solid #2a7cff}  .cmacs-table .ant-input-number:not(.cmacs-datetime-picker-input-number),   .cmacs-table .tableinput,   .cmacs-table .tableinput .ant-select-selection--single,   .cmacs-table .tableinput .datepickerwidth,   .cmacs-table .tableinput .datepickerwidth .ant-input,   .cmacs-table .tableinput>*{height:30px!important}  .cmacs-table tr:not(.cmacs-no-selection) .tableinput{margin-left:-5px}  .cmacs-table tr:not(.cmacs-no-selection) input.tableinput{padding:5px 4px}  .cmacs-table cmacs-date-picker.tableinput{margin-left:-5px}  .cmacs-table .tableinput .datepickerwidth .ant-input{padding:0 4px}  .cmacs-table .tableinput .ant-select-selection--single .ant-select-selection__rendered{margin-left:4px;line-height:30px}  .cmacs-table .tableinput .ant-input-number-input{padding-left:4px}  .cmacs-table .ant-input-number:not(.cmacs-datetime-picker-input-number){overflow:visible}  .cmacs-table cmacs-input-number.tableinput,   .cmacs-table cmacs-select.tableinput{margin-left:-5px}  .cmacs-table .tableinput .ant-input-number-handler-wrap{height:28px!important}.cmacs-table[_ngcontent-%COMP%]   .cmacs-no-selection[_ngcontent-%COMP%]{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}  .cmacs-table .cmacs-no-selection .editable-cell,   .cmacs-table .cmacs-no-selection .tableinput{margin-top:-4px;margin-bottom:-3px;height:30px}  .cmacs-table .cmacs-no-selection input.tableinput{padding:6px 4px 5px;margin-left:-5px}  .cmacs-table .cmacs-no-selection .editable-cell-value-wrap{height:30px}  .cmacs-table table{table-layout:fixed}  .cmacs-table .ant-table-thead>tr>th .ant-table-header-column .ant-table-column-sorters{display:inline-flex;position:relative;top:3px}  .cmacs-table .ant-table-thead>tr>th.ant-table-column-has-actions.ant-table-column-has-sorters:active .ant-table-column-sorter-down:not(.on),   .cmacs-table .ant-table-thead>tr>th.ant-table-column-has-actions.ant-table-column-has-sorters:active .ant-table-column-sorter-up:not(.on),   .cmacs-table .ant-table-thead>tr>th .ant-table-column-sorter .ant-table-column-sorter-inner{color:#bec4cd}  .cmacs-table .ant-table-thead>tr>th .ant-table-column-sorter .ant-table-column-sorter-inner-full{margin-left:0!important}  .cmacs-table .ant-table-fixed-header .ant-table-scroll .ant-table-header{overflow:hidden;margin-bottom:-20px!important;padding-bottom:20px!important;opacity:1}  .cmacs-table .ant-table-fixed-header>.ant-table-container>.ant-table-body{scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin;overflow:auto!important;position:inherit}[_ngcontent-%COMP%]::-webkit-scrollbar,   .ant-table-fixed-header>.ant-table-container>.ant-table-body::-webkit-scrollbar{width:6px;height:6px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb,   .ant-table-fixed-header>.ant-table-container>.ant-table-body::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover,   .ant-table-fixed-header>.ant-table-container>.ant-table-body::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}.cmacs-table-edit-icon[_ngcontent-%COMP%]{position:relative;top:3px;left:5px;opacity:0;float:right;font-size:14px}.cmacs-table-edit-icon[_ngcontent-%COMP%]:hover{color:#2a7cff}"], changeDetection: 0 });
     __decorate([
         util.InputBoolean()
     ], CmacsTableComponent.prototype, "virtualScroll", void 0);
@@ -33813,6 +33893,8 @@
                 }], ondlclickRow: [{
                     type: i0.Output
                 }], onclickRow: [{
+                    type: i0.Output
+                }], onclickFavorite: [{
                     type: i0.Output
                 }], onedit: [{
                     type: i0.Output
@@ -45791,7 +45873,8 @@
                 CmacsDateTimePickerComponent,
                 CmacsDatetimePickerPanelComponent,
                 CmacsDatetimeValueAccessorDirective,
-                CmacsMessageContainerComponent], imports: [i11.NzResizableModule,
+                CmacsMessageContainerComponent,
+                CmacsButtonFavoriteComponent], imports: [i11.NzResizableModule,
                 i1$6.HammerModule,
                 LazyLoadingModule,
                 YoutubeModule,
@@ -46067,7 +46150,8 @@
                 CmacsDropdownButtonDirective,
                 CmacsVideoPlayerComponent,
                 i3$1.EditorModule,
-                i10.NzTimePickerModule] });
+                i10.NzTimePickerModule,
+                CmacsButtonFavoriteComponent] });
     })();
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsComponentsV2LibModule, [{
@@ -46232,7 +46316,8 @@
                             CmacsDateTimePickerComponent,
                             CmacsDatetimePickerPanelComponent,
                             CmacsDatetimeValueAccessorDirective,
-                            CmacsMessageContainerComponent
+                            CmacsMessageContainerComponent,
+                            CmacsButtonFavoriteComponent
                         ],
                         imports: [
                             i11.NzResizableModule,
@@ -46514,7 +46599,8 @@
                             CmacsDropdownButtonDirective,
                             CmacsVideoPlayerComponent,
                             i3$1.EditorModule,
-                            i10.NzTimePickerModule
+                            i10.NzTimePickerModule,
+                            CmacsButtonFavoriteComponent
                         ],
                         entryComponents: [CmacsDropdownMenuComponent, CmacsMessageContainerComponent, CmacsModalComponent],
                         providers: [i2$1.DatePipe, { provide: i1$3.NZ_I18N, useValue: i1$3.en_US }, i6$2.CookieService, {
@@ -46755,6 +46841,7 @@
     exports.CmacsBreadCrumbItemComponent = CmacsBreadCrumbItemComponent;
     exports.CmacsBreadCrumbSeparatorComponent = CmacsBreadCrumbSeparatorComponent;
     exports.CmacsButtonComponent = CmacsButtonComponent;
+    exports.CmacsButtonFavoriteComponent = CmacsButtonFavoriteComponent;
     exports.CmacsButtonGroupComponent = CmacsButtonGroupComponent;
     exports.CmacsCardComponent = CmacsCardComponent;
     exports.CmacsCardGridDirective = CmacsCardGridDirective;

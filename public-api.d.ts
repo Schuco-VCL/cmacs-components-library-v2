@@ -11,6 +11,7 @@ export * from './lib/components/cmacs-checkbox/cmacs-checkbox-wrapper.component'
 export * from './lib/components/cmacs-checkbox/cmacs-checkbox.component';
 export * from './lib/components/cmacs-button/cmacs-button-group.component';
 export * from './lib/components/cmacs-button/cmacs-button.component';
+export * from './lib/components/cmacs-button-favorite/cmacs-button-favorite.component';
 export * from './lib/components/cmacs-color-picker/cmacs-color-picker.component';
 export * from './lib/components/cmacs-slider/cmacs-slider.component';
 export * from './lib/components/cmacs-slider/cmacs-slider-track.component';

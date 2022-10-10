@@ -77,6 +77,7 @@ export declare class CmacsTableComponent implements OnInit, OnChanges, OnDestroy
     selectionChange: EventEmitter<any[]>;
     ondlclickRow: EventEmitter<any>;
     onclickRow: EventEmitter<any>;
+    onclickFavorite: EventEmitter<any>;
     onedit: EventEmitter<any>;
     rateCount: number;
     multiSelect: boolean;
@@ -125,6 +126,7 @@ export declare class CmacsTableComponent implements OnInit, OnChanges, OnDestroy
     checkCheckboxState(): CheckboxSelect[];
     ngModelChange(index: number): void;
     onRateChange(count: number, data: any): void;
+    onFavoriteChange(isFavorite: boolean, field: Field, data: any): void;
     onRateClick(event: any): void;
     getFields(): Field[];
     onCheckboxAllChange(status: boolean): void;
@@ -140,6 +142,7 @@ export declare class CmacsTableComponent implements OnInit, OnChanges, OnDestroy
     isCeldTypeButton(field: Field): boolean;
     isCeldTypeTag(field: Field): boolean;
     isCeldTypeTemplateRef(field: Field): boolean;
+    isCeldTypeButtonFavorite(field: Field): boolean;
     isUndefined(value: any): boolean;
     isRowSelected(data: any): boolean;
     constructor(cdr: ChangeDetectorRef, i18n: NzI18nService, exportAsService: ExportAsService, cmacsContextMenuService: CmacsContextMenuService, excelService: ExcelService, utilService: UtilService, datePipe: DatePipe, cookies: CookieService);
@@ -163,7 +166,7 @@ export declare class CmacsTableComponent implements OnInit, OnChanges, OnDestroy
     dblClickRow(data: any): void;
     transformDate(date: any): string;
     static ɵfac: i0.ɵɵFactoryDef<CmacsTableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTableComponent, "cmacs-table", ["cmacsTable"], { "size": "size"; "showTotal": "showTotal"; "pageSizeOptions": "pageSizeOptions"; "virtualScroll": "virtualScroll"; "virtualItemSize": "virtualItemSize"; "loadingDelay": "loadingDelay"; "loadingIndicator": "loadingIndicator"; "total": "total"; "title": "title"; "footer": "footer"; "noResult": "noResult"; "widthConfig": "widthConfig"; "pageIndex": "pageIndex"; "pageSize": "pageSize"; "data": "data"; "config": "config"; "fieldId": "fieldId"; "gridID": "gridID"; "paginationPosition": "paginationPosition"; "scroll": "scroll"; "printLandscape": "printLandscape"; "wrapLines": "wrapLines"; "frontPagination": "frontPagination"; "templateMode": "templateMode"; "bordered": "bordered"; "showPagination": "showPagination"; "loading": "loading"; "showSizeChanger": "showSizeChanger"; "hideOnSinglePage": "hideOnSinglePage"; "showQuickJumper": "showQuickJumper"; "simple": "simple"; "checkboxSelect": "checkboxSelect"; "inLineEdit": "inLineEdit"; "dataTable": "dataTable"; "showRate": "showRate"; "exportEvent": "exportEvent"; "rateCount": "rateCount"; "multiSelect": "multiSelect"; "contextmenu": "contextmenu"; }, { "configChange": "configChange"; "buttonClick": "buttonClick"; "rateChange": "rateChange"; "selectionChange": "selectionChange"; "ondlclickRow": "ondlclickRow"; "onclickRow": "onclickRow"; "onedit": "onedit"; "sortChange": "sortChange"; "onresize": "onresize"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTableComponent, "cmacs-table", ["cmacsTable"], { "size": "size"; "showTotal": "showTotal"; "pageSizeOptions": "pageSizeOptions"; "virtualScroll": "virtualScroll"; "virtualItemSize": "virtualItemSize"; "loadingDelay": "loadingDelay"; "loadingIndicator": "loadingIndicator"; "total": "total"; "title": "title"; "footer": "footer"; "noResult": "noResult"; "widthConfig": "widthConfig"; "pageIndex": "pageIndex"; "pageSize": "pageSize"; "data": "data"; "config": "config"; "fieldId": "fieldId"; "gridID": "gridID"; "paginationPosition": "paginationPosition"; "scroll": "scroll"; "printLandscape": "printLandscape"; "wrapLines": "wrapLines"; "frontPagination": "frontPagination"; "templateMode": "templateMode"; "bordered": "bordered"; "showPagination": "showPagination"; "loading": "loading"; "showSizeChanger": "showSizeChanger"; "hideOnSinglePage": "hideOnSinglePage"; "showQuickJumper": "showQuickJumper"; "simple": "simple"; "checkboxSelect": "checkboxSelect"; "inLineEdit": "inLineEdit"; "dataTable": "dataTable"; "showRate": "showRate"; "exportEvent": "exportEvent"; "rateCount": "rateCount"; "multiSelect": "multiSelect"; "contextmenu": "contextmenu"; }, { "configChange": "configChange"; "buttonClick": "buttonClick"; "rateChange": "rateChange"; "selectionChange": "selectionChange"; "ondlclickRow": "ondlclickRow"; "onclickRow": "onclickRow"; "onclickFavorite": "onclickFavorite"; "onedit": "onedit"; "sortChange": "sortChange"; "onresize": "onresize"; }, never, never>;
 }
 export interface CheckboxSelect {
     data: any;
