@@ -3,6 +3,7 @@ export declare enum CeldType {
     Button = 1,
     Tag = 2,
     TemplateRef = 3,
-    Favorite = 4
+    Favorite = 4,
+    Hyperlink = 5
 }
 //# sourceMappingURL=CeldType.enum.d.ts.map
