@@ -36586,27 +36586,6 @@ __decorate([
         }] }); })();
 
 const _c0$1f = ["textarea"];
-function CmacsOpenTextareaComponent_textarea_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "textarea", 4, 5);
-    ɵɵtext(2, "    ");
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext();
-    ɵɵstyleProp("width", ctx_r0.width, "px");
-    ɵɵproperty("opened", true)("placeholder", ctx_r0.placeholder)("formControl", ctx_r0.formControlCustom);
-} }
-function CmacsOpenTextareaComponent_span_3_Template(rf, ctx) { if (rf & 1) {
-    const _r4 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "span", 6);
-    ɵɵlistener("click", function CmacsOpenTextareaComponent_span_3_Template_span_click_0_listener($event) { ɵɵrestoreView(_r4); const ctx_r3 = ɵɵnextContext(); return ctx_r3.startEdition($event); })("mouseover", function CmacsOpenTextareaComponent_span_3_Template_span_mouseover_0_listener() { ɵɵrestoreView(_r4); const ctx_r5 = ɵɵnextContext(); return ctx_r5.enableDivider = true; })("mouseout", function CmacsOpenTextareaComponent_span_3_Template_span_mouseout_0_listener() { ɵɵrestoreView(_r4); const ctx_r6 = ɵɵnextContext(); return ctx_r6.enableDivider = false; });
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext();
-    ɵɵstyleProp("width", ctx_r1.width, "px");
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r1.formControlCustom.value, " ");
-} }
 class CmacsOpenTextareaComponent {
     constructor() {
         this.formControlCustom = new FormControl('', []);
@@ -36649,21 +36628,23 @@ CmacsOpenTextareaComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsOpenTextarea
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.textarea = _t.first);
     } }, hostBindings: function CmacsOpenTextareaComponent_HostBindings(rf, ctx) { if (rf & 1) {
         ɵɵlistener("click", function CmacsOpenTextareaComponent_click_HostBindingHandler($event) { return ctx.onClick($event); }, false, ɵɵresolveWindow);
-    } }, inputs: { formControlCustom: "formControlCustom", width: "width", placeholder: "placeholder" }, exportAs: ["cmacsOpenTextarea"], decls: 4, vars: 6, consts: [[1, "cmacs-textarea-opened-wrapper", 2, "display", "inline-flex"], [1, "cmacs-open-textarea-divider"], ["class", "cmacs-textarea", "cmacs-input", "", "nzAutosize", "", 3, "width", "opened", "placeholder", "formControl", 4, "ngIf"], ["class", "cmacs-textarea cmacs-text-area-span", 3, "width", "click", "mouseover", "mouseout", 4, "ngIf"], ["cmacs-input", "", "nzAutosize", "", 1, "cmacs-textarea", 3, "opened", "placeholder", "formControl"], ["textarea", ""], [1, "cmacs-textarea", "cmacs-text-area-span", 3, "click", "mouseover", "mouseout"]], template: function CmacsOpenTextareaComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { formControlCustom: "formControlCustom", width: "width", placeholder: "placeholder" }, exportAs: ["cmacsOpenTextarea"], decls: 5, vars: 10, consts: [[1, "cmacs-textarea-opened-wrapper", 2, "display", "inline-flex"], [1, "cmacs-open-textarea-divider"], ["cmacs-input", "", "nzAutosize", "", 1, "cmacs-textarea", 3, "opened", "placeholder", "formControl"], ["textarea", ""]], template: function CmacsOpenTextareaComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "div", 0);
         ɵɵelement(1, "cmacs-divider", 1);
-        ɵɵtemplate(2, CmacsOpenTextareaComponent_textarea_2_Template, 3, 5, "textarea", 2);
-        ɵɵtemplate(3, CmacsOpenTextareaComponent_span_3_Template, 2, 3, "span", 3);
+        ɵɵelementStart(2, "textarea", 2, 3);
+        ɵɵtext(4);
+        ɵɵelementEnd();
         ɵɵelementEnd();
     } if (rf & 2) {
         ɵɵstyleProp("width", ctx.width, "px");
         ɵɵadvance(1);
         ɵɵstyleProp("opacity", ctx.enableDivider || !ctx.formControlCustom.value);
         ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.isEnabled());
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.isTextEnabled());
-    } }, directives: [CmacsDividerComponent, NgIf, CmacsInputDirective, NzAutosizeDirective, DefaultValueAccessor, NgControlStatus, FormControlDirective], styles: [".cmacs-textarea[_ngcontent-%COMP%]{padding:5px 0 0;overflow:hidden;font-size:12px;min-height:31px;line-height:1.83;font-family:Roboto-Regular}.cmacs-text-area-span[_ngcontent-%COMP%]:after{content:\"\"}.cmacs-text-area-span[_ngcontent-%COMP%]:hover:after{font-family:UISmall!important;content:\"\\e99f\";font-size:19px;position:absolute;margin-top:-3px;margin-left:5px;color:#2a7cff}.cmacs-open-textarea-divider[_ngcontent-%COMP%]{height:20px;margin-top:2px}.cmacs-input-opened.ant-input[_ngcontent-%COMP%]:enabled:hover, .cmacs-input-opened.ant-input[_ngcontent-%COMP%]:focus{box-shadow:none;border:none}textarea.cmacs-input-opened[_ngcontent-%COMP%]{border:none;resize:none}", "cmacs-open-textarea[_ngcontent-%COMP%] {\n        display: block;\n      }"], data: { animation: [slideAlertMotion] } });
+        ɵɵstyleProp("width", ctx.width, "px");
+        ɵɵproperty("opened", true)("placeholder", ctx.placeholder)("formControl", ctx.formControlCustom);
+        ɵɵadvance(2);
+        ɵɵtextInterpolate1("                 <span *ngIf=\"isTextEnabled()\" (click)=\"startEdition($event)\">\n                       ", ctx.formControlCustom.value, "\n                 </span>\n    ");
+    } }, directives: [CmacsDividerComponent, CmacsInputDirective, NzAutosizeDirective, DefaultValueAccessor, NgControlStatus, FormControlDirective], styles: [".cmacs-textarea[_ngcontent-%COMP%]{padding:5px 0 0;overflow:hidden;font-size:12px;min-height:31px;line-height:1.83;font-family:Roboto-Regular}.cmacs-text-area-span[_ngcontent-%COMP%]:after{content:\"\"}.cmacs-text-area-span[_ngcontent-%COMP%]:hover:after{font-family:UISmall!important;content:\"\\e99f\";font-size:19px;position:absolute;margin-top:-3px;margin-left:5px;color:#2a7cff}.cmacs-open-textarea-divider[_ngcontent-%COMP%]{height:20px;margin-top:2px}.cmacs-input-opened.ant-input[_ngcontent-%COMP%]:enabled:hover, .cmacs-input-opened.ant-input[_ngcontent-%COMP%]:focus{box-shadow:none;border:none}textarea.cmacs-input-opened[_ngcontent-%COMP%]{border:none;resize:none}", "cmacs-open-textarea[_ngcontent-%COMP%] {\n        display: block;\n      }"], data: { animation: [slideAlertMotion] } });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsOpenTextareaComponent, [{
         type: Component,
         args: [{
