@@ -6501,14 +6501,23 @@
     var _c0$h = ["cmacs-submenu-title", ""];
     function NzSubMenuTitleComponent_i_0_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 4);
+            i0.ɵɵelement(0, "i", 5);
         }
         if (rf & 2) {
             var ctx_r0 = i0.ɵɵnextContext();
             i0.ɵɵproperty("nzType", ctx_r0.icon);
         }
     }
-    function NzSubMenuTitleComponent_ng_container_1_Template(rf, ctx) {
+    function NzSubMenuTitleComponent_i_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 6);
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0.ɵɵnextContext();
+            i0.ɵɵclassMap(ctx_r1.cmacsIcon);
+        }
+    }
+    function NzSubMenuTitleComponent_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵelementStart(1, "span");
@@ -6517,38 +6526,38 @@
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r1 = i0.ɵɵnextContext();
+            var ctx_r2 = i0.ɵɵnextContext();
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(ctx_r1.title);
+            i0.ɵɵtextInterpolate(ctx_r2.title);
         }
     }
-    function NzSubMenuTitleComponent_span_3_i_1_Template(rf, ctx) {
+    function NzSubMenuTitleComponent_span_4_i_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 8);
+            i0.ɵɵelement(0, "i", 10);
         }
     }
-    function NzSubMenuTitleComponent_span_3_i_2_Template(rf, ctx) {
+    function NzSubMenuTitleComponent_span_4_i_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 9);
+            i0.ɵɵelement(0, "i", 11);
         }
     }
-    function NzSubMenuTitleComponent_span_3_Template(rf, ctx) {
+    function NzSubMenuTitleComponent_span_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "span", 5);
-            i0.ɵɵtemplate(1, NzSubMenuTitleComponent_span_3_i_1_Template, 1, 0, "i", 6);
-            i0.ɵɵtemplate(2, NzSubMenuTitleComponent_span_3_i_2_Template, 1, 0, "i", 7);
+            i0.ɵɵelementStart(0, "span", 7);
+            i0.ɵɵtemplate(1, NzSubMenuTitleComponent_span_4_i_1_Template, 1, 0, "i", 8);
+            i0.ɵɵtemplate(2, NzSubMenuTitleComponent_span_4_i_2_Template, 1, 0, "i", 9);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r2 = i0.ɵɵnextContext();
-            i0.ɵɵproperty("ngSwitch", ctx_r2.dir);
+            var ctx_r3 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("ngSwitch", ctx_r3.dir);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngSwitchCase", "rtl");
         }
     }
-    function NzSubMenuTitleComponent_ng_template_4_Template(rf, ctx) {
+    function NzSubMenuTitleComponent_ng_template_5_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 10);
+            i0.ɵɵelement(0, "i", 12);
         }
     }
     var _c1$7 = ["*"];
@@ -6557,6 +6566,7 @@
             this.cdr = cdr;
             this.directionality = directionality;
             this.icon = null;
+            this.cmacsIcon = null;
             this.title = null;
             this.isMenuInsideDropDown = false;
             this.disabled = false;
@@ -6601,22 +6611,25 @@
                 i0.ɵɵstyleProp("padding-left", ctx.dir === "rtl" ? null : ctx.paddingLeft, "px")("padding-right", ctx.dir === "rtl" ? ctx.paddingLeft : null, "px");
                 i0.ɵɵclassProp("ant-dropdown-menu-submenu-title", ctx.isMenuInsideDropDown)("ant-menu-submenu-title", !ctx.isMenuInsideDropDown);
             }
-        }, inputs: { icon: "icon", title: "title", isMenuInsideDropDown: "isMenuInsideDropDown", disabled: "disabled", paddingLeft: "paddingLeft", mode: "mode" }, outputs: { toggleSubMenu: "toggleSubMenu", subMenuMouseState: "subMenuMouseState" }, exportAs: ["cmacsSubmenuTitle"], attrs: _c0$h, ngContentSelectors: _c1$7, decls: 6, vars: 4, consts: [["nz-icon", "", 3, "nzType", 4, "ngIf"], [4, "nzStringTemplateOutlet"], ["class", "ant-dropdown-menu-submenu-expand-icon", 3, "ngSwitch", 4, "ngIf", "ngIfElse"], ["notDropdownTpl", ""], ["nz-icon", "", 3, "nzType"], [1, "ant-dropdown-menu-submenu-expand-icon", 3, "ngSwitch"], ["class", "ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Left", 4, "ngSwitchCase"], ["class", "ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Right", 4, "ngSwitchDefault"], [1, "ant-dropdown-menu-submenu-arrow-icon", "iconArrowSmall-Solid-Left"], [1, "ant-dropdown-menu-submenu-arrow-icon", "iconArrowSmall-Solid-Right"], [1, "ant-menu-submenu-arrow", "ant-menu-submenu-arrow-cmacs"]], template: function NzSubMenuTitleComponent_Template(rf, ctx) {
+        }, inputs: { icon: "icon", cmacsIcon: "cmacsIcon", title: "title", isMenuInsideDropDown: "isMenuInsideDropDown", disabled: "disabled", paddingLeft: "paddingLeft", mode: "mode" }, outputs: { toggleSubMenu: "toggleSubMenu", subMenuMouseState: "subMenuMouseState" }, exportAs: ["cmacsSubmenuTitle"], attrs: _c0$h, ngContentSelectors: _c1$7, decls: 7, vars: 5, consts: [["nz-icon", "", 3, "nzType", 4, "ngIf"], ["style", "font-size: 18px; margin-right: 6px;", 3, "class", 4, "ngIf"], [4, "nzStringTemplateOutlet"], ["class", "ant-dropdown-menu-submenu-expand-icon", 3, "ngSwitch", 4, "ngIf", "ngIfElse"], ["notDropdownTpl", ""], ["nz-icon", "", 3, "nzType"], [2, "font-size", "18px", "margin-right", "6px"], [1, "ant-dropdown-menu-submenu-expand-icon", 3, "ngSwitch"], ["class", "ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Left", 4, "ngSwitchCase"], ["class", "ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Right", 4, "ngSwitchDefault"], [1, "ant-dropdown-menu-submenu-arrow-icon", "iconArrowSmall-Solid-Left"], [1, "ant-dropdown-menu-submenu-arrow-icon", "iconArrowSmall-Solid-Right"], [1, "ant-menu-submenu-arrow", "ant-menu-submenu-arrow-cmacs"]], template: function NzSubMenuTitleComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵtemplate(0, NzSubMenuTitleComponent_i_0_Template, 1, 1, "i", 0);
-                i0.ɵɵtemplate(1, NzSubMenuTitleComponent_ng_container_1_Template, 3, 1, "ng-container", 1);
-                i0.ɵɵprojection(2);
-                i0.ɵɵtemplate(3, NzSubMenuTitleComponent_span_3_Template, 3, 2, "span", 2);
-                i0.ɵɵtemplate(4, NzSubMenuTitleComponent_ng_template_4_Template, 1, 0, "ng-template", null, 3, i0.ɵɵtemplateRefExtractor);
+                i0.ɵɵtemplate(1, NzSubMenuTitleComponent_i_1_Template, 1, 3, "i", 1);
+                i0.ɵɵtemplate(2, NzSubMenuTitleComponent_ng_container_2_Template, 3, 1, "ng-container", 2);
+                i0.ɵɵprojection(3);
+                i0.ɵɵtemplate(4, NzSubMenuTitleComponent_span_4_Template, 3, 2, "span", 3);
+                i0.ɵɵtemplate(5, NzSubMenuTitleComponent_ng_template_5_Template, 1, 0, "ng-template", null, 4, i0.ɵɵtemplateRefExtractor);
             }
             if (rf & 2) {
-                var _r3 = i0.ɵɵreference(5);
+                var _r4 = i0.ɵɵreference(6);
                 i0.ɵɵproperty("ngIf", ctx.icon);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.cmacsIcon);
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("nzStringTemplateOutlet", ctx.title);
                 i0.ɵɵadvance(2);
-                i0.ɵɵproperty("ngIf", ctx.isMenuInsideDropDown)("ngIfElse", _r3);
+                i0.ɵɵproperty("ngIf", ctx.isMenuInsideDropDown)("ngIfElse", _r4);
             }
         }, directives: [i2$1.NgIf, i6.NzStringTemplateOutletDirective, i4.ɵNzTransitionPatchDirective, i5.NzIconDirective, i2$1.NgSwitch, i2$1.NgSwitchCase, i2$1.NgSwitchDefault], encapsulation: 2, changeDetection: 0 });
     (function () {
@@ -6627,7 +6640,7 @@
                         exportAs: 'cmacsSubmenuTitle',
                         encapsulation: i0.ViewEncapsulation.None,
                         changeDetection: i0.ChangeDetectionStrategy.OnPush,
-                        template: "\n    <i nz-icon [nzType]=\"icon\" *ngIf=\"icon\"></i>\n    <ng-container *nzStringTemplateOutlet=\"title\">\n      <span>{{ title }}</span>\n    </ng-container>\n    <ng-content></ng-content>\n    <span [ngSwitch]=\"dir\" *ngIf=\"isMenuInsideDropDown; else notDropdownTpl\" class=\"ant-dropdown-menu-submenu-expand-icon\">\n      <i *ngSwitchCase=\"'rtl'\" class=\"ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Left\"></i>\n      <i *ngSwitchDefault class=\"ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Right\"></i>\n    </span>\n    <ng-template #notDropdownTpl>\n      <i class=\"ant-menu-submenu-arrow ant-menu-submenu-arrow-cmacs\"></i>\n    </ng-template>\n  ",
+                        template: "\n    <i nz-icon [nzType]=\"icon\" *ngIf=\"icon\"></i>\n    <i class=\"{{cmacsIcon}}\" style=\"font-size: 18px; margin-right: 6px;\" *ngIf=\"cmacsIcon\"></i>\n    <ng-container *nzStringTemplateOutlet=\"title\">\n      <span>{{ title }}</span>\n    </ng-container>\n    <ng-content></ng-content>\n    <span [ngSwitch]=\"dir\" *ngIf=\"isMenuInsideDropDown; else notDropdownTpl\" class=\"ant-dropdown-menu-submenu-expand-icon\">\n      <i *ngSwitchCase=\"'rtl'\" class=\"ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Left\"></i>\n      <i *ngSwitchDefault class=\"ant-dropdown-menu-submenu-arrow-icon iconArrowSmall-Solid-Right\"></i>\n    </span>\n    <ng-template #notDropdownTpl>\n      <i class=\"ant-menu-submenu-arrow ant-menu-submenu-arrow-cmacs\"></i>\n    </ng-template>\n  ",
                         host: {
                             '[class.ant-dropdown-menu-submenu-title]': 'isMenuInsideDropDown',
                             '[class.ant-menu-submenu-title]': '!isMenuInsideDropDown',
@@ -6643,6 +6656,8 @@
                             type: i0.Optional
                         }] }];
         }, { icon: [{
+                    type: i0.Input
+                }], cmacsIcon: [{
                     type: i0.Input
                 }], title: [{
                     type: i0.Input
@@ -6971,6 +6986,7 @@
             this.paddingLeft = null;
             this.title = null;
             this.icon = null;
+            this.cmacsIcon = null;
             this.open = false;
             this.cmacsContextMenu = false;
             this.disabled = false;
@@ -7111,7 +7127,7 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("ant-dropdown-menu-submenu", ctx.isMenuInsideDropDown)("ant-dropdown-menu-submenu-disabled", ctx.isMenuInsideDropDown && ctx.disabled)("ant-dropdown-menu-submenu-open", ctx.isMenuInsideDropDown && ctx.open)("ant-dropdown-menu-submenu-selected", ctx.isMenuInsideDropDown && ctx.isSelected)("ant-dropdown-menu-submenu-vertical", ctx.isMenuInsideDropDown && ctx.mode === "vertical")("ant-dropdown-menu-submenu-horizontal", ctx.isMenuInsideDropDown && ctx.mode === "horizontal")("ant-dropdown-menu-submenu-inline", ctx.isMenuInsideDropDown && ctx.mode === "inline")("ant-dropdown-menu-submenu-active", ctx.isMenuInsideDropDown && ctx.isActive)("ant-menu-submenu", !ctx.isMenuInsideDropDown)("ant-menu-submenu-disabled", !ctx.isMenuInsideDropDown && ctx.disabled)("ant-menu-submenu-open", !ctx.isMenuInsideDropDown && ctx.open)("ant-menu-submenu-selected", !ctx.isMenuInsideDropDown && ctx.isSelected)("ant-menu-submenu-vertical", !ctx.isMenuInsideDropDown && ctx.mode === "vertical")("ant-menu-submenu-horizontal", !ctx.isMenuInsideDropDown && ctx.mode === "horizontal")("ant-menu-submenu-inline", !ctx.isMenuInsideDropDown && ctx.mode === "inline")("ant-menu-submenu-active", !ctx.isMenuInsideDropDown && ctx.isActive)("ant-menu-submenu-rtl", ctx.dir === "rtl");
             }
-        }, inputs: { menuClassName: "menuClassName", paddingLeft: "paddingLeft", title: "title", icon: "icon", open: "open", cmacsContextMenu: "cmacsContextMenu", disabled: "disabled" }, outputs: { openChange: "openChange" }, exportAs: ["cmacsSubmenu"], features: [i0.ɵɵProvidersFeature([NzSubmenuService]), i0.ɵɵNgOnChangesFeature], attrs: _c0$k, ngContentSelectors: _c2$5, decls: 8, vars: 9, consts: [["cmacs-submenu-title", "", "cdkOverlayOrigin", "", 3, "icon", "title", "mode", "disabled", "isMenuInsideDropDown", "paddingLeft", "subMenuMouseState", "toggleSubMenu"], ["origin", "cdkOverlayOrigin"], [4, "ngIf"], ["cmacs-submenu-inline-child", "", 3, "mode", "open", "nzNoAnimation", "menuClass", "templateOutlet", 4, "ngIf", "ngIfElse"], ["nonInlineTemplate", ""], ["subMenuTemplate", ""], ["cmacs-submenu-inline-child", "", 3, "mode", "open", "nzNoAnimation", "menuClass", "templateOutlet"], ["cdkConnectedOverlay", "", 3, "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayWidth", "cdkConnectedOverlayOpen", "cdkConnectedOverlayTransformOriginOn", "positionChange"], ["cmacs-submenu-none-inline-child", "", 3, "theme", "mode", "open", "position", "disabled", "isMenuInsideDropDown", "templateOutlet", "menuClass", "nzNoAnimation", "subMenuMouseState"]], template: function CmacsSubMenuComponent_Template(rf, ctx) {
+        }, inputs: { menuClassName: "menuClassName", paddingLeft: "paddingLeft", title: "title", icon: "icon", cmacsIcon: "cmacsIcon", open: "open", cmacsContextMenu: "cmacsContextMenu", disabled: "disabled" }, outputs: { openChange: "openChange" }, exportAs: ["cmacsSubmenu"], features: [i0.ɵɵProvidersFeature([NzSubmenuService]), i0.ɵɵNgOnChangesFeature], attrs: _c0$k, ngContentSelectors: _c2$5, decls: 8, vars: 10, consts: [["cmacs-submenu-title", "", "cdkOverlayOrigin", "", 3, "icon", "cmacsIcon", "title", "mode", "disabled", "isMenuInsideDropDown", "paddingLeft", "subMenuMouseState", "toggleSubMenu"], ["origin", "cdkOverlayOrigin"], [4, "ngIf"], ["cmacs-submenu-inline-child", "", 3, "mode", "open", "nzNoAnimation", "menuClass", "templateOutlet", 4, "ngIf", "ngIfElse"], ["nonInlineTemplate", ""], ["subMenuTemplate", ""], ["cmacs-submenu-inline-child", "", 3, "mode", "open", "nzNoAnimation", "menuClass", "templateOutlet"], ["cdkConnectedOverlay", "", 3, "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayWidth", "cdkConnectedOverlayOpen", "cdkConnectedOverlayTransformOriginOn", "positionChange"], ["cmacs-submenu-none-inline-child", "", 3, "theme", "mode", "open", "position", "disabled", "isMenuInsideDropDown", "templateOutlet", "menuClass", "nzNoAnimation", "subMenuMouseState"]], template: function CmacsSubMenuComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef(_c1$8);
                 i0.ɵɵelementStart(0, "div", 0, 1);
@@ -7124,7 +7140,7 @@
             }
             if (rf & 2) {
                 var _r3 = i0.ɵɵreference(5);
-                i0.ɵɵproperty("icon", ctx.icon)("title", ctx.title)("mode", ctx.mode)("disabled", ctx.disabled)("isMenuInsideDropDown", ctx.isMenuInsideDropDown)("paddingLeft", ctx.paddingLeft || ctx.inlinePaddingLeft);
+                i0.ɵɵproperty("icon", ctx.icon)("cmacsIcon", ctx.cmacsIcon)("title", ctx.title)("mode", ctx.mode)("disabled", ctx.disabled)("isMenuInsideDropDown", ctx.isMenuInsideDropDown)("paddingLeft", ctx.paddingLeft || ctx.inlinePaddingLeft);
                 i0.ɵɵadvance(2);
                 i0.ɵɵproperty("ngIf", !ctx.title);
                 i0.ɵɵadvance(1);
@@ -7150,7 +7166,7 @@
                         encapsulation: i0.ViewEncapsulation.None,
                         changeDetection: i0.ChangeDetectionStrategy.OnPush,
                         preserveWhitespaces: false,
-                        template: "\n    <div\n      cmacs-submenu-title\n      cdkOverlayOrigin\n      #origin=\"cdkOverlayOrigin\"\n      [icon]=\"icon\"\n      [title]=\"title\"\n      [mode]=\"mode\"\n      [disabled]=\"disabled\"\n      [isMenuInsideDropDown]=\"isMenuInsideDropDown\"\n      [paddingLeft]=\"paddingLeft || inlinePaddingLeft\"\n      (subMenuMouseState)=\"setMouseEnterState($event)\"\n      (toggleSubMenu)=\"toggleSubMenu()\"\n    >\n      <ng-content select=\"[title]\" *ngIf=\"!title\"></ng-content>\n    </div>\n    <div\n      *ngIf=\"mode === 'inline'; else nonInlineTemplate\"\n      cmacs-submenu-inline-child\n      [mode]=\"mode\"\n      [open]=\"open\"\n      [@.disabled]=\"noAnimation?.nzNoAnimation\"\n      [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n      [menuClass]=\"menuClassName\"\n      [templateOutlet]=\"subMenuTemplate\"\n    ></div>\n    <ng-template #nonInlineTemplate>\n      <ng-template\n        cdkConnectedOverlay\n        (positionChange)=\"onPositionChange($event)\"\n        [cdkConnectedOverlayPositions]=\"overlayPositions\"\n        [cdkConnectedOverlayOrigin]=\"origin\"\n        [cdkConnectedOverlayWidth]=\"triggerWidth!\"\n        [cdkConnectedOverlayOpen]=\"open\"\n        [cdkConnectedOverlayTransformOriginOn]=\"'.ant-menu-submenu'\"\n      >\n        <div\n          cmacs-submenu-none-inline-child\n          [theme]=\"theme\"\n          [mode]=\"mode\"\n          [open]=\"open\"\n          [class.cmacs-dropdown-submenu-context-menu]=\"cmacsContextMenu\"\n          [position]=\"position\"\n          [disabled]=\"disabled\"\n          [isMenuInsideDropDown]=\"isMenuInsideDropDown\"\n          [templateOutlet]=\"subMenuTemplate\"\n          [menuClass]=\"menuClassName\"\n          [@.disabled]=\"noAnimation?.nzNoAnimation\"\n          [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n          (subMenuMouseState)=\"setMouseEnterState($event)\"\n        ></div>\n      </ng-template>\n    </ng-template>\n\n    <ng-template #subMenuTemplate>\n      <ng-content></ng-content>\n    </ng-template>\n  ",
+                        template: "\n    <div\n      cmacs-submenu-title\n      cdkOverlayOrigin\n      #origin=\"cdkOverlayOrigin\"\n      [icon]=\"icon\"\n      [cmacsIcon]=\"cmacsIcon\"\n      [title]=\"title\"\n      [mode]=\"mode\"\n      [disabled]=\"disabled\"\n      [isMenuInsideDropDown]=\"isMenuInsideDropDown\"\n      [paddingLeft]=\"paddingLeft || inlinePaddingLeft\"\n      (subMenuMouseState)=\"setMouseEnterState($event)\"\n      (toggleSubMenu)=\"toggleSubMenu()\"\n    >\n      <ng-content select=\"[title]\" *ngIf=\"!title\"></ng-content>\n    </div>\n    <div\n      *ngIf=\"mode === 'inline'; else nonInlineTemplate\"\n      cmacs-submenu-inline-child\n      [mode]=\"mode\"\n      [open]=\"open\"\n      [@.disabled]=\"noAnimation?.nzNoAnimation\"\n      [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n      [menuClass]=\"menuClassName\"\n      [templateOutlet]=\"subMenuTemplate\"\n    ></div>\n    <ng-template #nonInlineTemplate>\n      <ng-template\n        cdkConnectedOverlay\n        (positionChange)=\"onPositionChange($event)\"\n        [cdkConnectedOverlayPositions]=\"overlayPositions\"\n        [cdkConnectedOverlayOrigin]=\"origin\"\n        [cdkConnectedOverlayWidth]=\"triggerWidth!\"\n        [cdkConnectedOverlayOpen]=\"open\"\n        [cdkConnectedOverlayTransformOriginOn]=\"'.ant-menu-submenu'\"\n      >\n        <div\n          cmacs-submenu-none-inline-child\n          [theme]=\"theme\"\n          [mode]=\"mode\"\n          [open]=\"open\"\n          [class.cmacs-dropdown-submenu-context-menu]=\"cmacsContextMenu\"\n          [position]=\"position\"\n          [disabled]=\"disabled\"\n          [isMenuInsideDropDown]=\"isMenuInsideDropDown\"\n          [templateOutlet]=\"subMenuTemplate\"\n          [menuClass]=\"menuClassName\"\n          [@.disabled]=\"noAnimation?.nzNoAnimation\"\n          [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n          (subMenuMouseState)=\"setMouseEnterState($event)\"\n        ></div>\n      </ng-template>\n    </ng-template>\n\n    <ng-template #subMenuTemplate>\n      <ng-content></ng-content>\n    </ng-template>\n  ",
                         host: {
                             '[class.ant-dropdown-menu-submenu]': "isMenuInsideDropDown",
                             '[class.ant-dropdown-menu-submenu-disabled]': "isMenuInsideDropDown && disabled",
@@ -7189,6 +7205,8 @@
                 }], title: [{
                     type: i0.Input
                 }], icon: [{
+                    type: i0.Input
+                }], cmacsIcon: [{
                     type: i0.Input
                 }], open: [{
                     type: i0.Input
