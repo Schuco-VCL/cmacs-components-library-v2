@@ -27850,7 +27850,7 @@ function CmacsCompactTableComponent_ng_template_8_ng_container_1_Template(rf, ct
     ɵɵstyleProp("max-width", ctx_r361.getMaxWidth(field_r356, item_r359, i_r358));
     ɵɵclassProp("cmacs-compact-table-overflow-cell", !ctx_r361.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r361.isNull(data_r357[field_r356.property]) || !data_r357[field_r356.property].length)("cmacs-compact-table-invalid", !ctx_r361.validate(data_r357, field_r356));
     ɵɵattributeInterpolate3("id", "", ctx_r361.gridID, "-row-", i_r358, "-", field_r356.property, "");
-    ɵɵproperty("cmacsTooltipTrigger", ctx_r361.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r361.isEllipsisActive(ctx_r361.gridID + "-row-" + i_r358 + "-" + field_r356.property, field_r356) ? ctx_r361.getStringFieldValue(data_r357, field_r356) : null);
+    ɵɵproperty("cmacsTooltipTrigger", ctx_r361.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r361.isTooltipActive(data_r357, field_r356) ? ctx_r361.getStringFieldValue(data_r357, field_r356) : null);
     ɵɵadvance(1);
     ɵɵtextInterpolate1(" ", ctx_r361.getStringFieldValue(data_r357, field_r356), " ");
     ɵɵadvance(1);
@@ -28270,6 +28270,45 @@ class CmacsCompactTableComponent {
             return;
         }
         return (el.offsetWidth < el.scrollWidth);
+    }
+    isTooltipActive(data, field) {
+        if (!field.showTooltip || field.width === undefined) {
+            return;
+        }
+        let width = field.width;
+        width = Number(width.replace('px', ''));
+        const stringFieldValue = this.getStringFieldValue(data, field);
+        if (stringFieldValue !== undefined) {
+            return width < this.measureText(stringFieldValue, 12);
+        }
+        else {
+            return false;
+        }
+    }
+    measureText(str, fontSize) {
+        const widths = [
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0.2796875, 0.2765625, 0.3546875, 0.5546875,
+            0.5546875, 0.8890625, 0.665625, 0.190625, 0.3328125, 0.3328125, 0.3890625,
+            0.5828125, 0.2765625, 0.3328125, 0.2765625, 0.3015625, 0.5546875,
+            0.5546875, 0.5546875, 0.5546875, 0.5546875, 0.5546875, 0.5546875,
+            0.5546875, 0.5546875, 0.5546875, 0.2765625, 0.2765625, 0.584375,
+            0.5828125, 0.584375, 0.5546875, 1.0140625, 0.665625, 0.665625, 0.721875,
+            0.721875, 0.665625, 0.609375, 0.7765625, 0.721875, 0.2765625, 0.5,
+            0.665625, 0.5546875, 0.8328125, 0.721875, 0.7765625, 0.665625, 0.7765625,
+            0.721875, 0.665625, 0.609375, 0.721875, 0.665625, 0.94375, 0.665625,
+            0.665625, 0.609375, 0.2765625, 0.3546875, 0.2765625, 0.4765625, 0.5546875,
+            0.3328125, 0.5546875, 0.5546875, 0.5, 0.5546875, 0.5546875, 0.2765625,
+            0.5546875, 0.5546875, 0.221875, 0.240625, 0.5, 0.221875, 0.8328125,
+            0.5546875, 0.5546875, 0.5546875, 0.5546875, 0.3328125, 0.5, 0.2765625,
+            0.5546875, 0.5, 0.721875, 0.5, 0.5, 0.5, 0.3546875, 0.259375, 0.353125,
+            0.5890625,
+        ];
+        const avg = 0.5279276315789471;
+        return Math.round(str
+            .split("")
+            .map((c) => c.charCodeAt(0) < widths.length ? widths[c.charCodeAt(0)] : avg)
+            .reduce((cur, acc) => acc + cur) * fontSize);
     }
     getInputNumberValue(data, field) {
         if (!this.isNull(data[field.property])) {
