@@ -141,8 +141,6 @@ export * from './lib/components/cmacs-list/list.component';
 export * from './lib/components/cmacs-list/interface';
 export * from './lib/components/cmacs-table/cmacs-table.component';
 export * from './lib/components/cmacs-compact-table/cmacs-compact-table.component';
-export * from './lib/components/cmacs-compact-table/components/cmacs-compact-table-column-tooltip/cmacs-compact-table-column-tooltip.component';
-export * from './lib/components/cmacs-compact-table/components/cmacs-compact-table-column-more/cmacs-compact-table-column-more.component';
 export * from './lib/components/cmacs-steps/step.component';
 export * from './lib/components/cmacs-steps/cmacs-wizard.component';
 export * from './lib/components/core/enums/buttonStyle.enum';
