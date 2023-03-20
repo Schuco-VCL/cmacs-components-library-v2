@@ -14,7 +14,6 @@ export declare class CmacsCompactTableColumnTooltipComponent implements OnInit, 
     fieldChanged(value: any): void;
     getItems(): any;
     getValidationRules(): any;
-    getIcon(value: any): "iconUILarge-Calendar" | "iconArrowLarge-Chevron-Down" | "iconArrowLarge-Solid-UpDown" | "iconEditorLarge-Text" | "iconUILarge-Select-All" | "iconUILarge-Time" | "iconUILarge-Attached" | "iconUILarge-Preferences";
     static ɵfac: i0.ɵɵFactoryDef<CmacsCompactTableColumnTooltipComponent, never>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableColumnTooltipComponent, "cmacs-compact-table-column-tooltip", never, { "field": "field"; "items": "items"; }, { "onFieldChanged": "onFieldChanged"; }, never, never>;
 }
