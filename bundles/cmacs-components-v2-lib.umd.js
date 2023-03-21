@@ -29240,7 +29240,6 @@
             }], function () { return [{ type: i1$9.ExportAsService }, { type: i1$4.NzI18nService }]; }, null);
     })();
 
-    var ColumnMenuType;
     (function (ColumnMenuType) {
         ColumnMenuType[ColumnMenuType["RestrictEdit"] = 0] = "RestrictEdit";
         ColumnMenuType[ColumnMenuType["Duplicate"] = 1] = "Duplicate";
@@ -29255,7 +29254,7 @@
         ColumnMenuType[ColumnMenuType["Attachment"] = 10] = "Attachment";
         ColumnMenuType[ColumnMenuType["Boolean"] = 11] = "Boolean";
         ColumnMenuType[ColumnMenuType["AdvancedConfiguration"] = 12] = "AdvancedConfiguration";
-    })(ColumnMenuType || (ColumnMenuType = {}));
+    })(exports.ColumnMenuType || (exports.ColumnMenuType = {}));
 
     function CmacsCompactTableColumnTooltipComponent_div_2_ul_3_Template(rf, ctx) {
         if (rf & 1) {
@@ -29384,7 +29383,7 @@
             this.onFieldChanged.emit(this.field);
         };
         CmacsCompactTableColumnTooltipComponent.prototype.fieldChanged = function (value) {
-            if (value !== ColumnMenuType.AdvancedConfiguration) {
+            if (value !== exports.ColumnMenuType.AdvancedConfiguration) {
                 this.field.editTemplate = value;
                 this.onFieldChanged.emit(this.field);
             }
@@ -29393,7 +29392,7 @@
             }
         };
         CmacsCompactTableColumnTooltipComponent.prototype.getItems = function () {
-            return this.items.columnOptions.filter(function (item) { return item.value !== ColumnMenuType.AdvancedConfiguration; });
+            return this.items.columnOptions.filter(function (item) { return item.value !== exports.ColumnMenuType.AdvancedConfiguration; });
         };
         CmacsCompactTableColumnTooltipComponent.prototype.getValidationRules = function () {
             switch (this.field.editTemplate) {
@@ -29529,7 +29528,7 @@
         CmacsCompactTableColumnMoreComponent.prototype.ngOnInit = function () {
         };
         CmacsCompactTableColumnMoreComponent.prototype.fieldChanged = function (value) {
-            if (value !== ColumnMenuType.AdvancedConfiguration) {
+            if (value !== exports.ColumnMenuType.AdvancedConfiguration) {
                 this.field.editTemplate = value;
                 this.onFieldChanged.emit(this.field);
             }

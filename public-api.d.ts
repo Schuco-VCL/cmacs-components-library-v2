@@ -148,6 +148,7 @@ export * from './lib/components/cmacs-steps/cmacs-wizard.component';
 export * from './lib/components/core/enums/buttonStyle.enum';
 export * from './lib/components/core/enums/CeldType.enum';
 export * from './lib/components/core/enums/export-type.enum';
+export * from './lib/components/core/enums/columnMenuType.enum';
 export * from './lib/components/core/enums/ModeTabType.enum';
 export * from './lib/components/core/enums/TemplateType.enum';
 export * from './lib/components/core/enums/widget-action-type.enum';
