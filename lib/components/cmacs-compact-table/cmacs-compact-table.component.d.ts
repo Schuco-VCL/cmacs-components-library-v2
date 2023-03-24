@@ -2,7 +2,7 @@ import { DatePipe } from '@angular/common';
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChanges, AfterViewInit, TemplateRef } from '@angular/core';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 import 'jspdf-autotable';
-import { GridConfig, Field } from '../core/interfaces/grid-config';
+import { GridConfig, Field, EditColumnAction, EditColumnEvent } from '../core/interfaces/grid-config';
 import { GridExpConfig } from '../core/interfaces/grid-exp-config';
 import { ExcelService } from '../core/services/excel.service';
 import { CookieService } from 'ngx-cookie-service';
@@ -107,10 +107,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     onrowdeleted: EventEmitter<any>;
     onrowadded: EventEmitter<any>;
     oncolumnadded: EventEmitter<any>;
-    oneditcolumn: EventEmitter<{
-        index: number;
-        column: Field;
-    }>;
+    oneditcolumn: EventEmitter<EditColumnEvent>;
     onresize: EventEmitter<any>;
     oncontextmenu: EventEmitter<any>;
     extra: string | TemplateRef<void>;
@@ -162,7 +159,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     openColumnMore(idx: number): void;
     closeColumnMenu(): void;
     closeColumnMore(): void;
-    onFieldChanged(idx: number, field: Field): void;
+    onFieldChanged(idx: number, field: EditColumnAction): void;
     onFieldTapEllipsis(id: string): void;
     onDataTapEllipsis(id: string): void;
     getTooltipEllipsisTrigger(): "click" | "hover";

@@ -2,6 +2,7 @@ import { CeldType } from '../enums/CeldType.enum';
 import { TemplateType } from '../enums/TemplateType.enum';
 import { ButtonStyle } from '../enums/ButtonStyle.enum';
 import { TemplateRef } from "@angular/core";
+import { ColumnMenuType } from '../enums/columnMenuType.enum';
 export interface GridConfig {
     fields: Field[];
     fieldId: string;
@@ -46,6 +47,14 @@ export interface Field {
     showCmacsSearch?: boolean;
     mode?: string;
     resizable?: boolean;
+}
+export interface EditColumnAction {
+    field: Field;
+    columnMenu: ColumnMenuType;
+}
+export interface EditColumnEvent {
+    index: number;
+    column: EditColumnAction;
 }
 export interface SelectConfig {
     selectData: any[];

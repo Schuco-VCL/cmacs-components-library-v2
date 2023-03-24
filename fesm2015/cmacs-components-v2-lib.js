@@ -26718,6 +26718,7 @@ var ColumnMenuType;
     ColumnMenuType[ColumnMenuType["Attachment"] = 10] = "Attachment";
     ColumnMenuType[ColumnMenuType["Boolean"] = 11] = "Boolean";
     ColumnMenuType[ColumnMenuType["AdvancedConfiguration"] = 12] = "AdvancedConfiguration";
+    ColumnMenuType[ColumnMenuType["PropertyType"] = 13] = "PropertyType";
 })(ColumnMenuType || (ColumnMenuType = {}));
 
 function CmacsCompactTableColumnTooltipComponent_div_2_ul_3_Template(rf, ctx) { if (rf & 1) {
@@ -26732,7 +26733,7 @@ function CmacsCompactTableColumnTooltipComponent_div_2_ul_3_Template(rf, ctx) { 
     const ctx_r2 = ɵɵnextContext(2);
     ɵɵproperty("mode", "vertical");
     ɵɵadvance(1);
-    ɵɵclassProp("selected-item", item_r3.value === ctx_r2.field.editTemplate);
+    ɵɵclassProp("selected-item", ctx_r2.isSelected(item_r3.value, ctx_r2.field.editTemplate));
     ɵɵpropertyInterpolate("title", item_r3.label);
     ɵɵpropertyInterpolate("cmacsIcon", item_r3.icon);
 } }
@@ -26822,16 +26823,28 @@ class CmacsCompactTableColumnTooltipComponent {
     }
     updateDisplay() {
         this.field.property = this.field.display.toLowerCase().replace(' ', '_');
-        this.onFieldChanged.emit(this.field);
+        this.onFieldChanged.emit({ field: this.field, columnMenu: Number(ColumnMenuType.PropertyType) });
     }
     onChange(value) {
-        this.field.editTemplate = Number(value);
-        this.onFieldChanged.emit(this.field);
+        this.field.editTemplate = this.getTemplateType(value);
+        this.onFieldChanged.emit({ field: this.field, columnMenu: Number(value) });
+    }
+    getTemplateType(value) {
+        switch (value) {
+            case ColumnMenuType.Date: return TemplateType.Date;
+            case ColumnMenuType.Boolean: return TemplateType.Boolean;
+            case ColumnMenuType.Number: return TemplateType.Number;
+            case ColumnMenuType.Select: return TemplateType.Select;
+            case ColumnMenuType.Date: return TemplateType.Date;
+            case ColumnMenuType.String: return TemplateType.String;
+            case ColumnMenuType.Time: return TemplateType.Time;
+            default: return TemplateType.String;
+        }
     }
     fieldChanged(value) {
         if (value !== ColumnMenuType.AdvancedConfiguration) {
-            this.field.editTemplate = value;
-            this.onFieldChanged.emit(this.field);
+            this.field.editTemplate = this.getTemplateType(value);
+            this.onFieldChanged.emit({ field: this.field, columnMenu: Number(value) });
         }
         else {
             this.isAdvancedConfiguration = true;
@@ -26863,6 +26876,19 @@ class CmacsCompactTableColumnTooltipComponent {
             case 7: {
                 return [];
             }
+        }
+    }
+    isSelected(value, templateType) {
+        // it will return true if the type of the template matches the column type
+        switch (value) {
+            case ColumnMenuType.Date: return templateType === TemplateType.Date;
+            case ColumnMenuType.Boolean: return templateType === TemplateType.Boolean;
+            case ColumnMenuType.Number: return templateType === TemplateType.Number;
+            case ColumnMenuType.Select: return templateType === TemplateType.Select;
+            case ColumnMenuType.Date: return templateType === TemplateType.Date;
+            case ColumnMenuType.String: return templateType === TemplateType.String;
+            case ColumnMenuType.Time: return templateType === TemplateType.Time;
+            default: return false;
         }
     }
 }
@@ -26907,7 +26933,7 @@ function CmacsCompactTableColumnMoreComponent_ul_3_li_1_ul_2_Template(rf, ctx) {
     const ctx_r5 = ɵɵnextContext(3);
     ɵɵproperty("mode", "vertical");
     ɵɵadvance(1);
-    ɵɵclassProp("selected-item", submenu_r6.value === ctx_r5.field.editTemplate);
+    ɵɵclassProp("selected-item", ctx_r5.isSelected(submenu_r6.value, ctx_r5.field.editTemplate));
     ɵɵpropertyInterpolate("title", submenu_r6.label);
     ɵɵpropertyInterpolate("cmacsIcon", submenu_r6.icon);
 } }
@@ -26931,15 +26957,13 @@ function CmacsCompactTableColumnMoreComponent_ul_3_ng_template_2_Template(rf, ct
     ɵɵelementEnd();
 } if (rf & 2) {
     const item_r1 = ɵɵnextContext().$implicit;
-    const ctx_r4 = ɵɵnextContext();
-    ɵɵclassProp("selected-item", item_r1.value === ctx_r4.field.editTemplate);
     ɵɵpropertyInterpolate("title", item_r1.label);
     ɵɵpropertyInterpolate("cmacsIcon", item_r1.icon);
 } }
 function CmacsCompactTableColumnMoreComponent_ul_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "ul", 3);
     ɵɵtemplate(1, CmacsCompactTableColumnMoreComponent_ul_3_li_1_Template, 3, 3, "li", 4);
-    ɵɵtemplate(2, CmacsCompactTableColumnMoreComponent_ul_3_ng_template_2_Template, 1, 4, "ng-template", null, 5, ɵɵtemplateRefExtractor);
+    ɵɵtemplate(2, CmacsCompactTableColumnMoreComponent_ul_3_ng_template_2_Template, 1, 2, "ng-template", null, 5, ɵɵtemplateRefExtractor);
     ɵɵelementEnd();
 } if (rf & 2) {
     const item_r1 = ctx.$implicit;
@@ -26957,11 +26981,39 @@ class CmacsCompactTableColumnMoreComponent {
     }
     fieldChanged(value) {
         if (value !== ColumnMenuType.AdvancedConfiguration) {
-            this.field.editTemplate = value;
-            this.onFieldChanged.emit(this.field);
+            let newType = this.getTemplateType(value);
+            if (newType !== null) {
+                this.field.editTemplate = newType;
+            }
+            this.onFieldChanged.emit({ field: this.field, columnMenu: Number(value) });
         }
         else {
             this.isAdvancedConfiguration = true;
+        }
+    }
+    getTemplateType(value) {
+        switch (value) {
+            case ColumnMenuType.Date: return TemplateType.Date;
+            case ColumnMenuType.Boolean: return TemplateType.Boolean;
+            case ColumnMenuType.Number: return TemplateType.Number;
+            case ColumnMenuType.Select: return TemplateType.Select;
+            case ColumnMenuType.Date: return TemplateType.Date;
+            case ColumnMenuType.String: return TemplateType.String;
+            case ColumnMenuType.Time: return TemplateType.Time;
+            default: return null;
+        }
+    }
+    isSelected(value, templateType) {
+        // it will return true if the type of the template matches the column type
+        switch (value) {
+            case ColumnMenuType.Date: return templateType === TemplateType.Date;
+            case ColumnMenuType.Boolean: return templateType === TemplateType.Boolean;
+            case ColumnMenuType.Number: return templateType === TemplateType.Number;
+            case ColumnMenuType.Select: return templateType === TemplateType.Select;
+            case ColumnMenuType.Date: return templateType === TemplateType.Date;
+            case ColumnMenuType.String: return templateType === TemplateType.String;
+            case ColumnMenuType.Time: return templateType === TemplateType.Time;
+            default: return false;
         }
     }
 }
@@ -28682,6 +28734,8 @@ class CmacsCompactTableComponent {
         this.selectedMore = -1;
     }
     onFieldChanged(idx, field) {
+        this.selectedColumnId = -1;
+        this.selectedMore = -1;
         let value = { index: idx, column: field };
         this.oneditcolumn.emit(value);
     }
