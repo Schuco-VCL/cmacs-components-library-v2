@@ -19,6 +19,7 @@ import { NzTableComponent } from 'ng-zorro-antd/table';
 import { CmacsContextMenuService } from '../cmacs-dropdown/context-menu.service';
 import { NzResizeEvent } from 'ng-zorro-antd/resizable';
 import { DeviceDetectorService } from 'ngx-device-detector';
+import { CmacsCompactTableColumnTooltipComponent } from './components/cmacs-compact-table-column-tooltip/cmacs-compact-table-column-tooltip.component';
 import * as i0 from "@angular/core";
 export declare class CmacsCompactTableComponent implements OnInit, OnChanges, OnDestroy, AfterViewInit {
     private cdr;
@@ -152,6 +153,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     selectElement: ElementRef;
     boolElement: ElementRef;
     dateTimePicker: CmacsDateTimePickerComponent;
+    tooltipComponent: CmacsCompactTableColumnTooltipComponent;
     oncontextmenuevt($event: any, item: any): void;
     selectedColumnId: number;
     openColumnMenu(idx: number): void;

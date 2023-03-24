@@ -12,6 +12,8 @@ export declare enum ColumnMenuType {
     Attachment = 10,
     Boolean = 11,
     AdvancedConfiguration = 12,
-    PropertyType = 13
+    PropertyType = 13,
+    MoveLeft = 14,
+    MoveRight = 15
 }
 //# sourceMappingURL=columnMenuType.enum.d.ts.map
