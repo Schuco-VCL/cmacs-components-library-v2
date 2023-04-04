@@ -190,4 +190,5 @@ export * from './lib/components/cmacs-lightbox/directives/lightbox-video.directi
 export * from './lib/components/cmacs-lightbox/services/lightbox-configuration.service';
 export * from './lib/components/cmacs-youtube/index';
 export * from './lib/components/cmacs-lazy-loading/index';
+export * from './lib/components/cmacs-open-editor/cmacs-open-editor.component';
 //# sourceMappingURL=public-api.d.ts.map
