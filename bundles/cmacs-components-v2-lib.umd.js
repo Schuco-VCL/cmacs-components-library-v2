@@ -8712,7 +8712,7 @@
             if (rf & 2) {
                 i0.ɵɵproperty("ngIf", ctx.showEditor);
             }
-        }, directives: [i2$1.NgIf, i3$1.EditorComponent], styles: [".cmacs-editor .tox .tox-statusbar{border-top:none}.cmacs-editor .tox .tox-statusbar__text-container{display:none}"], encapsulation: 2 });
+        }, directives: [i2$1.NgIf, i3$1.EditorComponent], styles: [".cmacs-editor .tox .tox-statusbar{border-top:none}.cmacs-editor .tox .tox-statusbar__text-container{display:none}.cmacs-editor>div{outline:none}"], encapsulation: 2 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsEditorComponent, [{
                 type: i0.Component,
@@ -46390,7 +46390,7 @@
                 i0.ɵɵpropertyInterpolate("id", ctx.id);
                 i0.ɵɵproperty("init", ctx.tinyMceSettings)("ngModel", ctx.content)("disabled", ctx.disabled)("inline", true);
             }
-        }, directives: [CmacsDividerComponent, i3$1.EditorComponent, i4.NgControlStatus, i4.NgModel], styles: [".cmacs-editor[_ngcontent-%COMP%]   .tox[_ngcontent-%COMP%]   .tox-statusbar[_ngcontent-%COMP%]{border-top:none}.cmacs-editor[_ngcontent-%COMP%]   .tox[_ngcontent-%COMP%]   .tox-statusbar__text-container[_ngcontent-%COMP%]{display:none}"] });
+        }, directives: [CmacsDividerComponent, i3$1.EditorComponent, i4.NgControlStatus, i4.NgModel], styles: [".cmacs-editor[_ngcontent-%COMP%]   .tox[_ngcontent-%COMP%]   .tox-statusbar[_ngcontent-%COMP%]{border-top:none}.cmacs-editor[_ngcontent-%COMP%]   .tox[_ngcontent-%COMP%]   .tox-statusbar__text-container[_ngcontent-%COMP%]{display:none}.cmacs-open-textarea-divider[_ngcontent-%COMP%]{height:18px}  .cmacs-editor>.mce-content-body[data-mce-placeholder]:not(.mce-visualblocks):before{color:#acb3bf;cursor:text}"] });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsOpenEditorComponent, [{
                 type: i0.Component,

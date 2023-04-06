@@ -81,7 +81,7 @@ CmacsEditorComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsEditorComponent
         i0.ɵɵtemplate(0, CmacsEditorComponent_editor_0_Template, 1, 2, "editor", 0);
     } if (rf & 2) {
         i0.ɵɵproperty("ngIf", ctx.showEditor);
-    } }, directives: [i2.NgIf, i3.EditorComponent], styles: [".cmacs-editor .tox .tox-statusbar{border-top:none}.cmacs-editor .tox .tox-statusbar__text-container{display:none}"], encapsulation: 2 });
+    } }, directives: [i2.NgIf, i3.EditorComponent], styles: [".cmacs-editor .tox .tox-statusbar{border-top:none}.cmacs-editor .tox .tox-statusbar__text-container{display:none}.cmacs-editor>div{outline:none}"], encapsulation: 2 });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsEditorComponent, [{
         type: Component,
         args: [{
