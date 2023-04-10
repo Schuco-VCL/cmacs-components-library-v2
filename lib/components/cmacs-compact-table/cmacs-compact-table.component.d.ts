@@ -30,11 +30,42 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     private nzDropdownService;
     private cookies;
     private utilService;
+    /** local variables */
     locale: any;
     headerBottomStyle: {};
     private destroy$;
-    nzTableComponent: NzTableComponent;
     selection: SelectionModel<any>;
+    private _onresize$;
+    onresizeobs: import("rxjs").Observable<any>;
+    private _onsort$;
+    onsortobs: import("rxjs").Observable<any>;
+    dropdown: any;
+    selected: boolean;
+    phoneLocation: string;
+    formPhoneControl: FormControl;
+    editionOpTriggered: boolean;
+    defaultSortOrder: any;
+    checkboxCache: CheckboxSelect[];
+    isIndeterminate: boolean;
+    allChecked: boolean;
+    editId: string | null;
+    property: string | null;
+    rowOnEdition: number;
+    nodeOnEdition: any;
+    mapOfExpandedData: {
+        [key: string]: any[];
+    };
+    defaultTimeValue: Date;
+    lastIdxSelected: any;
+    fieldID: any;
+    selectedColumnId: number;
+    selectedMore: number;
+    isAdvancedConfiguration: boolean;
+    order: number;
+    clicks: number;
+    tapCount: number;
+    /** end local variables */
+    /** input variables */
     size: NzSizeMDSType;
     showTotal: TemplateRef<{
         $implicit: number;
@@ -92,6 +123,12 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     showRate: boolean;
     exportEvent: EventEmitter<GridExpConfig>;
     columnMenu: any;
+    extra: string | TemplateRef<void>;
+    contextmenu: string | TemplateRef<void>;
+    indentSize: number;
+    virtualMaxBufferPx: number;
+    /** end input variables */
+    /** output variables */
     buttonClick: EventEmitter<any>;
     rateChange: EventEmitter<any>;
     selectionChange: EventEmitter<any[]>;
@@ -111,40 +148,11 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     oneditcolumn: EventEmitter<EditColumnEvent>;
     onresize: EventEmitter<any>;
     oncontextmenu: EventEmitter<any>;
-    extra: string | TemplateRef<void>;
-    contextmenu: string | TemplateRef<void>;
-    indentSize: number;
-    virtualMaxBufferPx: number;
-    phoneLocation: string;
-    formPhoneControl: FormControl;
-    private _onresize$;
-    onresizeobs: import("rxjs").Observable<any>;
-    private _onsort$;
-    onsortobs: import("rxjs").Observable<any>;
-    dropdown: any;
-    selected: boolean;
-    currentPhoneSelected(data: any, field: any): void;
-    getPhoneFieldValue(data: any, field: any): FormControl;
-    onCountryChange($event: any): void;
-    hasPhoneNumberError(event: any, index: number, data?: any, property?: any, field?: Field): void;
-    formatter: (value: number) => any;
-    parser: (value: string) => any;
-    defaultFormatter: (value: number) => number;
-    defaultParser: (value: string) => string;
-    defaultSortOrder: any;
-    checkboxCache: CheckboxSelect[];
-    isIndeterminate: boolean;
-    allChecked: boolean;
-    editId: string | null;
-    property: string | null;
-    rowOnEdition: number;
-    nodeOnEdition: any;
-    mapOfExpandedData: {
-        [key: string]: any[];
-    };
-    defaultTimeValue: Date;
-    lastIdxSelected: any;
-    fieldID: any;
+    /** end output variables */
+    /** constructor */
+    constructor(cdr: ChangeDetectorRef, i18n: NzI18nService, excelService: ExcelService, deviceDetector: DeviceDetectorService, datePipe: DatePipe, nzDropdownService: CmacsContextMenuService, cookies: CookieService, utilService: UtilService);
+    /** view child variables */
+    nzTableComponent: NzTableComponent;
     inputElement: ElementRef;
     inputNumberElement: ElementRef;
     inputNumberComponent: CmacsInputNumberComponent;
@@ -154,10 +162,17 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     boolElement: ElementRef;
     dateTimePicker: CmacsDateTimePickerComponent;
     tooltipComponent: CmacsCompactTableColumnTooltipComponent;
+    /** end view child variables */
+    currentPhoneSelected(data: any, field: any): void;
+    getPhoneFieldValue(data: any, field: any): FormControl;
+    onCountryChange($event: any): void;
+    hasPhoneNumberError(event: any, index: number, data?: any, property?: any, field?: Field): void;
+    formatter: (value: number) => any;
+    parser: (value: string) => any;
+    defaultFormatter: (value: number) => number;
+    defaultParser: (value: string) => string;
     oncontextmenuevt($event: any, item: any): void;
-    selectedColumnId: number;
     openColumnMenu(idx: number): void;
-    selectedMore: number;
     openColumnMore(idx: number): void;
     closeColumnMenu(): void;
     closeColumnMore(): void;
@@ -178,7 +193,6 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     addRow(idx: number, $event?: any): void;
     addcolumn(idx: number): void;
     drop(event: CdkDragDrop<string[]>): void;
-    editionOpTriggered: boolean;
     deleteRow(idx: number, $event?: any): void;
     startEdit(id: string, property: string, event: MouseEvent, data: any): void;
     focusSelect(elem: any): void;
@@ -192,7 +206,6 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     endEditModeNgModel(index: number, data?: any, property?: any, field?: Field): void;
     ngModelChange(index: number, data?: any): void;
     getIndex(id: any): number;
-    order: number;
     updateCheckboxCache(): void;
     updateCheckboxCacheTreeData(): void;
     clickHyperlink(data: string): void;
@@ -223,7 +236,6 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     isPhone(field: Field): boolean;
     isUndefined(value: any): boolean;
     isRowSelected(data: any): boolean;
-    constructor(cdr: ChangeDetectorRef, i18n: NzI18nService, excelService: ExcelService, deviceDetector: DeviceDetectorService, datePipe: DatePipe, nzDropdownService: CmacsContextMenuService, cookies: CookieService, utilService: UtilService);
     ngAfterViewInit(): void;
     disableSelectEventOnExpand(): void;
     getIndexCookie(): boolean;
@@ -248,13 +260,11 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     exportTreeExcelRec(data: any, dataToExport: any): void;
     exportToPdf(config: any): void;
     ngOnDestroy(): void;
-    clicks: number;
     clickRow(event: MouseEvent, data: any): void;
     selectRow(event: MouseEvent, data: any): void;
     removeSelection(data: any): void;
     selectMultiple(currentIdx: any): void;
     dblClickRow(data: any): void;
-    tapCount: number;
     tapHandler($event: any, data: any): void;
     clickBooleanCell(data: any, id: any, field: Field, index: number, $event: null): void;
     showViewModeTpl(field: any, item: any): boolean;
@@ -278,6 +288,6 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     transformDate(date: any): string;
     selectTreeSingle(item: any): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsCompactTableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableComponent, "cmacs-compact-table", ["cmacsCompactTable"], { "size": "size"; "showTotal": "showTotal"; "pageSizeOptions": "pageSizeOptions"; "virtualScroll": "virtualScroll"; "exclusiveSelect": "exclusiveSelect"; "logs": "logs"; "expandable": "expandable"; "smartTable": "smartTable"; "draggable": "draggable"; "virtualItemSize": "virtualItemSize"; "expandAll": "expandAll"; "addColumn": "addColumn"; "loadingDelay": "loadingDelay"; "loadingIndicator": "loadingIndicator"; "total": "total"; "title": "title"; "footer": "footer"; "noResult": "noResult"; "widthConfig": "widthConfig"; "pageIndex": "pageIndex"; "pageSize": "pageSize"; "actionColumnWidth": "actionColumnWidth"; "wrapLines": "wrapLines"; "data": "data"; "config": "config"; "use12Hours": "use12Hours"; "fieldId": "fieldId"; "gridID": "gridID"; "paginationPosition": "paginationPosition"; "scroll": "scroll"; "frontPagination": "frontPagination"; "templateMode": "templateMode"; "bordered": "bordered"; "centerTable": "centerTable"; "showPagination": "showPagination"; "loading": "loading"; "showSizeChanger": "showSizeChanger"; "hideOnSinglePage": "hideOnSinglePage"; "showQuickJumper": "showQuickJumper"; "simple": "simple"; "checkboxSelect": "checkboxSelect"; "inLineEdit": "inLineEdit"; "dataTable": "dataTable"; "showRate": "showRate"; "exportEvent": "exportEvent"; "columnMenu": "columnMenu"; "rateCount": "rateCount"; "multiSelect": "multiSelect"; "extra": "extra"; "contextmenu": "contextmenu"; "indentSize": "indentSize"; "virtualMaxBufferPx": "virtualMaxBufferPx"; }, { "configChange": "configChange"; "buttonClick": "buttonClick"; "rateChange": "rateChange"; "selectionChange": "selectionChange"; "ondlclickRow": "ondlclickRow"; "onclickRow": "onclickRow"; "onclickHyperlink": "onclickHyperlink"; "onedit": "onedit"; "onRowExpandCollapse": "onRowExpandCollapse"; "ondrop": "ondrop"; "sortChange": "sortChange"; "filterChange": "filterChange"; "onrowdeleted": "onrowdeleted"; "onrowadded": "onrowadded"; "oncolumnadded": "oncolumnadded"; "oneditcolumn": "oneditcolumn"; "onresize": "onresize"; "oncontextmenu": "oncontextmenu"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableComponent, "cmacs-compact-table", ["cmacsCompactTable"], { "size": "size"; "showTotal": "showTotal"; "pageSizeOptions": "pageSizeOptions"; "virtualScroll": "virtualScroll"; "exclusiveSelect": "exclusiveSelect"; "logs": "logs"; "expandable": "expandable"; "smartTable": "smartTable"; "draggable": "draggable"; "virtualItemSize": "virtualItemSize"; "expandAll": "expandAll"; "addColumn": "addColumn"; "loadingDelay": "loadingDelay"; "loadingIndicator": "loadingIndicator"; "total": "total"; "title": "title"; "footer": "footer"; "noResult": "noResult"; "widthConfig": "widthConfig"; "pageIndex": "pageIndex"; "pageSize": "pageSize"; "actionColumnWidth": "actionColumnWidth"; "wrapLines": "wrapLines"; "data": "data"; "config": "config"; "use12Hours": "use12Hours"; "fieldId": "fieldId"; "gridID": "gridID"; "paginationPosition": "paginationPosition"; "scroll": "scroll"; "frontPagination": "frontPagination"; "templateMode": "templateMode"; "bordered": "bordered"; "centerTable": "centerTable"; "showPagination": "showPagination"; "loading": "loading"; "showSizeChanger": "showSizeChanger"; "hideOnSinglePage": "hideOnSinglePage"; "showQuickJumper": "showQuickJumper"; "simple": "simple"; "checkboxSelect": "checkboxSelect"; "inLineEdit": "inLineEdit"; "dataTable": "dataTable"; "showRate": "showRate"; "exportEvent": "exportEvent"; "columnMenu": "columnMenu"; "extra": "extra"; "contextmenu": "contextmenu"; "indentSize": "indentSize"; "virtualMaxBufferPx": "virtualMaxBufferPx"; "rateCount": "rateCount"; "multiSelect": "multiSelect"; }, { "configChange": "configChange"; "buttonClick": "buttonClick"; "rateChange": "rateChange"; "selectionChange": "selectionChange"; "ondlclickRow": "ondlclickRow"; "onclickRow": "onclickRow"; "onclickHyperlink": "onclickHyperlink"; "onedit": "onedit"; "onRowExpandCollapse": "onRowExpandCollapse"; "ondrop": "ondrop"; "sortChange": "sortChange"; "filterChange": "filterChange"; "onrowdeleted": "onrowdeleted"; "onrowadded": "onrowadded"; "oncolumnadded": "oncolumnadded"; "oneditcolumn": "oneditcolumn"; "onresize": "onresize"; "oncontextmenu": "oncontextmenu"; }, never, never>;
 }
 //# sourceMappingURL=cmacs-compact-table.component.d.ts.map
