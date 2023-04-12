@@ -14,6 +14,7 @@ export declare class CmacsOpenEditorComponent implements OnDestroy, OnInit {
     placeholder: string;
     statusbar: boolean;
     resize: boolean;
+    skin: string;
     toolbarmobile: string[];
     toolbar: string[];
     tinyMceSettings: any;
@@ -25,6 +26,6 @@ export declare class CmacsOpenEditorComponent implements OnDestroy, OnInit {
     ngOnInit(): void;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsOpenEditorComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsOpenEditorComponent, "cmacs-open-editor", ["cmacsOpenEditor"], { "disabled": "disabled"; "height": "height"; "placeholder": "placeholder"; "statusbar": "statusbar"; "resize": "resize"; "toolbarmobile": "toolbarmobile"; "toolbar": "toolbar"; "tinyMceSettings": "tinyMceSettings"; "id": "id"; "content": "content"; }, { "oninit": "oninit"; "onchange": "onchange"; "onblur": "onblur"; "onkeyup": "onkeyup"; "contentChange": "contentChange"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsOpenEditorComponent, "cmacs-open-editor", ["cmacsOpenEditor"], { "disabled": "disabled"; "height": "height"; "placeholder": "placeholder"; "statusbar": "statusbar"; "resize": "resize"; "skin": "skin"; "toolbarmobile": "toolbarmobile"; "toolbar": "toolbar"; "tinyMceSettings": "tinyMceSettings"; "id": "id"; "content": "content"; }, { "oninit": "oninit"; "onchange": "onchange"; "onblur": "onblur"; "onkeyup": "onkeyup"; "contentChange": "contentChange"; }, never, never>;
 }
 //# sourceMappingURL=cmacs-open-editor.component.d.ts.map

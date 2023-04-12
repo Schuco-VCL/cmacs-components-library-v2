@@ -28467,125 +28467,6 @@
         ColumnMenuType[ColumnMenuType["MoveRight"] = 15] = "MoveRight";
     })(exports.ColumnMenuType || (exports.ColumnMenuType = {}));
 
-    function CmacsCompactTableColumnTooltipComponent_div_2_ng_container_4_Template(rf, ctx) {
-        if (rf & 1) {
-            var _r5_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "li", 7);
-            i0.ɵɵlistener("click", function CmacsCompactTableColumnTooltipComponent_div_2_ng_container_4_Template_li_click_1_listener() { i0.ɵɵrestoreView(_r5_1); var item_r3 = ctx.$implicit; var ctx_r4 = i0.ɵɵnextContext(2); return ctx_r4.fieldChanged(item_r3.value); });
-            i0.ɵɵelementStart(2, "span", 8);
-            i0.ɵɵelement(3, "i");
-            i0.ɵɵelementStart(4, "span");
-            i0.ɵɵtext(5);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementContainerEnd();
-        }
-        if (rf & 2) {
-            var item_r3 = ctx.$implicit;
-            var ctx_r2 = i0.ɵɵnextContext(2);
-            i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("border-top", "1px solid #dee0e5 !important");
-            i0.ɵɵclassProp("selected-item", ctx_r2.isSelected(item_r3.value, ctx_r2.field.editTemplate));
-            i0.ɵɵadvance(2);
-            i0.ɵɵclassMap(item_r3.icon);
-            i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(item_r3.label);
-        }
-    }
-    function CmacsCompactTableColumnTooltipComponent_div_2_Template(rf, ctx) {
-        if (rf & 1) {
-            var _r7_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "div");
-            i0.ɵɵelementStart(1, "div", 3);
-            i0.ɵɵelementStart(2, "input", 4);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnTooltipComponent_div_2_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r7_1); var ctx_r6 = i0.ɵɵnextContext(); return ctx_r6.field.display = $event; })("focusout", function CmacsCompactTableColumnTooltipComponent_div_2_Template_input_focusout_2_listener() { i0.ɵɵrestoreView(_r7_1); var ctx_r8 = i0.ɵɵnextContext(); return ctx_r8.updateDisplay(); });
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(3, "ul", 5);
-            i0.ɵɵtemplate(4, CmacsCompactTableColumnTooltipComponent_div_2_ng_container_4_Template, 6, 8, "ng-container", 6);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementEnd();
-        }
-        if (rf & 2) {
-            var ctx_r0 = i0.ɵɵnextContext();
-            i0.ɵɵadvance(2);
-            i0.ɵɵproperty("ngModel", ctx_r0.field.display);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("mode", "vertical");
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngForOf", ctx_r0.items.columnOptions[0].subMenu);
-        }
-    }
-    function CmacsCompactTableColumnTooltipComponent_div_3_cmacs_option_4_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelement(0, "cmacs-option", 12);
-        }
-        if (rf & 2) {
-            var _item_r11 = ctx.$implicit;
-            i0.ɵɵpropertyInterpolate("value", _item_r11.value);
-            i0.ɵɵpropertyInterpolate("label", _item_r11.label);
-        }
-    }
-    function CmacsCompactTableColumnTooltipComponent_div_3_div_5_cmacs_option_4_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelement(0, "cmacs-option", 12);
-        }
-        if (rf & 2) {
-            var ind_r13 = ctx.$implicit;
-            i0.ɵɵpropertyInterpolate("value", ind_r13.value);
-            i0.ɵɵpropertyInterpolate("label", ind_r13.label);
-        }
-    }
-    function CmacsCompactTableColumnTooltipComponent_div_3_div_5_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelementStart(0, "div");
-            i0.ɵɵelementStart(1, "cmacs-form-label", 13);
-            i0.ɵɵtext(2);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(3, "cmacs-select", 14);
-            i0.ɵɵtemplate(4, CmacsCompactTableColumnTooltipComponent_div_3_div_5_cmacs_option_4_Template, 1, 2, "cmacs-option", 11);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementEnd();
-        }
-        if (rf & 2) {
-            var ctx_r10 = i0.ɵɵnextContext(2);
-            i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate1(" ", ctx_r10.items.advancedConfiguration.labelValidation, " ");
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngModel", ctx_r10.getValidationRules()[0].value);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngForOf", ctx_r10.getValidationRules());
-        }
-    }
-    function CmacsCompactTableColumnTooltipComponent_div_3_Template(rf, ctx) {
-        if (rf & 1) {
-            var _r15_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "div");
-            i0.ɵɵelementStart(1, "cmacs-form-label", 9);
-            i0.ɵɵtext(2);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(3, "cmacs-select", 10);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnTooltipComponent_div_3_Template_cmacs_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r15_1); var ctx_r14 = i0.ɵɵnextContext(); return ctx_r14.onChange($event); });
-            i0.ɵɵtemplate(4, CmacsCompactTableColumnTooltipComponent_div_3_cmacs_option_4_Template, 1, 2, "cmacs-option", 11);
-            i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(5, CmacsCompactTableColumnTooltipComponent_div_3_div_5_Template, 5, 3, "div", 2);
-            i0.ɵɵelementEnd();
-        }
-        if (rf & 2) {
-            var ctx_r1 = i0.ɵɵnextContext();
-            i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate1(" ", ctx_r1.items.advancedConfiguration.labelType, " ");
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngModel", ctx_r1.field.editTemplate.toString());
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngForOf", ctx_r1.getItems());
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r1.getValidationRules().length > 0);
-        }
-    }
-    var _c0$13 = function (a0) { return { "height": a0 }; };
     var CmacsCompactTableColumnTooltipComponent = /** @class */ (function () {
         function CmacsCompactTableColumnTooltipComponent() {
             this.isAdvancedConfiguration = false;
@@ -28670,22 +28551,24 @@
         return CmacsCompactTableColumnTooltipComponent;
     }());
     CmacsCompactTableColumnTooltipComponent.ɵfac = function CmacsCompactTableColumnTooltipComponent_Factory(t) { return new (t || CmacsCompactTableColumnTooltipComponent)(); };
-    CmacsCompactTableColumnTooltipComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsCompactTableColumnTooltipComponent, selectors: [["cmacs-compact-table-column-tooltip"]], inputs: { field: "field", items: "items" }, outputs: { onFieldChanged: "onFieldChanged" }, features: [i0.ɵɵNgOnChangesFeature], decls: 4, vars: 5, consts: [["id", "compactTableColumnTooltip", 1, "cmacs-compact-table-column-tooltip", 3, "ngStyle"], [1, "arrow-up"], [4, "ngIf"], [1, "item", "tooltip-input"], ["cmacs-input", "", 3, "ngModel", "ngModelChange", "focusout"], ["cmacs-menu", "", 1, "cmacs-context-menu-compact-table", 2, "box-shadow", "none !important", 3, "mode"], [4, "ngFor", "ngForOf"], ["cmacs-menu-item", "", 3, "click"], ["title", ""], ["cmacsRequired", "", 1, "item-ac", 2, "margin-top", "20px"], [1, "item-ac", 2, "top", "-30px", 3, "ngModel", "ngModelChange"], [3, "value", "label", 4, "ngFor", "ngForOf"], [3, "value", "label"], [1, "item-ac", 2, "margin-top", "-37px"], [1, "item-ac", 2, "top", "-30px", 3, "ngModel"]], template: function CmacsCompactTableColumnTooltipComponent_Template(rf, ctx) {
+    CmacsCompactTableColumnTooltipComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsCompactTableColumnTooltipComponent, selectors: [["cmacs-compact-table-column-tooltip"]], inputs: { field: "field", items: "items" }, outputs: { onFieldChanged: "onFieldChanged" }, features: [i0.ɵɵNgOnChangesFeature], decls: 5, vars: 1, consts: [["id", "compactTableColumnTooltip", 1, "cmacs-compact-table-column-tooltip"], [1, "arrow-up"], [1, "item", "tooltip-input"], ["cmacs-input", "", 3, "ngModel", "ngModelChange", "focusout"]], template: function CmacsCompactTableColumnTooltipComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelement(1, "div", 1);
-                i0.ɵɵtemplate(2, CmacsCompactTableColumnTooltipComponent_div_2_Template, 5, 3, "div", 2);
-                i0.ɵɵtemplate(3, CmacsCompactTableColumnTooltipComponent_div_3_Template, 6, 4, "div", 2);
+                i0.ɵɵelementStart(2, "div");
+                i0.ɵɵelementStart(3, "div", 2);
+                i0.ɵɵelementStart(4, "input", 3);
+                i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnTooltipComponent_Template_input_ngModelChange_4_listener($event) { return ctx.field.display = $event; })("focusout", function CmacsCompactTableColumnTooltipComponent_Template_input_focusout_4_listener() { return ctx.updateDisplay(); });
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
             }
             if (rf & 2) {
-                i0.ɵɵproperty("ngStyle", i0.ɵɵpureFunction1(3, _c0$13, ctx.isAdvancedConfiguration ? "174px" : "334px"));
-                i0.ɵɵadvance(2);
-                i0.ɵɵproperty("ngIf", !ctx.isAdvancedConfiguration);
-                i0.ɵɵadvance(1);
-                i0.ɵɵproperty("ngIf", ctx.isAdvancedConfiguration);
+                i0.ɵɵadvance(4);
+                i0.ɵɵproperty("ngModel", ctx.field.display);
             }
-        }, directives: [i2$1.NgStyle, i2$1.NgIf, CmacsInputDirective, i4.DefaultValueAccessor, i4.NgControlStatus, i4.NgModel, CmacsMenuDirective, i2$1.NgForOf, CmacsMenuItemDirective, CmacsFormLabelComponent, CmacsSelectComponent, CmacsOptionComponent], styles: [".cmacs-compact-table-column-tooltip[_ngcontent-%COMP%]{background-color:#fff;position:absolute;width:180px;left:calc(50% - 171px/2 - .5px);top:44px;flex:none;order:1;flex-grow:0;z-index:11;box-shadow:0 3px 7px rgb(59 63 70/20%)!important}.arrow-up[_ngcontent-%COMP%]{position:absolute;left:50%;margin-top:-19px;margin-left:-8px;border:10px solid transparent;border-bottom-color:#fff;z-index:1}.tooltip-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{font-size:12px;height:28px}.item[_ngcontent-%COMP%], .item-ac[_ngcontent-%COMP%]{padding:7px 10px;font-size:13px}.item[_ngcontent-%COMP%]:hover{background-color:#f2f7ff;cursor:pointer}.item-icon[_ngcontent-%COMP%]{font-size:18px}.selected-item[_ngcontent-%COMP%]{color:#2a7cff}  .cmacs-compact-table-column-tooltip .ant-menu-submenu-arrow{display:none}.column-menu[_ngcontent-%COMP%]{height:44px;margin-top:-1px}"] });
+        }, directives: [CmacsInputDirective, i4.DefaultValueAccessor, i4.NgControlStatus, i4.NgModel], styles: [".cmacs-compact-table-column-tooltip[_ngcontent-%COMP%]{background-color:#fff;position:absolute;width:180px;left:calc(50% - 171px/2 - .5px);top:44px;flex:none;order:1;flex-grow:0;z-index:11;box-shadow:0 3px 7px rgb(59 63 70/20%)!important}.arrow-up[_ngcontent-%COMP%]{position:absolute;left:50%;margin-top:-19px;margin-left:-8px;border:10px solid transparent;border-bottom-color:#fff;z-index:1}.tooltip-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{font-size:12px;height:28px}.item[_ngcontent-%COMP%], .item-ac[_ngcontent-%COMP%]{padding:7px 10px;font-size:13px}.item[_ngcontent-%COMP%]:hover{background-color:#f2f7ff;cursor:pointer}.item-icon[_ngcontent-%COMP%]{font-size:18px}.selected-item[_ngcontent-%COMP%]{color:#2a7cff}  .cmacs-compact-table-column-tooltip .ant-menu-submenu-arrow{display:none}.column-menu[_ngcontent-%COMP%]{height:44px;margin-top:-1px}"] });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsCompactTableColumnTooltipComponent, [{
                 type: i0.Component,
@@ -29664,7 +29547,7 @@
                 }] });
     })();
 
-    var _c0$14 = ["renderItemTemplate"];
+    var _c0$13 = ["renderItemTemplate"];
     var _c1$s = ["gridComponent"];
     var _c2$f = ["fieldTypeInput"];
     var _c3$5 = ["fieldTypeInputNumber"];
@@ -32873,7 +32756,7 @@
     CmacsCompactTableComponent.ɵfac = function CmacsCompactTableComponent_Factory(t) { return new (t || CmacsCompactTableComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i1$3.NzI18nService), i0.ɵɵdirectiveInject(ExcelService), i0.ɵɵdirectiveInject(i1$5.DeviceDetectorService), i0.ɵɵdirectiveInject(i2$1.DatePipe), i0.ɵɵdirectiveInject(CmacsContextMenuService), i0.ɵɵdirectiveInject(i6$2.CookieService), i0.ɵɵdirectiveInject(UtilService)); };
     CmacsCompactTableComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsCompactTableComponent, selectors: [["cmacs-compact-table"]], viewQuery: function CmacsCompactTableComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$14, 1);
+                i0.ɵɵviewQuery(_c0$13, 1);
                 i0.ɵɵviewQuery(_c1$s, 1);
                 i0.ɵɵviewQuery(_c2$f, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c3$5, 1, i0.ElementRef);
@@ -33241,7 +33124,7 @@
                 }] });
     })();
 
-    var _c0$15 = ["renderItemTemplate"];
+    var _c0$14 = ["renderItemTemplate"];
     var _c1$t = ["fieldTypeInput"];
     var _c2$g = ["fieldTypeInputNumber"];
     var _c3$6 = ["fieldTypeDatePicker"];
@@ -34434,7 +34317,7 @@
     CmacsTableComponent.ɵfac = function CmacsTableComponent_Factory(t) { return new (t || CmacsTableComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i1$3.NzI18nService), i0.ɵɵdirectiveInject(i1$8.ExportAsService), i0.ɵɵdirectiveInject(CmacsContextMenuService), i0.ɵɵdirectiveInject(ExcelService), i0.ɵɵdirectiveInject(UtilService), i0.ɵɵdirectiveInject(i2$1.DatePipe), i0.ɵɵdirectiveInject(i6$2.CookieService)); };
     CmacsTableComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsTableComponent, selectors: [["cmacs-table"]], viewQuery: function CmacsTableComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$15, 1);
+                i0.ɵɵviewQuery(_c0$14, 1);
                 i0.ɵɵviewQuery(_c1$t, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c2$g, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(CmacsInputNumberComponent, 1, CmacsInputNumberComponent);
@@ -34668,7 +34551,7 @@
                 }] });
     })();
 
-    var _c0$16 = ["processDotTemplate"];
+    var _c0$15 = ["processDotTemplate"];
     function CmacsStepComponent_div_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelement(0, "div", 9);
@@ -34889,7 +34772,7 @@
     CmacsStepComponent.ɵfac = function CmacsStepComponent_Factory(t) { return new (t || CmacsStepComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef)); };
     CmacsStepComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsStepComponent, selectors: [["cmacs-step"]], viewQuery: function CmacsStepComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$16, 1);
+                i0.ɵɵviewQuery(_c0$15, 1);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -34989,7 +34872,7 @@
                 }] });
     })();
 
-    var _c0$17 = ["*"];
+    var _c0$16 = ["*"];
     var CmacsWizardComponent = /** @class */ (function () {
         function CmacsWizardComponent(cdr, directionality) {
             this.cdr = cdr;
@@ -35105,7 +34988,7 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.steps = _t);
             }
-        }, inputs: { current: "current", direction: "direction", labelPlacement: "labelPlacement", type: "type", size: "size", startIndex: "startIndex", status: "status", nzProgressDot: "nzProgressDot" }, outputs: { indexChange: "indexChange" }, exportAs: ["cmacsWizard"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$17, decls: 2, vars: 1, consts: [[1, "ant-steps", 3, "ngClass"]], template: function CmacsWizardComponent_Template(rf, ctx) {
+        }, inputs: { current: "current", direction: "direction", labelPlacement: "labelPlacement", type: "type", size: "size", startIndex: "startIndex", status: "status", nzProgressDot: "nzProgressDot" }, outputs: { indexChange: "indexChange" }, exportAs: ["cmacsWizard"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$16, decls: 2, vars: 1, consts: [[1, "ant-steps", 3, "ngClass"]], template: function CmacsWizardComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "div", 0);
@@ -36116,7 +35999,7 @@
             }], null, null);
     })();
 
-    var _c0$18 = ["dragElement"];
+    var _c0$17 = ["dragElement"];
     function CmacsTreeNodeComponent_ng_container_3_ng_container_2_ng_container_1_1_ng_template_0_Template(rf, ctx) { }
     var _c1$v = function (a0) { return { $implicit: a0 }; };
     function CmacsTreeNodeComponent_ng_container_3_ng_container_2_ng_container_1_1_Template(rf, ctx) {
@@ -36929,7 +36812,7 @@
     CmacsTreeNodeComponent.ɵfac = function CmacsTreeNodeComponent_Factory(t) { return new (t || CmacsTreeNodeComponent)(i0.ɵɵdirectiveInject(CmacsTreeService), i0.ɵɵdirectiveInject(i0.NgZone), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective, 9)); };
     CmacsTreeNodeComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsTreeNodeComponent, selectors: [["cmacs-tree-node"]], viewQuery: function CmacsTreeNodeComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$18, 1);
+                i0.ɵɵviewQuery(_c0$17, 1);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -37164,7 +37047,7 @@
         return NzTreeBase;
     }());
 
-    var _c0$19 = ["treeTemplate"];
+    var _c0$18 = ["treeTemplate"];
     function CmacsTreeComponent_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
             var _r4_1 = i0.ɵɵgetCurrentView();
@@ -37634,7 +37517,7 @@
     CmacsTreeComponent.ɵfac = function CmacsTreeComponent_Factory(t) { return new (t || CmacsTreeComponent)(i0.ɵɵdirectiveInject(CmacsTreeService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective, 9)); };
     CmacsTreeComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsTreeComponent, selectors: [["cmacs-tree"]], contentQueries: function CmacsTreeComponent_ContentQueries(rf, ctx, dirIndex) {
             if (rf & 1) {
-                i0.ɵɵcontentQuery(dirIndex, _c0$19, 1);
+                i0.ɵɵcontentQuery(dirIndex, _c0$18, 1);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -37841,7 +37724,7 @@
                 }] });
     })();
 
-    var _c0$1a = ["columnTemplate"];
+    var _c0$19 = ["columnTemplate"];
     var _c1$w = ["chartcanvas"];
     var _c2$h = ["legendContent"];
     function CmacsKpiGroupComponent_div_0_span_2_Template(rf, ctx) {
@@ -38194,7 +38077,7 @@
     CmacsKpiGroupComponent.ɵfac = function CmacsKpiGroupComponent_Factory(t) { return new (t || CmacsKpiGroupComponent)(i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(UtilService)); };
     CmacsKpiGroupComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKpiGroupComponent, selectors: [["cmacs-kpi-group"]], viewQuery: function CmacsKpiGroupComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1a, 1, i0.TemplateRef);
+                i0.ɵɵviewQuery(_c0$19, 1, i0.TemplateRef);
                 i0.ɵɵviewQuery(_c1$w, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c2$h, 1, i0.ElementRef);
             }
@@ -38248,7 +38131,7 @@
                 }] });
     })();
 
-    var _c0$1b = ["columnTemplate"];
+    var _c0$1a = ["columnTemplate"];
     var _c1$x = ["chartcanvas"];
     var _c2$i = ["legendContent"];
     function CmacsKpiGroupTotalComponent_div_0_span_2_Template(rf, ctx) {
@@ -38629,7 +38512,7 @@
     CmacsKpiGroupTotalComponent.ɵfac = function CmacsKpiGroupTotalComponent_Factory(t) { return new (t || CmacsKpiGroupTotalComponent)(i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(UtilService)); };
     CmacsKpiGroupTotalComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKpiGroupTotalComponent, selectors: [["cmacs-kpi-group-total"]], viewQuery: function CmacsKpiGroupTotalComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1b, 1, i0.TemplateRef);
+                i0.ɵɵviewQuery(_c0$1a, 1, i0.TemplateRef);
                 i0.ɵɵviewQuery(_c1$x, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c2$i, 1, i0.ElementRef);
             }
@@ -38683,7 +38566,7 @@
                 }] });
     })();
 
-    var _c0$1c = ["columnTemplate"];
+    var _c0$1b = ["columnTemplate"];
     var _c1$y = ["legendContent"];
     function CmacsStatusDistributionComponent_div_0_span_2_Template(rf, ctx) {
         if (rf & 1) {
@@ -38964,7 +38847,7 @@
     CmacsStatusDistributionComponent.ɵfac = function CmacsStatusDistributionComponent_Factory(t) { return new (t || CmacsStatusDistributionComponent)(i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(UtilService)); };
     CmacsStatusDistributionComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsStatusDistributionComponent, selectors: [["cmacs-status-distribution"]], viewQuery: function CmacsStatusDistributionComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1c, 1, i0.TemplateRef);
+                i0.ɵɵviewQuery(_c0$1b, 1, i0.TemplateRef);
                 i0.ɵɵviewQuery(_c1$y, 1, i0.ElementRef);
             }
             if (rf & 2) {
@@ -39148,7 +39031,7 @@
             i0.ɵɵtextInterpolate(label_r15);
         }
     }
-    var _c0$1d = function (a0) { return { model: a0 }; };
+    var _c0$1c = function (a0) { return { model: a0 }; };
     function CmacsGeneralChartComponent_ng_container_7_ng_template_5_ng_container_0_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainer(0, 20);
@@ -39156,7 +39039,7 @@
         if (rf & 2) {
             var model_r17 = i0.ɵɵnextContext().model;
             var ctx_r18 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r18.customTooltipTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$1d, model_r17));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r18.customTooltipTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$1c, model_r17));
         }
     }
     function CmacsGeneralChartComponent_ng_container_7_ng_template_5_div_1_Template(rf, ctx) {
@@ -39237,7 +39120,7 @@
         if (rf & 2) {
             var model_r27 = i0.ɵɵnextContext().model;
             var ctx_r28 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r28.customTooltipTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$1d, model_r27));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r28.customTooltipTemplate)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0$1c, model_r27));
         }
     }
     function CmacsGeneralChartComponent_ng_container_8_ng_template_5_div_1_Template(rf, ctx) {
@@ -39422,7 +39305,7 @@
                 }] });
     })();
 
-    var _c0$1e = ["canvas"];
+    var _c0$1d = ["canvas"];
     function CmacsKPIOverviewComponent_ng_container_8_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainer(0);
@@ -39591,7 +39474,7 @@
     CmacsKPIOverviewComponent.ɵfac = function CmacsKPIOverviewComponent_Factory(t) { return new (t || CmacsKPIOverviewComponent)(i0.ɵɵdirectiveInject(i1$6.DomSanitizer)); };
     CmacsKPIOverviewComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKPIOverviewComponent, selectors: [["cmacs-kpi-overview"]], viewQuery: function CmacsKPIOverviewComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1e, 1, i0.ElementRef);
+                i0.ɵɵviewQuery(_c0$1d, 1, i0.ElementRef);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -39644,7 +39527,7 @@
                 }] });
     })();
 
-    var _c0$1f = ["legendContent"];
+    var _c0$1e = ["legendContent"];
     var _c1$z = ["chartcanvas"];
     function CmacsNormalizedHorizontalBarChartComponent_span_2_Template(rf, ctx) {
         if (rf & 1) {
@@ -39869,7 +39752,7 @@
     CmacsNormalizedHorizontalBarChartComponent.ɵfac = function CmacsNormalizedHorizontalBarChartComponent_Factory(t) { return new (t || CmacsNormalizedHorizontalBarChartComponent)(i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(UtilService)); };
     CmacsNormalizedHorizontalBarChartComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsNormalizedHorizontalBarChartComponent, selectors: [["cmacs-normalized-horizontal-bar-chart"]], viewQuery: function CmacsNormalizedHorizontalBarChartComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1f, 1, i0.ElementRef);
+                i0.ɵɵviewQuery(_c0$1e, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c1$z, 1, i0.ElementRef);
                 i0.ɵɵviewQuery(_c1$z, 1);
             }
@@ -41098,7 +40981,7 @@
                 }] });
     })();
 
-    var _c0$1g = ["textarea"];
+    var _c0$1f = ["textarea"];
     function CmacsOpenTextareaComponent_textarea_2_Template(rf, ctx) {
         if (rf & 1) {
             var _r4_1 = i0.ɵɵgetCurrentView();
@@ -41169,7 +41052,7 @@
     CmacsOpenTextareaComponent.ɵfac = function CmacsOpenTextareaComponent_Factory(t) { return new (t || CmacsOpenTextareaComponent)(); };
     CmacsOpenTextareaComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsOpenTextareaComponent, selectors: [["cmacs-open-textarea"]], viewQuery: function CmacsOpenTextareaComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1g, 1, i0.ElementRef);
+                i0.ɵɵviewQuery(_c0$1f, 1, i0.ElementRef);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -41386,7 +41269,7 @@
                 }] });
     })();
 
-    var _c0$1h = ["navContainerElement"];
+    var _c0$1g = ["navContainerElement"];
     var _c1$A = ["navListElement"];
     var _c2$k = ["scrollListElement"];
     function PtbTabsNavComponent_div_0_ng_template_1_Template(rf, ctx) { }
@@ -41683,7 +41566,7 @@
         }, viewQuery: function PtbTabsNavComponent_Query(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵviewQuery(PtbTabsInkBarDirective, 1);
-                i0.ɵɵviewQuery(_c0$1h, 3);
+                i0.ɵɵviewQuery(_c0$1g, 3);
                 i0.ɵɵviewQuery(_c1$A, 3);
                 i0.ɵɵviewQuery(_c2$k, 3);
             }
@@ -42580,7 +42463,7 @@
             }], null, null);
     })();
 
-    var _c0$1i = ["inputElement"];
+    var _c0$1h = ["inputElement"];
     var _c1$B = ["treeRef"];
     function CmacsTreeSelectComponent_ng_template_0_Template(rf, ctx) {
         if (rf & 1) {
@@ -43231,7 +43114,7 @@
     CmacsTreeSelectComponent.ɵfac = function CmacsTreeSelectComponent_Factory(t) { return new (t || CmacsTreeSelectComponent)(i0.ɵɵdirectiveInject(CmacsTreeSelectService), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i1$2.NzNoAnimationDirective, 9)); };
     CmacsTreeSelectComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsTreeSelectComponent, selectors: [["cmacs-tree-select"]], viewQuery: function CmacsTreeSelectComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1i, 1);
+                i0.ɵɵviewQuery(_c0$1h, 1);
                 i0.ɵɵviewQuery(_c1$B, 1);
                 i0.ɵɵviewQuery(i1$4.CdkOverlayOrigin, 1);
                 i0.ɵɵviewQuery(i1$4.CdkConnectedOverlay, 1);
@@ -43645,7 +43528,7 @@
             }], null, null);
     })();
 
-    var _c0$1j = ["lightbox-button", ""];
+    var _c0$1i = ["lightbox-button", ""];
     var _c1$C = ["*"];
     var BUTTON_HOST_ATTRIBUTES = [
         'lightbox-button',
@@ -43713,7 +43596,7 @@
             if (rf & 1) {
                 i0.ɵɵlistener("mouseenter", function LightboxButtonComponent_mouseenter_HostBindingHandler() { return ctx._onMouseEnter(); })("mouseleave", function LightboxButtonComponent_mouseleave_HostBindingHandler() { return ctx._onMouseLeave(); });
             }
-        }, inputs: { disable: "disable" }, features: [i0.ɵɵNgOnChangesFeature], attrs: _c0$1j, ngContentSelectors: _c1$C, decls: 1, vars: 0, template: function LightboxButtonComponent_Template(rf, ctx) {
+        }, inputs: { disable: "disable" }, features: [i0.ɵɵNgOnChangesFeature], attrs: _c0$1i, ngContentSelectors: _c1$C, decls: 1, vars: 0, template: function LightboxButtonComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵprojection(0);
@@ -44607,7 +44490,7 @@
         return ThumbnailsSliceAnimator;
     }(Animator));
 
-    var _c0$1k = ["thumnailsContainer"];
+    var _c0$1j = ["thumnailsContainer"];
     var _c1$D = ["thumnailsList"];
     var _c2$m = ["thumnails"];
     var _c3$b = function (a0) { return { "active": a0 }; };
@@ -44823,7 +44706,7 @@
     LightboxThumbnailsComponent.ɵfac = function LightboxThumbnailsComponent_Factory(t) { return new (t || LightboxThumbnailsComponent)(i0.ɵɵdirectiveInject(LightboxConfigurationService), i0.ɵɵdirectiveInject(WINDOW)); };
     LightboxThumbnailsComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxThumbnailsComponent, selectors: [["lightbox-thumbnails"]], viewQuery: function LightboxThumbnailsComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1k, 1);
+                i0.ɵɵviewQuery(_c0$1j, 1);
                 i0.ɵɵviewQuery(_c1$D, 1);
                 i0.ɵɵviewQuery(_c2$m, 1);
             }
@@ -45231,7 +45114,7 @@
                 }] });
     })();
 
-    var _c0$1l = ["img"];
+    var _c0$1k = ["img"];
     var ZOOM_PERCENT$1 = 10;
     var ZOOM_MAX_AFTER_WIDTH = 3;
     var LightboxItemComponent = /** @class */ (function () {
@@ -45454,7 +45337,7 @@
     LightboxItemComponent.ɵfac = function LightboxItemComponent_Factory(t) { return new (t || LightboxItemComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(LightboxConfigurationService)); };
     LightboxItemComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxItemComponent, selectors: [["lightbox-item"]], viewQuery: function LightboxItemComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1l, 1);
+                i0.ɵɵviewQuery(_c0$1k, 1);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -45495,7 +45378,7 @@
                 }] });
     })();
 
-    var _c0$1m = ["background"];
+    var _c0$1l = ["background"];
     var _c1$E = ["toolbar"];
     var _c2$n = ["thumbnails"];
     var _c3$c = ["lightboxZoom"];
@@ -45854,7 +45737,7 @@
     LightboxComponent.ɵfac = function LightboxComponent_Factory(t) { return new (t || LightboxComponent)(i0.ɵɵdirectiveInject(LightboxConfigurationService), i0.ɵɵdirectiveInject(i1$5.DeviceDetectorService)); };
     LightboxComponent.ɵcmp = i0.ɵɵdefineComponent({ type: LightboxComponent, selectors: [["lightbox"]], viewQuery: function LightboxComponent_Query(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵviewQuery(_c0$1m, 1);
+                i0.ɵɵviewQuery(_c0$1l, 1);
                 i0.ɵɵviewQuery(_c1$E, 1);
                 i0.ɵɵviewQuery(_c2$n, 1);
                 i0.ɵɵviewQuery(_c3$c, 1);
@@ -46326,6 +46209,7 @@
             this.placeholder = 'Type here ..."';
             this.statusbar = false;
             this.resize = false;
+            this.skin = "PlanToBuild_Dark";
             // tslint:disable-next-line: max-line-length
             this.toolbarmobile = ['bold italic underline | fontsizeselect', 'forecolor backcolor | alignleft aligncenter alignright alignfull | numlist bullist'];
             this.toolbar = ['bold italic underline | fontsizeselect', 'forecolor backcolor | alignleft aligncenter alignright alignfull | numlist bullist'];
@@ -46338,12 +46222,8 @@
             var _this = this;
             if (this.tinyMceSettings === undefined) {
                 this.tinyMceSettings = {
-                    mobile: {
-                        theme: 'mobile',
-                        plugins: ['image table textcolor'],
-                        toolbar: this.toolbarmobile
-                    },
                     id: this.id,
+                    editor_selector: 'cmacs-editor',
                     menubar: false,
                     inline: true,
                     image_title: true,
@@ -46353,6 +46233,11 @@
                     statusbar: this.statusbar,
                     file_picker_types: 'image',
                     images_upload_url: '#',
+                    content_css: false,
+                    // content_css:'PlanToBuild_Dark', //only available in 5.1 or later
+                    // skin: 'oxide-dark',
+                    skin: this.skin,
+                    // skin_url: 'assets/skins/PlanToBuild_Dark',
                     placeholder: this.placeholder,
                     setup: function (editor) {
                         editor.on('init', function (obj) {
@@ -46371,7 +46256,13 @@
                     },
                     plugins: ['image table textcolor'],
                     toolbar: this.toolbar,
-                    toolbar_persist: false
+                    toolbar_persist: false,
+                    mobile: {
+                        theme: 'mobile',
+                        plugins: ['image table textcolor'],
+                        skin: "PlanToBuild_Dark",
+                        toolbar: this.toolbarmobile
+                    }
                 };
             }
             this.i18n.localeChange.pipe(operators.takeUntil(this.destroy$)).subscribe(function () {
@@ -46389,7 +46280,7 @@
         return CmacsOpenEditorComponent;
     }());
     CmacsOpenEditorComponent.ɵfac = function CmacsOpenEditorComponent_Factory(t) { return new (t || CmacsOpenEditorComponent)(i0.ɵɵdirectiveInject(i1$3.NzI18nService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef)); };
-    CmacsOpenEditorComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsOpenEditorComponent, selectors: [["cmacs-open-editor"]], inputs: { disabled: "disabled", height: "height", placeholder: "placeholder", statusbar: "statusbar", resize: "resize", toolbarmobile: "toolbarmobile", toolbar: "toolbar", tinyMceSettings: "tinyMceSettings", id: "id", content: "content" }, outputs: { oninit: "oninit", onchange: "onchange", onblur: "onblur", onkeyup: "onkeyup", contentChange: "contentChange" }, exportAs: ["cmacsOpenEditor"], decls: 3, vars: 5, consts: [[1, "cmacs-textarea-opened-wrapper", 2, "display", "inline-flex"], [1, "cmacs-open-textarea-divider"], [1, "cmacs-editor", 3, "init", "ngModel", "disabled", "inline", "id", "ngModelChange"]], template: function CmacsOpenEditorComponent_Template(rf, ctx) {
+    CmacsOpenEditorComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsOpenEditorComponent, selectors: [["cmacs-open-editor"]], inputs: { disabled: "disabled", height: "height", placeholder: "placeholder", statusbar: "statusbar", resize: "resize", skin: "skin", toolbarmobile: "toolbarmobile", toolbar: "toolbar", tinyMceSettings: "tinyMceSettings", id: "id", content: "content" }, outputs: { oninit: "oninit", onchange: "onchange", onblur: "onblur", onkeyup: "onkeyup", contentChange: "contentChange" }, exportAs: ["cmacsOpenEditor"], decls: 3, vars: 5, consts: [[1, "cmacs-textarea-opened-wrapper", 2, "display", "inline-flex"], [1, "cmacs-open-textarea-divider"], [1, "cmacs-editor", 3, "init", "ngModel", "disabled", "inline", "id", "ngModelChange"]], template: function CmacsOpenEditorComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelement(1, "cmacs-divider", 1);
@@ -46430,6 +46321,8 @@
                 }], statusbar: [{
                     type: i0.Input
                 }], resize: [{
+                    type: i0.Input
+                }], skin: [{
                     type: i0.Input
                 }], toolbarmobile: [{
                     type: i0.Input
