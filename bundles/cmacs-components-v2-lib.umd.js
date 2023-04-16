@@ -8243,9 +8243,22 @@
             i0.ɵɵclassProp("border-radius-left", i_r8 === 0)("border-radius-right", i_r8 === ctx_r5.getColoredData().lenght - 1);
         }
     }
-    function CmacsKpiComponent_div_0_ng_container_6_Template(rf, ctx) {
+    function CmacsKpiComponent_div_0_div_6_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainer(0);
+        }
+    }
+    function CmacsKpiComponent_div_0_div_6_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div");
+            i0.ɵɵtemplate(1, CmacsKpiComponent_div_0_div_6_ng_container_1_Template, 1, 0, "ng-container", 11);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            i0.ɵɵnextContext(2);
+            var _r2 = i0.ɵɵreference(3);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngTemplateOutlet", _r2);
         }
     }
     function CmacsKpiComponent_div_0_Template(rf, ctx) {
@@ -8257,13 +8270,12 @@
             i0.ɵɵtext(4);
             i0.ɵɵelementEnd();
             i0.ɵɵtemplate(5, CmacsKpiComponent_div_0_div_5_Template, 1, 10, "div", 7);
-            i0.ɵɵtemplate(6, CmacsKpiComponent_div_0_ng_container_6_Template, 1, 0, "ng-container", 8);
+            i0.ɵɵtemplate(6, CmacsKpiComponent_div_0_div_6_Template, 2, 1, "div", 8);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var ctx_r0 = i0.ɵɵnextContext();
-            var _r2 = i0.ɵɵreference(3);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx_r0.showTotalCount);
             i0.ɵɵadvance(3);
@@ -8271,72 +8283,82 @@
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngForOf", ctx_r0.getColoredData());
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", _r2);
+            i0.ɵɵproperty("ngIf", ctx_r0.showLegend);
         }
     }
-    function CmacsKpiComponent_div_1_ng_container_10_Template(rf, ctx) {
+    function CmacsKpiComponent_div_1_div_9_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainer(0);
         }
     }
+    function CmacsKpiComponent_div_1_div_9_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 20);
+            i0.ɵɵtemplate(1, CmacsKpiComponent_div_1_div_9_ng_container_1_Template, 1, 0, "ng-container", 11);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            i0.ɵɵnextContext(2);
+            var _r2 = i0.ɵɵreference(3);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngTemplateOutlet", _r2);
+        }
+    }
     function CmacsKpiComponent_div_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 11);
-            i0.ɵɵelementStart(1, "div", 12);
+            i0.ɵɵelementStart(0, "div", 12);
+            i0.ɵɵelementStart(1, "div", 13);
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(3, "div", 13);
-            i0.ɵɵelementStart(4, "div", 14);
-            i0.ɵɵelementStart(5, "div", 15);
+            i0.ɵɵelementStart(3, "div", 14);
+            i0.ɵɵelementStart(4, "div", 15);
+            i0.ɵɵelementStart(5, "div", 16);
             i0.ɵɵtext(6);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
-            i0.ɵɵelement(7, "img", 16, 17);
+            i0.ɵɵelement(7, "img", 17, 18);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(9, "div", 18);
-            i0.ɵɵtemplate(10, CmacsKpiComponent_div_1_ng_container_10_Template, 1, 0, "ng-container", 8);
-            i0.ɵɵelementEnd();
+            i0.ɵɵtemplate(9, CmacsKpiComponent_div_1_div_9_Template, 2, 1, "div", 19);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var ctx_r1 = i0.ɵɵnextContext();
-            var _r2 = i0.ɵɵreference(3);
             i0.ɵɵadvance(2);
             i0.ɵɵtextInterpolate(ctx_r1.title);
             i0.ɵɵadvance(1);
             i0.ɵɵstyleProp("width", ctx_r1.getTotalWidth(), "px");
             i0.ɵɵadvance(3);
             i0.ɵɵtextInterpolate(ctx_r1.getTotalCount().toFixed(ctx_r1.fixed));
-            i0.ɵɵadvance(4);
-            i0.ɵɵproperty("ngTemplateOutlet", _r2);
+            i0.ɵɵadvance(3);
+            i0.ɵɵproperty("ngIf", ctx_r1.showLegend);
         }
     }
     function CmacsKpiComponent_ng_template_2_div_0_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 20);
-            i0.ɵɵelement(1, "div", 21);
-            i0.ɵɵelementStart(2, "div", 22);
+            i0.ɵɵelementStart(0, "div", 22);
+            i0.ɵɵelement(1, "div", 23);
+            i0.ɵɵelementStart(2, "div", 24);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(4, "div", 23);
+            i0.ɵɵelementStart(4, "div", 25);
             i0.ɵɵtext(5);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var kpi_r12 = ctx.$implicit;
-            var ctx_r11 = i0.ɵɵnextContext(2);
+            var kpi_r14 = ctx.$implicit;
+            var ctx_r13 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("background-color", kpi_r12.color)("opacity", ctx_r11.sanitizeStyle(kpi_r12.opacity));
+            i0.ɵɵstyleProp("background-color", kpi_r14.color)("opacity", ctx_r13.sanitizeStyle(kpi_r14.opacity));
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(kpi_r12.count.toFixed(ctx_r11.fixed));
+            i0.ɵɵtextInterpolate(kpi_r14.count.toFixed(ctx_r13.fixed));
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(kpi_r12.description);
+            i0.ɵɵtextInterpolate(kpi_r14.description);
         }
     }
     function CmacsKpiComponent_ng_template_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵtemplate(0, CmacsKpiComponent_ng_template_2_div_0_Template, 6, 6, "div", 19);
+            i0.ɵɵtemplate(0, CmacsKpiComponent_ng_template_2_div_0_Template, 6, 6, "div", 21);
         }
         if (rf & 2) {
             var ctx_r3 = i0.ɵɵnextContext();
@@ -8362,6 +8384,7 @@
         function CmacsKpiComponent(sanitizer, cdr) {
             this.sanitizer = sanitizer;
             this.cdr = cdr;
+            this.showLegend = true;
             this.priority = false;
             this.type = 'line';
             this.width = 84;
@@ -8509,10 +8532,10 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.canvasImgRef = _t.first);
             }
-        }, inputs: { data: "data", title: "title", priority: "priority", type: "type", width: "width", showTotalCount: "showTotalCount", fixed: "fixed" }, exportAs: ["cmacsKpi"], decls: 4, vars: 2, consts: [["class", "cmacs-kpi-wrapper", 4, "ngIf"], ["class", "cmacs-kpi-doughnut-container", 4, "ngIf"], ["legend", ""], [1, "cmacs-kpi-wrapper"], ["class", "cmacs-kpi-total-count", 4, "ngIf"], [2, "flex", "1 0 auto"], [1, "cmacs-kpi-title"], ["class", "cmacs-kpi-line", 3, "border-radius-left", "border-radius-right", "width", "background-color", "opacity", 4, "ngFor", "ngForOf"], [4, "ngTemplateOutlet"], [1, "cmacs-kpi-total-count"], [1, "cmacs-kpi-line"], [1, "cmacs-kpi-doughnut-container"], [1, "cmacs-kpi-doughnut-title"], [1, "cmacs-kpi-doughnut-wrapper"], [1, "cmacs-kpi-total-count-wrapper"], [1, "cmacs-kpi-doughnut-total-count"], [1, "cmacs-kpi-canvas-toimage"], ["canvasImg", ""], [1, "cmacs-kpi-doughnut-legend-wrapper"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-divider"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKpiComponent_Template(rf, ctx) {
+        }, inputs: { showLegend: "showLegend", data: "data", title: "title", priority: "priority", type: "type", width: "width", showTotalCount: "showTotalCount", fixed: "fixed" }, exportAs: ["cmacsKpi"], decls: 4, vars: 2, consts: [["class", "cmacs-kpi-wrapper", 4, "ngIf"], ["class", "cmacs-kpi-doughnut-container", 4, "ngIf"], ["legend", ""], [1, "cmacs-kpi-wrapper"], ["class", "cmacs-kpi-total-count", 4, "ngIf"], [2, "flex", "1 0 auto"], [1, "cmacs-kpi-title"], ["class", "cmacs-kpi-line", 3, "border-radius-left", "border-radius-right", "width", "background-color", "opacity", 4, "ngFor", "ngForOf"], [4, "ngIf"], [1, "cmacs-kpi-total-count"], [1, "cmacs-kpi-line"], [4, "ngTemplateOutlet"], [1, "cmacs-kpi-doughnut-container"], [1, "cmacs-kpi-doughnut-title"], [1, "cmacs-kpi-doughnut-wrapper"], [1, "cmacs-kpi-total-count-wrapper"], [1, "cmacs-kpi-doughnut-total-count"], [1, "cmacs-kpi-canvas-toimage"], ["canvasImg", ""], ["class", "cmacs-kpi-doughnut-legend-wrapper", 4, "ngIf"], [1, "cmacs-kpi-doughnut-legend-wrapper"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-divider"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKpiComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵtemplate(0, CmacsKpiComponent_div_0_Template, 7, 4, "div", 0);
-                i0.ɵɵtemplate(1, CmacsKpiComponent_div_1_Template, 11, 5, "div", 1);
+                i0.ɵɵtemplate(1, CmacsKpiComponent_div_1_Template, 10, 5, "div", 1);
                 i0.ɵɵtemplate(2, CmacsKpiComponent_ng_template_2_Template, 1, 1, "ng-template", null, 2, i0.ɵɵtemplateRefExtractor);
             }
             if (rf & 2) {
@@ -8539,7 +8562,9 @@
                             "\n      cmacs-kpi {\n        display: block;\n      }\n    "
                         ]
                     }]
-            }], function () { return [{ type: i1$6.DomSanitizer }, { type: i0.ChangeDetectorRef }]; }, { data: [{
+            }], function () { return [{ type: i1$6.DomSanitizer }, { type: i0.ChangeDetectorRef }]; }, { showLegend: [{
+                    type: i0.Input
+                }], data: [{
                     type: i0.Input
                 }], title: [{
                     type: i0.Input
@@ -39306,39 +39331,52 @@
     })();
 
     var _c0$1d = ["canvas"];
-    function CmacsKPIOverviewComponent_ng_container_8_Template(rf, ctx) {
+    function CmacsKPIOverviewComponent_div_7_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainer(0);
         }
     }
-    function CmacsKPIOverviewComponent_ng_template_9_div_2_Template(rf, ctx) {
+    function CmacsKPIOverviewComponent_div_7_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 12);
-            i0.ɵɵelementStart(1, "div", 13);
+            i0.ɵɵelementStart(0, "div", 9);
+            i0.ɵɵtemplate(1, CmacsKPIOverviewComponent_div_7_ng_container_1_Template, 1, 0, "ng-container", 10);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            i0.ɵɵnextContext();
+            var _r2 = i0.ɵɵreference(9);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngTemplateOutlet", _r2);
+        }
+    }
+    function CmacsKPIOverviewComponent_ng_template_8_div_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 13);
+            i0.ɵɵelementStart(1, "div", 14);
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(3, "div", 14);
+            i0.ɵɵelementStart(3, "div", 15);
             i0.ɵɵtext(4);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var kpi_r5 = ctx.$implicit;
-            var ctx_r4 = i0.ɵɵnextContext(2);
+            var kpi_r6 = ctx.$implicit;
+            var ctx_r5 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("color", kpi_r5.color)("opacity", ctx_r4.sanitizeStyle(kpi_r5.opacity));
+            i0.ɵɵstyleProp("color", kpi_r6.color)("opacity", ctx_r5.sanitizeStyle(kpi_r6.opacity));
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(kpi_r5.count.toFixed(ctx_r4.fixed));
+            i0.ɵɵtextInterpolate(kpi_r6.count.toFixed(ctx_r5.fixed));
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(kpi_r5.description);
+            i0.ɵɵtextInterpolate(kpi_r6.description);
         }
     }
-    function CmacsKPIOverviewComponent_ng_template_9_Template(rf, ctx) {
+    function CmacsKPIOverviewComponent_ng_template_8_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 10);
+            i0.ɵɵelementStart(0, "div", 11);
             i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(2, CmacsKPIOverviewComponent_ng_template_9_div_2_Template, 5, 6, "div", 11);
+            i0.ɵɵtemplate(2, CmacsKPIOverviewComponent_ng_template_8_div_2_Template, 5, 6, "div", 12);
         }
         if (rf & 2) {
             var ctx_r3 = i0.ɵɵnextContext();
@@ -39351,6 +39389,7 @@
     var CmacsKPIOverviewComponent = /** @class */ (function () {
         function CmacsKPIOverviewComponent(sanitizer) {
             this.sanitizer = sanitizer;
+            this.showLegend = true;
             this.fixed = 0;
             this.minWidth = 300;
             this.fontChartNumber = 20;
@@ -39401,11 +39440,22 @@
                     // drawing a white circle over the chart
                     // to create the doughnut chart
                     _this.drawPieSlice(ctx, canvas.width / 2, canvas.height / 2, 0.8 * Math.min(canvas.width / 2, canvas.height / 2), 0, 2 * Math.PI, '#ffffff');
-                    // draw value
                     ctx.font = _this.fontChartNumber * _this.p + 'px Roboto-Regular ';
                     ctx.fillStyle = '#3b3f46';
                     ctx.textAlign = 'center';
-                    ctx.fillText(_this.getTotalCount().toFixed(_this.fixed), canvas.width / 2, canvas.width / 2 + 8);
+                    if (_this.titleKPI && _this.titleKPI.trim().length > 0) {
+                        // draw value
+                        ctx.fillText(_this.getTotalCount().toFixed(_this.fixed), canvas.width / 2, canvas.width / 2);
+                        // and text
+                        ctx.font = _this.fontChartNumber * _this.p / 2.5 + 'px Roboto-Regular ';
+                        ctx.fillStyle = '#3b3f46';
+                        ctx.textAlign = 'center';
+                        ctx.fillText(_this.titleKPI, canvas.width / 2, canvas.width / 2 + _this.fontChartNumber * _this.p / 2);
+                    }
+                    else {
+                        // draw only value
+                        ctx.fillText(_this.getTotalCount().toFixed(_this.fixed), canvas.width / 2, canvas.width / 2 + 8);
+                    }
                 }
             }, 50);
         };
@@ -39480,7 +39530,7 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.canvasRef = _t.first);
             }
-        }, inputs: { data: "data", title: "title", view: "view", fixed: "fixed", colors: "colors" }, features: [i0.ɵɵNgOnChangesFeature], decls: 11, vars: 1, consts: [[1, "cmacs-kpi-overview-row"], ["nz-col", "", 1, "cmacs-kpi-overview-container"], [1, "cmacs-kpi-overview-wrapper"], [1, "cmacs-kpi-overview-count-wrapper"], [1, "cmacs-kpi-overview-total-count"], [1, "cmacs-kpi-overview-chart"], ["canvas", ""], ["nz-col", "", 1, "cmacs-kpi-overview-legend-wrapper"], [4, "ngTemplateOutlet"], ["legend", ""], [1, "cmacs-kpi-overview-title"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKPIOverviewComponent_Template(rf, ctx) {
+        }, inputs: { showLegend: "showLegend", data: "data", title: "title", titleKPI: "titleKPI", view: "view", fixed: "fixed", colors: "colors" }, features: [i0.ɵɵNgOnChangesFeature], decls: 10, vars: 1, consts: [[1, "cmacs-kpi-overview-row"], ["nz-col", "", 1, "cmacs-kpi-overview-container"], [1, "cmacs-kpi-overview-wrapper"], [1, "cmacs-kpi-overview-count-wrapper"], [1, "cmacs-kpi-overview-total-count"], [1, "cmacs-kpi-overview-chart"], ["canvas", ""], ["nz-col", "", "class", "cmacs-kpi-overview-legend-wrapper", 4, "ngIf"], ["legend", ""], ["nz-col", "", 1, "cmacs-kpi-overview-legend-wrapper"], [4, "ngTemplateOutlet"], [1, "cmacs-kpi-overview-title"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKPIOverviewComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "div", 1);
@@ -39491,18 +39541,15 @@
                 i0.ɵɵelement(5, "canvas", 5, 6);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(7, "div", 7);
-                i0.ɵɵtemplate(8, CmacsKPIOverviewComponent_ng_container_8_Template, 1, 0, "ng-container", 8);
+                i0.ɵɵtemplate(7, CmacsKPIOverviewComponent_div_7_Template, 2, 1, "div", 7);
                 i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵtemplate(9, CmacsKPIOverviewComponent_ng_template_9_Template, 3, 2, "ng-template", null, 9, i0.ɵɵtemplateRefExtractor);
+                i0.ɵɵtemplate(8, CmacsKPIOverviewComponent_ng_template_8_Template, 3, 2, "ng-template", null, 8, i0.ɵɵtemplateRefExtractor);
             }
             if (rf & 2) {
-                var _r2 = i0.ɵɵreference(10);
-                i0.ɵɵadvance(8);
-                i0.ɵɵproperty("ngTemplateOutlet", _r2);
+                i0.ɵɵadvance(7);
+                i0.ɵɵproperty("ngIf", ctx.showLegend);
             }
-        }, directives: [i6$1.NzColDirective, i2$1.NgTemplateOutlet, i2$1.NgForOf], styles: ["[_nghost-%COMP%]{display:flex;min-width:223px;min-height:120px;height:100%;padding:33px;background-color:#fff}.cmacs-kpi-overview-container[_ngcontent-%COMP%]{margin-right:25px}.cmacs-kpi-total-count[_ngcontent-%COMP%]{margin-right:10px;margin-top:-2px;flex:0 0 auto;font-weight:600;color:#3b4043}.border-radius-left[_ngcontent-%COMP%]{border-radius:100px 0 0 100px}.border-radius-right[_ngcontent-%COMP%]{border-radius:0 100px 100px 0}.cmacs-kpi-overview-row[_ngcontent-%COMP%]{display:flex}.cmacs-kpi-overview-chart[_ngcontent-%COMP%]{position:relative;top:-31px}.cmacs-kpi-divider[_ngcontent-%COMP%]{display:inline-block;width:2px;height:9px;border-radius:100px;margin-right:8px}.cmacs-kpi-count[_ngcontent-%COMP%]{font-weight:600;color:#3b4043;margin-right:4px;min-width:20px}.cmacs-kpi-count[_ngcontent-%COMP%], .cmacs-kpi-description[_ngcontent-%COMP%]{display:inline-block;font-family:Roboto-Regular;font-size:12px;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal}.cmacs-kpi-description[_ngcontent-%COMP%]{font-weight:400;color:#656c79}.cmacs-kpi-wrapper[_ngcontent-%COMP%]{display:flex}.cmacs-kpi-overview-title[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;line-height:1.29;letter-spacing:normal;color:#3b3f46;margin-bottom:10px;font-weight:700}.cmacs-kpi-overview-wrapper[_ngcontent-%COMP%]{margin-top:3px;margin-left:5px;height:30px;padding-top:25px}.cmacs-kpi-overview-total-count[_ngcontent-%COMP%]{position:relative;font-size:20px;font-weight:600;color:#3b4043;text-align:center;top:28px;z-index:100}.cmacs-kpi-overview-legend-wrapper[_ngcontent-%COMP%]{float:right;display:inline-block;margin:4px}"] });
+        }, directives: [i6$1.NzColDirective, i2$1.NgIf, i2$1.NgTemplateOutlet, i2$1.NgForOf], styles: ["[_nghost-%COMP%]{display:flex;min-width:223px;min-height:120px;height:100%;padding:33px;background-color:#fff}.cmacs-kpi-overview-container[_ngcontent-%COMP%]{margin-right:25px}.cmacs-kpi-total-count[_ngcontent-%COMP%]{margin-right:10px;margin-top:-2px;flex:0 0 auto;font-weight:600;color:#3b4043}.border-radius-left[_ngcontent-%COMP%]{border-radius:100px 0 0 100px}.border-radius-right[_ngcontent-%COMP%]{border-radius:0 100px 100px 0}.cmacs-kpi-overview-row[_ngcontent-%COMP%]{display:flex}.cmacs-kpi-overview-chart[_ngcontent-%COMP%]{position:relative;top:-31px}.cmacs-kpi-divider[_ngcontent-%COMP%]{display:inline-block;width:2px;height:9px;border-radius:100px;margin-right:8px}.cmacs-kpi-count[_ngcontent-%COMP%]{font-weight:600;color:#3b4043;margin-right:4px;min-width:20px}.cmacs-kpi-count[_ngcontent-%COMP%], .cmacs-kpi-description[_ngcontent-%COMP%]{display:inline-block;font-family:Roboto-Regular;font-size:12px;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal}.cmacs-kpi-description[_ngcontent-%COMP%]{font-weight:400;color:#656c79}.cmacs-kpi-wrapper[_ngcontent-%COMP%]{display:flex}.cmacs-kpi-overview-title[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;line-height:1.29;letter-spacing:normal;color:#3b3f46;margin-bottom:10px;font-weight:700}.cmacs-kpi-overview-wrapper[_ngcontent-%COMP%]{margin-top:3px;margin-left:5px;height:30px;padding-top:25px}.cmacs-kpi-overview-total-count[_ngcontent-%COMP%]{position:relative;font-size:20px;font-weight:600;color:#3b4043;text-align:center;top:28px;z-index:100}.cmacs-kpi-overview-legend-wrapper[_ngcontent-%COMP%]{float:right;display:inline-block;margin:4px}"] });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsKPIOverviewComponent, [{
                 type: i0.Component,
@@ -39511,9 +39558,13 @@
                         templateUrl: './cmacs-kpioverview.component.html',
                         styleUrls: ['./cmacs-kpioverview.component.css']
                     }]
-            }], function () { return [{ type: i1$6.DomSanitizer }]; }, { data: [{
+            }], function () { return [{ type: i1$6.DomSanitizer }]; }, { showLegend: [{
+                    type: i0.Input
+                }], data: [{
                     type: i0.Input
                 }], title: [{
+                    type: i0.Input
+                }], titleKPI: [{
                     type: i0.Input
                 }], view: [{
                     type: i0.Input
@@ -46339,6 +46390,219 @@
                 }] });
     })();
 
+    var _c0$1m = ["columnTemplate"];
+    function CmacsKpiVsComponent_cmacs_kpi_overview_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "cmacs-kpi-overview", 7);
+        }
+        if (rf & 2) {
+            var item_r6 = ctx.$implicit;
+            var i_r7 = ctx.index;
+            var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("data", item_r6)("colors", ctx_r0.colorsScheme)("showLegend", false)("view", ctx_r0.view)("titleKPI", ctx_r0.kpiColumns[i_r7].nameKpi);
+        }
+    }
+    function CmacsKpiVsComponent_cmacs_compact_table_4_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r9_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "cmacs-compact-table", 8);
+            i0.ɵɵlistener("configChange", function CmacsKpiVsComponent_cmacs_compact_table_4_Template_cmacs_compact_table_configChange_0_listener($event) { i0.ɵɵrestoreView(_r9_1); var ctx_r8 = i0.ɵɵnextContext(); return ctx_r8.configuration = $event; });
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("data", ctx_r1.dataTable)("config", ctx_r1.configuration)("indentSize", 40)("logs", true)("expandable", true)("scroll", ctx_r1.scroll)("frontPagination", false)("showPagination", false);
+        }
+    }
+    var _c1$F = function () { return { rows: 8 }; };
+    function CmacsKpiVsComponent_ng_template_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "nz-skeleton", 9);
+        }
+        if (rf & 2) {
+            i0.ɵɵproperty("nzActive", true)("nzParagraph", i0.ɵɵpureFunction0(2, _c1$F));
+        }
+    }
+    function CmacsKpiVsComponent_ng_template_7_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "div", 10);
+        }
+        if (rf & 2) {
+            var color_r10 = ctx.color;
+            i0.ɵɵstyleProp("background-color", color_r10);
+        }
+    }
+    var CmacsKpiVsComponent = /** @class */ (function () {
+        function CmacsKpiVsComponent(renderer, elementRef) {
+            this.renderer = renderer;
+            this.elementRef = elementRef;
+            this.scrollY = 200;
+            this.scroll = { x: '434px', y: this.scrollY + 'px' };
+            this.p = 1;
+            this.col2 = 150;
+            this.col3 = 70;
+            this.loading = true;
+            // chart
+            this.showChart = false;
+            this.minWidth = 434;
+            this.listKpi = [];
+            this.colorsScheme = [];
+        }
+        CmacsKpiVsComponent.prototype.ngOnInit = function () {
+            this.fillKPI();
+        };
+        CmacsKpiVsComponent.prototype.ngOnChanges = function () {
+            var _this = this;
+            this.setScroll();
+            this.p = 1;
+            if (this.view && this.view.length === 2) {
+                this.p = this.view[0] > this.minWidth ? this.view[0] / this.minWidth : 1;
+                if (this.renderer) {
+                    this.resize();
+                }
+            }
+            setTimeout(function () {
+                _this.setConfiguration();
+                _this.setData();
+            }, 0);
+        };
+        CmacsKpiVsComponent.prototype.setScroll = function () {
+            var p = 1;
+            if (this.view && this.view.length === 2) {
+                p = this.view[1] * 0.5 > this.scrollY ? this.view[1] * 0.5 / this.scrollY : 1;
+            }
+            this.scroll = { x: '300px', y: this.scrollY * p + 'px' };
+        };
+        CmacsKpiVsComponent.prototype.resize = function () {
+            var width = this.view[0];
+            this.renderer.setStyle(this.elementRef.nativeElement, 'width', width + "px");
+        };
+        CmacsKpiVsComponent.prototype.ngAfterViewInit = function () {
+            this.resize();
+        };
+        CmacsKpiVsComponent.prototype.fillKPI = function () {
+            var _this = this;
+            this.colorsScheme = this.data.rows.map(function (x) { return x.color; });
+            this.kpiColumns = this.data.columns.filter(function (d) { return d.hasKpi; });
+            this.kpiColumns.forEach(function (c, index) {
+                _this.listKpi.push(_this.data.rows.map(function (r) { return ({ count: r.values[index], description: '' }); }));
+            });
+        };
+        CmacsKpiVsComponent.prototype.setConfiguration = function () {
+            var _this = this;
+            this.configuration = {
+                // column with dot
+                fields: [
+                    {
+                        celdType: exports.CeldType.TemplateRef,
+                        display: '',
+                        property: 'color',
+                        editTemplate: 3,
+                        width: '70px',
+                        minWidth: 70,
+                        maxWidth: 120,
+                        resizable: true
+                    },
+                ],
+                fieldId: 'key',
+                fieldRate: 'fav'
+            };
+            this.data.columns.forEach(function (x, index) {
+                var colWidth = (x.hasKpi ? _this.col3 : _this.col2);
+                _this.configuration.fields.push({
+                    celdType: exports.CeldType.Default,
+                    editTemplate: 3,
+                    display: x.name,
+                    property: x.hasKpi ? "prop" + index : 'name',
+                    editable: false,
+                    width: colWidth * _this.p + 'px',
+                    minWidth: colWidth * _this.p - 10,
+                    maxWidth: colWidth * _this.p + 100,
+                    resizable: true,
+                });
+            });
+        };
+        CmacsKpiVsComponent.prototype.setData = function () {
+            var _this = this;
+            this.loading = true;
+            this.dataTable = [];
+            this.data.rows.forEach(function (x) {
+                _this.dataTable.push(_this.getItemTable(x));
+            });
+            setTimeout(function () {
+                _this.loading = false;
+            }, 0);
+        };
+        CmacsKpiVsComponent.prototype.getItemTable = function (x) {
+            var _this = this;
+            var newItem = {
+                key: x.id,
+                color: {
+                    ref: this.columnTemplate,
+                    context: {
+                        color: x.color
+                    }
+                },
+                name: x.label
+            };
+            if (x.children.length > 0 || !x.isChild) {
+                newItem.children = x.children.map(function (e) { return _this.getItemTable(e); });
+            }
+            x.values.forEach(function (v, i) {
+                newItem["prop" + (i + 1)] = v.toFixed(2);
+            });
+            return newItem;
+        };
+        return CmacsKpiVsComponent;
+    }());
+    CmacsKpiVsComponent.ɵfac = function CmacsKpiVsComponent_Factory(t) { return new (t || CmacsKpiVsComponent)(i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ElementRef)); };
+    CmacsKpiVsComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsKpiVsComponent, selectors: [["cmacs-kpi-vs"]], viewQuery: function CmacsKpiVsComponent_Query(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵviewQuery(_c0$1m, 1, i0.TemplateRef);
+            }
+            if (rf & 2) {
+                var _t = void 0;
+                i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.columnTemplate = _t.first);
+            }
+        }, inputs: { view: "view", data: "data" }, features: [i0.ɵɵNgOnChangesFeature], decls: 9, vars: 3, consts: [[1, "sd-content"], ["nz-row", "", 1, "chart-content"], ["type", "doughnut", 3, "data", "colors", "showLegend", "view", "titleKPI", 4, "ngFor", "ngForOf"], ["nz-row", "", 1, "chart-data-table"], [3, "data", "config", "indentSize", "logs", "expandable", "scroll", "frontPagination", "showPagination", "configChange", 4, "ngIf", "ngIfElse"], ["elseBlock", ""], ["columnTemplate", ""], ["type", "doughnut", 3, "data", "colors", "showLegend", "view", "titleKPI"], [3, "data", "config", "indentSize", "logs", "expandable", "scroll", "frontPagination", "showPagination", "configChange"], [3, "nzActive", "nzParagraph"], [1, "chart-dot"]], template: function CmacsKpiVsComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelementStart(0, "div", 0);
+                i0.ɵɵelementStart(1, "div", 1);
+                i0.ɵɵtemplate(2, CmacsKpiVsComponent_cmacs_kpi_overview_2_Template, 1, 5, "cmacs-kpi-overview", 2);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementStart(3, "div", 3);
+                i0.ɵɵtemplate(4, CmacsKpiVsComponent_cmacs_compact_table_4_Template, 1, 8, "cmacs-compact-table", 4);
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+                i0.ɵɵtemplate(5, CmacsKpiVsComponent_ng_template_5_Template, 1, 3, "ng-template", null, 5, i0.ɵɵtemplateRefExtractor);
+                i0.ɵɵtemplate(7, CmacsKpiVsComponent_ng_template_7_Template, 1, 2, "ng-template", null, 6, i0.ɵɵtemplateRefExtractor);
+            }
+            if (rf & 2) {
+                var _r2 = i0.ɵɵreference(6);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngForOf", ctx.listKpi);
+                i0.ɵɵadvance(2);
+                i0.ɵɵproperty("ngIf", !ctx.loading && ctx.dataTable)("ngIfElse", _r2);
+            }
+        }, directives: [i6$1.NzRowDirective, i2$1.NgForOf, i2$1.NgIf, CmacsKPIOverviewComponent, CmacsCompactTableComponent, i5$1.NzSkeletonComponent], styles: [".chart-dot[_ngcontent-%COMP%]{width:9px;height:9px;border-radius:5px;display:inline-block;margin-left:13px}.chart-content[_ngcontent-%COMP%]{display:flex!important;align-items:center;justify-content:center}.sd-content[_ngcontent-%COMP%]{position:relative}  .chart-data-table cmacs-compact-table .cmacs-compact-table-input-number-icon-view{display:none}  .chart-data-table cmacs-compact-table .cmacs-compact-table-header-logs,   .chart-data-table cmacs-compact-table .cmacs-compact-table-header-logs .ant-table-row-expand-icon,   .chart-data-table cmacs-compact-table .cmacs-compact-table-logs-header-th-font,   .chart-data-table cmacs-compact-table .cmacs-compact-table-logs-header-th-font:hover{background-color:#fff!important}  .chart-data-table .cmacs-compact-table .ant-table-header,   .chart-data-table .cmacs-compact-table .ant-table-tbody>tr:not(.cmacs-compact-table-header-logs)>td,   .chart-data-table .cmacs-compact-table .ant-table-thead>tr>th{background-color:#f6f7fb!important}  .chart-content cmacs-kpi-overview{min-width:unset;display:unset!important;min-width:unset!important;min-height:unset!important;padding:unset!important;background-color:unset;margin-top:unset}  .chart-content .cmacs-kpi-overview-wrapper{height:unset!important;padding-top:0!important;margin-left:unset!important;margin-top:unset!important}  .chart-content .cmacs-kpi-overview-chart{top:-12px!important}"] });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsKpiVsComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-kpi-vs',
+                        templateUrl: './cmacs-kpi-vs.component.html',
+                        styleUrls: ['./cmacs-kpi-vs.component.css']
+                    }]
+            }], function () { return [{ type: i0.Renderer2 }, { type: i0.ElementRef }]; }, { columnTemplate: [{
+                    type: i0.ViewChild,
+                    args: ['columnTemplate', { read: i0.TemplateRef, static: false }]
+                }], view: [{
+                    type: i0.Input
+                }], data: [{
+                    type: i0.Input
+                }] });
+    })();
+
     i2$1.registerLocaleData(en__default['default']);
     var CmacsComponentsV2LibModule = /** @class */ (function () {
         function CmacsComponentsV2LibModule() {
@@ -46511,6 +46775,7 @@
                 CmacsNormalizedHorizontalBarGroupedComponent,
                 CmacsKpiGroupComponent,
                 CmacsKpiGroupTotalComponent,
+                CmacsKpiVsComponent,
                 CmacsTreeComponent,
                 CmacsTreeNodeComponent,
                 CmacsWizardComponent,
@@ -46744,6 +47009,7 @@
                 i5$1.NzSkeletonModule,
                 CmacsKpiGroupComponent,
                 CmacsKpiGroupTotalComponent,
+                CmacsKpiVsComponent,
                 CmacsTreeComponent,
                 CmacsTreeNodeComponent,
                 tree.NzTreeModule,
@@ -46960,6 +47226,7 @@
                             CmacsNormalizedHorizontalBarGroupedComponent,
                             CmacsKpiGroupComponent,
                             CmacsKpiGroupTotalComponent,
+                            CmacsKpiVsComponent,
                             CmacsTreeComponent,
                             CmacsTreeNodeComponent,
                             CmacsWizardComponent,
@@ -47199,6 +47466,7 @@
                             i5$1.NzSkeletonModule,
                             CmacsKpiGroupComponent,
                             CmacsKpiGroupTotalComponent,
+                            CmacsKpiVsComponent,
                             CmacsTreeComponent,
                             CmacsTreeNodeComponent,
                             tree.NzTreeModule,
@@ -47676,6 +47944,7 @@
     exports.CmacsKpiComponent = CmacsKpiComponent;
     exports.CmacsKpiGroupComponent = CmacsKpiGroupComponent;
     exports.CmacsKpiGroupTotalComponent = CmacsKpiGroupTotalComponent;
+    exports.CmacsKpiVsComponent = CmacsKpiVsComponent;
     exports.CmacsListComponent = CmacsListComponent;
     exports.CmacsListEmptyComponent = CmacsListEmptyComponent;
     exports.CmacsListFooterComponent = CmacsListFooterComponent;

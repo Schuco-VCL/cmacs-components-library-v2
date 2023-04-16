@@ -15,6 +15,7 @@ export interface KPI {
 export declare class CmacsKpiComponent implements AfterViewInit {
     private sanitizer;
     private cdr;
+    showLegend: boolean;
     data: KPI[];
     title: string;
     priority: boolean;
@@ -35,6 +36,6 @@ export declare class CmacsKpiComponent implements AfterViewInit {
     getTotalWidth(): number;
     getColoredData(): any;
     static ɵfac: i0.ɵɵFactoryDef<CmacsKpiComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsKpiComponent, "cmacs-kpi", ["cmacsKpi"], { "data": "data"; "title": "title"; "priority": "priority"; "type": "type"; "width": "width"; "showTotalCount": "showTotalCount"; "fixed": "fixed"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsKpiComponent, "cmacs-kpi", ["cmacsKpi"], { "showLegend": "showLegend"; "data": "data"; "title": "title"; "priority": "priority"; "type": "type"; "width": "width"; "showTotalCount": "showTotalCount"; "fixed": "fixed"; }, {}, never, never>;
 }
 //# sourceMappingURL=cmacs-kpi.component.d.ts.map

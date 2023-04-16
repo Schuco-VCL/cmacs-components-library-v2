@@ -59,6 +59,7 @@ export * from './lib/components/cmacs-dropdown/context-menu.service.module';
 export * from './lib/components/cmacs-floating-menu/cmacs-floating-menu.component';
 export * from './lib/components/cmacs-kpi/cmacs-kpi.component';
 export * from './lib/components/cmacs-kpi-group-total/cmacs-kpi-group-total.component';
+export * from './lib/components/cmacs-kpi-vs/cmacs-kpi-vs.component';
 export * from './lib/components/cmacs-editor/cmacs-editor.component';
 export * from './lib/components/cmacs-form/form-control.component';
 export * from './lib/components/cmacs-form/form-item.component';

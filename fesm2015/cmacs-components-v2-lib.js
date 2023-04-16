@@ -7257,8 +7257,18 @@ function CmacsKpiComponent_div_0_div_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵstyleProp("width", ctx_r5.getWidth(kpi_r7.count), "%")("background-color", kpi_r7.color)("opacity", ctx_r5.sanitizeStyle(kpi_r7.opacity));
     ɵɵclassProp("border-radius-left", i_r8 === 0)("border-radius-right", i_r8 === ctx_r5.getColoredData().lenght - 1);
 } }
-function CmacsKpiComponent_div_0_ng_container_6_Template(rf, ctx) { if (rf & 1) {
+function CmacsKpiComponent_div_0_div_6_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
+} }
+function CmacsKpiComponent_div_0_div_6_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div");
+    ɵɵtemplate(1, CmacsKpiComponent_div_0_div_6_ng_container_1_Template, 1, 0, "ng-container", 11);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    ɵɵnextContext(2);
+    const _r2 = ɵɵreference(3);
+    ɵɵadvance(1);
+    ɵɵproperty("ngTemplateOutlet", _r2);
 } }
 function CmacsKpiComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 3);
@@ -7268,12 +7278,11 @@ function CmacsKpiComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(4);
     ɵɵelementEnd();
     ɵɵtemplate(5, CmacsKpiComponent_div_0_div_5_Template, 1, 10, "div", 7);
-    ɵɵtemplate(6, CmacsKpiComponent_div_0_ng_container_6_Template, 1, 0, "ng-container", 8);
+    ɵɵtemplate(6, CmacsKpiComponent_div_0_div_6_Template, 2, 1, "div", 8);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    const _r2 = ɵɵreference(3);
     ɵɵadvance(1);
     ɵɵproperty("ngIf", ctx_r0.showTotalCount);
     ɵɵadvance(3);
@@ -7281,62 +7290,69 @@ function CmacsKpiComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵproperty("ngForOf", ctx_r0.getColoredData());
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", _r2);
+    ɵɵproperty("ngIf", ctx_r0.showLegend);
 } }
-function CmacsKpiComponent_div_1_ng_container_10_Template(rf, ctx) { if (rf & 1) {
+function CmacsKpiComponent_div_1_div_9_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
 } }
+function CmacsKpiComponent_div_1_div_9_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 20);
+    ɵɵtemplate(1, CmacsKpiComponent_div_1_div_9_ng_container_1_Template, 1, 0, "ng-container", 11);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    ɵɵnextContext(2);
+    const _r2 = ɵɵreference(3);
+    ɵɵadvance(1);
+    ɵɵproperty("ngTemplateOutlet", _r2);
+} }
 function CmacsKpiComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 11);
-    ɵɵelementStart(1, "div", 12);
+    ɵɵelementStart(0, "div", 12);
+    ɵɵelementStart(1, "div", 13);
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelementStart(3, "div", 13);
-    ɵɵelementStart(4, "div", 14);
-    ɵɵelementStart(5, "div", 15);
+    ɵɵelementStart(3, "div", 14);
+    ɵɵelementStart(4, "div", 15);
+    ɵɵelementStart(5, "div", 16);
     ɵɵtext(6);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelement(7, "img", 16, 17);
+    ɵɵelement(7, "img", 17, 18);
     ɵɵelementEnd();
-    ɵɵelementStart(9, "div", 18);
-    ɵɵtemplate(10, CmacsKpiComponent_div_1_ng_container_10_Template, 1, 0, "ng-container", 8);
-    ɵɵelementEnd();
+    ɵɵtemplate(9, CmacsKpiComponent_div_1_div_9_Template, 2, 1, "div", 19);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
-    const _r2 = ɵɵreference(3);
     ɵɵadvance(2);
     ɵɵtextInterpolate(ctx_r1.title);
     ɵɵadvance(1);
     ɵɵstyleProp("width", ctx_r1.getTotalWidth(), "px");
     ɵɵadvance(3);
     ɵɵtextInterpolate(ctx_r1.getTotalCount().toFixed(ctx_r1.fixed));
-    ɵɵadvance(4);
-    ɵɵproperty("ngTemplateOutlet", _r2);
+    ɵɵadvance(3);
+    ɵɵproperty("ngIf", ctx_r1.showLegend);
 } }
 function CmacsKpiComponent_ng_template_2_div_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 20);
-    ɵɵelement(1, "div", 21);
-    ɵɵelementStart(2, "div", 22);
+    ɵɵelementStart(0, "div", 22);
+    ɵɵelement(1, "div", 23);
+    ɵɵelementStart(2, "div", 24);
     ɵɵtext(3);
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 23);
+    ɵɵelementStart(4, "div", 25);
     ɵɵtext(5);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    const kpi_r12 = ctx.$implicit;
-    const ctx_r11 = ɵɵnextContext(2);
+    const kpi_r14 = ctx.$implicit;
+    const ctx_r13 = ɵɵnextContext(2);
     ɵɵadvance(1);
-    ɵɵstyleProp("background-color", kpi_r12.color)("opacity", ctx_r11.sanitizeStyle(kpi_r12.opacity));
+    ɵɵstyleProp("background-color", kpi_r14.color)("opacity", ctx_r13.sanitizeStyle(kpi_r14.opacity));
     ɵɵadvance(2);
-    ɵɵtextInterpolate(kpi_r12.count.toFixed(ctx_r11.fixed));
+    ɵɵtextInterpolate(kpi_r14.count.toFixed(ctx_r13.fixed));
     ɵɵadvance(2);
-    ɵɵtextInterpolate(kpi_r12.description);
+    ɵɵtextInterpolate(kpi_r14.description);
 } }
 function CmacsKpiComponent_ng_template_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵtemplate(0, CmacsKpiComponent_ng_template_2_div_0_Template, 6, 6, "div", 19);
+    ɵɵtemplate(0, CmacsKpiComponent_ng_template_2_div_0_Template, 6, 6, "div", 21);
 } if (rf & 2) {
     const ctx_r3 = ɵɵnextContext();
     ɵɵproperty("ngForOf", ctx_r3.getColoredData());
@@ -7360,6 +7376,7 @@ class CmacsKpiComponent {
     constructor(sanitizer, cdr) {
         this.sanitizer = sanitizer;
         this.cdr = cdr;
+        this.showLegend = true;
         this.priority = false;
         this.type = 'line';
         this.width = 84;
@@ -7492,9 +7509,9 @@ CmacsKpiComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKpiComponent, selecto
     } if (rf & 2) {
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.canvasImgRef = _t.first);
-    } }, inputs: { data: "data", title: "title", priority: "priority", type: "type", width: "width", showTotalCount: "showTotalCount", fixed: "fixed" }, exportAs: ["cmacsKpi"], decls: 4, vars: 2, consts: [["class", "cmacs-kpi-wrapper", 4, "ngIf"], ["class", "cmacs-kpi-doughnut-container", 4, "ngIf"], ["legend", ""], [1, "cmacs-kpi-wrapper"], ["class", "cmacs-kpi-total-count", 4, "ngIf"], [2, "flex", "1 0 auto"], [1, "cmacs-kpi-title"], ["class", "cmacs-kpi-line", 3, "border-radius-left", "border-radius-right", "width", "background-color", "opacity", 4, "ngFor", "ngForOf"], [4, "ngTemplateOutlet"], [1, "cmacs-kpi-total-count"], [1, "cmacs-kpi-line"], [1, "cmacs-kpi-doughnut-container"], [1, "cmacs-kpi-doughnut-title"], [1, "cmacs-kpi-doughnut-wrapper"], [1, "cmacs-kpi-total-count-wrapper"], [1, "cmacs-kpi-doughnut-total-count"], [1, "cmacs-kpi-canvas-toimage"], ["canvasImg", ""], [1, "cmacs-kpi-doughnut-legend-wrapper"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-divider"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKpiComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { showLegend: "showLegend", data: "data", title: "title", priority: "priority", type: "type", width: "width", showTotalCount: "showTotalCount", fixed: "fixed" }, exportAs: ["cmacsKpi"], decls: 4, vars: 2, consts: [["class", "cmacs-kpi-wrapper", 4, "ngIf"], ["class", "cmacs-kpi-doughnut-container", 4, "ngIf"], ["legend", ""], [1, "cmacs-kpi-wrapper"], ["class", "cmacs-kpi-total-count", 4, "ngIf"], [2, "flex", "1 0 auto"], [1, "cmacs-kpi-title"], ["class", "cmacs-kpi-line", 3, "border-radius-left", "border-radius-right", "width", "background-color", "opacity", 4, "ngFor", "ngForOf"], [4, "ngIf"], [1, "cmacs-kpi-total-count"], [1, "cmacs-kpi-line"], [4, "ngTemplateOutlet"], [1, "cmacs-kpi-doughnut-container"], [1, "cmacs-kpi-doughnut-title"], [1, "cmacs-kpi-doughnut-wrapper"], [1, "cmacs-kpi-total-count-wrapper"], [1, "cmacs-kpi-doughnut-total-count"], [1, "cmacs-kpi-canvas-toimage"], ["canvasImg", ""], ["class", "cmacs-kpi-doughnut-legend-wrapper", 4, "ngIf"], [1, "cmacs-kpi-doughnut-legend-wrapper"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-divider"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKpiComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, CmacsKpiComponent_div_0_Template, 7, 4, "div", 0);
-        ɵɵtemplate(1, CmacsKpiComponent_div_1_Template, 11, 5, "div", 1);
+        ɵɵtemplate(1, CmacsKpiComponent_div_1_Template, 10, 5, "div", 1);
         ɵɵtemplate(2, CmacsKpiComponent_ng_template_2_Template, 1, 1, "ng-template", null, 2, ɵɵtemplateRefExtractor);
     } if (rf & 2) {
         ɵɵproperty("ngIf", ctx.type === "line");
@@ -7522,7 +7539,9 @@ __decorate([
     `
                 ]
             }]
-    }], function () { return [{ type: DomSanitizer }, { type: ChangeDetectorRef }]; }, { data: [{
+    }], function () { return [{ type: DomSanitizer }, { type: ChangeDetectorRef }]; }, { showLegend: [{
+            type: Input
+        }], data: [{
             type: Input
         }], title: [{
             type: Input
@@ -35662,33 +35681,43 @@ CmacsGeneralChartComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsGeneralChart
         }] }); })();
 
 const _c0$1d = ["canvas"];
-function CmacsKPIOverviewComponent_ng_container_8_Template(rf, ctx) { if (rf & 1) {
+function CmacsKPIOverviewComponent_div_7_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(0);
 } }
-function CmacsKPIOverviewComponent_ng_template_9_div_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 12);
-    ɵɵelementStart(1, "div", 13);
+function CmacsKPIOverviewComponent_div_7_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 9);
+    ɵɵtemplate(1, CmacsKPIOverviewComponent_div_7_ng_container_1_Template, 1, 0, "ng-container", 10);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    ɵɵnextContext();
+    const _r2 = ɵɵreference(9);
+    ɵɵadvance(1);
+    ɵɵproperty("ngTemplateOutlet", _r2);
+} }
+function CmacsKPIOverviewComponent_ng_template_8_div_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 13);
+    ɵɵelementStart(1, "div", 14);
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelementStart(3, "div", 14);
+    ɵɵelementStart(3, "div", 15);
     ɵɵtext(4);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    const kpi_r5 = ctx.$implicit;
-    const ctx_r4 = ɵɵnextContext(2);
+    const kpi_r6 = ctx.$implicit;
+    const ctx_r5 = ɵɵnextContext(2);
     ɵɵadvance(1);
-    ɵɵstyleProp("color", kpi_r5.color)("opacity", ctx_r4.sanitizeStyle(kpi_r5.opacity));
+    ɵɵstyleProp("color", kpi_r6.color)("opacity", ctx_r5.sanitizeStyle(kpi_r6.opacity));
     ɵɵadvance(1);
-    ɵɵtextInterpolate(kpi_r5.count.toFixed(ctx_r4.fixed));
+    ɵɵtextInterpolate(kpi_r6.count.toFixed(ctx_r5.fixed));
     ɵɵadvance(2);
-    ɵɵtextInterpolate(kpi_r5.description);
+    ɵɵtextInterpolate(kpi_r6.description);
 } }
-function CmacsKPIOverviewComponent_ng_template_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 10);
+function CmacsKPIOverviewComponent_ng_template_8_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 11);
     ɵɵtext(1);
     ɵɵelementEnd();
-    ɵɵtemplate(2, CmacsKPIOverviewComponent_ng_template_9_div_2_Template, 5, 6, "div", 11);
+    ɵɵtemplate(2, CmacsKPIOverviewComponent_ng_template_8_div_2_Template, 5, 6, "div", 12);
 } if (rf & 2) {
     const ctx_r3 = ɵɵnextContext();
     ɵɵadvance(1);
@@ -35699,6 +35728,7 @@ function CmacsKPIOverviewComponent_ng_template_9_Template(rf, ctx) { if (rf & 1)
 class CmacsKPIOverviewComponent {
     constructor(sanitizer) {
         this.sanitizer = sanitizer;
+        this.showLegend = true;
         this.fixed = 0;
         this.minWidth = 300;
         this.fontChartNumber = 20;
@@ -35737,11 +35767,22 @@ class CmacsKPIOverviewComponent {
                 // drawing a white circle over the chart
                 // to create the doughnut chart
                 this.drawPieSlice(ctx, canvas.width / 2, canvas.height / 2, 0.8 * Math.min(canvas.width / 2, canvas.height / 2), 0, 2 * Math.PI, '#ffffff');
-                // draw value
                 ctx.font = this.fontChartNumber * this.p + 'px Roboto-Regular ';
                 ctx.fillStyle = '#3b3f46';
                 ctx.textAlign = 'center';
-                ctx.fillText(this.getTotalCount().toFixed(this.fixed), canvas.width / 2, canvas.width / 2 + 8);
+                if (this.titleKPI && this.titleKPI.trim().length > 0) {
+                    // draw value
+                    ctx.fillText(this.getTotalCount().toFixed(this.fixed), canvas.width / 2, canvas.width / 2);
+                    // and text
+                    ctx.font = this.fontChartNumber * this.p / 2.5 + 'px Roboto-Regular ';
+                    ctx.fillStyle = '#3b3f46';
+                    ctx.textAlign = 'center';
+                    ctx.fillText(this.titleKPI, canvas.width / 2, canvas.width / 2 + this.fontChartNumber * this.p / 2);
+                }
+                else {
+                    // draw only value
+                    ctx.fillText(this.getTotalCount().toFixed(this.fixed), canvas.width / 2, canvas.width / 2 + 8);
+                }
             }
         }, 50);
     }
@@ -35797,7 +35838,7 @@ class CmacsKPIOverviewComponent {
                 count: item.count,
                 description: item.description,
                 color: this.colors[colorIndex],
-                opacity: opacity
+                opacity
             });
             opacity = opacity - 0.2;
             tempRate--;
@@ -35811,7 +35852,7 @@ CmacsKPIOverviewComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKPIOverviewCo
     } if (rf & 2) {
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.canvasRef = _t.first);
-    } }, inputs: { data: "data", title: "title", view: "view", fixed: "fixed", colors: "colors" }, features: [ɵɵNgOnChangesFeature], decls: 11, vars: 1, consts: [[1, "cmacs-kpi-overview-row"], ["nz-col", "", 1, "cmacs-kpi-overview-container"], [1, "cmacs-kpi-overview-wrapper"], [1, "cmacs-kpi-overview-count-wrapper"], [1, "cmacs-kpi-overview-total-count"], [1, "cmacs-kpi-overview-chart"], ["canvas", ""], ["nz-col", "", 1, "cmacs-kpi-overview-legend-wrapper"], [4, "ngTemplateOutlet"], ["legend", ""], [1, "cmacs-kpi-overview-title"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKPIOverviewComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { showLegend: "showLegend", data: "data", title: "title", titleKPI: "titleKPI", view: "view", fixed: "fixed", colors: "colors" }, features: [ɵɵNgOnChangesFeature], decls: 10, vars: 1, consts: [[1, "cmacs-kpi-overview-row"], ["nz-col", "", 1, "cmacs-kpi-overview-container"], [1, "cmacs-kpi-overview-wrapper"], [1, "cmacs-kpi-overview-count-wrapper"], [1, "cmacs-kpi-overview-total-count"], [1, "cmacs-kpi-overview-chart"], ["canvas", ""], ["nz-col", "", "class", "cmacs-kpi-overview-legend-wrapper", 4, "ngIf"], ["legend", ""], ["nz-col", "", 1, "cmacs-kpi-overview-legend-wrapper"], [4, "ngTemplateOutlet"], [1, "cmacs-kpi-overview-title"], ["class", "cmacs-kpi-legend-wrapper", 4, "ngFor", "ngForOf"], [1, "cmacs-kpi-legend-wrapper"], [1, "cmacs-kpi-count"], [1, "cmacs-kpi-description"]], template: function CmacsKPIOverviewComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "div", 0);
         ɵɵelementStart(1, "div", 1);
         ɵɵelementStart(2, "div", 2);
@@ -35821,16 +35862,13 @@ CmacsKPIOverviewComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKPIOverviewCo
         ɵɵelement(5, "canvas", 5, 6);
         ɵɵelementEnd();
         ɵɵelementEnd();
-        ɵɵelementStart(7, "div", 7);
-        ɵɵtemplate(8, CmacsKPIOverviewComponent_ng_container_8_Template, 1, 0, "ng-container", 8);
+        ɵɵtemplate(7, CmacsKPIOverviewComponent_div_7_Template, 2, 1, "div", 7);
         ɵɵelementEnd();
-        ɵɵelementEnd();
-        ɵɵtemplate(9, CmacsKPIOverviewComponent_ng_template_9_Template, 3, 2, "ng-template", null, 9, ɵɵtemplateRefExtractor);
+        ɵɵtemplate(8, CmacsKPIOverviewComponent_ng_template_8_Template, 3, 2, "ng-template", null, 8, ɵɵtemplateRefExtractor);
     } if (rf & 2) {
-        const _r2 = ɵɵreference(10);
-        ɵɵadvance(8);
-        ɵɵproperty("ngTemplateOutlet", _r2);
-    } }, directives: [NzColDirective, NgTemplateOutlet, NgForOf], styles: ["[_nghost-%COMP%]{display:flex;min-width:223px;min-height:120px;height:100%;padding:33px;background-color:#fff}.cmacs-kpi-overview-container[_ngcontent-%COMP%]{margin-right:25px}.cmacs-kpi-total-count[_ngcontent-%COMP%]{margin-right:10px;margin-top:-2px;flex:0 0 auto;font-weight:600;color:#3b4043}.border-radius-left[_ngcontent-%COMP%]{border-radius:100px 0 0 100px}.border-radius-right[_ngcontent-%COMP%]{border-radius:0 100px 100px 0}.cmacs-kpi-overview-row[_ngcontent-%COMP%]{display:flex}.cmacs-kpi-overview-chart[_ngcontent-%COMP%]{position:relative;top:-31px}.cmacs-kpi-divider[_ngcontent-%COMP%]{display:inline-block;width:2px;height:9px;border-radius:100px;margin-right:8px}.cmacs-kpi-count[_ngcontent-%COMP%]{font-weight:600;color:#3b4043;margin-right:4px;min-width:20px}.cmacs-kpi-count[_ngcontent-%COMP%], .cmacs-kpi-description[_ngcontent-%COMP%]{display:inline-block;font-family:Roboto-Regular;font-size:12px;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal}.cmacs-kpi-description[_ngcontent-%COMP%]{font-weight:400;color:#656c79}.cmacs-kpi-wrapper[_ngcontent-%COMP%]{display:flex}.cmacs-kpi-overview-title[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;line-height:1.29;letter-spacing:normal;color:#3b3f46;margin-bottom:10px;font-weight:700}.cmacs-kpi-overview-wrapper[_ngcontent-%COMP%]{margin-top:3px;margin-left:5px;height:30px;padding-top:25px}.cmacs-kpi-overview-total-count[_ngcontent-%COMP%]{position:relative;font-size:20px;font-weight:600;color:#3b4043;text-align:center;top:28px;z-index:100}.cmacs-kpi-overview-legend-wrapper[_ngcontent-%COMP%]{float:right;display:inline-block;margin:4px}"] });
+        ɵɵadvance(7);
+        ɵɵproperty("ngIf", ctx.showLegend);
+    } }, directives: [NzColDirective, NgIf, NgTemplateOutlet, NgForOf], styles: ["[_nghost-%COMP%]{display:flex;min-width:223px;min-height:120px;height:100%;padding:33px;background-color:#fff}.cmacs-kpi-overview-container[_ngcontent-%COMP%]{margin-right:25px}.cmacs-kpi-total-count[_ngcontent-%COMP%]{margin-right:10px;margin-top:-2px;flex:0 0 auto;font-weight:600;color:#3b4043}.border-radius-left[_ngcontent-%COMP%]{border-radius:100px 0 0 100px}.border-radius-right[_ngcontent-%COMP%]{border-radius:0 100px 100px 0}.cmacs-kpi-overview-row[_ngcontent-%COMP%]{display:flex}.cmacs-kpi-overview-chart[_ngcontent-%COMP%]{position:relative;top:-31px}.cmacs-kpi-divider[_ngcontent-%COMP%]{display:inline-block;width:2px;height:9px;border-radius:100px;margin-right:8px}.cmacs-kpi-count[_ngcontent-%COMP%]{font-weight:600;color:#3b4043;margin-right:4px;min-width:20px}.cmacs-kpi-count[_ngcontent-%COMP%], .cmacs-kpi-description[_ngcontent-%COMP%]{display:inline-block;font-family:Roboto-Regular;font-size:12px;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal}.cmacs-kpi-description[_ngcontent-%COMP%]{font-weight:400;color:#656c79}.cmacs-kpi-wrapper[_ngcontent-%COMP%]{display:flex}.cmacs-kpi-overview-title[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;line-height:1.29;letter-spacing:normal;color:#3b3f46;margin-bottom:10px;font-weight:700}.cmacs-kpi-overview-wrapper[_ngcontent-%COMP%]{margin-top:3px;margin-left:5px;height:30px;padding-top:25px}.cmacs-kpi-overview-total-count[_ngcontent-%COMP%]{position:relative;font-size:20px;font-weight:600;color:#3b4043;text-align:center;top:28px;z-index:100}.cmacs-kpi-overview-legend-wrapper[_ngcontent-%COMP%]{float:right;display:inline-block;margin:4px}"] });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsKPIOverviewComponent, [{
         type: Component,
         args: [{
@@ -35838,9 +35876,13 @@ CmacsKPIOverviewComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKPIOverviewCo
                 templateUrl: './cmacs-kpioverview.component.html',
                 styleUrls: ['./cmacs-kpioverview.component.css']
             }]
-    }], function () { return [{ type: DomSanitizer }]; }, { data: [{
+    }], function () { return [{ type: DomSanitizer }]; }, { showLegend: [{
+            type: Input
+        }], data: [{
             type: Input
         }], title: [{
+            type: Input
+        }], titleKPI: [{
             type: Input
         }], view: [{
             type: Input
@@ -41952,6 +41994,193 @@ CmacsOpenEditorComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsOpenEditorComp
             type: Output
         }] }); })();
 
+const _c0$1m = ["columnTemplate"];
+function CmacsKpiVsComponent_cmacs_kpi_overview_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "cmacs-kpi-overview", 7);
+} if (rf & 2) {
+    const item_r6 = ctx.$implicit;
+    const i_r7 = ctx.index;
+    const ctx_r0 = ɵɵnextContext();
+    ɵɵproperty("data", item_r6)("colors", ctx_r0.colorsScheme)("showLegend", false)("view", ctx_r0.view)("titleKPI", ctx_r0.kpiColumns[i_r7].nameKpi);
+} }
+function CmacsKpiVsComponent_cmacs_compact_table_4_Template(rf, ctx) { if (rf & 1) {
+    const _r9 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "cmacs-compact-table", 8);
+    ɵɵlistener("configChange", function CmacsKpiVsComponent_cmacs_compact_table_4_Template_cmacs_compact_table_configChange_0_listener($event) { ɵɵrestoreView(_r9); const ctx_r8 = ɵɵnextContext(); return ctx_r8.configuration = $event; });
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵproperty("data", ctx_r1.dataTable)("config", ctx_r1.configuration)("indentSize", 40)("logs", true)("expandable", true)("scroll", ctx_r1.scroll)("frontPagination", false)("showPagination", false);
+} }
+const _c1$F = function () { return { rows: 8 }; };
+function CmacsKpiVsComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "nz-skeleton", 9);
+} if (rf & 2) {
+    ɵɵproperty("nzActive", true)("nzParagraph", ɵɵpureFunction0(2, _c1$F));
+} }
+function CmacsKpiVsComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "div", 10);
+} if (rf & 2) {
+    const color_r10 = ctx.color;
+    ɵɵstyleProp("background-color", color_r10);
+} }
+class CmacsKpiVsComponent {
+    constructor(renderer, elementRef) {
+        this.renderer = renderer;
+        this.elementRef = elementRef;
+        this.scrollY = 200;
+        this.scroll = { x: '434px', y: this.scrollY + 'px' };
+        this.p = 1;
+        this.col2 = 150;
+        this.col3 = 70;
+        this.loading = true;
+        // chart
+        this.showChart = false;
+        this.minWidth = 434;
+        this.listKpi = [];
+        this.colorsScheme = [];
+    }
+    ngOnInit() {
+        this.fillKPI();
+    }
+    ngOnChanges() {
+        this.setScroll();
+        this.p = 1;
+        if (this.view && this.view.length === 2) {
+            this.p = this.view[0] > this.minWidth ? this.view[0] / this.minWidth : 1;
+            if (this.renderer) {
+                this.resize();
+            }
+        }
+        setTimeout(() => {
+            this.setConfiguration();
+            this.setData();
+        }, 0);
+    }
+    setScroll() {
+        let p = 1;
+        if (this.view && this.view.length === 2) {
+            p = this.view[1] * 0.5 > this.scrollY ? this.view[1] * 0.5 / this.scrollY : 1;
+        }
+        this.scroll = { x: '300px', y: this.scrollY * p + 'px' };
+    }
+    resize() {
+        const width = this.view[0];
+        this.renderer.setStyle(this.elementRef.nativeElement, 'width', `${width}px`);
+    }
+    ngAfterViewInit() {
+        this.resize();
+    }
+    fillKPI() {
+        this.colorsScheme = this.data.rows.map(x => x.color);
+        this.kpiColumns = this.data.columns.filter(d => d.hasKpi);
+        this.kpiColumns.forEach((c, index) => {
+            this.listKpi.push(this.data.rows.map(r => ({ count: r.values[index], description: '' })));
+        });
+    }
+    setConfiguration() {
+        this.configuration = {
+            // column with dot
+            fields: [
+                {
+                    celdType: CeldType.TemplateRef,
+                    display: '',
+                    property: 'color',
+                    editTemplate: 3,
+                    width: '70px',
+                    minWidth: 70,
+                    maxWidth: 120,
+                    resizable: true
+                },
+            ],
+            fieldId: 'key',
+            fieldRate: 'fav'
+        };
+        this.data.columns.forEach((x, index) => {
+            const colWidth = (x.hasKpi ? this.col3 : this.col2);
+            this.configuration.fields.push({
+                celdType: CeldType.Default,
+                editTemplate: 3,
+                display: x.name,
+                property: x.hasKpi ? `prop${index}` : 'name',
+                editable: false,
+                width: colWidth * this.p + 'px',
+                minWidth: colWidth * this.p - 10,
+                maxWidth: colWidth * this.p + 100,
+                resizable: true,
+            });
+        });
+    }
+    setData() {
+        this.loading = true;
+        this.dataTable = [];
+        this.data.rows.forEach(x => {
+            this.dataTable.push(this.getItemTable(x));
+        });
+        setTimeout(() => {
+            this.loading = false;
+        }, 0);
+    }
+    getItemTable(x) {
+        const newItem = {
+            key: x.id,
+            color: {
+                ref: this.columnTemplate,
+                context: {
+                    color: x.color
+                }
+            },
+            name: x.label
+        };
+        if (x.children.length > 0 || !x.isChild) {
+            newItem.children = x.children.map(e => this.getItemTable(e));
+        }
+        x.values.forEach((v, i) => {
+            newItem[`prop${i + 1}`] = v.toFixed(2);
+        });
+        return newItem;
+    }
+}
+CmacsKpiVsComponent.ɵfac = function CmacsKpiVsComponent_Factory(t) { return new (t || CmacsKpiVsComponent)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef)); };
+CmacsKpiVsComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsKpiVsComponent, selectors: [["cmacs-kpi-vs"]], viewQuery: function CmacsKpiVsComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵɵviewQuery(_c0$1m, 1, TemplateRef);
+    } if (rf & 2) {
+        let _t;
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.columnTemplate = _t.first);
+    } }, inputs: { view: "view", data: "data" }, features: [ɵɵNgOnChangesFeature], decls: 9, vars: 3, consts: [[1, "sd-content"], ["nz-row", "", 1, "chart-content"], ["type", "doughnut", 3, "data", "colors", "showLegend", "view", "titleKPI", 4, "ngFor", "ngForOf"], ["nz-row", "", 1, "chart-data-table"], [3, "data", "config", "indentSize", "logs", "expandable", "scroll", "frontPagination", "showPagination", "configChange", 4, "ngIf", "ngIfElse"], ["elseBlock", ""], ["columnTemplate", ""], ["type", "doughnut", 3, "data", "colors", "showLegend", "view", "titleKPI"], [3, "data", "config", "indentSize", "logs", "expandable", "scroll", "frontPagination", "showPagination", "configChange"], [3, "nzActive", "nzParagraph"], [1, "chart-dot"]], template: function CmacsKpiVsComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "div", 0);
+        ɵɵelementStart(1, "div", 1);
+        ɵɵtemplate(2, CmacsKpiVsComponent_cmacs_kpi_overview_2_Template, 1, 5, "cmacs-kpi-overview", 2);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "div", 3);
+        ɵɵtemplate(4, CmacsKpiVsComponent_cmacs_compact_table_4_Template, 1, 8, "cmacs-compact-table", 4);
+        ɵɵelementEnd();
+        ɵɵelementEnd();
+        ɵɵtemplate(5, CmacsKpiVsComponent_ng_template_5_Template, 1, 3, "ng-template", null, 5, ɵɵtemplateRefExtractor);
+        ɵɵtemplate(7, CmacsKpiVsComponent_ng_template_7_Template, 1, 2, "ng-template", null, 6, ɵɵtemplateRefExtractor);
+    } if (rf & 2) {
+        const _r2 = ɵɵreference(6);
+        ɵɵadvance(2);
+        ɵɵproperty("ngForOf", ctx.listKpi);
+        ɵɵadvance(2);
+        ɵɵproperty("ngIf", !ctx.loading && ctx.dataTable)("ngIfElse", _r2);
+    } }, directives: [NzRowDirective, NgForOf, NgIf, CmacsKPIOverviewComponent, CmacsCompactTableComponent, NzSkeletonComponent], styles: [".chart-dot[_ngcontent-%COMP%]{width:9px;height:9px;border-radius:5px;display:inline-block;margin-left:13px}.chart-content[_ngcontent-%COMP%]{display:flex!important;align-items:center;justify-content:center}.sd-content[_ngcontent-%COMP%]{position:relative}  .chart-data-table cmacs-compact-table .cmacs-compact-table-input-number-icon-view{display:none}  .chart-data-table cmacs-compact-table .cmacs-compact-table-header-logs,   .chart-data-table cmacs-compact-table .cmacs-compact-table-header-logs .ant-table-row-expand-icon,   .chart-data-table cmacs-compact-table .cmacs-compact-table-logs-header-th-font,   .chart-data-table cmacs-compact-table .cmacs-compact-table-logs-header-th-font:hover{background-color:#fff!important}  .chart-data-table .cmacs-compact-table .ant-table-header,   .chart-data-table .cmacs-compact-table .ant-table-tbody>tr:not(.cmacs-compact-table-header-logs)>td,   .chart-data-table .cmacs-compact-table .ant-table-thead>tr>th{background-color:#f6f7fb!important}  .chart-content cmacs-kpi-overview{min-width:unset;display:unset!important;min-width:unset!important;min-height:unset!important;padding:unset!important;background-color:unset;margin-top:unset}  .chart-content .cmacs-kpi-overview-wrapper{height:unset!important;padding-top:0!important;margin-left:unset!important;margin-top:unset!important}  .chart-content .cmacs-kpi-overview-chart{top:-12px!important}"] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(CmacsKpiVsComponent, [{
+        type: Component,
+        args: [{
+                selector: 'cmacs-kpi-vs',
+                templateUrl: './cmacs-kpi-vs.component.html',
+                styleUrls: ['./cmacs-kpi-vs.component.css']
+            }]
+    }], function () { return [{ type: Renderer2 }, { type: ElementRef }]; }, { columnTemplate: [{
+            type: ViewChild,
+            args: ['columnTemplate', { read: TemplateRef, static: false }]
+        }], view: [{
+            type: Input
+        }], data: [{
+            type: Input
+        }] }); })();
+
 registerLocaleData(en);
 class CmacsComponentsV2LibModule {
 }
@@ -42120,6 +42349,7 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [DatePipe, { 
         CmacsNormalizedHorizontalBarGroupedComponent,
         CmacsKpiGroupComponent,
         CmacsKpiGroupTotalComponent,
+        CmacsKpiVsComponent,
         CmacsTreeComponent,
         CmacsTreeNodeComponent,
         CmacsWizardComponent,
@@ -42353,6 +42583,7 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [DatePipe, { 
         NzSkeletonModule,
         CmacsKpiGroupComponent,
         CmacsKpiGroupTotalComponent,
+        CmacsKpiVsComponent,
         CmacsTreeComponent,
         CmacsTreeNodeComponent,
         NzTreeModule,
@@ -42567,6 +42798,7 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [DatePipe, { 
                     CmacsNormalizedHorizontalBarGroupedComponent,
                     CmacsKpiGroupComponent,
                     CmacsKpiGroupTotalComponent,
+                    CmacsKpiVsComponent,
                     CmacsTreeComponent,
                     CmacsTreeNodeComponent,
                     CmacsWizardComponent,
@@ -42806,6 +43038,7 @@ CmacsComponentsV2LibModule.ɵinj = ɵɵdefineInjector({ providers: [DatePipe, { 
                     NzSkeletonModule,
                     CmacsKpiGroupComponent,
                     CmacsKpiGroupTotalComponent,
+                    CmacsKpiVsComponent,
                     CmacsTreeComponent,
                     CmacsTreeNodeComponent,
                     NzTreeModule,
@@ -43200,5 +43433,5 @@ var ModeTabType;
  * Generated bundle index. Do not edit.
  */
 
-export { ButtonStyle, CeldType, CmacsAlertComponent, CmacsAutosizeDirective, CmacsBreadCrumbComponent, CmacsBreadCrumbItemComponent, CmacsBreadCrumbSeparatorComponent, CmacsButtonComponent, CmacsButtonFavoriteComponent, CmacsButtonGroupComponent, CmacsCardComponent, CmacsCardGridDirective, CmacsCardLoadingComponent, CmacsCardMetaComponent, CmacsCardTabComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsCommentActionComponent, CmacsCommentActionHostDirective, CmacsCommentAvatarDirective, CmacsCommentComponent, CmacsCommentContentDirective, CmacsCompactTableColumnMoreComponent, CmacsCompactTableColumnTooltipComponent, CmacsCompactTableComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsContextMenuServiceModule, CmacsDatePickerComponent, CmacsDateTimePickerComponent, CmacsDatetimePickerPanelComponent, CmacsDatetimeValueAccessorDirective, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsEditorComponent, CmacsFloatingMenuComponent, CmacsFormControlComponent, CmacsFormDirective, CmacsFormItemComponent, CmacsFormLabelComponent, CmacsFormSplitComponent, CmacsFormTextComponent, CmacsGeneralChartComponent, CmacsGridConfigurationModalComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsInputNumberComponent, CmacsIsMenuInsideDropDownToken, CmacsKPIOverviewComponent, CmacsKanbanComponent, CmacsKpiComponent, CmacsKpiGroupComponent, CmacsKpiGroupTotalComponent, CmacsListComponent, CmacsListEmptyComponent, CmacsListFooterComponent, CmacsListGridDirective, CmacsListHeaderComponent, CmacsListItemActionComponent, CmacsListItemActionsComponent, CmacsListItemComponent, CmacsListItemExtraComponent, CmacsListItemMetaAvatarComponent, CmacsListItemMetaComponent, CmacsListItemMetaDescriptionComponent, CmacsListItemMetaTitleComponent, CmacsListLoadMoreDirective, CmacsListPaginationComponent, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsMessageComponent, CmacsMessageContainerComponent, CmacsMessageService, CmacsModalComponent, CmacsModalService, CmacsMonthPickerComponent, CmacsMoveableListComponent, CmacsNormalizedHorizontalBarChartComponent, CmacsNormalizedHorizontalBarGroupedComponent, CmacsOpenEditorComponent, CmacsOpenInputComponent, CmacsOpenTextareaComponent, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsPhoneNumberComponent, CmacsPopoverComponent, CmacsPopoverDirective, CmacsProgressComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsRangePickerComponent, CmacsSearchComponent, CmacsSectionComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSidePanelComponent, CmacsSignatureComponent, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsStatusDistributionComponent, CmacsStepComponent, CmacsSubMenuComponent, CmacsSwitchComponent, CmacsTabAddButtonComponent, CmacsTabBodyComponent, CmacsTabCloseButtonComponent, CmacsTabComponent, CmacsTabDirective, CmacsTabLinkDirective, CmacsTabLinkTemplateDirective, CmacsTabNavBarComponent, CmacsTabNavItemDirective, CmacsTabNavOperationComponent, CmacsTabScrollListDirective, CmacsTabSetComponent, CmacsTableComponent, CmacsTabsInkBarDirective, CmacsTagComponent, CmacsTextareaCountComponent, CmacsTimelineChartComponent, CmacsTimelineComponent, CmacsTimelineDatepickerComponent, CmacsTimelineItemComponent, CmacsToCssUnitPipe, CmacsToolTipComponent, CmacsTooltipBaseComponent, CmacsTooltipDirective, CmacsTreeComponent, CmacsTreeNodeComponent, CmacsTreeSelectComponent, CmacsTreeSelectService, CmacsTreeService, CmacsUserDropdownComponent, CmacsUserDropdownExternalListComponent, CmacsVideoPlayerComponent, CmacsWeekPickerComponent, CmacsWizardComponent, CmacsXlsxLoaderComponent, CmacsYearPickerComponent, ColumnMenuType, DefaultTooltipIcon, ExportType, FLOATING_MENU_LOCALIZATION, KPI_COLORS, KPI_PRIORITY_COLORS, LazyLoadingDirective, LazyLoadingModule, LibPackerModule, LightboxConfigurationService, LightboxImgDirective, LightboxVideoDirective, MODAL_ANIMATE_DURATION, MODAL_CONFIG, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, ModalBuilderForService, ModalControlService, ModeTabType, NZ_TAB_SET, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzMNComponent, NzMNContainerComponent, NzMNService, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, NzTabChangeEvent, NzTooltipBaseDirective, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzTreeServiceFactory, PREFIX_CLASS, PtbTabLabelDirective, PtbTabsInkBarDirective, PtbTabsNavComponent, ROBOTO, ROBOTO_BOLD, SIGNATURE_LOCALIZATION, TemplateType, TimelineService, UtilService, WidgetActionType, WidgetDataType, WidgetType, YoutubeComponent, YoutubeModule, defaultFilterOption, getTimeConfig, higherOrderServiceFactory, isAllowedDate, isCheckDisabled, isInArray, isTimeValid, isTimeValidByConfig, isTooltipEmpty, transCompatFormat, AbstractPanelHeader as ɵAbstractPanelHeader, AbstractTable as ɵAbstractTable, CalendarFooterComponent as ɵCalendarFooterComponent, DateHeaderComponent as ɵDateHeaderComponent, DatePickerService as ɵDatePickerService, DateRangePopupComponent as ɵDateRangePopupComponent, DateTableComponent as ɵDateTableComponent, DecadeHeaderComponent as ɵDecadeHeaderComponent, DecadeTableComponent as ɵDecadeTableComponent, InnerPopupComponent as ɵInnerPopupComponent, MonthHeaderComponent as ɵMonthHeaderComponent, MonthTableComponent as ɵMonthTableComponent, CmacsPickerComponent as ɵNzPickerComponent, YearHeaderComponent as ɵYearHeaderComponent, YearTableComponent as ɵYearTableComponent };
+export { ButtonStyle, CeldType, CmacsAlertComponent, CmacsAutosizeDirective, CmacsBreadCrumbComponent, CmacsBreadCrumbItemComponent, CmacsBreadCrumbSeparatorComponent, CmacsButtonComponent, CmacsButtonFavoriteComponent, CmacsButtonGroupComponent, CmacsCardComponent, CmacsCardGridDirective, CmacsCardLoadingComponent, CmacsCardMetaComponent, CmacsCardTabComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsCommentActionComponent, CmacsCommentActionHostDirective, CmacsCommentAvatarDirective, CmacsCommentComponent, CmacsCommentContentDirective, CmacsCompactTableColumnMoreComponent, CmacsCompactTableColumnTooltipComponent, CmacsCompactTableComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsContextMenuServiceModule, CmacsDatePickerComponent, CmacsDateTimePickerComponent, CmacsDatetimePickerPanelComponent, CmacsDatetimeValueAccessorDirective, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsEditorComponent, CmacsFloatingMenuComponent, CmacsFormControlComponent, CmacsFormDirective, CmacsFormItemComponent, CmacsFormLabelComponent, CmacsFormSplitComponent, CmacsFormTextComponent, CmacsGeneralChartComponent, CmacsGridConfigurationModalComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsInputNumberComponent, CmacsIsMenuInsideDropDownToken, CmacsKPIOverviewComponent, CmacsKanbanComponent, CmacsKpiComponent, CmacsKpiGroupComponent, CmacsKpiGroupTotalComponent, CmacsKpiVsComponent, CmacsListComponent, CmacsListEmptyComponent, CmacsListFooterComponent, CmacsListGridDirective, CmacsListHeaderComponent, CmacsListItemActionComponent, CmacsListItemActionsComponent, CmacsListItemComponent, CmacsListItemExtraComponent, CmacsListItemMetaAvatarComponent, CmacsListItemMetaComponent, CmacsListItemMetaDescriptionComponent, CmacsListItemMetaTitleComponent, CmacsListLoadMoreDirective, CmacsListPaginationComponent, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsMessageComponent, CmacsMessageContainerComponent, CmacsMessageService, CmacsModalComponent, CmacsModalService, CmacsMonthPickerComponent, CmacsMoveableListComponent, CmacsNormalizedHorizontalBarChartComponent, CmacsNormalizedHorizontalBarGroupedComponent, CmacsOpenEditorComponent, CmacsOpenInputComponent, CmacsOpenTextareaComponent, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsPhoneNumberComponent, CmacsPopoverComponent, CmacsPopoverDirective, CmacsProgressComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsRangePickerComponent, CmacsSearchComponent, CmacsSectionComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSidePanelComponent, CmacsSignatureComponent, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsStatusDistributionComponent, CmacsStepComponent, CmacsSubMenuComponent, CmacsSwitchComponent, CmacsTabAddButtonComponent, CmacsTabBodyComponent, CmacsTabCloseButtonComponent, CmacsTabComponent, CmacsTabDirective, CmacsTabLinkDirective, CmacsTabLinkTemplateDirective, CmacsTabNavBarComponent, CmacsTabNavItemDirective, CmacsTabNavOperationComponent, CmacsTabScrollListDirective, CmacsTabSetComponent, CmacsTableComponent, CmacsTabsInkBarDirective, CmacsTagComponent, CmacsTextareaCountComponent, CmacsTimelineChartComponent, CmacsTimelineComponent, CmacsTimelineDatepickerComponent, CmacsTimelineItemComponent, CmacsToCssUnitPipe, CmacsToolTipComponent, CmacsTooltipBaseComponent, CmacsTooltipDirective, CmacsTreeComponent, CmacsTreeNodeComponent, CmacsTreeSelectComponent, CmacsTreeSelectService, CmacsTreeService, CmacsUserDropdownComponent, CmacsUserDropdownExternalListComponent, CmacsVideoPlayerComponent, CmacsWeekPickerComponent, CmacsWizardComponent, CmacsXlsxLoaderComponent, CmacsYearPickerComponent, ColumnMenuType, DefaultTooltipIcon, ExportType, FLOATING_MENU_LOCALIZATION, KPI_COLORS, KPI_PRIORITY_COLORS, LazyLoadingDirective, LazyLoadingModule, LibPackerModule, LightboxConfigurationService, LightboxImgDirective, LightboxVideoDirective, MODAL_ANIMATE_DURATION, MODAL_CONFIG, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, ModalBuilderForService, ModalControlService, ModeTabType, NZ_TAB_SET, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzMNComponent, NzMNContainerComponent, NzMNService, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, NzTabChangeEvent, NzTooltipBaseDirective, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzTreeServiceFactory, PREFIX_CLASS, PtbTabLabelDirective, PtbTabsInkBarDirective, PtbTabsNavComponent, ROBOTO, ROBOTO_BOLD, SIGNATURE_LOCALIZATION, TemplateType, TimelineService, UtilService, WidgetActionType, WidgetDataType, WidgetType, YoutubeComponent, YoutubeModule, defaultFilterOption, getTimeConfig, higherOrderServiceFactory, isAllowedDate, isCheckDisabled, isInArray, isTimeValid, isTimeValidByConfig, isTooltipEmpty, transCompatFormat, AbstractPanelHeader as ɵAbstractPanelHeader, AbstractTable as ɵAbstractTable, CalendarFooterComponent as ɵCalendarFooterComponent, DateHeaderComponent as ɵDateHeaderComponent, DatePickerService as ɵDatePickerService, DateRangePopupComponent as ɵDateRangePopupComponent, DateTableComponent as ɵDateTableComponent, DecadeHeaderComponent as ɵDecadeHeaderComponent, DecadeTableComponent as ɵDecadeTableComponent, InnerPopupComponent as ɵInnerPopupComponent, MonthHeaderComponent as ɵMonthHeaderComponent, MonthTableComponent as ɵMonthTableComponent, CmacsPickerComponent as ɵNzPickerComponent, YearHeaderComponent as ɵYearHeaderComponent, YearTableComponent as ɵYearTableComponent };
 //# sourceMappingURL=cmacs-components-v2-lib.js.map
