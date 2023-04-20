@@ -3,4 +3,4 @@ export declare enum ModeTabType {
     Default = "default",
     Checkable = "checkable"
 }
-//# sourceMappingURL=ModeTabType.enum.d.ts.map
+//# sourceMappingURL=modeTabType.enum.d.ts.map

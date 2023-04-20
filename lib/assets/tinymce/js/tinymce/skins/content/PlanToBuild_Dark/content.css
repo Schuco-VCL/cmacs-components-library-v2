@@ -14,7 +14,7 @@ table {
 }
 table th,
 table td {
-  border: 1px solid #ccc;
+  border: 1px solid #DEE0E5;
   padding: 0.4rem;
 }
 figure {
@@ -22,28 +22,28 @@ figure {
   margin: 1rem auto;
 }
 figure figcaption {
-  color: #999;
+  color: #97A0AE;
   display: block;
   margin-top: 0.25rem;
   text-align: center;
 }
 hr {
-  border-color: #ccc;
+  border-color: #DEE0E5;
   border-style: solid;
   border-width: 1px 0 0 0;
 }
 code {
-  background-color: #e8e8e8;
+  background-color: #F6F7FB;
   border-radius: 3px;
   padding: 0.1rem 0.2rem;
 }
 .mce-content-body:not([dir=rtl]) blockquote {
-  border-left: 2px solid #ccc;
+  border-left: 2px solid #DEE0E5;
   margin-left: 1.5rem;
   padding-left: 1rem;
 }
 .mce-content-body[dir=rtl] blockquote {
-  border-right: 2px solid #ccc;
+  border-right: 2px solid #DEE0E5;
   margin-right: 1.5rem;
   padding-right: 1rem;
 }

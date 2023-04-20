@@ -12,11 +12,8 @@ export declare class CmacsCompactTableColumnTooltipComponent implements OnInit, 
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     updateDisplay(): void;
-    onChange(value: ColumnMenuType): void;
     private getTemplateType;
     fieldChanged(value: ColumnMenuType): void;
-    getItems(): any;
-    getValidationRules(): any;
     isSelected(value: ColumnMenuType, templateType: TemplateType): boolean;
     static ɵfac: i0.ɵɵFactoryDef<CmacsCompactTableColumnTooltipComponent, never>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableColumnTooltipComponent, "cmacs-compact-table-column-tooltip", never, { "field": "field"; "items": "items"; }, { "onFieldChanged": "onFieldChanged"; }, never, never>;

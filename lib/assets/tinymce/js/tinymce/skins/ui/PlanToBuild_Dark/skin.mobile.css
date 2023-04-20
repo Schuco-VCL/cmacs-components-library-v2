@@ -179,8 +179,8 @@
   border-radius: 50%;
   height: 2.1em;
   width: 2.1em;
-  background-color: white;
-  color: #207ab7;
+  background-color: #ffffff;
+  color: #2A7CFF;
 }
 .tinymce-mobile-outer-container .tinymce-mobile-disabled-mask .tinymce-mobile-content-container .tinymce-mobile-content-tap-section .tinymce-mobile-mask-tap-icon::before {
   content: "\e900";
@@ -227,7 +227,7 @@
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar {
   align-items: center;
   background-color: #fff;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #DEE0E5;
   display: flex;
   flex: 1;
   height: 2.5em;
@@ -247,7 +247,7 @@
   flex: 1;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar:not(.tinymce-mobile-context-toolbar) .tinymce-mobile-toolbar-group.tinymce-mobile-exit-container {
-  background: #f44336;
+  background: #F6503C;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar:not(.tinymce-mobile-context-toolbar) .tinymce-mobile-toolbar-group.tinymce-mobile-toolbar-scrollable-group {
   flex-grow: 1;
@@ -264,13 +264,13 @@
   margin-right: 2px;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar:not(.tinymce-mobile-context-toolbar) .tinymce-mobile-toolbar-group .tinymce-mobile-toolbar-group-item.tinymce-mobile-toolbar-button.tinymce-mobile-toolbar-button-selected {
-  background: #cecfd1;
-  color: #cccccc;
+  background: #F2F7FF;
+  color: #ACB3BF;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar:not(.tinymce-mobile-context-toolbar) .tinymce-mobile-toolbar-group:first-of-type,
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar:not(.tinymce-mobile-context-toolbar) .tinymce-mobile-toolbar-group:last-of-type {
-  background: #207ab7;
-  color: #eceff1;
+  background: #2A7CFF;
+  color: #F2F7FF;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar {
   /* Note, this file is imported inside .tinymce-mobile-context-toolbar, so that prefix is on everything here. */
@@ -320,7 +320,7 @@
   background: inherit;
   border: none;
   border-radius: 50%;
-  color: #888;
+  color: #97A0AE;
   font-size: 0.6em;
   font-weight: bold;
   height: 100%;
@@ -350,14 +350,14 @@
   visibility: hidden;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group .tinymce-mobile-dot-item {
-  color: #cccccc;
+  color: #ACB3BF;
   font-size: 10px;
   line-height: 10px;
   margin: 0 2px;
   padding-top: 3px;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group .tinymce-mobile-dot-item.tinymce-mobile-dot-active {
-  color: #cecfd1;
+  color: #ACB3BF;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group .tinymce-mobile-icon-large-font::before,
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group .tinymce-mobile-icon-large-heading::before {
@@ -384,7 +384,7 @@
   height: 100%;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group .tinymce-mobile-slider .tinymce-mobile-slider-size-container .tinymce-mobile-slider-size-line {
-  background: #cccccc;
+  background: #ACB3BF;
   display: flex;
   flex: 1;
   height: 0.2em;
@@ -402,7 +402,7 @@
   height: 100%;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group .tinymce-mobile-slider.tinymce-mobile-hue-slider-container .tinymce-mobile-slider-gradient-container .tinymce-mobile-slider-gradient {
-  background: linear-gradient(to right, hsl(0, 100%, 50%) 0%, hsl(60, 100%, 50%) 17%, hsl(120, 100%, 50%) 33%, hsl(180, 100%, 50%) 50%, hsl(240, 100%, 50%) 67%, hsl(300, 100%, 50%) 83%, hsl(0, 100%, 50%) 100%);
+  background: linear-gradient(to right, hsla(6, 91%, 60%, 1) 0%, hsla(43, 100%, 60%, 1) 17%, hsla(156, 100%, 40%, 1) 33%, hsla(198, 100%, 45%, 1) 50%, hsla(217, 100%, 58%, 1) 67%, hsla(287, 100%, 40%, 1) 83%, hsla(6, 91%, 60%, 1) 100%);
   display: flex;
   flex: 1;
   height: 0.2em;
@@ -411,7 +411,7 @@
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group .tinymce-mobile-slider.tinymce-mobile-hue-slider-container .tinymce-mobile-hue-slider-black {
   /* Not part of theming */
-  background: black;
+  background: #000000;
   height: 0.2em;
   margin-bottom: 0.3em;
   margin-top: 0.3em;
@@ -419,7 +419,7 @@
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group .tinymce-mobile-slider.tinymce-mobile-hue-slider-container .tinymce-mobile-hue-slider-white {
   /* Not part of theming */
-  background: white;
+  background: #ffffff;
   height: 0.2em;
   margin-bottom: 0.3em;
   margin-top: 0.3em;
@@ -476,7 +476,7 @@
   background: #ffffff;
   border: none;
   border-radius: 0;
-  color: #455a64;
+  color: #3B3F46;
   flex-grow: 1;
   font-size: 0.85em;
   padding-bottom: 0.1em;
@@ -485,19 +485,19 @@
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group input::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: #888;
+  color: #656C79;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group input:-ms-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: #888;
+  color: #656C79;
 }
 .tinymce-mobile-toolstrip .tinymce-mobile-toolbar.tinymce-mobile-context-toolbar .tinymce-mobile-toolbar-group input::placeholder {
   /* WebKit, Blink, Edge */
-  color: #888;
+  color: #656C79;
 }
 /* dropup */
 .tinymce-mobile-dropup {
-  background: white;
+  background: #ffffff;
   display: flex;
   overflow: hidden;
   width: 100%;
@@ -531,7 +531,7 @@
 /* styles menu */
 .tinymce-mobile-styles-menu {
   font-family: sans-serif;
-  outline: 4px solid black;
+  outline: 4px solid #000000;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -547,20 +547,20 @@
   transition: transform 0.5s ease-in-out;
 }
 .tinymce-mobile-styles-menu .tinymce-mobile-styles-item {
-  border-bottom: 1px solid #ddd;
-  color: #455a64;
+  border-bottom: 1px solid #DEE0E5;
+  color: #656C79;
   cursor: pointer;
   display: flex;
   padding: 1em 1em;
   position: relative;
 }
 .tinymce-mobile-styles-menu .tinymce-mobile-styles-collapser .tinymce-mobile-styles-collapse-icon::before {
-  color: #455a64;
+  color: #656C79;
   content: "\e314";
   font-family: 'tinymce-mobile', sans-serif;
 }
 .tinymce-mobile-styles-menu .tinymce-mobile-styles-item.tinymce-mobile-styles-item-is-menu::after {
-  color: #455a64;
+  color: #656C79;
   content: "\e315";
   font-family: 'tinymce-mobile', sans-serif;
   padding-left: 1em;
@@ -579,8 +579,8 @@
 .tinymce-mobile-styles-menu .tinymce-mobile-styles-collapser {
   align-items: center;
   background: #fff;
-  border-top: #455a64;
-  color: #455a64;
+  border-top: #656C79;
+  color: #656C79;
   display: flex;
   min-height: 2.5em;
   padding-left: 1em;
@@ -635,10 +635,10 @@
 }
 .tinymce-mobile-editor-socket .tinymce-mobile-mask-edit-icon {
   /* Note, on the iPod touch in landscape, this isn't visible when the navbar appears */
-  background-color: #207ab7;
+  background-color: #2A7CFF;
   border-radius: 50%;
   bottom: 1em;
-  color: white;
+  color: #ffffff;
   font-size: 1em;
   height: 2.1em;
   position: fixed;

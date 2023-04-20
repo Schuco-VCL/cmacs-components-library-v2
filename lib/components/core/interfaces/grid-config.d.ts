@@ -47,6 +47,8 @@ export interface Field {
     showCmacsSearch?: boolean;
     mode?: string;
     resizable?: boolean;
+    validationRule?: string;
+    validationValues?: any[];
 }
 export interface EditColumnAction {
     field: Field;

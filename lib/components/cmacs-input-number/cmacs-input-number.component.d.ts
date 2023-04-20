@@ -19,6 +19,7 @@ export declare class CmacsInputNumberComponent implements ControlValueAccessor, 
     onTouched: () => void;
     readonly cmacsBlur: EventEmitter<any>;
     readonly cmacsFocus: EventEmitter<any>;
+    onModelChange: EventEmitter<number>;
     inputElement: ElementRef;
     size: NzSizeLDSType;
     min: number;
@@ -32,7 +33,7 @@ export declare class CmacsInputNumberComponent implements ControlValueAccessor, 
     formatter: (value: number) => string | number;
     [property: string]: any;
     updateAutoFocus(): void;
-    onModelChange(value: string): void;
+    onValueChange(value: string): void;
     getCurrentValidValue(value: string | number): number;
     isNotCompleteNumber(num: string | number): boolean;
     getValidValue(value?: string | number): string | number | undefined;
@@ -65,6 +66,6 @@ export declare class CmacsInputNumberComponent implements ControlValueAccessor, 
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsInputNumberComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsInputNumberComponent, "cmacs-input-number", ["cmacsInputNumber"], { "size": "size"; "min": "min"; "max": "max"; "parser": "parser"; "precision": "precision"; "placeHolder": "placeHolder"; "cmacsStep": "cmacsStep"; "disabled": "disabled"; "autoFocus": "autoFocus"; "formatter": "formatter"; }, { "cmacsBlur": "cmacsBlur"; "cmacsFocus": "cmacsFocus"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsInputNumberComponent, "cmacs-input-number", ["cmacsInputNumber"], { "size": "size"; "min": "min"; "max": "max"; "parser": "parser"; "precision": "precision"; "placeHolder": "placeHolder"; "cmacsStep": "cmacsStep"; "disabled": "disabled"; "autoFocus": "autoFocus"; "formatter": "formatter"; }, { "cmacsBlur": "cmacsBlur"; "cmacsFocus": "cmacsFocus"; "onModelChange": "onModelChange"; }, never, never>;
 }
 //# sourceMappingURL=cmacs-input-number.component.d.ts.map

@@ -146,11 +146,11 @@ export * from './lib/components/cmacs-compact-table/components/cmacs-compact-tab
 export * from './lib/components/cmacs-compact-table/components/cmacs-compact-table-column-more/cmacs-compact-table-column-more.component';
 export * from './lib/components/cmacs-steps/step.component';
 export * from './lib/components/cmacs-steps/cmacs-wizard.component';
-export * from './lib/components/core/enums/buttonStyle.enum';
+export * from './lib/components/core/enums/ButtonStyle.enum';
 export * from './lib/components/core/enums/CeldType.enum';
 export * from './lib/components/core/enums/export-type.enum';
 export * from './lib/components/core/enums/columnMenuType.enum';
-export * from './lib/components/core/enums/ModeTabType.enum';
+export * from './lib/components/core/enums/modeTabType.enum';
 export * from './lib/components/core/enums/TemplateType.enum';
 export * from './lib/components/core/enums/widget-action-type.enum';
 export * from './lib/components/core/enums/widget-type.enum';
@@ -192,4 +192,5 @@ export * from './lib/components/cmacs-lightbox/services/lightbox-configuration.s
 export * from './lib/components/cmacs-youtube/index';
 export * from './lib/components/cmacs-lazy-loading/index';
 export * from './lib/components/cmacs-open-editor/cmacs-open-editor.component';
+export * from './lib/components/core/services/customValidators';
 //# sourceMappingURL=public-api.d.ts.map
