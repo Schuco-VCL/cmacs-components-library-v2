@@ -46897,6 +46897,7 @@
     })();
 
     var _c0$1m = ["columnTemplate"];
+    var _c1$F = function () { return [300, 300]; };
     function CmacsKpiVsComponent_cmacs_kpi_overview_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelement(0, "cmacs-kpi-overview", 7);
@@ -46905,7 +46906,7 @@
             var item_r6 = ctx.$implicit;
             var i_r7 = ctx.index;
             var ctx_r0 = i0.ɵɵnextContext();
-            i0.ɵɵproperty("data", item_r6)("colors", ctx_r0.colorsScheme)("showLegend", false)("view", ctx_r0.view)("titleKPI", ctx_r0.kpiColumns[i_r7].nameKpi);
+            i0.ɵɵproperty("view", i0.ɵɵpureFunction0(5, _c1$F))("data", item_r6)("colors", ctx_r0.colorsScheme)("showLegend", false)("titleKPI", ctx_r0.kpiColumns[i_r7].nameKpi);
         }
     }
     function CmacsKpiVsComponent_cmacs_compact_table_4_Template(rf, ctx) {
@@ -46920,13 +46921,13 @@
             i0.ɵɵproperty("data", ctx_r1.dataTable)("config", ctx_r1.configuration)("indentSize", 40)("logs", true)("expandable", true)("scroll", ctx_r1.scroll)("frontPagination", false)("showPagination", false);
         }
     }
-    var _c1$F = function () { return { rows: 8 }; };
+    var _c2$o = function () { return { rows: 8 }; };
     function CmacsKpiVsComponent_ng_template_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelement(0, "nz-skeleton", 9);
         }
         if (rf & 2) {
-            i0.ɵɵproperty("nzActive", true)("nzParagraph", i0.ɵɵpureFunction0(2, _c1$F));
+            i0.ɵɵproperty("nzActive", true)("nzParagraph", i0.ɵɵpureFunction0(2, _c2$o));
         }
     }
     function CmacsKpiVsComponent_ng_template_7_Template(rf, ctx) {
@@ -47070,11 +47071,11 @@
                 var _t = void 0;
                 i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.columnTemplate = _t.first);
             }
-        }, inputs: { view: "view", data: "data" }, features: [i0.ɵɵNgOnChangesFeature], decls: 9, vars: 3, consts: [[1, "sd-content"], ["nz-row", "", 1, "chart-content"], ["type", "doughnut", 3, "data", "colors", "showLegend", "view", "titleKPI", 4, "ngFor", "ngForOf"], ["nz-row", "", 1, "chart-data-table"], [3, "data", "config", "indentSize", "logs", "expandable", "scroll", "frontPagination", "showPagination", "configChange", 4, "ngIf", "ngIfElse"], ["elseBlock", ""], ["columnTemplate", ""], ["type", "doughnut", 3, "data", "colors", "showLegend", "view", "titleKPI"], [3, "data", "config", "indentSize", "logs", "expandable", "scroll", "frontPagination", "showPagination", "configChange"], [3, "nzActive", "nzParagraph"], [1, "chart-dot"]], template: function CmacsKpiVsComponent_Template(rf, ctx) {
+        }, inputs: { view: "view", data: "data" }, features: [i0.ɵɵNgOnChangesFeature], decls: 9, vars: 3, consts: [[1, "sd-content"], ["nz-row", "", 1, "chart-content"], ["type", "doughnut", 3, "view", "data", "colors", "showLegend", "titleKPI", 4, "ngFor", "ngForOf"], ["nz-row", "", 1, "chart-data-table"], [3, "data", "config", "indentSize", "logs", "expandable", "scroll", "frontPagination", "showPagination", "configChange", 4, "ngIf", "ngIfElse"], ["elseBlock", ""], ["columnTemplate", ""], ["type", "doughnut", 3, "view", "data", "colors", "showLegend", "titleKPI"], [3, "data", "config", "indentSize", "logs", "expandable", "scroll", "frontPagination", "showPagination", "configChange"], [3, "nzActive", "nzParagraph"], [1, "chart-dot"]], template: function CmacsKpiVsComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "div", 1);
-                i0.ɵɵtemplate(2, CmacsKpiVsComponent_cmacs_kpi_overview_2_Template, 1, 5, "cmacs-kpi-overview", 2);
+                i0.ɵɵtemplate(2, CmacsKpiVsComponent_cmacs_kpi_overview_2_Template, 1, 6, "cmacs-kpi-overview", 2);
                 i0.ɵɵelementEnd();
                 i0.ɵɵelementStart(3, "div", 3);
                 i0.ɵɵtemplate(4, CmacsKpiVsComponent_cmacs_compact_table_4_Template, 1, 8, "cmacs-compact-table", 4);
