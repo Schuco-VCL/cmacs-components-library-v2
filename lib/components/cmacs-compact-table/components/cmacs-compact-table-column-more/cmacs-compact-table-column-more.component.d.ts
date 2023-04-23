@@ -12,6 +12,7 @@ export declare class CmacsCompactTableColumnMoreComponent implements OnInit {
     inputValue1: any;
     inputValue2: any;
     typesList: any[];
+    dropdownValues: string;
     labelSave: string;
     items: any;
     field: Field;
@@ -23,9 +24,11 @@ export declare class CmacsCompactTableColumnMoreComponent implements OnInit {
     getColumnType(value: string): ColumnMenuType | null;
     isSelected(value: ColumnMenuType, templateType: TemplateType): boolean;
     onChange(value: string): void;
+    setAdvancedConfiguration(templateType: TemplateType): void;
     setValidationRules(value: TemplateType): void;
     onValidationChange(): void;
     onInputValueChange1(value: any): void;
+    onDropdownValuesChanged(values: string): void;
     onDateRangeChanged(value: Date[]): void;
     onInputValueChange2(value: any): void;
     setFieldValidator(): void;

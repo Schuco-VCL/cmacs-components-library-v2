@@ -29606,9 +29606,9 @@
             i0.ɵɵelement(0, "cmacs-option", 24);
         }
         if (rf & 2) {
-            var _item_r22 = ctx.$implicit;
-            i0.ɵɵpropertyInterpolate("value", _item_r22.value);
-            i0.ɵɵpropertyInterpolate("label", _item_r22.label);
+            var _item_r23 = ctx.$implicit;
+            i0.ɵɵpropertyInterpolate("value", _item_r23.value);
+            i0.ɵɵpropertyInterpolate("label", _item_r23.label);
         }
     }
     function CmacsCompactTableColumnMoreComponent_div_2_div_11_cmacs_option_5_Template(rf, ctx) {
@@ -29616,21 +29616,21 @@
             i0.ɵɵelement(0, "cmacs-option", 24);
         }
         if (rf & 2) {
-            var rule_r24 = ctx.$implicit;
-            i0.ɵɵpropertyInterpolate("value", rule_r24.value);
-            i0.ɵɵpropertyInterpolate("label", rule_r24.label);
+            var rule_r25 = ctx.$implicit;
+            i0.ɵɵpropertyInterpolate("value", rule_r25.value);
+            i0.ɵɵpropertyInterpolate("label", rule_r25.label);
         }
     }
     function CmacsCompactTableColumnMoreComponent_div_2_div_11_Template(rf, ctx) {
         if (rf & 1) {
-            var _r26_1 = i0.ɵɵgetCurrentView();
+            var _r27_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 17);
             i0.ɵɵelementStart(1, "div", 18);
             i0.ɵɵelementStart(2, "div", 19);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(4, "cmacs-select", 20);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_11_Template_cmacs_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r26_1); var ctx_r25 = i0.ɵɵnextContext(2); return ctx_r25.selectedValidation = $event; })("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_11_Template_cmacs_select_ngModelChange_4_listener() { i0.ɵɵrestoreView(_r26_1); var ctx_r27 = i0.ɵɵnextContext(2); return ctx_r27.onValidationChange(); });
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_11_Template_cmacs_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r27_1); var ctx_r26 = i0.ɵɵnextContext(2); return ctx_r26.selectedValidation = $event; })("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_11_Template_cmacs_select_ngModelChange_4_listener() { i0.ɵɵrestoreView(_r27_1); var ctx_r28 = i0.ɵɵnextContext(2); return ctx_r28.onValidationChange(); });
             i0.ɵɵtemplate(5, CmacsCompactTableColumnMoreComponent_div_2_div_11_cmacs_option_5_Template, 1, 2, "cmacs-option", 21);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -29648,11 +29648,11 @@
     }
     function CmacsCompactTableColumnMoreComponent_div_2_div_12_Template(rf, ctx) {
         if (rf & 1) {
-            var _r29_1 = i0.ɵɵgetCurrentView();
+            var _r30_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 17);
             i0.ɵɵelementStart(1, "div", 18);
             i0.ɵɵelementStart(2, "cmacs-input-number", 25);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_12_Template_cmacs_input_number_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r29_1); var ctx_r28 = i0.ɵɵnextContext(2); return ctx_r28.inputValue1 = $event; })("onModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_12_Template_cmacs_input_number_onModelChange_2_listener($event) { i0.ɵɵrestoreView(_r29_1); var ctx_r30 = i0.ɵɵnextContext(2); return ctx_r30.onInputValueChange1($event); });
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_12_Template_cmacs_input_number_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r30_1); var ctx_r29 = i0.ɵɵnextContext(2); return ctx_r29.inputValue1 = $event; })("onModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_12_Template_cmacs_input_number_onModelChange_2_listener($event) { i0.ɵɵrestoreView(_r30_1); var ctx_r31 = i0.ɵɵnextContext(2); return ctx_r31.onInputValueChange1($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -29665,14 +29665,14 @@
     }
     function CmacsCompactTableColumnMoreComponent_div_2_div_13_Template(rf, ctx) {
         if (rf & 1) {
-            var _r32_1 = i0.ɵɵgetCurrentView();
+            var _r33_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 17);
             i0.ɵɵelementStart(1, "div", 18);
             i0.ɵɵelementStart(2, "cmacs-input-number", 25);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_13_Template_cmacs_input_number_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r32_1); var ctx_r31 = i0.ɵɵnextContext(2); return ctx_r31.inputValue1 = $event; })("onModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_13_Template_cmacs_input_number_onModelChange_2_listener($event) { i0.ɵɵrestoreView(_r32_1); var ctx_r33 = i0.ɵɵnextContext(2); return ctx_r33.onInputValueChange1($event); });
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_13_Template_cmacs_input_number_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r33_1); var ctx_r32 = i0.ɵɵnextContext(2); return ctx_r32.inputValue1 = $event; })("onModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_13_Template_cmacs_input_number_onModelChange_2_listener($event) { i0.ɵɵrestoreView(_r33_1); var ctx_r34 = i0.ɵɵnextContext(2); return ctx_r34.onInputValueChange1($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(3, "cmacs-input-number", 25);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_13_Template_cmacs_input_number_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r32_1); var ctx_r34 = i0.ɵɵnextContext(2); return ctx_r34.inputValue2 = $event; })("onModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_13_Template_cmacs_input_number_onModelChange_3_listener($event) { i0.ɵɵrestoreView(_r32_1); var ctx_r35 = i0.ɵɵnextContext(2); return ctx_r35.onInputValueChange2($event); });
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_13_Template_cmacs_input_number_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r33_1); var ctx_r35 = i0.ɵɵnextContext(2); return ctx_r35.inputValue2 = $event; })("onModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_13_Template_cmacs_input_number_onModelChange_3_listener($event) { i0.ɵɵrestoreView(_r33_1); var ctx_r36 = i0.ɵɵnextContext(2); return ctx_r36.onInputValueChange2($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -29687,11 +29687,11 @@
     }
     function CmacsCompactTableColumnMoreComponent_div_2_div_14_Template(rf, ctx) {
         if (rf & 1) {
-            var _r37_1 = i0.ɵɵgetCurrentView();
+            var _r38_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 17);
             i0.ɵɵelementStart(1, "div", 18);
             i0.ɵɵelementStart(2, "cmacs-date-picker", 26);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_14_Template_cmacs_date_picker_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r37_1); var ctx_r36 = i0.ɵɵnextContext(2); return ctx_r36.inputValue1 = $event; })("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_14_Template_cmacs_date_picker_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r37_1); var ctx_r38 = i0.ɵɵnextContext(2); return ctx_r38.onInputValueChange1($event); });
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_14_Template_cmacs_date_picker_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r38_1); var ctx_r37 = i0.ɵɵnextContext(2); return ctx_r37.inputValue1 = $event; })("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_14_Template_cmacs_date_picker_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r38_1); var ctx_r39 = i0.ɵɵnextContext(2); return ctx_r39.onInputValueChange1($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -29704,11 +29704,11 @@
     }
     function CmacsCompactTableColumnMoreComponent_div_2_div_15_Template(rf, ctx) {
         if (rf & 1) {
-            var _r40_1 = i0.ɵɵgetCurrentView();
+            var _r41_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 17);
             i0.ɵɵelementStart(1, "div", 18);
             i0.ɵɵelementStart(2, "cmacs-range-picker", 26);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_15_Template_cmacs_range_picker_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r40_1); var ctx_r39 = i0.ɵɵnextContext(2); return ctx_r39.inputValue1 = $event; })("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_15_Template_cmacs_range_picker_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r40_1); var ctx_r41 = i0.ɵɵnextContext(2); return ctx_r41.onDateRangeChanged($event); });
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_15_Template_cmacs_range_picker_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r41_1); var ctx_r40 = i0.ɵɵnextContext(2); return ctx_r40.inputValue1 = $event; })("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_15_Template_cmacs_range_picker_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r41_1); var ctx_r42 = i0.ɵɵnextContext(2); return ctx_r42.onDateRangeChanged($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -29719,9 +29719,26 @@
             i0.ɵɵproperty("ngModel", ctx_r21.inputValue1);
         }
     }
+    function CmacsCompactTableColumnMoreComponent_div_2_div_16_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r44_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 17);
+            i0.ɵɵelementStart(1, "div", 18);
+            i0.ɵɵelementStart(2, "input", 27);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_16_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r44_1); var ctx_r43 = i0.ɵɵnextContext(2); return ctx_r43.dropdownValues = $event; })("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_16_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r44_1); var ctx_r45 = i0.ɵɵnextContext(2); return ctx_r45.onDropdownValuesChanged($event); });
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r22 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngModel", ctx_r22.dropdownValues);
+        }
+    }
     function CmacsCompactTableColumnMoreComponent_div_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r43_1 = i0.ɵɵgetCurrentView();
+            var _r47_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 14);
             i0.ɵɵelement(1, "div", 4);
             i0.ɵɵelementStart(2, "div");
@@ -29733,7 +29750,7 @@
             i0.ɵɵtext(8);
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(9, "cmacs-select", 20);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_Template_cmacs_select_ngModelChange_9_listener($event) { i0.ɵɵrestoreView(_r43_1); var ctx_r42 = i0.ɵɵnextContext(); return ctx_r42.selectedFieldTemplate = $event; })("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_Template_cmacs_select_ngModelChange_9_listener($event) { i0.ɵɵrestoreView(_r43_1); var ctx_r44 = i0.ɵɵnextContext(); return ctx_r44.onChange($event); });
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_Template_cmacs_select_ngModelChange_9_listener($event) { i0.ɵɵrestoreView(_r47_1); var ctx_r46 = i0.ɵɵnextContext(); return ctx_r46.selectedFieldTemplate = $event; })("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_Template_cmacs_select_ngModelChange_9_listener($event) { i0.ɵɵrestoreView(_r47_1); var ctx_r48 = i0.ɵɵnextContext(); return ctx_r48.onChange($event); });
             i0.ɵɵtemplate(10, CmacsCompactTableColumnMoreComponent_div_2_cmacs_option_10_Template, 1, 2, "cmacs-option", 21);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -29743,11 +29760,12 @@
             i0.ɵɵtemplate(13, CmacsCompactTableColumnMoreComponent_div_2_div_13_Template, 4, 2, "div", 22);
             i0.ɵɵtemplate(14, CmacsCompactTableColumnMoreComponent_div_2_div_14_Template, 3, 1, "div", 22);
             i0.ɵɵtemplate(15, CmacsCompactTableColumnMoreComponent_div_2_div_15_Template, 3, 1, "div", 22);
-            i0.ɵɵelementStart(16, "div", 17);
-            i0.ɵɵelementStart(17, "div", 18);
-            i0.ɵɵelementStart(18, "button", 23);
-            i0.ɵɵlistener("click", function CmacsCompactTableColumnMoreComponent_div_2_Template_button_click_18_listener() { i0.ɵɵrestoreView(_r43_1); var ctx_r45 = i0.ɵɵnextContext(); return ctx_r45.onSettingSaved(); });
-            i0.ɵɵtext(19);
+            i0.ɵɵtemplate(16, CmacsCompactTableColumnMoreComponent_div_2_div_16_Template, 3, 1, "div", 22);
+            i0.ɵɵelementStart(17, "div", 17);
+            i0.ɵɵelementStart(18, "div", 18);
+            i0.ɵɵelementStart(19, "button", 23);
+            i0.ɵɵlistener("click", function CmacsCompactTableColumnMoreComponent_div_2_Template_button_click_19_listener() { i0.ɵɵrestoreView(_r47_1); var ctx_r49 = i0.ɵɵnextContext(); return ctx_r49.onSettingSaved(); });
+            i0.ɵɵtext(20);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -29774,6 +29792,8 @@
             i0.ɵɵproperty("ngIf", ctx_r1.inputType === 3);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx_r1.inputType === 4);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r1.inputType === 5);
             i0.ɵɵadvance(4);
             i0.ɵɵtextInterpolate(ctx_r1.labelSave);
         }
@@ -29784,7 +29804,8 @@
             this.selectedValidation = 'none';
             this.selectedFieldTemplate = exports.TemplateType.String.toString();
             this.validationRules = [];
-            this.inputType = 0; // 1 -> number input, 2 -> number range input, 3-> date input, 4 -> range date input
+            this.inputType = 0; // 1 -> number input, 2 -> number range input, 3-> date input, 4 -> range date input, 5 -> text input
+            this.dropdownValues = '';
             this.labelSave = '';
             this.onFieldChanged = new i0.EventEmitter();
         }
@@ -29795,7 +29816,7 @@
             this.selectedFieldTemplate = (_a = this.field.editTemplate) === null || _a === void 0 ? void 0 : _a.toString();
             this.setValidationRules(this.field.editTemplate);
             this.selectedValidation = this.field.validationRule;
-            this.onValidationChange();
+            this.setAdvancedConfiguration(this.field.editTemplate);
             if ((this.inputType === 1 || this.inputType === 3) && this.field.validationValues !== undefined && this.field.validationValues.length > 0) {
                 // we need to set the first value
                 this.inputValue1 = this.field.validationValues[0];
@@ -29807,10 +29828,19 @@
             else if (this.inputType === 4 && this.field.validationValues !== undefined && this.field.validationValues.length > 1) {
                 this.inputValue1 = this.field.validationValues;
             }
+            else if (this.inputType === 5 && this.field.select !== undefined) {
+                // in this case we need to set the values for the options of the dropdown
+                var values = '';
+                for (var index = 0; index < this.field.select.selectData.length; index++) {
+                    var option = this.field.select.selectData[index];
+                    values += option.value + ";";
+                }
+                this.dropdownValues = values;
+            }
         };
         CmacsCompactTableColumnMoreComponent.prototype.fieldChanged = function (value) {
             var _a;
-            if (value !== exports.ColumnMenuType.AdvancedConfiguration) {
+            if (value !== exports.ColumnMenuType.AdvancedConfiguration && value !== exports.ColumnMenuType.Select) {
                 var newType = this.getTemplateType(value);
                 if (newType !== null) {
                     this.field.editTemplate = newType;
@@ -29823,8 +29853,12 @@
             else {
                 this.selectedFieldTemplate = (_a = this.getColumnType(this.field.editTemplate.toString())) === null || _a === void 0 ? void 0 : _a.toString();
                 this.selectedValidation = this.field.validationRule ? this.field.validationRule : '';
+                if (value !== exports.ColumnMenuType.AdvancedConfiguration) {
+                    // in this case a type was selected so we need to set it on the field
+                    this.field.editTemplate = this.getTemplateType(value);
+                }
                 if (this.field.editTemplate)
-                    this.setValidationRules(this.field.editTemplate);
+                    this.setAdvancedConfiguration(this.field.editTemplate);
                 this.isAdvancedConfiguration = true;
             }
         };
@@ -29867,12 +29901,37 @@
             }
         };
         CmacsCompactTableColumnMoreComponent.prototype.onChange = function (value) {
-            var templateType = Number(value);
-            this.field.editTemplate = this.getTemplateType(templateType);
+            var columnType = Number(value);
+            var templateType = this.getTemplateType(columnType);
+            this.setAdvancedConfiguration(templateType);
+        };
+        CmacsCompactTableColumnMoreComponent.prototype.setAdvancedConfiguration = function (templateType) {
+            var _a;
+            this.field.editTemplate = templateType;
+            this.selectedFieldTemplate = (_a = this.getColumnType(this.field.editTemplate.toString())) === null || _a === void 0 ? void 0 : _a.toString();
             this.selectedValidation = '';
             this.field.validationRule = this.selectedValidation;
             this.field.validationValues = [];
-            this.inputType = 0;
+            // depending on the template type we will set the values on the advance configuration popup 
+            switch (templateType) {
+                case exports.TemplateType.Boolean,
+                    exports.TemplateType.Date,
+                    exports.TemplateType.Number,
+                    exports.TemplateType.Phone,
+                    exports.TemplateType.String,
+                    exports.TemplateType.Time:
+                    {
+                        this.inputType = 0;
+                        break;
+                    }
+                case exports.TemplateType.Select: {
+                    this.inputType = 5;
+                    break;
+                }
+                case exports.TemplateType.Attachment: {
+                    this.inputType = 0;
+                }
+            }
             this.setValidationRules(this.field.editTemplate);
             this.onValidationChange();
         };
@@ -29962,6 +30021,30 @@
             // we set the validator on the field base don the selected rule and selected value
             this.setFieldValidator();
         };
+        CmacsCompactTableColumnMoreComponent.prototype.onDropdownValuesChanged = function (values) {
+            var _a;
+            // we need to make sure the template type is select before adding the dropdown values
+            if (values !== '' && values !== undefined && values !== null && this.field.editTemplate === exports.TemplateType.Select) {
+                // possible values of the select will be added using a ';' as separator
+                var valuesArray = values.split(';');
+                var selectConfig = {
+                    label: 'label',
+                    value: 'value',
+                    selectData: []
+                };
+                for (var index = 0; index < valuesArray.length; index++) {
+                    var option = (_a = valuesArray[index]) === null || _a === void 0 ? void 0 : _a.trim();
+                    if (option === '' || option === null || option === undefined) {
+                        continue; // ignore not valid values
+                    }
+                    selectConfig.selectData.push({
+                        'value': option,
+                        'label': option
+                    });
+                }
+                this.field.select = selectConfig;
+            }
+        };
         CmacsCompactTableColumnMoreComponent.prototype.onDateRangeChanged = function (value) {
             if (value.length > 1) {
                 this.field.validationValues = value;
@@ -30038,11 +30121,11 @@
         return CmacsCompactTableColumnMoreComponent;
     }());
     CmacsCompactTableColumnMoreComponent.ɵfac = function CmacsCompactTableColumnMoreComponent_Factory(t) { return new (t || CmacsCompactTableColumnMoreComponent)(); };
-    CmacsCompactTableColumnMoreComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsCompactTableColumnMoreComponent, selectors: [["cmacs-compact-table-column-more"]], inputs: { labelSave: "labelSave", items: "items", field: "field" }, outputs: { onFieldChanged: "onFieldChanged" }, decls: 3, vars: 2, consts: [["id", "compactTableColumnMore"], ["class", "cmacs-compact-table-column-more", 4, "ngIf"], ["class", "additional-parameters", 4, "ngIf"], [1, "cmacs-compact-table-column-more"], [1, "arrow-up"], ["cmacs-menu", "", 1, "cmacs-context-menu-compact-table", 2, "padding-top", "2px", "min-width", "155px"], [4, "ngFor", "ngForOf"], ["cmacs-submenu", "", "cmacsContextMenu", "", 3, "menuWrapperClassName", "menuClassName", 4, "ngIf", "ngIfElse"], ["menuTemplate", ""], ["cmacs-submenu", "", "cmacsContextMenu", "", 3, "menuWrapperClassName", "menuClassName"], ["title", ""], [1, "cmacs-context-menu-compact-table"], ["cmacs-menu-item", "", 3, "selected-item", "click", 4, "ngFor", "ngForOf"], ["cmacs-menu-item", "", 3, "click"], [1, "additional-parameters"], [1, "custom-node"], ["nz-row", ""], ["nz-col", "", "nzSpan", "24"], [1, "section-content"], [1, "sidepanel-subheader"], [3, "ngModel", "ngModelChange"], [3, "value", "label", 4, "ngFor", "ngForOf"], ["nz-col", "", "nzSpan", "24", 4, "ngIf"], ["cmacs-button", "", "type", "primary", "role", "button", "aria-label", "Primary", 3, "click"], [3, "value", "label"], [1, "validation-input", 3, "ngModel", "ngModelChange", "onModelChange"], [1, "validation-input", 3, "ngModel", "ngModelChange"]], template: function CmacsCompactTableColumnMoreComponent_Template(rf, ctx) {
+    CmacsCompactTableColumnMoreComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsCompactTableColumnMoreComponent, selectors: [["cmacs-compact-table-column-more"]], inputs: { labelSave: "labelSave", items: "items", field: "field" }, outputs: { onFieldChanged: "onFieldChanged" }, decls: 3, vars: 2, consts: [["id", "compactTableColumnMore"], ["class", "cmacs-compact-table-column-more", 4, "ngIf"], ["class", "additional-parameters", 4, "ngIf"], [1, "cmacs-compact-table-column-more"], [1, "arrow-up"], ["cmacs-menu", "", 1, "cmacs-context-menu-compact-table", 2, "padding-top", "2px", "min-width", "155px"], [4, "ngFor", "ngForOf"], ["cmacs-submenu", "", "cmacsContextMenu", "", 3, "menuWrapperClassName", "menuClassName", 4, "ngIf", "ngIfElse"], ["menuTemplate", ""], ["cmacs-submenu", "", "cmacsContextMenu", "", 3, "menuWrapperClassName", "menuClassName"], ["title", ""], [1, "cmacs-context-menu-compact-table"], ["cmacs-menu-item", "", 3, "selected-item", "click", 4, "ngFor", "ngForOf"], ["cmacs-menu-item", "", 3, "click"], [1, "additional-parameters"], [1, "custom-node"], ["nz-row", ""], ["nz-col", "", "nzSpan", "24"], [1, "section-content"], [1, "sidepanel-subheader"], [3, "ngModel", "ngModelChange"], [3, "value", "label", 4, "ngFor", "ngForOf"], ["nz-col", "", "nzSpan", "24", 4, "ngIf"], ["cmacs-button", "", "type", "primary", "role", "button", "aria-label", "Primary", 3, "click"], [3, "value", "label"], [1, "validation-input", 3, "ngModel", "ngModelChange", "onModelChange"], [1, "validation-input", 3, "ngModel", "ngModelChange"], ["cmacs-input", "", 3, "ngModel", "ngModelChange"]], template: function CmacsCompactTableColumnMoreComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵtemplate(1, CmacsCompactTableColumnMoreComponent_div_1_Template, 5, 1, "div", 1);
-                i0.ɵɵtemplate(2, CmacsCompactTableColumnMoreComponent_div_2_Template, 20, 9, "div", 2);
+                i0.ɵɵtemplate(2, CmacsCompactTableColumnMoreComponent_div_2_Template, 21, 10, "div", 2);
                 i0.ɵɵelementEnd();
             }
             if (rf & 2) {
@@ -30051,7 +30134,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", ctx.isAdvancedConfiguration);
             }
-        }, directives: [i2$1.NgIf, CmacsMenuDirective, i2$1.NgForOf, CmacsSubMenuComponent, CmacsMenuItemDirective, i6$1.NzRowDirective, i6$1.NzColDirective, CmacsSelectComponent, i4.NgControlStatus, i4.NgModel, CmacsButtonComponent, CmacsOptionComponent, CmacsInputNumberComponent, CmacsDatePickerComponent, CmacsRangePickerComponent], styles: [".cmacs-compact-table-column-more[_ngcontent-%COMP%]{background-color:#fff;position:absolute;left:calc(100% - 226px/2 - .5px);top:44px;flex:none;order:1;flex-grow:0;z-index:11;box-shadow:0 3px 7px rgb(59 63 70/20%)!important;border-radius:3px;border:1px solid #dee0e5;min-width:190px}.cmacs-compact-table-column-more[_ngcontent-%COMP%]   .arrow-up[_ngcontent-%COMP%]{position:absolute;left:50%;margin-top:-19px;margin-left:-8px;border:10px solid transparent;border-bottom-color:#fff;z-index:1}.additional-parameters[_ngcontent-%COMP%]{padding:12px 20px;width:245px;background-color:#fff;position:absolute;left:calc(100% - 282px/2 - .5px);top:44px;flex:none;order:1;flex-grow:0;z-index:11;box-shadow:0 3px 7px rgb(59 63 70/20%)!important;border-radius:3px;border:1px solid #dee0e5}.additional-parameters[_ngcontent-%COMP%]   .arrow-up[_ngcontent-%COMP%]{position:absolute;left:50%;margin-top:-31px;margin-left:-8px;border:10px solid transparent;border-bottom-color:#fff;z-index:1}.custom-node[_ngcontent-%COMP%]{cursor:default;width:100%;line-height:22px;display:inline-block}.custom-node[_ngcontent-%COMP%] > span[_ngcontent-%COMP%]{display:inline-flex}.tooltip-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{font-size:12px;height:28px}.selected-item[_ngcontent-%COMP%]{color:#2a7cff}.section-content[_ngcontent-%COMP%]{margin-bottom:20px}.sidepanel-subheader[_ngcontent-%COMP%]{color:#acb3bf}.section-content[_ngcontent-%COMP%]   cmacs-select[_ngcontent-%COMP%]{width:100%}  .menu-item .ant-menu-submenu-arrow{display:none}.validation-input[_ngcontent-%COMP%]{margin-bottom:0!important;margin-left:0!important}"] });
+        }, directives: [i2$1.NgIf, CmacsMenuDirective, i2$1.NgForOf, CmacsSubMenuComponent, CmacsMenuItemDirective, i6$1.NzRowDirective, i6$1.NzColDirective, CmacsSelectComponent, i4.NgControlStatus, i4.NgModel, CmacsButtonComponent, CmacsOptionComponent, CmacsInputNumberComponent, CmacsDatePickerComponent, CmacsRangePickerComponent, CmacsInputDirective, i4.DefaultValueAccessor], styles: [".cmacs-compact-table-column-more[_ngcontent-%COMP%]{background-color:#fff;position:absolute;left:calc(100% - 226px/2 - .5px);top:44px;flex:none;order:1;flex-grow:0;z-index:11;box-shadow:0 3px 7px rgb(59 63 70/20%)!important;border-radius:3px;border:1px solid #dee0e5;min-width:190px}.cmacs-compact-table-column-more[_ngcontent-%COMP%]   .arrow-up[_ngcontent-%COMP%]{position:absolute;left:50%;margin-top:-19px;margin-left:-8px;border:10px solid transparent;border-bottom-color:#fff;z-index:1}.additional-parameters[_ngcontent-%COMP%]{padding:12px 20px;width:245px;background-color:#fff;position:absolute;left:calc(100% - 282px/2 - .5px);top:44px;flex:none;order:1;flex-grow:0;z-index:11;box-shadow:0 3px 7px rgb(59 63 70/20%)!important;border-radius:3px;border:1px solid #dee0e5}.additional-parameters[_ngcontent-%COMP%]   .arrow-up[_ngcontent-%COMP%]{position:absolute;left:50%;margin-top:-31px;margin-left:-8px;border:10px solid transparent;border-bottom-color:#fff;z-index:1}.custom-node[_ngcontent-%COMP%]{cursor:default;width:100%;line-height:22px;display:inline-block}.custom-node[_ngcontent-%COMP%] > span[_ngcontent-%COMP%]{display:inline-flex}.tooltip-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{font-size:12px;height:28px}.selected-item[_ngcontent-%COMP%]{color:#2a7cff}.section-content[_ngcontent-%COMP%]{margin-bottom:20px}.sidepanel-subheader[_ngcontent-%COMP%]{color:#acb3bf}.section-content[_ngcontent-%COMP%]   cmacs-select[_ngcontent-%COMP%]{width:100%}  .menu-item .ant-menu-submenu-arrow{display:none}.validation-input[_ngcontent-%COMP%]{margin-bottom:0!important;margin-left:0!important}"] });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsCompactTableColumnMoreComponent, [{
                 type: i0.Component,
@@ -32299,10 +32382,13 @@
             this.filterChange.emit({ filterName: fieldProperty, filterValue: $event });
         };
         CmacsCompactTableComponent.prototype.getHeaderMaxWidth = function (field) {
-            if (field.showSort) {
-                return "calc(100% - 15px)";
+            if (field.showSort && field.showFilter) {
+                return "calc(100% - 82px)";
             }
-            return this.addColumn ? "calc(100% - 58px)" : "100%";
+            else if (field.showSort || field.showFilter) {
+                return "calc(100% - 58px)";
+            }
+            return this.addColumn ? "calc(100% - 15px)" : "100%";
         };
         CmacsCompactTableComponent.prototype.handleMouseDown = function (e) {
             var element = e.target;

@@ -198,7 +198,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     focusSelect(elem: any): void;
     sort($event: any, fieldProperty: string): void;
     filter($event: any, fieldProperty: string): void;
-    getHeaderMaxWidth(field: Field): "calc(100% - 15px)" | "100%" | "calc(100% - 58px)";
+    getHeaderMaxWidth(field: Field): "calc(100% - 15px)" | "100%" | "calc(100% - 82px)" | "calc(100% - 58px)";
     handleMouseDown(e: any): void;
     getCustomPadding(item: any, i: number): number;
     childOf(node: any, ancestor: any): boolean;
