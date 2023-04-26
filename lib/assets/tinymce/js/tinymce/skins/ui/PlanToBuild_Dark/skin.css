@@ -222,6 +222,11 @@ button::-moz-focus-inner {
   border-right-width: 1px;
   padding-right: 3.5px;
 }
+
+.tox .tox-collection--list .tox-collection__item>.tox-collection__item-label > * {
+  color: #ffffff !important;
+}
+
 .tox .tox-anchorbar {
   display: flex;
   flex: 0 0 auto;
@@ -2704,7 +2709,8 @@ body.tox-dialog__disable-scroll {
   padding-right: 5px;
   width: inherit;
 }
-.tox .tox-tbtn:focus {
+.tox .tox-tbtn:focus,
+.tox .tox-tbtn:focus:hover {
   background: #cde1ff;
   border: 0;
   box-shadow: none;
