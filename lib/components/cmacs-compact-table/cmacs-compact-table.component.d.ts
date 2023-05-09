@@ -6,10 +6,10 @@ import { GridConfig, Field, EditColumnAction, EditColumnEvent } from '../core/in
 import { GridExpConfig } from '../core/interfaces/grid-exp-config';
 import { ExcelService } from '../core/services/excel.service';
 import { CookieService } from 'ngx-cookie-service';
-import { CheckboxSelect } from "../cmacs-table/cmacs-table.component";
-import { CdkDragDrop } from "@angular/cdk/drag-drop";
-import { FormControl } from "@angular/forms";
-import { CmacsInputNumberComponent } from "../cmacs-input-number/cmacs-input-number.component";
+import { CheckboxSelect } from '../cmacs-table/cmacs-table.component';
+import { CdkDragDrop } from '@angular/cdk/drag-drop';
+import { FormControl } from '@angular/forms';
+import { CmacsInputNumberComponent } from '../cmacs-input-number/cmacs-input-number.component';
 import { UtilService } from '../core/services/util.service';
 import 'moment/locale/en-ie';
 import { CmacsDateTimePickerComponent } from '../cmacs-datetime-picker/cmacs-datetime-picker.component';
@@ -83,6 +83,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     addColumn: boolean;
     loadingDelay: number;
     loadingIndicator: TemplateRef<void>;
+    hasCookies: boolean;
     total: number;
     title: string | TemplateRef<void>;
     footer: string | TemplateRef<void>;
@@ -198,7 +199,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     focusSelect(elem: any): void;
     sort($event: any, fieldProperty: string): void;
     filter($event: any, fieldProperty: string): void;
-    getHeaderMaxWidth(field: Field): "calc(100% - 15px)" | "100%" | "calc(100% - 82px)" | "calc(100% - 58px)";
+    getHeaderMaxWidth(field: Field): string;
     handleMouseDown(e: any): void;
     getCustomPadding(item: any, i: number): number;
     childOf(node: any, ancestor: any): boolean;
@@ -272,22 +273,16 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     showEditTpl(item: any, field: any): any;
     showEditTplTree(data: any, field: any): any;
     emitOnEditEvent(): void;
-    getClassMap(field: Field): {
-        [x: string]: number | boolean;
-        "cmacs-compact-table-logs-header-th": boolean;
-        "cmacs-compact-table-logs-header-th-font": boolean;
-    };
-    getCustomClass(field: Field): {
-        [x: string]: boolean;
-    };
+    getClassMap(field: Field): any;
+    getCustomClass(field: Field): any;
     getMaxWidth(field: Field, item: any, i: number): string;
-    getMaxWidthFieldViewMode(field: Field, i: number): "18px" | "0px";
+    getMaxWidthFieldViewMode(field: Field, i: number): string;
     getStickyWidth(position: any): string;
     getStickyWidthRight(position: any): string;
     getTableComponent(): NzTableComponent<any>;
     transformDate(date: any): string;
     selectTreeSingle(item: any): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsCompactTableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableComponent, "cmacs-compact-table", ["cmacsCompactTable"], { "size": "size"; "showTotal": "showTotal"; "pageSizeOptions": "pageSizeOptions"; "virtualScroll": "virtualScroll"; "exclusiveSelect": "exclusiveSelect"; "logs": "logs"; "expandable": "expandable"; "smartTable": "smartTable"; "draggable": "draggable"; "virtualItemSize": "virtualItemSize"; "expandAll": "expandAll"; "addColumn": "addColumn"; "loadingDelay": "loadingDelay"; "loadingIndicator": "loadingIndicator"; "total": "total"; "title": "title"; "footer": "footer"; "noResult": "noResult"; "widthConfig": "widthConfig"; "pageIndex": "pageIndex"; "pageSize": "pageSize"; "actionColumnWidth": "actionColumnWidth"; "wrapLines": "wrapLines"; "data": "data"; "config": "config"; "use12Hours": "use12Hours"; "fieldId": "fieldId"; "gridID": "gridID"; "paginationPosition": "paginationPosition"; "scroll": "scroll"; "frontPagination": "frontPagination"; "templateMode": "templateMode"; "bordered": "bordered"; "centerTable": "centerTable"; "showPagination": "showPagination"; "loading": "loading"; "showSizeChanger": "showSizeChanger"; "hideOnSinglePage": "hideOnSinglePage"; "showQuickJumper": "showQuickJumper"; "simple": "simple"; "checkboxSelect": "checkboxSelect"; "inLineEdit": "inLineEdit"; "dataTable": "dataTable"; "showRate": "showRate"; "exportEvent": "exportEvent"; "columnMenu": "columnMenu"; "extra": "extra"; "contextmenu": "contextmenu"; "indentSize": "indentSize"; "virtualMaxBufferPx": "virtualMaxBufferPx"; "rateCount": "rateCount"; "multiSelect": "multiSelect"; }, { "configChange": "configChange"; "buttonClick": "buttonClick"; "rateChange": "rateChange"; "selectionChange": "selectionChange"; "ondlclickRow": "ondlclickRow"; "onclickRow": "onclickRow"; "onclickHyperlink": "onclickHyperlink"; "onedit": "onedit"; "onRowExpandCollapse": "onRowExpandCollapse"; "ondrop": "ondrop"; "sortChange": "sortChange"; "filterChange": "filterChange"; "onrowdeleted": "onrowdeleted"; "onrowadded": "onrowadded"; "oncolumnadded": "oncolumnadded"; "oneditcolumn": "oneditcolumn"; "onresize": "onresize"; "oncontextmenu": "oncontextmenu"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableComponent, "cmacs-compact-table", ["cmacsCompactTable"], { "size": "size"; "showTotal": "showTotal"; "pageSizeOptions": "pageSizeOptions"; "virtualScroll": "virtualScroll"; "exclusiveSelect": "exclusiveSelect"; "logs": "logs"; "expandable": "expandable"; "smartTable": "smartTable"; "draggable": "draggable"; "virtualItemSize": "virtualItemSize"; "expandAll": "expandAll"; "addColumn": "addColumn"; "loadingDelay": "loadingDelay"; "loadingIndicator": "loadingIndicator"; "hasCookies": "hasCookies"; "total": "total"; "title": "title"; "footer": "footer"; "noResult": "noResult"; "widthConfig": "widthConfig"; "pageIndex": "pageIndex"; "pageSize": "pageSize"; "actionColumnWidth": "actionColumnWidth"; "wrapLines": "wrapLines"; "data": "data"; "config": "config"; "use12Hours": "use12Hours"; "fieldId": "fieldId"; "gridID": "gridID"; "paginationPosition": "paginationPosition"; "scroll": "scroll"; "frontPagination": "frontPagination"; "templateMode": "templateMode"; "bordered": "bordered"; "centerTable": "centerTable"; "showPagination": "showPagination"; "loading": "loading"; "showSizeChanger": "showSizeChanger"; "hideOnSinglePage": "hideOnSinglePage"; "showQuickJumper": "showQuickJumper"; "simple": "simple"; "checkboxSelect": "checkboxSelect"; "inLineEdit": "inLineEdit"; "dataTable": "dataTable"; "showRate": "showRate"; "exportEvent": "exportEvent"; "columnMenu": "columnMenu"; "extra": "extra"; "contextmenu": "contextmenu"; "indentSize": "indentSize"; "virtualMaxBufferPx": "virtualMaxBufferPx"; "rateCount": "rateCount"; "multiSelect": "multiSelect"; }, { "configChange": "configChange"; "buttonClick": "buttonClick"; "rateChange": "rateChange"; "selectionChange": "selectionChange"; "ondlclickRow": "ondlclickRow"; "onclickRow": "onclickRow"; "onclickHyperlink": "onclickHyperlink"; "onedit": "onedit"; "onRowExpandCollapse": "onRowExpandCollapse"; "ondrop": "ondrop"; "sortChange": "sortChange"; "filterChange": "filterChange"; "onrowdeleted": "onrowdeleted"; "onrowadded": "onrowadded"; "oncolumnadded": "oncolumnadded"; "oneditcolumn": "oneditcolumn"; "onresize": "onresize"; "oncontextmenu": "oncontextmenu"; }, never, never>;
 }
 //# sourceMappingURL=cmacs-compact-table.component.d.ts.map
