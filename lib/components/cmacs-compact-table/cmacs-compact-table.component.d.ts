@@ -93,6 +93,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     pageSize: number;
     actionColumnWidth: string;
     wrapLines: boolean;
+    dropdownAddOptionTemplateRef: string | TemplateRef<void>;
     data: any[];
     config: GridConfig;
     use12Hours: boolean;
@@ -221,6 +222,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     onCheckboxAllChange(status: boolean): void;
     getLabel(data: any, field: Field): string;
     isSelect(field: Field): boolean;
+    isSelectCustom(field: Field): boolean;
     isString(field: Field): boolean;
     isReadOnly(field: Field): boolean;
     isNumber(field: Field): boolean;
@@ -237,6 +239,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     isPhone(field: Field): boolean;
     isUndefined(value: any): boolean;
     isRowSelected(data: any): boolean;
+    getDropdownAddOptionTemplateRef(field: Field): string | TemplateRef<void>;
     ngAfterViewInit(): void;
     disableSelectEventOnExpand(): void;
     getIndexCookie(): boolean;
@@ -283,6 +286,6 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     transformDate(date: any): string;
     selectTreeSingle(item: any): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsCompactTableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableComponent, "cmacs-compact-table", ["cmacsCompactTable"], { "size": "size"; "showTotal": "showTotal"; "pageSizeOptions": "pageSizeOptions"; "virtualScroll": "virtualScroll"; "exclusiveSelect": "exclusiveSelect"; "logs": "logs"; "expandable": "expandable"; "smartTable": "smartTable"; "draggable": "draggable"; "virtualItemSize": "virtualItemSize"; "expandAll": "expandAll"; "addColumn": "addColumn"; "loadingDelay": "loadingDelay"; "loadingIndicator": "loadingIndicator"; "hasCookies": "hasCookies"; "total": "total"; "title": "title"; "footer": "footer"; "noResult": "noResult"; "widthConfig": "widthConfig"; "pageIndex": "pageIndex"; "pageSize": "pageSize"; "actionColumnWidth": "actionColumnWidth"; "wrapLines": "wrapLines"; "data": "data"; "config": "config"; "use12Hours": "use12Hours"; "fieldId": "fieldId"; "gridID": "gridID"; "paginationPosition": "paginationPosition"; "scroll": "scroll"; "frontPagination": "frontPagination"; "templateMode": "templateMode"; "bordered": "bordered"; "centerTable": "centerTable"; "showPagination": "showPagination"; "loading": "loading"; "showSizeChanger": "showSizeChanger"; "hideOnSinglePage": "hideOnSinglePage"; "showQuickJumper": "showQuickJumper"; "simple": "simple"; "checkboxSelect": "checkboxSelect"; "inLineEdit": "inLineEdit"; "dataTable": "dataTable"; "showRate": "showRate"; "exportEvent": "exportEvent"; "columnMenu": "columnMenu"; "extra": "extra"; "contextmenu": "contextmenu"; "indentSize": "indentSize"; "virtualMaxBufferPx": "virtualMaxBufferPx"; "rateCount": "rateCount"; "multiSelect": "multiSelect"; }, { "configChange": "configChange"; "buttonClick": "buttonClick"; "rateChange": "rateChange"; "selectionChange": "selectionChange"; "ondlclickRow": "ondlclickRow"; "onclickRow": "onclickRow"; "onclickHyperlink": "onclickHyperlink"; "onedit": "onedit"; "onRowExpandCollapse": "onRowExpandCollapse"; "ondrop": "ondrop"; "sortChange": "sortChange"; "filterChange": "filterChange"; "onrowdeleted": "onrowdeleted"; "onrowadded": "onrowadded"; "oncolumnadded": "oncolumnadded"; "oneditcolumn": "oneditcolumn"; "onresize": "onresize"; "oncontextmenu": "oncontextmenu"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableComponent, "cmacs-compact-table", ["cmacsCompactTable"], { "size": "size"; "showTotal": "showTotal"; "pageSizeOptions": "pageSizeOptions"; "virtualScroll": "virtualScroll"; "exclusiveSelect": "exclusiveSelect"; "logs": "logs"; "expandable": "expandable"; "smartTable": "smartTable"; "draggable": "draggable"; "virtualItemSize": "virtualItemSize"; "expandAll": "expandAll"; "addColumn": "addColumn"; "loadingDelay": "loadingDelay"; "loadingIndicator": "loadingIndicator"; "hasCookies": "hasCookies"; "total": "total"; "title": "title"; "footer": "footer"; "noResult": "noResult"; "widthConfig": "widthConfig"; "pageIndex": "pageIndex"; "pageSize": "pageSize"; "actionColumnWidth": "actionColumnWidth"; "wrapLines": "wrapLines"; "dropdownAddOptionTemplateRef": "dropdownAddOptionTemplateRef"; "data": "data"; "config": "config"; "use12Hours": "use12Hours"; "fieldId": "fieldId"; "gridID": "gridID"; "paginationPosition": "paginationPosition"; "scroll": "scroll"; "frontPagination": "frontPagination"; "templateMode": "templateMode"; "bordered": "bordered"; "centerTable": "centerTable"; "showPagination": "showPagination"; "loading": "loading"; "showSizeChanger": "showSizeChanger"; "hideOnSinglePage": "hideOnSinglePage"; "showQuickJumper": "showQuickJumper"; "simple": "simple"; "checkboxSelect": "checkboxSelect"; "inLineEdit": "inLineEdit"; "dataTable": "dataTable"; "showRate": "showRate"; "exportEvent": "exportEvent"; "columnMenu": "columnMenu"; "extra": "extra"; "contextmenu": "contextmenu"; "indentSize": "indentSize"; "virtualMaxBufferPx": "virtualMaxBufferPx"; "rateCount": "rateCount"; "multiSelect": "multiSelect"; }, { "configChange": "configChange"; "buttonClick": "buttonClick"; "rateChange": "rateChange"; "selectionChange": "selectionChange"; "ondlclickRow": "ondlclickRow"; "onclickRow": "onclickRow"; "onclickHyperlink": "onclickHyperlink"; "onedit": "onedit"; "onRowExpandCollapse": "onRowExpandCollapse"; "ondrop": "ondrop"; "sortChange": "sortChange"; "filterChange": "filterChange"; "onrowdeleted": "onrowdeleted"; "onrowadded": "onrowadded"; "oncolumnadded": "oncolumnadded"; "oneditcolumn": "oneditcolumn"; "onresize": "onresize"; "oncontextmenu": "oncontextmenu"; }, never, never>;
 }
 //# sourceMappingURL=cmacs-compact-table.component.d.ts.map

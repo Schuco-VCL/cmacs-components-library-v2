@@ -35,21 +35,27 @@
 
 @font-face {
     font-family: 'EditorLarge';
-    src: url('font-icons/editor-large/EditorLarge.eot?rbi8dl');
-    src: url('font-icons/editor-large/EditorLarge.eot?rbi8dl#iefix') format('embedded-opentype'), url('font-icons/editor-large/EditorLarge.ttf?rbi8dl') format('truetype'), url('font-icons/editor-large/EditorLarge.woff?rbi8dl') format('woff'), url('font-icons/editor-large/EditorLarge.svg?rbi8dl#EditorLarge') format('svg');
+    src:  url('font-icons/editor-large/EditorLarge.eot?5ezfap');
+    src:  url('font-icons/editor-large/EditorLarge.eot?5ezfap#iefix') format('embedded-opentype'),
+      url('font-icons/editor-large/EditorLarge.ttf?5ezfap') format('truetype'),
+      url('font-icons/editor-large/EditorLarge.woff?5ezfap') format('woff'),
+      url('font-icons/editor-large/EditorLarge.svg?5ezfap#EditorLarge') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-}
+  }
 
-@font-face {
+  @font-face {
     font-family: 'EditorSmall';
-    src: url('font-icons/editor-small/EditorSmall.eot?ftlu7y');
-    src: url('font-icons/editor-small/EditorSmall.eot?ftlu7y#iefix') format('embedded-opentype'), url('font-icons/editor-small/EditorSmall.ttf?ftlu7y') format('truetype'), url('font-icons/editor-small/EditorSmall.woff?ftlu7y') format('woff'), url('font-icons/editor-small/EditorSmall.svg?ftlu7y#EditorSmall') format('svg');
+    src:  url('font-icons/editor-small/EditorSmall.eot?dh54wa');
+    src:  url('font-icons/editor-small/EditorSmall.eot?dh54wa#iefix') format('embedded-opentype'),
+      url('font-icons/editor-small/EditorSmall.ttf?dh54wa') format('truetype'),
+      url('font-icons/editor-small/EditorSmall.woff?dh54wa') format('woff'),
+      url('font-icons/editor-small/EditorSmall.svg?dh54wa#EditorSmall') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-}
+  }
 
 @font-face {
     font-family: 'UILarge';
@@ -940,197 +946,210 @@ i {
 
 /** editor-large */
 
-.iconEditorLarge-Clear-format:before {
+.iconEditorLarge-25:before {
     font-family: 'EditorLarge' !important;
-    content: "\e900";
-}
-
-.iconEditorLarge-Exponent:before {
+    content: "\e913";
+  }
+  .iconEditorLarge-Mention:before {
     font-family: 'EditorLarge' !important;
-    content: "\e901";
-}
-
-.iconEditorLarge-Font:before {
+    content: "\e914";
+  }
+  .iconEditorLarge-50-25:before {
     font-family: 'EditorLarge' !important;
-    content: "\e902";
-}
-
-.iconEditorLarge-Italic:before {
+    content: "\e915";
+  }
+  .iconEditorLarge-75:before {
     font-family: 'EditorLarge' !important;
-    content: "\e903";
-}
-
-.iconEditorLarge-List:before {
+    content: "\e916";
+  }
+  .iconEditorLarge-33-33:before {
     font-family: 'EditorLarge' !important;
-    content: "\e904";
-}
-
-.iconEditorLarge-Signature:before {
+    content: "\e917";
+  }
+  .iconEditorLarge-50:before {
     font-family: 'EditorLarge' !important;
-    content: "\e905";
-}
-
-.iconEditorLarge-Strikethrough:before {
-    font-family: 'EditorLarge' !important;
-    content: "\e906";
-}
-
-.iconEditorLarge-Subscript:before {
-    font-family: 'EditorLarge' !important;
-    content: "\e907";
-}
-
-.iconEditorLarge-Table:before {
-    font-family: 'EditorLarge' !important;
-    content: "\e908";
-}
-
-.iconEditorLarge-Text-Size:before {
-    font-family: 'EditorLarge' !important;
-    content: "\e909";
-}
-
-.iconEditorLarge-Text:before {
-    font-family: 'EditorLarge' !important;
-    content: "\e90a";
-}
-
-.iconEditorLarge-Underline:before {
-    font-family: 'EditorLarge' !important;
-    content: "\e90b";
-}
-
-.iconEditorLarge-Align-Center:before {
+    content: "\e918";
+  }
+  .iconEditorLarge-Align-Center:before {
     font-family: 'EditorLarge' !important;
     content: "\e90c";
-}
-
-.iconEditorLarge-Align-Justified:before {
+  }
+  .iconEditorLarge-Align-Justified:before {
     font-family: 'EditorLarge' !important;
     content: "\e90d";
-}
-
-.iconEditorLarge-Align-Left:before {
+  }
+  .iconEditorLarge-Align-Left:before {
     font-family: 'EditorLarge' !important;
     content: "\e90e";
-}
-
-.iconEditorLarge-Align-Right:before {
+  }
+  .iconEditorLarge-Align-Right:before {
     font-family: 'EditorLarge' !important;
     content: "\e90f";
-}
-
-.iconEditorLarge-Block-Quote:before {
+  }
+  .iconEditorLarge-Clear-format:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e900";
+  }
+  .iconEditorLarge-Exponent:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e901";
+  }
+  .iconEditorLarge-Font:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e902";
+  }
+  .iconEditorLarge-Italic:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e903";
+  }
+  .iconEditorLarge-List:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e904";
+  }
+  .iconEditorLarge-Signature:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e905";
+  }
+  .iconEditorLarge-Strikethrough:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e906";
+  }
+  .iconEditorLarge-Subscript:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e907";
+  }
+  .iconEditorLarge-Table:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e908";
+  }
+  .iconEditorLarge-Text-Size:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e909";
+  }
+  .iconEditorLarge-Text:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e90a";
+  }
+  .iconEditorLarge-Underline:before {
+    font-family: 'EditorLarge' !important;
+    content: "\e90b";
+  }
+  .iconEditorLarge-Block-Quote:before {
     font-family: 'EditorLarge' !important;
     content: "\e910";
-}
-
-.iconEditorLarge-Bold:before {
+  }
+  .iconEditorLarge-Bold:before {
     font-family: 'EditorLarge' !important;
     content: "\e911";
-}
-
-.iconEditorLarge-Bullet:before {
+  }
+  .iconEditorLarge-Bullet:before {
     font-family: 'EditorLarge' !important;
     content: "\e912";
-}
+  }
 
 /** editor-small */
 
-.iconEditorSmall-Bullet:before {
+.iconEditorSmall-33-33:before {
     font-family: 'EditorSmall' !important;
-    content: "\e900";
-}
-
-.iconEditorSmall-Clear-format:before {
+    content: "\e914";
+  }
+  .iconEditorSmall-50:before {
     font-family: 'EditorSmall' !important;
-    content: "\e901";
-}
-
-.iconEditorSmall-Exponent:before {
+    content: "\e915";
+  }
+  .iconEditorSmall-25:before {
     font-family: 'EditorSmall' !important;
-    content: "\e902";
-}
-
-.iconEditorSmall-Font:before {
+    content: "\e916";
+  }
+  .iconEditorSmall-50-25:before {
     font-family: 'EditorSmall' !important;
-    content: "\e903";
-}
-
-.iconEditorSmall-Italic:before {
+    content: "\e917";
+  }
+  .iconEditorSmall-75:before {
     font-family: 'EditorSmall' !important;
-    content: "\e904";
-}
-
-.iconEditorSmall-List:before {
+    content: "\e918";
+  }
+  .iconEditorSmall-Mention:before {
     font-family: 'EditorSmall' !important;
-    content: "\e905";
-}
-
-.iconEditorSmall-Signature:before {
-    font-family: 'EditorSmall' !important;
-    content: "\e906";
-}
-
-.iconEditorSmall-Strikethrough:before {
-    font-family: 'EditorSmall' !important;
-    content: "\e907";
-}
-
-.iconEditorSmall-Subscript:before {
-    font-family: 'EditorSmall' !important;
-    content: "\e908";
-}
-
-.iconEditorSmall-Table:before {
-    font-family: 'EditorSmall' !important;
-    content: "\e909";
-}
-
-.iconEditorSmall-Text-Size:before {
-    font-family: 'EditorSmall' !important;
-    content: "\e90a";
-}
-
-.iconEditorSmall-Text:before {
-    font-family: 'EditorSmall' !important;
-    content: "\e90b";
-}
-
-.iconEditorSmall-Underline:before {
-    font-family: 'EditorSmall' !important;
-    content: "\e90c";
-}
-
-.iconEditorSmall-Align-Center:before {
+    content: "\e913";
+  }
+  .iconEditorSmall-Align-Center:before {
     font-family: 'EditorSmall' !important;
     content: "\e90d";
-}
-
-.iconEditorSmall-Align-Justified:before {
+  }
+  .iconEditorSmall-Align-Justified:before {
     font-family: 'EditorSmall' !important;
     content: "\e90e";
-}
-
-.iconEditorSmall-Align-Left:before {
+  }
+  .iconEditorSmall-Align-Left:before {
     font-family: 'EditorSmall' !important;
     content: "\e90f";
-}
-
-.iconEditorSmall-Align-Right:before {
+  }
+  .iconEditorSmall-Align-Right:before {
     font-family: 'EditorSmall' !important;
     content: "\e910";
-}
-
-.iconEditorSmall-Block-Quote:before {
+  }
+  .iconEditorSmall-Bullet:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e900";
+  }
+  .iconEditorSmall-Clear-format:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e901";
+  }
+  .iconEditorSmall-Exponent:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e902";
+  }
+  .iconEditorSmall-Font:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e903";
+  }
+  .iconEditorSmall-Italic:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e904";
+  }
+  .iconEditorSmall-List:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e905";
+  }
+  .iconEditorSmall-Signature:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e906";
+  }
+  .iconEditorSmall-Strikethrough:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e907";
+  }
+  .iconEditorSmall-Subscript:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e908";
+  }
+  .iconEditorSmall-Table:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e909";
+  }
+  .iconEditorSmall-Text-Size:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e90a";
+  }
+  .iconEditorSmall-Text:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e90b";
+  }
+  .iconEditorSmall-Underline:before {
+    font-family: 'EditorSmall' !important;
+    content: "\e90c";
+  }
+  .iconEditorSmall-Block-Quote:before {
     font-family: 'EditorSmall' !important;
     content: "\e911";
-}
-
-.iconEditorSmall-Bold:before {
+  }
+  .iconEditorSmall-Bold:before {
     font-family: 'EditorSmall' !important;
     content: "\e912";
-}
+  }
+  
 
 /** UI-large */
 
