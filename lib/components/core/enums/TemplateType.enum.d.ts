@@ -6,7 +6,6 @@ export declare enum TemplateType {
     Boolean = 4,
     Time = 5,
     Phone = 6,
-    Attachment = 7,
-    SelectAddOption = 8
+    Attachment = 7
 }
 //# sourceMappingURL=TemplateType.enum.d.ts.map

@@ -59,6 +59,8 @@ export interface EditColumnEvent {
     column: EditColumnAction;
 }
 export interface SelectConfig {
+    dropdownAddOption?: boolean;
+    dropdownAddOptionLabel?: string;
     selectData: any[];
     label: string;
     value: string;
