@@ -194,6 +194,11 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     preventDefault($event: Event): void;
     contextMenu($event: MouseEvent, template: any, item?: any): void;
     validate(data: any, field: Field): boolean;
+    /**
+     * will loop thru every field in the configuration and set the custom validators depending on the validation rules
+     * if no validation rule is present this will be ignored
+     */
+    setCustomValidators(): void;
     addRow(idx: number, $event?: any): void;
     addcolumn(idx: number): void;
     cmacsEditedInput(event: string): void;

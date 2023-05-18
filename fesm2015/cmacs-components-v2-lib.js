@@ -26118,6 +26118,142 @@ CmacsCompactTableColumnTooltipComponent.ɵcmp = ɵɵdefineComponent({ type: Cmac
             type: Output
         }] }); })();
 
+function afterDate(date) {
+    return (control) => {
+        //console.log(`validating: ${control.value} after ${date}`);
+        if (control.value === null) {
+            return null;
+        }
+        let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
+        if (value !== null && date !== null && value.getTime !== undefined && date.getTime !== undefined) {
+            // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
+            if (value.getTime() <= date.getTime()) {
+                return { 'afterDate': true };
+                ;
+            }
+        }
+        return null;
+    };
+}
+function beforeDate(date) {
+    return (control) => {
+        //console.log(`validating: ${control.value} before ${date}`);
+        if (control.value === null) {
+            return null;
+        }
+        let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
+        if (value !== null && date !== null && value.getTime !== undefined && date.getTime !== undefined) {
+            // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
+            if (value.getTime() >= date.getTime()) {
+                return { 'beforeDate': true };
+                ;
+            }
+        }
+        return null;
+    };
+}
+function isEqualToDate(date) {
+    return (control) => {
+        //console.log(`validating: ${control.value} is equal to ${date}`);
+        if (control.value === null) {
+            return null;
+        }
+        let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
+        if (value !== null && date !== null && value.getTime !== undefined && date.getTime !== undefined) {
+            // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
+            if (date.getTime() === value.getTime()) {
+                return { 'isEqualToDate': true };
+                ;
+            }
+        }
+        return null;
+    };
+}
+function isNotEqualToDate(date) {
+    return (control) => {
+        //console.log(`validating: ${control.value} is not equal to ${date}`);
+        if (control.value === null) {
+            return null;
+        }
+        let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
+        if (value !== null && date !== null && value.getTime !== undefined && date.getTime !== undefined) {
+            // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
+            if (date.getTime() !== value.getTime()) {
+                return { 'isNotEqualToDate': true };
+                ;
+            }
+        }
+        return null;
+    };
+}
+function rangeDate(firstDate, secondDate) {
+    return (control) => {
+        //console.log(`validating: ${control.value} range ${firstDate} & ${secondDate}`);
+        if (control.value === null) {
+            return null;
+        }
+        let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
+        if (value !== null && firstDate !== null && secondDate !== null && value.getTime !== undefined && firstDate.getTime !== undefined && secondDate.getTime !== undefined) {
+            // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
+            if (value.getTime() <= firstDate.getTime() || value.getTime() >= secondDate.getTime()) {
+                return { 'rangeDate': true };
+                ;
+            }
+        }
+        return null;
+    };
+}
+function greaterThan(number) {
+    return (control) => {
+        //console.log(`validating: ${control.value} greather than ${number}`);
+        if (control.value <= number) {
+            return { 'greaterThan': true };
+            ;
+        }
+        return null;
+    };
+}
+function lessThan(number) {
+    return (control) => {
+        //console.log(`validating: ${control.value} less than ${number}`);
+        if (control.value >= number) {
+            return { 'lessThan': true };
+            ;
+        }
+        return null;
+    };
+}
+function isEqualToNumber(number) {
+    return (control) => {
+        //console.log(`validating: ${control.value} is equal to ${number}`);
+        if (control.value === number) {
+            return { 'isEqualToNumber': true };
+            ;
+        }
+        return null;
+    };
+}
+function isNotEqualToNumber(number) {
+    return (control) => {
+        //console.log(`validating: ${control.value} is not equal to  ${number}`);
+        if (control.value !== number) {
+            return { 'isNotEqualToNumber': true };
+            ;
+        }
+        return null;
+    };
+}
+function rangeNumber(firstNumber, secondNumber) {
+    return (control) => {
+        //console.log(`validating: ${control.value} is range ${firstNumber} & ${secondNumber}`);
+        if (control.value < firstNumber || control.value > secondNumber) {
+            return { 'rangeNumber': true };
+            ;
+        }
+        return null;
+    };
+}
+
 class ExcelService {
     constructor() {
         this._exportCompleted = new Subject();
@@ -26832,127 +26968,6 @@ UtilService.ɵprov = ɵɵdefineInjectable({ token: UtilService, factory: UtilSer
         args: [{ providedIn: 'root' }]
     }], function () { return [{ type: ExportAsService }, { type: NzI18nService }]; }, null); })();
 
-function afterDate(date) {
-    return (control) => {
-        //console.log(`validating: ${control.value} after ${date}`);
-        let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
-        if (value.getTime !== undefined && date.getTime !== undefined) {
-            // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
-            if (value.getTime() <= date.getTime()) {
-                return { 'afterDate': true };
-                ;
-            }
-        }
-        return null;
-    };
-}
-function beforeDate(date) {
-    return (control) => {
-        //console.log(`validating: ${control.value} before ${date}`);
-        let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
-        if (value.getTime !== undefined && date.getTime !== undefined) {
-            // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
-            if (value.getTime() >= date.getTime()) {
-                return { 'beforeDate': true };
-                ;
-            }
-        }
-        return null;
-    };
-}
-function isEqualToDate(date) {
-    return (control) => {
-        //console.log(`validating: ${control.value} is equal to ${date}`);
-        let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
-        if (value.getTime !== undefined && date.getTime !== undefined) {
-            // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
-            if (date.getTime() === value.getTime()) {
-                return { 'isEqualToDate': true };
-                ;
-            }
-        }
-        return null;
-    };
-}
-function isNotEqualToDate(date) {
-    return (control) => {
-        //console.log(`validating: ${control.value} is not equal to ${date}`);
-        let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
-        if (value.getTime !== undefined && date.getTime !== undefined) {
-            // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
-            if (date.getTime() !== value.getTime()) {
-                return { 'isNotEqualToDate': true };
-                ;
-            }
-        }
-        return null;
-    };
-}
-function rangeDate(firstDate, secondDate) {
-    return (control) => {
-        //console.log(`validating: ${control.value} range ${firstDate} & ${secondDate}`);
-        let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
-        if (value.getTime !== undefined && firstDate.getTime !== undefined && secondDate.getTime !== undefined) {
-            // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
-            if (value.getTime() <= firstDate.getTime() || value.getTime() >= secondDate.getTime()) {
-                return { 'rangeDate': true };
-                ;
-            }
-        }
-        return null;
-    };
-}
-function greaterThan(number) {
-    return (control) => {
-        //console.log(`validating: ${control.value} greather than ${number}`);
-        if (control.value <= number) {
-            return { 'greaterThan': true };
-            ;
-        }
-        return null;
-    };
-}
-function lessThan(number) {
-    return (control) => {
-        //console.log(`validating: ${control.value} less than ${number}`);
-        if (control.value >= number) {
-            return { 'lessThan': true };
-            ;
-        }
-        return null;
-    };
-}
-function isEqualToNumber(number) {
-    return (control) => {
-        //console.log(`validating: ${control.value} is equal to ${number}`);
-        if (control.value === number) {
-            return { 'isEqualToNumber': true };
-            ;
-        }
-        return null;
-    };
-}
-function isNotEqualToNumber(number) {
-    return (control) => {
-        //console.log(`validating: ${control.value} is not equal to  ${number}`);
-        if (control.value !== number) {
-            return { 'isNotEqualToNumber': true };
-            ;
-        }
-        return null;
-    };
-}
-function rangeNumber(firstNumber, secondNumber) {
-    return (control) => {
-        //console.log(`validating: ${control.value} is range ${firstNumber} & ${secondNumber}`);
-        if (control.value < firstNumber || control.value > secondNumber) {
-            return { 'rangeNumber': true };
-            ;
-        }
-        return null;
-    };
-}
-
 function CmacsCompactTableColumnMoreComponent_div_1_ng_container_4_li_1_li_7_Template(rf, ctx) { if (rf & 1) {
     const _r10 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "li", 13);
@@ -27250,9 +27265,8 @@ class CmacsCompactTableColumnMoreComponent {
         this.typesList = this.items.columnOptions[0].subMenu.filter(item => item.value !== ColumnMenuType.AdvancedConfiguration);
         // set initial values based on the field properties
         this.selectedFieldTemplate = (_a = this.field.editTemplate) === null || _a === void 0 ? void 0 : _a.toString();
-        this.setValidationRules(this.field.editTemplate);
         this.selectedValidation = this.field.validationRule;
-        this.setAdvancedConfiguration(this.field.editTemplate);
+        this.initAdvancedConfiguration(this.field.editTemplate);
         if ((this.inputType === 1 || this.inputType === 3) && this.field.validationValues !== undefined && this.field.validationValues.length > 0) {
             // we need to set the first value
             this.inputValue1 = this.field.validationValues[0];
@@ -27341,11 +27355,64 @@ class CmacsCompactTableColumnMoreComponent {
         const templateType = this.getTemplateType(columnType);
         this.setAdvancedConfiguration(templateType);
     }
+    initAdvancedConfiguration(templateType) {
+        var _a;
+        this.selectedFieldTemplate = (_a = this.getColumnType(this.field.editTemplate.toString())) === null || _a === void 0 ? void 0 : _a.toString();
+        switch (templateType) {
+            case TemplateType.Boolean,
+                TemplateType.Date,
+                TemplateType.Number,
+                TemplateType.Phone,
+                TemplateType.String,
+                TemplateType.Time:
+                {
+                    this.inputType = 0;
+                    break;
+                }
+            case TemplateType.Select: {
+                this.inputType = 5;
+                break;
+            }
+            case TemplateType.Attachment: {
+                this.inputType = 0;
+            }
+        }
+        switch (this.field.editTemplate) {
+            case 0: {
+                this.validationRules = this.items.validationRules.date;
+                break;
+            }
+            case 1: {
+                this.validationRules = [];
+                break;
+            }
+            case 2: {
+                this.validationRules = this.items.validationRules.number;
+                break;
+            }
+            case 3: {
+                this.validationRules = this.items.validationRules.text;
+                break;
+            }
+            case 4: {
+                this.validationRules = [];
+                break;
+            }
+            case 5: {
+                this.validationRules = [];
+                break;
+            }
+            case 7: {
+                this.validationRules = [];
+                break;
+            }
+        }
+        this.onValidationChange();
+    }
     setAdvancedConfiguration(templateType) {
         var _a;
         this.field.editTemplate = templateType;
         this.selectedFieldTemplate = (_a = this.getColumnType(this.field.editTemplate.toString())) === null || _a === void 0 ? void 0 : _a.toString();
-        this.selectedValidation = '';
         this.field.validationRule = this.selectedValidation;
         this.field.validationValues = [];
         // depending on the template type we will set the values on the advance configuration popup 
@@ -27375,7 +27442,6 @@ class CmacsCompactTableColumnMoreComponent {
         switch (value) {
             case 0: {
                 this.validationRules = this.items.validationRules.date;
-                this.selectedValidation = 'none';
                 break;
             }
             case 1: {
@@ -27384,12 +27450,10 @@ class CmacsCompactTableColumnMoreComponent {
             }
             case 2: {
                 this.validationRules = this.items.validationRules.number;
-                this.selectedValidation = 'none';
                 break;
             }
             case 3: {
                 this.validationRules = this.items.validationRules.text;
-                this.selectedValidation = 'none';
                 break;
             }
             case 4: {
@@ -27409,9 +27473,11 @@ class CmacsCompactTableColumnMoreComponent {
     onValidationChange() {
         switch (this.selectedValidation) {
             case 'none': {
+                this.setFieldValidator();
                 break;
             }
             case 'is-not-empty': {
+                this.setFieldValidator();
                 break;
             }
             case 'after-date': {
@@ -27442,7 +27508,9 @@ class CmacsCompactTableColumnMoreComponent {
                 this.inputType = 1;
                 break;
             }
-            default: { }
+            default: {
+                this.setFieldValidator();
+            }
         }
     }
     onInputValueChange1(value) {
@@ -29406,7 +29474,7 @@ class CmacsCompactTableComponent {
                         const delta = width - elWidth;
                         if (delta > 0 && delta < elWidthNext) {
                             if (this.config.fields[i + 1].minWidth !== null && this.config.fields[i + 1].minWidth !== undefined) {
-                                if (this.config.fields[i + 1].minWidth < (elWidthNext - delta)) {
+                                if (Number(this.config.fields[i + 1].minWidth) < (elWidthNext - delta)) {
                                     this.config.fields[i + 1].width = `${elWidthNext - delta}px`;
                                 }
                             }
@@ -29452,6 +29520,63 @@ class CmacsCompactTableComponent {
         data.valid = data.valid ? data.valid : {};
         data.valid[field.property] = formControl.valid;
         return formControl.valid;
+    }
+    /**
+     * will loop thru every field in the configuration and set the custom validators depending on the validation rules
+     * if no validation rule is present this will be ignored
+     */
+    setCustomValidators() {
+        if (this.config === undefined || this.config === null) {
+            return;
+        }
+        for (let index = 0; index < this.config.fields.length; index++) {
+            const field = this.config.fields[index];
+            if (field.validationRule === undefined || field.validationRule === null || field.validationRule == '') {
+                continue;
+            }
+            switch (field.validationRule) {
+                case 'none': {
+                    field.validators = []; // this will not apply any rule
+                    break;
+                }
+                case 'is-not-empty': {
+                    field.validators = [Validators.required];
+                    break;
+                }
+                case 'after-date': {
+                    field.validators = [afterDate(field.validationValues[0])];
+                    break;
+                }
+                case 'before-date': {
+                    field.validators = [beforeDate(field.validationValues[0])];
+                    break;
+                }
+                case 'is-equal-to': {
+                    field.editTemplate === TemplateType.Date ? field.validators = [isEqualToDate(field.validationValues[0])] :
+                        [isEqualToNumber(field.validationValues[0])];
+                    break;
+                }
+                case 'is-not-equal-to': {
+                    field.editTemplate === TemplateType.Date ? field.validators = [isNotEqualToDate(field.validationValues[0])] :
+                        [isNotEqualToNumber(field.validationValues[0])];
+                    break;
+                }
+                case 'range': {
+                    field.editTemplate === TemplateType.Date ? field.validators = [rangeDate(field.validationValues[0], field.validationValues[1])] :
+                        [rangeNumber(field.validationValues[0], field.validationValues[1])];
+                    break;
+                }
+                case 'greater-than': {
+                    field.validators = [greaterThan(field.validationValues[0])];
+                    break;
+                }
+                case 'less-than': {
+                    field.validators = [lessThan(field.validationValues[0])];
+                    break;
+                }
+                default: field.validators = [];
+            }
+        }
     }
     addRow(idx, $event = null) {
         this.onrowadded.emit(idx);
@@ -29884,6 +30009,7 @@ class CmacsCompactTableComponent {
         if (!this.gridID) {
             this.gridID = this.utilService.uuidv4();
         }
+        this.setCustomValidators();
         this.setFieldsDefault();
         this.i18n.localeChange.pipe(takeUntil(this.destroy$)).subscribe(() => {
             this.locale = this.i18n.getLocaleData('Table');
@@ -29980,6 +30106,7 @@ class CmacsCompactTableComponent {
         }
         if (changes.config) {
             this.setFieldsDefault();
+            this.setCustomValidators();
         }
         this.cdr.detectChanges();
         this.disableSelectEventOnExpand();
@@ -31445,7 +31572,7 @@ class CmacsTableComponent {
                         const delta = width - elWidth;
                         if (delta > 0 && delta < elWidthNext) {
                             if (this.config.fields[i + 1].minWidth !== null && this.config.fields[i + 1].minWidth !== undefined) {
-                                if (this.config.fields[i + 1].minWidth < (elWidthNext - delta)) {
+                                if (Number(this.config.fields[i + 1].minWidth) < (elWidthNext - delta)) {
                                     this.config.fields[i + 1].width = `${elWidthNext - delta}px`;
                                 }
                             }

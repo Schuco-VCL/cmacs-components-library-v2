@@ -24,6 +24,7 @@ export declare class CmacsCompactTableColumnMoreComponent implements OnInit {
     getColumnType(value: string): ColumnMenuType | null;
     isSelected(value: ColumnMenuType, templateType: TemplateType): boolean;
     onChange(value: string): void;
+    initAdvancedConfiguration(templateType: TemplateType): void;
     setAdvancedConfiguration(templateType: TemplateType): void;
     setValidationRules(value: TemplateType): void;
     onValidationChange(): void;
