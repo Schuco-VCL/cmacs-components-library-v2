@@ -20,6 +20,7 @@ export interface Field {
     hidden?: boolean;
     useCommaMarker?: boolean;
     select?: SelectConfig;
+    attachment?: AttachmentConfig;
     button?: ButtonConfig;
     tag?: TagConfig;
     sortOrder?: string | null;
@@ -64,6 +65,15 @@ export interface SelectConfig {
     selectData: any[];
     label: string;
     value: string;
+}
+export interface AttachmentConfig {
+    tab1Label?: string;
+    tab2Label?: string;
+    tab3Label?: string;
+    btnTab1Label?: string;
+    disabledBtnTab1?: boolean;
+    btnTab2Label?: string;
+    btnTab3Label?: string;
 }
 export interface ButtonConfig {
     style: ButtonStyle;
