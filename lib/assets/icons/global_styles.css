@@ -59,8 +59,8 @@
 
 @font-face {
     font-family: 'UILarge';
-    src: url('font-icons/ui-large/UILarge.eot?dbc4nh');
-    src: url('font-icons/ui-large/UILarge.eot?dbc4nh#iefix') format('embedded-opentype'), url('font-icons/ui-large/UILarge.ttf?dbc4nh') format('truetype'), url('font-icons/ui-large/UILarge.woff?dbc4nh') format('woff'), url('font-icons/ui-large/UILarge.svg?dbc4nh#UILarge') format('svg');
+    src: url('font-icons/ui-large/UILarge.eot?hh6gb8');
+    src: url('font-icons/ui-large/UILarge.eot?hh6gb8#iefix') format('embedded-opentype'), url('font-icons/ui-large/UILarge.ttf?hh6gb8') format('truetype'), url('font-icons/ui-large/UILarge.woff?hh6gb8') format('woff'), url('font-icons/ui-large/UILarge.svg?hh6gb8#UILarge') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -68,8 +68,8 @@
 
 @font-face {
     font-family: 'UISmall';
-    src: url('font-icons/ui-small/UISmall.eot?juae9a');
-    src: url('font-icons/ui-small/UISmall.eot?juae9a#iefix') format('embedded-opentype'), url('font-icons/ui-small/UISmall.ttf?juae9a') format('truetype'), url('font-icons/ui-small/UISmall.woff?juae9a') format('woff'), url('font-icons/ui-small/UISmall.svg?juae9a#UISmall') format('svg');
+    src: url('font-icons/ui-small/UISmall.eot?xl2g3');
+    src: url('font-icons/ui-small/UISmall.eot?xl2g3#iefix') format('embedded-opentype'), url('font-icons/ui-small/UISmall.ttf?xl2g3') format('truetype'), url('font-icons/ui-small/UISmall.woff?xl2g3') format('woff'), url('font-icons/ui-small/UISmall.svg?xl2g3#UISmall') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -1152,6 +1152,30 @@ i {
   
 
 /** UI-large */
+.iconUILarge-Archive:before {
+    font-family: 'UILarge' !important;
+    content: "\e90d";
+  }
+  .iconUILarge-Key_Value:before {
+    font-family: 'UILarge' !important;
+    content: "\e90f";
+  }
+  .iconUILarge-Label:before {
+    font-family: 'UILarge' !important;
+    content: "\e914";
+  }
+  .iconUILarge-Left_Align:before {
+    font-family: 'UILarge' !important;
+    content: "\e915";
+  }
+  .iconUILarge-Middle_Align:before {
+    font-family: 'UILarge' !important;
+    content: "\e916";
+  }
+  .iconUILarge-Right_Align:before {
+    font-family: 'UILarge' !important;
+    content: "\e91c";
+  }
 
 .iconUILarge-Dock_Left:before {
     font-family: 'UILarge' !important;
@@ -2105,6 +2129,30 @@ i {
 
 /** UI-small */
 
+.iconUISmall-Archive:before {
+    font-family: 'UISmall' !important;
+    content: "\e906";
+  }
+  .iconUISmall-Key_Value:before {
+    font-family: 'UISmall' !important;
+    content: "\e907";
+  }
+  .iconUISmall-Lable:before {
+    font-family: 'UISmall' !important;
+    content: "\e909";
+  }
+  .iconUISmall-Left_Align:before {
+    font-family: 'UISmall' !important;
+    content: "\e90a";
+  }
+  .iconUISmall-Middle_Align:before {
+    font-family: 'UISmall' !important;
+    content: "\e90b";
+  }
+  .iconUISmall-Right_Align:before {
+    font-family: 'UISmall' !important;
+    content: "\e90e";
+  }
 .iconUISmall-Dock_Right:before {
     font-family: 'UISmall' !important;
     content: "\e900";
