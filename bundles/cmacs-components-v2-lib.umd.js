@@ -34677,27 +34677,50 @@
             i0.ɵɵproperty("value", data_r15[field_r29.property]);
         }
     }
-    function CmacsTableComponent_tr_5_td_5_ng_template_2_div_3_Template(rf, ctx) {
+    function CmacsTableComponent_tr_5_td_5_ng_template_2_div_3_span_1_cmacs_tag_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 0);
-            i0.ɵɵelementStart(1, "cmacs-tag", 61);
-            i0.ɵɵtext(2);
-            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(0, "cmacs-tag", 64);
+            i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r149 = i0.ɵɵnextContext(2);
-            var fi_r30 = ctx_r149.index;
-            var field_r29 = ctx_r149.$implicit;
-            var ctx_r150 = i0.ɵɵnextContext();
-            var i_r16 = ctx_r150.index;
-            var data_r15 = ctx_r150.$implicit;
+            var tag_r150 = i0.ɵɵnextContext().$implicit;
+            var field_r29 = i0.ɵɵnextContext(3).$implicit;
+            var data_r15 = i0.ɵɵnextContext().$implicit;
+            i0.ɵɵproperty("color", field_r29.tag.color ? data_r15[field_r29.tag.color] : null)("cmacsGridType", field_r29.tag.cmacsGridType ? data_r15[field_r29.tag.cmacsGridType] : null)("cmacsStatusType", field_r29.tag.cmacsStatusType ? data_r15[field_r29.tag.cmacsStatusType] : null)("cmacsPriorityType", field_r29.tag.cmacsPriorityType ? data_r15[field_r29.tag.cmacsPriorityType] : null);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1(" ", tag_r150, " ");
+        }
+    }
+    function CmacsTableComponent_tr_5_td_5_ng_template_2_div_3_span_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "span");
+            i0.ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_template_2_div_3_span_1_cmacs_tag_1_Template, 2, 5, "cmacs-tag", 63);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var tag_r150 = ctx.$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", tag_r150.trim().length > 0);
+        }
+    }
+    function CmacsTableComponent_tr_5_td_5_ng_template_2_div_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div", 61);
+            i0.ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_template_2_div_3_span_1_Template, 2, 1, "span", 62);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r155 = i0.ɵɵnextContext(2);
+            var fi_r30 = ctx_r155.index;
+            var field_r29 = ctx_r155.$implicit;
+            var ctx_r156 = i0.ɵɵnextContext();
+            var i_r16 = ctx_r156.index;
+            var data_r15 = ctx_r156.$implicit;
             var ctx_r126 = i0.ɵɵnextContext();
             i0.ɵɵproperty("id", ctx_r126.gridID + "column" + fi_r30 + "row" + i_r16);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("color", field_r29.tag.color ? data_r15[field_r29.tag.color] : null)("cmacsGridType", field_r29.tag.cmacsGridType ? data_r15[field_r29.tag.cmacsGridType] : null)("cmacsStatusType", field_r29.tag.cmacsStatusType ? data_r15[field_r29.tag.cmacsStatusType] : null)("cmacsPriorityType", field_r29.tag.cmacsPriorityType ? data_r15[field_r29.tag.cmacsPriorityType] : null);
-            i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate1(" ", data_r15[field_r29.property], " ");
+            i0.ɵɵproperty("ngForOf", data_r15[field_r29.property].split(","));
         }
     }
     function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_Template(rf, ctx) {
@@ -34727,9 +34750,9 @@
         if (rf & 2) {
             var field_r29 = i0.ɵɵnextContext(3).$implicit;
             var data_r15 = i0.ɵɵnextContext().$implicit;
-            var ctx_r153 = i0.ɵɵnextContext();
-            i0.ɵɵstyleProp("max-width", ctx_r153.getMaxWidth());
-            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r153.wrapLines);
+            var ctx_r159 = i0.ɵɵnextContext();
+            i0.ɵɵstyleProp("max-width", ctx_r159.getMaxWidth());
+            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r159.wrapLines);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", data_r15[field_r29.property] !== null && data_r15[field_r29.property] !== undefined && data_r15[field_r29.property] !== "" ? data_r15[field_r29.property] : field_r29.placeholder, " ");
         }
@@ -34743,9 +34766,9 @@
         if (rf & 2) {
             var field_r29 = i0.ɵɵnextContext(3).$implicit;
             var data_r15 = i0.ɵɵnextContext().$implicit;
-            var ctx_r154 = i0.ɵɵnextContext();
-            i0.ɵɵstyleProp("max-width", ctx_r154.getMaxWidth());
-            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r154.wrapLines);
+            var ctx_r160 = i0.ɵɵnextContext();
+            i0.ɵɵstyleProp("max-width", ctx_r160.getMaxWidth());
+            i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r160.wrapLines);
             i0.ɵɵproperty("title", data_r15[field_r29.property]);
             i0.ɵɵadvance(1);
             i0.ɵɵtextInterpolate1(" ", data_r15[field_r29.property], " ");
@@ -34790,7 +34813,7 @@
             i0.ɵɵtemplate(0, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_0_Template, 3, 2, "ng-container", 3);
             i0.ɵɵtemplate(1, CmacsTableComponent_tr_5_td_5_ng_template_2_button_1_Template, 4, 4, "button", 52);
             i0.ɵɵtemplate(2, CmacsTableComponent_tr_5_td_5_ng_template_2_div_2_Template, 2, 1, "div", 3);
-            i0.ɵɵtemplate(3, CmacsTableComponent_tr_5_td_5_ng_template_2_div_3_Template, 3, 6, "div", 53);
+            i0.ɵɵtemplate(3, CmacsTableComponent_tr_5_td_5_ng_template_2_div_3_Template, 2, 2, "div", 53);
             i0.ɵɵtemplate(4, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_4_Template, 3, 3, "ng-container", 3);
             i0.ɵɵtemplate(5, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_5_Template, 3, 2, "ng-container", 3);
             i0.ɵɵtemplate(6, CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_6_Template, 3, 3, "ng-container", 3);
@@ -34834,10 +34857,10 @@
     }
     function CmacsTableComponent_tr_5_td_6_Template(rf, ctx) {
         if (rf & 1) {
-            var _r166_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 62);
-            i0.ɵɵelementStart(1, "nz-rate", 63);
-            i0.ɵɵlistener("ngModelChange", function CmacsTableComponent_tr_5_td_6_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r166_1); var data_r15 = i0.ɵɵnextContext().$implicit; var ctx_r164 = i0.ɵɵnextContext(); return ctx_r164.onRateChange($event, data_r15); })("click", function CmacsTableComponent_tr_5_td_6_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r166_1); var ctx_r167 = i0.ɵɵnextContext(2); return ctx_r167.onRateClick($event); });
+            var _r172_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "td", 65);
+            i0.ɵɵelementStart(1, "nz-rate", 66);
+            i0.ɵɵlistener("ngModelChange", function CmacsTableComponent_tr_5_td_6_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r172_1); var data_r15 = i0.ɵɵnextContext().$implicit; var ctx_r170 = i0.ɵɵnextContext(); return ctx_r170.onRateChange($event, data_r15); })("click", function CmacsTableComponent_tr_5_td_6_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r172_1); var ctx_r173 = i0.ɵɵnextContext(2); return ctx_r173.onRateClick($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
@@ -34851,9 +34874,9 @@
     var _c9$1 = function (a0) { return { data: a0 }; };
     function CmacsTableComponent_tr_5_Template(rf, ctx) {
         if (rf & 1) {
-            var _r170_1 = i0.ɵɵgetCurrentView();
+            var _r176_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "tr", 15);
-            i0.ɵɵlistener("click", function CmacsTableComponent_tr_5_Template_tr_click_0_listener($event) { i0.ɵɵrestoreView(_r170_1); var data_r15 = ctx.$implicit; var ctx_r169 = i0.ɵɵnextContext(); return ctx_r169.clickRow($event, data_r15); })("touchstart", function CmacsTableComponent_tr_5_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r170_1); var data_r15 = ctx.$implicit; var ctx_r171 = i0.ɵɵnextContext(); return ctx_r171.tapHandler($event, data_r15); })("contextmenu", function CmacsTableComponent_tr_5_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r170_1); var _r17 = i0.ɵɵreference(2); var ctx_r172 = i0.ɵɵnextContext(); return ctx_r172.contextMenu($event, _r17); });
+            i0.ɵɵlistener("click", function CmacsTableComponent_tr_5_Template_tr_click_0_listener($event) { i0.ɵɵrestoreView(_r176_1); var data_r15 = ctx.$implicit; var ctx_r175 = i0.ɵɵnextContext(); return ctx_r175.clickRow($event, data_r15); })("touchstart", function CmacsTableComponent_tr_5_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r176_1); var data_r15 = ctx.$implicit; var ctx_r177 = i0.ɵɵnextContext(); return ctx_r177.tapHandler($event, data_r15); })("contextmenu", function CmacsTableComponent_tr_5_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r176_1); var _r17 = i0.ɵɵreference(2); var ctx_r178 = i0.ɵɵnextContext(); return ctx_r178.contextMenu($event, _r17); });
             i0.ɵɵelementStart(1, "cmacs-dropdown-menu", null, 16);
             i0.ɵɵelementContainer(3, 17);
             i0.ɵɵelementEnd();
@@ -35481,7 +35504,7 @@
             if (rf & 1) {
                 i0.ɵɵlistener("mousedown", function CmacsTableComponent_mousedown_HostBindingHandler($event) { return ctx.handleMouseDown($event); }, false, i0.ɵɵresolveDocument);
             }
-        }, inputs: { size: "size", showTotal: "showTotal", pageSizeOptions: "pageSizeOptions", virtualScroll: "virtualScroll", virtualItemSize: "virtualItemSize", loadingDelay: "loadingDelay", loadingIndicator: "loadingIndicator", total: "total", title: "title", footer: "footer", noResult: "noResult", widthConfig: "widthConfig", pageIndex: "pageIndex", pageSize: "pageSize", data: "data", config: "config", fieldId: "fieldId", gridID: "gridID", paginationPosition: "paginationPosition", scroll: "scroll", printLandscape: "printLandscape", wrapLines: "wrapLines", frontPagination: "frontPagination", templateMode: "templateMode", bordered: "bordered", showPagination: "showPagination", loading: "loading", showSizeChanger: "showSizeChanger", hideOnSinglePage: "hideOnSinglePage", showQuickJumper: "showQuickJumper", simple: "simple", checkboxSelect: "checkboxSelect", inLineEdit: "inLineEdit", dataTable: "dataTable", showRate: "showRate", hasCookies: "hasCookies", exportEvent: "exportEvent", rateCount: "rateCount", multiSelect: "multiSelect", contextmenu: "contextmenu" }, outputs: { configChange: "configChange", buttonClick: "buttonClick", rateChange: "rateChange", selectionChange: "selectionChange", ondlclickRow: "ondlclickRow", onclickRow: "onclickRow", onclickFavorite: "onclickFavorite", onedit: "onedit", sortChange: "sortChange", onresize: "onresize" }, exportAs: ["cmacsTable"], features: [i0.ɵɵNgOnChangesFeature], decls: 6, vars: 26, consts: [[3, "id"], [1, "cmacs-table", 3, "nzData", "nzShowTotal", "nzPageSizeOptions", "nzVirtualItemSize", "nzLoadingDelay", "nzLoadingIndicator", "nzTotal", "nzTitle", "nzFooter", "nzNoResult", "nzWidthConfig", "nzPageIndex", "nzPageSize", "nzPaginationPosition", "nzScroll", "nzFrontPagination", "nzTemplateMode", "nzShowPagination", "nzLoading", "nzShowSizeChanger", "nzHideOnSinglePage", "nzShowQuickJumper", "nzSimple"], ["gridComponent", ""], [4, "ngIf"], ["class", "cmacs-no-selection", 3, "ant-table-selected-row", "click", "touchstart", "contextmenu", 4, "ngFor", "ngForOf"], ["nzWidth", "40px", 3, "maxWidth", "minWidth", 4, "ngIf"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzDisabled", "nzMinWidth", "nzMaxWidth", "nzShowSort", "nzSortDirections", "cmacs-table-sorted-null", "cmacs-table-sorted-ascend", "cmacs-table-sorted-descend", "nzSortOrder", "minWidth", "maxWidth", "nzWidth", "nzResizeEnd", "nzSortOrderChange", 4, "ngFor", "ngForOf"], [3, "minWidth", "maxWidth", "nzWidth", 4, "ngIf"], ["nzWidth", "40px"], ["cmacs-checkbox", "", 3, "ngModel", "indeterminate", "ngModelChange", "checkedChange"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzDisabled", "nzMinWidth", "nzMaxWidth", "nzShowSort", "nzSortDirections", "nzSortOrder", "nzWidth", "nzResizeEnd", "nzSortOrderChange"], ["nzDirection", "right", 4, "ngIf"], ["nzDirection", "right"], [1, "cmacs-table-resize-trigger"], [3, "nzWidth"], [1, "cmacs-no-selection", 3, "click", "touchstart", "contextmenu"], ["contextMenuTemplate", "cmacsDropdownMenu"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "maxWidth", "minWidth", 4, "ngIf"], [3, "ngClass", "maxWidth", 4, "ngFor", "ngForOf"], ["class", "cmacs-table-rating", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange"], [3, "ngClass"], [4, "ngIf", "ngIfElse"], ["componentTpl", ""], ["class", "editable-cell", 3, "maxWidth", 4, "ngIf", "ngIfElse"], ["editTpl", ""], [1, "editable-cell"], [1, "editable-cell-value-wrap"], [1, "iconUISmall-Edit", "cmacs-table-edit-icon", 3, "click"], ["style", "word-break: break-word;", 3, "cmacs-table-overflow-cell", "maxWidth", 4, "ngIf"], ["style", "word-break: break-word;", "cmacs-tooltip", "", "placement", "right", 3, "cmacs-table-overflow-cell", "maxWidth", "title", 4, "ngIf"], [2, "word-break", "break-word"], ["cmacs-tooltip", "", "placement", "right", 2, "word-break", "break-word", 3, "title"], ["type", "text", "cmacs-input", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["id", "testing2", "class", "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", 4, "ngIf"], ["class", "tableinput", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["style", "width: 100%;", "showSearch", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["type", "text", "cmacs-input", "", 1, "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInput", ""], ["id", "testing2", 1, "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInputNumber", ""], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange"], ["fieldTypeBool", ""], [1, "tableinput", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDatePicker", ""], ["showSearch", "", 1, "tableinput", 2, "width", "100%", 3, "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeSelect", ""], [3, "label", "value", 4, "ngFor", "ngForOf"], [3, "label", "value"], ["role", "button", "cmacs-button", "", 3, "aria-label", "type", "click", 4, "ngIf"], [3, "id", 4, "ngIf"], ["templateRefCeld", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "button", "cmacs-button", "", 3, "aria-label", "type", "click"], ["nz-icon", "", 3, "type", 4, "ngIf", "ngIfElse"], ["titleTpl", ""], ["nz-icon", "", 3, "type"], [3, "value", "onChangedValue"], [3, "color", "cmacsGridType", "cmacsStatusType", "cmacsPriorityType"], [1, "cmacs-table-rating"], [3, "ngModel", "nzCount", "nzDisabled", "ngModelChange", "click"]], template: function CmacsTableComponent_Template(rf, ctx) {
+        }, inputs: { size: "size", showTotal: "showTotal", pageSizeOptions: "pageSizeOptions", virtualScroll: "virtualScroll", virtualItemSize: "virtualItemSize", loadingDelay: "loadingDelay", loadingIndicator: "loadingIndicator", total: "total", title: "title", footer: "footer", noResult: "noResult", widthConfig: "widthConfig", pageIndex: "pageIndex", pageSize: "pageSize", data: "data", config: "config", fieldId: "fieldId", gridID: "gridID", paginationPosition: "paginationPosition", scroll: "scroll", printLandscape: "printLandscape", wrapLines: "wrapLines", frontPagination: "frontPagination", templateMode: "templateMode", bordered: "bordered", showPagination: "showPagination", loading: "loading", showSizeChanger: "showSizeChanger", hideOnSinglePage: "hideOnSinglePage", showQuickJumper: "showQuickJumper", simple: "simple", checkboxSelect: "checkboxSelect", inLineEdit: "inLineEdit", dataTable: "dataTable", showRate: "showRate", hasCookies: "hasCookies", exportEvent: "exportEvent", rateCount: "rateCount", multiSelect: "multiSelect", contextmenu: "contextmenu" }, outputs: { configChange: "configChange", buttonClick: "buttonClick", rateChange: "rateChange", selectionChange: "selectionChange", ondlclickRow: "ondlclickRow", onclickRow: "onclickRow", onclickFavorite: "onclickFavorite", onedit: "onedit", sortChange: "sortChange", onresize: "onresize" }, exportAs: ["cmacsTable"], features: [i0.ɵɵNgOnChangesFeature], decls: 6, vars: 26, consts: [[3, "id"], [1, "cmacs-table", 3, "nzData", "nzShowTotal", "nzPageSizeOptions", "nzVirtualItemSize", "nzLoadingDelay", "nzLoadingIndicator", "nzTotal", "nzTitle", "nzFooter", "nzNoResult", "nzWidthConfig", "nzPageIndex", "nzPageSize", "nzPaginationPosition", "nzScroll", "nzFrontPagination", "nzTemplateMode", "nzShowPagination", "nzLoading", "nzShowSizeChanger", "nzHideOnSinglePage", "nzShowQuickJumper", "nzSimple"], ["gridComponent", ""], [4, "ngIf"], ["class", "cmacs-no-selection", 3, "ant-table-selected-row", "click", "touchstart", "contextmenu", 4, "ngFor", "ngForOf"], ["nzWidth", "40px", 3, "maxWidth", "minWidth", 4, "ngIf"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzDisabled", "nzMinWidth", "nzMaxWidth", "nzShowSort", "nzSortDirections", "cmacs-table-sorted-null", "cmacs-table-sorted-ascend", "cmacs-table-sorted-descend", "nzSortOrder", "minWidth", "maxWidth", "nzWidth", "nzResizeEnd", "nzSortOrderChange", 4, "ngFor", "ngForOf"], [3, "minWidth", "maxWidth", "nzWidth", 4, "ngIf"], ["nzWidth", "40px"], ["cmacs-checkbox", "", 3, "ngModel", "indeterminate", "ngModelChange", "checkedChange"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzDisabled", "nzMinWidth", "nzMaxWidth", "nzShowSort", "nzSortDirections", "nzSortOrder", "nzWidth", "nzResizeEnd", "nzSortOrderChange"], ["nzDirection", "right", 4, "ngIf"], ["nzDirection", "right"], [1, "cmacs-table-resize-trigger"], [3, "nzWidth"], [1, "cmacs-no-selection", 3, "click", "touchstart", "contextmenu"], ["contextMenuTemplate", "cmacsDropdownMenu"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "maxWidth", "minWidth", 4, "ngIf"], [3, "ngClass", "maxWidth", 4, "ngFor", "ngForOf"], ["class", "cmacs-table-rating", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange"], [3, "ngClass"], [4, "ngIf", "ngIfElse"], ["componentTpl", ""], ["class", "editable-cell", 3, "maxWidth", 4, "ngIf", "ngIfElse"], ["editTpl", ""], [1, "editable-cell"], [1, "editable-cell-value-wrap"], [1, "iconUISmall-Edit", "cmacs-table-edit-icon", 3, "click"], ["style", "word-break: break-word;", 3, "cmacs-table-overflow-cell", "maxWidth", 4, "ngIf"], ["style", "word-break: break-word;", "cmacs-tooltip", "", "placement", "right", 3, "cmacs-table-overflow-cell", "maxWidth", "title", 4, "ngIf"], [2, "word-break", "break-word"], ["cmacs-tooltip", "", "placement", "right", 2, "word-break", "break-word", 3, "title"], ["type", "text", "cmacs-input", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["id", "testing2", "class", "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", 4, "ngIf"], ["class", "tableinput", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["style", "width: 100%;", "showSearch", "", "class", "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["type", "text", "cmacs-input", "", 1, "tableinput", 3, "ngModel", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInput", ""], ["id", "testing2", 1, "tableinput", 3, "ngModel", "cmacsStep", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInputNumber", ""], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange"], ["fieldTypeBool", ""], [1, "tableinput", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDatePicker", ""], ["showSearch", "", 1, "tableinput", 2, "width", "100%", 3, "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeSelect", ""], [3, "label", "value", 4, "ngFor", "ngForOf"], [3, "label", "value"], ["role", "button", "cmacs-button", "", 3, "aria-label", "type", "click", 4, "ngIf"], ["style", "display: 'inline-flex';", 3, "id", 4, "ngIf"], ["templateRefCeld", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "button", "cmacs-button", "", 3, "aria-label", "type", "click"], ["nz-icon", "", 3, "type", 4, "ngIf", "ngIfElse"], ["titleTpl", ""], ["nz-icon", "", 3, "type"], [3, "value", "onChangedValue"], [2, "display", "inline-flex", 3, "id"], [4, "ngFor", "ngForOf"], [3, "color", "cmacsGridType", "cmacsStatusType", "cmacsPriorityType", 4, "ngIf"], [3, "color", "cmacsGridType", "cmacsStatusType", "cmacsPriorityType"], [1, "cmacs-table-rating"], [3, "ngModel", "nzCount", "nzDisabled", "ngModelChange", "click"]], template: function CmacsTableComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "nz-table", 1, 2);
