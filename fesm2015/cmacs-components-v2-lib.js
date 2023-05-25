@@ -26049,7 +26049,6 @@ class CmacsCompactTableColumnTooltipComponent {
         this.isAdvancedConfiguration = false;
     }
     updateDisplay() {
-        this.field.property = this.field.display.toLowerCase().replace(' ', '_');
         this.onFieldChanged.emit({ field: this.field, columnMenu: Number(ColumnMenuType.PropertyType) });
     }
     getTemplateType(value) {

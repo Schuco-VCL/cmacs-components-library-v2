@@ -28507,7 +28507,6 @@
             this.isAdvancedConfiguration = false;
         };
         CmacsCompactTableColumnTooltipComponent.prototype.updateDisplay = function () {
-            this.field.property = this.field.display.toLowerCase().replace(' ', '_');
             this.onFieldChanged.emit({ field: this.field, columnMenu: Number(exports.ColumnMenuType.PropertyType) });
         };
         CmacsCompactTableColumnTooltipComponent.prototype.getTemplateType = function (value) {
