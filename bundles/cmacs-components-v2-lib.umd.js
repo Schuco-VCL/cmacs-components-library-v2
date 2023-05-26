@@ -30119,8 +30119,8 @@
             var _a;
             // we need to make sure the template type is select before adding the dropdown values
             if (values !== '' && values !== undefined && values !== null && this.field.editTemplate === exports.TemplateType.Select) {
-                // possible values of the select will be added using a ';' as separator
-                var valuesArray = values.split(';');
+                // possible values of the select will be added using a ',' as separator
+                var valuesArray = values.split(',');
                 var selectConfig = {
                     label: 'label',
                     value: 'value',

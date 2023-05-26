@@ -27531,8 +27531,8 @@ class CmacsCompactTableColumnMoreComponent {
         var _a;
         // we need to make sure the template type is select before adding the dropdown values
         if (values !== '' && values !== undefined && values !== null && this.field.editTemplate === TemplateType.Select) {
-            // possible values of the select will be added using a ';' as separator
-            let valuesArray = values.split(';');
+            // possible values of the select will be added using a ',' as separator
+            let valuesArray = values.split(',');
             let selectConfig = {
                 label: 'label',
                 value: 'value',
