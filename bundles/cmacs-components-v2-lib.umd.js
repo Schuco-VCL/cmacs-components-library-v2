@@ -29766,7 +29766,7 @@
             i0.ɵɵlistener("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_16_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r44_1); var ctx_r43 = i0.ɵɵnextContext(2); return ctx_r43.dropdownValues = $event; })("ngModelChange", function CmacsCompactTableColumnMoreComponent_div_2_div_16_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r44_1); var ctx_r45 = i0.ɵɵnextContext(2); return ctx_r45.onDropdownValuesChanged($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(3, "div", 31);
-            i0.ɵɵtext(4, "Separate values with a comma.");
+            i0.ɵɵtext(4);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
@@ -29775,6 +29775,8 @@
             var ctx_r22 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(2);
             i0.ɵɵproperty("ngModel", ctx_r22.dropdownValues);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r22.items.advancedConfiguration.dropdownDescription);
         }
     }
     function CmacsCompactTableColumnMoreComponent_div_2_Template(rf, ctx) {
@@ -29801,7 +29803,7 @@
             i0.ɵɵtemplate(13, CmacsCompactTableColumnMoreComponent_div_2_div_13_Template, 8, 3, "div", 22);
             i0.ɵɵtemplate(14, CmacsCompactTableColumnMoreComponent_div_2_div_14_Template, 5, 2, "div", 22);
             i0.ɵɵtemplate(15, CmacsCompactTableColumnMoreComponent_div_2_div_15_Template, 5, 2, "div", 22);
-            i0.ɵɵtemplate(16, CmacsCompactTableColumnMoreComponent_div_2_div_16_Template, 5, 1, "div", 22);
+            i0.ɵɵtemplate(16, CmacsCompactTableColumnMoreComponent_div_2_div_16_Template, 5, 2, "div", 22);
             i0.ɵɵelementStart(17, "div", 17);
             i0.ɵɵelementStart(18, "div", 18);
             i0.ɵɵelementStart(19, "button", 23);
