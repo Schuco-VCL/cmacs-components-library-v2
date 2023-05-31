@@ -27713,6 +27713,10 @@ class CmacsDropdownTriggerDirective {
         else {
             this.isOpenPane = false;
         }
+        let elementButtonChooseFile = document.getElementById('button-choose-file');
+        if (elementButtonChooseFile && elementButtonChooseFile.contains(event.target)) {
+            this.isOpenPane = false;
+        }
     }
     ngOnDestroy() {
         if (this.overlayRef) {
@@ -27779,12 +27783,12 @@ CmacsCtaDropdownComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCtaDropdownCo
 
 function CmacsCompactTableAttachmentComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1) {
     const _r5 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 12);
-    ɵɵelementStart(1, "span", 13);
+    ɵɵelementStart(0, "div", 13);
+    ɵɵelementStart(1, "span", 14);
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelementStart(3, "div", 14);
-    ɵɵelementStart(4, "i", 15);
+    ɵɵelementStart(3, "div", 15);
+    ɵɵelementStart(4, "i", 16);
     ɵɵlistener("click", function CmacsCompactTableAttachmentComponent_div_0_div_8_Template_i_click_4_listener() { ɵɵrestoreView(_r5); const dOpt_r3 = ctx.$implicit; const ctx_r4 = ɵɵnextContext(2); return ctx_r4.deleteOption(dOpt_r3); });
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -27817,7 +27821,7 @@ function CmacsCompactTableAttachmentComponent_div_0_Template(rf, ctx) { if (rf &
     ɵɵelementStart(14, "input", 11);
     ɵɵlistener("ngModelChange", function CmacsCompactTableAttachmentComponent_div_0_Template_input_ngModelChange_14_listener($event) { ɵɵrestoreView(_r7); const ctx_r8 = ɵɵnextContext(); return ctx_r8.link = $event; });
     ɵɵelementEnd();
-    ɵɵelementStart(15, "button", 10);
+    ɵɵelementStart(15, "button", 12);
     ɵɵlistener("click", function CmacsCompactTableAttachmentComponent_div_0_Template_button_click_15_listener() { ɵɵrestoreView(_r7); const ctx_r9 = ɵɵnextContext(); return ctx_r9.embedLink(); });
     ɵɵtext(16);
     ɵɵelementEnd();
@@ -27860,7 +27864,7 @@ class CmacsCompactTableAttachmentComponent {
     ngOnInit() {
     }
     ngOnChanges(changes) {
-        if (changes.ctaDropdownOption.currentValue === undefined) {
+        if (changes.ctaDropdownOption.currentValue === undefined || changes.ctaDropdownOption.currentValue === null || changes.ctaDropdownOption.currentValue === '') {
             this.ctaDropdownOption = [];
         }
     }
@@ -27881,7 +27885,7 @@ class CmacsCompactTableAttachmentComponent {
     }
 }
 CmacsCompactTableAttachmentComponent.ɵfac = function CmacsCompactTableAttachmentComponent_Factory(t) { return new (t || CmacsCompactTableAttachmentComponent)(); };
-CmacsCompactTableAttachmentComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCompactTableAttachmentComponent, selectors: [["cmacs-compact-table-attachment"]], inputs: { conf: "conf", ctaDropdownOption: "ctaDropdownOption" }, outputs: { onChangeAttachments: "onChangeAttachments", onclickChooseFile: "onclickChooseFile" }, features: [ɵɵNgOnChangesFeature], decls: 1, vars: 1, consts: [["class", "wrapper", 4, "ngIf"], [1, "wrapper"], [1, "cmacs-value", 3, "dropdownTrigger"], [1, "iconUILarge-Attached"], ["dropdown", ""], ["id", "cta-dropdown-options"], [1, "dropdown-content"], ["class", "tag", 4, "ngFor", "ngForOf"], [2, "margin-top", "17px"], [3, "cmacsTitle"], ["cmacs-button", "", "type", "primary", "role", "button", "aria-label", "primary", 3, "action", "disabled", "click"], ["cmacs-input", "", 2, "width", "100%", "height", "34px", "margin-bottom", "14px", 3, "ngModel", "ngModelChange"], [1, "tag"], [2, "width", "93%", "height", "25px", "max-width", "180px", "overflow", "hidden", "text-overflow", "ellipsis"], [2, "cursor", "pointer"], [1, "iconUILarge-Close", 3, "click"]], template: function CmacsCompactTableAttachmentComponent_Template(rf, ctx) { if (rf & 1) {
+CmacsCompactTableAttachmentComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCompactTableAttachmentComponent, selectors: [["cmacs-compact-table-attachment"]], inputs: { conf: "conf", ctaDropdownOption: "ctaDropdownOption" }, outputs: { onChangeAttachments: "onChangeAttachments", onclickChooseFile: "onclickChooseFile" }, features: [ɵɵNgOnChangesFeature], decls: 1, vars: 1, consts: [["class", "wrapper", 4, "ngIf"], [1, "wrapper"], [1, "cmacs-value", 3, "dropdownTrigger"], [1, "iconUILarge-Attached"], ["dropdown", ""], ["id", "cta-dropdown-options"], [1, "dropdown-content"], ["class", "tag", 4, "ngFor", "ngForOf"], [2, "margin-top", "17px"], [3, "cmacsTitle"], ["id", "button-choose-file", "cmacs-button", "", "type", "primary", "role", "button", "aria-label", "primary", 3, "action", "disabled", "click"], ["cmacs-input", "", 2, "width", "100%", "height", "34px", "margin-bottom", "14px", 3, "ngModel", "ngModelChange"], ["cmacs-button", "", "type", "primary", "role", "button", "aria-label", "primary", 3, "action", "disabled", "click"], [1, "tag"], [2, "width", "93%", "height", "25px", "max-width", "180px", "overflow", "hidden", "text-overflow", "ellipsis"], [2, "cursor", "pointer"], [1, "iconUILarge-Close", 3, "click"]], template: function CmacsCompactTableAttachmentComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, CmacsCompactTableAttachmentComponent_div_0_Template, 17, 12, "div", 0);
     } if (rf & 2) {
         ɵɵproperty("ngIf", ctx.ctaDropdownOption);
@@ -29398,7 +29402,7 @@ function CmacsCompactTableComponent_ng_template_8_ng_container_9_Template(rf, ct
     const _r472 = ɵɵgetCurrentView();
     ɵɵelementContainerStart(0);
     ɵɵelementStart(1, "cmacs-compact-table-attachment", 149);
-    ɵɵlistener("onChangeAttachments", function CmacsCompactTableComponent_ng_template_8_ng_container_9_Template_cmacs_compact_table_attachment_onChangeAttachments_1_listener() { ɵɵrestoreView(_r472); const i_r396 = ɵɵnextContext().i; const ctx_r470 = ɵɵnextContext(); return ctx_r470._onChangeAttachments(i_r396); })("onclickChooseFile", function CmacsCompactTableComponent_ng_template_8_ng_container_9_Template_cmacs_compact_table_attachment_onclickChooseFile_1_listener() { ɵɵrestoreView(_r472); const i_r396 = ɵɵnextContext().i; const ctx_r473 = ɵɵnextContext(); return ctx_r473._onclickChooseFile(i_r396); });
+    ɵɵlistener("onChangeAttachments", function CmacsCompactTableComponent_ng_template_8_ng_container_9_Template_cmacs_compact_table_attachment_onChangeAttachments_1_listener() { ɵɵrestoreView(_r472); const i_r396 = ɵɵnextContext().i; const ctx_r470 = ɵɵnextContext(); return ctx_r470._onChangeAttachments(i_r396); })("onclickChooseFile", function CmacsCompactTableComponent_ng_template_8_ng_container_9_Template_cmacs_compact_table_attachment_onclickChooseFile_1_listener() { ɵɵrestoreView(_r472); const ctx_r474 = ɵɵnextContext(); const i_r396 = ctx_r474.i; const field_r394 = ctx_r474.field; const ctx_r473 = ɵɵnextContext(); return ctx_r473._onclickChooseFile(i_r396, field_r394.property); });
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
@@ -30233,8 +30237,8 @@ class CmacsCompactTableComponent {
     _onChangeAttachments(index) {
         this.onChangeAttachments.emit(this.data[index]);
     }
-    _onclickChooseFile(index) {
-        this.onclickChooseFile.emit(this.data[index]);
+    _onclickChooseFile(index, field) {
+        this.onclickChooseFile.emit({ row: this.data[index], indexCol: field });
     }
     ngAfterViewInit() {
         if (this.hasCookies && this.getIndexCookie() && this.cookies.check(this.gridID)) {
