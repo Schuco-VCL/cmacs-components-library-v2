@@ -1,6 +1,6 @@
-import { EventEmitter, OnInit } from '@angular/core';
+import { EventEmitter, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import * as i0 from "@angular/core";
-export declare class CmacsCompactTableAttachmentComponent implements OnInit {
+export declare class CmacsCompactTableAttachmentComponent implements OnInit, OnChanges {
     conf: any;
     ctaDropdownOption: string[];
     onChangeAttachments: EventEmitter<string[]>;
@@ -8,6 +8,7 @@ export declare class CmacsCompactTableAttachmentComponent implements OnInit {
     link: string;
     constructor();
     ngOnInit(): void;
+    ngOnChanges(changes: SimpleChanges): void;
     deleteOption(option: string): void;
     embedLink(): void;
     _onclickChooseFile(): void;

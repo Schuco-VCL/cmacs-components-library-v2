@@ -153,7 +153,10 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     oncontextmenu: EventEmitter<any>;
     onDropdownRender: EventEmitter<any>;
     onChangeAttachments: EventEmitter<string[]>;
-    onclickChooseFile: EventEmitter<any>;
+    onclickChooseFile: EventEmitter<{
+        row: any;
+        indexCol: any;
+    }>;
     /** end output variables */
     /** constructor */
     constructor(cdr: ChangeDetectorRef, i18n: NzI18nService, excelService: ExcelService, deviceDetector: DeviceDetectorService, datePipe: DatePipe, nzDropdownService: CmacsContextMenuService, cookies: CookieService, utilService: UtilService);
@@ -204,7 +207,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     addRow(idx: number, $event?: any): void;
     addcolumn(idx: number): void;
     cmacsEditedInput(event: string): void;
-    addOption(): void;
+    addOption(index: number, data?: any, property?: any, field?: Field): void;
     drop(event: CdkDragDrop<string[]>): void;
     deleteRow(idx: number, $event?: any): void;
     startEdit(id: string, property: string, event: MouseEvent, data: any): void;
@@ -251,7 +254,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     isUndefined(value: any): boolean;
     isRowSelected(data: any): boolean;
     _onChangeAttachments(index: number): void;
-    _onclickChooseFile(index: number): void;
+    _onclickChooseFile(index: number, field: any): void;
     ngAfterViewInit(): void;
     disableSelectEventOnExpand(): void;
     getIndexCookie(): boolean;
