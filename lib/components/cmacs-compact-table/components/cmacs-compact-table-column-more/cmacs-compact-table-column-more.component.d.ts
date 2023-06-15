@@ -1,10 +1,11 @@
-import { EventEmitter, OnInit } from '@angular/core';
+import { EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { ColumnMenuType } from '../../../core/enums/columnMenuType.enum';
 import { TemplateType } from '../../../core/enums/TemplateType.enum';
 import { EditColumnAction, Field } from '../../../core/interfaces/grid-config';
 import * as i0 from "@angular/core";
-export declare class CmacsCompactTableColumnMoreComponent implements OnInit {
+export declare class CmacsCompactTableColumnMoreComponent implements OnInit, OnDestroy {
     isAdvancedConfiguration: boolean;
+    isRestrictEdit: boolean;
     selectedValidation: string;
     selectedFieldTemplate: string;
     validationRules: string[];
@@ -13,12 +14,14 @@ export declare class CmacsCompactTableColumnMoreComponent implements OnInit {
     inputValue2: any;
     typesList: any[];
     dropdownValues: string;
+    readOnly: boolean;
     labelSave: string;
     items: any;
     field: Field;
     onFieldChanged: EventEmitter<EditColumnAction>;
     constructor();
     ngOnInit(): void;
+    ngOnDestroy(): void;
     fieldChanged(value: ColumnMenuType): void;
     getTemplateType(value: ColumnMenuType): TemplateType | null;
     getColumnType(value: string): ColumnMenuType | null;
@@ -30,6 +33,7 @@ export declare class CmacsCompactTableColumnMoreComponent implements OnInit {
     onValidationChange(): void;
     onInputValueChange1(value: any): void;
     onDropdownValuesChanged(values: string): void;
+    onRestrictedEdit(value: boolean): void;
     onDateRangeChanged(value: Date[]): void;
     onInputValueChange2(value: any): void;
     setFieldValidator(): void;
