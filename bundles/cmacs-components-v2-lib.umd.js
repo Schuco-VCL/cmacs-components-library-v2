@@ -30587,28 +30587,37 @@
     var _c5$3 = ["fieldTypeDateTimePicker"];
     var _c6$1 = ["fieldTypeSelect"];
     var _c7$1 = ["fieldTypeBool"];
+    function CmacsCompactTableComponent_thead_3_th_2_i_1_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r18_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "i", 16);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_thead_3_th_2_i_1_Template_i_click_0_listener() { i0.ɵɵrestoreView(_r18_1); var ctx_r17 = i0.ɵɵnextContext(3); return ctx_r17.addRow(-1); });
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            i0.ɵɵnextContext(3);
+            var _r0 = i0.ɵɵreference(2);
+            i0.ɵɵclassProp("cmacs-compact-table-smart-add-row-icon-visible", !_r0.data.length);
+        }
+    }
     function CmacsCompactTableComponent_thead_3_th_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r17_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "th", 14);
-            i0.ɵɵelementStart(1, "i", 15);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_thead_3_th_2_Template_i_click_1_listener() { i0.ɵɵrestoreView(_r17_1); var ctx_r16 = i0.ɵɵnextContext(2); return ctx_r16.addRow(-1); });
-            i0.ɵɵelementEnd();
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_thead_3_th_2_i_1_Template, 1, 2, "i", 15);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var ctx_r8 = i0.ɵɵnextContext(2);
-            var _r0 = i0.ɵɵreference(2);
             i0.ɵɵstyleProp("min-width", "40px")("max-width", "40px");
             i0.ɵɵclassProp("cmacs-compact-table-logs-header-th", ctx_r8.logs);
             i0.ɵɵproperty("nzLeft", ctx_r8.getStickyWidth("smartTable"));
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-smart-add-row-icon-visible", !_r0.data.length);
+            i0.ɵɵproperty("ngIf", !ctx_r8.hideButtons);
         }
     }
     function CmacsCompactTableComponent_thead_3_th_3_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "th", 16);
+            i0.ɵɵelement(0, "th", 17);
         }
         if (rf & 2) {
             var ctx_r9 = i0.ɵɵnextContext(2);
@@ -30619,10 +30628,10 @@
     }
     function CmacsCompactTableComponent_thead_3_th_4_Template(rf, ctx) {
         if (rf & 1) {
-            var _r19_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "th", 17);
-            i0.ɵɵelementStart(1, "label", 18);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_thead_3_th_4_Template_label_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r19_1); var ctx_r18 = i0.ɵɵnextContext(2); return ctx_r18.selected = $event; })("checkedChange", function CmacsCompactTableComponent_thead_3_th_4_Template_label_checkedChange_1_listener($event) { i0.ɵɵrestoreView(_r19_1); var ctx_r20 = i0.ɵɵnextContext(2); return ctx_r20.onCheckboxAllChange($event); });
+            var _r20_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "th", 18);
+            i0.ɵɵelementStart(1, "label", 19);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_thead_3_th_4_Template_label_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r20_1); var ctx_r19 = i0.ɵɵnextContext(2); return ctx_r19.selected = $event; })("checkedChange", function CmacsCompactTableComponent_thead_3_th_4_Template_label_checkedChange_1_listener($event) { i0.ɵɵrestoreView(_r20_1); var ctx_r21 = i0.ɵɵnextContext(2); return ctx_r21.onCheckboxAllChange($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
@@ -30637,237 +30646,237 @@
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_i_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r35_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "i", 30);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_i_2_Template_i_click_0_listener() { i0.ɵɵrestoreView(_r35_1); var fi_r22 = i0.ɵɵnextContext(3).index; var ctx_r33 = i0.ɵɵnextContext(2); return ctx_r33.addcolumn(fi_r22); });
+            var _r36_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "i", 31);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_i_2_Template_i_click_0_listener() { i0.ɵɵrestoreView(_r36_1); var fi_r23 = i0.ɵɵnextContext(3).index; var ctx_r34 = i0.ɵɵnextContext(2); return ctx_r34.addcolumn(fi_r23); });
             i0.ɵɵelementEnd();
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_cmacs_compact_table_column_tooltip_5_Template(rf, ctx) {
         if (rf & 1) {
-            var _r38_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "cmacs-compact-table-column-tooltip", 31);
-            i0.ɵɵlistener("onFieldChanged", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_cmacs_compact_table_column_tooltip_5_Template_cmacs_compact_table_column_tooltip_onFieldChanged_0_listener($event) { i0.ɵɵrestoreView(_r38_1); var fi_r22 = i0.ɵɵnextContext(3).index; var ctx_r36 = i0.ɵɵnextContext(2); return ctx_r36.onFieldChanged(fi_r22, $event); });
+            var _r39_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "cmacs-compact-table-column-tooltip", 32);
+            i0.ɵɵlistener("onFieldChanged", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_cmacs_compact_table_column_tooltip_5_Template_cmacs_compact_table_column_tooltip_onFieldChanged_0_listener($event) { i0.ɵɵrestoreView(_r39_1); var fi_r23 = i0.ɵɵnextContext(3).index; var ctx_r37 = i0.ɵɵnextContext(2); return ctx_r37.onFieldChanged(fi_r23, $event); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var field_r21 = i0.ɵɵnextContext(3).$implicit;
-            var ctx_r30 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("field", field_r21)("items", ctx_r30.columnMenu);
+            var field_r22 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r31 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("field", field_r22)("items", ctx_r31.columnMenu);
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_i_6_Template(rf, ctx) {
         if (rf & 1) {
-            var _r42_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "i", 32);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_i_6_Template_i_click_0_listener() { i0.ɵɵrestoreView(_r42_1); var fi_r22 = i0.ɵɵnextContext(3).index; var ctx_r40 = i0.ɵɵnextContext(2); return ctx_r40.openColumnMore(fi_r22); });
+            var _r43_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "i", 33);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_i_6_Template_i_click_0_listener() { i0.ɵɵrestoreView(_r43_1); var fi_r23 = i0.ɵɵnextContext(3).index; var ctx_r41 = i0.ɵɵnextContext(2); return ctx_r41.openColumnMore(fi_r23); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var fi_r22 = i0.ɵɵnextContext(3).index;
-            var ctx_r31 = i0.ɵɵnextContext(2);
-            i0.ɵɵclassProp("cmacs-compact-table-column-more-selected", ctx_r31.selectedMore === fi_r22 && ctx_r31.selectedMore !== -1);
+            var fi_r23 = i0.ɵɵnextContext(3).index;
+            var ctx_r32 = i0.ɵɵnextContext(2);
+            i0.ɵɵclassProp("cmacs-compact-table-column-more-selected", ctx_r32.selectedMore === fi_r23 && ctx_r32.selectedMore !== -1);
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_cmacs_compact_table_column_more_7_Template(rf, ctx) {
         if (rf & 1) {
-            var _r46_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "cmacs-compact-table-column-more", 33);
-            i0.ɵɵlistener("onFieldChanged", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_cmacs_compact_table_column_more_7_Template_cmacs_compact_table_column_more_onFieldChanged_0_listener($event) { i0.ɵɵrestoreView(_r46_1); var fi_r22 = i0.ɵɵnextContext(3).index; var ctx_r44 = i0.ɵɵnextContext(2); return ctx_r44.onFieldChanged(fi_r22, $event); });
+            var _r47_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "cmacs-compact-table-column-more", 34);
+            i0.ɵɵlistener("onFieldChanged", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_cmacs_compact_table_column_more_7_Template_cmacs_compact_table_column_more_onFieldChanged_0_listener($event) { i0.ɵɵrestoreView(_r47_1); var fi_r23 = i0.ɵɵnextContext(3).index; var ctx_r45 = i0.ɵɵnextContext(2); return ctx_r45.onFieldChanged(fi_r23, $event); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var field_r21 = i0.ɵɵnextContext(3).$implicit;
-            var ctx_r32 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("field", field_r21)("items", ctx_r32.columnMenu)("labelSave", ctx_r32.columnMenu.advancedConfiguration.labelSave);
+            var field_r22 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r33 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("field", field_r22)("items", ctx_r33.columnMenu)("labelSave", ctx_r33.columnMenu.advancedConfiguration.labelSave);
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r49_1 = i0.ɵɵgetCurrentView();
+            var _r50_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 24);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_i_2_Template, 1, 0, "i", 25);
+            i0.ɵɵelementStart(1, "div", 25);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_i_2_Template, 1, 0, "i", 26);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(3, "div", 26);
-            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_Template_div_tap_3_listener() { i0.ɵɵrestoreView(_r49_1); var fi_r22 = i0.ɵɵnextContext(2).index; var ctx_r48 = i0.ɵɵnextContext(2); return ctx_r48.onFieldTapEllipsis(ctx_r48.gridID + "-column-" + fi_r22 + "-title"); })("click", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_Template_div_click_3_listener() { i0.ɵɵrestoreView(_r49_1); var fi_r22 = i0.ɵɵnextContext(2).index; var ctx_r51 = i0.ɵɵnextContext(2); return ctx_r51.openColumnMenu(fi_r22); });
+            i0.ɵɵelementStart(3, "div", 27);
+            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_Template_div_tap_3_listener() { i0.ɵɵrestoreView(_r50_1); var fi_r23 = i0.ɵɵnextContext(2).index; var ctx_r49 = i0.ɵɵnextContext(2); return ctx_r49.onFieldTapEllipsis(ctx_r49.gridID + "-column-" + fi_r23 + "-title"); })("click", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_Template_div_click_3_listener() { i0.ɵɵrestoreView(_r50_1); var fi_r23 = i0.ɵɵnextContext(2).index; var ctx_r52 = i0.ɵɵnextContext(2); return ctx_r52.openColumnMenu(fi_r23); });
             i0.ɵɵtext(4);
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(5, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_cmacs_compact_table_column_tooltip_5_Template, 1, 2, "cmacs-compact-table-column-tooltip", 27);
-            i0.ɵɵtemplate(6, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_i_6_Template, 1, 2, "i", 28);
-            i0.ɵɵtemplate(7, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_cmacs_compact_table_column_more_7_Template, 1, 3, "cmacs-compact-table-column-more", 29);
+            i0.ɵɵtemplate(5, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_cmacs_compact_table_column_tooltip_5_Template, 1, 2, "cmacs-compact-table-column-tooltip", 28);
+            i0.ɵɵtemplate(6, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_i_6_Template, 1, 2, "i", 29);
+            i0.ɵɵtemplate(7, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_cmacs_compact_table_column_more_7_Template, 1, 3, "cmacs-compact-table-column-more", 30);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r53 = i0.ɵɵnextContext(2);
-            var field_r21 = ctx_r53.$implicit;
-            var fi_r22 = ctx_r53.index;
-            var ctx_r26 = i0.ɵɵnextContext(2);
+            var ctx_r54 = i0.ɵɵnextContext(2);
+            var field_r22 = ctx_r54.$implicit;
+            var fi_r23 = ctx_r54.index;
+            var ctx_r27 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("min-width", field_r21.minWidth ? field_r21.minWidth : "50px")("width", field_r21.width ? field_r21.width : "100px");
+            i0.ɵɵstyleProp("min-width", field_r22.minWidth ? field_r22.minWidth : "50px")("width", field_r22.width ? field_r22.width : "100px");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r26.addColumn);
+            i0.ɵɵproperty("ngIf", ctx_r27.addColumn);
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("max-width", ctx_r26.getHeaderMaxWidth(field_r21));
-            i0.ɵɵclassProp("cmacs-compact-table-overflow-cell-header", !ctx_r26.wrapLines)("cmacs-compact-table-column-tooltip", ctx_r26.addColumn);
-            i0.ɵɵattributeInterpolate2("id", "", ctx_r26.gridID, "-column-", fi_r22, "-title");
-            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r26.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r26.isEllipsisActive(ctx_r26.gridID + "-column-" + fi_r22 + "-title", field_r21) ? field_r21.display : null);
+            i0.ɵɵstyleProp("max-width", ctx_r27.getHeaderMaxWidth(field_r22));
+            i0.ɵɵclassProp("cmacs-compact-table-overflow-cell-header", !ctx_r27.wrapLines)("cmacs-compact-table-column-tooltip", ctx_r27.addColumn);
+            i0.ɵɵattributeInterpolate2("id", "", ctx_r27.gridID, "-column-", fi_r23, "-title");
+            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r27.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r27.isEllipsisActive(ctx_r27.gridID + "-column-" + fi_r23 + "-title", field_r22) ? field_r22.display : null);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate1(" ", field_r21.display, "");
+            i0.ɵɵtextInterpolate1(" ", field_r22.display, "");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r26.addColumn && ctx_r26.selectedColumnId === fi_r22 && ctx_r26.selectedColumnId !== -1);
+            i0.ɵɵproperty("ngIf", ctx_r27.addColumn && ctx_r27.selectedColumnId === fi_r23 && ctx_r27.selectedColumnId !== -1);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r26.addColumn);
+            i0.ɵɵproperty("ngIf", ctx_r27.addColumn);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r26.addColumn && ctx_r26.selectedMore === fi_r22 && ctx_r26.selectedMore !== -1);
+            i0.ɵɵproperty("ngIf", ctx_r27.addColumn && ctx_r27.selectedMore === fi_r23 && ctx_r27.selectedMore !== -1);
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_div_3_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 0);
-            i0.ɵɵelementContainer(1, 34);
+            i0.ɵɵelementContainer(1, 35);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r54 = i0.ɵɵnextContext(2);
-            var fi_r22 = ctx_r54.index;
-            var field_r21 = ctx_r54.$implicit;
-            var ctx_r27 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("id", ctx_r27.gridID + "column" + fi_r22);
+            var ctx_r55 = i0.ɵɵnextContext(2);
+            var fi_r23 = ctx_r55.index;
+            var field_r22 = ctx_r55.$implicit;
+            var ctx_r28 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("id", ctx_r28.gridID + "column" + fi_r23);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", field_r21.template.ref)("ngTemplateOutletContext", field_r21.template.context);
+            i0.ɵɵproperty("ngTemplateOutlet", field_r22.template.ref)("ngTemplateOutletContext", field_r22.template.context);
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_nz_resize_handle_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "nz-resize-handle", 35);
-            i0.ɵɵelement(1, "div", 36);
+            i0.ɵɵelementStart(0, "nz-resize-handle", 36);
+            i0.ɵɵelement(1, "div", 37);
             i0.ɵɵelementEnd();
         }
     }
     var _c8 = function () { return []; };
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r57_1 = i0.ɵɵgetCurrentView();
+            var _r58_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "th", 21);
-            i0.ɵɵlistener("nzFilterChange", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template_th_nzFilterChange_1_listener($event) { i0.ɵɵrestoreView(_r57_1); var field_r21 = i0.ɵɵnextContext().$implicit; var ctx_r55 = i0.ɵɵnextContext(2); return ctx_r55.filter($event, field_r21.property); })("nzResizeEnd", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template_th_nzResizeEnd_1_listener($event) { i0.ɵɵrestoreView(_r57_1); var field_r21 = i0.ɵɵnextContext().$implicit; var ctx_r58 = i0.ɵɵnextContext(2); return ctx_r58.onResize($event, field_r21.property, field_r21); })("nzSortOrderChange", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template_th_nzSortOrderChange_1_listener($event) { i0.ɵɵrestoreView(_r57_1); var field_r21 = i0.ɵɵnextContext().$implicit; var ctx_r60 = i0.ɵɵnextContext(2); return field_r21.showSort ? field_r21.sortOrder : ctx_r60.defaultSortOrder = $event; })("nzSortOrderChange", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template_th_nzSortOrderChange_1_listener($event) { i0.ɵɵrestoreView(_r57_1); var field_r21 = i0.ɵɵnextContext().$implicit; var ctx_r62 = i0.ɵɵnextContext(2); return ctx_r62.sort($event, field_r21.property); });
+            i0.ɵɵelementStart(1, "th", 22);
+            i0.ɵɵlistener("nzFilterChange", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template_th_nzFilterChange_1_listener($event) { i0.ɵɵrestoreView(_r58_1); var field_r22 = i0.ɵɵnextContext().$implicit; var ctx_r56 = i0.ɵɵnextContext(2); return ctx_r56.filter($event, field_r22.property); })("nzResizeEnd", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template_th_nzResizeEnd_1_listener($event) { i0.ɵɵrestoreView(_r58_1); var field_r22 = i0.ɵɵnextContext().$implicit; var ctx_r59 = i0.ɵɵnextContext(2); return ctx_r59.onResize($event, field_r22.property, field_r22); })("nzSortOrderChange", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template_th_nzSortOrderChange_1_listener($event) { i0.ɵɵrestoreView(_r58_1); var field_r22 = i0.ɵɵnextContext().$implicit; var ctx_r61 = i0.ɵɵnextContext(2); return field_r22.showSort ? field_r22.sortOrder : ctx_r61.defaultSortOrder = $event; })("nzSortOrderChange", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template_th_nzSortOrderChange_1_listener($event) { i0.ɵɵrestoreView(_r58_1); var field_r22 = i0.ɵɵnextContext().$implicit; var ctx_r63 = i0.ɵɵnextContext(2); return ctx_r63.sort($event, field_r22.property); });
             i0.ɵɵtemplate(2, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_ng_container_2_Template, 8, 19, "ng-container", 3);
-            i0.ɵɵtemplate(3, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_div_3_Template, 2, 3, "div", 22);
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_nz_resize_handle_4_Template, 2, 0, "nz-resize-handle", 23);
+            i0.ɵɵtemplate(3, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_div_3_Template, 2, 3, "div", 23);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_nz_resize_handle_4_Template, 2, 0, "nz-resize-handle", 24);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r64 = i0.ɵɵnextContext();
-            var fi_r22 = ctx_r64.index;
-            var field_r21 = ctx_r64.$implicit;
-            var ctx_r23 = i0.ɵɵnextContext(2);
+            var ctx_r65 = i0.ɵɵnextContext();
+            var fi_r23 = ctx_r65.index;
+            var field_r22 = ctx_r65.$implicit;
+            var ctx_r24 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵattributeInterpolate2("id", "", ctx_r23.gridID, "-column-", fi_r22, "");
-            i0.ɵɵproperty("nzShowSort", field_r21.showSort)("nzShowFilter", field_r21.showFilter)("nzFilters", field_r21.filters ? field_r21.filters : i0.ɵɵpureFunction0(17, _c8))("nzFilterMultiple", field_r21.filterMultiple)("nzDisabled", !field_r21.resizable)("nzMinWidth", field_r21.minWidth ? field_r21.minWidth : 100)("nzMaxWidth", field_r21.maxWidth ? field_r21.maxWidth : 500)("ngClass", ctx_r23.getClassMap(field_r21))("nzSortOrder", field_r21.showSort ? field_r21.sortOrder : ctx_r23.defaultSortOrder)("nzWidth", field_r21.width)("nzLeft", field_r21.left ? field_r21.left : false)("nzRight", field_r21.right ? field_r21.right : false);
+            i0.ɵɵattributeInterpolate2("id", "", ctx_r24.gridID, "-column-", fi_r23, "");
+            i0.ɵɵproperty("nzShowSort", field_r22.showSort)("nzShowFilter", field_r22.showFilter)("nzFilters", field_r22.filters ? field_r22.filters : i0.ɵɵpureFunction0(17, _c8))("nzFilterMultiple", field_r22.filterMultiple)("nzDisabled", !field_r22.resizable)("nzMinWidth", field_r22.minWidth ? field_r22.minWidth : 100)("nzMaxWidth", field_r22.maxWidth ? field_r22.maxWidth : 500)("ngClass", ctx_r24.getClassMap(field_r22))("nzSortOrder", field_r22.showSort ? field_r22.sortOrder : ctx_r24.defaultSortOrder)("nzWidth", field_r22.width)("nzLeft", field_r22.left ? field_r22.left : false)("nzRight", field_r22.right ? field_r22.right : false);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !field_r21.template);
+            i0.ɵɵproperty("ngIf", !field_r22.template);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", field_r21.template);
+            i0.ɵɵproperty("ngIf", field_r22.template);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", field_r21.resizable);
+            i0.ɵɵproperty("ngIf", field_r22.resizable);
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_div_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 0);
-            i0.ɵɵelementContainer(1, 34);
+            i0.ɵɵelementContainer(1, 35);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r69 = i0.ɵɵnextContext(2);
-            var fi_r22 = ctx_r69.index;
-            var field_r21 = ctx_r69.$implicit;
-            var ctx_r65 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("id", ctx_r65.gridID + "column" + fi_r22);
+            var ctx_r70 = i0.ɵɵnextContext(2);
+            var fi_r23 = ctx_r70.index;
+            var field_r22 = ctx_r70.$implicit;
+            var ctx_r66 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("id", ctx_r66.gridID + "column" + fi_r23);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", field_r21.template.ref)("ngTemplateOutletContext", field_r21.template.context);
+            i0.ɵɵproperty("ngTemplateOutlet", field_r22.template.ref)("ngTemplateOutletContext", field_r22.template.context);
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_ng_container_6_Template(rf, ctx) {
         if (rf & 1) {
-            var _r71_1 = i0.ɵɵgetCurrentView();
+            var _r72_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 41);
-            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_ng_container_6_Template_div_tap_1_listener() { i0.ɵɵrestoreView(_r71_1); var fi_r22 = i0.ɵɵnextContext(2).index; var ctx_r70 = i0.ɵɵnextContext(2); return ctx_r70.onFieldTapEllipsis(ctx_r70.gridID + "-column-" + fi_r22 + "-title"); });
+            i0.ɵɵelementStart(1, "div", 42);
+            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_ng_container_6_Template_div_tap_1_listener() { i0.ɵɵrestoreView(_r72_1); var fi_r23 = i0.ɵɵnextContext(2).index; var ctx_r71 = i0.ɵɵnextContext(2); return ctx_r71.onFieldTapEllipsis(ctx_r71.gridID + "-column-" + fi_r23 + "-title"); });
             i0.ɵɵtext(2);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r73 = i0.ɵɵnextContext(2);
-            var field_r21 = ctx_r73.$implicit;
-            var fi_r22 = ctx_r73.index;
-            var ctx_r67 = i0.ɵɵnextContext(2);
+            var ctx_r74 = i0.ɵɵnextContext(2);
+            var field_r22 = ctx_r74.$implicit;
+            var fi_r23 = ctx_r74.index;
+            var ctx_r68 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("max-width", ctx_r67.getHeaderMaxWidth(field_r21));
-            i0.ɵɵclassProp("cmacs-compact-table-overflow-cell-header", !ctx_r67.wrapLines);
-            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r67.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r67.isEllipsisActive(ctx_r67.gridID + "-column-" + fi_r22 + "-title", field_r21) ? field_r21.display : null);
+            i0.ɵɵstyleProp("max-width", ctx_r68.getHeaderMaxWidth(field_r22));
+            i0.ɵɵclassProp("cmacs-compact-table-overflow-cell-header", !ctx_r68.wrapLines);
+            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r68.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r68.isEllipsisActive(ctx_r68.gridID + "-column-" + fi_r23 + "-title", field_r22) ? field_r22.display : null);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(field_r21.display);
+            i0.ɵɵtextInterpolate(field_r22.display);
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_nz_resize_handle_7_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "nz-resize-handle", 35);
-            i0.ɵɵelement(1, "div", 36);
+            i0.ɵɵelementStart(0, "nz-resize-handle", 36);
+            i0.ɵɵelement(1, "div", 37);
             i0.ɵɵelementEnd();
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r76_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "th", 37);
-            i0.ɵɵlistener("nzResizeEnd", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_Template_th_nzResizeEnd_0_listener($event) { i0.ɵɵrestoreView(_r76_1); var field_r21 = i0.ɵɵnextContext().$implicit; var ctx_r74 = i0.ɵɵnextContext(2); return ctx_r74.onResize($event, field_r21.property, field_r21); })("nzSortOrderChange", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_Template_th_nzSortOrderChange_0_listener($event) { i0.ɵɵrestoreView(_r76_1); var field_r21 = i0.ɵɵnextContext().$implicit; var ctx_r77 = i0.ɵɵnextContext(2); return field_r21.showSort ? field_r21.sortOrder : ctx_r77.defaultSortOrder = $event; })("nzSortOrderChange", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_Template_th_nzSortOrderChange_0_listener($event) { i0.ɵɵrestoreView(_r76_1); var field_r21 = i0.ɵɵnextContext().$implicit; var ctx_r79 = i0.ɵɵnextContext(2); return ctx_r79.sort($event, field_r21.property); });
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_div_1_Template, 2, 3, "div", 22);
-            i0.ɵɵelementStart(2, "nz-dropdown", 38, 39);
-            i0.ɵɵelement(4, "i", 40);
-            i0.ɵɵelementContainer(5, 34);
+            var _r77_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "th", 38);
+            i0.ɵɵlistener("nzResizeEnd", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_Template_th_nzResizeEnd_0_listener($event) { i0.ɵɵrestoreView(_r77_1); var field_r22 = i0.ɵɵnextContext().$implicit; var ctx_r75 = i0.ɵɵnextContext(2); return ctx_r75.onResize($event, field_r22.property, field_r22); })("nzSortOrderChange", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_Template_th_nzSortOrderChange_0_listener($event) { i0.ɵɵrestoreView(_r77_1); var field_r22 = i0.ɵɵnextContext().$implicit; var ctx_r78 = i0.ɵɵnextContext(2); return field_r22.showSort ? field_r22.sortOrder : ctx_r78.defaultSortOrder = $event; })("nzSortOrderChange", function CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_Template_th_nzSortOrderChange_0_listener($event) { i0.ɵɵrestoreView(_r77_1); var field_r22 = i0.ɵɵnextContext().$implicit; var ctx_r80 = i0.ɵɵnextContext(2); return ctx_r80.sort($event, field_r22.property); });
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_div_1_Template, 2, 3, "div", 23);
+            i0.ɵɵelementStart(2, "nz-dropdown", 39, 40);
+            i0.ɵɵelement(4, "i", 41);
+            i0.ɵɵelementContainer(5, 35);
             i0.ɵɵelementEnd();
             i0.ɵɵtemplate(6, CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_ng_container_6_Template, 3, 7, "ng-container", 3);
-            i0.ɵɵtemplate(7, CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_nz_resize_handle_7_Template, 2, 0, "nz-resize-handle", 23);
+            i0.ɵɵtemplate(7, CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_nz_resize_handle_7_Template, 2, 0, "nz-resize-handle", 24);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var _r66 = i0.ɵɵreference(3);
-            var ctx_r81 = i0.ɵɵnextContext();
-            var fi_r22 = ctx_r81.index;
-            var field_r21 = ctx_r81.$implicit;
-            var ctx_r25 = i0.ɵɵnextContext(2);
-            i0.ɵɵattributeInterpolate2("id", "", ctx_r25.gridID, "-column-", fi_r22, "");
-            i0.ɵɵproperty("nzShowSort", field_r21.showSort)("nzDisabled", !field_r21.resizable)("ngClass", ctx_r25.getClassMap(field_r21))("nzSortOrder", field_r21.showSort ? field_r21.sortOrder : ctx_r25.defaultSortOrder)("nzWidth", field_r21.width)("nzMinWidth", field_r21.minWidth ? field_r21.minWidth : 100)("nzMaxWidth", field_r21.maxWidth ? field_r21.maxWidth : 500)("nzLeft", field_r21.left ? field_r21.left : false)("nzRight", field_r21.right ? field_r21.right : false);
+            var _r67 = i0.ɵɵreference(3);
+            var ctx_r82 = i0.ɵɵnextContext();
+            var fi_r23 = ctx_r82.index;
+            var field_r22 = ctx_r82.$implicit;
+            var ctx_r26 = i0.ɵɵnextContext(2);
+            i0.ɵɵattributeInterpolate2("id", "", ctx_r26.gridID, "-column-", fi_r23, "");
+            i0.ɵɵproperty("nzShowSort", field_r22.showSort)("nzDisabled", !field_r22.resizable)("ngClass", ctx_r26.getClassMap(field_r22))("nzSortOrder", field_r22.showSort ? field_r22.sortOrder : ctx_r26.defaultSortOrder)("nzWidth", field_r22.width)("nzMinWidth", field_r22.minWidth ? field_r22.minWidth : 100)("nzMaxWidth", field_r22.maxWidth ? field_r22.maxWidth : 500)("nzLeft", field_r22.left ? field_r22.left : false)("nzRight", field_r22.right ? field_r22.right : false);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", field_r21.template);
+            i0.ɵɵproperty("ngIf", field_r22.template);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("nzClickHide", false);
             i0.ɵɵadvance(2);
-            i0.ɵɵclassProp("ant-table-filter-open", _r66.nzVisible);
+            i0.ɵɵclassProp("ant-table-filter-open", _r67.nzVisible);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", field_r21.customFilter.ref)("ngTemplateOutletContext", field_r21.customFilter.context);
+            i0.ɵɵproperty("ngTemplateOutlet", field_r22.customFilter.ref)("ngTemplateOutletContext", field_r22.customFilter.context);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !field_r21.template);
+            i0.ɵɵproperty("ngIf", !field_r22.template);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", field_r21.resizable);
+            i0.ɵɵproperty("ngIf", field_r22.resizable);
         }
     }
     function CmacsCompactTableComponent_thead_3_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template, 5, 18, "ng-container", 19);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_Template, 8, 19, "ng-template", null, 20, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_thead_3_ng_container_5_ng_container_1_Template, 5, 18, "ng-container", 20);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_thead_3_ng_container_5_ng_template_2_Template, 8, 19, "ng-template", null, 21, i0.ɵɵtemplateRefExtractor);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var field_r21 = ctx.$implicit;
-            var _r24 = i0.ɵɵreference(3);
+            var field_r22 = ctx.$implicit;
+            var _r25 = i0.ɵɵreference(3);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !field_r21.customFilter)("ngIfElse", _r24);
+            i0.ɵɵproperty("ngIf", !field_r22.customFilter)("ngIfElse", _r25);
         }
     }
     function CmacsCompactTableComponent_thead_3_th_6_Template(rf, ctx) {
@@ -30882,16 +30891,16 @@
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r82 = i0.ɵɵnextContext(3);
+            var ctx_r83 = i0.ɵɵnextContext(3);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r82.extra);
+            i0.ɵɵtextInterpolate(ctx_r83.extra);
         }
     }
     function CmacsCompactTableComponent_thead_3_th_7_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "th", 42);
-            i0.ɵɵelementStart(1, "div", 43);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_thead_3_th_7_ng_container_2_Template, 2, 1, "ng-container", 44);
+            i0.ɵɵelementStart(0, "th", 43);
+            i0.ɵɵelementStart(1, "div", 44);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_thead_3_th_7_ng_container_2_Template, 2, 1, "ng-container", 45);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
@@ -30906,7 +30915,7 @@
     }
     function CmacsCompactTableComponent_thead_3_th_8_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "th", 45);
+            i0.ɵɵelement(0, "th", 46);
         }
         if (rf & 2) {
             var ctx_r14 = i0.ɵɵnextContext(2);
@@ -30928,7 +30937,7 @@
         if (rf & 1) {
             i0.ɵɵelementStart(0, "thead");
             i0.ɵɵelementStart(1, "tr");
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_thead_3_th_2_Template, 2, 9, "th", 7);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_thead_3_th_2_Template, 2, 8, "th", 7);
             i0.ɵɵtemplate(3, CmacsCompactTableComponent_thead_3_th_3_Template, 1, 9, "th", 8);
             i0.ɵɵtemplate(4, CmacsCompactTableComponent_thead_3_th_4_Template, 2, 11, "th", 9);
             i0.ɵɵtemplate(5, CmacsCompactTableComponent_thead_3_ng_container_5_Template, 4, 2, "ng-container", 10);
@@ -30963,21 +30972,21 @@
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r100_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 55);
-            i0.ɵɵelementStart(1, "label", 18);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_1_Template_label_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r100_1); var item_r91 = i0.ɵɵnextContext(2).$implicit; var ctx_r98 = i0.ɵɵnextContext(5); return ctx_r98.getNode(item_r91[ctx_r98.fieldID]).selected = $event; })("checkedChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_1_Template_label_checkedChange_1_listener($event) { i0.ɵɵrestoreView(_r100_1); var item_r91 = i0.ɵɵnextContext(2).$implicit; var data_r88 = i0.ɵɵnextContext().$implicit; var ctx_r101 = i0.ɵɵnextContext(4); return ctx_r101.onCheckboxTreeChange($event, item_r91, ctx_r101.mapOfExpandedData[data_r88[ctx_r101.fieldID]]); });
+            var _r101_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "td", 56);
+            i0.ɵɵelementStart(1, "label", 19);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_1_Template_label_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r101_1); var item_r92 = i0.ɵɵnextContext(2).$implicit; var ctx_r99 = i0.ɵɵnextContext(5); return ctx_r99.getNode(item_r92[ctx_r99.fieldID]).selected = $event; })("checkedChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_1_Template_label_checkedChange_1_listener($event) { i0.ɵɵrestoreView(_r101_1); var item_r92 = i0.ɵɵnextContext(2).$implicit; var data_r89 = i0.ɵɵnextContext().$implicit; var ctx_r102 = i0.ɵɵnextContext(4); return ctx_r102.onCheckboxTreeChange($event, item_r92, ctx_r102.mapOfExpandedData[data_r89[ctx_r102.fieldID]]); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var item_r91 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r93 = i0.ɵɵnextContext(5);
+            var item_r92 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r94 = i0.ɵɵnextContext(5);
             i0.ɵɵstyleProp("min-width", "30px")("max-width", "30px")("width", "30px");
-            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r93.logs && !!item_r91.children);
-            i0.ɵɵproperty("nzLeft", ctx_r93.getStickyWidth("checkboxSelect"));
+            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r94.logs && !!item_r92.children);
+            i0.ɵɵproperty("nzLeft", ctx_r94.getStickyWidth("checkboxSelect"));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngModel", ctx_r93.getNode(item_r91[ctx_r93.fieldID]).selected)("indeterminate", ctx_r93.getNode(item_r91[ctx_r93.fieldID]).selected === -1);
+            i0.ɵɵproperty("ngModel", ctx_r94.getNode(item_r92[ctx_r94.fieldID]).selected)("indeterminate", ctx_r94.getNode(item_r92[ctx_r94.fieldID]).selected === -1);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_1_ng_container_1_Template(rf, ctx) {
@@ -30989,21 +30998,21 @@
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div");
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_1_ng_container_1_Template, 1, 0, "ng-container", 59);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_1_ng_container_1_Template, 1, 0, "ng-container", 60);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r110 = i0.ɵɵnextContext();
-            var field_r105 = ctx_r110.$implicit;
-            var i_r106 = ctx_r110.index;
-            var item_r91 = i0.ɵɵnextContext(2).$implicit;
-            var di_r89 = i0.ɵɵnextContext().index;
-            var ctx_r107 = i0.ɵɵnextContext(4);
+            var ctx_r111 = i0.ɵɵnextContext();
+            var field_r106 = ctx_r111.$implicit;
+            var i_r107 = ctx_r111.index;
+            var item_r92 = i0.ɵɵnextContext(2).$implicit;
+            var di_r90 = i0.ɵɵnextContext().index;
+            var ctx_r108 = i0.ɵɵnextContext(4);
             var _r6 = i0.ɵɵreference(9);
-            i0.ɵɵstyleProp("display", ctx_r107.isNumber(field_r105) || ctx_r107.isTime(field_r105) || ctx_r107.isDate(field_r105) || ctx_r107.isSelect(field_r105) ? "block" : "inline-flex")("width", item_r91.children && !i_r106 ? "calc(100% - 25px)" : "100%");
-            i0.ɵɵclassProp("cmacs-compact-table-overflow-cell-container-logs", ctx_r107.expandable && ctx_r107.isString(field_r105) && !i_r106);
+            i0.ɵɵstyleProp("display", ctx_r108.isNumber(field_r106) || ctx_r108.isTime(field_r106) || ctx_r108.isDate(field_r106) || ctx_r108.isSelect(field_r106) ? "block" : "inline-flex")("width", item_r92.children && !i_r107 ? "calc(100% - 25px)" : "100%");
+            i0.ɵɵclassProp("cmacs-compact-table-overflow-cell-container-logs", ctx_r108.expandable && ctx_r108.isString(field_r106) && !i_r107);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", _r6)("ngTemplateOutletContext", i0.ɵɵpureFunction5(8, _c9, field_r105, item_r91, di_r89, item_r91, i_r106));
+            i0.ɵɵproperty("ngTemplateOutlet", _r6)("ngTemplateOutletContext", i0.ɵɵpureFunction5(8, _c9, field_r106, item_r92, di_r90, item_r92, i_r107));
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_2_ng_container_1_Template(rf, ctx) {
@@ -31015,122 +31024,122 @@
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div");
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_2_ng_container_1_Template, 1, 0, "ng-container", 59);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_2_ng_container_1_Template, 1, 0, "ng-container", 60);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r114 = i0.ɵɵnextContext();
-            var field_r105 = ctx_r114.$implicit;
-            var i_r106 = ctx_r114.index;
-            var item_r91 = i0.ɵɵnextContext(2).$implicit;
-            var di_r89 = i0.ɵɵnextContext().index;
-            var ctx_r108 = i0.ɵɵnextContext(4);
+            var ctx_r115 = i0.ɵɵnextContext();
+            var field_r106 = ctx_r115.$implicit;
+            var i_r107 = ctx_r115.index;
+            var item_r92 = i0.ɵɵnextContext(2).$implicit;
+            var di_r90 = i0.ɵɵnextContext().index;
+            var ctx_r109 = i0.ɵɵnextContext(4);
             var _r4 = i0.ɵɵreference(7);
-            i0.ɵɵstyleProp("display", ctx_r108.isNumber(field_r105) ? "block" : "inline-flex")("width", item_r91.children && !i_r106 ? "calc(100% - 25px)" : "100%");
+            i0.ɵɵstyleProp("display", ctx_r109.isNumber(field_r106) ? "block" : "inline-flex")("width", item_r92.children && !i_r107 ? "calc(100% - 25px)" : "100%");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", _r4)("ngTemplateOutletContext", i0.ɵɵpureFunction3(6, _c10, field_r105, item_r91, di_r89));
+            i0.ɵɵproperty("ngTemplateOutlet", _r4)("ngTemplateOutletContext", i0.ɵɵpureFunction3(6, _c10, field_r106, item_r92, di_r90));
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r119_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 56);
-            i0.ɵɵlistener("nzExpandChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_Template_td_nzExpandChange_0_listener($event) { i0.ɵɵrestoreView(_r119_1); var item_r91 = i0.ɵɵnextContext(2).$implicit; return item_r91.expand = $event; })("nzExpandChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_Template_td_nzExpandChange_0_listener($event) { i0.ɵɵrestoreView(_r119_1); var item_r91 = i0.ɵɵnextContext(2).$implicit; var data_r88 = i0.ɵɵnextContext().$implicit; var ctx_r120 = i0.ɵɵnextContext(4); return ctx_r120.ExpandCollapse(ctx_r120.mapOfExpandedData[data_r88[ctx_r120.fieldID]], item_r91, $event); });
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_1_Template, 2, 14, "div", 57);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_2_Template, 2, 10, "div", 58);
+            var _r120_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "td", 57);
+            i0.ɵɵlistener("nzExpandChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_Template_td_nzExpandChange_0_listener($event) { i0.ɵɵrestoreView(_r120_1); var item_r92 = i0.ɵɵnextContext(2).$implicit; return item_r92.expand = $event; })("nzExpandChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_Template_td_nzExpandChange_0_listener($event) { i0.ɵɵrestoreView(_r120_1); var item_r92 = i0.ɵɵnextContext(2).$implicit; var data_r89 = i0.ɵɵnextContext().$implicit; var ctx_r121 = i0.ɵɵnextContext(4); return ctx_r121.ExpandCollapse(ctx_r121.mapOfExpandedData[data_r89[ctx_r121.fieldID]], item_r92, $event); });
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_1_Template, 2, 14, "div", 58);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_div_2_Template, 2, 10, "div", 59);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var field_r105 = ctx.$implicit;
-            var i_r106 = ctx.index;
-            var item_r91 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r94 = i0.ɵɵnextContext(5);
-            i0.ɵɵstyleProp("padding-left", ctx_r94.getCustomPadding(item_r91, i_r106), "px")("min-width", field_r105.width);
-            i0.ɵɵclassProp("cmacs-editable-column", field_r105.editable)("cmacs-compact-table-on-edit-expandable", ctx_r94.editId === item_r91[ctx_r94.config.fieldId] && ctx_r94.property === field_r105.property && field_r105.editable && (ctx_r94.isString(field_r105) || ctx_r94.isDate(field_r105) || ctx_r94.isTime(field_r105) || ctx_r94.isSelect(field_r105) || ctx_r94.isNumber(field_r105) && field_r105.editable))("cmacs-compact-table-logs-header-th-font", ctx_r94.logs && !!item_r91.children)("cmacs-compact-table-expandable-td", !i_r106);
-            i0.ɵɵproperty("ngClass", ctx_r94.getCustomClass(field_r105))("nzShowExpand", !ctx_r94.isNull(item_r91.children) && !i_r106)("nzExpand", item_r91.expand)("nzLeft", field_r105.left ? field_r105.left : false)("nzRight", field_r105.right ? field_r105.right : false);
+            var field_r106 = ctx.$implicit;
+            var i_r107 = ctx.index;
+            var item_r92 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r95 = i0.ɵɵnextContext(5);
+            i0.ɵɵstyleProp("padding-left", ctx_r95.getCustomPadding(item_r92, i_r107), "px")("min-width", field_r106.width);
+            i0.ɵɵclassProp("cmacs-editable-column", field_r106.editable)("cmacs-compact-table-on-edit-expandable", ctx_r95.editId === item_r92[ctx_r95.config.fieldId] && ctx_r95.property === field_r106.property && field_r106.editable && (ctx_r95.isString(field_r106) || ctx_r95.isDate(field_r106) || ctx_r95.isTime(field_r106) || ctx_r95.isSelect(field_r106) || ctx_r95.isNumber(field_r106) && field_r106.editable))("cmacs-compact-table-logs-header-th-font", ctx_r95.logs && !!item_r92.children)("cmacs-compact-table-expandable-td", !i_r107);
+            i0.ɵɵproperty("ngClass", ctx_r95.getCustomClass(field_r106))("nzShowExpand", !ctx_r95.isNull(item_r92.children) && !i_r107)("nzExpand", item_r92.expand)("nzLeft", field_r106.left ? field_r106.left : false)("nzRight", field_r106.right ? field_r106.right : false);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r94.showViewModeTpl(field_r105, item_r91));
+            i0.ɵɵproperty("ngIf", ctx_r95.showViewModeTpl(field_r106, item_r92));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r94.showEditTpl(item_r91, field_r105));
+            i0.ɵɵproperty("ngIf", ctx_r95.showEditTpl(item_r92, field_r106));
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_3_Template(rf, ctx) {
         if (rf & 1) {
-            var _r126_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 60);
-            i0.ɵɵelementStart(1, "nz-rate", 61);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_3_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r126_1); var data_r88 = i0.ɵɵnextContext(3).$implicit; var ctx_r124 = i0.ɵɵnextContext(4); return ctx_r124.onRateChange($event, data_r88); })("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_3_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r126_1); var ctx_r127 = i0.ɵɵnextContext(7); return ctx_r127.onRateClick($event); });
+            var _r127_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "td", 61);
+            i0.ɵɵelementStart(1, "nz-rate", 62);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_3_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r127_1); var data_r89 = i0.ɵɵnextContext(3).$implicit; var ctx_r125 = i0.ɵɵnextContext(4); return ctx_r125.onRateChange($event, data_r89); })("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_3_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r127_1); var ctx_r128 = i0.ɵɵnextContext(7); return ctx_r128.onRateClick($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var item_r91 = i0.ɵɵnextContext(2).$implicit;
-            var data_r88 = i0.ɵɵnextContext().$implicit;
-            var ctx_r95 = i0.ɵɵnextContext(4);
-            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r95.logs && !!item_r91.children);
+            var item_r92 = i0.ɵɵnextContext(2).$implicit;
+            var data_r89 = i0.ɵɵnextContext().$implicit;
+            var ctx_r96 = i0.ɵɵnextContext(4);
+            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r96.logs && !!item_r92.children);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngModel", data_r88[ctx_r95.config.fieldRate])("nzCount", ctx_r95.rateCount)("nzDisabled", !ctx_r95.inLineEdit);
+            i0.ɵɵproperty("ngModel", data_r89[ctx_r96.config.fieldRate])("nzCount", ctx_r96.rateCount)("nzDisabled", !ctx_r96.inLineEdit);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "td", 62);
+            i0.ɵɵelement(0, "td", 63);
         }
         if (rf & 2) {
-            var item_r91 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r96 = i0.ɵɵnextContext(5);
-            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r96.logs && !!item_r91.children);
-            i0.ɵɵproperty("nzRight", ctx_r96.getStickyWidthRight("extra"));
+            var item_r92 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r97 = i0.ɵɵnextContext(5);
+            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r97.logs && !!item_r92.children);
+            i0.ɵɵproperty("nzRight", ctx_r97.getStickyWidthRight("extra"));
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_5_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "td", 63);
+            i0.ɵɵelement(0, "td", 64);
         }
         if (rf & 2) {
-            var ctx_r97 = i0.ɵɵnextContext(7);
-            i0.ɵɵclassProp("cmacs-compact-table-logs-td", ctx_r97.logs);
+            var ctx_r98 = i0.ɵɵnextContext(7);
+            i0.ɵɵclassProp("cmacs-compact-table-logs-td", ctx_r98.logs);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r133_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "tr", 49);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template_tr_click_0_listener() { i0.ɵɵrestoreView(_r133_1); var item_r91 = i0.ɵɵnextContext().$implicit; var ctx_r131 = i0.ɵɵnextContext(5); return ctx_r131.selectTreeSingle(item_r91); })("touchstart", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r133_1); var item_r91 = i0.ɵɵnextContext().$implicit; var ctx_r134 = i0.ɵɵnextContext(5); return ctx_r134.tapHandler($event, item_r91); })("contextmenu", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r133_1); var item_r91 = i0.ɵɵnextContext().$implicit; var ctx_r136 = i0.ɵɵnextContext(5); return ctx_r136.oncontextmenuevt($event, item_r91); })("dblclick", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template_tr_dblclick_0_listener() { i0.ɵɵrestoreView(_r133_1); var item_r91 = i0.ɵɵnextContext().$implicit; var ctx_r138 = i0.ɵɵnextContext(5); return ctx_r138.dblClickRow(item_r91); });
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_1_Template, 2, 11, "td", 50);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_Template, 3, 19, "td", 51);
-            i0.ɵɵtemplate(3, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_3_Template, 2, 5, "td", 52);
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_4_Template, 1, 3, "td", 53);
-            i0.ɵɵtemplate(5, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_5_Template, 1, 2, "td", 54);
+            var _r134_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "tr", 50);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template_tr_click_0_listener() { i0.ɵɵrestoreView(_r134_1); var item_r92 = i0.ɵɵnextContext().$implicit; var ctx_r132 = i0.ɵɵnextContext(5); return ctx_r132.selectTreeSingle(item_r92); })("touchstart", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r134_1); var item_r92 = i0.ɵɵnextContext().$implicit; var ctx_r135 = i0.ɵɵnextContext(5); return ctx_r135.tapHandler($event, item_r92); })("contextmenu", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r134_1); var item_r92 = i0.ɵɵnextContext().$implicit; var ctx_r137 = i0.ɵɵnextContext(5); return ctx_r137.oncontextmenuevt($event, item_r92); })("dblclick", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template_tr_dblclick_0_listener() { i0.ɵɵrestoreView(_r134_1); var item_r92 = i0.ɵɵnextContext().$implicit; var ctx_r139 = i0.ɵɵnextContext(5); return ctx_r139.dblClickRow(item_r92); });
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_1_Template, 2, 11, "td", 51);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_2_Template, 3, 19, "td", 52);
+            i0.ɵɵtemplate(3, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_3_Template, 2, 5, "td", 53);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_4_Template, 1, 3, "td", 54);
+            i0.ɵɵtemplate(5, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_td_5_Template, 1, 2, "td", 55);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var item_r91 = i0.ɵɵnextContext().$implicit;
-            var ctx_r92 = i0.ɵɵnextContext(5);
-            i0.ɵɵclassProp("cmacs-compact-table-expandable-row", ctx_r92.inLineEdit)("cmacs-compact-table-row-active", ctx_r92.editId === item_r91[ctx_r92.fieldID])("cmacs-compact-table-header-logs", ctx_r92.logs && !!item_r91.children)("ant-table-selected-row", ctx_r92.checkboxSelect ? ctx_r92.getNode(item_r91[ctx_r92.fieldID]).selected : ctx_r92.selection.isSelected(item_r91[ctx_r92.fieldID]));
-            i0.ɵɵpropertyInterpolate1("id", "tr-", item_r91[ctx_r92.fieldID], "");
+            var item_r92 = i0.ɵɵnextContext().$implicit;
+            var ctx_r93 = i0.ɵɵnextContext(5);
+            i0.ɵɵclassProp("cmacs-compact-table-expandable-row", ctx_r93.inLineEdit)("cmacs-compact-table-row-active", ctx_r93.editId === item_r92[ctx_r93.fieldID])("cmacs-compact-table-header-logs", ctx_r93.logs && !!item_r92.children)("ant-table-selected-row", ctx_r93.checkboxSelect ? ctx_r93.getNode(item_r92[ctx_r93.fieldID]).selected : ctx_r93.selection.isSelected(item_r92[ctx_r93.fieldID]));
+            i0.ɵɵpropertyInterpolate1("id", "tr-", item_r92[ctx_r93.fieldID], "");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r92.checkboxSelect);
+            i0.ɵɵproperty("ngIf", ctx_r93.checkboxSelect);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngForOf", ctx_r92.getFields());
+            i0.ɵɵproperty("ngForOf", ctx_r93.getFields());
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r92.showRate && ctx_r92.config);
+            i0.ɵɵproperty("ngIf", ctx_r93.showRate && ctx_r93.config);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r92.extra);
+            i0.ɵɵproperty("ngIf", ctx_r93.extra);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r92.centerTable);
+            i0.ɵɵproperty("ngIf", ctx_r93.centerTable);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template, 6, 14, "tr", 48);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_ng_container_1_tr_1_Template, 6, 14, "tr", 49);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var item_r91 = ctx.$implicit;
+            var item_r92 = ctx.$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", item_r91.parent && item_r91.parent.expand || !item_r91.parent);
+            i0.ɵɵproperty("ngIf", item_r92.parent && item_r92.parent.expand || !item_r92.parent);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_ng_container_1_Template(rf, ctx) {
@@ -31140,10 +31149,10 @@
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var data_r88 = ctx.$implicit;
-            var ctx_r87 = i0.ɵɵnextContext(4);
+            var data_r89 = ctx.$implicit;
+            var ctx_r88 = i0.ɵɵnextContext(4);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngForOf", ctx_r87.mapOfExpandedData[data_r88[ctx_r87.fieldID]]);
+            i0.ɵɵproperty("ngForOf", ctx_r88.mapOfExpandedData[data_r89[ctx_r88.fieldID]]);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_Template(rf, ctx) {
@@ -31159,59 +31168,66 @@
             i0.ɵɵproperty("ngForOf", _r0.data);
         }
     }
-    function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_4_Template(rf, ctx) {
+    function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_4_i_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r155_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 74);
-            i0.ɵɵelementStart(1, "i", 15);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_4_Template_i_click_1_listener($event) { i0.ɵɵrestoreView(_r155_1); var i_r143 = i0.ɵɵnextContext().index; var ctx_r153 = i0.ɵɵnextContext(4); return ctx_r153.addRow(i_r143, $event); });
+            var _r157_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "i", 16);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_4_i_1_Template_i_click_0_listener($event) { i0.ɵɵrestoreView(_r157_1); var i_r144 = i0.ɵɵnextContext(2).index; var ctx_r155 = i0.ɵɵnextContext(4); return ctx_r155.addRow(i_r144, $event); });
             i0.ɵɵelementEnd();
-            i0.ɵɵelementEnd();
-        }
-        if (rf & 2) {
-            var ctx_r145 = i0.ɵɵnextContext(5);
-            i0.ɵɵstyleProp("max-width", "40px")("min-width", "40px");
-            i0.ɵɵproperty("nzLeft", ctx_r145.getStickyWidth("smartTable"));
         }
     }
-    function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_5_Template(rf, ctx) {
+    function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_4_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "td", 75);
-            i0.ɵɵelement(1, "i", 76);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_4_i_1_Template, 1, 0, "i", 76);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
             var ctx_r146 = i0.ɵɵnextContext(5);
             i0.ɵɵstyleProp("max-width", "40px")("min-width", "40px");
-            i0.ɵɵproperty("nzLeft", ctx_r146.getStickyWidth("draggable"));
+            i0.ɵɵproperty("nzLeft", ctx_r146.getStickyWidth("smartTable"));
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r146.hideButtons);
+        }
+    }
+    function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_5_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "td", 77);
+            i0.ɵɵelement(1, "i", 78);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r147 = i0.ɵɵnextContext(5);
+            i0.ɵɵstyleProp("max-width", "40px")("min-width", "40px");
+            i0.ɵɵproperty("nzLeft", ctx_r147.getStickyWidth("draggable"));
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_6_label_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r158_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "label", 78);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_6_label_1_Template_label_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r158_1); var data_r142 = i0.ɵɵnextContext(2).$implicit; var ctx_r157 = i0.ɵɵnextContext(4); return ctx_r157.checkboxCache[ctx_r157.getIndex(data_r142[ctx_r157.config.fieldId])].selected = $event; })("checkedChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_6_label_1_Template_label_checkedChange_0_listener($event) { i0.ɵɵrestoreView(_r158_1); var data_r142 = i0.ɵɵnextContext(2).$implicit; var ctx_r160 = i0.ɵɵnextContext(4); return ctx_r160.onCheckboxChange($event, data_r142); });
+            var _r160_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "label", 80);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_6_label_1_Template_label_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r160_1); var data_r143 = i0.ɵɵnextContext(2).$implicit; var ctx_r159 = i0.ɵɵnextContext(4); return ctx_r159.checkboxCache[ctx_r159.getIndex(data_r143[ctx_r159.config.fieldId])].selected = $event; })("checkedChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_6_label_1_Template_label_checkedChange_0_listener($event) { i0.ɵɵrestoreView(_r160_1); var data_r143 = i0.ɵɵnextContext(2).$implicit; var ctx_r162 = i0.ɵɵnextContext(4); return ctx_r162.onCheckboxChange($event, data_r143); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var data_r142 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r156 = i0.ɵɵnextContext(4);
-            i0.ɵɵproperty("ngModel", ctx_r156.checkboxCache[ctx_r156.getIndex(data_r142[ctx_r156.config.fieldId])].selected);
+            var data_r143 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r158 = i0.ɵɵnextContext(4);
+            i0.ɵɵproperty("ngModel", ctx_r158.checkboxCache[ctx_r158.getIndex(data_r143[ctx_r158.config.fieldId])].selected);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_6_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "td", 55);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_6_label_1_Template, 1, 1, "label", 77);
+            i0.ɵɵelementStart(0, "td", 56);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_6_label_1_Template, 1, 1, "label", 79);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var data_r142 = i0.ɵɵnextContext().$implicit;
-            var ctx_r147 = i0.ɵɵnextContext(4);
-            i0.ɵɵclassProp("cmacs-compact-table-fst-td", !ctx_r147.draggable);
-            i0.ɵɵproperty("nzLeft", ctx_r147.getStickyWidth("checkboxSelect"));
+            var data_r143 = i0.ɵɵnextContext().$implicit;
+            var ctx_r148 = i0.ɵɵnextContext(4);
+            i0.ɵɵclassProp("cmacs-compact-table-fst-td", !ctx_r148.draggable);
+            i0.ɵɵproperty("nzLeft", ctx_r148.getStickyWidth("checkboxSelect"));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", data_r142[ctx_r147.config.fieldId] && ctx_r147.checkboxCache[ctx_r147.getIndex(data_r142[ctx_r147.config.fieldId])]);
+            i0.ɵɵproperty("ngIf", data_r143[ctx_r148.config.fieldId] && ctx_r148.checkboxCache[ctx_r148.getIndex(data_r143[ctx_r148.config.fieldId])]);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_1_ng_container_1_Template(rf, ctx) {
@@ -31222,21 +31238,21 @@
     var _c11 = function (a0, a1, a2, a3) { return { field: a0, data: a1, i: a2, ci: a3 }; };
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 81);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_1_ng_container_1_Template, 1, 0, "ng-container", 59);
+            i0.ɵɵelementStart(0, "div", 83);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_1_ng_container_1_Template, 1, 0, "ng-container", 60);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r169 = i0.ɵɵnextContext();
-            var field_r164 = ctx_r169.$implicit;
-            var j_r165 = ctx_r169.index;
-            var ctx_r170 = i0.ɵɵnextContext();
-            var data_r142 = ctx_r170.$implicit;
-            var i_r143 = ctx_r170.index;
+            var ctx_r171 = i0.ɵɵnextContext();
+            var field_r166 = ctx_r171.$implicit;
+            var j_r167 = ctx_r171.index;
+            var ctx_r172 = i0.ɵɵnextContext();
+            var data_r143 = ctx_r172.$implicit;
+            var i_r144 = ctx_r172.index;
             i0.ɵɵnextContext(4);
             var _r6 = i0.ɵɵreference(9);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", _r6)("ngTemplateOutletContext", i0.ɵɵpureFunction4(2, _c11, field_r164, data_r142, i_r143, j_r165));
+            i0.ɵɵproperty("ngTemplateOutlet", _r6)("ngTemplateOutletContext", i0.ɵɵpureFunction4(2, _c11, field_r166, data_r143, i_r144, j_r167));
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_2_ng_container_1_Template(rf, ctx) {
@@ -31246,147 +31262,147 @@
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 81);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_2_ng_container_1_Template, 1, 0, "ng-container", 59);
+            i0.ɵɵelementStart(0, "div", 83);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_2_ng_container_1_Template, 1, 0, "ng-container", 60);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var field_r164 = i0.ɵɵnextContext().$implicit;
-            var ctx_r173 = i0.ɵɵnextContext();
-            var data_r142 = ctx_r173.$implicit;
-            var i_r143 = ctx_r173.index;
+            var field_r166 = i0.ɵɵnextContext().$implicit;
+            var ctx_r175 = i0.ɵɵnextContext();
+            var data_r143 = ctx_r175.$implicit;
+            var i_r144 = ctx_r175.index;
             i0.ɵɵnextContext(4);
             var _r4 = i0.ɵɵreference(7);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", _r4)("ngTemplateOutletContext", i0.ɵɵpureFunction3(2, _c10, field_r164, data_r142, i_r143));
+            i0.ɵɵproperty("ngTemplateOutlet", _r4)("ngTemplateOutletContext", i0.ɵɵpureFunction3(2, _c10, field_r166, data_r143, i_r144));
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "td", 79);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_1_Template, 2, 7, "div", 80);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_2_Template, 2, 6, "div", 80);
+            i0.ɵɵelementStart(0, "td", 81);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_1_Template, 2, 7, "div", 82);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_div_2_Template, 2, 6, "div", 82);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var field_r164 = ctx.$implicit;
-            var j_r165 = ctx.index;
-            var data_r142 = i0.ɵɵnextContext().$implicit;
-            var ctx_r148 = i0.ɵɵnextContext(4);
-            i0.ɵɵstyleProp("min-width", field_r164.width);
-            i0.ɵɵclassProp("cmacs-editable-column", field_r164.editable)("cmacs-compact-table-fst-td", !ctx_r148.draggable && !ctx_r148.checkboxSelect && !j_r165);
-            i0.ɵɵproperty("ngClass", ctx_r148.getCustomClass(field_r164))("nzLeft", field_r164.left ? field_r164.left : false)("nzRight", field_r164.right ? field_r164.right : false);
+            var field_r166 = ctx.$implicit;
+            var j_r167 = ctx.index;
+            var data_r143 = i0.ɵɵnextContext().$implicit;
+            var ctx_r149 = i0.ɵɵnextContext(4);
+            i0.ɵɵstyleProp("min-width", field_r166.width);
+            i0.ɵɵclassProp("cmacs-editable-column", field_r166.editable)("cmacs-compact-table-fst-td", !ctx_r149.draggable && !ctx_r149.checkboxSelect && !j_r167);
+            i0.ɵɵproperty("ngClass", ctx_r149.getCustomClass(field_r166))("nzLeft", field_r166.left ? field_r166.left : false)("nzRight", field_r166.right ? field_r166.right : false);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r148.showViewModeTplTree(field_r164, data_r142));
+            i0.ɵɵproperty("ngIf", ctx_r149.showViewModeTplTree(field_r166, data_r143));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r148.showEditTplTree(data_r142, field_r164));
+            i0.ɵɵproperty("ngIf", ctx_r149.showEditTplTree(data_r143, field_r166));
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_8_Template(rf, ctx) {
         if (rf & 1) {
-            var _r177_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 82);
-            i0.ɵɵelementStart(1, "nz-rate", 83);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_8_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r177_1); var data_r142 = i0.ɵɵnextContext().$implicit; var ctx_r175 = i0.ɵɵnextContext(4); return ctx_r175.onRateChange($event, data_r142); })("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_8_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r177_1); var ctx_r178 = i0.ɵɵnextContext(5); return ctx_r178.onRateClick($event); });
+            var _r179_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "td", 84);
+            i0.ɵɵelementStart(1, "nz-rate", 85);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_8_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r179_1); var data_r143 = i0.ɵɵnextContext().$implicit; var ctx_r177 = i0.ɵɵnextContext(4); return ctx_r177.onRateChange($event, data_r143); })("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_8_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r179_1); var ctx_r180 = i0.ɵɵnextContext(5); return ctx_r180.onRateClick($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var data_r142 = i0.ɵɵnextContext().$implicit;
-            var ctx_r149 = i0.ɵɵnextContext(4);
+            var data_r143 = i0.ɵɵnextContext().$implicit;
+            var ctx_r150 = i0.ɵɵnextContext(4);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngModel", data_r142[ctx_r149.config.fieldRate])("nzCount", ctx_r149.rateCount);
+            i0.ɵɵproperty("ngModel", data_r143[ctx_r150.config.fieldRate])("nzCount", ctx_r150.rateCount);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_9_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "td", 62);
+            i0.ɵɵelement(0, "td", 63);
         }
         if (rf & 2) {
-            var ctx_r150 = i0.ɵɵnextContext(5);
-            i0.ɵɵproperty("nzRight", ctx_r150.getStickyWidthRight("extra"));
+            var ctx_r151 = i0.ɵɵnextContext(5);
+            i0.ɵɵproperty("nzRight", ctx_r151.getStickyWidthRight("extra"));
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_10_i_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r183_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "i", 86);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_10_i_1_Template_i_click_0_listener($event) { i0.ɵɵrestoreView(_r183_1); var i_r143 = i0.ɵɵnextContext(2).index; var ctx_r181 = i0.ɵɵnextContext(4); return ctx_r181.deleteRow(i_r143, $event); });
+            var _r185_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "i", 88);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_10_i_1_Template_i_click_0_listener($event) { i0.ɵɵrestoreView(_r185_1); var i_r144 = i0.ɵɵnextContext(2).index; var ctx_r183 = i0.ɵɵnextContext(4); return ctx_r183.deleteRow(i_r144, $event); });
             i0.ɵɵelementEnd();
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_10_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "td", 84);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_10_i_1_Template, 1, 0, "i", 85);
+            i0.ɵɵelementStart(0, "td", 86);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_10_i_1_Template, 1, 0, "i", 87);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var data_r142 = i0.ɵɵnextContext().$implicit;
-            var ctx_r151 = i0.ɵɵnextContext(4);
+            var data_r143 = i0.ɵɵnextContext().$implicit;
+            var ctx_r152 = i0.ɵɵnextContext(4);
             i0.ɵɵstyleProp("max-width", "40px")("min-width", "40px");
-            i0.ɵɵproperty("nzRight", ctx_r151.getStickyWidthRight("smartTable"));
+            i0.ɵɵproperty("nzRight", ctx_r152.getStickyWidthRight("smartTable"));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", data_r142.deleteEnabled === undefined || data_r142.deleteEnabled);
+            i0.ɵɵproperty("ngIf", (data_r143.deleteEnabled === undefined || data_r143.deleteEnabled) && !ctx_r152.hideButtons);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_11_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "td", 63);
+            i0.ɵɵelement(0, "td", 64);
         }
         if (rf & 2) {
-            var ctx_r152 = i0.ɵɵnextContext(5);
-            i0.ɵɵclassProp("cmacs-compact-table-logs-td", ctx_r152.logs);
+            var ctx_r153 = i0.ɵɵnextContext(5);
+            i0.ɵɵclassProp("cmacs-compact-table-logs-td", ctx_r153.logs);
         }
     }
     var _c12 = function (a0, a1) { return { dropdown: a0, data: a1 }; };
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_Template(rf, ctx) {
         if (rf & 1) {
-            var _r186_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "tr", 65);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_Template_tr_click_0_listener($event) { i0.ɵɵrestoreView(_r186_1); var data_r142 = ctx.$implicit; var ctx_r185 = i0.ɵɵnextContext(4); return ctx_r185.clickRow($event, data_r142); })("touchstart", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r186_1); var data_r142 = ctx.$implicit; var ctx_r187 = i0.ɵɵnextContext(4); return ctx_r187.tapHandler($event, data_r142); })("contextmenu", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r186_1); var _r144 = i0.ɵɵreference(2); var ctx_r188 = i0.ɵɵnextContext(4); return ctx_r188.contextMenu($event, _r144); });
-            i0.ɵɵelementStart(1, "cmacs-dropdown-menu", null, 66);
-            i0.ɵɵelementContainer(3, 34);
+            var _r188_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "tr", 66);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_Template_tr_click_0_listener($event) { i0.ɵɵrestoreView(_r188_1); var data_r143 = ctx.$implicit; var ctx_r187 = i0.ɵɵnextContext(4); return ctx_r187.clickRow($event, data_r143); })("touchstart", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r188_1); var data_r143 = ctx.$implicit; var ctx_r189 = i0.ɵɵnextContext(4); return ctx_r189.tapHandler($event, data_r143); })("contextmenu", function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r188_1); var _r145 = i0.ɵɵreference(2); var ctx_r190 = i0.ɵɵnextContext(4); return ctx_r190.contextMenu($event, _r145); });
+            i0.ɵɵelementStart(1, "cmacs-dropdown-menu", null, 67);
+            i0.ɵɵelementContainer(3, 35);
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_4_Template, 2, 5, "td", 67);
-            i0.ɵɵtemplate(5, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_5_Template, 2, 5, "td", 68);
-            i0.ɵɵtemplate(6, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_6_Template, 2, 4, "td", 69);
-            i0.ɵɵtemplate(7, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_Template, 3, 11, "td", 70);
-            i0.ɵɵtemplate(8, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_8_Template, 2, 2, "td", 71);
-            i0.ɵɵtemplate(9, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_9_Template, 1, 1, "td", 72);
-            i0.ɵɵtemplate(10, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_10_Template, 2, 6, "td", 73);
-            i0.ɵɵtemplate(11, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_11_Template, 1, 2, "td", 54);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_4_Template, 2, 6, "td", 68);
+            i0.ɵɵtemplate(5, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_5_Template, 2, 5, "td", 69);
+            i0.ɵɵtemplate(6, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_6_Template, 2, 4, "td", 70);
+            i0.ɵɵtemplate(7, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_7_Template, 3, 11, "td", 71);
+            i0.ɵɵtemplate(8, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_8_Template, 2, 2, "td", 72);
+            i0.ɵɵtemplate(9, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_9_Template, 1, 1, "td", 73);
+            i0.ɵɵtemplate(10, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_10_Template, 2, 6, "td", 74);
+            i0.ɵɵtemplate(11, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_td_11_Template, 1, 2, "td", 55);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var data_r142 = ctx.$implicit;
-            var ctx_r141 = i0.ɵɵnextContext(4);
-            i0.ɵɵclassProp("cmacs-compact-table-row-active", ctx_r141.editId === data_r142[ctx_r141.config.fieldId])("ant-table-selected-row", ctx_r141.isRowSelected(data_r142))("cmacs-compact-table-editable-row", ctx_r141.inLineEdit)("cmacs-compact-table-smart-table-row", ctx_r141.smartTable && ctx_r141.inLineEdit);
-            i0.ɵɵpropertyInterpolate1("id", "tr-", data_r142[ctx_r141.config.fieldId], "");
-            i0.ɵɵproperty("cdkDragDisabled", !ctx_r141.draggable);
+            var data_r143 = ctx.$implicit;
+            var ctx_r142 = i0.ɵɵnextContext(4);
+            i0.ɵɵclassProp("cmacs-compact-table-row-active", ctx_r142.editId === data_r143[ctx_r142.config.fieldId])("ant-table-selected-row", ctx_r142.isRowSelected(data_r143))("cmacs-compact-table-editable-row", ctx_r142.inLineEdit)("cmacs-compact-table-smart-table-row", ctx_r142.smartTable && ctx_r142.inLineEdit);
+            i0.ɵɵpropertyInterpolate1("id", "tr-", data_r143[ctx_r142.config.fieldId], "");
+            i0.ɵɵproperty("cdkDragDisabled", !ctx_r142.draggable);
             i0.ɵɵadvance(3);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r141.contextmenu)("ngTemplateOutletContext", i0.ɵɵpureFunction2(20, _c12, ctx_r141.dropdown, data_r142));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r142.contextmenu)("ngTemplateOutletContext", i0.ɵɵpureFunction2(20, _c12, ctx_r142.dropdown, data_r143));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r141.smartTable && ctx_r141.inLineEdit);
+            i0.ɵɵproperty("ngIf", ctx_r142.smartTable && ctx_r142.inLineEdit);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r141.draggable);
+            i0.ɵɵproperty("ngIf", ctx_r142.draggable);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r141.checkboxSelect && ctx_r141.config);
+            i0.ɵɵproperty("ngIf", ctx_r142.checkboxSelect && ctx_r142.config);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngForOf", ctx_r141.getFields());
+            i0.ɵɵproperty("ngForOf", ctx_r142.getFields());
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r141.showRate && ctx_r141.config);
+            i0.ɵɵproperty("ngIf", ctx_r142.showRate && ctx_r142.config);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r141.extra);
+            i0.ɵɵproperty("ngIf", ctx_r142.extra);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r141.smartTable && ctx_r141.inLineEdit);
+            i0.ɵɵproperty("ngIf", ctx_r142.smartTable && ctx_r142.inLineEdit);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r141.centerTable);
+            i0.ɵɵproperty("ngIf", ctx_r142.centerTable);
         }
     }
     function CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵtemplate(0, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_Template, 12, 23, "tr", 64);
+            i0.ɵɵtemplate(0, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_tr_0_Template, 12, 23, "tr", 65);
         }
         if (rf & 2) {
             i0.ɵɵnextContext(3);
@@ -31397,22 +31413,22 @@
     function CmacsCompactTableComponent_tbody_4_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_Template, 2, 1, "ng-container", 19);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_Template, 1, 1, "ng-template", null, 47, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_container_1_Template, 2, 1, "ng-container", 20);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_4_ng_container_1_ng_template_2_Template, 1, 1, "ng-template", null, 48, i0.ɵɵtemplateRefExtractor);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var _r85 = i0.ɵɵreference(3);
-            var ctx_r83 = i0.ɵɵnextContext(2);
+            var _r86 = i0.ɵɵreference(3);
+            var ctx_r84 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r83.expandable)("ngIfElse", _r85);
+            i0.ɵɵproperty("ngIf", ctx_r84.expandable)("ngIfElse", _r86);
         }
     }
     function CmacsCompactTableComponent_tbody_4_Template(rf, ctx) {
         if (rf & 1) {
-            var _r190_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "tbody", 46);
-            i0.ɵɵlistener("cdkDropListDropped", function CmacsCompactTableComponent_tbody_4_Template_tbody_cdkDropListDropped_0_listener($event) { i0.ɵɵrestoreView(_r190_1); var ctx_r189 = i0.ɵɵnextContext(); return ctx_r189.drop($event); });
+            var _r192_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "tbody", 47);
+            i0.ɵɵlistener("cdkDropListDropped", function CmacsCompactTableComponent_tbody_4_Template_tbody_cdkDropListDropped_0_listener($event) { i0.ɵɵrestoreView(_r192_1); var ctx_r191 = i0.ɵɵnextContext(); return ctx_r191.drop($event); });
             i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_4_ng_container_1_Template, 4, 2, "ng-container", 3);
             i0.ɵɵelementEnd();
         }
@@ -31424,21 +31440,21 @@
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r207_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 55);
-            i0.ɵɵelementStart(1, "label", 18);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_1_Template_label_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r207_1); var item_r199 = i0.ɵɵnextContext(2).$implicit; var ctx_r205 = i0.ɵɵnextContext(5); return ctx_r205.getNode(item_r199[ctx_r205.fieldID]).selected = $event; })("checkedChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_1_Template_label_checkedChange_1_listener($event) { i0.ɵɵrestoreView(_r207_1); var item_r199 = i0.ɵɵnextContext(2).$implicit; var data_r192 = i0.ɵɵnextContext(3).$implicit; var ctx_r208 = i0.ɵɵnextContext(2); return ctx_r208.onCheckboxTreeChange($event, item_r199, ctx_r208.mapOfExpandedData[data_r192[ctx_r208.fieldID]]); });
+            var _r209_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "td", 56);
+            i0.ɵɵelementStart(1, "label", 19);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_1_Template_label_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r209_1); var item_r201 = i0.ɵɵnextContext(2).$implicit; var ctx_r207 = i0.ɵɵnextContext(5); return ctx_r207.getNode(item_r201[ctx_r207.fieldID]).selected = $event; })("checkedChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_1_Template_label_checkedChange_1_listener($event) { i0.ɵɵrestoreView(_r209_1); var item_r201 = i0.ɵɵnextContext(2).$implicit; var data_r194 = i0.ɵɵnextContext(3).$implicit; var ctx_r210 = i0.ɵɵnextContext(2); return ctx_r210.onCheckboxTreeChange($event, item_r201, ctx_r210.mapOfExpandedData[data_r194[ctx_r210.fieldID]]); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var item_r199 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r201 = i0.ɵɵnextContext(5);
+            var item_r201 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r203 = i0.ɵɵnextContext(5);
             i0.ɵɵstyleProp("min-width", "30px")("max-width", "30px")("width", "30px");
-            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r201.logs && !!item_r199.children);
-            i0.ɵɵproperty("nzLeft", ctx_r201.getStickyWidth("checkboxSelect"));
+            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r203.logs && !!item_r201.children);
+            i0.ɵɵproperty("nzLeft", ctx_r203.getStickyWidth("checkboxSelect"));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngModel", ctx_r201.getNode(item_r199[ctx_r201.fieldID]).selected)("indeterminate", ctx_r201.getNode(item_r199[ctx_r201.fieldID]).selected === -1);
+            i0.ɵɵproperty("ngModel", ctx_r203.getNode(item_r201[ctx_r203.fieldID]).selected)("indeterminate", ctx_r203.getNode(item_r201[ctx_r203.fieldID]).selected === -1);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_1_ng_container_1_Template(rf, ctx) {
@@ -31449,21 +31465,21 @@
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div");
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_1_ng_container_1_Template, 1, 0, "ng-container", 59);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_1_ng_container_1_Template, 1, 0, "ng-container", 60);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r217 = i0.ɵɵnextContext();
-            var field_r212 = ctx_r217.$implicit;
-            var i_r213 = ctx_r217.index;
-            var item_r199 = i0.ɵɵnextContext(2).$implicit;
-            var di_r193 = i0.ɵɵnextContext(3).i;
-            var ctx_r214 = i0.ɵɵnextContext(2);
+            var ctx_r219 = i0.ɵɵnextContext();
+            var field_r214 = ctx_r219.$implicit;
+            var i_r215 = ctx_r219.index;
+            var item_r201 = i0.ɵɵnextContext(2).$implicit;
+            var di_r195 = i0.ɵɵnextContext(3).i;
+            var ctx_r216 = i0.ɵɵnextContext(2);
             var _r6 = i0.ɵɵreference(9);
-            i0.ɵɵstyleProp("display", ctx_r214.isNumber(field_r212) || ctx_r214.isTime(field_r212) || ctx_r214.isDate(field_r212) || ctx_r214.isSelect(field_r212) ? "block" : "inline-flex")("width", item_r199.children && !i_r213 ? "calc(100% - 25px)" : "100%");
-            i0.ɵɵclassProp("cmacs-compact-table-overflow-cell-container-logs", ctx_r214.expandable && ctx_r214.isString(field_r212) && !i_r213);
+            i0.ɵɵstyleProp("display", ctx_r216.isNumber(field_r214) || ctx_r216.isTime(field_r214) || ctx_r216.isDate(field_r214) || ctx_r216.isSelect(field_r214) ? "block" : "inline-flex")("width", item_r201.children && !i_r215 ? "calc(100% - 25px)" : "100%");
+            i0.ɵɵclassProp("cmacs-compact-table-overflow-cell-container-logs", ctx_r216.expandable && ctx_r216.isString(field_r214) && !i_r215);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", _r6)("ngTemplateOutletContext", i0.ɵɵpureFunction5(8, _c9, field_r212, item_r199, di_r193, item_r199, i_r213));
+            i0.ɵɵproperty("ngTemplateOutlet", _r6)("ngTemplateOutletContext", i0.ɵɵpureFunction5(8, _c9, field_r214, item_r201, di_r195, item_r201, i_r215));
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_2_ng_container_1_Template(rf, ctx) {
@@ -31474,110 +31490,110 @@
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "div");
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_2_ng_container_1_Template, 1, 0, "ng-container", 59);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_2_ng_container_1_Template, 1, 0, "ng-container", 60);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r221 = i0.ɵɵnextContext();
-            var field_r212 = ctx_r221.$implicit;
-            var i_r213 = ctx_r221.index;
-            var item_r199 = i0.ɵɵnextContext(2).$implicit;
-            var di_r193 = i0.ɵɵnextContext(3).i;
-            var ctx_r215 = i0.ɵɵnextContext(2);
+            var ctx_r223 = i0.ɵɵnextContext();
+            var field_r214 = ctx_r223.$implicit;
+            var i_r215 = ctx_r223.index;
+            var item_r201 = i0.ɵɵnextContext(2).$implicit;
+            var di_r195 = i0.ɵɵnextContext(3).i;
+            var ctx_r217 = i0.ɵɵnextContext(2);
             var _r4 = i0.ɵɵreference(7);
-            i0.ɵɵstyleProp("display", ctx_r215.isNumber(field_r212) ? "block" : "inline-flex")("width", item_r199.children && !i_r213 ? "calc(100% - 25px)" : "100%");
+            i0.ɵɵstyleProp("display", ctx_r217.isNumber(field_r214) ? "block" : "inline-flex")("width", item_r201.children && !i_r215 ? "calc(100% - 25px)" : "100%");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", _r4)("ngTemplateOutletContext", i0.ɵɵpureFunction3(6, _c10, field_r212, item_r199, di_r193));
+            i0.ɵɵproperty("ngTemplateOutlet", _r4)("ngTemplateOutletContext", i0.ɵɵpureFunction3(6, _c10, field_r214, item_r201, di_r195));
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r226_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 92);
-            i0.ɵɵlistener("nzExpandChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_Template_td_nzExpandChange_0_listener($event) { i0.ɵɵrestoreView(_r226_1); var item_r199 = i0.ɵɵnextContext(2).$implicit; return item_r199.expand = $event; })("nzExpandChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_Template_td_nzExpandChange_0_listener($event) { i0.ɵɵrestoreView(_r226_1); var item_r199 = i0.ɵɵnextContext(2).$implicit; var data_r192 = i0.ɵɵnextContext(3).$implicit; var ctx_r227 = i0.ɵɵnextContext(2); return ctx_r227.ExpandCollapse(ctx_r227.mapOfExpandedData[data_r192[ctx_r227.fieldID]], item_r199, $event); });
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_1_Template, 2, 14, "div", 57);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_2_Template, 2, 10, "div", 58);
+            var _r228_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "td", 94);
+            i0.ɵɵlistener("nzExpandChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_Template_td_nzExpandChange_0_listener($event) { i0.ɵɵrestoreView(_r228_1); var item_r201 = i0.ɵɵnextContext(2).$implicit; return item_r201.expand = $event; })("nzExpandChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_Template_td_nzExpandChange_0_listener($event) { i0.ɵɵrestoreView(_r228_1); var item_r201 = i0.ɵɵnextContext(2).$implicit; var data_r194 = i0.ɵɵnextContext(3).$implicit; var ctx_r229 = i0.ɵɵnextContext(2); return ctx_r229.ExpandCollapse(ctx_r229.mapOfExpandedData[data_r194[ctx_r229.fieldID]], item_r201, $event); });
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_1_Template, 2, 14, "div", 58);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_div_2_Template, 2, 10, "div", 59);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var field_r212 = ctx.$implicit;
-            var i_r213 = ctx.index;
-            var item_r199 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r202 = i0.ɵɵnextContext(5);
-            i0.ɵɵstyleProp("padding-left", ctx_r202.getCustomPadding(item_r199, i_r213), "px")("min-width", field_r212.width);
-            i0.ɵɵclassProp("cmacs-editable-column", field_r212.editable)("cmacs-compact-table-on-edit-expandable", ctx_r202.editId === item_r199[ctx_r202.config.fieldId] && ctx_r202.property === field_r212.property && field_r212.editable && (ctx_r202.isString(field_r212) || ctx_r202.isDate(field_r212) || ctx_r202.isTime(field_r212) || ctx_r202.isSelect(field_r212) || ctx_r202.isNumber(field_r212) && field_r212.editable))("cmacs-compact-table-logs-header-th-font", ctx_r202.logs && !!item_r199.children)("cmacs-compact-table-expandable-td", !i_r213);
-            i0.ɵɵproperty("nzShowExpand", !!item_r199.children && !i_r213)("nzExpand", item_r199.expand)("nzLeft", field_r212.left ? field_r212.left : false)("nzRight", field_r212.right ? field_r212.right : false);
+            var field_r214 = ctx.$implicit;
+            var i_r215 = ctx.index;
+            var item_r201 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r204 = i0.ɵɵnextContext(5);
+            i0.ɵɵstyleProp("padding-left", ctx_r204.getCustomPadding(item_r201, i_r215), "px")("min-width", field_r214.width);
+            i0.ɵɵclassProp("cmacs-editable-column", field_r214.editable)("cmacs-compact-table-on-edit-expandable", ctx_r204.editId === item_r201[ctx_r204.config.fieldId] && ctx_r204.property === field_r214.property && field_r214.editable && (ctx_r204.isString(field_r214) || ctx_r204.isDate(field_r214) || ctx_r204.isTime(field_r214) || ctx_r204.isSelect(field_r214) || ctx_r204.isNumber(field_r214) && field_r214.editable))("cmacs-compact-table-logs-header-th-font", ctx_r204.logs && !!item_r201.children)("cmacs-compact-table-expandable-td", !i_r215);
+            i0.ɵɵproperty("nzShowExpand", !!item_r201.children && !i_r215)("nzExpand", item_r201.expand)("nzLeft", field_r214.left ? field_r214.left : false)("nzRight", field_r214.right ? field_r214.right : false);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r202.showViewModeTpl(field_r212, item_r199));
+            i0.ɵɵproperty("ngIf", ctx_r204.showViewModeTpl(field_r214, item_r201));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r202.showEditTpl(item_r199, field_r212));
+            i0.ɵɵproperty("ngIf", ctx_r204.showEditTpl(item_r201, field_r214));
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_3_Template(rf, ctx) {
         if (rf & 1) {
-            var _r233_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 60);
-            i0.ɵɵelementStart(1, "nz-rate", 61);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_3_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r233_1); var data_r192 = i0.ɵɵnextContext(5).$implicit; var ctx_r231 = i0.ɵɵnextContext(2); return ctx_r231.onRateChange($event, data_r192); })("click", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_3_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r233_1); var ctx_r234 = i0.ɵɵnextContext(7); return ctx_r234.onRateClick($event); });
+            var _r235_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "td", 61);
+            i0.ɵɵelementStart(1, "nz-rate", 62);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_3_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r235_1); var data_r194 = i0.ɵɵnextContext(5).$implicit; var ctx_r233 = i0.ɵɵnextContext(2); return ctx_r233.onRateChange($event, data_r194); })("click", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_3_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r235_1); var ctx_r236 = i0.ɵɵnextContext(7); return ctx_r236.onRateClick($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var item_r199 = i0.ɵɵnextContext(2).$implicit;
-            var data_r192 = i0.ɵɵnextContext(3).$implicit;
-            var ctx_r203 = i0.ɵɵnextContext(2);
-            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r203.logs && item_r199.children && item_r199.children.length);
+            var item_r201 = i0.ɵɵnextContext(2).$implicit;
+            var data_r194 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r205 = i0.ɵɵnextContext(2);
+            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r205.logs && item_r201.children && item_r201.children.length);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngModel", data_r192[ctx_r203.config.fieldRate])("nzCount", ctx_r203.rateCount)("nzDisabled", !ctx_r203.inLineEdit);
+            i0.ɵɵproperty("ngModel", data_r194[ctx_r205.config.fieldRate])("nzCount", ctx_r205.rateCount)("nzDisabled", !ctx_r205.inLineEdit);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "td", 62);
+            i0.ɵɵelement(0, "td", 63);
         }
         if (rf & 2) {
-            var item_r199 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r204 = i0.ɵɵnextContext(5);
-            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r204.logs && item_r199.children && item_r199.children.length);
-            i0.ɵɵproperty("nzRight", ctx_r204.getStickyWidthRight("extra"));
+            var item_r201 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r206 = i0.ɵɵnextContext(5);
+            i0.ɵɵclassProp("cmacs-compact-table-logs-header-th-font", ctx_r206.logs && item_r201.children && item_r201.children.length);
+            i0.ɵɵproperty("nzRight", ctx_r206.getStickyWidthRight("extra"));
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r240_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "tr", 90);
-            i0.ɵɵlistener("touchstart", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r240_1); var item_r199 = i0.ɵɵnextContext().$implicit; var ctx_r238 = i0.ɵɵnextContext(5); return ctx_r238.tapHandler($event, item_r199); })("contextmenu", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r240_1); var item_r199 = i0.ɵɵnextContext().$implicit; var ctx_r241 = i0.ɵɵnextContext(5); return ctx_r241.oncontextmenuevt($event, item_r199); })("dblclick", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_Template_tr_dblclick_0_listener() { i0.ɵɵrestoreView(_r240_1); var item_r199 = i0.ɵɵnextContext().$implicit; var ctx_r243 = i0.ɵɵnextContext(5); return ctx_r243.dblClickRow(item_r199); });
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_1_Template, 2, 11, "td", 50);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_Template, 3, 18, "td", 91);
-            i0.ɵɵtemplate(3, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_3_Template, 2, 5, "td", 52);
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_4_Template, 1, 3, "td", 53);
+            var _r242_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "tr", 92);
+            i0.ɵɵlistener("touchstart", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r242_1); var item_r201 = i0.ɵɵnextContext().$implicit; var ctx_r240 = i0.ɵɵnextContext(5); return ctx_r240.tapHandler($event, item_r201); })("contextmenu", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r242_1); var item_r201 = i0.ɵɵnextContext().$implicit; var ctx_r243 = i0.ɵɵnextContext(5); return ctx_r243.oncontextmenuevt($event, item_r201); })("dblclick", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_Template_tr_dblclick_0_listener() { i0.ɵɵrestoreView(_r242_1); var item_r201 = i0.ɵɵnextContext().$implicit; var ctx_r245 = i0.ɵɵnextContext(5); return ctx_r245.dblClickRow(item_r201); });
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_1_Template, 2, 11, "td", 51);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_2_Template, 3, 18, "td", 93);
+            i0.ɵɵtemplate(3, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_3_Template, 2, 5, "td", 53);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_td_4_Template, 1, 3, "td", 54);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var item_r199 = i0.ɵɵnextContext().$implicit;
-            var ctx_r200 = i0.ɵɵnextContext(5);
-            i0.ɵɵclassProp("cmacs-compact-table-row-active", ctx_r200.editId === item_r199[ctx_r200.fieldID])("cmacs-compact-table-expandable-row", ctx_r200.inLineEdit)("cmacs-compact-table-header-logs", ctx_r200.logs && !!item_r199.children);
-            i0.ɵɵpropertyInterpolate1("id", "tr-", item_r199[ctx_r200.fieldID], "");
+            var item_r201 = i0.ɵɵnextContext().$implicit;
+            var ctx_r202 = i0.ɵɵnextContext(5);
+            i0.ɵɵclassProp("cmacs-compact-table-row-active", ctx_r202.editId === item_r201[ctx_r202.fieldID])("cmacs-compact-table-expandable-row", ctx_r202.inLineEdit)("cmacs-compact-table-header-logs", ctx_r202.logs && !!item_r201.children);
+            i0.ɵɵpropertyInterpolate1("id", "tr-", item_r201[ctx_r202.fieldID], "");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r200.checkboxSelect);
+            i0.ɵɵproperty("ngIf", ctx_r202.checkboxSelect);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngForOf", ctx_r200.getFields());
+            i0.ɵɵproperty("ngForOf", ctx_r202.getFields());
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r200.showRate && ctx_r200.config);
+            i0.ɵɵproperty("ngIf", ctx_r202.showRate && ctx_r202.config);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r200.extra);
+            i0.ɵɵproperty("ngIf", ctx_r202.extra);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_Template, 5, 11, "tr", 89);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_ng_container_1_tr_1_Template, 5, 11, "tr", 91);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var item_r199 = ctx.$implicit;
+            var item_r201 = ctx.$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", item_r199.parent && item_r199.parent.expand || !item_r199.parent);
+            i0.ɵɵproperty("ngIf", item_r201.parent && item_r201.parent.expand || !item_r201.parent);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_Template(rf, ctx) {
@@ -31587,76 +31603,83 @@
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var data_r192 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r195 = i0.ɵɵnextContext(2);
+            var data_r194 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r197 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngForOf", ctx_r195.mapOfExpandedData[data_r192[ctx_r195.fieldID]]);
+            i0.ɵɵproperty("ngForOf", ctx_r197.mapOfExpandedData[data_r194[ctx_r197.fieldID]]);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_ng_template_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementContainer(0, 34);
+            i0.ɵɵelementContainer(0, 35);
         }
         if (rf & 2) {
-            var data_r192 = i0.ɵɵnextContext(3).$implicit;
-            var ctx_r248 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r248.contextmenu)("ngTemplateOutletContext", i0.ɵɵpureFunction2(2, _c12, ctx_r248.dropdown, data_r192));
+            var data_r194 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r250 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r250.contextmenu)("ngTemplateOutletContext", i0.ɵɵpureFunction2(2, _c12, ctx_r250.dropdown, data_r194));
+        }
+    }
+    function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_3_i_1_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r262_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "i", 16);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_3_i_1_Template_i_click_0_listener($event) { i0.ɵɵrestoreView(_r262_1); var di_r195 = i0.ɵɵnextContext(4).i; var ctx_r260 = i0.ɵɵnextContext(2); return ctx_r260.addRow(di_r195, $event); });
+            i0.ɵɵelementEnd();
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_3_Template(rf, ctx) {
         if (rf & 1) {
-            var _r259_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 74);
-            i0.ɵɵelementStart(1, "i", 15);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_3_Template_i_click_1_listener($event) { i0.ɵɵrestoreView(_r259_1); var di_r193 = i0.ɵɵnextContext(3).i; var ctx_r257 = i0.ɵɵnextContext(2); return ctx_r257.addRow(di_r193, $event); });
-            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(0, "td", 75);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_3_i_1_Template, 1, 0, "i", 76);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r249 = i0.ɵɵnextContext(5);
+            var ctx_r251 = i0.ɵɵnextContext(5);
             i0.ɵɵstyleProp("max-width", "40px")("min-width", "40px");
-            i0.ɵɵclassProp("cmacs-compact-table-logs-td", ctx_r249.logs);
-            i0.ɵɵproperty("nzLeft", ctx_r249.getStickyWidth("smartTable"));
+            i0.ɵɵclassProp("cmacs-compact-table-logs-td", ctx_r251.logs);
+            i0.ɵɵproperty("nzLeft", ctx_r251.getStickyWidth("smartTable"));
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r251.hideButtons);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "td", 75);
-            i0.ɵɵelement(1, "i", 76);
+            i0.ɵɵelementStart(0, "td", 77);
+            i0.ɵɵelement(1, "i", 78);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r250 = i0.ɵɵnextContext(5);
+            var ctx_r252 = i0.ɵɵnextContext(5);
             i0.ɵɵstyleProp("max-width", "40px")("min-width", "40px");
-            i0.ɵɵproperty("nzLeft", ctx_r250.getStickyWidth("draggable"));
+            i0.ɵɵproperty("nzLeft", ctx_r252.getStickyWidth("draggable"));
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_5_label_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r262_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "label", 78);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_5_label_1_Template_label_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r262_1); var data_r192 = i0.ɵɵnextContext(4).$implicit; var ctx_r261 = i0.ɵɵnextContext(2); return ctx_r261.checkboxCache[ctx_r261.getIndex(data_r192[ctx_r261.config.fieldId])].selected = $event; })("checkedChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_5_label_1_Template_label_checkedChange_0_listener($event) { i0.ɵɵrestoreView(_r262_1); var data_r192 = i0.ɵɵnextContext(4).$implicit; var ctx_r264 = i0.ɵɵnextContext(2); return ctx_r264.onCheckboxChange($event, data_r192); });
+            var _r265_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "label", 80);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_5_label_1_Template_label_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r265_1); var data_r194 = i0.ɵɵnextContext(4).$implicit; var ctx_r264 = i0.ɵɵnextContext(2); return ctx_r264.checkboxCache[ctx_r264.getIndex(data_r194[ctx_r264.config.fieldId])].selected = $event; })("checkedChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_5_label_1_Template_label_checkedChange_0_listener($event) { i0.ɵɵrestoreView(_r265_1); var data_r194 = i0.ɵɵnextContext(4).$implicit; var ctx_r267 = i0.ɵɵnextContext(2); return ctx_r267.onCheckboxChange($event, data_r194); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var data_r192 = i0.ɵɵnextContext(4).$implicit;
-            var ctx_r260 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("ngModel", ctx_r260.checkboxCache[ctx_r260.getIndex(data_r192[ctx_r260.config.fieldId])].selected);
+            var data_r194 = i0.ɵɵnextContext(4).$implicit;
+            var ctx_r263 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("ngModel", ctx_r263.checkboxCache[ctx_r263.getIndex(data_r194[ctx_r263.config.fieldId])].selected);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_5_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "td", 55);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_5_label_1_Template, 1, 1, "label", 77);
+            i0.ɵɵelementStart(0, "td", 56);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_5_label_1_Template, 1, 1, "label", 79);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var data_r192 = i0.ɵɵnextContext(3).$implicit;
-            var ctx_r251 = i0.ɵɵnextContext(2);
-            i0.ɵɵclassProp("cmacs-compact-table-fst-td", !ctx_r251.draggable);
-            i0.ɵɵproperty("nzLeft", ctx_r251.getStickyWidth("checkboxSelect"));
+            var data_r194 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r253 = i0.ɵɵnextContext(2);
+            i0.ɵɵclassProp("cmacs-compact-table-fst-td", !ctx_r253.draggable);
+            i0.ɵɵproperty("nzLeft", ctx_r253.getStickyWidth("checkboxSelect"));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", data_r192[ctx_r251.config.fieldId] && ctx_r251.checkboxCache[ctx_r251.getIndex(data_r192[ctx_r251.config.fieldId])]);
+            i0.ɵɵproperty("ngIf", data_r194[ctx_r253.config.fieldId] && ctx_r253.checkboxCache[ctx_r253.getIndex(data_r194[ctx_r253.config.fieldId])]);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_1_ng_container_1_Template(rf, ctx) {
@@ -31666,21 +31689,21 @@
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 81);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_1_ng_container_1_Template, 1, 0, "ng-container", 59);
+            i0.ɵɵelementStart(0, "div", 83);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_1_ng_container_1_Template, 1, 0, "ng-container", 60);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r273 = i0.ɵɵnextContext();
-            var field_r268 = ctx_r273.$implicit;
-            var j_r269 = ctx_r273.index;
-            var ctx_r274 = i0.ɵɵnextContext(3);
-            var data_r192 = ctx_r274.$implicit;
-            var di_r193 = ctx_r274.i;
+            var ctx_r276 = i0.ɵɵnextContext();
+            var field_r271 = ctx_r276.$implicit;
+            var j_r272 = ctx_r276.index;
+            var ctx_r277 = i0.ɵɵnextContext(3);
+            var data_r194 = ctx_r277.$implicit;
+            var di_r195 = ctx_r277.i;
             i0.ɵɵnextContext(2);
             var _r6 = i0.ɵɵreference(9);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", _r6)("ngTemplateOutletContext", i0.ɵɵpureFunction4(2, _c11, field_r268, data_r192, di_r193, j_r269));
+            i0.ɵɵproperty("ngTemplateOutlet", _r6)("ngTemplateOutletContext", i0.ɵɵpureFunction4(2, _c11, field_r271, data_r194, di_r195, j_r272));
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_2_ng_container_1_Template(rf, ctx) {
@@ -31690,140 +31713,140 @@
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 81);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_2_ng_container_1_Template, 1, 0, "ng-container", 59);
+            i0.ɵɵelementStart(0, "div", 83);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_2_ng_container_1_Template, 1, 0, "ng-container", 60);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var field_r268 = i0.ɵɵnextContext().$implicit;
-            var ctx_r277 = i0.ɵɵnextContext(3);
-            var data_r192 = ctx_r277.$implicit;
-            var di_r193 = ctx_r277.i;
+            var field_r271 = i0.ɵɵnextContext().$implicit;
+            var ctx_r280 = i0.ɵɵnextContext(3);
+            var data_r194 = ctx_r280.$implicit;
+            var di_r195 = ctx_r280.i;
             i0.ɵɵnextContext(2);
             var _r4 = i0.ɵɵreference(7);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", _r4)("ngTemplateOutletContext", i0.ɵɵpureFunction3(2, _c10, field_r268, data_r192, di_r193));
+            i0.ɵɵproperty("ngTemplateOutlet", _r4)("ngTemplateOutletContext", i0.ɵɵpureFunction3(2, _c10, field_r271, data_r194, di_r195));
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "td", 97);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_1_Template, 2, 7, "div", 80);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_2_Template, 2, 6, "div", 80);
+            i0.ɵɵelementStart(0, "td", 99);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_1_Template, 2, 7, "div", 82);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_div_2_Template, 2, 6, "div", 82);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var field_r268 = ctx.$implicit;
-            var j_r269 = ctx.index;
-            var data_r192 = i0.ɵɵnextContext(3).$implicit;
-            var ctx_r252 = i0.ɵɵnextContext(2);
-            i0.ɵɵstyleProp("min-width", field_r268.width);
-            i0.ɵɵclassProp("cmacs-editable-column", field_r268.editable)("cmacs-compact-table-fst-td", !ctx_r252.draggable && !ctx_r252.checkboxSelect && !j_r269);
-            i0.ɵɵproperty("nzLeft", field_r268.left ? field_r268.left : false)("nzRight", field_r268.right ? field_r268.right : false);
+            var field_r271 = ctx.$implicit;
+            var j_r272 = ctx.index;
+            var data_r194 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r254 = i0.ɵɵnextContext(2);
+            i0.ɵɵstyleProp("min-width", field_r271.width);
+            i0.ɵɵclassProp("cmacs-editable-column", field_r271.editable)("cmacs-compact-table-fst-td", !ctx_r254.draggable && !ctx_r254.checkboxSelect && !j_r272);
+            i0.ɵɵproperty("nzLeft", field_r271.left ? field_r271.left : false)("nzRight", field_r271.right ? field_r271.right : false);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r252.showViewModeTplTree(field_r268, data_r192));
+            i0.ɵɵproperty("ngIf", ctx_r254.showViewModeTplTree(field_r271, data_r194));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r252.showEditTplTree(data_r192, field_r268));
+            i0.ɵɵproperty("ngIf", ctx_r254.showEditTplTree(data_r194, field_r271));
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_7_Template(rf, ctx) {
         if (rf & 1) {
-            var _r281_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "td", 82);
-            i0.ɵɵelementStart(1, "nz-rate", 83);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_7_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r281_1); var data_r192 = i0.ɵɵnextContext(3).$implicit; var ctx_r279 = i0.ɵɵnextContext(2); return ctx_r279.onRateChange($event, data_r192); })("click", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_7_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r281_1); var ctx_r282 = i0.ɵɵnextContext(5); return ctx_r282.onRateClick($event); });
+            var _r284_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "td", 84);
+            i0.ɵɵelementStart(1, "nz-rate", 85);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_7_Template_nz_rate_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r284_1); var data_r194 = i0.ɵɵnextContext(3).$implicit; var ctx_r282 = i0.ɵɵnextContext(2); return ctx_r282.onRateChange($event, data_r194); })("click", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_7_Template_nz_rate_click_1_listener($event) { i0.ɵɵrestoreView(_r284_1); var ctx_r285 = i0.ɵɵnextContext(5); return ctx_r285.onRateClick($event); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var data_r192 = i0.ɵɵnextContext(3).$implicit;
-            var ctx_r253 = i0.ɵɵnextContext(2);
+            var data_r194 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r255 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngModel", data_r192[ctx_r253.config.fieldRate])("nzCount", ctx_r253.rateCount);
+            i0.ɵɵproperty("ngModel", data_r194[ctx_r255.config.fieldRate])("nzCount", ctx_r255.rateCount);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_8_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "td", 62);
+            i0.ɵɵelement(0, "td", 63);
         }
         if (rf & 2) {
-            var ctx_r254 = i0.ɵɵnextContext(5);
-            i0.ɵɵproperty("nzRight", ctx_r254.getStickyWidthRight("extra"));
+            var ctx_r256 = i0.ɵɵnextContext(5);
+            i0.ɵɵproperty("nzRight", ctx_r256.getStickyWidthRight("extra"));
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_9_i_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r287_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "i", 86);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_9_i_1_Template_i_click_0_listener($event) { i0.ɵɵrestoreView(_r287_1); var di_r193 = i0.ɵɵnextContext(4).i; var ctx_r285 = i0.ɵɵnextContext(2); return ctx_r285.deleteRow(di_r193, $event); });
+            var _r290_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "i", 88);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_9_i_1_Template_i_click_0_listener($event) { i0.ɵɵrestoreView(_r290_1); var di_r195 = i0.ɵɵnextContext(4).i; var ctx_r288 = i0.ɵɵnextContext(2); return ctx_r288.deleteRow(di_r195, $event); });
             i0.ɵɵelementEnd();
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_9_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "td", 84);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_9_i_1_Template, 1, 0, "i", 85);
+            i0.ɵɵelementStart(0, "td", 86);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_9_i_1_Template, 1, 0, "i", 87);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var data_r192 = i0.ɵɵnextContext(3).$implicit;
-            var ctx_r255 = i0.ɵɵnextContext(2);
+            var data_r194 = i0.ɵɵnextContext(3).$implicit;
+            var ctx_r257 = i0.ɵɵnextContext(2);
             i0.ɵɵstyleProp("max-width", "40px")("min-width", "40px");
-            i0.ɵɵclassProp("cmacs-compact-table-logs-td", ctx_r255.logs);
-            i0.ɵɵproperty("nzRight", ctx_r255.getStickyWidthRight("smartTable"));
+            i0.ɵɵclassProp("cmacs-compact-table-logs-td", ctx_r257.logs);
+            i0.ɵɵproperty("nzRight", ctx_r257.getStickyWidthRight("smartTable"));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", data_r192.deleteEnabled === undefined || data_r192.deleteEnabled);
+            i0.ɵɵproperty("ngIf", (data_r194.deleteEnabled === undefined || data_r194.deleteEnabled) && !ctx_r257.hideButtons);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r291_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "tr", 65);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_Template_tr_click_0_listener($event) { i0.ɵɵrestoreView(_r291_1); var data_r192 = i0.ɵɵnextContext(2).$implicit; var ctx_r289 = i0.ɵɵnextContext(2); return ctx_r289.clickRow($event, data_r192); })("touchstart", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r291_1); var data_r192 = i0.ɵɵnextContext(2).$implicit; var ctx_r292 = i0.ɵɵnextContext(2); return ctx_r292.tapHandler($event, data_r192); })("contextmenu", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r291_1); var _r247 = i0.ɵɵreference(2); var data_r192 = i0.ɵɵnextContext(2).$implicit; var ctx_r294 = i0.ɵɵnextContext(2); return ctx_r294.contextMenu($event, _r247, data_r192); });
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_ng_template_1_Template, 1, 5, "ng-template", null, 93, i0.ɵɵtemplateRefExtractor);
-            i0.ɵɵtemplate(3, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_3_Template, 2, 7, "td", 94);
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_4_Template, 2, 5, "td", 68);
-            i0.ɵɵtemplate(5, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_5_Template, 2, 4, "td", 69);
-            i0.ɵɵtemplate(6, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_Template, 3, 10, "td", 95);
-            i0.ɵɵtemplate(7, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_7_Template, 2, 2, "td", 71);
-            i0.ɵɵtemplate(8, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_8_Template, 1, 1, "td", 72);
-            i0.ɵɵtemplate(9, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_9_Template, 2, 8, "td", 96);
+            var _r294_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "tr", 66);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_Template_tr_click_0_listener($event) { i0.ɵɵrestoreView(_r294_1); var data_r194 = i0.ɵɵnextContext(2).$implicit; var ctx_r292 = i0.ɵɵnextContext(2); return ctx_r292.clickRow($event, data_r194); })("touchstart", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_Template_tr_touchstart_0_listener($event) { i0.ɵɵrestoreView(_r294_1); var data_r194 = i0.ɵɵnextContext(2).$implicit; var ctx_r295 = i0.ɵɵnextContext(2); return ctx_r295.tapHandler($event, data_r194); })("contextmenu", function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_Template_tr_contextmenu_0_listener($event) { i0.ɵɵrestoreView(_r294_1); var _r249 = i0.ɵɵreference(2); var data_r194 = i0.ɵɵnextContext(2).$implicit; var ctx_r297 = i0.ɵɵnextContext(2); return ctx_r297.contextMenu($event, _r249, data_r194); });
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_ng_template_1_Template, 1, 5, "ng-template", null, 95, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵtemplate(3, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_3_Template, 2, 8, "td", 96);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_4_Template, 2, 5, "td", 69);
+            i0.ɵɵtemplate(5, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_5_Template, 2, 4, "td", 70);
+            i0.ɵɵtemplate(6, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_6_Template, 3, 10, "td", 97);
+            i0.ɵɵtemplate(7, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_7_Template, 2, 2, "td", 72);
+            i0.ɵɵtemplate(8, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_8_Template, 1, 1, "td", 73);
+            i0.ɵɵtemplate(9, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_td_9_Template, 2, 8, "td", 98);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var data_r192 = i0.ɵɵnextContext(2).$implicit;
-            var ctx_r197 = i0.ɵɵnextContext(2);
-            i0.ɵɵclassProp("cmacs-compact-table-row-active", ctx_r197.editId === data_r192[ctx_r197.config.fieldId])("ant-table-selected-row", ctx_r197.isRowSelected(data_r192))("cmacs-compact-table-editable-row", ctx_r197.inLineEdit)("cmacs-compact-table-smart-table-row", ctx_r197.smartTable && ctx_r197.inLineEdit);
-            i0.ɵɵpropertyInterpolate1("id", "tr-", data_r192[ctx_r197.config.fieldId], "");
-            i0.ɵɵproperty("cdkDragDisabled", !ctx_r197.draggable);
+            var data_r194 = i0.ɵɵnextContext(2).$implicit;
+            var ctx_r199 = i0.ɵɵnextContext(2);
+            i0.ɵɵclassProp("cmacs-compact-table-row-active", ctx_r199.editId === data_r194[ctx_r199.config.fieldId])("ant-table-selected-row", ctx_r199.isRowSelected(data_r194))("cmacs-compact-table-editable-row", ctx_r199.inLineEdit)("cmacs-compact-table-smart-table-row", ctx_r199.smartTable && ctx_r199.inLineEdit);
+            i0.ɵɵpropertyInterpolate1("id", "tr-", data_r194[ctx_r199.config.fieldId], "");
+            i0.ɵɵproperty("cdkDragDisabled", !ctx_r199.draggable);
             i0.ɵɵadvance(3);
-            i0.ɵɵproperty("ngIf", ctx_r197.smartTable && ctx_r197.inLineEdit);
+            i0.ɵɵproperty("ngIf", ctx_r199.smartTable && ctx_r199.inLineEdit);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r197.draggable);
+            i0.ɵɵproperty("ngIf", ctx_r199.draggable);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r197.checkboxSelect && ctx_r197.config);
+            i0.ɵɵproperty("ngIf", ctx_r199.checkboxSelect && ctx_r199.config);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngForOf", ctx_r197.getFields());
+            i0.ɵɵproperty("ngForOf", ctx_r199.getFields());
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r197.showRate && ctx_r197.config);
+            i0.ɵɵproperty("ngIf", ctx_r199.showRate && ctx_r199.config);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r197.extra);
+            i0.ɵɵproperty("ngIf", ctx_r199.extra);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r197.smartTable && ctx_r197.inLineEdit);
+            i0.ɵɵproperty("ngIf", ctx_r199.smartTable && ctx_r199.inLineEdit);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_Template, 2, 1, "ng-container", 19);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_Template, 10, 17, "ng-template", null, 88, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_container_1_Template, 2, 1, "ng-container", 20);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_ng_template_2_Template, 10, 17, "ng-template", null, 90, i0.ɵɵtemplateRefExtractor);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var _r196 = i0.ɵɵreference(3);
-            var ctx_r194 = i0.ɵɵnextContext(3);
+            var _r198 = i0.ɵɵreference(3);
+            var ctx_r196 = i0.ɵɵnextContext(3);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r194.expandable)("ngIfElse", _r196);
+            i0.ɵɵproperty("ngIf", ctx_r196.expandable)("ngIfElse", _r198);
         }
     }
     function CmacsCompactTableComponent_tbody_5_ng_template_1_Template(rf, ctx) {
@@ -31831,98 +31854,98 @@
             i0.ɵɵtemplate(0, CmacsCompactTableComponent_tbody_5_ng_template_1_ng_container_0_Template, 4, 2, "ng-container", 3);
         }
         if (rf & 2) {
-            var ctx_r191 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("ngIf", ctx_r191.config && ctx_r191.config.fields && ctx_r191.config.fields.length);
+            var ctx_r193 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("ngIf", ctx_r193.config && ctx_r193.config.fields && ctx_r193.config.fields.length);
         }
     }
     function CmacsCompactTableComponent_tbody_5_Template(rf, ctx) {
         if (rf & 1) {
-            var _r298_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "tbody", 46);
-            i0.ɵɵlistener("cdkDropListDropped", function CmacsCompactTableComponent_tbody_5_Template_tbody_cdkDropListDropped_0_listener($event) { i0.ɵɵrestoreView(_r298_1); var ctx_r297 = i0.ɵɵnextContext(); return ctx_r297.drop($event); });
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_Template, 1, 1, "ng-template", 87);
+            var _r301_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "tbody", 47);
+            i0.ɵɵlistener("cdkDropListDropped", function CmacsCompactTableComponent_tbody_5_Template_tbody_cdkDropListDropped_0_listener($event) { i0.ɵɵrestoreView(_r301_1); var ctx_r300 = i0.ɵɵnextContext(); return ctx_r300.drop($event); });
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_tbody_5_ng_template_1_Template, 1, 1, "ng-template", 89);
             i0.ɵɵelementEnd();
         }
     }
     function CmacsCompactTableComponent_ng_template_6_input_0_Template(rf, ctx) {
         if (rf & 1) {
-            var _r314_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "input", 107, 108);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_input_0_Template_input_click_0_listener($event) { i0.ɵɵrestoreView(_r314_1); var ctx_r313 = i0.ɵɵnextContext(2); return ctx_r313.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_input_0_Template_input_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r314_1); var ctx_r315 = i0.ɵɵnextContext(2); return ctx_r315.preventDefault($event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_input_0_Template_input_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r314_1); var ctx_r317 = i0.ɵɵnextContext(); var data_r300 = ctx_r317.data; var field_r299 = ctx_r317.field; return (data_r300[field_r299.property] = $event); })("keyup", function CmacsCompactTableComponent_ng_template_6_input_0_Template_input_keyup_0_listener($event) { i0.ɵɵrestoreView(_r314_1); var ctx_r319 = i0.ɵɵnextContext(); var i_r301 = ctx_r319.i; var data_r300 = ctx_r319.data; var ctx_r318 = i0.ɵɵnextContext(); return ctx_r318.endEditMode($event, i_r301, data_r300); });
+            var _r317_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "input", 109, 110);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_input_0_Template_input_click_0_listener($event) { i0.ɵɵrestoreView(_r317_1); var ctx_r316 = i0.ɵɵnextContext(2); return ctx_r316.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_input_0_Template_input_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r317_1); var ctx_r318 = i0.ɵɵnextContext(2); return ctx_r318.preventDefault($event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_input_0_Template_input_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r317_1); var ctx_r320 = i0.ɵɵnextContext(); var data_r303 = ctx_r320.data; var field_r302 = ctx_r320.field; return (data_r303[field_r302.property] = $event); })("keyup", function CmacsCompactTableComponent_ng_template_6_input_0_Template_input_keyup_0_listener($event) { i0.ɵɵrestoreView(_r317_1); var ctx_r322 = i0.ɵɵnextContext(); var i_r304 = ctx_r322.i; var data_r303 = ctx_r322.data; var ctx_r321 = i0.ɵɵnextContext(); return ctx_r321.endEditMode($event, i_r304, data_r303); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r320 = i0.ɵɵnextContext();
-            var data_r300 = ctx_r320.data;
-            var field_r299 = ctx_r320.field;
-            var ctx_r302 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r302.validate(data_r300, field_r299));
-            i0.ɵɵproperty("placeholder", field_r299.placeholder ? field_r299.placeholder : "")("ngModel", data_r300[field_r299.property]);
+            var ctx_r323 = i0.ɵɵnextContext();
+            var data_r303 = ctx_r323.data;
+            var field_r302 = ctx_r323.field;
+            var ctx_r305 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r305.validate(data_r303, field_r302));
+            i0.ɵɵproperty("placeholder", field_r302.placeholder ? field_r302.placeholder : "")("ngModel", data_r303[field_r302.property]);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r323_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "cmacs-date-picker", 109, 110);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template_cmacs_date_picker_click_0_listener($event) { i0.ɵɵrestoreView(_r323_1); var ctx_r322 = i0.ɵɵnextContext(2); return ctx_r322.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template_cmacs_date_picker_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r323_1); var ctx_r324 = i0.ɵɵnextContext(2); return ctx_r324.preventDefault($event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template_cmacs_date_picker_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r323_1); var ctx_r326 = i0.ɵɵnextContext(); var data_r300 = ctx_r326.data; var field_r299 = ctx_r326.field; return (data_r300[field_r299.property] = $event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template_cmacs_date_picker_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r323_1); var ctx_r328 = i0.ɵɵnextContext(); var i_r301 = ctx_r328.i; var data_r300 = ctx_r328.data; var ctx_r327 = i0.ɵɵnextContext(); return ctx_r327.endEditModeNgModel(i_r301, data_r300); });
+            var _r326_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "cmacs-date-picker", 111, 112);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template_cmacs_date_picker_click_0_listener($event) { i0.ɵɵrestoreView(_r326_1); var ctx_r325 = i0.ɵɵnextContext(2); return ctx_r325.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template_cmacs_date_picker_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r326_1); var ctx_r327 = i0.ɵɵnextContext(2); return ctx_r327.preventDefault($event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template_cmacs_date_picker_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r326_1); var ctx_r329 = i0.ɵɵnextContext(); var data_r303 = ctx_r329.data; var field_r302 = ctx_r329.field; return (data_r303[field_r302.property] = $event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template_cmacs_date_picker_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r326_1); var ctx_r331 = i0.ɵɵnextContext(); var i_r304 = ctx_r331.i; var data_r303 = ctx_r331.data; var ctx_r330 = i0.ɵɵnextContext(); return ctx_r330.endEditModeNgModel(i_r304, data_r303); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r329 = i0.ɵɵnextContext();
-            var data_r300 = ctx_r329.data;
-            var field_r299 = ctx_r329.field;
-            var ctx_r303 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r303.validate(data_r300, field_r299));
-            i0.ɵɵproperty("allowClear", true)("ngModel", data_r300[field_r299.property]);
+            var ctx_r332 = i0.ɵɵnextContext();
+            var data_r303 = ctx_r332.data;
+            var field_r302 = ctx_r332.field;
+            var ctx_r306 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r306.validate(data_r303, field_r302));
+            i0.ɵɵproperty("allowClear", true)("ngModel", data_r303[field_r302.property]);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r332_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "cmacs-datetime-picker", 111, 112);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template_cmacs_datetime_picker_click_0_listener($event) { i0.ɵɵrestoreView(_r332_1); var ctx_r331 = i0.ɵɵnextContext(2); return ctx_r331.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template_cmacs_datetime_picker_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r332_1); var ctx_r333 = i0.ɵɵnextContext(2); return ctx_r333.preventDefault($event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template_cmacs_datetime_picker_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r332_1); var ctx_r335 = i0.ɵɵnextContext(); var data_r300 = ctx_r335.data; var field_r299 = ctx_r335.field; return (data_r300[field_r299.property] = $event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template_cmacs_datetime_picker_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r332_1); var ctx_r337 = i0.ɵɵnextContext(); var i_r301 = ctx_r337.i; var data_r300 = ctx_r337.data; var ctx_r336 = i0.ɵɵnextContext(); return ctx_r336.ngModelChange(i_r301, data_r300); });
+            var _r335_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "cmacs-datetime-picker", 113, 114);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template_cmacs_datetime_picker_click_0_listener($event) { i0.ɵɵrestoreView(_r335_1); var ctx_r334 = i0.ɵɵnextContext(2); return ctx_r334.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template_cmacs_datetime_picker_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r335_1); var ctx_r336 = i0.ɵɵnextContext(2); return ctx_r336.preventDefault($event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template_cmacs_datetime_picker_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r335_1); var ctx_r338 = i0.ɵɵnextContext(); var data_r303 = ctx_r338.data; var field_r302 = ctx_r338.field; return (data_r303[field_r302.property] = $event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template_cmacs_datetime_picker_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r335_1); var ctx_r340 = i0.ɵɵnextContext(); var i_r304 = ctx_r340.i; var data_r303 = ctx_r340.data; var ctx_r339 = i0.ɵɵnextContext(); return ctx_r339.ngModelChange(i_r304, data_r303); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r338 = i0.ɵɵnextContext();
-            var data_r300 = ctx_r338.data;
-            var field_r299 = ctx_r338.field;
-            var ctx_r304 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r304.validate(data_r300, field_r299));
-            i0.ɵɵproperty("use12Hours", ctx_r304.use12Hours)("format", field_r299.timeFormat ? field_r299.timeFormat : "h:mm a")("defaultOpenValue", ctx_r304.defaultTimeValue)("ngModel", data_r300[field_r299.property]);
+            var ctx_r341 = i0.ɵɵnextContext();
+            var data_r303 = ctx_r341.data;
+            var field_r302 = ctx_r341.field;
+            var ctx_r307 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r307.validate(data_r303, field_r302));
+            i0.ɵɵproperty("use12Hours", ctx_r307.use12Hours)("format", field_r302.timeFormat ? field_r302.timeFormat : "h:mm a")("defaultOpenValue", ctx_r307.defaultTimeValue)("ngModel", data_r303[field_r302.property]);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_cmacs_option_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "cmacs-option", 116);
+            i0.ɵɵelement(0, "cmacs-option", 118);
         }
         if (rf & 2) {
-            var sData_r341 = ctx.$implicit;
-            var field_r299 = i0.ɵɵnextContext(2).field;
-            i0.ɵɵpropertyInterpolate("label", sData_r341[field_r299.select.label]);
-            i0.ɵɵpropertyInterpolate("value", sData_r341[field_r299.select.value]);
-            i0.ɵɵpropertyInterpolate("divider", sData_r341[field_r299.select.divider]);
-            i0.ɵɵproperty("disabled", sData_r341.disabled);
+            var sData_r344 = ctx.$implicit;
+            var field_r302 = i0.ɵɵnextContext(2).field;
+            i0.ɵɵpropertyInterpolate("label", sData_r344[field_r302.select.label]);
+            i0.ɵɵpropertyInterpolate("value", sData_r344[field_r302.select.value]);
+            i0.ɵɵpropertyInterpolate("divider", sData_r344[field_r302.select.divider]);
+            i0.ɵɵproperty("disabled", sData_r344.disabled);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template(rf, ctx) {
         if (rf & 1) {
-            var _r344_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "cmacs-select", 113, 114);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template_cmacs_select_click_0_listener($event) { i0.ɵɵrestoreView(_r344_1); var ctx_r343 = i0.ɵɵnextContext(2); return ctx_r343.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template_cmacs_select_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r344_1); var ctx_r345 = i0.ɵɵnextContext(2); return ctx_r345.preventDefault($event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template_cmacs_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r344_1); var ctx_r347 = i0.ɵɵnextContext(); var data_r300 = ctx_r347.data; var field_r299 = ctx_r347.field; return (data_r300[field_r299.property] = $event); })("cmacsEditedInput", function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template_cmacs_select_cmacsEditedInput_0_listener($event) { i0.ɵɵrestoreView(_r344_1); var ctx_r348 = i0.ɵɵnextContext(2); return ctx_r348.cmacsEditedInput($event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template_cmacs_select_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r344_1); var ctx_r350 = i0.ɵɵnextContext(); var i_r301 = ctx_r350.i; var data_r300 = ctx_r350.data; var field_r299 = ctx_r350.field; var ctx_r349 = i0.ɵɵnextContext(); return ctx_r349.endEditModeNgModel(i_r301, data_r300, null, field_r299); });
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_6_cmacs_select_3_cmacs_option_2_Template, 1, 4, "cmacs-option", 115);
+            var _r347_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "cmacs-select", 115, 116);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template_cmacs_select_click_0_listener($event) { i0.ɵɵrestoreView(_r347_1); var ctx_r346 = i0.ɵɵnextContext(2); return ctx_r346.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template_cmacs_select_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r347_1); var ctx_r348 = i0.ɵɵnextContext(2); return ctx_r348.preventDefault($event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template_cmacs_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r347_1); var ctx_r350 = i0.ɵɵnextContext(); var data_r303 = ctx_r350.data; var field_r302 = ctx_r350.field; return (data_r303[field_r302.property] = $event); })("cmacsEditedInput", function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template_cmacs_select_cmacsEditedInput_0_listener($event) { i0.ɵɵrestoreView(_r347_1); var ctx_r351 = i0.ɵɵnextContext(2); return ctx_r351.cmacsEditedInput($event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template_cmacs_select_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r347_1); var ctx_r353 = i0.ɵɵnextContext(); var i_r304 = ctx_r353.i; var data_r303 = ctx_r353.data; var field_r302 = ctx_r353.field; var ctx_r352 = i0.ɵɵnextContext(); return ctx_r352.endEditModeNgModel(i_r304, data_r303, null, field_r302); });
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_6_cmacs_select_3_cmacs_option_2_Template, 1, 4, "cmacs-option", 117);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r351 = i0.ɵɵnextContext();
-            var field_r299 = ctx_r351.field;
-            var data_r300 = ctx_r351.data;
-            var _r306 = i0.ɵɵreference(5);
-            var ctx_r305 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-field-mode-status", field_r299.mode === "status")("cmacs-compact-table-field-mode-status-low-edit", field_r299.mode === "status" && ctx_r305.getClassStatus(data_r300, field_r299) === "low")("cmacs-compact-table-field-mode-status-medium-edit", field_r299.mode === "status" && ctx_r305.getClassStatus(data_r300, field_r299) === "medium")("cmacs-compact-table-field-mode-status-high-edit", field_r299.mode === "status" && ctx_r305.getClassStatus(data_r300, field_r299) === "high")("cmacs-compact-table-edit-mode-invalid", !ctx_r305.validate(data_r300, field_r299));
-            i0.ɵɵproperty("dropdownRender", _r306)("cmacsEditable", field_r299.select.dropdownAddOption)("placeHolder", field_r299.placeholder ? field_r299.placeholder : "")("mode", field_r299.mode ? field_r299.mode : "default")("showCmacsSearch", field_r299.showCmacsSearch)("ngModel", data_r300[field_r299.property]);
+            var ctx_r354 = i0.ɵɵnextContext();
+            var field_r302 = ctx_r354.field;
+            var data_r303 = ctx_r354.data;
+            var _r309 = i0.ɵɵreference(5);
+            var ctx_r308 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-field-mode-status", field_r302.mode === "status")("cmacs-compact-table-field-mode-status-low-edit", field_r302.mode === "status" && ctx_r308.getClassStatus(data_r303, field_r302) === "low")("cmacs-compact-table-field-mode-status-medium-edit", field_r302.mode === "status" && ctx_r308.getClassStatus(data_r303, field_r302) === "medium")("cmacs-compact-table-field-mode-status-high-edit", field_r302.mode === "status" && ctx_r308.getClassStatus(data_r303, field_r302) === "high")("cmacs-compact-table-edit-mode-invalid", !ctx_r308.validate(data_r303, field_r302));
+            i0.ɵɵproperty("dropdownRender", _r309)("cmacsEditable", field_r302.select.dropdownAddOption)("placeHolder", field_r302.placeholder ? field_r302.placeholder : "")("mode", field_r302.mode ? field_r302.mode : "default")("showCmacsSearch", field_r302.showCmacsSearch)("ngModel", data_r303[field_r302.property]);
             i0.ɵɵadvance(2);
-            i0.ɵɵproperty("ngForOf", field_r299.select.selectData);
+            i0.ɵɵproperty("ngForOf", field_r302.select.selectData);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_ng_template_4_nz_divider_0_Template(rf, ctx) {
@@ -31932,330 +31955,330 @@
     }
     function CmacsCompactTableComponent_ng_template_6_ng_template_4_button_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r356_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "button", 118);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_ng_template_4_button_1_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r356_1); var ctx_r355 = i0.ɵɵnextContext(2); var i_r301 = ctx_r355.i; var data_r300 = ctx_r355.data; var field_r299 = ctx_r355.field; var ctx_r354 = i0.ɵɵnextContext(); return ctx_r354.addOption(i_r301, data_r300, null, field_r299); });
+            var _r359_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 120);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_ng_template_4_button_1_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r359_1); var ctx_r358 = i0.ɵɵnextContext(2); var i_r304 = ctx_r358.i; var data_r303 = ctx_r358.data; var field_r302 = ctx_r358.field; var ctx_r357 = i0.ɵɵnextContext(); return ctx_r357.addOption(i_r304, data_r303, null, field_r302); });
             i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var field_r299 = i0.ɵɵnextContext(2).field;
+            var field_r302 = i0.ɵɵnextContext(2).field;
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(field_r299.select == null ? null : field_r299.select.dropdownAddOptionLabel);
+            i0.ɵɵtextInterpolate(field_r302.select == null ? null : field_r302.select.dropdownAddOptionLabel);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_ng_template_4_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵtemplate(0, CmacsCompactTableComponent_ng_template_6_ng_template_4_nz_divider_0_Template, 1, 0, "nz-divider", 3);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_ng_template_6_ng_template_4_button_1_Template, 2, 1, "button", 117);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_ng_template_6_ng_template_4_button_1_Template, 2, 1, "button", 119);
         }
         if (rf & 2) {
-            var field_r299 = i0.ɵɵnextContext().field;
-            i0.ɵɵproperty("ngIf", field_r299.select == null ? null : field_r299.select.dropdownAddOption);
+            var field_r302 = i0.ɵɵnextContext().field;
+            i0.ɵɵproperty("ngIf", field_r302.select == null ? null : field_r302.select.dropdownAddOption);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", field_r299.select == null ? null : field_r299.select.dropdownAddOption);
+            i0.ɵɵproperty("ngIf", field_r302.select == null ? null : field_r302.select.dropdownAddOption);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template(rf, ctx) {
         if (rf & 1) {
-            var _r362_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "cmacs-input-number", 119, 120);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template_cmacs_input_number_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r362_1); var ctx_r361 = i0.ɵɵnextContext(); var data_r300 = ctx_r361.data; var field_r299 = ctx_r361.field; return (data_r300[field_r299.property] = $event); })("click", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template_cmacs_input_number_click_0_listener($event) { i0.ɵɵrestoreView(_r362_1); var ctx_r363 = i0.ɵɵnextContext(2); return ctx_r363.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template_cmacs_input_number_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r362_1); var ctx_r364 = i0.ɵɵnextContext(2); return ctx_r364.preventDefault($event); })("keyup", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template_cmacs_input_number_keyup_0_listener($event) { i0.ɵɵrestoreView(_r362_1); var ctx_r366 = i0.ɵɵnextContext(); var i_r301 = ctx_r366.i; var data_r300 = ctx_r366.data; var ctx_r365 = i0.ɵɵnextContext(); return ctx_r365.endEditMode($event, i_r301, data_r300); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template_cmacs_input_number_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r362_1); var ctx_r368 = i0.ɵɵnextContext(); var i_r301 = ctx_r368.i; var data_r300 = ctx_r368.data; var ctx_r367 = i0.ɵɵnextContext(); return ctx_r367.ngModelChange(i_r301, data_r300); });
+            var _r365_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "cmacs-input-number", 121, 122);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template_cmacs_input_number_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r365_1); var ctx_r364 = i0.ɵɵnextContext(); var data_r303 = ctx_r364.data; var field_r302 = ctx_r364.field; return (data_r303[field_r302.property] = $event); })("click", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template_cmacs_input_number_click_0_listener($event) { i0.ɵɵrestoreView(_r365_1); var ctx_r366 = i0.ɵɵnextContext(2); return ctx_r366.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template_cmacs_input_number_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r365_1); var ctx_r367 = i0.ɵɵnextContext(2); return ctx_r367.preventDefault($event); })("keyup", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template_cmacs_input_number_keyup_0_listener($event) { i0.ɵɵrestoreView(_r365_1); var ctx_r369 = i0.ɵɵnextContext(); var i_r304 = ctx_r369.i; var data_r303 = ctx_r369.data; var ctx_r368 = i0.ɵɵnextContext(); return ctx_r368.endEditMode($event, i_r304, data_r303); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template_cmacs_input_number_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r365_1); var ctx_r371 = i0.ɵɵnextContext(); var i_r304 = ctx_r371.i; var data_r303 = ctx_r371.data; var ctx_r370 = i0.ɵɵnextContext(); return ctx_r370.ngModelChange(i_r304, data_r303); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r369 = i0.ɵɵnextContext();
-            var data_r300 = ctx_r369.data;
-            var field_r299 = ctx_r369.field;
-            var ctx_r308 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r308.validate(data_r300, field_r299));
-            i0.ɵɵproperty("ngModel", data_r300[field_r299.property])("cmacsStep", field_r299.cmacsStep)("min", field_r299.min)("max", field_r299.max)("formatter", ctx_r308.formatter)("parser", ctx_r308.parser);
+            var ctx_r372 = i0.ɵɵnextContext();
+            var data_r303 = ctx_r372.data;
+            var field_r302 = ctx_r372.field;
+            var ctx_r311 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r311.validate(data_r303, field_r302));
+            i0.ɵɵproperty("ngModel", data_r303[field_r302.property])("cmacsStep", field_r302.cmacsStep)("min", field_r302.min)("max", field_r302.max)("formatter", ctx_r311.formatter)("parser", ctx_r311.parser);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template(rf, ctx) {
         if (rf & 1) {
-            var _r373_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "cmacs-input-number", 121, 120);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template_cmacs_input_number_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r373_1); var ctx_r372 = i0.ɵɵnextContext(); var data_r300 = ctx_r372.data; var field_r299 = ctx_r372.field; return (data_r300[field_r299.property] = $event); })("click", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template_cmacs_input_number_click_0_listener($event) { i0.ɵɵrestoreView(_r373_1); var ctx_r374 = i0.ɵɵnextContext(2); return ctx_r374.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template_cmacs_input_number_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r373_1); var ctx_r375 = i0.ɵɵnextContext(2); return ctx_r375.preventDefault($event); })("keyup", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template_cmacs_input_number_keyup_0_listener($event) { i0.ɵɵrestoreView(_r373_1); var ctx_r377 = i0.ɵɵnextContext(); var i_r301 = ctx_r377.i; var data_r300 = ctx_r377.data; var ctx_r376 = i0.ɵɵnextContext(); return ctx_r376.endEditMode($event, i_r301, data_r300); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template_cmacs_input_number_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r373_1); var ctx_r379 = i0.ɵɵnextContext(); var i_r301 = ctx_r379.i; var data_r300 = ctx_r379.data; var ctx_r378 = i0.ɵɵnextContext(); return ctx_r378.ngModelChange(i_r301, data_r300); });
+            var _r376_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "cmacs-input-number", 123, 122);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template_cmacs_input_number_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r376_1); var ctx_r375 = i0.ɵɵnextContext(); var data_r303 = ctx_r375.data; var field_r302 = ctx_r375.field; return (data_r303[field_r302.property] = $event); })("click", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template_cmacs_input_number_click_0_listener($event) { i0.ɵɵrestoreView(_r376_1); var ctx_r377 = i0.ɵɵnextContext(2); return ctx_r377.preventDefault($event); })("dblclick", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template_cmacs_input_number_dblclick_0_listener($event) { i0.ɵɵrestoreView(_r376_1); var ctx_r378 = i0.ɵɵnextContext(2); return ctx_r378.preventDefault($event); })("keyup", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template_cmacs_input_number_keyup_0_listener($event) { i0.ɵɵrestoreView(_r376_1); var ctx_r380 = i0.ɵɵnextContext(); var i_r304 = ctx_r380.i; var data_r303 = ctx_r380.data; var ctx_r379 = i0.ɵɵnextContext(); return ctx_r379.endEditMode($event, i_r304, data_r303); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template_cmacs_input_number_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r376_1); var ctx_r382 = i0.ɵɵnextContext(); var i_r304 = ctx_r382.i; var data_r303 = ctx_r382.data; var ctx_r381 = i0.ɵɵnextContext(); return ctx_r381.ngModelChange(i_r304, data_r303); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r380 = i0.ɵɵnextContext();
-            var data_r300 = ctx_r380.data;
-            var field_r299 = ctx_r380.field;
-            var ctx_r309 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r309.validate(data_r300, field_r299));
-            i0.ɵɵproperty("ngModel", data_r300[field_r299.property])("formatter", !ctx_r309.isNull(field_r299.formatter) ? field_r299.formatter : ctx_r309.defaultFormatter)("parser", !ctx_r309.isNull(field_r299.parser) ? field_r299.parser : ctx_r309.defaultParser)("cmacsStep", field_r299.cmacsStep ? field_r299.cmacsStep : 1)("min", field_r299.min)("max", field_r299.max);
+            var ctx_r383 = i0.ɵɵnextContext();
+            var data_r303 = ctx_r383.data;
+            var field_r302 = ctx_r383.field;
+            var ctx_r312 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r312.validate(data_r303, field_r302));
+            i0.ɵɵproperty("ngModel", data_r303[field_r302.property])("formatter", !ctx_r312.isNull(field_r302.formatter) ? field_r302.formatter : ctx_r312.defaultFormatter)("parser", !ctx_r312.isNull(field_r302.parser) ? field_r302.parser : ctx_r312.defaultParser)("cmacsStep", field_r302.cmacsStep ? field_r302.cmacsStep : 1)("min", field_r302.min)("max", field_r302.max);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_label_8_Template(rf, ctx) {
         if (rf & 1) {
-            var _r384_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "label", 122, 123);
-            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_ng_template_6_label_8_Template_label_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r384_1); var ctx_r383 = i0.ɵɵnextContext(); var data_r300 = ctx_r383.data; var field_r299 = ctx_r383.field; return (data_r300[field_r299.property] = $event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_label_8_Template_label_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r384_1); var ctx_r386 = i0.ɵɵnextContext(); var i_r301 = ctx_r386.i; var data_r300 = ctx_r386.data; var field_r299 = ctx_r386.field; var ctx_r385 = i0.ɵɵnextContext(); return ctx_r385.endEditModeNgModel(i_r301, data_r300, field_r299.property, field_r299); });
+            var _r387_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "label", 124, 125);
+            i0.ɵɵlistener("ngModelChange", function CmacsCompactTableComponent_ng_template_6_label_8_Template_label_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r387_1); var ctx_r386 = i0.ɵɵnextContext(); var data_r303 = ctx_r386.data; var field_r302 = ctx_r386.field; return (data_r303[field_r302.property] = $event); })("ngModelChange", function CmacsCompactTableComponent_ng_template_6_label_8_Template_label_ngModelChange_0_listener() { i0.ɵɵrestoreView(_r387_1); var ctx_r389 = i0.ɵɵnextContext(); var i_r304 = ctx_r389.i; var data_r303 = ctx_r389.data; var field_r302 = ctx_r389.field; var ctx_r388 = i0.ɵɵnextContext(); return ctx_r388.endEditModeNgModel(i_r304, data_r303, field_r302.property, field_r302); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r387 = i0.ɵɵnextContext();
-            var data_r300 = ctx_r387.data;
-            var field_r299 = ctx_r387.field;
-            var ctx_r310 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r310.validate(data_r300, field_r299));
-            i0.ɵɵproperty("ngModel", data_r300[field_r299.property]);
+            var ctx_r390 = i0.ɵɵnextContext();
+            var data_r303 = ctx_r390.data;
+            var field_r302 = ctx_r390.field;
+            var ctx_r313 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-edit-mode-invalid", !ctx_r313.validate(data_r303, field_r302));
+            i0.ɵɵproperty("ngModel", data_r303[field_r302.property]);
         }
     }
     var _c13 = function () { return { initialCountry: "us", formatOnDisplay: false }; };
     function CmacsCompactTableComponent_ng_template_6_cmacs_phone_number_9_Template(rf, ctx) {
         if (rf & 1) {
-            var _r390_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "cmacs-phone-number", 124, 125);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_cmacs_phone_number_9_Template_cmacs_phone_number_click_0_listener($event) { i0.ɵɵrestoreView(_r390_1); var ctx_r389 = i0.ɵɵnextContext(2); return ctx_r389.preventDefault($event); })("hasError", function CmacsCompactTableComponent_ng_template_6_cmacs_phone_number_9_Template_cmacs_phone_number_hasError_0_listener($event) { i0.ɵɵrestoreView(_r390_1); var ctx_r392 = i0.ɵɵnextContext(); var i_r301 = ctx_r392.i; var data_r300 = ctx_r392.data; var field_r299 = ctx_r392.field; var ctx_r391 = i0.ɵɵnextContext(); return ctx_r391.hasPhoneNumberError($event, i_r301, data_r300, field_r299.property, field_r299); })("countryChange", function CmacsCompactTableComponent_ng_template_6_cmacs_phone_number_9_Template_cmacs_phone_number_countryChange_0_listener($event) { i0.ɵɵrestoreView(_r390_1); var ctx_r393 = i0.ɵɵnextContext(2); return ctx_r393.onCountryChange($event); });
+            var _r393_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "cmacs-phone-number", 126, 127);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_6_cmacs_phone_number_9_Template_cmacs_phone_number_click_0_listener($event) { i0.ɵɵrestoreView(_r393_1); var ctx_r392 = i0.ɵɵnextContext(2); return ctx_r392.preventDefault($event); })("hasError", function CmacsCompactTableComponent_ng_template_6_cmacs_phone_number_9_Template_cmacs_phone_number_hasError_0_listener($event) { i0.ɵɵrestoreView(_r393_1); var ctx_r395 = i0.ɵɵnextContext(); var i_r304 = ctx_r395.i; var data_r303 = ctx_r395.data; var field_r302 = ctx_r395.field; var ctx_r394 = i0.ɵɵnextContext(); return ctx_r394.hasPhoneNumberError($event, i_r304, data_r303, field_r302.property, field_r302); })("countryChange", function CmacsCompactTableComponent_ng_template_6_cmacs_phone_number_9_Template_cmacs_phone_number_countryChange_0_listener($event) { i0.ɵɵrestoreView(_r393_1); var ctx_r396 = i0.ɵɵnextContext(2); return ctx_r396.onCountryChange($event); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r311 = i0.ɵɵnextContext(2);
-            i0.ɵɵproperty("init", i0.ɵɵpureFunction0(2, _c13))("formControlCustom", ctx_r311.formPhoneControl);
+            var ctx_r314 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("init", i0.ɵɵpureFunction0(2, _c13))("formControlCustom", ctx_r314.formPhoneControl);
         }
     }
     function CmacsCompactTableComponent_ng_template_6_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵtemplate(0, CmacsCompactTableComponent_ng_template_6_input_0_Template, 2, 4, "input", 98);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template, 2, 4, "cmacs-date-picker", 99);
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template, 2, 6, "cmacs-datetime-picker", 100);
-            i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template, 3, 17, "cmacs-select", 101);
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_6_ng_template_4_Template, 2, 2, "ng-template", null, 102, i0.ɵɵtemplateRefExtractor);
-            i0.ɵɵtemplate(6, CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template, 2, 8, "cmacs-input-number", 103);
-            i0.ɵɵtemplate(7, CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template, 2, 8, "cmacs-input-number", 104);
-            i0.ɵɵtemplate(8, CmacsCompactTableComponent_ng_template_6_label_8_Template, 2, 3, "label", 105);
-            i0.ɵɵtemplate(9, CmacsCompactTableComponent_ng_template_6_cmacs_phone_number_9_Template, 2, 3, "cmacs-phone-number", 106);
+            i0.ɵɵtemplate(0, CmacsCompactTableComponent_ng_template_6_input_0_Template, 2, 4, "input", 100);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_ng_template_6_cmacs_date_picker_1_Template, 2, 4, "cmacs-date-picker", 101);
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_6_cmacs_datetime_picker_2_Template, 2, 6, "cmacs-datetime-picker", 102);
+            i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_6_cmacs_select_3_Template, 3, 17, "cmacs-select", 103);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_6_ng_template_4_Template, 2, 2, "ng-template", null, 104, i0.ɵɵtemplateRefExtractor);
+            i0.ɵɵtemplate(6, CmacsCompactTableComponent_ng_template_6_cmacs_input_number_6_Template, 2, 8, "cmacs-input-number", 105);
+            i0.ɵɵtemplate(7, CmacsCompactTableComponent_ng_template_6_cmacs_input_number_7_Template, 2, 8, "cmacs-input-number", 106);
+            i0.ɵɵtemplate(8, CmacsCompactTableComponent_ng_template_6_label_8_Template, 2, 3, "label", 107);
+            i0.ɵɵtemplate(9, CmacsCompactTableComponent_ng_template_6_cmacs_phone_number_9_Template, 2, 3, "cmacs-phone-number", 108);
         }
         if (rf & 2) {
-            var field_r299 = ctx.field;
+            var field_r302 = ctx.field;
             var ctx_r5 = i0.ɵɵnextContext();
-            i0.ɵɵproperty("ngIf", ctx_r5.isString(field_r299));
+            i0.ɵɵproperty("ngIf", ctx_r5.isString(field_r302));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r5.isDate(field_r299));
+            i0.ɵɵproperty("ngIf", ctx_r5.isDate(field_r302));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r5.isTime(field_r299));
+            i0.ɵɵproperty("ngIf", ctx_r5.isTime(field_r302));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r5.isSelect(field_r299));
+            i0.ɵɵproperty("ngIf", ctx_r5.isSelect(field_r302));
             i0.ɵɵadvance(3);
-            i0.ɵɵproperty("ngIf", ctx_r5.isNumber(field_r299) && !ctx_r5.isSelect(field_r299) && field_r299.useCommaMarker);
+            i0.ɵɵproperty("ngIf", ctx_r5.isNumber(field_r302) && !ctx_r5.isSelect(field_r302) && field_r302.useCommaMarker);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r5.isNumber(field_r299) && !ctx_r5.isSelect(field_r299) && !field_r299.useCommaMarker);
+            i0.ɵɵproperty("ngIf", ctx_r5.isNumber(field_r302) && !ctx_r5.isSelect(field_r302) && !field_r302.useCommaMarker);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r5.isBoolean(field_r299));
+            i0.ɵɵproperty("ngIf", ctx_r5.isBoolean(field_r302));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r5.isPhone(field_r299));
+            i0.ɵɵproperty("ngIf", ctx_r5.isPhone(field_r302));
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_1_i_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 129);
+            i0.ɵɵelement(0, "i", 131);
         }
         if (rf & 2) {
-            var field_r394 = i0.ɵɵnextContext(2).field;
-            var ctx_r409 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-edit-icon", ctx_r409.inLineEdit && field_r394.editable)("cmacs-compact-table-edit-icon-view", !ctx_r409.inLineEdit || !field_r394.editable);
+            var field_r397 = i0.ɵɵnextContext(2).field;
+            var ctx_r412 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-edit-icon", ctx_r412.inLineEdit && field_r397.editable)("cmacs-compact-table-edit-icon-view", !ctx_r412.inLineEdit || !field_r397.editable);
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r413_1 = i0.ɵɵgetCurrentView();
+            var _r416_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 126);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_1_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r413_1); var ctx_r412 = i0.ɵɵnextContext(); var data_r395 = ctx_r412.data; var field_r394 = ctx_r412.field; var ctx_r411 = i0.ɵɵnextContext(); return ctx_r411.startEdit(data_r395[ctx_r411.config.fieldId], field_r394.property, $event, data_r395); });
-            i0.ɵɵelementStart(2, "div", 127);
-            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_1_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r413_1); var ctx_r415 = i0.ɵɵnextContext(); var i_r396 = ctx_r415.i; var field_r394 = ctx_r415.field; var ctx_r414 = i0.ɵɵnextContext(); return ctx_r414.onDataTapEllipsis(ctx_r414.gridID + "-row-" + i_r396 + "-" + field_r394.property); });
+            i0.ɵɵelementStart(1, "div", 128);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_1_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r416_1); var ctx_r415 = i0.ɵɵnextContext(); var data_r398 = ctx_r415.data; var field_r397 = ctx_r415.field; var ctx_r414 = i0.ɵɵnextContext(); return ctx_r414.startEdit(data_r398[ctx_r414.config.fieldId], field_r397.property, $event, data_r398); });
+            i0.ɵɵelementStart(2, "div", 129);
+            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_1_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r416_1); var ctx_r418 = i0.ɵɵnextContext(); var i_r399 = ctx_r418.i; var field_r397 = ctx_r418.field; var ctx_r417 = i0.ɵɵnextContext(); return ctx_r417.onDataTapEllipsis(ctx_r417.gridID + "-row-" + i_r399 + "-" + field_r397.property); });
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_1_i_4_Template, 1, 4, "i", 128);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_1_i_4_Template, 1, 4, "i", 130);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r416 = i0.ɵɵnextContext();
-            var data_r395 = ctx_r416.data;
-            var field_r394 = ctx_r416.field;
-            var item_r397 = ctx_r416.item;
-            var i_r396 = ctx_r416.i;
-            var ctx_r399 = i0.ɵɵnextContext();
+            var ctx_r419 = i0.ɵɵnextContext();
+            var data_r398 = ctx_r419.data;
+            var field_r397 = ctx_r419.field;
+            var item_r400 = ctx_r419.item;
+            var i_r399 = ctx_r419.i;
+            var ctx_r402 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r399.editId === data_r395[ctx_r399.config.fieldId] && ctx_r399.property === field_r394.property && field_r394.editable && (ctx_r399.isString(field_r394) || ctx_r399.isDate(field_r394) || ctx_r399.isSelect(field_r394) || ctx_r399.isTime(field_r394)))("cmacs-compact-table-on-edit-no-padding", ctx_r399.editId === data_r395[ctx_r399.config.fieldId] && ctx_r399.property === field_r394.property && field_r394.editable && (ctx_r399.isNumber(field_r394) || ctx_r399.isDate(field_r394) || ctx_r399.isTime(field_r394) || ctx_r399.isString(field_r394)));
+            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r402.editId === data_r398[ctx_r402.config.fieldId] && ctx_r402.property === field_r397.property && field_r397.editable && (ctx_r402.isString(field_r397) || ctx_r402.isDate(field_r397) || ctx_r402.isSelect(field_r397) || ctx_r402.isTime(field_r397)))("cmacs-compact-table-on-edit-no-padding", ctx_r402.editId === data_r398[ctx_r402.config.fieldId] && ctx_r402.property === field_r397.property && field_r397.editable && (ctx_r402.isNumber(field_r397) || ctx_r402.isDate(field_r397) || ctx_r402.isTime(field_r397) || ctx_r402.isString(field_r397)));
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("max-width", ctx_r399.getMaxWidth(field_r394, item_r397, i_r396));
-            i0.ɵɵclassProp("cmacs-compact-table-overflow-cell", !ctx_r399.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r399.isNull(data_r395[field_r394.property]) || !data_r395[field_r394.property].length)("cmacs-compact-table-invalid", !ctx_r399.validate(data_r395, field_r394));
-            i0.ɵɵattributeInterpolate3("id", "", ctx_r399.gridID, "-row-", i_r396, "-", field_r394.property, "");
-            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r399.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r399.isEllipsisActive(ctx_r399.gridID + "-row-" + i_r396 + "-" + field_r394.property, field_r394) ? ctx_r399.getStringFieldValue(data_r395, field_r394) : null);
+            i0.ɵɵstyleProp("max-width", ctx_r402.getMaxWidth(field_r397, item_r400, i_r399));
+            i0.ɵɵclassProp("cmacs-compact-table-overflow-cell", !ctx_r402.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r402.isNull(data_r398[field_r397.property]) || !data_r398[field_r397.property].length)("cmacs-compact-table-invalid", !ctx_r402.validate(data_r398, field_r397));
+            i0.ɵɵattributeInterpolate3("id", "", ctx_r402.gridID, "-row-", i_r399, "-", field_r397.property, "");
+            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r402.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r402.isEllipsisActive(ctx_r402.gridID + "-row-" + i_r399 + "-" + field_r397.property, field_r397) ? ctx_r402.getStringFieldValue(data_r398, field_r397) : null);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate1(" ", ctx_r399.getStringFieldValue(data_r395, field_r394), " ");
+            i0.ɵɵtextInterpolate1(" ", ctx_r402.getStringFieldValue(data_r398, field_r397), " ");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", field_r394.editable || field_r394.editable === undefined);
+            i0.ɵɵproperty("ngIf", field_r397.editable || field_r397.editable === undefined);
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
-            var _r419_1 = i0.ɵɵgetCurrentView();
+            var _r422_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 126);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_2_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r419_1); var ctx_r418 = i0.ɵɵnextContext(); var data_r395 = ctx_r418.data; var field_r394 = ctx_r418.field; var ctx_r417 = i0.ɵɵnextContext(); return ctx_r417.startEdit(data_r395[ctx_r417.config.fieldId], field_r394.property, $event, data_r395); });
-            i0.ɵɵelementStart(2, "div", 130);
-            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_2_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r419_1); var ctx_r421 = i0.ɵɵnextContext(); var i_r396 = ctx_r421.i; var field_r394 = ctx_r421.field; var ctx_r420 = i0.ɵɵnextContext(); return ctx_r420.onDataTapEllipsis(ctx_r420.gridID + "-row-" + i_r396 + "-" + field_r394.property); });
+            i0.ɵɵelementStart(1, "div", 128);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_2_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r422_1); var ctx_r421 = i0.ɵɵnextContext(); var data_r398 = ctx_r421.data; var field_r397 = ctx_r421.field; var ctx_r420 = i0.ɵɵnextContext(); return ctx_r420.startEdit(data_r398[ctx_r420.config.fieldId], field_r397.property, $event, data_r398); });
+            i0.ɵɵelementStart(2, "div", 132);
+            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_2_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r422_1); var ctx_r424 = i0.ɵɵnextContext(); var i_r399 = ctx_r424.i; var field_r397 = ctx_r424.field; var ctx_r423 = i0.ɵɵnextContext(); return ctx_r423.onDataTapEllipsis(ctx_r423.gridID + "-row-" + i_r399 + "-" + field_r397.property); });
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
-            i0.ɵɵelement(4, "i", 131);
+            i0.ɵɵelement(4, "i", 133);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r422 = i0.ɵɵnextContext();
-            var data_r395 = ctx_r422.data;
-            var field_r394 = ctx_r422.field;
-            var item_r397 = ctx_r422.item;
-            var i_r396 = ctx_r422.i;
-            var ctx_r400 = i0.ɵɵnextContext();
+            var ctx_r425 = i0.ɵɵnextContext();
+            var data_r398 = ctx_r425.data;
+            var field_r397 = ctx_r425.field;
+            var item_r400 = ctx_r425.item;
+            var i_r399 = ctx_r425.i;
+            var ctx_r403 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r400.editId === data_r395[ctx_r400.config.fieldId] && ctx_r400.property === field_r394.property && field_r394.editable && (ctx_r400.isString(field_r394) || ctx_r400.isDate(field_r394) || ctx_r400.isSelect(field_r394) || ctx_r400.isTime(field_r394)))("cmacs-compact-table-on-edit-no-padding", ctx_r400.editId === data_r395[ctx_r400.config.fieldId] && ctx_r400.property === field_r394.property && field_r394.editable && (ctx_r400.isNumber(field_r394) || ctx_r400.isDate(field_r394) || ctx_r400.isTime(field_r394) || ctx_r400.isString(field_r394)));
+            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r403.editId === data_r398[ctx_r403.config.fieldId] && ctx_r403.property === field_r397.property && field_r397.editable && (ctx_r403.isString(field_r397) || ctx_r403.isDate(field_r397) || ctx_r403.isSelect(field_r397) || ctx_r403.isTime(field_r397)))("cmacs-compact-table-on-edit-no-padding", ctx_r403.editId === data_r398[ctx_r403.config.fieldId] && ctx_r403.property === field_r397.property && field_r397.editable && (ctx_r403.isNumber(field_r397) || ctx_r403.isDate(field_r397) || ctx_r403.isTime(field_r397) || ctx_r403.isString(field_r397)));
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("max-width", ctx_r400.getMaxWidth(field_r394, item_r397, i_r396));
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r400.validate(data_r395, field_r394))("cmacs-compact-table-overflow-cell", !ctx_r400.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r400.isNull(data_r395[field_r394.property]));
-            i0.ɵɵattributeInterpolate3("id", "", ctx_r400.gridID, "-row-", i_r396, "-", field_r394.property, "");
-            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r400.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r400.isEllipsisActive(ctx_r400.gridID + "-row-" + i_r396 + "-" + field_r394.property, field_r394) ? data_r395[field_r394.property] ? ctx_r400.transformDate(data_r395[field_r394.property]) : field_r394.placeholder : null);
+            i0.ɵɵstyleProp("max-width", ctx_r403.getMaxWidth(field_r397, item_r400, i_r399));
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r403.validate(data_r398, field_r397))("cmacs-compact-table-overflow-cell", !ctx_r403.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r403.isNull(data_r398[field_r397.property]));
+            i0.ɵɵattributeInterpolate3("id", "", ctx_r403.gridID, "-row-", i_r399, "-", field_r397.property, "");
+            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r403.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r403.isEllipsisActive(ctx_r403.gridID + "-row-" + i_r399 + "-" + field_r397.property, field_r397) ? data_r398[field_r397.property] ? ctx_r403.transformDate(data_r398[field_r397.property]) : field_r397.placeholder : null);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(data_r395[field_r394.property] ? ctx_r400.transformDate(data_r395[field_r394.property]) : field_r394.placeholder);
+            i0.ɵɵtextInterpolate(data_r398[field_r397.property] ? ctx_r403.transformDate(data_r398[field_r397.property]) : field_r397.placeholder);
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-calendar-icon", ctx_r400.inLineEdit && field_r394.editable)("cmacs-compact-table-calendar-icon-view", !ctx_r400.inLineEdit || !field_r394.editable);
+            i0.ɵɵclassProp("cmacs-compact-table-calendar-icon", ctx_r403.inLineEdit && field_r397.editable)("cmacs-compact-table-calendar-icon-view", !ctx_r403.inLineEdit || !field_r397.editable);
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_3_Template(rf, ctx) {
         if (rf & 1) {
-            var _r425_1 = i0.ɵɵgetCurrentView();
+            var _r428_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 126);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_3_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r425_1); var ctx_r424 = i0.ɵɵnextContext(); var data_r395 = ctx_r424.data; var field_r394 = ctx_r424.field; var ctx_r423 = i0.ɵɵnextContext(); return ctx_r423.startEdit(data_r395[ctx_r423.config.fieldId], field_r394.property, $event, data_r395); });
-            i0.ɵɵelementStart(2, "div", 130);
-            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_3_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r425_1); var ctx_r427 = i0.ɵɵnextContext(); var i_r396 = ctx_r427.i; var field_r394 = ctx_r427.field; var ctx_r426 = i0.ɵɵnextContext(); return ctx_r426.onDataTapEllipsis(ctx_r426.gridID + "-row-" + i_r396 + "-" + field_r394.property); });
+            i0.ɵɵelementStart(1, "div", 128);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_3_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r428_1); var ctx_r427 = i0.ɵɵnextContext(); var data_r398 = ctx_r427.data; var field_r397 = ctx_r427.field; var ctx_r426 = i0.ɵɵnextContext(); return ctx_r426.startEdit(data_r398[ctx_r426.config.fieldId], field_r397.property, $event, data_r398); });
+            i0.ɵɵelementStart(2, "div", 132);
+            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_3_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r428_1); var ctx_r430 = i0.ɵɵnextContext(); var i_r399 = ctx_r430.i; var field_r397 = ctx_r430.field; var ctx_r429 = i0.ɵɵnextContext(); return ctx_r429.onDataTapEllipsis(ctx_r429.gridID + "-row-" + i_r399 + "-" + field_r397.property); });
             i0.ɵɵpipe(3, "date");
             i0.ɵɵtext(4);
             i0.ɵɵpipe(5, "date");
             i0.ɵɵelementEnd();
-            i0.ɵɵelement(6, "i", 132);
+            i0.ɵɵelement(6, "i", 134);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r428 = i0.ɵɵnextContext();
-            var data_r395 = ctx_r428.data;
-            var field_r394 = ctx_r428.field;
-            var item_r397 = ctx_r428.item;
-            var i_r396 = ctx_r428.i;
-            var ctx_r401 = i0.ɵɵnextContext();
+            var ctx_r431 = i0.ɵɵnextContext();
+            var data_r398 = ctx_r431.data;
+            var field_r397 = ctx_r431.field;
+            var item_r400 = ctx_r431.item;
+            var i_r399 = ctx_r431.i;
+            var ctx_r404 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r401.editId === data_r395[ctx_r401.config.fieldId] && ctx_r401.property === field_r394.property && field_r394.editable && (ctx_r401.isString(field_r394) || ctx_r401.isDate(field_r394) || ctx_r401.isSelect(field_r394) || ctx_r401.isTime(field_r394)))("cmacs-compact-table-on-edit-no-padding", ctx_r401.editId === data_r395[ctx_r401.config.fieldId] && ctx_r401.property === field_r394.property && field_r394.editable && (ctx_r401.isNumber(field_r394) || ctx_r401.isDate(field_r394) || ctx_r401.isTime(field_r394) || ctx_r401.isString(field_r394)));
+            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r404.editId === data_r398[ctx_r404.config.fieldId] && ctx_r404.property === field_r397.property && field_r397.editable && (ctx_r404.isString(field_r397) || ctx_r404.isDate(field_r397) || ctx_r404.isSelect(field_r397) || ctx_r404.isTime(field_r397)))("cmacs-compact-table-on-edit-no-padding", ctx_r404.editId === data_r398[ctx_r404.config.fieldId] && ctx_r404.property === field_r397.property && field_r397.editable && (ctx_r404.isNumber(field_r397) || ctx_r404.isDate(field_r397) || ctx_r404.isTime(field_r397) || ctx_r404.isString(field_r397)));
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("max-width", ctx_r401.getMaxWidth(field_r394, item_r397, i_r396));
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r401.validate(data_r395, field_r394))("cmacs-compact-table-overflow-cell", !ctx_r401.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r401.isNull(data_r395[field_r394.property]));
-            i0.ɵɵattributeInterpolate3("id", "", ctx_r401.gridID, "-row-", i_r396, "-", field_r394.property, "");
-            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r401.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r401.isEllipsisActive(ctx_r401.gridID + "-row-" + i_r396 + "-" + field_r394.property, field_r394) ? data_r395[field_r394.property] ? i0.ɵɵpipeBind2(3, 22, data_r395[field_r394.property], field_r394.timeFormat ? field_r394.timeFormat : "h:mm a") : field_r394.placeholder : null);
+            i0.ɵɵstyleProp("max-width", ctx_r404.getMaxWidth(field_r397, item_r400, i_r399));
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r404.validate(data_r398, field_r397))("cmacs-compact-table-overflow-cell", !ctx_r404.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r404.isNull(data_r398[field_r397.property]));
+            i0.ɵɵattributeInterpolate3("id", "", ctx_r404.gridID, "-row-", i_r399, "-", field_r397.property, "");
+            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r404.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r404.isEllipsisActive(ctx_r404.gridID + "-row-" + i_r399 + "-" + field_r397.property, field_r397) ? data_r398[field_r397.property] ? i0.ɵɵpipeBind2(3, 22, data_r398[field_r397.property], field_r397.timeFormat ? field_r397.timeFormat : "h:mm a") : field_r397.placeholder : null);
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(data_r395[field_r394.property] ? i0.ɵɵpipeBind2(5, 25, data_r395[field_r394.property], field_r394.timeFormat ? field_r394.timeFormat : "h:mm a") : field_r394.placeholder);
+            i0.ɵɵtextInterpolate(data_r398[field_r397.property] ? i0.ɵɵpipeBind2(5, 25, data_r398[field_r397.property], field_r397.timeFormat ? field_r397.timeFormat : "h:mm a") : field_r397.placeholder);
             i0.ɵɵadvance(2);
-            i0.ɵɵclassProp("cmacs-compact-table-calendar-icon", ctx_r401.inLineEdit && field_r394.editable)("cmacs-compact-table-calendar-icon-view", !ctx_r401.inLineEdit || !field_r394.editable);
+            i0.ɵɵclassProp("cmacs-compact-table-calendar-icon", ctx_r404.inLineEdit && field_r397.editable)("cmacs-compact-table-calendar-icon-view", !ctx_r404.inLineEdit || !field_r397.editable);
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_4_i_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 135);
+            i0.ɵɵelement(0, "i", 137);
         }
         if (rf & 2) {
-            var field_r394 = i0.ɵɵnextContext(2).field;
-            var ctx_r429 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-select-icon", ctx_r429.inLineEdit && field_r394.editable)("cmacs-compact-table-select-icon-view", !ctx_r429.inLineEdit || !field_r394.editable);
+            var field_r397 = i0.ɵɵnextContext(2).field;
+            var ctx_r432 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-select-icon", ctx_r432.inLineEdit && field_r397.editable)("cmacs-compact-table-select-icon-view", !ctx_r432.inLineEdit || !field_r397.editable);
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template(rf, ctx) {
         if (rf & 1) {
-            var _r433_1 = i0.ɵɵgetCurrentView();
+            var _r436_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 126);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r433_1); var ctx_r432 = i0.ɵɵnextContext(); var data_r395 = ctx_r432.data; var field_r394 = ctx_r432.field; var ctx_r431 = i0.ɵɵnextContext(); return ctx_r431.startEdit(data_r395[ctx_r431.config.fieldId], field_r394.property, $event, data_r395); });
-            i0.ɵɵelementStart(2, "div", 133);
-            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r433_1); var ctx_r435 = i0.ɵɵnextContext(); var i_r396 = ctx_r435.i; var field_r394 = ctx_r435.field; var ctx_r434 = i0.ɵɵnextContext(); return ctx_r434.onDataTapEllipsis(ctx_r434.gridID + "-row-" + i_r396 + "-" + field_r394.property); });
+            i0.ɵɵelementStart(1, "div", 128);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r436_1); var ctx_r435 = i0.ɵɵnextContext(); var data_r398 = ctx_r435.data; var field_r397 = ctx_r435.field; var ctx_r434 = i0.ɵɵnextContext(); return ctx_r434.startEdit(data_r398[ctx_r434.config.fieldId], field_r397.property, $event, data_r398); });
+            i0.ɵɵelementStart(2, "div", 135);
+            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_4_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r436_1); var ctx_r438 = i0.ɵɵnextContext(); var i_r399 = ctx_r438.i; var field_r397 = ctx_r438.field; var ctx_r437 = i0.ɵɵnextContext(); return ctx_r437.onDataTapEllipsis(ctx_r437.gridID + "-row-" + i_r399 + "-" + field_r397.property); });
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_4_i_4_Template, 1, 4, "i", 134);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_4_i_4_Template, 1, 4, "i", 136);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r436 = i0.ɵɵnextContext();
-            var data_r395 = ctx_r436.data;
-            var field_r394 = ctx_r436.field;
-            var item_r397 = ctx_r436.item;
-            var i_r396 = ctx_r436.i;
-            var ctx_r402 = i0.ɵɵnextContext();
+            var ctx_r439 = i0.ɵɵnextContext();
+            var data_r398 = ctx_r439.data;
+            var field_r397 = ctx_r439.field;
+            var item_r400 = ctx_r439.item;
+            var i_r399 = ctx_r439.i;
+            var ctx_r405 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r402.editId === data_r395[ctx_r402.config.fieldId] && ctx_r402.property === field_r394.property && field_r394.editable && (ctx_r402.isString(field_r394) || ctx_r402.isDate(field_r394) || ctx_r402.isSelect(field_r394) || ctx_r402.isTime(field_r394)))("cmacs-compact-table-on-edit-no-padding", ctx_r402.editId === data_r395[ctx_r402.config.fieldId] && ctx_r402.property === field_r394.property && field_r394.editable && (ctx_r402.isNumber(field_r394) || ctx_r402.isDate(field_r394) || ctx_r402.isTime(field_r394) || ctx_r402.isString(field_r394)));
+            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r405.editId === data_r398[ctx_r405.config.fieldId] && ctx_r405.property === field_r397.property && field_r397.editable && (ctx_r405.isString(field_r397) || ctx_r405.isDate(field_r397) || ctx_r405.isSelect(field_r397) || ctx_r405.isTime(field_r397)))("cmacs-compact-table-on-edit-no-padding", ctx_r405.editId === data_r398[ctx_r405.config.fieldId] && ctx_r405.property === field_r397.property && field_r397.editable && (ctx_r405.isNumber(field_r397) || ctx_r405.isDate(field_r397) || ctx_r405.isTime(field_r397) || ctx_r405.isString(field_r397)));
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("max-width", ctx_r402.getMaxWidth(field_r394, item_r397, i_r396));
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r402.validate(data_r395, field_r394))("cmacs-compact-table-overflow-cell", !ctx_r402.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r402.isNull(ctx_r402.getLabel(data_r395, field_r394)) || !ctx_r402.getLabel(data_r395, field_r394).length)("cmacs-compact-table-field-mode-status-low", field_r394.mode === "status" && ctx_r402.getClassStatus(data_r395, field_r394) === "low")("cmacs-compact-table-field-mode-status-medium", field_r394.mode === "status" && ctx_r402.getClassStatus(data_r395, field_r394) === "medium")("cmacs-compact-table-field-mode-status-high", field_r394.mode === "status" && ctx_r402.getClassStatus(data_r395, field_r394) === "high");
-            i0.ɵɵattributeInterpolate3("id", "", ctx_r402.gridID, "-row-", i_r396, "-", field_r394.property, "");
-            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r402.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r402.isEllipsisActive(ctx_r402.gridID + "-row-" + i_r396 + "-" + field_r394.property, field_r394) ? ctx_r402.getLabel(data_r395, field_r394) && ctx_r402.getLabel(data_r395, field_r394).length ? ctx_r402.getLabel(data_r395, field_r394) : field_r394.placeholder : null);
+            i0.ɵɵstyleProp("max-width", ctx_r405.getMaxWidth(field_r397, item_r400, i_r399));
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r405.validate(data_r398, field_r397))("cmacs-compact-table-overflow-cell", !ctx_r405.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r405.isNull(ctx_r405.getLabel(data_r398, field_r397)) || !ctx_r405.getLabel(data_r398, field_r397).length)("cmacs-compact-table-field-mode-status-low", field_r397.mode === "status" && ctx_r405.getClassStatus(data_r398, field_r397) === "low")("cmacs-compact-table-field-mode-status-medium", field_r397.mode === "status" && ctx_r405.getClassStatus(data_r398, field_r397) === "medium")("cmacs-compact-table-field-mode-status-high", field_r397.mode === "status" && ctx_r405.getClassStatus(data_r398, field_r397) === "high");
+            i0.ɵɵattributeInterpolate3("id", "", ctx_r405.gridID, "-row-", i_r399, "-", field_r397.property, "");
+            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r405.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r405.isEllipsisActive(ctx_r405.gridID + "-row-" + i_r399 + "-" + field_r397.property, field_r397) ? ctx_r405.getLabel(data_r398, field_r397) && ctx_r405.getLabel(data_r398, field_r397).length ? ctx_r405.getLabel(data_r398, field_r397) : field_r397.placeholder : null);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r402.getLabel(data_r395, field_r394) && ctx_r402.getLabel(data_r395, field_r394).length ? ctx_r402.getLabel(data_r395, field_r394) : field_r394.placeholder);
+            i0.ɵɵtextInterpolate(ctx_r405.getLabel(data_r398, field_r397) && ctx_r405.getLabel(data_r398, field_r397).length ? ctx_r405.getLabel(data_r398, field_r397) : field_r397.placeholder);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", field_r394.mode !== "status");
+            i0.ɵɵproperty("ngIf", field_r397.mode !== "status");
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template(rf, ctx) {
         if (rf & 1) {
-            var _r439_1 = i0.ɵɵgetCurrentView();
+            var _r442_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 126);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r439_1); var ctx_r438 = i0.ɵɵnextContext(); var data_r395 = ctx_r438.data; var field_r394 = ctx_r438.field; var ctx_r437 = i0.ɵɵnextContext(); return ctx_r437.startEdit(data_r395[ctx_r437.config.fieldId], field_r394.property, $event, data_r395); });
-            i0.ɵɵelementStart(2, "div", 136);
-            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r439_1); var ctx_r441 = i0.ɵɵnextContext(); var i_r396 = ctx_r441.i; var field_r394 = ctx_r441.field; var ctx_r440 = i0.ɵɵnextContext(); return ctx_r440.onDataTapEllipsis(ctx_r440.gridID + "-row-" + i_r396 + "-" + field_r394.property); });
+            i0.ɵɵelementStart(1, "div", 128);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r442_1); var ctx_r441 = i0.ɵɵnextContext(); var data_r398 = ctx_r441.data; var field_r397 = ctx_r441.field; var ctx_r440 = i0.ɵɵnextContext(); return ctx_r440.startEdit(data_r398[ctx_r440.config.fieldId], field_r397.property, $event, data_r398); });
+            i0.ɵɵelementStart(2, "div", 138);
+            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_5_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r442_1); var ctx_r444 = i0.ɵɵnextContext(); var i_r399 = ctx_r444.i; var field_r397 = ctx_r444.field; var ctx_r443 = i0.ɵɵnextContext(); return ctx_r443.onDataTapEllipsis(ctx_r443.gridID + "-row-" + i_r399 + "-" + field_r397.property); });
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
-            i0.ɵɵelement(4, "i", 137);
+            i0.ɵɵelement(4, "i", 139);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r442 = i0.ɵɵnextContext();
-            var data_r395 = ctx_r442.data;
-            var field_r394 = ctx_r442.field;
-            var item_r397 = ctx_r442.item;
-            var i_r396 = ctx_r442.i;
-            var ctx_r403 = i0.ɵɵnextContext();
+            var ctx_r445 = i0.ɵɵnextContext();
+            var data_r398 = ctx_r445.data;
+            var field_r397 = ctx_r445.field;
+            var item_r400 = ctx_r445.item;
+            var i_r399 = ctx_r445.i;
+            var ctx_r406 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r403.editId === data_r395[ctx_r403.config.fieldId] && ctx_r403.property === field_r394.property && field_r394.editable && (ctx_r403.isString(field_r394) || ctx_r403.isDate(field_r394) || ctx_r403.isSelect(field_r394) || ctx_r403.isTime(field_r394)))("cmacs-compact-table-on-edit-no-padding", ctx_r403.editId === data_r395[ctx_r403.config.fieldId] && ctx_r403.property === field_r394.property && field_r394.editable && (ctx_r403.isNumber(field_r394) || ctx_r403.isDate(field_r394) || ctx_r403.isTime(field_r394) || ctx_r403.isString(field_r394)));
+            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r406.editId === data_r398[ctx_r406.config.fieldId] && ctx_r406.property === field_r397.property && field_r397.editable && (ctx_r406.isString(field_r397) || ctx_r406.isDate(field_r397) || ctx_r406.isSelect(field_r397) || ctx_r406.isTime(field_r397)))("cmacs-compact-table-on-edit-no-padding", ctx_r406.editId === data_r398[ctx_r406.config.fieldId] && ctx_r406.property === field_r397.property && field_r397.editable && (ctx_r406.isNumber(field_r397) || ctx_r406.isDate(field_r397) || ctx_r406.isTime(field_r397) || ctx_r406.isString(field_r397)));
             i0.ɵɵadvance(1);
-            i0.ɵɵstyleProp("max-width", ctx_r403.getMaxWidth(field_r394, item_r397, i_r396));
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r403.validate(data_r395, field_r394))("cmacs-compact-table-overflow-cell", !ctx_r403.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r403.isNull(data_r395[field_r394.property]));
-            i0.ɵɵattributeInterpolate3("id", "", ctx_r403.gridID, "-row-", i_r396, "-", field_r394.property, "");
-            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r403.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r403.isEllipsisActive(ctx_r403.gridID + "-row-" + i_r396 + "-" + field_r394.property, field_r394) ? data_r395[field_r394.property] !== undefined ? field_r394.useCommaMarker ? data_r395[field_r394.property].toString().replace(".", ",") : data_r395[field_r394.property] : field_r394.placeholder : null);
+            i0.ɵɵstyleProp("max-width", ctx_r406.getMaxWidth(field_r397, item_r400, i_r399));
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r406.validate(data_r398, field_r397))("cmacs-compact-table-overflow-cell", !ctx_r406.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r406.isNull(data_r398[field_r397.property]));
+            i0.ɵɵattributeInterpolate3("id", "", ctx_r406.gridID, "-row-", i_r399, "-", field_r397.property, "");
+            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r406.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r406.isEllipsisActive(ctx_r406.gridID + "-row-" + i_r399 + "-" + field_r397.property, field_r397) ? data_r398[field_r397.property] !== undefined ? field_r397.useCommaMarker ? data_r398[field_r397.property].toString().replace(".", ",") : data_r398[field_r397.property] : field_r397.placeholder : null);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r403.getInputNumberValue(data_r395, field_r394));
+            i0.ɵɵtextInterpolate(ctx_r406.getInputNumberValue(data_r398, field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-input-number-icon", ctx_r403.inLineEdit && field_r394.editable)("cmacs-compact-table-input-number-icon-view", !ctx_r403.inLineEdit || !field_r394.editable);
+            i0.ɵɵclassProp("cmacs-compact-table-input-number-icon", ctx_r406.inLineEdit && field_r397.editable)("cmacs-compact-table-input-number-icon-view", !ctx_r406.inLineEdit || !field_r397.editable);
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_6_div_1_Template(rf, ctx) {
         if (rf & 1) {
-            var _r447_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "div", 139);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_6_div_1_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r447_1); var data_r395 = i0.ɵɵnextContext(2).data; var ctx_r445 = i0.ɵɵnextContext(); return ctx_r445.clickHyperlink(data_r395); });
+            var _r450_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 141);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_6_div_1_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r450_1); var data_r398 = i0.ɵɵnextContext(2).data; var ctx_r448 = i0.ɵɵnextContext(); return ctx_r448.clickHyperlink(data_r398); });
             i0.ɵɵtext(1);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r448 = i0.ɵɵnextContext(2);
-            var data_r395 = ctx_r448.data;
-            var field_r394 = ctx_r448.field;
-            i0.ɵɵclassProp("cmacs-compact-table-hyperlink", !data_r395.parent);
+            var ctx_r451 = i0.ɵɵnextContext(2);
+            var data_r398 = ctx_r451.data;
+            var field_r397 = ctx_r451.field;
+            i0.ɵɵclassProp("cmacs-compact-table-hyperlink", !data_r398.parent);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate1(" ", data_r395[field_r394.property], " ");
+            i0.ɵɵtextInterpolate1(" ", data_r398[field_r397.property], " ");
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_6_div_2_Template(rf, ctx) {
@@ -32265,141 +32288,141 @@
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r449 = i0.ɵɵnextContext(2);
-            var data_r395 = ctx_r449.data;
-            var field_r394 = ctx_r449.field;
+            var ctx_r452 = i0.ɵɵnextContext(2);
+            var data_r398 = ctx_r452.data;
+            var field_r397 = ctx_r452.field;
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate1(" ", data_r395[field_r394.property], " ");
+            i0.ɵɵtextInterpolate1(" ", data_r398[field_r397.property], " ");
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_6_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsCompactTableComponent_ng_template_8_ng_container_6_div_1_Template, 2, 3, "div", 138);
+            i0.ɵɵtemplate(1, CmacsCompactTableComponent_ng_template_8_ng_container_6_div_1_Template, 2, 3, "div", 140);
             i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_8_ng_container_6_div_2_Template, 2, 1, "div", 3);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var data_r395 = i0.ɵɵnextContext().data;
+            var data_r398 = i0.ɵɵnextContext().data;
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !data_r395.parent);
+            i0.ɵɵproperty("ngIf", !data_r398.parent);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", data_r395.parent);
+            i0.ɵɵproperty("ngIf", data_r398.parent);
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_7_span_2_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "span", 143);
+            i0.ɵɵelement(0, "span", 145);
         }
         if (rf & 2) {
-            var ctx_r454 = i0.ɵɵnextContext(2);
-            var data_r395 = ctx_r454.data;
-            var field_r394 = ctx_r454.field;
-            var ctx_r451 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r451.validate(data_r395, field_r394));
+            var ctx_r457 = i0.ɵɵnextContext(2);
+            var data_r398 = ctx_r457.data;
+            var field_r397 = ctx_r457.field;
+            var ctx_r454 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r454.validate(data_r398, field_r397));
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_7_span_3_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "span", 144);
-            i0.ɵɵelement(1, "span", 145);
+            i0.ɵɵelementStart(0, "span", 146);
+            i0.ɵɵelement(1, "span", 147);
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r455 = i0.ɵɵnextContext(2);
-            var data_r395 = ctx_r455.data;
-            var field_r394 = ctx_r455.field;
-            var ctx_r452 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r452.validate(data_r395, field_r394));
+            var ctx_r458 = i0.ɵɵnextContext(2);
+            var data_r398 = ctx_r458.data;
+            var field_r397 = ctx_r458.field;
+            var ctx_r455 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r455.validate(data_r398, field_r397));
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_7_i_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 146);
+            i0.ɵɵelement(0, "i", 148);
         }
         if (rf & 2) {
-            var ctx_r456 = i0.ɵɵnextContext(2);
-            var data_r395 = ctx_r456.data;
-            var field_r394 = ctx_r456.field;
-            var ctx_r453 = i0.ɵɵnextContext();
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r453.validate(data_r395, field_r394));
+            var ctx_r459 = i0.ɵɵnextContext(2);
+            var data_r398 = ctx_r459.data;
+            var field_r397 = ctx_r459.field;
+            var ctx_r456 = i0.ɵɵnextContext();
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r456.validate(data_r398, field_r397));
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_7_Template(rf, ctx) {
         if (rf & 1) {
-            var _r459_1 = i0.ɵɵgetCurrentView();
+            var _r462_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 126);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_7_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r459_1); var ctx_r458 = i0.ɵɵnextContext(); var data_r395 = ctx_r458.data; var field_r394 = ctx_r458.field; var ctx_r457 = i0.ɵɵnextContext(); return ctx_r457.startEdit(data_r395[ctx_r457.config.fieldId], field_r394.property, $event, data_r395); });
-            i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_8_ng_container_7_span_2_Template, 1, 2, "span", 140);
-            i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_8_ng_container_7_span_3_Template, 2, 2, "span", 141);
-            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_7_i_4_Template, 1, 2, "i", 142);
+            i0.ɵɵelementStart(1, "div", 128);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_7_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r462_1); var ctx_r461 = i0.ɵɵnextContext(); var data_r398 = ctx_r461.data; var field_r397 = ctx_r461.field; var ctx_r460 = i0.ɵɵnextContext(); return ctx_r460.startEdit(data_r398[ctx_r460.config.fieldId], field_r397.property, $event, data_r398); });
+            i0.ɵɵtemplate(2, CmacsCompactTableComponent_ng_template_8_ng_container_7_span_2_Template, 1, 2, "span", 142);
+            i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_8_ng_container_7_span_3_Template, 2, 2, "span", 143);
+            i0.ɵɵtemplate(4, CmacsCompactTableComponent_ng_template_8_ng_container_7_i_4_Template, 1, 2, "i", 144);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r460 = i0.ɵɵnextContext();
-            var data_r395 = ctx_r460.data;
-            var field_r394 = ctx_r460.field;
-            var ctx_r405 = i0.ɵɵnextContext();
+            var ctx_r463 = i0.ɵɵnextContext();
+            var data_r398 = ctx_r463.data;
+            var field_r397 = ctx_r463.field;
+            var ctx_r408 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r405.editId === data_r395[ctx_r405.config.fieldId] && ctx_r405.property === field_r394.property && field_r394.editable && (ctx_r405.isString(field_r394) || ctx_r405.isDate(field_r394) || ctx_r405.isSelect(field_r394) || ctx_r405.isTime(field_r394)))("cmacs-compact-table-on-edit-no-padding", ctx_r405.editId === data_r395[ctx_r405.config.fieldId] && ctx_r405.property === field_r394.property && field_r394.editable && (ctx_r405.isNumber(field_r394) || ctx_r405.isDate(field_r394) || ctx_r405.isTime(field_r394) || ctx_r405.isString(field_r394)));
+            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r408.editId === data_r398[ctx_r408.config.fieldId] && ctx_r408.property === field_r397.property && field_r397.editable && (ctx_r408.isString(field_r397) || ctx_r408.isDate(field_r397) || ctx_r408.isSelect(field_r397) || ctx_r408.isTime(field_r397)))("cmacs-compact-table-on-edit-no-padding", ctx_r408.editId === data_r398[ctx_r408.config.fieldId] && ctx_r408.property === field_r397.property && field_r397.editable && (ctx_r408.isNumber(field_r397) || ctx_r408.isDate(field_r397) || ctx_r408.isTime(field_r397) || ctx_r408.isString(field_r397)));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", data_r395[field_r394.property] == false || data_r395[field_r394.property] == "false");
+            i0.ɵɵproperty("ngIf", data_r398[field_r397.property] == false || data_r398[field_r397.property] == "false");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", data_r395[field_r394.property] === undefined || data_r395[field_r394.property] === null);
+            i0.ɵɵproperty("ngIf", data_r398[field_r397.property] === undefined || data_r398[field_r397.property] === null);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", data_r395[field_r394.property] === true || data_r395[field_r394.property] === "true");
+            i0.ɵɵproperty("ngIf", data_r398[field_r397.property] === true || data_r398[field_r397.property] === "true");
         }
     }
     var _c14 = function () { return { initialCountry: "us" }; };
     function CmacsCompactTableComponent_ng_template_8_ng_container_8_Template(rf, ctx) {
         if (rf & 1) {
-            var _r464_1 = i0.ɵɵgetCurrentView();
+            var _r467_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "div", 147);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_8_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r464_1); var ctx_r463 = i0.ɵɵnextContext(); var data_r395 = ctx_r463.data; var field_r394 = ctx_r463.field; var ctx_r462 = i0.ɵɵnextContext(); return ctx_r462.startEdit(data_r395[ctx_r462.config.fieldId], field_r394.property, $event, data_r395); });
-            i0.ɵɵelementStart(2, "div", 136);
-            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_8_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r464_1); var ctx_r466 = i0.ɵɵnextContext(); var i_r396 = ctx_r466.i; var field_r394 = ctx_r466.field; var ctx_r465 = i0.ɵɵnextContext(); return ctx_r465.onDataTapEllipsis(ctx_r465.gridID + "-row-" + i_r396 + "-" + field_r394.property); });
-            i0.ɵɵelementStart(3, "cmacs-phone-number", 148, 125);
-            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_8_Template_cmacs_phone_number_click_3_listener() { i0.ɵɵrestoreView(_r464_1); var ctx_r468 = i0.ɵɵnextContext(); var data_r395 = ctx_r468.data; var field_r394 = ctx_r468.field; var ctx_r467 = i0.ɵɵnextContext(); return ctx_r467.currentPhoneSelected(data_r395, field_r394); });
+            i0.ɵɵelementStart(1, "div", 149);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_8_Template_div_click_1_listener($event) { i0.ɵɵrestoreView(_r467_1); var ctx_r466 = i0.ɵɵnextContext(); var data_r398 = ctx_r466.data; var field_r397 = ctx_r466.field; var ctx_r465 = i0.ɵɵnextContext(); return ctx_r465.startEdit(data_r398[ctx_r465.config.fieldId], field_r397.property, $event, data_r398); });
+            i0.ɵɵelementStart(2, "div", 138);
+            i0.ɵɵlistener("tap", function CmacsCompactTableComponent_ng_template_8_ng_container_8_Template_div_tap_2_listener() { i0.ɵɵrestoreView(_r467_1); var ctx_r469 = i0.ɵɵnextContext(); var i_r399 = ctx_r469.i; var field_r397 = ctx_r469.field; var ctx_r468 = i0.ɵɵnextContext(); return ctx_r468.onDataTapEllipsis(ctx_r468.gridID + "-row-" + i_r399 + "-" + field_r397.property); });
+            i0.ɵɵelementStart(3, "cmacs-phone-number", 150, 127);
+            i0.ɵɵlistener("click", function CmacsCompactTableComponent_ng_template_8_ng_container_8_Template_cmacs_phone_number_click_3_listener() { i0.ɵɵrestoreView(_r467_1); var ctx_r471 = i0.ɵɵnextContext(); var data_r398 = ctx_r471.data; var field_r397 = ctx_r471.field; var ctx_r470 = i0.ɵɵnextContext(); return ctx_r470.currentPhoneSelected(data_r398, field_r397); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r469 = i0.ɵɵnextContext();
-            var data_r395 = ctx_r469.data;
-            var field_r394 = ctx_r469.field;
-            var i_r396 = ctx_r469.i;
-            var ctx_r406 = i0.ɵɵnextContext();
+            var ctx_r472 = i0.ɵɵnextContext();
+            var data_r398 = ctx_r472.data;
+            var field_r397 = ctx_r472.field;
+            var i_r399 = ctx_r472.i;
+            var ctx_r409 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r406.editId === data_r395[ctx_r406.config.fieldId] && ctx_r406.property === field_r394.property && field_r394.editable && (ctx_r406.isString(field_r394) || ctx_r406.isDate(field_r394) || ctx_r406.isSelect(field_r394) || ctx_r406.isTime(field_r394) || ctx_r406.isPhone(field_r394)))("cmacs-compact-table-on-edit-no-padding", ctx_r406.editId === data_r395[ctx_r406.config.fieldId] && ctx_r406.property === field_r394.property && field_r394.editable && (ctx_r406.isNumber(field_r394) || ctx_r406.isDate(field_r394) || ctx_r406.isTime(field_r394) || ctx_r406.isString(field_r394) || ctx_r406.isPhone(field_r394)));
+            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r409.editId === data_r398[ctx_r409.config.fieldId] && ctx_r409.property === field_r397.property && field_r397.editable && (ctx_r409.isString(field_r397) || ctx_r409.isDate(field_r397) || ctx_r409.isSelect(field_r397) || ctx_r409.isTime(field_r397) || ctx_r409.isPhone(field_r397)))("cmacs-compact-table-on-edit-no-padding", ctx_r409.editId === data_r398[ctx_r409.config.fieldId] && ctx_r409.property === field_r397.property && field_r397.editable && (ctx_r409.isNumber(field_r397) || ctx_r409.isDate(field_r397) || ctx_r409.isTime(field_r397) || ctx_r409.isString(field_r397) || ctx_r409.isPhone(field_r397)));
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r406.validate(data_r395, field_r394))("cmacs-compact-table-overflow-cell", !ctx_r406.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r406.isNull(data_r395[field_r394.property]));
-            i0.ɵɵattributeInterpolate3("id", "", ctx_r406.gridID, "-row-", i_r396, "-", field_r394.property, "");
-            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r406.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r406.isEllipsisActive(ctx_r406.gridID + "-row-" + i_r396 + "-" + field_r394.property, field_r394) ? data_r395[field_r394.property] !== undefined ? field_r394.useCommaMarker ? data_r395[field_r394.property].toString().replace(".", ",") : data_r395[field_r394.property] : field_r394.placeholder : null);
+            i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r409.validate(data_r398, field_r397))("cmacs-compact-table-overflow-cell", !ctx_r409.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r409.isNull(data_r398[field_r397.property]));
+            i0.ɵɵattributeInterpolate3("id", "", ctx_r409.gridID, "-row-", i_r399, "-", field_r397.property, "");
+            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r409.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r409.isEllipsisActive(ctx_r409.gridID + "-row-" + i_r399 + "-" + field_r397.property, field_r397) ? data_r398[field_r397.property] !== undefined ? field_r397.useCommaMarker ? data_r398[field_r397.property].toString().replace(".", ",") : data_r398[field_r397.property] : field_r397.placeholder : null);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("init", i0.ɵɵpureFunction0(17, _c14))("formControlCustom", ctx_r406.getPhoneFieldValue(data_r395, field_r394));
+            i0.ɵɵproperty("init", i0.ɵɵpureFunction0(17, _c14))("formControlCustom", ctx_r409.getPhoneFieldValue(data_r398, field_r397));
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_9_Template(rf, ctx) {
         if (rf & 1) {
-            var _r472_1 = i0.ɵɵgetCurrentView();
+            var _r475_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "cmacs-compact-table-attachment", 149);
-            i0.ɵɵlistener("onChangeAttachments", function CmacsCompactTableComponent_ng_template_8_ng_container_9_Template_cmacs_compact_table_attachment_onChangeAttachments_1_listener($event) { i0.ɵɵrestoreView(_r472_1); var ctx_r471 = i0.ɵɵnextContext(); var i_r396 = ctx_r471.i; var field_r394 = ctx_r471.field; var ctx_r470 = i0.ɵɵnextContext(); return ctx_r470._onChangeAttachments($event, i_r396, field_r394.property); })("onclickChooseFile", function CmacsCompactTableComponent_ng_template_8_ng_container_9_Template_cmacs_compact_table_attachment_onclickChooseFile_1_listener() { i0.ɵɵrestoreView(_r472_1); var ctx_r474 = i0.ɵɵnextContext(); var i_r396 = ctx_r474.i; var field_r394 = ctx_r474.field; var ctx_r473 = i0.ɵɵnextContext(); return ctx_r473._onclickChooseFile(i_r396, field_r394.property); });
+            i0.ɵɵelementStart(1, "cmacs-compact-table-attachment", 151);
+            i0.ɵɵlistener("onChangeAttachments", function CmacsCompactTableComponent_ng_template_8_ng_container_9_Template_cmacs_compact_table_attachment_onChangeAttachments_1_listener($event) { i0.ɵɵrestoreView(_r475_1); var ctx_r474 = i0.ɵɵnextContext(); var i_r399 = ctx_r474.i; var field_r397 = ctx_r474.field; var ctx_r473 = i0.ɵɵnextContext(); return ctx_r473._onChangeAttachments($event, i_r399, field_r397.property); })("onclickChooseFile", function CmacsCompactTableComponent_ng_template_8_ng_container_9_Template_cmacs_compact_table_attachment_onclickChooseFile_1_listener() { i0.ɵɵrestoreView(_r475_1); var ctx_r477 = i0.ɵɵnextContext(); var i_r399 = ctx_r477.i; var field_r397 = ctx_r477.field; var ctx_r476 = i0.ɵɵnextContext(); return ctx_r476._onclickChooseFile(i_r399, field_r397.property); });
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r475 = i0.ɵɵnextContext();
-            var data_r395 = ctx_r475.data;
-            var field_r394 = ctx_r475.field;
-            var ctx_r407 = i0.ɵɵnextContext();
+            var ctx_r478 = i0.ɵɵnextContext();
+            var data_r398 = ctx_r478.data;
+            var field_r397 = ctx_r478.field;
+            var ctx_r410 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("conf", ctx_r407.columnMenu.attachment)("ctaDropdownOption", data_r395[field_r394.property]);
+            i0.ɵɵproperty("conf", ctx_r410.columnMenu.attachment)("ctaDropdownOption", data_r398[field_r397.property]);
         }
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_10_ng_container_3_Template(rf, ctx) {
@@ -32409,24 +32432,24 @@
     }
     function CmacsCompactTableComponent_ng_template_8_ng_container_10_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementContainerStart(0, null, 150);
-            i0.ɵɵelementStart(2, "div", 151);
-            i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_8_ng_container_10_ng_container_3_Template, 1, 0, "ng-container", 59);
+            i0.ɵɵelementContainerStart(0, null, 152);
+            i0.ɵɵelementStart(2, "div", 153);
+            i0.ɵɵtemplate(3, CmacsCompactTableComponent_ng_template_8_ng_container_10_ng_container_3_Template, 1, 0, "ng-container", 60);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r478 = i0.ɵɵnextContext();
-            var data_r395 = ctx_r478.data;
-            var field_r394 = ctx_r478.field;
-            var ci_r398 = ctx_r478.ci;
-            var i_r396 = ctx_r478.i;
-            var ctx_r408 = i0.ɵɵnextContext();
+            var ctx_r481 = i0.ɵɵnextContext();
+            var data_r398 = ctx_r481.data;
+            var field_r397 = ctx_r481.field;
+            var ci_r401 = ctx_r481.ci;
+            var i_r399 = ctx_r481.i;
+            var ctx_r411 = i0.ɵɵnextContext();
             i0.ɵɵadvance(2);
-            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r408.editId === data_r395[ctx_r408.config.fieldId] && ctx_r408.property === field_r394.property && field_r394.editable && (ctx_r408.isString(field_r394) || ctx_r408.isDate(field_r394) || ctx_r408.isSelect(field_r394) || ctx_r408.isTime(field_r394)))("cmacs-compact-table-on-edit-no-padding", ctx_r408.editId === data_r395[ctx_r408.config.fieldId] && ctx_r408.property === field_r394.property && field_r394.editable && (ctx_r408.isNumber(field_r394) || ctx_r408.isDate(field_r394) || ctx_r408.isTime(field_r394) || ctx_r408.isString(field_r394)));
-            i0.ɵɵproperty("id", ctx_r408.gridID + "column" + ci_r398 + "row" + i_r396);
+            i0.ɵɵclassProp("cmacs-compact-table-on-edit", ctx_r411.editId === data_r398[ctx_r411.config.fieldId] && ctx_r411.property === field_r397.property && field_r397.editable && (ctx_r411.isString(field_r397) || ctx_r411.isDate(field_r397) || ctx_r411.isSelect(field_r397) || ctx_r411.isTime(field_r397)))("cmacs-compact-table-on-edit-no-padding", ctx_r411.editId === data_r398[ctx_r411.config.fieldId] && ctx_r411.property === field_r397.property && field_r397.editable && (ctx_r411.isNumber(field_r397) || ctx_r411.isDate(field_r397) || ctx_r411.isTime(field_r397) || ctx_r411.isString(field_r397)));
+            i0.ɵɵproperty("id", ctx_r411.gridID + "column" + ci_r401 + "row" + i_r399);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", data_r395[field_r394.property].ref)("ngTemplateOutletContext", data_r395[field_r394.property].context);
+            i0.ɵɵproperty("ngTemplateOutlet", data_r398[field_r397.property].ref)("ngTemplateOutletContext", data_r398[field_r397.property].context);
         }
     }
     function CmacsCompactTableComponent_ng_template_8_Template(rf, ctx) {
@@ -32445,29 +32468,29 @@
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var field_r394 = ctx.field;
-            var data_r395 = ctx.data;
+            var field_r397 = ctx.field;
+            var data_r398 = ctx.data;
             var ctx_r7 = i0.ɵɵnextContext();
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isString(field_r394));
+            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isString(field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isDate(field_r394));
+            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isDate(field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isTime(field_r394));
+            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isTime(field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isSelect(field_r394));
+            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isSelect(field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isNumber(field_r394));
+            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isNumber(field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isCeldTypeHyperlink(field_r394));
+            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isCeldTypeHyperlink(field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isBoolean(field_r394));
+            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isBoolean(field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isPhone(field_r394));
+            i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isPhone(field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.columnMenu && ctx_r7.isAttachment(field_r394));
+            i0.ɵɵproperty("ngIf", ctx_r7.columnMenu && ctx_r7.isAttachment(field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.isCeldTypeTemplateRef(field_r394) && data_r395[field_r394.property]);
+            i0.ɵɵproperty("ngIf", ctx_r7.isCeldTypeTemplateRef(field_r397) && data_r398[field_r397.property]);
         }
     }
     var moment$3 = moment___namespace;
@@ -32548,6 +32571,7 @@
             this.frontPagination = true;
             this.templateMode = false;
             this.bordered = false;
+            this.hideButtons = false;
             this.centerTable = false;
             this.showPagination = true;
             this.loading = false;
@@ -33982,7 +34006,7 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("cmacs-compact-table-logs", ctx.logs);
             }
-        }, inputs: { size: "size", showTotal: "showTotal", pageSizeOptions: "pageSizeOptions", virtualScroll: "virtualScroll", exclusiveSelect: "exclusiveSelect", logs: "logs", expandable: "expandable", smartTable: "smartTable", draggable: "draggable", virtualItemSize: "virtualItemSize", expandAll: "expandAll", addColumn: "addColumn", loadingDelay: "loadingDelay", loadingIndicator: "loadingIndicator", hasCookies: "hasCookies", total: "total", title: "title", footer: "footer", noResult: "noResult", widthConfig: "widthConfig", pageIndex: "pageIndex", pageSize: "pageSize", actionColumnWidth: "actionColumnWidth", wrapLines: "wrapLines", dropdownAddOptionTemplateRef: "dropdownAddOptionTemplateRef", data: "data", config: "config", use12Hours: "use12Hours", fieldId: "fieldId", gridID: "gridID", paginationPosition: "paginationPosition", scroll: "scroll", frontPagination: "frontPagination", templateMode: "templateMode", bordered: "bordered", centerTable: "centerTable", showPagination: "showPagination", loading: "loading", showSizeChanger: "showSizeChanger", hideOnSinglePage: "hideOnSinglePage", showQuickJumper: "showQuickJumper", simple: "simple", checkboxSelect: "checkboxSelect", inLineEdit: "inLineEdit", dataTable: "dataTable", showRate: "showRate", exportEvent: "exportEvent", columnMenu: "columnMenu", extra: "extra", contextmenu: "contextmenu", indentSize: "indentSize", virtualMaxBufferPx: "virtualMaxBufferPx", rateCount: "rateCount", multiSelect: "multiSelect" }, outputs: { configChange: "configChange", buttonClick: "buttonClick", rateChange: "rateChange", selectionChange: "selectionChange", ondlclickRow: "ondlclickRow", onclickRow: "onclickRow", onclickHyperlink: "onclickHyperlink", onedit: "onedit", onRowExpandCollapse: "onRowExpandCollapse", ondrop: "ondrop", sortChange: "sortChange", filterChange: "filterChange", onrowdeleted: "onrowdeleted", onrowadded: "onrowadded", oncolumnadded: "oncolumnadded", oneditcolumn: "oneditcolumn", onresize: "onresize", oncontextmenu: "oncontextmenu", onDropdownRender: "onDropdownRender", onChangeAttachments: "onChangeAttachments", onclickChooseFile: "onclickChooseFile" }, exportAs: ["cmacsCompactTable"], features: [i0.ɵɵNgOnChangesFeature], decls: 10, vars: 36, consts: [[3, "id"], [1, "cmacs-compact-table", 3, "nzData", "nzShowTotal", "nzPageSizeOptions", "nzVirtualItemSize", "nzLoadingDelay", "nzVirtualMaxBufferPx", "nzLoadingIndicator", "nzTotal", "nzTitle", "nzFooter", "nzNoResult", "nzWidthConfig", "nzPageIndex", "nzPageSize", "nzPaginationPosition", "nzScroll", "nzFrontPagination", "nzTemplateMode", "nzShowPagination", "nzLoading", "nzShowSizeChanger", "nzHideOnSinglePage", "nzShowQuickJumper", "nzSimple"], ["gridComponent", ""], [4, "ngIf"], ["cdkDropList", "", 3, "cdkDropListDropped", 4, "ngIf"], ["editTpl", ""], ["viewModeTpl", ""], ["nzWidth", "40px", "class", "cmacs-compact-table-smart-table-hot-spot-row-add cmacs-compact-table-smart-action-header", 3, "cmacs-compact-table-logs-header-th", "minWidth", "maxWidth", "nzLeft", 4, "ngIf"], ["nzWidth", "40px", 3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], ["nzWidth", "30px", "nzLeft", "0px", 3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzWidth", "maxWidth", "minWidth", "nzRight", 4, "ngIf"], ["nzWidth", "40px", "class", "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "minWidth", "maxWidth", "nzRight", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], [3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], ["nzWidth", "40px", 1, "cmacs-compact-table-smart-table-hot-spot-row-add", "cmacs-compact-table-smart-action-header", 3, "nzLeft"], [1, "cmacs-compact-table-smart-table-hot-spot-row-add-icon", "iconUILarge-New", 3, "click"], ["nzWidth", "40px", 3, "nzLeft"], ["nzWidth", "30px", "nzLeft", "0px", 3, "nzLeft"], ["cmacs-checkbox", "", 3, "ngModel", "indeterminate", "ngModelChange", "checkedChange"], [4, "ngIf", "ngIfElse"], ["thWithFilters", ""], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzShowSort", "nzShowFilter", "nzFilters", "nzFilterMultiple", "nzDisabled", "nzMinWidth", "nzMaxWidth", "ngClass", "nzSortOrder", "nzWidth", "nzLeft", "nzRight", "nzFilterChange", "nzResizeEnd", "nzSortOrderChange"], [3, "id", 4, "ngIf"], ["nzDirection", "right", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-col-add-icon-container"], ["class", "cmacs-compact-table-smart-table-hot-spot-col-add-icon iconUILarge-New", 3, "click", 4, "ngIf"], ["cmacs-tooltip", "", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap", "click"], [3, "field", "items", "onFieldChanged", 4, "ngIf"], ["class", "iconUILarge-More-Veritcal_Icon cmacs-compact-table-column-more", "style", "font-size: 15px;", 3, "cmacs-compact-table-column-more-selected", "click", 4, "ngIf"], [3, "field", "items", "labelSave", "onFieldChanged", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-col-add-icon", "iconUILarge-New", 3, "click"], [3, "field", "items", "onFieldChanged"], [1, "iconUILarge-More-Veritcal_Icon", "cmacs-compact-table-column-more", 2, "font-size", "15px", 3, "click"], [3, "field", "items", "labelSave", "onFieldChanged"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nzDirection", "right"], [1, "cmacs-compact-table-resize-trigger"], ["nzCustomFilter", "", "nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzShowSort", "nzDisabled", "ngClass", "nzSortOrder", "nzWidth", "nzMinWidth", "nzMaxWidth", "nzLeft", "nzRight", "nzResizeEnd", "nzSortOrderChange"], ["nzTrigger", "click", "nzPlacement", "bottomRight", "nzTableFilter", "", 3, "nzClickHide"], ["dropdown", ""], ["nz-icon", "", "nzType", "search", "nz-dropdown", "", 1, "ant-table-filter-icon"], ["cmacs-tooltip", "", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [3, "nzWidth", "nzRight"], [1, "cmacs-compact-table-extra"], [4, "nzStringTemplateOutlet"], ["nzWidth", "40px", 1, "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "nzRight"], ["cdkDropList", "", 3, "cdkDropListDropped"], ["defaultTpl", ""], [3, "id", "cmacs-compact-table-expandable-row", "cmacs-compact-table-row-active", "cmacs-compact-table-header-logs", "ant-table-selected-row", "click", "touchstart", "contextmenu", "dblclick", 4, "ngIf"], [3, "id", "click", "touchstart", "contextmenu", "dblclick"], ["style", "padding: 7px 10px", 3, "nzLeft", "minWidth", "maxWidth", "width", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], [3, "ngClass", "cmacs-editable-column", "cmacs-compact-table-on-edit-expandable", "cmacs-compact-table-logs-header-th-font", "cmacs-compact-table-expandable-td", "paddingLeft", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "minWidth", "nzExpandChange", 4, "ngFor", "ngForOf"], ["class", "cmacs-compact-table-rating", "style", "padding: 7px 10px", 3, "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "cmacs-compact-table-logs-header-th-font", "nzRight", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-align-td", 3, "cmacs-compact-table-logs-td", 4, "ngIf"], [2, "padding", "7px 10px", 3, "nzLeft"], [3, "ngClass", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "nzExpandChange"], [3, "display", "cmacs-compact-table-overflow-cell-container-logs", "width", 4, "ngIf"], [3, "display", "width", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-compact-table-rating", 2, "padding", "7px 10px"], [3, "ngModel", "nzCount", "nzDisabled", "ngModelChange", "click"], [2, "padding", "7px 10px", 3, "nzRight"], [1, "cmacs-compact-table-align-td", 2, "padding", "7px 10px"], ["cdkDrag", "", "class", "cmacs-no-selection", 3, "cdkDragDisabled", "id", "cmacs-compact-table-row-active", "ant-table-selected-row", "cmacs-compact-table-editable-row", "cmacs-compact-table-smart-table-row", "click", "touchstart", "contextmenu", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "cmacs-no-selection", 3, "cdkDragDisabled", "id", "click", "touchstart", "contextmenu"], ["contextMenuTemplate", "cmacsDropdownMenu"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-add", 3, "maxWidth", "minWidth", "nzLeft", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-drag-col cmacs-compact-table-fst-td", 3, "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "nzLeft", "cmacs-compact-table-fst-td", 4, "ngIf"], [3, "ngClass", "cmacs-editable-column", "cmacs-compact-table-fst-td", "nzLeft", "nzRight", "minWidth", 4, "ngFor", "ngForOf"], ["style", "padding: 7px 10px", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "nzRight", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "nzRight", "maxWidth", "minWidth", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-row-add", 2, "padding", "7px 10px", 3, "nzLeft"], [1, "cmacs-compact-table-drag-col", "cmacs-compact-table-fst-td", 2, "padding", "7px 10px", 3, "nzLeft"], ["cdkDragHandle", "", 1, "iconUILarge-Move", "cmacs-compact-table-drag-handler"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange"], [3, "ngClass", "nzLeft", "nzRight"], ["style", "max-width: 98%", 4, "ngIf"], [2, "max-width", "98%"], [2, "padding", "7px 10px"], [3, "ngModel", "nzCount", "ngModelChange", "click"], [1, "cmacs-compact-table-smart-table-hot-spot-row-delete", 2, "padding", "7px 10px", 3, "nzRight"], ["class", "cmacs-compact-table-smart-table-hot-spot-row-delete-icon iconUISmall-Close", 3, "click", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-row-delete-icon", "iconUISmall-Close", 3, "click"], ["nz-virtual-scroll", ""], ["defaultTplVirtualScroll", ""], [3, "id", "cmacs-compact-table-row-active", "cmacs-compact-table-expandable-row", "cmacs-compact-table-header-logs", "touchstart", "contextmenu", "dblclick", 4, "ngIf"], [3, "id", "touchstart", "contextmenu", "dblclick"], [3, "cmacs-editable-column", "cmacs-compact-table-on-edit-expandable", "cmacs-compact-table-logs-header-th-font", "cmacs-compact-table-expandable-td", "paddingLeft", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "minWidth", "nzExpandChange", 4, "ngFor", "ngForOf"], [3, "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "nzExpandChange"], ["contextMenuTemplate", ""], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-add", 3, "maxWidth", "minWidth", "cmacs-compact-table-logs-td", "nzLeft", 4, "ngIf"], [3, "cmacs-editable-column", "cmacs-compact-table-fst-td", "nzLeft", "nzRight", "minWidth", 4, "ngFor", "ngForOf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "nzRight", "maxWidth", "minWidth", "cmacs-compact-table-logs-td", 4, "ngIf"], [3, "nzLeft", "nzRight"], ["class", "cmacs-compact-table-input", "type", "text", "cmacs-input", "", 3, "cmacs-compact-table-edit-mode-invalid", "placeholder", "ngModel", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["class", "cmacs-compact-table-date-edit", 3, "allowClear", "cmacs-compact-table-edit-mode-invalid", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["class", "cmacs-compact-table-datetime-picker", "hideSeconds", "", 3, "use12Hours", "cmacs-compact-table-edit-mode-invalid", "format", "defaultOpenValue", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["class", "cmacs-compact-table-select-cell", "showSearch", "", 3, "dropdownRender", "cmacsEditable", "cmacs-compact-table-field-mode-status", "cmacs-compact-table-field-mode-status-low-edit", "cmacs-compact-table-field-mode-status-medium-edit", "cmacs-compact-table-field-mode-status-high-edit", "cmacs-compact-table-edit-mode-invalid", "placeHolder", "mode", "showCmacsSearch", "ngModel", "click", "dblclick", "ngModelChange", "cmacsEditedInput", 4, "ngIf"], ["render", ""], ["class", "cmacs-compact-table-input-number-edit", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "cmacsStep", "min", "max", "formatter", "parser", "ngModelChange", "click", "dblclick", "keyup", 4, "ngIf"], ["class", "cmacs-compact-table-input-number-edit", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "formatter", "parser", "cmacsStep", "min", "max", "ngModelChange", "click", "dblclick", "keyup", 4, "ngIf"], ["cmacs-checkbox", "", "class", "cmacs-compact-tabe-editable-checkbox", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "ngModelChange", 4, "ngIf"], ["class", "phone-number", 3, "init", "formControlCustom", "click", "hasError", "countryChange", 4, "ngIf"], ["type", "text", "cmacs-input", "", 1, "cmacs-compact-table-input", 3, "placeholder", "ngModel", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInput", ""], [1, "cmacs-compact-table-date-edit", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDatePicker", ""], ["hideSeconds", "", 1, "cmacs-compact-table-datetime-picker", 3, "use12Hours", "format", "defaultOpenValue", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDateTimePicker", ""], ["showSearch", "", 1, "cmacs-compact-table-select-cell", 3, "dropdownRender", "cmacsEditable", "placeHolder", "mode", "showCmacsSearch", "ngModel", "click", "dblclick", "ngModelChange", "cmacsEditedInput"], ["fieldTypeSelect", ""], [3, "label", "value", "divider", "disabled", 4, "ngFor", "ngForOf"], [3, "label", "value", "divider", "disabled"], ["cmacs-button", "", "role", "button", "aria-label", "add item", 3, "click", 4, "ngIf"], ["cmacs-button", "", "role", "button", "aria-label", "add item", 3, "click"], [1, "cmacs-compact-table-input-number-edit", 3, "ngModel", "cmacsStep", "min", "max", "formatter", "parser", "ngModelChange", "click", "dblclick", "keyup"], ["fieldTypeInputNumber", ""], [1, "cmacs-compact-table-input-number-edit", 3, "ngModel", "formatter", "parser", "cmacsStep", "min", "max", "ngModelChange", "click", "dblclick", "keyup"], ["cmacs-checkbox", "", 1, "cmacs-compact-tabe-editable-checkbox", 3, "ngModel", "ngModelChange"], ["fieldTypeBool", ""], [1, "phone-number", 3, "init", "formControlCustom", "click", "hasError", "countryChange"], ["fieldTypePhone", ""], [2, "width", "98%", "max-width", "98%", "padding", "7px 10px", 3, "click"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], ["class", "iconUISmall-Edit", 3, "cmacs-compact-table-edit-icon", "cmacs-compact-table-edit-icon-view", 4, "ngIf"], [1, "iconUISmall-Edit"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-date", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [1, "iconUILarge-Calendar"], [1, "iconUILarge-Time"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-select", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], ["class", "iconArrowLarge-Chevron-Down", 3, "cmacs-compact-table-select-icon", "cmacs-compact-table-select-icon-view", 4, "ngIf"], [1, "iconArrowLarge-Chevron-Down"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-input-number", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [1, "iconArrowLarge-Solid-UpDown"], [3, "cmacs-compact-table-hyperlink", "click", 4, "ngIf"], [3, "click"], ["class", "cmacs-compact-table-boolean-false-icon cmacs-compact-table-boolean-icon", 3, "cmacs-compact-table-invalid", 4, "ngIf"], ["class", "cmacs-compact-table-boolean-indeterminate-icon cmacs-compact-table-boolean-icon", 3, "cmacs-compact-table-invalid", 4, "ngIf"], ["class", "iconUILarge-Select-All cmacs-compact-table-boolean-icon-true", 3, "cmacs-compact-table-invalid", 4, "ngIf"], [1, "cmacs-compact-table-boolean-false-icon", "cmacs-compact-table-boolean-icon"], [1, "cmacs-compact-table-boolean-indeterminate-icon", "cmacs-compact-table-boolean-icon"], [1, "cmacs-compact-table-boolean-indeterminate-icon-inner"], [1, "iconUILarge-Select-All", "cmacs-compact-table-boolean-icon-true"], [2, "width", "100%", "max-width", "100%", 3, "click"], [1, "phone-number-view-mode", 3, "init", "formControlCustom", "click"], [3, "conf", "ctaDropdownOption", "onChangeAttachments", "onclickChooseFile"], ["templateRefCeld", ""], [2, "width", "98%", "max-width", "98%", "padding", "7px 10px", 3, "id"]], template: function CmacsCompactTableComponent_Template(rf, ctx) {
+        }, inputs: { size: "size", showTotal: "showTotal", pageSizeOptions: "pageSizeOptions", virtualScroll: "virtualScroll", exclusiveSelect: "exclusiveSelect", logs: "logs", expandable: "expandable", smartTable: "smartTable", draggable: "draggable", virtualItemSize: "virtualItemSize", expandAll: "expandAll", addColumn: "addColumn", loadingDelay: "loadingDelay", loadingIndicator: "loadingIndicator", hasCookies: "hasCookies", total: "total", title: "title", footer: "footer", noResult: "noResult", widthConfig: "widthConfig", pageIndex: "pageIndex", pageSize: "pageSize", actionColumnWidth: "actionColumnWidth", wrapLines: "wrapLines", dropdownAddOptionTemplateRef: "dropdownAddOptionTemplateRef", data: "data", config: "config", use12Hours: "use12Hours", fieldId: "fieldId", gridID: "gridID", paginationPosition: "paginationPosition", scroll: "scroll", frontPagination: "frontPagination", templateMode: "templateMode", bordered: "bordered", hideButtons: "hideButtons", centerTable: "centerTable", showPagination: "showPagination", loading: "loading", showSizeChanger: "showSizeChanger", hideOnSinglePage: "hideOnSinglePage", showQuickJumper: "showQuickJumper", simple: "simple", checkboxSelect: "checkboxSelect", inLineEdit: "inLineEdit", dataTable: "dataTable", showRate: "showRate", exportEvent: "exportEvent", columnMenu: "columnMenu", extra: "extra", contextmenu: "contextmenu", indentSize: "indentSize", virtualMaxBufferPx: "virtualMaxBufferPx", rateCount: "rateCount", multiSelect: "multiSelect" }, outputs: { configChange: "configChange", buttonClick: "buttonClick", rateChange: "rateChange", selectionChange: "selectionChange", ondlclickRow: "ondlclickRow", onclickRow: "onclickRow", onclickHyperlink: "onclickHyperlink", onedit: "onedit", onRowExpandCollapse: "onRowExpandCollapse", ondrop: "ondrop", sortChange: "sortChange", filterChange: "filterChange", onrowdeleted: "onrowdeleted", onrowadded: "onrowadded", oncolumnadded: "oncolumnadded", oneditcolumn: "oneditcolumn", onresize: "onresize", oncontextmenu: "oncontextmenu", onDropdownRender: "onDropdownRender", onChangeAttachments: "onChangeAttachments", onclickChooseFile: "onclickChooseFile" }, exportAs: ["cmacsCompactTable"], features: [i0.ɵɵNgOnChangesFeature], decls: 10, vars: 36, consts: [[3, "id"], [1, "cmacs-compact-table", 3, "nzData", "nzShowTotal", "nzPageSizeOptions", "nzVirtualItemSize", "nzLoadingDelay", "nzVirtualMaxBufferPx", "nzLoadingIndicator", "nzTotal", "nzTitle", "nzFooter", "nzNoResult", "nzWidthConfig", "nzPageIndex", "nzPageSize", "nzPaginationPosition", "nzScroll", "nzFrontPagination", "nzTemplateMode", "nzShowPagination", "nzLoading", "nzShowSizeChanger", "nzHideOnSinglePage", "nzShowQuickJumper", "nzSimple"], ["gridComponent", ""], [4, "ngIf"], ["cdkDropList", "", 3, "cdkDropListDropped", 4, "ngIf"], ["editTpl", ""], ["viewModeTpl", ""], ["nzWidth", "40px", "class", "cmacs-compact-table-smart-table-hot-spot-row-add cmacs-compact-table-smart-action-header", 3, "cmacs-compact-table-logs-header-th", "minWidth", "maxWidth", "nzLeft", 4, "ngIf"], ["nzWidth", "40px", 3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], ["nzWidth", "30px", "nzLeft", "0px", 3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", "nzWidth", "maxWidth", "minWidth", "nzRight", 4, "ngIf"], ["nzWidth", "40px", "class", "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "minWidth", "maxWidth", "nzRight", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], [3, "cmacs-compact-table-logs-header-th", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], ["nzWidth", "40px", 1, "cmacs-compact-table-smart-table-hot-spot-row-add", "cmacs-compact-table-smart-action-header", 3, "nzLeft"], ["class", "cmacs-compact-table-smart-table-hot-spot-row-add-icon iconUILarge-New", 3, "cmacs-compact-table-smart-add-row-icon-visible", "click", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-row-add-icon", "iconUILarge-New", 3, "click"], ["nzWidth", "40px", 3, "nzLeft"], ["nzWidth", "30px", "nzLeft", "0px", 3, "nzLeft"], ["cmacs-checkbox", "", 3, "ngModel", "indeterminate", "ngModelChange", "checkedChange"], [4, "ngIf", "ngIfElse"], ["thWithFilters", ""], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzShowSort", "nzShowFilter", "nzFilters", "nzFilterMultiple", "nzDisabled", "nzMinWidth", "nzMaxWidth", "ngClass", "nzSortOrder", "nzWidth", "nzLeft", "nzRight", "nzFilterChange", "nzResizeEnd", "nzSortOrderChange"], [3, "id", 4, "ngIf"], ["nzDirection", "right", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-col-add-icon-container"], ["class", "cmacs-compact-table-smart-table-hot-spot-col-add-icon iconUILarge-New", 3, "click", 4, "ngIf"], ["cmacs-tooltip", "", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap", "click"], [3, "field", "items", "onFieldChanged", 4, "ngIf"], ["class", "iconUILarge-More-Veritcal_Icon cmacs-compact-table-column-more", "style", "font-size: 15px;", 3, "cmacs-compact-table-column-more-selected", "click", 4, "ngIf"], [3, "field", "items", "labelSave", "onFieldChanged", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-col-add-icon", "iconUILarge-New", 3, "click"], [3, "field", "items", "onFieldChanged"], [1, "iconUILarge-More-Veritcal_Icon", "cmacs-compact-table-column-more", 2, "font-size", "15px", 3, "click"], [3, "field", "items", "labelSave", "onFieldChanged"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nzDirection", "right"], [1, "cmacs-compact-table-resize-trigger"], ["nzCustomFilter", "", "nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzShowSort", "nzDisabled", "ngClass", "nzSortOrder", "nzWidth", "nzMinWidth", "nzMaxWidth", "nzLeft", "nzRight", "nzResizeEnd", "nzSortOrderChange"], ["nzTrigger", "click", "nzPlacement", "bottomRight", "nzTableFilter", "", 3, "nzClickHide"], ["dropdown", ""], ["nz-icon", "", "nzType", "search", "nz-dropdown", "", 1, "ant-table-filter-icon"], ["cmacs-tooltip", "", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [3, "nzWidth", "nzRight"], [1, "cmacs-compact-table-extra"], [4, "nzStringTemplateOutlet"], ["nzWidth", "40px", 1, "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "nzRight"], ["cdkDropList", "", 3, "cdkDropListDropped"], ["defaultTpl", ""], [3, "id", "cmacs-compact-table-expandable-row", "cmacs-compact-table-row-active", "cmacs-compact-table-header-logs", "ant-table-selected-row", "click", "touchstart", "contextmenu", "dblclick", 4, "ngIf"], [3, "id", "click", "touchstart", "contextmenu", "dblclick"], ["style", "padding: 7px 10px", 3, "nzLeft", "minWidth", "maxWidth", "width", "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], [3, "ngClass", "cmacs-editable-column", "cmacs-compact-table-on-edit-expandable", "cmacs-compact-table-logs-header-th-font", "cmacs-compact-table-expandable-td", "paddingLeft", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "minWidth", "nzExpandChange", 4, "ngFor", "ngForOf"], ["class", "cmacs-compact-table-rating", "style", "padding: 7px 10px", 3, "cmacs-compact-table-logs-header-th-font", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "cmacs-compact-table-logs-header-th-font", "nzRight", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-align-td", 3, "cmacs-compact-table-logs-td", 4, "ngIf"], [2, "padding", "7px 10px", 3, "nzLeft"], [3, "ngClass", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "nzExpandChange"], [3, "display", "cmacs-compact-table-overflow-cell-container-logs", "width", 4, "ngIf"], [3, "display", "width", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cmacs-compact-table-rating", 2, "padding", "7px 10px"], [3, "ngModel", "nzCount", "nzDisabled", "ngModelChange", "click"], [2, "padding", "7px 10px", 3, "nzRight"], [1, "cmacs-compact-table-align-td", 2, "padding", "7px 10px"], ["cdkDrag", "", "class", "cmacs-no-selection", 3, "cdkDragDisabled", "id", "cmacs-compact-table-row-active", "ant-table-selected-row", "cmacs-compact-table-editable-row", "cmacs-compact-table-smart-table-row", "click", "touchstart", "contextmenu", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "cmacs-no-selection", 3, "cdkDragDisabled", "id", "click", "touchstart", "contextmenu"], ["contextMenuTemplate", "cmacsDropdownMenu"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-add", 3, "maxWidth", "minWidth", "nzLeft", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-drag-col cmacs-compact-table-fst-td", 3, "nzLeft", "maxWidth", "minWidth", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "nzLeft", "cmacs-compact-table-fst-td", 4, "ngIf"], [3, "ngClass", "cmacs-editable-column", "cmacs-compact-table-fst-td", "nzLeft", "nzRight", "minWidth", 4, "ngFor", "ngForOf"], ["style", "padding: 7px 10px", 4, "ngIf"], ["style", "padding: 7px 10px", 3, "nzRight", 4, "ngIf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "nzRight", "maxWidth", "minWidth", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-row-add", 2, "padding", "7px 10px", 3, "nzLeft"], ["class", "cmacs-compact-table-smart-table-hot-spot-row-add-icon iconUILarge-New", 3, "click", 4, "ngIf"], [1, "cmacs-compact-table-drag-col", "cmacs-compact-table-fst-td", 2, "padding", "7px 10px", 3, "nzLeft"], ["cdkDragHandle", "", 1, "iconUILarge-Move", "cmacs-compact-table-drag-handler"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange", 4, "ngIf"], ["cmacs-checkbox", "", 3, "ngModel", "ngModelChange", "checkedChange"], [3, "ngClass", "nzLeft", "nzRight"], ["style", "max-width: 98%", 4, "ngIf"], [2, "max-width", "98%"], [2, "padding", "7px 10px"], [3, "ngModel", "nzCount", "ngModelChange", "click"], [1, "cmacs-compact-table-smart-table-hot-spot-row-delete", 2, "padding", "7px 10px", 3, "nzRight"], ["class", "cmacs-compact-table-smart-table-hot-spot-row-delete-icon iconUISmall-Close", 3, "click", 4, "ngIf"], [1, "cmacs-compact-table-smart-table-hot-spot-row-delete-icon", "iconUISmall-Close", 3, "click"], ["nz-virtual-scroll", ""], ["defaultTplVirtualScroll", ""], [3, "id", "cmacs-compact-table-row-active", "cmacs-compact-table-expandable-row", "cmacs-compact-table-header-logs", "touchstart", "contextmenu", "dblclick", 4, "ngIf"], [3, "id", "touchstart", "contextmenu", "dblclick"], [3, "cmacs-editable-column", "cmacs-compact-table-on-edit-expandable", "cmacs-compact-table-logs-header-th-font", "cmacs-compact-table-expandable-td", "paddingLeft", "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "minWidth", "nzExpandChange", 4, "ngFor", "ngForOf"], [3, "nzShowExpand", "nzExpand", "nzLeft", "nzRight", "nzExpandChange"], ["contextMenuTemplate", ""], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-add", 3, "maxWidth", "minWidth", "cmacs-compact-table-logs-td", "nzLeft", 4, "ngIf"], [3, "cmacs-editable-column", "cmacs-compact-table-fst-td", "nzLeft", "nzRight", "minWidth", 4, "ngFor", "ngForOf"], ["style", "padding: 7px 10px", "class", "cmacs-compact-table-smart-table-hot-spot-row-delete", 3, "nzRight", "maxWidth", "minWidth", "cmacs-compact-table-logs-td", 4, "ngIf"], [3, "nzLeft", "nzRight"], ["class", "cmacs-compact-table-input", "type", "text", "cmacs-input", "", 3, "cmacs-compact-table-edit-mode-invalid", "placeholder", "ngModel", "click", "dblclick", "ngModelChange", "keyup", 4, "ngIf"], ["class", "cmacs-compact-table-date-edit", 3, "allowClear", "cmacs-compact-table-edit-mode-invalid", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["class", "cmacs-compact-table-datetime-picker", "hideSeconds", "", 3, "use12Hours", "cmacs-compact-table-edit-mode-invalid", "format", "defaultOpenValue", "ngModel", "click", "dblclick", "ngModelChange", 4, "ngIf"], ["class", "cmacs-compact-table-select-cell", "showSearch", "", 3, "dropdownRender", "cmacsEditable", "cmacs-compact-table-field-mode-status", "cmacs-compact-table-field-mode-status-low-edit", "cmacs-compact-table-field-mode-status-medium-edit", "cmacs-compact-table-field-mode-status-high-edit", "cmacs-compact-table-edit-mode-invalid", "placeHolder", "mode", "showCmacsSearch", "ngModel", "click", "dblclick", "ngModelChange", "cmacsEditedInput", 4, "ngIf"], ["render", ""], ["class", "cmacs-compact-table-input-number-edit", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "cmacsStep", "min", "max", "formatter", "parser", "ngModelChange", "click", "dblclick", "keyup", 4, "ngIf"], ["class", "cmacs-compact-table-input-number-edit", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "formatter", "parser", "cmacsStep", "min", "max", "ngModelChange", "click", "dblclick", "keyup", 4, "ngIf"], ["cmacs-checkbox", "", "class", "cmacs-compact-tabe-editable-checkbox", 3, "cmacs-compact-table-edit-mode-invalid", "ngModel", "ngModelChange", 4, "ngIf"], ["class", "phone-number", 3, "init", "formControlCustom", "click", "hasError", "countryChange", 4, "ngIf"], ["type", "text", "cmacs-input", "", 1, "cmacs-compact-table-input", 3, "placeholder", "ngModel", "click", "dblclick", "ngModelChange", "keyup"], ["fieldTypeInput", ""], [1, "cmacs-compact-table-date-edit", 3, "allowClear", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDatePicker", ""], ["hideSeconds", "", 1, "cmacs-compact-table-datetime-picker", 3, "use12Hours", "format", "defaultOpenValue", "ngModel", "click", "dblclick", "ngModelChange"], ["fieldTypeDateTimePicker", ""], ["showSearch", "", 1, "cmacs-compact-table-select-cell", 3, "dropdownRender", "cmacsEditable", "placeHolder", "mode", "showCmacsSearch", "ngModel", "click", "dblclick", "ngModelChange", "cmacsEditedInput"], ["fieldTypeSelect", ""], [3, "label", "value", "divider", "disabled", 4, "ngFor", "ngForOf"], [3, "label", "value", "divider", "disabled"], ["cmacs-button", "", "role", "button", "aria-label", "add item", 3, "click", 4, "ngIf"], ["cmacs-button", "", "role", "button", "aria-label", "add item", 3, "click"], [1, "cmacs-compact-table-input-number-edit", 3, "ngModel", "cmacsStep", "min", "max", "formatter", "parser", "ngModelChange", "click", "dblclick", "keyup"], ["fieldTypeInputNumber", ""], [1, "cmacs-compact-table-input-number-edit", 3, "ngModel", "formatter", "parser", "cmacsStep", "min", "max", "ngModelChange", "click", "dblclick", "keyup"], ["cmacs-checkbox", "", 1, "cmacs-compact-tabe-editable-checkbox", 3, "ngModel", "ngModelChange"], ["fieldTypeBool", ""], [1, "phone-number", 3, "init", "formControlCustom", "click", "hasError", "countryChange"], ["fieldTypePhone", ""], [2, "width", "98%", "max-width", "98%", "padding", "7px 10px", 3, "click"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], ["class", "iconUISmall-Edit", 3, "cmacs-compact-table-edit-icon", "cmacs-compact-table-edit-icon-view", 4, "ngIf"], [1, "iconUISmall-Edit"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-date", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [1, "iconUILarge-Calendar"], [1, "iconUILarge-Time"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-select", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], ["class", "iconArrowLarge-Chevron-Down", 3, "cmacs-compact-table-select-icon", "cmacs-compact-table-select-icon-view", 4, "ngIf"], [1, "iconArrowLarge-Chevron-Down"], ["cmacs-tooltip", "", 1, "cmacs-compact-table-inline-cell", "cmacs-compact-table-input-number", 3, "cmacsTooltipTrigger", "cmacsTooltipTitle", "tap"], [1, "iconArrowLarge-Solid-UpDown"], [3, "cmacs-compact-table-hyperlink", "click", 4, "ngIf"], [3, "click"], ["class", "cmacs-compact-table-boolean-false-icon cmacs-compact-table-boolean-icon", 3, "cmacs-compact-table-invalid", 4, "ngIf"], ["class", "cmacs-compact-table-boolean-indeterminate-icon cmacs-compact-table-boolean-icon", 3, "cmacs-compact-table-invalid", 4, "ngIf"], ["class", "iconUILarge-Select-All cmacs-compact-table-boolean-icon-true", 3, "cmacs-compact-table-invalid", 4, "ngIf"], [1, "cmacs-compact-table-boolean-false-icon", "cmacs-compact-table-boolean-icon"], [1, "cmacs-compact-table-boolean-indeterminate-icon", "cmacs-compact-table-boolean-icon"], [1, "cmacs-compact-table-boolean-indeterminate-icon-inner"], [1, "iconUILarge-Select-All", "cmacs-compact-table-boolean-icon-true"], [2, "width", "100%", "max-width", "100%", 3, "click"], [1, "phone-number-view-mode", 3, "init", "formControlCustom", "click"], [3, "conf", "ctaDropdownOption", "onChangeAttachments", "onclickChooseFile"], ["templateRefCeld", ""], [2, "width", "98%", "max-width", "98%", "padding", "7px 10px", 3, "id"]], template: function CmacsCompactTableComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "div", 0);
                 i0.ɵɵelementStart(1, "nz-table", 1, 2);
@@ -34052,6 +34076,9 @@
     __decorate([
         util.InputBoolean()
     ], CmacsCompactTableComponent.prototype, "bordered", void 0);
+    __decorate([
+        util.InputBoolean()
+    ], CmacsCompactTableComponent.prototype, "hideButtons", void 0);
     __decorate([
         util.InputBoolean()
     ], CmacsCompactTableComponent.prototype, "centerTable", void 0);
@@ -34176,6 +34203,8 @@
                 }], templateMode: [{
                     type: i0.Input
                 }], bordered: [{
+                    type: i0.Input
+                }], hideButtons: [{
                     type: i0.Input
                 }], centerTable: [{
                     type: i0.Input
