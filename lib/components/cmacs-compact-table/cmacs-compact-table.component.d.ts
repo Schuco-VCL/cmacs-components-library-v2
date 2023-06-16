@@ -253,7 +253,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     isAttachment(field: Field): boolean;
     isUndefined(value: any): boolean;
     isRowSelected(data: any): boolean;
-    _onChangeAttachments(index: number): void;
+    _onChangeAttachments(event: any, index: number, field: any): void;
     _onclickChooseFile(index: number, field: any): void;
     ngAfterViewInit(): void;
     disableSelectEventOnExpand(): void;
