@@ -14401,6 +14401,7 @@ class CmacsInputNumberComponent {
         }
         this.value = value;
         this.actualValue = value;
+        this.onModelChange.emit(Number(this.actualValue));
         const displayValue = isNotNil(this.formatter(this.value)) ? this.formatter(this.value) : '';
         this.displayValue = displayValue;
         this.inputElement.nativeElement.value = displayValue;
@@ -26124,11 +26125,14 @@ function afterDate(date) {
             return null;
         }
         let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
+        date = date.getTime !== undefined ? date : new Date(date);
         if (value !== null && date !== null && value.getTime !== undefined && date.getTime !== undefined) {
             // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
-            if (value.getTime() <= date.getTime()) {
+            const val = new Date(value.getTime());
+            val.setHours(0, 0, 0, 0);
+            date.setHours(0, 0, 0, 0);
+            if (val.getTime() <= date.getTime()) {
                 return { 'afterDate': true };
-                ;
             }
         }
         return null;
@@ -26141,9 +26145,13 @@ function beforeDate(date) {
             return null;
         }
         let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
+        date = date.getTime !== undefined ? date : new Date(date);
         if (value !== null && date !== null && value.getTime !== undefined && date.getTime !== undefined) {
             // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
-            if (value.getTime() >= date.getTime()) {
+            const val = new Date(value.getTime());
+            val.setHours(0, 0, 0, 0);
+            date.setHours(0, 0, 0, 0);
+            if (val.getTime() >= date.getTime()) {
                 return { 'beforeDate': true };
                 ;
             }
@@ -26158,11 +26166,14 @@ function isEqualToDate(date) {
             return null;
         }
         let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
+        date = date.getTime !== undefined ? date : new Date(date);
         if (value !== null && date !== null && value.getTime !== undefined && date.getTime !== undefined) {
             // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
-            if (date.getTime() === value.getTime()) {
+            const val = new Date(value);
+            val.setHours(0, 0, 0, 0);
+            date.setHours(0, 0, 0, 0);
+            if (val.getTime() !== date.getTime()) {
                 return { 'isEqualToDate': true };
-                ;
             }
         }
         return null;
@@ -26175,9 +26186,13 @@ function isNotEqualToDate(date) {
             return null;
         }
         let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
+        date = date.getTime !== undefined ? date : new Date(date);
         if (value !== null && date !== null && value.getTime !== undefined && date.getTime !== undefined) {
             // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
-            if (date.getTime() !== value.getTime()) {
+            const val = new Date(value.getTime());
+            val.setHours(0, 0, 0, 0);
+            date.setHours(0, 0, 0, 0);
+            if (val.getTime() === date.getTime()) {
                 return { 'isNotEqualToDate': true };
                 ;
             }
@@ -26192,9 +26207,15 @@ function rangeDate(firstDate, secondDate) {
             return null;
         }
         let value = control.value.getTime !== undefined ? control.value : new Date(control.value);
+        firstDate = firstDate.getTime !== undefined ? firstDate : new Date(firstDate);
+        secondDate = secondDate.getTime !== undefined ? secondDate : new Date(secondDate);
         if (value !== null && firstDate !== null && secondDate !== null && value.getTime !== undefined && firstDate.getTime !== undefined && secondDate.getTime !== undefined) {
             // first we make sure the values are actual dates, this will avoid runtime errors with corrupted values
-            if (value.getTime() <= firstDate.getTime() || value.getTime() >= secondDate.getTime()) {
+            const val = new Date(value.getTime());
+            val.setHours(0, 0, 0, 0);
+            firstDate.setHours(0, 0, 0, 0);
+            secondDate.setHours(0, 0, 0, 0);
+            if (val.getTime() <= firstDate.getTime() || val.getTime() >= secondDate.getTime()) {
                 return { 'rangeDate': true };
                 ;
             }
@@ -26225,7 +26246,7 @@ function lessThan(number) {
 function isEqualToNumber(number) {
     return (control) => {
         //console.log(`validating: ${control.value} is equal to ${number}`);
-        if (control.value === number) {
+        if (control.value !== number) {
             return { 'isEqualToNumber': true };
             ;
         }
@@ -26235,7 +26256,7 @@ function isEqualToNumber(number) {
 function isNotEqualToNumber(number) {
     return (control) => {
         //console.log(`validating: ${control.value} is not equal to  ${number}`);
-        if (control.value !== number) {
+        if (control.value === number) {
             return { 'isNotEqualToNumber': true };
             ;
         }
@@ -29897,17 +29918,17 @@ class CmacsCompactTableComponent {
                     break;
                 }
                 case 'is-equal-to': {
-                    field.editTemplate === TemplateType.Date ? field.validators = [isEqualToDate(field.validationValues[0])] :
+                    field.validators = field.editTemplate === TemplateType.Date ? [isEqualToDate(field.validationValues[0])] :
                         [isEqualToNumber(field.validationValues[0])];
                     break;
                 }
                 case 'is-not-equal-to': {
-                    field.editTemplate === TemplateType.Date ? field.validators = [isNotEqualToDate(field.validationValues[0])] :
+                    field.validators = field.editTemplate === TemplateType.Date ? [isNotEqualToDate(field.validationValues[0])] :
                         [isNotEqualToNumber(field.validationValues[0])];
                     break;
                 }
                 case 'range': {
-                    field.editTemplate === TemplateType.Date ? field.validators = [rangeDate(field.validationValues[0], field.validationValues[1])] :
+                    field.validators = field.editTemplate === TemplateType.Date ? [rangeDate(field.validationValues[0], field.validationValues[1])] :
                         [rangeNumber(field.validationValues[0], field.validationValues[1])];
                     break;
                 }
