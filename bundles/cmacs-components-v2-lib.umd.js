@@ -32515,7 +32515,7 @@
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isPhone(field_r397));
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx_r7.columnMenu && ctx_r7.isAttachment(field_r397));
+            i0.ɵɵproperty("ngIf", ctx_r7.columnMenu && ctx_r7.isAttachment(field_r397) && ctx_r7.inLineEdit);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx_r7.isCeldTypeTemplateRef(field_r397) && data_r398[field_r397.property]);
         }

@@ -29559,7 +29559,7 @@ function CmacsCompactTableComponent_ng_template_8_Template(rf, ctx) { if (rf & 1
     ɵɵadvance(1);
     ɵɵproperty("ngIf", ctx_r7.config && ctx_r7.isPhone(field_r397));
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r7.columnMenu && ctx_r7.isAttachment(field_r397));
+    ɵɵproperty("ngIf", ctx_r7.columnMenu && ctx_r7.isAttachment(field_r397) && ctx_r7.inLineEdit);
     ɵɵadvance(1);
     ɵɵproperty("ngIf", ctx_r7.isCeldTypeTemplateRef(field_r397) && data_r398[field_r397.property]);
 } }
