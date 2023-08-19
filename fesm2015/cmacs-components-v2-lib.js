@@ -3813,7 +3813,7 @@ class CmacsOptionContainerComponent {
         const isCheckedState = this.isAllChecked();
         if (!isCheckedState || isCheckedState === -1) {
             const listOfSelectedValue = [];
-            this.nzSelectService.listOfNzOptionComponent.forEach(option => {
+            this.nzSelectService.listOfFilteredOption.forEach(option => {
                 if (!option.nzDisabled) {
                     listOfSelectedValue.push(option.nzValue);
                 }

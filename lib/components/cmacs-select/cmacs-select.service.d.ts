@@ -18,7 +18,7 @@ export declare class CmacsSelectService {
     private mapOfTemplateOption$;
     private searchValueRaw$;
     private editedValueRaw$;
-    private listOfFilteredOption;
+    listOfFilteredOption: CmacsOptionComponent[];
     private openRaw$;
     private checkRaw$;
     private open;

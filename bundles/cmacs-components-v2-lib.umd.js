@@ -4508,7 +4508,7 @@
             var isCheckedState = this.isAllChecked();
             if (!isCheckedState || isCheckedState === -1) {
                 var listOfSelectedValue_1 = [];
-                this.nzSelectService.listOfNzOptionComponent.forEach(function (option) {
+                this.nzSelectService.listOfFilteredOption.forEach(function (option) {
                     if (!option.nzDisabled) {
                         listOfSelectedValue_1.push(option.nzValue);
                     }
