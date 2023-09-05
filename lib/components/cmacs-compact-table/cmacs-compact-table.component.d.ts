@@ -207,7 +207,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     setCustomValidators(): void;
     addRow(idx: number, $event?: any): void;
     addcolumn(idx: number): void;
-    cmacsEditedInput(event: string): void;
+    cmacsEditedInput(event: any): void;
     addOption(index: number, data?: any, property?: any, field?: Field): void;
     drop(event: CdkDragDrop<string[]>): void;
     deleteRow(idx: number, $event?: any): void;

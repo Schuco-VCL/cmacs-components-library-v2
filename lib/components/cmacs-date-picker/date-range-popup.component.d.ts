@@ -24,7 +24,7 @@ export declare class DateRangePopupComponent implements OnInit, OnChanges, OnDes
     dateRender?: string | TemplateRef<Date> | FunctionProp<TemplateRef<Date> | string>;
     panelMode: NzDateMode | NzDateMode[];
     defaultPickerValue: CompatibleDate | undefined | null;
-    readonly panelModeChange: EventEmitter<"time" | "decade" | "year" | "month" | "week" | "date" | NzDateMode[]>;
+    readonly panelModeChange: EventEmitter<"time" | "date" | "decade" | "year" | "month" | "week" | NzDateMode[]>;
     readonly calendarChange: EventEmitter<CompatibleValue>;
     readonly resultOk: EventEmitter<void>;
     dir: Direction;

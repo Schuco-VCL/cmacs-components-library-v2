@@ -8,6 +8,7 @@ export declare class CmacsKPIOverviewComponent implements OnChanges {
     data: KPI[];
     title: string;
     titleKPI: string;
+    titleValue: number;
     view: number[];
     fixed: number;
     minWidth: number;
@@ -26,6 +27,6 @@ export declare class CmacsKPIOverviewComponent implements OnChanges {
     getWidth(count: number): number;
     getColoredData(): any;
     static ɵfac: i0.ɵɵFactoryDef<CmacsKPIOverviewComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsKPIOverviewComponent, "cmacs-kpi-overview", never, { "showLegend": "showLegend"; "data": "data"; "title": "title"; "titleKPI": "titleKPI"; "view": "view"; "fixed": "fixed"; "colors": "colors"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsKPIOverviewComponent, "cmacs-kpi-overview", never, { "showLegend": "showLegend"; "data": "data"; "title": "title"; "titleKPI": "titleKPI"; "titleValue": "titleValue"; "view": "view"; "fixed": "fixed"; "colors": "colors"; }, {}, never, never>;
 }
 //# sourceMappingURL=cmacs-kpioverview.component.d.ts.map
