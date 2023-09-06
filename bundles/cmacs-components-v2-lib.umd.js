@@ -43523,7 +43523,7 @@
                     if (this.mode === 'week') {
                         var d = new Date(this._date.getFullYear(), 0, 1);
                         var weeks = this.getWeeksInYearCustom(d);
-                        d.setDate(weeks === 52 ? d.getDate() + ((index) * 7) : d.getDate() + (index * 7));
+                        d.setDate(weeks === 52 ? d.getDate() + ((index + 1) * 7 - 1) : d.getDate() + (index * 7) - 1);
                         this.range = [d, d];
                         this.rangeChange.emit(this.range);
                     }
