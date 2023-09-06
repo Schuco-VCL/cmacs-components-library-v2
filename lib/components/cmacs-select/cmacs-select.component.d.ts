@@ -1,7 +1,7 @@
 import { FocusMonitor } from '@angular/cdk/a11y';
 import { CdkConnectedOverlay, CdkOverlayOrigin, ConnectedOverlayPositionChange } from '@angular/cdk/overlay';
 import { Platform } from '@angular/cdk/platform';
-import { AfterContentInit, AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, OnInit, QueryList, Renderer2, TemplateRef } from '@angular/core';
+import { AfterContentInit, AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, OnInit, QueryList, Renderer2, TemplateRef, OnChanges, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { CmacsSelectTopControlComponent } from './cmacs-select-top-control.component';
 import { CmacsOptionComponent } from './cmacs-option.component';
@@ -9,8 +9,9 @@ import { CmacsOptionGroupComponent } from "./cmacs-option-group.component";
 import { CmacsSelectService } from "./cmacs-select.service";
 import { NzSizeLDSType } from 'ng-zorro-antd/core/types';
 import { NzNoAnimationDirective } from 'ng-zorro-antd/core/no-animation';
+import { CmacsDropdownPositionType, CmacsSelectModeType, CmacsSelectOptionInterface } from './cmacs-select.types';
 import * as i0 from "@angular/core";
-export declare class CmacsSelectComponent implements ControlValueAccessor, OnInit, AfterViewInit, OnDestroy, AfterContentInit {
+export declare class CmacsSelectComponent implements ControlValueAccessor, OnInit, OnChanges, AfterViewInit, OnDestroy, AfterContentInit {
     private renderer;
     nzSelectService: CmacsSelectService;
     private cdr;
@@ -24,7 +25,8 @@ export declare class CmacsSelectComponent implements ControlValueAccessor, OnIni
     searchValue: string;
     onChange: (value: string | string[]) => void;
     onTouched: () => void;
-    dropDownPosition: 'top' | 'center' | 'bottom';
+    private isReactiveDriven;
+    dropDownPosition: CmacsDropdownPositionType;
     triggerWidth: number;
     private _disabled;
     private _cmacsOpen;
@@ -73,6 +75,7 @@ export declare class CmacsSelectComponent implements ControlValueAccessor, OnIni
         $implicit: any[];
     }>;
     selectAllLabel: string;
+    options: CmacsSelectOptionInterface[];
     set autoClearSearchValue(value: boolean);
     set maxMultipleCount(value: number);
     set serverSearch(value: boolean);
@@ -80,7 +83,7 @@ export declare class CmacsSelectComponent implements ControlValueAccessor, OnIni
     get cmacsEditable(): boolean;
     set userDropdown(value: boolean);
     get userDropdown(): boolean;
-    set mode(value: 'default' | 'multiple' | 'tags' | 'tagsSingleSelect');
+    set mode(value: CmacsSelectModeType);
     set filterOption(value: any);
     set tagsOut(value: boolean);
     set compareWith(value: (o1: any, o2: any) => boolean);
@@ -108,11 +111,12 @@ export declare class CmacsSelectComponent implements ControlValueAccessor, OnIni
     registerOnTouched(fn: () => void): void;
     setDisabledState(isDisabled: boolean): void;
     ngOnInit(): void;
+    ngOnChanges(changes: SimpleChanges): void;
     ngAfterViewInit(): void;
     ngAfterContentInit(): void;
     ngOnDestroy(): void;
     onSearch(value: string): void;
     static ɵfac: i0.ɵɵFactoryDef<CmacsSelectComponent, [null, null, null, null, null, null, { optional: true; host: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSelectComponent, "cmacs-select", ["cmacsSelect"], { "size": "size"; "dropdownClassName": "dropdownClassName"; "dropdownMatchSelectWidth": "dropdownMatchSelectWidth"; "action": "action"; "dropdownStyle": "dropdownStyle"; "notFoundContent": "notFoundContent"; "notFoundContentShow": "notFoundContentShow"; "allowClear": "allowClear"; "open": "open"; "showSearch": "showSearch"; "showCmacsSearch": "showCmacsSearch"; "showCustomSearch": "showCustomSearch"; "loading": "loading"; "showSelectAll": "showSelectAll"; "placeHolder": "placeHolder"; "maxTagCount": "maxTagCount"; "maxTagCountAuto": "maxTagCountAuto"; "dropdownRender": "dropdownRender"; "suffixIcon": "suffixIcon"; "clearIcon": "clearIcon"; "removeIcon": "removeIcon"; "notFoundContentCustom": "notFoundContentCustom"; "menuItemSelectedIcon": "menuItemSelectedIcon"; "showArrow": "showArrow"; "tokenSeparators": "tokenSeparators"; "maxTagPlaceholder": "maxTagPlaceholder"; "selectAllLabel": "selectAllLabel"; "autoClearSearchValue": "autoClearSearchValue"; "maxMultipleCount": "maxMultipleCount"; "serverSearch": "serverSearch"; "cmacsEditable": "cmacsEditable"; "userDropdown": "userDropdown"; "mode": "mode"; "filterOption": "filterOption"; "tagsOut": "tagsOut"; "compareWith": "compareWith"; "autoFocus": "autoFocus"; "cmacsOpen": "cmacsOpen"; "disabled": "disabled"; }, { "cmacsOnSearch": "cmacsOnSearch"; "cmacsEditedInput": "cmacsEditedInput"; "scrollToBottom": "scrollToBottom"; "openChange": "openChange"; "cmacsBlur": "cmacsBlur"; "cmacsFocus": "cmacsFocus"; }, ["listOfCmacsOptionComponent", "listOfCmacsOptionGroupComponent"], ["*"]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSelectComponent, "cmacs-select", ["cmacsSelect"], { "size": "size"; "dropdownClassName": "dropdownClassName"; "dropdownMatchSelectWidth": "dropdownMatchSelectWidth"; "action": "action"; "dropdownStyle": "dropdownStyle"; "notFoundContent": "notFoundContent"; "notFoundContentShow": "notFoundContentShow"; "allowClear": "allowClear"; "open": "open"; "showSearch": "showSearch"; "showCmacsSearch": "showCmacsSearch"; "showCustomSearch": "showCustomSearch"; "loading": "loading"; "showSelectAll": "showSelectAll"; "placeHolder": "placeHolder"; "maxTagCount": "maxTagCount"; "maxTagCountAuto": "maxTagCountAuto"; "dropdownRender": "dropdownRender"; "suffixIcon": "suffixIcon"; "clearIcon": "clearIcon"; "removeIcon": "removeIcon"; "notFoundContentCustom": "notFoundContentCustom"; "menuItemSelectedIcon": "menuItemSelectedIcon"; "showArrow": "showArrow"; "tokenSeparators": "tokenSeparators"; "maxTagPlaceholder": "maxTagPlaceholder"; "selectAllLabel": "selectAllLabel"; "options": "options"; "autoClearSearchValue": "autoClearSearchValue"; "maxMultipleCount": "maxMultipleCount"; "serverSearch": "serverSearch"; "cmacsEditable": "cmacsEditable"; "userDropdown": "userDropdown"; "mode": "mode"; "filterOption": "filterOption"; "tagsOut": "tagsOut"; "compareWith": "compareWith"; "autoFocus": "autoFocus"; "cmacsOpen": "cmacsOpen"; "disabled": "disabled"; }, { "cmacsOnSearch": "cmacsOnSearch"; "cmacsEditedInput": "cmacsEditedInput"; "scrollToBottom": "scrollToBottom"; "openChange": "openChange"; "cmacsBlur": "cmacsBlur"; "cmacsFocus": "cmacsFocus"; }, ["listOfCmacsOptionComponent", "listOfCmacsOptionGroupComponent"], ["*"]>;
 }
 //# sourceMappingURL=cmacs-select.component.d.ts.map

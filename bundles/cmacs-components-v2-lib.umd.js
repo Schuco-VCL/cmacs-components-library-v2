@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('@juggle/resize-observer'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('ngx-device-detector'), require('@angular/platform-browser'), require('ng-zorro-antd/grid'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment'), require('moment/locale/en-ie'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/cdk/collections'), require('xlsx'), require('ngx-cookie-service'), require('html2canvas'), require('ngx-export-as'), require('ng-zorro-antd/table'), require('ng-zorro-antd/resizable'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/core/resize-observers'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/rate'), require('ng2-tel-input'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('ng-zorro-antd/skeleton'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/form'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('propagating-hammerjs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ng-zorro-antd/steps'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('@swimlane/ngx-charts'), require('angular-google-charts'), require('ng-zorro-antd/tree-select'), require('@angular/animations'), require('@egjs/hammerjs'), require('rxjs/internal/Subject')) :
-    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', '@juggle/resize-observer', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', 'ngx-device-detector', '@angular/platform-browser', 'ng-zorro-antd/grid', 'jspdf', 'jspdf-autotable', 'util', 'moment', 'moment/locale/en-ie', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/cdk/collections', 'xlsx', 'ngx-cookie-service', 'html2canvas', 'ngx-export-as', 'ng-zorro-antd/table', 'ng-zorro-antd/resizable', 'ng-zorro-antd/core/color', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/core/resize-observers', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/rate', 'ng2-tel-input', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'ng-zorro-antd/skeleton', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/form', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/timeline', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'ng-zorro-antd/upload', 'angular2-signaturepad', 'angular2-draggable', 'ng-zorro-antd/tabs', 'propagating-hammerjs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ng-zorro-antd/steps', '@angular/cdk/scrolling', 'ng-zorro-antd/tree', 'lodash/cloneDeep', '@swimlane/ngx-charts', 'angular-google-charts', 'ng-zorro-antd/tree-select', '@angular/animations', '@egjs/hammerjs', 'rxjs/internal/Subject'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i9, global.i1$1, global.i5, global.i4$1, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i3$6, global.radio, global.ng.cdk.overlay, global.resizeObserver, global.i1$2, global.animation, global.i4$2, global.i1$3, global.i8, global.select, global.i27, global.i6, global.i2$3, global.ng.router, global.menu, global.i17, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.i1$5, global.ng.platformBrowser, global.i6$1, global.jsPDF, null, global.util$1, global.moment_, null, global.dateFns, global.polyfill, global.ng.cdk.collections, global.XLSX, global.i6$2, global.html2canvas, global.i1$7, global.i8$1, global.i11, global.color, global.time, global.i10, global.i3$1, global.i4$4, global.i20, global.i3$2, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i5$1, global.i1$8, global.i3$3, global.form, global.alert, global.breadcrumb, global.datePicker, global.inputNumber, global.ng.common.locales.en, global.progress, global.timeline, global.tag, global.popover, global.i4$5, global.message, global.modal, global.i13, global.i3$4, global.i15, global.tabs, global.propagating, global.card, global.i3$5, global.list, global.steps, global.ng.cdk.scrolling, global.tree, global.cloneDeep, global.i2$5, global.i3$7, global.treeSelect, global.ng.animations, global.Hammer$1, global.rxjs['internal/Subject']));
-}(this, (function (exports, i0, i4, operators, rxjs, util, i1, i2, i2$1, i9, i1$1, i5, i4$1, checkbox, i2$2, slider, keycodes, i3, _switch, i3$6, radio, i1$4, resizeObserver, i1$2, animation, i4$2, i1$3, i8, select, i27, i6, i2$3, i4$3, menu, i17, i2$4, portal, logger, i1$5, i1$6, i6$1, jsPDF, jspdfAutotable, util$1, moment_, enIe, dateFns, polyfill, collections, XLSX, i6$2, html2canvas, i1$7, i8$1, i11, color, time, i10, i3$1, i4$4, i20, i3$2, coercion, animations, i5$1, i1$8, i3$3, form, alert, breadcrumb, datePicker, inputNumber, en, progress, timeline, tag, popover, i4$5, message, modal, i13, i3$4, i15, tabs, propagating, card, i3$5, list, steps, scrolling, tree, cloneDeep, i2$5, i3$7, treeSelect, animations$1, Hammer$1, Subject) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs/operators'), require('rxjs'), require('ng-zorro-antd/core/util'), require('@angular/cdk/a11y'), require('@angular/cdk/bidi'), require('@angular/common'), require('ng-zorro-antd/button'), require('ng-zorro-antd/core/config'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core/transition-patch'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/slider'), require('@angular/cdk/keycodes'), require('@angular/cdk/platform'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/input'), require('ng-zorro-antd/radio'), require('@angular/cdk/overlay'), require('@juggle/resize-observer'), require('ng-zorro-antd/core/no-animation'), require('ng-zorro-antd/core/animation'), require('ng-zorro-antd/core/overlay'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/empty'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/select'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/core/outlet'), require('ng-zorro-antd/core/services'), require('@angular/router'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/dropdown'), require('@angular/cdk/drag-drop'), require('@angular/cdk/portal'), require('ng-zorro-antd/core/logger'), require('ngx-device-detector'), require('@angular/platform-browser'), require('ng-zorro-antd/grid'), require('jspdf'), require('jspdf-autotable'), require('util'), require('moment'), require('moment/locale/en-ie'), require('date-fns'), require('ng-zorro-antd/core/polyfill'), require('@angular/cdk/collections'), require('xlsx'), require('ngx-cookie-service'), require('html2canvas'), require('ngx-export-as'), require('ng-zorro-antd/table'), require('ng-zorro-antd/resizable'), require('ng-zorro-antd/core/color'), require('ng-zorro-antd/core/time'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/core/resize-observers'), require('ng-zorro-antd/core/wave'), require('ng-zorro-antd/rate'), require('ng2-tel-input'), require('@angular/cdk/coercion'), require('@angular/platform-browser/animations'), require('ng-zorro-antd/skeleton'), require('ngx-videogular'), require('@tinymce/tinymce-angular'), require('ng-zorro-antd/form'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/input-number'), require('@angular/common/locales/en'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('ng-zorro-antd/upload'), require('angular2-signaturepad'), require('angular2-draggable'), require('ng-zorro-antd/tabs'), require('propagating-hammerjs'), require('ng-zorro-antd/card'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/list'), require('ng-zorro-antd/steps'), require('ng-zorro-antd/tree'), require('lodash/cloneDeep'), require('@swimlane/ngx-charts'), require('angular-google-charts'), require('ng-zorro-antd/tree-select'), require('@angular/animations'), require('@egjs/hammerjs'), require('rxjs/internal/Subject')) :
+    typeof define === 'function' && define.amd ? define('cmacs-components-v2-lib', ['exports', '@angular/core', '@angular/forms', 'rxjs/operators', 'rxjs', 'ng-zorro-antd/core/util', '@angular/cdk/a11y', '@angular/cdk/bidi', '@angular/common', 'ng-zorro-antd/button', 'ng-zorro-antd/core/config', 'ng-zorro-antd/icon', 'ng-zorro-antd/core/transition-patch', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/slider', '@angular/cdk/keycodes', '@angular/cdk/platform', 'ng-zorro-antd/switch', 'ng-zorro-antd/input', 'ng-zorro-antd/radio', '@angular/cdk/overlay', '@juggle/resize-observer', 'ng-zorro-antd/core/no-animation', 'ng-zorro-antd/core/animation', 'ng-zorro-antd/core/overlay', 'ng-zorro-antd/i18n', 'ng-zorro-antd/empty', '@angular/cdk/scrolling', 'ng-zorro-antd/select', 'ng-zorro-antd/divider', 'ng-zorro-antd/core/outlet', 'ng-zorro-antd/core/services', '@angular/router', 'ng-zorro-antd/menu', 'ng-zorro-antd/dropdown', '@angular/cdk/drag-drop', '@angular/cdk/portal', 'ng-zorro-antd/core/logger', 'ngx-device-detector', '@angular/platform-browser', 'ng-zorro-antd/grid', 'jspdf', 'jspdf-autotable', 'util', 'moment', 'moment/locale/en-ie', 'date-fns', 'ng-zorro-antd/core/polyfill', '@angular/cdk/collections', 'xlsx', 'ngx-cookie-service', 'html2canvas', 'ngx-export-as', 'ng-zorro-antd/table', 'ng-zorro-antd/resizable', 'ng-zorro-antd/core/color', 'ng-zorro-antd/core/time', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/core/resize-observers', 'ng-zorro-antd/core/wave', 'ng-zorro-antd/rate', 'ng2-tel-input', '@angular/cdk/coercion', '@angular/platform-browser/animations', 'ng-zorro-antd/skeleton', 'ngx-videogular', '@tinymce/tinymce-angular', 'ng-zorro-antd/form', 'ng-zorro-antd/alert', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/input-number', '@angular/common/locales/en', 'ng-zorro-antd/progress', 'ng-zorro-antd/timeline', 'ng-zorro-antd/tag', 'ng-zorro-antd/popover', 'ng-zorro-antd/comment', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'ng-zorro-antd/upload', 'angular2-signaturepad', 'angular2-draggable', 'ng-zorro-antd/tabs', 'propagating-hammerjs', 'ng-zorro-antd/card', 'ng-zorro-antd/spin', 'ng-zorro-antd/list', 'ng-zorro-antd/steps', 'ng-zorro-antd/tree', 'lodash/cloneDeep', '@swimlane/ngx-charts', 'angular-google-charts', 'ng-zorro-antd/tree-select', '@angular/animations', '@egjs/hammerjs', 'rxjs/internal/Subject'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['cmacs-components-v2-lib'] = {}, global.ng.core, global.ng.forms, global.rxjs.operators, global.rxjs, global.util, global.ng.cdk.a11y, global.ng.cdk.bidi, global.ng.common, global.i9, global.i1$1, global.i5, global.i4$1, global.checkbox, global.i2$2, global.slider, global.ng.cdk.keycodes, global.ng.cdk.platform, global._switch, global.i3$6, global.radio, global.ng.cdk.overlay, global.resizeObserver, global.i1$2, global.animation, global.i4$3, global.i1$3, global.i8, global.ng.cdk.scrolling, global.select, global.i27, global.i6, global.i2$3, global.ng.router, global.menu, global.i17, global.ng.cdk.dragDrop, global.ng.cdk.portal, global.logger, global.i1$5, global.ng.platformBrowser, global.i6$1, global.jsPDF, null, global.util$1, global.moment_, null, global.dateFns, global.polyfill, global.ng.cdk.collections, global.XLSX, global.i6$2, global.html2canvas, global.i1$7, global.i8$1, global.i11, global.color, global.time, global.i10, global.i3$1, global.i4$5, global.i20, global.i3$2, global.ng.cdk.coercion, global.ng.platformBrowser.animations, global.i5$1, global.i1$8, global.i3$3, global.form, global.alert, global.breadcrumb, global.datePicker, global.inputNumber, global.ng.common.locales.en, global.progress, global.timeline, global.tag, global.popover, global.i4$6, global.message, global.modal, global.i13, global.i3$4, global.i15, global.tabs, global.propagating, global.card, global.i3$5, global.list, global.steps, global.tree, global.cloneDeep, global.i2$5, global.i3$7, global.treeSelect, global.ng.animations, global.Hammer$1, global.rxjs['internal/Subject']));
+}(this, (function (exports, i0, i4, operators, rxjs, util, i1, i2, i2$1, i9, i1$1, i5, i4$1, checkbox, i2$2, slider, keycodes, i3, _switch, i3$6, radio, i1$4, resizeObserver, i1$2, animation, i4$3, i1$3, i8, i4$2, select, i27, i6, i2$3, i4$4, menu, i17, i2$4, portal, logger, i1$5, i1$6, i6$1, jsPDF, jspdfAutotable, util$1, moment_, enIe, dateFns, polyfill, collections, XLSX, i6$2, html2canvas, i1$7, i8$1, i11, color, time, i10, i3$1, i4$5, i20, i3$2, coercion, animations, i5$1, i1$8, i3$3, form, alert, breadcrumb, datePicker, inputNumber, en, progress, timeline, tag, popover, i4$6, message, modal, i13, i3$4, i15, tabs, propagating, card, i3$5, list, steps, tree, cloneDeep, i2$5, i3$7, treeSelect, animations$1, Hammer$1, Subject) { 'use strict';
 
     function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -4618,6 +4618,417 @@
                 }] });
     })();
 
+    function CmacsOptionLiVirtualComponent_ng_container_0_ng_container_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "span");
+            i0.ɵɵtext(2);
+            i0.ɵɵelementStart(3, "span", 2);
+            i0.ɵɵtext(4);
+            i0.ɵɵelementEnd();
+            i0.ɵɵtext(5);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r2 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate1(" ", ctx_r2.highlightKeys[0], "");
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r2.highlightKeys[1]);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1("", ctx_r2.highlightKeys[2], " ");
+        }
+    }
+    function CmacsOptionLiVirtualComponent_ng_container_0_ng_container_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r3 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1(" ", ctx_r3.nzOption.nzLabel, " ");
+        }
+    }
+    function CmacsOptionLiVirtualComponent_ng_container_0_ng_container_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵelementStart(1, "div", 3);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r4 = i0.ɵɵnextContext(2);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r4.nzOption.divider);
+        }
+    }
+    function CmacsOptionLiVirtualComponent_ng_container_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtemplate(1, CmacsOptionLiVirtualComponent_ng_container_0_ng_container_1_Template, 6, 3, "ng-container", 1);
+            i0.ɵɵtemplate(2, CmacsOptionLiVirtualComponent_ng_container_0_ng_container_2_Template, 2, 1, "ng-container", 1);
+            i0.ɵɵtemplate(3, CmacsOptionLiVirtualComponent_ng_container_0_ng_container_3_Template, 3, 1, "ng-container", 1);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r0.highlightKeys.length);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r0.highlightKeys.length);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r0.nzOption.divider);
+        }
+    }
+    function CmacsOptionLiVirtualComponent_ng_container_1_i_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 5);
+        }
+    }
+    function CmacsOptionLiVirtualComponent_ng_container_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainerStart(0);
+            i0.ɵɵtemplate(1, CmacsOptionLiVirtualComponent_ng_container_1_i_1_Template, 1, 0, "i", 4);
+            i0.ɵɵelementContainerEnd();
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r1.nzMenuItemSelectedIcon)("ngIfElse", ctx_r1.nzMenuItemSelectedIcon);
+        }
+    }
+    var CmacsOptionLiVirtualComponent = /** @class */ (function () {
+        function CmacsOptionLiVirtualComponent(elementRef, nzSelectService, cdr, renderer) {
+            this.elementRef = elementRef;
+            this.nzSelectService = nzSelectService;
+            this.cdr = cdr;
+            this.el = this.elementRef.nativeElement;
+            this.selected = false;
+            this.active = false;
+            this.destroy$ = new rxjs.Subject();
+            this.highlightKeys = [];
+            renderer.addClass(elementRef.nativeElement, 'ant-select-dropdown-menu-item');
+        }
+        CmacsOptionLiVirtualComponent.prototype.clickOption = function () {
+            this.nzSelectService.clickOption(this.nzOption);
+        };
+        CmacsOptionLiVirtualComponent.prototype.ngOnInit = function () { };
+        CmacsOptionLiVirtualComponent.prototype.ngOnDestroy = function () {
+            this.destroy$.next();
+            this.destroy$.complete();
+        };
+        CmacsOptionLiVirtualComponent.prototype.ngAfterContentChecked = function () {
+            var _this = this;
+            this.nzSelectService.listOfSelectedValue$.pipe(operators.takeUntil(this.destroy$)).subscribe(function (list) {
+                _this.selected = !_this.nzSelectService.userDropdown ? util.isNotNil(list.find(function (v) { return _this.nzSelectService.compareWith(v, _this.nzOption.nzValue); })) : util.isNotNil(list.find(function (v) { return _this.nzSelectService.compareWith(v.value, _this.nzOption.nzValue); }));
+                _this.cdr.markForCheck();
+            });
+            this.nzSelectService.activatedOption$.pipe(operators.takeUntil(this.destroy$)).subscribe(function (option) {
+                if (option) {
+                    _this.active = _this.nzSelectService.compareWith(option.nzValue, _this.nzOption.nzValue);
+                }
+                else {
+                    _this.active = false;
+                }
+                _this.cdr.markForCheck();
+            });
+            this.nzSelectService.searchValue$.pipe(operators.takeUntil(this.destroy$)).subscribe(function (value) {
+                _this.highlightKeys = [];
+                // tslint:disable-next-line: no-non-null-assertion
+                if (value && _this.nzOption.nzLabel && _this.nzOption.nzLabel.toLowerCase().includes(value.toLowerCase())) {
+                    // match the search value
+                    var index = _this.nzOption.nzLabel.toLowerCase().indexOf(value.toLowerCase());
+                    _this.highlightKeys = [
+                        _this.nzOption.nzLabel.slice(0, index),
+                        _this.nzOption.nzLabel.slice(index, index + value.length),
+                        _this.nzOption.nzLabel.slice(index + value.length, _this.nzOption.nzLabel.length)
+                    ];
+                    _this.highlightKeys = __spread(_this.highlightKeys);
+                }
+                _this.cdr.detectChanges();
+            });
+        };
+        return CmacsOptionLiVirtualComponent;
+    }());
+    CmacsOptionLiVirtualComponent.ɵfac = function CmacsOptionLiVirtualComponent_Factory(t) { return new (t || CmacsOptionLiVirtualComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(CmacsSelectService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i0.Renderer2)); };
+    CmacsOptionLiVirtualComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsOptionLiVirtualComponent, selectors: [["cmacs-option-li-virtual"]], hostVars: 11, hostBindings: function CmacsOptionLiVirtualComponent_HostBindings(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵlistener("click", function CmacsOptionLiVirtualComponent_click_HostBindingHandler() { return ctx.clickOption(); })("mousedown", function CmacsOptionLiVirtualComponent_mousedown_HostBindingHandler($event) { return $event.preventDefault(); });
+            }
+            if (rf & 2) {
+                i0.ɵɵattribute("unselectable", "unselectable");
+                i0.ɵɵstyleProp("user-select", "none");
+                i0.ɵɵclassProp("ant-select-dropdown-menu-item-selected", ctx.selected && !ctx.nzOption.nzDisabled)("ant-select-dropdown-menu-item-disabled", ctx.nzOption.nzDisabled)("ant-select-dropdown-menu-item-active", ctx.active && !ctx.nzOption.nzDisabled)("cmacs-select-dropdown-menu-item-divider", ctx.nzOption.divider);
+            }
+        }, inputs: { nzOption: "nzOption", nzMenuItemSelectedIcon: "nzMenuItemSelectedIcon" }, decls: 2, vars: 3, consts: [[4, "ngIf", "ngIfElse"], [4, "ngIf"], [2, "color", "#2a7cff"], [1, "cmacs-select-divider"], ["nz-icon", "", "nzType", "check", "class", "ant-select-selected-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "check", 1, "ant-select-selected-icon"]], template: function CmacsOptionLiVirtualComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵtemplate(0, CmacsOptionLiVirtualComponent_ng_container_0_Template, 4, 3, "ng-container", 0);
+                i0.ɵɵtemplate(1, CmacsOptionLiVirtualComponent_ng_container_1_Template, 2, 2, "ng-container", 1);
+            }
+            if (rf & 2) {
+                i0.ɵɵproperty("ngIf", !ctx.nzOption.nzCustomContent)("ngIfElse", ctx.nzOption.template);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.nzSelectService.isMultipleOrTags);
+            }
+        }, directives: [i2$1.NgIf, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective], styles: [".cmacs-select-divider[_ngcontent-%COMP%]{font-family:Roboto,Roboto-Regular;font-size:11px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.5;letter-spacing:normal;color:#fff;background-color:#2a7cff;padding:0 3px;width:-webkit-max-content;width:-moz-max-content;width:max-content;display:inline-flex;right:0;position:absolute;top:0}"], changeDetection: 0 });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsOptionLiVirtualComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-option-li-virtual',
+                        templateUrl: './cmacs-option-li.component.html',
+                        styleUrls: ['./cmacs-option-li.component.css'],
+                        changeDetection: i0.ChangeDetectionStrategy.OnPush,
+                        host: {
+                            '[class.ant-select-dropdown-menu-item-selected]': 'selected && !nzOption.nzDisabled',
+                            '[class.ant-select-dropdown-menu-item-disabled]': 'nzOption.nzDisabled',
+                            '[class.ant-select-dropdown-menu-item-active]': 'active && !nzOption.nzDisabled',
+                            '[class.cmacs-select-dropdown-menu-item-divider]': 'nzOption.divider',
+                            '[attr.unselectable]': '"unselectable"',
+                            '[style.user-select]': '"none"',
+                            '(click)': 'clickOption()',
+                            '(mousedown)': '$event.preventDefault()'
+                        },
+                    }]
+            }], function () { return [{ type: i0.ElementRef }, { type: CmacsSelectService }, { type: i0.ChangeDetectorRef }, { type: i0.Renderer2 }]; }, { nzOption: [{
+                    type: i0.Input
+                }], nzMenuItemSelectedIcon: [{
+                    type: i0.Input
+                }] });
+    })();
+
+    function CmacsOptionContainerVirtualComponent_div_1_ng_container_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainer(0, 5);
+        }
+        if (rf & 2) {
+            var ctx_r2 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r2.notFoundContentCustom);
+        }
+    }
+    function CmacsOptionContainerVirtualComponent_div_1_nz_embed_empty_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "nz-embed-empty", 6);
+        }
+        if (rf & 2) {
+            var ctx_r3 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("nzComponentName", "select")("specificContent", ctx_r3.notFoundContent);
+        }
+    }
+    function CmacsOptionContainerVirtualComponent_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div");
+            i0.ɵɵtemplate(1, CmacsOptionContainerVirtualComponent_div_1_ng_container_1_Template, 1, 1, "ng-container", 3);
+            i0.ɵɵtemplate(2, CmacsOptionContainerVirtualComponent_div_1_nz_embed_empty_2_Template, 1, 2, "nz-embed-empty", 4);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r0.notFoundContentCustom);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r0.notFoundContentCustom);
+        }
+    }
+    function CmacsOptionContainerVirtualComponent_div_3_div_2_i_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 14);
+        }
+    }
+    function CmacsOptionContainerVirtualComponent_div_3_div_2_span_4_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "span", 15);
+        }
+    }
+    function CmacsOptionContainerVirtualComponent_div_3_div_2_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r11_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 10);
+            i0.ɵɵlistener("click", function CmacsOptionContainerVirtualComponent_div_3_div_2_Template_div_click_0_listener() { i0.ɵɵrestoreView(_r11_1); var ctx_r10 = i0.ɵɵnextContext(2); return ctx_r10.updateCheckboxCache(); });
+            i0.ɵɵelementStart(1, "strong", 11);
+            i0.ɵɵtext(2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵtemplate(3, CmacsOptionContainerVirtualComponent_div_3_div_2_i_3_Template, 1, 0, "i", 12);
+            i0.ɵɵtemplate(4, CmacsOptionContainerVirtualComponent_div_3_div_2_span_4_Template, 1, 0, "span", 13);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r6 = i0.ɵɵnextContext(2);
+            i0.ɵɵclassProp("ant-select-dropdown-menu-item-selected", ctx_r6.isAllChecked() === 1);
+            i0.ɵɵadvance(2);
+            i0.ɵɵtextInterpolate(ctx_r6.selectAllLabel);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r6.isAllChecked() === 1 || !ctx_r6.isAllChecked());
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r6.isAllChecked() === -1);
+        }
+    }
+    function CmacsOptionContainerVirtualComponent_div_3_div_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "div", 16);
+        }
+        if (rf & 2) {
+            var ctx_r7 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("nzMenuItemSelectedIcon", ctx_r7.nzMenuItemSelectedIcon)("nzOption", ctx_r7.nzSelectService.addedTagOption);
+        }
+    }
+    function CmacsOptionContainerVirtualComponent_div_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "div");
+            i0.ɵɵelementContainerStart(1);
+            i0.ɵɵtemplate(2, CmacsOptionContainerVirtualComponent_div_3_div_2_Template, 5, 5, "div", 7);
+            i0.ɵɵtemplate(3, CmacsOptionContainerVirtualComponent_div_3_div_3_Template, 1, 2, "div", 8);
+            i0.ɵɵelement(4, "cmacs-option-li-virtual", 9);
+            i0.ɵɵelementContainerEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var item_r4 = ctx.$implicit;
+            var i_r5 = ctx.index;
+            var ctx_r1 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(2);
+            i0.ɵɵproperty("ngIf", ctx_r1.nzSelectService.isMultipleOrTags && !ctx_r1.nzSelectService.isShowNotFound && ctx_r1.showSelectAll && i_r5 === 0);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r1.nzSelectService.addedTagOption && i_r5 === 0);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("nzMenuItemSelectedIcon", ctx_r1.nzMenuItemSelectedIcon)("nzOption", item_r4);
+        }
+    }
+    var CmacsOptionContainerVirtualComponent = /** @class */ (function () {
+        function CmacsOptionContainerVirtualComponent(nzSelectService, i18n, cdr) {
+            this.nzSelectService = nzSelectService;
+            this.i18n = i18n;
+            this.cdr = cdr;
+            this.destroy$ = new rxjs.Subject();
+            this.scrolledIndex = 0;
+            this.itemSize = 32;
+            this.maxItemLength = 8;
+            this.showSelectAll = true;
+            this.showSearch = false;
+            this.selectAllLabel = 'Select All';
+            this.searchLabel = 'Search';
+            this.showCmacsSearch = false;
+            this.notFoundContentShow = true;
+            this.nzScrollToBottom = new i0.EventEmitter();
+            this.onSearch = new i0.EventEmitter();
+        }
+        CmacsOptionContainerVirtualComponent.prototype.ngOnInit = function () {
+            this.setLocale();
+        };
+        CmacsOptionContainerVirtualComponent.prototype.ngOnDestroy = function () {
+            this.destroy$.next();
+            this.destroy$.complete();
+        };
+        CmacsOptionContainerVirtualComponent.prototype.onScrolledIndexChange = function (index) {
+            this.scrolledIndex = index;
+            if (index === this.nzSelectService.listOfNzOptionComponent.length - this.maxItemLength) {
+                this.nzScrollToBottom.emit();
+            }
+        };
+        CmacsOptionContainerVirtualComponent.prototype.trackValue = function (_index, option) {
+            return option.nzValue;
+        };
+        CmacsOptionContainerVirtualComponent.prototype.setLocale = function () {
+            var _this = this;
+            this.i18n.localeChange
+                .pipe(operators.takeUntil(this.destroy$))
+                .subscribe(function () {
+                switch (_this.i18n.getLocale().locale) {
+                    case 'de':
+                        _this.selectAllLabel = 'Alle auswählen';
+                        _this.searchLabel = 'Suche';
+                        break;
+                    case 'en':
+                        _this.selectAllLabel = 'Select All';
+                        _this.searchLabel = 'Search';
+                        break;
+                    default:
+                        _this.selectAllLabel = 'Select All';
+                        _this.searchLabel = 'Search';
+                }
+                _this.cdr.markForCheck();
+            });
+        };
+        CmacsOptionContainerVirtualComponent.prototype.isAllChecked = function () {
+            var listOfNotDisabledItems = this.nzSelectService.listOfNzOptionComponent.filter(function (item) { return !item.nzDisabled; });
+            return this.nzSelectService.listOfCachedSelectedOption.length === listOfNotDisabledItems.length ?
+                1 : !this.nzSelectService.listOfCachedSelectedOption.length ? 0 : -1;
+        };
+        CmacsOptionContainerVirtualComponent.prototype.updateCheckboxCache = function () {
+            var isCheckedState = this.isAllChecked();
+            if (!isCheckedState || isCheckedState === -1) {
+                var listOfSelectedValue_1 = [];
+                this.nzSelectService.listOfFilteredOption.forEach(function (option) {
+                    if (!option.nzDisabled) {
+                        listOfSelectedValue_1.push(option.nzValue);
+                    }
+                });
+                this.nzSelectService.updateListOfSelectedValue(listOfSelectedValue_1, true);
+            }
+            else {
+                this.nzSelectService.updateListOfSelectedValue([], true);
+            }
+        };
+        return CmacsOptionContainerVirtualComponent;
+    }());
+    CmacsOptionContainerVirtualComponent.ɵfac = function CmacsOptionContainerVirtualComponent_Factory(t) { return new (t || CmacsOptionContainerVirtualComponent)(i0.ɵɵdirectiveInject(CmacsSelectService), i0.ɵɵdirectiveInject(i1$3.NzI18nService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef)); };
+    CmacsOptionContainerVirtualComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsOptionContainerVirtualComponent, selectors: [["cmacs-option-container-virtual"]], inputs: { showSelectAll: "showSelectAll", showSearch: "showSearch", selectAllLabel: "selectAllLabel", searchLabel: "searchLabel", showCmacsSearch: "showCmacsSearch", notFoundContentShow: "notFoundContentShow", notFoundContentCustom: "notFoundContentCustom", nzMenuItemSelectedIcon: "nzMenuItemSelectedIcon" }, outputs: { nzScrollToBottom: "nzScrollToBottom", onSearch: "onSearch" }, decls: 5, vars: 15, consts: [[4, "ngIf"], [3, "itemSize", "maxBufferPx", "minBufferPx", "scrolledIndexChange"], [4, "cdkVirtualFor", "cdkVirtualForOf", "cdkVirtualForTrackBy"], [3, "ngTemplateOutlet", 4, "ngIf"], [3, "nzComponentName", "specificContent", 4, "ngIf"], [3, "ngTemplateOutlet"], [3, "nzComponentName", "specificContent"], ["class", "ant-select-dropdown-menu-item", 3, "ant-select-dropdown-menu-item-selected", "click", 4, "ngIf"], ["cmacs-option-li", "", 3, "nzMenuItemSelectedIcon", "nzOption", 4, "ngIf"], [3, "nzMenuItemSelectedIcon", "nzOption"], [1, "ant-select-dropdown-menu-item", 3, "click"], [2, "color", "#656c79 !important"], ["nz-icon", "", "nzType", "check", "class", "ant-select-selected-icon", 4, "ngIf"], ["class", "ant-select-selected-icon cmacs-indeterminate-selection", 4, "ngIf"], ["nz-icon", "", "nzType", "check", 1, "ant-select-selected-icon"], [1, "ant-select-selected-icon", "cmacs-indeterminate-selection"], ["cmacs-option-li", "", 3, "nzMenuItemSelectedIcon", "nzOption"]], template: function CmacsOptionContainerVirtualComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelementStart(0, "div");
+                i0.ɵɵtemplate(1, CmacsOptionContainerVirtualComponent_div_1_Template, 3, 2, "div", 0);
+                i0.ɵɵelementStart(2, "cdk-virtual-scroll-viewport", 1);
+                i0.ɵɵlistener("scrolledIndexChange", function CmacsOptionContainerVirtualComponent_Template_cdk_virtual_scroll_viewport_scrolledIndexChange_2_listener($event) { return ctx.onScrolledIndexChange($event); });
+                i0.ɵɵtemplate(3, CmacsOptionContainerVirtualComponent_div_3_Template, 5, 4, "div", 2);
+                i0.ɵɵpipe(4, "nzFilterOption");
+                i0.ɵɵelementEnd();
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngIf", ctx.nzSelectService.isShowNotFound && ctx.notFoundContentShow);
+                i0.ɵɵadvance(1);
+                i0.ɵɵstyleProp("height", ctx.nzSelectService.listOfNzOptionComponent.length * ctx.itemSize, "px")("max-height", ctx.itemSize * ctx.maxItemLength, "px");
+                i0.ɵɵproperty("itemSize", ctx.itemSize)("maxBufferPx", ctx.itemSize * ctx.maxItemLength)("minBufferPx", ctx.itemSize * ctx.maxItemLength);
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("cdkVirtualForOf", i0.ɵɵpipeBind4(4, 10, ctx.nzSelectService.listOfNzOptionComponent, ctx.nzSelectService.searchValue, ctx.nzSelectService.filterOption, ctx.nzSelectService.serverSearch))("cdkVirtualForTrackBy", ctx.trackValue);
+            }
+        }, directives: [i2$1.NgIf, i4$2.CdkVirtualScrollViewport, i4$2.CdkFixedSizeVirtualScroll, i4$2.CdkVirtualForOf, i2$1.NgTemplateOutlet, i8.NzEmbedEmptyComponent, CmacsOptionLiVirtualComponent, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective, CmacsOptionLiComponent], pipes: [NzFilterOptionPipe], styles: [".cmacs-indeterminate-selection[_ngcontent-%COMP%]{position:relative;top:0;left:0;display:block;width:18px;height:18px;background-color:#fff;border:1px solid #d9d9d9;border-collapse:separate;transition:all .3s}.cmacs-indeterminate-selection[_ngcontent-%COMP%]:after{position:absolute;display:table;top:50%;left:50%;width:12px;height:12px;background-color:#2a7cff;border:0;transform:translate(-50%,-50%) scale(1);opacity:1;content:\" \";transition:all .1s cubic-bezier(.71,-.46,.88,.6),opacity .1s}.cmacs-not-found-custom[_ngcontent-%COMP%], .cmacs-not-found-custom[_ngcontent-%COMP%]:hover{background-color:#fff;padding:0}"], changeDetection: 0 });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsOptionContainerVirtualComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'cmacs-option-container-virtual',
+                        templateUrl: './cmacs-option-container-virtual.component.html',
+                        styleUrls: ['./cmacs-option-container-virtual.component.css'],
+                        changeDetection: i0.ChangeDetectionStrategy.OnPush,
+                    }]
+            }], function () { return [{ type: CmacsSelectService }, { type: i1$3.NzI18nService }, { type: i0.ChangeDetectorRef }]; }, { showSelectAll: [{
+                    type: i0.Input
+                }], showSearch: [{
+                    type: i0.Input
+                }], selectAllLabel: [{
+                    type: i0.Input
+                }], searchLabel: [{
+                    type: i0.Input
+                }], showCmacsSearch: [{
+                    type: i0.Input
+                }], notFoundContentShow: [{
+                    type: i0.Input
+                }], notFoundContentCustom: [{
+                    type: i0.Input
+                }], nzMenuItemSelectedIcon: [{
+                    type: i0.Input
+                }], nzScrollToBottom: [{
+                    type: i0.Output
+                }], onSearch: [{
+                    type: i0.Output
+                }] });
+    })();
+
     function CmacsSelectComponent_ng_container_1_ng_container_1_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainer(0);
@@ -4662,129 +5073,153 @@
             i0.ɵɵproperty("cdkConnectedOverlayHasBackdrop", true)("cdkConnectedOverlayMinWidth", ctx_r1.dropdownMatchSelectWidth ? null : ctx_r1.triggerWidth)("cdkConnectedOverlayWidth", ctx_r1.dropdownMatchSelectWidth ? ctx_r1.triggerWidth : null)("cdkConnectedOverlayOrigin", ctx_r1.cdkOverlayOrigin)("cdkConnectedOverlayOpen", ctx_r1.nzOpen);
         }
     }
-    function CmacsSelectComponent_ng_template_3_ng_template_2_Template(rf, ctx) { }
-    function CmacsSelectComponent_ng_template_3_div_3_ng_container_3_span_4_i_1_Template(rf, ctx) {
+    function CmacsSelectComponent_ng_template_3_div_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelement(0, "i", 18);
-        }
-    }
-    function CmacsSelectComponent_ng_template_3_div_3_ng_container_3_span_4_Template(rf, ctx) {
-        if (rf & 1) {
-            var _r22_1 = i0.ɵɵgetCurrentView();
-            i0.ɵɵelementStart(0, "span", 16);
-            i0.ɵɵlistener("mousedown", function CmacsSelectComponent_ng_template_3_div_3_ng_container_3_span_4_Template_span_mousedown_0_listener($event) { return $event.preventDefault(); })("click", function CmacsSelectComponent_ng_template_3_div_3_ng_container_3_span_4_Template_span_click_0_listener($event) { i0.ɵɵrestoreView(_r22_1); var option_r16 = i0.ɵɵnextContext().$implicit; var ctx_r20 = i0.ɵɵnextContext(3); return ctx_r20.removeSelectedValue(option_r16, $event); });
-            i0.ɵɵtemplate(1, CmacsSelectComponent_ng_template_3_div_3_ng_container_3_span_4_i_1_Template, 1, 0, "i", 17);
+            var _r17_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "div", 10);
+            i0.ɵɵlistener("onSearch", function CmacsSelectComponent_ng_template_3_div_1_Template_div_onSearch_0_listener($event) { i0.ɵɵrestoreView(_r17_1); var ctx_r16 = i0.ɵɵnextContext(2); return ctx_r16.onSearch($event); })("keydown", function CmacsSelectComponent_ng_template_3_div_1_Template_div_keydown_0_listener($event) { i0.ɵɵrestoreView(_r17_1); var ctx_r18 = i0.ɵɵnextContext(2); return ctx_r18.onKeyDown($event); })("nzScrollToBottom", function CmacsSelectComponent_ng_template_3_div_1_Template_div_nzScrollToBottom_0_listener() { i0.ɵɵrestoreView(_r17_1); var ctx_r19 = i0.ɵɵnextContext(2); return ctx_r19.scrollToBottom.emit(); });
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r17 = i0.ɵɵnextContext(4);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !ctx_r17.removeIcon)("ngIfElse", ctx_r17.removeIcon);
+            var ctx_r12 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("showSearch", ctx_r12.showSearch)("showSelectAll", ctx_r12.showSelectAll)("notFoundContentShow", ctx_r12.notFoundContentShow)("notFoundContentCustom", ctx_r12.notFoundContentCustom)("userDropdown", ctx_r12.userDropdown)("selectAllLabel", ctx_r12.selectAllLabel)("showCmacsSearch", ctx_r12.showCmacsSearch)("nzMenuItemSelectedIcon", ctx_r12.menuItemSelectedIcon)("nzNotFoundContent", ctx_r12.notFoundContent);
         }
     }
-    function CmacsSelectComponent_ng_template_3_div_3_ng_container_3_Template(rf, ctx) {
+    function CmacsSelectComponent_ng_template_3_cmacs_option_container_virtual_2_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r21_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "cmacs-option-container-virtual", 11);
+            i0.ɵɵlistener("onSearch", function CmacsSelectComponent_ng_template_3_cmacs_option_container_virtual_2_Template_cmacs_option_container_virtual_onSearch_0_listener($event) { i0.ɵɵrestoreView(_r21_1); var ctx_r20 = i0.ɵɵnextContext(2); return ctx_r20.onSearch($event); })("keydown", function CmacsSelectComponent_ng_template_3_cmacs_option_container_virtual_2_Template_cmacs_option_container_virtual_keydown_0_listener($event) { i0.ɵɵrestoreView(_r21_1); var ctx_r22 = i0.ɵɵnextContext(2); return ctx_r22.onKeyDown($event); })("scrollToBottom", function CmacsSelectComponent_ng_template_3_cmacs_option_container_virtual_2_Template_cmacs_option_container_virtual_scrollToBottom_0_listener() { i0.ɵɵrestoreView(_r21_1); var ctx_r23 = i0.ɵɵnextContext(2); return ctx_r23.scrollToBottom.emit(); });
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r13 = i0.ɵɵnextContext(2);
+            i0.ɵɵproperty("showSearch", ctx_r13.showSearch)("showSelectAll", ctx_r13.showSelectAll)("selectAllLabel", ctx_r13.selectAllLabel)("showCmacsSearch", ctx_r13.showCmacsSearch)("notFoundContentShow", ctx_r13.notFoundContentShow)("notFoundContentCustom", ctx_r13.notFoundContentCustom)("nzMenuItemSelectedIcon", ctx_r13.menuItemSelectedIcon);
+        }
+    }
+    function CmacsSelectComponent_ng_template_3_ng_template_3_Template(rf, ctx) { }
+    function CmacsSelectComponent_ng_template_3_div_4_ng_container_3_span_4_i_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelement(0, "i", 21);
+        }
+    }
+    function CmacsSelectComponent_ng_template_3_div_4_ng_container_3_span_4_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r32_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "span", 19);
+            i0.ɵɵlistener("mousedown", function CmacsSelectComponent_ng_template_3_div_4_ng_container_3_span_4_Template_span_mousedown_0_listener($event) { return $event.preventDefault(); })("click", function CmacsSelectComponent_ng_template_3_div_4_ng_container_3_span_4_Template_span_click_0_listener($event) { i0.ɵɵrestoreView(_r32_1); var option_r26 = i0.ɵɵnextContext().$implicit; var ctx_r30 = i0.ɵɵnextContext(3); return ctx_r30.removeSelectedValue(option_r26, $event); });
+            i0.ɵɵtemplate(1, CmacsSelectComponent_ng_template_3_div_4_ng_container_3_span_4_i_1_Template, 1, 0, "i", 20);
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r27 = i0.ɵɵnextContext(4);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !ctx_r27.removeIcon)("ngIfElse", ctx_r27.removeIcon);
+        }
+    }
+    function CmacsSelectComponent_ng_template_3_div_4_ng_container_3_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵelementStart(1, "li", 13);
-            i0.ɵɵelementStart(2, "div", 14);
+            i0.ɵɵelementStart(1, "li", 16);
+            i0.ɵɵelementStart(2, "div", 17);
             i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(4, CmacsSelectComponent_ng_template_3_div_3_ng_container_3_span_4_Template, 2, 2, "span", 15);
+            i0.ɵɵtemplate(4, CmacsSelectComponent_ng_template_3_div_4_ng_container_3_span_4_Template, 2, 2, "span", 18);
             i0.ɵɵelementEnd();
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var option_r16 = ctx.$implicit;
+            var option_r26 = ctx.$implicit;
             i0.ɵɵadvance(1);
-            i0.ɵɵclassProp("ant-select-selection__choice__disabled", option_r16.nzDisabled);
-            i0.ɵɵattribute("title", option_r16.nzLabel);
+            i0.ɵɵclassProp("ant-select-selection__choice__disabled", option_r26.nzDisabled);
+            i0.ɵɵattribute("title", option_r26.nzLabel);
             i0.ɵɵadvance(2);
-            i0.ɵɵtextInterpolate(option_r16.nzLabel);
+            i0.ɵɵtextInterpolate(option_r26.nzLabel);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !option_r16.nzDisabled);
+            i0.ɵɵproperty("ngIf", !option_r26.nzDisabled);
         }
     }
-    function CmacsSelectComponent_ng_template_3_div_3_li_5_ng_container_2_ng_template_1_Template(rf, ctx) { }
+    function CmacsSelectComponent_ng_template_3_div_4_li_5_ng_container_2_ng_template_1_Template(rf, ctx) { }
     var _c0$d = function (a0) { return { $implicit: a0 }; };
-    function CmacsSelectComponent_ng_template_3_div_3_li_5_ng_container_2_Template(rf, ctx) {
+    function CmacsSelectComponent_ng_template_3_div_4_li_5_ng_container_2_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
-            i0.ɵɵtemplate(1, CmacsSelectComponent_ng_template_3_div_3_li_5_ng_container_2_ng_template_1_Template, 0, 0, "ng-template", 19);
+            i0.ɵɵtemplate(1, CmacsSelectComponent_ng_template_3_div_4_li_5_ng_container_2_ng_template_1_Template, 0, 0, "ng-template", 22);
             i0.ɵɵpipe(2, "slice");
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r23 = i0.ɵɵnextContext(4);
+            var ctx_r33 = i0.ɵɵnextContext(4);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngTemplateOutlet", ctx_r23.maxTagPlaceholder)("ngTemplateOutletContext", i0.ɵɵpureFunction1(5, _c0$d, i0.ɵɵpipeBind2(2, 2, ctx_r23.nzSelectService.listOfSelectedValue, ctx_r23.maxTagCount)));
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r33.maxTagPlaceholder)("ngTemplateOutletContext", i0.ɵɵpureFunction1(5, _c0$d, i0.ɵɵpipeBind2(2, 2, ctx_r33.nzSelectService.listOfSelectedValue, ctx_r33.maxTagCount)));
         }
     }
-    function CmacsSelectComponent_ng_template_3_div_3_li_5_ng_container_3_Template(rf, ctx) {
+    function CmacsSelectComponent_ng_template_3_div_4_li_5_ng_container_3_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementContainerStart(0);
             i0.ɵɵtext(1);
             i0.ɵɵelementContainerEnd();
         }
         if (rf & 2) {
-            var ctx_r24 = i0.ɵɵnextContext(4);
+            var ctx_r34 = i0.ɵɵnextContext(4);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate1(" + ", ctx_r24.nzSelectService.listOfCachedSelectedOption.length - ctx_r24.maxTagCount, " ... ");
+            i0.ɵɵtextInterpolate1(" + ", ctx_r34.nzSelectService.listOfCachedSelectedOption.length - ctx_r34.maxTagCount, " ... ");
         }
     }
-    function CmacsSelectComponent_ng_template_3_div_3_li_5_Template(rf, ctx) {
+    function CmacsSelectComponent_ng_template_3_div_4_li_5_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "li", 13);
-            i0.ɵɵelementStart(1, "div", 14);
-            i0.ɵɵtemplate(2, CmacsSelectComponent_ng_template_3_div_3_li_5_ng_container_2_Template, 3, 7, "ng-container", 1);
-            i0.ɵɵtemplate(3, CmacsSelectComponent_ng_template_3_div_3_li_5_ng_container_3_Template, 2, 1, "ng-container", 1);
+            i0.ɵɵelementStart(0, "li", 16);
+            i0.ɵɵelementStart(1, "div", 17);
+            i0.ɵɵtemplate(2, CmacsSelectComponent_ng_template_3_div_4_li_5_ng_container_2_Template, 3, 7, "ng-container", 1);
+            i0.ɵɵtemplate(3, CmacsSelectComponent_ng_template_3_div_4_li_5_ng_container_3_Template, 2, 1, "ng-container", 1);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r15 = i0.ɵɵnextContext(3);
+            var ctx_r25 = i0.ɵɵnextContext(3);
             i0.ɵɵadvance(2);
-            i0.ɵɵproperty("ngIf", ctx_r15.maxTagPlaceholder);
+            i0.ɵɵproperty("ngIf", ctx_r25.maxTagPlaceholder);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", !ctx_r15.maxTagPlaceholder);
+            i0.ɵɵproperty("ngIf", !ctx_r25.maxTagPlaceholder);
         }
     }
-    function CmacsSelectComponent_ng_template_3_div_3_Template(rf, ctx) {
+    function CmacsSelectComponent_ng_template_3_div_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 9);
-            i0.ɵɵelementStart(1, "div", 10);
+            i0.ɵɵelementStart(0, "div", 12);
+            i0.ɵɵelementStart(1, "div", 13);
             i0.ɵɵelementStart(2, "ul");
-            i0.ɵɵtemplate(3, CmacsSelectComponent_ng_template_3_div_3_ng_container_3_Template, 5, 5, "ng-container", 11);
+            i0.ɵɵtemplate(3, CmacsSelectComponent_ng_template_3_div_4_ng_container_3_Template, 5, 5, "ng-container", 14);
             i0.ɵɵpipe(4, "slice");
-            i0.ɵɵtemplate(5, CmacsSelectComponent_ng_template_3_div_3_li_5_Template, 4, 2, "li", 12);
+            i0.ɵɵtemplate(5, CmacsSelectComponent_ng_template_3_div_4_li_5_Template, 4, 2, "li", 15);
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
             i0.ɵɵelementEnd();
         }
         if (rf & 2) {
-            var ctx_r13 = i0.ɵɵnextContext(2);
+            var ctx_r15 = i0.ɵɵnextContext(2);
             i0.ɵɵadvance(3);
-            i0.ɵɵproperty("ngForOf", i0.ɵɵpipeBind3(4, 3, ctx_r13.nzSelectService.listOfCachedSelectedOption, 0, ctx_r13.maxTagCount))("ngForTrackBy", ctx_r13.trackValue);
+            i0.ɵɵproperty("ngForOf", i0.ɵɵpipeBind3(4, 3, ctx_r15.nzSelectService.listOfCachedSelectedOption, 0, ctx_r15.maxTagCount))("ngForTrackBy", ctx_r15.trackValue);
             i0.ɵɵadvance(2);
-            i0.ɵɵproperty("ngIf", ctx_r13.nzSelectService.listOfCachedSelectedOption.length > ctx_r13.maxTagCount);
+            i0.ɵɵproperty("ngIf", ctx_r15.nzSelectService.listOfCachedSelectedOption.length > ctx_r15.maxTagCount);
         }
     }
     function CmacsSelectComponent_ng_template_3_Template(rf, ctx) {
         if (rf & 1) {
-            var _r27_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 5);
-            i0.ɵɵelementStart(1, "div", 6);
-            i0.ɵɵlistener("onSearch", function CmacsSelectComponent_ng_template_3_Template_div_onSearch_1_listener($event) { i0.ɵɵrestoreView(_r27_1); var ctx_r26 = i0.ɵɵnextContext(); return ctx_r26.onSearch($event); })("keydown", function CmacsSelectComponent_ng_template_3_Template_div_keydown_1_listener($event) { i0.ɵɵrestoreView(_r27_1); var ctx_r28 = i0.ɵɵnextContext(); return ctx_r28.onKeyDown($event); })("nzScrollToBottom", function CmacsSelectComponent_ng_template_3_Template_div_nzScrollToBottom_1_listener() { i0.ɵɵrestoreView(_r27_1); var ctx_r29 = i0.ɵɵnextContext(); return ctx_r29.scrollToBottom.emit(); });
+            i0.ɵɵtemplate(1, CmacsSelectComponent_ng_template_3_div_1_Template, 1, 9, "div", 6);
+            i0.ɵɵtemplate(2, CmacsSelectComponent_ng_template_3_cmacs_option_container_virtual_2_Template, 1, 7, "cmacs-option-container-virtual", 7);
+            i0.ɵɵtemplate(3, CmacsSelectComponent_ng_template_3_ng_template_3_Template, 0, 0, "ng-template", 8);
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(2, CmacsSelectComponent_ng_template_3_ng_template_2_Template, 0, 0, "ng-template", 7);
-            i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(3, CmacsSelectComponent_ng_template_3_div_3_Template, 6, 7, "div", 8);
+            i0.ɵɵtemplate(4, CmacsSelectComponent_ng_template_3_div_4_Template, 6, 7, "div", 9);
         }
         if (rf & 2) {
             var ctx_r3 = i0.ɵɵnextContext();
             i0.ɵɵclassProp("cmacs-select-user-dropdown", ctx_r3.userDropdown)("cmacs-select-dropdown", ctx_r3.open)("ant-select-dropdown--single", ctx_r3.nzSelectService.isSingleMode)("ant-select-dropdown--multiple", ctx_r3.nzSelectService.isMultipleOrTags)("ant-select-dropdown-placement-bottomLeft", ctx_r3.dropDownPosition === "bottom")("ant-select-dropdown-placement-topLeft", ctx_r3.dropDownPosition === "top");
             i0.ɵɵproperty("@slideMotion", ctx_r3.dropDownPosition)("ngStyle", ctx_r3.dropdownStyle);
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("showSearch", ctx_r3.showSearch)("showSelectAll", ctx_r3.showSelectAll)("notFoundContentShow", ctx_r3.notFoundContentShow)("notFoundContentCustom", ctx_r3.notFoundContentCustom)("userDropdown", ctx_r3.userDropdown)("selectAllLabel", ctx_r3.selectAllLabel)("showCmacsSearch", ctx_r3.showCmacsSearch)("nzMenuItemSelectedIcon", ctx_r3.menuItemSelectedIcon)("nzNotFoundContent", ctx_r3.notFoundContent);
+            i0.ɵɵproperty("ngIf", !ctx_r3.isReactiveDriven);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r3.isReactiveDriven);
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngTemplateOutlet", ctx_r3.dropdownRender);
             i0.ɵɵadvance(1);
@@ -4811,6 +5246,7 @@
             this.searchValue = '';
             this.onChange = function () { return null; };
             this.onTouched = function () { return null; };
+            this.isReactiveDriven = false;
             // tslint:disable-next-line: member-ordering
             this.dropDownPosition = 'bottom';
             // tslint:disable-next-line: member-ordering
@@ -4862,6 +5298,7 @@
             // tslint:disable-next-line: member-ordering
             this.tokenSeparators = [];
             this.selectAllLabel = 'Select All';
+            this.options = [];
             renderer.addClass(this.elementRef.nativeElement, 'ant-select');
         }
         Object.defineProperty(CmacsSelectComponent.prototype, "autoClearSearchValue", {
@@ -5057,7 +5494,9 @@
         };
         CmacsSelectComponent.prototype.ngOnInit = function () {
             var _this = this;
-            this.focusMonitor.monitor(this.elementRef, true).subscribe(function (focusOrigin) {
+            this.focusMonitor.monitor(this.elementRef, true)
+                .pipe(operators.takeUntil(this.destroy$))
+                .subscribe(function (focusOrigin) {
                 if (!focusOrigin && _this.nzSelectService.isTagsSingleSelectMode) {
                     if (_this.selectTopControlComponent.inputValue.length &&
                         _this.nzSelectService.activatedOption &&
@@ -5066,7 +5505,9 @@
                     }
                 }
             });
-            this.nzSelectService.searchValue$.pipe(operators.takeUntil(this.destroy$)).subscribe(function (data) {
+            this.nzSelectService.searchValue$
+                .pipe(operators.takeUntil(this.destroy$))
+                .subscribe(function (data) {
                 if (_this.userDropdown && data.length && !_this.nzOpen) {
                     _this.nzOpen = true;
                     _this.updateCdkConnectedOverlayStatus();
@@ -5074,18 +5515,24 @@
                 _this.cmacsOnSearch.emit(data);
                 _this.updateCdkConnectedOverlayPositions();
             });
-            this.nzSelectService.editedValue$.pipe(operators.takeUntil(this.destroy$)).subscribe(function (data) {
+            this.nzSelectService.editedValue$
+                .pipe(operators.takeUntil(this.destroy$))
+                .subscribe(function (data) {
                 _this.cmacsEditedInput.emit(data);
                 _this.updateCdkConnectedOverlayPositions();
             });
-            this.nzSelectService.modelChange$.pipe(operators.takeUntil(this.destroy$)).subscribe(function (modelValue) {
+            this.nzSelectService.modelChange$
+                .pipe(operators.takeUntil(this.destroy$))
+                .subscribe(function (modelValue) {
                 if (_this.value !== modelValue) {
                     _this.value = modelValue;
                     _this.onChange(_this.value);
                     _this.updateCdkConnectedOverlayPositions();
                 }
             });
-            this.nzSelectService.open$.pipe(operators.takeUntil(this.destroy$)).subscribe(function (value) {
+            this.nzSelectService.open$
+                .pipe(operators.takeUntil(this.destroy$))
+                .subscribe(function (value) {
                 if (_this.userDropdown && _this.searchValue === '' && value) {
                     _this.nzOpen = false;
                     _this.updateCdkConnectedOverlayStatus();
@@ -5116,9 +5563,27 @@
                 }
                 _this.nzOpen = value;
             });
-            this.nzSelectService.check$.pipe(operators.takeUntil(this.destroy$)).subscribe(function () {
+            this.nzSelectService.check$
+                .pipe(operators.takeUntil(this.destroy$))
+                .subscribe(function () {
                 _this.cdr.markForCheck();
             });
+        };
+        CmacsSelectComponent.prototype.ngOnChanges = function (changes) {
+            var options = changes.options;
+            if (options) {
+                this.isReactiveDriven = true;
+                var listOfOptions = this.options || [];
+                var listOfTransformedItem = listOfOptions.map(function (item) { return ({
+                    template: item.label instanceof i0.TemplateRef ? item.label : null,
+                    nzLabel: typeof item.label === 'string' || typeof item.label === 'number' ? item.label : null,
+                    nzValue: item.value,
+                    nzDisabled: item.disabled || false,
+                    visible: !item.hide,
+                    nzCustomContent: item.label instanceof i0.TemplateRef,
+                }); });
+                this.nzSelectService.updateTemplateOption(listOfTransformedItem, []);
+            }
         };
         CmacsSelectComponent.prototype.ngAfterViewInit = function () {
             this.updateCdkConnectedOverlayStatus();
@@ -5126,11 +5591,13 @@
         };
         CmacsSelectComponent.prototype.ngAfterContentInit = function () {
             var _this = this;
-            this.listOfCmacsOptionGroupComponent.changes
-                .pipe(operators.startWith(true), operators.flatMap(function () { return rxjs.merge.apply(void 0, __spread([_this.listOfCmacsOptionGroupComponent.changes, _this.listOfCmacsOptionComponent.changes], _this.listOfCmacsOptionComponent.map(function (option) { return option.changes; }), _this.listOfCmacsOptionGroupComponent.map(function (group) { return group.listOfNzOptionComponent ? group.listOfNzOptionComponent.changes : rxjs.EMPTY; }))).pipe(operators.startWith(true)); }))
-                .subscribe(function () {
-                _this.nzSelectService.updateTemplateOption(_this.listOfCmacsOptionComponent.toArray(), _this.listOfCmacsOptionGroupComponent.toArray());
-            });
+            if (!this.isReactiveDriven) {
+                this.listOfCmacsOptionGroupComponent.changes
+                    .pipe(operators.startWith(true), operators.flatMap(function () { return rxjs.merge.apply(void 0, __spread([_this.listOfCmacsOptionGroupComponent.changes, _this.listOfCmacsOptionComponent.changes], _this.listOfCmacsOptionComponent.map(function (option) { return option.changes; }), _this.listOfCmacsOptionGroupComponent.map(function (group) { return group.listOfNzOptionComponent ? group.listOfNzOptionComponent.changes : rxjs.EMPTY; }))).pipe(operators.startWith(true)); }))
+                    .subscribe(function () {
+                    _this.nzSelectService.updateTemplateOption(_this.listOfCmacsOptionComponent.toArray(), _this.listOfCmacsOptionGroupComponent.toArray());
+                });
+            }
         };
         CmacsSelectComponent.prototype.ngOnDestroy = function () {
             this.destroy$.next();
@@ -5171,14 +5638,14 @@
             if (rf & 2) {
                 i0.ɵɵclassProp("ant-select-lg", ctx.size === "large")("ant-select-sm", ctx.size === "small")("ant-select-enabled", !ctx.disabled)("ant-select-no-arrow", !ctx.showArrow)("ant-select-disabled", ctx.disabled)("ant-select-allow-clear", ctx.allowClear)("ant-select-open", ctx.nzOpen || ctx.cmacsOpen);
             }
-        }, inputs: { size: "size", dropdownClassName: "dropdownClassName", dropdownMatchSelectWidth: "dropdownMatchSelectWidth", action: "action", dropdownStyle: "dropdownStyle", notFoundContent: "notFoundContent", notFoundContentShow: "notFoundContentShow", allowClear: "allowClear", open: "open", showSearch: "showSearch", showCmacsSearch: "showCmacsSearch", showCustomSearch: "showCustomSearch", loading: "loading", showSelectAll: "showSelectAll", placeHolder: "placeHolder", maxTagCount: "maxTagCount", maxTagCountAuto: "maxTagCountAuto", dropdownRender: "dropdownRender", suffixIcon: "suffixIcon", clearIcon: "clearIcon", removeIcon: "removeIcon", notFoundContentCustom: "notFoundContentCustom", menuItemSelectedIcon: "menuItemSelectedIcon", showArrow: "showArrow", tokenSeparators: "tokenSeparators", maxTagPlaceholder: "maxTagPlaceholder", selectAllLabel: "selectAllLabel", autoClearSearchValue: "autoClearSearchValue", maxMultipleCount: "maxMultipleCount", serverSearch: "serverSearch", cmacsEditable: "cmacsEditable", userDropdown: "userDropdown", mode: "mode", filterOption: "filterOption", tagsOut: "tagsOut", compareWith: "compareWith", autoFocus: "autoFocus", cmacsOpen: "cmacsOpen", disabled: "disabled" }, outputs: { cmacsOnSearch: "cmacsOnSearch", cmacsEditedInput: "cmacsEditedInput", scrollToBottom: "scrollToBottom", openChange: "openChange", cmacsBlur: "cmacsBlur", cmacsFocus: "cmacsFocus" }, exportAs: ["cmacsSelect"], features: [i0.ɵɵProvidersFeature([
+        }, inputs: { size: "size", dropdownClassName: "dropdownClassName", dropdownMatchSelectWidth: "dropdownMatchSelectWidth", action: "action", dropdownStyle: "dropdownStyle", notFoundContent: "notFoundContent", notFoundContentShow: "notFoundContentShow", allowClear: "allowClear", open: "open", showSearch: "showSearch", showCmacsSearch: "showCmacsSearch", showCustomSearch: "showCustomSearch", loading: "loading", showSelectAll: "showSelectAll", placeHolder: "placeHolder", maxTagCount: "maxTagCount", maxTagCountAuto: "maxTagCountAuto", dropdownRender: "dropdownRender", suffixIcon: "suffixIcon", clearIcon: "clearIcon", removeIcon: "removeIcon", notFoundContentCustom: "notFoundContentCustom", menuItemSelectedIcon: "menuItemSelectedIcon", showArrow: "showArrow", tokenSeparators: "tokenSeparators", maxTagPlaceholder: "maxTagPlaceholder", selectAllLabel: "selectAllLabel", options: "options", autoClearSearchValue: "autoClearSearchValue", maxMultipleCount: "maxMultipleCount", serverSearch: "serverSearch", cmacsEditable: "cmacsEditable", userDropdown: "userDropdown", mode: "mode", filterOption: "filterOption", tagsOut: "tagsOut", compareWith: "compareWith", autoFocus: "autoFocus", cmacsOpen: "cmacsOpen", disabled: "disabled" }, outputs: { cmacsOnSearch: "cmacsOnSearch", cmacsEditedInput: "cmacsEditedInput", scrollToBottom: "scrollToBottom", openChange: "openChange", cmacsBlur: "cmacsBlur", cmacsFocus: "cmacsFocus" }, exportAs: ["cmacsSelect"], features: [i0.ɵɵProvidersFeature([
                 CmacsSelectService,
                 {
                     provide: i4.NG_VALUE_ACCESSOR,
                     useExisting: i0.forwardRef(function () { return CmacsSelectComponent; }),
                     multi: true
                 }
-            ])], ngContentSelectors: _c1$5, decls: 6, vars: 33, consts: [["cdkOverlayOrigin", "", "cmacs-select-top-control", "", "tabindex", "0", 1, "ant-select-selection", 3, "nzOpen", "searchValue", "nzMaxTagPlaceholder", "nzPlaceHolder", "nzAllowClear", "nzMaxTagCount", "maxTagCountAuto", "nzShowArrow", "nzLoading", "cmacsOpen", "cmacsEditable", "nzSuffixIcon", "nzClearIcon", "userDropdown", "tagsOut", "action", "nzRemoveIcon", "nzShowSearch", "showCmacsSearch", "showCustomSearch", "nzTokenSeparators", "keydown"], [4, "ngIf"], ["content", ""], [4, "ngTemplateOutlet"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayMinWidth", "cdkConnectedOverlayWidth", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "backdropClick", "detach", "positionChange"], [1, "ant-select-dropdown", "cmacs-custom-scrollbar", 3, "ngStyle"], ["cmacs-option-container", "", 2, "overflow", "auto", "transform", "translateZ(0px)", "scrollbar-color", "#cfd3d9 #ffffff", "scrollbar-width", "thin", 3, "showSearch", "showSelectAll", "notFoundContentShow", "notFoundContentCustom", "userDropdown", "selectAllLabel", "showCmacsSearch", "nzMenuItemSelectedIcon", "nzNotFoundContent", "onSearch", "keydown", "nzScrollToBottom"], [3, "ngTemplateOutlet"], ["class", "ant-select-selection--multiple cmacs-tags-out", "style", "padding-top: 15px;", 4, "ngIf"], [1, "ant-select-selection--multiple", "cmacs-tags-out", 2, "padding-top", "15px"], [1, "ant-select-selection__rendered", "cmacs-select-selection__rendered"], [4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-selection__choice", 4, "ngIf"], [1, "ant-select-selection__choice"], [1, "ant-select-selection__choice__content"], ["class", "ant-select-selection__choice__remove", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__choice__remove", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close", "class", "ant-select-remove-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close", 1, "ant-select-remove-icon"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function CmacsSelectComponent_Template(rf, ctx) {
+            ]), i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1$5, decls: 6, vars: 33, consts: [["cdkOverlayOrigin", "", "cmacs-select-top-control", "", "tabindex", "0", 1, "ant-select-selection", 3, "nzOpen", "searchValue", "nzMaxTagPlaceholder", "nzPlaceHolder", "nzAllowClear", "nzMaxTagCount", "maxTagCountAuto", "nzShowArrow", "nzLoading", "cmacsOpen", "cmacsEditable", "nzSuffixIcon", "nzClearIcon", "userDropdown", "tagsOut", "action", "nzRemoveIcon", "nzShowSearch", "showCmacsSearch", "showCustomSearch", "nzTokenSeparators", "keydown"], [4, "ngIf"], ["content", ""], [4, "ngTemplateOutlet"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayMinWidth", "cdkConnectedOverlayWidth", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "backdropClick", "detach", "positionChange"], [1, "ant-select-dropdown", "cmacs-custom-scrollbar", 3, "ngStyle"], ["cmacs-option-container", "", "style", "overflow: auto;transform: translateZ(0px); scrollbar-color: #cfd3d9 #ffffff; scrollbar-width: thin;", 3, "showSearch", "showSelectAll", "notFoundContentShow", "notFoundContentCustom", "userDropdown", "selectAllLabel", "showCmacsSearch", "nzMenuItemSelectedIcon", "nzNotFoundContent", "onSearch", "keydown", "nzScrollToBottom", 4, "ngIf"], [3, "showSearch", "showSelectAll", "selectAllLabel", "showCmacsSearch", "notFoundContentShow", "notFoundContentCustom", "nzMenuItemSelectedIcon", "onSearch", "keydown", "scrollToBottom", 4, "ngIf"], [3, "ngTemplateOutlet"], ["class", "ant-select-selection--multiple cmacs-tags-out", "style", "padding-top: 15px;", 4, "ngIf"], ["cmacs-option-container", "", 2, "overflow", "auto", "transform", "translateZ(0px)", "scrollbar-color", "#cfd3d9 #ffffff", "scrollbar-width", "thin", 3, "showSearch", "showSelectAll", "notFoundContentShow", "notFoundContentCustom", "userDropdown", "selectAllLabel", "showCmacsSearch", "nzMenuItemSelectedIcon", "nzNotFoundContent", "onSearch", "keydown", "nzScrollToBottom"], [3, "showSearch", "showSelectAll", "selectAllLabel", "showCmacsSearch", "notFoundContentShow", "notFoundContentCustom", "nzMenuItemSelectedIcon", "onSearch", "keydown", "scrollToBottom"], [1, "ant-select-selection--multiple", "cmacs-tags-out", 2, "padding-top", "15px"], [1, "ant-select-selection__rendered", "cmacs-select-selection__rendered"], [4, "ngFor", "ngForOf", "ngForTrackBy"], ["class", "ant-select-selection__choice", 4, "ngIf"], [1, "ant-select-selection__choice"], [1, "ant-select-selection__choice__content"], ["class", "ant-select-selection__choice__remove", 3, "mousedown", "click", 4, "ngIf"], [1, "ant-select-selection__choice__remove", 3, "mousedown", "click"], ["nz-icon", "", "nzType", "close", "class", "ant-select-remove-icon", 4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close", 1, "ant-select-remove-icon"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function CmacsSelectComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "div", 0);
@@ -5186,7 +5653,7 @@
                 i0.ɵɵelementEnd();
                 i0.ɵɵtemplate(1, CmacsSelectComponent_ng_container_1_Template, 2, 1, "ng-container", 1);
                 i0.ɵɵtemplate(2, CmacsSelectComponent_2_Template, 1, 5, undefined, 1);
-                i0.ɵɵtemplate(3, CmacsSelectComponent_ng_template_3_Template, 4, 25, "ng-template", null, 2, i0.ɵɵtemplateRefExtractor);
+                i0.ɵɵtemplate(3, CmacsSelectComponent_ng_template_3_Template, 5, 18, "ng-template", null, 2, i0.ɵɵtemplateRefExtractor);
                 i0.ɵɵtemplate(5, CmacsSelectComponent_ng_template_5_Template, 1, 0, "ng-template");
             }
             if (rf & 2) {
@@ -5197,7 +5664,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", !ctx.open);
             }
-        }, directives: [i1$4.CdkOverlayOrigin, CmacsSelectTopControlComponent, i2$1.NgIf, i2$1.NgTemplateOutlet, i1$4.CdkConnectedOverlay, i4$2.NzConnectedOverlayDirective, i2$1.NgStyle, CmacsOptionContainerComponent, i2$1.NgForOf, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective], pipes: [i2$1.SlicePipe], styles: [".ant-select-selection--multiple .cmacs-select-user-dropdown .ant-select-search--inline .ant-select-search__field,.ant-select-selection--multiple .cmacs-select-user-dropdown .ant-select-search.ant-select-search--inline,.cmacs-select-user-dropdown .cmacs-select-tag-wrapper-inner{width:100%}.ant-select{box-sizing:border-box;margin:0;padding:0;color:#3b3f46;font-size:14px;font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:\"tnum\";position:relative;display:inline-block;outline:0}.ant-select-dropdown{margin-top:0!important;margin-bottom:0!important}.ant-select-dropdown button{width:calc(100% - 28px);margin:9px 14px}.ant-select ol,.ant-select ul{margin:0;padding:0;list-style:none}.ant-select>ul>li>a{padding:0;background-color:#fff}.ant-select-arrow{display:inline-block;color:inherit;font-style:normal;line-height:0;text-align:center;text-transform:none;vertical-align:-.125em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:absolute;top:50%;right:11px;margin-top:-6px;color:#656c79;font-size:12px;line-height:1;transform-origin:50% 50%}.ant-select-arrow>*{line-height:1}.ant-select-arrow svg{display:inline-block}.ant-select-arrow:before{display:none}.ant-select-arrow .ant-select-arrow-icon{display:block}.ant-select-arrow .ant-select-arrow-icon svg{transition:transform .3s}.ant-select-selection{border-top:1.02px solid #dee0e5;border-radius:4px}.ant-select-selection:hover{border-color:#2a7cff;border-right-width:1px!important}.ant-select-focused .ant-select-selection,.ant-select-selection:active,.ant-select-selection:focus{border-color:#2a7cff;border-right-width:1px!important;outline:0;box-shadow:0 0 0 2px rgba(24,144,255,.2)}.ant-select-selection__clear{position:absolute;top:50%;right:11px;z-index:1;display:inline-block;width:12px;height:12px;margin-top:-6px;color:#656c79;font-size:12px;font-style:normal;line-height:12px;text-align:center;text-transform:none;background:#fff;cursor:pointer;opacity:0;transition:color .3s ease,opacity .15s ease;text-rendering:auto}.ant-select-selection__clear:before{display:block}.ant-select-selection__clear:hover{color:#656c79}.ant-select-selection:hover .ant-select-selection__clear{opacity:1}.ant-select-selection-selected-value{float:left;max-width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.ant-select-no-arrow .ant-select-selection-selected-value{padding-right:0}.ant-select-disabled{color:#bec4cd}.ant-select-disabled .ant-select-selection{background:#f6f7fb;cursor:not-allowed}.ant-select-disabled .ant-select-selection:active,.ant-select-disabled .ant-select-selection:focus,.ant-select-disabled .ant-select-selection:hover{border-color:#dee0e5;box-shadow:none}.ant-select-disabled .ant-select-selection__clear{display:none;visibility:hidden;pointer-events:none}.ant-select-disabled .ant-select-selection--multiple .ant-select-selection__choice{padding-right:10px;color:#bec4cd;background:#f6f7fb}.ant-select-disabled .ant-select-selection--multiple .ant-select-selection__choice__remove{display:none}.ant-select-selection--single{position:relative;height:32px;cursor:pointer}.ant-select-selection__rendered{margin-right:11px;line-height:30px}.ant-select-selection__rendered:after{display:inline-block;width:0;visibility:hidden;pointer-events:none;content:\".\"}.ant-select-lg{font-size:16px}.ant-select-lg .ant-select-selection--single{height:40px}.ant-select-lg .ant-select-selection__rendered{line-height:38px}.ant-select-lg .ant-select-selection--multiple{min-height:40px}.ant-select-lg .ant-select-selection--multiple .ant-select-selection__rendered li{height:32px;line-height:32px}.ant-select-lg .ant-select-selection--multiple .ant-select-arrow,.ant-select-lg .ant-select-selection--multiple .ant-select-selection__clear{top:20px}.ant-select-sm .ant-select-selection--single{height:24px}.ant-select-sm .ant-select-selection__rendered{margin:0 7px;line-height:22px}.ant-select-sm .ant-select-selection--multiple{min-height:24px}.ant-select-sm .ant-select-selection--multiple .ant-select-selection__rendered li{height:16px;line-height:14px}.ant-select-sm .ant-select-selection--multiple .ant-select-arrow,.ant-select-sm .ant-select-selection--multiple .ant-select-selection__clear{top:12px}.ant-select-sm .ant-select-arrow,.ant-select-sm .ant-select-selection__clear{right:8px}.ant-select-disabled .ant-select-selection__choice__remove{color:#bec4cd;cursor:default}.ant-select-disabled .ant-select-selection__choice__remove:hover{color:#bec4cd}.ant-select-search__field__wrap{position:relative;display:inline-block}.ant-select-search__field__placeholder,.ant-select-selection__placeholder{position:absolute;top:50%;right:9px;left:0;max-width:100%;height:20px;margin-top:-10px;overflow:hidden;color:#acb3bf;line-height:20px;white-space:nowrap;text-align:left;text-overflow:ellipsis}.ant-select-search__field__placeholder{left:12px}.ant-select-search__field__mirror{position:absolute;top:0;left:0;white-space:pre;opacity:0;pointer-events:none}.ant-select-search--inline{position:absolute;width:100%;height:100%}.ant-select-search--inline .ant-select-search__field__wrap{width:100%;height:100%}.ant-select-search--inline .ant-select-search__field{width:100%;height:100%;font-size:100%;line-height:1;background:transparent;border-width:0;border-radius:4px;outline:0}.ant-select-search--inline>i{float:right}.ant-select-selection--multiple{min-height:32px;padding-bottom:3px;cursor:text;zoom:1}.ant-select-selection--multiple:after,.ant-select-selection--multiple:before{content:\"\";display:table}.ant-select-selection--multiple:after{clear:both}.ant-select-selection--multiple .ant-select-search--inline{position:static;float:left;width:auto;max-width:100%;padding:0}.ant-select-selection--multiple .ant-select-search--inline .ant-select-search__field{width:.75em;max-width:100%}.ant-select-selection--multiple .ant-select-selection__rendered{height:auto;margin-bottom:-3px;margin-left:5px}.ant-select-selection--multiple .ant-select-selection__placeholder{margin-left:8px}.ant-select-selection--multiple .ant-select-selection__rendered>ul>li,.ant-select-selection--multiple>ul>li{height:24px;margin-top:3px;line-height:22px}.ant-select-selection--multiple .ant-select-selection__choice{position:relative;float:left;max-width:99%;margin-right:4px;padding:0 20px 0 10px;overflow:hidden;color:#656c79;background-color:#f6f7fb;border:1px solid #dee0e5;border-radius:2px;cursor:default;transition:padding .3s cubic-bezier(.645,.045,.355,1)}.ant-select-selection--multiple .ant-select-selection__choice__disabled{padding:0 10px}.ant-select-selection--multiple .ant-select-selection__choice__content{display:inline-block;max-width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;transition:margin .3s cubic-bezier(.645,.045,.355,1)}.ant-select-selection--multiple .ant-select-selection__choice__remove{color:inherit;font-style:normal;line-height:0;text-align:center;text-transform:none;vertical-align:-.125em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:absolute;right:4px;color:#656c79;font-weight:700;line-height:inherit;cursor:pointer;transition:all .3s;display:inline-block;font-size:12px;font-size:10px\\9;transform:scale(.83333333) rotate(0deg)}.ant-select-selection--multiple .ant-select-selection__choice__remove>*{line-height:1}.ant-select-selection--multiple .ant-select-selection__choice__remove svg{display:inline-block}.ant-select-selection--multiple .ant-select-selection__choice__remove:before{display:none}.ant-select-selection--multiple .ant-select-selection__choice__remove .ant-select-selection--multiple .ant-select-selection__choice__remove-icon{display:block}:root .ant-select-selection--multiple .ant-select-selection__choice__remove{font-size:12px}.ant-select-selection--multiple .ant-select-selection__choice__remove:hover{color:#656c79}.ant-select-selection--multiple .ant-select-arrow,.ant-select-selection--multiple .ant-select-selection__clear{top:16px}.ant-select-allow-clear .ant-select-selection--single .ant-select-selection-selected-value{padding-right:16px}.ant-select-allow-clear .ant-select-selection--multiple .ant-select-selection__rendered,.ant-select-show-arrow .ant-select-selection--multiple .ant-select-selection__rendered{margin-right:20px}.ant-select-open .ant-select-arrow-icon svg{transform:rotate(180deg)}.ant-select-open .ant-select-selection{border-color:#2a7cff;border-right-width:1px!important;outline:0;box-shadow:0 0 0 2px rgba(24,144,255,.2)}.ant-select-combobox .ant-select-arrow{display:none}.ant-select-combobox .ant-select-search--inline{float:none;width:100%;height:100%}.ant-select-combobox .ant-select-search__field__wrap{width:100%;height:100%}.ant-select-combobox .ant-select-search__field{position:relative;z-index:1;width:100%;height:100%;box-shadow:none;transition:all .3s cubic-bezier(.645,.045,.355,1),height 0s}.ant-select-combobox.ant-select-allow-clear .ant-select-selection:hover .ant-select-selection__rendered,.ant-select-combobox.ant-select-show-arrow .ant-select-selection:hover .ant-select-selection__rendered{margin-right:20px}.ant-select-dropdown{margin:0;padding:0;color:#656c79;font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:\"tnum\";position:absolute;top:-9999px;left:-9999px;z-index:1050;box-sizing:border-box;font-size:14px;font-variant:normal;background-color:#fff;border-radius:4px;outline:none;box-shadow:0 2px 8px rgba(0,0,0,.15)}.ant-select-dropdown.slide-up-appear.slide-up-appear-active.ant-select-dropdown-placement-bottomLeft,.ant-select-dropdown.slide-up-enter.slide-up-enter-active.ant-select-dropdown-placement-bottomLeft{-webkit-animation-name:antSlideUpIn;animation-name:antSlideUpIn}.ant-select-dropdown.slide-up-appear.slide-up-appear-active.ant-select-dropdown-placement-topLeft,.ant-select-dropdown.slide-up-enter.slide-up-enter-active.ant-select-dropdown-placement-topLeft{-webkit-animation-name:antSlideDownIn;animation-name:antSlideDownIn}.ant-select-dropdown.slide-up-leave.slide-up-leave-active.ant-select-dropdown-placement-bottomLeft{-webkit-animation-name:antSlideUpOut;animation-name:antSlideUpOut}.ant-select-dropdown.slide-up-leave.slide-up-leave-active.ant-select-dropdown-placement-topLeft{-webkit-animation-name:antSlideDownOut;animation-name:antSlideDownOut}.ant-select-dropdown-hidden{display:none}.ant-select-dropdown-menu-item-group-list{margin:0;padding:0}.ant-select-dropdown-menu-item-group-list>.ant-select-dropdown-menu-item{padding-left:20px}.ant-select-dropdown-menu-item-group-title{height:32px;padding:0 12px;color:#656c79;font-size:12px;line-height:32px}.ant-select-dropdown-menu-item-group-list .ant-select-dropdown-menu-item:first-child:not(:last-child),.ant-select-dropdown-menu-item-group:not(:last-child) .ant-select-dropdown-menu-item-group-list .ant-select-dropdown-menu-item:last-child{border-radius:0}.ant-select-dropdown-menu-item{position:relative;display:block;padding:5px 12px;overflow:hidden;line-height:22px;white-space:nowrap;text-overflow:ellipsis;cursor:pointer;transition:background .3s ease}.ant-select-dropdown-menu-item:first-child{border-radius:4px 4px 0 0}.ant-select-dropdown-menu-item:last-child{border-radius:0 0 4px 4px}.ant-select-dropdown-menu-item-disabled{color:#bec4cd;cursor:not-allowed}.ant-select-dropdown-menu-item-disabled:hover{color:#bec4cd;background-color:#fff;cursor:not-allowed}.ant-select-dropdown-menu-item-selected,.ant-select-dropdown-menu-item-selected:hover{color:#656c79;font-weight:600;background-color:#f6f7fb}.ant-select-dropdown-menu-item-divider{height:1px;margin:1px 0;overflow:hidden;line-height:0;background-color:#dee0e5}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item{padding-right:32px}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{position:absolute;top:50%;right:12px;color:transparent;font-weight:700;font-size:12px;text-shadow:0 .1px 0,.1px 0 0,0 -.1px 0,-.1px 0;transform:translateY(-50%);transition:all .2s}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon{color:#656c79}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-disabled .ant-select-selected-icon{display:none}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{display:inline-block;color:#2a7cff}.ant-select-dropdown--empty.ant-select-dropdown--multiple .ant-select-dropdown-menu-item{padding-right:12px}.ant-select-dropdown-container-open .ant-select-dropdown,.ant-select-dropdown-open .ant-select-dropdown{display:block}.ant-empty{margin:0 8px;font-size:14px;line-height:22px;text-align:center}.ant-empty-image{height:100px;margin-bottom:8px}.ant-empty-image img{height:100%}.ant-empty-description{margin:0}.ant-empty-footer{margin-top:16px}.ant-empty-normal{margin:32px 0;color:#bec4cd}.ant-empty-normal .ant-empty-image{height:40px}.ant-empty-small{margin:8px 0;color:#bec4cd}.ant-empty-small .ant-empty-image{height:35px}.cmacs-tags-out{padding-top:15px;font-size:12px;font-family:Roboto-Regular}.cmacs-select-dropdown-menu-item-divider{border-top:1px solid #2a7cff!important}.ant-select-dropdown-menu{max-height:250px;margin-bottom:0;padding-left:0;overflow:auto;list-style:none;outline:none}.ant-select{width:100%}.ant-select-dropdown-menu-item-disabled{color:#bec4cd!important}.cmacs-select-dropdown{box-shadow:none;border-bottom:1px solid #dee0e5;border-right:1px solid #dee0e5;border-left:1px solid #dee0e5;border-radius:0 0 3px 3px;z-index:unset}.cmacs-select-selection .ant-select-open .ant-select-arrow-icon svg{transform:unset!important}.cmacs-select-selection,.cmacs-select-selection:focus,.cmacs-select-selection:hover{border:1px solid #dee0e5!important;border-radius:3px 3px 0 0!important}.cmacs-select-selection .ant-select-arrow{top:15px}.ant-select-selection{border:1px solid #dee0e5;border-radius:3px}.ant-select-selection:focus-within,.ant-select-selection:hover{border:1px solid #bec4cd;text-shadow:none}.ant-select-open .ant-select-selection,.ant-select-open .ant-select-selection:focus,.ant-select-open .ant-select-selection:focus-within,.ant-select-open .ant-select-selection:hover{border-color:#dee0e5;box-shadow:0 3px 7px rgba(59,63,70,.2);border-radius:3px 3px 0 0}.cmacs-select-selection--multiple .ant-select-search--inline .ant-select-search__field{margin-left:6px!important}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon{color:transparent}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{color:#2a7cff!important;padding:2px;border:1px solid #dee0e5}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{border-color:#2a7cff}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{padding:2px;border:1px solid #dee0e5}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon:hover{color:transparent}.ant-select-dropdown-menu-item-active,.ant-select-dropdown-menu-item:hover{background-color:#f6f7fb}.ant-select-dropdown{margin-bottom:0;border:1px solid #dee0e5;border-top:none;margin-top:-1px;box-shadow:0 3px 7px rgba(59,63,70,.2);border-radius:0 0 3px 3px}.ant-select-dropdown-menu-item:first-child{border-top:none}.ant-select-dropdown-menu-item{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79;border-top:1px solid #dee0e5;padding:7px 14px}.ant-select-dropdown.cmacs-select-user-dropdown .ant-select-dropdown-menu-item{border-top:none}.ant-select-selection--multiple .ant-select-selection__rendered>ul>li{font-size:14px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79}.ant-select-selection:focus{box-shadow:none;border:1px solid #bec4cd}.ant-select-selection--multiple .ant-select-selection__choice__remove>*{line-height:2.2}.ant-select-selection__placeholder{margin-left:0}.ant-select-selection-selected-value{padding-left:0}.ant-select-dropdown-menu-item-selected{color:#2a7cff!important}.ant-select-dropdown-menu-item-selected,.ant-select-dropdown-menu-item-selected:hover{color:#2a7cff}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item{padding-right:12px;padding-left:42px}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{left:12px;right:unset}.cmacs-select-search-input{width:100%;border:none;outline:none;padding:0 10px 0 6px}.cmacs-select-search-input::-moz-placeholder{color:#acb3bf}.cmacs-select-search-input:-ms-input-placeholder{color:#acb3bf}.cmacs-select-search-input::placeholder{color:#acb3bf}.cmacs-select-search,.cmacs-select-search:hover{background-color:#fff;padding-left:14px!important}.cmacs-select-search-icon{color:#bec4cd;font-size:14px}.cmacs-select-selection--multiple .ant-select-search--inline .ant-select-search__field{max-width:94%}.cmacs-select-selection--action .ant-select-search--inline .ant-select-search__field{max-width:87%}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{top:unset;transform:unset;bottom:15px;background-color:#fff!important}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .cmacs-user-dropdown-last-elem+.ant-select-selected-icon{bottom:22px}.ant-select-selection__rendered{position:relative;display:block;margin-left:11px}.ant-select-selection{display:block;box-sizing:border-box;background-color:#fff;outline:none;transition:all .3s cubic-bezier(.645,.045,.355,1);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ant-select-arrow,.ant-select-clear{position:absolute;width:unset;height:unset}", "\n      .ant-select-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "], encapsulation: 2, data: { animation: [animation.slideMotion] }, changeDetection: 0 });
+        }, directives: [i1$4.CdkOverlayOrigin, CmacsSelectTopControlComponent, i2$1.NgIf, i2$1.NgTemplateOutlet, i1$4.CdkConnectedOverlay, i4$3.NzConnectedOverlayDirective, i2$1.NgStyle, CmacsOptionContainerComponent, CmacsOptionContainerVirtualComponent, i2$1.NgForOf, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective], pipes: [i2$1.SlicePipe], styles: [".ant-select-selection--multiple .cmacs-select-user-dropdown .ant-select-search--inline .ant-select-search__field,.ant-select-selection--multiple .cmacs-select-user-dropdown .ant-select-search.ant-select-search--inline,.cmacs-select-user-dropdown .cmacs-select-tag-wrapper-inner{width:100%}.ant-select{box-sizing:border-box;margin:0;padding:0;color:#3b3f46;font-size:14px;font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:\"tnum\";position:relative;display:inline-block;outline:0}.ant-select-dropdown{margin-top:0!important;margin-bottom:0!important}.ant-select-dropdown button{width:calc(100% - 28px);margin:9px 14px}.ant-select ol,.ant-select ul{margin:0;padding:0;list-style:none}.ant-select>ul>li>a{padding:0;background-color:#fff}.ant-select-arrow{display:inline-block;color:inherit;font-style:normal;line-height:0;text-align:center;text-transform:none;vertical-align:-.125em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:absolute;top:50%;right:11px;margin-top:-6px;color:#656c79;font-size:12px;line-height:1;transform-origin:50% 50%}.ant-select-arrow>*{line-height:1}.ant-select-arrow svg{display:inline-block}.ant-select-arrow:before{display:none}.ant-select-arrow .ant-select-arrow-icon{display:block}.ant-select-arrow .ant-select-arrow-icon svg{transition:transform .3s}.ant-select-selection{border-top:1.02px solid #dee0e5;border-radius:4px}.ant-select-selection:hover{border-color:#2a7cff;border-right-width:1px!important}.ant-select-focused .ant-select-selection,.ant-select-selection:active,.ant-select-selection:focus{border-color:#2a7cff;border-right-width:1px!important;outline:0;box-shadow:0 0 0 2px rgba(24,144,255,.2)}.ant-select-selection__clear{position:absolute;top:50%;right:11px;z-index:1;display:inline-block;width:12px;height:12px;margin-top:-6px;color:#656c79;font-size:12px;font-style:normal;line-height:12px;text-align:center;text-transform:none;background:#fff;cursor:pointer;opacity:0;transition:color .3s ease,opacity .15s ease;text-rendering:auto}.ant-select-selection__clear:before{display:block}.ant-select-selection__clear:hover{color:#656c79}.ant-select-selection:hover .ant-select-selection__clear{opacity:1}.ant-select-selection-selected-value{float:left;max-width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.ant-select-no-arrow .ant-select-selection-selected-value{padding-right:0}.ant-select-disabled{color:#bec4cd}.ant-select-disabled .ant-select-selection{background:#f6f7fb;cursor:not-allowed}.ant-select-disabled .ant-select-selection:active,.ant-select-disabled .ant-select-selection:focus,.ant-select-disabled .ant-select-selection:hover{border-color:#dee0e5;box-shadow:none}.ant-select-disabled .ant-select-selection__clear{display:none;visibility:hidden;pointer-events:none}.ant-select-disabled .ant-select-selection--multiple .ant-select-selection__choice{padding-right:10px;color:#bec4cd;background:#f6f7fb}.ant-select-disabled .ant-select-selection--multiple .ant-select-selection__choice__remove{display:none}.ant-select-selection--single{position:relative;height:32px;cursor:pointer}.ant-select-selection__rendered{margin-right:11px;line-height:30px}.ant-select-selection__rendered:after{display:inline-block;width:0;visibility:hidden;pointer-events:none;content:\".\"}.ant-select-lg{font-size:16px}.ant-select-lg .ant-select-selection--single{height:40px}.ant-select-lg .ant-select-selection__rendered{line-height:38px}.ant-select-lg .ant-select-selection--multiple{min-height:40px}.ant-select-lg .ant-select-selection--multiple .ant-select-selection__rendered li{height:32px;line-height:32px}.ant-select-lg .ant-select-selection--multiple .ant-select-arrow,.ant-select-lg .ant-select-selection--multiple .ant-select-selection__clear{top:20px}.ant-select-sm .ant-select-selection--single{height:24px}.ant-select-sm .ant-select-selection__rendered{margin:0 7px;line-height:22px}.ant-select-sm .ant-select-selection--multiple{min-height:24px}.ant-select-sm .ant-select-selection--multiple .ant-select-selection__rendered li{height:16px;line-height:14px}.ant-select-sm .ant-select-selection--multiple .ant-select-arrow,.ant-select-sm .ant-select-selection--multiple .ant-select-selection__clear{top:12px}.ant-select-sm .ant-select-arrow,.ant-select-sm .ant-select-selection__clear{right:8px}.ant-select-disabled .ant-select-selection__choice__remove{color:#bec4cd;cursor:default}.ant-select-disabled .ant-select-selection__choice__remove:hover{color:#bec4cd}.ant-select-search__field__wrap{position:relative;display:inline-block}.ant-select-search__field__placeholder,.ant-select-selection__placeholder{position:absolute;top:50%;right:9px;left:0;max-width:100%;height:20px;margin-top:-10px;overflow:hidden;color:#acb3bf;line-height:20px;white-space:nowrap;text-align:left;text-overflow:ellipsis}.ant-select-search__field__placeholder{left:12px}.ant-select-search__field__mirror{position:absolute;top:0;left:0;white-space:pre;opacity:0;pointer-events:none}.ant-select-search--inline{position:absolute;width:100%;height:100%}.ant-select-search--inline .ant-select-search__field__wrap{width:100%;height:100%}.ant-select-search--inline .ant-select-search__field{width:100%;height:100%;font-size:100%;line-height:1;background:transparent;border-width:0;border-radius:4px;outline:0}.ant-select-search--inline>i{float:right}.ant-select-selection--multiple{min-height:32px;padding-bottom:3px;cursor:text;zoom:1}.ant-select-selection--multiple:after,.ant-select-selection--multiple:before{content:\"\";display:table}.ant-select-selection--multiple:after{clear:both}.ant-select-selection--multiple .ant-select-search--inline{position:static;float:left;width:auto;max-width:100%;padding:0}.ant-select-selection--multiple .ant-select-search--inline .ant-select-search__field{width:.75em;max-width:100%}.ant-select-selection--multiple .ant-select-selection__rendered{height:auto;margin-bottom:-3px;margin-left:5px}.ant-select-selection--multiple .ant-select-selection__placeholder{margin-left:8px}.ant-select-selection--multiple .ant-select-selection__rendered>ul>li,.ant-select-selection--multiple>ul>li{height:24px;margin-top:3px;line-height:22px}.ant-select-selection--multiple .ant-select-selection__choice{position:relative;float:left;max-width:99%;margin-right:4px;padding:0 20px 0 10px;overflow:hidden;color:#656c79;background-color:#f6f7fb;border:1px solid #dee0e5;border-radius:2px;cursor:default;transition:padding .3s cubic-bezier(.645,.045,.355,1)}.ant-select-selection--multiple .ant-select-selection__choice__disabled{padding:0 10px}.ant-select-selection--multiple .ant-select-selection__choice__content{display:inline-block;max-width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;transition:margin .3s cubic-bezier(.645,.045,.355,1)}.ant-select-selection--multiple .ant-select-selection__choice__remove{color:inherit;font-style:normal;line-height:0;text-align:center;text-transform:none;vertical-align:-.125em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:absolute;right:4px;color:#656c79;font-weight:700;line-height:inherit;cursor:pointer;transition:all .3s;display:inline-block;font-size:12px;font-size:10px\\9;transform:scale(.83333333) rotate(0deg)}.ant-select-selection--multiple .ant-select-selection__choice__remove>*{line-height:1}.ant-select-selection--multiple .ant-select-selection__choice__remove svg{display:inline-block}.ant-select-selection--multiple .ant-select-selection__choice__remove:before{display:none}.ant-select-selection--multiple .ant-select-selection__choice__remove .ant-select-selection--multiple .ant-select-selection__choice__remove-icon{display:block}:root .ant-select-selection--multiple .ant-select-selection__choice__remove{font-size:12px}.ant-select-selection--multiple .ant-select-selection__choice__remove:hover{color:#656c79}.ant-select-selection--multiple .ant-select-arrow,.ant-select-selection--multiple .ant-select-selection__clear{top:16px}.ant-select-allow-clear .ant-select-selection--single .ant-select-selection-selected-value{padding-right:16px}.ant-select-allow-clear .ant-select-selection--multiple .ant-select-selection__rendered,.ant-select-show-arrow .ant-select-selection--multiple .ant-select-selection__rendered{margin-right:20px}.ant-select-open .ant-select-arrow-icon svg{transform:rotate(180deg)}.ant-select-open .ant-select-selection{border-color:#2a7cff;border-right-width:1px!important;outline:0;box-shadow:0 0 0 2px rgba(24,144,255,.2)}.ant-select-combobox .ant-select-arrow{display:none}.ant-select-combobox .ant-select-search--inline{float:none;width:100%;height:100%}.ant-select-combobox .ant-select-search__field__wrap{width:100%;height:100%}.ant-select-combobox .ant-select-search__field{position:relative;z-index:1;width:100%;height:100%;box-shadow:none;transition:all .3s cubic-bezier(.645,.045,.355,1),height 0s}.ant-select-combobox.ant-select-allow-clear .ant-select-selection:hover .ant-select-selection__rendered,.ant-select-combobox.ant-select-show-arrow .ant-select-selection:hover .ant-select-selection__rendered{margin-right:20px}.ant-select-dropdown{margin:0;padding:0;color:#656c79;font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:\"tnum\";position:absolute;top:-9999px;left:-9999px;z-index:1050;box-sizing:border-box;font-size:14px;font-variant:normal;background-color:#fff;border-radius:4px;outline:none;box-shadow:0 2px 8px rgba(0,0,0,.15)}.ant-select-dropdown.slide-up-appear.slide-up-appear-active.ant-select-dropdown-placement-bottomLeft,.ant-select-dropdown.slide-up-enter.slide-up-enter-active.ant-select-dropdown-placement-bottomLeft{-webkit-animation-name:antSlideUpIn;animation-name:antSlideUpIn}.ant-select-dropdown.slide-up-appear.slide-up-appear-active.ant-select-dropdown-placement-topLeft,.ant-select-dropdown.slide-up-enter.slide-up-enter-active.ant-select-dropdown-placement-topLeft{-webkit-animation-name:antSlideDownIn;animation-name:antSlideDownIn}.ant-select-dropdown.slide-up-leave.slide-up-leave-active.ant-select-dropdown-placement-bottomLeft{-webkit-animation-name:antSlideUpOut;animation-name:antSlideUpOut}.ant-select-dropdown.slide-up-leave.slide-up-leave-active.ant-select-dropdown-placement-topLeft{-webkit-animation-name:antSlideDownOut;animation-name:antSlideDownOut}.ant-select-dropdown-hidden{display:none}.ant-select-dropdown-menu-item-group-list{margin:0;padding:0}.ant-select-dropdown-menu-item-group-list>.ant-select-dropdown-menu-item{padding-left:20px}.ant-select-dropdown-menu-item-group-title{height:32px;padding:0 12px;color:#656c79;font-size:12px;line-height:32px}.ant-select-dropdown-menu-item-group-list .ant-select-dropdown-menu-item:first-child:not(:last-child),.ant-select-dropdown-menu-item-group:not(:last-child) .ant-select-dropdown-menu-item-group-list .ant-select-dropdown-menu-item:last-child{border-radius:0}.ant-select-dropdown-menu-item{position:relative;display:block;padding:5px 12px;overflow:hidden;line-height:22px;white-space:nowrap;text-overflow:ellipsis;cursor:pointer;transition:background .3s ease}.ant-select-dropdown-menu-item:first-child{border-radius:4px 4px 0 0}.ant-select-dropdown-menu-item:last-child{border-radius:0 0 4px 4px}.ant-select-dropdown-menu-item-disabled{color:#bec4cd;cursor:not-allowed}.ant-select-dropdown-menu-item-disabled:hover{color:#bec4cd;background-color:#fff;cursor:not-allowed}.ant-select-dropdown-menu-item-selected,.ant-select-dropdown-menu-item-selected:hover{color:#656c79;font-weight:600;background-color:#f6f7fb}.ant-select-dropdown-menu-item-divider{height:1px;margin:1px 0;overflow:hidden;line-height:0;background-color:#dee0e5}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item{padding-right:32px}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{position:absolute;top:50%;right:12px;color:transparent;font-weight:700;font-size:12px;text-shadow:0 .1px 0,.1px 0 0,0 -.1px 0,-.1px 0;transform:translateY(-50%);transition:all .2s}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon{color:#656c79}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-disabled .ant-select-selected-icon{display:none}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{display:inline-block;color:#2a7cff}.ant-select-dropdown--empty.ant-select-dropdown--multiple .ant-select-dropdown-menu-item{padding-right:12px}.ant-select-dropdown-container-open .ant-select-dropdown,.ant-select-dropdown-open .ant-select-dropdown{display:block}.ant-empty{margin:0 8px;font-size:14px;line-height:22px;text-align:center}.ant-empty-image{height:100px;margin-bottom:8px}.ant-empty-image img{height:100%}.ant-empty-description{margin:0}.ant-empty-footer{margin-top:16px}.ant-empty-normal{margin:32px 0;color:#bec4cd}.ant-empty-normal .ant-empty-image{height:40px}.ant-empty-small{margin:8px 0;color:#bec4cd}.ant-empty-small .ant-empty-image{height:35px}.cmacs-tags-out{padding-top:15px;font-size:12px;font-family:Roboto-Regular}.cmacs-select-dropdown-menu-item-divider{border-top:1px solid #2a7cff!important}.ant-select-dropdown-menu{max-height:250px;margin-bottom:0;padding-left:0;overflow:auto;list-style:none;outline:none}.ant-select{width:100%}.ant-select-dropdown-menu-item-disabled{color:#bec4cd!important}.cmacs-select-dropdown{box-shadow:none;border-bottom:1px solid #dee0e5;border-right:1px solid #dee0e5;border-left:1px solid #dee0e5;border-radius:0 0 3px 3px;z-index:unset}.cmacs-select-selection .ant-select-open .ant-select-arrow-icon svg{transform:unset!important}.cmacs-select-selection,.cmacs-select-selection:focus,.cmacs-select-selection:hover{border:1px solid #dee0e5!important;border-radius:3px 3px 0 0!important}.cmacs-select-selection .ant-select-arrow{top:15px}.ant-select-selection{border:1px solid #dee0e5;border-radius:3px}.ant-select-selection:focus-within,.ant-select-selection:hover{border:1px solid #bec4cd;text-shadow:none}.ant-select-open .ant-select-selection,.ant-select-open .ant-select-selection:focus,.ant-select-open .ant-select-selection:focus-within,.ant-select-open .ant-select-selection:hover{border-color:#dee0e5;box-shadow:0 3px 7px rgba(59,63,70,.2);border-radius:3px 3px 0 0}.cmacs-select-selection--multiple .ant-select-search--inline .ant-select-search__field{margin-left:6px!important}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon{color:transparent}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{color:#2a7cff!important;padding:2px;border:1px solid #dee0e5}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{border-color:#2a7cff}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{padding:2px;border:1px solid #dee0e5}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon:hover{color:transparent}.ant-select-dropdown-menu-item-active,.ant-select-dropdown-menu-item:hover{background-color:#f6f7fb}.ant-select-dropdown{margin-bottom:0;border:1px solid #dee0e5;border-top:none;margin-top:-1px;box-shadow:0 3px 7px rgba(59,63,70,.2);border-radius:0 0 3px 3px}.ant-select-dropdown-menu-item:first-child{border-top:none}.ant-select-dropdown-menu-item{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79;border-top:1px solid #dee0e5;padding:7px 14px}.ant-select-dropdown.cmacs-select-user-dropdown .ant-select-dropdown-menu-item{border-top:none}.ant-select-selection--multiple .ant-select-selection__rendered>ul>li{font-size:14px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79}.ant-select-selection:focus{box-shadow:none;border:1px solid #bec4cd}.ant-select-selection--multiple .ant-select-selection__choice__remove>*{line-height:2.2}.ant-select-selection__placeholder{margin-left:0}.ant-select-selection-selected-value{padding-left:0}.ant-select-dropdown-menu-item-selected{color:#2a7cff!important}.ant-select-dropdown-menu-item-selected,.ant-select-dropdown-menu-item-selected:hover{color:#2a7cff}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item{padding-right:12px;padding-left:42px}.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{left:12px;right:unset}.cmacs-select-search-input{width:100%;border:none;outline:none;padding:0 10px 0 6px}.cmacs-select-search-input::-moz-placeholder{color:#acb3bf}.cmacs-select-search-input:-ms-input-placeholder{color:#acb3bf}.cmacs-select-search-input::placeholder{color:#acb3bf}.cmacs-select-search,.cmacs-select-search:hover{background-color:#fff;padding-left:14px!important}.cmacs-select-search-icon{color:#bec4cd;font-size:14px}.cmacs-select-selection--multiple .ant-select-search--inline .ant-select-search__field{max-width:94%}.cmacs-select-selection--action .ant-select-search--inline .ant-select-search__field{max-width:87%}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon{top:unset;transform:unset;bottom:15px;background-color:#fff!important}.ant-select-dropdown.cmacs-select-user-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .cmacs-user-dropdown-last-elem+.ant-select-selected-icon{bottom:22px}.ant-select-selection__rendered{position:relative;display:block;margin-left:11px}.ant-select-selection{display:block;box-sizing:border-box;background-color:#fff;outline:none;transition:all .3s cubic-bezier(.645,.045,.355,1);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ant-select-arrow,.ant-select-clear{position:absolute;width:unset;height:unset}", "\n      .ant-select-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "], encapsulation: 2, data: { animation: [animation.slideMotion] }, changeDetection: 0 });
     __decorate([
         util.InputBoolean()
     ], CmacsSelectComponent.prototype, "notFoundContentShow", void 0);
@@ -5347,6 +5814,8 @@
                 }], maxTagPlaceholder: [{
                     type: i0.Input
                 }], selectAllLabel: [{
+                    type: i0.Input
+                }], options: [{
                     type: i0.Input
                 }], autoClearSearchValue: [{
                     type: i0.Input
@@ -6323,7 +6792,7 @@
             this.matchRouterExact = false;
             this.matchRouter = false;
             if (router) {
-                this.router.events.pipe(operators.takeUntil(this.destroy$), operators.filter(function (e) { return e instanceof i4$3.NavigationEnd; })).subscribe(function () {
+                this.router.events.pipe(operators.takeUntil(this.destroy$), operators.filter(function (e) { return e instanceof i4$4.NavigationEnd; })).subscribe(function () {
                     _this.updateRouterActive();
                 });
             }
@@ -6407,11 +6876,11 @@
         };
         return CmacsMenuItemDirective;
     }());
-    CmacsMenuItemDirective.ɵfac = function CmacsMenuItemDirective_Factory(t) { return new (t || CmacsMenuItemDirective)(i0.ɵɵdirectiveInject(MenuService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(NzSubmenuService, 8), i0.ɵɵdirectiveInject(CmacsIsMenuInsideDropDownToken), i0.ɵɵdirectiveInject(i2.Directionality, 8), i0.ɵɵdirectiveInject(i4$3.RouterLink, 8), i0.ɵɵdirectiveInject(i4$3.RouterLinkWithHref, 8), i0.ɵɵdirectiveInject(i4$3.Router, 8)); };
+    CmacsMenuItemDirective.ɵfac = function CmacsMenuItemDirective_Factory(t) { return new (t || CmacsMenuItemDirective)(i0.ɵɵdirectiveInject(MenuService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(NzSubmenuService, 8), i0.ɵɵdirectiveInject(CmacsIsMenuInsideDropDownToken), i0.ɵɵdirectiveInject(i2.Directionality, 8), i0.ɵɵdirectiveInject(i4$4.RouterLink, 8), i0.ɵɵdirectiveInject(i4$4.RouterLinkWithHref, 8), i0.ɵɵdirectiveInject(i4$4.Router, 8)); };
     CmacsMenuItemDirective.ɵdir = i0.ɵɵdefineDirective({ type: CmacsMenuItemDirective, selectors: [["", "cmacs-menu-item", ""]], contentQueries: function CmacsMenuItemDirective_ContentQueries(rf, ctx, dirIndex) {
             if (rf & 1) {
-                i0.ɵɵcontentQuery(dirIndex, i4$3.RouterLink, 1);
-                i0.ɵɵcontentQuery(dirIndex, i4$3.RouterLinkWithHref, 1);
+                i0.ɵɵcontentQuery(dirIndex, i4$4.RouterLink, 1);
+                i0.ɵɵcontentQuery(dirIndex, i4$4.RouterLinkWithHref, 1);
             }
             if (rf & 2) {
                 var _t = void 0;
@@ -6470,11 +6939,11 @@
                             args: [CmacsIsMenuInsideDropDownToken]
                         }] }, { type: i2.Directionality, decorators: [{
                             type: i0.Optional
-                        }] }, { type: i4$3.RouterLink, decorators: [{
+                        }] }, { type: i4$4.RouterLink, decorators: [{
                             type: i0.Optional
-                        }] }, { type: i4$3.RouterLinkWithHref, decorators: [{
+                        }] }, { type: i4$4.RouterLinkWithHref, decorators: [{
                             type: i0.Optional
-                        }] }, { type: i4$3.Router, decorators: [{
+                        }] }, { type: i4$4.Router, decorators: [{
                             type: i0.Optional
                         }] }];
         }, { paddingLeft: [{
@@ -6491,10 +6960,10 @@
                     type: i0.Input
                 }], listOfRouterLink: [{
                     type: i0.ContentChildren,
-                    args: [i4$3.RouterLink, { descendants: true }]
+                    args: [i4$4.RouterLink, { descendants: true }]
                 }], listOfRouterLinkWithHref: [{
                     type: i0.ContentChildren,
-                    args: [i4$3.RouterLinkWithHref, { descendants: true }]
+                    args: [i4$4.RouterLinkWithHref, { descendants: true }]
                 }] });
     })();
 
@@ -6966,14 +7435,14 @@
     var _c1$8 = [[["", "title", ""]], "*"];
     var _c2$5 = ["[title]", "*"];
     var listOfVerticalPositions = [
-        i4$2.POSITION_MAP.rightTop,
-        i4$2.POSITION_MAP.right,
-        i4$2.POSITION_MAP.rightBottom,
-        i4$2.POSITION_MAP.leftTop,
-        i4$2.POSITION_MAP.left,
-        i4$2.POSITION_MAP.leftBottom
+        i4$3.POSITION_MAP.rightTop,
+        i4$3.POSITION_MAP.right,
+        i4$3.POSITION_MAP.rightBottom,
+        i4$3.POSITION_MAP.leftTop,
+        i4$3.POSITION_MAP.left,
+        i4$3.POSITION_MAP.leftBottom
     ];
-    var listOfHorizontalPositions = [i4$2.POSITION_MAP.bottomLeft];
+    var listOfHorizontalPositions = [i4$3.POSITION_MAP.bottomLeft];
     var CmacsSubMenuComponent = /** @class */ (function () {
         function CmacsSubMenuComponent(nzMenuService, cdr, nzSubmenuService, platform, isMenuInsideDropDown, directionality, noAnimation) {
             this.nzMenuService = nzMenuService;
@@ -7028,7 +7497,7 @@
             }
         };
         CmacsSubMenuComponent.prototype.onPositionChange = function (position) {
-            var placement = i4$2.getPlacementName(position);
+            var placement = i4$3.getPlacementName(position);
             if (placement === 'rightTop' || placement === 'rightBottom' || placement === 'right') {
                 this.position = 'right';
             }
@@ -7581,7 +8050,7 @@
         }, null);
     })();
 
-    var listOfPositions = [i4$2.POSITION_MAP.bottomLeft, i4$2.POSITION_MAP.bottomRight, i4$2.POSITION_MAP.topRight, i4$2.POSITION_MAP.topLeft];
+    var listOfPositions = [i4$3.POSITION_MAP.bottomLeft, i4$3.POSITION_MAP.bottomRight, i4$3.POSITION_MAP.topRight, i4$3.POSITION_MAP.topLeft];
     var CmacsDropDownDirective = /** @class */ (function () {
         function CmacsDropDownDirective(elementRef, deviceService, overlay, renderer, viewContainerRef, platform) {
             this.elementRef = elementRef;
@@ -7689,7 +8158,7 @@
                             overlayConfig.minWidth = triggerWidth;
                         }
                         /** open dropdown with animation **/
-                        _this.positionStrategy.withPositions(__spread([i4$2.POSITION_MAP[_this.placement]], listOfPositions));
+                        _this.positionStrategy.withPositions(__spread([i4$3.POSITION_MAP[_this.placement]], listOfPositions));
                         /** reset portal if needed **/
                         if (!_this.portal || _this.portal.templateRef !== _this.dropdownMenu.templateRef) {
                             _this.portal = new portal.TemplatePortal(_this.dropdownMenu.templateRef, _this.viewContainerRef);
@@ -10375,7 +10844,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.cmacsOpen)("cdkConnectedOverlayOffsetY", -2)("cdkConnectedOverlayWidth", ctx.calcWidth)("cdkConnectedOverlayPanelClass", i0.ɵɵpureFunction0(15, _c1$b))("cdkConnectedOverlayTransformOriginOn", ".ant-picker-dropdown");
             }
-        }, directives: [i4.DefaultValueAccessor, i4.NgControlStatus, i4.NgModel, i6.NzStringTemplateOutletDirective, i2$1.NgIf, i1$4.CdkConnectedOverlay, i4$2.NzConnectedOverlayDirective, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective, CmacsDatetimePickerPanelComponent, i2$1.NgClass], pipes: [i2$1.AsyncPipe], styles: [".cmacs-datetime-picker-input-number{width:55px;height:30px!important;margin:11px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif}.cmacs-date-time-picker-input{color:#acb3bf!important}.ant-picker-input .ant-picker-suffix{color:#656c79!important}.cmacs-datetime-picker-panel-wrapper .ant-picker-time-panel .ant-picker-content{height:unset;overflow-x:auto;width:calc(100% - 2px)}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]{background:#f6f7fb;cursor:default;border:1px solid #dee0e5}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]+.ant-time-picker-icon{color:#bec4cd;cursor:default}.cmacs-datetime-dividers{display:inline-block;position:relative;top:-3px}.cmacs-datetime-picker .ant-time-picker-panel-inner{width:224px!important}.cmacs-datetime-picker .ampmdropdown{width:calc(100% - 156px)}::ng-deep .cmacs-datetime-picker .ant-time-picker-panel-inner cmacs-select.ant-select{height:30px!important;margin:12px 0!important;display:inline-flex;width:auto!important}.cmacs-datetime-picker .ant-time-picker-panel-inner.cmacs-datetime-picker-noseconds{width:148px!important}.ant-time-picker-panel-narrow .cmacs-datetime-picker .ant-time-picker-panel-input-wrap{max-width:unset}.ant-time-picker-clear.datetime-picker-clear-disabled{opacity:0!important;z-index:0!important}"], encapsulation: 2, data: { animation: [animation.slideMotion] }, changeDetection: 0 });
+        }, directives: [i4.DefaultValueAccessor, i4.NgControlStatus, i4.NgModel, i6.NzStringTemplateOutletDirective, i2$1.NgIf, i1$4.CdkConnectedOverlay, i4$3.NzConnectedOverlayDirective, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective, CmacsDatetimePickerPanelComponent, i2$1.NgClass], pipes: [i2$1.AsyncPipe], styles: [".cmacs-datetime-picker-input-number{width:55px;height:30px!important;margin:11px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif}.cmacs-date-time-picker-input{color:#acb3bf!important}.ant-picker-input .ant-picker-suffix{color:#656c79!important}.cmacs-datetime-picker-panel-wrapper .ant-picker-time-panel .ant-picker-content{height:unset;overflow-x:auto;width:calc(100% - 2px)}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]{background:#f6f7fb;cursor:default;border:1px solid #dee0e5}::ng-deep cmacs-datetime-picker.ant-time-picker .ant-time-picker-input[disabled]+.ant-time-picker-icon{color:#bec4cd;cursor:default}.cmacs-datetime-dividers{display:inline-block;position:relative;top:-3px}.cmacs-datetime-picker .ant-time-picker-panel-inner{width:224px!important}.cmacs-datetime-picker .ampmdropdown{width:calc(100% - 156px)}::ng-deep .cmacs-datetime-picker .ant-time-picker-panel-inner cmacs-select.ant-select{height:30px!important;margin:12px 0!important;display:inline-flex;width:auto!important}.cmacs-datetime-picker .ant-time-picker-panel-inner.cmacs-datetime-picker-noseconds{width:148px!important}.ant-time-picker-panel-narrow .cmacs-datetime-picker .ant-time-picker-panel-input-wrap{max-width:unset}.ant-time-picker-clear.datetime-picker-clear-disabled{opacity:0!important;z-index:0!important}"], encapsulation: 2, data: { animation: [animation.slideMotion] }, changeDetection: 0 });
     __decorate([
         i1$1.WithConfig()
     ], CmacsDateTimePickerComponent.prototype, "hourStep", void 0);
@@ -11831,7 +12300,7 @@
             this._classMap = {};
             this._hasBackdrop = false;
             this._prefix = 'ant-tooltip';
-            this._positions = __spread(i4$2.DEFAULT_TOOLTIP_POSITIONS);
+            this._positions = __spread(i4$3.DEFAULT_TOOLTIP_POSITIONS);
             this.destroy$ = new rxjs.Subject();
         }
         Object.defineProperty(CmacsTooltipBaseComponent.prototype, "cmacsVisible", {
@@ -11860,8 +12329,8 @@
         });
         Object.defineProperty(CmacsTooltipBaseComponent.prototype, "cmacsPlacement", {
             set: function (value) {
-                var preferredPosition = value.map(function (placement) { return i4$2.POSITION_MAP[placement]; });
-                this._positions = __spread(preferredPosition, i4$2.DEFAULT_TOOLTIP_POSITIONS);
+                var preferredPosition = value.map(function (placement) { return i4$3.POSITION_MAP[placement]; });
+                this._positions = __spread(preferredPosition, i4$3.DEFAULT_TOOLTIP_POSITIONS);
             },
             enumerable: false,
             configurable: true
@@ -11920,7 +12389,7 @@
             }
         };
         CmacsTooltipBaseComponent.prototype.onPositionChange = function (position) {
-            this.preferredPlacement = i4$2.getPlacementName(position);
+            this.preferredPlacement = i4$3.getPlacementName(position);
             this.updateStyles();
             // We have to trigger immediate change detection or the element would blink.
             this.cdr.detectChanges();
@@ -12127,7 +12596,7 @@
             if (rf & 2) {
                 i0.ɵɵproperty("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx._visible)("cdkConnectedOverlayPositions", ctx._positions)("cdkConnectedOverlayPush", true);
             }
-        }, directives: [i1$4.CdkConnectedOverlay, i4$2.NzConnectedOverlayDirective, i2$1.NgClass, i2$1.NgStyle, i1$2.NzNoAnimationDirective, i6.NzStringTemplateOutletDirective], styles: [".ant-tooltip-content{background-color:#0d1e3b;color:#fff;max-width:180px;border-radius:3px}.ant-tooltip-placement-top .ant-tooltip-arrow{border-top-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-topLeft .ant-tooltip-arrow,.ant-tooltip-placement-topRight .ant-tooltip-arrow{border-top-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-left .ant-tooltip-arrow,.ant-tooltip-placement-leftBottom .ant-tooltip-arrow,.ant-tooltip-placement-leftTop .ant-tooltip-arrow{border-left-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-right .ant-tooltip-arrow,.ant-tooltip-placement-rightBottom .ant-tooltip-arrow,.ant-tooltip-placement-rightTop .ant-tooltip-arrow{border-right-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-bottom .ant-tooltip-arrow{border-bottom-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,.ant-tooltip-placement-bottomRight .ant-tooltip-arrow{border-bottom-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-inner{border-radius:3px;box-shadow:none;padding:8px 10px;min-height:34px}.ant-tooltip-arrow-content,.ant-tooltip-inner{background-color:#0d1e3b}"], encapsulation: 2, data: { animation: [animation.zoomBigMotion] }, changeDetection: 0 });
+        }, directives: [i1$4.CdkConnectedOverlay, i4$3.NzConnectedOverlayDirective, i2$1.NgClass, i2$1.NgStyle, i1$2.NzNoAnimationDirective, i6.NzStringTemplateOutletDirective], styles: [".ant-tooltip-content{background-color:#0d1e3b;color:#fff;max-width:180px;border-radius:3px}.ant-tooltip-placement-top .ant-tooltip-arrow{border-top-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-topLeft .ant-tooltip-arrow,.ant-tooltip-placement-topRight .ant-tooltip-arrow{border-top-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-left .ant-tooltip-arrow,.ant-tooltip-placement-leftBottom .ant-tooltip-arrow,.ant-tooltip-placement-leftTop .ant-tooltip-arrow{border-left-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-right .ant-tooltip-arrow,.ant-tooltip-placement-rightBottom .ant-tooltip-arrow,.ant-tooltip-placement-rightTop .ant-tooltip-arrow{border-right-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-placement-bottom .ant-tooltip-arrow{border-bottom-color:#0d1e3b;opacity:1!important}.ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,.ant-tooltip-placement-bottomRight .ant-tooltip-arrow{border-bottom-color:#0d1e3b!important;opacity:1!important}.ant-tooltip-inner{border-radius:3px;box-shadow:none;padding:8px 10px;min-height:34px}.ant-tooltip-arrow-content,.ant-tooltip-inner{background-color:#0d1e3b}"], encapsulation: 2, data: { animation: [animation.zoomBigMotion] }, changeDetection: 0 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsToolTipComponent, [{
                 type: i0.Component,
@@ -15986,7 +16455,7 @@
                 i0.ɵɵadvance(5);
                 i0.ɵɵproperty("cdkConnectedOverlayPanelClass", i0.ɵɵpureFunction0(7, _c6))("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.realOpenState)("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayTransformOriginOn", ".ant-picker-wrapper");
             }
-        }, directives: [i2$1.NgIf, i1$4.CdkConnectedOverlay, i4$2.NzConnectedOverlayDirective, i4.DefaultValueAccessor, i4.NgControlStatus, i4.NgModel, i2$1.NgTemplateOutlet, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective, i2$1.NgStyle, i6.NzStringTemplateOutletDirective, i1$2.NzNoAnimationDirective], encapsulation: 2, data: { animation: [animation.slideMotion] }, changeDetection: 0 });
+        }, directives: [i2$1.NgIf, i1$4.CdkConnectedOverlay, i4$3.NzConnectedOverlayDirective, i4.DefaultValueAccessor, i4.NgControlStatus, i4.NgModel, i2$1.NgTemplateOutlet, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective, i2$1.NgStyle, i6.NzStringTemplateOutletDirective, i1$2.NzNoAnimationDirective], encapsulation: 2, data: { animation: [animation.slideMotion] }, changeDetection: 0 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsPickerComponent, [{
                 type: i0.Component,
@@ -16849,7 +17318,7 @@
                 i0.ɵɵadvance(2);
                 i0.ɵɵproperty("ngIf", ctx.isChecked)("ngIfElse", _r3);
             }
-        }, directives: [i4$4.NzWaveDirective, i2$1.NgIf, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective, i6.NzStringTemplateOutletDirective], styles: [".ant-switch-handle:before,.ant-switch-loading-icon{width:20px;height:20px;top:1px}.ant-switch-checked .ant-switch-handle{left:calc(100% - 18px - 4px)}.ant-switch{min-width:50px;height:26px;background-color:#cfd3d9}.ant-switch-checked{background-color:#2a7cff}.ant-switch:focus{box-shadow:none}.ant-switch-disabled{opacity:.3}"], encapsulation: 2, changeDetection: 0 });
+        }, directives: [i4$5.NzWaveDirective, i2$1.NgIf, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective, i6.NzStringTemplateOutletDirective], styles: [".ant-switch-handle:before,.ant-switch-loading-icon{width:20px;height:20px;top:1px}.ant-switch-checked .ant-switch-handle{left:calc(100% - 18px - 4px)}.ant-switch{min-width:50px;height:26px;background-color:#cfd3d9}.ant-switch-checked{background-color:#2a7cff}.ant-switch:focus{box-shadow:none}.ant-switch-disabled{opacity:.3}"], encapsulation: 2, changeDetection: 0 });
     __decorate([
         util.InputBoolean()
     ], CmacsSwitchComponent.prototype, "loading", void 0);
@@ -18939,7 +19408,7 @@
         }
         return CmacsTabLinkDirective;
     }());
-    CmacsTabLinkDirective.ɵfac = function CmacsTabLinkDirective_Factory(t) { return new (t || CmacsTabLinkDirective)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i4$3.RouterLink, 10), i0.ɵɵdirectiveInject(i4$3.RouterLinkWithHref, 10)); };
+    CmacsTabLinkDirective.ɵfac = function CmacsTabLinkDirective_Factory(t) { return new (t || CmacsTabLinkDirective)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i4$4.RouterLink, 10), i0.ɵɵdirectiveInject(i4$4.RouterLinkWithHref, 10)); };
     CmacsTabLinkDirective.ɵdir = i0.ɵɵdefineDirective({ type: CmacsTabLinkDirective, selectors: [["a", "cmacs-tab-link", ""]], exportAs: ["cmacsTabLink"] });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsTabLinkDirective, [{
@@ -18949,11 +19418,11 @@
                         exportAs: 'cmacsTabLink'
                     }]
             }], function () {
-            return [{ type: i0.ElementRef }, { type: i4$3.RouterLink, decorators: [{
+            return [{ type: i0.ElementRef }, { type: i4$4.RouterLink, decorators: [{
                             type: i0.Optional
                         }, {
                             type: i0.Self
-                        }] }, { type: i4$3.RouterLinkWithHref, decorators: [{
+                        }] }, { type: i4$4.RouterLinkWithHref, decorators: [{
                             type: i0.Optional
                         }, {
                             type: i0.Self
@@ -19595,7 +20064,7 @@
                     throw new Error(logger.PREFIX + " you should import 'RouterModule' if you want to use 'linkRouter'!");
                 }
                 this.router.events
-                    .pipe(operators.takeUntil(this.destroy$), operators.filter(function (e) { return e instanceof i4$3.NavigationEnd; }), operators.startWith(true), operators.delay(0))
+                    .pipe(operators.takeUntil(this.destroy$), operators.filter(function (e) { return e instanceof i4$4.NavigationEnd; }), operators.startWith(true), operators.delay(0))
                     .subscribe(function () {
                     _this.updateRouterActive();
                     _this.cdr.markForCheck();
@@ -19644,7 +20113,7 @@
         };
         return CmacsTabSetComponent;
     }());
-    CmacsTabSetComponent.ɵfac = function CmacsTabSetComponent_Factory(t) { return new (t || CmacsTabSetComponent)(i0.ɵɵdirectiveInject(i1$1.NzConfigService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i2.Directionality, 8), i0.ɵɵdirectiveInject(i4$3.Router, 8)); };
+    CmacsTabSetComponent.ɵfac = function CmacsTabSetComponent_Factory(t) { return new (t || CmacsTabSetComponent)(i0.ɵɵdirectiveInject(i1$1.NzConfigService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i2.Directionality, 8), i0.ɵɵdirectiveInject(i4$4.Router, 8)); };
     CmacsTabSetComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CmacsTabSetComponent, selectors: [["cmacs-tabset"]], contentQueries: function CmacsTabSetComponent_ContentQueries(rf, ctx, dirIndex) {
             if (rf & 1) {
                 i0.ɵɵcontentQuery(dirIndex, CmacsTabComponent, 1);
@@ -19749,7 +20218,7 @@
             }], function () {
             return [{ type: i1$1.NzConfigService }, { type: i0.ChangeDetectorRef }, { type: i2.Directionality, decorators: [{
                             type: i0.Optional
-                        }] }, { type: i4$3.Router, decorators: [{
+                        }] }, { type: i4$4.Router, decorators: [{
                             type: i0.Optional
                         }] }];
         }, { cmacsSelectedIndex: [{
@@ -25382,15 +25851,15 @@
         CmacsBreadCrumbComponent.prototype.navigate = function (url, e) {
             var _this = this;
             e.preventDefault();
-            this.ngZone.run(function () { return _this.injector.get(i4$3.Router).navigateByUrl(url).then(); }).then();
+            this.ngZone.run(function () { return _this.injector.get(i4$4.Router).navigateByUrl(url).then(); }).then();
         };
         CmacsBreadCrumbComponent.prototype.registerRouterChange = function () {
             var _this = this;
             try {
-                var router = this.injector.get(i4$3.Router);
-                var activatedRoute_1 = this.injector.get(i4$3.ActivatedRoute);
+                var router = this.injector.get(i4$4.Router);
+                var activatedRoute_1 = this.injector.get(i4$4.ActivatedRoute);
                 router.events
-                    .pipe(operators.filter(function (e) { return e instanceof i4$3.NavigationEnd; }), operators.takeUntil(this.destroy$), operators.startWith(true) // trigger initial render
+                    .pipe(operators.filter(function (e) { return e instanceof i4$4.NavigationEnd; }), operators.takeUntil(this.destroy$), operators.startWith(true) // trigger initial render
                 )
                     .subscribe(function () {
                     _this.breadcrumbs = _this.getBreadcrumbs(activatedRoute_1.root);
@@ -25413,7 +25882,7 @@
             try {
                 for (var children_1 = __values(children), children_1_1 = children_1.next(); !children_1_1.done; children_1_1 = children_1.next()) {
                     var child = children_1_1.value;
-                    if (child.outlet === i4$3.PRIMARY_OUTLET) {
+                    if (child.outlet === i4$4.PRIMARY_OUTLET) {
                         // Only parse components in primary router-outlet (in another word, router-outlet without a specific name).
                         // Parse this layer and generate a breadcrumb item.
                         var routeUrl = child.snapshot.url
@@ -27672,7 +28141,7 @@
             if (rf & 2) {
                 i0.ɵɵproperty("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayPositions", ctx._positions)("cdkConnectedOverlayOpen", ctx._visible)("cdkConnectedOverlayPush", true);
             }
-        }, directives: [i1$4.CdkConnectedOverlay, i4$2.NzConnectedOverlayDirective, i2$1.NgClass, i2$1.NgStyle, i1$2.NzNoAnimationDirective, i2$1.NgIf, i6.NzStringTemplateOutletDirective], styles: [".ant-popover-inner-content{min-height:82px;max-height:190px;color:#97a0ae;font-family:Roboto-Regular;line-height:1.83;overflow-y:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.ant-popover-inner-content,.ant-popover-title{max-width:226px;font-size:12px;font-weight:400;font-stretch:normal;font-style:normal;letter-spacing:normal}.ant-popover-title{color:#656c79;font-family:Roboto-Medium;line-height:1.167em;padding:7px 16px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.ant-popover-title i{font-size:14px;top:1px;position:relative}.ant-popover-content{border:1px solid #dee0e5}::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}"], encapsulation: 2, data: { animation: [animation.zoomBigMotion] }, changeDetection: 0 });
+        }, directives: [i1$4.CdkConnectedOverlay, i4$3.NzConnectedOverlayDirective, i2$1.NgClass, i2$1.NgStyle, i1$2.NzNoAnimationDirective, i2$1.NgIf, i6.NzStringTemplateOutletDirective], styles: [".ant-popover-inner-content{min-height:82px;max-height:190px;color:#97a0ae;font-family:Roboto-Regular;line-height:1.83;overflow-y:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.ant-popover-inner-content,.ant-popover-title{max-width:226px;font-size:12px;font-weight:400;font-stretch:normal;font-style:normal;letter-spacing:normal}.ant-popover-title{color:#656c79;font-family:Roboto-Medium;line-height:1.167em;padding:7px 16px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.ant-popover-title i{font-size:14px;top:1px;position:relative}.ant-popover-content{border:1px solid #dee0e5}::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}"], encapsulation: 2, data: { animation: [animation.zoomBigMotion] }, changeDetection: 0 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsPopoverComponent, [{
                 type: i0.Component,
@@ -28256,7 +28725,7 @@
                 i0.ɵɵadvance(3);
                 i0.ɵɵproperty("ngIf", ctx.datetime);
             }
-        }, directives: [i2$1.NgIf, i6.NzStringTemplateOutletDirective, i2$1.NgForOf, i4$5.NzCommentActionHostDirective], styles: [".ant-comment-content-author{position:relative;top:6px;display:inline-block;margin-left:10px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.2;letter-spacing:normal;color:#3b3f46;width:calc(100% - 140px)}.ant-comment-content-author-name{white-space:pre-line;display:-moz-box;display:-webkit-box;-webkit-line-clamp:2;-moz-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;color:#3b3f46;font-size:14px!important;line-height:unset!important;padding-right:unset!important}.ant-comment-inner{display:block;padding:0 0 20px}.ant-comment-avatar{margin-bottom:14px;cursor:auto}.ant-comment-content{line-height:1.83;color:#97a0ae}.ant-comment-content,.ant-comment-content-author-time{font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;letter-spacing:normal}.ant-comment-content-author-time{line-height:1.33;color:#656c79}.ant-comment-actions{float:right;padding:0;margin:0;line-height:24px}.cmacs-comment-avatar,.cmacs-comment-avatar img{display:inline-block;border-radius:4px;border:none;max-width:32px;max-height:32px}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.iconspan i{font-size:16px;position:relative;height:16px;width:16px;display:inline-block;vertical-align:sub}.ant-comment-actions>li:not(:last-child){padding-right:10px}.ant-comment-actions>li>span{padding-right:0;margin-right:0}.ant-comment-actions>li{line-height:20px}.ant-comment-content-detail{margin-bottom:1em}"], encapsulation: 2, changeDetection: 0 });
+        }, directives: [i2$1.NgIf, i6.NzStringTemplateOutletDirective, i2$1.NgForOf, i4$6.NzCommentActionHostDirective], styles: [".ant-comment-content-author{position:relative;top:6px;display:inline-block;margin-left:10px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.2;letter-spacing:normal;color:#3b3f46;width:calc(100% - 140px)}.ant-comment-content-author-name{white-space:pre-line;display:-moz-box;display:-webkit-box;-webkit-line-clamp:2;-moz-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;color:#3b3f46;font-size:14px!important;line-height:unset!important;padding-right:unset!important}.ant-comment-inner{display:block;padding:0 0 20px}.ant-comment-avatar{margin-bottom:14px;cursor:auto}.ant-comment-content{line-height:1.83;color:#97a0ae}.ant-comment-content,.ant-comment-content-author-time{font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;letter-spacing:normal}.ant-comment-content-author-time{line-height:1.33;color:#656c79}.ant-comment-actions{float:right;padding:0;margin:0;line-height:24px}.cmacs-comment-avatar,.cmacs-comment-avatar img{display:inline-block;border-radius:4px;border:none;max-width:32px;max-height:32px}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.iconspan i{font-size:16px;position:relative;height:16px;width:16px;display:inline-block;vertical-align:sub}.ant-comment-actions>li:not(:last-child){padding-right:10px}.ant-comment-actions>li>span{padding-right:0;margin-right:0}.ant-comment-actions>li{line-height:20px}.ant-comment-content-detail{margin-bottom:1em}"], encapsulation: 2, changeDetection: 0 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(CmacsCommentComponent, [{
                 type: i0.Component,
@@ -30772,7 +31241,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", ctx.isModalType("interaction"));
             }
-        }, directives: [i2$1.NgIf, i1$2.NzNoAnimationDirective, i2$1.NgClass, i2$1.NgStyle, i2$1.NgSwitch, i2$1.NgSwitchCase, i2$1.NgTemplateOutlet, i2$4.CdkDrag, i2$1.NgSwitchDefault, i2$1.NgForOf, i4$4.NzWaveDirective, i9.NzButtonComponent, i4$1.ɵNzTransitionPatchDirective, i6$1.NzRowDirective, i6$1.NzColDirective, i5.NzIconDirective], pipes: [CmacsToCssUnitPipe], styles: [".ant-modal-content[_ngcontent-%COMP%]{border-radius:9px;box-shadow:0 3px 7px rgba(59,63,70,.2)}.ant-modal-body[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;line-height:1.5;word-wrap:break-word;color:#656c79}  .ant-modal-body h2{font-weight:400;font-size:16px;line-height:1.25em;color:#3b3f46;margin-bottom:18px}.model-wrapper[_ngcontent-%COMP%]{display:flex!important;height:100%}  .cmacs-signature-modal .cmacs-modal-helpfulTips-no-panel-center{padding-top:20px!important}  .ant-modal-footer .ant-btn-danger:hover{opacity:1!important}.model-container[_ngcontent-%COMP%]{margin:auto;top:0}.ant-btn-danger[_ngcontent-%COMP%], .ant-btn-danger[_ngcontent-%COMP%]:hover{background-color:#f6503c!important;border-color:#f6503c!important}.ant-modal-header[_ngcontent-%COMP%]{background:#2a7cff;height:50px;border-bottom:1px solid #2a7cff;border-radius:8px 8px 0 0}.ant-modal-title[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.29;letter-spacing:normal;color:#fff}.ant-modal-close-x[_ngcontent-%COMP%]{color:#fff;line-height:34px;margin-right:20px}.ant-modal-close-x-basic[_ngcontent-%COMP%]{color:#fff;margin-right:20px;padding-right:15px;line-height:50px}.ant-modal-close[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{color:#fff}.cmacs-interaction-modal[_ngcontent-%COMP%]{box-sizing:border-box;font-size:14px;font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:\"tnum\";position:absolute;width:auto;min-width:150px;margin:0 auto;padding-bottom:24px}.cmacs-interaction-modal-content[_ngcontent-%COMP%]{position:relative;background-color:#fff;background-clip:padding-box;border:0;border-radius:4px;box-shadow:0 4px 12px rgba(0,0,0,.15)}.cmacs-custom-header[_ngcontent-%COMP%]{height:30px;padding:6px 12px;background:#2a7cff;border-bottom:1px solid #2a7cff}.cmacs-interaction-modal-content[_ngcontent-%COMP%]   .ant-modal-close-x[_ngcontent-%COMP%]{margin-right:12px}.trans-model-body[_ngcontent-%COMP%]{padding:24px 20px 10px}.trans-model-footer[_ngcontent-%COMP%]{padding:10px 20px 20px}  .trans-model-footer.ant-modal-footer button+button{margin-left:15px}.creation-footer[_ngcontent-%COMP%], .creation-header[_ngcontent-%COMP%], .helpful-footer[_ngcontent-%COMP%], .helpful-header[_ngcontent-%COMP%]{padding:16px 40px}.cmacs-modal-creation-left-panel[_ngcontent-%COMP%]{padding:0 40px;height:calc(100% - 80px);overflow:auto;border-right:1px solid #dee0e5;margin-top:40px;margin-bottom:40px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%], .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%], .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]{height:100%;padding:40px;overflow:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-modal-creation-right-panel[_ngcontent-%COMP%], .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]{background-color:#f6f7fb;padding:40px 35px 35px;height:100%;overflow:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.creation-footer[_ngcontent-%COMP%], .helpful-footer[_ngcontent-%COMP%]{box-shadow:0 -2px 5px rgba(59,63,70,.1);border-top:none;border-radius:0 0 8px 8px;z-index:1;position:relative}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar{width:6px;height:6px}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}@media screen and (max-width:1024px){.ant-modal.largemodal[_ngcontent-%COMP%]{max-width:100vw;max-height:100vh;margin:auto;width:100%!important;height:100%!important;padding:0;top:0!important}.ant-modal.largemodal[_ngcontent-%COMP%] > .ant-modal-content[_ngcontent-%COMP%]{height:100%}.ant-modal.largemodal[_ngcontent-%COMP%] > .ant-modal-content[_ngcontent-%COMP%] > .ant-modal-body[_ngcontent-%COMP%]{height:calc(100% - 116px)!important}}"] });
+        }, directives: [i2$1.NgIf, i1$2.NzNoAnimationDirective, i2$1.NgClass, i2$1.NgStyle, i2$1.NgSwitch, i2$1.NgSwitchCase, i2$1.NgTemplateOutlet, i2$4.CdkDrag, i2$1.NgSwitchDefault, i2$1.NgForOf, i4$5.NzWaveDirective, i9.NzButtonComponent, i4$1.ɵNzTransitionPatchDirective, i6$1.NzRowDirective, i6$1.NzColDirective, i5.NzIconDirective], pipes: [CmacsToCssUnitPipe], styles: [".ant-modal-content[_ngcontent-%COMP%]{border-radius:9px;box-shadow:0 3px 7px rgba(59,63,70,.2)}.ant-modal-body[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;line-height:1.5;word-wrap:break-word;color:#656c79}  .ant-modal-body h2{font-weight:400;font-size:16px;line-height:1.25em;color:#3b3f46;margin-bottom:18px}.model-wrapper[_ngcontent-%COMP%]{display:flex!important;height:100%}  .cmacs-signature-modal .cmacs-modal-helpfulTips-no-panel-center{padding-top:20px!important}  .ant-modal-footer .ant-btn-danger:hover{opacity:1!important}.model-container[_ngcontent-%COMP%]{margin:auto;top:0}.ant-btn-danger[_ngcontent-%COMP%], .ant-btn-danger[_ngcontent-%COMP%]:hover{background-color:#f6503c!important;border-color:#f6503c!important}.ant-modal-header[_ngcontent-%COMP%]{background:#2a7cff;height:50px;border-bottom:1px solid #2a7cff;border-radius:8px 8px 0 0}.ant-modal-title[_ngcontent-%COMP%]{font-family:Roboto-Regular;font-size:14px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.29;letter-spacing:normal;color:#fff}.ant-modal-close-x[_ngcontent-%COMP%]{color:#fff;line-height:34px;margin-right:20px}.ant-modal-close-x-basic[_ngcontent-%COMP%]{color:#fff;margin-right:20px;padding-right:15px;line-height:50px}.ant-modal-close[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{color:#fff}.cmacs-interaction-modal[_ngcontent-%COMP%]{box-sizing:border-box;font-size:14px;font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:\"tnum\";position:absolute;width:auto;min-width:150px;margin:0 auto;padding-bottom:24px}.cmacs-interaction-modal-content[_ngcontent-%COMP%]{position:relative;background-color:#fff;background-clip:padding-box;border:0;border-radius:4px;box-shadow:0 4px 12px rgba(0,0,0,.15)}.cmacs-custom-header[_ngcontent-%COMP%]{height:30px;padding:6px 12px;background:#2a7cff;border-bottom:1px solid #2a7cff}.cmacs-interaction-modal-content[_ngcontent-%COMP%]   .ant-modal-close-x[_ngcontent-%COMP%]{margin-right:12px}.trans-model-body[_ngcontent-%COMP%]{padding:24px 20px 10px}.trans-model-footer[_ngcontent-%COMP%]{padding:10px 20px 20px}  .trans-model-footer.ant-modal-footer button+button{margin-left:15px}.creation-footer[_ngcontent-%COMP%], .creation-header[_ngcontent-%COMP%], .helpful-footer[_ngcontent-%COMP%], .helpful-header[_ngcontent-%COMP%]{padding:16px 40px}.cmacs-modal-creation-left-panel[_ngcontent-%COMP%]{padding:0 40px;height:calc(100% - 80px);overflow:auto;border-right:1px solid #dee0e5;margin-top:40px;margin-bottom:40px;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%], .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%], .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]{height:100%;padding:40px;overflow:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.cmacs-modal-creation-right-panel[_ngcontent-%COMP%], .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]{background-color:#f6f7fb;padding:40px 35px 35px;height:100%;overflow:auto;scrollbar-color:#cfd3d9 #fff;scrollbar-width:thin}.creation-footer[_ngcontent-%COMP%], .helpful-footer[_ngcontent-%COMP%]{box-shadow:0 -2px 5px rgba(59,63,70,.1);border-top:none;border-radius:0 0 8px 8px;z-index:1;position:relative}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar{width:6px;height:6px}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar-thumb{background-color:#cfd3d9;border-radius:10px}.cmacs-modal-creation-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-creation-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpful-center-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpful-right-panel[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover, .cmacs-modal-helpfulTips-no-panel-center[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover{background-color:#bec4cd;border-radius:10px}@media screen and (max-width:1024px){.ant-modal.largemodal[_ngcontent-%COMP%]{max-width:100vw;max-height:100vh;margin:auto;width:100%!important;height:100%!important;padding:0;top:0!important}.ant-modal.largemodal[_ngcontent-%COMP%] > .ant-modal-content[_ngcontent-%COMP%]{height:100%}.ant-modal.largemodal[_ngcontent-%COMP%] > .ant-modal-content[_ngcontent-%COMP%] > .ant-modal-body[_ngcontent-%COMP%]{height:calc(100% - 116px)!important}}"] });
     __decorate([
         util.InputBoolean()
     ], CmacsModalComponent.prototype, "visible", void 0);
@@ -44704,7 +45173,7 @@
                 i0.ɵɵadvance(1);
                 i0.ɵɵproperty("ngIf", ctx.cmacsOpen);
             }
-        }, directives: [i2$1.NgIf, i1$4.CdkOverlayOrigin, i4.DefaultValueAccessor, i4.NgControlStatus, i4.NgModel, i1$4.CdkConnectedOverlay, i4$2.NzConnectedOverlayDirective, i2$1.NgTemplateOutlet, i2$1.NgStyle, i2$1.NgForOf, i1$2.NzNoAnimationDirective, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective, CmacsTreeComponent], pipes: [i2$1.SlicePipe], styles: [".cmacs-tree-select-dropdown[_ngcontent-%COMP%]{box-shadow:none;border-bottom:1px solid #dee0e5;border-right:1px solid #dee0e5;border-left:1px solid #dee0e5;border-radius:0 0 3px 3px;z-index:unset}  .ant-select-tree-dropdown .ant-select-switcher-icon{font-size:10px}  .ant-select-tree-dropdown .ant-select-tree-checkbox{margin:0 3px 0 0}  .ant-select-tree-dropdown .ant-select-tree .ant-select-tree-node-content-wrapper{top:2px}  .ant-select-tree-dropdown .ant-select-tree-switcher{position:relative;width:24px;line-height:24px;cursor:pointer;height:24px;display:inline-block;vertical-align:middle;text-align:center;margin:0}.cmacs-tree-select-dropdown[_ngcontent-%COMP%]{opacity:1!important;transform:none!important}[_nghost-%COMP%]     .ant-select-selection, [_nghost-%COMP%]     .ant-select-selection:focus, [_nghost-%COMP%]     .ant-select-selection:hover{border:1px solid #dee0e5;border-radius:3px 3px 0 0}.cmacs-tree-select-search-icon[_ngcontent-%COMP%]{left:11px;right:unset;z-index:unset;opacity:1!important;font-size:16px;top:14px}[_nghost-%COMP%]     .ant-select-selection--multiple .ant-select-selection__placeholder{margin-left:29px}.ant-select-selection__clear[_ngcontent-%COMP%]{right:14px}.cmacs-tree-select-arrow[_ngcontent-%COMP%]{z-index:unset;opacity:1!important;font-size:29px;top:7px;right:30px}.cmacs-tree-select-arrow[_ngcontent-%COMP%]:hover{cursor:pointer}.cmacs-tree-select-arrow[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{border-left:1px solid #dee0e5;padding:0 5px;font-size:24px;top:-14px;position:relative}.cmacs-tree-select-arrow[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:before{top:2px;position:relative}.ant-select-selection--multiple[_ngcontent-%COMP%]   .ant-select-search--inline[_ngcontent-%COMP%]   .ant-select-search__field[_ngcontent-%COMP%]{padding-left:0}.ant-select-selection[_ngcontent-%COMP%]:hover   .cmacs-selected-nodes.iconArrowLarge-Arrow-Right[_ngcontent-%COMP%]:before{opacity:0}.cmacs-add-new-category[_ngcontent-%COMP%]{font-weight:400;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#656c79;font-size:12px;font-family:Roboto-Regular;padding:5px 0 6px 10px;border-top:1px solid #dee0e5}.cmacs-add-new-category[_ngcontent-%COMP%]:hover{background-color:#f6f7fb}.cmacs-add-new-category-title[_ngcontent-%COMP%]{padding:3px 5px}.cmacs-select-tree-new-icon[_ngcontent-%COMP%]{color:#acb3bf;font-size:16px;top:2px;position:relative}.cmacs-select-tree-new-icon[_ngcontent-%COMP%]:hover{cursor:pointer}.no-margin-left[_ngcontent-%COMP%]{margin-left:0!important}  .ant-select-selection--multiple .cmacs-tree-select-ul .ant-select-search--inline .ant-select-search__field{max-width:84%;margin-left:28px}", ".ant-select-dropdown[_ngcontent-%COMP%] {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        overflow: auto;\n        scrollbar-color: #cfd3d9 #ffffff;\n        scrollbar-width: thin;\n      }\n\n      cmacs-tree-select[_ngcontent-%COMP%] {\n        overflow: hidden;\n      }"] });
+        }, directives: [i2$1.NgIf, i1$4.CdkOverlayOrigin, i4.DefaultValueAccessor, i4.NgControlStatus, i4.NgModel, i1$4.CdkConnectedOverlay, i4$3.NzConnectedOverlayDirective, i2$1.NgTemplateOutlet, i2$1.NgStyle, i2$1.NgForOf, i1$2.NzNoAnimationDirective, i4$1.ɵNzTransitionPatchDirective, i5.NzIconDirective, CmacsTreeComponent], pipes: [i2$1.SlicePipe], styles: [".cmacs-tree-select-dropdown[_ngcontent-%COMP%]{box-shadow:none;border-bottom:1px solid #dee0e5;border-right:1px solid #dee0e5;border-left:1px solid #dee0e5;border-radius:0 0 3px 3px;z-index:unset}  .ant-select-tree-dropdown .ant-select-switcher-icon{font-size:10px}  .ant-select-tree-dropdown .ant-select-tree-checkbox{margin:0 3px 0 0}  .ant-select-tree-dropdown .ant-select-tree .ant-select-tree-node-content-wrapper{top:2px}  .ant-select-tree-dropdown .ant-select-tree-switcher{position:relative;width:24px;line-height:24px;cursor:pointer;height:24px;display:inline-block;vertical-align:middle;text-align:center;margin:0}.cmacs-tree-select-dropdown[_ngcontent-%COMP%]{opacity:1!important;transform:none!important}[_nghost-%COMP%]     .ant-select-selection, [_nghost-%COMP%]     .ant-select-selection:focus, [_nghost-%COMP%]     .ant-select-selection:hover{border:1px solid #dee0e5;border-radius:3px 3px 0 0}.cmacs-tree-select-search-icon[_ngcontent-%COMP%]{left:11px;right:unset;z-index:unset;opacity:1!important;font-size:16px;top:14px}[_nghost-%COMP%]     .ant-select-selection--multiple .ant-select-selection__placeholder{margin-left:29px}.ant-select-selection__clear[_ngcontent-%COMP%]{right:14px}.cmacs-tree-select-arrow[_ngcontent-%COMP%]{z-index:unset;opacity:1!important;font-size:29px;top:7px;right:30px}.cmacs-tree-select-arrow[_ngcontent-%COMP%]:hover{cursor:pointer}.cmacs-tree-select-arrow[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{border-left:1px solid #dee0e5;padding:0 5px;font-size:24px;top:-14px;position:relative}.cmacs-tree-select-arrow[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:before{top:2px;position:relative}.ant-select-selection--multiple[_ngcontent-%COMP%]   .ant-select-search--inline[_ngcontent-%COMP%]   .ant-select-search__field[_ngcontent-%COMP%]{padding-left:0}.ant-select-selection[_ngcontent-%COMP%]:hover   .cmacs-selected-nodes.iconArrowLarge-Arrow-Right[_ngcontent-%COMP%]:before{opacity:0}.cmacs-add-new-category[_ngcontent-%COMP%]{font-weight:400;font-style:normal;font-stretch:normal;line-height:1.67;letter-spacing:normal;color:#656c79;font-size:12px;font-family:Roboto-Regular;padding:5px 0 6px 10px;border-top:1px solid #dee0e5}.cmacs-add-new-category[_ngcontent-%COMP%]:hover{background-color:#f6f7fb}.cmacs-add-new-category-title[_ngcontent-%COMP%]{padding:3px 5px}.cmacs-select-tree-new-icon[_ngcontent-%COMP%]{color:#acb3bf;font-size:16px;top:2px;position:relative}.cmacs-select-tree-new-icon[_ngcontent-%COMP%]:hover{cursor:pointer}.no-margin-left[_ngcontent-%COMP%]{margin-left:0!important}  .ant-select-selection--multiple .cmacs-tree-select-ul .ant-select-search--inline .ant-select-search__field{max-width:84%;margin-left:28px}", ".ant-select-dropdown[_ngcontent-%COMP%] {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        overflow: auto;\n        scrollbar-color: #cfd3d9 #ffffff;\n        scrollbar-width: thin;\n      }\n\n      cmacs-tree-select[_ngcontent-%COMP%] {\n        overflow: hidden;\n      }"] });
     __decorate([
         util.InputBoolean()
     ], CmacsTreeSelectComponent.prototype, "allowClear", void 0);
@@ -48102,7 +48571,7 @@
                 i3.PlatformModule,
                 i2$5.NgxChartsModule,
                 i5$1.NzSkeletonModule,
-                scrolling.ScrollingModule,
+                i4$2.ScrollingModule,
                 tree.NzTreeModule,
                 steps.NzStepsModule,
                 i8$1.NzTableModule,
@@ -48118,15 +48587,15 @@
                 list.NzListModule,
                 modal.NzModalModule,
                 message.NzMessageModule,
-                i4$5.NzCommentModule,
+                i4$6.NzCommentModule,
                 popover.NzPopoverModule,
                 i2$2.NzToolTipModule,
                 tag.NzTagModule,
-                i4$4.NzWaveModule,
+                i4$5.NzWaveModule,
                 timeline.NzTimelineModule,
                 progress.NzProgressModule,
                 i1$3.NzI18nModule,
-                i4$2.NzOverlayModule,
+                i4$3.NzOverlayModule,
                 inputNumber.NzInputNumberModule,
                 datePicker.NzDatePickerModule,
                 LibPackerModule,
@@ -48171,7 +48640,7 @@
             i2$5.NgxChartsModule,
             i5$1.NzSkeletonModule,
             tree.NzTreeModule,
-            scrolling.ScrollingModule,
+            i4$2.ScrollingModule,
             steps.NzStepsModule,
             i20.NzRateModule,
             i8$1.NzTableModule,
@@ -48185,12 +48654,12 @@
             modal.NzModalModule,
             message.NzMessageModule,
             i13.NzUploadModule,
-            i4$5.NzCommentModule,
+            i4$6.NzCommentModule,
             popover.NzPopoverModule,
             tag.NzTagModule,
             timeline.NzTimelineModule,
             i1$3.NzI18nModule,
-            i4$2.NzOverlayModule,
+            i4$3.NzOverlayModule,
             inputNumber.NzInputNumberModule,
             datePicker.NzDatePickerModule,
             breadcrumb.NzBreadCrumbModule,
@@ -48345,8 +48814,10 @@
                 CmacsSelectUnselectableDirective,
                 CmacsOptionComponent,
                 CmacsOptionContainerComponent,
+                CmacsOptionContainerVirtualComponent,
                 CmacsOptionGroupComponent,
                 CmacsOptionLiComponent,
+                CmacsOptionLiVirtualComponent,
                 NzFilterGroupOptionPipe,
                 NzFilterOptionPipe,
                 CmacsDividerComponent,
@@ -48399,7 +48870,7 @@
                 i3.PlatformModule,
                 i2$5.NgxChartsModule,
                 i5$1.NzSkeletonModule,
-                scrolling.ScrollingModule,
+                i4$2.ScrollingModule,
                 tree.NzTreeModule,
                 steps.NzStepsModule,
                 i8$1.NzTableModule,
@@ -48415,15 +48886,15 @@
                 list.NzListModule,
                 modal.NzModalModule,
                 message.NzMessageModule,
-                i4$5.NzCommentModule,
+                i4$6.NzCommentModule,
                 popover.NzPopoverModule,
                 i2$2.NzToolTipModule,
                 tag.NzTagModule,
-                i4$4.NzWaveModule,
+                i4$5.NzWaveModule,
                 timeline.NzTimelineModule,
                 progress.NzProgressModule,
                 i1$3.NzI18nModule,
-                i4$2.NzOverlayModule,
+                i4$3.NzOverlayModule,
                 inputNumber.NzInputNumberModule,
                 datePicker.NzDatePickerModule,
                 LibPackerModule,
@@ -48491,7 +48962,7 @@
                 CmacsTreeComponent,
                 CmacsTreeNodeComponent,
                 tree.NzTreeModule,
-                scrolling.ScrollingModule,
+                i4$2.ScrollingModule,
                 steps.NzStepsModule,
                 CmacsWizardComponent,
                 CmacsStepComponent,
@@ -48549,7 +49020,7 @@
                 CmacsMessageContainerComponent,
                 CmacsMessageComponent,
                 i13.NzUploadModule,
-                i4$5.NzCommentModule,
+                i4$6.NzCommentModule,
                 CmacsCommentActionComponent,
                 CmacsCommentActionHostDirective,
                 CmacsCommentAvatarDirective,
@@ -48571,7 +49042,7 @@
                 CmacsSearchComponent,
                 CmacsProgressComponent,
                 i1$3.NzI18nModule,
-                i4$2.NzOverlayModule,
+                i4$3.NzOverlayModule,
                 CmacsDateTimePickerComponent,
                 CmacsDatetimePickerPanelComponent,
                 CmacsDatetimeValueAccessorDirective,
@@ -48636,6 +49107,7 @@
                 CmacsSelectUnselectableDirective,
                 CmacsOptionComponent,
                 CmacsOptionContainerComponent,
+                CmacsOptionContainerVirtualComponent,
                 CmacsOptionGroupComponent,
                 CmacsOptionLiComponent,
                 NzFilterGroupOptionPipe,
@@ -48801,8 +49273,10 @@
                             CmacsSelectUnselectableDirective,
                             CmacsOptionComponent,
                             CmacsOptionContainerComponent,
+                            CmacsOptionContainerVirtualComponent,
                             CmacsOptionGroupComponent,
                             CmacsOptionLiComponent,
+                            CmacsOptionLiVirtualComponent,
                             NzFilterGroupOptionPipe,
                             NzFilterOptionPipe,
                             CmacsDividerComponent,
@@ -48858,7 +49332,7 @@
                             i3.PlatformModule,
                             i2$5.NgxChartsModule,
                             i5$1.NzSkeletonModule,
-                            scrolling.ScrollingModule,
+                            i4$2.ScrollingModule,
                             tree.NzTreeModule,
                             steps.NzStepsModule,
                             i8$1.NzTableModule,
@@ -48874,15 +49348,15 @@
                             list.NzListModule,
                             modal.NzModalModule,
                             message.NzMessageModule,
-                            i4$5.NzCommentModule,
+                            i4$6.NzCommentModule,
                             popover.NzPopoverModule,
                             i2$2.NzToolTipModule,
                             tag.NzTagModule,
-                            i4$4.NzWaveModule,
+                            i4$5.NzWaveModule,
                             timeline.NzTimelineModule,
                             progress.NzProgressModule,
                             i1$3.NzI18nModule,
-                            i4$2.NzOverlayModule,
+                            i4$3.NzOverlayModule,
                             inputNumber.NzInputNumberModule,
                             datePicker.NzDatePickerModule,
                             LibPackerModule,
@@ -48953,7 +49427,7 @@
                             CmacsTreeComponent,
                             CmacsTreeNodeComponent,
                             tree.NzTreeModule,
-                            scrolling.ScrollingModule,
+                            i4$2.ScrollingModule,
                             steps.NzStepsModule,
                             CmacsWizardComponent,
                             CmacsStepComponent,
@@ -49011,7 +49485,7 @@
                             CmacsMessageContainerComponent,
                             CmacsMessageComponent,
                             i13.NzUploadModule,
-                            i4$5.NzCommentModule,
+                            i4$6.NzCommentModule,
                             CmacsCommentActionComponent,
                             CmacsCommentActionHostDirective,
                             CmacsCommentAvatarDirective,
@@ -49033,7 +49507,7 @@
                             CmacsSearchComponent,
                             CmacsProgressComponent,
                             i1$3.NzI18nModule,
-                            i4$2.NzOverlayModule,
+                            i4$3.NzOverlayModule,
                             CmacsDateTimePickerComponent,
                             CmacsDatetimePickerPanelComponent,
                             CmacsDatetimeValueAccessorDirective,
@@ -49098,6 +49572,7 @@
                             CmacsSelectUnselectableDirective,
                             CmacsOptionComponent,
                             CmacsOptionContainerComponent,
+                            CmacsOptionContainerVirtualComponent,
                             CmacsOptionGroupComponent,
                             CmacsOptionLiComponent,
                             NzFilterGroupOptionPipe,
@@ -49463,8 +49938,10 @@
     exports.CmacsOpenTextareaComponent = CmacsOpenTextareaComponent;
     exports.CmacsOptionComponent = CmacsOptionComponent;
     exports.CmacsOptionContainerComponent = CmacsOptionContainerComponent;
+    exports.CmacsOptionContainerVirtualComponent = CmacsOptionContainerVirtualComponent;
     exports.CmacsOptionGroupComponent = CmacsOptionGroupComponent;
     exports.CmacsOptionLiComponent = CmacsOptionLiComponent;
+    exports.CmacsOptionLiVirtualComponent = CmacsOptionLiVirtualComponent;
     exports.CmacsPhoneNumberComponent = CmacsPhoneNumberComponent;
     exports.CmacsPopoverComponent = CmacsPopoverComponent;
     exports.CmacsPopoverDirective = CmacsPopoverDirective;
