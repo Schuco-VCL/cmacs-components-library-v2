@@ -8061,6 +8061,7 @@
             this.platform = platform;
             this.overlayRef = null;
             this.destroy$ = new rxjs.Subject();
+            this.longPress = false;
             this.positionStrategy = this.overlay
                 .position()
                 .flexibleConnectedTo(this.elementRef.nativeElement)
@@ -8100,6 +8101,11 @@
                 var nativeElement_1 = this.elementRef.nativeElement;
                 /** host mouse state **/
                 var hostMouseState$ = rxjs.merge(rxjs.fromEvent(nativeElement_1, 'mouseenter').pipe(operators.mapTo(true)), rxjs.fromEvent(nativeElement_1, 'mouseleave').pipe(operators.mapTo(false)));
+                /** context menu - right click */
+                rxjs.fromEvent(nativeElement_1, 'contextmenu').pipe(operators.takeUntil(this.destroy$)).subscribe(function (event) {
+                    event.stopPropagation();
+                    event.preventDefault();
+                });
                 /** menu mouse state **/
                 var menuMouseState$ = this.dropdownMenu.mouseState$;
                 /** merged mouse state **/
@@ -8110,6 +8116,23 @@
                         once: false,
                         capture: true
                     }).pipe(operators.map(function () { return !_this.visible; }));
+                /** host click state **/
+                var hostRightClickState$_1 = this.deviceService.isDesktop() ? rxjs.fromEvent(nativeElement_1, 'contextmenu').pipe(operators.map(function () { return !_this.visible; })) :
+                    rxjs.fromEvent(nativeElement_1, 'touchstart', {
+                        once: false,
+                        capture: true
+                    }).pipe(operators.concatMap(function () {
+                        _this.longPress = true;
+                        return rxjs.of({});
+                    }), operators.takeUntil(this.destroy$), operators.debounceTime(300), operators.map(function () {
+                        return _this.longPress;
+                    }));
+                rxjs.fromEvent(nativeElement_1, 'touchend', {
+                    once: false,
+                    capture: true
+                }).pipe(operators.takeUntil(this.destroy$)).subscribe(function () {
+                    _this.longPress = false;
+                });
                 /** visible state switch by cmacsTrigger **/
                 var visibleStateByTrigger$ = this.cmacsTrigger$.pipe(operators.switchMap(function (trigger) {
                     if (trigger === 'hover') {
@@ -8117,6 +8140,9 @@
                     }
                     else if (trigger === 'click') {
                         return hostClickState$_1;
+                    }
+                    else if (trigger === 'contextmenu') {
+                        return hostRightClickState$_1;
                     }
                     else {
                         return rxjs.EMPTY;
@@ -8145,7 +8171,7 @@
                                 positionStrategy: _this.positionStrategy,
                                 minWidth: triggerWidth,
                                 disposeOnNavigation: true,
-                                hasBackdrop: (_this.hasBackdrop || _this.backdrop) && _this.cmacsTrigger === 'click',
+                                hasBackdrop: (_this.hasBackdrop || _this.backdrop) && (_this.cmacsTrigger === 'click' || _this.cmacsTrigger === 'contextmenu'),
                                 scrollStrategy: _this.overlay.scrollStrategies.reposition()
                             });
                             rxjs.merge(_this.overlayRef.backdropClick(), _this.overlayRef.detachments(), _this.overlayRef.outsidePointerEvents().pipe(operators.filter(function (e) { return !_this.elementRef.nativeElement.contains(e.target); })), _this.overlayRef.keydownEvents().pipe(operators.filter(function (e) { return e.keyCode === keycodes.ESCAPE && !keycodes.hasModifierKey(e); })))

@@ -1,7 +1,7 @@
 import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, EventEmitter, ɵɵdirectiveInject, Renderer2, ElementRef, ɵɵprojectionDef, ɵɵprojection, ChangeDetectionStrategy, ViewEncapsulation, Output, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵlistener, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵelement, ɵɵadvance, ɵɵproperty, Optional, ViewChild, Input, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵtextInterpolate, ɵɵtemplate, ɵɵcontentQuery, ɵɵattribute, ɵɵNgOnChangesFeature, ContentChild, ContentChildren, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵstyleProp, ɵɵsanitizeHtml, ViewChildren, ɵɵdefineDirective, Directive, TemplateRef, ɵɵdefinePipe, Pipe, ɵɵtextInterpolate1, ɵɵreference, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵtemplateRefExtractor, Host, ɵɵpropertyInterpolate, ɵɵelementContainer, ɵɵpipeBind4, NgZone, Self, isDevMode, InjectionToken, ɵɵinject, SkipSelf, Inject, ɵɵclassMap, ɵɵsyntheticHostProperty, ViewContainerRef, ɵɵpipeBind1, ɵɵpureFunction0, ɵɵdefineNgModule, ɵɵdefineInjector, NgModule, ComponentFactoryResolver, ɵɵInheritDefinitionFeature, ɵɵclassMapInterpolate1, ɵɵgetInheritedFactory, ɵɵclassMapInterpolate2, ɵɵclassMapInterpolate4, QueryList, ɵɵresolveDocument, HostListener, ɵɵattributeInterpolate2, ɵɵpureFunction5, ɵɵpureFunction3, ɵɵpropertyInterpolate1, ɵɵpureFunction4, ɵɵpureFunction2, ɵɵattributeInterpolate3, ɵɵsanitizeUrl, Injector, ɵɵsetNgModuleScope, ɵɵnamespaceSVG, ɵɵresolveWindow, Type, HostBinding, ɵɵpropertyInterpolate2, ɵɵtextInterpolate2, ɵɵsyntheticHostListener, ApplicationRef, ɵɵsetComponentScope } from '@angular/core';
 import { __decorate, __rest } from 'tslib';
 import { NG_VALUE_ACCESSOR, CheckboxControlValueAccessor, NgControlStatus, NgModel, DefaultValueAccessor, NgControl, Validators, FormControl, FormControlDirective, AbstractControl, FormControlName, FormsModule, FormBuilder, ɵangular_packages_forms_forms_ba, NgControlStatusGroup, FormGroupDirective, ReactiveFormsModule } from '@angular/forms';
-import { takeUntil, startWith, filter, tap, pluck, map, distinctUntilChanged, share, skip, flatMap, switchMap, mergeMap, mapTo, auditTime, take, first, delay, repeat } from 'rxjs/operators';
+import { takeUntil, startWith, filter, tap, pluck, map, distinctUntilChanged, share, skip, flatMap, switchMap, mergeMap, mapTo, auditTime, concatMap, debounceTime, take, first, delay, repeat } from 'rxjs/operators';
 import { Subject, fromEvent, merge, ReplaySubject, BehaviorSubject, combineLatest, EMPTY, of, Subscription, animationFrameScheduler, asapScheduler, defer } from 'rxjs';
 import { InputBoolean, InputNumber, ensureNumberInRange, silentEvent, getPrecision, getPercent, getElementOffset, arraysEqual, isNotNil, isNil, toBoolean, isTemplateRef, isNonEmptyString, valueFunctionProp, wrapIntoObservable, toCssPixel, isPromise } from 'ng-zorro-antd/core/util';
 import { FocusMonitor, FocusKeyManager, FocusTrapFactory } from '@angular/cdk/a11y';
@@ -7046,6 +7046,7 @@ class CmacsDropDownDirective {
         this.platform = platform;
         this.overlayRef = null;
         this.destroy$ = new Subject();
+        this.longPress = false;
         this.positionStrategy = this.overlay
             .position()
             .flexibleConnectedTo(this.elementRef.nativeElement)
@@ -7084,6 +7085,11 @@ class CmacsDropDownDirective {
             const nativeElement = this.elementRef.nativeElement;
             /** host mouse state **/
             const hostMouseState$ = merge(fromEvent(nativeElement, 'mouseenter').pipe(mapTo(true)), fromEvent(nativeElement, 'mouseleave').pipe(mapTo(false)));
+            /** context menu - right click */
+            fromEvent(nativeElement, 'contextmenu').pipe(takeUntil(this.destroy$)).subscribe((event) => {
+                event.stopPropagation();
+                event.preventDefault();
+            });
             /** menu mouse state **/
             const menuMouseState$ = this.dropdownMenu.mouseState$;
             /** merged mouse state **/
@@ -7094,6 +7100,23 @@ class CmacsDropDownDirective {
                     once: false,
                     capture: true
                 }).pipe(map(() => !this.visible));
+            /** host click state **/
+            const hostRightClickState$ = this.deviceService.isDesktop() ? fromEvent(nativeElement, 'contextmenu').pipe(map(() => !this.visible)) :
+                fromEvent(nativeElement, 'touchstart', {
+                    once: false,
+                    capture: true
+                }).pipe(concatMap(() => {
+                    this.longPress = true;
+                    return of({});
+                }), takeUntil(this.destroy$), debounceTime(300), map(() => {
+                    return this.longPress;
+                }));
+            fromEvent(nativeElement, 'touchend', {
+                once: false,
+                capture: true
+            }).pipe(takeUntil(this.destroy$)).subscribe(() => {
+                this.longPress = false;
+            });
             /** visible state switch by cmacsTrigger **/
             const visibleStateByTrigger$ = this.cmacsTrigger$.pipe(switchMap(trigger => {
                 if (trigger === 'hover') {
@@ -7101,6 +7124,9 @@ class CmacsDropDownDirective {
                 }
                 else if (trigger === 'click') {
                     return hostClickState$;
+                }
+                else if (trigger === 'contextmenu') {
+                    return hostRightClickState$;
                 }
                 else {
                     return EMPTY;
@@ -7126,7 +7152,7 @@ class CmacsDropDownDirective {
                             positionStrategy: this.positionStrategy,
                             minWidth: triggerWidth,
                             disposeOnNavigation: true,
-                            hasBackdrop: (this.hasBackdrop || this.backdrop) && this.cmacsTrigger === 'click',
+                            hasBackdrop: (this.hasBackdrop || this.backdrop) && (this.cmacsTrigger === 'click' || this.cmacsTrigger === 'contextmenu'),
                             scrollStrategy: this.overlay.scrollStrategies.reposition()
                         });
                         merge(this.overlayRef.backdropClick(), this.overlayRef.detachments(), this.overlayRef.outsidePointerEvents().pipe(filter((e) => !this.elementRef.nativeElement.contains(e.target))), this.overlayRef.keydownEvents().pipe(filter(e => e.keyCode === ESCAPE && !hasModifierKey(e))))

@@ -15,12 +15,13 @@ export declare class CmacsDropDownDirective implements AfterViewInit, OnDestroy,
     private portal?;
     private overlayRef;
     private destroy$;
+    private longPress;
     private positionStrategy;
     private inputVisible$;
     private cmacsTrigger$;
     private overlayClose$;
     dropdownMenu: CmacsDropdownMenuComponent | null;
-    cmacsTrigger: 'click' | 'hover';
+    cmacsTrigger: 'click' | 'hover' | 'contextmenu';
     matchWidthElement: ElementRef | null;
     /**
      * @deprecated Not supported, use `hasBackdrop` instead.
