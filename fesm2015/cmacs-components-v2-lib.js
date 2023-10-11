@@ -29672,66 +29672,70 @@ CmacsCardLoadingComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCardLoadingCo
 function CmacsCardComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵprojection(0);
 } }
-function CmacsCardComponent_div_2_div_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+function CmacsCardComponent_div_2_div_2_ng_container_1_div_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵtext(1);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r10 = ɵɵnextContext(3);
+    const ctx_r11 = ɵɵnextContext(5);
     ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r10.title);
+    ɵɵtextInterpolate(ctx_r11.extra);
+} }
+function CmacsCardComponent_div_2_div_2_ng_container_1_div_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 13);
+    ɵɵtemplate(1, CmacsCardComponent_div_2_div_2_ng_container_1_div_2_ng_container_1_Template, 2, 1, "ng-container", 10);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r10 = ɵɵnextContext(4);
+    ɵɵadvance(1);
+    ɵɵproperty("nzStringTemplateOutlet", ctx_r10.extra);
+} }
+function CmacsCardComponent_div_2_div_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵelementStart(1, "div", 11);
+    ɵɵtemplate(2, CmacsCardComponent_div_2_div_2_ng_container_1_div_2_Template, 2, 1, "div", 12);
+    ɵɵelementStart(3, "span");
+    ɵɵtext(4);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const ctx_r9 = ɵɵnextContext(3);
+    ɵɵadvance(2);
+    ɵɵproperty("ngIf", ctx_r9.extra);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(ctx_r9.title);
 } }
 function CmacsCardComponent_div_2_div_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 10);
-    ɵɵtemplate(1, CmacsCardComponent_div_2_div_2_ng_container_1_Template, 2, 1, "ng-container", 11);
+    ɵɵelementStart(0, "div", 9);
+    ɵɵtemplate(1, CmacsCardComponent_div_2_div_2_ng_container_1_Template, 5, 2, "ng-container", 10);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r7 = ɵɵnextContext(2);
     ɵɵadvance(1);
     ɵɵproperty("nzStringTemplateOutlet", ctx_r7.title);
 } }
-function CmacsCardComponent_div_2_div_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+function CmacsCardComponent_div_2_ng_container_3_ng_template_1_Template(rf, ctx) { }
+function CmacsCardComponent_div_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtext(1);
+    ɵɵtemplate(1, CmacsCardComponent_div_2_ng_container_3_ng_template_1_Template, 0, 0, "ng-template", 14);
     ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r11 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r11.extra);
-} }
-function CmacsCardComponent_div_2_div_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 12);
-    ɵɵtemplate(1, CmacsCardComponent_div_2_div_3_ng_container_1_Template, 2, 1, "ng-container", 11);
-    ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r8 = ɵɵnextContext(2);
     ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r8.extra);
-} }
-function CmacsCardComponent_div_2_ng_container_4_ng_template_1_Template(rf, ctx) { }
-function CmacsCardComponent_div_2_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, CmacsCardComponent_div_2_ng_container_4_ng_template_1_Template, 0, 0, "ng-template", 13);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r9 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r9.tab.template);
+    ɵɵproperty("ngTemplateOutlet", ctx_r8.tab.template);
 } }
 function CmacsCardComponent_div_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 6);
     ɵɵelementStart(1, "div", 7);
     ɵɵtemplate(2, CmacsCardComponent_div_2_div_2_Template, 2, 1, "div", 8);
-    ɵɵtemplate(3, CmacsCardComponent_div_2_div_3_Template, 2, 1, "div", 9);
     ɵɵelementEnd();
-    ɵɵtemplate(4, CmacsCardComponent_div_2_ng_container_4_Template, 2, 1, "ng-container", 4);
+    ɵɵtemplate(3, CmacsCardComponent_div_2_ng_container_3_Template, 2, 1, "ng-container", 4);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r2 = ɵɵnextContext();
     ɵɵadvance(2);
     ɵɵproperty("ngIf", ctx_r2.title);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r2.extra);
     ɵɵadvance(1);
     ɵɵproperty("ngIf", ctx_r2.tab);
 } }
@@ -29740,11 +29744,11 @@ function CmacsCardComponent_div_3_ng_container_2_ng_template_3_Template(rf, ctx)
 function CmacsCardComponent_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     const _r17 = ɵɵgetCurrentView();
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "label", 15);
+    ɵɵelementStart(1, "label", 16);
     ɵɵlistener("ngModelChange", function CmacsCardComponent_div_3_ng_container_2_Template_label_ngModelChange_1_listener($event) { ɵɵrestoreView(_r17); const ctx_r16 = ɵɵnextContext(2); return ctx_r16.selected = $event; })("ngModelChange", function CmacsCardComponent_div_3_ng_container_2_Template_label_ngModelChange_1_listener() { ɵɵrestoreView(_r17); const ctx_r18 = ɵɵnextContext(2); return ctx_r18.checkRadio(); });
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵtemplate(3, CmacsCardComponent_div_3_ng_container_2_ng_template_3_Template, 0, 0, "ng-template", 13);
+    ɵɵtemplate(3, CmacsCardComponent_div_3_ng_container_2_ng_template_3_Template, 0, 0, "ng-template", 14);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r14 = ɵɵnextContext(2);
@@ -29756,8 +29760,8 @@ function CmacsCardComponent_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1)
     ɵɵproperty("ngTemplateOutlet", ctx_r14.body);
 } }
 function CmacsCardComponent_div_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 14);
-    ɵɵtemplate(1, CmacsCardComponent_div_3_ng_template_1_Template, 0, 0, "ng-template", 13);
+    ɵɵelementStart(0, "div", 15);
+    ɵɵtemplate(1, CmacsCardComponent_div_3_ng_template_1_Template, 0, 0, "ng-template", 14);
     ɵɵtemplate(2, CmacsCardComponent_div_3_ng_container_2_Template, 4, 4, "ng-container", 4);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -29769,16 +29773,16 @@ function CmacsCardComponent_div_3_Template(rf, ctx) { if (rf & 1) {
 } }
 function CmacsCardComponent_ng_container_5_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "span", 16);
+    ɵɵelementStart(1, "span", 17);
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelement(3, "img", 17);
-    ɵɵelementStart(4, "div", 18);
-    ɵɵelementStart(5, "span", 19);
+    ɵɵelement(3, "img", 18);
+    ɵɵelementStart(4, "div", 19);
+    ɵɵelementStart(5, "span", 20);
     ɵɵtext(6);
     ɵɵpipe(7, "titlecase");
     ɵɵelementEnd();
-    ɵɵelementStart(8, "span", 20);
+    ɵɵelementStart(8, "span", 21);
     ɵɵelementStart(9, "span");
     ɵɵtext(10);
     ɵɵelementEnd();
@@ -29787,22 +29791,22 @@ function CmacsCardComponent_ng_container_5_ng_container_1_Template(rf, ctx) { if
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(13, "div", 21);
-    ɵɵelement(14, "i", 22);
+    ɵɵelementStart(13, "div", 22);
+    ɵɵelement(14, "i", 23);
     ɵɵelementEnd();
-    ɵɵelementStart(15, "div", 21);
-    ɵɵelement(16, "i", 23);
+    ɵɵelementStart(15, "div", 22);
+    ɵɵelement(16, "i", 24);
     ɵɵelementEnd();
-    ɵɵelementStart(17, "div", 21);
-    ɵɵelement(18, "i", 24);
+    ɵɵelementStart(17, "div", 22);
+    ɵɵelement(18, "i", 25);
     ɵɵelementEnd();
-    ɵɵelementStart(19, "div", 21);
+    ɵɵelementStart(19, "div", 22);
     ɵɵtext(20);
     ɵɵelementEnd();
-    ɵɵelementStart(21, "div", 21);
+    ɵɵelementStart(21, "div", 22);
     ɵɵtext(22);
     ɵɵelementEnd();
-    ɵɵelementStart(23, "div", 21);
+    ɵɵelementStart(23, "div", 22);
     ɵɵtext(24);
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
@@ -29838,8 +29842,8 @@ function CmacsCardComponent_ng_container_5_ng_container_2_ng_container_3_Templat
     ɵɵtextInterpolate(ctx_r30.todo.UniqueId);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_2_div_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 26);
-    ɵɵelementStart(1, "span", 39);
+    ɵɵelementStart(0, "div", 27);
+    ɵɵelementStart(1, "span", 40);
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -29851,7 +29855,7 @@ function CmacsCardComponent_ng_container_5_ng_container_2_div_4_Template(rf, ctx
     ɵɵtextInterpolate(ctx_r31.todo.date);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_2_div_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 40);
+    ɵɵelementStart(0, "div", 41);
     ɵɵelementStart(1, "span");
     ɵɵtext(2);
     ɵɵelementEnd();
@@ -29862,20 +29866,20 @@ function CmacsCardComponent_ng_container_5_ng_container_2_div_9_Template(rf, ctx
     ɵɵtextInterpolate(ctx_r32.todo.project);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_2_div_11_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 43);
+    ɵɵelementContainer(0, 44);
 } if (rf & 2) {
     const ctx_r39 = ɵɵnextContext(4);
     ɵɵproperty("ngIf", ctx_r39.todoUserAssigned);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_2_div_11_a_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "a");
-    ɵɵelement(1, "i", 44);
+    ɵɵelement(1, "i", 45);
     ɵɵelementEnd();
 } }
 const _c0$10 = function (a0, a1, a2) { return { id: a0, name: a1, logoUrl: a2 }; };
 function CmacsCardComponent_ng_container_5_ng_container_2_div_11_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 41);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_2_div_11_ng_container_1_Template, 1, 1, "ng-container", 42);
+    ɵɵelementStart(0, "div", 42);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_2_div_11_ng_container_1_Template, 1, 1, "ng-container", 43);
     ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_2_div_11_a_2_Template, 2, 0, "a", 4);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -29886,16 +29890,16 @@ function CmacsCardComponent_ng_container_5_ng_container_2_div_11_Template(rf, ct
     ɵɵproperty("ngIf", !ctx_r33.todoUserAssigned);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_2_div_12_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 45);
+    ɵɵelementStart(0, "div", 46);
     ɵɵelementStart(1, "a");
-    ɵɵelement(2, "i", 46);
+    ɵɵelement(2, "i", 47);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } }
 function CmacsCardComponent_ng_container_5_ng_container_2_div_13_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 47);
+    ɵɵelementStart(0, "div", 48);
     ɵɵelementStart(1, "a");
-    ɵɵelement(2, "i", 48);
+    ɵɵelement(2, "i", 49);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -29907,22 +29911,22 @@ function CmacsCardComponent_ng_container_5_ng_container_2_div_13_Template(rf, ct
 } }
 function CmacsCardComponent_ng_container_5_ng_container_2_div_14_Template(rf, ctx) { if (rf & 1) {
     const _r42 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 49);
-    ɵɵelementStart(1, "span", 50);
+    ɵɵelementStart(0, "div", 50);
+    ɵɵelementStart(1, "span", 51);
     ɵɵlistener("click", function CmacsCardComponent_ng_container_5_ng_container_2_div_14_Template_span_click_1_listener($event) { ɵɵrestoreView(_r42); const ctx_r41 = ɵɵnextContext(3); return ctx_r41.goToModuleToDo($event, ctx_r41.todo.link); });
-    ɵɵelement(2, "i", 51);
+    ɵɵelement(2, "i", 52);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } }
 function CmacsCardComponent_ng_container_5_ng_container_2_div_15_Template(rf, ctx) { if (rf & 1) {
     const _r44 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 52);
+    ɵɵelementStart(0, "div", 53);
     ɵɵlistener("tap", function CmacsCardComponent_ng_container_5_ng_container_2_div_15_Template_div_tap_0_listener($event) { ɵɵrestoreView(_r44); const ctx_r43 = ɵɵnextContext(3); return ctx_r43.iconsToDoClick($event, "attachments"); });
     ɵɵelementStart(1, "span");
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementStart(3, "a");
-    ɵɵelement(4, "i", 53);
+    ɵɵelement(4, "i", 54);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -29932,13 +29936,13 @@ function CmacsCardComponent_ng_container_5_ng_container_2_div_15_Template(rf, ct
 } }
 function CmacsCardComponent_ng_container_5_ng_container_2_div_16_Template(rf, ctx) { if (rf & 1) {
     const _r46 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 54);
+    ɵɵelementStart(0, "div", 55);
     ɵɵlistener("tap", function CmacsCardComponent_ng_container_5_ng_container_2_div_16_Template_div_tap_0_listener($event) { ɵɵrestoreView(_r46); const ctx_r45 = ɵɵnextContext(3); return ctx_r45.iconsToDoClick($event, "comments"); });
     ɵɵelementStart(1, "span");
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementStart(3, "a");
-    ɵɵelement(4, "i", 55);
+    ɵɵelement(4, "i", 56);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -29948,26 +29952,26 @@ function CmacsCardComponent_ng_container_5_ng_container_2_div_16_Template(rf, ct
 } }
 function CmacsCardComponent_ng_container_5_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 25);
-    ɵɵelementStart(2, "div", 26);
+    ɵɵelementStart(1, "div", 26);
+    ɵɵelementStart(2, "div", 27);
     ɵɵtemplate(3, CmacsCardComponent_ng_container_5_ng_container_2_ng_container_3_Template, 3, 1, "ng-container", 4);
     ɵɵelementEnd();
-    ɵɵtemplate(4, CmacsCardComponent_ng_container_5_ng_container_2_div_4_Template, 3, 3, "div", 27);
+    ɵɵtemplate(4, CmacsCardComponent_ng_container_5_ng_container_2_div_4_Template, 3, 3, "div", 28);
     ɵɵelementEnd();
-    ɵɵelementStart(5, "div", 28);
-    ɵɵelementStart(6, "div", 29);
-    ɵɵelementStart(7, "span", 30);
+    ɵɵelementStart(5, "div", 29);
+    ɵɵelementStart(6, "div", 30);
+    ɵɵelementStart(7, "span", 31);
     ɵɵtext(8);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_2_div_9_Template, 3, 1, "div", 31);
-    ɵɵelementStart(10, "div", 32);
-    ɵɵtemplate(11, CmacsCardComponent_ng_container_5_ng_container_2_div_11_Template, 3, 7, "div", 33);
-    ɵɵtemplate(12, CmacsCardComponent_ng_container_5_ng_container_2_div_12_Template, 3, 0, "div", 34);
-    ɵɵtemplate(13, CmacsCardComponent_ng_container_5_ng_container_2_div_13_Template, 3, 3, "div", 35);
-    ɵɵtemplate(14, CmacsCardComponent_ng_container_5_ng_container_2_div_14_Template, 3, 0, "div", 36);
-    ɵɵtemplate(15, CmacsCardComponent_ng_container_5_ng_container_2_div_15_Template, 5, 1, "div", 37);
-    ɵɵtemplate(16, CmacsCardComponent_ng_container_5_ng_container_2_div_16_Template, 5, 1, "div", 38);
+    ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_2_div_9_Template, 3, 1, "div", 32);
+    ɵɵelementStart(10, "div", 33);
+    ɵɵtemplate(11, CmacsCardComponent_ng_container_5_ng_container_2_div_11_Template, 3, 7, "div", 34);
+    ɵɵtemplate(12, CmacsCardComponent_ng_container_5_ng_container_2_div_12_Template, 3, 0, "div", 35);
+    ɵɵtemplate(13, CmacsCardComponent_ng_container_5_ng_container_2_div_13_Template, 3, 3, "div", 36);
+    ɵɵtemplate(14, CmacsCardComponent_ng_container_5_ng_container_2_div_14_Template, 3, 0, "div", 37);
+    ɵɵtemplate(15, CmacsCardComponent_ng_container_5_ng_container_2_div_15_Template, 5, 1, "div", 38);
+    ɵɵtemplate(16, CmacsCardComponent_ng_container_5_ng_container_2_div_16_Template, 5, 1, "div", 39);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
@@ -29999,12 +30003,12 @@ function CmacsCardComponent_ng_container_5_ng_container_2_Template(rf, ctx) { if
 } }
 function CmacsCardComponent_ng_container_5_ng_container_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 63);
+    ɵɵelementStart(1, "div", 64);
     ɵɵelementStart(2, "a");
     ɵɵelement(3, "i");
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 64);
+    ɵɵelementStart(4, "div", 65);
     ɵɵelementStart(5, "span");
     ɵɵtext(6);
     ɵɵelementEnd();
@@ -30020,7 +30024,7 @@ function CmacsCardComponent_ng_container_5_ng_container_3_ng_container_2_Templat
 function CmacsCardComponent_ng_container_5_ng_container_3_ng_container_3_ng_template_1_Template(rf, ctx) { }
 function CmacsCardComponent_ng_container_5_ng_container_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_3_ng_container_3_ng_template_1_Template, 0, 0, "ng-template", 13);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_3_ng_container_3_ng_template_1_Template, 0, 0, "ng-template", 14);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     ɵɵnextContext(3);
@@ -30038,8 +30042,8 @@ function CmacsCardComponent_ng_container_5_ng_container_3_div_13_ng_container_1_
     ɵɵtextInterpolate(ctx_r51.extra);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_3_div_13_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 65);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_3_div_13_ng_container_1_Template, 2, 1, "ng-container", 11);
+    ɵɵelementStart(0, "div", 66);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_3_div_13_ng_container_1_Template, 2, 1, "ng-container", 10);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r49 = ɵɵnextContext(3);
@@ -30048,25 +30052,25 @@ function CmacsCardComponent_ng_container_5_ng_container_3_div_13_Template(rf, ct
 } }
 function CmacsCardComponent_ng_container_5_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 56);
+    ɵɵelementStart(1, "div", 57);
     ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_3_ng_container_2_Template, 7, 4, "ng-container", 4);
     ɵɵtemplate(3, CmacsCardComponent_ng_container_5_ng_container_3_ng_container_3_Template, 2, 1, "ng-container", 4);
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 57);
-    ɵɵelementStart(5, "div", 58);
-    ɵɵelementStart(6, "div", 59);
+    ɵɵelementStart(4, "div", 58);
+    ɵɵelementStart(5, "div", 59);
+    ɵɵelementStart(6, "div", 60);
     ɵɵelementStart(7, "span");
     ɵɵtext(8);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(9, "div", 60);
+    ɵɵelementStart(9, "div", 61);
     ɵɵelementStart(10, "span");
     ɵɵtext(11);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(12, "div", 61);
-    ɵɵtemplate(13, CmacsCardComponent_ng_container_5_ng_container_3_div_13_Template, 2, 1, "div", 62);
+    ɵɵelementStart(12, "div", 62);
+    ɵɵtemplate(13, CmacsCardComponent_ng_container_5_ng_container_3_div_13_Template, 2, 1, "div", 63);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
@@ -30088,13 +30092,13 @@ function CmacsCardComponent_ng_container_5_ng_container_3_Template(rf, ctx) { if
 function CmacsCardComponent_ng_container_5_ng_container_4_Template(rf, ctx) { if (rf & 1) {
     const _r53 = ɵɵgetCurrentView();
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 66);
-    ɵɵelementStart(2, "cmacs-video-player", 67);
+    ɵɵelementStart(1, "div", 67);
+    ɵɵelementStart(2, "cmacs-video-player", 68);
     ɵɵlistener("playerReady", function CmacsCardComponent_ng_container_5_ng_container_4_Template_cmacs_video_player_playerReady_2_listener($event) { ɵɵrestoreView(_r53); const ctx_r52 = ɵɵnextContext(2); return ctx_r52.onPlayerReady($event); });
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(3, "div", 68);
-    ɵɵelementStart(4, "div", 69);
+    ɵɵelementStart(3, "div", 69);
+    ɵɵelementStart(4, "div", 70);
     ɵɵelementStart(5, "span");
     ɵɵtext(6);
     ɵɵelementEnd();
@@ -30120,8 +30124,8 @@ function CmacsCardComponent_ng_container_5_ng_container_5_div_7_ng_container_1_T
     ɵɵtextInterpolate(ctx_r55.extra);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_5_div_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 73);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_5_div_7_ng_container_1_Template, 2, 1, "ng-container", 11);
+    ɵɵelementStart(0, "div", 74);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_5_div_7_ng_container_1_Template, 2, 1, "ng-container", 10);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r54 = ɵɵnextContext(3);
@@ -30130,17 +30134,17 @@ function CmacsCardComponent_ng_container_5_ng_container_5_div_7_Template(rf, ctx
 } }
 function CmacsCardComponent_ng_container_5_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 70);
+    ɵɵelementStart(1, "div", 71);
     ɵɵelementStart(2, "a");
     ɵɵelement(3, "i");
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 71);
+    ɵɵelementStart(4, "div", 72);
     ɵɵelementStart(5, "span");
     ɵɵtext(6);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵtemplate(7, CmacsCardComponent_ng_container_5_ng_container_5_div_7_Template, 2, 1, "div", 72);
+    ɵɵtemplate(7, CmacsCardComponent_ng_container_5_ng_container_5_div_7_Template, 2, 1, "div", 73);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r23 = ɵɵnextContext(2);
@@ -30155,12 +30159,12 @@ function CmacsCardComponent_ng_container_5_ng_container_5_Template(rf, ctx) { if
 } }
 function CmacsCardComponent_ng_container_5_ng_container_6_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 74);
-    ɵɵelementStart(2, "a", 75);
-    ɵɵelement(3, "i", 76);
+    ɵɵelementStart(1, "div", 75);
+    ɵɵelementStart(2, "a", 76);
+    ɵɵelement(3, "i", 77);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 77);
+    ɵɵelementStart(4, "div", 78);
     ɵɵelementStart(5, "span");
     ɵɵtext(6);
     ɵɵelementEnd();
@@ -30174,7 +30178,7 @@ function CmacsCardComponent_ng_container_5_ng_container_6_Template(rf, ctx) { if
 function CmacsCardComponent_ng_container_5_ng_container_7_ng_template_1_Template(rf, ctx) { }
 function CmacsCardComponent_ng_container_5_ng_container_7_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_7_ng_template_1_Template, 0, 0, "ng-template", 13);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_7_ng_template_1_Template, 0, 0, "ng-template", 14);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     ɵɵnextContext(2);
@@ -30185,7 +30189,7 @@ function CmacsCardComponent_ng_container_5_ng_container_7_Template(rf, ctx) { if
 function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_1_ng_template_1_Template(rf, ctx) { }
 function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_1_ng_template_1_Template, 0, 0, "ng-template", 13);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_1_ng_template_1_Template, 0, 0, "ng-template", 14);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     ɵɵnextContext(3);
@@ -30195,7 +30199,7 @@ function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_1_Templat
 } }
 function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_img_1_Template(rf, ctx) { if (rf & 1) {
     const _r68 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "img", 83);
+    ɵɵelementStart(0, "img", 84);
     ɵɵlistener("error", function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_img_1_Template_img_error_0_listener() { ɵɵrestoreView(_r68); const person_r62 = ɵɵnextContext().$implicit; const ctx_r66 = ɵɵnextContext(4); return ctx_r66.onError(person_r62); });
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -30214,8 +30218,8 @@ function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_s
     ɵɵtextInterpolate(ctx_r65.getInitials(person_r62.name));
 } }
 function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 81);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_img_1_Template, 1, 2, "img", 82);
+    ɵɵelementStart(0, "div", 82);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_img_1_Template, 1, 2, "img", 83);
     ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_span_2_Template, 2, 1, "span", 4);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -30229,7 +30233,7 @@ function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_T
     ɵɵproperty("ngIf", !person_r62.image || person_r62.pictureError);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 84);
+    ɵɵelementStart(0, "div", 85);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -30239,10 +30243,10 @@ function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_3_T
 } }
 function CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 78);
-    ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_Template, 3, 8, "div", 79);
+    ɵɵelementStart(1, "div", 79);
+    ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_2_Template, 3, 8, "div", 80);
     ɵɵelementEnd();
-    ɵɵtemplate(3, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_3_Template, 2, 1, "div", 80);
+    ɵɵtemplate(3, CmacsCardComponent_ng_container_5_ng_container_8_ng_container_2_div_3_Template, 2, 1, "div", 81);
     ɵɵprojection(4, 1);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
@@ -30266,7 +30270,7 @@ function CmacsCardComponent_ng_container_5_ng_container_8_Template(rf, ctx) { if
 } }
 function CmacsCardComponent_ng_container_5_ng_container_9_img_3_Template(rf, ctx) { if (rf & 1) {
     const _r76 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "img", 104);
+    ɵɵelementStart(0, "img", 105);
     ɵɵlistener("error", function CmacsCardComponent_ng_container_5_ng_container_9_img_3_Template_img_error_0_listener() { ɵɵrestoreView(_r76); const ctx_r75 = ɵɵnextContext(3); return ctx_r75.onError(ctx_r75.project); });
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -30275,7 +30279,7 @@ function CmacsCardComponent_ng_container_5_ng_container_9_img_3_Template(rf, ctx
     ɵɵpropertyInterpolate("alt", ctx_r71.project.name);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_9_img_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "img", 105);
+    ɵɵelement(0, "img", 106);
 } if (rf & 2) {
     const ctx_r72 = ɵɵnextContext(3);
     ɵɵpropertyInterpolate("src", ctx_r72.defaultImage, ɵɵsanitizeUrl);
@@ -30283,7 +30287,7 @@ function CmacsCardComponent_ng_container_5_ng_container_9_img_4_Template(rf, ctx
 } }
 function CmacsCardComponent_ng_container_5_ng_container_9_img_19_Template(rf, ctx) { if (rf & 1) {
     const _r78 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "img", 106);
+    ɵɵelementStart(0, "img", 107);
     ɵɵlistener("error", function CmacsCardComponent_ng_container_5_ng_container_9_img_19_Template_img_error_0_listener() { ɵɵrestoreView(_r78); const ctx_r77 = ɵɵnextContext(3); return ctx_r77.onError(ctx_r77.project.teamLead); });
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -30292,7 +30296,7 @@ function CmacsCardComponent_ng_container_5_ng_container_9_img_19_Template(rf, ct
     ɵɵproperty("src", ctx_r73.project.teamLead.avatar, ɵɵsanitizeUrl);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_9_span_20_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "span", 107);
+    ɵɵelementStart(0, "span", 108);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -30303,42 +30307,42 @@ function CmacsCardComponent_ng_container_5_ng_container_9_span_20_Template(rf, c
 function CmacsCardComponent_ng_container_5_ng_container_9_Template(rf, ctx) { if (rf & 1) {
     const _r80 = ɵɵgetCurrentView();
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 85);
-    ɵɵelementStart(2, "div", 86);
-    ɵɵtemplate(3, CmacsCardComponent_ng_container_5_ng_container_9_img_3_Template, 1, 2, "img", 87);
-    ɵɵtemplate(4, CmacsCardComponent_ng_container_5_ng_container_9_img_4_Template, 1, 2, "img", 88);
+    ɵɵelementStart(1, "div", 86);
+    ɵɵelementStart(2, "div", 87);
+    ɵɵtemplate(3, CmacsCardComponent_ng_container_5_ng_container_9_img_3_Template, 1, 2, "img", 88);
+    ɵɵtemplate(4, CmacsCardComponent_ng_container_5_ng_container_9_img_4_Template, 1, 2, "img", 89);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(5, "cmacs-tag", 89);
+    ɵɵelementStart(5, "cmacs-tag", 90);
     ɵɵtext(6);
     ɵɵelementEnd();
-    ɵɵelementStart(7, "div", 90);
-    ɵɵelementStart(8, "span", 91);
+    ɵɵelementStart(7, "div", 91);
+    ɵɵelementStart(8, "span", 92);
     ɵɵtext(9);
     ɵɵelementEnd();
-    ɵɵelementStart(10, "span", 92);
+    ɵɵelementStart(10, "span", 93);
     ɵɵtext(11);
     ɵɵelementEnd();
-    ɵɵelementStart(12, "a", 75);
-    ɵɵelement(13, "i", 93);
+    ɵɵelementStart(12, "a", 76);
+    ɵɵelement(13, "i", 94);
     ɵɵelementEnd();
-    ɵɵelementStart(14, "span", 92);
+    ɵɵelementStart(14, "span", 93);
     ɵɵtext(15);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(16, "div", 94);
-    ɵɵelement(17, "div", 95);
+    ɵɵelementStart(16, "div", 95);
+    ɵɵelement(17, "div", 96);
     ɵɵelementEnd();
-    ɵɵelementStart(18, "div", 96);
-    ɵɵtemplate(19, CmacsCardComponent_ng_container_5_ng_container_9_img_19_Template, 1, 2, "img", 97);
-    ɵɵtemplate(20, CmacsCardComponent_ng_container_5_ng_container_9_span_20_Template, 2, 1, "span", 98);
-    ɵɵelementStart(21, "div", 99);
-    ɵɵelement(22, "div", 100);
-    ɵɵelement(23, "div", 101);
+    ɵɵelementStart(18, "div", 97);
+    ɵɵtemplate(19, CmacsCardComponent_ng_container_5_ng_container_9_img_19_Template, 1, 2, "img", 98);
+    ɵɵtemplate(20, CmacsCardComponent_ng_container_5_ng_container_9_span_20_Template, 2, 1, "span", 99);
+    ɵɵelementStart(21, "div", 100);
+    ɵɵelement(22, "div", 101);
+    ɵɵelement(23, "div", 102);
     ɵɵelementEnd();
-    ɵɵelementStart(24, "a", 102);
+    ɵɵelementStart(24, "a", 103);
     ɵɵlistener("click", function CmacsCardComponent_ng_container_5_ng_container_9_Template_a_click_24_listener($event) { ɵɵrestoreView(_r80); const ctx_r79 = ɵɵnextContext(2); return ctx_r79.openMail($event); });
-    ɵɵelement(25, "i", 103);
+    ɵɵelement(25, "i", 104);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
@@ -30372,7 +30376,7 @@ function CmacsCardComponent_ng_container_5_ng_container_9_Template(rf, ctx) { if
 function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_1_ng_template_1_Template(rf, ctx) { }
 function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_1_ng_template_1_Template, 0, 0, "ng-template", 13);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_1_ng_template_1_Template, 0, 0, "ng-template", 14);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     ɵɵnextContext(3);
@@ -30390,8 +30394,8 @@ function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_
     ɵɵtextInterpolate(ctx_r87.extra);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 114);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_ng_container_1_Template, 2, 1, "ng-container", 11);
+    ɵɵelementStart(0, "div", 115);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_ng_container_1_Template, 2, 1, "ng-container", 10);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r86 = ɵɵnextContext(4);
@@ -30401,19 +30405,19 @@ function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_
 function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     const _r89 = ɵɵgetCurrentView();
     ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 108);
-    ɵɵelementStart(2, "a", 75);
+    ɵɵelementStart(1, "div", 109);
+    ɵɵelementStart(2, "a", 76);
     ɵɵelement(3, "i");
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 109, 110);
+    ɵɵelementStart(4, "div", 110, 111);
     ɵɵlistener("click", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_div_click_4_listener() { ɵɵrestoreView(_r89); const _r84 = ɵɵreference(5); const ctx_r88 = ɵɵnextContext(3); return ctx_r88.toggleEdit(_r84); });
-    ɵɵelementStart(6, "span", 111, 112);
+    ɵɵelementStart(6, "span", 112, 113);
     ɵɵlistener("keydown.enter", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_span_keydown_enter_6_listener($event) { ɵɵrestoreView(_r89); const _r84 = ɵɵreference(5); const _r85 = ɵɵreference(7); const ctx_r90 = ɵɵnextContext(3); return ctx_r90.handleEnter($event, _r84, _r85); })("keyup", function CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_Template_span_keyup_6_listener($event) { ɵɵrestoreView(_r89); const _r85 = ɵɵreference(7); const ctx_r91 = ɵɵnextContext(3); return ctx_r91.handleEdit($event, _r85); });
     ɵɵtext(8);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_Template, 2, 1, "div", 113);
+    ɵɵtemplate(9, CmacsCardComponent_ng_container_5_ng_container_10_ng_container_2_div_9_Template, 2, 1, "div", 114);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r82 = ɵɵnextContext(3);
@@ -30441,8 +30445,8 @@ function CmacsCardComponent_ng_container_5_ng_container_10_Template(rf, ctx) { i
     ɵɵproperty("ngIf", !ctx_r28.useDefaultContent);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 121);
-    ɵɵelementStart(1, "a", 122);
+    ɵɵelementStart(0, "div", 122);
+    ɵɵelementStart(1, "a", 123);
     ɵɵelement(2, "i");
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -30452,8 +30456,8 @@ function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_1_
     ɵɵclassMap(ctx_r93.newIcon);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 123);
-    ɵɵelement(1, "img", 124);
+    ɵɵelementStart(0, "div", 124);
+    ɵɵelement(1, "img", 125);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r94 = ɵɵnextContext(4);
@@ -30462,7 +30466,7 @@ function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_2_
 } }
 function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_span_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "span");
-    ɵɵelementStart(1, "cmacs-tag", 127);
+    ɵɵelementStart(1, "cmacs-tag", 128);
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -30472,7 +30476,7 @@ function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_
     ɵɵtextInterpolate(tag_r98);
 } }
 function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_cmacs_tag_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "cmacs-tag", 127);
+    ɵɵelementStart(0, "cmacs-tag", 128);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -30482,8 +30486,8 @@ function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_
 } }
 function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div");
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_span_1_Template, 3, 1, "span", 125);
-    ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_cmacs_tag_2_Template, 2, 1, "cmacs-tag", 126);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_span_1_Template, 3, 1, "span", 126);
+    ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_cmacs_tag_2_Template, 2, 1, "cmacs-tag", 127);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r95 = ɵɵnextContext(4);
@@ -30494,13 +30498,13 @@ function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_
 } }
 function CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_1_Template, 3, 2, "div", 115);
-    ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_2_Template, 2, 1, "div", 116);
-    ɵɵelementStart(3, "div", 117);
-    ɵɵelementStart(4, "div", 118);
-    ɵɵelement(5, "img", 119);
+    ɵɵtemplate(1, CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_1_Template, 3, 2, "div", 116);
+    ɵɵtemplate(2, CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_2_Template, 2, 1, "div", 117);
+    ɵɵelementStart(3, "div", 118);
+    ɵɵelementStart(4, "div", 119);
+    ɵɵelement(5, "img", 120);
     ɵɵelementEnd();
-    ɵɵelementStart(6, "div", 120);
+    ɵɵelementStart(6, "div", 121);
     ɵɵtext(7);
     ɵɵelementEnd();
     ɵɵtemplate(8, CmacsCardComponent_ng_container_5_ng_container_11_ng_container_1_div_8_Template, 3, 2, "div", 4);
@@ -30574,7 +30578,7 @@ function CmacsCardComponent_ul_7_li_1_ng_template_2_Template(rf, ctx) { }
 function CmacsCardComponent_ul_7_li_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "li");
     ɵɵelementStart(1, "span");
-    ɵɵtemplate(2, CmacsCardComponent_ul_7_li_1_ng_template_2_Template, 0, 0, "ng-template", 13);
+    ɵɵtemplate(2, CmacsCardComponent_ul_7_li_1_ng_template_2_Template, 0, 0, "ng-template", 14);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -30585,8 +30589,8 @@ function CmacsCardComponent_ul_7_li_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵproperty("ngTemplateOutlet", action_r100);
 } }
 function CmacsCardComponent_ul_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "ul", 128);
-    ɵɵtemplate(1, CmacsCardComponent_ul_7_li_1_Template, 3, 3, "li", 129);
+    ɵɵelementStart(0, "ul", 129);
+    ɵɵtemplate(1, CmacsCardComponent_ul_7_li_1_Template, 3, 3, "li", 130);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r6 = ɵɵnextContext();
@@ -30787,10 +30791,10 @@ CmacsCardComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCardComponent, selec
         ɵɵlistener("tap", function CmacsCardComponent_tap_HostBindingHandler($event) { return ctx.onClick($event); })("doubletap", function CmacsCardComponent_doubletap_HostBindingHandler($event) { return ctx.onDblClick($event); });
     } if (rf & 2) {
         ɵɵclassProp("ant-card-loading", ctx.loading)("ant-card-bordered", ctx.bordered)("ant-card-hoverable", ctx.hoverable || ctx.cmacsType === "selection")("ant-card-type-inner", ctx.type === "inner")("ant-card-contain-tabs", !!ctx.tab)("cmacs-card-files-wrapper", ctx.cmacsType === "file")("cmacs-card-measure-wrapper", ctx.cmacsType === "measure")("cmacs-card-measure-wrapper-selected", ctx.cmacsType === "measure" && ctx.selected)("cmacs-selection-card", ctx.cmacsType === "selection")("cmacs-card-selected", ctx.cmacsType === "selection" && ctx.selected)("cmacs-card-disabled", ctx.cmacsType === "selection" && ctx.disabled)("cmacs-action-card", ctx.cmacsType === "action")("cmacs-weather-card", ctx.cmacsType === "weather")("cmacs-big-file-card", ctx.cmacsType === "big-file")("cmacs-big-file-card-selected", ctx.cmacsType === "big-file" && ctx.selected)("cmacs-action-card-disabled", ctx.cmacsType === "action" && ctx.disabled)("cmacs-information-card", ctx.cmacsType === "team")("cmacs-team-card", ctx.cmacsType === "project")("cmacs-video-player-card", ctx.cmacsType === "video")("cmacs-todo-card", ctx.cmacsType === "todo")("cmacs-todo-card-selected", ctx.cmacsType === "todo" && ctx.selected)("cmacs-team-card-selected", ctx.cmacsType === "project" && ctx.selected)("cmacs-card-files-folders-wrapper", ctx.cmacsType === "folder")("file-card-selected", ctx.cmacsType === "folder" && ctx.selected)("cmacs-template-card", ctx.cmacsType === "template" && ctx.template.NewTemplate)("cmacs-template-card-dark", ctx.cmacsType === "template" && !ctx.template.NewTemplate);
-    } }, inputs: { bordered: "bordered", opened: "opened", editable: "editable", isRadio: "isRadio", loading: "loading", disabled: "disabled", hoverable: "hoverable", useDefaultContent: "useDefaultContent", sources: "sources", bodyStyle: "bodyStyle", cover: "cover", body: "body", actions: "actions", team: "team", file: "file", project: "project", template: "template", projectDateLabel: "projectDateLabel", todo: "todo", weather: "weather", celcius: "celcius", type: "type", cmacsType: "cmacsType", cmacsIcon: "cmacsIcon", cmacsIconOpenedFolder: "cmacsIconOpenedFolder", cmacsIconClosedFolder: "cmacsIconClosedFolder", title: "title", labelTitle: "labelTitle", extra: "extra", selected: "selected", value: "value", todoUserAssigned: "todoUserAssigned" }, outputs: { playerReady: "playerReady", titleChange: "titleChange", ondlclickCard: "ondlclickCard", open: "open", close: "close", selectedChange: "selectedChange", goToModule: "goToModule", iconToDoClick: "iconToDoClick" }, exportAs: ["cmacsCard"], ngContentSelectors: _c2$e, decls: 8, vars: 6, consts: [["content", ""], ["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], ["cmacs-radio", "", 3, "ngModel", "disabled", "ngModelChange"], [1, "cmacs-weather-card-temp"], [1, "cmacs-weather-card-cloud-img", 3, "src", "alt"], [1, "cmacs-weather-card-description-wrapper"], [1, "cmacs-weather-card-description"], [1, "cmacs-weather-card-temp-min-max"], [1, "cmacs-weather-col-1-3"], [1, "iconUILarge-Rain"], [1, "iconUILarge-Humidity"], [1, "iconUILarge-Wind"], ["nz-row", "", 1, "todo-card-header"], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "12", 4, "ngIf"], [1, "todo-card-content"], [1, "cmacs-todo-card-title"], ["placement", "bottom", "cmacs-tooltip", "", 3, "title"], ["class", "cmacs-todo-card-project", 4, "ngIf"], ["nz-row", "", 1, "cmacs-todo-card-action"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-person", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-team", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-priority", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-association", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-attachments", 3, "tap", 4, "ngIf"], ["nz-col", "", "nzSpan", "4", "class", "cmacs-todo-card-comments", 3, "tap", 4, "ngIf"], [1, "cmacs-todo-card-date"], [1, "cmacs-todo-card-project"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-person"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngIf"], [1, "iconCreation-User"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-team"], [1, "iconUILarge-Team"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-priority"], ["nz-icon", "", 3, "nzType"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-association"], [3, "click"], [1, "iconUILarge-Link"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-attachments", 3, "tap"], [1, "iconUILarge-Attached"], ["nz-col", "", "nzSpan", "4", 1, "cmacs-todo-card-comments", 3, "tap"], [1, "iconUILarge-Comments"], [1, "cmacs-card-big-file-meta"], [1, "cmacs-card-big-file-description"], [1, "cmacs-card-big-file-description-left-panel"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-big-file-title", 3, "title"], [1, "cmacs-card-big-file-date"], [1, "cmacs-card-big-file-description-right-panel"], ["class", "cmacs-card-big-file-extra", 4, "ngIf"], [1, "cmacs-card-big-file-icon-wrapper"], [1, "cmacs-card-big-file-extension-wrapper"], [1, "cmacs-card-big-file-extra"], [1, "cmacs-card-video-player-wrapper"], [3, "sources", "playerReady"], [1, "cmacs-card-video-description"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-video-title", 3, "title"], [1, "cmacs-card-files-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-label-recent", 3, "title"], ["class", "cmacs-card-file-extra", 4, "ngIf"], [1, "cmacs-card-file-extra"], [1, "cmacs-card-measure-icon-wrapper"], [1, "iconspan"], [1, "iconUILarge-Ruler"], [1, "cmacs-card-label-measure"], [2, "margin-bottom", "20px", "min-height", "25px", "display", "inline-flex"], ["class", "team-person-card", 3, "backgroundColor", "padding", "display", 4, "ngFor", "ngForOf"], ["class", "plus-team-card", 4, "ngIf"], [1, "team-person-card"], ["width", "30px", "height", "30px", 3, "src", "alt", "error", 4, "ngIf"], ["width", "30px", "height", "30px", 3, "src", "alt", "error"], [1, "plus-team-card"], [1, "projectimagecontainer"], [1, "project-image"], [3, "src", "alt", "error", 4, "ngIf"], [3, "src", "alt", 4, "ngIf"], [1, "project-status", 3, "cmacsGridType"], [1, "project-dates-wrapper"], [1, "project-dates-title"], [1, "project-dates", "project-dates-date"], [1, "iconArrowLarge-Arrow-Right", "project-dates"], [1, "project-card-progress-bar"], [1, "project-card-progress-bar-inner"], [1, "project-manager-details"], ["class", "manager-avatar", "width", "30px", "height", "30px", 3, "alt", "src", "error", 4, "ngIf"], ["class", "cmacs-proj-avatar-text", 4, "ngIf"], [1, "project-manager-metadata"], [1, "manager-name", 3, "innerHtml"], [1, "manager-charge", 3, "innerHtml"], [1, "iconspan", "project-email-icon", 3, "click"], [1, "iconUILarge-Message"], [3, "src", "alt", "error"], [3, "src", "alt"], ["width", "30px", "height", "30px", 1, "manager-avatar", 3, "alt", "src", "error"], [1, "cmacs-proj-avatar-text"], [1, "card-files-folders-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "card-files-folders-label", 3, "title", "click"], ["titleContainer", ""], [3, "keydown.enter", "keyup"], ["name", ""], ["class", "card-files-folder-extra iconspan", 4, "ngIf"], [1, "card-files-folder-extra", "iconspan"], ["class", "card-new-icon-wrapper", 4, "ngIf"], ["class", "card-image-wrapper", 4, "ngIf"], [1, "template-card-content"], [1, "template-logo"], [3, "src"], [1, "template-card-content-title"], [1, "card-new-icon-wrapper"], [1, "iconspan-new-icon"], [1, "card-image-wrapper"], [1, "image", 3, "src"], [4, "ngFor", "ngForOf"], ["class", "template-tag", 4, "ngIf"], [1, "template-tag"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function CmacsCardComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { bordered: "bordered", opened: "opened", editable: "editable", isRadio: "isRadio", loading: "loading", disabled: "disabled", hoverable: "hoverable", useDefaultContent: "useDefaultContent", sources: "sources", bodyStyle: "bodyStyle", cover: "cover", body: "body", actions: "actions", team: "team", file: "file", project: "project", template: "template", projectDateLabel: "projectDateLabel", todo: "todo", weather: "weather", celcius: "celcius", type: "type", cmacsType: "cmacsType", cmacsIcon: "cmacsIcon", cmacsIconOpenedFolder: "cmacsIconOpenedFolder", cmacsIconClosedFolder: "cmacsIconClosedFolder", title: "title", labelTitle: "labelTitle", extra: "extra", selected: "selected", value: "value", todoUserAssigned: "todoUserAssigned" }, outputs: { playerReady: "playerReady", titleChange: "titleChange", ondlclickCard: "ondlclickCard", open: "open", close: "close", selectedChange: "selectedChange", goToModule: "goToModule", iconToDoClick: "iconToDoClick" }, exportAs: ["cmacsCard"], ngContentSelectors: _c2$e, decls: 8, vars: 6, consts: [["content", ""], ["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [1, "cmacs-card-title"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], ["cmacs-radio", "", 3, "ngModel", "disabled", "ngModelChange"], [1, "cmacs-weather-card-temp"], [1, "cmacs-weather-card-cloud-img", 3, "src", "alt"], [1, "cmacs-weather-card-description-wrapper"], [1, "cmacs-weather-card-description"], [1, "cmacs-weather-card-temp-min-max"], [1, "cmacs-weather-col-1-3"], [1, "iconUILarge-Rain"], [1, "iconUILarge-Humidity"], [1, "iconUILarge-Wind"], ["nz-row", "", 1, "todo-card-header"], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "12", 4, "ngIf"], [1, "todo-card-content"], [1, "cmacs-todo-card-title"], ["placement", "bottom", "cmacs-tooltip", "", 3, "title"], ["class", "cmacs-todo-card-project", 4, "ngIf"], ["nz-row", "", 1, "cmacs-todo-card-action"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-person", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-team", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-priority", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-association", 4, "ngIf"], ["nz-col", "", "nzSpan", "5", "class", "cmacs-todo-card-attachments", 3, "tap", 4, "ngIf"], ["nz-col", "", "nzSpan", "4", "class", "cmacs-todo-card-comments", 3, "tap", 4, "ngIf"], [1, "cmacs-todo-card-date"], [1, "cmacs-todo-card-project"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-person"], [3, "ngIf", 4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngIf"], [1, "iconCreation-User"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-team"], [1, "iconUILarge-Team"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-priority"], ["nz-icon", "", 3, "nzType"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-association"], [3, "click"], [1, "iconUILarge-Link"], ["nz-col", "", "nzSpan", "5", 1, "cmacs-todo-card-attachments", 3, "tap"], [1, "iconUILarge-Attached"], ["nz-col", "", "nzSpan", "4", 1, "cmacs-todo-card-comments", 3, "tap"], [1, "iconUILarge-Comments"], [1, "cmacs-card-big-file-meta"], [1, "cmacs-card-big-file-description"], [1, "cmacs-card-big-file-description-left-panel"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-big-file-title", 3, "title"], [1, "cmacs-card-big-file-date"], [1, "cmacs-card-big-file-description-right-panel"], ["class", "cmacs-card-big-file-extra", 4, "ngIf"], [1, "cmacs-card-big-file-icon-wrapper"], [1, "cmacs-card-big-file-extension-wrapper"], [1, "cmacs-card-big-file-extra"], [1, "cmacs-card-video-player-wrapper"], [3, "sources", "playerReady"], [1, "cmacs-card-video-description"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-video-title", 3, "title"], [1, "cmacs-card-files-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "cmacs-card-label-recent", 3, "title"], ["class", "cmacs-card-file-extra", 4, "ngIf"], [1, "cmacs-card-file-extra"], [1, "cmacs-card-measure-icon-wrapper"], [1, "iconspan"], [1, "iconUILarge-Ruler"], [1, "cmacs-card-label-measure"], [2, "margin-bottom", "20px", "min-height", "25px", "display", "inline-flex"], ["class", "team-person-card", 3, "backgroundColor", "padding", "display", 4, "ngFor", "ngForOf"], ["class", "plus-team-card", 4, "ngIf"], [1, "team-person-card"], ["width", "30px", "height", "30px", 3, "src", "alt", "error", 4, "ngIf"], ["width", "30px", "height", "30px", 3, "src", "alt", "error"], [1, "plus-team-card"], [1, "projectimagecontainer"], [1, "project-image"], [3, "src", "alt", "error", 4, "ngIf"], [3, "src", "alt", 4, "ngIf"], [1, "project-status", 3, "cmacsGridType"], [1, "project-dates-wrapper"], [1, "project-dates-title"], [1, "project-dates", "project-dates-date"], [1, "iconArrowLarge-Arrow-Right", "project-dates"], [1, "project-card-progress-bar"], [1, "project-card-progress-bar-inner"], [1, "project-manager-details"], ["class", "manager-avatar", "width", "30px", "height", "30px", 3, "alt", "src", "error", 4, "ngIf"], ["class", "cmacs-proj-avatar-text", 4, "ngIf"], [1, "project-manager-metadata"], [1, "manager-name", 3, "innerHtml"], [1, "manager-charge", 3, "innerHtml"], [1, "iconspan", "project-email-icon", 3, "click"], [1, "iconUILarge-Message"], [3, "src", "alt", "error"], [3, "src", "alt"], ["width", "30px", "height", "30px", 1, "manager-avatar", 3, "alt", "src", "error"], [1, "cmacs-proj-avatar-text"], [1, "card-files-folders-icon-wrapper"], ["placement", "bottom", "cmacs-tooltip", "", 1, "card-files-folders-label", 3, "title", "click"], ["titleContainer", ""], [3, "keydown.enter", "keyup"], ["name", ""], ["class", "card-files-folder-extra iconspan", 4, "ngIf"], [1, "card-files-folder-extra", "iconspan"], ["class", "card-new-icon-wrapper", 4, "ngIf"], ["class", "card-image-wrapper", 4, "ngIf"], [1, "template-card-content"], [1, "template-logo"], [3, "src"], [1, "template-card-content-title"], [1, "card-new-icon-wrapper"], [1, "iconspan-new-icon"], [1, "card-image-wrapper"], [1, "image", 3, "src"], [4, "ngFor", "ngForOf"], ["class", "template-tag", 4, "ngIf"], [1, "template-tag"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function CmacsCardComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef(_c1$p);
         ɵɵtemplate(0, CmacsCardComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, ɵɵtemplateRefExtractor);
-        ɵɵtemplate(2, CmacsCardComponent_div_2_Template, 5, 3, "div", 1);
+        ɵɵtemplate(2, CmacsCardComponent_div_2_Template, 4, 2, "div", 1);
         ɵɵtemplate(3, CmacsCardComponent_div_3_Template, 3, 2, "div", 2);
         ɵɵelementStart(4, "div", 3);
         ɵɵtemplate(5, CmacsCardComponent_ng_container_5_Template, 12, 11, "ng-container", 4);
@@ -30810,7 +30814,7 @@ CmacsCardComponent.ɵcmp = ɵɵdefineComponent({ type: CmacsCardComponent, selec
         ɵɵproperty("ngIf", ctx.loading);
         ɵɵadvance(1);
         ɵɵproperty("ngIf", ctx.actions.length);
-    } }, directives: [NgIf, NgStyle, NzStringTemplateOutletDirective, NgTemplateOutlet, CmacsRadioComponent, NgControlStatus, NgModel, NzRowDirective, NzColDirective, CmacsTooltipDirective, ɵNzTransitionPatchDirective, NzIconDirective, CmacsVideoPlayerComponent, NgForOf, CmacsTagComponent, CmacsCardLoadingComponent], pipes: [TitleCasePipe], styles: [".cmacs-weather-card{width:318px;height:218px;border-radius:10px;background-color:#fff;border-color:transparent;box-shadow:0 2px 4px rgba(0,0,0,.1)}.cmacs-weather-card .ant-card-body{padding-top:35px}.cmacs-weather-card-cloud-img{width:75px;height:auto;float:right}.cmacs-weather-card-temp-min-max{font-family:Roboto-Regular;font-size:12px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;color:#97a0ae;margin-left:10px}.cmacs-weather-card-description-wrapper{margin-top:14px;margin-bottom:18px;height:40px}.cmacs-weather-card-description{font-family:Roboto-Regular;font-size:14px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.43;letter-spacing:normal;color:#656c79}.cmacs-weather-col-1-3 i{font-size:22px}.cmacs-weather-col-1-3{width:33.3333%;display:inline-block;text-align:center;font-size:12px;font-weight:400;line-height:1.67}.cmacs-weather-card-temp,.cmacs-weather-col-1-3{font-family:Roboto-Regular;font-stretch:normal;font-style:normal;letter-spacing:normal;color:#3b3f46}.cmacs-weather-card-temp{font-size:24px;font-weight:500;line-height:2.08}.ant-card,.ant-card-head{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79}.ant-card-extra,.ant-card-head-title{padding:0;font-size:12px;font-weight:500;font-family:Roboto-Medium}.ant-card-head{min-height:40px;padding:12px}.ant-card-grid{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79;cursor:pointer}.card-list-row .ant-card-grid>*{display:block}.card-list-row .ant-card-grid>*,.cmacs-card-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-shared-I .cmacs-card-title{width:100%}.cmacs-card-left-panel label.cmacs-checkbox-card{float:left}.cmacs-card-shared-II .cmacs-card-title{width:calc(100% - 40px);left:80px}.cmacs-card-person-info-II{display:flex}.cmacs-card-shared-III .cmacs-card-title{width:calc(100% - 60px)}.cmacs-card-files-wrapper{width:223px;height:36px;border:none}.cmacs-card-measure-wrapper{height:36px;border:1px solid #dee0e5}.cmacs-card-label-measure{padding:6px 20px;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;width:calc(100% - 35px)}.cmacs-card-measure-wrapper-selected,.cmacs-card-measure-wrapper:hover{border-color:#2a7cff;cursor:pointer;box-shadow:0 6px 10px 0 rgba(0,0,0,.15)}.cmacs-card-measure-wrapper-selected .cmacs-card-measure-icon-wrapper,.cmacs-card-measure-wrapper:hover .cmacs-card-measure-icon-wrapper{border-right-color:#2a7cff}.cmacs-card-measure-wrapper-selected .cmacs-card-measure-icon-wrapper i,.cmacs-card-measure-wrapper:hover .cmacs-card-measure-icon-wrapper i{color:#2a7cff}.cmacs-card-files-wrapper:hover{background-color:#f6f7fb;cursor:pointer}.cmacs-card-files-wrapper .ant-card-body,.cmacs-card-measure-wrapper .ant-card-body{padding:0;width:100%}.cmacs-card-files-wrapper div,.cmacs-card-measure-wrapper div{display:inline-block}.cmacs-card-files-icon-wrapper{width:36px;height:36px;border-radius:3px;box-shadow:0 6px 10px 0 rgba(0,0,0,.15);background-color:#fff;margin-right:16px;text-align:center;position:relative;top:-8px}.cmacs-card-measure-icon-wrapper{background-color:#fff;text-align:center;padding:7px 7px 6px;border-right:1px solid #dee0e5}.cmacs-card-measure-icon-wrapper i{color:#dee0e5}.cmacs-card-files-icon-wrapper i{color:#fb3147!important;font-size:18px;top:23%;position:relative}.cmacs-card-file-extra{font-size:22px;float:right;margin-top:2px;margin-right:5px}.cmacs-card-file-extra i{color:#bec4cd!important}.cmacs-card-label-recent{padding:10px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:calc(100% - 96px);vertical-align:middle}.cmacs-selection-card{height:100%;border-radius:8px}.cmacs-selection-card .ant-card-cover{padding:15px}.cmacs-selection-card .ant-card-body{padding:10px 10px 30px;text-align:center;font-size:12px}.cmacs-selection-card .ant-card-meta-description{color:#656c79}.cmacs-selection-card.ant-card-hoverable:hover:not(.cmacs-card-disabled){border:1px solid #bec4cd;box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-selection-card.ant-card-hoverable:hover:not(.cmacs-card-disabled) .ant-radio-inner{border-color:#bec4cd}.cmacs-card-selected,.cmacs-card-selected:hover,.cmacs-card-selected:hover .ant-radio-inner{border-color:#2a7cff!important}.ant-radio-disabled+span,.ant-radio-disabled .ant-radio-inner,.ant-radio-disabled .ant-radio-input,.ant-radio.ant-radio-disabled,input[type=radio][disabled]{cursor:default}.cmacs-card-disabled:hover .ant-radio-inner{border-color:#dee0e5!important;cursor:default;background-color:#f3f3f4}.cmacs-card-selected .ant-card-meta-description{color:#2a7cff!important}.cmacs-card-disabled,.cmacs-card-disabled:hover{border-color:#dee0e5;cursor:default;box-shadow:none}.cmacs-card-disabled .ant-card-meta-description{color:#97a0ae!important}.cmacs-action-card{border:none;margin-left:auto;margin-right:auto;min-width:131px}.cmacs-action-card:hover{cursor:pointer}.cmacs-action-card-disabled:hover{cursor:default}.cmacs-action-card:hover .ant-card-meta-title{color:#2164c9}.cmacs-action-card .ant-card-meta-description{text-align:center;color:#acb3bf}.cmacs-action-card .ant-card-body{padding:13px}.cmacs-action-card .ant-card-meta-title{color:#2a7cff;white-space:normal;text-align:center;font-size:12px;padding-top:18px}.cmacs-action-card-disabled .ant-card-meta-title,.cmacs-action-card-disabled:hover .ant-card-meta-title{color:#97a0ae}.cmacs-information-card.ant-card-bordered{border-color:#dee0e5;border-radius:8px}.cmacs-information-card .ant-card-head{min-height:30px}.cmacs-information-card .cmacs-btn-action{border-color:#dee0e5}.cmacs-information-card:hover .cmacs-btn-action,.cmacs-information-card:hover .cmacs-btn-action span i{color:#2a7cff!important}.cmacs-information-card .ant-card-body{padding:20px 10px}.cmacs-information-card .team-person-card{line-height:22px;font-size:12px;width:30px;height:30px;display:inline-block;border-radius:40px;color:#fff;text-align:center;cursor:pointer;margin-right:10px}.cmacs-information-card img{border-radius:40px}.cmacs-information-card .team-person-card:last-child{margin-right:0}.cmacs-information-card .plus-team-card{line-height:22px;font-size:12px;width:30px;height:30px;display:inline-block;border-radius:30px;background-color:#dae8ff;color:#2a7cff;text-align:center;cursor:pointer;padding:4px}.iconspan i{font-size:16px;position:relative;height:16px;width:16px;display:inline-block;vertical-align:text-top}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.cmacs-team-card.ant-card-bordered{border-color:#dee0e5;border-radius:8px}.cmacs-team-card.ant-card-bordered:hover{box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-team-card-selected.ant-card-bordered{border-color:#2a7cff}.cmacs-team-card .ant-card-head{min-height:30px}.cmacs-team-card .ant-card-body{padding:0}.project-card-progress-bar-inner{height:5px;background-color:#2a7cff;border-radius:5px}.project-card-progress-bar{height:5px;background-color:#dee0e5;border-radius:5px;width:83%;margin:0 auto}.project-dates{display:inline-block}.project-status{position:relative;top:-36px;left:18px}.project-dates-wrapper{padding:0 20px;margin-top:-10px;margin-bottom:10px}.project-dates-title{color:#97a0ae;display:block;margin-bottom:5px}.project-dates-date{color:#656c79}.project-dates-wrapper a,.project-manager-metadata{margin-left:10px;margin-right:10px}.project-manager-metadata{display:inline-block}.manager-name{font-family:Roboto-Medium;font-size:12px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.33;letter-spacing:normal;color:#97a0ae;height:15.45px}.manager-charge,.manager-name{max-width:111px;width:111px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;position:relative}.manager-charge{color:#acb3bf;height:17.26px}.project-manager-details{margin:20px}.manager-avatar{display:inline-block;border-radius:40px;font-size:12px;color:#fff;text-align:center;line-height:1.33;float:left}.project-manager-details i{color:#656c79}.project-email-icon{float:right}.cmacs-card-files-folders-wrapper{height:48px;background-color:#fff;border:1px solid #dee0e5;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer!important;border-radius:8px}.card-files-uploading-wrapper{width:170px;height:48px;background-color:#f3f3f4;border:1px solid #dee0e5}.cmacs-card-files-folders-wrapper:hover{background-color:#f6f7fb;cursor:pointer}.file-card-selected,.file-card-selected:hover{background-color:#f2f7ff;border-color:#2a7cff}.cmacs-card-files-folders-wrapper:hover .card-files-folders-label{color:#2a7cff}.cmacs-card-files-folders-wrapper:hover .card-files-folder-extra a{opacity:1}.card-files-folder-extra{display:inline-block;font-size:20px}.card-files-folder-extra a{opacity:0}.card-files-folders-label{width:calc(100% - 50px);display:inline-block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;vertical-align:middle}.card-files-uploading-wrapper .ant-card-body,.cmacs-card-files-folders-wrapper .ant-card-body{padding:14px 10px}.card-files-folders-icon-wrapper{margin-right:10px;display:inline-block;vertical-align:middle}.card-files-uploading-wrapper i,.cmacs-card-files-folders-wrapper i{color:#656c79!important}.card-files-progress-bar-inner{height:5px;background-color:#2a7cff;border-radius:5px}.card-files-progress-bar{height:5px;background-color:#dee0e5;border-radius:5px;margin-top:7px}.cmacs-big-file-card{width:243px;border:none;overflow:hidden}.cmacs-big-file-card .ant-card-body{padding:0}.cmacs-card-big-file-meta{border:1px solid #dee0e5;transition:all .3s}.cmacs-big-file-card:before{content:\" \";width:40px;height:21px;background-color:#fff;position:absolute;left:calc(100% - 26px);transform:rotate(45deg);top:-4px;border-bottom:1px solid #dee0e5;transition:all .3s}.cmacs-card-big-file-icon-wrapper{font-size:22px;margin:0 auto;width:22px;padding-top:60px;padding-bottom:40px}.cmacs-card-big-file-extension-wrapper{text-align:right;padding:0 10px 10px 0;color:#acb3bf}.cmacs-card-big-file-description{height:61px;margin-top:10px;transition:all .3s}.cmacs-card-big-file-title{padding:10px 10px 5px;font-size:12px;color:#3b3f46;font-weight:500;transition:all .3s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-big-file-date{padding:0 10px 10px;font-size:12px;color:#acb3bf;font-weight:500}.cmacs-card-big-file-extra{font-size:21px;padding-top:3px;transition:all .3s}.cmacs-card-big-file-extra a{color:#656c79;opacity:0;transition:all .3s}.cmacs-card-big-file-description-left-panel{width:90%;float:left}.cmacs-card-big-file-description-right-panel{width:10%;float:right}.cmacs-big-file-card:hover{cursor:pointer}.cmacs-big-file-card:hover .cmacs-card-big-file-description{background-color:#f6f7fb}.cmacs-big-file-card:hover .cmacs-card-big-file-title{color:#2a7cff}.cmacs-big-file-card:hover .cmacs-card-big-file-extra a{opacity:1}.cmacs-big-file-card-selected .cmacs-card-big-file-description,.cmacs-big-file-card-selected:hover .cmacs-card-big-file-description{background-color:#f2f7ff}.cmacs-big-file-card-selected.cmacs-big-file-card:before,.cmacs-big-file-card-selected .cmacs-card-big-file-meta{border-color:#2a7cff}.cmacs-card-video-description{color:#3b3f46;font-weight:600;font-size:12px;margin-top:17px}.cmacs-card-video-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-video-player-wrapper{width:337px;height:226px;border:1px solid #dee0e5}.cmacs-video-player-card{border:none;width:337px}.cmacs-video-player-card .ant-card-body{padding:0}.cmacs-todo-card-upper-line{width:95%;margin:5px;height:2px;border-radius:100px}.cmacs-todo-card{width:243px;margin:7px auto;border:1px solid #dee0e5;border-radius:8px}.cmacs-todo-card.ant-card-hoverable:hover{box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-todo-card .ant-card-body{padding:0}.cmacs-todo-card-title{color:#3b3f46;margin:15px 14px 0;white-space:pre-line;display:-moz-box;display:-webkit-box;-webkit-line-clamp:2;-moz-line-clamp:2;-webkit-box-orient:vertical}.cmacs-todo-card-project,.cmacs-todo-card-title{font-size:12px;overflow:hidden;text-overflow:ellipsis}.cmacs-todo-card-project{color:#97a0ae;margin:10px 14px 0;white-space:nowrap}.cmacs-todo-card-date{color:#656c79;background-color:#f6f7fb;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;float:right;padding:0 5px}.cmacs-todo-card-action{padding:15px 14px 0 15px;font-size:14px;position:absolute;bottom:12px;width:100%}.cmacs-todo-card-attachments,.cmacs-todo-card-comments,.cmacs-todo-card-person,.cmacs-todo-card-team{float:left}.cmacs-todo-card-attachments span,.cmacs-todo-card-comments span{margin-right:3px;color:#2a7cff;font-size:12px}.cmacs-todo-card-priority{float:left}.cmacs-todo-card-attachments a,.cmacs-todo-card-comments a,.cmacs-todo-card-person a,.cmacs-todo-card-team a{color:#656c79}.cmacs-todo-card-project-img{width:241px;height:100px;overflow:hidden}.cmacs-todo-card-project-img img{width:241px}.cmacs-todo-card-selected{border-color:#2a7cff!important}.cmacs-template-card,.cmacs-template-card-dark{width:243px;border:1px solid #dee0e5;border-radius:8px}.cmacs-template-card .ant-card-body{padding:0;border-radius:7px;background-color:#f6f7fb}.cmacs-template-card-dark .ant-card-body{padding:0;border-radius:7px;background-color:#0d1e3b}.cmacs-template-card-dark:hover{box-shadow:0 6px 10px 0 rgba(59,63,70,.14901960784313725)}.cmacs-template-card-dark:hover,.cmacs-template-card-dark:hover .template-card-content,.cmacs-template-card-dark:hover .template-logo,.cmacs-template-card:hover,.cmacs-template-card:hover .template-card-content,.cmacs-template-card:hover .template-logo{border-color:#2a7cff}.cmacs-template-card-dark-selected,.cmacs-template-card-selected{border-color:#2a7cff!important;background-color:#f6f7fb}.card-new-icon-wrapper{padding-top:10px}.card-image-wrapper,.card-new-icon-wrapper{margin:20px;width:82%;height:91px;border-radius:8px 8px 0 0;display:inline-block;vertical-align:middle;background-color:#fff;text-align:center}.template-card-content{border-radius:8px;margin:-25px -1px -1px;width:101%;height:100%;display:inline-block;border:1px solid #dee0e5;box-shadow:0 -3px 11px rgba(13,30,59,.11);padding:15px}.template-card-content,.template-logo{vertical-align:middle;background-color:#fff}.template-logo{border-radius:12px;float:right;margin-top:-35px;display:flex;justify-content:center;padding:6px 8px;border:1px solid #dee0e5;-webkit-clip-path:polygon(100% 42%,0 42%,-90% -60%,180% -60%,100% 42%,15% 42%,15% 91%,86% 91%,86% 42%);clip-path:polygon(100% 42%,0 42%,-90% -60%,180% -60%,100% 42%,15% 42%,15% 91%,86% 91%,86% 42%)}.template-card-content-title{margin-bottom:10px;font-size:13px;color:#3b3f46;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.iconspan-new-icon{font-size:50px}.iconspan-template-file{margin-left:7px;margin-top:3px;width:30px;height:30px;text-align:center;display:inline-block;font-size:22px;border-radius:8px;color:#fff;background-color:#cc2229}.iconspan-template-file:hover{color:#fff}.image{width:100%;height:100%;border-radius:7px 7px 0 0}.template-tag{border-radius:10px!important;padding:0 10px!important;color:#656c79}.iconspan-template-schedule{margin-left:7px;margin-top:3px;width:30px;height:30px;text-align:center;display:inline-block;font-size:22px;border-radius:8px;color:#fff;background-color:#00cda1}.iconspan-template-schedule:hover{color:#fff}.iconspan-template-form{margin-left:7px;margin-top:3px;width:30px;height:30px;text-align:center;display:inline-block;font-size:22px;border-radius:8px;color:#fff;background-color:#0d1e3b}.iconspan-template-form:hover{color:#fff}.iconspan-template-qr-code{margin-left:7px;margin-top:3px;width:30px;height:30px;text-align:center;display:inline-block;font-size:22px;border-radius:8px;color:#fff;background-color:#a100cd}.iconspan-template-qr-code:hover{color:#fff}.cmacs-proj-card-text-Logo{font-size:50px;color:#fff;background-color:#512da8}.cmacs-proj-card-div-Logo{background-color:#512da8;width:221px;height:107px;text-align:center}.cmacs-proj-avatar-text{height:30px;width:30px;line-height:22px;font-size:11px;border-radius:40px;background:#512da8;color:#fff;text-align:center;cursor:pointer;padding:4px;display:inline-block;float:left}.projectimagecontainer{height:107px;border-top:1px solid #dee0e5;border-bottom:1px solid #dee0e5;background-color:#f6f7fb}.project-image{background-repeat:no-repeat;background-position:50%;background-size:contain;text-align:center}.project-image,.project-image img{height:100%;width:auto}.cmacs-todo-card-attachments span,.cmacs-todo-card-comments span,.cmacs-todo-card-person a{vertical-align:middle}.cmacs-todo-card-attachments a,.cmacs-todo-card-comments a{vertical-align:sub;font-size:18px}.cmacs-todo-card-team a{font-size:19px;vertical-align:top}.cmacs-todo-card-overdue{color:#f5222d}.cmacs-todo-card-association{float:left;cursor:pointer;font-size:18px}.todo-card-header{padding:12px;border-bottom:1px solid #dee0e5}.todo-card-content{min-height:110px}.cardrow{margin-left:-4px;margin-right:-4px}.cardcolumn{padding-left:4px;padding-right:4px}", "cmacs-card {\n        display: block;\n      }\n    "], encapsulation: 2 });
+    } }, directives: [NgIf, NgStyle, NzStringTemplateOutletDirective, NgTemplateOutlet, CmacsRadioComponent, NgControlStatus, NgModel, NzRowDirective, NzColDirective, CmacsTooltipDirective, ɵNzTransitionPatchDirective, NzIconDirective, CmacsVideoPlayerComponent, NgForOf, CmacsTagComponent, CmacsCardLoadingComponent], pipes: [TitleCasePipe], styles: [".cmacs-weather-card{width:318px;height:218px;border-radius:10px;background-color:#fff;border-color:transparent;box-shadow:0 2px 4px rgba(0,0,0,.1)}.cmacs-weather-card .ant-card-body{padding-top:35px}.cmacs-weather-card-cloud-img{width:75px;height:auto;float:right}.cmacs-weather-card-temp-min-max{font-family:Roboto-Regular;font-size:12px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;color:#97a0ae;margin-left:10px}.cmacs-weather-card-description-wrapper{margin-top:14px;margin-bottom:18px;height:40px}.cmacs-weather-card-description{font-family:Roboto-Regular;font-size:14px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.43;letter-spacing:normal;color:#656c79}.cmacs-weather-col-1-3 i{font-size:22px}.cmacs-weather-col-1-3{width:33.3333%;display:inline-block;text-align:center;font-size:12px;font-weight:400;line-height:1.67}.cmacs-weather-card-temp,.cmacs-weather-col-1-3{font-family:Roboto-Regular;font-stretch:normal;font-style:normal;letter-spacing:normal;color:#3b3f46}.cmacs-weather-card-temp{font-size:24px;font-weight:500;line-height:2.08}.ant-card,.ant-card-head{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79}.ant-card-extra,.ant-card-head-title{padding:0;font-size:12px;font-weight:500;font-family:Roboto-Medium}.ant-card-head{min-height:40px;padding:12px}.ant-card-grid{font-size:12px;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#656c79;cursor:pointer}.card-list-row .ant-card-grid>*{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}.cmacs-card-title{white-space:normal;word-wrap:normal;line-height:24px}.cmacs-card-title span{display:block;width:150px}.cmacs-card-shared-I .cmacs-card-title{width:100%}.cmacs-card-left-panel label.cmacs-checkbox-card{float:left}.cmacs-card-shared-II .cmacs-card-title{width:calc(100% - 40px);left:80px}.cmacs-card-person-info-II{display:flex}.cmacs-card-shared-III .cmacs-card-title{width:calc(100% - 60px)}.cmacs-card-files-wrapper{width:223px;height:36px;border:none}.cmacs-card-measure-wrapper{height:36px;border:1px solid #dee0e5}.cmacs-card-label-measure{padding:6px 20px;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;width:calc(100% - 35px)}.cmacs-card-measure-wrapper-selected,.cmacs-card-measure-wrapper:hover{border-color:#2a7cff;cursor:pointer;box-shadow:0 6px 10px 0 rgba(0,0,0,.15)}.cmacs-card-measure-wrapper-selected .cmacs-card-measure-icon-wrapper,.cmacs-card-measure-wrapper:hover .cmacs-card-measure-icon-wrapper{border-right-color:#2a7cff}.cmacs-card-measure-wrapper-selected .cmacs-card-measure-icon-wrapper i,.cmacs-card-measure-wrapper:hover .cmacs-card-measure-icon-wrapper i{color:#2a7cff}.cmacs-card-files-wrapper:hover{background-color:#f6f7fb;cursor:pointer}.cmacs-card-files-wrapper .ant-card-body,.cmacs-card-measure-wrapper .ant-card-body{padding:0;width:100%}.cmacs-card-files-wrapper div,.cmacs-card-measure-wrapper div{display:inline-block}.cmacs-card-files-icon-wrapper{width:36px;height:36px;border-radius:3px;box-shadow:0 6px 10px 0 rgba(0,0,0,.15);background-color:#fff;margin-right:16px;text-align:center;position:relative;top:-8px}.cmacs-card-measure-icon-wrapper{background-color:#fff;text-align:center;padding:7px 7px 6px;border-right:1px solid #dee0e5}.cmacs-card-measure-icon-wrapper i{color:#dee0e5}.cmacs-card-files-icon-wrapper i{color:#fb3147!important;font-size:18px;top:23%;position:relative}.cmacs-card-file-extra{font-size:22px;float:right;margin-top:2px;margin-right:5px}.cmacs-card-file-extra i{color:#bec4cd!important}.cmacs-card-label-recent{padding:10px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:calc(100% - 96px);vertical-align:middle}.cmacs-selection-card{height:100%;border-radius:8px}.cmacs-selection-card .ant-card-cover{padding:15px}.cmacs-selection-card .ant-card-body{padding:10px 10px 30px;text-align:center;font-size:12px}.cmacs-selection-card .ant-card-meta-description{color:#656c79}.cmacs-selection-card.ant-card-hoverable:hover:not(.cmacs-card-disabled){border:1px solid #bec4cd;box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-selection-card.ant-card-hoverable:hover:not(.cmacs-card-disabled) .ant-radio-inner{border-color:#bec4cd}.cmacs-card-selected,.cmacs-card-selected:hover,.cmacs-card-selected:hover .ant-radio-inner{border-color:#2a7cff!important}.ant-radio-disabled+span,.ant-radio-disabled .ant-radio-inner,.ant-radio-disabled .ant-radio-input,.ant-radio.ant-radio-disabled,input[type=radio][disabled]{cursor:default}.cmacs-card-disabled:hover .ant-radio-inner{border-color:#dee0e5!important;cursor:default;background-color:#f3f3f4}.cmacs-card-selected .ant-card-meta-description{color:#2a7cff!important}.cmacs-card-disabled,.cmacs-card-disabled:hover{border-color:#dee0e5;cursor:default;box-shadow:none}.cmacs-card-disabled .ant-card-meta-description{color:#97a0ae!important}.cmacs-action-card{border:none;margin-left:auto;margin-right:auto;min-width:131px}.cmacs-action-card:hover{cursor:pointer}.cmacs-action-card-disabled:hover{cursor:default}.cmacs-action-card:hover .ant-card-meta-title{color:#2164c9}.cmacs-action-card .ant-card-meta-description{text-align:center;color:#acb3bf}.cmacs-action-card .ant-card-body{padding:13px}.cmacs-action-card .ant-card-meta-title{color:#2a7cff;white-space:normal;text-align:center;font-size:12px;padding-top:18px}.cmacs-action-card-disabled .ant-card-meta-title,.cmacs-action-card-disabled:hover .ant-card-meta-title{color:#97a0ae}.cmacs-information-card.ant-card-bordered{border-color:#dee0e5;border-radius:8px}.cmacs-information-card .ant-card-head{min-height:30px}.cmacs-information-card .cmacs-btn-action{border-color:#dee0e5}.cmacs-information-card:hover .cmacs-btn-action,.cmacs-information-card:hover .cmacs-btn-action span i{color:#2a7cff!important}.cmacs-information-card .ant-card-body{padding:20px 10px}.cmacs-information-card .team-person-card{line-height:22px;font-size:12px;width:30px;height:30px;display:inline-block;border-radius:40px;color:#fff;text-align:center;cursor:pointer;margin-right:10px}.cmacs-information-card img{border-radius:40px}.cmacs-information-card .team-person-card:last-child{margin-right:0}.cmacs-information-card .plus-team-card{line-height:22px;font-size:12px;width:30px;height:30px;display:inline-block;border-radius:30px;background-color:#dae8ff;color:#2a7cff;text-align:center;cursor:pointer;padding:4px}.iconspan i{font-size:16px;position:relative;height:16px;width:16px;display:inline-block;vertical-align:text-top}.iconspan{height:20px;width:20px;text-align:center;vertical-align:middle;display:inline-block}.cmacs-team-card.ant-card-bordered{border-color:#dee0e5;border-radius:8px}.cmacs-team-card.ant-card-bordered:hover{box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-team-card-selected.ant-card-bordered{border-color:#2a7cff}.cmacs-team-card .ant-card-head{min-height:30px}.cmacs-team-card .ant-card-body{padding:0}.project-card-progress-bar-inner{height:5px;background-color:#2a7cff;border-radius:5px}.project-card-progress-bar{height:5px;background-color:#dee0e5;border-radius:5px;width:83%;margin:0 auto}.project-dates{display:inline-block}.project-status{position:relative;top:-36px;left:18px}.project-dates-wrapper{padding:0 20px;margin-top:-10px;margin-bottom:10px}.project-dates-title{color:#97a0ae;display:block;margin-bottom:5px}.project-dates-date{color:#656c79}.project-dates-wrapper a,.project-manager-metadata{margin-left:10px;margin-right:10px}.project-manager-metadata{display:inline-block}.manager-name{font-family:Roboto-Medium;font-size:12px;font-weight:500;font-style:normal;font-stretch:normal;line-height:1.33;letter-spacing:normal;color:#97a0ae;height:15.45px}.manager-charge,.manager-name{max-width:111px;width:111px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;position:relative}.manager-charge{color:#acb3bf;height:17.26px}.project-manager-details{margin:20px}.manager-avatar{display:inline-block;border-radius:40px;font-size:12px;color:#fff;text-align:center;line-height:1.33;float:left}.project-manager-details i{color:#656c79}.project-email-icon{float:right}.cmacs-card-files-folders-wrapper{height:48px;background-color:#fff;border:1px solid #dee0e5;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer!important;border-radius:8px}.card-files-uploading-wrapper{width:170px;height:48px;background-color:#f3f3f4;border:1px solid #dee0e5}.cmacs-card-files-folders-wrapper:hover{background-color:#f6f7fb;cursor:pointer}.file-card-selected,.file-card-selected:hover{background-color:#f2f7ff;border-color:#2a7cff}.cmacs-card-files-folders-wrapper:hover .card-files-folders-label{color:#2a7cff}.cmacs-card-files-folders-wrapper:hover .card-files-folder-extra a{opacity:1}.card-files-folder-extra{display:inline-block;font-size:20px}.card-files-folder-extra a{opacity:0}.card-files-folders-label{width:calc(100% - 50px);display:inline-block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;vertical-align:middle}.card-files-uploading-wrapper .ant-card-body,.cmacs-card-files-folders-wrapper .ant-card-body{padding:14px 10px}.card-files-folders-icon-wrapper{margin-right:10px;display:inline-block;vertical-align:middle}.card-files-uploading-wrapper i,.cmacs-card-files-folders-wrapper i{color:#656c79!important}.card-files-progress-bar-inner{height:5px;background-color:#2a7cff;border-radius:5px}.card-files-progress-bar{height:5px;background-color:#dee0e5;border-radius:5px;margin-top:7px}.cmacs-big-file-card{width:243px;border:none;overflow:hidden}.cmacs-big-file-card .ant-card-body{padding:0}.cmacs-card-big-file-meta{border:1px solid #dee0e5;transition:all .3s}.cmacs-big-file-card:before{content:\" \";width:40px;height:21px;background-color:#fff;position:absolute;left:calc(100% - 26px);transform:rotate(45deg);top:-4px;border-bottom:1px solid #dee0e5;transition:all .3s}.cmacs-card-big-file-icon-wrapper{font-size:22px;margin:0 auto;width:22px;padding-top:60px;padding-bottom:40px}.cmacs-card-big-file-extension-wrapper{text-align:right;padding:0 10px 10px 0;color:#acb3bf}.cmacs-card-big-file-description{height:61px;margin-top:10px;transition:all .3s}.cmacs-card-big-file-title{padding:10px 10px 5px;font-size:12px;color:#3b3f46;font-weight:500;transition:all .3s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-big-file-date{padding:0 10px 10px;font-size:12px;color:#acb3bf;font-weight:500}.cmacs-card-big-file-extra{font-size:21px;padding-top:3px;transition:all .3s}.cmacs-card-big-file-extra a{color:#656c79;opacity:0;transition:all .3s}.cmacs-card-big-file-description-left-panel{width:90%;float:left}.cmacs-card-big-file-description-right-panel{width:10%;float:right}.cmacs-big-file-card:hover{cursor:pointer}.cmacs-big-file-card:hover .cmacs-card-big-file-description{background-color:#f6f7fb}.cmacs-big-file-card:hover .cmacs-card-big-file-title{color:#2a7cff}.cmacs-big-file-card:hover .cmacs-card-big-file-extra a{opacity:1}.cmacs-big-file-card-selected .cmacs-card-big-file-description,.cmacs-big-file-card-selected:hover .cmacs-card-big-file-description{background-color:#f2f7ff}.cmacs-big-file-card-selected.cmacs-big-file-card:before,.cmacs-big-file-card-selected .cmacs-card-big-file-meta{border-color:#2a7cff}.cmacs-card-video-description{color:#3b3f46;font-weight:600;font-size:12px;margin-top:17px}.cmacs-card-video-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmacs-card-video-player-wrapper{width:337px;height:226px;border:1px solid #dee0e5}.cmacs-video-player-card{border:none;width:337px}.cmacs-video-player-card .ant-card-body{padding:0}.cmacs-todo-card-upper-line{width:95%;margin:5px;height:2px;border-radius:100px}.cmacs-todo-card{width:243px;margin:7px auto;border:1px solid #dee0e5;border-radius:8px}.cmacs-todo-card.ant-card-hoverable:hover{box-shadow:0 6px 10px rgba(59,63,70,.15)}.cmacs-todo-card .ant-card-body{padding:0}.cmacs-todo-card-title{color:#3b3f46;margin:15px 14px 0;white-space:pre-line;display:-moz-box;display:-webkit-box;-webkit-line-clamp:2;-moz-line-clamp:2;-webkit-box-orient:vertical}.cmacs-todo-card-project,.cmacs-todo-card-title{font-size:12px;overflow:hidden;text-overflow:ellipsis}.cmacs-todo-card-project{color:#97a0ae;margin:10px 14px 0;white-space:nowrap}.cmacs-todo-card-date{color:#656c79;background-color:#f6f7fb;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;float:right;padding:0 5px}.cmacs-todo-card-action{padding:15px 14px 0 15px;font-size:14px;position:absolute;bottom:12px;width:100%}.cmacs-todo-card-attachments,.cmacs-todo-card-comments,.cmacs-todo-card-person,.cmacs-todo-card-team{float:left}.cmacs-todo-card-attachments span,.cmacs-todo-card-comments span{margin-right:3px;color:#2a7cff;font-size:12px}.cmacs-todo-card-priority{float:left}.cmacs-todo-card-attachments a,.cmacs-todo-card-comments a,.cmacs-todo-card-person a,.cmacs-todo-card-team a{color:#656c79}.cmacs-todo-card-project-img{width:241px;height:100px;overflow:hidden}.cmacs-todo-card-project-img img{width:241px}.cmacs-todo-card-selected{border-color:#2a7cff!important}.cmacs-template-card,.cmacs-template-card-dark{width:243px;border:1px solid #dee0e5;border-radius:8px}.cmacs-template-card .ant-card-body{padding:0;border-radius:7px;background-color:#f6f7fb}.cmacs-template-card-dark .ant-card-body{padding:0;border-radius:7px;background-color:#0d1e3b}.cmacs-template-card-dark:hover{box-shadow:0 6px 10px 0 rgba(59,63,70,.14901960784313725)}.cmacs-template-card-dark:hover,.cmacs-template-card-dark:hover .template-card-content,.cmacs-template-card-dark:hover .template-logo,.cmacs-template-card:hover,.cmacs-template-card:hover .template-card-content,.cmacs-template-card:hover .template-logo{border-color:#2a7cff}.cmacs-template-card-dark-selected,.cmacs-template-card-selected{border-color:#2a7cff!important;background-color:#f6f7fb}.card-new-icon-wrapper{padding-top:10px}.card-image-wrapper,.card-new-icon-wrapper{margin:20px;width:82%;height:91px;border-radius:8px 8px 0 0;display:inline-block;vertical-align:middle;background-color:#fff;text-align:center}.template-card-content{border-radius:8px;margin:-25px -1px -1px;width:101%;height:100%;display:inline-block;border:1px solid #dee0e5;box-shadow:0 -3px 11px rgba(13,30,59,.11);padding:15px}.template-card-content,.template-logo{vertical-align:middle;background-color:#fff}.template-logo{border-radius:12px;float:right;margin-top:-35px;display:flex;justify-content:center;padding:6px 8px;border:1px solid #dee0e5;-webkit-clip-path:polygon(100% 42%,0 42%,-90% -60%,180% -60%,100% 42%,15% 42%,15% 91%,86% 91%,86% 42%);clip-path:polygon(100% 42%,0 42%,-90% -60%,180% -60%,100% 42%,15% 42%,15% 91%,86% 91%,86% 42%)}.template-card-content-title{margin-bottom:10px;font-size:13px;color:#3b3f46;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.iconspan-new-icon{font-size:50px}.iconspan-template-file{margin-left:7px;margin-top:3px;width:30px;height:30px;text-align:center;display:inline-block;font-size:22px;border-radius:8px;color:#fff;background-color:#cc2229}.iconspan-template-file:hover{color:#fff}.image{width:100%;height:100%;border-radius:7px 7px 0 0}.template-tag{border-radius:10px!important;padding:0 10px!important;color:#656c79}.iconspan-template-schedule{margin-left:7px;margin-top:3px;width:30px;height:30px;text-align:center;display:inline-block;font-size:22px;border-radius:8px;color:#fff;background-color:#00cda1}.iconspan-template-schedule:hover{color:#fff}.iconspan-template-form{margin-left:7px;margin-top:3px;width:30px;height:30px;text-align:center;display:inline-block;font-size:22px;border-radius:8px;color:#fff;background-color:#0d1e3b}.iconspan-template-form:hover{color:#fff}.iconspan-template-qr-code{margin-left:7px;margin-top:3px;width:30px;height:30px;text-align:center;display:inline-block;font-size:22px;border-radius:8px;color:#fff;background-color:#a100cd}.iconspan-template-qr-code:hover{color:#fff}.cmacs-proj-card-text-Logo{font-size:50px;color:#fff;background-color:#512da8}.cmacs-proj-card-div-Logo{background-color:#512da8;width:221px;height:107px;text-align:center}.cmacs-proj-avatar-text{height:30px;width:30px;line-height:22px;font-size:11px;border-radius:40px;background:#512da8;color:#fff;text-align:center;cursor:pointer;padding:4px;display:inline-block;float:left}.projectimagecontainer{height:107px;border-top:1px solid #dee0e5;border-bottom:1px solid #dee0e5;background-color:#f6f7fb}.project-image{background-repeat:no-repeat;background-position:50%;background-size:contain;text-align:center}.project-image,.project-image img{height:100%;width:auto}.cmacs-todo-card-attachments span,.cmacs-todo-card-comments span,.cmacs-todo-card-person a{vertical-align:middle}.cmacs-todo-card-attachments a,.cmacs-todo-card-comments a{vertical-align:sub;font-size:18px}.cmacs-todo-card-team a{font-size:19px;vertical-align:top}.cmacs-todo-card-overdue{color:#f5222d}.cmacs-todo-card-association{float:left;cursor:pointer;font-size:18px}.todo-card-header{padding:12px;border-bottom:1px solid #dee0e5}.todo-card-content{min-height:110px}.cardrow{margin-left:-4px;margin-right:-4px}.cardcolumn{padding-left:4px;padding-right:4px}", "cmacs-card {\n        display: block;\n      }\n    "], encapsulation: 2 });
 __decorate([
     InputBoolean()
 ], CmacsCardComponent.prototype, "bordered", void 0);
