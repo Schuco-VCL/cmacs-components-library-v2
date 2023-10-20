@@ -8489,7 +8489,9 @@
     }
     function CmacsFloatingMenuComponent_div_0_Template(rf, ctx) {
         if (rf & 1) {
+            var _r15_1 = i0.ɵɵgetCurrentView();
             i0.ɵɵelementStart(0, "div", 1);
+            i0.ɵɵlistener("cdkDragEnded", function CmacsFloatingMenuComponent_div_0_Template_div_cdkDragEnded_0_listener($event) { i0.ɵɵrestoreView(_r15_1); var ctx_r14 = i0.ɵɵnextContext(); return ctx_r14.onDragEnded($event); });
             i0.ɵɵelement(1, "div", 2);
             i0.ɵɵelement(2, "div", 3);
             i0.ɵɵelement(3, "div", 4);
@@ -8531,6 +8533,7 @@
             this.visible = false;
             this.showExtras = true;
             this.positionChange = new i0.EventEmitter();
+            this.oncoordinateschange = new i0.EventEmitter();
             this.carrot = '';
             this.topBoundary = '0';
             this.bottomBoundary = '0';
@@ -8578,6 +8581,9 @@
             this.position = 'top';
             this.positionChange.emit(this.position);
         };
+        CmacsFloatingMenuComponent.prototype.onDragEnded = function ($event) {
+            this.oncoordinateschange.emit($event);
+        };
         CmacsFloatingMenuComponent.prototype.dockToBottom = function () {
             this.resetDragDrop();
             this.bottom = this.bottomBoundary;
@@ -8620,7 +8626,7 @@
                 i0.ɵɵstyleProp("top", ctx.top)("bottom", ctx.bottom)("left", ctx.left)("right", ctx.right);
                 i0.ɵɵclassProp("carrot-bottom-menu", ctx.carrot === "bottom")("carrot-top-menu", ctx.carrot === "top")("cmacs-floating-menu-align-x", ctx.position === "bottom" || ctx.position === "top")("cmacs-floating-menu-align-y", ctx.position === "left" || ctx.position === "right");
             }
-        }, inputs: { position: "position", trigger: "trigger", visible: "visible", showExtras: "showExtras", dragBoundary: "dragBoundary", carrot: "carrot", top: "top", bottom: "bottom", left: "left", right: "right", topBoundary: "topBoundary", bottomBoundary: "bottomBoundary", leftBoundary: "leftBoundary", rightBoundary: "rightBoundary", i18n: "i18n" }, outputs: { positionChange: "positionChange" }, exportAs: ["cmacsFloatingMenu"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$n, decls: 1, vars: 1, consts: [["cdkDrag", "", 3, "cdkDragBoundary", 4, "ngIf"], ["cdkDrag", "", 3, "cdkDragBoundary"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-north-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-south-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-east-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-west-area"], ["fixedEl", ""], ["cmacs-button", "", "ghost", "", "role", "button", "aria-label", "sort", 3, "click", 4, "ngIf"], ["class", "cmacs-floating-menu-main", 4, "ngIf"], ["class", "cmacs-floating-menu-user-content", 4, "ngIf"], ["cmacs-button", "", "ghost", "", "role", "button", "aria-label", "sort", 3, "click"], [1, "iconUILarge-Sort"], [1, "cmacs-floating-menu-main"], ["cmacs-button", "", "ghost", "", "cmacs-dropdown", "", "role", "button", "aria-label", "ellipsis vertical", 1, "cmacs-floating-menu-main-button", 3, "cmacsTrigger", "placement", "dropdownMenu"], [1, "iconUILarge-More-Veritcal_Icon"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 1, "cmacs-floating-menu-main-ul"], ["cmacs-menu-item", "", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "cmacs-floating-menu-user-content"]], template: function CmacsFloatingMenuComponent_Template(rf, ctx) {
+        }, inputs: { position: "position", trigger: "trigger", visible: "visible", showExtras: "showExtras", dragBoundary: "dragBoundary", carrot: "carrot", top: "top", bottom: "bottom", left: "left", right: "right", topBoundary: "topBoundary", bottomBoundary: "bottomBoundary", leftBoundary: "leftBoundary", rightBoundary: "rightBoundary", i18n: "i18n" }, outputs: { positionChange: "positionChange", oncoordinateschange: "oncoordinateschange" }, exportAs: ["cmacsFloatingMenu"], features: [i0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0$n, decls: 1, vars: 1, consts: [["cdkDrag", "", 3, "cdkDragBoundary", "cdkDragEnded", 4, "ngIf"], ["cdkDrag", "", 3, "cdkDragBoundary", "cdkDragEnded"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-north-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-south-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-east-area"], ["cdkDragHandle", "", 1, "cmacs-floating-menu-draggable-west-area"], ["fixedEl", ""], ["cmacs-button", "", "ghost", "", "role", "button", "aria-label", "sort", 3, "click", 4, "ngIf"], ["class", "cmacs-floating-menu-main", 4, "ngIf"], ["class", "cmacs-floating-menu-user-content", 4, "ngIf"], ["cmacs-button", "", "ghost", "", "role", "button", "aria-label", "sort", 3, "click"], [1, "iconUILarge-Sort"], [1, "cmacs-floating-menu-main"], ["cmacs-button", "", "ghost", "", "cmacs-dropdown", "", "role", "button", "aria-label", "ellipsis vertical", 1, "cmacs-floating-menu-main-button", 3, "cmacsTrigger", "placement", "dropdownMenu"], [1, "iconUILarge-More-Veritcal_Icon"], ["menu", "cmacsDropdownMenu"], ["cmacs-menu", "", 1, "cmacs-floating-menu-main-ul"], ["cmacs-menu-item", "", 3, "click"], [1, "iconArrowLarge-Collapse"], [1, "cmacs-floating-menu-user-content"]], template: function CmacsFloatingMenuComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵprojectionDef();
                 i0.ɵɵtemplate(0, CmacsFloatingMenuComponent_div_0_Template, 10, 10, "div", 0);
@@ -8670,6 +8676,8 @@
                 }], dragBoundary: [{
                     type: i0.Input
                 }], positionChange: [{
+                    type: i0.Output
+                }], oncoordinateschange: [{
                     type: i0.Output
                 }], carrot: [{
                     type: i0.Input
