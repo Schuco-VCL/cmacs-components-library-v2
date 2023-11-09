@@ -3790,6 +3790,10 @@ class CmacsOptionContainerComponent {
                     this.selectAllLabel = 'Select All';
                     this.searchLabel = 'Search';
                     break;
+                case 'ja':
+                    this.selectAllLabel = 'すべて選択';
+                    this.searchLabel = '検索';
+                    break;
                 default:
                     this.selectAllLabel = 'Select All';
                     this.searchLabel = 'Search';
@@ -4191,6 +4195,10 @@ class CmacsOptionContainerVirtualComponent {
                 case 'en':
                     this.selectAllLabel = 'Select All';
                     this.searchLabel = 'Search';
+                    break;
+                case 'ja':
+                    this.selectAllLabel = 'すべて選択';
+                    this.searchLabel = '検索';
                     break;
                 default:
                     this.selectAllLabel = 'Select All';
@@ -13084,7 +13092,7 @@ class DateTableComponent extends AbstractTable {
                 trackByIndex: null,
                 value: day.nativeDate,
                 title: this.dateHelper.format(day.nativeDate, 'E'),
-                content: this.dateHelper.format(day.nativeDate, this.getVeryShortWeekFormat()),
+                content: this.dateHelper.format(day.nativeDate, this.i18n.getLocale().locale === 'ja' ? 'EEEEE' : this.getVeryShortWeekFormat()),
                 isSelected: false,
                 isDisabled: false,
                 onClick() { },
@@ -13108,7 +13116,7 @@ class DateTableComponent extends AbstractTable {
             };
             for (let day = 0; day < 7; day++) {
                 const date = weekStart.addDays(day);
-                const dateFormat = transCompatFormat(this.i18n.getLocaleData('DatePicker.lang.dateFormat', 'YYYY-MM-DD'));
+                const dateFormat = transCompatFormat(this.i18n.getLocaleData('DatePicker.lang.dateFormat', this.i18n.getLocale().locale === 'ja' ? 'YYYY年M月D日' : 'YYYY-MM-DD'));
                 const title = this.dateHelper.format(date.nativeDate, dateFormat);
                 const label = this.dateHelper.format(date.nativeDate, 'dd');
                 const cell = {
@@ -14098,7 +14106,9 @@ class DateRangePopupComponent {
                 /**
                  * if sort order is wrong, clear the other part's value
                  */
+                let isWrong = false;
                 if (wrongSortOrder(selectedValue)) {
+                    isWrong = true;
                     nextPart = this.reversedPart(checkedPart);
                     selectedValue[this.datePickerService.getActiveIndex(nextPart)] = null;
                     this.checkedPartArr[this.datePickerService.getActiveIndex(nextPart)] = false;
@@ -14108,7 +14118,7 @@ class DateRangePopupComponent {
                  * range date usually selected paired,
                  * so we emit the date value only both date is allowed and both part are checked
                  */
-                if (this.isBothAllowed(selectedValue) && this.checkedPartArr[0] && this.checkedPartArr[1]) {
+                if ((this.isBothAllowed(selectedValue) && this.checkedPartArr[0] && this.checkedPartArr[1]) || (selectedValue.length > 1 && !isWrong && selectedValue[0] !== undefined)) {
                     this.calendarChange.emit(selectedValue);
                     this.clearHoverValue();
                     this.datePickerService.emitValue$.next();
@@ -15187,15 +15197,17 @@ class CmacsDatePickerComponent {
     parseDate() {
         if (!this.isRange) {
             const parsedValue = this.datePickerService.value;
-            const date = moment$2(parsedValue.nativeDate).locale(this.i18n.getLocale().locale);
-            return date.format(this.i18n.getLocale().locale === 'de' ? 'DD. MMM YYYY' : 'MMM DD, YYYY');
+            const locale = this.i18n.getLocale().locale;
+            const date = moment$2(parsedValue.nativeDate).locale(locale);
+            return date.format(locale === 'de' ? 'DD. MMM YYYY' : locale === 'ja' ? 'YYYY年M月D日' : 'MMM DD, YYYY');
         }
         let parsedValues = [];
         const coerceValues = this.datePickerService.value;
         for (let val of coerceValues) {
             const parsedValue = val;
-            const date = moment$2(parsedValue.nativeDate).locale(this.i18n.getLocale().locale);
-            parsedValues.push(date.format(this.i18n.getLocale().locale === 'de' ? 'DD. MMM YYYY' : 'MMM DD, YYYY'));
+            const locale = this.i18n.getLocale().locale;
+            const date = moment$2(parsedValue.nativeDate).locale(locale);
+            parsedValues.push(date.format(locale === 'de' ? 'DD. MMM YYYY' : locale === 'ja' ? 'YYYY年M月D日' : 'MMM DD, YYYY'));
         }
         return parsedValues;
     }
@@ -15272,10 +15284,11 @@ class CmacsDatePickerComponent {
     setModeAndFormat() {
         const inputFormats = {
             year: 'yyyy',
-            month: this.i18n.getLocale().locale === 'de' ? 'MM.yyyy' : 'MM/yyyy',
-            week: this.i18n.getDateLocale() ? 'RRRR-II' : this.i18n.getLocale().locale === 'de' ? 'ww.yyyy' : 'ww/yyyy',
-            date: this.showTime ? (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy HH:mm:ss' : 'MM/dd/yyyy HH:mm:ss') :
-                (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy' : 'MM/dd/yyyy')
+            month: this.i18n.getLocale().locale === 'de' ? 'MM.yyyy' : this.i18n.getLocale().locale === 'ja' ? 'yyyy年M月' : 'MM/yyyy',
+            week: this.i18n.getDateLocale() ? 'RRRR-II' :
+                this.i18n.getLocale().locale === 'de' ? 'ww.yyyy' : this.i18n.getLocale().locale === 'ja' ? 'yyyy年Www週' : 'ww/yyyy',
+            date: this.showTime ? (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy HH:mm:ss' : this.i18n.getLocale().locale === 'ja' ? 'yyyy年M月d日 H時m分s秒' : 'MM/dd/yyyy HH:mm:ss') :
+                (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy' : this.i18n.getLocale().locale === 'ja' ? 'yyyy年M月d日' : 'MM/dd/yyyy')
         };
         if (!this.mode) {
             this.mode = 'date';
@@ -21896,8 +21909,9 @@ class CmacsCompactTableComponent {
     transformDate(date) {
         const m = moment$3(date);
         if (m.isValid()) {
-            m.locale(this.i18n.getLocale().locale);
-            return m.format(this.i18n.getLocale().locale === 'de' ? 'DD.MM.YYYY' : 'MM/DD/YYYY');
+            const locale = this.i18n.getLocale().locale;
+            m.locale(locale);
+            return m.format(locale === 'de' ? 'DD.MM.YYYY' : locale === 'ja' ? 'YYYY年M月D日' : 'MM/DD/YYYY');
         }
         return '';
     }
@@ -22526,7 +22540,16 @@ class CmacsEditorComponent {
             };
         }
         this.i18n.localeChange.pipe(takeUntil(this.destroy$)).subscribe(() => {
-            this.tinyMceSettings.language = this.i18n.getLocale().locale === 'de' ? 'de' : null;
+            switch (this.i18n.getLocale().locale) {
+                case 'de':
+                    this.tinyMceSettings.language = 'de';
+                    break;
+                case 'jp':
+                    this.tinyMceSettings.language = 'ja';
+                    break;
+                default:
+                    this.tinyMceSettings.language = null;
+            }
             this.cdr.detectChanges();
         });
         setTimeout(() => {
@@ -26057,6 +26080,10 @@ class CmacsMoveableListComponent {
                     this.showLabel = 'Show';
                     this.hideLabel = 'Hide';
                     break;
+                case 'ja':
+                    this.showLabel = '表示';
+                    this.hideLabel = '非表示';
+                    break;
                 default:
                     this.showLabel = 'Show';
                     this.hideLabel = 'Hide';
@@ -28835,6 +28862,9 @@ class CmacsXlsxLoaderComponent {
                     break;
                 case 'en':
                     this.placeholder = 'Select Column';
+                    break;
+                case 'ja':
+                    this.placeholder = '列を選択';
                     break;
                 default:
                     this.placeholder = 'Select Column';
@@ -33281,7 +33311,16 @@ class CmacsTableComponent {
         const m = moment$4(date);
         if (m.isValid()) {
             m.locale(this.i18n.getLocale().locale);
-            return m.format(this.i18n.getLocale().locale === 'de' ? 'DD.MM.YYYY' : 'MM/DD/YYYY');
+            switch (this.i18n.getLocale().locale) {
+                case 'de':
+                    return m.format('DD.MM.YYYY');
+                case 'en':
+                    return m.format('MM/DD/YYYY');
+                case 'ja':
+                    return m.format('YYYY/MM/DD');
+                default:
+                    return m.format('MM/DD/YYYY');
+            }
         }
         return '';
     }
@@ -38868,6 +38907,11 @@ class CmacsGridConfigurationModalComponent {
                     this.modalTitle = 'Column Options';
                     this.header = 'Column Options';
                     break;
+                case 'ja':
+                    this.saveBtnLabel = '保存';
+                    this.modalTitle = 'カラムオプション';
+                    this.header = 'カラムオプション';
+                    break;
                 default:
                     this.saveBtnLabel = 'Save';
                     this.modalTitle = 'Column Options';
@@ -39917,6 +39961,10 @@ class CmacsTimelineDatepickerComponent {
                     this.modeOptions[0].title = 'Week';
                     this.modeOptions[1].title = 'Month';
                     break;
+                case 'ja':
+                    this.modeOptions[0].title = '週';
+                    this.modeOptions[1].title = '月';
+                    break;
                 default:
                     this.modeOptions[0].title = 'Week';
                     this.modeOptions[1].title = 'Month';
@@ -39981,8 +40029,10 @@ class CmacsTimelineDatepickerComponent {
     getDefaultMonths() {
         return this.i18n.getLocale().locale === 'de' ? [{ title: 'Jan.' }, { title: 'Feb.' }, { title: 'März' }, { title: 'Apr.' }, { title: 'Mai' }, { title: 'Juni' },
             { title: 'Juli' }, { title: 'Aug.' }, { title: 'Sept.' }, { title: 'Okt.' }, { title: 'Nov.' }, { title: 'Dez.' }] :
-            [{ title: 'Jan' }, { title: 'Feb' }, { title: 'Mar' }, { title: 'Apr' }, { title: 'May' }, { title: 'Jun' },
-                { title: 'Jul' }, { title: 'Aug' }, { title: 'Sep' }, { title: 'Oct' }, { title: 'Nov' }, { title: 'Dec' }];
+            this.i18n.getLocale().locale === 'ja' ? [{ title: '1月' }, { title: '2月' }, { title: '3月' }, { title: '4月' }, { title: '5月' }, { title: '6月' },
+                { title: '7月' }, { title: '8月' }, { title: '9月' }, { title: '10月' }, { title: '11月' }, { title: '12月' }] :
+                [{ title: 'Jan' }, { title: 'Feb' }, { title: 'Mar' }, { title: 'Apr' }, { title: 'May' }, { title: 'Jun' },
+                    { title: 'Jul' }, { title: 'Aug' }, { title: 'Sep' }, { title: 'Oct' }, { title: 'Nov' }, { title: 'Dec' }];
     }
     getWeeksInYear(date) {
         let temp = [];
@@ -40226,13 +40276,16 @@ class CmacsTimelineChartComponent {
     checkLang() {
         switch (this.i18n.getLocale().locale) {
             case 'de':
-                google.charts.load('46', { 'packages': ['corechart'], 'language': 'de' });
+                google.charts.load('46', { packages: ['corechart'], language: 'de' });
                 break;
             case 'en':
-                google.charts.load('46', { 'packages': ['corechart'], 'language': 'en' });
+                google.charts.load('46', { packages: ['corechart'], language: 'en' });
+                break;
+            case 'ja':
+                google.charts.load('46', { packages: ['corechart'], language: 'ja' });
                 break;
             default:
-                google.charts.load('46', { 'packages': ['corechart'], 'language': 'en' });
+                google.charts.load('46', { packages: ['corechart'], language: 'en' });
         }
         this.cdr.markForCheck();
     }
@@ -40250,16 +40303,16 @@ class CmacsTimelineChartComponent {
     createCustomTooltip(data, color) {
         const duration = moment$6.duration(moment$6(data[4]).diff(moment$6(data[3])));
         return `<div class="cmacs-timeline-chart-tooltip-wrapper">
-  <div class="cmacs-timeline-chart-tooltip-title">
-    <span class="cmacs-timeline-chart-legend-marker" style="background-color: ${color}"></span>
-    <span class="cmacs-timeline-chart-legend-label">${data[1]}</span>
-  </div>
-  <div class="cmacs-timeline-chart-tooltip-project-title">${data[0]}:</div>
-  <div class="cmacs-timeline-chart-tooltip-project-dates">${this.i18n.getLocale().locale === 'de' ? `${moment$6(data[3]).locale('de').format('MMM YYYY')} - ${moment$6(data[4]).locale('de').format('MMM YYYY')}` : `${moment$6(data[3]).format('MMM, YYYY')} - ${moment$6(data[4]).format('MMM, YYYY')}`} </div>
-  <div class="cmacs-timeline-chart-tooltip-project-duration-wrapper">
-    <div class="cmacs-timeline-chart-tooltip-project-duration">${this.i18n.getLocale().locale === 'de' ? 'Dauer' : 'Duration'}:</div>
-    <div class="cmacs-timeline-chart-tooltip-project-duration-date">${duration.get('years')} ${this.i18n.getLocale().locale === 'de' ? 'Jahre' : 'years'}, ${duration.get('months')} ${this.i18n.getLocale().locale === 'de' ? 'Monate' : 'months'}, ${duration.get('days')} ${this.i18n.getLocale().locale === 'de' ? 'Tage' : 'days'}</div>
-  </div>
+    <div class="cmacs-timeline-chart-tooltip-title">
+        <span class="cmacs-timeline-chart-legend-marker" style="background-color: ${color}"></span>
+        <span class="cmacs-timeline-chart-legend-label">${data[1]}</span>
+    </div>
+    <div class="cmacs-timeline-chart-tooltip-project-title">${data[0]}:</div>
+    <div class="cmacs-timeline-chart-tooltip-project-dates">${this.i18n.getLocale().locale === 'de' ? `${moment$6(data[3]).locale('de').format('MMM YYYY')} - ${moment$6(data[4]).locale('de').format('MMM YYYY')}` : this.i18n.getLocale().locale === 'ja' ? `${moment$6(data[3]).format('YYYY年M月')} - ${moment$6(data[4]).format('YYYY年M月')}` : `${moment$6(data[3]).format('MMM, YYYY')} - ${moment$6(data[4]).format('MMM, YYYY')}`}</div>
+    <div class="cmacs-timeline-chart-tooltip-project-duration-wrapper">
+        <div class="cmacs-timeline-chart-tooltip-project-duration">${this.i18n.getLocale().locale === 'de' ? 'Dauer' : this.i18n.getLocale().locale === 'ja' ? '期間' : 'Duration'}:</div>
+        <div class="cmacs-timeline-chart-tooltip-project-duration-date">${duration.get('years')} ${this.i18n.getLocale().locale === 'de' || this.i18n.getLocale().locale === 'ja' ? this.i18n.getLocale().locale === 'de' ? 'Jahre' : '年' : 'years'}, ${duration.get('months')} ${this.i18n.getLocale().locale === 'de' || this.i18n.getLocale().locale === 'ja' ? this.i18n.getLocale().locale === 'de' ? 'Monate' : 'ヶ月' : 'months'}, ${duration.get('days')} ${this.i18n.getLocale().locale === 'de' || this.i18n.getLocale().locale === 'ja' ? this.i18n.getLocale().locale === 'de' ? 'Tage' : '日' : 'days'}</div>
+    </div>
 </div>`;
     }
     ngOnDestroy() {
@@ -43744,7 +43797,16 @@ class CmacsOpenEditorComponent {
             };
         }
         this.i18n.localeChange.pipe(takeUntil(this.destroy$)).subscribe(() => {
-            this.tinyMceSettings.language = this.i18n.getLocale().locale === 'de' ? 'de' : null;
+            switch (this.i18n.getLocale().locale) {
+                case 'de':
+                    this.tinyMceSettings.language = 'de';
+                    break;
+                case 'jp':
+                    this.tinyMceSettings.language = 'ja';
+                    break;
+                default:
+                    this.tinyMceSettings.language = null;
+            }
             this.cdr.detectChanges();
         });
         setTimeout(() => {

@@ -4485,6 +4485,10 @@
                         _this.selectAllLabel = 'Select All';
                         _this.searchLabel = 'Search';
                         break;
+                    case 'ja':
+                        _this.selectAllLabel = 'すべて選択';
+                        _this.searchLabel = '検索';
+                        break;
                     default:
                         _this.selectAllLabel = 'Select All';
                         _this.searchLabel = 'Search';
@@ -4945,6 +4949,10 @@
                     case 'en':
                         _this.selectAllLabel = 'Select All';
                         _this.searchLabel = 'Search';
+                        break;
+                    case 'ja':
+                        _this.selectAllLabel = 'すべて選択';
+                        _this.searchLabel = '検索';
                         break;
                     default:
                         _this.selectAllLabel = 'Select All';
@@ -14781,7 +14789,7 @@
                     trackByIndex: null,
                     value: day.nativeDate,
                     title: this.dateHelper.format(day.nativeDate, 'E'),
-                    content: this.dateHelper.format(day.nativeDate, this.getVeryShortWeekFormat()),
+                    content: this.dateHelper.format(day.nativeDate, this.i18n.getLocale().locale === 'ja' ? 'EEEEE' : this.getVeryShortWeekFormat()),
                     isSelected: false,
                     isDisabled: false,
                     onClick: function () { },
@@ -14807,7 +14815,7 @@
                 };
                 var _loop_1 = function (day) {
                     var date = weekStart.addDays(day);
-                    var dateFormat = transCompatFormat(this_1.i18n.getLocaleData('DatePicker.lang.dateFormat', 'YYYY-MM-DD'));
+                    var dateFormat = transCompatFormat(this_1.i18n.getLocaleData('DatePicker.lang.dateFormat', this_1.i18n.getLocale().locale === 'ja' ? 'YYYY年M月D日' : 'YYYY-MM-DD'));
                     var title = this_1.dateHelper.format(date.nativeDate, dateFormat);
                     var label = this_1.dateHelper.format(date.nativeDate, 'dd');
                     var cell = {
@@ -15740,7 +15748,9 @@
                     /**
                      * if sort order is wrong, clear the other part's value
                      */
+                    var isWrong = false;
                     if (time.wrongSortOrder(selectedValue)) {
+                        isWrong = true;
                         nextPart = this.reversedPart(checkedPart);
                         selectedValue[this.datePickerService.getActiveIndex(nextPart)] = null;
                         this.checkedPartArr[this.datePickerService.getActiveIndex(nextPart)] = false;
@@ -15750,7 +15760,7 @@
                      * range date usually selected paired,
                      * so we emit the date value only both date is allowed and both part are checked
                      */
-                    if (this.isBothAllowed(selectedValue) && this.checkedPartArr[0] && this.checkedPartArr[1]) {
+                    if ((this.isBothAllowed(selectedValue) && this.checkedPartArr[0] && this.checkedPartArr[1]) || (selectedValue.length > 1 && !isWrong && selectedValue[0] !== undefined)) {
                         this.calendarChange.emit(selectedValue);
                         this.clearHoverValue();
                         this.datePickerService.emitValue$.next();
@@ -16727,8 +16737,9 @@
             var e_1, _e;
             if (!this.isRange) {
                 var parsedValue = this.datePickerService.value;
-                var date = moment$2(parsedValue.nativeDate).locale(this.i18n.getLocale().locale);
-                return date.format(this.i18n.getLocale().locale === 'de' ? 'DD. MMM YYYY' : 'MMM DD, YYYY');
+                var locale = this.i18n.getLocale().locale;
+                var date = moment$2(parsedValue.nativeDate).locale(locale);
+                return date.format(locale === 'de' ? 'DD. MMM YYYY' : locale === 'ja' ? 'YYYY年M月D日' : 'MMM DD, YYYY');
             }
             var parsedValues = [];
             var coerceValues = this.datePickerService.value;
@@ -16736,8 +16747,9 @@
                 for (var coerceValues_1 = __values(coerceValues), coerceValues_1_1 = coerceValues_1.next(); !coerceValues_1_1.done; coerceValues_1_1 = coerceValues_1.next()) {
                     var val = coerceValues_1_1.value;
                     var parsedValue = val;
-                    var date = moment$2(parsedValue.nativeDate).locale(this.i18n.getLocale().locale);
-                    parsedValues.push(date.format(this.i18n.getLocale().locale === 'de' ? 'DD. MMM YYYY' : 'MMM DD, YYYY'));
+                    var locale = this.i18n.getLocale().locale;
+                    var date = moment$2(parsedValue.nativeDate).locale(locale);
+                    parsedValues.push(date.format(locale === 'de' ? 'DD. MMM YYYY' : locale === 'ja' ? 'YYYY年M月D日' : 'MMM DD, YYYY'));
                 }
             }
             catch (e_1_1) { e_1 = { error: e_1_1 }; }
@@ -16823,10 +16835,11 @@
         CmacsDatePickerComponent.prototype.setModeAndFormat = function () {
             var inputFormats = {
                 year: 'yyyy',
-                month: this.i18n.getLocale().locale === 'de' ? 'MM.yyyy' : 'MM/yyyy',
-                week: this.i18n.getDateLocale() ? 'RRRR-II' : this.i18n.getLocale().locale === 'de' ? 'ww.yyyy' : 'ww/yyyy',
-                date: this.showTime ? (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy HH:mm:ss' : 'MM/dd/yyyy HH:mm:ss') :
-                    (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy' : 'MM/dd/yyyy')
+                month: this.i18n.getLocale().locale === 'de' ? 'MM.yyyy' : this.i18n.getLocale().locale === 'ja' ? 'yyyy年M月' : 'MM/yyyy',
+                week: this.i18n.getDateLocale() ? 'RRRR-II' :
+                    this.i18n.getLocale().locale === 'de' ? 'ww.yyyy' : this.i18n.getLocale().locale === 'ja' ? 'yyyy年Www週' : 'ww/yyyy',
+                date: this.showTime ? (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy HH:mm:ss' : this.i18n.getLocale().locale === 'ja' ? 'yyyy年M月d日 H時m分s秒' : 'MM/dd/yyyy HH:mm:ss') :
+                    (this.i18n.getLocale().locale === 'de' ? 'dd.MM.yyyy' : this.i18n.getLocale().locale === 'ja' ? 'yyyy年M月d日' : 'MM/dd/yyyy')
             };
             if (!this.mode) {
                 this.mode = 'date';
@@ -23957,8 +23970,9 @@
         CmacsCompactTableComponent.prototype.transformDate = function (date) {
             var m = moment$3(date);
             if (m.isValid()) {
-                m.locale(this.i18n.getLocale().locale);
-                return m.format(this.i18n.getLocale().locale === 'de' ? 'DD.MM.YYYY' : 'MM/DD/YYYY');
+                var locale = this.i18n.getLocale().locale;
+                m.locale(locale);
+                return m.format(locale === 'de' ? 'DD.MM.YYYY' : locale === 'ja' ? 'YYYY年M月D日' : 'MM/DD/YYYY');
             }
             return '';
         };
@@ -24630,7 +24644,16 @@
                 };
             }
             this.i18n.localeChange.pipe(operators.takeUntil(this.destroy$)).subscribe(function () {
-                _this.tinyMceSettings.language = _this.i18n.getLocale().locale === 'de' ? 'de' : null;
+                switch (_this.i18n.getLocale().locale) {
+                    case 'de':
+                        _this.tinyMceSettings.language = 'de';
+                        break;
+                    case 'jp':
+                        _this.tinyMceSettings.language = 'ja';
+                        break;
+                    default:
+                        _this.tinyMceSettings.language = null;
+                }
                 _this.cdr.detectChanges();
             });
             setTimeout(function () {
@@ -28373,6 +28396,10 @@
                         _this.showLabel = 'Show';
                         _this.hideLabel = 'Hide';
                         break;
+                    case 'ja':
+                        _this.showLabel = '表示';
+                        _this.hideLabel = '非表示';
+                        break;
                     default:
                         _this.showLabel = 'Show';
                         _this.hideLabel = 'Hide';
@@ -31595,6 +31622,9 @@
                         break;
                     case 'en':
                         _this.placeholder = 'Select Column';
+                        break;
+                    case 'ja':
+                        _this.placeholder = '列を選択';
                         break;
                     default:
                         _this.placeholder = 'Select Column';
@@ -36566,7 +36596,16 @@
             var m = moment$4(date);
             if (m.isValid()) {
                 m.locale(this.i18n.getLocale().locale);
-                return m.format(this.i18n.getLocale().locale === 'de' ? 'DD.MM.YYYY' : 'MM/DD/YYYY');
+                switch (this.i18n.getLocale().locale) {
+                    case 'de':
+                        return m.format('DD.MM.YYYY');
+                    case 'en':
+                        return m.format('MM/DD/YYYY');
+                    case 'ja':
+                        return m.format('YYYY/MM/DD');
+                    default:
+                        return m.format('MM/DD/YYYY');
+                }
             }
             return '';
         };
@@ -42920,6 +42959,11 @@
                         _this.modalTitle = 'Column Options';
                         _this.header = 'Column Options';
                         break;
+                    case 'ja':
+                        _this.saveBtnLabel = '保存';
+                        _this.modalTitle = 'カラムオプション';
+                        _this.header = 'カラムオプション';
+                        break;
                     default:
                         _this.saveBtnLabel = 'Save';
                         _this.modalTitle = 'Column Options';
@@ -44094,6 +44138,10 @@
                         _this.modeOptions[0].title = 'Week';
                         _this.modeOptions[1].title = 'Month';
                         break;
+                    case 'ja':
+                        _this.modeOptions[0].title = '週';
+                        _this.modeOptions[1].title = '月';
+                        break;
                     default:
                         _this.modeOptions[0].title = 'Week';
                         _this.modeOptions[1].title = 'Month';
@@ -44159,8 +44207,10 @@
         CmacsTimelineDatepickerComponent.prototype.getDefaultMonths = function () {
             return this.i18n.getLocale().locale === 'de' ? [{ title: 'Jan.' }, { title: 'Feb.' }, { title: 'März' }, { title: 'Apr.' }, { title: 'Mai' }, { title: 'Juni' },
                 { title: 'Juli' }, { title: 'Aug.' }, { title: 'Sept.' }, { title: 'Okt.' }, { title: 'Nov.' }, { title: 'Dez.' }] :
-                [{ title: 'Jan' }, { title: 'Feb' }, { title: 'Mar' }, { title: 'Apr' }, { title: 'May' }, { title: 'Jun' },
-                    { title: 'Jul' }, { title: 'Aug' }, { title: 'Sep' }, { title: 'Oct' }, { title: 'Nov' }, { title: 'Dec' }];
+                this.i18n.getLocale().locale === 'ja' ? [{ title: '1月' }, { title: '2月' }, { title: '3月' }, { title: '4月' }, { title: '5月' }, { title: '6月' },
+                    { title: '7月' }, { title: '8月' }, { title: '9月' }, { title: '10月' }, { title: '11月' }, { title: '12月' }] :
+                    [{ title: 'Jan' }, { title: 'Feb' }, { title: 'Mar' }, { title: 'Apr' }, { title: 'May' }, { title: 'Jun' },
+                        { title: 'Jul' }, { title: 'Aug' }, { title: 'Sep' }, { title: 'Oct' }, { title: 'Nov' }, { title: 'Dec' }];
         };
         CmacsTimelineDatepickerComponent.prototype.getWeeksInYear = function (date) {
             var temp = [];
@@ -44413,13 +44463,16 @@
         CmacsTimelineChartComponent.prototype.checkLang = function () {
             switch (this.i18n.getLocale().locale) {
                 case 'de':
-                    google.charts.load('46', { 'packages': ['corechart'], 'language': 'de' });
+                    google.charts.load('46', { packages: ['corechart'], language: 'de' });
                     break;
                 case 'en':
-                    google.charts.load('46', { 'packages': ['corechart'], 'language': 'en' });
+                    google.charts.load('46', { packages: ['corechart'], language: 'en' });
+                    break;
+                case 'ja':
+                    google.charts.load('46', { packages: ['corechart'], language: 'ja' });
                     break;
                 default:
-                    google.charts.load('46', { 'packages': ['corechart'], 'language': 'en' });
+                    google.charts.load('46', { packages: ['corechart'], language: 'en' });
             }
             this.cdr.markForCheck();
         };
@@ -44440,7 +44493,7 @@
         };
         CmacsTimelineChartComponent.prototype.createCustomTooltip = function (data, color) {
             var duration = moment$6.duration(moment$6(data[4]).diff(moment$6(data[3])));
-            return "<div class=\"cmacs-timeline-chart-tooltip-wrapper\">\n  <div class=\"cmacs-timeline-chart-tooltip-title\">\n    <span class=\"cmacs-timeline-chart-legend-marker\" style=\"background-color: " + color + "\"></span>\n    <span class=\"cmacs-timeline-chart-legend-label\">" + data[1] + "</span>\n  </div>\n  <div class=\"cmacs-timeline-chart-tooltip-project-title\">" + data[0] + ":</div>\n  <div class=\"cmacs-timeline-chart-tooltip-project-dates\">" + (this.i18n.getLocale().locale === 'de' ? moment$6(data[3]).locale('de').format('MMM YYYY') + " - " + moment$6(data[4]).locale('de').format('MMM YYYY') : moment$6(data[3]).format('MMM, YYYY') + " - " + moment$6(data[4]).format('MMM, YYYY')) + " </div>\n  <div class=\"cmacs-timeline-chart-tooltip-project-duration-wrapper\">\n    <div class=\"cmacs-timeline-chart-tooltip-project-duration\">" + (this.i18n.getLocale().locale === 'de' ? 'Dauer' : 'Duration') + ":</div>\n    <div class=\"cmacs-timeline-chart-tooltip-project-duration-date\">" + duration.get('years') + " " + (this.i18n.getLocale().locale === 'de' ? 'Jahre' : 'years') + ", " + duration.get('months') + " " + (this.i18n.getLocale().locale === 'de' ? 'Monate' : 'months') + ", " + duration.get('days') + " " + (this.i18n.getLocale().locale === 'de' ? 'Tage' : 'days') + "</div>\n  </div>\n</div>";
+            return "<div class=\"cmacs-timeline-chart-tooltip-wrapper\">\n    <div class=\"cmacs-timeline-chart-tooltip-title\">\n        <span class=\"cmacs-timeline-chart-legend-marker\" style=\"background-color: " + color + "\"></span>\n        <span class=\"cmacs-timeline-chart-legend-label\">" + data[1] + "</span>\n    </div>\n    <div class=\"cmacs-timeline-chart-tooltip-project-title\">" + data[0] + ":</div>\n    <div class=\"cmacs-timeline-chart-tooltip-project-dates\">" + (this.i18n.getLocale().locale === 'de' ? moment$6(data[3]).locale('de').format('MMM YYYY') + " - " + moment$6(data[4]).locale('de').format('MMM YYYY') : this.i18n.getLocale().locale === 'ja' ? moment$6(data[3]).format('YYYY年M月') + " - " + moment$6(data[4]).format('YYYY年M月') : moment$6(data[3]).format('MMM, YYYY') + " - " + moment$6(data[4]).format('MMM, YYYY')) + "</div>\n    <div class=\"cmacs-timeline-chart-tooltip-project-duration-wrapper\">\n        <div class=\"cmacs-timeline-chart-tooltip-project-duration\">" + (this.i18n.getLocale().locale === 'de' ? 'Dauer' : this.i18n.getLocale().locale === 'ja' ? '期間' : 'Duration') + ":</div>\n        <div class=\"cmacs-timeline-chart-tooltip-project-duration-date\">" + duration.get('years') + " " + (this.i18n.getLocale().locale === 'de' || this.i18n.getLocale().locale === 'ja' ? this.i18n.getLocale().locale === 'de' ? 'Jahre' : '年' : 'years') + ", " + duration.get('months') + " " + (this.i18n.getLocale().locale === 'de' || this.i18n.getLocale().locale === 'ja' ? this.i18n.getLocale().locale === 'de' ? 'Monate' : 'ヶ月' : 'months') + ", " + duration.get('days') + " " + (this.i18n.getLocale().locale === 'de' || this.i18n.getLocale().locale === 'ja' ? this.i18n.getLocale().locale === 'de' ? 'Tage' : '日' : 'days') + "</div>\n    </div>\n</div>";
         };
         CmacsTimelineChartComponent.prototype.ngOnDestroy = function () {
             this.destroy$.next();
@@ -48308,7 +48361,16 @@
                 };
             }
             this.i18n.localeChange.pipe(operators.takeUntil(this.destroy$)).subscribe(function () {
-                _this.tinyMceSettings.language = _this.i18n.getLocale().locale === 'de' ? 'de' : null;
+                switch (_this.i18n.getLocale().locale) {
+                    case 'de':
+                        _this.tinyMceSettings.language = 'de';
+                        break;
+                    case 'jp':
+                        _this.tinyMceSettings.language = 'ja';
+                        break;
+                    default:
+                        _this.tinyMceSettings.language = null;
+                }
                 _this.cdr.detectChanges();
             });
             setTimeout(function () {
