@@ -22160,9 +22160,9 @@
             i0.ɵɵstyleProp("max-width", ctx_r406.getMaxWidth(field_r400, item_r403, i_r402));
             i0.ɵɵclassProp("cmacs-compact-table-invalid", !ctx_r406.validate(data_r401, field_r400))("cmacs-compact-table-overflow-cell", !ctx_r406.wrapLines)("cmacs-compact-table-field-valid-placeholder", ctx_r406.isNull(data_r401[field_r400.property]));
             i0.ɵɵattributeInterpolate3("id", "", ctx_r406.gridID, "-row-", i_r402, "-", field_r400.property, "");
-            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r406.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r406.isEllipsisActive(ctx_r406.gridID + "-row-" + i_r402 + "-" + field_r400.property, field_r400) ? data_r401[field_r400.property] ? ctx_r406.transformDate(data_r401[field_r400.property]) : field_r400.placeholder : null);
+            i0.ɵɵproperty("cmacsTooltipTrigger", ctx_r406.getTooltipEllipsisTrigger())("cmacsTooltipTitle", ctx_r406.isEllipsisActive(ctx_r406.gridID + "-row-" + i_r402 + "-" + field_r400.property, field_r400) ? data_r401[field_r400.property] ? ctx_r406.transformDate(data_r401[field_r400.property], field_r400.dateFormat) : field_r400.placeholder : null);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(data_r401[field_r400.property] ? ctx_r406.transformDate(data_r401[field_r400.property]) : field_r400.placeholder);
+            i0.ɵɵtextInterpolate(data_r401[field_r400.property] ? ctx_r406.transformDate(data_r401[field_r400.property], field_r400.dateFormat) : field_r400.placeholder);
             i0.ɵɵadvance(1);
             i0.ɵɵclassProp("cmacs-compact-table-calendar-icon", ctx_r406.inLineEdit && field_r400.editable)("cmacs-compact-table-calendar-icon-view", !ctx_r406.inLineEdit || !field_r400.editable);
         }
@@ -23967,12 +23967,18 @@
         CmacsCompactTableComponent.prototype.getTableComponent = function () {
             return this.nzTableComponent;
         };
-        CmacsCompactTableComponent.prototype.transformDate = function (date) {
+        CmacsCompactTableComponent.prototype.transformDate = function (date, dateFormat) {
+            if (dateFormat === void 0) { dateFormat = null; }
             var m = moment$3(date);
             if (m.isValid()) {
-                var locale = this.i18n.getLocale().locale;
-                m.locale(locale);
-                return m.format(locale === 'de' ? 'DD.MM.YYYY' : locale === 'ja' ? 'YYYY年M月D日' : 'MM/DD/YYYY');
+                if (dateFormat) {
+                    return m.format(dateFormat);
+                }
+                else {
+                    var locale = this.i18n.getLocale().locale;
+                    m.locale(locale);
+                    return m.format(locale === 'de' ? 'DD.MM.YYYY' : locale === 'ja' ? 'YYYY年M月D日' : 'MM/DD/YYYY');
+                }
             }
             return '';
         };
@@ -35861,7 +35867,7 @@
             i0.ɵɵadvance(1);
             i0.ɵɵclassProp("cmacs-table-overflow-cell", !ctx_r127.wrapLines);
             i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx_r127.transformDate(data_r15[field_r29.property]));
+            i0.ɵɵtextInterpolate(ctx_r127.transformDate(data_r15[field_r29.property], field_r29.dateFormat));
         }
     }
     function CmacsTableComponent_tr_5_td_5_ng_template_2_ng_container_5_div_1_Template(rf, ctx) {
@@ -36592,19 +36598,25 @@
         CmacsTableComponent.prototype.dblClickRow = function (data) {
             this.ondlclickRow.emit(data);
         };
-        CmacsTableComponent.prototype.transformDate = function (date) {
+        CmacsTableComponent.prototype.transformDate = function (date, dateFormat) {
+            if (dateFormat === void 0) { dateFormat = null; }
             var m = moment$4(date);
             if (m.isValid()) {
-                m.locale(this.i18n.getLocale().locale);
-                switch (this.i18n.getLocale().locale) {
-                    case 'de':
-                        return m.format('DD.MM.YYYY');
-                    case 'en':
-                        return m.format('MM/DD/YYYY');
-                    case 'ja':
-                        return m.format('YYYY/MM/DD');
-                    default:
-                        return m.format('MM/DD/YYYY');
+                if (dateFormat) {
+                    return m.format(dateFormat);
+                }
+                else {
+                    m.locale(this.i18n.getLocale().locale);
+                    switch (this.i18n.getLocale().locale) {
+                        case 'de':
+                            return m.format('DD.MM.YYYY');
+                        case 'en':
+                            return m.format('MM/DD/YYYY');
+                        case 'ja':
+                            return m.format('YYYY/MM/DD');
+                        default:
+                            return m.format('MM/DD/YYYY');
+                    }
                 }
             }
             return '';
