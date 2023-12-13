@@ -16,7 +16,7 @@ export declare class CmacsTimelineItemComponent implements OnChanges {
     ngOnChanges(changes: SimpleChanges): void;
     detectChanges(): void;
     private updateCustomColor;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTimelineItemComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTimelineItemComponent, "cmacs-timeline-item, [cmacs-timeline-item]", ["cmacsTimelineItem"], { "cmacsPosition": "cmacsPosition"; "color": "color"; "dot": "dot"; }, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTimelineItemComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTimelineItemComponent, "cmacs-timeline-item, [cmacs-timeline-item]", ["cmacsTimelineItem"], { "cmacsPosition": { "alias": "cmacsPosition"; "required": false; }; "color": { "alias": "color"; "required": false; }; "dot": { "alias": "dot"; "required": false; }; }, {}, never, ["*"], false, never>;
 }
 //# sourceMappingURL=timeline-item.component.d.ts.map

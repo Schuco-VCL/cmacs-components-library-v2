@@ -32,7 +32,7 @@ export declare class CmacsAutosizeDirective implements AfterViewInit, OnDestroy,
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
     ngDoCheck(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsAutosizeDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsAutosizeDirective, "textarea[cmacsAutosize]", ["cmacsAutosize"], { "cmacsAutosize": "cmacsAutosize"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsAutosizeDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsAutosizeDirective, "textarea[cmacsAutosize]", ["cmacsAutosize"], { "cmacsAutosize": { "alias": "cmacsAutosize"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=autosize.directive.d.ts.map

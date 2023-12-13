@@ -6,7 +6,7 @@ export declare class LightboxConfigurationService {
     constructor();
     get controls(): ControlsConfiguration;
     get animations(): AnimationsConfiguration;
-    static ɵfac: i0.ɵɵFactoryDef<LightboxConfigurationService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<LightboxConfigurationService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LightboxConfigurationService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<LightboxConfigurationService>;
 }
 //# sourceMappingURL=lightbox-configuration.service.d.ts.map

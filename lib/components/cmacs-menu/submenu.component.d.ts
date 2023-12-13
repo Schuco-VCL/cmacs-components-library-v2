@@ -51,7 +51,7 @@ export declare class CmacsSubMenuComponent implements OnInit, OnDestroy, AfterCo
     ngAfterContentInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSubMenuComponent, [null, null, null, null, null, { optional: true; }, { optional: true; host: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSubMenuComponent, "[cmacs-submenu]", ["cmacsSubmenu"], { "menuClassName": "menuClassName"; "menuWrapperClassName": "menuWrapperClassName"; "paddingLeft": "paddingLeft"; "title": "title"; "icon": "icon"; "cmacsIcon": "cmacsIcon"; "open": "open"; "cmacsContextMenu": "cmacsContextMenu"; "disabled": "disabled"; }, { "openChange": "openChange"; }, ["listOfNzSubMenuComponent", "listOfNzMenuItemDirective"], ["[title]", "*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSubMenuComponent, [null, null, null, null, null, { optional: true; }, { optional: true; host: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsSubMenuComponent, "[cmacs-submenu]", ["cmacsSubmenu"], { "menuClassName": { "alias": "menuClassName"; "required": false; }; "menuWrapperClassName": { "alias": "menuWrapperClassName"; "required": false; }; "paddingLeft": { "alias": "paddingLeft"; "required": false; }; "title": { "alias": "title"; "required": false; }; "icon": { "alias": "icon"; "required": false; }; "cmacsIcon": { "alias": "cmacsIcon"; "required": false; }; "open": { "alias": "open"; "required": false; }; "cmacsContextMenu": { "alias": "cmacsContextMenu"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; }, { "openChange": "openChange"; }, ["listOfNzSubMenuComponent", "listOfNzMenuItemDirective"], ["[title]", "*"], false, never>;
 }
 //# sourceMappingURL=submenu.component.d.ts.map

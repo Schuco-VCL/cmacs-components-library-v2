@@ -5,7 +5,7 @@ export declare class CmacsCtaDropdownComponent implements DropdownPanel {
     templateRef: TemplateRef<any>;
     closed: EventEmitter<void>;
     constructor();
-    static ɵfac: i0.ɵɵFactoryDef<CmacsCtaDropdownComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCtaDropdownComponent, "cmacs-cta-dropdown", never, {}, { "closed": "closed"; }, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsCtaDropdownComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsCtaDropdownComponent, "cmacs-cta-dropdown", never, {}, { "closed": "closed"; }, never, ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-cta-dropdown.component.d.ts.map

@@ -22,7 +22,7 @@ export declare class DateTableComponent extends AbstractTable implements OnChang
     getClassMap(cell: DateCell): {
         [key: string]: boolean;
     };
-    static ɵfac: i0.ɵɵFactoryDef<DateTableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<DateTableComponent, "date-table", ["dateTable"], { "locale": "locale"; "showWeekCustom": "showWeekCustom"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DateTableComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<DateTableComponent, "date-table", ["dateTable"], { "locale": { "alias": "locale"; "required": false; }; "showWeekCustom": { "alias": "showWeekCustom"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=date-table.component.d.ts.map

@@ -5,7 +5,7 @@ import { NzConfigKey, NzConfigService } from 'ng-zorro-antd/core/config';
 import { InputObservable } from 'ng-zorro-antd/core/types';
 import { Observable, Subject } from 'rxjs';
 import * as i0 from "@angular/core";
-export declare type NzFormLayoutType = 'horizontal' | 'vertical' | 'inline';
+export type NzFormLayoutType = 'horizontal' | 'vertical' | 'inline';
 export declare const DefaultTooltipIcon: {
     readonly type: "question-circle";
     readonly theme: "outline";
@@ -30,7 +30,7 @@ export declare class CmacsFormDirective implements OnChanges, OnDestroy, InputOb
     constructor(nzConfigService: NzConfigService, elementRef: ElementRef, renderer: Renderer2, directionality: Directionality);
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsFormDirective, [null, null, null, { optional: true; }]>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsFormDirective, "[cmacs-form]", ["cmacsForm"], { "cmacsLayout": "cmacsLayout"; "cmacsNoColon": "cmacsNoColon"; "cmacsAutoTips": "cmacsAutoTips"; "cmacsDisableAutoTips": "cmacsDisableAutoTips"; "cmacsTooltipIcon": "cmacsTooltipIcon"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsFormDirective, [null, null, null, { optional: true; }]>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsFormDirective, "[cmacs-form]", ["cmacsForm"], { "cmacsLayout": { "alias": "cmacsLayout"; "required": false; }; "cmacsNoColon": { "alias": "cmacsNoColon"; "required": false; }; "cmacsAutoTips": { "alias": "cmacsAutoTips"; "required": false; }; "cmacsDisableAutoTips": { "alias": "cmacsDisableAutoTips"; "required": false; }; "cmacsTooltipIcon": { "alias": "cmacsTooltipIcon"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=form.directive.d.ts.map

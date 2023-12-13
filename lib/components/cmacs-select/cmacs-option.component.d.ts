@@ -12,7 +12,7 @@ export declare class CmacsOptionComponent implements OnChanges {
     nzDisabled: boolean;
     nzCustomContent: boolean;
     ngOnChanges(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsOptionComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsOptionComponent, "cmacs-option", ["cmacsOption"], { "nzLabel": "label"; "divider": "divider"; "extendedData": "extendedData"; "nzValue": "value"; "visible": "visible"; "nzDisabled": "disabled"; "nzCustomContent": "customContent"; }, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsOptionComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsOptionComponent, "cmacs-option", ["cmacsOption"], { "nzLabel": { "alias": "label"; "required": false; }; "divider": { "alias": "divider"; "required": false; }; "extendedData": { "alias": "extendedData"; "required": false; }; "nzValue": { "alias": "value"; "required": false; }; "visible": { "alias": "visible"; "required": false; }; "nzDisabled": { "alias": "disabled"; "required": false; }; "nzCustomContent": { "alias": "customContent"; "required": false; }; }, {}, never, ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-option.component.d.ts.map

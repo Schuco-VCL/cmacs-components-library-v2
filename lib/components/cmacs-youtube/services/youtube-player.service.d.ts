@@ -9,7 +9,7 @@ export declare class YoutubePlayerService {
     constructor(zone: NgZone, youtubeApi: YoutubeApiService);
     initialise(playerId: string, config: any): void;
     private _newPlayer;
-    static ɵfac: i0.ɵɵFactoryDef<YoutubePlayerService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<YoutubePlayerService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<YoutubePlayerService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<YoutubePlayerService>;
 }
 //# sourceMappingURL=youtube-player.service.d.ts.map

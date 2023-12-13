@@ -13,7 +13,7 @@ export declare class CmacsColorPickerComponent implements AfterViewInit {
     setColor(color: string): void;
     isColorPickerType(type: string): boolean;
     ngAfterViewInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsColorPickerComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsColorPickerComponent, "cmacs-color-picker", ["cmacsColorPicker"], { "type": "type"; "color": "color"; "mobile": "mobile"; "basicColorList": "basicColorList"; }, { "colorChange": "colorChange"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsColorPickerComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsColorPickerComponent, "cmacs-color-picker", ["cmacsColorPicker"], { "type": { "alias": "type"; "required": false; }; "color": { "alias": "color"; "required": false; }; "mobile": { "alias": "mobile"; "required": false; }; "basicColorList": { "alias": "basicColorList"; "required": false; }; }, { "colorChange": "colorChange"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-color-picker.component.d.ts.map

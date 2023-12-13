@@ -32,7 +32,7 @@ export declare class LightboxToolbarComponent implements OnInit {
     open(): void;
     close(): void;
     toggle(): void;
-    static ɵfac: i0.ɵɵFactoryDef<LightboxToolbarComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<LightboxToolbarComponent, "lightbox-toolbar", never, { "title": "title"; "pagination": "pagination"; }, { "nextEvent": "nextEvent"; "previousEvent": "previousEvent"; "firstEvent": "firstEvent"; "lastEvent": "lastEvent"; "closeEvent": "closeEvent"; "thumbnailsToggleEvent": "thumbnailsToggleEvent"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LightboxToolbarComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<LightboxToolbarComponent, "lightbox-toolbar", never, { "title": { "alias": "title"; "required": false; }; "pagination": { "alias": "pagination"; "required": false; }; }, { "nextEvent": "nextEvent"; "previousEvent": "previousEvent"; "firstEvent": "firstEvent"; "lastEvent": "lastEvent"; "closeEvent": "closeEvent"; "thumbnailsToggleEvent": "thumbnailsToggleEvent"; }, never, never, false, never>;
 }
 //# sourceMappingURL=lightbox-toolbar.component.d.ts.map

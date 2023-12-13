@@ -125,7 +125,7 @@ export declare class NzTreeBaseService implements OnDestroy {
      */
     formatEvent(eventName: string, node: NzTreeNode | null, event: MouseEvent | DragEvent | null): NzFormatEmitEvent;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTreeBaseService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<NzTreeBaseService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NzTreeBaseService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<NzTreeBaseService>;
 }
 //# sourceMappingURL=nz-tree-base.service.d.ts.map

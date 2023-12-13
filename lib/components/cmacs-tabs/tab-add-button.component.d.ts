@@ -8,7 +8,7 @@ export declare class CmacsTabAddButtonComponent {
     constructor(elementRef: ElementRef<HTMLElement>);
     getElementWidth(): number;
     getElementHeight(): number;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTabAddButtonComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTabAddButtonComponent, "cmacs-tab-add-button, button[cmacs-tab-add-button]", never, { "addIcon": "addIcon"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTabAddButtonComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTabAddButtonComponent, "cmacs-tab-add-button, button[cmacs-tab-add-button]", never, { "addIcon": { "alias": "addIcon"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=tab-add-button.component.d.ts.map

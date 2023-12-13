@@ -39,7 +39,7 @@ export declare class CmacsStepComponent implements OnDestroy {
     disable(): void;
     markForCheck(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsStepComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsStepComponent, "cmacs-step", ["cmacsStep"], { "cmacsTitle": "cmacsTitle"; "subtitle": "subtitle"; "description": "description"; "disabled": "disabled"; "secondary": "secondary"; "status": "status"; "cmacsIcon": "cmacsIcon"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsStepComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsStepComponent, "cmacs-step", ["cmacsStep"], { "cmacsTitle": { "alias": "cmacsTitle"; "required": false; }; "subtitle": { "alias": "subtitle"; "required": false; }; "description": { "alias": "description"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "secondary": { "alias": "secondary"; "required": false; }; "status": { "alias": "status"; "required": false; }; "cmacsIcon": { "alias": "cmacsIcon"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=step.component.d.ts.map

@@ -5,7 +5,7 @@ import { ControlValueAccessor } from '@angular/forms';
 import { CmacsCheckboxWrapperComponent } from './cmacs-checkbox-wrapper.component';
 import { BooleanInput, NzSafeAny, OnChangeType, OnTouchedType } from 'ng-zorro-antd/core/types';
 import * as i0 from "@angular/core";
-export declare type CmacsTheme = 'light' | 'dark';
+export type CmacsTheme = 'light' | 'dark';
 export declare class CmacsCheckboxComponent implements OnInit, ControlValueAccessor, AfterViewInit, OnDestroy {
     private elementRef;
     private renderer;
@@ -42,7 +42,7 @@ export declare class CmacsCheckboxComponent implements OnInit, ControlValueAcces
     ngOnInit(): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsCheckboxComponent, [null, null, { optional: true; }, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCheckboxComponent, "[cmacs-checkbox]", ["cmacsCheckbox"], { "value": "value"; "theme": "theme"; "autoFocus": "autoFocus"; "disabled": "disabled"; "indeterminate": "indeterminate"; "checked": "checked"; }, { "checkedChange": "checkedChange"; }, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsCheckboxComponent, [null, null, { optional: true; }, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsCheckboxComponent, "[cmacs-checkbox]", ["cmacsCheckbox"], { "value": { "alias": "value"; "required": false; }; "theme": { "alias": "theme"; "required": false; }; "autoFocus": { "alias": "autoFocus"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "indeterminate": { "alias": "indeterminate"; "required": false; }; "checked": { "alias": "checked"; "required": false; }; }, { "checkedChange": "checkedChange"; }, never, ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-checkbox.component.d.ts.map

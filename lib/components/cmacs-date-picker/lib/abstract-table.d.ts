@@ -41,7 +41,7 @@ export declare abstract class AbstractTable implements OnInit, OnChanges {
     ngOnChanges(changes: SimpleChanges): void;
     private isDateRealChange;
     private isSameDate;
-    static ɵfac: i0.ɵɵFactoryDef<AbstractTable, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<AbstractTable, never, never, { "prefixCls": "prefixCls"; "value": "value"; "locale": "locale"; "activeDate": "activeDate"; "showWeek": "showWeek"; "selectedValue": "selectedValue"; "hoverValue": "hoverValue"; "disabledDate": "disabledDate"; "cellRender": "cellRender"; "fullCellRender": "fullCellRender"; }, { "valueChange": "valueChange"; "cellHover": "cellHover"; }, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<AbstractTable, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<AbstractTable, never, never, { "prefixCls": { "alias": "prefixCls"; "required": false; }; "value": { "alias": "value"; "required": false; }; "locale": { "alias": "locale"; "required": false; }; "activeDate": { "alias": "activeDate"; "required": false; }; "showWeek": { "alias": "showWeek"; "required": false; }; "selectedValue": { "alias": "selectedValue"; "required": false; }; "hoverValue": { "alias": "hoverValue"; "required": false; }; "disabledDate": { "alias": "disabledDate"; "required": false; }; "cellRender": { "alias": "cellRender"; "required": false; }; "fullCellRender": { "alias": "fullCellRender"; "required": false; }; }, { "valueChange": "valueChange"; "cellHover": "cellHover"; }, never, never, false, never>;
 }
 //# sourceMappingURL=abstract-table.d.ts.map

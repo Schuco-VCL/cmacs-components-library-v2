@@ -17,7 +17,7 @@ export declare class MonthTableComponent extends AbstractTable implements OnChan
     private isDisabledMonth;
     private addCellProperty;
     private chooseMonth;
-    static ɵfac: i0.ɵɵFactoryDef<MonthTableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<MonthTableComponent, "month-table", ["monthTable"], {}, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<MonthTableComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<MonthTableComponent, "month-table", ["monthTable"], {}, {}, never, never, false, never>;
 }
 //# sourceMappingURL=month-table.component.d.ts.map

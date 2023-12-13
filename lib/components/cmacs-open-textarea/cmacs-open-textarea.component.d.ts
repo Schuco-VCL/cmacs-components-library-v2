@@ -1,8 +1,8 @@
 import { AfterViewInit, ElementRef } from '@angular/core';
-import { FormControl } from "@angular/forms";
+import { UntypedFormControl } from "@angular/forms";
 import * as i0 from "@angular/core";
 export declare class CmacsOpenTextareaComponent implements AfterViewInit {
-    formControlCustom: FormControl;
+    formControlCustom: UntypedFormControl;
     width: number;
     placeholder: string;
     disabled: boolean;
@@ -15,7 +15,7 @@ export declare class CmacsOpenTextareaComponent implements AfterViewInit {
     isTextEnabled(): any;
     startEdition($event: Event): void;
     ngAfterViewInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsOpenTextareaComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsOpenTextareaComponent, "cmacs-open-textarea", ["cmacsOpenTextarea"], { "formControlCustom": "formControlCustom"; "width": "width"; "placeholder": "placeholder"; "disabled": "disabled"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsOpenTextareaComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsOpenTextareaComponent, "cmacs-open-textarea", ["cmacsOpenTextarea"], { "formControlCustom": { "alias": "formControlCustom"; "required": false; }; "width": { "alias": "width"; "required": false; }; "placeholder": { "alias": "placeholder"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-open-textarea.component.d.ts.map

@@ -36,7 +36,7 @@ export declare class CmacsRadioComponent implements ControlValueAccessor, AfterV
     ngOnInit(): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsRadioComponent, [null, null, null, { optional: true; }, { optional: true; }, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsRadioComponent, "[cmacs-radio],[cmacs-radio-button]", ["cmacsRadio"], { "value": "value"; "disabled": "disabled"; "autoFocus": "autoFocus"; }, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsRadioComponent, [null, null, null, { optional: true; }, { optional: true; }, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsRadioComponent, "[cmacs-radio],[cmacs-radio-button]", ["cmacsRadio"], { "value": { "alias": "value"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "autoFocus": { "alias": "autoFocus"; "required": false; }; }, {}, never, ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-radio.component.d.ts.map

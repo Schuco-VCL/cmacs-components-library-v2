@@ -1,7 +1,7 @@
 import { TemplateRef } from '@angular/core';
 import { Subject } from 'rxjs';
 import { Direction } from '@angular/cdk/bidi';
-export declare type NzMessageType = 'success' | 'info' | 'warning' | 'error' | 'loading';
+export type NzMessageType = 'success' | 'info' | 'warning' | 'error' | 'loading';
 export interface NzMessageDataOptions {
     duration?: number;
     nzAnimate?: boolean;
@@ -26,5 +26,5 @@ export interface MessageConfig {
     nzTop?: number | string;
     nzDirection?: Direction;
 }
-export declare type NzMessageRef = Pick<Required<NzMessageData>, 'onClose' | 'messageId'>;
+export type NzMessageRef = Pick<Required<NzMessageData>, 'onClose' | 'messageId'>;
 //# sourceMappingURL=typings.d.ts.map

@@ -7,7 +7,7 @@ export declare class CmacsDropdownButtonDirective implements AfterViewInit {
     private elementRef;
     constructor(renderer: Renderer2, nzButtonGroupComponent: CmacsButtonGroupComponent, elementRef: ElementRef);
     ngAfterViewInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsDropdownButtonDirective, [null, { optional: true; host: true; }, null]>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsDropdownButtonDirective, "[cmacs-button][cmacs-dropdown]", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsDropdownButtonDirective, [null, { optional: true; host: true; }, null]>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsDropdownButtonDirective, "[cmacs-button][cmacs-dropdown]", never, {}, {}, never, never, false, never>;
 }
 //# sourceMappingURL=dropdown-button.directive.d.ts.map

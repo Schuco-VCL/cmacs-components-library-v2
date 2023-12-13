@@ -20,7 +20,7 @@ export declare class DatePickerService implements OnDestroy {
     setValue(value: CompatibleValue): void;
     getActiveIndex(part?: RangePartType): number;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<DatePickerService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<DatePickerService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DatePickerService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<DatePickerService>;
 }
 //# sourceMappingURL=date-picker.service.d.ts.map

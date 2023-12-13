@@ -26,7 +26,7 @@ export declare class CmacsKPIOverviewComponent implements OnChanges {
     getTotalCount(): number;
     getWidth(count: number): number;
     getColoredData(): any;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsKPIOverviewComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsKPIOverviewComponent, "cmacs-kpi-overview", never, { "showLegend": "showLegend"; "data": "data"; "title": "title"; "titleKPI": "titleKPI"; "titleValue": "titleValue"; "view": "view"; "fixed": "fixed"; "colors": "colors"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsKPIOverviewComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsKPIOverviewComponent, "cmacs-kpi-overview", never, { "showLegend": { "alias": "showLegend"; "required": false; }; "data": { "alias": "data"; "required": false; }; "title": { "alias": "title"; "required": false; }; "titleKPI": { "alias": "titleKPI"; "required": false; }; "titleValue": { "alias": "titleValue"; "required": false; }; "view": { "alias": "view"; "required": false; }; "fixed": { "alias": "fixed"; "required": false; }; "colors": { "alias": "colors"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-kpioverview.component.d.ts.map

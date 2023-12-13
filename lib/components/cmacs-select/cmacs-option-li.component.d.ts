@@ -18,7 +18,7 @@ export declare class CmacsOptionLiComponent implements OnInit, OnDestroy {
     constructor(elementRef: ElementRef, nzSelectService: CmacsSelectService, cdr: ChangeDetectorRef, renderer: Renderer2);
     ngOnInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsOptionLiComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsOptionLiComponent, "[cmacs-option-li]", ["cmacsOptionLi"], { "nzOption": "nzOption"; "nzMenuItemSelectedIcon": "nzMenuItemSelectedIcon"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsOptionLiComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsOptionLiComponent, "[cmacs-option-li]", ["cmacsOptionLi"], { "nzOption": { "alias": "nzOption"; "required": false; }; "nzMenuItemSelectedIcon": { "alias": "nzMenuItemSelectedIcon"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-option-li.component.d.ts.map

@@ -24,7 +24,7 @@ export declare class CmacsDatetimeValueAccessorDirective implements ControlValue
     writeValue(value: Date): void;
     registerOnChange(fn: (value: Date) => void): void;
     registerOnTouched(fn: () => void): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsDatetimeValueAccessorDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsDatetimeValueAccessorDirective, "input[nzTime]", ["nzTime"], { "nzTime": "nzTime"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsDatetimeValueAccessorDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsDatetimeValueAccessorDirective, "input[nzTime]", ["nzTime"], { "nzTime": { "alias": "nzTime"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-datetime-value-accessor.directive.d.ts.map

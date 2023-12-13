@@ -24,7 +24,7 @@ export declare class DateRangePopupComponent implements OnInit, OnChanges, OnDes
     dateRender?: string | TemplateRef<Date> | FunctionProp<TemplateRef<Date> | string>;
     panelMode: NzDateMode | NzDateMode[];
     defaultPickerValue: CompatibleDate | undefined | null;
-    readonly panelModeChange: EventEmitter<"time" | "date" | "decade" | "year" | "month" | "week" | NzDateMode[]>;
+    readonly panelModeChange: EventEmitter<NzDateMode | NzDateMode[]>;
     readonly calendarChange: EventEmitter<CompatibleValue>;
     readonly resultOk: EventEmitter<void>;
     dir: Direction;
@@ -76,7 +76,7 @@ export declare class DateRangePopupComponent implements OnInit, OnChanges, OnDes
     private buildTimeOptions;
     private overrideTimeOptions;
     private overrideHms;
-    static ɵfac: i0.ɵɵFactoryDef<DateRangePopupComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<DateRangePopupComponent, "date-range-popup", ["dateRangePopup"], { "isRange": "isRange"; "showWeek": "showWeek"; "timeline": "timeline"; "locale": "locale"; "disabledDate": "disabledDate"; "disabledTime": "disabledTime"; "showToday": "showToday"; "showNow": "showNow"; "showTime": "showTime"; "extraFooter": "extraFooter"; "ranges": "ranges"; "dateRender": "dateRender"; "panelMode": "panelMode"; "defaultPickerValue": "defaultPickerValue"; "dir": "dir"; "showWeekCustom": "showWeekCustom"; }, { "panelModeChange": "panelModeChange"; "calendarChange": "calendarChange"; "resultOk": "resultOk"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DateRangePopupComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<DateRangePopupComponent, "date-range-popup", ["dateRangePopup"], { "isRange": { "alias": "isRange"; "required": false; }; "showWeek": { "alias": "showWeek"; "required": false; }; "timeline": { "alias": "timeline"; "required": false; }; "locale": { "alias": "locale"; "required": false; }; "disabledDate": { "alias": "disabledDate"; "required": false; }; "disabledTime": { "alias": "disabledTime"; "required": false; }; "showToday": { "alias": "showToday"; "required": false; }; "showNow": { "alias": "showNow"; "required": false; }; "showTime": { "alias": "showTime"; "required": false; }; "extraFooter": { "alias": "extraFooter"; "required": false; }; "ranges": { "alias": "ranges"; "required": false; }; "dateRender": { "alias": "dateRender"; "required": false; }; "panelMode": { "alias": "panelMode"; "required": false; }; "defaultPickerValue": { "alias": "defaultPickerValue"; "required": false; }; "dir": { "alias": "dir"; "required": false; }; "showWeekCustom": { "alias": "showWeekCustom"; "required": false; }; }, { "panelModeChange": "panelModeChange"; "calendarChange": "calendarChange"; "resultOk": "resultOk"; }, never, never, false, never>;
 }
 //# sourceMappingURL=date-range-popup.component.d.ts.map

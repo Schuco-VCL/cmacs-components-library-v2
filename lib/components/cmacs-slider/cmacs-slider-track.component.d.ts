@@ -19,7 +19,7 @@ export declare class CmacsSliderTrackComponent implements OnChanges {
     style: NzSliderTrackStyle;
     ngOnChanges(): void;
     private getHorizontalStylePosition;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSliderTrackComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSliderTrackComponent, "cmacs-slider-track", ["cmacsSliderTrack"], { "offset": "offset"; "reverse": "reverse"; "dir": "dir"; "length": "length"; "vertical": "vertical"; "included": "included"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSliderTrackComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsSliderTrackComponent, "cmacs-slider-track", ["cmacsSliderTrack"], { "offset": { "alias": "offset"; "required": false; }; "reverse": { "alias": "reverse"; "required": false; }; "dir": { "alias": "dir"; "required": false; }; "length": { "alias": "length"; "required": false; }; "vertical": { "alias": "vertical"; "required": false; }; "included": { "alias": "included"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-slider-track.component.d.ts.map

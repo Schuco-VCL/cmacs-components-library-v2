@@ -33,7 +33,7 @@ export declare class LightboxItemComponent implements OnInit {
     resize(): void;
     private _getContainerDimensions;
     private _getItemDimensions;
-    static ɵfac: i0.ɵɵFactoryDef<LightboxItemComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<LightboxItemComponent, "lightbox-item", never, { "item": "item"; }, { "toggleEvent": "toggleEvent"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LightboxItemComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<LightboxItemComponent, "lightbox-item", never, { "item": { "alias": "item"; "required": false; }; }, { "toggleEvent": "toggleEvent"; }, never, never, false, never>;
 }
 //# sourceMappingURL=lightbox-item.component.d.ts.map

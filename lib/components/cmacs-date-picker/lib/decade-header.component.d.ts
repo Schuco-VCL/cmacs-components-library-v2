@@ -9,7 +9,7 @@ export declare class DecadeHeaderComponent extends AbstractPanelHeader {
     superPrevious(): void;
     superNext(): void;
     getSelectors(): PanelSelector[];
-    static ɵfac: i0.ɵɵFactoryDef<DecadeHeaderComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<DecadeHeaderComponent, "decade-header", ["decadeHeader"], {}, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DecadeHeaderComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<DecadeHeaderComponent, "decade-header", ["decadeHeader"], {}, {}, never, never, false, never>;
 }
 //# sourceMappingURL=decade-header.component.d.ts.map

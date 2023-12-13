@@ -66,7 +66,7 @@ export declare class CmacsProgressComponent implements OnChanges, OnInit, OnDest
      */
     private getCirclePaths;
     private setStrokeColor;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsProgressComponent, [null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsProgressComponent, "cmacs-progress", ["cmacsProgress"], { "showInfo": "showInfo"; "width": "width"; "strokeColor": "strokeColor"; "size": "size"; "format": "format"; "successPercent": "successPercent"; "percent": "percent"; "cmacsStrokeWidth": "cmacsStrokeWidth"; "gapDegree": "gapDegree"; "cmacsStatus": "cmacsStatus"; "type": "type"; "gapPosition": "gapPosition"; "strokeLinecap": "strokeLinecap"; "cmacsSteps": "cmacsSteps"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsProgressComponent, [null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsProgressComponent, "cmacs-progress", ["cmacsProgress"], { "showInfo": { "alias": "showInfo"; "required": false; }; "width": { "alias": "width"; "required": false; }; "strokeColor": { "alias": "strokeColor"; "required": false; }; "size": { "alias": "size"; "required": false; }; "format": { "alias": "format"; "required": false; }; "successPercent": { "alias": "successPercent"; "required": false; }; "percent": { "alias": "percent"; "required": false; }; "cmacsStrokeWidth": { "alias": "cmacsStrokeWidth"; "required": false; }; "gapDegree": { "alias": "gapDegree"; "required": false; }; "cmacsStatus": { "alias": "cmacsStatus"; "required": false; }; "type": { "alias": "type"; "required": false; }; "gapPosition": { "alias": "gapPosition"; "required": false; }; "strokeLinecap": { "alias": "strokeLinecap"; "required": false; }; "cmacsSteps": { "alias": "cmacsSteps"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=progress.component.d.ts.map

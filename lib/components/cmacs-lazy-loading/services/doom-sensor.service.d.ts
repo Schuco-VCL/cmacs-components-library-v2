@@ -9,7 +9,7 @@ export declare class DoomSensorService {
     private _testList;
     private _testItem;
     private _getState;
-    static ɵfac: i0.ɵɵFactoryDef<DoomSensorService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<DoomSensorService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DoomSensorService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<DoomSensorService>;
 }
 //# sourceMappingURL=doom-sensor.service.d.ts.map

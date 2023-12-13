@@ -1,7 +1,7 @@
 import { EventEmitter, OnChanges } from '@angular/core';
 import { CdkDrag } from '@angular/cdk/drag-drop';
 import * as i0 from "@angular/core";
-export declare type FloatingMenuType = 'top' | 'bottom' | 'left' | 'right';
+export type FloatingMenuType = 'top' | 'bottom' | 'left' | 'right';
 export declare const FLOATING_MENU_LOCALIZATION: {
     'Dock To Left': string;
     'Dock To Right': string;
@@ -47,7 +47,7 @@ export declare class CmacsFloatingMenuComponent implements OnChanges {
     dockToBottom(): void;
     getPlacement(): "top" | "bottom" | "left" | "right";
     resetDragDrop(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsFloatingMenuComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsFloatingMenuComponent, "cmacs-floating-menu", ["cmacsFloatingMenu"], { "position": "position"; "trigger": "trigger"; "visible": "visible"; "showExtras": "showExtras"; "dragBoundary": "dragBoundary"; "carrot": "carrot"; "top": "top"; "bottom": "bottom"; "left": "left"; "right": "right"; "topBoundary": "topBoundary"; "bottomBoundary": "bottomBoundary"; "leftBoundary": "leftBoundary"; "rightBoundary": "rightBoundary"; "i18n": "i18n"; }, { "positionChange": "positionChange"; "oncoordinateschange": "oncoordinateschange"; }, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsFloatingMenuComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsFloatingMenuComponent, "cmacs-floating-menu", ["cmacsFloatingMenu"], { "position": { "alias": "position"; "required": false; }; "trigger": { "alias": "trigger"; "required": false; }; "visible": { "alias": "visible"; "required": false; }; "showExtras": { "alias": "showExtras"; "required": false; }; "dragBoundary": { "alias": "dragBoundary"; "required": false; }; "carrot": { "alias": "carrot"; "required": false; }; "top": { "alias": "top"; "required": false; }; "bottom": { "alias": "bottom"; "required": false; }; "left": { "alias": "left"; "required": false; }; "right": { "alias": "right"; "required": false; }; "topBoundary": { "alias": "topBoundary"; "required": false; }; "bottomBoundary": { "alias": "bottomBoundary"; "required": false; }; "leftBoundary": { "alias": "leftBoundary"; "required": false; }; "rightBoundary": { "alias": "rightBoundary"; "required": false; }; "i18n": { "alias": "i18n"; "required": false; }; }, { "positionChange": "positionChange"; "oncoordinateschange": "oncoordinateschange"; }, never, ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-floating-menu.component.d.ts.map

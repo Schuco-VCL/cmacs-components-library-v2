@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, ElementRef, OnDestroy, Renderer2 } from '@angular/core';
 import * as i0 from "@angular/core";
-export declare type NzFormControlStatusType = 'success' | 'error' | 'warning' | 'validating' | null;
+export type NzFormControlStatusType = 'success' | 'error' | 'warning' | 'validating' | null;
 /** should add nz-row directive to host, track https://github.com/angular/angular/issues/8785 **/
 export declare class CmacsFormItemComponent implements OnDestroy, OnDestroy {
     private cdr;
@@ -13,7 +13,7 @@ export declare class CmacsFormItemComponent implements OnDestroy, OnDestroy {
     setHasFeedback(hasFeedback: boolean): void;
     constructor(elementRef: ElementRef, renderer: Renderer2, cdr: ChangeDetectorRef);
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsFormItemComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsFormItemComponent, "cmacs-form-item", ["cmacsFormItem"], {}, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsFormItemComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsFormItemComponent, "cmacs-form-item", ["cmacsFormItem"], {}, {}, never, ["*"], false, never>;
 }
 //# sourceMappingURL=form-item.component.d.ts.map

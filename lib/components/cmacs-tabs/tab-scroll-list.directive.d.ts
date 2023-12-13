@@ -26,7 +26,7 @@ export declare class CmacsTabScrollListDirective implements OnInit, OnDestroy {
     onWheel: (e: WheelEvent) => void;
     onOffset(x: number, y: number, event: Event): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTabScrollListDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsTabScrollListDirective, "[cmacsTabScrollList]", never, {}, { "offsetChange": "offsetChange"; "tabScroll": "tabScroll"; }, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTabScrollListDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsTabScrollListDirective, "[cmacsTabScrollList]", never, {}, { "offsetChange": "offsetChange"; "tabScroll": "tabScroll"; }, never, never, false, never>;
 }
 //# sourceMappingURL=tab-scroll-list.directive.d.ts.map

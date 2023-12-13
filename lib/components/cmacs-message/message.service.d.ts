@@ -16,7 +16,7 @@ export declare class CmacsMessageService extends NzMNService {
     loading(content: string | TemplateRef<void>, options?: NzMessageDataOptions): NzMessageRef;
     create(type: 'success' | 'info' | 'warning' | 'error' | 'loading' | string, content: string | TemplateRef<void>, options?: NzMessageDataOptions): NzMessageRef;
     private createInstance;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsMessageService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<CmacsMessageService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsMessageService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<CmacsMessageService>;
 }
 //# sourceMappingURL=message.service.d.ts.map

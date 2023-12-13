@@ -39,7 +39,7 @@ export declare class CmacsSwitchComponent implements ControlValueAccessor, After
     registerOnChange(fn: OnChangeType): void;
     registerOnTouched(fn: OnTouchedType): void;
     setDisabledState(disabled: boolean): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSwitchComponent, [null, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSwitchComponent, "cmacs-switch", ["cmacsSwitch"], { "loading": "loading"; "disabled": "disabled"; "control": "control"; "checkedChildren": "checkedChildren"; "unCheckedChildren": "unCheckedChildren"; "size": "size"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSwitchComponent, [null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsSwitchComponent, "cmacs-switch", ["cmacsSwitch"], { "loading": { "alias": "loading"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "control": { "alias": "control"; "required": false; }; "checkedChildren": { "alias": "checkedChildren"; "required": false; }; "unCheckedChildren": { "alias": "unCheckedChildren"; "required": false; }; "size": { "alias": "size"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=switch.component.d.ts.map

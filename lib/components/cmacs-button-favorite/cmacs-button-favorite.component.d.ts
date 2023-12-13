@@ -7,7 +7,7 @@ export declare class CmacsButtonFavoriteComponent implements OnInit {
     constructor();
     ngOnInit(): void;
     changedValue(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsButtonFavoriteComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsButtonFavoriteComponent, "cmacs-button-favorite", never, { "value": "value"; }, { "onChangedValue": "onChangedValue"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsButtonFavoriteComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsButtonFavoriteComponent, "cmacs-button-favorite", never, { "value": { "alias": "value"; "required": false; }; }, { "onChangedValue": "onChangedValue"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-button-favorite.component.d.ts.map

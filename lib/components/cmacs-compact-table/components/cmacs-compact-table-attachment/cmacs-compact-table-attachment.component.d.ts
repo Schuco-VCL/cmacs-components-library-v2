@@ -15,7 +15,7 @@ export declare class CmacsCompactTableAttachmentComponent implements OnInit, OnC
     embedLink(): void;
     _onclickChooseFile(): void;
     validateUrl(link: any): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsCompactTableAttachmentComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableAttachmentComponent, "cmacs-compact-table-attachment", never, { "conf": "conf"; "ctaDropdownOption": "ctaDropdownOption"; "inLineEdit": "inLineEdit"; }, { "onChangeAttachments": "onChangeAttachments"; "onclickChooseFile": "onclickChooseFile"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsCompactTableAttachmentComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsCompactTableAttachmentComponent, "cmacs-compact-table-attachment", never, { "conf": { "alias": "conf"; "required": false; }; "ctaDropdownOption": { "alias": "ctaDropdownOption"; "required": false; }; "inLineEdit": { "alias": "inLineEdit"; "required": false; }; }, { "onChangeAttachments": "onChangeAttachments"; "onclickChooseFile": "onclickChooseFile"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-compact-table-attachment.component.d.ts.map

@@ -1,10 +1,10 @@
 import { TemplateRef } from '@angular/core';
-export declare type DisabledDateFn = (d: Date) => boolean;
-export declare type DisabledTimePartial = 'start' | 'end';
-export declare type NzDateMode = 'decade' | 'year' | 'month' | 'week' | 'date' | 'time';
-export declare type RangePartType = 'left' | 'right';
-export declare type CompatibleDate = Date | Date[];
-export declare type DisabledTimeFn = (current: Date | Date[], partial?: DisabledTimePartial) => DisabledTimeConfig | undefined;
+export type DisabledDateFn = (d: Date) => boolean;
+export type DisabledTimePartial = 'start' | 'end';
+export type NzDateMode = 'decade' | 'year' | 'month' | 'week' | 'date' | 'time';
+export type RangePartType = 'left' | 'right' | null;
+export type CompatibleDate = Date | Date[];
+export type DisabledTimeFn = (current: Date | Date[], partial?: DisabledTimePartial) => DisabledTimeConfig | undefined;
 export interface DisabledTimeConfig {
     nzDisabledHours(): number[];
     nzDisabledMinutes(hour: number): number[];

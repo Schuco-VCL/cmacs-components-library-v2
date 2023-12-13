@@ -31,7 +31,7 @@ export declare class CmacsSliderHandleComponent implements OnChanges {
     private updateTooltipPosition;
     private updateStyle;
     private getHorizontalStylePosition;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSliderHandleComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSliderHandleComponent, "cmacs-slider-handle", ["cmacsSliderHandle"], { "vertical": "vertical"; "reverse": "reverse"; "offset": "offset"; "value": "value"; "tooltipVisible": "tooltipVisible"; "tooltipPlacement": "tooltipPlacement"; "tooltipFormatter": "tooltipFormatter"; "active": "active"; "dir": "dir"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSliderHandleComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsSliderHandleComponent, "cmacs-slider-handle", ["cmacsSliderHandle"], { "vertical": { "alias": "vertical"; "required": false; }; "reverse": { "alias": "reverse"; "required": false; }; "offset": { "alias": "offset"; "required": false; }; "value": { "alias": "value"; "required": false; }; "tooltipVisible": { "alias": "tooltipVisible"; "required": false; }; "tooltipPlacement": { "alias": "tooltipPlacement"; "required": false; }; "tooltipFormatter": { "alias": "tooltipFormatter"; "required": false; }; "active": { "alias": "active"; "required": false; }; "dir": { "alias": "dir"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-slider-handle.component.d.ts.map

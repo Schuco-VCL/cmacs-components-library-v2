@@ -20,7 +20,7 @@ export declare class NzSubmenuInlineChildComponent implements OnDestroy, OnInit,
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSubmenuInlineChildComponent, [null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSubmenuInlineChildComponent, "[cmacs-submenu-inline-child]", ["cmacsSubmenuInlineChild"], { "templateOutlet": "templateOutlet"; "menuClass": "menuClass"; "mode": "mode"; "open": "open"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NzSubmenuInlineChildComponent, [null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<NzSubmenuInlineChildComponent, "[cmacs-submenu-inline-child]", ["cmacsSubmenuInlineChild"], { "templateOutlet": { "alias": "templateOutlet"; "required": false; }; "menuClass": { "alias": "menuClass"; "required": false; }; "mode": { "alias": "mode"; "required": false; }; "open": { "alias": "open"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=submenu-inline-child.component.d.ts.map

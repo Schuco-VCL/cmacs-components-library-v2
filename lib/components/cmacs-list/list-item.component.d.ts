@@ -18,7 +18,7 @@ export declare class CmacsListItemComponent implements OnDestroy, AfterViewInit 
     constructor(elementRef: ElementRef, renderer: Renderer2, parentComp: CmacsListComponent, cdr: ChangeDetectorRef);
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsListItemComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsListItemComponent, "cmacs-list-item, [cmacs-list-item]", ["cmacsListItem"], { "actions": "actions"; "content": "content"; "extra": "extra"; "nzNoFlex": "nzNoFlex"; }, {}, ["listItemExtraDirective"], ["cmacs-list-item-actions, [cmacs-list-item-actions]", "cmacs-list-item-meta, [cmacs-list-item-meta]", "*", "cmacs-list-item-extra, [cmacs-list-item-extra]"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsListItemComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsListItemComponent, "cmacs-list-item, [cmacs-list-item]", ["cmacsListItem"], { "actions": { "alias": "actions"; "required": false; }; "content": { "alias": "content"; "required": false; }; "extra": { "alias": "extra"; "required": false; }; "nzNoFlex": { "alias": "nzNoFlex"; "required": false; }; }, {}, ["listItemExtraDirective"], ["cmacs-list-item-actions, [cmacs-list-item-actions]", "cmacs-list-item-meta, [cmacs-list-item-meta]", "*", "cmacs-list-item-extra, [cmacs-list-item-extra]"], false, never>;
 }
 //# sourceMappingURL=list-item.component.d.ts.map

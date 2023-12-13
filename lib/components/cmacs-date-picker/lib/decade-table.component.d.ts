@@ -15,7 +15,7 @@ export declare class DecadeTableComponent extends AbstractTable implements OnCha
         [key: string]: boolean;
     };
     private chooseDecade;
-    static ɵfac: i0.ɵɵFactoryDef<DecadeTableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<DecadeTableComponent, "decade-table", ["decadeTable"], {}, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DecadeTableComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<DecadeTableComponent, "decade-table", ["decadeTable"], {}, {}, never, never, false, never>;
 }
 //# sourceMappingURL=decade-table.component.d.ts.map

@@ -50,7 +50,7 @@ export declare class UtilService {
         height: any;
         width: any;
     };
-    static ɵfac: i0.ɵɵFactoryDef<UtilService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<UtilService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<UtilService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<UtilService>;
 }
 //# sourceMappingURL=util.service.d.ts.map

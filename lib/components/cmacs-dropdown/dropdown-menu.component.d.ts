@@ -5,7 +5,7 @@ import { IndexableObject, NzSafeAny } from 'ng-zorro-antd/core/types';
 import { MenuService } from '../cmacs-menu/menu.service';
 import { BehaviorSubject, Subject } from 'rxjs';
 import * as i0 from "@angular/core";
-export declare type NzPlacementType = 'bottomLeft' | 'bottomCenter' | 'bottomRight' | 'topLeft' | 'topCenter' | 'topRight';
+export type NzPlacementType = 'bottomLeft' | 'bottomCenter' | 'bottomRight' | 'topLeft' | 'topCenter' | 'topRight';
 export declare class CmacsDropdownMenuComponent implements AfterContentInit, OnDestroy, OnInit {
     private cdr;
     private elementRef;
@@ -29,7 +29,7 @@ export declare class CmacsDropdownMenuComponent implements AfterContentInit, OnD
     ngOnInit(): void;
     ngAfterContentInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsDropdownMenuComponent, [null, null, null, null, null, { optional: true; }, { optional: true; host: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsDropdownMenuComponent, "cmacs-dropdown-menu", ["cmacsDropdownMenu"], { "cmacsOpen": "cmacsOpen"; }, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsDropdownMenuComponent, [null, null, null, null, null, { optional: true; }, { optional: true; host: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsDropdownMenuComponent, "cmacs-dropdown-menu", ["cmacsDropdownMenu"], { "cmacsOpen": { "alias": "cmacsOpen"; "required": false; }; }, {}, never, ["*"], false, never>;
 }
 //# sourceMappingURL=dropdown-menu.component.d.ts.map

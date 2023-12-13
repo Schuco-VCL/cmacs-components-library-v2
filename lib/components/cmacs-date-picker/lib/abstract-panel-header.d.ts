@@ -33,7 +33,7 @@ export declare abstract class AbstractPanelHeader implements OnInit, OnChanges {
     private render;
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<AbstractPanelHeader, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<AbstractPanelHeader, never, never, { "value": "value"; "locale": "locale"; "showSuperPreBtn": "showSuperPreBtn"; "showSuperNextBtn": "showSuperNextBtn"; "showPreBtn": "showPreBtn"; "showNextBtn": "showNextBtn"; }, { "panelModeChange": "panelModeChange"; "valueChange": "valueChange"; }, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<AbstractPanelHeader, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<AbstractPanelHeader, never, never, { "value": { "alias": "value"; "required": false; }; "locale": { "alias": "locale"; "required": false; }; "showSuperPreBtn": { "alias": "showSuperPreBtn"; "required": false; }; "showSuperNextBtn": { "alias": "showSuperNextBtn"; "required": false; }; "showPreBtn": { "alias": "showPreBtn"; "required": false; }; "showNextBtn": { "alias": "showNextBtn"; "required": false; }; }, { "panelModeChange": "panelModeChange"; "valueChange": "valueChange"; }, never, never, false, never>;
 }
 //# sourceMappingURL=abstract-panel-header.d.ts.map

@@ -9,7 +9,7 @@ export declare class CmacsMenuGroupComponent implements AfterViewInit {
     titleElement?: ElementRef;
     constructor(elementRef: ElementRef, renderer: Renderer2, isMenuInsideDropDown: boolean);
     ngAfterViewInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsMenuGroupComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsMenuGroupComponent, "[cmacs-menu-group]", ["cmacsMenuGroup"], { "title": "title"; }, {}, never, ["[title]", "*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsMenuGroupComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsMenuGroupComponent, "[cmacs-menu-group]", ["cmacsMenuGroup"], { "title": { "alias": "title"; "required": false; }; }, {}, never, ["[title]", "*"], false, never>;
 }
 //# sourceMappingURL=menu-group.component.d.ts.map

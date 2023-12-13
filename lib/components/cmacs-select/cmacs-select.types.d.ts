@@ -6,6 +6,6 @@ export interface CmacsSelectOptionInterface {
     hide?: boolean;
     groupLabel?: string | number | TemplateRef<any> | null;
 }
-export declare type CmacsSelectModeType = 'default' | 'multiple' | 'tags' | 'tagsSingleSelect';
-export declare type CmacsDropdownPositionType = 'top' | 'center' | 'bottom';
+export type CmacsSelectModeType = 'default' | 'multiple' | 'tags' | 'tagsSingleSelect';
+export type CmacsDropdownPositionType = 'top' | 'center' | 'bottom';
 //# sourceMappingURL=cmacs-select.types.d.ts.map

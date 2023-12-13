@@ -38,7 +38,7 @@ export declare class CmacsXlsxLoaderComponent implements OnInit, OnChanges, OnDe
     onSelectionChange($event: any, header: any): void;
     disableSaveBtn(): boolean;
     getLabel(config: any): any;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsXlsxLoaderComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsXlsxLoaderComponent, "cmacs-xlsx-loader", ["cmacsXlsxLoader"], { "configuration": "configuration"; "modalTitle": "modalTitle"; "visible": "visible"; "saveBtnLabel": "saveBtnLabel"; "cancelBtnLabel": "cancelBtnLabel"; "placeholder": "placeholder"; "cmacsStyle": "cmacsStyle"; "files": "files"; "width": "width"; "infoTemplate": "infoTemplate"; }, { "configurationChange": "configurationChange"; "onsave": "onsave"; "visibleChange": "visibleChange"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsXlsxLoaderComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsXlsxLoaderComponent, "cmacs-xlsx-loader", ["cmacsXlsxLoader"], { "configuration": { "alias": "configuration"; "required": false; }; "modalTitle": { "alias": "modalTitle"; "required": false; }; "visible": { "alias": "visible"; "required": false; }; "saveBtnLabel": { "alias": "saveBtnLabel"; "required": false; }; "cancelBtnLabel": { "alias": "cancelBtnLabel"; "required": false; }; "placeholder": { "alias": "placeholder"; "required": false; }; "cmacsStyle": { "alias": "cmacsStyle"; "required": false; }; "files": { "alias": "files"; "required": false; }; "width": { "alias": "width"; "required": false; }; "infoTemplate": { "alias": "infoTemplate"; "required": false; }; }, { "configurationChange": "configurationChange"; "onsave": "onsave"; "visibleChange": "visibleChange"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-xlsx-loader.component.d.ts.map

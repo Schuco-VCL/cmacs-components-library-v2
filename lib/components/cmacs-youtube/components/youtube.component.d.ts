@@ -22,7 +22,7 @@ export declare class YoutubeComponent implements OnDestroy, OnChanges {
     onChange(event: YT.PlayerEvent): void;
     onError(event: YT.OnErrorEvent): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<YoutubeComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<YoutubeComponent, "youtube", never, { "videoId": "videoId"; "height": "height"; "width": "width"; "playerVars": "playerVars"; }, { "ready": "ready"; "change": "change"; "error": "error"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<YoutubeComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<YoutubeComponent, "youtube", never, { "videoId": { "alias": "videoId"; "required": false; }; "height": { "alias": "height"; "required": false; }; "width": { "alias": "width"; "required": false; }; "playerVars": { "alias": "playerVars"; "required": false; }; }, { "ready": "ready"; "change": "change"; "error": "error"; }, never, never, false, never>;
 }
 //# sourceMappingURL=youtube.component.d.ts.map

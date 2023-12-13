@@ -15,7 +15,7 @@ export declare class YearTableComponent extends AbstractTable {
     private isDisabledYear;
     private addCellProperty;
     private chooseYear;
-    static ɵfac: i0.ɵɵFactoryDef<YearTableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<YearTableComponent, "year-table", ["yearTable"], {}, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<YearTableComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<YearTableComponent, "year-table", ["yearTable"], {}, {}, never, never, false, never>;
 }
 //# sourceMappingURL=year-table.component.d.ts.map

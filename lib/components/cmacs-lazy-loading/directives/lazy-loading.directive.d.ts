@@ -22,7 +22,7 @@ export declare class LazyLoadingDirective implements OnInit, AfterViewInit, OnDe
     ngOnDestroy(): void;
     private _setSrc;
     private _isInViewPort;
-    static ɵfac: i0.ɵɵFactoryDef<LazyLoadingDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<LazyLoadingDirective, "img[lazy-loading]", never, { "xsBreakpoint": "xs-breakpoint"; "smBreakpoint": "sm-breakpoint"; "mdBreakpoint": "md-breakpoint"; "lgBreakpoint": "lg-breakpoint"; "xsSrc": "xs-src"; "smSrc": "sm-src"; "mdSrc": "md-src"; "lgSrc": "lg-src"; "xlSrc": "xl-src"; "src": "src"; "load": "load"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LazyLoadingDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<LazyLoadingDirective, "img[lazy-loading]", never, { "xsBreakpoint": { "alias": "xs-breakpoint"; "required": false; }; "smBreakpoint": { "alias": "sm-breakpoint"; "required": false; }; "mdBreakpoint": { "alias": "md-breakpoint"; "required": false; }; "lgBreakpoint": { "alias": "lg-breakpoint"; "required": false; }; "xsSrc": { "alias": "xs-src"; "required": false; }; "smSrc": { "alias": "sm-src"; "required": false; }; "mdSrc": { "alias": "md-src"; "required": false; }; "lgSrc": { "alias": "lg-src"; "required": false; }; "xlSrc": { "alias": "xl-src"; "required": false; }; "src": { "alias": "src"; "required": false; }; "load": { "alias": "load"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=lazy-loading.directive.d.ts.map

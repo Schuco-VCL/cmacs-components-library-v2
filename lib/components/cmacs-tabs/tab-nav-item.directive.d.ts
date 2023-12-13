@@ -15,7 +15,7 @@ export declare class CmacsTabNavItemDirective implements FocusableOption {
     get height(): number;
     get left(): number;
     get top(): number;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTabNavItemDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsTabNavItemDirective, "[cmacsTabNavItem]", never, { "disabled": "disabled"; "tab": "tab"; "active": "active"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTabNavItemDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsTabNavItemDirective, "[cmacsTabNavItem]", never, { "disabled": { "alias": "disabled"; "required": false; }; "tab": { "alias": "tab"; "required": false; }; "active": { "alias": "active"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=tab-nav-item.directive.d.ts.map

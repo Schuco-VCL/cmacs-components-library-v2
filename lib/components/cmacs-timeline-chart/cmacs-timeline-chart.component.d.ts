@@ -34,7 +34,7 @@ export declare class CmacsTimelineChartComponent implements OnInit, OnChanges, O
     operateData(): void;
     createCustomTooltip(data: any, color: any): string;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTimelineChartComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTimelineChartComponent, "cmacs-timeline-chart", never, { "legendLabels": "legendLabels"; "colNames": "colNames"; "data": "data"; "width": "width"; "height": "height"; "colors": "colors"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTimelineChartComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTimelineChartComponent, "cmacs-timeline-chart", never, { "legendLabels": { "alias": "legendLabels"; "required": false; }; "colNames": { "alias": "colNames"; "required": false; }; "data": { "alias": "data"; "required": false; }; "width": { "alias": "width"; "required": false; }; "height": { "alias": "height"; "required": false; }; "colors": { "alias": "colors"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-timeline-chart.component.d.ts.map

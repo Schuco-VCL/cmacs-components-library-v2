@@ -8,7 +8,7 @@ import { ExcelService } from '../core/services/excel.service';
 import { CookieService } from 'ngx-cookie-service';
 import { CheckboxSelect } from '../cmacs-table/cmacs-table.component';
 import { CdkDragDrop } from '@angular/cdk/drag-drop';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 import { CmacsInputNumberComponent } from '../cmacs-input-number/cmacs-input-number.component';
 import { UtilService } from '../core/services/util.service';
 import 'moment/locale/en-ie';
@@ -42,7 +42,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     dropdown: any;
     selected: boolean;
     phoneLocation: string;
-    formPhoneControl: FormControl;
+    formPhoneControl: UntypedFormControl;
     editionOpTriggered: boolean;
     defaultSortOrder: any;
     checkboxCache: CheckboxSelect[];
@@ -162,7 +162,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     /** constructor */
     constructor(cdr: ChangeDetectorRef, i18n: NzI18nService, excelService: ExcelService, deviceDetector: DeviceDetectorService, datePipe: DatePipe, nzDropdownService: CmacsContextMenuService, cookies: CookieService, utilService: UtilService);
     /** view child variables */
-    nzTableComponent: NzTableComponent;
+    nzTableComponent: NzTableComponent<any>;
     inputElement: ElementRef;
     inputNumberElement: ElementRef;
     inputNumberComponent: CmacsInputNumberComponent;
@@ -174,7 +174,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     tooltipComponent: CmacsCompactTableColumnTooltipComponent;
     /** end view child variables */
     currentPhoneSelected(data: any, field: any): void;
-    getPhoneFieldValue(data: any, field: any): FormControl;
+    getPhoneFieldValue(data: any, field: any): UntypedFormControl;
     onCountryChange($event: any): void;
     hasPhoneNumberError(event: any, index: number, data?: any, property?: any, field?: Field): void;
     formatter: (value: number) => any;
@@ -299,9 +299,9 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     getStickyWidth(position: any): string;
     getStickyWidthRight(position: any): string;
     getTableComponent(): NzTableComponent<any>;
-    transformDate(date: any, dateFormat?: any): string;
+    transformDate(date: any): string;
     selectTreeSingle(item: any): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsCompactTableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableComponent, "cmacs-compact-table", ["cmacsCompactTable"], { "size": "size"; "showTotal": "showTotal"; "pageSizeOptions": "pageSizeOptions"; "virtualScroll": "virtualScroll"; "exclusiveSelect": "exclusiveSelect"; "logs": "logs"; "expandable": "expandable"; "smartTable": "smartTable"; "draggable": "draggable"; "virtualItemSize": "virtualItemSize"; "expandAll": "expandAll"; "addColumn": "addColumn"; "loadingDelay": "loadingDelay"; "loadingIndicator": "loadingIndicator"; "hasCookies": "hasCookies"; "total": "total"; "title": "title"; "footer": "footer"; "noResult": "noResult"; "widthConfig": "widthConfig"; "pageIndex": "pageIndex"; "pageSize": "pageSize"; "actionColumnWidth": "actionColumnWidth"; "wrapLines": "wrapLines"; "dropdownAddOptionTemplateRef": "dropdownAddOptionTemplateRef"; "data": "data"; "config": "config"; "use12Hours": "use12Hours"; "fieldId": "fieldId"; "gridID": "gridID"; "paginationPosition": "paginationPosition"; "scroll": "scroll"; "frontPagination": "frontPagination"; "templateMode": "templateMode"; "bordered": "bordered"; "hideButtons": "hideButtons"; "centerTable": "centerTable"; "showPagination": "showPagination"; "loading": "loading"; "showSizeChanger": "showSizeChanger"; "hideOnSinglePage": "hideOnSinglePage"; "showQuickJumper": "showQuickJumper"; "simple": "simple"; "checkboxSelect": "checkboxSelect"; "inLineEdit": "inLineEdit"; "dataTable": "dataTable"; "showRate": "showRate"; "exportEvent": "exportEvent"; "columnMenu": "columnMenu"; "extra": "extra"; "contextmenu": "contextmenu"; "indentSize": "indentSize"; "virtualMaxBufferPx": "virtualMaxBufferPx"; "rateCount": "rateCount"; "multiSelect": "multiSelect"; }, { "configChange": "configChange"; "buttonClick": "buttonClick"; "rateChange": "rateChange"; "selectionChange": "selectionChange"; "ondlclickRow": "ondlclickRow"; "onclickRow": "onclickRow"; "onclickHyperlink": "onclickHyperlink"; "onedit": "onedit"; "onRowExpandCollapse": "onRowExpandCollapse"; "ondrop": "ondrop"; "sortChange": "sortChange"; "filterChange": "filterChange"; "onrowdeleted": "onrowdeleted"; "onrowadded": "onrowadded"; "oncolumnadded": "oncolumnadded"; "oneditcolumn": "oneditcolumn"; "onresize": "onresize"; "oncontextmenu": "oncontextmenu"; "onDropdownRender": "onDropdownRender"; "onChangeAttachments": "onChangeAttachments"; "onclickChooseFile": "onclickChooseFile"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsCompactTableComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsCompactTableComponent, "cmacs-compact-table", ["cmacsCompactTable"], { "size": { "alias": "size"; "required": false; }; "showTotal": { "alias": "showTotal"; "required": false; }; "pageSizeOptions": { "alias": "pageSizeOptions"; "required": false; }; "virtualScroll": { "alias": "virtualScroll"; "required": false; }; "exclusiveSelect": { "alias": "exclusiveSelect"; "required": false; }; "logs": { "alias": "logs"; "required": false; }; "expandable": { "alias": "expandable"; "required": false; }; "smartTable": { "alias": "smartTable"; "required": false; }; "draggable": { "alias": "draggable"; "required": false; }; "virtualItemSize": { "alias": "virtualItemSize"; "required": false; }; "expandAll": { "alias": "expandAll"; "required": false; }; "addColumn": { "alias": "addColumn"; "required": false; }; "loadingDelay": { "alias": "loadingDelay"; "required": false; }; "loadingIndicator": { "alias": "loadingIndicator"; "required": false; }; "hasCookies": { "alias": "hasCookies"; "required": false; }; "total": { "alias": "total"; "required": false; }; "title": { "alias": "title"; "required": false; }; "footer": { "alias": "footer"; "required": false; }; "noResult": { "alias": "noResult"; "required": false; }; "widthConfig": { "alias": "widthConfig"; "required": false; }; "pageIndex": { "alias": "pageIndex"; "required": false; }; "pageSize": { "alias": "pageSize"; "required": false; }; "actionColumnWidth": { "alias": "actionColumnWidth"; "required": false; }; "wrapLines": { "alias": "wrapLines"; "required": false; }; "dropdownAddOptionTemplateRef": { "alias": "dropdownAddOptionTemplateRef"; "required": false; }; "data": { "alias": "data"; "required": false; }; "config": { "alias": "config"; "required": false; }; "use12Hours": { "alias": "use12Hours"; "required": false; }; "fieldId": { "alias": "fieldId"; "required": false; }; "gridID": { "alias": "gridID"; "required": false; }; "paginationPosition": { "alias": "paginationPosition"; "required": false; }; "scroll": { "alias": "scroll"; "required": false; }; "frontPagination": { "alias": "frontPagination"; "required": false; }; "templateMode": { "alias": "templateMode"; "required": false; }; "bordered": { "alias": "bordered"; "required": false; }; "hideButtons": { "alias": "hideButtons"; "required": false; }; "centerTable": { "alias": "centerTable"; "required": false; }; "showPagination": { "alias": "showPagination"; "required": false; }; "loading": { "alias": "loading"; "required": false; }; "showSizeChanger": { "alias": "showSizeChanger"; "required": false; }; "hideOnSinglePage": { "alias": "hideOnSinglePage"; "required": false; }; "showQuickJumper": { "alias": "showQuickJumper"; "required": false; }; "simple": { "alias": "simple"; "required": false; }; "checkboxSelect": { "alias": "checkboxSelect"; "required": false; }; "inLineEdit": { "alias": "inLineEdit"; "required": false; }; "dataTable": { "alias": "dataTable"; "required": false; }; "showRate": { "alias": "showRate"; "required": false; }; "exportEvent": { "alias": "exportEvent"; "required": false; }; "columnMenu": { "alias": "columnMenu"; "required": false; }; "extra": { "alias": "extra"; "required": false; }; "contextmenu": { "alias": "contextmenu"; "required": false; }; "indentSize": { "alias": "indentSize"; "required": false; }; "virtualMaxBufferPx": { "alias": "virtualMaxBufferPx"; "required": false; }; "rateCount": { "alias": "rateCount"; "required": false; }; "multiSelect": { "alias": "multiSelect"; "required": false; }; }, { "configChange": "configChange"; "buttonClick": "buttonClick"; "rateChange": "rateChange"; "selectionChange": "selectionChange"; "ondlclickRow": "ondlclickRow"; "onclickRow": "onclickRow"; "onclickHyperlink": "onclickHyperlink"; "onedit": "onedit"; "onRowExpandCollapse": "onRowExpandCollapse"; "ondrop": "ondrop"; "sortChange": "sortChange"; "filterChange": "filterChange"; "onrowdeleted": "onrowdeleted"; "onrowadded": "onrowadded"; "oncolumnadded": "oncolumnadded"; "oneditcolumn": "oneditcolumn"; "onresize": "onresize"; "oncontextmenu": "oncontextmenu"; "onDropdownRender": "onDropdownRender"; "onChangeAttachments": "onChangeAttachments"; "onclickChooseFile": "onclickChooseFile"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-compact-table.component.d.ts.map

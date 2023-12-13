@@ -45,8 +45,8 @@ export declare class CmacsKpiPartialComponent implements OnInit, OnChanges, Afte
     setConfiguration(): void;
     setData(): void;
     getItemTable(x: KPIPartialRow): any;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsKpiPartialComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsKpiPartialComponent, "cmacs-kpi-partial", never, { "view": "view"; "data": "data"; "columnsHeader": "columnsHeader"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsKpiPartialComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsKpiPartialComponent, "cmacs-kpi-partial", never, { "view": { "alias": "view"; "required": false; }; "data": { "alias": "data"; "required": false; }; "columnsHeader": { "alias": "columnsHeader"; "required": false; }; }, {}, never, never, false, never>;
 }
 export {};
 //# sourceMappingURL=cmacs-kpi-partial.component.d.ts.map

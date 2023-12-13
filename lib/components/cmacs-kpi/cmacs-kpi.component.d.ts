@@ -35,7 +35,7 @@ export declare class CmacsKpiComponent implements AfterViewInit {
     getWidth(count: number): number;
     getTotalWidth(): number;
     getColoredData(): any;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsKpiComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsKpiComponent, "cmacs-kpi", ["cmacsKpi"], { "showLegend": "showLegend"; "data": "data"; "title": "title"; "priority": "priority"; "type": "type"; "width": "width"; "showTotalCount": "showTotalCount"; "fixed": "fixed"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsKpiComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsKpiComponent, "cmacs-kpi", ["cmacsKpi"], { "showLegend": { "alias": "showLegend"; "required": false; }; "data": { "alias": "data"; "required": false; }; "title": { "alias": "title"; "required": false; }; "priority": { "alias": "priority"; "required": false; }; "type": { "alias": "type"; "required": false; }; "width": { "alias": "width"; "required": false; }; "showTotalCount": { "alias": "showTotalCount"; "required": false; }; "fixed": { "alias": "fixed"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-kpi.component.d.ts.map

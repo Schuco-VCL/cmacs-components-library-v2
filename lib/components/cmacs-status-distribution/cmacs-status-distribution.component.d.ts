@@ -43,7 +43,7 @@ export declare class CmacsStatusDistributionComponent implements OnInit, AfterVi
     getDataTable(): any[];
     getConfiguration(): any;
     getChartImage(): string;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsStatusDistributionComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsStatusDistributionComponent, "cmacs-status-distribution", never, { "view": "view"; "data": "data"; "columnsHeader": "columnsHeader"; }, { "clickMenu": "clickMenu"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsStatusDistributionComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsStatusDistributionComponent, "cmacs-status-distribution", never, { "view": { "alias": "view"; "required": false; }; "data": { "alias": "data"; "required": false; }; "columnsHeader": { "alias": "columnsHeader"; "required": false; }; }, { "clickMenu": "clickMenu"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-status-distribution.component.d.ts.map

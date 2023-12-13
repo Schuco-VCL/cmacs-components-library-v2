@@ -25,7 +25,7 @@ export declare abstract class ItemDirectiveBase {
     constructor(lightboxService: LightboxService, elementRef: ElementRef);
     protected onClick(event: Event): void;
     protected onLoad(event: Event): void;
-    static ɵfac: i0.ɵɵFactoryDef<ItemDirectiveBase, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<ItemDirectiveBase, never, never, { "container": "container"; "openOnClick": "openOnClick"; "src": "src"; "title": "title"; "xsBreakpoint": "xs-breakpoint"; "smBreakpoint": "sm-breakpoint"; "mdBreakpoint": "md-breakpoint"; "lgBreakpoint": "lg-breakpoint"; "xsSrc": "xs-src"; "smSrc": "sm-src"; "mdSrc": "md-src"; "lgSrc": "lg-src"; "xlSrc": "xl-src"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ItemDirectiveBase, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<ItemDirectiveBase, never, never, { "container": { "alias": "container"; "required": false; }; "openOnClick": { "alias": "openOnClick"; "required": false; }; "src": { "alias": "src"; "required": false; }; "title": { "alias": "title"; "required": false; }; "xsBreakpoint": { "alias": "xs-breakpoint"; "required": false; }; "smBreakpoint": { "alias": "sm-breakpoint"; "required": false; }; "mdBreakpoint": { "alias": "md-breakpoint"; "required": false; }; "lgBreakpoint": { "alias": "lg-breakpoint"; "required": false; }; "xsSrc": { "alias": "xs-src"; "required": false; }; "smSrc": { "alias": "sm-src"; "required": false; }; "mdSrc": { "alias": "md-src"; "required": false; }; "lgSrc": { "alias": "lg-src"; "required": false; }; "xlSrc": { "alias": "xl-src"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=item-directive-base.d.ts.map
