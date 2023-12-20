@@ -34038,6 +34038,7 @@ class NzTreeNode {
         this._title = option.title || '---';
         this._icon = option.icon || '';
         this._isLeaf = option.isLeaf || false;
+        this._isEmptyFolder = option.isEmptyFolder || false;
         this._children = [];
         // option params
         this._isChecked = option.checked || false;
@@ -34104,6 +34105,12 @@ class NzTreeNode {
     }
     get isLeaf() {
         return this._isLeaf;
+    }
+    get isEmptyFolder() {
+        return this._isEmptyFolder;
+    }
+    set isEmptyFolder(value) {
+        this._isEmptyFolder = value;
     }
     set isLeaf(value) {
         this._isLeaf = value;
@@ -35198,7 +35205,7 @@ class CmacsTreeNodeComponent {
         return !this.treeNode.isLeaf && this.showLine;
     }
     get isShowSwitchIcon() {
-        return !this.treeNode.isLeaf && !this.showLine;
+        return !this.treeNode.isLeaf && !this.showLine && !this.treeNode.isEmptyFolder;
     }
     get isSwitcherOpen() {
         return this.treeNode.isExpanded && !this.treeNode.isLeaf;

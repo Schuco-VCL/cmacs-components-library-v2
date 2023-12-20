@@ -37369,6 +37369,7 @@
             this._title = option.title || '---';
             this._icon = option.icon || '';
             this._isLeaf = option.isLeaf || false;
+            this._isEmptyFolder = option.isEmptyFolder || false;
             this._children = [];
             // option params
             this._isChecked = option.checked || false;
@@ -37456,6 +37457,16 @@
             set: function (value) {
                 this._isLeaf = value;
                 // this.update();
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(NzTreeNode.prototype, "isEmptyFolder", {
+            get: function () {
+                return this._isEmptyFolder;
+            },
+            set: function (value) {
+                this._isEmptyFolder = value;
             },
             enumerable: false,
             configurable: true
@@ -38711,7 +38722,7 @@
         });
         Object.defineProperty(CmacsTreeNodeComponent.prototype, "isShowSwitchIcon", {
             get: function () {
-                return !this.treeNode.isLeaf && !this.showLine;
+                return !this.treeNode.isLeaf && !this.showLine && !this.treeNode.isEmptyFolder;
             },
             enumerable: false,
             configurable: true
