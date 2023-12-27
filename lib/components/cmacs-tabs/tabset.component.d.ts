@@ -9,7 +9,7 @@ import { NzAnimatedInterface, NzTabChangeEvent, NzTabPosition, NzTabPositionMode
 import { CmacsTabNavBarComponent } from './tab-nav-bar.component';
 import { CmacsTabComponent } from './tab.component';
 import * as i0 from "@angular/core";
-export declare type CmacsTabType = 'text' | 'icon' | 'ems' | 'schedule' | 'property';
+export type CmacsTabType = 'text' | 'icon' | 'ems' | 'schedule' | 'property';
 export declare class CmacsTabSetComponent implements OnInit, AfterContentChecked, OnDestroy, AfterContentInit {
     nzConfigService: NzConfigService;
     private cdr;
@@ -83,7 +83,7 @@ export declare class CmacsTabSetComponent implements OnInit, AfterContentChecked
     private getTabContentMarginValue;
     getTabContentMarginLeft(): string;
     getTabContentMarginRight(): string;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTabSetComponent, [null, null, { optional: true; }, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTabSetComponent, "cmacs-tabset", ["cmacsTabset"], { "cmacsSelectedIndex": "cmacsSelectedIndex"; "tabPosition": "tabPosition"; "tabBarExtraContent": "tabBarExtraContent"; "canDeactivate": "canDeactivate"; "addIcon": "addIcon"; "tabBarStyle": "tabBarStyle"; "type": "type"; "size": "size"; "animated": "animated"; "tabBarGutter": "tabBarGutter"; "hideAdd": "hideAdd"; "centered": "centered"; "hideAll": "hideAll"; "linkRouter": "linkRouter"; "linkExact": "linkExact"; "cmacsType": "cmacsType"; }, { "selectChange": "selectChange"; "selectedIndexChange": "selectedIndexChange"; "tabListScroll": "tabListScroll"; "close": "close"; "add": "add"; }, ["allTabs"], never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTabSetComponent, [null, null, { optional: true; }, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTabSetComponent, "cmacs-tabset", ["cmacsTabset"], { "cmacsSelectedIndex": { "alias": "cmacsSelectedIndex"; "required": false; }; "tabPosition": { "alias": "tabPosition"; "required": false; }; "tabBarExtraContent": { "alias": "tabBarExtraContent"; "required": false; }; "canDeactivate": { "alias": "canDeactivate"; "required": false; }; "addIcon": { "alias": "addIcon"; "required": false; }; "tabBarStyle": { "alias": "tabBarStyle"; "required": false; }; "type": { "alias": "type"; "required": false; }; "size": { "alias": "size"; "required": false; }; "animated": { "alias": "animated"; "required": false; }; "tabBarGutter": { "alias": "tabBarGutter"; "required": false; }; "hideAdd": { "alias": "hideAdd"; "required": false; }; "centered": { "alias": "centered"; "required": false; }; "hideAll": { "alias": "hideAll"; "required": false; }; "linkRouter": { "alias": "linkRouter"; "required": false; }; "linkExact": { "alias": "linkExact"; "required": false; }; "cmacsType": { "alias": "cmacsType"; "required": false; }; }, { "selectChange": "selectChange"; "selectedIndexChange": "selectedIndexChange"; "tabListScroll": "tabListScroll"; "close": "close"; "add": "add"; }, ["allTabs"], never, false, never>;
 }
 //# sourceMappingURL=tabset.component.d.ts.map

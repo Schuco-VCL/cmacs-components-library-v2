@@ -1,7 +1,6 @@
 import { CdkConnectedOverlay, CdkOverlayOrigin, ConnectedOverlayPositionChange, ConnectionPositionPair, HorizontalConnectionPos, VerticalConnectionPos } from '@angular/cdk/overlay';
 import { Platform } from '@angular/cdk/platform';
 import { AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, NgZone, OnChanges, OnDestroy, OnInit, QueryList, SimpleChanges, TemplateRef } from '@angular/core';
-import { NzResizeObserver } from 'ng-zorro-antd/core/resize-observers';
 import { Direction } from '@angular/cdk/bidi';
 import { CandyDate, CompatibleValue } from 'ng-zorro-antd/core/time';
 import { NgStyleInterface, NzSafeAny } from 'ng-zorro-antd/core/types';
@@ -10,6 +9,7 @@ import { Subject } from 'rxjs';
 import { DatePickerService } from './date-picker.service';
 import { DateRangePopupComponent } from './date-range-popup.component';
 import { RangePartType } from './standard-types';
+import { NzResizeObserver } from 'ng-zorro-antd/cdk/resize-observer';
 import * as i0 from "@angular/core";
 export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnChanges, OnDestroy {
     private elementRef;
@@ -89,7 +89,7 @@ export declare class CmacsPickerComponent implements OnInit, AfterViewInit, OnCh
     getPlaceholder(partType?: RangePartType): string;
     isEmptyValue(value: CompatibleValue): boolean;
     isOpenHandledByUser(): boolean;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsPickerComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsPickerComponent, "[cmacs-picker]", ["cmacsPicker"], { "noAnimation": "noAnimation"; "isRange": "isRange"; "open": "open"; "disabled": "disabled"; "timeline": "timeline"; "inputReadOnly": "inputReadOnly"; "placeholder": "placeholder"; "allowClear": "allowClear"; "autoFocus": "autoFocus"; "format": "format"; "separator": "separator"; "popupStyle": "popupStyle"; "dropdownClassName": "dropdownClassName"; "suffixIcon": "suffixIcon"; "dir": "dir"; "id": "id"; "cmacsOpen": "cmacsOpen"; }, { "focusChange": "focusChange"; "valueChange": "valueChange"; "openChange": "openChange"; }, ["panel"], ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsPickerComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsPickerComponent, "[cmacs-picker]", ["cmacsPicker"], { "noAnimation": { "alias": "noAnimation"; "required": false; }; "isRange": { "alias": "isRange"; "required": false; }; "open": { "alias": "open"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "timeline": { "alias": "timeline"; "required": false; }; "inputReadOnly": { "alias": "inputReadOnly"; "required": false; }; "placeholder": { "alias": "placeholder"; "required": false; }; "allowClear": { "alias": "allowClear"; "required": false; }; "autoFocus": { "alias": "autoFocus"; "required": false; }; "format": { "alias": "format"; "required": false; }; "separator": { "alias": "separator"; "required": false; }; "popupStyle": { "alias": "popupStyle"; "required": false; }; "dropdownClassName": { "alias": "dropdownClassName"; "required": false; }; "suffixIcon": { "alias": "suffixIcon"; "required": false; }; "dir": { "alias": "dir"; "required": false; }; "id": { "alias": "id"; "required": false; }; "cmacsOpen": { "alias": "cmacsOpen"; "required": false; }; }, { "focusChange": "focusChange"; "valueChange": "valueChange"; "openChange": "openChange"; }, ["panel"], ["*"], false, never>;
 }
 //# sourceMappingURL=picker.component.d.ts.map

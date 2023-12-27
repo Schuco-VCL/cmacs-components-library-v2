@@ -7,7 +7,7 @@ export declare class CmacsTreeService extends NzTreeBaseService {
      * should add expandlist
      */
     searchExpand(value: string): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTreeService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<CmacsTreeService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTreeService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<CmacsTreeService>;
 }
 //# sourceMappingURL=cmacs-tree.service.d.ts.map

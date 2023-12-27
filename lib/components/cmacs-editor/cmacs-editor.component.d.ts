@@ -20,7 +20,7 @@ export declare class CmacsEditorComponent implements OnDestroy, OnInit {
     constructor(i18n: NzI18nService, cdr: ChangeDetectorRef);
     ngOnInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsEditorComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsEditorComponent, "cmacs-editor", ["cmacsEditor"], { "disabled": "disabled"; "height": "height"; "statusbar": "statusbar"; "resize": "resize"; "toolbarmobile": "toolbarmobile"; "toolbar": "toolbar"; "tinyMceSettings": "tinyMceSettings"; }, { "oninit": "oninit"; "onchange": "onchange"; "onblur": "onblur"; "onkeyup": "onkeyup"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsEditorComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsEditorComponent, "cmacs-editor", ["cmacsEditor"], { "disabled": { "alias": "disabled"; "required": false; }; "height": { "alias": "height"; "required": false; }; "statusbar": { "alias": "statusbar"; "required": false; }; "resize": { "alias": "resize"; "required": false; }; "toolbarmobile": { "alias": "toolbarmobile"; "required": false; }; "toolbar": { "alias": "toolbar"; "required": false; }; "tinyMceSettings": { "alias": "tinyMceSettings"; "required": false; }; }, { "oninit": "oninit"; "onchange": "onchange"; "onblur": "onblur"; "onkeyup": "onkeyup"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-editor.component.d.ts.map

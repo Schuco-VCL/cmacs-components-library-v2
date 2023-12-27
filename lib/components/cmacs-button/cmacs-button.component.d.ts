@@ -6,10 +6,10 @@ import * as i0 from "@angular/core";
  * @deprecated `danger` not supported, use `nzDanger` instead
  * @breaking-change 12.0.0
  */
-declare type NzLegacyButtonType = 'primary' | 'default' | 'dashed' | 'danger' | 'link' | 'text' | null;
-export declare type NzButtonType = NzLegacyButtonType;
-export declare type NzButtonShape = 'circle' | 'round' | null;
-export declare type NzButtonSize = 'large' | 'default' | 'small';
+type NzLegacyButtonType = 'primary' | 'default' | 'dashed' | 'danger' | 'link' | 'text' | null;
+export type NzButtonType = NzLegacyButtonType;
+export type NzButtonShape = 'circle' | 'round' | null;
+export type NzButtonSize = 'large' | 'default' | 'small';
 export declare class CmacsButtonComponent implements AfterContentInit, AfterViewInit, OnInit, OnDestroy, OnChanges {
     private elementRef;
     private cdr;
@@ -44,8 +44,8 @@ export declare class CmacsButtonComponent implements AfterContentInit, AfterView
     hideBtn(): void;
     showBtn(): void;
     disabledBtn(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsButtonComponent, [null, null, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsButtonComponent, "button[cmacs-button], a[cmacs-button]", ["cmacsButton"], { "block": "block"; "ghost": "ghost"; "search": "search"; "loading": "loading"; "danger": "danger"; "disabled": "disabled"; "tabIndex": "tabIndex"; "type": "type"; "shape": "shape"; "size": "size"; "action": "action"; }, {}, ["nzIconDirectiveElement"], ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsButtonComponent, [null, null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsButtonComponent, "button[cmacs-button], a[cmacs-button]", ["cmacsButton"], { "block": { "alias": "block"; "required": false; }; "ghost": { "alias": "ghost"; "required": false; }; "search": { "alias": "search"; "required": false; }; "loading": { "alias": "loading"; "required": false; }; "danger": { "alias": "danger"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "tabIndex": { "alias": "tabIndex"; "required": false; }; "type": { "alias": "type"; "required": false; }; "shape": { "alias": "shape"; "required": false; }; "size": { "alias": "size"; "required": false; }; "action": { "alias": "action"; "required": false; }; }, {}, ["nzIconDirectiveElement"], ["*"], false, never>;
 }
 export {};
 //# sourceMappingURL=cmacs-button.component.d.ts.map

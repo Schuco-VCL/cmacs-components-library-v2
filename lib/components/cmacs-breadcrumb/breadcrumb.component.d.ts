@@ -30,7 +30,7 @@ export declare class CmacsBreadCrumbComponent implements OnInit, OnDestroy {
     private registerRouterChange;
     private getBreadcrumbs;
     private prepareComponentForRtl;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsBreadCrumbComponent, [null, null, null, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsBreadCrumbComponent, "cmacs-breadcrumb", ["cmacsBreadcrumb"], { "autoGenerate": "autoGenerate"; "separator": "separator"; "routeLabel": "routeLabel"; "routeLabelFn": "routeLabelFn"; }, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsBreadCrumbComponent, [null, null, null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsBreadCrumbComponent, "cmacs-breadcrumb", ["cmacsBreadcrumb"], { "autoGenerate": { "alias": "autoGenerate"; "required": false; }; "separator": { "alias": "separator"; "required": false; }; "routeLabel": { "alias": "routeLabel"; "required": false; }; "routeLabelFn": { "alias": "routeLabelFn"; "required": false; }; }, {}, never, ["*"], false, never>;
 }
 //# sourceMappingURL=breadcrumb.component.d.ts.map

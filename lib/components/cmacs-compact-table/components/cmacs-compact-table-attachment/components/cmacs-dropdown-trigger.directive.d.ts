@@ -18,7 +18,7 @@ export declare class CmacsDropdownTriggerDirective implements OnDestroy {
     private destroyDropdown;
     clickout(event: any): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsDropdownTriggerDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsDropdownTriggerDirective, "[dropdownTrigger]", never, { "dropdownPanel": "dropdownTrigger"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsDropdownTriggerDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsDropdownTriggerDirective, "[dropdownTrigger]", never, { "dropdownPanel": { "alias": "dropdownTrigger"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-dropdown-trigger.directive.d.ts.map

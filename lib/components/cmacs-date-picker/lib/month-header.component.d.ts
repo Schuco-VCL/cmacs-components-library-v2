@@ -6,7 +6,7 @@ export declare class MonthHeaderComponent extends AbstractPanelHeader {
     private dateHelper;
     constructor(dateHelper: DateHelperService);
     getSelectors(): PanelSelector[];
-    static ɵfac: i0.ɵɵFactoryDef<MonthHeaderComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<MonthHeaderComponent, "month-header", ["monthHeader"], {}, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<MonthHeaderComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<MonthHeaderComponent, "month-header", ["monthHeader"], {}, {}, never, never, false, never>;
 }
 //# sourceMappingURL=month-header.component.d.ts.map

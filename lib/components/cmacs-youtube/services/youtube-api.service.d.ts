@@ -6,7 +6,7 @@ export declare class YoutubeApiService {
     private _window;
     constructor();
     loadApi(): void;
-    static ɵfac: i0.ɵɵFactoryDef<YoutubeApiService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<YoutubeApiService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<YoutubeApiService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<YoutubeApiService>;
 }
 //# sourceMappingURL=youtube-api.service.d.ts.map

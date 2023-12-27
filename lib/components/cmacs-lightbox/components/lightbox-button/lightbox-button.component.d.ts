@@ -11,7 +11,7 @@ export declare class LightboxButtonComponent implements OnChanges {
     private _onMouseLeave;
     private _getHostElement;
     private _hasHostAttributes;
-    static ɵfac: i0.ɵɵFactoryDef<LightboxButtonComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<LightboxButtonComponent, "button[lightbox-button], button[lightbox-icon-button]", never, { "disable": "disable"; }, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LightboxButtonComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<LightboxButtonComponent, "button[lightbox-button], button[lightbox-icon-button]", never, { "disable": { "alias": "disable"; "required": false; }; }, {}, never, ["*"], false, never>;
 }
 //# sourceMappingURL=lightbox-button.component.d.ts.map

@@ -26,7 +26,7 @@ export declare class CmacsNormalizedHorizontalBarGroupedComponent implements OnI
     ngOnChanges(): void;
     menuClick(type: WidgetActionType): void;
     drawCanvas(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsNormalizedHorizontalBarGroupedComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsNormalizedHorizontalBarGroupedComponent, "cmacs-normalized-horizontal-bar-grouped", never, { "data": "data"; "colorScheme": "colorScheme"; "view": "view"; }, { "clickMenu": "clickMenu"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsNormalizedHorizontalBarGroupedComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsNormalizedHorizontalBarGroupedComponent, "cmacs-normalized-horizontal-bar-grouped", never, { "data": { "alias": "data"; "required": false; }; "colorScheme": { "alias": "colorScheme"; "required": false; }; "view": { "alias": "view"; "required": false; }; }, { "clickMenu": "clickMenu"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-normalized-horizontal-bar-grouped.component.d.ts.map

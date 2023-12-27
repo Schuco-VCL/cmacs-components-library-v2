@@ -5,7 +5,7 @@ import { MenuService } from './menu.service';
 import { CmacsMenuModeType, CmacsMenuThemeType } from './menu.types';
 import { CmacsSubMenuComponent } from './submenu.component';
 import * as i0 from "@angular/core";
-export declare type CmacsMenuModeTypeCustom = 'side-bar';
+export type CmacsMenuModeTypeCustom = 'side-bar';
 export declare function MenuServiceFactory(serviceInsideDropDown: MenuService, serviceOutsideDropDown: MenuService): MenuService;
 export declare function MenuDropDownTokenFactory(isMenuInsideDropDownToken: boolean): boolean;
 export declare class CmacsMenuDirective implements AfterContentInit, OnInit, OnChanges, OnDestroy {
@@ -35,7 +35,7 @@ export declare class CmacsMenuDirective implements AfterContentInit, OnInit, OnC
     ngAfterContentInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsMenuDirective, [null, null, null, { optional: true; }]>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsMenuDirective, "[cmacs-menu]", ["cmacsMenu"], { "inlineIndent": "inlineIndent"; "theme": "theme"; "mode": "mode"; "cmacsMode": "cmacsMode"; "inlineCollapsed": "inlineCollapsed"; "selectable": "selectable"; }, { "cmacsClick": "cmacsClick"; }, ["listOfNzMenuItemDirective", "listOfCmacsSubMenuComponent"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsMenuDirective, [null, null, null, { optional: true; }]>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsMenuDirective, "[cmacs-menu]", ["cmacsMenu"], { "inlineIndent": { "alias": "inlineIndent"; "required": false; }; "theme": { "alias": "theme"; "required": false; }; "mode": { "alias": "mode"; "required": false; }; "cmacsMode": { "alias": "cmacsMode"; "required": false; }; "inlineCollapsed": { "alias": "inlineCollapsed"; "required": false; }; "selectable": { "alias": "selectable"; "required": false; }; }, { "cmacsClick": "cmacsClick"; }, ["listOfNzMenuItemDirective", "listOfCmacsSubMenuComponent"], never, false, never>;
 }
 //# sourceMappingURL=menu.directive.d.ts.map

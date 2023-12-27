@@ -14,7 +14,7 @@ export declare class CmacsTextareaCountComponent implements AfterContentInit, On
     ngAfterContentInit(): void;
     setDataCount(value: string): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTextareaCountComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTextareaCountComponent, "cmacs-textarea-count", never, { "maxCharacterCount": "maxCharacterCount"; "computeCharacterCount": "computeCharacterCount"; "formatter": "formatter"; }, {}, ["nzInputDirective"], ["textarea[cmacs-input]"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTextareaCountComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTextareaCountComponent, "cmacs-textarea-count", never, { "maxCharacterCount": { "alias": "maxCharacterCount"; "required": false; }; "computeCharacterCount": { "alias": "computeCharacterCount"; "required": false; }; "formatter": { "alias": "formatter"; "required": false; }; }, {}, ["nzInputDirective"], ["textarea[cmacs-input]"], false, never>;
 }
 //# sourceMappingURL=textarea-count.component.d.ts.map

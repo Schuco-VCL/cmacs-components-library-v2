@@ -23,7 +23,7 @@ export declare class CmacsTimelineComponent implements AfterContentInit, OnChang
     ngAfterContentInit(): void;
     ngOnDestroy(): void;
     private updateChildren;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTimelineComponent, [null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTimelineComponent, "cmacs-timeline", ["cmacsTimeline"], { "mode": "mode"; "pending": "pending"; "pendingDot": "pendingDot"; "reverse": "reverse"; }, {}, ["listOfItems"], ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTimelineComponent, [null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTimelineComponent, "cmacs-timeline", ["cmacsTimeline"], { "mode": { "alias": "mode"; "required": false; }; "pending": { "alias": "pending"; "required": false; }; "pendingDot": { "alias": "pendingDot"; "required": false; }; "reverse": { "alias": "reverse"; "required": false; }; }, {}, ["listOfItems"], ["*"], false, never>;
 }
 //# sourceMappingURL=timeline.component.d.ts.map

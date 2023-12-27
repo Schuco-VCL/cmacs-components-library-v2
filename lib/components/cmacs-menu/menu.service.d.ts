@@ -7,7 +7,7 @@ export declare class MenuService {
     descendantMenuItemClick$: Subject<any>;
     /** child menu item click **/
     childMenuItemClick$: Subject<any>;
-    theme$: BehaviorSubject<import("cmacs-components-v2-lib").CmacsTheme>;
+    theme$: BehaviorSubject<CmacsMenuThemeType>;
     mode$: BehaviorSubject<CmacsMenuModeType>;
     inlineIndent$: BehaviorSubject<number>;
     isChildSubMenuOpen$: BehaviorSubject<boolean>;
@@ -16,7 +16,7 @@ export declare class MenuService {
     setMode(mode: CmacsMenuModeType): void;
     setTheme(theme: CmacsMenuThemeType): void;
     setInlineIndent(indent: number): void;
-    static ɵfac: i0.ɵɵFactoryDef<MenuService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<MenuService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<MenuService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<MenuService>;
 }
 //# sourceMappingURL=menu.service.d.ts.map

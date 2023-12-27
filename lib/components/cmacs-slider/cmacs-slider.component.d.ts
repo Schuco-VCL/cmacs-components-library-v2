@@ -106,7 +106,7 @@ export declare class CmacsSliderComponent implements ControlValueAccessor, OnIni
     private showHandleTooltip;
     private hideAllHandleTooltip;
     private generateMarkItems;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSliderComponent, [null, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSliderComponent, "cmacs-slider", ["cmacsSlider"], { "disabled": "disabled"; "dots": "dots"; "included": "included"; "range": "range"; "vertical": "vertical"; "reverse": "reverse"; "defaultValue": "defaultValue"; "marks": "marks"; "max": "max"; "min": "min"; "step": "step"; "tooltipVisible": "tooltipVisible"; "tooltipPlacement": "tooltipPlacement"; "tipFormatter": "tipFormatter"; }, { "onAfterChange": "onAfterChange"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSliderComponent, [null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsSliderComponent, "cmacs-slider", ["cmacsSlider"], { "disabled": { "alias": "disabled"; "required": false; }; "dots": { "alias": "dots"; "required": false; }; "included": { "alias": "included"; "required": false; }; "range": { "alias": "range"; "required": false; }; "vertical": { "alias": "vertical"; "required": false; }; "reverse": { "alias": "reverse"; "required": false; }; "defaultValue": { "alias": "defaultValue"; "required": false; }; "marks": { "alias": "marks"; "required": false; }; "max": { "alias": "max"; "required": false; }; "min": { "alias": "min"; "required": false; }; "step": { "alias": "step"; "required": false; }; "tooltipVisible": { "alias": "tooltipVisible"; "required": false; }; "tooltipPlacement": { "alias": "tooltipPlacement"; "required": false; }; "tipFormatter": { "alias": "tipFormatter"; "required": false; }; }, { "onAfterChange": "onAfterChange"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-slider.component.d.ts.map

@@ -1,5 +1,5 @@
 import { EventEmitter, ChangeDetectorRef, AfterViewInit } from '@angular/core';
-import { FormBuilder, FormGroup } from "@angular/forms";
+import { UntypedFormBuilder, UntypedFormGroup } from "@angular/forms";
 import { SignaturePad } from 'angular2-signaturepad';
 import { NzUploadFile } from 'ng-zorro-antd/upload';
 import * as i0 from "@angular/core";
@@ -23,7 +23,7 @@ export declare class CmacsSignatureComponent implements AfterViewInit {
     private fb;
     private cdr;
     _isVisible: boolean;
-    formGroup: FormGroup;
+    formGroup: UntypedFormGroup;
     saveSignature: boolean;
     _i18n: {
         'Click here to sign': string;
@@ -68,8 +68,8 @@ export declare class CmacsSignatureComponent implements AfterViewInit {
     handleCancel(): void;
     handleOk(): void;
     checkPressedKeys($event: any): void;
-    constructor(fb: FormBuilder, cdr: ChangeDetectorRef);
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSignatureComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSignatureComponent, "cmacs-signature", ["cmacsSignature"], { "i18n": "i18n"; "signaturePadOptions": "signaturePadOptions"; "extendedVersion": "extendedVersion"; "currentValue": "currentValue"; }, { "oncancel": "oncancel"; "onsubmit": "onsubmit"; "ondrawend": "ondrawend"; }, never, never>;
+    constructor(fb: UntypedFormBuilder, cdr: ChangeDetectorRef);
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSignatureComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsSignatureComponent, "cmacs-signature", ["cmacsSignature"], { "i18n": { "alias": "i18n"; "required": false; }; "signaturePadOptions": { "alias": "signaturePadOptions"; "required": false; }; "extendedVersion": { "alias": "extendedVersion"; "required": false; }; "currentValue": { "alias": "currentValue"; "required": false; }; }, { "oncancel": "oncancel"; "onsubmit": "onsubmit"; "ondrawend": "ondrawend"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-signature.component.d.ts.map

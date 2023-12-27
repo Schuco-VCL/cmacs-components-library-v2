@@ -9,7 +9,7 @@ export declare class CmacsSidePanelComponent implements OnInit, OnChanges {
     constructor();
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSidePanelComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSidePanelComponent, "cmacs-side-panel", never, { "width": "width"; "float": "float"; "visible": "visible"; "collapsible": "collapsible"; }, { "visibleChange": "visibleChange"; }, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSidePanelComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsSidePanelComponent, "cmacs-side-panel", never, { "width": { "alias": "width"; "required": false; }; "float": { "alias": "float"; "required": false; }; "visible": { "alias": "visible"; "required": false; }; "collapsible": { "alias": "collapsible"; "required": false; }; }, { "visibleChange": "visibleChange"; }, never, ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-side-panel.component.d.ts.map

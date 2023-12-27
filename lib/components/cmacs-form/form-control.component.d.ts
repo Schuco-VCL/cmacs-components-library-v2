@@ -58,8 +58,8 @@ export declare class CmacsFormControlComponent implements OnChanges, OnDestroy, 
     ngOnInit(): void;
     ngOnDestroy(): void;
     ngAfterContentInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsFormControlComponent, [null, { optional: true; host: true; }, null, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsFormControlComponent, "cmacs-form-control", ["cmacsFormControl"], { "cmacsSuccessTip": "cmacsSuccessTip"; "cmacsWarningTip": "cmacsWarningTip"; "cmacsErrorTip": "cmacsErrorTip"; "cmacsValidatingTip": "cmacsValidatingTip"; "cmacsExtra": "cmacsExtra"; "cmacsAutoTips": "cmacsAutoTips"; "cmacsDisableAutoTips": "cmacsDisableAutoTips"; "cmacsHasFeedback": "cmacsHasFeedback"; "cmacsValidateStatus": "cmacsValidateStatus"; }, {}, ["defaultValidateControl"], ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsFormControlComponent, [null, { optional: true; host: true; }, null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsFormControlComponent, "cmacs-form-control", ["cmacsFormControl"], { "cmacsSuccessTip": { "alias": "cmacsSuccessTip"; "required": false; }; "cmacsWarningTip": { "alias": "cmacsWarningTip"; "required": false; }; "cmacsErrorTip": { "alias": "cmacsErrorTip"; "required": false; }; "cmacsValidatingTip": { "alias": "cmacsValidatingTip"; "required": false; }; "cmacsExtra": { "alias": "cmacsExtra"; "required": false; }; "cmacsAutoTips": { "alias": "cmacsAutoTips"; "required": false; }; "cmacsDisableAutoTips": { "alias": "cmacsDisableAutoTips"; "required": false; }; "cmacsHasFeedback": { "alias": "cmacsHasFeedback"; "required": false; }; "cmacsValidateStatus": { "alias": "cmacsValidateStatus"; "required": false; }; }, {}, ["defaultValidateControl"], ["*"], false, never>;
 }
 export {};
 //# sourceMappingURL=form-control.component.d.ts.map

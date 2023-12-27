@@ -3,7 +3,7 @@ import { ControlValueAccessor } from '@angular/forms';
 import { TimeHolder } from './time-holder';
 import { DateHelperService } from 'ng-zorro-antd/i18n';
 import * as i0 from "@angular/core";
-export declare type NzTimePickerUnit = 'hour' | 'minute' | 'second' | '12-hour';
+export type NzTimePickerUnit = 'hour' | 'minute' | 'second' | '12-hour';
 export declare class CmacsDatetimePickerPanelComponent implements ControlValueAccessor, OnInit, OnDestroy, OnChanges {
     private cdr;
     dateHelper: DateHelperService;
@@ -138,7 +138,7 @@ export declare class CmacsDatetimePickerPanelComponent implements ControlValueAc
      */
     onMousedown(event: MouseEvent): void;
     updateTime($event: any, type: string): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsDatetimePickerPanelComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsDatetimePickerPanelComponent, "cmacs-datetime-picker-panel", ["cmacsDateTimePickerPanel"], { "nzInDatePicker": "nzInDatePicker"; "nzAddOn": "nzAddOn"; "nzHideDisabledOptions": "nzHideDisabledOptions"; "nzClearText": "nzClearText"; "nzNowText": "nzNowText"; "nzOkText": "nzOkText"; "nzPlaceHolder": "nzPlaceHolder"; "nzUse12Hours": "nzUse12Hours"; "hideSeconds": "hideSeconds"; "nzDefaultOpenValue": "nzDefaultOpenValue"; "nzAllowEmpty": "nzAllowEmpty"; "nzDisabledHours": "nzDisabledHours"; "nzDisabledMinutes": "nzDisabledMinutes"; "nzDisabledSeconds": "nzDisabledSeconds"; "format": "format"; "nzHourStep": "nzHourStep"; "nzMinuteStep": "nzMinuteStep"; "nzSecondStep": "nzSecondStep"; }, { "closePanel": "closePanel"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsDatetimePickerPanelComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsDatetimePickerPanelComponent, "cmacs-datetime-picker-panel", ["cmacsDateTimePickerPanel"], { "nzInDatePicker": { "alias": "nzInDatePicker"; "required": false; }; "nzAddOn": { "alias": "nzAddOn"; "required": false; }; "nzHideDisabledOptions": { "alias": "nzHideDisabledOptions"; "required": false; }; "nzClearText": { "alias": "nzClearText"; "required": false; }; "nzNowText": { "alias": "nzNowText"; "required": false; }; "nzOkText": { "alias": "nzOkText"; "required": false; }; "nzPlaceHolder": { "alias": "nzPlaceHolder"; "required": false; }; "nzUse12Hours": { "alias": "nzUse12Hours"; "required": false; }; "hideSeconds": { "alias": "hideSeconds"; "required": false; }; "nzDefaultOpenValue": { "alias": "nzDefaultOpenValue"; "required": false; }; "nzAllowEmpty": { "alias": "nzAllowEmpty"; "required": false; }; "nzDisabledHours": { "alias": "nzDisabledHours"; "required": false; }; "nzDisabledMinutes": { "alias": "nzDisabledMinutes"; "required": false; }; "nzDisabledSeconds": { "alias": "nzDisabledSeconds"; "required": false; }; "format": { "alias": "format"; "required": false; }; "nzHourStep": { "alias": "nzHourStep"; "required": false; }; "nzMinuteStep": { "alias": "nzMinuteStep"; "required": false; }; "nzSecondStep": { "alias": "nzSecondStep"; "required": false; }; }, { "closePanel": "closePanel"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-datetime-picker-panel.component.d.ts.map

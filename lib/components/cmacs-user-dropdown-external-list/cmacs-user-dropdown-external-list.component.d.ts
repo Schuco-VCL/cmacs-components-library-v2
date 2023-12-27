@@ -15,7 +15,7 @@ export declare class CmacsUserDropdownExternalListComponent {
     getSafeImage(picture: any): any;
     onError(elem: any): void;
     removeOption(elem: any): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsUserDropdownExternalListComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsUserDropdownExternalListComponent, "cmacs-user-dropdown-external-list", ["cmacsUserDropdownExternalList"], { "data": "data"; }, { "removedOption": "removedOption"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsUserDropdownExternalListComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsUserDropdownExternalListComponent, "cmacs-user-dropdown-external-list", ["cmacsUserDropdownExternalList"], { "data": { "alias": "data"; "required": false; }; }, { "removedOption": "removedOption"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-user-dropdown-external-list.component.d.ts.map

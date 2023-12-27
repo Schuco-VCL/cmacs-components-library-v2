@@ -29,7 +29,7 @@ export declare class CalendarFooterComponent implements OnChanges {
     constructor(dateHelper: DateHelperService);
     ngOnChanges(changes: SimpleChanges): void;
     onClickToday(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CalendarFooterComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CalendarFooterComponent, "calendar-footer", ["calendarFooter"], { "locale": "locale"; "showToday": "showToday"; "showNow": "showNow"; "hasTimePicker": "hasTimePicker"; "isRange": "isRange"; "okDisabled": "okDisabled"; "disabledDate": "disabledDate"; "extraFooter": "extraFooter"; "rangeQuickSelector": "rangeQuickSelector"; }, { "clickOk": "clickOk"; "clickToday": "clickToday"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CalendarFooterComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CalendarFooterComponent, "calendar-footer", ["calendarFooter"], { "locale": { "alias": "locale"; "required": false; }; "showToday": { "alias": "showToday"; "required": false; }; "showNow": { "alias": "showNow"; "required": false; }; "hasTimePicker": { "alias": "hasTimePicker"; "required": false; }; "isRange": { "alias": "isRange"; "required": false; }; "okDisabled": { "alias": "okDisabled"; "required": false; }; "disabledDate": { "alias": "disabledDate"; "required": false; }; "extraFooter": { "alias": "extraFooter"; "required": false; }; "rangeQuickSelector": { "alias": "rangeQuickSelector"; "required": false; }; }, { "clickOk": "clickOk"; "clickToday": "clickToday"; }, never, never, false, never>;
 }
 //# sourceMappingURL=calendar-footer.component.d.ts.map

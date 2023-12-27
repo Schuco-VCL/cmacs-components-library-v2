@@ -35,8 +35,8 @@ export declare abstract class NzMNContainerComponent implements OnInit, OnDestro
     protected abstract updateConfig(): void;
     protected abstract subscribeConfigChange(): void;
     protected mergeOptions(options?: NzMessageDataOptions): NzMessageDataOptions;
-    static ɵfac: i0.ɵɵFactoryDef<NzMNContainerComponent, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzMNContainerComponent, never, never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NzMNContainerComponent, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<NzMNContainerComponent, never, never, {}, {}, never, never, false, never>;
 }
 export declare abstract class NzMNComponent implements OnInit, OnDestroy {
     protected cdr: ChangeDetectorRef;
@@ -64,7 +64,7 @@ export declare abstract class NzMNComponent implements OnInit, OnDestroy {
     private updateTTL;
     private startEraseTimeout;
     private clearEraseTimeout;
-    static ɵfac: i0.ɵɵFactoryDef<NzMNComponent, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzMNComponent, never, never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NzMNComponent, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<NzMNComponent, never, never, {}, {}, never, never, false, never>;
 }
 //# sourceMappingURL=base.d.ts.map

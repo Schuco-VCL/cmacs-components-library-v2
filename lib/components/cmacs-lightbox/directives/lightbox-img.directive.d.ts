@@ -11,7 +11,7 @@ export declare class LightboxImgDirective extends ItemDirectiveBase implements O
     open(): void;
     get isLoaded(): boolean;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<LightboxImgDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<LightboxImgDirective, "img[lightbox-img]", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LightboxImgDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<LightboxImgDirective, "img[lightbox-img]", never, {}, {}, never, never, false, never>;
 }
 //# sourceMappingURL=lightbox-img.directive.d.ts.map

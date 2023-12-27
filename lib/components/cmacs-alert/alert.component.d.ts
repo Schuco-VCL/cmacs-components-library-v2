@@ -35,7 +35,7 @@ export declare class CmacsAlertComponent implements OnChanges, OnDestroy, OnInit
     onFadeAnimationDone(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsAlertComponent, [null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsAlertComponent, "cmacs-alert", ["cmacsAlert"], { "closeText": "closeText"; "iconType": "iconType"; "message": "message"; "description": "description"; "type": "type"; "closeable": "closeable"; "showIcon": "showIcon"; "banner": "banner"; "noAnimation": "noAnimation"; }, { "onClose": "onClose"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsAlertComponent, [null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsAlertComponent, "cmacs-alert", ["cmacsAlert"], { "closeText": { "alias": "closeText"; "required": false; }; "iconType": { "alias": "iconType"; "required": false; }; "message": { "alias": "message"; "required": false; }; "description": { "alias": "description"; "required": false; }; "type": { "alias": "type"; "required": false; }; "closeable": { "alias": "closeable"; "required": false; }; "showIcon": { "alias": "showIcon"; "required": false; }; "banner": { "alias": "banner"; "required": false; }; "noAnimation": { "alias": "noAnimation"; "required": false; }; }, { "onClose": "onClose"; }, never, never, false, never>;
 }
 //# sourceMappingURL=alert.component.d.ts.map

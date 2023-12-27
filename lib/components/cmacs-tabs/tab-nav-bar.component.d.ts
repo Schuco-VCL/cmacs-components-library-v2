@@ -1,13 +1,13 @@
 import { Directionality } from '@angular/cdk/bidi';
 import { ViewportRuler } from '@angular/cdk/overlay';
 import { AfterContentChecked, AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, NgZone, OnChanges, OnDestroy, OnInit, QueryList, SimpleChanges, TemplateRef } from '@angular/core';
-import { NzResizeObserver } from 'ng-zorro-antd/core/resize-observers';
 import { NzSafeAny } from 'ng-zorro-antd/core/types';
 import { NzTabPositionMode, NzTabScrollEvent, NzTabScrollListOffsetEvent } from './interfaces';
 import { CmacsTabAddButtonComponent } from './tab-add-button.component';
 import { CmacsTabNavItemDirective } from './tab-nav-item.directive';
 import { CmacsTabNavOperationComponent } from './tab-nav-operation.component';
 import { CmacsTabsInkBarDirective } from './tabs-ink-bar.directive';
+import { NzResizeObserver } from 'ng-zorro-antd/cdk/resize-observer';
 import * as i0 from "@angular/core";
 export declare class CmacsTabNavBarComponent implements OnInit, AfterViewInit, AfterContentChecked, OnDestroy, OnChanges {
     private cdr;
@@ -84,7 +84,7 @@ export declare class CmacsTabNavBarComponent implements OnInit, AfterViewInit, A
     private getLayoutDirection;
     private setTabFocus;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTabNavBarComponent, [null, null, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTabNavBarComponent, "cmacs-tabs-nav", ["cmacsTabsNav"], { "position": "position"; "addable": "addable"; "hideBar": "hideBar"; "addIcon": "addIcon"; "inkBarAnimated": "inkBarAnimated"; "extraTemplate": "extraTemplate"; "cmacsType": "cmacsType"; "selectedIndex": "selectedIndex"; }, { "indexFocused": "indexFocused"; "selectFocusedIndex": "selectFocusedIndex"; "addClicked": "addClicked"; "tabScroll": "tabScroll"; }, ["items"], ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTabNavBarComponent, [null, null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTabNavBarComponent, "cmacs-tabs-nav", ["cmacsTabsNav"], { "position": { "alias": "position"; "required": false; }; "addable": { "alias": "addable"; "required": false; }; "hideBar": { "alias": "hideBar"; "required": false; }; "addIcon": { "alias": "addIcon"; "required": false; }; "inkBarAnimated": { "alias": "inkBarAnimated"; "required": false; }; "extraTemplate": { "alias": "extraTemplate"; "required": false; }; "cmacsType": { "alias": "cmacsType"; "required": false; }; "selectedIndex": { "alias": "selectedIndex"; "required": false; }; }, { "indexFocused": "indexFocused"; "selectFocusedIndex": "selectFocusedIndex"; "addClicked": "addClicked"; "tabScroll": "tabScroll"; }, ["items"], ["*"], false, never>;
 }
 //# sourceMappingURL=tab-nav-bar.component.d.ts.map

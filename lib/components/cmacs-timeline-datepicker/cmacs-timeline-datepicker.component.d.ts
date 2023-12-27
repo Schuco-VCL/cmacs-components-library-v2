@@ -3,7 +3,7 @@ import 'moment/locale/en-ie';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 import { NzTabChangeEvent } from '../cmacs-tabs/interfaces';
 import * as i0 from "@angular/core";
-export declare type CmacsTimelineDatePickerMode = 'week' | 'quarter' | 'month' | 'week-range' | 'month-range';
+export type CmacsTimelineDatePickerMode = 'week' | 'quarter' | 'month' | 'week-range' | 'month-range';
 export declare class CmacsTimelineDatepickerComponent implements AfterContentChecked, OnInit, OnChanges, OnDestroy {
     private renderer;
     private elementRef;
@@ -78,7 +78,7 @@ export declare class CmacsTimelineDatepickerComponent implements AfterContentChe
     getMonth(result: Date): void;
     ngOnDestroy(): void;
     checkActiveTab(index: number): boolean;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTimelineDatepickerComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTimelineDatepickerComponent, "cmacs-timeline-datepicker", ["cmacsTimelineDatepicker"], { "gutter": "gutter"; "mode": "mode"; "restrictMode": "restrictMode"; "ranged": "ranged"; "weekLocale": "weekLocale"; "locale": "locale"; "selectedIndex": "selectedIndex"; "selectedRangeIdxs": "selectedRangeIdxs"; "date": "date"; "range": "range"; }, { "onNextClick": "onNextClick"; "onPrevClick": "onPrevClick"; "selectChange": "selectChange"; "selectedIndexChange": "selectedIndexChange"; "dateChange": "dateChange"; "rangeChange": "rangeChange"; "modeChange": "modeChange"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTimelineDatepickerComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTimelineDatepickerComponent, "cmacs-timeline-datepicker", ["cmacsTimelineDatepicker"], { "gutter": { "alias": "gutter"; "required": false; }; "mode": { "alias": "mode"; "required": false; }; "restrictMode": { "alias": "restrictMode"; "required": false; }; "ranged": { "alias": "ranged"; "required": false; }; "weekLocale": { "alias": "weekLocale"; "required": false; }; "locale": { "alias": "locale"; "required": false; }; "selectedIndex": { "alias": "selectedIndex"; "required": false; }; "selectedRangeIdxs": { "alias": "selectedRangeIdxs"; "required": false; }; "date": { "alias": "date"; "required": false; }; "range": { "alias": "range"; "required": false; }; }, { "onNextClick": "onNextClick"; "onPrevClick": "onPrevClick"; "selectChange": "selectChange"; "selectedIndexChange": "selectedIndexChange"; "dateChange": "dateChange"; "rangeChange": "rangeChange"; "modeChange": "modeChange"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-timeline-datepicker.component.d.ts.map

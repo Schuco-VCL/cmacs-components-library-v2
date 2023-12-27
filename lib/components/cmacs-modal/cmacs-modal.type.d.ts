@@ -1,8 +1,8 @@
 import { OverlayRef } from '@angular/cdk/overlay';
 import { EventEmitter, TemplateRef, Type } from '@angular/core';
-export declare type OnClickCallback<T> = (instance: T) => (false | void | {}) | Promise<false | void | {}>;
-export declare type ModalType = 'transactional' | 'confirm' | 'passive' | 'interaction' | 'creation' | 'helpfulTips' | 'helpfulTipsNoPanel' | 'basic';
-export declare type ConfirmType = 'confirm' | 'info' | 'success' | 'error' | 'warning';
+export type OnClickCallback<T> = (instance: T) => (false | void | {}) | Promise<false | void | {}>;
+export type ModalType = 'transactional' | 'confirm' | 'passive' | 'interaction' | 'creation' | 'helpfulTips' | 'helpfulTipsNoPanel' | 'basic';
+export type ConfirmType = 'confirm' | 'info' | 'success' | 'error' | 'warning';
 export interface ModalOptions<T = any, R = any> {
     modalType?: ModalType;
     visible?: boolean;

@@ -35,7 +35,7 @@ export declare class CmacsInputGroupComponent implements AfterContentInit {
     ngAfterContentInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsInputGroupComponent, [null, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsInputGroupComponent, "cmacs-input-group", ["cmacsInputGroup"], { "cmacsAddOnBeforeIcon": "cmacsAddOnBeforeIcon"; "cmacsAddOnAfterIcon": "cmacsAddOnAfterIcon"; "cmacsPrefixIcon": "cmacsPrefixIcon"; "cmacsSuffixIcon": "cmacsSuffixIcon"; "cmacsAddOnBefore": "cmacsAddOnBefore"; "cmacsAddOnAfter": "cmacsAddOnAfter"; "cmacsPrefix": "cmacsPrefix"; "cmacsSuffix": "cmacsSuffix"; "cmacsSize": "cmacsSize"; "search": "search"; "compact": "compact"; }, {}, ["listOfNzInputDirective"], ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsInputGroupComponent, [null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsInputGroupComponent, "cmacs-input-group", ["cmacsInputGroup"], { "cmacsAddOnBeforeIcon": { "alias": "cmacsAddOnBeforeIcon"; "required": false; }; "cmacsAddOnAfterIcon": { "alias": "cmacsAddOnAfterIcon"; "required": false; }; "cmacsPrefixIcon": { "alias": "cmacsPrefixIcon"; "required": false; }; "cmacsSuffixIcon": { "alias": "cmacsSuffixIcon"; "required": false; }; "cmacsAddOnBefore": { "alias": "cmacsAddOnBefore"; "required": false; }; "cmacsAddOnAfter": { "alias": "cmacsAddOnAfter"; "required": false; }; "cmacsPrefix": { "alias": "cmacsPrefix"; "required": false; }; "cmacsSuffix": { "alias": "cmacsSuffix"; "required": false; }; "cmacsSize": { "alias": "cmacsSize"; "required": false; }; "search": { "alias": "search"; "required": false; }; "compact": { "alias": "compact"; "required": false; }; }, {}, ["listOfNzInputDirective"], ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-input-group.component.d.ts.map

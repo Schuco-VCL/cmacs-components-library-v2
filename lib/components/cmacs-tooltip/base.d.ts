@@ -1,24 +1,25 @@
-/**
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
- */
 import { Direction, Directionality } from '@angular/cdk/bidi';
-import { CdkConnectedOverlay, CdkOverlayOrigin, ConnectedOverlayPositionChange, ConnectionPositionPair } from '@angular/cdk/overlay';
-import { AfterViewInit, ChangeDetectorRef, ComponentFactory, ComponentFactoryResolver, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
-import { NzNoAnimationDirective } from 'ng-zorro-antd/core/no-animation';
-import { NgClassInterface, NgStyleInterface, NzTSType } from 'ng-zorro-antd/core/types';
+import { CdkConnectedOverlay, ConnectedOverlayPositionChange, ConnectionPositionPair } from '@angular/cdk/overlay';
+import { AfterViewInit, ChangeDetectorRef, ComponentFactoryResolver, ComponentRef, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
 import { Subject } from 'rxjs';
+import { NzConfigService, PopConfirmConfig, PopoverConfig } from 'ng-zorro-antd/core/config';
+import { NzNoAnimationDirective } from 'ng-zorro-antd/core/no-animation';
+import { POSITION_TYPE } from 'ng-zorro-antd/core/overlay';
+import { BooleanInput, NgClassInterface, NgStyleInterface, NzSafeAny, NzTSType } from 'ng-zorro-antd/core/types';
 import * as i0 from "@angular/core";
 export interface PropertyMapping {
     [key: string]: [string, () => unknown];
 }
-export declare type NzTooltipTrigger = 'click' | 'focus' | 'hover' | null;
+export type NzTooltipTrigger = 'click' | 'focus' | 'hover' | null;
 export declare abstract class NzTooltipBaseDirective implements OnChanges, OnDestroy, AfterViewInit {
     elementRef: ElementRef;
     protected hostView: ViewContainerRef;
     protected resolver: ComponentFactoryResolver;
     protected renderer: Renderer2;
     protected noAnimation?: NzNoAnimationDirective;
+    protected nzConfigService?: NzConfigService;
+    arrowPointAtCenter?: boolean;
+    config?: Required<PopoverConfig | PopConfirmConfig>;
     directiveTitle?: NzTSType | null;
     directiveContent?: NzTSType | null;
     title?: NzTSType | null;
@@ -35,7 +36,7 @@ export declare abstract class NzTooltipBaseDirective implements OnChanges, OnDes
     /**
      * For create tooltip dynamically. This should be override for each different component.
      */
-    protected componentFactory: ComponentFactory<CmacsTooltipBaseComponent>;
+    protected componentRef: ComponentRef<CmacsTooltipBaseComponent>;
     /**
      * This true title that would be used in other parts on this component.
      */
@@ -54,7 +55,7 @@ export declare abstract class NzTooltipBaseDirective implements OnChanges, OnDes
     protected readonly destroy$: Subject<void>;
     protected readonly triggerDisposables: Array<() => void>;
     private delayTimer?;
-    constructor(elementRef: ElementRef, hostView: ViewContainerRef, resolver: ComponentFactoryResolver, renderer: Renderer2, noAnimation?: NzNoAnimationDirective);
+    constructor(elementRef: ElementRef, hostView: ViewContainerRef, resolver: ComponentFactoryResolver, renderer: Renderer2, noAnimation?: NzNoAnimationDirective, nzConfigService?: NzConfigService);
     ngOnChanges(changes: SimpleChanges): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
@@ -76,18 +77,22 @@ export declare abstract class NzTooltipBaseDirective implements OnChanges, OnDes
     private delayEnterLeave;
     private removeTriggerListeners;
     private clearTogglingTimer;
-    static ɵfac: i0.ɵɵFactoryDef<NzTooltipBaseDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzTooltipBaseDirective, never, never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NzTooltipBaseDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<NzTooltipBaseDirective, never, never, {}, {}, never, never, false, never>;
 }
 export declare abstract class CmacsTooltipBaseComponent implements OnDestroy, OnInit {
     cdr: ChangeDetectorRef;
     private directionality;
     noAnimation?: NzNoAnimationDirective;
+    static ngAcceptInputType_cmacsVisible: BooleanInput;
+    static ngAcceptInputType_cmacsArrowPointAtCenter: BooleanInput;
     overlay: CdkConnectedOverlay;
     cmacsTitle: NzTSType | null;
     cmacsContent: NzTSType | null;
+    cmacsArrowPointAtCenter: boolean;
     cmacsOverlayClassName: string;
     cmacsOverlayStyle: NgStyleInterface;
+    cmacsBackdrop: boolean;
     cmacsMouseEnterDelay?: number;
     cmacsMouseLeaveDelay?: number;
     cmacsVisibleChange: Subject<boolean>;
@@ -97,15 +102,14 @@ export declare abstract class CmacsTooltipBaseComponent implements OnDestroy, On
     set cmacsTrigger(value: NzTooltipTrigger);
     get cmacsTrigger(): NzTooltipTrigger;
     protected _trigger: NzTooltipTrigger;
-    set cmacsPlacement(value: string[]);
+    set cmacsPlacement(value: POSITION_TYPE[]);
     preferredPlacement: string;
-    origin: CdkOverlayOrigin;
+    origin: ElementRef<NzSafeAny>;
     dir: Direction;
     _classMap: NgClassInterface;
-    _hasBackdrop: boolean;
     _prefix: string;
     _positions: ConnectionPositionPair[];
-    private destroy$;
+    protected destroy$: Subject<void>;
     constructor(cdr: ChangeDetectorRef, directionality: Directionality, noAnimation?: NzNoAnimationDirective);
     ngOnInit(): void;
     ngOnDestroy(): void;
@@ -117,19 +121,19 @@ export declare abstract class CmacsTooltipBaseComponent implements OnDestroy, On
      */
     updatePosition(): void;
     onPositionChange(position: ConnectedOverlayPositionChange): void;
-    updateStyles(): void;
-    setOverlayOrigin(origin: CdkOverlayOrigin): void;
+    setOverlayOrigin(origin: ElementRef<HTMLElement>): void;
     onClickOutside(event: MouseEvent): void;
     /**
      * Hide the component while the content is empty.
      */
     private updateVisibilityByTitle;
+    protected updateStyles(): void;
     /**
      * Empty component cannot be opened.
      */
     protected abstract isEmpty(): boolean;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTooltipBaseComponent, [null, { optional: true; }, null]>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsTooltipBaseComponent, never, never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTooltipBaseComponent, [null, { optional: true; }, null]>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsTooltipBaseComponent, never, never, {}, {}, never, never, false, never>;
 }
 export declare function isTooltipEmpty(value: string | TemplateRef<void> | null): boolean;
 //# sourceMappingURL=base.d.ts.map

@@ -21,7 +21,7 @@ export declare class NzSubMenuTitleComponent implements OnDestroy, OnInit {
     ngOnDestroy(): void;
     setMouseState(state: boolean): void;
     clickTitle(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSubMenuTitleComponent, [null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSubMenuTitleComponent, "[cmacs-submenu-title]", ["cmacsSubmenuTitle"], { "icon": "icon"; "cmacsIcon": "cmacsIcon"; "title": "title"; "isMenuInsideDropDown": "isMenuInsideDropDown"; "disabled": "disabled"; "paddingLeft": "paddingLeft"; "mode": "mode"; }, { "toggleSubMenu": "toggleSubMenu"; "subMenuMouseState": "subMenuMouseState"; }, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NzSubMenuTitleComponent, [null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<NzSubMenuTitleComponent, "[cmacs-submenu-title]", ["cmacsSubmenuTitle"], { "icon": { "alias": "icon"; "required": false; }; "cmacsIcon": { "alias": "cmacsIcon"; "required": false; }; "title": { "alias": "title"; "required": false; }; "isMenuInsideDropDown": { "alias": "isMenuInsideDropDown"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "paddingLeft": { "alias": "paddingLeft"; "required": false; }; "mode": { "alias": "mode"; "required": false; }; }, { "toggleSubMenu": "toggleSubMenu"; "subMenuMouseState": "subMenuMouseState"; }, never, ["*"], false, never>;
 }
 //# sourceMappingURL=submenu-title.component.d.ts.map

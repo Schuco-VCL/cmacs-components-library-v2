@@ -26,7 +26,7 @@ export declare class CmacsGridConfigurationModalComponent implements OnInit, OnC
     saveConfig(): void;
     getIndexCookie(): boolean;
     onVisibleChange($event: any): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsGridConfigurationModalComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsGridConfigurationModalComponent, "cmacs-grid-configuration-modal", ["cmacsGridConfigurationModal"], { "visible": "visible"; "modalTitle": "modalTitle"; "header": "header"; "saveBtnLabel": "saveBtnLabel"; "cmacsStyle": "cmacsStyle"; "gridID": "gridID"; "data": "data"; }, { "visibleChange": "visibleChange"; "dataChange": "dataChange"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsGridConfigurationModalComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsGridConfigurationModalComponent, "cmacs-grid-configuration-modal", ["cmacsGridConfigurationModal"], { "visible": { "alias": "visible"; "required": false; }; "modalTitle": { "alias": "modalTitle"; "required": false; }; "header": { "alias": "header"; "required": false; }; "saveBtnLabel": { "alias": "saveBtnLabel"; "required": false; }; "cmacsStyle": { "alias": "cmacsStyle"; "required": false; }; "gridID": { "alias": "gridID"; "required": false; }; "data": { "alias": "data"; "required": false; }; }, { "visibleChange": "visibleChange"; "dataChange": "dataChange"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-grid-configuration-modal.component.d.ts.map

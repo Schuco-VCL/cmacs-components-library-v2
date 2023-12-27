@@ -79,7 +79,7 @@ export declare class LightboxComponent implements OnInit, OnDestroy {
     private _itemIndex;
     private _onResize;
     private _checkZoom;
-    static ɵfac: i0.ɵɵFactoryDef<LightboxComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<LightboxComponent, "lightbox", never, {}, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LightboxComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<LightboxComponent, "lightbox", never, {}, {}, never, never, false, never>;
 }
 //# sourceMappingURL=lightbox.component.d.ts.map

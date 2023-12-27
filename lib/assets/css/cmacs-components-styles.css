@@ -1,7 +1,4 @@
 @import "../icons/global_styles.css";
-@import "~ngx-videogular/fonts/videogular.css";
-@import "~ng-zorro-antd/resizable/style/index.min.css";
-@import "~angular2-draggable/css/resizable.min.css";
 
 @font-face {
   font-family: 'AlexBrush';
@@ -337,6 +334,11 @@ form .has-feedback > .ant-select .ant-select-arrow {
 
 .cmacs-dropdown .ant-menu {
   min-width: 190px;
+}
+
+.cmacs-dropdown .ant-dropdown-menu-item a,
+.cmacs-dropdown .ant-dropdown-menu-submenu-title a {
+  color: #656c79 !important;
 }
 
 .cmacs-dropdown .ant-dropdown-menu-item,

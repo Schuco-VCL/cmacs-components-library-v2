@@ -1,6 +1,6 @@
 import { Direction, Directionality } from '@angular/cdk/bidi';
 import { AfterContentInit, ChangeDetectorRef, OnChanges, OnDestroy, OnInit, QueryList, SimpleChanges } from '@angular/core';
-import { Router, RouterLink, RouterLinkWithHref } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { Subject } from 'rxjs';
 import { MenuService } from './menu.service';
 import { NzSubmenuService } from './submenu.service';
@@ -26,19 +26,19 @@ export declare class CmacsMenuItemDirective implements OnInit, OnChanges, OnDest
     matchRouterExact: boolean;
     matchRouter: boolean;
     listOfRouterLink: QueryList<RouterLink>;
-    listOfRouterLinkWithHref: QueryList<RouterLinkWithHref>;
+    listOfRouterLinkWithHref: QueryList<RouterLink>;
     /** clear all item selected status except this */
     clickMenuItem(e: MouseEvent): void;
     setSelectedState(value: boolean): void;
     private updateRouterActive;
     private hasActiveLinks;
     private isLinkActive;
-    constructor(nzMenuService: MenuService, cdr: ChangeDetectorRef, nzSubmenuService: NzSubmenuService, isMenuInsideDropDown: boolean, directionality: Directionality, routerLink?: RouterLink, routerLinkWithHref?: RouterLinkWithHref, router?: Router);
+    constructor(nzMenuService: MenuService, cdr: ChangeDetectorRef, nzSubmenuService: NzSubmenuService, isMenuInsideDropDown: boolean, directionality: Directionality, routerLink?: RouterLink, routerLinkWithHref?: RouterLink, router?: Router);
     ngOnInit(): void;
     ngAfterContentInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsMenuItemDirective, [null, null, { optional: true; }, null, { optional: true; }, { optional: true; }, { optional: true; }, { optional: true; }]>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsMenuItemDirective, "[cmacs-menu-item]", ["cmacsMenuItem"], { "paddingLeft": "paddingLeft"; "disabled": "disabled"; "selected": "selected"; "danger": "danger"; "matchRouterExact": "matchRouterExact"; "matchRouter": "matchRouter"; }, {}, ["listOfRouterLink", "listOfRouterLinkWithHref"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsMenuItemDirective, [null, null, { optional: true; }, null, { optional: true; }, { optional: true; }, { optional: true; }, { optional: true; }]>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsMenuItemDirective, "[cmacs-menu-item]", ["cmacsMenuItem"], { "paddingLeft": { "alias": "paddingLeft"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "selected": { "alias": "selected"; "required": false; }; "danger": { "alias": "danger"; "required": false; }; "matchRouterExact": { "alias": "matchRouterExact"; "required": false; }; "matchRouter": { "alias": "matchRouter"; "required": false; }; }, {}, ["listOfRouterLink", "listOfRouterLinkWithHref"], never, false, never>;
 }
 //# sourceMappingURL=menu-item.directive.d.ts.map

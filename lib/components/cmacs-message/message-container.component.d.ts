@@ -13,7 +13,7 @@ export declare class CmacsMessageContainerComponent extends NzMNContainerCompone
     constructor(cdr: ChangeDetectorRef, nzConfigService: NzConfigService);
     protected subscribeConfigChange(): void;
     protected updateConfig(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsMessageContainerComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsMessageContainerComponent, "cmacs-message-container", ["cmacsMessageContainer"], {}, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsMessageContainerComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsMessageContainerComponent, "cmacs-message-container", ["cmacsMessageContainer"], {}, {}, never, never, false, never>;
 }
 //# sourceMappingURL=message-container.component.d.ts.map

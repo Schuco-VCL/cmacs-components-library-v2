@@ -24,7 +24,7 @@ export declare class NzSubmenuNoneInlineChildComponent implements OnDestroy, OnI
     calcMotionState(): void;
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSubmenuNoneInlineChildComponent, [null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSubmenuNoneInlineChildComponent, "[cmacs-submenu-none-inline-child]", ["cmacsSubmenuNoneInlineChild"], { "menuClass": "menuClass"; "theme": "theme"; "templateOutlet": "templateOutlet"; "isMenuInsideDropDown": "isMenuInsideDropDown"; "mode": "mode"; "position": "position"; "disabled": "disabled"; "open": "open"; }, { "subMenuMouseState": "subMenuMouseState"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NzSubmenuNoneInlineChildComponent, [null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<NzSubmenuNoneInlineChildComponent, "[cmacs-submenu-none-inline-child]", ["cmacsSubmenuNoneInlineChild"], { "menuClass": { "alias": "menuClass"; "required": false; }; "theme": { "alias": "theme"; "required": false; }; "templateOutlet": { "alias": "templateOutlet"; "required": false; }; "isMenuInsideDropDown": { "alias": "isMenuInsideDropDown"; "required": false; }; "mode": { "alias": "mode"; "required": false; }; "position": { "alias": "position"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "open": { "alias": "open"; "required": false; }; }, { "subMenuMouseState": "subMenuMouseState"; }, never, never, false, never>;
 }
 //# sourceMappingURL=submenu-non-inline-child.component.d.ts.map

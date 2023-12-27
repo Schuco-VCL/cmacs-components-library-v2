@@ -8,7 +8,7 @@ export declare class CmacsCheckboxWrapperComponent {
     removeCheckbox(value: CmacsCheckboxComponent): void;
     onChange(): void;
     constructor(renderer: Renderer2, elementRef: ElementRef);
-    static ɵfac: i0.ɵɵFactoryDef<CmacsCheckboxWrapperComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCheckboxWrapperComponent, "cmacs-checkbox-wrapper", ["cmacsCheckboxWrapper"], {}, { "nzOnChange": "nzOnChange"; }, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsCheckboxWrapperComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsCheckboxWrapperComponent, "cmacs-checkbox-wrapper", ["cmacsCheckboxWrapper"], {}, { "nzOnChange": "nzOnChange"; }, never, ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-checkbox-wrapper.component.d.ts.map

@@ -14,7 +14,7 @@ export declare class PtbTabsInkBarDirective {
     getElementWidth(element: HTMLElement): string;
     getTopPosition(element: HTMLElement): string;
     getElementHeight(element: HTMLElement): string;
-    static ɵfac: i0.ɵɵFactoryDef<PtbTabsInkBarDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<PtbTabsInkBarDirective, "[ptb-tabs-ink-bar]", ["ptbTabsInkBar"], { "nzAnimated": "nzAnimated"; "nzPositionMode": "nzPositionMode"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<PtbTabsInkBarDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<PtbTabsInkBarDirective, "[ptb-tabs-ink-bar]", ["ptbTabsInkBar"], { "nzAnimated": { "alias": "nzAnimated"; "required": false; }; "nzPositionMode": { "alias": "nzPositionMode"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=ptb-tabs-ink-bar.directive.d.ts.map

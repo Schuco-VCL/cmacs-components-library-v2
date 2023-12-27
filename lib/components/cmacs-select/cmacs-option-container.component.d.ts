@@ -34,10 +34,10 @@ export declare class CmacsOptionContainerComponent implements OnDestroy, OnInit 
     trackValue(_index: number, option: CmacsOptionComponent): any;
     constructor(nzSelectService: CmacsSelectService, cdr: ChangeDetectorRef, ngZone: NgZone, i18n: NzI18nService);
     ngOnInit(): void;
-    isAllChecked(): 1 | 0 | -1;
+    isAllChecked(): 0 | 1 | -1;
     updateCheckboxCache(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsOptionContainerComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsOptionContainerComponent, "[cmacs-option-container]", ["cmacsOptionContainer"], { "nzNotFoundContent": "nzNotFoundContent"; "notFoundContentShow": "notFoundContentShow"; "userDropdown": "userDropdown"; "showSearch": "showSearch"; "showSelectAll": "showSelectAll"; "selectAllLabel": "selectAllLabel"; "searchLabel": "searchLabel"; "showCmacsSearch": "showCmacsSearch"; "nzMenuItemSelectedIcon": "nzMenuItemSelectedIcon"; "notFoundContentCustom": "notFoundContentCustom"; }, { "nzScrollToBottom": "nzScrollToBottom"; "onSearch": "onSearch"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsOptionContainerComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsOptionContainerComponent, "[cmacs-option-container]", ["cmacsOptionContainer"], { "nzNotFoundContent": { "alias": "nzNotFoundContent"; "required": false; }; "notFoundContentShow": { "alias": "notFoundContentShow"; "required": false; }; "userDropdown": { "alias": "userDropdown"; "required": false; }; "showSearch": { "alias": "showSearch"; "required": false; }; "showSelectAll": { "alias": "showSelectAll"; "required": false; }; "selectAllLabel": { "alias": "selectAllLabel"; "required": false; }; "searchLabel": { "alias": "searchLabel"; "required": false; }; "showCmacsSearch": { "alias": "showCmacsSearch"; "required": false; }; "nzMenuItemSelectedIcon": { "alias": "nzMenuItemSelectedIcon"; "required": false; }; "notFoundContentCustom": { "alias": "notFoundContentCustom"; "required": false; }; }, { "nzScrollToBottom": "nzScrollToBottom"; "onSearch": "onSearch"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-option-container.component.d.ts.map

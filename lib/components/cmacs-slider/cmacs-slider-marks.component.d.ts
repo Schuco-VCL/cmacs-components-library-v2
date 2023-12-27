@@ -16,7 +16,7 @@ export declare class CmacsSliderMarksComponent implements OnChanges {
     private buildMarks;
     private getMarkStyles;
     private togglePointActive;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSliderMarksComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSliderMarksComponent, "cmacs-slider-marks", ["cmacsSliderMarks"], { "lowerBound": "lowerBound"; "upperBound": "upperBound"; "marksArray": "marksArray"; "min": "min"; "max": "max"; "vertical": "vertical"; "included": "included"; "reverse": "reverse"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSliderMarksComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsSliderMarksComponent, "cmacs-slider-marks", ["cmacsSliderMarks"], { "lowerBound": { "alias": "lowerBound"; "required": false; }; "upperBound": { "alias": "upperBound"; "required": false; }; "marksArray": { "alias": "marksArray"; "required": false; }; "min": { "alias": "min"; "required": false; }; "max": { "alias": "max"; "required": false; }; "vertical": { "alias": "vertical"; "required": false; }; "included": { "alias": "included"; "required": false; }; "reverse": { "alias": "reverse"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-slider-marks.component.d.ts.map

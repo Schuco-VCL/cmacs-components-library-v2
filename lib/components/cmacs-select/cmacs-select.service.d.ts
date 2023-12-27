@@ -71,7 +71,7 @@ export declare class CmacsSelectService {
     get isTagsSingleSelectMode(): boolean;
     get isMultipleMode(): boolean;
     get isMultipleOrTags(): boolean;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSelectService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<CmacsSelectService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSelectService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<CmacsSelectService>;
 }
 //# sourceMappingURL=cmacs-select.service.d.ts.map

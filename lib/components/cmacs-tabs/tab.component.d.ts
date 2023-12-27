@@ -33,7 +33,7 @@ export declare class CmacsTabComponent implements OnChanges, OnDestroy {
     constructor(closestTabSet: NzSafeAny);
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTabComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTabComponent, "cmacs-tab", ["cmacsTab"], { "cmacsTitle": "cmacsTitle"; "cmacsType": "cmacsType"; "closable": "closable"; "closeIcon": "closeIcon"; "disabled": "disabled"; "forceRender": "forceRender"; }, { "select": "select"; "deselect": "deselect"; "cmacsClick": "cmacsClick"; "cmacsContextmenu": "cmacsContextmenu"; }, ["nzTabLinkTemplateDirective", "template", "linkDirective"], ["[cmacs-tab-link]", "*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTabComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTabComponent, "cmacs-tab", ["cmacsTab"], { "cmacsTitle": { "alias": "cmacsTitle"; "required": false; }; "cmacsType": { "alias": "cmacsType"; "required": false; }; "closable": { "alias": "closable"; "required": false; }; "closeIcon": { "alias": "closeIcon"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "forceRender": { "alias": "forceRender"; "required": false; }; }, { "select": "select"; "deselect": "deselect"; "cmacsClick": "cmacsClick"; "cmacsContextmenu": "cmacsContextmenu"; }, ["nzTabLinkTemplateDirective", "template", "linkDirective"], ["[cmacs-tab-link]", "*"], false, never>;
 }
 //# sourceMappingURL=tab.component.d.ts.map

@@ -11,7 +11,7 @@ export declare class CmacsContextMenuService {
         y: number;
     }, nzDropdownMenuComponent: CmacsDropdownMenuComponent): void;
     close(clear?: boolean): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsContextMenuService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<CmacsContextMenuService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsContextMenuService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<CmacsContextMenuService>;
 }
 //# sourceMappingURL=context-menu.service.d.ts.map

@@ -5,7 +5,7 @@ export declare class ExcelService {
     constructor();
     static toExportFileName(excelFileName: string): string;
     exportAsExcelFile(json: any[], excelFileName: string): void;
-    static ɵfac: i0.ɵɵFactoryDef<ExcelService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<ExcelService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ExcelService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<ExcelService>;
 }
 //# sourceMappingURL=excel.service.d.ts.map
