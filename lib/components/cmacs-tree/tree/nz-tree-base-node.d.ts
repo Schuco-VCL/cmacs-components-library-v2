@@ -5,6 +5,7 @@ export interface NzTreeNodeOptions {
     key: string;
     icon?: string;
     isLeaf?: boolean;
+    isEmptyFolder?: boolean;
     checked?: boolean;
     selected?: boolean;
     selectable?: boolean;
@@ -23,6 +24,7 @@ export declare class NzTreeNode {
     private _icon;
     private _children;
     private _isLeaf;
+    private _isEmptyFolder;
     private _isChecked;
     /**
      * @deprecated Maybe removed in next major version, use isChecked instead
@@ -52,6 +54,8 @@ export declare class NzTreeNode {
     get children(): NzTreeNode[];
     set children(value: NzTreeNode[]);
     get isLeaf(): boolean;
+    get isEmptyFolder(): boolean;
+    set isEmptyFolder(value: boolean);
     set isLeaf(value: boolean);
     get isChecked(): boolean;
     set isChecked(value: boolean);

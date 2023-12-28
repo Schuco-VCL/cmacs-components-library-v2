@@ -42,7 +42,7 @@ export declare class CmacsDropDownDirective implements AfterViewInit, OnDestroy,
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsDropDownDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsDropDownDirective, "[cmacs-dropdown]", ["cmacsDropdown"], { "dropdownMenu": "dropdownMenu"; "cmacsTrigger": "cmacsTrigger"; "matchWidthElement": "matchWidthElement"; "backdrop": "backdrop"; "hasBackdrop": "hasBackdrop"; "clickHide": "clickHide"; "disabled": "disabled"; "visible": "visible"; "overlayClassName": "overlayClassName"; "overlayStyle": "overlayStyle"; "placement": "placement"; }, { "visibleChange": "visibleChange"; }, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsDropDownDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsDropDownDirective, "[cmacs-dropdown]", ["cmacsDropdown"], { "dropdownMenu": { "alias": "dropdownMenu"; "required": false; }; "cmacsTrigger": { "alias": "cmacsTrigger"; "required": false; }; "matchWidthElement": { "alias": "matchWidthElement"; "required": false; }; "backdrop": { "alias": "backdrop"; "required": false; }; "hasBackdrop": { "alias": "hasBackdrop"; "required": false; }; "clickHide": { "alias": "clickHide"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "visible": { "alias": "visible"; "required": false; }; "overlayClassName": { "alias": "overlayClassName"; "required": false; }; "overlayStyle": { "alias": "overlayStyle"; "required": false; }; "placement": { "alias": "placement"; "required": false; }; }, { "visibleChange": "visibleChange"; }, never, never, false, never>;
 }
 //# sourceMappingURL=dropdown.directive.d.ts.map

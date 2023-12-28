@@ -15,7 +15,7 @@ export declare class ModalControlService {
     hasRegistered(modalRef: CmacsModalRef): boolean;
     closeAll(): void;
     private removeOpenModal;
-    static ɵfac: i0.ɵɵFactoryDef<ModalControlService, [{ optional: true; skipSelf: true; }]>;
-    static ɵprov: i0.ɵɵInjectableDef<ModalControlService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ModalControlService, [{ optional: true; skipSelf: true; }]>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<ModalControlService>;
 }
 //# sourceMappingURL=cmacs-modal-control.service.d.ts.map

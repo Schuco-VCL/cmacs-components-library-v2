@@ -25,7 +25,7 @@ export declare class NzSubmenuService implements OnDestroy {
     setMouseEnterTitleOrOverlayState(value: boolean): void;
     constructor(nzHostSubmenuService: NzSubmenuService, nzMenuService: MenuService, isMenuInsideDropDown: boolean);
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSubmenuService, [{ optional: true; skipSelf: true; }, null, null]>;
-    static ɵprov: i0.ɵɵInjectableDef<NzSubmenuService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NzSubmenuService, [{ optional: true; skipSelf: true; }, null, null]>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<NzSubmenuService>;
 }
 //# sourceMappingURL=submenu.service.d.ts.map

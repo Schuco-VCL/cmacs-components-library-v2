@@ -29,7 +29,7 @@ export declare class CmacsCheckboxGroupComponent implements ControlValueAccessor
     registerOnChange(fn: (_: CmacsCheckBoxOptionInterface[]) => {}): void;
     registerOnTouched(fn: () => {}): void;
     setDisabledState(isDisabled: boolean): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsCheckboxGroupComponent, [null, null, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCheckboxGroupComponent, "cmacs-checkbox-group", ["cmacsCheckboxGroup"], { "disabled": "disabled"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsCheckboxGroupComponent, [null, null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsCheckboxGroupComponent, "cmacs-checkbox-group", ["cmacsCheckboxGroup"], { "disabled": { "alias": "disabled"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-checkbox-group.component.d.ts.map

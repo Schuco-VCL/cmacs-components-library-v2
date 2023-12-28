@@ -12,7 +12,7 @@ export declare class CmacsListItemMetaComponent {
     descriptionComponent?: DescriptionComponent;
     titleComponent?: TitleComponent;
     constructor(elementRef: ElementRef, renderer: Renderer2);
-    static ɵfac: i0.ɵɵFactoryDef<CmacsListItemMetaComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsListItemMetaComponent, "cmacs-list-item-meta, [cmacs-list-item-meta]", ["cmacsListItemMeta"], { "avatar": "avatar"; "cmacsTitle": "cmacsTitle"; "description": "description"; }, {}, ["descriptionComponent", "titleComponent"], ["cmacs-list-item-meta-avatar", "cmacs-list-item-meta-title", "cmacs-list-item-meta-description"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsListItemMetaComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsListItemMetaComponent, "cmacs-list-item-meta, [cmacs-list-item-meta]", ["cmacsListItemMeta"], { "avatar": { "alias": "avatar"; "required": false; }; "cmacsTitle": { "alias": "cmacsTitle"; "required": false; }; "description": { "alias": "description"; "required": false; }; }, {}, ["descriptionComponent", "titleComponent"], ["cmacs-list-item-meta-avatar", "cmacs-list-item-meta-title", "cmacs-list-item-meta-description"], false, never>;
 }
 //# sourceMappingURL=list-item-meta.component.d.ts.map

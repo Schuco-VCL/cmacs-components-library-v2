@@ -1,6 +1,6 @@
 import { EventEmitter, ChangeDetectorRef } from '@angular/core';
 import { CmacsSelectComponent } from '../cmacs-select/cmacs-select.component';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder } from '@angular/forms';
 import * as i0 from "@angular/core";
 export declare class CmacsUserDropdownComponent {
     private cdr;
@@ -26,13 +26,13 @@ export declare class CmacsUserDropdownComponent {
     listDividers: any[];
     operatedData: any[];
     firstElemByDivider: any;
-    emailForm: FormGroup;
+    emailForm: UntypedFormGroup;
     highlightKeys: any[];
     set isLoading(value: boolean);
     set inviteGuest(value: boolean);
     set listOfOption(value: any[]);
     get listOfOption(): any[];
-    constructor(cdr: ChangeDetectorRef, fb: FormBuilder);
+    constructor(cdr: ChangeDetectorRef, fb: UntypedFormBuilder);
     onSelectedValueChange($event: any): void;
     get searchValue(): string;
     operateData(): void;
@@ -45,7 +45,7 @@ export declare class CmacsUserDropdownComponent {
     addOption(option: any): void;
     removeOption(option: any): void;
     highlightValue(elem: any): any[];
-    static ɵfac: i0.ɵɵFactoryDef<CmacsUserDropdownComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsUserDropdownComponent, "cmacs-user-dropdown", ["cmacsUserDropdown"], { "mode": "mode"; "emailErrorLabel": "emailErrorLabel"; "inviteGuestLabel": "inviteGuestLabel"; "loadingLabel": "loadingLabel"; "placeHolder": "placeHolder"; "selectedValue": "selectedValue"; "maxTagCount": "maxTagCount"; "serverSearch": "serverSearch"; "isLoading": "isLoading"; "inviteGuest": "inviteGuest"; "listOfOption": "listOfOption"; }, { "selectedValueChange": "selectedValueChange"; "onAddGuestUserByEmail": "onAddGuestUserByEmail"; "cmacsOnSearch": "cmacsOnSearch"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsUserDropdownComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsUserDropdownComponent, "cmacs-user-dropdown", ["cmacsUserDropdown"], { "mode": { "alias": "mode"; "required": false; }; "emailErrorLabel": { "alias": "emailErrorLabel"; "required": false; }; "inviteGuestLabel": { "alias": "inviteGuestLabel"; "required": false; }; "loadingLabel": { "alias": "loadingLabel"; "required": false; }; "placeHolder": { "alias": "placeHolder"; "required": false; }; "selectedValue": { "alias": "selectedValue"; "required": false; }; "maxTagCount": { "alias": "maxTagCount"; "required": false; }; "serverSearch": { "alias": "serverSearch"; "required": false; }; "isLoading": { "alias": "isLoading"; "required": false; }; "inviteGuest": { "alias": "inviteGuest"; "required": false; }; "listOfOption": { "alias": "listOfOption"; "required": false; }; }, { "selectedValueChange": "selectedValueChange"; "onAddGuestUserByEmail": "onAddGuestUserByEmail"; "cmacsOnSearch": "cmacsOnSearch"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-user-dropdown.component.d.ts.map

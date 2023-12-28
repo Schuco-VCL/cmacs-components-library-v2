@@ -15,7 +15,7 @@ export declare class CmacsSliderStepComponent implements OnChanges {
     trackById(_index: number, step: NzDisplayedStep): number;
     private buildSteps;
     private togglePointActive;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSliderStepComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSliderStepComponent, "cmacs-slider-step", ["cmacsSliderStep"], { "lowerBound": "lowerBound"; "upperBound": "upperBound"; "marksArray": "marksArray"; "min": "min"; "max": "max"; "vertical": "vertical"; "included": "included"; "reverse": "reverse"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSliderStepComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsSliderStepComponent, "cmacs-slider-step", ["cmacsSliderStep"], { "lowerBound": { "alias": "lowerBound"; "required": false; }; "upperBound": { "alias": "upperBound"; "required": false; }; "marksArray": { "alias": "marksArray"; "required": false; }; "min": { "alias": "min"; "required": false; }; "max": { "alias": "max"; "required": false; }; "vertical": { "alias": "vertical"; "required": false; }; "included": { "alias": "included"; "required": false; }; "reverse": { "alias": "reverse"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-slider-step.component.d.ts.map

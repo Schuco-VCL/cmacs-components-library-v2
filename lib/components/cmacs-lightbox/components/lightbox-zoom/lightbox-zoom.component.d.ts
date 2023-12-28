@@ -24,7 +24,7 @@ export declare class LightboxZoomComponent implements OnInit {
     onZoomOut(): void;
     onResetZoom(): void;
     onFeetToWidth(): void;
-    static ɵfac: i0.ɵɵFactoryDef<LightboxZoomComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<LightboxZoomComponent, "lightbox-zoom", never, { "disableZoomIn": "disableZoomIn"; "disableZoomOut": "disableZoomOut"; "disableResetZoom": "disableResetZoom"; "disableFeetToWidth": "disableFeetToWidth"; }, { "zoomInEvent": "zoomInEvent"; "zoomOutEvent": "zoomOutEvent"; "resetZoomEvent": "resetZoomEvent"; "feetToWidthEvent": "feetToWidthEvent"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LightboxZoomComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<LightboxZoomComponent, "lightbox-zoom", never, { "disableZoomIn": { "alias": "disableZoomIn"; "required": false; }; "disableZoomOut": { "alias": "disableZoomOut"; "required": false; }; "disableResetZoom": { "alias": "disableResetZoom"; "required": false; }; "disableFeetToWidth": { "alias": "disableFeetToWidth"; "required": false; }; }, { "zoomInEvent": "zoomInEvent"; "zoomOutEvent": "zoomOutEvent"; "resetZoomEvent": "resetZoomEvent"; "feetToWidthEvent": "feetToWidthEvent"; }, never, never, false, never>;
 }
 //# sourceMappingURL=lightbox-zoom.component.d.ts.map

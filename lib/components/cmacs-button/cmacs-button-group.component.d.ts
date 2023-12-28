@@ -2,7 +2,7 @@ import { Direction, Directionality } from '@angular/cdk/bidi';
 import { ElementRef, OnDestroy, OnInit, QueryList } from '@angular/core';
 import { CmacsButtonComponent } from './cmacs-button.component';
 import * as i0 from "@angular/core";
-export declare type NzButtonGroupSize = 'large' | 'default' | 'small';
+export type NzButtonGroupSize = 'large' | 'default' | 'small';
 export declare class CmacsButtonGroupComponent implements OnInit, OnDestroy {
     private elementRef;
     private directionality;
@@ -23,7 +23,7 @@ export declare class CmacsButtonGroupComponent implements OnInit, OnDestroy {
     isDisableLeft(): boolean;
     isDisableRight(): boolean;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsButtonGroupComponent, [null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsButtonGroupComponent, "cmacs-button-group", ["cmacsButtonGroup"], { "size": "size"; "overlap": "overlap"; "disabled": "disabled"; "disabledNav": "disabledNav"; }, {}, ["contentButtons"], ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsButtonGroupComponent, [null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsButtonGroupComponent, "cmacs-button-group", ["cmacsButtonGroup"], { "size": { "alias": "size"; "required": false; }; "overlap": { "alias": "overlap"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "disabledNav": { "alias": "disabledNav"; "required": false; }; }, {}, ["contentButtons"], ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-button-group.component.d.ts.map

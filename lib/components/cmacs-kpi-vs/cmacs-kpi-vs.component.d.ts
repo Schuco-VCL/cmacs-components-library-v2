@@ -50,8 +50,8 @@ export declare class CmacsKpiVsComponent implements OnInit, OnChanges, AfterView
     setConfiguration(): void;
     setData(): void;
     getItemTable(x: RowInput): any;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsKpiVsComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsKpiVsComponent, "cmacs-kpi-vs", never, { "view": "view"; "data": "data"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsKpiVsComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsKpiVsComponent, "cmacs-kpi-vs", never, { "view": { "alias": "view"; "required": false; }; "data": { "alias": "data"; "required": false; }; }, {}, never, never, false, never>;
 }
 export {};
 //# sourceMappingURL=cmacs-kpi-vs.component.d.ts.map

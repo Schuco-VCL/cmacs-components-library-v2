@@ -8,7 +8,7 @@ export declare class PtbTabLabelDirective {
     getOffsetWidth(): number;
     getOffsetTop(): number;
     getOffsetHeight(): number;
-    static ɵfac: i0.ɵɵFactoryDef<PtbTabLabelDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<PtbTabLabelDirective, "[ptb-tab-label]", ["ptbTabLabel"], { "disabled": "disabled"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<PtbTabLabelDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<PtbTabLabelDirective, "[ptb-tab-label]", ["ptbTabLabel"], { "disabled": { "alias": "disabled"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=ptb-tab-label.directive.d.ts.map

@@ -85,9 +85,9 @@ export interface TagConfig {
     cmacsStatusType?: boolean;
     cmacsPriorityType?: string;
 }
-export declare type CmacsGridType = 'active' | 'created' | 'pre-bid' | 'archive' | 'inactive' | 'warranty';
-export declare type CmacsPriorityType = 'high' | 'low' | 'medium';
-export declare type SortOrder = 'ascend' | 'descend' | null;
+export type CmacsGridType = 'active' | 'created' | 'pre-bid' | 'archive' | 'inactive' | 'warranty';
+export type CmacsPriorityType = 'high' | 'low' | 'medium';
+export type SortOrder = 'ascend' | 'descend' | null;
 export interface CmacsGridTemplateRef {
     ref: TemplateRef<any>;
     context: CmacsGridTemplateRefContext;

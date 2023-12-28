@@ -5,7 +5,7 @@ export declare class CmacsCardMetaComponent {
     description: string | TemplateRef<void>;
     avatar: TemplateRef<void>;
     constructor(elementRef: ElementRef, renderer: Renderer2);
-    static ɵfac: i0.ɵɵFactoryDef<CmacsCardMetaComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCardMetaComponent, "cmacs-card-meta", ["cmacsCardMeta"], { "title": "title"; "description": "description"; "avatar": "avatar"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsCardMetaComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsCardMetaComponent, "cmacs-card-meta", ["cmacsCardMeta"], { "title": { "alias": "title"; "required": false; }; "description": { "alias": "description"; "required": false; }; "avatar": { "alias": "avatar"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-card-meta.component.d.ts.map

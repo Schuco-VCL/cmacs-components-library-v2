@@ -29,7 +29,7 @@ export declare class CmacsGeneralChartComponent implements OnInit {
     isEmpty(el: any): boolean;
     menuClick(type: WidgetActionType): void;
     isChartTypeMenu(type: WidgetActionType): boolean;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsGeneralChartComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsGeneralChartComponent, "cmacs-general-chart", never, { "data": "data"; "chartSelected": "chartSelected"; "dataType": "dataType"; "showXAxis": "showXAxis"; "showXAxisLabel": "showXAxisLabel"; "xAxisLabel": "xAxisLabel"; "showYAxis": "showYAxis"; "showYAxisLabel": "showYAxisLabel"; "yAxisLabel": "yAxisLabel"; "showLegend": "showLegend"; "legendTitle": "legendTitle"; "customTooltipTemplate": "customTooltipTemplate"; "view": "view"; "colorScheme": "colorScheme"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsGeneralChartComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsGeneralChartComponent, "cmacs-general-chart", never, { "data": { "alias": "data"; "required": false; }; "chartSelected": { "alias": "chartSelected"; "required": false; }; "dataType": { "alias": "dataType"; "required": false; }; "showXAxis": { "alias": "showXAxis"; "required": false; }; "showXAxisLabel": { "alias": "showXAxisLabel"; "required": false; }; "xAxisLabel": { "alias": "xAxisLabel"; "required": false; }; "showYAxis": { "alias": "showYAxis"; "required": false; }; "showYAxisLabel": { "alias": "showYAxisLabel"; "required": false; }; "yAxisLabel": { "alias": "yAxisLabel"; "required": false; }; "showLegend": { "alias": "showLegend"; "required": false; }; "legendTitle": { "alias": "legendTitle"; "required": false; }; "customTooltipTemplate": { "alias": "customTooltipTemplate"; "required": false; }; "view": { "alias": "view"; "required": false; }; "colorScheme": { "alias": "colorScheme"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-general-chart.component.d.ts.map

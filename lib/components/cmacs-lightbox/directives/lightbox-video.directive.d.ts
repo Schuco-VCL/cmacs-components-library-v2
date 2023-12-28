@@ -10,7 +10,7 @@ export declare class LightboxVideoDirective extends ItemDirectiveBase implements
     constructor(_lightboxService: LightboxService, _elementRef: ElementRef);
     ngOnInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<LightboxVideoDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<LightboxVideoDirective, "img[lightbox-video]", never, { "sources": "sources"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LightboxVideoDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<LightboxVideoDirective, "img[lightbox-video]", never, { "sources": { "alias": "sources"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=lightbox-video.directive.d.ts.map

@@ -29,7 +29,7 @@ export declare class CmacsModalService {
     error<T>(options?: ModalOptionsForService<T>): CmacsModalRef<T>;
     warning<T>(options?: ModalOptionsForService<T>): CmacsModalRef<T>;
     private simpleConfirm;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsModalService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<CmacsModalService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsModalService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<CmacsModalService>;
 }
 //# sourceMappingURL=cmacs-modal.service.d.ts.map

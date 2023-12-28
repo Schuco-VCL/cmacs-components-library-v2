@@ -1,4 +1,4 @@
-export declare type NzMark = string | NzMarkObj;
+export type NzMark = string | NzMarkObj;
 export interface NzMarkObj {
     style?: object;
     label: string;
@@ -29,8 +29,8 @@ export interface NzDisplayedStep extends NzExtendedMark {
     active: boolean;
     style?: object;
 }
-export declare type NzSliderShowTooltip = 'always' | 'never' | 'default';
-export declare type NzSliderValue = number[] | number;
+export type NzSliderShowTooltip = 'always' | 'never' | 'default';
+export type NzSliderValue = number[] | number;
 export interface NzSliderHandler {
     offset: number | null;
     value: number | null;

@@ -10,7 +10,7 @@ export declare class CmacsVideoPlayerComponent {
     playerReady: EventEmitter<VgAPI>;
     constructor();
     onPlayerReady(api: VgAPI): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsVideoPlayerComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsVideoPlayerComponent, "cmacs-video-player", ["cmacsVideoPlayer"], { "sources": "sources"; }, { "playerReady": "playerReady"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsVideoPlayerComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsVideoPlayerComponent, "cmacs-video-player", ["cmacsVideoPlayer"], { "sources": { "alias": "sources"; "required": false; }; }, { "playerReady": "playerReady"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-video-player.component.d.ts.map

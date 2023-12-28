@@ -10,7 +10,7 @@ export declare class CmacsMessageComponent extends NzMNComponent implements OnIn
     }>;
     constructor(cdr: ChangeDetectorRef);
     closeMessage(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsMessageComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsMessageComponent, "cmacs-message", ["cmacsMessage"], { "instance": "instance"; }, { "destroyed": "destroyed"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsMessageComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsMessageComponent, "cmacs-message", ["cmacsMessage"], { "instance": { "alias": "instance"; "required": false; }; }, { "destroyed": "destroyed"; }, never, never, false, never>;
 }
 //# sourceMappingURL=message.component.d.ts.map

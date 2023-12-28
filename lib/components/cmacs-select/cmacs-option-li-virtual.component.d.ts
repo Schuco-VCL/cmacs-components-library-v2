@@ -19,7 +19,7 @@ export declare class CmacsOptionLiVirtualComponent implements OnInit, OnDestroy 
     ngOnInit(): void;
     ngOnDestroy(): void;
     ngAfterContentChecked(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsOptionLiVirtualComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsOptionLiVirtualComponent, "cmacs-option-li-virtual", never, { "nzOption": "nzOption"; "nzMenuItemSelectedIcon": "nzMenuItemSelectedIcon"; }, {}, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsOptionLiVirtualComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsOptionLiVirtualComponent, "cmacs-option-li-virtual", never, { "nzOption": { "alias": "nzOption"; "required": false; }; "nzMenuItemSelectedIcon": { "alias": "nzMenuItemSelectedIcon"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-option-li-virtual.component.d.ts.map

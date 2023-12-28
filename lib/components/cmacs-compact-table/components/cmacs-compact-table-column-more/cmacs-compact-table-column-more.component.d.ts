@@ -38,7 +38,7 @@ export declare class CmacsCompactTableColumnMoreComponent implements OnInit, OnD
     onInputValueChange2(value: any): void;
     setFieldValidator(): void;
     onSettingSaved(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsCompactTableColumnMoreComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableColumnMoreComponent, "cmacs-compact-table-column-more", never, { "labelSave": "labelSave"; "items": "items"; "field": "field"; }, { "onFieldChanged": "onFieldChanged"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsCompactTableColumnMoreComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsCompactTableColumnMoreComponent, "cmacs-compact-table-column-more", never, { "labelSave": { "alias": "labelSave"; "required": false; }; "items": { "alias": "items"; "required": false; }; "field": { "alias": "field"; "required": false; }; }, { "onFieldChanged": "onFieldChanged"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-compact-table-column-more.component.d.ts.map

@@ -10,7 +10,7 @@ export declare class NzRadioService {
     select(value: NzSafeAny): void;
     setDisabled(value: boolean): void;
     setName(value: string): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzRadioService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<NzRadioService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NzRadioService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<NzRadioService>;
 }
 //# sourceMappingURL=radio.service.d.ts.map

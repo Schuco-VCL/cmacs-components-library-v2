@@ -8,7 +8,7 @@ export declare class CmacsBreadCrumbItemComponent {
      */
     overlay?: CmacsDropdownMenuComponent;
     constructor(nzBreadCrumbComponent: CmacsBreadCrumbComponent);
-    static ɵfac: i0.ɵɵFactoryDef<CmacsBreadCrumbItemComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsBreadCrumbItemComponent, "cmacs-breadcrumb-item", ["cmacsBreadcrumbItem"], { "overlay": "overlay"; }, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsBreadCrumbItemComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsBreadCrumbItemComponent, "cmacs-breadcrumb-item", ["cmacsBreadcrumbItem"], { "overlay": { "alias": "overlay"; "required": false; }; }, {}, never, ["*"], false, never>;
 }
 //# sourceMappingURL=breadcrumb-item.component.d.ts.map

@@ -9,7 +9,7 @@ export declare class LightboxService {
     removeItem(item: Item): void;
     onClosed(func: () => void): void;
     onOpening(func: () => void): void;
-    static ɵfac: i0.ɵɵFactoryDef<LightboxService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<LightboxService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LightboxService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<LightboxService>;
 }
 //# sourceMappingURL=lightbox.service.d.ts.map

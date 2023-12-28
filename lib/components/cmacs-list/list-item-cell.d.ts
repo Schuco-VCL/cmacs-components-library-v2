@@ -2,14 +2,14 @@ import { ChangeDetectorRef, NgZone, OnChanges, OnDestroy, QueryList, TemplateRef
 import * as i0 from "@angular/core";
 export declare class CmacsListItemExtraComponent {
     constructor();
-    static ɵfac: i0.ɵɵFactoryDef<CmacsListItemExtraComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsListItemExtraComponent, "cmacs-list-item-extra, [cmacs-list-item-extra]", ["cmacsListItemExtra"], {}, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsListItemExtraComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsListItemExtraComponent, "cmacs-list-item-extra, [cmacs-list-item-extra]", ["cmacsListItemExtra"], {}, {}, never, ["*"], false, never>;
 }
 export declare class CmacsListItemActionComponent {
     templateRef?: TemplateRef<void>;
     constructor();
-    static ɵfac: i0.ɵɵFactoryDef<CmacsListItemActionComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsListItemActionComponent, "cmacs-list-item-action", ["cmacsListItemAction"], {}, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsListItemActionComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsListItemActionComponent, "cmacs-list-item-action", ["cmacsListItemAction"], {}, {}, never, ["*"], false, never>;
 }
 export declare class CmacsListItemActionsComponent implements OnChanges, OnDestroy {
     private ngZone;
@@ -23,7 +23,7 @@ export declare class CmacsListItemActionsComponent implements OnChanges, OnDestr
     constructor(ngZone: NgZone, cdr: ChangeDetectorRef);
     ngOnChanges(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsListItemActionsComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsListItemActionsComponent, "ul[cmacs-list-item-actions]", ["cmacsListItemActions"], { "cmacsActions": "cmacsActions"; }, {}, ["nzListItemActions"], never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsListItemActionsComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsListItemActionsComponent, "ul[cmacs-list-item-actions]", ["cmacsListItemActions"], { "cmacsActions": { "alias": "cmacsActions"; "required": false; }; }, {}, ["nzListItemActions"], never, false, never>;
 }
 //# sourceMappingURL=list-item-cell.d.ts.map

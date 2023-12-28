@@ -18,7 +18,7 @@ export declare class CmacsSectionComponent implements OnInit, OnChanges {
     collapseSection(): void;
     ngOnChanges(changes: SimpleChanges): void;
     triggerCollapseEvents(before: boolean): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsSectionComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsSectionComponent, "cmacs-section", never, { "extra": "extra"; "widgetSpan": "widgetSpan"; "title": "title"; "titleIcon": "titleIcon"; "showCollapse": "showCollapse"; "extraData": "extraData"; "collapsed": "collapsed"; "validate": "validate"; }, { "onbeforecollapse": "onbeforecollapse"; "oncollapse": "oncollapse"; "onbeforeexpand": "onbeforeexpand"; "onexpand": "onexpand"; }, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsSectionComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsSectionComponent, "cmacs-section", never, { "extra": { "alias": "extra"; "required": false; }; "widgetSpan": { "alias": "widgetSpan"; "required": false; }; "title": { "alias": "title"; "required": false; }; "titleIcon": { "alias": "titleIcon"; "required": false; }; "showCollapse": { "alias": "showCollapse"; "required": false; }; "extraData": { "alias": "extraData"; "required": false; }; "collapsed": { "alias": "collapsed"; "required": false; }; "validate": { "alias": "validate"; "required": false; }; }, { "onbeforecollapse": "onbeforecollapse"; "oncollapse": "oncollapse"; "onbeforeexpand": "onbeforeexpand"; "onexpand": "onexpand"; }, never, ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-section.component.d.ts.map

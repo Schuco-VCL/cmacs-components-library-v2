@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs';
 import { PtbTabLabelDirective } from './ptb-tab-label.directive';
 import { PtbTabsInkBarDirective } from './ptb-tabs-ink-bar.directive';
 import * as i0 from "@angular/core";
-export declare type ScrollDirection = 'after' | 'before';
+export type ScrollDirection = 'after' | 'before';
 export declare class PtbTabsNavComponent implements AfterContentChecked, AfterContentInit, OnDestroy {
     elementRef: ElementRef;
     private ngZone;
@@ -67,7 +67,7 @@ export declare class PtbTabsNavComponent implements AfterContentChecked, AfterCo
     get tabListScrollOffSetWidthHeight(): number;
     getLayoutDirection(): Direction;
     alignInkBarToSelectedTab(): void;
-    static ɵfac: i0.ɵɵFactoryDef<PtbTabsNavComponent, [null, null, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<PtbTabsNavComponent, "ptb-tabs-nav", ["ptbTabsNav"], { "nzTabBarExtraContent": "nzTabBarExtraContent"; "nzAnimated": "nzAnimated"; "nzHideBar": "nzHideBar"; "nzShowPagination": "nzShowPagination"; "nzType": "nzType"; "nzPositionMode": "nzPositionMode"; "selectedIndex": "selectedIndex"; }, { "nzOnNextClick": "nzOnNextClick"; "nzOnPrevClick": "nzOnPrevClick"; }, ["listOfNzTabLabelDirective"], ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<PtbTabsNavComponent, [null, null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<PtbTabsNavComponent, "ptb-tabs-nav", ["ptbTabsNav"], { "nzTabBarExtraContent": { "alias": "nzTabBarExtraContent"; "required": false; }; "nzAnimated": { "alias": "nzAnimated"; "required": false; }; "nzHideBar": { "alias": "nzHideBar"; "required": false; }; "nzShowPagination": { "alias": "nzShowPagination"; "required": false; }; "nzType": { "alias": "nzType"; "required": false; }; "nzPositionMode": { "alias": "nzPositionMode"; "required": false; }; "selectedIndex": { "alias": "selectedIndex"; "required": false; }; }, { "nzOnNextClick": "nzOnNextClick"; "nzOnPrevClick": "nzOnPrevClick"; }, ["listOfNzTabLabelDirective"], ["*"], false, never>;
 }
 //# sourceMappingURL=ptb-tabs-nav.component.d.ts.map

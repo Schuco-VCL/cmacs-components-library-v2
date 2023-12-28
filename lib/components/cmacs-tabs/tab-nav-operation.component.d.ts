@@ -21,7 +21,7 @@ export declare class CmacsTabNavOperationComponent implements OnDestroy {
     getElementWidth(): number;
     getElementHeight(): number;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTabNavOperationComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsTabNavOperationComponent, "cmacs-tab-nav-operation", ["cmacsTabNavOperation"], { "items": "items"; "addable": "addable"; "addIcon": "addIcon"; }, { "addClicked": "addClicked"; "selected": "selected"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTabNavOperationComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTabNavOperationComponent, "cmacs-tab-nav-operation", ["cmacsTabNavOperation"], { "items": { "alias": "items"; "required": false; }; "addable": { "alias": "addable"; "required": false; }; "addIcon": { "alias": "addIcon"; "required": false; }; }, { "addClicked": "addClicked"; "selected": "selected"; }, never, never, false, never>;
 }
 //# sourceMappingURL=tab-nav-operation.component.d.ts.map

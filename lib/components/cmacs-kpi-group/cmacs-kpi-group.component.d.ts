@@ -53,7 +53,7 @@ export declare class CmacsKpiGroupComponent implements OnInit, AfterViewInit, On
     getDataTable(): any[];
     getConfiguration(): any;
     getChartImage(): any;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsKpiGroupComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsKpiGroupComponent, "cmacs-kpi-group", never, { "headerText": "headerText"; "footerText": "footerText"; "footerValue": "footerValue"; "view": "view"; "data": "data"; "columnsHeader": "columnsHeader"; }, { "clickMenu": "clickMenu"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsKpiGroupComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsKpiGroupComponent, "cmacs-kpi-group", never, { "headerText": { "alias": "headerText"; "required": false; }; "footerText": { "alias": "footerText"; "required": false; }; "footerValue": { "alias": "footerValue"; "required": false; }; "view": { "alias": "view"; "required": false; }; "data": { "alias": "data"; "required": false; }; "columnsHeader": { "alias": "columnsHeader"; "required": false; }; }, { "clickMenu": "clickMenu"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-kpi-group.component.d.ts.map

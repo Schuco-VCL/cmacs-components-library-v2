@@ -9,7 +9,7 @@ export declare class DoomService {
     private _lightboxComponentRef;
     constructor(_appRef: ApplicationRef, _componentFactoryResolver: ComponentFactoryResolver, _injector: Injector, _document: any);
     get lightboxComponentRef(): ComponentRef<LightboxComponent>;
-    static ɵfac: i0.ɵɵFactoryDef<DoomService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<DoomService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DoomService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<DoomService>;
 }
 //# sourceMappingURL=doom.service.d.ts.map

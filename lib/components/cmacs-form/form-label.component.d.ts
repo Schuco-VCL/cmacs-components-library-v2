@@ -22,7 +22,7 @@ export declare class CmacsFormLabelComponent implements OnDestroy {
     private destroy$;
     constructor(elementRef: ElementRef, renderer: Renderer2, cdr: ChangeDetectorRef, CmacsFormDirective: CmacsFormDirective);
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsFormLabelComponent, [null, null, null, { optional: true; skipSelf: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsFormLabelComponent, "cmacs-form-label", ["cmacsFormLabel"], { "cmacsFor": "cmacsFor"; "cmacsRequired": "cmacsRequired"; "cmacsNoColon": "cmacsNoColon"; "cmacsTooltipTitle": "cmacsTooltipTitle"; "cmacsTooltipIcon": "cmacsTooltipIcon"; }, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsFormLabelComponent, [null, null, null, { optional: true; skipSelf: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsFormLabelComponent, "cmacs-form-label", ["cmacsFormLabel"], { "cmacsFor": { "alias": "cmacsFor"; "required": false; }; "cmacsRequired": { "alias": "cmacsRequired"; "required": false; }; "cmacsNoColon": { "alias": "cmacsNoColon"; "required": false; }; "cmacsTooltipTitle": { "alias": "cmacsTooltipTitle"; "required": false; }; "cmacsTooltipIcon": { "alias": "cmacsTooltipIcon"; "required": false; }; }, {}, never, ["*"], false, never>;
 }
 //# sourceMappingURL=form-label.component.d.ts.map

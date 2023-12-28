@@ -65,7 +65,7 @@ export declare class CmacsInputNumberComponent implements ControlValueAccessor, 
     ngOnChanges(changes: SimpleChanges): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsInputNumberComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsInputNumberComponent, "cmacs-input-number", ["cmacsInputNumber"], { "size": "size"; "min": "min"; "max": "max"; "parser": "parser"; "precision": "precision"; "placeHolder": "placeHolder"; "cmacsStep": "cmacsStep"; "disabled": "disabled"; "autoFocus": "autoFocus"; "formatter": "formatter"; }, { "cmacsBlur": "cmacsBlur"; "cmacsFocus": "cmacsFocus"; "onModelChange": "onModelChange"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsInputNumberComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsInputNumberComponent, "cmacs-input-number", ["cmacsInputNumber"], { "size": { "alias": "size"; "required": false; }; "min": { "alias": "min"; "required": false; }; "max": { "alias": "max"; "required": false; }; "parser": { "alias": "parser"; "required": false; }; "precision": { "alias": "precision"; "required": false; }; "placeHolder": { "alias": "placeHolder"; "required": false; }; "cmacsStep": { "alias": "cmacsStep"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "autoFocus": { "alias": "autoFocus"; "required": false; }; "formatter": { "alias": "formatter"; "required": false; }; }, { "cmacsBlur": "cmacsBlur"; "cmacsFocus": "cmacsFocus"; "onModelChange": "onModelChange"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-input-number.component.d.ts.map

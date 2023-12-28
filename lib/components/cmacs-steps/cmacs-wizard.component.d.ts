@@ -3,9 +3,9 @@ import { NgClassType, NzSizeDSType } from 'ng-zorro-antd/core/types';
 import { Direction, Directionality } from '@angular/cdk/bidi';
 import { CmacsStepComponent } from './step.component';
 import * as i0 from "@angular/core";
-export declare type NzDirectionType = 'horizontal' | 'vertical';
-export declare type NzStatusType = 'wait' | 'process' | 'finish' | 'error';
-export declare type nzProgressDotTemplate = TemplateRef<{
+export type NzDirectionType = 'horizontal' | 'vertical';
+export type NzStatusType = 'wait' | 'process' | 'finish' | 'error';
+export type nzProgressDotTemplate = TemplateRef<{
     $implicit: TemplateRef<void>;
     status: string;
     index: number;
@@ -40,7 +40,7 @@ export declare class CmacsWizardComponent implements OnChanges, OnInit, OnDestro
     ngAfterContentInit(): void;
     private updateChildrenSteps;
     private setClassMap;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsWizardComponent, [null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsWizardComponent, "cmacs-wizard", ["cmacsWizard"], { "current": "current"; "direction": "direction"; "labelPlacement": "labelPlacement"; "type": "type"; "size": "size"; "startIndex": "startIndex"; "status": "status"; "nzProgressDot": "nzProgressDot"; }, { "indexChange": "indexChange"; }, ["steps"], ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsWizardComponent, [null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsWizardComponent, "cmacs-wizard", ["cmacsWizard"], { "current": { "alias": "current"; "required": false; }; "direction": { "alias": "direction"; "required": false; }; "labelPlacement": { "alias": "labelPlacement"; "required": false; }; "type": { "alias": "type"; "required": false; }; "size": { "alias": "size"; "required": false; }; "startIndex": { "alias": "startIndex"; "required": false; }; "status": { "alias": "status"; "required": false; }; "nzProgressDot": { "alias": "nzProgressDot"; "required": false; }; }, { "indexChange": "indexChange"; }, ["steps"], ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-wizard.component.d.ts.map

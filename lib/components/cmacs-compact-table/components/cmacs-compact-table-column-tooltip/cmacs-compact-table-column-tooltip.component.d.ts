@@ -15,7 +15,7 @@ export declare class CmacsCompactTableColumnTooltipComponent implements OnInit, 
     private getTemplateType;
     fieldChanged(value: ColumnMenuType): void;
     isSelected(value: ColumnMenuType, templateType: TemplateType): boolean;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsCompactTableColumnTooltipComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsCompactTableColumnTooltipComponent, "cmacs-compact-table-column-tooltip", never, { "field": "field"; "items": "items"; }, { "onFieldChanged": "onFieldChanged"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsCompactTableColumnTooltipComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsCompactTableColumnTooltipComponent, "cmacs-compact-table-column-tooltip", never, { "field": { "alias": "field"; "required": false; }; "items": { "alias": "items"; "required": false; }; }, { "onFieldChanged": "onFieldChanged"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-compact-table-column-tooltip.component.d.ts.map

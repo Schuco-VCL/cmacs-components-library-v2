@@ -4,7 +4,7 @@ import { ControlValueAccessor } from '@angular/forms';
 import { NzSafeAny, NzSizeLDSType, OnChangeType, OnTouchedType } from 'ng-zorro-antd/core/types';
 import { NzRadioService } from './radio.service';
 import * as i0 from "@angular/core";
-export declare type NzRadioButtonStyle = 'outline' | 'solid';
+export type NzRadioButtonStyle = 'outline' | 'solid';
 export declare class CmacsRadioGroupComponent implements ControlValueAccessor, OnDestroy, OnChanges {
     private cdr;
     private nzRadioService;
@@ -27,7 +27,7 @@ export declare class CmacsRadioGroupComponent implements ControlValueAccessor, O
     registerOnChange(fn: OnChangeType): void;
     registerOnTouched(fn: OnTouchedType): void;
     setDisabledState(isDisabled: boolean): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsRadioGroupComponent, [null, null, null, { optional: true; }]>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsRadioGroupComponent, "cmacs-radio-group", ["cmacsRadioGroup"], { "disabled": "disabled"; "buttonStyle": "buttonStyle"; "size": "size"; "name": "name"; }, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsRadioGroupComponent, [null, null, null, { optional: true; }]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsRadioGroupComponent, "cmacs-radio-group", ["cmacsRadioGroup"], { "disabled": { "alias": "disabled"; "required": false; }; "buttonStyle": { "alias": "buttonStyle"; "required": false; }; "size": { "alias": "size"; "required": false; }; "name": { "alias": "name"; "required": false; }; }, {}, never, ["*"], false, never>;
 }
 //# sourceMappingURL=cmacs-radio-group.component.d.ts.map

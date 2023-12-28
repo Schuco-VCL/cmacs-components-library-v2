@@ -39,6 +39,7 @@ export declare class UtilService {
     exportTablev2(exportConfig: any): void;
     exportBigImage(doc: any, bigImage: any): void;
     drawTableContent(doc: any, exportConfig: any, finalY?: any): void;
+    isJapanese(text: string): RegExpMatchArray;
     drawLegendTable(doc: any, legend: any): void;
     getColumns(exportConfig: any): any[];
     getRows(exportConfig: any): any[];
@@ -50,7 +51,7 @@ export declare class UtilService {
         height: any;
         width: any;
     };
-    static ɵfac: i0.ɵɵFactoryDef<UtilService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<UtilService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<UtilService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<UtilService>;
 }
 //# sourceMappingURL=util.service.d.ts.map

@@ -34,7 +34,7 @@ export declare class CmacsNormalizedHorizontalBarChartComponent implements OnIni
     getDataTable(): ChartDataMulti[];
     getChartImage(): QueryList<ElementRef<any>>;
     getLegend(): string[];
-    static ɵfac: i0.ɵɵFactoryDef<CmacsNormalizedHorizontalBarChartComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsNormalizedHorizontalBarChartComponent, "cmacs-normalized-horizontal-bar-chart", never, { "chartTooltip": "chartTooltip"; "data": "data"; "view": "view"; "colorScheme": "colorScheme"; }, { "clickMenu": "clickMenu"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsNormalizedHorizontalBarChartComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsNormalizedHorizontalBarChartComponent, "cmacs-normalized-horizontal-bar-chart", never, { "chartTooltip": { "alias": "chartTooltip"; "required": false; }; "data": { "alias": "data"; "required": false; }; "view": { "alias": "view"; "required": false; }; "colorScheme": { "alias": "colorScheme"; "required": false; }; }, { "clickMenu": "clickMenu"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-normalized-horizontal-bar-chart.component.d.ts.map

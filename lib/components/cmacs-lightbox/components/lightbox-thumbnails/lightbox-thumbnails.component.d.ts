@@ -40,7 +40,7 @@ export declare class LightboxThumbnailsComponent implements OnInit {
     private _animateSlice;
     private _getTop;
     private _getLeft;
-    static ɵfac: i0.ɵɵFactoryDef<LightboxThumbnailsComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<LightboxThumbnailsComponent, "lightbox-thumbnails", never, { "items": "items"; }, { "selectEvent": "selectEvent"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LightboxThumbnailsComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<LightboxThumbnailsComponent, "lightbox-thumbnails", never, { "items": { "alias": "items"; "required": false; }; }, { "selectEvent": "selectEvent"; }, never, never, false, never>;
 }
 //# sourceMappingURL=lightbox-thumbnails.component.d.ts.map

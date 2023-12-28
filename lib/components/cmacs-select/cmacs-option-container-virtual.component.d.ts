@@ -29,7 +29,7 @@ export declare class CmacsOptionContainerVirtualComponent implements OnInit, OnD
     setLocale(): void;
     isAllChecked(): number;
     updateCheckboxCache(): void;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsOptionContainerVirtualComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CmacsOptionContainerVirtualComponent, "cmacs-option-container-virtual", never, { "showSelectAll": "showSelectAll"; "showSearch": "showSearch"; "selectAllLabel": "selectAllLabel"; "searchLabel": "searchLabel"; "showCmacsSearch": "showCmacsSearch"; "notFoundContentShow": "notFoundContentShow"; "notFoundContentCustom": "notFoundContentCustom"; "nzMenuItemSelectedIcon": "nzMenuItemSelectedIcon"; }, { "nzScrollToBottom": "nzScrollToBottom"; "onSearch": "onSearch"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsOptionContainerVirtualComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsOptionContainerVirtualComponent, "cmacs-option-container-virtual", never, { "showSelectAll": { "alias": "showSelectAll"; "required": false; }; "showSearch": { "alias": "showSearch"; "required": false; }; "selectAllLabel": { "alias": "selectAllLabel"; "required": false; }; "searchLabel": { "alias": "searchLabel"; "required": false; }; "showCmacsSearch": { "alias": "showCmacsSearch"; "required": false; }; "notFoundContentShow": { "alias": "notFoundContentShow"; "required": false; }; "notFoundContentCustom": { "alias": "notFoundContentCustom"; "required": false; }; "nzMenuItemSelectedIcon": { "alias": "nzMenuItemSelectedIcon"; "required": false; }; }, { "nzScrollToBottom": "nzScrollToBottom"; "onSearch": "onSearch"; }, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-option-container-virtual.component.d.ts.map

@@ -15,7 +15,7 @@ export declare class CmacsTabsInkBarDirective {
     getElementWidth(element: HTMLElement): string;
     getTopPosition(element: HTMLElement): string;
     getElementHeight(element: HTMLElement): string;
-    static ɵfac: i0.ɵɵFactoryDef<CmacsTabsInkBarDirective, [null, null, { optional: true; }]>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<CmacsTabsInkBarDirective, "cmacs-tabs-ink-bar, [cmacs-tabs-ink-bar]", never, { "position": "position"; "animated": "animated"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTabsInkBarDirective, [null, null, { optional: true; }]>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<CmacsTabsInkBarDirective, "cmacs-tabs-ink-bar, [cmacs-tabs-ink-bar]", never, { "position": { "alias": "position"; "required": false; }; "animated": { "alias": "animated"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=tabs-ink-bar.directive.d.ts.map

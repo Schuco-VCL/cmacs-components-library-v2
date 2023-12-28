@@ -4,10 +4,10 @@
  */
 import { NzSafeAny } from 'ng-zorro-antd/core/types';
 import { Observable } from 'rxjs';
-export declare type NzTabPosition = 'top' | 'bottom' | 'left' | 'right';
-export declare type NzTabType = 'line' | 'card' | 'editable-card';
-export declare type NzTabsCanDeactivateFn = (fromIndex: number, toIndex: number) => Observable<boolean> | Promise<boolean> | boolean;
-export declare type NzTabPositionMode = 'horizontal' | 'vertical';
+export type NzTabPosition = 'top' | 'bottom' | 'left' | 'right';
+export type NzTabType = 'line' | 'card' | 'editable-card';
+export type NzTabsCanDeactivateFn = (fromIndex: number, toIndex: number) => Observable<boolean> | Promise<boolean> | boolean;
+export type NzTabPositionMode = 'horizontal' | 'vertical';
 export interface NzAnimatedInterface {
     inkBar: boolean;
     tabPane: boolean;
@@ -20,7 +20,7 @@ export interface NzTabScrollListOffset {
     x: number;
     y: number;
 }
-export declare type NzTabScrollListOffsetEvent = NzTabScrollListOffset & {
+export type NzTabScrollListOffsetEvent = NzTabScrollListOffset & {
     event: Event;
 };
 interface NzTabWheelScrollEvent {
@@ -31,8 +31,8 @@ interface NzTabTouchScrollEvent {
     type: 'touchstart' | 'touchmove' | 'touchend';
     event: TouchEvent;
 }
-export declare type NzTabScrollEvent = NzTabTouchScrollEvent | NzTabWheelScrollEvent;
-export declare type NzTabScrollEventHandlerFun<T extends NzTabScrollEvent['event']> = (event: T) => void;
+export type NzTabScrollEvent = NzTabTouchScrollEvent | NzTabWheelScrollEvent;
+export type NzTabScrollEventHandlerFun<T extends NzTabScrollEvent['event']> = (event: T) => void;
 export interface TabTemplateContext {
     visible: boolean;
 }
