@@ -336,10 +336,10 @@ form .has-feedback > .ant-select .ant-select-arrow {
   min-width: 190px;
 }
 
-.cmacs-dropdown .ant-dropdown-menu-item a,
+/* .cmacs-dropdown .ant-dropdown-menu-item a,
 .cmacs-dropdown .ant-dropdown-menu-submenu-title a {
   color: #656c79 !important;
-}
+} */
 
 .cmacs-dropdown .ant-dropdown-menu-item,
 .cmacs-dropdown .ant-dropdown-menu-submenu-title {
@@ -458,6 +458,10 @@ nz-divider {
   background-color: #dee0e5;
   margin: 0 auto;
   width: calc(100% - 20px);
+}
+
+.ant-menu-sub.ant-menu-inline{
+  background: none;
 }
 
 .cmacs-menu-side-bar.ant-menu-inline-collapsed {

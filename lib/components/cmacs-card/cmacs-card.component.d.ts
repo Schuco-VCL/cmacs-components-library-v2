@@ -87,6 +87,7 @@ export declare class CmacsCardComponent implements OnInit {
     handleEnter(event: KeyboardEvent, titleContainer: any, titleSpan: any): void;
     handleEdit(event: KeyboardEvent, titleSpan: any): void;
     toggleEdit(titleContainer: any): void;
+    isJaponeseInitials(name: string): RegExpMatchArray;
     getInitials(name: any): any;
     getBackgroundImage(): any;
     onError(elem: any): void;
