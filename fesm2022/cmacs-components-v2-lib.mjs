@@ -2919,7 +2919,8 @@ class CmacsSelectTopControlComponent {
             let tagsLength = 0;
             for (let i = 0; i < tagsOrdered.length; i++) {
                 const option = this.nzSelectService.listOfCachedSelectedOption[i];
-                const newLength = option.nzLabel.length * 8.6 + 34;
+                const charLength = option.nzLabel?.match(/[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/g) ? 12 : 8.6;
+                const newLength = option.nzLabel.length * charLength + 34;
                 tagsLength += newLength;
                 if (tagsLength + 34 > this.cmacsSelectTagWrapper.nativeElement.offsetWidth) {
                     if (tagsLength - newLength + 104 <= this.cmacsSelectTagWrapper.nativeElement.offsetWidth) {
