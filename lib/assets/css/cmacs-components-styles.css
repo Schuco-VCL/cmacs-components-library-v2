@@ -24,6 +24,11 @@
   font-family: 'Roboto-Medium';
   src: url('../fonts/Roboto-Medium.ttf');
 }
+
+.nz-resizable-handle {
+  z-index: 1 !important;
+}
+
 .ant-modal-mask{
   background-color: rgba(13, 30, 59, 0.4) !important;
 }
