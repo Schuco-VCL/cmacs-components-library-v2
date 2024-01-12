@@ -1,5 +1,4 @@
 import { AfterContentChecked, ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, OnInit, Renderer2, SimpleChanges, OnDestroy } from '@angular/core';
-import 'moment/locale/en-ie';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 import { NzTabChangeEvent } from '../cmacs-tabs/interfaces';
 import * as i0 from "@angular/core";

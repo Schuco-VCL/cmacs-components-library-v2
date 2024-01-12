@@ -1,5 +1,4 @@
 import { OnInit, OnChanges, SimpleChanges, ChangeDetectorRef, OnDestroy } from '@angular/core';
-import 'moment/locale/en-ie';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 import * as i0 from "@angular/core";
 export declare class CmacsTimelineChartComponent implements OnInit, OnChanges, OnDestroy {

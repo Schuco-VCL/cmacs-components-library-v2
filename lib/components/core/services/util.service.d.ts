@@ -1,4 +1,3 @@
-import 'moment/locale/en-ie';
 import { ExportAsService } from 'ngx-export-as';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 import { HttpClient } from '@angular/common/http';
