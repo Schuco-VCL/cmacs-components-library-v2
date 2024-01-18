@@ -10059,7 +10059,6 @@ class UtilService {
     // Export table version 2
     exportTablev2(exportConfig) {
         const sub = this.http.get('assets/fonts/NotoSansJP-Regular.ttf', { responseType: 'blob' }).subscribe((blob) => {
-            sub.unsubscribe();
             const blobToBase64 = blob => {
                 const reader = new FileReader();
                 reader.readAsDataURL(blob);
@@ -10069,8 +10068,10 @@ class UtilService {
                     };
                 });
             };
-            blobToBase64(blob).then((NotoSansJP) => {
-                NotoSansJP = NotoSansJP.replace('data:font/ttf;base64,', '');
+            blobToBase64(blob).then((dataUri) => {
+                const [meta, NotoSansJP] = dataUri.split("base64,");
+                console.log(NotoSansJP);
+                sub.unsubscribe();
                 const doc = new jsPDF(!!exportConfig.orientation ? exportConfig.orientation : 'l', !!exportConfig.unit ? exportConfig.unit : 'mm', !!exportConfig.format ? exportConfig.format : 'a4', true);
                 this.exportCompanyLogoUrl = !!exportConfig.exportCompanyLogoUrl ? exportConfig.exportCompanyLogoUrl : 'assets/PToB_logo.png';
                 this.exportCompanyName = !!exportConfig.exportCompanyName ? exportConfig.exportCompanyName : '';
@@ -11009,6 +11010,7 @@ class CmacsPhoneNumberComponent {
     }
     hasErrorEvent() {
         this.hasError.emit(this.telOutputObj.isValidNumber());
+        this.telOutput.emit(this.telOutputObj.getNumber());
     }
     uuidv4() {
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
