@@ -296,11 +296,6 @@ cmacs-breadcrumb-item:last-child {
   font-size: 10px !important;
 }
 
-.ant-checkbox {
-    top: 0 !important;
-}
-
-
 form .has-feedback .ant-calendar-picker-clear,
 form .has-feedback .ant-calendar-picker-icon,
 form .has-feedback .ant-cascader-picker-clear,

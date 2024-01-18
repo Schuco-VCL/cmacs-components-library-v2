@@ -189,7 +189,7 @@ export declare class CmacsCompactTableComponent implements OnInit, OnChanges, On
     onFieldChanged(idx: number, field: EditColumnAction): void;
     onFieldTapEllipsis(id: string): void;
     onDataTapEllipsis(id: string): void;
-    getTooltipEllipsisTrigger(): "click" | "hover";
+    getTooltipEllipsisTrigger(): "hover" | "click";
     isEllipsisActive(id: string, field: any): boolean;
     isTooltipActive(data: any, field: any): boolean;
     measureText(str: string, fontSize: number): number;
