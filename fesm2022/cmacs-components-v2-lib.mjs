@@ -11008,7 +11008,7 @@ class CmacsPhoneNumberComponent {
         this.hasErrorEvent();
     }
     hasErrorEvent() {
-        this.hasError.emit(!this.telOutputObj.isValidNumber());
+        this.hasError.emit(this.telOutputObj.isValidNumber());
     }
     uuidv4() {
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
