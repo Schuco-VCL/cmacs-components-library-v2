@@ -36,6 +36,7 @@ export declare class CmacsTimelineDatepickerComponent implements AfterContentChe
     modeChange: EventEmitter<any>;
     showPreviousYearWeek: boolean;
     previousYearWeek: any;
+    rangePopoverVisible: boolean;
     modeOptions: {
         title: string;
         value: string;
@@ -59,6 +60,7 @@ export declare class CmacsTimelineDatepickerComponent implements AfterContentChe
     private clampTabIndex;
     constructor(renderer: Renderer2, elementRef: ElementRef, i18n: NzI18nService, cdr: ChangeDetectorRef);
     ngOnInit(): void;
+    onClosePopover(): void;
     ngOnChanges(changes: SimpleChanges): void;
     updateSelectedMode(): void;
     getValuesSlider(): any[];
