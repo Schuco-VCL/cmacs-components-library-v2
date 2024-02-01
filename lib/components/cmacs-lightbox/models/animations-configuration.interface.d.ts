@@ -1,4 +1,4 @@
-import { ToolbarShowAnimationConfiguration } from './configurations/toolbar-show-animation-configuration.interface';
+import { ToolbarShowAnimationConfiguration } from './configurations/Toolbar-show-animation-configuration.interface';
 import { ToolbarHideAnimationConfiguration } from './configurations/toolbar-hide-animation-configuration.interface';
 import { BackgroundFadeInAnimationConfiguration } from './configurations/background-fade-in-animation-configuration.interface';
 import { BackgroundFadeOutAnimationConfiguration } from './configurations/background-fade-out-animation-configuration.interface';

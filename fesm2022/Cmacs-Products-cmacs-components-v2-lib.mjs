@@ -9883,17 +9883,20 @@ class UtilService {
     addFooters(doc, logo, imgLogo = null) {
         const pageCount = doc.internal.getNumberOfPages();
         const currentLocale = this.i18n.getLocale().locale;
+        console.log('currentLocale', currentLocale);
         let date;
         if (currentLocale === 'de') {
             date = moment().locale('DE-DE').format('DD. MMM YYYY');
+            doc.setFont('Roboto');
         }
-        else if (currentLocale === 'jp') {
+        else if (currentLocale === 'ja') {
             date = moment().locale('JA-JP').format('YYYY年MM月DD日');
+            doc.setFont('NotoSansJP', 'regular');
         }
         else {
             date = moment().format('MMMM DD, YYYY');
+            doc.setFont('Roboto');
         }
-        doc.setFont('Roboto');
         doc.setTextColor(151, 160, 174);
         doc.setFontSize(8);
         for (let i = 1; i <= pageCount; i++) {
@@ -9927,9 +9930,14 @@ class UtilService {
                 }
             }
             doc.setFontSize(8);
-            doc.setFont('Roboto', 'normal');
+            if (currentLocale === 'ja') {
+                doc.setFont('NotoSansJP', 'regular');
+            }
+            else {
+                doc.setFont('Roboto', 'normal');
+            }
             doc.setTextColor(101, 108, 121);
-            doc.text(this.i18n.getLocale().locale === 'en' ? 'Page ' + String(i) + ' of ' + String(pageCount) : 'Seite ' + String(i) + ' von ' + String(pageCount), 15, doc.internal.pageSize.height - 10, {
+            doc.text(this.i18n.getLocale().locale === 'en' ? 'Page ' + String(i) + ' of ' + String(pageCount) : currentLocale === 'ja' ? `${String(i)}/${String(pageCount)} ページ` : 'Seite ' + String(i) + ' von ' + String(pageCount), 15, doc.internal.pageSize.height - 10, {
                 align: 'left'
             });
             doc.text(date, doc.internal.pageSize.width - 15, doc.internal.pageSize.height - 10, {
@@ -10071,7 +10079,6 @@ class UtilService {
             };
             blobToBase64(blob).then((dataUri) => {
                 const [meta, NotoSansJP] = dataUri.split("base64,");
-                console.log(NotoSansJP);
                 sub.unsubscribe();
                 const doc = new jsPDF(!!exportConfig.orientation ? exportConfig.orientation : 'l', !!exportConfig.unit ? exportConfig.unit : 'mm', !!exportConfig.format ? exportConfig.format : 'a4', true);
                 this.exportCompanyLogoUrl = !!exportConfig.exportCompanyLogoUrl ? exportConfig.exportCompanyLogoUrl : 'assets/PToB_logo.png';
@@ -44128,4 +44135,4 @@ var ModeTabType;
  */
 
 export { ButtonStyle, CeldType, CmacsAlertComponent, CmacsAutosizeDirective, CmacsBreadCrumbComponent, CmacsBreadCrumbItemComponent, CmacsBreadCrumbSeparatorComponent, CmacsButtonComponent, CmacsButtonFavoriteComponent, CmacsButtonGroupComponent, CmacsCardComponent, CmacsCardGridDirective, CmacsCardLoadingComponent, CmacsCardMetaComponent, CmacsCardTabComponent, CmacsCheckboxComponent, CmacsCheckboxGroupComponent, CmacsCheckboxWrapperComponent, CmacsColorPickerComponent, CmacsCommentActionComponent, CmacsCommentActionHostDirective, CmacsCommentAvatarDirective, CmacsCommentComponent, CmacsCommentContentDirective, CmacsCompactTableColumnMoreComponent, CmacsCompactTableColumnTooltipComponent, CmacsCompactTableComponent, CmacsComponentsV2LibComponent, CmacsComponentsV2LibModule, CmacsComponentsV2LibService, CmacsContextMenuService, CmacsContextMenuServiceModule, CmacsDatePickerComponent, CmacsDateTimePickerComponent, CmacsDatetimePickerPanelComponent, CmacsDatetimeValueAccessorDirective, CmacsDividerComponent, CmacsDropDownADirective, CmacsDropDownDirective, CmacsDropdownButtonDirective, CmacsDropdownMenuComponent, CmacsEditorComponent, CmacsFloatingMenuComponent, CmacsFormControlComponent, CmacsFormDirective, CmacsFormItemComponent, CmacsFormLabelComponent, CmacsFormSplitComponent, CmacsFormTextComponent, CmacsGeneralChartComponent, CmacsGridConfigurationModalComponent, CmacsInputDirective, CmacsInputGroupComponent, CmacsInputGroupSlotComponent, CmacsInputNumberComponent, CmacsIsMenuInsideDropDownToken, CmacsKPIOverviewComponent, CmacsKanbanComponent, CmacsKpiComponent, CmacsKpiGroupComponent, CmacsKpiGroupTotalComponent, CmacsKpiPartialComponent, CmacsKpiVsComponent, CmacsListComponent, CmacsListEmptyComponent, CmacsListFooterComponent, CmacsListGridDirective, CmacsListHeaderComponent, CmacsListItemActionComponent, CmacsListItemActionsComponent, CmacsListItemComponent, CmacsListItemExtraComponent, CmacsListItemMetaAvatarComponent, CmacsListItemMetaComponent, CmacsListItemMetaDescriptionComponent, CmacsListItemMetaTitleComponent, CmacsListLoadMoreDirective, CmacsListPaginationComponent, CmacsMenuDirective, CmacsMenuDividerDirective, CmacsMenuGroupComponent, CmacsMenuItemDirective, CmacsMenuServiceLocalToken, CmacsMessageComponent, CmacsMessageContainerComponent, CmacsMessageService, CmacsModalComponent, CmacsModalService, CmacsMonthPickerComponent, CmacsMoveableListComponent, CmacsNormalizedHorizontalBarChartComponent, CmacsNormalizedHorizontalBarGroupedComponent, CmacsOpenEditorComponent, CmacsOpenInputComponent, CmacsOpenTextareaComponent, CmacsOptionComponent, CmacsOptionContainerComponent, CmacsOptionContainerVirtualComponent, CmacsOptionGroupComponent, CmacsOptionLiComponent, CmacsOptionLiVirtualComponent, CmacsPhoneNumberComponent, CmacsPopoverComponent, CmacsPopoverDirective, CmacsProgressComponent, CmacsRadioButtonDirective, CmacsRadioComponent, CmacsRadioGroupComponent, CmacsRangePickerComponent, CmacsSearchComponent, CmacsSectionComponent, CmacsSelectComponent, CmacsSelectService, CmacsSelectTopControlComponent, CmacsSelectUnselectableDirective, CmacsSidePanelComponent, CmacsSignatureComponent, CmacsSliderComponent, CmacsSliderHandleComponent, CmacsSliderMarksComponent, CmacsSliderStepComponent, CmacsSliderTrackComponent, CmacsStatusDistributionComponent, CmacsStepComponent, CmacsSubMenuComponent, CmacsSwitchComponent, CmacsTabAddButtonComponent, CmacsTabBodyComponent, CmacsTabCloseButtonComponent, CmacsTabComponent, CmacsTabDirective, CmacsTabLinkDirective, CmacsTabLinkTemplateDirective, CmacsTabNavBarComponent, CmacsTabNavItemDirective, CmacsTabNavOperationComponent, CmacsTabScrollListDirective, CmacsTabSetComponent, CmacsTableComponent, CmacsTabsInkBarDirective, CmacsTagComponent, CmacsTextareaCountComponent, CmacsTimelineChartComponent, CmacsTimelineComponent, CmacsTimelineDatepickerComponent, CmacsTimelineItemComponent, CmacsToCssUnitPipe, CmacsToolTipComponent, CmacsTooltipBaseComponent, CmacsTooltipDirective, CmacsTreeComponent, CmacsTreeNodeComponent, CmacsTreeSelectComponent, CmacsTreeSelectService, CmacsTreeService, CmacsUserDropdownComponent, CmacsUserDropdownExternalListComponent, CmacsVideoPlayerComponent, CmacsWeekPickerComponent, CmacsWizardComponent, CmacsXlsxLoaderComponent, CmacsYearPickerComponent, ColumnMenuType, DefaultTooltipIcon, ExportType, FLOATING_MENU_LOCALIZATION, KPI_COLORS, KPI_PRIORITY_COLORS, LazyLoadingDirective, LazyLoadingModule, LibPackerModule, LightboxConfigurationService, LightboxImgDirective, LightboxVideoDirective, MODAL_ANIMATE_DURATION, MODAL_CONFIG, MenuDropDownTokenFactory, MenuGroupFactory, MenuService, MenuServiceFactory, ModalBuilderForService, ModalControlService, ModeTabType, NZ_TAB_SET, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzMNComponent, NzMNContainerComponent, NzMNService, NzRadioService, NzSliderService, NzSubMenuTitleComponent, NzSubmenuInlineChildComponent, NzSubmenuNoneInlineChildComponent, NzSubmenuService, NzTabChangeEvent, NzTooltipBaseDirective, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzTreeServiceFactory, PREFIX_CLASS, PtbTabLabelDirective, PtbTabsInkBarDirective, PtbTabsNavComponent, ROBOTO, ROBOTO_BOLD, SIGNATURE_LOCALIZATION, TemplateType, TimelineService, UtilService, WidgetActionType, WidgetDataType, WidgetType, YoutubeComponent, YoutubeModule, afterDate, beforeDate, defaultFilterOption, getTimeConfig, greaterThan, higherOrderServiceFactory, isAllowedDate, isCheckDisabled, isEqualToDate, isEqualToNumber, isInArray, isNotEqualToDate, isNotEqualToNumber, isTimeValid, isTimeValidByConfig, isTooltipEmpty, lessThan, rangeDate, rangeNumber, transCompatFormat, AbstractPanelHeader as ɵAbstractPanelHeader, AbstractTable as ɵAbstractTable, CalendarFooterComponent as ɵCalendarFooterComponent, DateHeaderComponent as ɵDateHeaderComponent, DatePickerService as ɵDatePickerService, DateRangePopupComponent as ɵDateRangePopupComponent, DateTableComponent as ɵDateTableComponent, DecadeHeaderComponent as ɵDecadeHeaderComponent, DecadeTableComponent as ɵDecadeTableComponent, InnerPopupComponent as ɵInnerPopupComponent, MonthHeaderComponent as ɵMonthHeaderComponent, MonthTableComponent as ɵMonthTableComponent, CmacsPickerComponent as ɵNzPickerComponent, YearHeaderComponent as ɵYearHeaderComponent, YearTableComponent as ɵYearTableComponent };
-//# sourceMappingURL=cmacs-components-v2-lib.mjs.map
+//# sourceMappingURL=Cmacs-Products-cmacs-components-v2-lib.mjs.map

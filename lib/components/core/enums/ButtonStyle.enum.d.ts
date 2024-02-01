@@ -3,4 +3,4 @@ export declare enum ButtonStyle {
     Default = "default",
     Dashed = "dashed"
 }
-//# sourceMappingURL=ButtonStyle.enum.d.ts.map
+//# sourceMappingURL=buttonStyle.enum.d.ts.map

@@ -1,8 +1,8 @@
-import { CeldType } from '../enums/CeldType.enum';
-import { TemplateType } from '../enums/TemplateType.enum';
-import { ButtonStyle } from '../enums/ButtonStyle.enum';
 import { TemplateRef } from "@angular/core";
 import { ColumnMenuType } from '../enums/columnMenuType.enum';
+import { TemplateType } from "../enums/templateType.enum";
+import { ButtonStyle } from "../enums/buttonStyle.enum";
+import { CeldType } from "../enums/celdType.enum";
 export interface GridConfig {
     fields: Field[];
     fieldId: string;

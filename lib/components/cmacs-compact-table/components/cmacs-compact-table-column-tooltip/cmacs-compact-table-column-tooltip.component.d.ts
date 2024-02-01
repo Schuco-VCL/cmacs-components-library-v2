@@ -1,6 +1,6 @@
 import { EventEmitter, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ColumnMenuType } from '../../../core/enums/columnMenuType.enum';
-import { TemplateType } from '../../../core/enums/TemplateType.enum';
+import { TemplateType } from '../../../core/enums/templateType.enum';
 import { EditColumnAction, Field } from '../../../core/interfaces/grid-config';
 import * as i0 from "@angular/core";
 export declare class CmacsCompactTableColumnTooltipComponent implements OnInit, OnChanges {

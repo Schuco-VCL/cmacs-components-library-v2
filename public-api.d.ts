@@ -150,12 +150,12 @@ export * from './lib/components/cmacs-compact-table/components/cmacs-compact-tab
 export * from './lib/components/cmacs-compact-table/components/cmacs-compact-table-column-more/cmacs-compact-table-column-more.component';
 export * from './lib/components/cmacs-steps/step.component';
 export * from './lib/components/cmacs-steps/cmacs-wizard.component';
-export * from './lib/components/core/enums/ButtonStyle.enum';
-export * from './lib/components/core/enums/CeldType.enum';
+export * from './lib/components/core/enums/buttonStyle.enum';
+export * from './lib/components/core/enums/celdType.enum';
 export * from './lib/components/core/enums/export-type.enum';
 export * from './lib/components/core/enums/columnMenuType.enum';
 export * from './lib/components/core/enums/modeTabType.enum';
-export * from './lib/components/core/enums/TemplateType.enum';
+export * from './lib/components/core/enums/templateType.enum';
 export * from './lib/components/core/enums/widget-action-type.enum';
 export * from './lib/components/core/enums/widget-type.enum';
 export * from './lib/components/core/interfaces/chart-data-interface';

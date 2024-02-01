@@ -6,4 +6,4 @@ export declare enum CeldType {
     Favorite = 4,
     Hyperlink = 5
 }
-//# sourceMappingURL=CeldType.enum.d.ts.map
+//# sourceMappingURL=celdType.enum.d.ts.map

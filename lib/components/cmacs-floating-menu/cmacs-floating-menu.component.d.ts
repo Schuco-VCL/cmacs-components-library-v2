@@ -45,7 +45,7 @@ export declare class CmacsFloatingMenuComponent implements OnChanges {
     dockToTop(): void;
     onDragEnded($event: any): void;
     dockToBottom(): void;
-    getPlacement(): "top" | "bottom" | "left" | "right";
+    getPlacement(): "left" | "right" | "top" | "bottom";
     resetDragDrop(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<CmacsFloatingMenuComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<CmacsFloatingMenuComponent, "cmacs-floating-menu", ["cmacsFloatingMenu"], { "position": { "alias": "position"; "required": false; }; "trigger": { "alias": "trigger"; "required": false; }; "visible": { "alias": "visible"; "required": false; }; "showExtras": { "alias": "showExtras"; "required": false; }; "dragBoundary": { "alias": "dragBoundary"; "required": false; }; "carrot": { "alias": "carrot"; "required": false; }; "top": { "alias": "top"; "required": false; }; "bottom": { "alias": "bottom"; "required": false; }; "left": { "alias": "left"; "required": false; }; "right": { "alias": "right"; "required": false; }; "topBoundary": { "alias": "topBoundary"; "required": false; }; "bottomBoundary": { "alias": "bottomBoundary"; "required": false; }; "leftBoundary": { "alias": "leftBoundary"; "required": false; }; "rightBoundary": { "alias": "rightBoundary"; "required": false; }; "i18n": { "alias": "i18n"; "required": false; }; }, { "positionChange": "positionChange"; "oncoordinateschange": "oncoordinateschange"; }, never, ["*"], false, never>;

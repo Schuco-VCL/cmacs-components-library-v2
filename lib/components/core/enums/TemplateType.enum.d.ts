@@ -8,4 +8,4 @@ export declare enum TemplateType {
     Phone = 6,
     Attachment = 7
 }
-//# sourceMappingURL=TemplateType.enum.d.ts.map
+//# sourceMappingURL=templateType.enum.d.ts.map

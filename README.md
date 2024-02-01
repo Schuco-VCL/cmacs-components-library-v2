@@ -7,7 +7,7 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng generate component component-name --project cmacs-components-v2-lib` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project cmacs-components-v2-lib`.
 > Note: Don't forget to add `--project cmacs-components-v2-lib` or else it will be added to the default project in your `angular.json` file. 
 
-## Build
+## Build 
 
 Run `ng build cmacs-components-v2-lib` to build the project. The build artifacts will be stored in the `dist/` directory.
 
