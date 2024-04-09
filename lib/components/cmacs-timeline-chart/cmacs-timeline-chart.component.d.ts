@@ -9,22 +9,9 @@ export declare class CmacsTimelineChartComponent implements OnInit, OnChanges, O
     data: Array<any>;
     width: number;
     height: number;
+    showMinAxis: boolean;
     private destroy$;
-    options: {
-        colors: string[];
-        backgroundColor: string;
-        avoidOverlappingGridLines: boolean;
-        tooltip: {
-            isHtml: boolean;
-        };
-        timeline: {
-            rowLabelStyle: {
-                color: string;
-                fontName: string;
-                fontSize: string;
-            };
-        };
-    };
+    options: any;
     set colors(colors: any);
     ngOnChanges(changes: SimpleChanges): void;
     ngOnInit(): void;
@@ -34,6 +21,6 @@ export declare class CmacsTimelineChartComponent implements OnInit, OnChanges, O
     createCustomTooltip(data: any, color: any): string;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<CmacsTimelineChartComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTimelineChartComponent, "cmacs-timeline-chart", never, { "legendLabels": { "alias": "legendLabels"; "required": false; }; "colNames": { "alias": "colNames"; "required": false; }; "data": { "alias": "data"; "required": false; }; "width": { "alias": "width"; "required": false; }; "height": { "alias": "height"; "required": false; }; "colors": { "alias": "colors"; "required": false; }; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CmacsTimelineChartComponent, "cmacs-timeline-chart", never, { "legendLabels": { "alias": "legendLabels"; "required": false; }; "colNames": { "alias": "colNames"; "required": false; }; "data": { "alias": "data"; "required": false; }; "width": { "alias": "width"; "required": false; }; "height": { "alias": "height"; "required": false; }; "showMinAxis": { "alias": "showMinAxis"; "required": false; }; "colors": { "alias": "colors"; "required": false; }; }, {}, never, never, false, never>;
 }
 //# sourceMappingURL=cmacs-timeline-chart.component.d.ts.map
